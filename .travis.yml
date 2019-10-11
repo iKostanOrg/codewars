@@ -12,7 +12,7 @@ install:
 
 script:
   # Run pytest for all tests subdirectories and check test coverage with pytest-cov:
-  - pytest --cov-config=.coveragerc --cov-report term-missing --cov && coverage report && coverage xml && codacy-coverage -r coverage.xml
+  - pytest --cov-config=.coveragerc --cov-report term-missing --cov && coverage report && coverage xml && python-codacy-coverage -r coverage.xml
 
 after_success:
   # Generates coverage report, public repo using Travis:
