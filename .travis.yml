@@ -5,16 +5,29 @@ language: python
 python:
   - "3.7"
 
+env:
+  global:
+    # Code Climate's test reporter ID
+    - CC_TEST_REPORTER_ID=7309f9b53009dda0df04d6b1b62149368765b1bd0dc6ee78bd2e5f7a15c108bc
+
 install:
   - "pip install pytest"          # install pytest
   - "pip install pytest-cov"      # This plugin produces coverage reports
   - "pip install codecov"         # install codecov
   - "pip install codacy-coverage" # Install codacy-coverage
 
+before_script:  # code coverage tool
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
 script:
   # Run pytest for all tests subdirectories and check test coverage with pytest-cov:
   - pytest --cov-config=.coveragerc --cov-report term-missing --cov
 
+after_script:
+  - coverage xml
+  - if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_PYTHON_VERSION" == "3.7" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
 
 after_success:
   # Generates coverage report, public repo using Travis:
@@ -22,4 +35,4 @@ after_success:
   - codecov
   # python codacy coverage
   # Source: https://github.com/codacy/python-codacy-coverage
-  - coverage xml && python-codacy-coverage -r coverage.xml
+  - python-codacy-coverage -r coverage.xml
