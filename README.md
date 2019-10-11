@@ -17,14 +17,21 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 ### Dev Environment
 <a id="dev"></a>
 
-1. [Python 3.7.4](https://www.python.org/downloads/release/python-374/)<br/>
-2. [Selenium 3.141.0](https://pypi.org/project/selenium/)<br/>
-3. [PyTest 5.0.0](https://pypi.org/project/pytest/)<br/>
-4. [Allure Framework 2.12.1](http://allure.qatools.ru/)<br/>
-5. [Win 10 (64 bit)](https://www.microsoft.com/en-ca/software-download/windows10)<br/>
-6. [PyCharm 2019.2 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)<br/>
-7. [GitHub Desktop 2.1.0](https://desktop.github.com/)<br/>
-8. [GIT 2.22.0.windows.1](https://git-scm.com/download/win)<br/>
+1. [Python 3.7.4](https://www.python.org/downloads/release/python-374/)
+
+2. [Selenium 3.141.0](https://pypi.org/project/selenium/)
+
+3. [PyTest 5.0.0](https://pypi.org/project/pytest/)
+
+4. [Allure Framework 2.12.1](http://allure.qatools.ru/)
+
+5. [Win 10 (64 bit)](https://www.microsoft.com/en-ca/software-download/windows10)
+
+6. [PyCharm 2019.2 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)
+
+7. [GitHub Desktop 2.1.0](https://desktop.github.com/)
+
+8. [GIT 2.22.0.windows.1](https://git-scm.com/download/win)
 
 ### Python Packages
 
@@ -201,9 +208,13 @@ git commit -m "fixed untracked files"
 <br/>Step by step:
 
 1. Run tests from pytest using following arguments: -v --alluredir=allure-results
+
 2. Copy '.\allure-report\history\' folder into '.\allure-results\history\'
+
 3. Run: allure generate .\allure-results\ -o .\allure-report\ --clean
+
 4. Following output should appear: Report successfully generated to .\allure-report
+
 5. Run: allure open .\allure-report\
 
 [Source](https://github.com/allure-framework/allure2/issues/813)
