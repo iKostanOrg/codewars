@@ -1,6 +1,6 @@
-<img src="https://www.codewars.com/users/myFirstCode/badges/micro">
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)]
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
+<img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
