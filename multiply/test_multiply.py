@@ -1,5 +1,5 @@
 import unittest
-from multiply import multiply
+from multiply.multiply import multiply
 
 
 class MultiplyTestCase(unittest.TestCase):
