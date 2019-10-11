@@ -290,4 +290,3 @@ pip install sphinx_rtd_theme
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 </details>
-
