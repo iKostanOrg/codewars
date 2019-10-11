@@ -6,7 +6,7 @@
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
 <div align="center"> 
-<img width="100%" height="100%" src="https://github.com/ikostan/codewars/blob/master/img/Document.png" hspace="20">
+<img width="90%" height="90%" src="https://github.com/ikostan/codewars/blob/master/img/Document.png" hspace="20">
 </div>
 
 Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
