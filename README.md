@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/ikostan/codewars.svg?branch=master)](https://travis-ci.org/ikostan/codewars)
 [![codecov](https://codecov.io/gh/ikostan/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/ikostan/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ba531eb1671a4ce0a8725386c2ae5316)](https://www.codacy.com/manual/ikostan/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ikostan/codewars&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/ba531eb1671a4ce0a8725386c2ae5316)](https://www.codacy.com/manual/ikostan/codewars?utm_source=github.com&utm_medium=referral&utm_content=ikostan/codewars&utm_campaign=Badge_Coverage)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems

@@ -20,4 +20,6 @@ after_success:
   # Generates coverage report, public repo using Travis:
   # Source: https://dev.to/j0nimost/using-codecov-with-travis-ci-pytest-cov-1dfj
   - codecov
+  # python codacy coverage
+  # Source: https://github.com/codacy/python-codacy-coverage
   - coverage xml && python-codacy-coverage -r coverage.xml
