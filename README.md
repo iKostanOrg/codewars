@@ -2,6 +2,7 @@
 [![CircleCI](https://circleci.com/gh/ikostan/codewars.svg?style=svg)](https://circleci.com/gh/ikostan/codewars)
 [![Build Status](https://travis-ci.org/ikostan/codewars.svg?branch=master)](https://travis-ci.org/ikostan/codewars)
 [![codecov](https://codecov.io/gh/ikostan/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/ikostan/codewars)
+[![codecov](https://codecov.io/gh/ikostan/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/ikostan/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ba531eb1671a4ce0a8725386c2ae5316)](https://www.codacy.com/manual/ikostan/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ikostan/codewars&amp;utm_campaign=Badge_Grade)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
