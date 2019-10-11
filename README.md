@@ -9,9 +9,11 @@
 <img width="90%" height="90%" src="https://github.com/ikostan/codewars/blob/master/img/Document.png" hspace="20">
 </div>
 
+## About Codewars
+
 Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
 
-### Dev Environment:<br/>
+### Dev Environment
 <a id="dev"></a>
 
 1. [Python 3.7.4](https://www.python.org/downloads/release/python-374/)<br/>
@@ -23,10 +25,12 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 7. [GitHub Desktop 2.1.0](https://desktop.github.com/)<br/>
 8. [GIT 2.22.0.windows.1](https://git-scm.com/download/win)<br/>
 
-### Python Packages:<br/>
+### Python Packages
+
 Full list of dependencies see [here.](https://github.com/ikostan/codewars/blob/master/requirements.txt)
 
-### Nice to have tools:
+### Nice to have tools
+
 1. [Fiddler: The free web debugging proxy](https://www.telerik.com/fiddler)
 2. [Kite: Code Faster in Python](https://kite.com/)
 
