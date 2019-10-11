@@ -1,4 +1,4 @@
-https://www.codewars.com/users/myFirstCode/badges/micro
+<img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
