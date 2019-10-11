@@ -1,5 +1,5 @@
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)]
 
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
