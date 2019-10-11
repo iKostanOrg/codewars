@@ -15,7 +15,6 @@ jobs: # A basic unit of work in a run
           command: |
             sudo pip install --upgrade pip
             sudo pip install pipenv
-            sudo pip install pytest
             sudo mkdir /home/circleci/project/test-results
             pipenv install -r requirements.txt
       - run:
