@@ -42,6 +42,7 @@ Full list of dependencies see [here.](https://github.com/ikostan/codewars/blob/m
 ### Nice to have tools
 
 1. [Fiddler: The free web debugging proxy](https://www.telerik.com/fiddler)
+
 2. [Kite: Code Faster in Python](https://kite.com/)
 
 ### Tech Issues and Problem Solving
@@ -51,8 +52,11 @@ Full list of dependencies see [here.](https://github.com/ikostan/codewars/blob/m
   <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
 
 1. In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
+
 2. Expand the list of the available interpreters and click the **Show All** link.
+
 3. Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
+
 4. The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
 
 For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
@@ -62,7 +66,9 @@ For more info please [check here](https://www.jetbrains.com/help/pycharm/configu
   <summary><b>PyCharm - Choosing Your Testing Framework</b></summary>
  
 1. Open the Settings/Preferences dialog, and under the node Tools, click the page **Python Integrated Tools**.
+
 2. On this page, click the **Default Test Runner** field.
+
 3. Choose the desired test runner:
 
 <div align="center"> 
@@ -75,15 +81,18 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 <details>
   <summary><b>Setting up Python3 virtual environment on Windows machine</b></summary>
 
-1. open CMD<br/>
-2. navigate to project directory, for example:<br/> 
+1. open CMD
+
+2. navigate to project directory, for example
 ```bash
 cd C:\Users\superadmin\Desktop\Python\CodinGame
 ```
+
 3. run following command:<br/> 
 ```bash 
 pip install virtualenv
 ```
+
 4. run following command:<br/> 
 ```bash 
 virtualenv venv --python=python
@@ -96,20 +105,22 @@ virtualenv venv --python=python
 ### How to install virtualenv
 
 1. Install **pip** first
+
 ```bash
     sudo apt-get install python3-pip
 ```
 
 2. Then install **virtualenv** using pip3
+
 ```bash
     sudo pip3 install virtualenv
 ```
 
-3. Now create a virtual environment
+3. Now create a virtual environment (>you can use any name insted of **venv**)
+
 ```bash
     virtualenv venv
 ```
->you can use any name insted of **venv**
 
 4. You can also use a Python interpreter of your choice:
 
@@ -156,6 +167,7 @@ virtualenv venv --python=python
 In a newly created virtualenv there will be a bin/activate shell script. For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 
 1. Open Terminal
+
 2. Run: \path\to\env\Scripts\activate 
   
 [Source](https://pypi.org/project/virtualenv/1.8.2/)
@@ -181,7 +193,8 @@ pip install -r requirements.txt
 <details>
   <summary><b>error: RPC failed; curl 56 Recv failure: Connection was reset</b></summary>
 
-1. Open Git Bash<br/>
+1. Open Git Bash
+
 2. Run: "git config --global http.postBuffer 157286400" 
   
 [Source](https://stackoverflow.com/questions/36940425/gitlab-push-failed-error)
@@ -236,25 +249,34 @@ git commit -m "fixed untracked files"
 4. Go to docs/conf.py
 
 5. Uncomment following lines:
+
 ```python
     import os
     import sys
     sys.path.insert(0, os.path.abspath('.'))
 ```
+
 6. Update extensions list as following:
+
 ```python
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
+
 7. Update template as following:
+
 ```python
 html_theme = 'sphinx_rtd_theme'
 
 ```
+
 8. Update sys.path.insert as following:
+
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
+
 9. Go to docs/index.rst > add modules, see example below:
+
 ```bash
 
 .. toctree::
@@ -263,12 +285,17 @@ sys.path.insert(0, os.path.abspath('..'))
 
    modules
 ```
+
 10. Open cmd > run: 
+
 ```python
 sphinx-apidoc -o . ..
 ```
+
 11. cmd > Run: make html
+
 12. Install html template:
+
 ```python
 pip install sphinx_rtd_theme
 ```
@@ -284,8 +311,11 @@ pip install sphinx_rtd_theme
 <br/>Step by step:
 
 1. Open CMD
+
 2. Go to docs directory
+
 3. Run: make clean
+
 4. Run: make html
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
