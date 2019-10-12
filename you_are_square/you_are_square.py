@@ -9,10 +9,7 @@ def is_square(n) -> bool:
     """
     if n > -1:
         number = math.sqrt(n)
-
         if (number - int(number)) == 0:
             return True
-        else:
-            return False
-    else:
         return False
+    return False
