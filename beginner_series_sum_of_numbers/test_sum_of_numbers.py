@@ -1,7 +1,7 @@
 import unittest
 from beginner_series_sum_of_numbers.sum_of_numbers import get_sum
 
-# FUNDAMENTALS ALGORITHMS
+# FUNDAMENTALS, ALGORITHMS
 
 
 class SumOfNumbersTestCase(unittest.TestCase):
