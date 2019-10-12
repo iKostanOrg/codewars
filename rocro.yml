@@ -4,7 +4,6 @@ inspecode:
     runtime:
       python: 3.7.0
   pylint:
-    options:
-      --ignore-patterns=W0622
+    options: --ignore-patterns=[W0622]
   pytest:
     input: test_*
