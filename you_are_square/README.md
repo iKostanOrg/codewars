@@ -1,4 +1,4 @@
-## You're a square!
+## You're a square
 
 ### A square of squares
 
