@@ -86,16 +86,19 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 1. open CMD
 
 2. navigate to project directory, for example
+
 ```bash
 cd C:\Users\superadmin\Desktop\Python\CodinGame
 ```
 
-3. run following command:<br/> 
+3. run following command:
+
 ```bash 
 pip install virtualenv
 ```
 
-4. run following command:<br/> 
+4. run following command:
+
 ```bash 
 virtualenv venv --python=python
 ```
