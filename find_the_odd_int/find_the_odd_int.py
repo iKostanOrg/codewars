@@ -1,3 +1,8 @@
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
+
 def find_it(seq) -> int:
 	"""
 	Given an array, find the int that

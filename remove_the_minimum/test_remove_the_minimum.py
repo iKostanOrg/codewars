@@ -2,6 +2,10 @@ import unittest
 from remove_the_minimum.remove_the_minimum import remove_smallest
 from numpy.random import randint
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 # FUNDAMENTALS, LISTS, DATA STRUCTURES, ARRAYS
 
 

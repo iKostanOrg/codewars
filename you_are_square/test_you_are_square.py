@@ -1,6 +1,10 @@
 import unittest
 from you_are_square.you_are_square import is_square
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 # FUNDAMENTALS, MATH
 
 

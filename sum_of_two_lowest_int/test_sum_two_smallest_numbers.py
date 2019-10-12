@@ -1,6 +1,10 @@
 import unittest
 from sum_of_two_lowest_int.sum_two_smallest_int import sum_two_smallest_numbers
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 # FUNDAMENTALS, ARRAYS
 
 

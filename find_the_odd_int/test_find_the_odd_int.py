@@ -1,6 +1,10 @@
 import unittest
 from find_the_odd_int.find_the_odd_int import find_it
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 # FUNDAMENTALS
 
 

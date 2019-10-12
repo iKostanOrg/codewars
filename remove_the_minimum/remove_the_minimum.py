@@ -1,3 +1,8 @@
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
+
 def remove_smallest(numbers):
 	"""
 	Given an array of integers, remove the smallest value.

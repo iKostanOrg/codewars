@@ -1,5 +1,9 @@
 """Beginner Series #3 Sum of Numbers"""
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 
 def get_sum(a, b):
     """

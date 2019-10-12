@@ -1,3 +1,8 @@
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
+
 def disemvowel(string):
 	"""
 	A function that takes a string and return

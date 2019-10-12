@@ -1,6 +1,10 @@
 import unittest
 from jaden_casing_strings.jaden_casing_strings import toJadenCase
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 # FUNDAMENTALS, STRINGS, ARRAYS
 
 

@@ -11,6 +11,10 @@ https://www.codewars.com/kata/
 50654ddff44f800200000004/train/python
 """
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 
 def multiply(a, b):
     """

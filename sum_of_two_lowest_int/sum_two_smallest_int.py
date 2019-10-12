@@ -1,3 +1,8 @@
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
+
 def sum_two_smallest_numbers(numbers) -> int:
     """
     Returns the sum of the two lowest
