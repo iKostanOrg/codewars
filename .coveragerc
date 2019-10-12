@@ -1,3 +1,8 @@
 [run]
 # omit anything in a virtualenv directory anywhere
-omit = /home/travis/virtualenv/*
+omit =
+    /home/travis/virtualenv/*
+    *.yml
+    /home/travis/img/*
+    __init__.py
+    *.md
