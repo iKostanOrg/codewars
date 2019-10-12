@@ -6,6 +6,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/ba531eb1671a4ce0a8725386c2ae5316)](https://www.codacy.com/manual/ikostan/codewars?utm_source=github.com&utm_medium=referral&utm_content=ikostan/codewars&utm_campaign=Badge_Coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/maintainability)](https://codeclimate.com/github/ikostan/codewars/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/test_coverage)](https://codeclimate.com/github/ikostan/codewars/test_coverage)
+[![Job Status](https://inspecode.rocro.com/badges/github.com/ikostan/codewars/status?token=osXoRfY67GYIseEyxDrOQZklQjRbw2O0l__Sr2i9lmo)](https://inspecode.rocro.com/jobs/github.com/ikostan/codewars/latest?completed=true)
+[![Report](https://inspecode.rocro.com/badges/github.com/ikostan/codewars/report?token=osXoRfY67GYIseEyxDrOQZklQjRbw2O0l__Sr2i9lmo&branch=master)](https://inspecode.rocro.com/reports/github.com/ikostan/codewars/branch/master/summary)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
