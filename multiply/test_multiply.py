@@ -3,7 +3,16 @@ from multiply.multiply import multiply
 
 
 class MultiplyTestCase(unittest.TestCase):
+	"""
+	Testing multiply function
+	"""
+
 	def test_multiply(self):
+		"""
+        Verify that multiply function
+		returns correct result
+		:return:
+		"""
 		a = 1
 		b = 2
 		expected = a * b
