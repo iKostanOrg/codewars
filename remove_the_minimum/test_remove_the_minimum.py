@@ -50,11 +50,13 @@ class RemoveSmallestTestCase(unittest.TestCase):
         Returns [] if list has only one element
         :return:
         """
-        for i in range(10):
+        i = 0
+        while i < 10:
             x = randint(1, 400)
             self.assertEqual(remove_smallest([x]),
                              [],
                              "Wrong result for [{}]".format(x))
+            i += 1
 
     def test_remove_smallest_random_list(self):
         """
@@ -62,8 +64,10 @@ class RemoveSmallestTestCase(unittest.TestCase):
         :return:
         """
 
-        for i in range(10):
+        i = 0
+        while i < 10:
             arr = self.random_list()
             self.assertEqual(len(remove_smallest(arr[:])),
                              len(arr) - 1,
                              "Wrong sized result for {}".format(arr))
+            i += 1
