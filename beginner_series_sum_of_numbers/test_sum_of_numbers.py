@@ -1,6 +1,10 @@
 import unittest
 from beginner_series_sum_of_numbers.sum_of_numbers import get_sum
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 # FUNDAMENTALS, ALGORITHMS
 
 
