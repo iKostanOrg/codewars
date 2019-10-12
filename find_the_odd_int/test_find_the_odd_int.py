@@ -1,7 +1,6 @@
 import unittest
 from find_the_odd_int.find_the_odd_int import find_it
 
-
 # FUNDAMENTALS
 
 
