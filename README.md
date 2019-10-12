@@ -1,4 +1,5 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
 [![CircleCI](https://circleci.com/gh/ikostan/codewars.svg?style=svg)](https://circleci.com/gh/ikostan/codewars)
 [![Build Status](https://travis-ci.org/ikostan/codewars.svg?branch=master)](https://travis-ci.org/ikostan/codewars)
 [![codecov](https://codecov.io/gh/ikostan/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/ikostan/codewars)
