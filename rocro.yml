@@ -3,6 +3,8 @@ inspecode:
   experimental:
     runtime:
       python: 3.7.0
-  pylint: auto-fix
+  pylint:
+    options:
+      --ignore-patterns=W0622
   pytest:
     input: test_*
