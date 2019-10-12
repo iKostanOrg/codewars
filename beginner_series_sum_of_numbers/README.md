@@ -4,7 +4,7 @@ Given two integers **a** and **b**, which can be positive or negative, find the 
 
 **Note:** a and b are not ordered!
 
-### Examples:
+### Examples
 
 ```bash
 get_sum(1, 0) == 1   // 1 + 0 = 1
