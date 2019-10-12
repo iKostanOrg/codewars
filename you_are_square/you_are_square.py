@@ -11,5 +11,4 @@ def is_square(n) -> bool:
         number = math.sqrt(n)
         if (number - int(number)) == 0:
             return True
-        return False
     return False
