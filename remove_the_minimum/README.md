@@ -10,7 +10,7 @@ Given an array of integers, remove the smallest value. Do not mutate the origina
 
 Don't change the order of the elements that are left.
 
-###  Examples
+### Examples
 
 ```bash
 remove_smallest([1,2,3,4,5]) = [2,3,4,5]
