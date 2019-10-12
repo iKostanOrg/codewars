@@ -23,7 +23,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
         Test lists with multiple digits
         :return:
         """
-        
+
         self.assertEqual(remove_smallest([1, 2, 3, 4, 5]),
                          [2, 3, 4, 5],
                          "Wrong result for [1, 2, 3, 4, 5]")
