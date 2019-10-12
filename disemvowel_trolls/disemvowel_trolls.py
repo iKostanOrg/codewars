@@ -11,16 +11,5 @@ def disemvowel(string):
 	:return:
 	"""
 	vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
-	print(string)
 
-	new_string = []
-
-	for char in string:
-		if char not in vowels:
-			new_string.append(char)
-
-	print(new_string)
-	string = ''.join(new_string)
-	print(string)
-
-	return string
+	return ''.join(char for char in string if char not in vowels)
