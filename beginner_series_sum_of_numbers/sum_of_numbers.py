@@ -1,3 +1,6 @@
+"""Beginner Series #3 Sum of Numbers"""
+
+
 def get_sum(a, b):
     """
     Given two integers a and b,
