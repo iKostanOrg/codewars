@@ -2,7 +2,7 @@ import unittest
 from remove_the_minimum.remove_the_minimum import remove_smallest
 from numpy.random import randint
 
-# FUNDAMENTALS LISTS DATA STRUCTURES ARRAYS
+# FUNDAMENTALS, LISTS, DATA STRUCTURES, ARRAYS
 
 
 class RemoveSmallestTestCase(unittest.TestCase):
