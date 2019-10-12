@@ -6,3 +6,4 @@ codewars
 
    img
    multiply
+   you_are_square
