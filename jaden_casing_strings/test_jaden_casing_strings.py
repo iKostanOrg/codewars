@@ -1,7 +1,7 @@
 import unittest
 from jaden_casing_strings.jaden_casing_strings import toJadenCase
 
-# FUNDAMENTALS STRINGS ARRAYS
+# FUNDAMENTALS, STRINGS, ARRAYS
 
 
 class JadenCasingStringsTestCase(unittest.TestCase):
