@@ -14,3 +14,4 @@ codewars
    disemvowel_trolls
    find_the_odd_int
    first_character_that_repeats
+   utils
