@@ -1,4 +1,6 @@
 import unittest
+import allure
+from utils.log_func import print_log
 from disemvowel_trolls.disemvowel_trolls import disemvowel
 
 #  Created by Egor Kostan.
@@ -8,6 +10,12 @@ from disemvowel_trolls.disemvowel_trolls import disemvowel
 # FUNDAMENTALS, STRINGS, REGULAR EXPRESSIONS, DECLARATIVE PROGRAMMING, ADVANCED LANGUAGE FEATURES
 
 
+@allure.epic('Codewars')
+@allure.parent_suite('Fundamentals')
+@allure.suite("Advanced Language Features")
+@allure.sub_suite("Unit Tests")
+@allure.feature("String")
+@allure.story('Disemvowel Trolls')
 class MdisemvowelTestCase(unittest.TestCase):
 	"""
 	Testing disemvowel function
@@ -19,5 +27,16 @@ class MdisemvowelTestCase(unittest.TestCase):
 		should become "Ths wbst s fr lsrs LL!"
 		:return:
 		"""
-		self.assertEqual(disemvowel("This website is for losers LOL!"),
-		                 "Ths wbst s fr lsrs LL!")
+
+		allure.dynamic.title("a and b are equal")
+		allure.dynamic.severity(allure.severity_level.NORMAL)
+
+		with allure.step("Assert the result"):
+			input_data = "This website is for losers LOL!"
+			expected = "Ths wbst s fr lsrs LL!"
+
+			print_log(input=input_data,
+			          expected=expected)
+
+			self.assertEqual(disemvowel(input_data),
+			                 expected)
