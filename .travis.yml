@@ -15,12 +15,12 @@ install:
   - "pip install pytest-cov"      # This plugin produces coverage reports
   - "pip install codecov"         # install codecov
   - "pip install codacy-coverage" # Install codacy-coverage
-  - "pip install allure"
 
 before_script:  # code coverage tool
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
+  - sudo apt-get install allure
 
 script:
   # Run pytest for all tests subdirectories and check test coverage with pytest-cov:
