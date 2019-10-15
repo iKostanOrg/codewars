@@ -16,9 +16,9 @@ install:
   - "pip install codecov"         # install codecov
   - "pip install codacy-coverage" # Install codacy-coverage
   - "pip install -r requirements.txt"
-  - "sudo apt-add-repository ppa:qameta/allure -y"
-  - "sudo apt-get update"
-  - "sudo apt-get install allure"
+  #- "sudo apt-add-repository ppa:qameta/allure -y"
+  #- "sudo apt-get update"
+  #- "sudo apt-get install allure"
 
 before_script:  # code coverage tool
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
