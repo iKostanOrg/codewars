@@ -14,7 +14,7 @@ from kyu_7.beginner_series_sum_of_numbers.sum_of_numbers import get_sum
 @allure.parent_suite('Beginner')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
-@allure.feature("Beginner Series")
+@allure.feature("Addition")
 @allure.story('Sum of Numbers')
 class SumOfNumbersTestCase(unittest.TestCase):
 	"""
