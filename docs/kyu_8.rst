@@ -10,6 +10,7 @@ Subpackages
    kyu_8.logical_calculator
    kyu_8.multiply
    kyu_8.grasshopper_personalized_message
+   kyu_8.grasshopper_messi_goals_function
 
 Module contents
 ---------------
