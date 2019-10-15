@@ -3,6 +3,9 @@ inspecode:
   experimental:
     runtime:
       python: 3.7.0
+    ignore:
+      - allure-report/
+      - docs/
   pylint:
     ignore: docs,
   pytest:
