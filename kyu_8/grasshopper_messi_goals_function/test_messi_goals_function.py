@@ -15,7 +15,7 @@ from kyu_8.grasshopper_messi_goals_function.messi_goals_function import goals
 @allure.suite("Math")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Addition")
-@allure.story('Personalized greeting')
+@allure.story('Messi goals function')
 class GoalsTestCase(unittest.TestCase):
 	"""
 	Testing goals function
