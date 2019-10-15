@@ -1,3 +1,5 @@
+"""Configuration file for the Sphinx documentation builder."""
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -32,8 +34,7 @@ release = '0.2'
 # ones.
 extensions = ['sphinx.ext.todo',
               'sphinx.ext.viewcode',
-              'sphinx.ext.autodoc'
-]
+              'sphinx.ext.autodoc']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
