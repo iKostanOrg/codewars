@@ -1,7 +1,7 @@
 ## 8 kyu - Beginner
 
 <div align="center"> 
-<img width="90%" height="90%" src="https://github.com/ikostan/codewars/blob/master/img/copy-rank-kyu.png" hspace="10">
+<img width="10%" height="10%" src="https://github.com/ikostan/codewars/blob/master/img/copy-rank-kyu.png" hspace="10">
 </div>
 
 ### Honor
