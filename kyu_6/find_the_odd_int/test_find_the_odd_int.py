@@ -11,7 +11,7 @@ from kyu_6.find_the_odd_int.find_the_odd_int import find_it
 
 
 @allure.epic('6 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Novice')
 @allure.suite("Advanced Language Features")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
