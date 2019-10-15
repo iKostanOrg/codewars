@@ -12,9 +12,9 @@ from kyu_8.multiply.multiply import multiply
 
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
-@allure.suite("Introduction")
+@allure.suite("Math")
 @allure.sub_suite("Unit Tests")
-@allure.feature("Fix Broken Code")
+@allure.feature("Multiplication")
 @allure.story('Multiply')
 class MultiplyTestCase(unittest.TestCase):
 	"""
