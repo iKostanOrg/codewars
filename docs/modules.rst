@@ -15,3 +15,4 @@ codewars
    find_the_odd_int
    first_character_that_repeats
    utils
+   logical_calculator
