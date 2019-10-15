@@ -12,7 +12,7 @@ from kyu_8.is_your_period_late.is_your_period_late import period_is_late
 
 
 @allure.epic('8 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Date")

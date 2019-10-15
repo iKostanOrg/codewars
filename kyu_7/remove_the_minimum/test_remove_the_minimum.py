@@ -11,7 +11,7 @@ from numpy.random import randint
 
 
 @allure.epic('7 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")

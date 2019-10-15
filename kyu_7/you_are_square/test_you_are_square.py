@@ -10,7 +10,7 @@ from kyu_7.you_are_square.you_are_square import is_square
 
 
 @allure.epic('7 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Math")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Square Calculation")

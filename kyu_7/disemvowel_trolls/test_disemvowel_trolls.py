@@ -11,7 +11,7 @@ from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
 
 
 @allure.epic('7 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Advanced Language Features")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")

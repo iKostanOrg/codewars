@@ -11,7 +11,7 @@ from kyu_7.jaden_casing_strings.jaden_casing_strings import toJadenCase
 
 
 @allure.epic('7 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")

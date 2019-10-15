@@ -11,7 +11,7 @@ from kyu_8.logical_calculator.logical_calculator import logical_calc
 
 
 @allure.epic('8 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")

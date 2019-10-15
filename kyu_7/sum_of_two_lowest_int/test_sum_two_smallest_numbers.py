@@ -10,7 +10,7 @@ from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int import sum_two_smallest_nu
 
 
 @allure.epic('7 kyu')
-@allure.parent_suite('Fundamentals')
+@allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
