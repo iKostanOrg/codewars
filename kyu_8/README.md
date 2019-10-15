@@ -1,4 +1,4 @@
-## 8 kyu
+## 8 kyu - Beginner
 
 ### Honor
 
