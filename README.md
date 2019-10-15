@@ -43,6 +43,14 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 Full list of dependencies see [here.](https://github.com/ikostan/codewars/blob/master/requirements.txt)
 
+### Allure Report
+
+Allure is based on standard xUnit results output but adds some supplementary data. Any report is generated in two steps. During test execution (first step), a small library called adapter attached to the testing framework saves information about executed tests to XML files.
+
+During report generation (second step), the XML files are transformed to a HTML report. This can be done with a command line tool, a plugin for CI or a build tool.
+
+[Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
+
 ### Nice to have tools
 
 1. [Fiddler: The free web debugging proxy](https://www.telerik.com/fiddler)
