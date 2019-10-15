@@ -6,7 +6,7 @@ Links referring to logical operations: AND, OR and XOR.
 
 You should begin at the first value, and repeatedly apply the logical operation across the remaining elements in the array sequentially.
 
-### First Example:
+### First Example
 
 > Input: true, true, false, operator: AND
 > 
@@ -14,7 +14,7 @@ You should begin at the first value, and repeatedly apply the logical operation 
 > 
 > Output: false
 
-### Second Example:
+### Second Example
 
 > Input: true, true, false, operator: OR
 > 
@@ -22,7 +22,7 @@ You should begin at the first value, and repeatedly apply the logical operation 
 > 
 > Output: true
 
-### Third Example:
+### Third Example
 
 > Input: true, true, false, operator: XOR
 > 
@@ -30,11 +30,11 @@ You should begin at the first value, and repeatedly apply the logical operation 
 > 
 > Output: false
 
-### Input:
+### Input
 
 > boolean array, string with operator' s name: 'AND', 'OR', 'XOR'.
 
-### Output:
+### Output
 
 > calculated boolean
 
