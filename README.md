@@ -22,6 +22,27 @@
 
 Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
 
+* Codewars supports `Python 2.7.6` and `Python 3.4.3`.
+
+* Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
+
+### My profile
+
+<img src="URL:https://www.codewars.com/users/myFirstCode/badges/large">
+
+### [Ranking](http://www.codewars.com/about)
+
+```bash
+8 - 7 kyu │ Beginner
+6 - 5 kyu │ Novice
+4 - 3 kyu │ Competent
+2 - 1 kyu │ Proficient
+1 - 5 dan │ Expert
+5 - 8 dan │ Master
+```
+
+**Note**: For each completed kata, there is a corresponding unittest file.
+
 ### Dev Environment
 <a id="dev"></a>
 
