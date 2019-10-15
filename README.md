@@ -43,6 +43,14 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 Full list of dependencies see [here.](https://github.com/ikostan/codewars/blob/master/requirements.txt)
 
+### Online Documentation
+
+Python3 solutions for codewars problems’s documentation is built with Sphinx using a theme provided by Read the Docs.
+
+Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license. 
+
+[Online version of the tech documentation](https://codewars.readthedocs.io/en/latest/)
+
 ### Allure Report
 
 Allure is based on standard xUnit results output but adds some supplementary data. Any report is generated in two steps. During test execution (first step), a small library called adapter attached to the testing framework saves information about executed tests to XML files.
