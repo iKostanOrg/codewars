@@ -49,7 +49,7 @@ Python3 solutions for codewars problems’s documentation is built with Sphinx u
 
 Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license. 
 
-[Online version of the tech documentation](https://codewars.readthedocs.io/en/latest/)
+[Online version of the latest tech documentation](https://codewars.readthedocs.io/en/latest/)
 
 ### Allure Report
 
