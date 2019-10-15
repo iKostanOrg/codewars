@@ -15,7 +15,7 @@ from logical_calculator.logical_calculator import logical_calc
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
-@allure.story('Jaden Casing Strings')
+@allure.story('Logical Calculator')
 class LogicalCalculatorTestCase(unittest.TestCase):
 	"""
 	Testing logical_calc function
