@@ -1,8 +1,6 @@
 import unittest
 import allure
-
 from you_are_square.you_are_square import is_square
-
 
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
