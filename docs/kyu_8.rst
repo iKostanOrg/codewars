@@ -9,6 +9,7 @@ Subpackages
    kyu_8.is_your_period_late
    kyu_8.logical_calculator
    kyu_8.multiply
+   kyu_8.grasshopper_personalized_message
 
 Module contents
 ---------------
