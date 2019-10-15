@@ -12,7 +12,7 @@ from kyu_6.first_character_that_repeats.first_character_that_repeats import firs
 
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
-@allure.suite("Data Structures")
+@allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('First character that repeats')
