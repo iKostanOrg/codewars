@@ -59,13 +59,7 @@ During report generation (second step), the XML files are transformed to a HTML 
 
 [Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
 
-### Nice to have tools
-
-1. [Fiddler: The free web debugging proxy](https://www.telerik.com/fiddler)
-
-2. [Kite: Code Faster in Python](https://kite.com/)
-
-### Tech Issues and Problem Solving
+## Tech Issues and Problem Solving
 <a id="tech_issues"></a>
 
 <details>
