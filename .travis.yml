@@ -11,14 +11,11 @@ env:
     - CC_TEST_REPORTER_ID=7309f9b53009dda0df04d6b1b62149368765b1bd0dc6ee78bd2e5f7a15c108bc
 
 install:
-  - "pip install pytest"          # install pytest
-  - "pip install pytest-cov"      # This plugin produces coverage reports
-  - "pip install codecov"         # install codecov
-  - "pip install codacy-coverage" # Install codacy-coverage
-  - "pip install -r requirements.txt"
-  #- "sudo apt-add-repository ppa:qameta/allure -y"
-  #- "sudo apt-get update"
-  #- "sudo apt-get install allure"
+  - "pip install pytest"               # install pytest
+  - "pip install pytest-cov"           # This plugin produces coverage reports
+  - "pip install codecov"              # install codecov
+  - "pip install codacy-coverage"      # Install codacy-coverage
+  - "pip install -r requirements.txt"  # Needed mainly for making Allure work
 
 before_script:  # code coverage tool
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
