@@ -28,7 +28,9 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 ### My profile
 
+<div align="center">
 <img src="URL:https://www.codewars.com/users/myFirstCode/badges/large">
+</div>
 
 ### [Ranking](http://www.codewars.com/about)
 
