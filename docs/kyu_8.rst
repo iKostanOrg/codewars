@@ -11,6 +11,7 @@ Subpackages
    kyu_8.multiply
    kyu_8.grasshopper_personalized_message
    kyu_8.grasshopper_messi_goals_function
+   kyu_8.remove_string_spaces
 
 Module contents
 ---------------
