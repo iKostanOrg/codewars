@@ -31,7 +31,7 @@ class WellTestCase(unittest.TestCase):
 		allure.dynamic.title("Should return 'Fail!'s")
 		allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step(""):
+		with allure.step("Pass list with no 'good' in it"):
 			lst = ['bad', 'bad', 'bad']
 			expected = 'Fail!'
 
@@ -48,7 +48,7 @@ class WellTestCase(unittest.TestCase):
 		allure.dynamic.title("Should return 'Publish!'")
 		allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step(""):
+		with allure.step("Pass list with one 'good' in it"):
 			lst = ['good', 'bad', 'bad', 'bad', 'bad']
 			expected = 'Publish!'
 
@@ -65,7 +65,7 @@ class WellTestCase(unittest.TestCase):
 		allure.dynamic.title("Should return 'I smell a series!'")
 		allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step(""):
+		with allure.step("Pass list with more than 2 'good' in it"):
 			lst = ['good', 'bad', 'bad',
 			       'bad', 'bad', 'good',
 			       'bad', 'bad', 'good']
