@@ -15,6 +15,7 @@ Subpackages
    kyu_8.well_of_ideas_easy_version
    kyu_8.make_upper_case
    kyu_8.terminal_game_move_function
+   kyu_8.wolf_in_sheep_clothing
 
 Module contents
 ---------------
