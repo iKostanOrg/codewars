@@ -16,6 +16,7 @@ Subpackages
    kyu_8.make_upper_case
    kyu_8.terminal_game_move_function
    kyu_8.wolf_in_sheep_clothing
+   kyu_8.find_the_first_non_consecutive_number
 
 Module contents
 ---------------
