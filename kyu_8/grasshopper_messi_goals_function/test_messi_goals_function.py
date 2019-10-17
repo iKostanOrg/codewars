@@ -27,6 +27,7 @@ class GoalsTestCase(unittest.TestCase):
 		total number of goals in all three leagues.
 		:return:
 		"""
+
 		allure.dynamic.title("goals function verification")
 		allure.dynamic.severity(allure.severity_level.NORMAL)
 
