@@ -19,11 +19,7 @@ def powers(n) -> list:
 		lst.append(2 ** power)
 		power += 1
 
-	if lst[-1] > n:
-		i = -2
-	else:
-		i = -1
-
+	i = -1
 	result = list()
 	while sum(result) != n:
 		if sum(result) + lst[i] <= n:
