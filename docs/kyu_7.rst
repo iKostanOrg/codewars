@@ -12,6 +12,7 @@ Subpackages
    kyu_7.remove_the_minimum
    kyu_7.sum_of_two_lowest_int
    kyu_7.you_are_square
+   kyu_7.sum_of_powers_of_2
 
 Module contents
 ---------------
