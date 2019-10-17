@@ -1,4 +1,4 @@
-## Is your period late?
+## Is your period late
 
 In this kata, we will make a function to test whether a period is late.
 
