@@ -26,6 +26,17 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 * Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
 
+### Difficulty
+
+- [8 kyu](https://github.com/ikostan/codewars/tree/master/kyu_8)
+- [7 kyu](https://github.com/ikostan/codewars/tree/master/kyu_7)
+- [6 kyu](https://github.com/ikostan/codewars/tree/master/kyu_6)
+- [5 kyu]()
+- [4 kyu]()
+- [3 kyu]()
+- [2 kyu]()
+- [1 kyu]()
+
 ### My profile
 
 <div align="left">
