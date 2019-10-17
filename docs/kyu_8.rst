@@ -13,6 +13,7 @@ Subpackages
    kyu_8.grasshopper_messi_goals_function
    kyu_8.remove_string_spaces
    kyu_8.well_of_ideas_easy_version
+   kyu_8.make_upper_case
 
 Module contents
 ---------------
