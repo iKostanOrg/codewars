@@ -2,6 +2,8 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+# ALGORITHMS GAMES PUZZLES PERFORMANCE
+
 import unittest
 import allure
 from utils.log_func import print_log
