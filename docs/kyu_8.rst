@@ -18,6 +18,7 @@ Subpackages
    kyu_8.wolf_in_sheep_clothing
    kyu_8.find_the_first_non_consecutive_number
    kyu_8.third_angle_of_triangle
+   kyu_8.remove_first_and_last_character
 
 Module contents
 ---------------
