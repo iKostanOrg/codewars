@@ -1,73 +1,26 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Non is expected","
-		If the whole array is consecutive then return
-		null or Nothing or None.
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","23","Beginner","Algorithms","Unit Tests","","","powers function should return an array of unique numbers","
+		The function powers takes a single parameter,
+		the number n, and should return an array of unique numbers.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Novice","Data Structures","Unit Tests","","","Find the int that appears an odd number of times","
-		Sample testing.
-		Expected result is 5
-		:return:
-		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","2","Beginner","Control Flow","Unit Tests","","","Wolf in the middle of the queue","
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","1","Beginner","Control Flow","Unit Tests","","","Wolf in the middle of the queue","
 		If the wolf is the closest animal to you,
 		return ""Pls go away and stop eating my sheep"".
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","0","Beginner","Math","Unit Tests","","","Square numbers (positive)","
-		25 is a square number
-		:return:
-		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","2","Beginner","Control Flow","Unit Tests","","","Wolf at the end of the queue","
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","3","Beginner","Control Flow","Unit Tests","","","Wolf at the end of the queue","
 		If the wolf is not the closest animal to you,
 		return ""Oi! Sheep number N! You are about to be eaten by a wolf!""
 		where N is the sheep's position in the queue.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","3","Beginner","Data Structures","Unit Tests","","","Testing toJadenCase function (positive)","
-		Simple positive test
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","1","Beginner","Math","Unit Tests","","","'multiply' function verification","
+        Verify that multiply function
+		returns correct result
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Testing period_is_late function (negative)","
-		Negative tests
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Novice","Algorithms","Unit Tests","","","String with mixed type of chars","
-        Test string with mixed type of chars
-        :return:
-        "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Algorithms","Unit Tests","","","a or b is negative","
-		a or b is negative
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","3","Novice","Algorithms","Unit Tests","","","Testing the 'pyramid' function","
-		The 'pyramid' function should return
-		an Array of ascending length subarrays.
-
-		Note: the subarrays should be filled with 1s.
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Novice","Algorithms","Unit Tests","","","String with no alphabet chars","
-        Test string with no alphabet chars
-        :return:
-        "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","0","Beginner","Math","Unit Tests","","","Negative numbers","
-		-1: Negative numbers cannot be square numbers
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","6","Beginner","Data Structures","Unit Tests","","","'multiply' function verification with random list","
-        Returns a list that misses only one element
-        :return:
-        "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","'multiply' function verification with one element list","
-        Returns [] if list has only one element
-        :return:
-        "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","'multiply' function verification with empty list","
-        Test with empty list
-        :return:
-        "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","XOR logical operator","
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","XOR logical operator","
 		Exclusive or or exclusive disjunction is a
 		logical operation that outputs true only when
 		inputs differ (one is true, the other is false).
@@ -78,78 +31,118 @@
 		https://en.wikipedia.org/wiki/Exclusive_or
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Testing make_upper_case function","
-		Sample Tests for make_upper_case function
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","3","Beginner","Data Structures","Unit Tests","","","Non consecutive number should be returned","
+		If we have an array [1,2,3,4,6,7,8] then 1 then 2
+		then 3 then 4 are all consecutive but 6 is not,
+		so that's the first non-consecutive number.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Testing remove_char function","
-		Test that 'remove_char' function
-		removes the first and
-        last characters of a string.
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Beginner","Math","Unit Tests","","","Negative numbers","
+		-1: Negative numbers cannot be square numbers
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Algorithms","Unit Tests","","","a an b are positive numbers","
-		a an b are positive numbers
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","7","Novice","Algorithms","Unit Tests","","","Testing the 'pyramid' function","
+		The 'pyramid' function should return
+		an Array of ascending length subarrays.
+
+		Note: the subarrays should be filled with 1s.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Should return 'Fail!'s","
-		If there are no good ideas,
-		as is often the case, return 'Fail!'.
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Math","Unit Tests","","","goals function verification","
-		Verify that the function returns Messi's
-		total number of goals in all three leagues.
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Testing toJadenCase function (negative)","
-		Simple negative test
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Advanced Language Features","Unit Tests","","","a and b are equal","
-		The string ""This website is for losers LOL!""
-		should become ""Ths wbst s fr lsrs LL!""
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","'multiply' function verification: lists with multiple digits","
-        Test lists with multiple digits
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","2","Novice","Algorithms","Unit Tests","","","String with no duplicate chars","
+        Test string with no duplicate chars
         :return:
         "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Math","Unit Tests","","","Non square numbers (negative)","
-		26 is not a square number
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Large lists","
-		Large lists
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","0","Novice","Algorithms","Unit Tests","","","String alphabet chars and spaces","
-        Repeating char is a space
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","1","Novice","Algorithms","Unit Tests","","","All chars are in lower case","
+        Testing letter_frequency function
+        where all chars are in lower case
         :return:
         "
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","2","Beginner","Control Flow","Unit Tests","","","Wolf at the beginning of the queue","
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Should return 'I smell a series!'","
+		if there are more than 2 return
+		'I smell a series!'.
+		:return:
+		"
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","1","Beginner","Control Flow","Unit Tests","","","Wolf at the beginning of the queue","
 		If the wolf is the closest animal to you,
 		return ""Pls go away and stop eating my sheep"".
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Negative non consecutive number should be returned","
+"skipped","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","0","Novice","Advanced Language Features","Unit Tests","","","test_has_subpattern","
+		Verify that 'has_subpattern' function to returns
+        either true/True or false/False if a string can be
+        seen as the repetition of a simpler/shorter subpattern or not.
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","4","Beginner","Control Flow","Unit Tests","","","Verify that greet function returns the proper message","
+		Use conditionals to to verify that greet
+		function returns the proper message.
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","3","Novice","Algorithms","Unit Tests","","","Testing 'numericals' function","
+		Testing 'numericals' function
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","7","Beginner","Data Structures","Unit Tests","","","'multiply' function verification with random list","
+        Returns a list that misses only one element
+        :return:
+        "
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Math","Unit Tests","","","Square numbers (positive)","
+		25 is a square number
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","'multiply' function verification with empty list","
+        Test with empty list
+        :return:
+        "
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","'multiply' function verification with one element list","
+        Returns [] if list has only one element
+        :return:
+        "
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","15","Beginner","Data Structures","Unit Tests","","","Test that no_space function removes the spaces","
+		Test that no_space function removes the spaces
+		from the string, then return the resultant string.
+		:return:
+		"
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Testing period_is_late function (negative)","
+		Negative tests
+		:return:
+		"
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","1","Novice","Algorithms","Unit Tests","","","String with mixed type of chars","
+        Test string with mixed type of chars
+        :return:
+        "
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","4","Beginner","Algorithms","Unit Tests","","","a or b is negative","
+		a or b is negative
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","13","Beginner","Data Structures","Unit Tests","","","Non is expected","
+		If the whole array is consecutive then return
+		null or Nothing or None.
+		:return:
+		"
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Novice","Algorithms","Unit Tests","","","String alphabet chars and spaces","
+        Repeating char is a space
+        :return:
+        "
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Two smallest numbers in the start of the list","
+		Test sum_two_smallest_numbers function
+		The function should return the sum of
+		the two lowest positive numbers
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","0","Beginner","Math","Unit Tests","","","Non square numbers (negative)","
+		3 is not a square number
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Negative non consecutive number should be returned","
 		non-consecutive is a negative number.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","2","Beginner","Math","Unit Tests","","","'multiply' function verification","
-        Verify that multiply function
-		returns correct result
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Novice","Algorithms","Unit Tests","","","Testing 'longest_repetition' function","
-		For a given string s find the character c (or C) with
-		longest consecutive repetition and return: (c, l)
-		where l (or L) is the length of the repetition.
-
-		For empty string return: ('', 0)
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","OR logical operator","
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","2","Novice","Algorithms","Unit Tests","","","String with no alphabet chars","
+        Test string with no alphabet chars
+        :return:
+        "
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","17","Beginner","Data Structures","Unit Tests","","","OR logical operator","
 		In logic and mathematics, or is the
 		truth-functional operator of (inclusive)
 		disjunction, also known as alternation.
@@ -162,29 +155,86 @@
 
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","0","Novice","Algorithms","Unit Tests","","","String with alphabet chars only","
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Should return 'Publish!'","
+		If there are one or two good ideas,
+		return 'Publish!',
+		:return:
+		"
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","6","Beginner","Math","Unit Tests","","","move function tests","
+		The player rolls the dice and moves the number
+		of spaces indicated by the dice two times.
+
+		Pass position and roll and compare the output
+		to the expected result
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","3","Beginner","Data Structures","Unit Tests","","","Large lists","
+		Large lists
+		:return:
+		"
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","1","Novice","Algorithms","Unit Tests","","","String with alphabet chars only","
         Test string with alphabet chars only
         :return:
         "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Math","Unit Tests","","","Non square numbers (negative)","
-		3 is not a square number
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Math","Unit Tests","","","Non square numbers (negative)","
+		26 is not a square number
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Math","Unit Tests","","","Square numbers (positive)","
-		4 is a square number
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Novice","Algorithms","Unit Tests","","","Testing 'longest_repetition' function","
+		For a given string s find the character c (or C) with
+		longest consecutive repetition and return: (c, l)
+		where l (or L) is the length of the repetition.
+
+		For empty string return: ('', 0)
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Test that no_space function removes the spaces","
-		Test that no_space function removes the spaces
-		from the string, then return the resultant string.
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Should return 'Fail!'s","
+		If there are no good ideas,
+		as is often the case, return 'Fail!'.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","7","Beginner","Algorithms","Unit Tests","","","powers function should return an array of unique numbers","
-		The function powers takes a single parameter,
-		the number n, and should return an array of unique numbers.
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","1","Beginner","Math","Unit Tests","","","You are given two angles -> find the 3rd.","
+		You are given two angles (in degrees) of a triangle.
+        Find the 3rd.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","AND logical operator","
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Beginner","Advanced Language Features","Unit Tests","","","a and b are equal","
+		The string ""This website is for losers LOL!""
+		should become ""Ths wbst s fr lsrs LL!""
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Beginner","Algorithms","Unit Tests","","","a an b are positive numbers","
+		a an b are positive numbers
+		:return:
+		"
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Testing period_is_late function (positive)","
+		Positive tests
+		:return:
+		"
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","1","Novice","Data Structures","Unit Tests","","","Find the int that appears an odd number of times","
+		Sample testing.
+		Expected result is 5
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Math","Unit Tests","","","goals function verification","
+		Verify that the function returns Messi's
+		total number of goals in all three leagues.
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Testing toJadenCase function (negative)","
+		Simple negative test
+		:return:
+		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Testing toJadenCase function (positive)","
+		Simple positive test
+		:return:
+		"
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","2","Novice","Algorithms","Unit Tests","","","All chars are in upper case","
+        Testing letter_frequency function
+        where all chars are in upper case
+        :return:
+        "
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","AND logical operator","
 		And (∧) is the truth-functional
 		operator of logical conjunction
 
@@ -196,63 +246,34 @@
 
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","1","Beginner","Math","Unit Tests","","","You are given two angles -> find the 3rd.","
-		You are given two angles (in degrees) of a triangle.
-        Find the 3rd.
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","14","Beginner","Data Structures","Unit Tests","","","Testing make_upper_case function","
+		Sample Tests for make_upper_case function
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","Non consecutive number should be returned","
-		If we have an array [1,2,3,4,6,7,8] then 1 then 2
-		then 3 then 4 are all consecutive but 6 is not,
-		so that's the first non-consecutive number.
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Two smallest numbers in the start of the list","
-		Test sum_two_smallest_numbers function
-		The function should return the sum of
-		the two lowest positive numbers
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Math","Unit Tests","","","Zero","
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Math","Unit Tests","","","Zero","
 		0 is a square number
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Should return 'I smell a series!'","
-		if there are more than 2 return
-		'I smell a series!'.
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","1","Beginner","Math","Unit Tests","","","Square numbers (positive)","
+		4 is a square number
 		:return:
 		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","3","Beginner","Data Structures","Unit Tests","","","Should return 'Publish!'","
-		If there are one or two good ideas,
-		return 'Publish!',
+"passed","Mon Oct 21 18:08:35 PDT 2019","Mon Oct 21 18:08:35 PDT 2019","5","Beginner","Data Structures","Unit Tests","","","Testing remove_char function","
+		Test that 'remove_char' function
+		removes the first and
+        last characters of a string.
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Novice","Algorithms","Unit Tests","","","Testing 'numericals' function","
-		Testing 'numericals' function
-		:return:
-		"
-"passed","Mon Oct 21 13:47:07 PDT 2019","Mon Oct 21 13:47:07 PDT 2019","1","Beginner","Math","Unit Tests","","","move function tests","
-		The player rolls the dice and moves the number
-		of spaces indicated by the dice two times.
-
-		Pass position and roll and compare the output
-		to the expected result
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Control Flow","Unit Tests","","","Verify that greet function returns the proper message","
-		Use conditionals to to verify that greet
-		function returns the proper message.
-		:return:
-		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Algorithms","Unit Tests","","","a and b are equal","
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","7","Beginner","Algorithms","Unit Tests","","","a and b are equal","
 		a and b are equal
 		:return:
 		"
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","2","Novice","Algorithms","Unit Tests","","","String with no duplicate chars","
-        Test string with no duplicate chars
+"passed","Mon Oct 21 18:08:33 PDT 2019","Mon Oct 21 18:08:33 PDT 2019","1","Novice","Algorithms","Unit Tests","","","All chars are in mixed case","
+        Testing letter_frequency function
+        where all chars are in mixed case
         :return:
         "
-"passed","Mon Oct 21 13:47:06 PDT 2019","Mon Oct 21 13:47:06 PDT 2019","1","Beginner","Data Structures","Unit Tests","","","Testing period_is_late function (positive)","
-		Positive tests
-		:return:
-		"
+"passed","Mon Oct 21 18:08:34 PDT 2019","Mon Oct 21 18:08:34 PDT 2019","2","Beginner","Data Structures","Unit Tests","","","'multiply' function verification: lists with multiple digits","
+        Test lists with multiple digits
+        :return:
+        "
