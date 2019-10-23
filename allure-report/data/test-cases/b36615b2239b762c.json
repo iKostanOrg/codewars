@@ -1,0 +1,640 @@
+{
+  "uid" : "b36615b2239b762c",
+  "name" : "powers function should return an array of unique numbers",
+  "fullName" : "kyu_7.sum_of_powers_of_2.test_sum_of_powers_of_2.SumOfPowerOfTwoTestCase#test_powers",
+  "historyId" : "0236b069e77409277bb7591e93a2d821",
+  "time" : {
+    "start" : 1571871244998,
+    "stop" : 1571871245007,
+    "duration" : 9
+  },
+  "description" : "\n\t\tThe function powers takes a single parameter,\n\t\tthe number n, and should return an array of unique numbers.\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tThe function powers takes a single parameter,\n\tthe number n, and should return an array of unique numbers.\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1571871244997,
+      "stop" : 1571871244997,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tThe function powers takes a single parameter,\n\t\tthe number n, and should return an array of unique numbers.\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Pass n = 1 and verify the output",
+      "time" : {
+        "start" : 1571871244998,
+        "stop" : 1571871244998,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 2 and verify the output",
+      "time" : {
+        "start" : 1571871244998,
+        "stop" : 1571871244998,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 4 and verify the output",
+      "time" : {
+        "start" : 1571871244998,
+        "stop" : 1571871244998,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 6 and verify the output",
+      "time" : {
+        "start" : 1571871244998,
+        "stop" : 1571871244999,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 14 and verify the output",
+      "time" : {
+        "start" : 1571871244999,
+        "stop" : 1571871244999,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 32 and verify the output",
+      "time" : {
+        "start" : 1571871244999,
+        "stop" : 1571871245000,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 128 and verify the output",
+      "time" : {
+        "start" : 1571871245000,
+        "stop" : 1571871245000,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 512 and verify the output",
+      "time" : {
+        "start" : 1571871245002,
+        "stop" : 1571871245003,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 514 and verify the output",
+      "time" : {
+        "start" : 1571871245003,
+        "stop" : 1571871245003,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 688 and verify the output",
+      "time" : {
+        "start" : 1571871245003,
+        "stop" : 1571871245003,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 8197 and verify the output",
+      "time" : {
+        "start" : 1571871245003,
+        "stop" : 1571871245004,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 1966 and verify the output",
+      "time" : {
+        "start" : 1571871245004,
+        "stop" : 1571871245004,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 134217736 and verify the output",
+      "time" : {
+        "start" : 1571871245004,
+        "stop" : 1571871245004,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 140737488355330 and verify the output",
+      "time" : {
+        "start" : 1571871245004,
+        "stop" : 1571871245004,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 35184372088896 and verify the output",
+      "time" : {
+        "start" : 1571871245004,
+        "stop" : 1571871245005,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Pass n = 9007199254740991 and verify the output",
+      "time" : {
+        "start" : 1571871245005,
+        "stop" : 1571871245006,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2d9a0b5d754de5d8",
+      "name" : "stdout",
+      "source" : "2d9a0b5d754de5d8.txt",
+      "type" : "text/plain",
+      "size" : 1195
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 16,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1571871245018,
+      "stop" : 1571871245018,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "epic",
+    "value" : "7 kyu"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "story",
+    "value" : "Sum of powers of 2"
+  }, {
+    "name" : "feature",
+    "value" : "Calculation"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "3400-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_7.sum_of_powers_of_2.test_sum_of_powers_of_2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2b7f96618988a10f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571866230639,
+        "stop" : 1571866230647,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "d9dd501247ac255e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571865529659,
+        "stop" : 1571865529669,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "29cc9e2ab807a04a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571865467705,
+        "stop" : 1571865467713,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "5b2d83ada189d9af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571863592744,
+        "stop" : 1571863592748,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "fec1b4ac89a9bc9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571861372006,
+        "stop" : 1571861372012,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "79665e94efb16c2a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571861328937,
+        "stop" : 1571861328943,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d01dd4f7de594af4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571806154648,
+        "stop" : 1571806154653,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "8a5566a5a3a8b3aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571806142694,
+        "stop" : 1571806142699,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "602aa4f0b1d74dac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571806026937,
+        "stop" : 1571806026940,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "922947675a9885b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571804004028,
+        "stop" : 1571804004033,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "6e077a6b35ef7a1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571803967224,
+        "stop" : 1571803967229,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "ea9aa4bbe6f94043",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571801890853,
+        "stop" : 1571801890859,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "3923ed6d0c0cb20e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571801740277,
+        "stop" : 1571801740284,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "63c9b25d4bc6eb6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571797780727,
+        "stop" : 1571797780733,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "f3997eeb527cb4ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571782170431,
+        "stop" : 1571782170438,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "53b64c699612699c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571782059978,
+        "stop" : 1571782059982,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "4609491d2c0fe796",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571780445011,
+        "stop" : 1571780445018,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "8a9022504380a01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571710072077,
+        "stop" : 1571710072087,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "3e43953151ac23b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571706514622,
+        "stop" : 1571706514645,
+        "duration" : 23
+      }
+    }, {
+      "uid" : "9f9056e1bcffb0af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571706241946,
+        "stop" : 1571706241954,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "75c20e21f031b705",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571706180720,
+        "stop" : 1571706180727,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "7ab580a568ec8b6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571690826674,
+        "stop" : 1571690826681,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "8e607b24d59799f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571690652393,
+        "stop" : 1571690652399,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "88c4c6be0306b3f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571637246749,
+        "stop" : 1571637246760,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "932dc9e95261cb99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571633945697,
+        "stop" : 1571633945701,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "f91ec00355ba3196",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571619542492,
+        "stop" : 1571619542499,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "aca705245d69e3b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571523083672,
+        "stop" : 1571523083684,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "c2fa43ea9ec04320",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571351445038,
+        "stop" : 1571351445043,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "713f204bcdaac842",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571347674368,
+        "stop" : 1571347674373,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "71355dda97abe2fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571347426784,
+        "stop" : 1571347426787,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "54fd7691bf633f4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571346759891,
+        "stop" : 1571346759894,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "27a2a99c3b2b610c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571301657830,
+        "stop" : 1571301657835,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "f48edb60bab4a15a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571301501386,
+        "stop" : 1571301501394,
+        "duration" : 8
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "64229c7ad64c261f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571866230639,
+          "stop" : 1571866230647,
+          "duration" : 8
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b36615b2239b762c.json",
+  "parameterValues" : [ ]
+}
