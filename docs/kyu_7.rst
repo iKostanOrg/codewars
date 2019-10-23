@@ -14,6 +14,7 @@ Subpackages
    kyu_7.you_are_square
    kyu_7.sum_of_powers_of_2
    kyu_7.powers_of_3
+   kyu_7.sum_of_triangular_numbers
 
 Module contents
 ---------------
