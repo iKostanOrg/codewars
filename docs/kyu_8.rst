@@ -21,6 +21,7 @@ Subpackages
    kyu_8.remove_first_and_last_character
    kyu_8.reversed_strings
    kyu_8.surface_area_and_volume_of_box
+   kyu_8.alternating_case
 
 Module contents
 ---------------
