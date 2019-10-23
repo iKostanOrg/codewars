@@ -14,6 +14,7 @@ Subpackages
    kyu_6.character_frequency
    kyu_6.string_subpattern_recognition_1
    kyu_6.permute_a_palindrome
+   kyu_6.count_letters_in_string
 
 Module contents
 ---------------
