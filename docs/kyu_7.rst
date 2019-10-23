@@ -17,6 +17,7 @@ Subpackages
    kyu_7.sum_of_triangular_numbers
    kyu_7.vaporcode
    kyu_7.simple_fun_152
+   kyu_7.significant_figures
 
 Module contents
 ---------------
