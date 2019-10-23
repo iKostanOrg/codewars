@@ -4,8 +4,8 @@
 
 # FUNDAMENTALS ALGORITHMS
 
-import unittest
 import allure
+import unittest
 from utils.log_func import print_log
 from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 
@@ -15,7 +15,7 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
-@allure.story('Numericals of a String')
+@allure.story('Permute a Palindrome')
 class PermutePalindromeTestCase(unittest.TestCase):
 	"""
 	Testing permute_a_palindrome function
