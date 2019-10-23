@@ -27,31 +27,27 @@ class AlternatingCaseTestCase(unittest.TestCase):
 		:return:
 		"""
 
+		allure.dynamic.title("Testing to_alternating_case function")
+		allure.dynamic.severity(allure.severity_level.BLOCKER)
 
-		self.assertEqual(to_alternating_case("hello world"), "HELLO WORLD")
+		with allure.step("Enter test string and verify the output"):
 
+			data = [
+				("hello world", "HELLO WORLD"),
+				("HELLO WORLD", "hello world"),
+				("HeLLo WoRLD", "hEllO wOrld"),
+				("hello WORLD", "HELLO world"),
+				("12345", "12345"),
+				("1a2b3c4d5e", "1A2B3C4D5E"),
+				("String.prototype.toAlternatingCase",
+				 "sTRING.PROTOTYPE.TOaLTERNATINGcASE"),
+				("Hello World", "hELLO wORLD"),
+				("altERnaTIng cAsE", "ALTerNAtiNG CaSe")
+			]
 
-		self.assertEqual(to_alternating_case("HELLO WORLD"), "hello world")
+			for d in data:
+				string = d[0]
+				expected = d[1]
 
-
-		self.assertEqual(to_alternating_case("hello WORLD"), "HELLO world")
-
-
-		self.assertEqual(to_alternating_case("HeLLo WoRLD"), "hEllO wOrld")
-
-
-		self.assertEqual(to_alternating_case("12345"), "12345")
-
-
-		self.assertEqual(to_alternating_case("1a2b3c4d5e"), "1A2B3C4D5E")
-
-
-		self.assertEqual(to_alternating_case("String.prototype.toAlternatingCase"), "sTRING.PROTOTYPE.TOaLTERNATINGcASE")
-
-
-		self.assertEqual(to_alternating_case(to_alternating_case("Hello World")), "Hello World")
-
-
-		title = "altERnaTIng cAsE"
-		title = to_alternating_case(title)
-		self.assertEqual(title, "ALTerNAtiNG CaSe")
+				print_log(string=string, expected=expected)
+				self.assertEqual(to_alternating_case(string), expected)
