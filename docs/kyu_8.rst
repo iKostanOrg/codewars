@@ -22,6 +22,8 @@ Subpackages
    kyu_8.reversed_strings
    kyu_8.surface_area_and_volume_of_box
    kyu_8.alternating_case
+   kyu_8.grasshopper_summation
+   kyu_8.my_head_is_at_the_wrong_end
 
 Module contents
 ---------------
