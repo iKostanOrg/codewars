@@ -13,7 +13,7 @@ Subpackages
    kyu_6.numericals_of_string
    kyu_6.character_frequency
    kyu_6.string_subpattern_recognition_1
-
+   kyu_6.permute_a_palindrome
 
 Module contents
 ---------------
