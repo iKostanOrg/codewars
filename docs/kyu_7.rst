@@ -16,6 +16,7 @@ Subpackages
    kyu_7.powers_of_3
    kyu_7.sum_of_triangular_numbers
    kyu_7.vaporcode
+   kyu_7.simple_fun_152
 
 Module contents
 ---------------
