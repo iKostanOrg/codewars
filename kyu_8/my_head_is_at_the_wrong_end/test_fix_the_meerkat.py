@@ -6,6 +6,8 @@
 
 import unittest
 import allure
+import pytest
+
 from utils.log_func import print_log
 from kyu_8.my_head_is_at_the_wrong_end.fix_the_meerkat import fix_the_meerkat
 
