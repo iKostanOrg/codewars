@@ -15,7 +15,6 @@ def number_of_sigfigs(number: str) -> int:
     
     if number == '0':
         return 0
-
     if number == '0.0':
         return 1
 
