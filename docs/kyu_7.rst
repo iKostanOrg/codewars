@@ -18,6 +18,7 @@ Subpackages
    kyu_7.vaporcode
    kyu_7.simple_fun_152
    kyu_7.significant_figures
+   kyu_7.sort_out_the_men_from_boys
 
 Module contents
 ---------------
