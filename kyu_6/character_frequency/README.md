@@ -8,7 +8,7 @@ The function should return a list of tuples (in Python and Haskell) or arrays (i
 
 will return
 
-> [('d',5), ('a',4), ('b',2), ('c',2), ('h',2)]
+> `[('d',5), ('a',4), ('b',2), ('c',2), ('h',2)]`
 
 Letter frequency analysis is often used to analyse simple substitution cipher texts like those created by the Caesar cipher.
 
