@@ -24,10 +24,11 @@ def toJadenCase(string):
 	:param string:
 	:return:
 	"""
+	
 	list_string = string.split()
 
-	for i in range(len(list_string)):
-		list_string[i] = list_string[i].capitalize()
+	for i, el in enumerate(list_string):
+		list_string[i] = el.capitalize()
 
 	new_string = ' '.join(list_string)
 
