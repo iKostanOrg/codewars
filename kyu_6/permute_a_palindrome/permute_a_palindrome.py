@@ -11,13 +11,10 @@ def permute_a_palindrome(string: str) -> bool:
     :return:
     """
 
-    if string == '' or string is None:
-        return True
-
-    if len(string) == 1:
-        return True
-
-    if string == string[::-1]:
+    if string == '' or \
+            string is None or \
+            len(string) == 1 or \
+            string == string[::-1]:
         return True
 
     non_even = 0
