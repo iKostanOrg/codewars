@@ -9,11 +9,11 @@ But will your code be **performant enough**?
 ### Examples:
 
 > input   =  "Hello, World!"
-
+>
 > result  =  "1112111121311"
-
+>
 > input   =  "aaaaaaaaaaaa"
-
+>
 > result  =  "123456789101112"
 
 There might be some non-ascii characters in the string.
