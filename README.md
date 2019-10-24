@@ -258,8 +258,8 @@ Even if you haven't tracked the files so far, Git seems to be able to "know" abo
 
 **NOTE:**
 
-- First commit your current changes, or you will lose them.
-- Then run the following commands from the top folder of your Git repository:
+* First commit your current changes, or you will lose them.
+* Then run the following commands from the top folder of your Git repository:
 
 ```bash 
 git rm -r --cached .
