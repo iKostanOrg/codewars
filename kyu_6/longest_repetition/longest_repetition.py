@@ -17,8 +17,7 @@ def longest_repetition(chars):
     :return:
     """
 
-    result = ('', 0)
-    current = ['', 0]
+    result, current = ('', 0), ['', 0]
 
     for c in chars:
 
