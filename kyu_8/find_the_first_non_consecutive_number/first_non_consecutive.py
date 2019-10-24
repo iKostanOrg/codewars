@@ -16,9 +16,6 @@ def first_non_consecutive(arr: list):
     :return:
     """
 
-    i = None
     for index, n in enumerate(arr):
         if index + 1 < len(arr) and n + 1 != arr[index + 1]:
-            i = arr[index + 1]
-            break
-    return i
+            return arr[index + 1]
