@@ -28,7 +28,7 @@ class SwapValuesTestCase(unittest.TestCase):
 		allure.dynamic.title("Testing swap_values function")
 		allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Pass a list with and swap values"):
+		with allure.step("Pass a list with 2 values and swap them"):
 
 			swap = [1, 2]
 			expected = [2, 1]
