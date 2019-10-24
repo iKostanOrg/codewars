@@ -20,9 +20,9 @@ def remove_smallest(numbers):
 		min_num = min(numbers)
 		min_i = numbers.index(min_num)
 
-		for i in range(len(numbers)):
+		for i, el in enumerate(numbers):
 			if i != min_i:
-				new_array.append(numbers[i])
+				new_array.append(el)
 	else:
 		return numbers
 
