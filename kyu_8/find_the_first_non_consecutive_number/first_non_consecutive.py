@@ -18,8 +18,7 @@ def first_non_consecutive(arr: list):
 
     i = None
     for index, n in enumerate(arr):
-        if index + 1 < len(arr):
-            if n + 1 != arr[index + 1]:
-                i = arr[index + 1]
-                break
+        if index + 1 < len(arr) and n + 1 != arr[index + 1]:
+            i = arr[index + 1]
+            break
     return i
