@@ -4,13 +4,13 @@ The goal of this exercise is to convert a string to a new string where each char
 
 ### Examples
 
-> "din"      =>  "((("
+> "din" => "((("
 
-> "recede"   =>  "()()()"
+> "recede" => "()()()"
 
-> "Success"  =>  ")())())"
+> "Success" => ")())())"
 
-> "(( @"     =>  "))((" 
+> "(( @" => "))((" 
 
 ### Notes
 
