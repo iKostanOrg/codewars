@@ -1,4 +1,4 @@
-## Simple Fun #152: Invite More Women?
+## Simple Fun #152: Invite More Women
 
 ### Task
 
