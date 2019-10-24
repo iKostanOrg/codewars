@@ -25,6 +25,7 @@ Subpackages
    kyu_8.grasshopper_summation
    kyu_8.my_head_is_at_the_wrong_end
    kyu_8.swap_values
+   kyu_8.keep_hydrated
 
 Module contents
 ---------------
