@@ -6,7 +6,7 @@ For each symbol in the string if it's the first character occurrence, replace it
 
 But will your code be **performant enough**?
 
-### Examples:
+### Examples
 
 > input   =  "Hello, World!"
 >
