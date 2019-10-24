@@ -16,6 +16,7 @@ Subpackages
    kyu_6.permute_a_palindrome
    kyu_6.count_letters_in_string
    kyu_6.unique_in_order
+   kyu_6.duplicate_encoder
 
 Module contents
 ---------------
