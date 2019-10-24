@@ -23,7 +23,7 @@ where N is the sheep's position in the queue
 ### Examples
 
 > warn_the_sheep(`["sheep", "sheep", "sheep", "wolf", "sheep"]`) == 'Oi! Sheep number 1! You are about to be eaten by a wolf!'
-
+>
 > warn_the_sheep(`['sheep', 'sheep', 'wolf']`) == 'Pls go away and stop eating my sheep'
 
 [Source](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python)
