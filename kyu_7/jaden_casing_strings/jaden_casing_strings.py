@@ -24,7 +24,7 @@ def toJadenCase(string):
 	:param string:
 	:return:
 	"""
-	
+
 	list_string = string.split()
 
 	for i, el in enumerate(list_string):
