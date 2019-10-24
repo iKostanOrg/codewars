@@ -1,4 +1,4 @@
-## Significant Figures
+## Significant Figures Challenge
 
 ### The Challenge
 
