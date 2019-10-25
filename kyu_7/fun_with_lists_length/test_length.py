@@ -20,14 +20,14 @@ from kyu_7.fun_with_lists_length.length import length
 class LengthTestCase(unittest.TestCase):
 	"""
 	Testing length function
-
-	The method length, which accepts a linked list
-    (head), and returns the length of the list.
 	"""
 	def test_length_none(self):
 		"""
 		Testing length function
 		where head = None
+
+		The method length, which accepts a linked list
+        (head), and returns the length of the list.
 		:return:
 		"""
 
@@ -42,6 +42,9 @@ class LengthTestCase(unittest.TestCase):
 	def test_length(self):
 		"""
 		Testing length function
+
+		The method length, which accepts a linked list
+        (head), and returns the length of the list.
 		:return:
 		"""
 
