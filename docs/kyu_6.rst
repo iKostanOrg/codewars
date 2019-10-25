@@ -17,6 +17,7 @@ Subpackages
    kyu_6.count_letters_in_string
    kyu_6.unique_in_order
    kyu_6.duplicate_encoder
+   kyu_6.vasya_clerk.rst
 
 Module contents
 ---------------
