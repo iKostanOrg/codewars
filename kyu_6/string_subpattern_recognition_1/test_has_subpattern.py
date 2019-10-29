@@ -6,7 +6,6 @@
 
 import unittest
 import allure
-import pytest
 from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
 
@@ -17,72 +16,16 @@ from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String subpattern recognition I')
-@pytest.mark.skip(reason="The solution is not ready")
 class HasSubpatternTestCase(unittest.TestCase):
 	"""
+	String subpattern recognition I
 	Testing 'has_subpattern' function
 	"""
 
-	'''
-	def test_is_prime_true(self):
-		"""
-		Testing is_prime function -> positive
-		:return:
-		"""
-		allure.dynamic.title("Testing 'is_prime' function (positive)")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
-
-		with allure.step("Pass the string and verify the output"):
-			primes = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
-			          37, 41, 43, 47, 53, 59, 61, 67, 71, 73,
-			          79, 83, 89, 97, 101, 103, 107, 109, 113,
-			          127, 131, 137, 139, 149, 151, 157, 163,
-			          167, 173, 179, 181, 191, 193, 197, 199,
-			          211, 223, 227, 229, 233, 239, 241, 251,
-			          257, 263, 269, 271, 277, 281, 283, 293,
-			          307, 311, 313, 317, 331, 337, 347, 349,
-			          353, 359, 367, 373, 379, 383, 389, 397,
-			          401, 409, 419, 421, 431, 433, 439, 443,
-			          449, 457, 461, 463, 467, 479, 487, 491,
-			          499, 503, 509, 521, 523, 541, 547, 557,
-			          563, 569, 571, 577, 587, 593, 599, 601,
-			          607, 613, 617, 619, 631, 641, 643, 647,
-			          653, 659, 661, 673, 677, 683, 691, 701,
-			          709, 719, 727, 733, 739, 743, 751, 757,
-			          761, 769, 773, 787, 797, 809, 811, 821,
-			          823, 827, 829, 839, 853, 857, 859, 863,
-			          877, 881, 883, 887, 907, 911, 919, 929,
-			          937, 941, 947, 953, 967, 971, 977, 983,
-			          991, 997, 1009, 1013, 1019, 1021, 1031,
-			          1033, 1039, 1049, 1051, 1061, 1063, 1069,
-			          2801, 3061, 3943, 33413, 48187, 69931, 76597)
-
-			for p in primes:
-				print_log(number=p, expected=True)
-				self.assertEqual(True, is_prime(p)[0])
-
-	def test_is_prime_false(self):
-		"""
-		Testing is_prime function -> negative
-		:return:
-		"""
-
-		allure.dynamic.title("Testing 'is_prime' function (negative)")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
-
-		with allure.step("Pass the string and verify the output"):
-			non_primes = (4, 6, 8, 12, 14, 18, 20, 24, 32, 36, 40,
-			              994, 998, 1012, 1016, 1020, 1028, 1035,
-			              3944, 33416, 48188, 69936, 76598)
-
-			for p in non_primes:
-				print_log(number=p, expected=False)
-				self.assertEqual(False, is_prime(p)[0])
-
-	'''
-
 	def test_has_subpattern(self):
 		"""
+		String subpattern recognition I
+
 		Verify that 'has_subpattern' function to returns
         either true/True or false/False if a string can be
         seen as the repetition of a simpler/shorter subpattern or not.

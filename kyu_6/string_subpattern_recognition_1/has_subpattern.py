@@ -4,6 +4,8 @@
 
 import math
 
+PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
 
 def has_subpattern(string: str) -> bool:
     """
@@ -21,27 +23,23 @@ def has_subpattern(string: str) -> bool:
     :return:
     """
 
-    pass
+    length = len(string)
 
+    if string is None or length < 2:
+        return False
 
-def is_prime(n: int) -> list:
-    """
-    Test if a number is a prime number
-    :param n:
-    :return:
-    """
+    if len(set(string)) == 1:
+        return True
 
-    if n < 2:
-        return [False, n]
+    n = 2
+    while n < (length // 2) + 1:
 
-    if n == 2:
-        return [True]
+        if length % n != 0:
+            n += 1
+            continue
 
-    if n != 2 and n % 2 == 0:
-        return [False, 2]
+        if string[0:length//n] * n == string:
+            return True
+        n += 1
 
-    for i in range(3, int(math.sqrt(n)) + 1,  2):
-        if n % i == 0:
-            return [False, i]
-
-    return [True]
+    return False
