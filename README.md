@@ -22,7 +22,7 @@
 
 Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
 
-* Codewars supports `Python 2.7.6` and `Python 3.4.3`.
+* Codewars supports `Python 2.7.6`, `Python 3.4.3` and `Python 3.6.0`.
 
 * Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
 
