@@ -6,7 +6,6 @@
 
 import unittest
 import allure
-import pytest
 from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_2.has_subpattern import has_subpattern
 
@@ -17,7 +16,6 @@ from kyu_6.string_subpattern_recognition_2.has_subpattern import has_subpattern
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String subpattern recognition II')
-@pytest.mark.skip(reason="The solution is not ready")
 class HasSubpatternTestCase(unittest.TestCase):
 	"""
 	Testing 'has_subpattern' function
@@ -54,6 +52,26 @@ class HasSubpatternTestCase(unittest.TestCase):
 				("12aa13a21233", True),
 				("12aa13a21233A", False),
 				("abcdabcaccd", False),
+				("w9TkPyHgTygqGTCBnL94FFa5q1uvyBzCOFdzFGl3439FCsk59yjq"
+				 "A7nT9g3N94nTzFkCy31AkN2Hdd2Fmyn5VFGCBN5n931mkaw14bXw"
+				 "Aywzw1TwyoAB2yLdydPGALFv51Bj0Vnnd1VayBTsun1TV31yPmbj"
+				 "PNaq1kuXoVGkokjTTd2LFbOV7n2XTayLnbBsTFmsdHuVaykF0V23"
+				 "w3slOymC1OF4akgo5yGLFsGF139oTG7GsuuvVPwTy3dm5oglTlF4"
+				 "FlqkNyFVFGvm1VuljHggH74nFwCFLy0n0qALdy0o4yyw592BovN7"
+				 "Bvy1AGwVngklvBGB204H2BTXjAykyXBFja5ov4jTkTGybBnATCvO"
+				 "llwGClTmvw9os9TyH41vvjmkVXdTw3aysnTBPTvvgmA51wvkn1T7"
+				 "1OyyGLPgV9LdmqyldTwbdu0TqTH377kOynv3Byd0vVlynTkAyyj1"
+				 "1dqyv5FN1TsTyv5Gajgvd0Xn2dCjvFXq3lykg7soolyksllVGNkV"
+				 "3VFLqwvnyBPH1T1NoBuzLnmlC5lO7FlHFwNVT1AuGT2zNsdVodnl"
+				 "TdnnnwOdNTg5qH0PPXl5FljvOu0vyqBFXLTz9uvAzP5b1lTkHG5a"
+				 "TqzzwCOkwl0dBVGjbkdFFy4TljFaTGBdAVGT1luFVnByHvn2XvAB"
+				 "lAOGw77BjTg1k5yV17ddCmP14GvL2P5XBTkTw95v3ksv5kqkyuCy"
+				 "X430BAy2AB5NlC5wXbOv4zgVl9GLb5wBzaNdT7vyzslPBkws5Nw2"
+				 "w0nvN1V5dG4qzLX7dsV1ujGu0lzVbmPkVB59sVVoVFBHPyOuygO0"
+				 "ClwmA2bGkHLVayBb5Cayl2m9w4TBgkGbTw0lHB2VG5NnFwyF17Gk"
+				 "Tn5TdH7HVnlyvG51do9k35zO4aqmPBTwnXu5wdBvvTPdL715ln4o"
+				 "jGVTTlgks119kuCV3Ta5vLa7nqmdolmjPG5wqGynXG2n1XTCbz10"
+				 "BadOFvTbbgHOnywVG50wwNnzObkddNF5BGzobX", True)
 			]
 
 			for data in data_set:
