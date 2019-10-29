@@ -89,7 +89,7 @@ class HasSubpatternTestCase(unittest.TestCase):
 		:return:
 		"""
 
-		allure.dynamic.title("Testing 'has_subpattern' function")
+		allure.dynamic.title("Testing 'has_subpattern' (part 1) function")
 		allure.dynamic.severity(allure.severity_level.BLOCKER)
 
 		with allure.step("Pass the string and verify the output"):
