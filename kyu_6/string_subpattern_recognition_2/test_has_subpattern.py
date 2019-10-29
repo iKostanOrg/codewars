@@ -28,6 +28,14 @@ class HasSubpatternTestCase(unittest.TestCase):
 		Verify that 'has_subpattern' function to returns
         either true/True or false/False if a string can be
         seen as the repetition of a simpler/shorter subpattern or not.
+
+        1. if a subpattern has been used, it will be repeated
+        at least twice, meaning the subpattern has to be
+        shorter than the original string;
+
+		2. the strings you will be given might or might not
+		be created repeating a given subpattern, then
+		shuffling the result.
 		:return:
 		"""
 
