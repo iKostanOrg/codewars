@@ -28,6 +28,7 @@ Subpackages
    kyu_8.keep_hydrated
    kyu_8.set_alarm
    kyu_8.will_there_be_enough_space
+   kyu_8.counting_sheep
 
 Module contents
 ---------------
