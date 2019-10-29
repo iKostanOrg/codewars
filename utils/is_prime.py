@@ -8,7 +8,7 @@ import math
 def is_prime(n: int) -> bool:
     """
     Function to check for a prime number
-    Return TRUE if i is prime number. False otherwise
+    Return TRUE if 'n' is prime number. False otherwise
     :param n:
     :return:
     """
