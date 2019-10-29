@@ -2,10 +2,6 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-import math
-
-PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-
 
 def has_subpattern(string: str) -> bool:
     """
