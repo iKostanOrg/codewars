@@ -29,6 +29,7 @@ Subpackages
    kyu_8.set_alarm
    kyu_8.will_there_be_enough_space
    kyu_8.counting_sheep
+   kyu_8.grasshopper_check_for_factor
 
 Module contents
 ---------------
