@@ -7,6 +7,8 @@ import math
 
 def has_subpattern(string: str) -> bool:
     """
+    String subpattern recognition I
+
     In this kata you need to build a function to return
     either true/True or false/False if a string can be
     seen as the repetition of a simpler/shorter subpattern or not.
