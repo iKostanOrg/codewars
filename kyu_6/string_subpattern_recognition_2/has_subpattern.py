@@ -17,4 +17,23 @@ def has_subpattern(string: str) -> bool:
     :return:
     """
 
-    pass
+    length = len(string)
+
+    if length < 2:
+        return False
+
+    if len(set(string)) == 1:
+        return True
+
+    n = 2
+    while n < (length // 2) + 1:
+
+        if length % n != 0:
+            n += 1
+            continue
+
+        if string[0:length // n] * n == string:
+            return True
+        n += 1
+
+    return False
