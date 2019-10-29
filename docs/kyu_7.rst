@@ -20,6 +20,7 @@ Subpackages
    kyu_7.significant_figures
    kyu_7.sort_out_the_men_from_boys
    kyu_7.fun_with_lists_length
+   kyu_7.fill_the_hard_disk_drive
 
 Module contents
 ---------------
