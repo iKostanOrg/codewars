@@ -2,6 +2,8 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from utils.is_prime import is_prime
+
 
 def has_subpattern(string: str) -> bool:
     """
@@ -16,24 +18,19 @@ def has_subpattern(string: str) -> bool:
     :param string:
     :return:
     """
-
+    primes = set()
     length = len(string)
+    char_dict = dict()
+    for char in string:
+        if char not in char_dict:
 
-    if length < 2:
-        return False
+            char_dict[char] = string.count(char)
+            if char_dict[char] == 1:
+                return False
 
-    if len(set(string)) == 1:
-        return True
+            if char_dict[char] in primes or is_prime(char_dict[char]):
+                primes.add(char_dict[char])
+                if length % char_dict[char] != 0:
+                    return False
 
-    n = 2
-    while n < (length // 2) + 1:
-
-        if length % n != 0:
-            n += 1
-            continue
-
-        if string[0:length // n] * n == string:
-            return True
-        n += 1
-
-    return False
+    return True
