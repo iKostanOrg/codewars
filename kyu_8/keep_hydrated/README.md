@@ -1,4 +1,4 @@
-## Keep Hydrated!
+## Keep Hydrated
 
 Nathan loves cycling.
 
