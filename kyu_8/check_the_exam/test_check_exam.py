@@ -16,12 +16,12 @@ from kyu_8.check_the_exam.check_exam import check_exam
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Check the exam')
-class EnoughTestCase(unittest.TestCase):
+class CheckExamTestCase(unittest.TestCase):
 	"""
 	Testing check_exam function
 	"""
 
-	def test_enough(self):
+	def test_check_exam(self):
 		"""
 		Testing check_exam function
 
