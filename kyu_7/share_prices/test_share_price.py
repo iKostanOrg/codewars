@@ -44,7 +44,9 @@ class SharePriceTestCase(unittest.TestCase):
 
 			for invested, changes, expected in data:
 
-				print_log(invested=invested, changes=changes, expected=False)
+				print_log(invested=invested,
+				          changes=changes,
+				          expected=False)
 
 				self.assertEqual(expected,
 				                 share_price(invested, changes))
