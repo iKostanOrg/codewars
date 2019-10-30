@@ -31,6 +31,7 @@ Subpackages
    kyu_8.counting_sheep
    kyu_8.grasshopper_check_for_factor
    kyu_8.check_the_exam
+   kyu_8.is_it_a_palindrome
 
 Module contents
 ---------------
