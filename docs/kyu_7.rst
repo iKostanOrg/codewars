@@ -25,6 +25,7 @@ Subpackages
    kyu_7.maximum_multiple
    kyu_7.password_validator
    kyu_7.share_prices
+   kyu_7.always_perfect
 
 Module contents
 ---------------
