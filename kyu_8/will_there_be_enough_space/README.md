@@ -24,4 +24,4 @@ If there is enough space, return 0, and if there isn't, return the number of pas
 >
 > 10 # He can't fit 10 out of 50 waiting
 
-(Source)[https://www.codewars.com/kata/5875b200d520904a04000003/train/python]
+[Source](https://www.codewars.com/kata/5875b200d520904a04000003/train/python)
