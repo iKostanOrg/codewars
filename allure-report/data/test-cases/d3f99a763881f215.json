@@ -1,0 +1,281 @@
+{
+  "uid" : "d3f99a763881f215",
+  "name" : "Testing 'has_subpattern' (part 2) function",
+  "fullName" : "kyu_6.string_subpattern_recognition_2.test_has_subpattern.HasSubpatternTestCase#test_has_subpattern",
+  "historyId" : "ebccba1809989898eb718f4c9be6ac5c",
+  "time" : {
+    "start" : 1572462846442,
+    "stop" : 1572462846443,
+    "duration" : 1
+  },
+  "description" : "\n\t\tVerify that 'has_subpattern' function to returns\n        either true/True or false/False if a string can be\n        seen as the repetition of a simpler/shorter subpattern or not.\n\n        1. if a subpattern has been used, it will be repeated\n        at least twice, meaning the subpattern has to be\n        shorter than the original string;\n\n\t\t2. the strings you will be given might or might not\n\t\tbe created repeating a given subpattern, then\n\t\tshuffling the result.\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tVerify that 'has_subpattern' function to returns\n    either true/True or false/False if a string can be\n    seen as the repetition of a simpler/shorter subpattern or not.\n\n    1. if a subpattern has been used, it will be repeated\n    at least twice, meaning the subpattern has to be\n    shorter than the original string;\n\n\t2. the strings you will be given might or might not\n\tbe created repeating a given subpattern, then\n\tshuffling the result.\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1572462846441,
+      "stop" : 1572462846441,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tVerify that 'has_subpattern' function to returns\n        either true/True or false/False if a string can be\n        seen as the repetition of a simpler/shorter subpattern or not.\n\n        1. if a subpattern has been used, it will be repeated\n        at least twice, meaning the subpattern has to be\n        shorter than the original string;\n\n\t\t2. the strings you will be given might or might not\n\t\tbe created repeating a given subpattern, then\n\t\tshuffling the result.\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Pass the string and verify the output",
+      "time" : {
+        "start" : 1572462846442,
+        "stop" : 1572462846442,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "53d07370325771f7",
+      "name" : "stdout",
+      "source" : "53d07370325771f7.txt",
+      "type" : "text/plain",
+      "size" : 1500
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1572462846445,
+      "stop" : 1572462846445,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "suite",
+    "value" : "Advanced Language Features"
+  }, {
+    "name" : "story",
+    "value" : "String subpattern recognition II"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.string_subpattern_recognition_2.test_has_subpattern"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "d38f0db23c6e518c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572459876185,
+        "stop" : 1572459876187,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6d2080e8f3a38d5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572412529496,
+        "stop" : 1572412529498,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8485f59fe9def99c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572410670484,
+        "stop" : 1572410670485,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "841d518f8df09db8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572410581639,
+        "stop" : 1572410581645,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "b3280e1ed3a49634",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572406853436,
+        "stop" : 1572406853438,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b7ca569ae9c1f30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572404498766,
+        "stop" : 1572404498767,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c940b2a4362ae786",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572403393931,
+        "stop" : 1572403393933,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1d679201393b536d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572403329535,
+        "stop" : 1572403329537,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fe40114d5917f3f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572332687714,
+        "stop" : 1572332687716,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ed17022b0d8cae45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572332649819,
+        "stop" : 1572332649822,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "fe5d202d7829a1de",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572328974787,
+        "stop" : 1572328974787,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "67fdaa6e57bb56a2",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572328943873,
+        "stop" : 1572328943873,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "710d021a64373cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572459876185,
+          "stop" : 1572459876187,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "4aeffd51e0a00121",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572412529496,
+          "stop" : 1572412529498,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "f2db57d11224fe36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572410670484,
+          "stop" : 1572410670485,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "60ed1fb3edc01c50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572406853436,
+          "stop" : 1572406853438,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "20155fff5141e47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572404498766,
+          "stop" : 1572404498767,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d3f99a763881f215.json",
+  "parameterValues" : [ ]
+}
