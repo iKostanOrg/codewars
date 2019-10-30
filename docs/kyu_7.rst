@@ -24,6 +24,7 @@ Subpackages
    kyu_7.the_first_non_repeated_character_in_string
    kyu_7.maximum_multiple
    kyu_7.password_validator
+   kyu_7.share_prices
 
 Module contents
 ---------------
