@@ -2,8 +2,10 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from utils.is_prime import is_prime
 
-def has_subpattern(string: str) -> bool:
+
+def has_subpattern(string: str) -> str:
     """
     String subpattern recognition III
 
@@ -19,4 +21,24 @@ def has_subpattern(string: str) -> bool:
     :return:
     """
 
-    pass
+    primes = set()
+    length = len(string)
+    char_dict = dict()
+
+    for char in string:
+
+        if char not in char_dict:
+            char_dict[char] = string.count(char)
+
+            if char_dict[char] == 1:
+                return ''.join(sorted(char for char in string))
+
+            if char_dict[char] in primes or is_prime(char_dict[char]):
+                primes.add(char_dict[char])
+                if length % char_dict[char] != 0:
+                    return ''.join(sorted(char for char in string))
+
+    result = ''.join(sorted(list(set(string))))
+    print(''.join(sorted(char for char in string)))
+    print(result)
+    return result
