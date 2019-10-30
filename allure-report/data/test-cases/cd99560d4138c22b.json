@@ -1,0 +1,327 @@
+{
+  "uid" : "cd99560d4138c22b",
+  "name" : "Testing set_alarm function",
+  "fullName" : "kyu_8.set_alarm.test_set_alarm.SetAlarmTestCase#test_set_alarm",
+  "historyId" : "e3b42ce7d56f4739019f8eb0baf01610",
+  "time" : {
+    "start" : 1572459877500,
+    "stop" : 1572459877500,
+    "duration" : 0
+  },
+  "description" : "\n\t\tTesting set_alarm function with various test inputs.\n\n\t\tThe function should return true if you are employed\n\t\tand not on vacation (because these are the circumstances\n\t\tunder which you need to set an alarm). It should return\n\t\tfalse otherwise.\n\n\t\tExamples:\n\n\t\tsetAlarm(true, true) -> false\n\t\tsetAlarm(false, true) -> false\n\t\tsetAlarm(false, false) -> false\n\t\tsetAlarm(true, false) -> true\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tTesting set_alarm function with various test inputs.\n\n\tThe function should return true if you are employed\n\tand not on vacation (because these are the circumstances\n\tunder which you need to set an alarm). It should return\n\tfalse otherwise.\n\n\tExamples:\n\n\tsetAlarm(true, true) -&gt; false\n\tsetAlarm(false, true) -&gt; false\n\tsetAlarm(false, false) -&gt; false\n\tsetAlarm(true, false) -&gt; true\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1572459877496,
+      "stop" : 1572459877496,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tTesting set_alarm function with various test inputs.\n\n\t\tThe function should return true if you are employed\n\t\tand not on vacation (because these are the circumstances\n\t\tunder which you need to set an alarm). It should return\n\t\tfalse otherwise.\n\n\t\tExamples:\n\n\t\tsetAlarm(true, true) -> false\n\t\tsetAlarm(false, true) -> false\n\t\tsetAlarm(false, false) -> false\n\t\tsetAlarm(true, false) -> true\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data and verify the output",
+      "time" : {
+        "start" : 1572459877500,
+        "stop" : 1572459877500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3e83407a39d1bb2f",
+      "name" : "stdout",
+      "source" : "3e83407a39d1bb2f.txt",
+      "type" : "text/plain",
+      "size" : 231
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1572459877502,
+      "stop" : 1572459877502,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Boolean"
+  }, {
+    "name" : "story",
+    "value" : "L1: Set Alarm"
+  }, {
+    "name" : "suite",
+    "value" : "Data Structures"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "4184-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.set_alarm.test_set_alarm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "a3f387ab15fc4dbd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572412530670,
+        "stop" : 1572412530671,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "67571eb33ea3dcfd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572410671702,
+        "stop" : 1572410671703,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e9c3fa8ee4cae423",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572410582937,
+        "stop" : 1572410582938,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "11f44dda69c4c85f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572406854658,
+        "stop" : 1572406854660,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ec8f545fecb205fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572404499734,
+        "stop" : 1572404499748,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "47351fcdb854a839",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572403395138,
+        "stop" : 1572403395139,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "437eb652e6cb8a44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572403330815,
+        "stop" : 1572403330815,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea51b63148f6d4a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572332688418,
+        "stop" : 1572332688418,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6a80c5f2c3c6a0ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572332651088,
+        "stop" : 1572332651089,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "694fc9089fb139d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572328975853,
+        "stop" : 1572328975854,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed994b18dd90b2b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572328944898,
+        "stop" : 1572328944899,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "78f58949ba80ed6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572322295776,
+        "stop" : 1572322295777,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4b7e0d86ec21db55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572318569426,
+        "stop" : 1572318569427,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6602b975a83de388",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572313547894,
+        "stop" : 1572313547896,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dda639e348e10b6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572311282025,
+        "stop" : 1572311282027,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "93e5797b099431e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572233514734,
+        "stop" : 1572233514735,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "404ae4e2944a1545",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572233475056,
+        "stop" : 1572233475057,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d76a4c93751fb423",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572134836692,
+        "stop" : 1572134836694,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 14,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "b284329f03e46789",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572412530670,
+          "stop" : 1572412530671,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "ffa746cc7751e03b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572410671702,
+          "stop" : 1572410671703,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "62962f8abc8ef123",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572406854658,
+          "stop" : 1572406854660,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "30431207f9b7a3cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572404499734,
+          "stop" : 1572404499748,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "85f29b2add3e169f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572403395138,
+          "stop" : 1572403395139,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cd99560d4138c22b.json",
+  "parameterValues" : [ ]
+}
