@@ -26,6 +26,7 @@ Subpackages
    kyu_7.password_validator
    kyu_7.share_prices
    kyu_7.always_perfect
+   kyu_7.formatting_decimal_places_1
 
 Module contents
 ---------------
