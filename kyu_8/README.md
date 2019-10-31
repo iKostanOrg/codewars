@@ -38,7 +38,7 @@ Honor represents the level of respect a user has earned from the community, base
 |24   |[Well of Ideas - Easy Version](https://www.codewars.com/kata/57f222ce69e09c3630000212/train/python)|[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/well_of_ideas_easy_version)|
 |25   |[Will there be enough space](https://www.codewars.com/kata/5875b200d520904a04000003/train/python)|[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/will_there_be_enough_space)|
 |26   |[A wolf in sheep's clothing](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python)|[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/wolf_in_sheep_clothing)|
-|27   |[N/A]()|[Solution]()|
+|27   |[Formatting decimal places #0](https://www.codewars.com/kata/5641a03210e973055a00000d/train/python)|[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/formatting_decimal_places_0)|
 
 
 [Source](https://www.codewars.com/about)
