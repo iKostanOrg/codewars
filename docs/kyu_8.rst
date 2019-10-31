@@ -32,6 +32,7 @@ Subpackages
    kyu_8.grasshopper_check_for_factor
    kyu_8.check_the_exam
    kyu_8.is_it_a_palindrome
+   kyu_8.formatting_decimal_places_0
 
 Module contents
 ---------------
