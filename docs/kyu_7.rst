@@ -29,6 +29,7 @@ Subpackages
    kyu_7.formatting_decimal_places_1
    kyu_7.substituting_variables_into_strings_padded_numbers
    kyu_7.pull_your_words_together_man
+   kyu_7.factorial
 
 Module contents
 ---------------
