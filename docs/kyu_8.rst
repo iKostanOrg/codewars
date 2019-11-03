@@ -33,6 +33,7 @@ Subpackages
    kyu_8.check_the_exam
    kyu_8.is_it_a_palindrome
    kyu_8.formatting_decimal_places_0
+   kyu_8.convert_string_to_an_array
 
 Module contents
 ---------------
