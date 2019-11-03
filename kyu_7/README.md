@@ -11,7 +11,7 @@ Honor represents the level of respect a user has earned from the community, base
 ### List of Completed Kata (Python 3):
 
 | No. | Puzzle/Kata Name                                                                                                         | Solution / GitHub Link                                                                                             |
-|-----|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+|-----|:------------------------------------------------------------------------------------------------------------------------:|-------------------------------------------------------------------------------------------------------------------:|
 |1    |[Always perfect](https://www.codewars.com/kata/55f3facb78a9fd5b26000036/train/python)                                     |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/always_perfect)                                    |
 |2    |[Beginner Series #3 Sum of Numbers](https://www.codewars.com/kata/55f2b110f61eb01779000053/train/python)                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/beginner_series_sum_of_numbers)                    |
 |3    |[Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python)                                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/disemvowel_trolls)                                 |

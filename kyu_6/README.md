@@ -10,7 +10,7 @@ You can advance through the ranks by completing kata at or above your rank - the
 ### List of Completed Kata (Python 3):
 
 | No. | Puzzle/Kata Name                                                                                                   | Solution / GitHub Link                                                                          |
-|-----|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+|-----|:------------------------------------------------------------------------------------------------------------------:|------------------------------------------------------------------------------------------------:|
 |1    |[Character frequency](https://www.codewars.com/kata/53e895e28f9e66a56900011a/train/python)                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/character_frequency)            |
 |2    |[Count letters in string](https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/count_letters_in_string)        |
 |3    |[Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/python)                            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/duplicate_encoder)              |
