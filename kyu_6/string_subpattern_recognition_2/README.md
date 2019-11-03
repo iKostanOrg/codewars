@@ -5,7 +5,6 @@ You will need to return a boolean value if the base string can be expressed as t
 This time there are two small changes:
 
 * if a subpattern has been used, it will be repeated at least twice, meaning the subpattern has to be shorter than the original string;
-
 * the strings you will be given might or might not be created repeating a given subpattern, then shuffling the result.
 
 **For example:**
