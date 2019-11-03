@@ -18,11 +18,11 @@ Your task is to determine how many files of the copy queue you will be able to s
 
 > save([4,4,4,3,3], 12) -> 3
 >
-> # 4+4+4 <= 12, but 4+4+4+3 > 12
+> 4+4+4 <= 12, but 4+4+4+3 > 12
 
 > save([4,4,4,3,3], 11) -> 2
 >
-> # 4+4 <= 11, but 4+4+4 > 11
+> 4+4 <= 11, but 4+4+4 > 11
 
 Do not expect any negative or invalid inputs.
 
