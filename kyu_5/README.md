@@ -16,6 +16,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 
 | No. | Puzzle/Kata Name                                                                                                   | Solution / GitHub Link                                                                          |
 |-----|:------------------------------------------------------------------------------------------------------------------:|------------------------------------------------------------------------------------------------:|
-|1    |[]()                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/)            |
+|1    |[Fibonacci Streaming](https://www.codewars.com/kata/55695bc4f75bbaea5100016b/train/python)                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/fibonacci_streaming)            |
 
 [Source](https://www.codewars.com/about)
