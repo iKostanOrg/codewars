@@ -30,6 +30,7 @@ Subpackages
    kyu_7.substituting_variables_into_strings_padded_numbers
    kyu_7.pull_your_words_together_man
    kyu_7.factorial
+   kyu_7.find_the_longest_gap
 
 Module contents
 ---------------
