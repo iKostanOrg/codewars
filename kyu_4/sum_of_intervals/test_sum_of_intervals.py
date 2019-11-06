@@ -11,7 +11,7 @@ from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
 
 
 @allure.epic('4 kyu')
-@allure.parent_suite('Novice')
+@allure.parent_suite('Competent')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Aggregations")
