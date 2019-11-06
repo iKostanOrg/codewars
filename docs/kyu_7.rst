@@ -23,6 +23,7 @@ Subpackages
    kyu_7.fill_the_hard_disk_drive
    kyu_7.the_first_non_repeated_character_in_string
    kyu_7.maximum_multiple
+   kyu_7.make_class
    kyu_7.password_validator
    kyu_7.share_prices
    kyu_7.always_perfect
