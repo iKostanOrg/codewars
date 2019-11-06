@@ -36,7 +36,6 @@ Honor represents the level of respect a user has earned from the community, base
 |22   |[The First Non Repeated Character In A String](https://www.codewars.com/kata/570f6436b29c708a32000826/train/python)       |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/the_first_non_repeated_character_in_string)        |
 |23   |[V A P O R C O D E](https://www.codewars.com/kata/5966eeb31b229e44eb00007a/train/python)                                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/vaporcode)                                         |
 |24   |[You're a square](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/python)                                    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/you_are_square)                                    |
-
-
+|25   |[Find the longest gap!](https://www.codewars.com/kata/55b86beb1417eab500000051/train/python)                              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/find_the_longest_gap)                              |
 
 [Source](https://www.codewars.com/about)
