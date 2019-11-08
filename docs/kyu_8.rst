@@ -34,6 +34,7 @@ Subpackages
    kyu_8.is_it_a_palindrome
    kyu_8.formatting_decimal_places_0
    kyu_8.convert_string_to_an_array
+   kyu_8.the_feast_of_many_beasts
 
 Module contents
 ---------------
