@@ -48,6 +48,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |26   |[A wolf in sheep's clothing](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/wolf_in_sheep_clothing)               |
 |27   |[Formatting decimal places #0](https://www.codewars.com/kata/5641a03210e973055a00000d/train/python)             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/formatting_decimal_places_0)          |
 |28   |[Convert a string to an array](https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/python)             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/convert_string_to_an_array)           |
-
+|29   |[The Feast of Many Beasts](https://www.codewars.com/kata/5aa736a455f906981800360d/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/the_feast_of_many_beasts)             |
 
 [Source](https://www.codewars.com/about)
