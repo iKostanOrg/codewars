@@ -6,6 +6,7 @@
 
 import allure
 import unittest
+import pytest
 from utils.log_func import print_log
 from kyu_5.count_ip_addresses.ips_between import ips_between
 
