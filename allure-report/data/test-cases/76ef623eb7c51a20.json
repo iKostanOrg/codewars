@@ -1,0 +1,271 @@
+{
+  "uid" : "76ef623eb7c51a20",
+  "name" : "Testing sum_of_intervals function",
+  "fullName" : "kyu_4.sum_of_intervals.test_sum_of_intervals.SumOfIntervalsTestCase#test_sum_of_intervals",
+  "historyId" : "f33ef5393ae0b8067a498b7663b7a090",
+  "time" : {
+    "start" : 1574018662974,
+    "stop" : 1574018662979,
+    "duration" : 5
+  },
+  "description" : "\n\t\tTesting sum_of_intervals function\n\n\t\tThe function should accept an array of intervals,\n\t\tand return the sum of all the interval lengths.\n\n\t\tOverlapping intervals should only be counted once.\n\n\t\tIntervals\n\t\tIntervals are represented by a pair of integers in\n\t\tthe form of an array. The first value of the interval\n\t\twill always be less than the second value.\n\t\tInterval example: [1, 5] is an interval from 1 to 5.\n\t\tThe length of this interval is 4.\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tTesting sum_of_intervals function\n\n\tThe function should accept an array of intervals,\n\tand return the sum of all the interval lengths.\n\n\tOverlapping intervals should only be counted once.\n\n\tIntervals\n\tIntervals are represented by a pair of integers in\n\tthe form of an array. The first value of the interval\n\twill always be less than the second value.\n\tInterval example: [1, 5] is an interval from 1 to 5.\n\tThe length of this interval is 4.\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1574018662973,
+      "stop" : 1574018662973,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tTesting sum_of_intervals function\n\n\t\tThe function should accept an array of intervals,\n\t\tand return the sum of all the interval lengths.\n\n\t\tOverlapping intervals should only be counted once.\n\n\t\tIntervals\n\t\tIntervals are represented by a pair of integers in\n\t\tthe form of an array. The first value of the interval\n\t\twill always be less than the second value.\n\t\tInterval example: [1, 5] is an interval from 1 to 5.\n\t\tThe length of this interval is 4.\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a list of intervals and calculate the result",
+      "time" : {
+        "start" : 1574018662975,
+        "stop" : 1574018662978,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "963524d4da5ae187",
+      "name" : "stdout",
+      "source" : "963524d4da5ae187.txt",
+      "type" : "text/plain",
+      "size" : 1249
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1574018662982,
+      "stop" : 1574018662982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "feature",
+    "value" : "Aggregations"
+  }, {
+    "name" : "epic",
+    "value" : "4 kyu"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "story",
+    "value" : "Sum of Intervals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "5496-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_4.sum_of_intervals.test_sum_of_intervals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "bcf61ab20b8f1b70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574012904984,
+        "stop" : 1574012904986,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fa11eb4d960eb7f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573966632451,
+        "stop" : 1573966632454,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c1f8d51481902444",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573956296231,
+        "stop" : 1573956296234,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c882ae7ada828780",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573517399255,
+        "stop" : 1573517399259,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "89e7086e3a1bb7fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573517319027,
+        "stop" : 1573517319029,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fa733efcada60a15",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573514549197,
+        "stop" : 1573514549201,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "df07333e58d85dca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573189084343,
+        "stop" : 1573189084346,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "cec559021bcae20e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573180172388,
+        "stop" : 1573180172389,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed77008be89fa27a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573079195158,
+        "stop" : 1573079195161,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7bf221ff87c56690",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573078941769,
+        "stop" : 1573078941773,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "a01801d7a1538e4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573078482834,
+        "stop" : 1573078482835,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "84e3f081844b0e72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573966632451,
+          "stop" : 1573966632454,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "365c70eefc3796ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573956296231,
+          "stop" : 1573956296234,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "34698a61f0f3665e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573517399255,
+          "stop" : 1573517399259,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "17911d136d13e3ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573514549197,
+          "stop" : 1573514549201,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "44ea73c0e26bef81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573189084343,
+          "stop" : 1573189084346,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "76ef623eb7c51a20.json",
+  "parameterValues" : [ ]
+}

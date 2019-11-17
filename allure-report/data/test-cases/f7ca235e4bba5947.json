@@ -1,0 +1,457 @@
+{
+  "uid" : "f7ca235e4bba5947",
+  "name" : "Testing 'has_subpattern' (part 2) function",
+  "fullName" : "kyu_6.string_subpattern_recognition_2.test_has_subpattern.HasSubpatternTestCase#test_has_subpattern",
+  "historyId" : "ebccba1809989898eb718f4c9be6ac5c",
+  "time" : {
+    "start" : 1574018663389,
+    "stop" : 1574018663390,
+    "duration" : 1
+  },
+  "description" : "\n\t\tVerify that 'has_subpattern' function to returns\n        either true/True or false/False if a string can be\n        seen as the repetition of a simpler/shorter subpattern or not.\n\n        1. if a subpattern has been used, it will be repeated\n        at least twice, meaning the subpattern has to be\n        shorter than the original string;\n\n\t\t2. the strings you will be given might or might not\n\t\tbe created repeating a given subpattern, then\n\t\tshuffling the result.\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tVerify that 'has_subpattern' function to returns\n    either true/True or false/False if a string can be\n    seen as the repetition of a simpler/shorter subpattern or not.\n\n    1. if a subpattern has been used, it will be repeated\n    at least twice, meaning the subpattern has to be\n    shorter than the original string;\n\n\t2. the strings you will be given might or might not\n\tbe created repeating a given subpattern, then\n\tshuffling the result.\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1574018663388,
+      "stop" : 1574018663388,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tVerify that 'has_subpattern' function to returns\n        either true/True or false/False if a string can be\n        seen as the repetition of a simpler/shorter subpattern or not.\n\n        1. if a subpattern has been used, it will be repeated\n        at least twice, meaning the subpattern has to be\n        shorter than the original string;\n\n\t\t2. the strings you will be given might or might not\n\t\tbe created repeating a given subpattern, then\n\t\tshuffling the result.\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Pass the string and verify the output",
+      "time" : {
+        "start" : 1574018663389,
+        "stop" : 1574018663390,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "1de2f996ca5871",
+      "name" : "stdout",
+      "source" : "1de2f996ca5871.txt",
+      "type" : "text/plain",
+      "size" : 1500
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1574018663393,
+      "stop" : 1574018663393,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "story",
+    "value" : "String subpattern recognition II"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "suite",
+    "value" : "Advanced Language Features"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "5496-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.string_subpattern_recognition_2.test_has_subpattern"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "e44666ac1d537cd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574012905462,
+        "stop" : 1574012905464,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c4d4d94239105474",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573966632878,
+        "stop" : 1573966632880,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c28e93dd22c97e99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573956296686,
+        "stop" : 1573956296689,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "be4b59accfcb29ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573517399654,
+        "stop" : 1573517399656,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a651aa7a0a9fd657",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573517319279,
+        "stop" : 1573517319280,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "58136331642852c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573514549609,
+        "stop" : 1573514549611,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "33015d6b96d5e4a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573189084844,
+        "stop" : 1573189084846,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "281ddb62302ba2f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573180172643,
+        "stop" : 1573180172644,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "31a98ca712036e8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573079195628,
+        "stop" : 1573079195631,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6397cc98cafbd227",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573078942107,
+        "stop" : 1573078942109,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "708e2fd857b13d81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573078483207,
+        "stop" : 1573078483208,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "488a60dfe018f2e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573073328659,
+        "stop" : 1573073328660,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "898f2118713c8544",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573071121023,
+        "stop" : 1573071121024,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "192487c0ac8e67d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572811009567,
+        "stop" : 1572811009569,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1ce5f170f8560f03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572724429951,
+        "stop" : 1572724429954,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9207909478aa1061",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572577218186,
+        "stop" : 1572577218189,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a97eaddbbabfb62b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572577071987,
+        "stop" : 1572577071988,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "55aa77ec2e15fa76",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572577032238,
+        "stop" : 1572577032240,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "697ae971bb5b4c93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572574524002,
+        "stop" : 1572574524003,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "10b036706c1d5835",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572494544248,
+        "stop" : 1572494544250,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ead1c31587f2a944",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572493348954,
+        "stop" : 1572493348958,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "6184eccaecf240c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572462846442,
+        "stop" : 1572462846443,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fef721b209b2c23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572459876185,
+        "stop" : 1572459876187,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4b42765c4c796be7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572412529496,
+        "stop" : 1572412529498,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "561783184557a655",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572410670484,
+        "stop" : 1572410670485,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9afa7e9c99034abe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572410581639,
+        "stop" : 1572410581645,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "557bccb3f571db0e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572406853436,
+        "stop" : 1572406853438,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "10ba439af98d8889",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572404498766,
+        "stop" : 1572404498767,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a579db949e55c7c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572403393931,
+        "stop" : 1572403393933,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9754e0b540fa6869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572403329535,
+        "stop" : 1572403329537,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6c7deb92d7b0e541",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572332687714,
+        "stop" : 1572332687716,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ef4914508f8a7767",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572332649819,
+        "stop" : 1572332649822,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4a2cc2db921d399e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572328974787,
+        "stop" : 1572328974787,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a87cabf9373f8453",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572328943873,
+        "stop" : 1572328943873,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 23,
+        "unknown" : 0,
+        "total" : 24
+      },
+      "items" : [ {
+        "uid" : "a23c1ee1961e9018",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573966632878,
+          "stop" : 1573966632880,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "70c3244267f85acc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573956296686,
+          "stop" : 1573956296689,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "4a2fb564dbc5b803",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573517399654,
+          "stop" : 1573517399656,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "92fa82f4d6d7ea8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573514549609,
+          "stop" : 1573514549611,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "d702c0bd3eb1952a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1573189084844,
+          "stop" : 1573189084846,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f7ca235e4bba5947.json",
+  "parameterValues" : [ ]
+}
