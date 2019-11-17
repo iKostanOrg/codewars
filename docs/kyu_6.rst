@@ -21,6 +21,7 @@ Subpackages
    kyu_6.duplicate_encoder
    kyu_6.vasya_clerk.rst
    kyu_6.string_transformer
+   kyu_6.multiples_of_3_or_5
 
 Module contents
 ---------------
