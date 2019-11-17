@@ -31,5 +31,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |13   |[String transformer](https://www.codewars.com/kata/5878520d52628a092f0002d0/train/python)                           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/string_transformer)             |
 |14   |[Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/python)                              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/unique_in_order)                |
 |15   |[Vasya - Clerk](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/python)                                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/vasya_clerk)                    |
+|16   |[Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006/train/python)                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/multiples_of_3_or_5)            |
 
 [Source](https://www.codewars.com/about)
