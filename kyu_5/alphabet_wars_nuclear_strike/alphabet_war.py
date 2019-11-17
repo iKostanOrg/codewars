@@ -10,10 +10,9 @@ def alphabet_war(battlefield: str) -> str:
     :param battlefield:
     :return:
     """
-	result = ''
 
 	if '#' not in battlefield:
-		return ''.join(char for char in battlefield if char.isalpha() )
+		return ''.join(char for char in battlefield if char.isalpha())
 	else:
 		result = clean_unsheltered(battlefield)
 		result = clean_battlefield(result)
@@ -29,15 +28,19 @@ def clean_unsheltered(battlefield: str) -> str:
 	"""
 
 	result = ''
-	for i, char in enumerate(battlefield):
+	temp = battlefield.split('[')
 
-		if not char.isalpha():
+	for char in temp:
+		if char.count(']') == 0:
+			c = ''.join(k for k in char if not k.isalpha())
+			result += c
+		elif len(char) == char.count('#'):
 			result += char
+		else:
+			sharp = char.count('#')
+			char = char[0:char.index(']') + 1]
+			result += '[' + char + ('#' * sharp)
 
-		if char.isalpha() and i != 0 and battlefield[i - 1] == '[' and battlefield[i + 1] == ']':
-			result += char
-
-	print('{} : {}'.format(battlefield, result))
 	return result
 
 
@@ -47,12 +50,33 @@ def clean_battlefield(battlefield: str) -> str:
 	:param battlefield:
 	:return:
 	"""
-	return
+	result = battlefield.split('[')
+	result = [string for string in result if string != '']
+	result = list(reversed(result))
+	temp = list()
 
+	while result:
+		for i, r in enumerate(result):
+			if r.count('#') <= 1:
+				if i + 1 < len(result):
+					if r.count('#') == 0 and result[i + 1].count('#') < 2:
+						temp.append(''.join(char for char in r if char .isalpha()))
+						del result[i]
+						break
+					elif r.count('#') == 1 and result[i + 1].count('#') == 0:
+						temp.append(''.join(char for char in r if char .isalpha()))
+						del result[i]
+						break
+					else:
+						del result[i]
+						break
+				else:
+					temp.append(''.join(char for char in r if char .isalpha()))
+					del result[i]
+					break
+			else:
+				del result[i]
+				break
 
-def contains_alpha(string: str) -> bool:
-
-	for char in string:
-		if char.isalpha():
-			return True
-	return False
+	answer = ''.join(char for char in reversed(temp))
+	return answer

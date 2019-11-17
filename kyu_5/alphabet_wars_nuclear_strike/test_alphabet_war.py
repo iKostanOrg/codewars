@@ -6,7 +6,6 @@
 
 import allure
 import unittest
-import pytest
 from utils.log_func import print_log
 from kyu_5.alphabet_wars_nuclear_strike.alphabet_war import alphabet_war
 
@@ -17,7 +16,6 @@ from kyu_5.alphabet_wars_nuclear_strike.alphabet_war import alphabet_war
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Alphabet wars - nuclear strike')
-@pytest.mark.skip(reason="The solution is not ready")
 class AlphabetWarTestCase(unittest.TestCase):
 	"""
 	Testing alphabet_war function
@@ -55,27 +53,32 @@ class AlphabetWarTestCase(unittest.TestCase):
 		:return:
 		"""
 
-		data = [
-			#('[a]#[b]#[c]', 'ac'),
-			#('[a]#b#[c][d]', 'd'),
-			#('[a][b][c]', 'abc'),
-			('##a[a]b[c]#', 'c'),
-			('abde[fgh]ijk', 'abdefghijk'),
-			('ab#de[fgh]ijk', 'fgh'),
-			('ab#de[fgh]ij#k', ''),
-			('##abde[fgh]ijk', ''),
-			('##abde[fgh]', ''),
-			('##abcde[fgh]', ''),
-			('abcde[fgh]', 'abcdefgh'),
-			('##abde[fgh]ijk[mn]op', 'mn'),
-			('#abde[fgh]i#jk[mn]op', 'mn'),
-			('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk'),
-		]
+		allure.dynamic.title("Testing alphabet_war function")
+		allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		for battlefield, expected in data:
+		with allure.step("Enter test string and verify the output"):
 
-			print_log(battlefield=battlefield,
-			          expected=expected)
+			data = [
+				('[a]#[b]#[c]', 'ac'),
+				('[a]#b#[c][d]', 'd'),
+				('[a][b][c]', 'abc'),
+				('##a[a]b[c]#', 'c'),
+				('abde[fgh]ijk', 'abdefghijk'),
+				('ab#de[fgh]ijk', 'fgh'),
+				('ab#de[fgh]ij#k', ''),
+				('##abde[fgh]ijk', ''),
+				('##abde[fgh]', ''),
+				('##abcde[fgh]', ''),
+				('abcde[fgh]', 'abcdefgh'),
+				('##abde[fgh]ijk[mn]op', 'mn'),
+				('#abde[fgh]i#jk[mn]op', 'mn'),
+				('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk'),
+			]
 
-			self.assertEqual(expected,
-			                 alphabet_war(battlefield))
+			for battlefield, expected in data:
+
+				print_log(battlefield=battlefield,
+				          expected=expected)
+
+				self.assertEqual(expected,
+				                 alphabet_war(battlefield))
