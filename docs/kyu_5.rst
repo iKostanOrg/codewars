@@ -11,6 +11,7 @@ Subpackages
    kyu_5.not_very_secure
    kyu_5.simple_pig_latin
    kyu_5.human_readable_time
+   kyu_5.alphabet_wars_nuclear_strike
 
 Module contents
 ---------------
