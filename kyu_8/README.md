@@ -50,5 +50,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |28   |[Convert a string to an array](https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/python)             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/convert_string_to_an_array)           |
 |29   |[The Feast of Many Beasts](https://www.codewars.com/kata/5aa736a455f906981800360d/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/the_feast_of_many_beasts)             |
 |30   |[Count the Monkeys!](https://www.codewars.com/kata/count-the-monkeys/train/python)                              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/count_the_monkeys)                    |
+|31   |[Keep up the hoop](https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/python)                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/keep_up_the_hoop)                     |
 
 [Source](https://www.codewars.com/about)
