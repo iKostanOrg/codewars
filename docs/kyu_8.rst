@@ -36,6 +36,7 @@ Subpackages
    kyu_8.convert_string_to_an_array
    kyu_8.the_feast_of_many_beasts
    kyu_8.count_the_monkeys
+   kyu_8.keep_up_the_hoop
 
 Module contents
 ---------------
