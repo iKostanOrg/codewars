@@ -367,7 +367,11 @@ pip install sphinx_rtd_theme
 
 3. Run: make clean
 
-4. Run: make html
+4. Run: sphinx-apidoc -o . ..
+
+5. Add doc files name into relevant doc rst file
+
+6. Run: make html
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 </details>
