@@ -11,7 +11,7 @@ from kyu_6.string_transformer.string_transformer import string_transformer
 
 
 @allure.epic('6 kyu')
-@allure.parent_suite('Beginner')
+@allure.parent_suite('Novice')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
