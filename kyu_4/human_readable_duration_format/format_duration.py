@@ -79,7 +79,13 @@ def format_duration(seconds: int) -> str:
     return result
 
 
-def get_string(number, string: str) -> str:
+def get_string(number: int, string: str) -> str:
+    """
+    Concatenate string result
+    :param number:
+    :param string:
+    :return:
+    """
 
     if number > 0:
         if number == 1:
