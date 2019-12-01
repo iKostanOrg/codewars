@@ -22,6 +22,7 @@ Subpackages
    kyu_6.vasya_clerk.rst
    kyu_6.string_transformer
    kyu_6.multiples_of_3_or_5
+   kyu_6.sum_of_digits_digital_root
 
 Module contents
 ---------------
