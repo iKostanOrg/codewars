@@ -17,5 +17,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 | No. | Puzzle/Kata Name                                                                                                   | Solution / GitHub Link                                                                          |
 |-----|:------------------------------------------------------------------------------------------------------------------:|------------------------------------------------------------------------------------------------:|
 |1    |[Sum of Intervals](https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/python)                             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sum_of_intervals)               |
+|2    |[Human readable duration format](https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/human_readable_duration_format) |
 
 [Source](https://www.codewars.com/about)
