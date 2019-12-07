@@ -12,6 +12,7 @@ Subpackages
    kyu_5.simple_pig_latin
    kyu_5.human_readable_time
    kyu_5.alphabet_wars_nuclear_strike
+   kyu_5.valid_parentheses
 
 Module contents
 ---------------
