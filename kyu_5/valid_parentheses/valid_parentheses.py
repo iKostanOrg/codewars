@@ -49,5 +49,9 @@ def valid_parentheses(string: str) -> bool:
 
 
 def clean_up_string(string: str) -> str:
-
+	"""
+	Cleaning up string from invalid chars
+	:param string:
+	:return:
+	"""
 	return ''.join(s for s in string if s == '(' or s == ')')
