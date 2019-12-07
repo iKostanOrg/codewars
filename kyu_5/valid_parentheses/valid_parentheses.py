@@ -18,9 +18,6 @@ def valid_parentheses(string: str) -> bool:
 	if string == "" or not string:
 		return True
 
-	if string[0] != '(':
-		return False
-
 	if len(string) % 2 != 0:
 		return False
 
