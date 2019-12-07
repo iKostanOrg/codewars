@@ -21,5 +21,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |3    |[Simple Pig Latin](https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python)                             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/simple_pig_latin)               |
 |4    |[Human Readable Time](https://www.codewars.com/kata/52685f7382004e774f0001f7/train/python)                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/human_readable_time)            |
 |5    |[Alphabet wars - nuclear strike](https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python)           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/alphabet_wars_nuclear_strike)   |
+|6    |[Valid Parentheses](https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python)                            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/valid_parentheses)              |
 
 [Source](https://www.codewars.com/about)
