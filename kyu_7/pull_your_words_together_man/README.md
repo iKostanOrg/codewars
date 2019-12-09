@@ -19,10 +19,10 @@ Robbie has pulled multiple all-nighters to get this project finished, and he nee
 
 Here are a few examples of what your function should do:
 
-> ["i", "am", "an", "AI"]  =>  "I am an AI."
->
-> ["FIELDS","of","CORN","are","to","be","sown"]  =>  "FIELDS of CORN are to be sown."
->
-> ["i'm","afraid","I","can't","let","you","do","that"]  =>  "I'm afraid I can't let you do that."
+```bash
+["i", "am", "an", "AI"]  =>  "I am an AI."
+["FIELDS","of","CORN","are","to","be","sown"]  =>  "FIELDS of CORN are to be sown."
+["i'm","afraid","I","can't","let","you","do","that"]  =>  "I'm afraid I can't let you do that."
+```
 
 [Source](https://www.codewars.com/kata/59ad7d2e07157af687000070/train/python)
