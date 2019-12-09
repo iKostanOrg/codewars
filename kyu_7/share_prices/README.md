@@ -4,7 +4,7 @@ You spent all your saved money to buy some shares.
 
 You bought it for `invested`, and want to know how much it's worth, but all the info you can quickly get are just the change the shares price made in percentages.
 
-**Your task:**
+### Your task
 
 Write the function `sharePrice()` that calculates, and returns the current price of your share, given the following two arguments:
 
