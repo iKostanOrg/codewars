@@ -2,8 +2,6 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-from kyu_7.fun_with_lists_length.node import Node
-
 
 def length(head) -> int:
     """
