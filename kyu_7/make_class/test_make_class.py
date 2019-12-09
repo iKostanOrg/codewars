@@ -7,7 +7,6 @@
 import unittest
 import allure
 import pytest
-from utils.log_func import print_log
 from kyu_7.make_class.animal import Animal
 from kyu_7.make_class.make_class import make_class
 
