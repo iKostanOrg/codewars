@@ -12,7 +12,6 @@ def number_of_sigfigs(number: str) -> int:
     """
 
     number = normalize_string(number)
-    
     if number == '0':
         return 0
     if number == '0.0':
