@@ -8,6 +8,7 @@ Subpackages
 
    kyu_4.sum_of_intervals
    kyu_4.human_readable_duration_format
+   kyu_4.sudoku_solution_validator
 
 Module contents
 ---------------
