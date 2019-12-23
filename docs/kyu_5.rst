@@ -15,6 +15,7 @@ Subpackages
    kyu_5.valid_parentheses
    kyu_5.moving_zeros_to_the_end
    kyu_5.directions_reduction
+   kyu_5.where_my_anagrams_at
 
 Module contents
 ---------------
