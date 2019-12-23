@@ -14,6 +14,7 @@ Subpackages
    kyu_5.alphabet_wars_nuclear_strike
    kyu_5.valid_parentheses
    kyu_5.moving_zeros_to_the_end
+   kyu_5.directions_reduction
 
 Module contents
 ---------------
