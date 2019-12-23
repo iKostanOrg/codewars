@@ -13,6 +13,7 @@ Subpackages
    kyu_5.human_readable_time
    kyu_5.alphabet_wars_nuclear_strike
    kyu_5.valid_parentheses
+   kyu_5.moving_zeros_to_the_end
 
 Module contents
 ---------------
