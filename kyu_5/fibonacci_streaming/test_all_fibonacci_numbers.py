@@ -40,7 +40,7 @@ class AllFibonacciNumbersTestCase(unittest.TestCase):
 
 		allure.dynamic.title("Testing all_fibonacci_numbers"
 		                     " function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+		allure.dynamic.severity(allure.severity_level.NORMAL)
 
 		with allure.step("Run all_fibonacci_numbers function"
 		                 " and verify the result"):

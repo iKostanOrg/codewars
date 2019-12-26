@@ -26,5 +26,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |8    |[Directions Reduction](https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python)                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/directions_reduction)                      |
 |9    |[Where my anagrams at?](https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/where_my_anagrams_at)                      |
 |10   |[Master your primes: sieve with memoization](https://www.codewars.com/kata/58603c898989d15e9e000475/train/python)   |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/master_your_primes_sieve_with_memoization) |
+|11   |[Number of trailing zeros of N!](https://www.codewars.com/kata/52f787eb172a8b4ae1000a34/train/python)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/number_of_trailing_zeros_of_n)             |
 
 [Source](https://www.codewars.com/about)
