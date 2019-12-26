@@ -38,7 +38,7 @@ class MakeReadableTestCase(unittest.TestCase):
 		"""
 
 		allure.dynamic.title("Testing make_readable function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+		allure.dynamic.severity(allure.severity_level.NORMAL)
 
 		with allure.step("Enter test number and verify the output"):
 
