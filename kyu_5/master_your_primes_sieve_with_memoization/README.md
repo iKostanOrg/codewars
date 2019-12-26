@@ -16,6 +16,8 @@ You will be given a preset array/list with the first few primes. And you must wr
 
 ### Memoization
 
-Storing precomputed results for later re-use is a very popular programming technique that you would better master soon and that is called memoization; while you have your wiki open, you might also wish to get some info about the sieve of Eratosthenes (one of the few good things I learnt as extra-curricular activity in middle grade) and, to be even more efficient, you might wish to consider an interesting reading on searching from prime from a friend of mine [she thought about an explanation all on her own after an evening event in which I discussed primality tests with my guys].
+Storing precomputed results for later re-use is a very popular programming technique that you would better master soon and that is called memoization; while you have your wiki open, you might also wish to get some info about the sieve of Eratosthenes (one of the few good things I learnt as extra-curricular activity in middle grade) and, to be even more efficient, you might wish to consider an interesting reading on searching from prime from a friend of mine (she thought about an explanation all on her own after an evening event in which I discussed primality tests with my guys).
 
 Yes, you will be checked even on that part. And you better be very efficient in your code if you hope to pass all the tests ;)
+
+[Source](https://www.codewars.com/kata/58603c898989d15e9e000475)
