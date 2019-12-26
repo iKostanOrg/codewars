@@ -1,0 +1,287 @@
+{
+  "uid" : "685548115efd9dd7",
+  "name" : "Testing growing_plant function",
+  "fullName" : "kyu_7.growing_plant.test_growing_plant.GrowingPlantTestCase#test_growing_plant",
+  "historyId" : "fcd618577998a86f372b0608156ae679",
+  "time" : {
+    "start" : 1577327509628,
+    "stop" : 1577327509629,
+    "duration" : 1
+  },
+  "description" : "\n\t\tTesting growing_plant function\n\n\t\tTask\n\n\t\tEach day a plant is growing by upSpeed meters.\n\t\tEach night that plant's height decreases by downSpeed\n\t\tmeters due to the lack of sun heat. Initially, plant\n\t\tis 0 meters tall. We plant the seed at the beginning\n\t\tof a day. We want to know when the height of the plant\n\t\twill reach a certain level.\n\n\t\tExample\n\n\t\tFor upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n\t\tthe output should be 10.\n\n\t\tFor upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n\t\tthe output should be 1. Because the plant reach to the desired\n\t\theight at day 1(10 meters).\n\n\t\tInput/Output\n\n\t\t[input] integer upSpeed\n\t\tA positive integer representing the daily growth.\n\t\tConstraints: 5 ≤ upSpeed ≤ 100.\n\n\t\t[input] integer downSpeed\n\t\tA positive integer representing the nightly decline.\n\t\tConstraints: 2 ≤ downSpeed < upSpeed.\n\n\t\t[input] integer desiredHeight\n\t\tA positive integer representing the threshold.\n\t\tConstraints: 4 ≤ desiredHeight ≤ 1000.\n\n\t\t[output] an integer\n\n\t\tThe number of days that it will take for the plant to\n\t\treach/pass desiredHeight (including the last day in the\n\t\ttotal count).\n\t\t",
+  "descriptionHtml" : "<pre><code>\tTesting growing_plant function\n\n\tTask\n\n\tEach day a plant is growing by upSpeed meters.\n\tEach night that plant's height decreases by downSpeed\n\tmeters due to the lack of sun heat. Initially, plant\n\tis 0 meters tall. We plant the seed at the beginning\n\tof a day. We want to know when the height of the plant\n\twill reach a certain level.\n\n\tExample\n\n\tFor upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n\tthe output should be 10.\n\n\tFor upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n\tthe output should be 1. Because the plant reach to the desired\n\theight at day 1(10 meters).\n\n\tInput/Output\n\n\t[input] integer upSpeed\n\tA positive integer representing the daily growth.\n\tConstraints: 5 ≤ upSpeed ≤ 100.\n\n\t[input] integer downSpeed\n\tA positive integer representing the nightly decline.\n\tConstraints: 2 ≤ downSpeed &lt; upSpeed.\n\n\t[input] integer desiredHeight\n\tA positive integer representing the threshold.\n\tConstraints: 4 ≤ desiredHeight ≤ 1000.\n\n\t[output] an integer\n\n\tThe number of days that it will take for the plant to\n\treach/pass desiredHeight (including the last day in the\n\ttotal count).\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1577327509627,
+      "stop" : 1577327509627,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tTesting growing_plant function\n\n\t\tTask\n\n\t\tEach day a plant is growing by upSpeed meters.\n\t\tEach night that plant's height decreases by downSpeed\n\t\tmeters due to the lack of sun heat. Initially, plant\n\t\tis 0 meters tall. We plant the seed at the beginning\n\t\tof a day. We want to know when the height of the plant\n\t\twill reach a certain level.\n\n\t\tExample\n\n\t\tFor upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n\t\tthe output should be 10.\n\n\t\tFor upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n\t\tthe output should be 1. Because the plant reach to the desired\n\t\theight at day 1(10 meters).\n\n\t\tInput/Output\n\n\t\t[input] integer upSpeed\n\t\tA positive integer representing the daily growth.\n\t\tConstraints: 5 ≤ upSpeed ≤ 100.\n\n\t\t[input] integer downSpeed\n\t\tA positive integer representing the nightly decline.\n\t\tConstraints: 2 ≤ downSpeed < upSpeed.\n\n\t\t[input] integer desiredHeight\n\t\tA positive integer representing the threshold.\n\t\tConstraints: 4 ≤ desiredHeight ≤ 1000.\n\n\t\t[output] an integer\n\n\t\tThe number of days that it will take for the plant to\n\t\treach/pass desiredHeight (including the last day in the\n\t\ttotal count).\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter upSpeed, downSpeed and desiredHeight and verify the output",
+      "time" : {
+        "start" : 1577327509628,
+        "stop" : 1577327509628,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6b1d055206fbf4b8",
+      "name" : "stdout",
+      "source" : "6b1d055206fbf4b8.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1577327509630,
+      "stop" : 1577327509630,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Simple Fun #74: Growing Plant"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "epic",
+    "value" : "7 kyu"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "feature",
+    "value" : "Calculation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "5732-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_7.growing_plant.test_growing_plant"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "628cdf59d8e91ebb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321736384,
+        "stop" : 1577321736385,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "46436b4d16c1a078",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063534825,
+        "stop" : 1577063534826,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "337c6ffcd4a7d7fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062099847,
+        "stop" : 1577062099847,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c08797f02672954e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059478001,
+        "stop" : 1577059478004,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b20a6165f98a6abc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388868043,
+        "stop" : 1576388868045,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7621a89baa98094c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387266366,
+        "stop" : 1576387266367,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3021614ba5f34671",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862138314,
+        "stop" : 1575862138318,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "2cc022158b542428",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760676741,
+        "stop" : 1575760676742,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2ba98ee3d19fd11c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760565693,
+        "stop" : 1575760565695,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6ff840bd8fdac61d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227958415,
+        "stop" : 1575227958416,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cc8a1739f9a3ba18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227883436,
+        "stop" : 1575227883437,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "64646c0f5692927",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575221462333,
+        "stop" : 1575221462334,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e5c65d16d2bba02e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574618604375,
+        "stop" : 1574618604376,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "59c1311f61dde6d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577321736384,
+          "stop" : 1577321736385,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "2ee601197235bcdb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577063534825,
+          "stop" : 1577063534826,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "33fa26dceda3af70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577063534825,
+          "stop" : 1577063534826,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "27a6c2fa7fb4040d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577063534825,
+          "stop" : 1577063534826,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "330b345a945c28fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577062099847,
+          "stop" : 1577062099847,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "685548115efd9dd7.json",
+  "parameterValues" : [ ]
+}
