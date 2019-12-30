@@ -19,6 +19,7 @@ Subpackages
    kyu_5.master_your_primes_sieve_with_memoization
    kyu_5.number_of_trailing_zeros_of_n
    kyu_5.flatten
+   kyu_5.first_non_repeating_character
 
 Module contents
 ---------------
