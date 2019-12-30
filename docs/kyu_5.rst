@@ -18,6 +18,7 @@ Subpackages
    kyu_5.where_my_anagrams_at
    kyu_5.master_your_primes_sieve_with_memoization
    kyu_5.number_of_trailing_zeros_of_n
+   kyu_5.flatten
 
 Module contents
 ---------------
