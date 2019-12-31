@@ -16,7 +16,7 @@ You can advance through the ranks by completing kata at or above your rank - the
 
 | No. | Puzzle/Kata Name                                                                                               |                                         Solution / GitHub Link                                        |
 |-----|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| 1    |[altERnaTIng cAsE <=> ALTerNAtiNG CaSe](https://www.codewars.com/kata/56efc695740d30f963000557/train/python)    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/alternating_case)                     |
+|1    |[altERnaTIng cAsE <=> ALTerNAtiNG CaSe](https://www.codewars.com/kata/56efc695740d30f963000557/train/python)    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/alternating_case)                     |
 |2    |[Check the exam](https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/python)                           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/check_the_exam)                       |
 |3    |[Counting sheep...](https://www.codewars.com/kata/54edbc7200b811e956000556/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/counting_sheep)                       |
 |4    |[Find the first non-consecutive number](https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/python)    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/find_the_first_non_consecutive_number)|
