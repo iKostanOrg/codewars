@@ -1,4 +1,4 @@
-## Pull your words together, man!
+## Pull your words together, man
 
 Your friend Robbie has successfully created an AI that is capable of communicating in English!
 
