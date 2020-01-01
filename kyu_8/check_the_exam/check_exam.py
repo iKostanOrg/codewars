@@ -22,12 +22,23 @@ def check_exam(arr1, arr2):
 
     results = list()
     for char in zip(arr1, arr2):
-        if char[1] == '':
-            results.append(0)
-        elif char[0] == char[1]:
-            results.append(4)
-        else:
-            results.append(-1)
+        char_processor(char, results)
 
     total = sum(results)
     return 0 if total < 0 else total
+
+
+def char_processor(char: str, results: list) -> None:
+    """
+    Processing chars based on specified rule
+    :param char:
+    :param results:
+    :return:
+    """
+
+    if char[1] == '':
+        results.append(0)
+    elif char[0] == char[1]:
+        results.append(4)
+    else:
+        results.append(-1)
