@@ -22,24 +22,27 @@ def ips_between(start: str, end: str) -> int:
 	ip_end = [int(b) for b in end.split('.')]
 	ips = zip(ip_start, ip_end)
 	ips_range = [0, 0, 0, 0]
-	result = 1
 
 	for ip_id, ip in enumerate(ips):
-		if ip[0] == ip[1] != 0:
-			ips_range[ip_id] = 0
-		elif ip[1] == 0 and ip[0] != 0 and ips_range[ip_id - 1] > 0:
-			ips_range[ip_id] = 256 - ip[0]
-		elif ip[1] > ip[0]:
-			ips_range[ip_id] = ip[1] - ip[0]
-		elif ip[1] == ip[0] == 0 and ips_range[ip_id - 1] > 0:
-			ips_range[ip_id] = 256
+		calc_ip_range(ip, ip_id, ips_range)
 
-	print(ips_range)
+	return calc_result(ips_range)
 
+
+def calc_ip_range(ip, ip_id, ips_range) -> None:
+	if ip[0] == ip[1] != 0:
+		ips_range[ip_id] = 0
+	elif ip[1] == 0 and ip[0] != 0 and ips_range[ip_id - 1] > 0:
+		ips_range[ip_id] = 256 - ip[0]
+	elif ip[1] > ip[0]:
+		ips_range[ip_id] = ip[1] - ip[0]
+	elif ip[1] == ip[0] == 0 and ips_range[ip_id - 1] > 0:
+		ips_range[ip_id] = 256
+
+
+def calc_result(ips_range):
+	result = 1
 	for i in ips_range:
 		if i != 0:
 			result *= i
-
 	return result
-
-
