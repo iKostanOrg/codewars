@@ -7,7 +7,6 @@ Your task is to determine how many files of the copy queue you will be able to s
 ### Input
 
 * Array of file sizes (0 <= s <= 100)
-
 * Capacity of the HD (0 <= c <= 500)
 
 ### Output
