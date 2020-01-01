@@ -31,7 +31,7 @@ def remove_overlaps(intervals: list) -> list:
 		for index_i, i in enumerate(intervals):
 			for index_b, b in enumerate(intervals):
 				if index_b != index_i:
-					is_clean = do_something(intervals, i, b)
+					is_clean = clean_interval(intervals, i, b)
 					if not is_clean:
 						break
 
