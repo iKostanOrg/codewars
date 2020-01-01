@@ -9,7 +9,6 @@ def sum_of_intervals(intervals: list) -> int:
 	"""
 
 	intervals = remove_overlaps(intervals)
-
 	results = list()
 
 	for i in intervals:
@@ -39,39 +38,38 @@ def remove_overlaps(intervals: list) -> list:
 	return intervals
 
 
-def do_something(intervals, i, b) -> bool:
-	is_clean = True
+def clean_interval(intervals, i, b) -> bool:
 
 	if i[0] == b[0] and i[1] == b[1]:
 		intervals.remove(b)
-		is_clean = False
+		return False
 
 	if i[0] < b[0] < i[1] <= b[1]:
 		intervals.append((i[0], b[1]))
 		intervals.remove(i)
 		intervals.remove(b)
-		is_clean = False
+		return False
 
 	if b[0] < i[0] < b[1] <= i[1]:
 		intervals.append((b[0], i[1]))
 		intervals.remove(i)
 		intervals.remove(b)
-		is_clean = False
+		return False
 
 	if b[0] < i[0] < i[1] < b[1]:
 		intervals.remove(i)
-		is_clean = False
+		return False
 
 	if i[0] < b[0] < b[1] < i[1]:
 		intervals.remove(b)
-		is_clean = False
+		return False
 
 	if i[0] == b[0] and b[1] < i[1]:
 		intervals.remove(b)
-		is_clean = False
+		return False
 
 	if i[0] == b[0] and i[1] < b[1]:
 		intervals.remove(i)
-		is_clean = False
+		return False
 
-	return is_clean
+	return True
