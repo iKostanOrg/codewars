@@ -16,6 +16,7 @@ If there is enough space, return 0, and if there isn't, return the number of pas
 
 ### Usage Examples
 
+```text
 > enough(10, 5, 5)
 >
 > 0 # He can fit all 5 passengers
@@ -23,5 +24,6 @@ If there is enough space, return 0, and if there isn't, return the number of pas
 > enough(100, 60, 50)
 >
 > 10 # He can't fit 10 out of 50 waiting
+```
 
 [Source](https://www.codewars.com/kata/5875b200d520904a04000003/train/python)
