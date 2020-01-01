@@ -13,11 +13,21 @@ def pig_it(text: str) -> str:
     """
     result = list()
     for word in text.split(' '):
-        if len(word) > 1:
-            result.append('{}ay'.format(word[1:] + word[0]))
-        elif len(word) == 1 and word.isalpha():
-            result.append('{}ay'.format(word))
-        else:
-            result.append(word)
+        word_processor(word, result)
 
     return ' '.join(result)
+
+
+def word_processor(word: str, result: list) -> None:
+    """
+    Processing a single word for the requested pattern
+    :param word:
+    :param result:
+    :return:
+    """
+    if len(word) > 1:
+        result.append('{}ay'.format(word[1:] + word[0]))
+    elif len(word) == 1 and word.isalpha():
+        result.append('{}ay'.format(word))
+    else:
+        result.append(word)
