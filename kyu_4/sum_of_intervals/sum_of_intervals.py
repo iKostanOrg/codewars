@@ -30,48 +30,48 @@ def remove_overlaps(intervals: list) -> list:
 		is_clean = True
 
 		for index_i, i in enumerate(intervals):
-
 			for index_b, b in enumerate(intervals):
-
 				if index_b != index_i:
-
-					if i[0] == b[0] and i[1] == b[1]:
-						intervals.remove(b)
-						is_clean = False
-						break
-
-					if i[0] < b[0] < i[1] <= b[1]:
-						intervals.append((i[0], b[1]))
-						intervals.remove(i)
-						intervals.remove(b)
-						is_clean = False
-						break
-
-					if b[0] < i[0] < b[1] <= i[1]:
-						intervals.append((b[0], i[1]))
-						intervals.remove(i)
-						intervals.remove(b)
-						is_clean = False
-						break
-
-					if b[0] < i[0] < i[1] < b[1]:
-						intervals.remove(i)
-						is_clean = False
-						break
-
-					if i[0] < b[0] < b[1] < i[1]:
-						intervals.remove(b)
-						is_clean = False
-						break
-
-					if i[0] == b[0] and b[1] < i[1]:
-						intervals.remove(b)
-						is_clean = False
-						break
-
-					if i[0] == b[0] and i[1] < b[1]:
-						intervals.remove(i)
-						is_clean = False
+					is_clean = do_something(intervals, i, b)
+					if not is_clean:
 						break
 
 	return intervals
+
+
+def do_something(intervals, i, b) -> bool:
+	is_clean = True
+
+	if i[0] == b[0] and i[1] == b[1]:
+		intervals.remove(b)
+		is_clean = False
+
+	if i[0] < b[0] < i[1] <= b[1]:
+		intervals.append((i[0], b[1]))
+		intervals.remove(i)
+		intervals.remove(b)
+		is_clean = False
+
+	if b[0] < i[0] < b[1] <= i[1]:
+		intervals.append((b[0], i[1]))
+		intervals.remove(i)
+		intervals.remove(b)
+		is_clean = False
+
+	if b[0] < i[0] < i[1] < b[1]:
+		intervals.remove(i)
+		is_clean = False
+
+	if i[0] < b[0] < b[1] < i[1]:
+		intervals.remove(b)
+		is_clean = False
+
+	if i[0] == b[0] and b[1] < i[1]:
+		intervals.remove(b)
+		is_clean = False
+
+	if i[0] == b[0] and i[1] < b[1]:
+		intervals.remove(i)
+		is_clean = False
+
+	return is_clean
