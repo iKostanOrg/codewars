@@ -20,9 +20,8 @@ def check_exam(arr1, arr2):
     :return:
     """
 
-    arr = zip(arr1, arr2)
     results = list()
-    for char in arr:
+    for char in zip(arr1, arr2):
         if char[1] == '':
             results.append(0)
         elif char[0] == char[1]:
