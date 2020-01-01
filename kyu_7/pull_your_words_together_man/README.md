@@ -4,7 +4,9 @@ Your friend Robbie has successfully created an AI that is capable of communicati
 
 Robbie's almost done with the project, however the machine's output isn't working as expected. Here's a sample of a sentence that it outputs:
 
+```text
 > ["this","is","a","sentence"]
+```
 
 Every time that it tries to say a sentence, instead of formatting it in normal English orthography, it just outputs a list of words.
 
