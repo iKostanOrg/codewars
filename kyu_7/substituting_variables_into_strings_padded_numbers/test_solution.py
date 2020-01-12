@@ -16,33 +16,36 @@ from kyu_7.substituting_variables_into_strings_padded_numbers.solution import so
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Substituting Variables Into Strings: Padded Numbers')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
-	"""
-	Testing 'solution' function
-	"""
+    """
+    Testing 'solution' function
+    """
 
-	def test_solution(self):
-		"""
-		Testing 'solution' function.
+    def test_solution(self):
+        """
+        Testing 'solution' function.
 
-		The should return a formatted string.
-		The return value should equal "Value is VALUE"
-		where value is a 5 digit padded number.
-		:return:
-		"""
+        The should return a formatted string.
+        The return value should equal "Value is VALUE"
+        where value is a 5 digit padded number.
+        :return:
+        """
 
-		allure.dynamic.title("Testing 'solution' function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing 'solution' function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Enter a number and verify the result"):
+        with allure.step("Enter a number and verify the result"):
 
-			data = [
-				(0, 'Value is 00000'),
-				(5, 'Value is 00005'),
-				(109, 'Value is 00109'),
-				(1204, 'Value is 01204'),
-			]
+            data = [
+                (0, 'Value is 00000'),
+                (5, 'Value is 00005'),
+                (109, 'Value is 00109'),
+                (1204, 'Value is 01204'),
+            ]
 
-			for value, expected in data:
-				print_log(expected=expected, value=value)
-				self.assertEqual(expected, solution(value))
+            for value, expected in data:
+                print_log(expected=expected, value=value)
+                self.assertEqual(expected, solution(value))

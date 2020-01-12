@@ -16,39 +16,42 @@ from kyu_7.jaden_casing_strings.jaden_casing_strings import toJadenCase
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Jaden Casing Strings')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class JadenCasingStringsTestCase(unittest.TestCase):
-	"""
-	Testing toJadenCase function
-	"""
+    """
+    Testing toJadenCase function
+    """
 
-	def test_to_jaden_case_positive(self):
-		"""
-		Simple positive test
-		:return:
-		"""
-		allure.dynamic.title("Testing toJadenCase function (positive)")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+    def test_to_jaden_case_positive(self):
+        """
+        Simple positive test
+        :return:
+        """
+        allure.dynamic.title("Testing toJadenCase function (positive)")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass string and verify the output"):
-			quote = "How can mirrors be real if our eyes aren't real"
-			expected = "How Can Mirrors Be Real If Our Eyes Aren't Real"
+        with allure.step("Pass string and verify the output"):
+            quote = "How can mirrors be real if our eyes aren't real"
+            expected = "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
-			print_log(string=quote, expected=expected)
+            print_log(string=quote, expected=expected)
 
-			self.assertEqual(toJadenCase(quote), expected)
+            self.assertEqual(toJadenCase(quote), expected)
 
-	def test_to_jaden_case_negative(self):
-		"""
-		Simple negative test
-		:return:
-		"""
+    def test_to_jaden_case_negative(self):
+        """
+        Simple negative test
+        :return:
+        """
 
-		allure.dynamic.title("Testing toJadenCase function (negative)")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing toJadenCase function (negative)")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass string and verify the output"):
-			quote = "How can mirrors be real if our eyes aren't real"
+        with allure.step("Pass string and verify the output"):
+            quote = "How can mirrors be real if our eyes aren't real"
 
-			print_log(string=quote, expected=False)
+            print_log(string=quote, expected=False)
 
-			self.assertNotEqual(toJadenCase(quote), quote)
+            self.assertNotEqual(toJadenCase(quote), quote)

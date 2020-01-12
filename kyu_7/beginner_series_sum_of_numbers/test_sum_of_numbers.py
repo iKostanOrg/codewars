@@ -16,6 +16,9 @@ from kyu_7.beginner_series_sum_of_numbers.sum_of_numbers import get_sum
 @allure.sub_suite("Unit Tests")
 @allure.feature("Addition")
 @allure.story('Sum of Numbers')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SumOfNumbersTestCase(unittest.TestCase):
 	"""
 	Testing get_sum function

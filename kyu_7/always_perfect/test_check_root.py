@@ -16,6 +16,9 @@ from kyu_7.always_perfect.check_root import check_root
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Always perfect')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class CheckRootTestCase(unittest.TestCase):
 	"""
 	Testing check_root function

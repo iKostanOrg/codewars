@@ -16,6 +16,9 @@ from kyu_7.vaporcode.vaporcode import vaporcode
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('V A P O R C O D E')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class VaporcodeTestCase(unittest.TestCase):
     """
     Testing 'vaporcode' function

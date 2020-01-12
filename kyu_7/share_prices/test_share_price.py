@@ -16,37 +16,40 @@ from kyu_7.share_prices.share_price import share_price
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Share prices')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SharePriceTestCase(unittest.TestCase):
-	"""
-	Testing share_price function
-	"""
+    """
+    Testing share_price function
+    """
 
-	def test_share_price(self):
-		"""
-		Testing share_price function
-		with multiple test inputs
-		:return:
-		"""
+    def test_share_price(self):
+        """
+        Testing share_price function
+        with multiple test inputs
+        :return:
+        """
 
-		allure.dynamic.title("Testing share_price function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing share_price function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Enter invested, changes "
-		                 "and verify the output"):
+        with allure.step("Enter invested, changes "
+                         "and verify the output"):
 
-			data = [
-				(100, [], '100.00'),
-				(100, [-50, 50], '75.00'),
-				(100, [-50, 100], '100.00'),
-				(100, [-20, 30], '104.00'),
-				(1000, [0, 2, 3, 6], '1113.64'),
-			]
+            data = [
+                (100, [], '100.00'),
+                (100, [-50, 50], '75.00'),
+                (100, [-50, 100], '100.00'),
+                (100, [-20, 30], '104.00'),
+                (1000, [0, 2, 3, 6], '1113.64'),
+            ]
 
-			for invested, changes, expected in data:
+            for invested, changes, expected in data:
 
-				print_log(invested=invested,
-				          changes=changes,
-				          expected=False)
+                print_log(invested=invested,
+                          changes=changes,
+                          expected=False)
 
-				self.assertEqual(expected,
-				                 share_price(invested, changes))
+                self.assertEqual(expected,
+                                 share_price(invested, changes))

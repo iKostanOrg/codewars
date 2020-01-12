@@ -16,46 +16,49 @@ from kyu_7.the_first_non_repeated_character_in_string.first_non_repeated import 
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('The First Non Repeated Character In A String')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class FirstNonRepeatedTestCase(unittest.TestCase):
-	"""
-	Testing first_non_repeated function
-	"""
+    """
+    Testing first_non_repeated function
+    """
 
-	def test_first_non_repeated(self):
-		"""
-		Testing first_non_repeated function
-		:return:
-		"""
+    def test_first_non_repeated(self):
+        """
+        Testing first_non_repeated function
+        :return:
+        """
 
-		allure.dynamic.title("Testing first_non_repeated "
-		                     "function with various inputs")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing first_non_repeated "
+                             "function with various inputs")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Enter test string and verify the output"):
+        with allure.step("Enter test string and verify the output"):
 
-			data = [
-				("test", 'e'),
-				("teeter", 'r'),
-				("1122321235121222", '5'),
-				('1122321235121222dsfasddssdfa112232123sdfasdfasdf11'
-				 '22321235121222dsfasddssdfa112232123sdfasdfasdf1122'
-				 '321231122321235121222dsfasddssdfa112232123sdfasdfa'
-				 'sdf1122321231122321235121222dsfasddssdfa112232123sd'
-				 'fasdfasdf1122321231122321235121222dsfasddssdfa11223'
-				 '2123sdfasdfasdf1122321231122321235121222dsfasddssdf'
-				 'a112232123sdfasdfasdf112232123asddssdfa112232123sdfa'
-				 'sdfasdf1122z321231122321235121222dsfasddssdf1122321'
-				 '235121222dsfasddssdf1122321235121222dsfasddssdf11223'
-				 '21235121222dsfasddssdf1122321235121222dsfasddssdf112'
-				 'p2321235121222dsfasddssdf1122321235121222dsfasddssdf', 'z'),
-				('ogmhrsoqiklqfmhgnpjsrikmnlpfj', None),
-				('knioolrpnutskmqmhqtriipjjushl', None),
-			]
+            data = [
+                ("test", 'e'),
+                ("teeter", 'r'),
+                ("1122321235121222", '5'),
+                ('1122321235121222dsfasddssdfa112232123sdfasdfasdf11'
+                 '22321235121222dsfasddssdfa112232123sdfasdfasdf1122'
+                 '321231122321235121222dsfasddssdfa112232123sdfasdfa'
+                 'sdf1122321231122321235121222dsfasddssdfa112232123sd'
+                 'fasdfasdf1122321231122321235121222dsfasddssdfa11223'
+                 '2123sdfasdfasdf1122321231122321235121222dsfasddssdf'
+                 'a112232123sdfasdfasdf112232123asddssdfa112232123sdfa'
+                 'sdfasdf1122z321231122321235121222dsfasddssdf1122321'
+                 '235121222dsfasddssdf1122321235121222dsfasddssdf11223'
+                 '21235121222dsfasddssdf1122321235121222dsfasddssdf112'
+                 'p2321235121222dsfasddssdf1122321235121222dsfasddssdf', 'z'),
+                ('ogmhrsoqiklqfmhgnpjsrikmnlpfj', None),
+                ('knioolrpnutskmqmhqtriipjjushl', None),
+            ]
 
-			for s, expected in data:
+            for s, expected in data:
 
-				print_log(s=s,
-				          expected=expected)
+                print_log(s=s,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 first_non_repeated(s))
+                self.assertEqual(expected,
+                                 first_non_repeated(s))

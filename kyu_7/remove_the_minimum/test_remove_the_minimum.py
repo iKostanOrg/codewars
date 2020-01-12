@@ -16,6 +16,9 @@ from numpy.random import randint
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('The museum of incredible dull things')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class RemoveSmallestTestCase(unittest.TestCase):
     """
     Testing remove_smallest function
