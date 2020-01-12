@@ -14,34 +14,37 @@ from kyu_8.convert_string_to_an_array.string_to_array import string_to_array
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Convert a string to an array')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class StringToArrayTestCase(unittest.TestCase):
-	"""
-	Testing string_to_array function.
-	"""
+    """
+    Testing string_to_array function.
+    """
 
-	def test_string_to_array(self):
-		"""
-		Testing string_to_array function.
+    def test_string_to_array(self):
+        """
+        Testing string_to_array function.
 
-		A function to split a string and
-		convert it into an array of words.
-		:return:
-		"""
+        A function to split a string and
+        convert it into an array of words.
+        :return:
+        """
 
-		allure.dynamic.title("Testing string_to_array function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing string_to_array function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Enter a test string and verify the output"):
+        with allure.step("Enter a test string and verify the output"):
 
-			data = [
-				("Robin Singh", ["Robin", "Singh"]),
-				("CodeWars", ["CodeWars"]),
-				("I love arrays they are my favorite",
-				 ["I", "love", "arrays", "they", "are", "my", "favorite"]),
-				("1 2 3", ["1", "2", "3"]),
-				("", [""]),
-			]
+            data = [
+                ("Robin Singh", ["Robin", "Singh"]),
+                ("CodeWars", ["CodeWars"]),
+                ("I love arrays they are my favorite",
+                 ["I", "love", "arrays", "they", "are", "my", "favorite"]),
+                ("1 2 3", ["1", "2", "3"]),
+                ("", [""]),
+            ]
 
-			for s, expected in data:
-				print_log(s=s, expected=expected)
-				self.assertEqual(expected, string_to_array(s))
+            for s, expected in data:
+                print_log(s=s, expected=expected)
+                self.assertEqual(expected, string_to_array(s))

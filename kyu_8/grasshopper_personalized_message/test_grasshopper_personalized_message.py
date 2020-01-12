@@ -16,42 +16,45 @@ from kyu_8.grasshopper_personalized_message.grasshopper_personalized_message imp
 @allure.sub_suite("Unit Tests")
 @allure.feature("Conditions")
 @allure.story('Personalized greeting')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class GreetTestCase(unittest.TestCase):
-	"""
-	Testing greet function
-	"""
+    """
+    Testing greet function
+    """
 
-	def test_greet(self):
-		"""
-		Use conditionals to to verify that greet
-		function returns the proper message.
-		:return:
-		"""
+    def test_greet(self):
+        """
+        Use conditionals to to verify that greet
+        function returns the proper message.
+        :return:
+        """
 
-		allure.dynamic.title("Verify that greet function "
-		                     "returns the proper message")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Verify that greet function "
+                             "returns the proper message")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		# name equals owner
-		with allure.step("Test name equals owner"):
-			name = 'Daniel'
-			owner = 'Daniel'
-			expected = 'Hello boss'
+        # name equals owner
+        with allure.step("Test name equals owner"):
+            name = 'Daniel'
+            owner = 'Daniel'
+            expected = 'Hello boss'
 
-			print_log(name=name,
-			          owner=owner,
-			          expected=expected)
+            print_log(name=name,
+                      owner=owner,
+                      expected=expected)
 
-		self.assertEqual(greet(name, owner), expected)
+        self.assertEqual(greet(name, owner), expected)
 
-		# otherwise
-		with allure.step("Test name not equals owner"):
-			name = 'Greg'
-			owner = 'Daniel'
-			expected = 'Hello guest'
+        # otherwise
+        with allure.step("Test name not equals owner"):
+            name = 'Greg'
+            owner = 'Daniel'
+            expected = 'Hello guest'
 
-			print_log(name=name,
-			          owner=owner,
-			          expected=expected)
+            print_log(name=name,
+                      owner=owner,
+                      expected=expected)
 
-		self.assertEqual(greet(name, owner), expected)
+        self.assertEqual(greet(name, owner), expected)

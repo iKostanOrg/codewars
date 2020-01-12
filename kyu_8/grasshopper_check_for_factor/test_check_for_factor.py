@@ -16,73 +16,76 @@ from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Grasshopper - Check for factor')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class CheckForFactorTestCase(unittest.TestCase):
-	"""
-	Testing check_for_factor function.
-	"""
+    """
+    Testing check_for_factor function.
+    """
 
-	def test_check_for_factor_true(self):
-		"""
-		Testing check_for_factor function.
+    def test_check_for_factor_true(self):
+        """
+        Testing check_for_factor function.
 
-		This function should test if the
-		factor is a factor of base.
+        This function should test if the
+        factor is a factor of base.
 
-		Return true if it is a factor.
-		:return:
-		"""
+        Return true if it is a factor.
+        :return:
+        """
 
-		allure.dynamic.title("Testing check_for_factor "
-		                     "function: positive flow")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing check_for_factor "
+                             "function: positive flow")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Return true if it is a factor"):
+        with allure.step("Return true if it is a factor"):
 
-			data = [
-				(10, 2, True),
-				(63, 7, True),
-				(2450, 5, True),
-				(24612, 3, True),
-			]
+            data = [
+                (10, 2, True),
+                (63, 7, True),
+                (2450, 5, True),
+                (24612, 3, True),
+            ]
 
-			for base, factor, expected in data:
+            for base, factor, expected in data:
 
-				print_log(base=base,
-				          factor=factor,
-				          expected=expected)
+                print_log(base=base,
+                          factor=factor,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 check_for_factor(base, factor))
+                self.assertEqual(expected,
+                                 check_for_factor(base, factor))
 
-	def test_check_for_factor_false(self):
-		"""
-		Testing check_for_factor function.
+    def test_check_for_factor_false(self):
+        """
+        Testing check_for_factor function.
 
-		This function should test if the
-		factor is a factor of base.
+        This function should test if the
+        factor is a factor of base.
 
-		Return false if it is not a factor.
-		:return:
-		"""
+        Return false if it is not a factor.
+        :return:
+        """
 
-		allure.dynamic.title("Testing check_for_factor "
-		                     "function: positive flow")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing check_for_factor "
+                             "function: positive flow")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Return false if it is not a factor"):
+        with allure.step("Return false if it is not a factor"):
 
-			data = [
-				(9, 2, False),
-				(653, 7, False),
-				(2453, 5, False),
-				(24617, 3, False),
-			]
+            data = [
+                (9, 2, False),
+                (653, 7, False),
+                (2453, 5, False),
+                (24617, 3, False),
+            ]
 
-			for base, factor, expected in data:
+            for base, factor, expected in data:
 
-				print_log(base=base,
-				          factor=factor,
-				          expected=expected)
+                print_log(base=base,
+                          factor=factor,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 check_for_factor(base, factor))
+                self.assertEqual(expected,
+                                 check_for_factor(base, factor))

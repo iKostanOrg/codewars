@@ -16,66 +16,69 @@ from kyu_8.reversed_strings.reversed_strings import solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Reversed Strings')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class ReversedStringsTestCase(unittest.TestCase):
-	"""
-	Testing the solution for 'Reversed Strings' problem
-	"""
+    """
+    Testing the solution for 'Reversed Strings' problem
+    """
 
-	def test_reversed_strings_empty(self):
-		"""
-		Test with empty string
-		:return:
-		"""
+    def test_reversed_strings_empty(self):
+        """
+        Test with empty string
+        :return:
+        """
 
-		allure.dynamic.title("Test with empty string")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Test with empty string")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass empty string and verify the output"):
-			string = ''
-			expected = ''
+        with allure.step("Pass empty string and verify the output"):
+            string = ''
+            expected = ''
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(solution(string), expected)
+            self.assertEqual(solution(string), expected)
 
-	def test_reversed_strings_one_char(self):
-		"""
-		Test with one char only
-		:return:
-		"""
+    def test_reversed_strings_one_char(self):
+        """
+        Test with one char only
+        :return:
+        """
 
-		allure.dynamic.title("Test with one char only")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Test with one char only")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass one char string and verify the output"):
-			string = 'h'
-			expected = 'h'
+        with allure.step("Pass one char string and verify the output"):
+            string = 'h'
+            expected = 'h'
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(solution(string), expected)
+            self.assertEqual(solution(string), expected)
 
-	def test_reversed_strings(self):
-		"""
-		Test with regular string
-		:return:
-		"""
+    def test_reversed_strings(self):
+        """
+        Test with regular string
+        :return:
+        """
 
-		allure.dynamic.title("Test with regular string")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Test with regular string")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass regular string and verify the output"):
-			string = 'world'
-			expected = 'dlrow'
+        with allure.step("Pass regular string and verify the output"):
+            string = 'world'
+            expected = 'dlrow'
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(solution(string), expected)
+            self.assertEqual(solution(string), expected)
 
-		with allure.step("Pass regular string and verify the output"):
-			string = 'hello'
-			expected = 'olleh'
+        with allure.step("Pass regular string and verify the output"):
+            string = 'hello'
+            expected = 'olleh'
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(solution(string), expected)
+            self.assertEqual(solution(string), expected)

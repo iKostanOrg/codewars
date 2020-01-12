@@ -16,58 +16,61 @@ from kyu_8.set_alarm.set_alarm import set_alarm
 @allure.sub_suite("Unit Tests")
 @allure.feature("Boolean")
 @allure.story('L1: Set Alarm')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SetAlarmTestCase(unittest.TestCase):
-	"""
-	Testing set_alarm function
-	"""
+    """
+    Testing set_alarm function
+    """
 
-	def test_set_alarm(self):
-		"""
-		Testing set_alarm function with various test inputs.
+    def test_set_alarm(self):
+        """
+        Testing set_alarm function with various test inputs.
 
-		The function should return true if you are employed
-		and not on vacation (because these are the circumstances
-		under which you need to set an alarm). It should return
-		false otherwise.
+        The function should return true if you are employed
+        and not on vacation (because these are the circumstances
+        under which you need to set an alarm). It should return
+        false otherwise.
 
-		Examples:
+        Examples:
 
-		setAlarm(true, true) -> false
-		setAlarm(false, true) -> false
-		setAlarm(false, false) -> false
-		setAlarm(true, false) -> true
-		:return:
-		"""
+        setAlarm(true, true) -> false
+        setAlarm(false, true) -> false
+        setAlarm(false, false) -> false
+        setAlarm(true, false) -> true
+        :return:
+        """
 
-		allure.dynamic.title("Testing set_alarm function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing set_alarm function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Enter test data and verify the output"):
+        with allure.step("Enter test data and verify the output"):
 
-			data = [
-				((True, True),
-				 False,
-				 "Fails when input is True, True"),
-				((False, True),
-				 False,
-				 "Fails when input is False, True"),
-				((False, False),
-				 False,
-				 "Fails when input is False, False"),
-				((True, False),
-				 True,
-				 "Fails when input is True, False"),
-			]
+            data = [
+                ((True, True),
+                 False,
+                 "Fails when input is True, True"),
+                ((False, True),
+                 False,
+                 "Fails when input is False, True"),
+                ((False, False),
+                 False,
+                 "Fails when input is False, False"),
+                ((True, False),
+                 True,
+                 "Fails when input is True, False"),
+            ]
 
-			for test_input, expected, msg in data:
+            for test_input, expected, msg in data:
 
-				employed = test_input[0]
-				vacation = test_input[1]
+                employed = test_input[0]
+                vacation = test_input[1]
 
-				print_log(employed=employed,
-				          vacation=vacation,
-				          expected=expected)
+                print_log(employed=employed,
+                          vacation=vacation,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 set_alarm(employed, vacation),
-				                 msg)
+                self.assertEqual(expected,
+                                 set_alarm(employed, vacation),
+                                 msg)

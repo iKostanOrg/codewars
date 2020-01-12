@@ -16,62 +16,65 @@ from kyu_8.third_angle_of_triangle.third_angle_of_triangle import other_angle
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Third Angle of a Triangle')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class OtherAngleTestCase(unittest.TestCase):
-	"""
-	Testing other_angle
-	"""
+    """
+    Testing other_angle
+    """
 
-	def test_other_angle(self):
-		"""
-		You are given two angles (in degrees) of a triangle.
+    def test_other_angle(self):
+        """
+        You are given two angles (in degrees) of a triangle.
         Find the 3rd.
-		:return:
-		"""
+        :return:
+        """
 
-		allure.dynamic.title("You are given two angles -> find the 3rd.")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("You are given two angles -> find the 3rd.")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Enter values of two angles and return the 3rd"):
-			a = 30
-			b = 60
-			expected = 90
+        with allure.step("Enter values of two angles and return the 3rd"):
+            a = 30
+            b = 60
+            expected = 90
 
-			print_log(a=a,
-			          b=b,
-			          expected=expected)
+            print_log(a=a,
+                      b=b,
+                      expected=expected)
 
-			self.assertEqual(other_angle(a, b), expected)
+            self.assertEqual(other_angle(a, b), expected)
 
-		with allure.step("Enter values of two angles and return the 3rd"):
-			a = 60
-			b = 60
-			expected = 60
+        with allure.step("Enter values of two angles and return the 3rd"):
+            a = 60
+            b = 60
+            expected = 60
 
-			print_log(a=a,
-			          b=b,
-			          expected=expected)
+            print_log(a=a,
+                      b=b,
+                      expected=expected)
 
-			self.assertEqual(other_angle(a, b), expected)
-			self.assertEqual(other_angle(60, 60), 60)
+            self.assertEqual(other_angle(a, b), expected)
+            self.assertEqual(other_angle(60, 60), 60)
 
-		with allure.step("Enter values of two angles and return the 3rd"):
-			a = 43
-			b = 78
-			expected = 59
+        with allure.step("Enter values of two angles and return the 3rd"):
+            a = 43
+            b = 78
+            expected = 59
 
-			print_log(a=a,
-			          b=b,
-			          expected=expected)
+            print_log(a=a,
+                      b=b,
+                      expected=expected)
 
-			self.assertEqual(other_angle(a, b), expected)
+            self.assertEqual(other_angle(a, b), expected)
 
-		with allure.step("Enter values of two angles and return the 3rd"):
-			a = 10
-			b = 20
-			expected = 150
+        with allure.step("Enter values of two angles and return the 3rd"):
+            a = 10
+            b = 20
+            expected = 150
 
-			print_log(a=a,
-			          b=b,
-			          expected=expected)
+            print_log(a=a,
+                      b=b,
+                      expected=expected)
 
-			self.assertEqual(other_angle(a, b), expected)
+            self.assertEqual(other_angle(a, b), expected)

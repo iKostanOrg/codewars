@@ -17,10 +17,14 @@ import pytest
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('My head is at the wrong end!')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class FixTheMeerkatTestCase(unittest.TestCase):
-	"""
-	Testing fix_the_meerkat function
-	"""
-	def test_fix_the_meerkat(self):
-		pass
+    """
+    Testing fix_the_meerkat function
+    """
+
+    def test_fix_the_meerkat(self):
+        pass

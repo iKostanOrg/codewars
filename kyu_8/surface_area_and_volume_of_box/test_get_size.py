@@ -16,66 +16,69 @@ from kyu_8.surface_area_and_volume_of_box.get_size import get_size
 @allure.sub_suite("Unit Tests")
 @allure.feature("Geometry")
 @allure.story('Surface Area and Volume of a Box')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class GetSizeTestCase(unittest.TestCase):
-	"""
-	Testing get_size function
-	"""
+    """
+    Testing get_size function
+    """
 
-	def test_get_size(self):
-		"""
-		Testing get_size function with various inputs
-		:return:
-		"""
+    def test_get_size(self):
+        """
+        Testing get_size function with various inputs
+        :return:
+        """
 
-		allure.dynamic.title("get_size function tests")
-		allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.title("get_size function tests")
+        allure.dynamic.severity(allure.severity_level.BLOCKER)
 
-		with allure.step("Pass w, h, and d values and verify the result"):
-			w, h, d = 4, 2, 6
-			expected = [88, 48]
+        with allure.step("Pass w, h, and d values and verify the result"):
+            w, h, d = 4, 2, 6
+            expected = [88, 48]
 
-			print_log(w=w,
-			          h=h,
-			          d=d,
-			          expected=expected)
-			self.assertEqual(get_size(w, h, d), expected)
+            print_log(w=w,
+                      h=h,
+                      d=d,
+                      expected=expected)
+            self.assertEqual(get_size(w, h, d), expected)
 
-		with allure.step("Pass w, h, and d values and verify the result"):
-			w, h, d = 1, 1, 1
-			expected = [6, 1]
+        with allure.step("Pass w, h, and d values and verify the result"):
+            w, h, d = 1, 1, 1
+            expected = [6, 1]
 
-			print_log(w=w,
-			          h=h,
-			          d=d,
-			          expected=expected)
-			self.assertEqual(get_size(w, h, d), expected)
+            print_log(w=w,
+                      h=h,
+                      d=d,
+                      expected=expected)
+            self.assertEqual(get_size(w, h, d), expected)
 
-		with allure.step("Pass w, h, and d values and verify the result"):
-			w, h, d = 1, 2, 1
-			expected = [10, 2]
+        with allure.step("Pass w, h, and d values and verify the result"):
+            w, h, d = 1, 2, 1
+            expected = [10, 2]
 
-			print_log(w=w,
-			          h=h,
-			          d=d,
-			          expected=expected)
-			self.assertEqual(get_size(w, h, d), expected)
+            print_log(w=w,
+                      h=h,
+                      d=d,
+                      expected=expected)
+            self.assertEqual(get_size(w, h, d), expected)
 
-		with allure.step("Pass w, h, and d values and verify the result"):
-			w, h, d = 1, 2, 2
-			expected = [16, 4]
+        with allure.step("Pass w, h, and d values and verify the result"):
+            w, h, d = 1, 2, 2
+            expected = [16, 4]
 
-			print_log(w=w,
-			          h=h,
-			          d=d,
-			          expected=expected)
-			self.assertEqual(get_size(w, h, d), expected)
+            print_log(w=w,
+                      h=h,
+                      d=d,
+                      expected=expected)
+            self.assertEqual(get_size(w, h, d), expected)
 
-		with allure.step("Pass w, h, and d values and verify the result"):
-			w, h, d = 10, 10, 10
-			expected = [600, 1000]
+        with allure.step("Pass w, h, and d values and verify the result"):
+            w, h, d = 10, 10, 10
+            expected = [600, 1000]
 
-			print_log(w=w,
-			          h=h,
-			          d=d,
-			          expected=expected)
-			self.assertEqual(get_size(w, h, d), expected)
+            print_log(w=w,
+                      h=h,
+                      d=d,
+                      expected=expected)
+            self.assertEqual(get_size(w, h, d), expected)

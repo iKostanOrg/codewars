@@ -16,25 +16,28 @@ from kyu_8.swap_values.swap_values import swap_values
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Swap Values')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SwapValuesTestCase(unittest.TestCase):
-	"""
-	Testing swap_values function
-	"""
-	def test_swap_values(self):
-		"""
-		Testing swap_values function
-		"""
+    """
+    Testing swap_values function
+    """
+    def test_swap_values(self):
+        """
+        Testing swap_values function
+        """
 
-		allure.dynamic.title("Testing swap_values function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing swap_values function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Pass a list with 2 values and swap them"):
+        with allure.step("Pass a list with 2 values and swap them"):
 
-			swap = [1, 2]
-			expected = [2, 1]
-			swap_values(swap)
+            swap = [1, 2]
+            expected = [2, 1]
+            swap_values(swap)
 
-			print_log(list=swap, expected=expected)
+            print_log(list=swap, expected=expected)
 
-			self.assertEqual(swap[0], 2)
-			self.assertEqual(swap[1], 1)
+            self.assertEqual(swap[0], 2)
+            self.assertEqual(swap[1], 1)

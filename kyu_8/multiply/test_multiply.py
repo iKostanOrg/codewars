@@ -16,27 +16,30 @@ from kyu_8.multiply.multiply import multiply
 @allure.sub_suite("Unit Tests")
 @allure.feature("Multiplication")
 @allure.story('Multiply')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class MultiplyTestCase(unittest.TestCase):
-	"""
-	Testing multiply function
-	"""
+    """
+    Testing multiply function
+    """
 
-	def test_multiply(self):
-		"""
+    def test_multiply(self):
+        """
         Verify that multiply function
-		returns correct result
-		:return:
-		"""
+        returns correct result
+        :return:
+        """
 
-		allure.dynamic.title("'multiply' function verification")
-		allure.dynamic.severity(allure.severity_level.MINOR)
+        allure.dynamic.title("'multiply' function verification")
+        allure.dynamic.severity(allure.severity_level.MINOR)
 
-		with allure.step("Assert (a * b) result"):
-			a = 1
-			b = 2
-			expected = a * b
+        with allure.step("Assert (a * b) result"):
+            a = 1
+            b = 2
+            expected = a * b
 
-			print_log(a=a, b=b, expected=expected)
+            print_log(a=a, b=b, expected=expected)
 
-			self.assertEqual(expected,
-			                 multiply(a, b))
+            self.assertEqual(expected,
+                             multiply(a, b))

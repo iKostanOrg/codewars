@@ -16,63 +16,66 @@ from kyu_8.remove_first_and_last_character.remove_char import remove_char
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Remove First and Last Character')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class RemoveCharTestCase(unittest.TestCase):
-	"""
-	Testing remove_char function
-	"""
+    """
+    Testing remove_char function
+    """
 
-	def test_remove_char(self):
-		"""
-		Test that 'remove_char' function
-		removes the first and
+    def test_remove_char(self):
+        """
+        Test that 'remove_char' function
+        removes the first and
         last characters of a string.
-		:return:
-		"""
+        :return:
+        """
 
-		allure.dynamic.title("Testing remove_char function")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing remove_char function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass 'eloquent' string and verify the output"):
-			string = 'eloquent'
-			expected = 'loquen'
+        with allure.step("Pass 'eloquent' string and verify the output"):
+            string = 'eloquent'
+            expected = 'loquen'
 
-			print_log(string=string,
-			          expected=expected)
+            print_log(string=string,
+                      expected=expected)
 
-			self.assertEqual(remove_char(string), expected)
+            self.assertEqual(remove_char(string), expected)
 
-		with allure.step("Pass 'country' string and verify the output"):
-			string = 'country'
-			expected = 'ountr'
+        with allure.step("Pass 'country' string and verify the output"):
+            string = 'country'
+            expected = 'ountr'
 
-			print_log(string=string,
-			          expected=expected)
+            print_log(string=string,
+                      expected=expected)
 
-			self.assertEqual(remove_char(string), expected)
+            self.assertEqual(remove_char(string), expected)
 
-		with allure.step("Pass 'person' string and verify the output"):
-			string = 'person'
-			expected = 'erso'
+        with allure.step("Pass 'person' string and verify the output"):
+            string = 'person'
+            expected = 'erso'
 
-			print_log(string=string,
-			          expected=expected)
+            print_log(string=string,
+                      expected=expected)
 
-			self.assertEqual(remove_char(string), expected)
+            self.assertEqual(remove_char(string), expected)
 
-		with allure.step("Pass 'place' string and verify the output"):
-			string = 'place'
-			expected = 'lac'
+        with allure.step("Pass 'place' string and verify the output"):
+            string = 'place'
+            expected = 'lac'
 
-			print_log(string=string,
-			          expected=expected)
+            print_log(string=string,
+                      expected=expected)
 
-			self.assertEqual(remove_char(string), expected)
+            self.assertEqual(remove_char(string), expected)
 
-		with allure.step("Pass 'ok' string and verify the output"):
-			string = 'ok'
-			expected = ''
+        with allure.step("Pass 'ok' string and verify the output"):
+            string = 'ok'
+            expected = ''
 
-			print_log(string=string,
-			          expected=expected)
+            print_log(string=string,
+                      expected=expected)
 
-			self.assertEqual(remove_char(string), expected)
+            self.assertEqual(remove_char(string), expected)

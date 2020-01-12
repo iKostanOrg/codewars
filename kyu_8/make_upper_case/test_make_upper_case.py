@@ -16,24 +16,27 @@ from kyu_8.make_upper_case.make_upper_case import make_upper_case
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('MakeUpperCase')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class MakeUpperCaseTestCase(unittest.TestCase):
-	"""
-	Testing make_upper_case function
-	"""
+    """
+    Testing make_upper_case function
+    """
 
-	def test_make_upper_case(self):
-		"""
-		Sample Tests for make_upper_case function
-		:return:
-		"""
-		allure.dynamic.title("Testing make_upper_case function")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+    def test_make_upper_case(self):
+        """
+        Sample Tests for make_upper_case function
+        :return:
+        """
+        allure.dynamic.title("Testing make_upper_case function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Pass lower case string and verify the output"):
-			string = "hello"
-			expected = "HELLO"
+        with allure.step("Pass lower case string and verify the output"):
+            string = "hello"
+            expected = "HELLO"
 
-			print_log(string=string,
-			          expected=expected)
+            print_log(string=string,
+                      expected=expected)
 
-			self.assertEqual(make_upper_case(string), expected)
+            self.assertEqual(make_upper_case(string), expected)

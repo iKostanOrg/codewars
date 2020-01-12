@@ -16,51 +16,54 @@ from kyu_8.the_feast_of_many_beasts.feast import feast
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('The Feast of Many Beasts')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class FeastTestCase(unittest.TestCase):
-	"""
-	Testing 'feast' function
-	"""
+    """
+    Testing 'feast' function
+    """
 
-	def test_feast(self):
-		"""
-		Testing 'feast' function with various test inputs
+    def test_feast(self):
+        """
+        Testing 'feast' function with various test inputs
 
-		Testing a function feast that takes the animal's
-		name and dish as arguments and returns true or
-		false to indicate whether the beast is allowed
-		to bring the dish to the feast.
+        Testing a function feast that takes the animal's
+        name and dish as arguments and returns true or
+        false to indicate whether the beast is allowed
+        to bring the dish to the feast.
 
-		Assume that beast and dish are always lowercase strings,
-		and that each has at least two letters. beast and dish
-		may contain hyphens and spaces, but these will not appear
-		at the beginning or end of the string. They will not
-		contain numerals.
+        Assume that beast and dish are always lowercase strings,
+        and that each has at least two letters. beast and dish
+        may contain hyphens and spaces, but these will not appear
+        at the beginning or end of the string. They will not
+        contain numerals.
 
-		There is just one rule: the dish must start and end with
-		the same letters as the animal's name. For example, the
-		great blue heron is bringing garlic naan and the chickadee
-		is bringing chocolate cake.
-		:return:
-		"""
+        There is just one rule: the dish must start and end with
+        the same letters as the animal's name. For example, the
+        great blue heron is bringing garlic naan and the chickadee
+        is bringing chocolate cake.
+        :return:
+        """
 
-		allure.dynamic.title("Testing 'feast' function")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing 'feast' function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Enter animal's name and dish "
-		                 "as arguments and assert the output"):
+        with allure.step("Enter animal's name and dish "
+                         "as arguments and assert the output"):
 
-			data = [
-				("great blue heron", "garlic naan", True),
-				("chickadee", "chocolate cake", True),
-				("brown bear", "bear claw", False),
-			]
+            data = [
+                ("great blue heron", "garlic naan", True),
+                ("chickadee", "chocolate cake", True),
+                ("brown bear", "bear claw", False),
+            ]
 
-			for beast, dish, expected in data:
+            for beast, dish, expected in data:
 
-				print_log(beast=beast,
-				          dish=dish,
-				          expected=expected)
+                print_log(beast=beast,
+                          dish=dish,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 feast(beast,
-				                       dish))
+                self.assertEqual(expected,
+                                 feast(beast,
+                                       dish))
