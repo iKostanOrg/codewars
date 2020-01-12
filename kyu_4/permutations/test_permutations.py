@@ -65,7 +65,9 @@ class PermutationsTestCase(unittest.TestCase):
         for string, expected in test_data:
 
             actual_result = sorted(permutations(string))
-            print_log(string=string, expected=expected)
+            print_log(string=string,
+                      expected=expected,
+                      actual_result=actual_result)
 
             with allure.step("Enter a test string ({}) and "
                              "verify the output ({}) vs "
