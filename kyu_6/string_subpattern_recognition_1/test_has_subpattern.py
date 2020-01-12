@@ -16,6 +16,9 @@ from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String subpattern recognition I')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class HasSubpatternTestCase(unittest.TestCase):
 	"""
 	String subpattern recognition I

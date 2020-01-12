@@ -16,6 +16,9 @@ from kyu_6.pyramid_array.pyramid_array import pyramid
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Pyramid Array')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class PyramidTestCase(unittest.TestCase):
 	"""
 	Testing 'pyramid' function

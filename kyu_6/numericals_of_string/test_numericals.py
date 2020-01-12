@@ -16,6 +16,9 @@ from kyu_6.numericals_of_string.numericals import numericals
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Numericals of a String')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class NumericalsTestCase(unittest.TestCase):
 	"""
 	Testing 'numericals' function

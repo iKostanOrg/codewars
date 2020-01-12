@@ -16,6 +16,9 @@ from kyu_6.duplicate_encoder.duplicate_encode import duplicate_encode
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Duplicate Encoder')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class DuplicateEncodeTestCase(unittest.TestCase):
 	"""
 	Testing duplicate_encode function

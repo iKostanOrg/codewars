@@ -16,6 +16,9 @@ from kyu_6.character_frequency.character_frequency import letter_frequency
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Character frequency')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class LetterFrequencyTestCase(unittest.TestCase):
     """
     Testing letter_frequency function

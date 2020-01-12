@@ -16,6 +16,9 @@ from kyu_6.vasya_clerk.tickets import tickets
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Vasya - Clerk')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class TicketsTestCase(unittest.TestCase):
 	"""
 	Testing tickets function

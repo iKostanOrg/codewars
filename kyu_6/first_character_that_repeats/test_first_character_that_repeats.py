@@ -16,6 +16,9 @@ from kyu_6.first_character_that_repeats.first_character_that_repeats import firs
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('First character that repeats')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class FirstDupTestCase(unittest.TestCase):
     """
     Testing first_dup function

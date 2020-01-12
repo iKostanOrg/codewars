@@ -16,6 +16,9 @@ from kyu_6.unique_in_order.unique_in_order import unique_in_order
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Unique In Order')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class UniqueInOrderTestCase(unittest.TestCase):
 	"""
 	Testing the 'unique_in_order' function

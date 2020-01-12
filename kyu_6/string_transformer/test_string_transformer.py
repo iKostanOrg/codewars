@@ -16,6 +16,9 @@ from kyu_6.string_transformer.string_transformer import string_transformer
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String transformer')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class StringTransformerTestCase(unittest.TestCase):
 	"""
 	Testing string_transformer function

@@ -16,6 +16,9 @@ from kyu_6.find_the_odd_int.find_the_odd_int import find_it
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Find the odd int')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class FindTheOddIntTestCase(unittest.TestCase):
 	"""
 	Testing find_it function

@@ -16,6 +16,9 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Permute a Palindrome')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class PermutePalindromeTestCase(unittest.TestCase):
 	"""
 	Testing permute_a_palindrome function

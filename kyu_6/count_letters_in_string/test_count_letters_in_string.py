@@ -16,6 +16,9 @@ from kyu_6.count_letters_in_string.count_letters_in_string import letter_count
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Count letters in string')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class CountLettersInStringTestCase(unittest.TestCase):
 	"""
 	Testing 'letter_count' function

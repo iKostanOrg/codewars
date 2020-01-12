@@ -16,6 +16,9 @@ from kyu_6.sum_of_digits_digital_root.digital_root import digital_root
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Sum of Digits / Digital Root')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class DigitalRootTestCase(unittest.TestCase):
 	"""
 	Testing digital_root function

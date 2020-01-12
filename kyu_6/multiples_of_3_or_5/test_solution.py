@@ -16,6 +16,9 @@ from kyu_6.multiples_of_3_or_5.solution import solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Multiples of 3 or 5')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
 	"""
 	Testing solution function
