@@ -6,10 +6,10 @@ All inputs will be valid IPv4 addresses in the form of strings. The last address
 
 ### Examples
 
+```text
 > ips_between("10.0.0.0", "10.0.0.50")  ==   50
-> 
 > ips_between("10.0.0.0", "10.0.1.0")   ==  256 
->
 > ips_between("20.0.0.10", "20.0.1.0")  ==  246
+```
 
 [Source](https://www.codewars.com/kata/526989a41034285187000de4/train/python)
