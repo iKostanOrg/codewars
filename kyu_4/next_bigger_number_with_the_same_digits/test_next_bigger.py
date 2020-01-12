@@ -62,8 +62,11 @@ class NextBiggerTestCase(unittest.TestCase):
         for d in data:
             n = d[0]
             expected = d[1]
-            print_log(n=n, expected=expected)
             actual_result = next_bigger(n)
+            print_log(n=n,
+                      expected=expected,
+                      actual_result=actual_result)
+
             with allure.step("Enter an integer ({}), "
                              "calculate the result ({}) and "
                              "compare it with expected ({})".format(n,
