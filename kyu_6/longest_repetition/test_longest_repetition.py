@@ -16,6 +16,9 @@ from kyu_6.longest_repetition.longest_repetition import longest_repetition
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('First character that repeats')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class LongestRepetitionTestCase(unittest.TestCase):
 	"""
 	Testing longest_repetition function
