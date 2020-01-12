@@ -16,6 +16,10 @@ from kyu_5.alphabet_wars_nuclear_strike.alphabet_war import alphabet_war
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Alphabet wars - nuclear strike')
+@allure.tag('FUNDAMENTALS', 'STRINGS', 'REGULAR', 'EXPRESSIONS',
+            'DECLARATIVE', 'PROGRAMMING', 'ADVANCED', 'LANGUAGE', 'FEATURES')
+@allure.link(url='https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python',
+             name='Source/Kata')
 class AlphabetWarTestCase(unittest.TestCase):
 	"""
 	Testing alphabet_war function

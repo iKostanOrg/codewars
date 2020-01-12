@@ -16,42 +16,45 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Directions Reduction')
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python',
+             name='Source/Kata')
 class DirectionsReductionTestCase(unittest.TestCase):
-	"""
-	Testing dirReduc function
-	"""
+    """
+    Testing dirReduc function
+    """
 
-	def test_directions_reduction(self):
-		"""
-		Test a function dirReduc which will take an array of
-		strings and returns an array of strings with the needless
-		directions removed (W<->E or S<->N side by side).
+    def test_directions_reduction(self):
+        """
+        Test a function dirReduc which will take an array of
+        strings and returns an array of strings with the needless
+        directions removed (W<->E or S<->N side by side).
 
-		The Haskell version takes a list of directions with
-		data Direction = North | East | West | South.
+        The Haskell version takes a list of directions with
+        data Direction = North | East | West | South.
 
-		The Clojure version returns nil when the path is
-		reduced to nothing.
+        The Clojure version returns nil when the path is
+        reduced to nothing.
 
-		The Rust version takes a slice of enum Direction
-		{NORTH, SOUTH, EAST, WEST}.
-		:return:
-		"""
+        The Rust version takes a slice of enum Direction
+        {NORTH, SOUTH, EAST, WEST}.
+        :return:
+        """
 
-		allure.dynamic.title("Testing dirReduc function")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing dirReduc function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Enter test data (list) and verify the output"):
-			data = [
-				(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
-				 ['WEST']),
-				(["NORTH", "WEST", "SOUTH", "EAST"],
-				 ["NORTH", "WEST", "SOUTH", "EAST"])
-			]
+        with allure.step("Enter test data (list) and verify the output"):
+            data = [
+                (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
+                 ['WEST']),
+                (["NORTH", "WEST", "SOUTH", "EAST"],
+                 ["NORTH", "WEST", "SOUTH", "EAST"])
+            ]
 
-			for d in data:
-				array = d[0]
-				expected = d[1]
-				print_log(array=array, expected=expected)
-				self.assertListEqual(expected, dirReduc(array))
+            for d in data:
+                array = d[0]
+                expected = d[1]
+                print_log(array=array, expected=expected)
+                self.assertListEqual(expected, dirReduc(array))
 

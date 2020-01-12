@@ -16,6 +16,9 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Moving Zeros To The End')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class MoveZerosTestCase(unittest.TestCase):
 	"""
 	Testing move_zeros function
