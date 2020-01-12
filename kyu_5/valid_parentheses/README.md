@@ -4,6 +4,7 @@ Write a function called that takes a string of parentheses, and determines if th
 
 ### Examples
 
+```text
 > "()"              =>  true
 >
 > ")(()))"          =>  false
@@ -11,10 +12,13 @@ Write a function called that takes a string of parentheses, and determines if th
 > "("               =>  false
 >
 > "(())((()())())"  =>  true
+```
 
 ### Constraints
 
+```text
 > 0 <= input.length <= 100
+```
 
 Along with opening `(()` and closing `())` parenthesis, input may contain any valid ASCII characters. Furthermore, the input string may be empty and/or not contain any parentheses at all. Do not treat other forms of brackets as parentheses (e.g. `[]`, `{}`, `<>`).
 
