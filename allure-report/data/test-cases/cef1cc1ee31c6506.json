@@ -1,0 +1,257 @@
+{
+  "uid" : "cef1cc1ee31c6506",
+  "name" : "Testing anagrams function",
+  "fullName" : "kyu_5.where_my_anagrams_at.test_anagrams.AnagramsTestCase#test_anagrams",
+  "historyId" : "e4a3219ae28469fc10d020cba24dd0dd",
+  "time" : {
+    "start" : 1578808370265,
+    "stop" : 1578808370267,
+    "duration" : 2
+  },
+  "description" : "\n        Test a function that will find all the anagrams of a word from a list.\n        You will be given two inputs a word and an array with words. You should\n        return an array of all the anagrams or an empty array if there are none.\n\n        For example:\n\n        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']\n        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']\n        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    Test a function that will find all the anagrams of a word from a list.\n    You will be given two inputs a word and an array with words. You should\n    return an array of all the anagrams or an empty array if there are none.\n\n    For example:\n\n    anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) =&gt; ['aabb', 'bbaa']\n    anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) =&gt; ['carer', 'racer']\n    anagrams('laser', ['lazing', 'lazy',  'lacer']) =&gt; []\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1578808370263,
+      "stop" : 1578808370263,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function that will find all the anagrams of a word from a list.\n        You will be given two inputs a word and an array with words. You should\n        return an array of all the anagrams or an empty array if there are none.\n\n        For example:\n\n        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']\n        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']\n        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data (list of strings) and verify the output",
+      "time" : {
+        "start" : 1578808370265,
+        "stop" : 1578808370265,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "620daab855175550",
+      "name" : "stdout",
+      "source" : "620daab855175550.txt",
+      "type" : "text/plain",
+      "size" : 170
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1578808370269,
+      "stop" : 1578808370269,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "story",
+    "value" : "Where my anagrams at?"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "12540-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.where_my_anagrams_at.test_anagrams"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "82259ab682743201",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803683143,
+        "stop" : 1578803683144,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "67bf8340c1b1b118",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802614090,
+        "stop" : 1578802614091,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4f43a1aaecf4397e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801842016,
+        "stop" : 1578801842017,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c2c1d68d41a2e6b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192529,
+        "stop" : 1577672192530,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "22c3592171d5e631",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953684,
+        "stop" : 1577669953686,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ee6c29b51605703f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327509089,
+        "stop" : 1577327509089,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e1b2efe2b7b1af07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735786,
+        "stop" : 1577321735787,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8dd40e3e20931e6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063534176,
+        "stop" : 1577063534178,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "e267b4349d059c88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1578803683143,
+          "stop" : 1578803683144,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3b1cc74bd379b237",
+        "status" : "passed",
+        "time" : {
+          "start" : 1578802614090,
+          "stop" : 1578802614091,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "d29ff8123893a5e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1578801842016,
+          "stop" : 1578801842017,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "626dd8989875cba6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577672192529,
+          "stop" : 1577672192530,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a2ab41b1f235f842",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577669953684,
+          "stop" : 1577669953686,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "ALGORITHMS" ]
+  },
+  "source" : "cef1cc1ee31c6506.json",
+  "parameterValues" : [ ]
+}
