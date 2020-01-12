@@ -17,6 +17,9 @@ from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigge
 @allure.sub_suite("Unit Tests")
 @allure.feature("Integers")
 @allure.story("Next bigger number with the same digits")
+@allure.tag('REFACTORING', 'NUMBERS', 'STRINGS', 'INTEGERS')
+@allure.link(url='https://www.codewars.com/kata/55983863da40caa2c900004e/train/python',
+             name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class NextBiggerTestCase(unittest.TestCase):
 

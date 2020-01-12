@@ -36,3 +36,5 @@ validSolution([
   [3, 0, 0, 4, 8, 1, 1, 7, 9]
 ]); // => false
 ```
+
+[Source](https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python)

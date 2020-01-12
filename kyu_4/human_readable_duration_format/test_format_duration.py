@@ -16,6 +16,9 @@ from kyu_4.human_readable_duration_format.format_duration import format_duration
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Human readable duration format')
+@allure.tag('ALGORITHMS', 'FORMATS', 'STRINGS', 'DATES/TIME', 'FORMATTING')
+@allure.link(url='https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python',
+             name='Source/Kata')
 class FormatDurationTestCase(unittest.TestCase):
 	"""
 	Testing format_duration
@@ -37,7 +40,6 @@ class FormatDurationTestCase(unittest.TestCase):
 		allure.dynamic.severity(allure.severity_level.NORMAL)
 
 		with allure.step("Enter seconds and verify the output"):
-
 			test_data = [
 				(1, "1 second"),
 				(62, "1 minute and 2 seconds"),
@@ -55,7 +57,6 @@ class FormatDurationTestCase(unittest.TestCase):
 			]
 
 			for seconds, expected in test_data:
-
 				print_log(seconds=seconds,
 				          expected=expected)
 

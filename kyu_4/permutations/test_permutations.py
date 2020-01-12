@@ -17,6 +17,9 @@ from kyu_4.permutations.permutations import permutations
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story("Permutations")
+@allure.tag('ALGORITHMS', 'PERMUTATIONS', 'STRINGS')
+@allure.link(url='https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/python',
+             name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class PermutationsTestCase(unittest.TestCase):
 
