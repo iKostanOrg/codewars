@@ -65,9 +65,11 @@ class FormatDurationTestCase(unittest.TestCase):
             ]
 
         for seconds, expected in test_data:
-            with allure.step("Enter seconds: {} and verify the output:".format(seconds)):
-
-                actual_result = format_duration(seconds)
+            actual_result = format_duration(seconds)
+            with allure.step("Enter seconds ({}) and verify the "
+                             "expected output ({}) vs actual result ({})".format(seconds,
+                                                                                 expected,
+                                                                                 actual_result)):
 
                 print_log(seconds=seconds,
                           expected=expected,
