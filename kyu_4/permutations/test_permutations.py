@@ -5,8 +5,8 @@
 # ALGORITHMS PERMUTATIONS STRINGS
 
 import allure
-import unittest
 import pytest
+import unittest
 from utils.log_func import print_log
 from kyu_4.permutations.permutations import permutations
 
@@ -23,45 +23,53 @@ from kyu_4.permutations.permutations import permutations
 @pytest.mark.skip(reason="The solution is not ready")
 class PermutationsTestCase(unittest.TestCase):
 
-	def test_permutations(self):
-		"""
-		Testing permutations function
+    def test_permutations(self):
+        """
+        Testing permutations function
 
-		Test that permutations function creates all
-		permutations of an input string and
-	    remove duplicates, if present. This means, you
-	    have to shuffle all letters from the input in all
-	    possible orders.
-		"""
+        Test that permutations function creates all
+        permutations of an input string and
+        remove duplicates, if present. This means, you
+        have to shuffle all letters from the input in all
+        possible orders.
+        """
 
-		allure.dynamic.title("Testing permutations function")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
-		allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-		                                '<img src="https://www.codewars.com/users/myFirstCode'
-		                                '/badges/large">'
-		                                '<h3>Test Description:</h3>'
-		                                "<p></p>")
+        allure.dynamic.title("Testing permutations function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p>Testing permutations function</p>"
+                                        "<p>Test that permutations function creates all "
+                                        "permutations of an input string and "
+                                        "remove duplicates, if present. This means, you "
+                                        "have to shuffle all letters from the input in all "
+                                        "possible orders.</p>")
 
-		with allure.step("Enter a test string and verify the output"):
-			test_data = [
-				('a', ['a']),
-				('ab', ['ab', 'ba']),
-				('aabb', ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']),
-				('abc', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']),
-				('abcd', ['abcd', 'abdc', 'acbd', 'acdb', 'adbc', 'adcb',
-				          'bacd', 'badc', 'bcad', 'bcda', 'bdac', 'bdca',
-				          'cabd', 'cadb', 'cbad', 'cbda', 'cdab', 'cdba',
-				          'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba']),
-				('dcba', ['abcd', 'abdc', 'acbd', 'acdb', 'adbc', 'adcb',
-				          'bacd', 'badc', 'bcad', 'bcda', 'bdac', 'bdca',
-				          'cabd', 'cadb', 'cbad', 'cbda', 'cdab', 'cdba',
-				          'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba'])
-			]
+        test_data = [
+                ('a', ['a']),
+                ('ab', ['ab', 'ba']),
+                ('aabb', ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']),
+                ('abc', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']),
+                ('abcd', ['abcd', 'abdc', 'acbd', 'acdb', 'adbc', 'adcb',
+                          'bacd', 'badc', 'bcad', 'bcda', 'bdac', 'bdca',
+                          'cabd', 'cadb', 'cbad', 'cbda', 'cdab', 'cdba',
+                          'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba']),
+                ('dcba', ['abcd', 'abdc', 'acbd', 'acdb', 'adbc', 'adcb',
+                          'bacd', 'badc', 'bcad', 'bcda', 'bdac', 'bdca',
+                          'cabd', 'cadb', 'cbad', 'cbda', 'cdab', 'cdba',
+                          'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba'])
+            ]
 
-			for string, expected in test_data:
+        for string, expected in test_data:
 
-				print_log(string=string,
-				          expected=expected)
+            actual_result = sorted(permutations(string))
+            print_log(string=string, expected=expected)
 
-				self.assertListEqual(sorted(expected),
-				                     sorted(permutations(string)))
+            with allure.step("Enter a test string ({}) and "
+                             "verify the output ({}) vs "
+                             "expected ({})".format(string,
+                                                    actual_result,
+                                                    expected)):
+                self.assertListEqual(sorted(expected), actual_result)
