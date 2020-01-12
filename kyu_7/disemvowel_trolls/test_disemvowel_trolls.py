@@ -16,27 +16,30 @@ from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Disemvowel Trolls')
-class MdisemvowelTestCase(unittest.TestCase):
-	"""
-	Testing disemvowel function
-	"""
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
+class DisemvowelTestCase(unittest.TestCase):
+    """
+    Testing disemvowel function
+    """
 
-	def test_disemvowel(self):
-		"""
-		The string "This website is for losers LOL!"
-		should become "Ths wbst s fr lsrs LL!"
-		:return:
-		"""
+    def test_disemvowel(self):
+        """
+        The string "This website is for losers LOL!"
+        should become "Ths wbst s fr lsrs LL!"
+        :return:
+        """
 
-		allure.dynamic.title("a and b are equal")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("a and b are equal")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
 
-		with allure.step("Assert the result"):
-			input_data = "This website is for losers LOL!"
-			expected = "Ths wbst s fr lsrs LL!"
+        with allure.step("Assert the result"):
+            input_data = "This website is for losers LOL!"
+            expected = "Ths wbst s fr lsrs LL!"
 
-			print_log(input=input_data,
-			          expected=expected)
+            print_log(input=input_data,
+                      expected=expected)
 
-			self.assertEqual(disemvowel(input_data),
-			                 expected)
+            self.assertEqual(disemvowel(input_data),
+                             expected)

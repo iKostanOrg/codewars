@@ -16,19 +16,23 @@ from kyu_7.maximum_multiple.maximum_multiple import max_multiple
 @allure.sub_suite("Unit Tests")
 @allure.feature("Control Flow")
 @allure.story('Maximum Multiple')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class MaximumMultipleTestCase(unittest.TestCase):
-	"""
-	Testing max_multiple function
-	"""
-	def test_maximum_multiple(self):
-		"""
-		Testing max_multiple function with
-		various test data
+    """
+    Testing max_multiple function
+    """
 
-		Given a Divisor and a Bound ,
-		Find the largest integer N , Such That ,
+    def test_maximum_multiple(self):
+        """
+        Testing max_multiple function with
+        various test data
 
-		Conditions:
+        Given a Divisor and a Bound ,
+        Find the largest integer N , Such That ,
+
+        Conditions:
         1. N is divisible by divisor
         2. N is less than or equal to bound
         3. N is greater than 0.
@@ -37,35 +41,35 @@ class MaximumMultipleTestCase(unittest.TestCase):
         1. The parameters (divisor, bound)
             passed to the function are only positve values .
         2. It's guaranteed that a divisor is Found .
-		:return:
-		"""
+        :return:
+        """
 
-		allure.dynamic.title("Testing max_multiple function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing max_multiple function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Enter divisor, bound and verify the output"):
+        with allure.step("Enter divisor, bound and verify the output"):
 
-			data = [
-				(2, 7, 6),
-				(3, 10, 9),
-				(7, 17, 14),
-				(10, 50, 50),
-				(37, 200, 185),
-				(7, 100, 98),
-				(37, 100, 74),
-				(1, 13, 13),
-				(1, 1, 1),
-				(22, 9, 0),
-				(43, 7, 0),
-				(50, 7, 0)
-			]
+            data = [
+                (2, 7, 6),
+                (3, 10, 9),
+                (7, 17, 14),
+                (10, 50, 50),
+                (37, 200, 185),
+                (7, 100, 98),
+                (37, 100, 74),
+                (1, 13, 13),
+                (1, 1, 1),
+                (22, 9, 0),
+                (43, 7, 0),
+                (50, 7, 0)
+            ]
 
-			for divisor, bound, expected in data:
+            for divisor, bound, expected in data:
 
-				print_log(divisor=divisor,
-				          bound=bound,
-				          expected=expected)
+                print_log(divisor=divisor,
+                          bound=bound,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 max_multiple(divisor,
-				                              bound))
+                self.assertEqual(expected,
+                                 max_multiple(divisor,
+                                              bound))

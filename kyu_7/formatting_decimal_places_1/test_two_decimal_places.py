@@ -16,48 +16,51 @@ from kyu_7.formatting_decimal_places_1.two_decimal_places import two_decimal_pla
 @allure.sub_suite("Unit Tests")
 @allure.feature("Formatting")
 @allure.story('Formatting decimal places #1')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class TwoDecimalPlacesTestCase(unittest.TestCase):
-	"""
-	Testing two_decimal_places function
-	"""
+    """
+    Testing two_decimal_places function
+    """
 
-	def test_two_decimal_places(self):
-		"""
-		Testing two_decimal_places function
-		with various test inputs
+    def test_two_decimal_places(self):
+        """
+        Testing two_decimal_places function
+        with various test inputs
 
-		Each floating-point number should be
-		formatted that only the first two
-		decimal places are returned.
+        Each floating-point number should be
+        formatted that only the first two
+        decimal places are returned.
 
-		You don't need to check whether the input
-		is a valid number because only valid numbers
-		are used in the tests.
+        You don't need to check whether the input
+        is a valid number because only valid numbers
+        are used in the tests.
 
-		Don't round the numbers! Just cut them
-		after two decimal places!
-		:return:
-		"""
+        Don't round the numbers! Just cut them
+        after two decimal places!
+        :return:
+        """
 
-		allure.dynamic.title("Testing two_decimal_places function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing two_decimal_places function")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
 
-		with allure.step("Pass a number and verify the output"):
+        with allure.step("Pass a number and verify the output"):
 
-			data = [
-				(10.1289767789, 10.12,
-				 "didn't work for 10.1289767789"),
-				(-7488.83485834983, -7488.83,
-				 "didn't work for -7488.83485834983"),
-				(4.653725356, 4.65,
-				 "didn't work for 4.653725356"),
-			]
+            data = [
+                (10.1289767789, 10.12,
+                 "didn't work for 10.1289767789"),
+                (-7488.83485834983, -7488.83,
+                 "didn't work for -7488.83485834983"),
+                (4.653725356, 4.65,
+                 "didn't work for 4.653725356"),
+            ]
 
-			for number, expected, msg in data:
+            for number, expected, msg in data:
 
-				print_log(number=number,
-				          expected=expected)
+                print_log(number=number,
+                          expected=expected)
 
-				self.assertEqual(expected,
-				                 two_decimal_places(number),
-				                 msg)
+                self.assertEqual(expected,
+                                 two_decimal_places(number),
+                                 msg)

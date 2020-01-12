@@ -17,6 +17,9 @@ from kyu_7.fill_the_hard_disk_drive.save import save
 @allure.feature("Lists")
 @allure.story('Computer problem series #1: '
               'Fill the Hard Disk Drive')
+@allure.tag()
+@allure.link(url='',
+             name='Source/Kata')
 class SaveTestCase(unittest.TestCase):
     """
     Testing 'save' function
