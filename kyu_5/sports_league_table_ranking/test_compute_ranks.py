@@ -21,7 +21,7 @@ class ComputeRanksTestCase(unittest.TestCase):
 
     def test_something(self):
         """
-        Test the function taht organizes a sports league in a
+        Test the function that organizes a sports league in a
         round-robin-system. Each team meets all other teams.
         In your league a win gives a team 2 points, a draw gives
         both teams 1 point. After some games you have to compute
