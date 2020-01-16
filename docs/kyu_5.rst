@@ -20,6 +20,7 @@ Subpackages
    kyu_5.number_of_trailing_zeros_of_n
    kyu_5.flatten
    kyu_5.first_non_repeating_character
+   kyu_5.sports_league_table_ranking
 
 Module contents
 ---------------
