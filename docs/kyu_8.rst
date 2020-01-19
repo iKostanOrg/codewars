@@ -38,6 +38,7 @@ Subpackages
    kyu_8.count_the_monkeys
    kyu_8.keep_up_the_hoop
    kyu_8.enumerable_magic_25
+   kyu_8.will_you_make_it
 
 Module contents
 ---------------
