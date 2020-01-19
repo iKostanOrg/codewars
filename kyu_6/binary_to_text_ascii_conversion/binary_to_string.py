@@ -4,6 +4,7 @@
 
 import binascii
 
+
 def binary_to_string(binary: str) -> str:
     """
     Write a function that takes in a binary string
