@@ -37,6 +37,7 @@ Subpackages
    kyu_8.the_feast_of_many_beasts
    kyu_8.count_the_monkeys
    kyu_8.keep_up_the_hoop
+   kyu_8.enumerable_magic_25
 
 Module contents
 ---------------
