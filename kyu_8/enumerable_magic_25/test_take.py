@@ -11,10 +11,10 @@ from kyu_8.enumerable_magic_25.take import take
 
 
 @allure.epic('8 kyu')
-@allure.parent_suite('')
-@allure.suite("")
+@allure.parent_suite('Beginner')
+@allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
-@allure.feature("")
+@allure.feature("Lists")
 @allure.story('Enumerable Magic #25 - Take the First N Elements')
 @allure.tag("FUNDAMENTALS")
 @allure.link(url='https://www.codewars.com/kata/545afd0761aa4c3055001386/train/python',
