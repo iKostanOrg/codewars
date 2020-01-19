@@ -16,7 +16,9 @@ from kyu_8.count_the_monkeys.monkey_count import monkey_count
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Count the Monkeys!')
-@allure.tag()
+@allure.tag('ALGORITHMS', 'ARRAYS', 'FUNDAMENTALS',
+            'RANGES', 'BASIC LANGUAGE FEATURES',
+            'LISTS' 'DATA STRUCTURES')
 @allure.link(url='',
              name='Source/Kata')
 class MonkeyCountTestCase(unittest.TestCase):
