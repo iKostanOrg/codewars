@@ -29,5 +29,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |11   |[Number of trailing zeros of N!](https://www.codewars.com/kata/52f787eb172a8b4ae1000a34/train/python)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/number_of_trailing_zeros_of_n)             |
 |12   |[flatten](https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python)                                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/flatten)                                   |
 |13   |[First non-repeating character](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python)                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/first_non_repeating_character)             |
+|14   |[Sports League Table Ranking](https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python)                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/sports_league_table_ranking)             |
 
 [Source](https://www.codewars.com/about)
