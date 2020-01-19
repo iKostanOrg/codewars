@@ -2,8 +2,6 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-import binascii
-
 
 def binary_to_string(binary: str) -> str:
     """
