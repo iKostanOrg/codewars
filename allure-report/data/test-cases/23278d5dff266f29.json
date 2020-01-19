@@ -1,0 +1,702 @@
+{
+  "uid" : "23278d5dff266f29",
+  "name" : "Testing sum_of_intervals function",
+  "fullName" : "kyu_4.sum_of_intervals.test_sum_of_intervals.SumOfIntervalsTestCase#test_sum_of_intervals",
+  "historyId" : "f33ef5393ae0b8067a498b7663b7a090",
+  "time" : {
+    "start" : 1579417126771,
+    "stop" : 1579417126775,
+    "duration" : 4
+  },
+  "description" : "\n        Testing sum_of_intervals function\n\n        The function should accept an array of intervals,\n        and return the sum of all the interval lengths.\n\n        Overlapping intervals should only be counted once.\n\n        Intervals\n        Intervals are represented by a pair of integers in\n        the form of an array. The first value of the interval\n        will always be less than the second value.\n        Interval example: [1, 5] is an interval from 1 to 5.\n        The length of this interval is 4.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Testing sum_of_intervals function<p>The function should accept an array of intervals, and return the sum of all the interval lengths.<p>Overlapping intervals should only be counted once.<p>Intervals</p><p>Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1579417126769,
+      "stop" : 1579417126770,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing sum_of_intervals function\n\n        The function should accept an array of intervals,\n        and return the sum of all the interval lengths.\n\n        Overlapping intervals should only be counted once.\n\n        Intervals\n        Intervals are represented by a pair of integers in\n        the form of an array. The first value of the interval\n        will always be less than the second value.\n        Interval example: [1, 5] is an interval from 1 to 5.\n        The length of this interval is 4.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Testing sum_of_intervals function<p>The function should accept an array of intervals, and return the sum of all the interval lengths.<p>Overlapping intervals should only be counted once.<p>Intervals</p><p>Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a list of intervals ([(1, 5)]), calculate the result (4) and compare vs expected (4)",
+      "time" : {
+        "start" : 1579417126771,
+        "stop" : 1579417126771,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(1, 5), (6, 10)]), calculate the result (8) and compare vs expected (8)",
+      "time" : {
+        "start" : 1579417126771,
+        "stop" : 1579417126771,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(1, 5)]), calculate the result (4) and compare vs expected (4)",
+      "time" : {
+        "start" : 1579417126772,
+        "stop" : 1579417126772,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(7, 10), (1, 5)]), calculate the result (7) and compare vs expected (7)",
+      "time" : {
+        "start" : 1579417126772,
+        "stop" : 1579417126772,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(476, 493), (-484, 428)]), calculate the result (929) and compare vs expected (929)",
+      "time" : {
+        "start" : 1579417126773,
+        "stop" : 1579417126773,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(-473, 476)]), calculate the result (949) and compare vs expected (949)",
+      "time" : {
+        "start" : 1579417126773,
+        "stop" : 1579417126773,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(-419, 500)]), calculate the result (919) and compare vs expected (919)",
+      "time" : {
+        "start" : 1579417126773,
+        "stop" : 1579417126773,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(-153, 312), (360, 469)]), calculate the result (574) and compare vs expected (574)",
+      "time" : {
+        "start" : 1579417126773,
+        "stop" : 1579417126773,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(456, 494), (-500, 436)]), calculate the result (974) and compare vs expected (974)",
+      "time" : {
+        "start" : 1579417126774,
+        "stop" : 1579417126774,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "3d91f8b78f119120",
+      "name" : "stdout",
+      "source" : "3d91f8b78f119120.txt",
+      "type" : "text/plain",
+      "size" : 639
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 9
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1579417126778,
+      "stop" : 1579417126780,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Aggregations"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "epic",
+    "value" : "4 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "MATHEMATICS"
+  }, {
+    "name" : "story",
+    "value" : "Sum of Intervals"
+  }, {
+    "name" : "tag",
+    "value" : "ARITHMETIC"
+  }, {
+    "name" : "tag",
+    "value" : "INTEGERS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "tag",
+    "value" : "AGGREGATIONS"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "7264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_4.sum_of_intervals.test_sum_of_intervals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c82ee60cc1fdbf54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090410,
+        "stop" : 1579416090412,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7fd52fa005da6fd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048658,
+        "stop" : 1579407048661,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "cac10e5e7a221894",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406490922,
+        "stop" : 1579406490927,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "525a6aca2731ab5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406085903,
+        "stop" : 1579406085906,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "714416e911d4adfd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151844843,
+        "stop" : 1579151844846,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d86242f43d14287a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684634,
+        "stop" : 1578812684638,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "59d7def2bc681d84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810674038,
+        "stop" : 1578810674039,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fa871efa37a138f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810574184,
+        "stop" : 1578810574186,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e73d2d9273d613ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138109,
+        "stop" : 1578810138111,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a01cc6d962ce8c16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489425,
+        "stop" : 1578809489427,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "24050b323fc43f68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951156,
+        "stop" : 1578808951160,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "2b32ebfebed9e6ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808369988,
+        "stop" : 1578808369990,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a05281a64aec85c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803682832,
+        "stop" : 1578803682835,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "94576288e27833e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802613717,
+        "stop" : 1578802613718,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "40e217c30597c41b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841560,
+        "stop" : 1578801841565,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "61d0e98efb1fe133",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192236,
+        "stop" : 1577672192238,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "76829032ba65a7e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953289,
+        "stop" : 1577669953290,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9de3a925bf684167",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327508874,
+        "stop" : 1577327508875,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d0852366fdd55d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735538,
+        "stop" : 1577321735540,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "976763a0a2d5097f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063533881,
+        "stop" : 1577063533884,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "f1bbffb7069c921a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062098831,
+        "stop" : 1577062098833,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4f44aaf06b92b5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059477017,
+        "stop" : 1577059477018,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3c41983ddf5c65e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388867301,
+        "stop" : 1576388867302,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ce3ff0fdcb1eddbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387265622,
+        "stop" : 1576387265623,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2e084f82531c6a4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862137510,
+        "stop" : 1575862137511,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d4dffa0d01043cf6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760676021,
+        "stop" : 1575760676022,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "43099a76dc418ed7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760564744,
+        "stop" : 1575760564746,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a99006c2ccb3cb08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227957472,
+        "stop" : 1575227957474,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "88298bfd405a60a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227882513,
+        "stop" : 1575227882514,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ffce7d70456c80fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575221461522,
+        "stop" : 1575221461526,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "89eda5b7c3560f9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574618603657,
+        "stop" : 1574618603660,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "efe2dd31b6098092",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574616398272,
+        "stop" : 1574616398275,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "5b67cc52ea387235",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574616295785,
+        "stop" : 1574616295787,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "be6b570505269009",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574615796384,
+        "stop" : 1574615796388,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "e92e072970676e52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574615720804,
+        "stop" : 1574615720808,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "7f1b17a93b174d6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574018662974,
+        "stop" : 1574018662979,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "a5ab1c94d77b3c2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574012904984,
+        "stop" : 1574012904986,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fafbcf2a3417f04c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573966632451,
+        "stop" : 1573966632454,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "f0c7a053e0556ec0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573956296231,
+        "stop" : 1573956296234,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c6bc9abfcee8b924",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573517399255,
+        "stop" : 1573517399259,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "dc9c269126d1b506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573517319027,
+        "stop" : 1573517319029,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6a1282bd56147f5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573514549197,
+        "stop" : 1573514549201,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "546e37f07d0a8624",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573189084343,
+        "stop" : 1573189084346,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9c0dfb2e4b641cba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573180172388,
+        "stop" : 1573180172389,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "dda8f32d0fdf4304",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573079195158,
+        "stop" : 1573079195161,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e626b31437d7bc36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573078941769,
+        "stop" : 1573078941773,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "35df572015623f20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573078482834,
+        "stop" : 1573078482835,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 40,
+        "unknown" : 0,
+        "total" : 40
+      },
+      "items" : [ {
+        "uid" : "bd0554dce5a967c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579416090410,
+          "stop" : 1579416090412,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "74cc6ac1673333a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579407048658,
+          "stop" : 1579407048661,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "9258b8852add3f2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579406085903,
+          "stop" : 1579406085906,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "e20239f94e608712",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579151844843,
+          "stop" : 1579151844846,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "ce66dc14fc117cd1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1578812684634,
+          "stop" : 1578812684638,
+          "duration" : 4
+        }
+      } ]
+    },
+    "tags" : [ "MATHEMATICS", "NUMBERS", "INTEGERS", "ARITHMETIC", "AGGREGATIONS", "ALGORITHMS" ]
+  },
+  "source" : "23278d5dff266f29.json",
+  "parameterValues" : [ ]
+}

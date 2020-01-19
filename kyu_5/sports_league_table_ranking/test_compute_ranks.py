@@ -10,7 +10,7 @@ from kyu_5.sports_league_table_ranking.compute_ranks import compute_ranks
 
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
-@allure.suite("ALGORITHMS")
+@allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Sports League Table Ranking')
