@@ -16,7 +16,7 @@ from kyu_8.counting_sheep.counting_sheep import count_sheeps
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Counting sheep...')
-@allure.tag()
+@allure.tag('FUNDAMENTALS', 'ARRAYS')
 @allure.link(url='',
              name='Source/Kata')
 class CountingSheepTestCase(unittest.TestCase):
