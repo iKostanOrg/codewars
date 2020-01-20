@@ -42,5 +42,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |24   |[You're a square](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/python)                                    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/you_are_square)                                    |
 |25   |[Find the longest gap!](https://www.codewars.com/kata/55b86beb1417eab500000051/train/python)                              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/find_the_longest_gap)                              |
 |26   |[Simple Fun #74: Growing Plant](https://www.codewars.com/kata/58941fec8afa3618c9000184/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/growing_plant)                                     |
+|27   |[Basic Math (Add or Subtract)](https://www.codewars.com/kata/5809b62808ad92e31b000031/train/python)                       |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/basic_math_add_or_subtract)                                     |
 
 [Source](https://www.codewars.com/about)
