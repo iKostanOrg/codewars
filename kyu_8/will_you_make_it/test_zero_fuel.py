@@ -11,7 +11,7 @@ from utils.log_func import print_log
 
 
 @allure.epic('8 kyu')
-@allure.parent_suite('Competent')
+@allure.parent_suite('Beginner')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
