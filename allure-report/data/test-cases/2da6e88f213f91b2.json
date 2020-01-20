@@ -1,0 +1,137 @@
+{
+  "uid" : "2da6e88f213f91b2",
+  "name" : "Testing dirReduc function",
+  "fullName" : "kyu_5.directions_reduction.test_directions_reduction.DirectionsReductionTestCase#test_directions_reduction",
+  "historyId" : "250e37eef35f96fa2557cde52e0899db",
+  "time" : {
+    "start" : 1578810138165,
+    "stop" : 1578810138167,
+    "duration" : 2
+  },
+  "description" : "\n        Test a function dirReduc which will take an array of\n        strings and returns an array of strings with the needless\n        directions removed (W<->E or S<->N side by side).\n\n        The Haskell version takes a list of directions with\n        data Direction = North | East | West | South.\n\n        The Clojure version returns nil when the path is\n        reduced to nothing.\n\n        The Rust version takes a slice of enum Direction\n        {NORTH, SOUTH, EAST, WEST}.\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    Test a function dirReduc which will take an array of\n    strings and returns an array of strings with the needless\n    directions removed (W&lt;-&gt;E or S&lt;-&gt;N side by side).\n\n    The Haskell version takes a list of directions with\n    data Direction = North | East | West | South.\n\n    The Clojure version returns nil when the path is\n    reduced to nothing.\n\n    The Rust version takes a slice of enum Direction\n    {NORTH, SOUTH, EAST, WEST}.\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1578810138164,
+      "stop" : 1578810138164,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function dirReduc which will take an array of\n        strings and returns an array of strings with the needless\n        directions removed (W<->E or S<->N side by side).\n\n        The Haskell version takes a list of directions with\n        data Direction = North | East | West | South.\n\n        The Clojure version returns nil when the path is\n        reduced to nothing.\n\n        The Rust version takes a slice of enum Direction\n        {NORTH, SOUTH, EAST, WEST}.\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data (list) and verify the output",
+      "time" : {
+        "start" : 1578810138166,
+        "stop" : 1578810138166,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "c3145c08612e4f98",
+      "name" : "stdout",
+      "source" : "c3145c08612e4f98.txt",
+      "type" : "text/plain",
+      "size" : 194
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1578810138168,
+      "stop" : 1578810138168,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "feature",
+    "value" : "Lists"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "story",
+    "value" : "Directions Reduction"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "5144-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.directions_reduction.test_directions_reduction"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "FUNDAMENTALS" ]
+  },
+  "source" : "2da6e88f213f91b2.json",
+  "parameterValues" : [ ]
+}

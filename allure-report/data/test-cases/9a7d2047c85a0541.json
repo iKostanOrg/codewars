@@ -1,0 +1,140 @@
+{
+  "uid" : "9a7d2047c85a0541",
+  "name" : "Testing anagrams function",
+  "fullName" : "kyu_5.where_my_anagrams_at.test_anagrams.AnagramsTestCase#test_anagrams",
+  "historyId" : "e4a3219ae28469fc10d020cba24dd0dd",
+  "time" : {
+    "start" : 1578812684902,
+    "stop" : 1578812684903,
+    "duration" : 1
+  },
+  "description" : "\n        Test a function that will find all the anagrams of a word from a list.\n        You will be given two inputs a word and an array with words. You should\n        return an array of all the anagrams or an empty array if there are none.\n\n        For example:\n\n        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']\n        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']\n        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    Test a function that will find all the anagrams of a word from a list.\n    You will be given two inputs a word and an array with words. You should\n    return an array of all the anagrams or an empty array if there are none.\n\n    For example:\n\n    anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) =&gt; ['aabb', 'bbaa']\n    anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) =&gt; ['carer', 'racer']\n    anagrams('laser', ['lazing', 'lazy',  'lacer']) =&gt; []\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1578812684900,
+      "stop" : 1578812684901,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function that will find all the anagrams of a word from a list.\n        You will be given two inputs a word and an array with words. You should\n        return an array of all the anagrams or an empty array if there are none.\n\n        For example:\n\n        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']\n        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']\n        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data (list of strings) and verify the output",
+      "time" : {
+        "start" : 1578812684902,
+        "stop" : 1578812684903,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "9143fb39bd89b88",
+      "name" : "stdout",
+      "source" : "9143fb39bd89b88.txt",
+      "type" : "text/plain",
+      "size" : 170
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1578812684904,
+      "stop" : 1578812684904,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "story",
+    "value" : "Where my anagrams at?"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "8396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.where_my_anagrams_at.test_anagrams"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "STRINGS", "ALGORITHMS" ]
+  },
+  "source" : "9a7d2047c85a0541.json",
+  "parameterValues" : [ ]
+}
