@@ -25,7 +25,7 @@ def solve(arr: list) -> int:
     :param arr:
     :return:
     """
-    
+
     arr = sorted(arr)
 
     if arr[0] + arr[1] <= arr[2]:
