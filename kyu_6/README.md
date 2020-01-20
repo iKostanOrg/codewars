@@ -33,6 +33,7 @@ You can advance through the ranks by completing kata at or above your rank - the
 |15   |[Vasya - Clerk](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/python)                                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/vasya_clerk)                    |
 |16   |[Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006/train/python)                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/multiples_of_3_or_5)            |
 |17   |[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/sum_of_digits_digital_root)     |
-|18   |[Binary to Text (ASCII) Conversion](https://www.codewars.com/kata/5583d268479559400d000064/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/binary_to_text_ascii_conversion)     |
+|18   |[Binary to Text (ASCII) Conversion](https://www.codewars.com/kata/5583d268479559400d000064/train/python)            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/binary_to_text_ascii_conversion)|
+|19   |[Casino chips](https://www.codewars.com/kata/5e0b72d2d772160011133654/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/casino_chips)                   |
 
 [Source](https://www.codewars.com/about)
