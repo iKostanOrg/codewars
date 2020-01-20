@@ -1,0 +1,130 @@
+{
+  "uid" : "1b23b5c5b05cd425",
+  "name" : "Testing growing_plant function",
+  "fullName" : "kyu_7.growing_plant.test_growing_plant.GrowingPlantTestCase#test_growing_plant",
+  "historyId" : "fcd618577998a86f372b0608156ae679",
+  "time" : {
+    "start" : 1575227883436,
+    "stop" : 1575227883437,
+    "duration" : 1
+  },
+  "description" : "\n\t\tTesting growing_plant function\n\n\t\tTask\n\n\t\tEach day a plant is growing by upSpeed meters.\n\t\tEach night that plant's height decreases by downSpeed\n\t\tmeters due to the lack of sun heat. Initially, plant\n\t\tis 0 meters tall. We plant the seed at the beginning\n\t\tof a day. We want to know when the height of the plant\n\t\twill reach a certain level.\n\n\t\tExample\n\n\t\tFor upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n\t\tthe output should be 10.\n\n\t\tFor upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n\t\tthe output should be 1. Because the plant reach to the desired\n\t\theight at day 1(10 meters).\n\n\t\tInput/Output\n\n\t\t[input] integer upSpeed\n\t\tA positive integer representing the daily growth.\n\t\tConstraints: 5 ≤ upSpeed ≤ 100.\n\n\t\t[input] integer downSpeed\n\t\tA positive integer representing the nightly decline.\n\t\tConstraints: 2 ≤ downSpeed < upSpeed.\n\n\t\t[input] integer desiredHeight\n\t\tA positive integer representing the threshold.\n\t\tConstraints: 4 ≤ desiredHeight ≤ 1000.\n\n\t\t[output] an integer\n\n\t\tThe number of days that it will take for the plant to\n\t\treach/pass desiredHeight (including the last day in the\n\t\ttotal count).\n\t\t",
+  "descriptionHtml" : "<pre><code>\tTesting growing_plant function\n\n\tTask\n\n\tEach day a plant is growing by upSpeed meters.\n\tEach night that plant's height decreases by downSpeed\n\tmeters due to the lack of sun heat. Initially, plant\n\tis 0 meters tall. We plant the seed at the beginning\n\tof a day. We want to know when the height of the plant\n\twill reach a certain level.\n\n\tExample\n\n\tFor upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n\tthe output should be 10.\n\n\tFor upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n\tthe output should be 1. Because the plant reach to the desired\n\theight at day 1(10 meters).\n\n\tInput/Output\n\n\t[input] integer upSpeed\n\tA positive integer representing the daily growth.\n\tConstraints: 5 ≤ upSpeed ≤ 100.\n\n\t[input] integer downSpeed\n\tA positive integer representing the nightly decline.\n\tConstraints: 2 ≤ downSpeed &lt; upSpeed.\n\n\t[input] integer desiredHeight\n\tA positive integer representing the threshold.\n\tConstraints: 4 ≤ desiredHeight ≤ 1000.\n\n\t[output] an integer\n\n\tThe number of days that it will take for the plant to\n\treach/pass desiredHeight (including the last day in the\n\ttotal count).\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1575227883435,
+      "stop" : 1575227883435,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tTesting growing_plant function\n\n\t\tTask\n\n\t\tEach day a plant is growing by upSpeed meters.\n\t\tEach night that plant's height decreases by downSpeed\n\t\tmeters due to the lack of sun heat. Initially, plant\n\t\tis 0 meters tall. We plant the seed at the beginning\n\t\tof a day. We want to know when the height of the plant\n\t\twill reach a certain level.\n\n\t\tExample\n\n\t\tFor upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n\t\tthe output should be 10.\n\n\t\tFor upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n\t\tthe output should be 1. Because the plant reach to the desired\n\t\theight at day 1(10 meters).\n\n\t\tInput/Output\n\n\t\t[input] integer upSpeed\n\t\tA positive integer representing the daily growth.\n\t\tConstraints: 5 ≤ upSpeed ≤ 100.\n\n\t\t[input] integer downSpeed\n\t\tA positive integer representing the nightly decline.\n\t\tConstraints: 2 ≤ downSpeed < upSpeed.\n\n\t\t[input] integer desiredHeight\n\t\tA positive integer representing the threshold.\n\t\tConstraints: 4 ≤ desiredHeight ≤ 1000.\n\n\t\t[output] an integer\n\n\t\tThe number of days that it will take for the plant to\n\t\treach/pass desiredHeight (including the last day in the\n\t\ttotal count).\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter upSpeed, downSpeed and desiredHeight and verify the output",
+      "time" : {
+        "start" : 1575227883436,
+        "stop" : 1575227883436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "26a73a8294bd0f8f",
+      "name" : "stdout",
+      "source" : "26a73a8294bd0f8f.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1575227883439,
+      "stop" : 1575227883439,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Calculation"
+  }, {
+    "name" : "story",
+    "value" : "Simple Fun #74: Growing Plant"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "epic",
+    "value" : "7 kyu"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "16328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_7.growing_plant.test_growing_plant"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b23b5c5b05cd425.json",
+  "parameterValues" : [ ]
+}
