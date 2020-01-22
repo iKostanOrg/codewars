@@ -25,6 +25,7 @@ Subpackages
    kyu_6.sum_of_digits_digital_root
    kyu_6.binary_to_text_ascii_conversion
    kyu_6.casino_chips
+   kyu_6.pokemon_damage_calculator
 
 Module contents
 ---------------
