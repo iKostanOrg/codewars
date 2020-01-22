@@ -1,0 +1,444 @@
+{
+  "uid" : "18dc2ced750a782b",
+  "name" : "Testing valid_parentheses function",
+  "fullName" : "kyu_5.valid_parentheses.test_valid_parentheses.ValidParenthesesTestCase#test_valid_parentheses",
+  "historyId" : "9cc20e8c3c9bafa6f94ecaef044db1be",
+  "time" : {
+    "start" : 1579733200037,
+    "stop" : 1579733200039,
+    "duration" : 2
+  },
+  "description" : "\n        Test the function called that takes a string of parentheses,\n        and determines if the order of the parentheses is valid.\n        The function should return true if the string is valid,\n        and false if it's invalid.\n\n        Examples\n\n        \"()\"              =>  true\n        \")(()))\"          =>  false\n        \"(\"               =>  false\n        \"(())((()())())\"  =>  true\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    Test the function called that takes a string of parentheses,\n    and determines if the order of the parentheses is valid.\n    The function should return true if the string is valid,\n    and false if it's invalid.\n\n    Examples\n\n    &quot;()&quot;              =&gt;  true\n    &quot;)(()))&quot;          =&gt;  false\n    &quot;(&quot;               =&gt;  false\n    &quot;(())((()())())&quot;  =&gt;  true\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1579733200034,
+      "stop" : 1579733200034,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Test the function called that takes a string of parentheses,\n        and determines if the order of the parentheses is valid.\n        The function should return true if the string is valid,\n        and false if it's invalid.\n\n        Examples\n\n        \"()\"              =>  true\n        \")(()))\"          =>  false\n        \"(\"               =>  false\n        \"(())((()())())\"  =>  true\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test string and verify the output",
+      "time" : {
+        "start" : 1579733200038,
+        "stop" : 1579733200038,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a20306675bdd71ce",
+      "name" : "stdout",
+      "source" : "a20306675bdd71ce.txt",
+      "type" : "text/plain",
+      "size" : 356
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1579733200040,
+      "stop" : 1579733200040,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "story",
+    "value" : "Valid Parentheses"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "VALIDATION"
+  }, {
+    "name" : "feature",
+    "value" : "Validation"
+  }, {
+    "name" : "tag",
+    "value" : "UTILITIES"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9692-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.valid_parentheses.test_valid_parentheses"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3f25995117378e45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486688050,
+        "stop" : 1579486688052,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1a5c69385dd70c0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482234766,
+        "stop" : 1579482234771,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "ccc3b3a5bcbb7642",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476681445,
+        "stop" : 1579476681447,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "55acb4e33feb54e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417127320,
+        "stop" : 1579417127322,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6822cf01fc067d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090687,
+        "stop" : 1579416090689,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4b840426ce764f39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048979,
+        "stop" : 1579407048981,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3e8866facce40a58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406491256,
+        "stop" : 1579406491258,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "352ebf50ef69eb0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406086245,
+        "stop" : 1579406086246,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d024cce797dda823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151845100,
+        "stop" : 1579151845101,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e0388480b8e7c964",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684885,
+        "stop" : 1578812684887,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eaf7380c97bcae2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810674302,
+        "stop" : 1578810674303,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c1f355dc58c13bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810574501,
+        "stop" : 1578810574503,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "18abb518b69ac638",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138390,
+        "stop" : 1578810138392,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b91cbbfa161da5f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489728,
+        "stop" : 1578809489730,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6aa47edb3680a259",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951548,
+        "stop" : 1578808951549,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6bc934675e9c7fd0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808370246,
+        "stop" : 1578808370247,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ab0fc78d9b6c51b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803683123,
+        "stop" : 1578803683126,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "514cc831217a84bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802614069,
+        "stop" : 1578802614070,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5e85a794b5e17a03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841987,
+        "stop" : 1578801841989,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d291e52e26bca378",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192490,
+        "stop" : 1577672192491,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5df9a9717c4b3c63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953642,
+        "stop" : 1577669953656,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "addeb8166c8c3102",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327509062,
+        "stop" : 1577327509066,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "5e43bb1cae6b9f67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735761,
+        "stop" : 1577321735763,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "57522af5991ab6fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063534150,
+        "stop" : 1577063534151,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ac3db7e724386ad5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062098994,
+        "stop" : 1577062098999,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "5e8360f354d79af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059477157,
+        "stop" : 1577059477158,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "778d9193a5cb4425",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388867405,
+        "stop" : 1576388867406,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "eaa848873a47a439",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387265723,
+        "stop" : 1576387265723,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3f04b383110d10c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862137623,
+        "stop" : 1575862137624,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f591e4490695bcf7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760676129,
+        "stop" : 1575760676130,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a66a472a3ed10c8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760564908,
+        "stop" : 1575760564909,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 29,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "298503c2ac874464",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579486688050,
+          "stop" : 1579486688052,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "7b54ff67f691f0af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579482234766,
+          "stop" : 1579482234771,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "29ecbd8350d3d1eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579476681445,
+          "stop" : 1579476681447,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "75b4e01830ec055c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579417127320,
+          "stop" : 1579417127322,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "906213139a7fc205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1579416090687,
+          "stop" : 1579416090689,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "UTILITIES", "VALIDATION", "ALGORITHMS" ]
+  },
+  "source" : "18dc2ced750a782b.json",
+  "parameterValues" : [ ]
+}
