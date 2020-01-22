@@ -35,5 +35,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |17   |[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/sum_of_digits_digital_root)     |
 |18   |[Binary to Text (ASCII) Conversion](https://www.codewars.com/kata/5583d268479559400d000064/train/python)            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/binary_to_text_ascii_conversion)|
 |19   |[Casino chips](https://www.codewars.com/kata/5e0b72d2d772160011133654/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/casino_chips)                   |
+|20   |[Pokemon Damage Calculator](https://www.codewars.com/kata/536e9a7973130a06eb000e9f/train/python)                    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/pokemon_damage_calculator)      |
 
 [Source](https://www.codewars.com/about)
