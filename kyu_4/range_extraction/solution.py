@@ -8,7 +8,7 @@ def solution(args: list) -> str:
     result = ''
 
     for i, a in enumerate(args):
-        
+
         if current[1] == a:
             continue
         elif a == current[1] + 1:
