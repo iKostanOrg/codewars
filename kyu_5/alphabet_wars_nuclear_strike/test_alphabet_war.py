@@ -24,6 +24,7 @@ class AlphabetWarTestCase(unittest.TestCase):
     """
     Testing alphabet_war function
     """
+
     def test_alphabet_war(self):
         """
         Testing alphabet_war function
@@ -66,27 +67,26 @@ class AlphabetWarTestCase(unittest.TestCase):
                                         "<p>Test a function that accepts battlefield string and "
                                         "returns letters that survived the nuclear strike.</p>")
 
-        with allure.step("Enter test string and verify the output"):
+        data = [
+            ('[a]#[b]#[c]', 'ac'),
+            ('[a]#b#[c][d]', 'd'),
+            ('[a][b][c]', 'abc'),
+            ('##a[a]b[c]#', 'c'),
+            ('abde[fgh]ijk', 'abdefghijk'),
+            ('ab#de[fgh]ijk', 'fgh'),
+            ('ab#de[fgh]ij#k', ''),
+            ('##abde[fgh]ijk', ''),
+            ('##abde[fgh]', ''),
+            ('##abcde[fgh]', ''),
+            ('abcde[fgh]', 'abcdefgh'),
+            ('##abde[fgh]ijk[mn]op', 'mn'),
+            ('#abde[fgh]i#jk[mn]op', 'mn'),
+            ('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk'),
+        ]
 
-            data = [
-                ('[a]#[b]#[c]', 'ac'),
-                ('[a]#b#[c][d]', 'd'),
-                ('[a][b][c]', 'abc'),
-                ('##a[a]b[c]#', 'c'),
-                ('abde[fgh]ijk', 'abdefghijk'),
-                ('ab#de[fgh]ijk', 'fgh'),
-                ('ab#de[fgh]ij#k', ''),
-                ('##abde[fgh]ijk', ''),
-                ('##abde[fgh]', ''),
-                ('##abcde[fgh]', ''),
-                ('abcde[fgh]', 'abcdefgh'),
-                ('##abde[fgh]ijk[mn]op', 'mn'),
-                ('#abde[fgh]i#jk[mn]op', 'mn'),
-                ('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk'),
-            ]
-
-            for battlefield, expected in data:
-
+        for battlefield, expected in data:
+            with allure.step("Enter test string ({}) and verify the output ({})".format(battlefield,
+                                                                                        expected)):
                 print_log(battlefield=battlefield,
                           expected=expected)
 
