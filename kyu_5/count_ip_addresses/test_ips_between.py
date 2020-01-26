@@ -40,23 +40,38 @@ class IpsBetweenTestCase(unittest.TestCase):
         :return:
         """
 
-        data = [
-            ("10.0.0.0", "10.0.0.50", 50),
-            ("20.0.0.10", "20.0.1.0", 246),
-            ("10.0.0.0", "10.0.1.0", 256),
-            ("170.0.0.0", "170.1.0.0", 65536),
-            ("50.0.0.0", "50.1.1.1", 65793),
-            ("180.0.0.0", "181.0.0.0", 16777216),
-            ("1.2.3.4", "5.6.7.8", 67372036),
-            ("180.0.0.0", "181.0.0.0", 16777216),
-            ("117.170.96.190", "117.172.196.242", 156724)
-        ]
+        allure.dynamic.title("Testing alphabet_war function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p>Testing a function that receives two IPv4 addresses, "
+                                        "and returns the number of addresses between them (including "
+                                        "the first one, excluding the last one).</p>"
+                                        "<p>All inputs will be valid IPv4 addresses in the form "
+                                        "of strings. The last address will always be greater "
+                                        "than the first one.</p>")
 
-        for start, end, expected in data:
+        with allure.step("Enter test string (IP address) and verify the output"):
 
-            print_log(start=start,
-                      end=end,
-                      expected=expected)
+            data = [
+                ("10.0.0.0", "10.0.0.50", 50),
+                ("20.0.0.10", "20.0.1.0", 246),
+                ("10.0.0.0", "10.0.1.0", 256),
+                ("170.0.0.0", "170.1.0.0", 65536),
+                ("50.0.0.0", "50.1.1.1", 65793),
+                ("180.0.0.0", "181.0.0.0", 16777216),
+                ("1.2.3.4", "5.6.7.8", 67372036),
+                ("180.0.0.0", "181.0.0.0", 16777216),
+                ("117.170.96.190", "117.172.196.242", 156724)
+            ]
 
-            self.assertEqual(expected,
-                             ips_between(start, end))
+            for start, end, expected in data:
+
+                print_log(start=start,
+                          end=end,
+                          expected=expected)
+
+                self.assertEqual(expected,
+                                 ips_between(start, end))
