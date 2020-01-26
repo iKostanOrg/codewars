@@ -85,6 +85,7 @@ class AlphabetWarTestCase(unittest.TestCase):
         ]
 
         for battlefield, expected in data:
+
             with allure.step("Enter test string ({}) and verify the output ({})".format(battlefield,
                                                                                         expected)):
                 print_log(battlefield=battlefield,
