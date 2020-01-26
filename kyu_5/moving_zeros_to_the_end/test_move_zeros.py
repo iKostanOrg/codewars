@@ -4,10 +4,10 @@
 
 # ALGORITHMS INTERVIEW QUESTIONS ARRAYS SORTING
 
-import unittest
 import allure
-from kyu_5.moving_zeros_to_the_end.move_zeros import move_zeros
+import unittest
 from utils.log_func import print_log
+from kyu_5.moving_zeros_to_the_end.move_zeros import move_zeros
 
 
 @allure.epic('5 kyu')
@@ -16,7 +16,7 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Moving Zeros To The End')
-@allure.tag()
+@allure.tag('ALGORITHMS', 'INTERVIEW QUESTIONS', 'ARRAYS', 'SORTING')
 @allure.link(url='',
              name='Source/Kata')
 class MoveZerosTestCase(unittest.TestCase):
