@@ -4,10 +4,10 @@
 
 # FUNDAMENTALS
 
-import unittest
 import allure
-from kyu_5.directions_reduction.directions_reduction import dirReduc
+import unittest
 from utils.log_func import print_log
+from kyu_5.directions_reduction.directions_reduction import dirReduc
 
 
 @allure.epic('5 kyu')
@@ -43,18 +43,35 @@ class DirectionsReductionTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing dirReduc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p> Test a function dirReduc which will take an array of "
+                                        "strings and returns an array of strings with the needless "
+                                        "directions removed (W<->E or S<->N side by side).</p>")
 
-        with allure.step("Enter test data (list) and verify the output"):
-            data = [
-                (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
-                 ['WEST']),
-                (["NORTH", "WEST", "SOUTH", "EAST"],
-                 ["NORTH", "WEST", "SOUTH", "EAST"])
-            ]
+        data = [
+            (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
+            ['WEST']),
+            (["NORTH", "WEST", "SOUTH", "EAST"],
+            ["NORTH", "WEST", "SOUTH", "EAST"])
+        ]
 
-            for d in data:
-                array = d[0]
-                expected = d[1]
-                print_log(array=array, expected=expected)
-                self.assertListEqual(expected, dirReduc(array))
+        for d in data:
 
+            array = d[0]
+            expected = d[1]
+            result = dirReduc(array)
+
+            with allure.step("Enter test data ({}) "
+                             "and verify the output ({}) "
+                             "vs expected ({})".format(array,
+                                                       result,
+                                                       expected)):
+
+                print_log(array=array,
+                          result=result,
+                          expected=expected)
+
+                self.assertListEqual(expected, result)
