@@ -53,25 +53,29 @@ class IpsBetweenTestCase(unittest.TestCase):
                                         "of strings. The last address will always be greater "
                                         "than the first one.</p>")
 
-        with allure.step("Enter test string (IP address) and verify the output"):
+        data = [
+            ("10.0.0.0", "10.0.0.50", 50),
+            ("20.0.0.10", "20.0.1.0", 246),
+            ("10.0.0.0", "10.0.1.0", 256),
+            ("170.0.0.0", "170.1.0.0", 65536),
+            ("50.0.0.0", "50.1.1.1", 65793),
+            ("180.0.0.0", "181.0.0.0", 16777216),
+            ("1.2.3.4", "5.6.7.8", 67372036),
+            ("180.0.0.0", "181.0.0.0", 16777216),
+            ("117.170.96.190", "117.172.196.242", 156724)
+        ]
 
-            data = [
-                ("10.0.0.0", "10.0.0.50", 50),
-                ("20.0.0.10", "20.0.1.0", 246),
-                ("10.0.0.0", "10.0.1.0", 256),
-                ("170.0.0.0", "170.1.0.0", 65536),
-                ("50.0.0.0", "50.1.1.1", 65793),
-                ("180.0.0.0", "181.0.0.0", 16777216),
-                ("1.2.3.4", "5.6.7.8", 67372036),
-                ("180.0.0.0", "181.0.0.0", 16777216),
-                ("117.170.96.190", "117.172.196.242", 156724)
-            ]
-
-            for start, end, expected in data:
-
+        for start, end, expected in data:
+            result = ips_between(start, end)
+            with allure.step("Enter test data (start: {}, end: {}) and verify "
+                             "the output ({}) vs expected ({})".format(start,
+                                                                       end,
+                                                                       result,
+                                                                       expected)):
                 print_log(start=start,
                           end=end,
+                          result=result,
                           expected=expected)
 
                 self.assertEqual(expected,
-                                 ips_between(start, end))
+                                 result)
