@@ -7,7 +7,7 @@
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.range_extraction.solution import solution, solution_mem_profile
+from kyu_4.range_extraction.solution import solution
 
 
 @allure.epic("4 kyu")
