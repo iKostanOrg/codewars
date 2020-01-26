@@ -7,7 +7,7 @@
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.range_extraction.solution import solution
+from kyu_4.range_extraction.solution import solution, solution_mem_profile
 
 
 @allure.epic("4 kyu")
@@ -21,6 +21,7 @@ from kyu_4.range_extraction.solution import solution
 @allure.link(url='https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/python',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
+
     def test_solution(self):
         """
         Testing solution function
