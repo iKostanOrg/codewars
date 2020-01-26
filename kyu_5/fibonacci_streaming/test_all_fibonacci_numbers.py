@@ -41,8 +41,7 @@ class AllFibonacciNumbersTestCase(unittest.TestCase):
         :return:
         """
 
-        allure.dynamic.title("Testing all_fibonacci_numbers"
-                             " function")
+        allure.dynamic.title("Testing all_fibonacci_numbers function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
 
         with allure.step("Run all_fibonacci_numbers function"
