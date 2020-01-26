@@ -86,10 +86,17 @@ class AlphabetWarTestCase(unittest.TestCase):
 
         for battlefield, expected in data:
 
-            with allure.step("Enter test string ({}) and verify the output ({})".format(battlefield,
-                                                                                        expected)):
+            result = alphabet_war(battlefield)
+
+            with allure.step("Enter test string ({}) "
+                             "and verify the output ({}) "
+                             "vs expected ({})".format(battlefield,
+                                                       result,
+                                                       expected)):
+
                 print_log(battlefield=battlefield,
+                          result=result,
                           expected=expected)
 
                 self.assertEqual(expected,
-                                 alphabet_war(battlefield))
+                                 result)
