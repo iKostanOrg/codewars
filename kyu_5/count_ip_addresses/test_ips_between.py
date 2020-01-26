@@ -66,7 +66,9 @@ class IpsBetweenTestCase(unittest.TestCase):
         ]
 
         for start, end, expected in data:
+
             result = ips_between(start, end)
+
             with allure.step("Enter test data (start: {}, end: {}) and verify "
                              "the output ({}) vs expected ({})".format(start,
                                                                        end,
