@@ -378,7 +378,7 @@ pip install sphinx_rtd_theme
 
 <details>
   <summary><b>Read-the-docs build fails with “cannot import name 'PackageFinder' from 'pip._internal.index'</b></summary>
-
+    <p></p>
 The issue and the fix are described in read-the-docs issue [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
 The fix is to wipe out the build environment as follows (this is taken from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
