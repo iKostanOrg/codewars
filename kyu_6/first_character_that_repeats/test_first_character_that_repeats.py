@@ -1,13 +1,13 @@
-import unittest
-import allure
-from utils.log_func import print_log
-from kyu_6.first_character_that_repeats.first_character_that_repeats import first_dup
-
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS
+
+import unittest
+import allure
+from utils.log_func import print_log
+from kyu_6.first_character_that_repeats.first_character_that_repeats import first_dup
 
 
 @allure.epic('6 kyu')
