@@ -375,3 +375,22 @@ pip install sphinx_rtd_theme
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 </details>
+
+<details>
+  <summary><b>Read-the-docs build fails with “cannot import name 'PackageFinder' from 'pip._internal.index'</b></summary>
+
+The issue and the fix are described in read-the-docs issue [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
+
+The fix is to wipe out the build environment as follows (this is taken from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
+
+* Log in to read-the-docs
+* Go to Versions
+* Click on the Edit button of the version you want to wipe on the right side of the page
+* Go to the bottom of the page and click the wipe link, next to the “Save” button
+* Now you can re-build the version with a fresh build environment!
+
+This fix worked for me (but as of 26-Jan-2020 you have to wipe out the environment for every build -- see comment from Grimmy below).
+
+[Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
+</details>
+
