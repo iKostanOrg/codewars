@@ -26,6 +26,7 @@ Subpackages
    kyu_6.binary_to_text_ascii_conversion
    kyu_6.casino_chips
    kyu_6.pokemon_damage_calculator
+   kyu_6.help_the_bookseller
 
 Module contents
 ---------------
