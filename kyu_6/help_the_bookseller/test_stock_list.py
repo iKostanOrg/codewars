@@ -24,7 +24,7 @@ class StockListTestCase(unittest.TestCase):
     Testing stock_list function
     """
 
-    def test_format_duration(self):
+    def test_stock_list(self):
         allure.dynamic.title("Testing stock_list function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
