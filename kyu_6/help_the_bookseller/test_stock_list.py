@@ -31,8 +31,6 @@ class StockListTestCase(unittest.TestCase):
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
-                                        "<p>Test a function which formats a duration, given as a "
-                                        "number of seconds, in a human-friendly way.</p>"
                                         "<p>You will be given a stocklist (e.g. : L) and a list of "
                                         "categories in capital letters. Your task is to verify that "
                                         "the function finds all the books of L with codes belonging "
