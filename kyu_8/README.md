@@ -47,7 +47,8 @@ You can advance through the ranks by completing kata at or above your rank - the
 |29   |[The Feast of Many Beasts](https://www.codewars.com/kata/5aa736a455f906981800360d/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/the_feast_of_many_beasts)             |
 |30   |[Count the Monkeys!](https://www.codewars.com/kata/count-the-monkeys/train/python)                              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/count_the_monkeys)                    |
 |31   |[Keep up the hoop](https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/python)                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/keep_up_the_hoop)                     |
-|32   |[Enumerable Magic #25 - Take the First N Elements](https://www.codewars.com/kata/545afd0761aa4c3055001386/train/python)                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/enumerable_magic_25)                     |
-|33   |[Will you make it?](https://www.codewars.com/kata/5861d28f124b35723e00005e/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/will_you_make_it)                  |
+|32   |[Enumerable Magic #25 - Take the First N Elements](https://www.codewars.com/kata/545afd0761aa4c3055001386/train/python)|[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/enumerable_magic_25)           |
+|33   |[Will you make it?](https://www.codewars.com/kata/5861d28f124b35723e00005e/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/will_you_make_it)                     |
+|34   |[Century From Year](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/century_from_year)                    |
 
 [Source](https://www.codewars.com/about)
