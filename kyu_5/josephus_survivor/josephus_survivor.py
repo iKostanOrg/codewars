@@ -4,6 +4,12 @@
 
 
 def josephus_survivor(n, k):
+    """
+
+    :param n:
+    :param k:
+    :return:
+    """
 
     n_list = [i for i in range(1, n + 1)]
 
