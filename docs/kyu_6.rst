@@ -27,6 +27,7 @@ Subpackages
    kyu_6.casino_chips
    kyu_6.pokemon_damage_calculator
    kyu_6.help_the_bookseller
+   kyu_6.row_of_the_odd_triangle
 
 Module contents
 ---------------
