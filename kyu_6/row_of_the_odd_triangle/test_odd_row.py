@@ -12,9 +12,9 @@ from kyu_6.row_of_the_odd_triangle.odd_row import odd_row
 
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
-@allure.suite("Algorithms")
+@allure.suite("Performance")
 @allure.sub_suite("Unit Tests")
-@allure.feature("Performance")
+@allure.feature("Algorithms")
 @allure.story("Row of the odd triangle")
 @allure.tag('ALGORITHMS', 'PERFORMANCE')
 @allure.link(url='https://www.codewars.com/kata/5d5a7525207a674b71aa25b5/train/python',

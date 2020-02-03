@@ -1,0 +1,538 @@
+{
+  "uid" : "5d0e8548cd8d9851",
+  "name" : "Testing growing_plant function",
+  "fullName" : "kyu_7.growing_plant.test_growing_plant.GrowingPlantTestCase#test_growing_plant",
+  "historyId" : "fcd618577998a86f372b0608156ae679",
+  "time" : {
+    "start" : 1580694859510,
+    "stop" : 1580694859511,
+    "duration" : 1
+  },
+  "description" : "\n        Testing growing_plant function\n\n        Task\n\n        Each day a plant is growing by upSpeed meters.\n        Each night that plant's height decreases by downSpeed\n        meters due to the lack of sun heat. Initially, plant\n        is 0 meters tall. We plant the seed at the beginning\n        of a day. We want to know when the height of the plant\n        will reach a certain level.\n\n        Example\n\n        For upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n        the output should be 10.\n\n        For upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n        the output should be 1. Because the plant reach to the desired\n        height at day 1(10 meters).\n\n        Input/Output\n\n        [input] integer upSpeed\n        A positive integer representing the daily growth.\n        Constraints: 5 ≤ upSpeed ≤ 100.\n\n        [input] integer downSpeed\n        A positive integer representing the nightly decline.\n        Constraints: 2 ≤ downSpeed < upSpeed.\n\n        [input] integer desiredHeight\n        A positive integer representing the threshold.\n        Constraints: 4 ≤ desiredHeight ≤ 1000.\n\n        [output] an integer\n\n        The number of days that it will take for the plant to\n        reach/pass desiredHeight (including the last day in the\n        total count).\n        ",
+  "descriptionHtml" : "<pre><code>    Testing growing_plant function\n\n    Task\n\n    Each day a plant is growing by upSpeed meters.\n    Each night that plant's height decreases by downSpeed\n    meters due to the lack of sun heat. Initially, plant\n    is 0 meters tall. We plant the seed at the beginning\n    of a day. We want to know when the height of the plant\n    will reach a certain level.\n\n    Example\n\n    For upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n    the output should be 10.\n\n    For upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n    the output should be 1. Because the plant reach to the desired\n    height at day 1(10 meters).\n\n    Input/Output\n\n    [input] integer upSpeed\n    A positive integer representing the daily growth.\n    Constraints: 5 ≤ upSpeed ≤ 100.\n\n    [input] integer downSpeed\n    A positive integer representing the nightly decline.\n    Constraints: 2 ≤ downSpeed &lt; upSpeed.\n\n    [input] integer desiredHeight\n    A positive integer representing the threshold.\n    Constraints: 4 ≤ desiredHeight ≤ 1000.\n\n    [output] an integer\n\n    The number of days that it will take for the plant to\n    reach/pass desiredHeight (including the last day in the\n    total count).\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1580694859508,
+      "stop" : 1580694859508,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing growing_plant function\n\n        Task\n\n        Each day a plant is growing by upSpeed meters.\n        Each night that plant's height decreases by downSpeed\n        meters due to the lack of sun heat. Initially, plant\n        is 0 meters tall. We plant the seed at the beginning\n        of a day. We want to know when the height of the plant\n        will reach a certain level.\n\n        Example\n\n        For upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n        the output should be 10.\n\n        For upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n        the output should be 1. Because the plant reach to the desired\n        height at day 1(10 meters).\n\n        Input/Output\n\n        [input] integer upSpeed\n        A positive integer representing the daily growth.\n        Constraints: 5 ≤ upSpeed ≤ 100.\n\n        [input] integer downSpeed\n        A positive integer representing the nightly decline.\n        Constraints: 2 ≤ downSpeed < upSpeed.\n\n        [input] integer desiredHeight\n        A positive integer representing the threshold.\n        Constraints: 4 ≤ desiredHeight ≤ 1000.\n\n        [output] an integer\n\n        The number of days that it will take for the plant to\n        reach/pass desiredHeight (including the last day in the\n        total count).\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter upSpeed, downSpeed and desiredHeight and verify the output",
+      "time" : {
+        "start" : 1580694859510,
+        "stop" : 1580694859510,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "8ee58c2b33af1b93",
+      "name" : "stdout",
+      "source" : "8ee58c2b33af1b93.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1580694859513,
+      "stop" : 1580694859513,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Calculation"
+  }, {
+    "name" : "story",
+    "value" : "Simple Fun #74: Growing Plant"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "epic",
+    "value" : "7 kyu"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "13244-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_7.growing_plant.test_growing_plant"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "31c63bda6277356b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694176651,
+        "stop" : 1580694176652,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7cd9d07155f36f93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588584495,
+        "stop" : 1580588584497,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3f2c0d73f9fa117a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093586732,
+        "stop" : 1580093586733,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "dbf2009480a9ff9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092932472,
+        "stop" : 1580092932473,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "46b3335e16946b1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016117994,
+        "stop" : 1580016117996,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7f59fbdc06a55a00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015503095,
+        "stop" : 1580015503095,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4f752cf96a4f83e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011918552,
+        "stop" : 1580011918554,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d65d29f2f767385a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746653076,
+        "stop" : 1579746653077,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "922bd4b796b12905",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733200757,
+        "stop" : 1579733200758,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b193dc65ec19286",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486688666,
+        "stop" : 1579486688667,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "737fdcc5be567fa5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482235414,
+        "stop" : 1579482235419,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "737f5806dc9eb1e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476682307,
+        "stop" : 1579476682308,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a1a5f549f4b9ab51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417128304,
+        "stop" : 1579417128305,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "da8034a8b65dfc45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416091447,
+        "stop" : 1579416091448,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e01f90a2dd00461b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407049577,
+        "stop" : 1579407049577,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "66fe5f1d68cadad5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406491898,
+        "stop" : 1579406491899,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2926bf6b08fd7350",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406086856,
+        "stop" : 1579406086858,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "517e62e6c1cc307d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151845836,
+        "stop" : 1579151845841,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "e3b1e7d08923bbc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812685489,
+        "stop" : 1578812685490,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b93f9e730416c06e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810675042,
+        "stop" : 1578810675044,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "61c79c7b8f7622e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810575115,
+        "stop" : 1578810575116,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a3011e5f51b4c887",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810139021,
+        "stop" : 1578810139023,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5daa144c169d185e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809490311,
+        "stop" : 1578809490313,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e66e9a86166a95ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808952302,
+        "stop" : 1578808952303,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "543c7fde0c37eb3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808371253,
+        "stop" : 1578808371254,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "12371c1f71384dc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803683886,
+        "stop" : 1578803683888,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "69c49fe2a263a3f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802614843,
+        "stop" : 1578802614845,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9c557935513e6ca6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801842817,
+        "stop" : 1578801842818,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6acfca53f3169637",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672193219,
+        "stop" : 1577672193220,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4c5690f65f4b5a2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669954396,
+        "stop" : 1577669954397,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8e767b485cc0a7f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327509628,
+        "stop" : 1577327509629,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "91639028af8dd69c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321736384,
+        "stop" : 1577321736385,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "46970b9c1f80b066",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063534825,
+        "stop" : 1577063534826,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2bd7bf0a47c34f57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062099847,
+        "stop" : 1577062099847,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d141a565ae448b32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059478001,
+        "stop" : 1577059478004,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ba25c88aa00a1f2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388868043,
+        "stop" : 1576388868045,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1df93ff0246a3b49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387266366,
+        "stop" : 1576387266367,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6eb5021c57edb879",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862138314,
+        "stop" : 1575862138318,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "dab6253723b3eff0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760676741,
+        "stop" : 1575760676742,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "68222e61981cdfdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760565693,
+        "stop" : 1575760565695,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "63b82bfddac9afe2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227958415,
+        "stop" : 1575227958416,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "714d84a429186142",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227883436,
+        "stop" : 1575227883437,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "62fd688c2853033e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575221462333,
+        "stop" : 1575221462334,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed20ebfda9972cd4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574618604375,
+        "stop" : 1574618604376,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 39,
+        "unknown" : 0,
+        "total" : 39
+      },
+      "items" : [ {
+        "uid" : "3b7e71e664640811",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694176651,
+          "stop" : 1580694176652,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "bc9adc8360a81180",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580588584495,
+          "stop" : 1580588584497,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "8436c06b81a9f0dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580093586732,
+          "stop" : 1580093586733,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "28cde0ef86e997e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580016117994,
+          "stop" : 1580016117996,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "8147ae28355bbc4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580015503095,
+          "stop" : 1580015503095,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5d0e8548cd8d9851.json",
+  "parameterValues" : [ ]
+}
