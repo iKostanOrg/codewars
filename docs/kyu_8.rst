@@ -40,6 +40,7 @@ Subpackages
    kyu_8.enumerable_magic_25
    kyu_8.will_you_make_it
    kyu_8.century_from_year
+   kyu_8.holiday_vi_shark_pontoon
 
 Module contents
 ---------------
