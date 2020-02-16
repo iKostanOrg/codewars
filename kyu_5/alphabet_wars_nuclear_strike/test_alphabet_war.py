@@ -67,7 +67,7 @@ class AlphabetWarTestCase(unittest.TestCase):
                                         "<p>Test a function that accepts battlefield string and "
                                         "returns letters that survived the nuclear strike.</p>")
 
-        data = [
+        test_data = [
             ('[a]#[b]#[c]', 'ac'),
             ('[a]#b#[c][d]', 'd'),
             ('[a][b][c]', 'abc'),
@@ -84,7 +84,7 @@ class AlphabetWarTestCase(unittest.TestCase):
             ('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk'),
         ]
 
-        for battlefield, expected in data:
+        for battlefield, expected in test_data:
 
             result = alphabet_war(battlefield)
 

@@ -33,9 +33,14 @@ class MoveZerosTestCase(unittest.TestCase):
 
 		allure.dynamic.title("Testing move_zeros function")
 		allure.dynamic.severity(allure.severity_level.NORMAL)
+		allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+		                                '<img src="https://www.codewars.com/users/myFirstCode'
+		                                '/badges/large">'
+		                                '<h3>Test Description:</h3>'
+		                                "<p></p>")
 
 		with allure.step("Enter test data (list) and verify the output"):
-			data = [
+			test_data = [
 				([1, 2, 0, 1, 0, 1, 0, 3, 0, 1], [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]),
 				([9, 0.0, 0, 9, 1, 2, 0, 1, 0, 1, 0.0, 3, 0, 1, 9, 0, 0, 0, 0, 9],
 				 [9, 9, 1, 2, 1, 1, 3, 1, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
@@ -52,7 +57,7 @@ class MoveZerosTestCase(unittest.TestCase):
 				([], []),
 			]
 
-			for d in data:
+			for d in test_data:
 				array = d[0]
 				expected = d[1]
 				print_log(array=array, expected=expected)

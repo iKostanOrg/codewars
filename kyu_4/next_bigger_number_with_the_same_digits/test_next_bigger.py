@@ -51,7 +51,7 @@ class NextBiggerTestCase(unittest.TestCase):
                                         "2017 ==> 2071</p>"
                                         "<p>If no bigger number can be composed using those digits, return -1</p>")
 
-        data = [
+        test_data = [
                 (12, 21),
                 (513, 531),
                 (2017, 2071),
@@ -59,7 +59,7 @@ class NextBiggerTestCase(unittest.TestCase):
                 (144, 414),
             ]
 
-        for d in data:
+        for d in test_data:
             n = d[0]
             expected = d[1]
             actual_result = next_bigger(n)

@@ -53,7 +53,7 @@ class IpsBetweenTestCase(unittest.TestCase):
                                         "of strings. The last address will always be greater "
                                         "than the first one.</p>")
 
-        data = [
+        test_data = [
             ("10.0.0.0", "10.0.0.50", 50),
             ("20.0.0.10", "20.0.1.0", 246),
             ("10.0.0.0", "10.0.1.0", 256),
@@ -65,7 +65,7 @@ class IpsBetweenTestCase(unittest.TestCase):
             ("117.170.96.190", "117.172.196.242", 156724)
         ]
 
-        for start, end, expected in data:
+        for start, end, expected in test_data:
 
             result = ips_between(start, end)
 

@@ -35,17 +35,22 @@ class PigItTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing pig_it function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
 
-            data = [
+            test_data = [
                 ('Pig latin is cool', 'igPay atinlay siay oolcay'),
                 ('This is my string', 'hisTay siay ymay tringsay'),
                 ('Hello world !', 'elloHay orldway !'),
                 ("O tempora o mores !", 'Oay emporatay oay oresmay !')
             ]
 
-            for text, expected in data:
+            for text, expected in test_data:
                 print_log(expected=expected, text=text)
                 self.assertEqual(expected, pig_it(text))

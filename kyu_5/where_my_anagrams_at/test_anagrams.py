@@ -40,15 +40,20 @@ class AnagramsTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing anagrams function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter test data (list of strings)"
                          " and verify the output"):
-            data = [
+            test_data = [
                 ('abba', ['aabb', 'abcd', 'bbaa', 'dada'], ['aabb', 'bbaa']),
                 ('racer', ['crazer', 'carer', 'racar', 'caers', 'racer'], ['carer', 'racer'])
             ]
 
-            for d in data:
+            for d in test_data:
                 string = d[0]
                 array = d[1]
                 expected = d[2]

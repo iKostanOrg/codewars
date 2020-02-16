@@ -51,14 +51,14 @@ class DirectionsReductionTestCase(unittest.TestCase):
                                         "strings and returns an array of strings with the needless "
                                         "directions removed (W<->E or S<->N side by side).</p>")
 
-        data = [
+        test_data = [
             (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
             ['WEST']),
             (["NORTH", "WEST", "SOUTH", "EAST"],
             ["NORTH", "WEST", "SOUTH", "EAST"])
         ]
 
-        for d in data:
+        for d in test_data:
 
             array = d[0]
             expected = d[1]

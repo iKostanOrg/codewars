@@ -46,7 +46,7 @@ class JosephusSurvivorTestCase(unittest.TestCase):
                                         "correctly returns who is the \"survivor\", ie: the "
                                         "last element of a Josephus permutation.</p>")
 
-        data = [
+        test_data = [
             ((7, 3), 4),
             ((11, 19), 10),
             ((1, 300), 1),
@@ -54,7 +54,7 @@ class JosephusSurvivorTestCase(unittest.TestCase):
             ((100, 1), 100)
         ]
 
-        for test_data, expected in data:
+        for test_data, expected in test_data:
             n = test_data[0]
             k = test_data[1]
             result = josephus_survivor(n, k)
