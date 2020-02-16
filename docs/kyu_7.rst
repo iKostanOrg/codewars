@@ -35,7 +35,6 @@ Subpackages
    kyu_7.growing_plant
    kyu_7.basic_math_add_or_subtract
    kyu_7.sum_of_odd_numbers
-   kyu_7.help_bob_count_letters_and_digits
 
 Module contents
 ---------------
