@@ -59,7 +59,7 @@ class SumOfIntervalsTestCase(unittest.TestCase):
                                         " Interval example: [1, 5] is an interval from 1 to 5."
                                         " The length of this interval is 4.</p>")
 
-        data = [
+        test_data = [
             ([(1, 5)], 4),
             ([(1, 5), (6, 10)], 8),
             ([(1, 5), (1, 5)], 4),
@@ -83,7 +83,7 @@ class SumOfIntervalsTestCase(unittest.TestCase):
               (93, 328), (456, 493)], 974)
         ]
 
-        for intervals, expected in data:
+        for intervals, expected in test_data:
             actual_result = sum_of_intervals(intervals)
             print_log(intervals=intervals,
                       expected=expected,
