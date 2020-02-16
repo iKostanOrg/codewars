@@ -1,0 +1,130 @@
+{
+  "uid" : "3af57af49b3f8dec",
+  "name" : "Testing 'feast' function",
+  "fullName" : "kyu_8.the_feast_of_many_beasts.test_feast.FeastTestCase#test_feast",
+  "historyId" : "245809d83d6201b756f2d220be6127e5",
+  "time" : {
+    "start" : 1575221463728,
+    "stop" : 1575221463729,
+    "duration" : 1
+  },
+  "description" : "\n\t\tTesting 'feast' function with various test inputs\n\n\t\tTesting a function feast that takes the animal's\n\t\tname and dish as arguments and returns true or\n\t\tfalse to indicate whether the beast is allowed\n\t\tto bring the dish to the feast.\n\n\t\tAssume that beast and dish are always lowercase strings,\n\t\tand that each has at least two letters. beast and dish\n\t\tmay contain hyphens and spaces, but these will not appear\n\t\tat the beginning or end of the string. They will not\n\t\tcontain numerals.\n\n\t\tThere is just one rule: the dish must start and end with\n\t\tthe same letters as the animal's name. For example, the\n\t\tgreat blue heron is bringing garlic naan and the chickadee\n\t\tis bringing chocolate cake.\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tTesting 'feast' function with various test inputs\n\n\tTesting a function feast that takes the animal's\n\tname and dish as arguments and returns true or\n\tfalse to indicate whether the beast is allowed\n\tto bring the dish to the feast.\n\n\tAssume that beast and dish are always lowercase strings,\n\tand that each has at least two letters. beast and dish\n\tmay contain hyphens and spaces, but these will not appear\n\tat the beginning or end of the string. They will not\n\tcontain numerals.\n\n\tThere is just one rule: the dish must start and end with\n\tthe same letters as the animal's name. For example, the\n\tgreat blue heron is bringing garlic naan and the chickadee\n\tis bringing chocolate cake.\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1575221463727,
+      "stop" : 1575221463727,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tTesting 'feast' function with various test inputs\n\n\t\tTesting a function feast that takes the animal's\n\t\tname and dish as arguments and returns true or\n\t\tfalse to indicate whether the beast is allowed\n\t\tto bring the dish to the feast.\n\n\t\tAssume that beast and dish are always lowercase strings,\n\t\tand that each has at least two letters. beast and dish\n\t\tmay contain hyphens and spaces, but these will not appear\n\t\tat the beginning or end of the string. They will not\n\t\tcontain numerals.\n\n\t\tThere is just one rule: the dish must start and end with\n\t\tthe same letters as the animal's name. For example, the\n\t\tgreat blue heron is bringing garlic naan and the chickadee\n\t\tis bringing chocolate cake.\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter animal's name and dish as arguments and assert the output",
+      "time" : {
+        "start" : 1575221463728,
+        "stop" : 1575221463729,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8abfc250fd51c911",
+      "name" : "stdout",
+      "source" : "8abfc250fd51c911.txt",
+      "type" : "text/plain",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1575221463730,
+      "stop" : 1575221463730,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "story",
+    "value" : "The Feast of Many Beasts"
+  }, {
+    "name" : "suite",
+    "value" : "Data Structures"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "11936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.the_feast_of_many_beasts.test_feast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3af57af49b3f8dec.json",
+  "parameterValues" : [ ]
+}
