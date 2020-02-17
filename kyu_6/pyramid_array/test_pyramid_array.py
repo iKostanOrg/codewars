@@ -20,50 +20,55 @@ from kyu_6.pyramid_array.pyramid_array import pyramid
 @allure.link(url='',
              name='Source/Kata')
 class PyramidTestCase(unittest.TestCase):
-	"""
-	Testing 'pyramid' function
-	"""
+    """
+    Testing 'pyramid' function
+    """
 
-	def test_pyramid(self):
-		"""
-		The 'pyramid' function should return
-		an Array of ascending length subarrays.
+    def test_pyramid(self):
+        """
+        The 'pyramid' function should return
+        an Array of ascending length subarrays.
 
-		Note: the subarrays should be filled with 1s.
-		:return:
-		"""
+        Note: the subarrays should be filled with 1s.
+        :return:
+        """
 
-		allure.dynamic.title("Testing the 'pyramid' function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing the 'pyramid' function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
-		with allure.step("Pass zero"):
-			n = 0
-			expected = []
+        with allure.step("Pass zero"):
+            n = 0
+            expected = []
 
-			print_log(n=n, expected=expected)
+            print_log(n=n, expected=expected)
 
-			self.assertEqual(pyramid(n), expected)
+            self.assertEqual(pyramid(n), expected)
 
-		with allure.step("Pass one"):
-			n = 1
-			expected = [[1]]
+        with allure.step("Pass one"):
+            n = 1
+            expected = [[1]]
 
-			print_log(n=n, expected=expected)
+            print_log(n=n, expected=expected)
 
-			self.assertEqual(pyramid(n), expected)
+            self.assertEqual(pyramid(n), expected)
 
-		with allure.step("Pass two"):
-			n = 2
-			expected = [[1], [1, 1]]
+        with allure.step("Pass two"):
+            n = 2
+            expected = [[1], [1, 1]]
 
-			print_log(n=n, expected=expected)
+            print_log(n=n, expected=expected)
 
-			self.assertEqual(pyramid(n), expected)
+            self.assertEqual(pyramid(n), expected)
 
-		with allure.step("Pass three"):
-			n = 3
-			expected = [[1], [1, 1], [1, 1, 1]]
+        with allure.step("Pass three"):
+            n = 3
+            expected = [[1], [1, 1], [1, 1, 1]]
 
-			print_log(n=n, expected=expected)
+            print_log(n=n, expected=expected)
 
-			self.assertEqual(pyramid(n), expected)
+            self.assertEqual(pyramid(n), expected)

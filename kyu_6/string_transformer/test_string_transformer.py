@@ -39,11 +39,15 @@ class StringTransformerTestCase(unittest.TestCase):
 		"""
 
 		allure.dynamic.title("Testing string_transformer function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+		allure.dynamic.severity(allure.severity_level.NORMAL)
+		allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+		                                '<img src="https://www.codewars.com/users/myFirstCode'
+		                                '/badges/large">'
+		                                '<h3>Test Description:</h3>'
+		                                "<p></p>")
 
 		with allure.step("Enter test string and verify the output"):
-
-			data = [
+			test_data = [
 				("Example string", "STRING eXAMPLE"),
 				("Example Input", "iNPUT eXAMPLE"),
 				("To be OR not to be That is the Question",
@@ -80,6 +84,6 @@ class StringTransformerTestCase(unittest.TestCase):
 				 "i  y  iO kxZG KcK ERh  uoTFI")
 			]
 
-			for s, expected in data:
+			for s, expected in test_data:
 				print_log(s=s, expected=expected)
 				self.assertEqual(expected, string_transformer(s))

@@ -31,7 +31,12 @@ class LetterFrequencyTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("All chars are in lower case")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a test string and verify the result"):
 
@@ -55,7 +60,12 @@ class LetterFrequencyTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("All chars are in mixed case")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a test string and verify the result"):
             string = "As long as I'm learning something, " \
@@ -81,7 +91,12 @@ class LetterFrequencyTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("All chars are in upper case")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a test string and verify the result"):
 

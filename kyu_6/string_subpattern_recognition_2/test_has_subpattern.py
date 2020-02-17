@@ -41,10 +41,15 @@ class HasSubpatternTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing 'has_subpattern' (part 2) function")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass the string and verify the output"):
-            data_set = [
+            test_data = [
                 ("a", False),
                 ("aaaa", True),
                 ("abcd", False),
@@ -77,6 +82,6 @@ class HasSubpatternTestCase(unittest.TestCase):
                  "BadOFvTbbgHOnywVG50wwNnzObkddNF5BGzobX", True)
             ]
 
-            for data in data_set:
+            for data in test_data:
                 print_log(string=data[0], expected=data[1])
                 self.assertEqual(data[1], has_subpattern(data[0]))

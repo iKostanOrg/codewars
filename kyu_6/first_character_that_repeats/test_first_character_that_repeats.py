@@ -34,7 +34,12 @@ class FirstDupTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("String with no duplicate chars")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass string with no repeating chars"):
             string = 'like'
@@ -59,7 +64,12 @@ class FirstDupTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("String with mixed type of chars")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Input consist of mixed type of chars"):
             string = '1a2b3a3c'
@@ -83,7 +93,12 @@ class FirstDupTestCase(unittest.TestCase):
         :return:
         """
         allure.dynamic.title("String with alphabet chars only")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Input consist of alphabet chars only"):
             string = 'tweet'
@@ -99,7 +114,12 @@ class FirstDupTestCase(unittest.TestCase):
         :return:
         """
         allure.dynamic.title("String alphabet chars and spaces")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Input consist of alphabet chars and spaces"):
             string = 'Ode to Joy'
@@ -116,7 +136,12 @@ class FirstDupTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("String with no alphabet chars")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass string with digits only"):
             string = '123123'

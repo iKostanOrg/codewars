@@ -20,30 +20,35 @@ from kyu_6.unique_in_order.unique_in_order import unique_in_order
 @allure.link(url='',
              name='Source/Kata')
 class UniqueInOrderTestCase(unittest.TestCase):
-	"""
-	Testing the 'unique_in_order' function
-	"""
+    """
+    Testing the 'unique_in_order' function
+    """
 
-	def test_unique_in_order(self):
-		"""
-		Testing the 'unique_in_order' function
-		with various test data
-		:return:
-		"""
+    def test_unique_in_order(self):
+        """
+        Testing the 'unique_in_order' function
+        with various test data
+        :return:
+        """
 
-		allure.dynamic.title("Testing the 'unique_in_order' function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing the 'unique_in_order' function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
-		with allure.step("Pass test data and verify the output"):
-			data = [
-				('AAAABBBCCDAABBB',
-				 ['A', 'B', 'C', 'D', 'A', 'B']),
-				('ABBCcAD',
-				 ['A', 'B', 'C', 'c', 'A', 'D']),
-				([1, 2, 2, 3, 3],
-				 [1, 2, 3])
-			]
+        with allure.step("Pass test data and verify the output"):
+            data = [
+                ('AAAABBBCCDAABBB',
+                 ['A', 'B', 'C', 'D', 'A', 'B']),
+                ('ABBCcAD',
+                 ['A', 'B', 'C', 'c', 'A', 'D']),
+                ([1, 2, 2, 3, 3],
+                 [1, 2, 3])
+            ]
 
-			for test_data, expected in data:
-				print_log(iterable=test_data, expected=expected)
-				self.assertEqual(expected, unique_in_order(test_data))
+            for test_data, expected in data:
+                print_log(iterable=test_data, expected=expected)
+                self.assertEqual(expected, unique_in_order(test_data))

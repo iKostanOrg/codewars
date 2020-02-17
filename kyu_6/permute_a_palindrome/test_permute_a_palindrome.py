@@ -20,89 +20,102 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 @allure.link(url='',
              name='Source/Kata')
 class PermutePalindromeTestCase(unittest.TestCase):
-	"""
-	Testing permute_a_palindrome function
-	"""
+    """
+    Testing permute_a_palindrome function
+    """
 
-	def test_permute_a_palindrome_positive(self):
-		"""
-		Testing permute_a_palindrome function
-		:return:
-		"""
+    def test_permute_a_palindrome_positive(self):
+        """
+        Testing permute_a_palindrome function
+        :return:
+        """
 
-		allure.dynamic.title("Testing permute_a_palindrome (positive)")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Testing permute_a_palindrome (positive)")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
-		with allure.step("Enter test string and verify the result"):
-			string = "a"
-			expected = True
+        with allure.step("Enter test string and verify the result"):
+            string = "a"
+            expected = True
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-		with allure.step("Enter test string and verify the result"):
-			string = "aa"
-			expected = True
+        with allure.step("Enter test string and verify the result"):
+            string = "aa"
+            expected = True
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-		with allure.step("Enter test string and verify the result"):
-			string = "baa"
-			expected = True
+        with allure.step("Enter test string and verify the result"):
+            string = "baa"
+            expected = True
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-		with allure.step("Enter test string and verify the result"):
-			string = "aab"
-			expected = True
+        with allure.step("Enter test string and verify the result"):
+            string = "aab"
+            expected = True
 
-			print_log(string=string, expected=expected)
+            print_log(string=string, expected=expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-	def test_permute_a_palindrome_negative(self):
+    def test_permute_a_palindrome_negative(self):
+        allure.dynamic.title("Testing permute_a_palindrome (negative)")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
-		allure.dynamic.title("Testing permute_a_palindrome (negative)")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+        with allure.step("Enter test string and verify the result"):
+            string = "baabcd"
+            expected = False
 
-		with allure.step("Enter test string and verify the result"):
-			string = "baabcd"
-			expected = False
+            print_log(string=string, expected=expected)
 
-			print_log(string=string, expected=expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+        with allure.step("Enter test string and verify the result"):
+            string = "racecars"
+            expected = False
 
-		with allure.step("Enter test string and verify the result"):
-			string = "racecars"
-			expected = False
+            print_log(string=string, expected=expected)
 
-			print_log(string=string, expected=expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+        with allure.step("Enter test string and verify the result"):
+            string = "abcdefghba"
+            expected = False
 
-		with allure.step("Enter test string and verify the result"):
-			string = "abcdefghba"
-			expected = False
+            print_log(string=string, expected=expected)
 
-			print_log(string=string, expected=expected)
+            self.assertEqual(permute_a_palindrome(string), expected)
 
-			self.assertEqual(permute_a_palindrome(string), expected)
+    def test_permute_a_palindrome_empty_string(self):
+        allure.dynamic.title("Testing permute_a_palindrome (empty string)")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
-	def test_permute_a_palindrome_empty_string(self):
+        with allure.step("Enter empty string and verify the result"):
+            string = ''
+            expected = True
 
-		allure.dynamic.title("Testing permute_a_palindrome (empty string)")
-		allure.dynamic.severity(allure.severity_level.NORMAL)
+            print_log(string=string, expected=expected)
 
-		with allure.step("Enter empty string and verify the result"):
-			string = ''
-			expected = True
-
-			print_log(string=string, expected=expected)
-
-			self.assertEqual(permute_a_palindrome(string), expected)
+            self.assertEqual(permute_a_palindrome(string), expected)

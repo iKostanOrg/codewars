@@ -35,10 +35,15 @@ class LongestRepetitionTestCase(unittest.TestCase):
 		"""
 
 		allure.dynamic.title("Testing 'longest_repetition' function")
-		allure.dynamic.severity(allure.severity_level.BLOCKER)
+		allure.dynamic.severity(allure.severity_level.NORMAL)
+		allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+		                                '<img src="https://www.codewars.com/users/myFirstCode'
+		                                '/badges/large">'
+		                                '<h3>Test Description:</h3>'
+		                                "<p></p>")
 
 		with allure.step("Pass string and verify the output"):
-			tests = [
+			test_data = [
 				# [input, expected],
 				["aaaabb", ('a', 4)],
 				["bbbaaabaaaa", ('a', 4)],
@@ -49,6 +54,6 @@ class LongestRepetitionTestCase(unittest.TestCase):
 				["", ('', 0)],
 			]
 
-			for t in tests:
+			for t in test_data:
 				print_log(string=t[0], expected=t[1])
 				self.assertEqual(t[1], longest_repetition(t[0]))
