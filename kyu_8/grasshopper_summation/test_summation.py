@@ -32,11 +32,16 @@ class SummationTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing 'summation' function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter number and verify the output"):
 
-            data = [
+            test_data = [
                 (1, 1),
                 (8, 36),
                 (22, 253),
@@ -44,7 +49,7 @@ class SummationTestCase(unittest.TestCase):
                 (213, 22791)
             ]
 
-            for d in data:
+            for d in test_data:
 
                 num = d[0]
                 expected = d[1]

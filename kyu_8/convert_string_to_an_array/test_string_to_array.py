@@ -32,11 +32,16 @@ class StringToArrayTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing string_to_array function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter a test string and verify the output"):
 
-            data = [
+            test_data = [
                 ("Robin Singh", ["Robin", "Singh"]),
                 ("CodeWars", ["CodeWars"]),
                 ("I love arrays they are my favorite",
@@ -45,6 +50,6 @@ class StringToArrayTestCase(unittest.TestCase):
                 ("", [""]),
             ]
 
-            for s, expected in data:
+            for s, expected in test_data:
                 print_log(s=s, expected=expected)
                 self.assertEqual(expected, string_to_array(s))

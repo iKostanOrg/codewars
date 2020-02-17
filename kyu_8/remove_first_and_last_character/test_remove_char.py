@@ -34,6 +34,11 @@ class RemoveCharTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing remove_char function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass 'eloquent' string and verify the output"):
             string = 'eloquent'

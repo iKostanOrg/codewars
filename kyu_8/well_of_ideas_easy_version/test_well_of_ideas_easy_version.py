@@ -33,6 +33,11 @@ class WellTestCase(unittest.TestCase):
 
         allure.dynamic.title("Should return 'Fail!'s")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass list with no 'good' in it"):
             lst = ['bad', 'bad', 'bad']
@@ -50,6 +55,11 @@ class WellTestCase(unittest.TestCase):
 
         allure.dynamic.title("Should return 'Publish!'")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass list with one 'good' in it"):
             lst = ['good', 'bad', 'bad', 'bad', 'bad']
@@ -67,6 +77,11 @@ class WellTestCase(unittest.TestCase):
 
         allure.dynamic.title("Should return 'I smell a series!'")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass list with more than 2 'good' in it"):
             lst = ['good', 'bad', 'bad',

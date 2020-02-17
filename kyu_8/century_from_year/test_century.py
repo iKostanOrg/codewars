@@ -39,7 +39,7 @@ class CenturyTestCase(unittest.TestCase):
                                         '<h3>Test Description:</h3>'
                                         "<p>Given a year, the function should return the century it is in.</p>")
 
-        data = [
+        test_data = [
             (1705, 18, 'Testing for year 1705'),
             (1900, 19, 'Testing for year 1900'),
             (1601, 17, 'Testing for year 1601'),
@@ -48,7 +48,7 @@ class CenturyTestCase(unittest.TestCase):
             (89, 1, 'Testing for year 89')
         ]
 
-        for year, expected, message in data:
+        for year, expected, message in test_data:
             print('\n', message)
             result = century(year)
             with allure.step("Enter test year ({}) and verify "

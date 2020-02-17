@@ -37,16 +37,21 @@ class EnoughTestCase(unittest.TestCase):
 
         allure.dynamic.title("STesting enough function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter test data and "
                          "verify the output"):
-            data = [
+            test_data = [
                 ((10, 5, 5), 0),
                 ((100, 60, 50), 10),
                 ((20, 5, 5), 0),
             ]
 
-            for test_dat, expected in data:
+            for test_dat, expected in test_data:
 
                 cap = test_dat[0]
                 on = test_dat[1]
