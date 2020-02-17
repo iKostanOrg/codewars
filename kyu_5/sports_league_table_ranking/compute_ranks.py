@@ -160,11 +160,14 @@ def calc_rank(teams: dict):
             if team_a != team_b:
                 if teams[team_a]['Points'] > teams[team_b]['Points']:
                     teams[team_a]['Rank'] -= 1
-                elif teams[team_a]['Points'] == teams[team_b]['Points']:
-                    if teams[team_a]['GD'] > teams[team_b]['GD']:
-                        teams[team_a]['Rank'] -= 1
-                    elif teams[team_a]['GD'] == teams[team_b]['GD']:
-                        if teams[team_a]["For:Against"][0] > teams[team_b]["For:Against"][0]:
-                            teams[team_a]['Rank'] -= 1
-                        elif teams[team_a]["For:Against"][0] == teams[team_b]["For:Against"][0]:
-                            teams[team_a]['Rank'] -= 1
+                elif teams[team_a]['Points'] == teams[team_b]['Points'] and \
+                        (teams[team_a]['GD'] > teams[team_b]['GD']):
+                    teams[team_a]['Rank'] -= 1
+                elif teams[team_a]['Points'] == teams[team_b]['Points'] and \
+                        (teams[team_a]['GD'] == teams[team_b]['GD']) and \
+                        (teams[team_a]["For:Against"][0] > teams[team_b]["For:Against"][0]):
+                    teams[team_a]['Rank'] -= 1
+                elif teams[team_a]['Points'] == teams[team_b]['Points'] and \
+                        (teams[team_a]['GD'] == teams[team_b]['GD']) and \
+                        (teams[team_a]["For:Against"][0] == teams[team_b]["For:Against"][0]):
+                    teams[team_a]['Rank'] -= 1
