@@ -21,12 +21,6 @@ def has_subpattern(string: str) -> bool:
 
     length = len(string)
 
-    if string is None or length < 2:
-        return False
-
-    if len(set(string)) == 1:
-        return True
-
     n = 2
     while n < (length // 2) + 1:
 
@@ -34,8 +28,9 @@ def has_subpattern(string: str) -> bool:
             n += 1
             continue
 
-        if string[0:length//n] * n == string:
+        if string[0:length // n] * n == string:
             return True
+
         n += 1
 
     return False
