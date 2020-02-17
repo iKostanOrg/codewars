@@ -20,41 +20,46 @@ from kyu_7.always_perfect.check_root import check_root
 @allure.link(url='',
              name='Source/Kata')
 class CheckRootTestCase(unittest.TestCase):
-	"""
-	Testing check_root function
-	"""
+    """
+    Testing check_root function
+    """
 
-	def test_check_root(self):
-		"""
-		Testing check_root function with various test inputs
+    def test_check_root(self):
+        """
+        Testing check_root function with various test inputs
 
-		A function which takes numbers separated by commas
-		in string format and returns the number which is a
-		perfect square and the square root of that number.
+        A function which takes numbers separated by commas
+        in string format and returns the number which is a
+        perfect square and the square root of that number.
 
-		If string contains other characters than number or
-		it has more or less than 4 numbers separated by comma
-		function returns "incorrect input".
+        If string contains other characters than number or
+        it has more or less than 4 numbers separated by comma
+        function returns "incorrect input".
 
-		If string contains 4 numbers but not consecutive it
-		returns "not consecutive".
-		:return:
-		"""
+        If string contains 4 numbers but not consecutive it
+        returns "not consecutive".
+        :return:
+        """
 
-		allure.dynamic.title("Testing check_root function")
-		allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.title("Testing check_root function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
-		with allure.step("Enter test string and verify the output"):
+        with allure.step("Enter test string and verify the output"):
 
-			data = [
-				('4,5,6,7', '841, 29'),
-				('3,s,5,6', 'incorrect input'),
-				('11,13,14,15', 'not consecutive'),
-				('10,11,12,13,15', 'incorrect input'),
-				('10,11,12,13', '17161, 131'),
-				('*-3,-2,-1,0', 'incorrect input'),
-			]
+            test_data = [
+                ('4,5,6,7', '841, 29'),
+                ('3,s,5,6', 'incorrect input'),
+                ('11,13,14,15', 'not consecutive'),
+                ('10,11,12,13,15', 'incorrect input'),
+                ('10,11,12,13', '17161, 131'),
+                ('*-3,-2,-1,0', 'incorrect input'),
+            ]
 
-			for string, expected in data:
-				print_log(string=string, expected=expected)
-				self.assertEqual(expected, check_root(string))
+            for string, expected in test_data:
+                print_log(string=string, expected=expected)
+                self.assertEqual(expected, check_root(string))

@@ -1,13 +1,13 @@
-import unittest
-import allure
-from utils.log_func import print_log
-from kyu_7.jaden_casing_strings.jaden_casing_strings import toJadenCase
-
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS, STRINGS, ARRAYS
+
+import unittest
+import allure
+from utils.log_func import print_log
+from kyu_7.jaden_casing_strings.jaden_casing_strings import toJadenCase
 
 
 @allure.epic('7 kyu')
@@ -16,7 +16,7 @@ from kyu_7.jaden_casing_strings.jaden_casing_strings import toJadenCase
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Jaden Casing Strings')
-@allure.tag()
+@allure.tag('FUNDAMENTALS', 'STRINGS', 'ARRAYS')
 @allure.link(url='',
              name='Source/Kata')
 class JadenCasingStringsTestCase(unittest.TestCase):
@@ -31,6 +31,11 @@ class JadenCasingStringsTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing toJadenCase function (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass string and verify the output"):
             quote = "How can mirrors be real if our eyes aren't real"
@@ -48,6 +53,11 @@ class JadenCasingStringsTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing toJadenCase function (negative)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass string and verify the output"):
             quote = "How can mirrors be real if our eyes aren't real"

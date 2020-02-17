@@ -32,10 +32,15 @@ class NumberOfSigFigsTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title('Testing number_of_sigfigs function')
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass string and verify the output"):
-            TESTS = [
+            test_data = [
                 (1, "1"),
                 (0, "0"),
                 (1, "0003"),
@@ -53,6 +58,6 @@ class NumberOfSigFigsTestCase(unittest.TestCase):
                 (10, '0000.0673560000')
             ]
 
-            for exp, inp in TESTS:
+            for exp, inp in test_data:
                 print_log(inp=inp, expected=exp)
                 self.assertEqual(exp, number_of_sigfigs(inp))

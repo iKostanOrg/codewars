@@ -34,6 +34,11 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.title("Testing 'sum_triangular_numbers' "
                              "with negative numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter negative number and verify the output"):
             n = -291
@@ -58,6 +63,11 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'sum_triangular_numbers' with zero")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter zero and verify the output"):
             n = 0
@@ -76,6 +86,11 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.title("Testing 'sum_triangular_numbers' "
                              "with positive numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter a positive number as an input "
                          "and verify the output"):
@@ -103,6 +118,11 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.title("Testing 'sum_triangular_numbers' "
                              "with big number as an input")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter a big number as an input "
                          "and verify the output"):

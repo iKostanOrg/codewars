@@ -69,11 +69,16 @@ class GrowingPlantTestCase(unittest.TestCase):
 
         allure.dynamic.title('Testing growing_plant function')
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step('Enter upSpeed, downSpeed and '
                          'desiredHeight and verify the output'):
 
-            data = [
+            test_data = [
                 ((100, 10, 910), 10),
                 ((10, 9, 4), 1),
                 ((5, 2, 0), 1),
@@ -81,7 +86,7 @@ class GrowingPlantTestCase(unittest.TestCase):
                 ((5, 2, 6), 2),
             ]
 
-            for input_data, expected in data:
+            for input_data, expected in test_data:
 
                 upSpeed = input_data[0]
                 downSpeed = input_data[1]

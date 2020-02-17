@@ -32,12 +32,17 @@ class SharePriceTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing share_price function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter invested, changes "
                          "and verify the output"):
 
-            data = [
+            test_data = [
                 (100, [], '100.00'),
                 (100, [-50, 50], '75.00'),
                 (100, [-50, 100], '100.00'),
@@ -45,7 +50,7 @@ class SharePriceTestCase(unittest.TestCase):
                 (1000, [0, 2, 3, 6], '1113.64'),
             ]
 
-            for invested, changes, expected in data:
+            for invested, changes, expected in test_data:
 
                 print_log(invested=invested,
                           changes=changes,

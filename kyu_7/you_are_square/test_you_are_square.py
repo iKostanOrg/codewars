@@ -1,12 +1,12 @@
-import unittest
-import allure
-from kyu_7.you_are_square.you_are_square import is_square
-
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS, MATH
+
+import unittest
+import allure
+from kyu_7.you_are_square.you_are_square import is_square
 
 
 @allure.epic('7 kyu')
@@ -15,7 +15,7 @@ from kyu_7.you_are_square.you_are_square import is_square
 @allure.sub_suite("Unit Tests")
 @allure.feature("Square Calculation")
 @allure.story('You\'re a square')
-@allure.tag()
+@allure.tag('FUNDAMENTALS', 'MATH')
 @allure.link(url='',
              name='Source/Kata')
 class YouAreSquareTestCase(unittest.TestCase):
@@ -33,7 +33,12 @@ class YouAreSquareTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Negative numbers")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Test -1"):
             self.assertEqual(is_square(-1),
@@ -47,7 +52,12 @@ class YouAreSquareTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Zero")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("0 is a square number"):
             self.assertEqual(is_square(0),
@@ -61,7 +71,12 @@ class YouAreSquareTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Non square numbers (negative)")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Test non square number: 3"):
             self.assertEqual(is_square(3),
@@ -75,7 +90,12 @@ class YouAreSquareTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Square numbers (positive)")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Test square number: 4"):
             self.assertEqual(is_square(4),
@@ -89,7 +109,12 @@ class YouAreSquareTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Square numbers (positive)")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Test square number: 25"):
             self.assertEqual(is_square(25),
@@ -103,7 +128,12 @@ class YouAreSquareTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Non square numbers (negative)")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Test non square number: 26"):
             self.assertEqual(is_square(26),

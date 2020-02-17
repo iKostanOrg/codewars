@@ -43,11 +43,16 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing two_decimal_places function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a number and verify the output"):
 
-            data = [
+            test_data = [
                 (10.1289767789, 10.12,
                  "didn't work for 10.1289767789"),
                 (-7488.83485834983, -7488.83,
@@ -56,7 +61,7 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
                  "didn't work for 4.653725356"),
             ]
 
-            for number, expected, msg in data:
+            for number, expected, msg in test_data:
 
                 print_log(number=number,
                           expected=expected)
