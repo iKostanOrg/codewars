@@ -33,14 +33,14 @@ def sort_list(results) -> list:
     while not is_sorted:
         is_sorted = True
         for i in range(0, len(results)):
-            if i < (len(results) - 1):
-                if results[i][1] < results[i + 1][1]:
-                    results[i], results[i + 1] = results[i + 1], results[i]
-                    is_sorted = False
+            if i < (len(results) - 1) and (results[i][1] < results[i + 1][1]):
+                results[i], results[i + 1] = results[i + 1], results[i]
+                is_sorted = False
 
-                if results[i][1] == results[i + 1][1]:
-                    if results[i][0] > results[i + 1][0]:
-                        results[i], results[i + 1] = results[i + 1], results[i]
-                        is_sorted = False
+            elif i < (len(results) - 1) and \
+                    (results[i][1] == results[i + 1][1]) and \
+                    (results[i][0] > results[i + 1][0]):
+                results[i], results[i + 1] = results[i + 1], results[i]
+                is_sorted = False
 
     return results
