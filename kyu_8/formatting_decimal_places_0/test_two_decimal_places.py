@@ -16,8 +16,11 @@ from kyu_8.formatting_decimal_places_0.two_decimal_places import two_decimal_pla
 @allure.sub_suite("Unit Tests")
 @allure.feature("Formatting")
 @allure.story('Formatting decimal places #0')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'FORMATTING',
+            'ALGORITHMS',
+            'NUMBERS')
+@allure.link(url='https://www.codewars.com/kata/5641a03210e973055a00000d/train/python',
              name='Source/Kata')
 class TwoDecimalPlacesTestCase(unittest.TestCase):
     """

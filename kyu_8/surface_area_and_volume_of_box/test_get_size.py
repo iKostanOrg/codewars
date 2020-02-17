@@ -16,8 +16,12 @@ from kyu_8.surface_area_and_volume_of_box.get_size import get_size
 @allure.sub_suite("Unit Tests")
 @allure.feature("Geometry")
 @allure.story('Surface Area and Volume of a Box')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'GEOMETRY',
+            'ALGEBRA',
+            'MATHEMATICS',
+            'ALGORITHMS')
+@allure.link(url='https://www.codewars.com/kata/565f5825379664a26b00007c/train/python',
              name='Source/Kata')
 class GetSizeTestCase(unittest.TestCase):
     """

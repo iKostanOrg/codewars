@@ -16,8 +16,8 @@ from kyu_8.the_feast_of_many_beasts.feast import feast
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('The Feast of Many Beasts')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'STRINGS')
+@allure.link(url='https://www.codewars.com/kata/5aa736a455f906981800360d/train/python',
              name='Source/Kata')
 class FeastTestCase(unittest.TestCase):
     """

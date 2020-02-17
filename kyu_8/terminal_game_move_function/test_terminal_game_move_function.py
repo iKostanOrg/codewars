@@ -16,8 +16,8 @@ from kyu_8.terminal_game_move_function.terminal_game_move_function import move
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Grasshopper - Terminal game move function')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/python',
              name='Source/Kata')
 class MoveTestCase(unittest.TestCase):
     """

@@ -16,8 +16,8 @@ from kyu_8.logical_calculator.logical_calculator import logical_calc
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Logical Calculator')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'ARRAYS')
+@allure.link(url='https://www.codewars.com/kata/57096af70dad013aa200007b/train/python',
              name='Source/Kata')
 class LogicalCalculatorTestCase(unittest.TestCase):
     """

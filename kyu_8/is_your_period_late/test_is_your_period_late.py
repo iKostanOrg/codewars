@@ -17,8 +17,8 @@ from kyu_8.is_your_period_late.is_your_period_late import period_is_late
 @allure.sub_suite("Unit Tests")
 @allure.feature("Date")
 @allure.story('Is your period late')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/578a8a01e9fd1549e50001f1/train/python',
              name='Source/Kata')
 class PeriodIsLateTestCase(unittest.TestCase):
     """

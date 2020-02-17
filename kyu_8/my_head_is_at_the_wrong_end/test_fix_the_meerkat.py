@@ -15,8 +15,8 @@ import pytest
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('My head is at the wrong end!')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('ALGORITHMS', 'ARRAYS', 'LISTS', 'DATA STRUCTURES')
+@allure.link(url='https://www.codewars.com/kata/56f699cd9400f5b7d8000b55/train/python',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class FixTheMeerkatTestCase(unittest.TestCase):

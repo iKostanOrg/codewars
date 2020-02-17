@@ -16,8 +16,8 @@ from kyu_8.find_the_first_non_consecutive_number.first_non_consecutive import fi
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Find the first non-consecutive number')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'ARRAYS')
+@allure.link(url='https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/python',
              name='Source/Kata')
 class FirstNonConsecutiveTestCase(unittest.TestCase):
     """

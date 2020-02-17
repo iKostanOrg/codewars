@@ -16,8 +16,8 @@ from kyu_8.remove_string_spaces.remove_string_spaces import no_space
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Remove String Spaces')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'STRINGS', 'ARRAYS')
+@allure.link(url='https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/python',
              name='Source/Kata')
 class NoSpaceTestCase(unittest.TestCase):
     """

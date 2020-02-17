@@ -16,8 +16,8 @@ from kyu_8.swap_values.swap_values import swap_values
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Swap Values')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('BUGS', 'ARRAYS', 'FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/python',
              name='Source/Kata')
 class SwapValuesTestCase(unittest.TestCase):
     """

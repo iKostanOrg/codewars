@@ -16,8 +16,8 @@ from kyu_8.alternating_case.alternating_case import to_alternating_case
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('altERnaTIng cAsE <=> ALTerNAtiNG CaSe')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/56efc695740d30f963000557/train/python',
              name='Source/Kata')
 class AlternatingCaseTestCase(unittest.TestCase):
     """

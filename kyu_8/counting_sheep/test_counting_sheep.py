@@ -17,7 +17,7 @@ from kyu_8.counting_sheep.counting_sheep import count_sheeps
 @allure.feature("Lists")
 @allure.story('Counting sheep...')
 @allure.tag('FUNDAMENTALS', 'ARRAYS')
-@allure.link(url='',
+@allure.link(url='https://www.codewars.com/kata/54edbc7200b811e956000556/train/python',
              name='Source/Kata')
 class CountingSheepTestCase(unittest.TestCase):
     """

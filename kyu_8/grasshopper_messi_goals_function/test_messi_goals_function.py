@@ -16,8 +16,8 @@ from kyu_8.grasshopper_messi_goals_function.messi_goals_function import goals
 @allure.sub_suite("Unit Tests")
 @allure.feature("Addition")
 @allure.story('Messi goals function')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/python',
              name='Source/Kata')
 class GoalsTestCase(unittest.TestCase):
     """

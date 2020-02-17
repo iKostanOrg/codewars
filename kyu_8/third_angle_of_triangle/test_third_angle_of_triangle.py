@@ -16,8 +16,8 @@ from kyu_8.third_angle_of_triangle.third_angle_of_triangle import other_angle
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Third Angle of a Triangle')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/5a023c426975981341000014/train/python',
              name='Source/Kata')
 class OtherAngleTestCase(unittest.TestCase):
     """

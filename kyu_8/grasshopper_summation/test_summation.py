@@ -16,8 +16,11 @@ from kyu_8.grasshopper_summation.summation import summation
 @allure.sub_suite("Unit Tests")
 @allure.feature("Loops")
 @allure.story('Grasshopper - Summation')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'LOOPS',
+            'CONTROL FLOW',
+            'BASIC LANGUAGE FEATURES')
+@allure.link(url='https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/python',
              name='Source/Kata')
 class SummationTestCase(unittest.TestCase):
     """

@@ -16,8 +16,11 @@ from kyu_8.keep_hydrated.keep_hydrated import litres
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Keep Hydrated!')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'ALGORITHMS',
+            'MATHEMATICS',
+            'NUMBERS')
+@allure.link(url='https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python',
              name='Source/Kata')
 class KeepHydratedTestCase(unittest.TestCase):
     """

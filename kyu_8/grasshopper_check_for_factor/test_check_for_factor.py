@@ -16,8 +16,11 @@ from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Grasshopper - Check for factor')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'MATHEMATICS',
+            'ALGORITHMS',
+            'NUMBERS')
+@allure.link(url='https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/python',
              name='Source/Kata')
 class CheckForFactorTestCase(unittest.TestCase):
     """

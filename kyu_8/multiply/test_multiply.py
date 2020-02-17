@@ -16,8 +16,8 @@ from kyu_8.multiply.multiply import multiply
 @allure.sub_suite("Unit Tests")
 @allure.feature("Multiplication")
 @allure.story('Multiply')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'INTRODUCTION')
+@allure.link(url='https://www.codewars.com/kata/50654ddff44f800200000004/train/python',
              name='Source/Kata')
 class MultiplyTestCase(unittest.TestCase):
     """

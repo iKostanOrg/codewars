@@ -16,8 +16,8 @@ from kyu_8.is_it_a_palindrome.is_palindrome import is_palindrome
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Is it a palindrome?')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/python',
              name='Source/Kata')
 class IsPalindromeTestCase(unittest.TestCase):
     """

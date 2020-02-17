@@ -16,8 +16,8 @@ from kyu_8.wolf_in_sheep_clothing.wolf_in_sheep_clothing import warn_the_sheep
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('A wolf in sheep\'s clothing')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'ARRAYS', 'LOOPS', 'CONTROL FLOW')
+@allure.link(url='https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python',
              name='Source/Kata')
 class WarnTheSheepTestCase(unittest.TestCase):
     """

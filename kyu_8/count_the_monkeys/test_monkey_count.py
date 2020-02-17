@@ -19,7 +19,7 @@ from kyu_8.count_the_monkeys.monkey_count import monkey_count
 @allure.tag('ALGORITHMS', 'ARRAYS', 'FUNDAMENTALS',
             'RANGES', 'BASIC LANGUAGE FEATURES',
             'LISTS' 'DATA STRUCTURES')
-@allure.link(url='',
+@allure.link(url='https://www.codewars.com/kata/count-the-monkeys/train/python',
              name='Source/Kata')
 class MonkeyCountTestCase(unittest.TestCase):
     """

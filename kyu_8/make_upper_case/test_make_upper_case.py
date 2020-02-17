@@ -16,8 +16,8 @@ from kyu_8.make_upper_case.make_upper_case import make_upper_case
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('MakeUpperCase')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS')
+@allure.link(url='https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/train/python',
              name='Source/Kata')
 class MakeUpperCaseTestCase(unittest.TestCase):
     """

@@ -16,8 +16,8 @@ from kyu_8.check_the_exam.check_exam import check_exam
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Check the exam')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'ARRAYS', 'NUMBERS', 'BASIC LANGUAGE FEATURES')
+@allure.link(url='https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/python',
              name='Source/Kata')
 class CheckExamTestCase(unittest.TestCase):
     """

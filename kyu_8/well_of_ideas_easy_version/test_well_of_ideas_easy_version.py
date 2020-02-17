@@ -16,8 +16,8 @@ from kyu_8.well_of_ideas_easy_version.well_of_ideas_easy_version import well
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Well of Ideas - Easy Version')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('REFACTORING', 'FUNDAMENTALS', 'ARRAYS', 'STRINGS')
+@allure.link(url='https://www.codewars.com/kata/57f222ce69e09c3630000212/train/python',
              name='Source/Kata')
 class WellTestCase(unittest.TestCase):
     """

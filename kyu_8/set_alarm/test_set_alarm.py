@@ -16,8 +16,8 @@ from kyu_8.set_alarm.set_alarm import set_alarm
 @allure.sub_suite("Unit Tests")
 @allure.feature("Boolean")
 @allure.story('L1: Set Alarm')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'BOOLEANS')
+@allure.link(url='https://www.codewars.com/kata/568dcc3c7f12767a62000038/train/python',
              name='Source/Kata')
 class SetAlarmTestCase(unittest.TestCase):
     """

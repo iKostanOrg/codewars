@@ -16,8 +16,8 @@ from kyu_8.grasshopper_personalized_message.grasshopper_personalized_message imp
 @allure.sub_suite("Unit Tests")
 @allure.feature("Conditions")
 @allure.story('Personalized greeting')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'CONDITIONAL STATEMENTS', 'CONTROL FLOW')
+@allure.link(url='https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/python',
              name='Source/Kata')
 class GreetTestCase(unittest.TestCase):
     """

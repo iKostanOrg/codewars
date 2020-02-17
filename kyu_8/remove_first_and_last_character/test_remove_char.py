@@ -16,8 +16,10 @@ from kyu_8.remove_first_and_last_character.remove_char import remove_char
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Remove First and Last Character')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'BASIC LANGUAGE FEATURES',
+            'STRINGS')
+@allure.link(url='https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/python',
              name='Source/Kata')
 class RemoveCharTestCase(unittest.TestCase):
     """

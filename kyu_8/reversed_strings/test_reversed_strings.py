@@ -16,8 +16,8 @@ from kyu_8.reversed_strings.reversed_strings import solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Reversed Strings')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'STRINGS')
+@allure.link(url='https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/python',
              name='Source/Kata')
 class ReversedStringsTestCase(unittest.TestCase):
     """

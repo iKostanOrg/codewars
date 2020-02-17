@@ -16,8 +16,8 @@ from kyu_8.will_there_be_enough_space.enough import enough
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Will there be enough space?')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'NUMBERS')
+@allure.link(url='https://www.codewars.com/kata/5875b200d520904a04000003/train/python',
              name='Source/Kata')
 class EnoughTestCase(unittest.TestCase):
     """
