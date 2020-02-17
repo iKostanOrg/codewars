@@ -1,0 +1,507 @@
+{
+  "uid" : "b48f6f73d7b18b14",
+  "name" : "Testing is_prime function",
+  "fullName" : "kyu_5.master_your_primes_sieve_with_memoization.test_primes.PrimesTestCase#test_primes",
+  "historyId" : "e6ec784c16dbc0c3ef86eee597ec6160",
+  "time" : {
+    "start" : 1581908959702,
+    "stop" : 1581908959742,
+    "duration" : 40
+  },
+  "description" : "\n        Testing a function that checks if a given number n is a prime\n        looping through it and, possibly, expanding the array/list of\n        known primes only if/when necessary (ie: as soon as you check\n        for a potential prime which is greater than a given threshold\n        for each n, stop).\n\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1581908959700,
+      "stop" : 1581908959700,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing a function that checks if a given number n is a prime\n        looping through it and, possibly, expanding the array/list of\n        known primes only if/when necessary (ie: as soon as you check\n        for a potential prime which is greater than a given threshold\n        for each n, stop).\n\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test number and verify the output",
+      "time" : {
+        "start" : 1581908959703,
+        "stop" : 1581908959740,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "50d00da6a56a1108",
+      "name" : "stdout",
+      "source" : "50d00da6a56a1108.txt",
+      "type" : "text/plain",
+      "size" : 793
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1581908959744,
+      "stop" : 1581908959744,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Master your primes: sieve with memoization"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "feature",
+    "value" : "Memoization"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "OPTIMIZATION"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "MEMOIZATION"
+  }, {
+    "name" : "tag",
+    "value" : "DESIGN PRINCIPLES"
+  }, {
+    "name" : "tag",
+    "value" : "DESIGN PATTERNS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.master_your_primes_sieve_with_memoization.test_primes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/58603c898989d15e9e000475",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7237178f0d16ea2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897530319,
+        "stop" : 1581897530356,
+        "duration" : 37
+      }
+    }, {
+      "uid" : "5d0a0cf0d75eeb43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829130680,
+        "stop" : 1581829130713,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "5b77d4e4d262b805",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828904101,
+        "stop" : 1581828904156,
+        "duration" : 55
+      }
+    }, {
+      "uid" : "49d083f6c5f6b210",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827422244,
+        "stop" : 1581827422273,
+        "duration" : 29
+      }
+    }, {
+      "uid" : "1f60362dfbe6ee5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696888965,
+        "stop" : 1580696889007,
+        "duration" : 42
+      }
+    }, {
+      "uid" : "c1021fede36c19f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694858114,
+        "stop" : 1580694858181,
+        "duration" : 67
+      }
+    }, {
+      "uid" : "4748f64d286a53c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694175420,
+        "stop" : 1580694175450,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "b4dc9bf025a02e14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588583366,
+        "stop" : 1580588583395,
+        "duration" : 29
+      }
+    }, {
+      "uid" : "48549e19865355ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093585130,
+        "stop" : 1580093585185,
+        "duration" : 55
+      }
+    }, {
+      "uid" : "63ec16748fe9f7d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092931452,
+        "stop" : 1580092931532,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "8d7dfe4f3d5cb0c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016117108,
+        "stop" : 1580016117155,
+        "duration" : 47
+      }
+    }, {
+      "uid" : "ad7e299c920fd7b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015502256,
+        "stop" : 1580015502289,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "1f5757705398f1ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011917510,
+        "stop" : 1580011917538,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "e3d163a5edc32f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746652049,
+        "stop" : 1579746652084,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "f56e33aa5580dd35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733199836,
+        "stop" : 1579733199867,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "100a3128faaaad4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486687865,
+        "stop" : 1579486687906,
+        "duration" : 41
+      }
+    }, {
+      "uid" : "f7dd047d2253230c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482234586,
+        "stop" : 1579482234621,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "3e8cd6b520fb9c19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476681246,
+        "stop" : 1579476681307,
+        "duration" : 61
+      }
+    }, {
+      "uid" : "de6804d6a38e0691",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417127097,
+        "stop" : 1579417127139,
+        "duration" : 42
+      }
+    }, {
+      "uid" : "4c2811f99333229c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090535,
+        "stop" : 1579416090560,
+        "duration" : 25
+      }
+    }, {
+      "uid" : "ecea23f062e28816",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048800,
+        "stop" : 1579407048836,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "3bb85c0eed4bdfe8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406491088,
+        "stop" : 1579406491125,
+        "duration" : 37
+      }
+    }, {
+      "uid" : "30c93562afcbe867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406086052,
+        "stop" : 1579406086084,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "de00fbd3cb18d08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151844973,
+        "stop" : 1579151845001,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "212007966edc930d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684766,
+        "stop" : 1578812684791,
+        "duration" : 25
+      }
+    }, {
+      "uid" : "58f44febdcfaae68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810674162,
+        "stop" : 1578810674186,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "ca1de6d6e53e4cd4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810574338,
+        "stop" : 1578810574373,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "58259f53ad672260",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138262,
+        "stop" : 1578810138288,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "9575350cf0ff1e6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489573,
+        "stop" : 1578809489608,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "fee34e242abf2a18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951354,
+        "stop" : 1578808951397,
+        "duration" : 43
+      }
+    }, {
+      "uid" : "9e82f56372c0f35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808370113,
+        "stop" : 1578808370138,
+        "duration" : 25
+      }
+    }, {
+      "uid" : "aa568ba8ea486252",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803682962,
+        "stop" : 1578803682984,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "f238ea8a6023cdf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802613886,
+        "stop" : 1578802613929,
+        "duration" : 43
+      }
+    }, {
+      "uid" : "70ea678756553d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841772,
+        "stop" : 1578801841813,
+        "duration" : 41
+      }
+    }, {
+      "uid" : "796c3093900ca4a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192355,
+        "stop" : 1577672192377,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "8a4468843bc314a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953421,
+        "stop" : 1577669953469,
+        "duration" : 48
+      }
+    }, {
+      "uid" : "c146c3b9351d7c99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327508962,
+        "stop" : 1577327508986,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "84ce05ee4a638ec8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735651,
+        "stop" : 1577321735681,
+        "duration" : 30
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 33,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "6a30b89fac21c7c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581829130680,
+          "stop" : 1581829130713,
+          "duration" : 33
+        }
+      }, {
+        "uid" : "e0b7424d85034670",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581827422244,
+          "stop" : 1581827422273,
+          "duration" : 29
+        }
+      }, {
+        "uid" : "794da3a41ed4dd31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580696888965,
+          "stop" : 1580696889007,
+          "duration" : 42
+        }
+      }, {
+        "uid" : "3a4e9f705ef59c35",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694858114,
+          "stop" : 1580694858181,
+          "duration" : 67
+        }
+      }, {
+        "uid" : "c08ac83e4394ffb4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694175420,
+          "stop" : 1580694175450,
+          "duration" : 30
+        }
+      } ]
+    },
+    "tags" : [ "DESIGN PRINCIPLES", "MEMOIZATION", "OPTIMIZATION", "ALGORITHMS", "DESIGN PATTERNS" ]
+  },
+  "source" : "b48f6f73d7b18b14.json",
+  "parameterValues" : [ ]
+}

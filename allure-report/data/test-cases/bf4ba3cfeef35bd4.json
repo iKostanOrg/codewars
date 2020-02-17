@@ -1,0 +1,579 @@
+{
+  "uid" : "bf4ba3cfeef35bd4",
+  "name" : "Testing validSolution",
+  "fullName" : "kyu_4.sudoku_solution_validator.test_valid_solution.ValidSolutionTestCase#test_valid_solution",
+  "historyId" : "6f5ecfc36d52495898ac1adb82dbd0a0",
+  "time" : {
+    "start" : 1581908959468,
+    "stop" : 1581908959470,
+    "duration" : 2
+  },
+  "description" : "\n        Test a function validSolution/ValidateSolution/valid_solution()\n        that accepts a 2D array representing a Sudoku board, and returns\n        true if it is a valid solution, or false otherwise. The cells of\n        the sudoku board may also contain 0's, which will represent empty\n        cells. Boards containing one or more zeroes are considered to be\n        invalid solutions.\n\n        The board is always 9 cells by 9 cells, and every\n        cell only contains integers from 0 to 9.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function validSolution/ValidateSolution/valid_solution() that accepts a 2D array representing a Sudoku board, and returns true if it is a valid solution, or false otherwise. The cells of the sudoku board may also contain 0's, which will represent empty cells. Boards containing one or more zeroes are considered to be invalid solutions.</p><p>The board is always 9 cells by 9 cells, and every cell only contains integers from 0 to 9.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1581908959466,
+      "stop" : 1581908959466,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function validSolution/ValidateSolution/valid_solution()\n        that accepts a 2D array representing a Sudoku board, and returns\n        true if it is a valid solution, or false otherwise. The cells of\n        the sudoku board may also contain 0's, which will represent empty\n        cells. Boards containing one or more zeroes are considered to be\n        invalid solutions.\n\n        The board is always 9 cells by 9 cells, and every\n        cell only contains integers from 0 to 9.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function validSolution/ValidateSolution/valid_solution() that accepts a 2D array representing a Sudoku board, and returns true if it is a valid solution, or false otherwise. The cells of the sudoku board may also contain 0's, which will represent empty cells. Boards containing one or more zeroes are considered to be invalid solutions.</p><p>The board is always 9 cells by 9 cells, and every cell only contains integers from 0 to 9.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test list ([[5, 3, 4, 6, 7, 8, 9, 1, 2], [6, 7, 2, 1, 9, 5, 3, 4, 8], [1, 9, 8, 3, 4, 2, 5, 6, 7], [8, 5, 9, 7, 6, 1, 4, 2, 3], [4, 2, 6, 8, 5, 3, 7, 9, 1], [7, 1, 3, 9, 2, 4, 8, 5, 6], [9, 6, 1, 5, 3, 7, 2, 8, 4], [2, 8, 7, 4, 1, 9, 6, 3, 5], [3, 4, 5, 2, 8, 6, 1, 7, 9]]) and verify the output (True) vs expected (True)",
+      "time" : {
+        "start" : 1581908959469,
+        "stop" : 1581908959469,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test list ([[5, 3, 4, 6, 7, 8, 9, 1, 2], [6, 7, 2, 1, 9, 0, 3, 4, 9], [1, 0, 0, 3, 4, 2, 5, 6, 0], [8, 5, 9, 7, 6, 1, 0, 2, 0], [4, 2, 6, 8, 5, 3, 7, 9, 1], [7, 1, 3, 9, 2, 4, 8, 5, 6], [9, 0, 1, 5, 3, 7, 2, 1, 4], [2, 8, 7, 4, 1, 9, 6, 3, 5], [3, 0, 0, 4, 8, 1, 1, 7, 9]]) and verify the output (False) vs expected (False)",
+      "time" : {
+        "start" : 1581908959469,
+        "stop" : 1581908959469,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test list ([[1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 3, 4, 5, 6, 7, 8, 9, 1], [3, 4, 5, 6, 7, 8, 9, 1, 2], [4, 5, 6, 7, 8, 9, 1, 2, 3], [5, 6, 7, 8, 9, 1, 2, 3, 4], [6, 7, 8, 9, 1, 2, 3, 4, 5], [7, 8, 9, 1, 2, 3, 4, 5, 6], [8, 9, 1, 2, 3, 4, 5, 6, 7], [9, 1, 2, 3, 4, 5, 6, 7, 8]]) and verify the output (False) vs expected (False)",
+      "time" : {
+        "start" : 1581908959469,
+        "stop" : 1581908959469,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "bc134ba94242d211",
+      "name" : "stdout",
+      "source" : "bc134ba94242d211.txt",
+      "type" : "text/plain",
+      "size" : 949
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1581908959473,
+      "stop" : 1581908959473,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "epic",
+    "value" : "4 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "tag",
+    "value" : "DATA STRUCTURES"
+  }, {
+    "name" : "feature",
+    "value" : "Validation"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "story",
+    "value" : "Sudoku Solution Validator"
+  }, {
+    "name" : "tag",
+    "value" : "VALIDATION"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_4.sudoku_solution_validator.test_valid_solution"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1903ec87ae1d7626",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897530127,
+        "stop" : 1581897530129,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ffddf24f7aa92c74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829130524,
+        "stop" : 1581829130526,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4dc59210ea7dbdd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828903904,
+        "stop" : 1581828903906,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f2fa0678a1ac1bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827421950,
+        "stop" : 1581827421953,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e6dcc51db861e17c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696888812,
+        "stop" : 1580696888813,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3dcc692fda0746fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694857807,
+        "stop" : 1580694857810,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a87589a0cd371c85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694175100,
+        "stop" : 1580694175102,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eafaf05cfbb39e6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588583214,
+        "stop" : 1580588583215,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d4748a2a4cae55aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093584394,
+        "stop" : 1580093584398,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "c0e045043bfcf2fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092931278,
+        "stop" : 1580092931280,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dacf208c3c0ae887",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016116916,
+        "stop" : 1580016116921,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "b8b4e41ae00db68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015502094,
+        "stop" : 1580015502096,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4d7dad4e476c956d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011917323,
+        "stop" : 1580011917324,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4565c4fd52042e62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746651907,
+        "stop" : 1579746651908,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a167f4605bec3d6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733199665,
+        "stop" : 1579733199667,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "190efd2fe3687e5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486687707,
+        "stop" : 1579486687709,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4e086ec36b0227ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482234432,
+        "stop" : 1579482234436,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "9eb2ad77cd590574",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476680831,
+        "stop" : 1579476680834,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "5abf7df431926c0e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417126742,
+        "stop" : 1579417126744,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9dc7990a7d0575d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090393,
+        "stop" : 1579416090394,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ac2dacd65e32d0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048641,
+        "stop" : 1579407048642,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f4be6a5b3df626b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406490898,
+        "stop" : 1579406490900,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d7e597ba855adfff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406085878,
+        "stop" : 1579406085884,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "2ad4a1240547c29",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151844821,
+        "stop" : 1579151844823,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6db616063e595eaf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684615,
+        "stop" : 1578812684617,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d218d4a211175c39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810674023,
+        "stop" : 1578810674024,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "20c047288a7f8676",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810574163,
+        "stop" : 1578810574167,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "cf336e5fd9b5b4e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138087,
+        "stop" : 1578810138089,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b75fcc11c2bb6e09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489406,
+        "stop" : 1578809489407,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c19732592f772f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951134,
+        "stop" : 1578808951136,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f2cc23a26da232ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808369972,
+        "stop" : 1578808369973,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ab342dc17ced0720",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803682819,
+        "stop" : 1578803682820,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c9349354fe442d3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802613677,
+        "stop" : 1578802613679,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e834d44738ba5e7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841535,
+        "stop" : 1578801841537,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5f6e310d68901e06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192223,
+        "stop" : 1577672192224,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d6e9c5e996fb2dfd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953272,
+        "stop" : 1577669953274,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d9e84a740fa85273",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327508856,
+        "stop" : 1577327508857,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7e44442a37e02587",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735519,
+        "stop" : 1577321735520,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5843af3b53ed3777",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063533855,
+        "stop" : 1577063533857,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7695d452abb6e4aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062098813,
+        "stop" : 1577062098814,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "828f5cefd0f3b48b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059476999,
+        "stop" : 1577059477001,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f6e603105a3cedfc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388867286,
+        "stop" : 1576388867288,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1b60762fd890cf17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387265607,
+        "stop" : 1576387265608,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3b820583d12775a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862137491,
+        "stop" : 1575862137493,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 39,
+        "unknown" : 0,
+        "total" : 39
+      },
+      "items" : [ {
+        "uid" : "f8b4f18cef4222a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581829130524,
+          "stop" : 1581829130526,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "aa6f7fad521407d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581827421950,
+          "stop" : 1581827421953,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "7ec29248fc4cfbe9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580696888812,
+          "stop" : 1580696888813,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "ee7ce2e4fa20747b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694857807,
+          "stop" : 1580694857810,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "f221f5ee19b7372f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694175100,
+          "stop" : 1580694175102,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "VALIDATION", "ALGORITHMS", "DATA STRUCTURES" ]
+  },
+  "source" : "bf4ba3cfeef35bd4.json",
+  "parameterValues" : [ ]
+}

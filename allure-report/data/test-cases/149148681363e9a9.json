@@ -1,0 +1,423 @@
+{
+  "uid" : "149148681363e9a9",
+  "name" : "Testing calculate_damage function",
+  "fullName" : "kyu_6.pokemon_damage_calculator.test_calculate_damage.CalculateDamageTestCase#test_calculate_damage",
+  "historyId" : "fdc9a1360d77d4313e2885c36e2d5f96",
+  "time" : {
+    "start" : 1581908960236,
+    "stop" : 1581908960239,
+    "duration" : 3
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Verify that the function calculates the damage that a particular move would do using the following formula (not the actual one from the game): damage = 50 * (attack / defense) * effectiveness</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1581908960235,
+      "stop" : 1581908960235,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Verify that the function calculates the damage that a particular move would do using the following formula (not the actual one from the game): damage = 50 * (attack / defense) * effectiveness</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a test data (('fire', 'water', 100, 100)) and verify the expected output (25) vs actual result (25.0)",
+      "time" : {
+        "start" : 1581908960237,
+        "stop" : 1581908960237,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'water', 100, 100)) and verify the expected output (100) vs actual result (100.0)",
+      "time" : {
+        "start" : 1581908960237,
+        "stop" : 1581908960237,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a test data (('electric', 'fire', 100, 100)) and verify the expected output (50) vs actual result (50.0)",
+      "time" : {
+        "start" : 1581908960237,
+        "stop" : 1581908960237,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'electric', 57, 19)) and verify the expected output (150) vs actual result (150.0)",
+      "time" : {
+        "start" : 1581908960237,
+        "stop" : 1581908960237,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'water', 40, 40)) and verify the expected output (100) vs actual result (100.0)",
+      "time" : {
+        "start" : 1581908960237,
+        "stop" : 1581908960238,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'fire', 35, 5)) and verify the expected output (175) vs actual result (175.0)",
+      "time" : {
+        "start" : 1581908960238,
+        "stop" : 1581908960238,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a test data (('fire', 'electric', 10, 2)) and verify the expected output (250) vs actual result (250.0)",
+      "time" : {
+        "start" : 1581908960238,
+        "stop" : 1581908960238,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "593cc75c5bbf53b6",
+      "name" : "stdout",
+      "source" : "593cc75c5bbf53b6.txt",
+      "type" : "text/plain",
+      "size" : 544
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1581908960242,
+      "stop" : 1581908960242,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "GAMES"
+  }, {
+    "name" : "suite",
+    "value" : "Games"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "feature",
+    "value" : "Numbers"
+  }, {
+    "name" : "tag",
+    "value" : "ARRAYS"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "tag",
+    "value" : "BASIC LANGUAGE FEATURES"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "story",
+    "value" : "Pokemon Damage Calculator"
+  }, {
+    "name" : "tag",
+    "value" : "CONTROL FLOW"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "PUZZLES"
+  }, {
+    "name" : "tag",
+    "value" : "FUNCTIONS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.pokemon_damage_calculator.test_calculate_damage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/536e9a7973130a06eb000e9f/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d526ddfa7c1b04f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897530899,
+        "stop" : 1581897530901,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "87993775d5a75a96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829131282,
+        "stop" : 1581829131286,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "bcd2d90cf74618f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828904695,
+        "stop" : 1581828904697,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "216f4a3b0e322e30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827422961,
+        "stop" : 1581827422963,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4c2ae61f52450f9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696889477,
+        "stop" : 1580696889479,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cc678c7139752e85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694858967,
+        "stop" : 1580694858970,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "49fbf1d7de1946cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694176133,
+        "stop" : 1580694176136,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4ceed19287e47a6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588583933,
+        "stop" : 1580588583936,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "928e768c69d9ab87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093585958,
+        "stop" : 1580093585963,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "fac7efabd71bf4c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092932074,
+        "stop" : 1580092932076,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6dc2196768efb95d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016117626,
+        "stop" : 1580016117628,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1f854d77b30b45e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015502746,
+        "stop" : 1580015502748,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "382b45ae7ebb0c69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011918045,
+        "stop" : 1580011918047,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4830626baf47ea74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746652616,
+        "stop" : 1579746652618,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b003f068ac23d16c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733200380,
+        "stop" : 1579733200382,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "66059b00a5372aad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581829131282,
+          "stop" : 1581829131286,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "e57a69dbbe5d3db1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581827422961,
+          "stop" : 1581827422963,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "5ef4c0465586984f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580696889477,
+          "stop" : 1580696889479,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "4acea252fceaa2fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694858967,
+          "stop" : 1580694858970,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "ad26798d7043c8f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1580694176133,
+          "stop" : 1580694176136,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "FUNDAMENTALS", "NUMBERS", "GAMES", "CONTROL FLOW", "PUZZLES", "BASIC LANGUAGE FEATURES", "FUNCTIONS", "ARRAYS" ]
+  },
+  "source" : "149148681363e9a9.json",
+  "parameterValues" : [ ]
+}
