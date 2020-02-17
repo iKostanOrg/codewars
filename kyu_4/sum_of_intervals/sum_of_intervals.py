@@ -40,36 +40,38 @@ def remove_overlaps(intervals: list) -> list:
 
 def clean_interval(intervals, i, b) -> bool:
 
+	result = True
+
 	if i[0] == b[0] and i[1] == b[1]:
 		intervals.remove(b)
-		return False
+		result = False
 
 	if i[0] < b[0] < i[1] <= b[1]:
 		intervals.append((i[0], b[1]))
 		intervals.remove(i)
 		intervals.remove(b)
-		return False
+		result = False
 
 	if b[0] < i[0] < b[1] <= i[1]:
 		intervals.append((b[0], i[1]))
 		intervals.remove(i)
 		intervals.remove(b)
-		return False
+		result = False
 
 	if b[0] < i[0] < i[1] < b[1]:
 		intervals.remove(i)
-		return False
+		result = False
 
 	if i[0] < b[0] < b[1] < i[1]:
 		intervals.remove(b)
-		return False
+		result = False
 
 	if i[0] == b[0] and b[1] < i[1]:
 		intervals.remove(b)
-		return False
+		result = False
 
 	if i[0] == b[0] and i[1] < b[1]:
 		intervals.remove(i)
-		return False
+		result = False
 
-	return True
+	return result
