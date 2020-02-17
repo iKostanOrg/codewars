@@ -37,6 +37,11 @@ class CountingSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'count_sheeps' function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         lst = [True, True, True, False,
                True, True, True, True,
@@ -65,6 +70,11 @@ class CountingSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'count_sheeps' function: bad input")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         lst = list()
 
@@ -88,6 +98,11 @@ class CountingSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'count_sheeps' function: empty list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         lst = []
 
@@ -111,6 +126,11 @@ class CountingSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'count_sheeps' function: mixed list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         lst = [True, False, None]
 

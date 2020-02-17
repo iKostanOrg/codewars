@@ -33,6 +33,11 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
         allure.dynamic.title("Non is expected")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a list with no non consecutive numbers"):
             lst = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -56,6 +61,11 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
         allure.dynamic.title("Large lists")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a large list with no non consecutive numbers"):
             lst = [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46,
@@ -108,6 +118,11 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
         allure.dynamic.title("Non consecutive number should be returned")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a list with positive non consecutive number"):
             lst = [1, 2, 3, 4, 6, 7, 8]
@@ -163,6 +178,11 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
         allure.dynamic.title("Negative non consecutive number should be returned")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a list with negative non consecutive number"):
             lst = [-5, -4, -3, -1]

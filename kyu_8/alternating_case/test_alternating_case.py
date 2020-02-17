@@ -31,11 +31,16 @@ class AlternatingCaseTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing to_alternating_case function")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
 
-            data = [
+            test_data = [
                 ("hello world", "HELLO WORLD"),
                 ("HELLO WORLD", "hello world"),
                 ("HeLLo WoRLD", "hEllO wOrld"),
@@ -48,7 +53,7 @@ class AlternatingCaseTestCase(unittest.TestCase):
                 ("altERnaTIng cAsE", "ALTerNAtiNG CaSe")
             ]
 
-            for d in data:
+            for d in test_data:
                 string = d[0]
                 expected = d[1]
 

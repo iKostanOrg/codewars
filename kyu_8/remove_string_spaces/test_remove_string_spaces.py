@@ -32,7 +32,12 @@ class NoSpaceTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Test that no_space function "
                              "removes the spaces")
-        allure.dynamic.severity(allure.severity_level.MINOR)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass string with spaces "
                          "and verify the result"):

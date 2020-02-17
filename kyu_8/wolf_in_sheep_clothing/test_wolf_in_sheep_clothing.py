@@ -33,6 +33,11 @@ class WarnTheSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Wolf at the beginning of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         lst = ['wolf', 'sheep', 'sheep',
                'sheep', 'sheep', 'sheep',
@@ -52,6 +57,11 @@ class WarnTheSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Wolf in the middle of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         # 1
         lst = ['sheep', 'sheep', 'sheep',
@@ -91,6 +101,11 @@ class WarnTheSheepTestCase(unittest.TestCase):
 
         allure.dynamic.title("Wolf at the end of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         lst = ['sheep', 'sheep', 'wolf']
         expected = 'Pls go away and stop eating my sheep'

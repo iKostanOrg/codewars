@@ -48,6 +48,11 @@ class FeastTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'feast' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter animal's name and dish "
                          "as arguments and assert the output"):

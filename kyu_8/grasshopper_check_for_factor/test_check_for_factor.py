@@ -38,6 +38,11 @@ class CheckForFactorTestCase(unittest.TestCase):
         allure.dynamic.title("Testing check_for_factor "
                              "function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Return true if it is a factor"):
 
@@ -71,6 +76,11 @@ class CheckForFactorTestCase(unittest.TestCase):
         allure.dynamic.title("Testing check_for_factor "
                              "function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Return false if it is not a factor"):
 

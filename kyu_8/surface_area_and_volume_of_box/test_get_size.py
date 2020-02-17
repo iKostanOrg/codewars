@@ -31,7 +31,12 @@ class GetSizeTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("get_size function tests")
-        allure.dynamic.severity(allure.severity_level.BLOCKER)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 4, 2, 6

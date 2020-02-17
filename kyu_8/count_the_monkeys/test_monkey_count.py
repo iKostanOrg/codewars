@@ -43,10 +43,15 @@ class MonkeyCountTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing monkey_count function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter a number (int) and verify the output"):
 
-            data = [
+            test_data = [
                 (1, [1]),
                 (5, [1, 2, 3, 4, 5]),
                 (3, [1, 2, 3]),
@@ -56,6 +61,6 @@ class MonkeyCountTestCase(unittest.TestCase):
                       12, 13, 14, 15, 16, 17, 18, 19, 20])
             ]
 
-            for n, expected in data:
+            for n, expected in test_data:
                 print_log(n=n, expected=expected)
                 self.assertEqual(expected, monkey_count(n))

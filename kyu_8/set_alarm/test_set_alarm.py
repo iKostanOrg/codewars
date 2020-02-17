@@ -43,11 +43,16 @@ class SetAlarmTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing set_alarm function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter test data and verify the output"):
 
-            data = [
+            test_data = [
                 ((True, True),
                  False,
                  "Fails when input is True, True"),
@@ -62,7 +67,7 @@ class SetAlarmTestCase(unittest.TestCase):
                  "Fails when input is True, False"),
             ]
 
-            for test_input, expected, msg in data:
+            for test_input, expected, msg in test_data:
 
                 employed = test_input[0]
                 vacation = test_input[1]

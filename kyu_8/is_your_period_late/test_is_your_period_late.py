@@ -33,6 +33,11 @@ class PeriodIsLateTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing period_is_late function (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass last, today and period length"):
             last = date(2016, 6, 13)
@@ -90,6 +95,11 @@ class PeriodIsLateTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing period_is_late function (negative)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass last, today and period length"):
             last = date(2016, 6, 13)

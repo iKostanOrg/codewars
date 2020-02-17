@@ -29,7 +29,12 @@ class SwapValuesTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing swap_values function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass a list with 2 values and swap them"):
 

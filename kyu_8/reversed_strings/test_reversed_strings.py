@@ -32,6 +32,11 @@ class ReversedStringsTestCase(unittest.TestCase):
 
         allure.dynamic.title("Test with empty string")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass empty string and verify the output"):
             string = ''
@@ -49,6 +54,11 @@ class ReversedStringsTestCase(unittest.TestCase):
 
         allure.dynamic.title("Test with one char only")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass one char string and verify the output"):
             string = 'h'
@@ -66,6 +76,11 @@ class ReversedStringsTestCase(unittest.TestCase):
 
         allure.dynamic.title("Test with regular string")
         allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Pass regular string and verify the output"):
             string = 'world'

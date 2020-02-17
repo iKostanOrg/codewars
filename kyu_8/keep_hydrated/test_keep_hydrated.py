@@ -31,11 +31,16 @@ class KeepHydratedTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing litres function with various test inputs")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter hours and verify the output"):
 
-            data = [
+            test_data = [
                 (2, 1, 'should return 1 litre'),
                 (1.4, 0, 'should return 0 litres'),
                 (12.3, 6, 'should return 6 litres'),
@@ -45,6 +50,6 @@ class KeepHydratedTestCase(unittest.TestCase):
                 (0, 0, 'should return 0 litres')
             ]
 
-            for hours, expected, message in data:
+            for hours, expected, message in test_data:
                 print_log(hours=hours, expected=expected)
                 self.assertEqual(expected, litres(hours), message)
