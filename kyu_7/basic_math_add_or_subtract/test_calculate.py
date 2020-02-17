@@ -23,6 +23,7 @@ class CalculateTestCase(unittest.TestCase):
     """
     Testing calculate function
     """
+
     def test_calculate(self):
         allure.dynamic.title("Testing calculate function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -35,9 +36,9 @@ class CalculateTestCase(unittest.TestCase):
                                         "string.</p>")
 
         test_data = [
-	        ('1plus2plus3plus4', '10'),
-	        ('1minus2minus3minus4', '-8'),
-	        ('1plus2plus3minus4', '2'),
+            ('1plus2plus3plus4', '10'),
+            ('1minus2minus3minus4', '-8'),
+            ('1plus2plus3minus4', '2'),
         ]
 
         for s, expected in test_data:

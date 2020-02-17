@@ -50,11 +50,16 @@ class MenFromBoysTestCase(unittest.TestCase):
         :return:
         """
         allure.dynamic.title('Testing men_from_boys function')
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step('Given an list of integers => '
                          'separate the even numbers from the odds'):
-            data = [
+            test_data = [
                 ([7, 3, 14, 17],
                  [14, 17, 7, 3]),
                 ([2, 43, 95, 90, 37],
@@ -87,6 +92,6 @@ class MenFromBoysTestCase(unittest.TestCase):
                  [-282, 818, 900, 928, 281, 49, -1])
             ]
 
-            for arr, expected in data:
+            for arr, expected in test_data:
                 print_log(arr=arr, expected=expected)
                 self.assertEqual(expected, men_from_boys(arr))

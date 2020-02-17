@@ -39,12 +39,17 @@ class SentencifyTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing 'solution' function")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Enter a list of strings"
                          " and verify the result"):
 
-            data = [
+            test_data = [
                 (["i", "am", "an", "AI"],
                  "I am an AI."),
                 (["yes"],
@@ -55,7 +60,7 @@ class SentencifyTestCase(unittest.TestCase):
                  "I'm afraid I can't let you do that."),
             ]
 
-            for words, expected in data:
+            for words, expected in test_data:
 
                 print_log(expected=expected,
                           words=words)

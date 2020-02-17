@@ -1,13 +1,13 @@
-import unittest
-import allure
-from kyu_7.remove_the_minimum.remove_the_minimum import remove_smallest
-from numpy.random import randint
-
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS, LISTS, DATA STRUCTURES, ARRAYS
+
+import unittest
+import allure
+from numpy.random import randint
+from kyu_7.remove_the_minimum.remove_the_minimum import remove_smallest
 
 
 @allure.epic('7 kyu')
@@ -42,7 +42,12 @@ class RemoveSmallestTestCase(unittest.TestCase):
 
         allure.dynamic.title("'multiply' function verification: "
                              "lists with multiple digits")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
 
         with allure.step("Remove smallest value from "
                          "the start of the list"):
@@ -69,7 +74,13 @@ class RemoveSmallestTestCase(unittest.TestCase):
         """
         allure.dynamic.title("'multiply' function verification "
                              "with empty list")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
+
         with allure.step("Remove smallest value from "
                          "the empty list"):
             self.assertEqual(remove_smallest([]),
@@ -83,7 +94,13 @@ class RemoveSmallestTestCase(unittest.TestCase):
         """
         allure.dynamic.title("'multiply' function verification "
                              "with one element list")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
+
         with allure.step("Remove smallest value from "
                          "the empty list with one element only"):
             i = 0
@@ -101,7 +118,13 @@ class RemoveSmallestTestCase(unittest.TestCase):
         """
         allure.dynamic.title("'multiply' function verification "
                              "with random list")
-        allure.dynamic.severity(allure.severity_level.CRITICAL)
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p></p>")
+
         with allure.step("Remove smallest value from "
                          "the random list"):
             i = 0
