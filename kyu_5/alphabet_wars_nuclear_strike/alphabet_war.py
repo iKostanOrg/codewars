@@ -58,25 +58,24 @@ def clean_battlefield(battlefield: str) -> str:
 	while result:
 		for i, r in enumerate(result):
 			if r.count('#') <= 1:
-				if i + 1 < len(result):
-					if r.count('#') == 0 and result[i + 1].count('#') < 2:
-						temp.append(''.join(char for char in r if char .isalpha()))
-						del result[i]
-						break
-					elif r.count('#') == 1 and result[i + 1].count('#') == 0:
-						temp.append(''.join(char for char in r if char .isalpha()))
-						del result[i]
-						break
-					else:
-						del result[i]
-						break
+				if i + 1 < len(result) and (r.count('#') == 0 and result[i + 1].count('#') < 2):
+					temp.append(''.join(char for char in r if char .isalpha()))
+					del result[i]
+					break
+				elif i + 1 < len(result) and (r.count('#') == 1 and result[i + 1].count('#') == 0):
+					temp.append(''.join(char for char in r if char .isalpha()))
+					del result[i]
+					break
+				elif i + 1 < len(result):
+					del result[i]
+					break
 				else:
 					temp.append(''.join(char for char in r if char .isalpha()))
 					del result[i]
 					break
-			else:
-				del result[i]
-				break
+
+			del result[i]
+			break
 
 	answer = ''.join(char for char in reversed(temp))
 	return answer
