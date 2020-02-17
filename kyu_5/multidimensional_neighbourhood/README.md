@@ -6,10 +6,12 @@ This is the next step. We are going multidimensional. You should build a functio
 
 ### Input
 
+```text
 * type "moore" or "von_neumann"
 * matrix a N-dimensional matrix. N >= 0 (the matrix is always rectangular; could be a list or a tuple)
 * coordinates of the cell. It is a N-length tuple. Order of the indices: The first index should be applied for the outer/first matrix layer. The last index for the most inner/last layer. coordinates = (m, n, k) should be apllied like mat[m][n][k]
 * distance
+```
 
 ### Task
 
