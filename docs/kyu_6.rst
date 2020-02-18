@@ -28,6 +28,7 @@ Subpackages
    kyu_6.pokemon_damage_calculator
    kyu_6.help_the_bookseller
    kyu_6.row_of_the_odd_triangle
+   kyu_6.potion_class_101
 
 Module contents
 ---------------
