@@ -6,41 +6,41 @@
 class EpidemicTestData:
 
 	def __init__(self, tm, n, s0, i0, b, a, expected):
-		self._tm = tm
-		self._n = n
-		self._s0 = s0
-		self._i0 = i0
-		self._b = b
-		self._a = a
-		self._expected = expected
+		self.__tm = tm
+		self.__n = n
+		self.__s0 = s0
+		self.__i0 = i0
+		self.__b = b
+		self.__a = a
+		self.__expected = expected
 
 	@property
 	def tm(self):
-		return self._tm
+		return self.__tm
 
 	@property
 	def n(self):
-		return self._n
+		return self.__n
 
 	@property
 	def s0(self):
-		return self._s0
+		return self.__s0
 
 	@property
 	def i0(self):
-		return self._i0
+		return self.__i0
 
 	@property
 	def b(self):
-		return self._b
+		return self.__b
 
 	@property
 	def a(self):
-		return self._a
+		return self.__a
 
 	@property
 	def expected(self):
-		return self._expected
+		return self.__expected
 
 	def __repr__(self):
 		return 'tm: {}, n: {}, s0: {}, i0: {}, b: {}, a: {}, expected: {}'.format(self.tm,
