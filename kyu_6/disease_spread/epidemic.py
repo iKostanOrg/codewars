@@ -32,13 +32,11 @@ def epidemic(tm: int, n: int, s0: int, i0: int, b: float, a: float):
 
     # susceptible, infected, recovered at time t
     # Whatever S0 and I0, R0 (number of recovered at time 0) is always 0.
-    S = [s0] + [0] * n
-    I = [i0] + [0] * n
-    # R = [0] + [0] * n
+    S = [s0, ]
+    I = [i0, ]
 
     for k in range(n):
-        S[k + 1] = S[k] - dt * b * S[k] * I[k]
-        I[k + 1] = I[k] + dt * (b * S[k] * I[k] - a * I[k])
-        # R[k + 1] = R[k] + dt * I[k] * a
+        S.append(S[k] - dt * b * S[k] * I[k])
+        I.append(I[k] + dt * (b * S[k] * I[k] - a * I[k]))
 
     return int(max(I))
