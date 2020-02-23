@@ -18,7 +18,7 @@ def is_prime(n: int) -> bool:
         result = False
 
     if n == 2:
-        result = False
+        result = True
 
     if n % 2 == 0 and n > 2:
         result = False
