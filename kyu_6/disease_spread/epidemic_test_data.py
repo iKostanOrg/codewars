@@ -51,13 +51,15 @@ class EpidemicTestData:
 		                                                                         self.a,
 		                                                                         self.expected)
 
-	def __cmp__(self, other):
+	def __eq__(self, other):
 		"""
 		Object comparison
+		Override the default Equals behavior
 		:param other:
 		:return:
 		"""
-		return self.tm == other.tm and \
+		return self.__class__.__name__ == other.__class__.__name__ and \
+		       self.tm == other.tm and \
 		       self.n == other.n and \
 		       self.s0 == other.s0 and \
 		       self.i0 == other.i0 and \
