@@ -58,7 +58,7 @@ class EpidemicTestData:
 		:param other:
 		:return:
 		"""
-		return self.__class__.__name__ == other.__class__.__name__ and \
+		return self.__class__ == other.__class__ and \
 		       self.tm == other.tm and \
 		       self.n == other.n and \
 		       self.s0 == other.s0 and \
