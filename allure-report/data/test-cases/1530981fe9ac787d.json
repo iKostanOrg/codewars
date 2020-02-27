@@ -1,0 +1,509 @@
+{
+  "uid" : "1530981fe9ac787d",
+  "name" : "Testing first_non_repeating_letter function",
+  "fullName" : "kyu_5.first_non_repeating_character.test_first_non_repeating_letter.FirstNonRepeatingLetterTestCase#test_first_non_repeating_letter",
+  "historyId" : "b5a1c5eb9c825db6f453100e4dceac7d",
+  "time" : {
+    "start" : 1582772536833,
+    "stop" : 1582772536836,
+    "duration" : 3
+  },
+  "description" : "\n        Testing a function named first_non_repeating_letter\n        that takes a string input, and returns the first character\n        that is not repeated anywhere in the string.\n\n        For example, if given the input 'stress', the function\n        should return 't', since the letter t only occurs once\n        in the string, and occurs first in the string.\n\n        As an added challenge, upper- and lowercase letters are\n        considered the same character, but the function should\n        return the correct case for the initial letter. For example,\n        the input 'sTreSS' should return 'T'.\n\n        If a string contains all repeating characters, it should\n        return an empty string (\"\") or None -- see sample tests.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1582772536831,
+      "stop" : 1582772536832,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing a function named first_non_repeating_letter\n        that takes a string input, and returns the first character\n        that is not repeated anywhere in the string.\n\n        For example, if given the input 'stress', the function\n        should return 't', since the letter t only occurs once\n        in the string, and occurs first in the string.\n\n        As an added challenge, upper- and lowercase letters are\n        considered the same character, but the function should\n        return the correct case for the initial letter. For example,\n        the input 'sTreSS' should return 'T'.\n\n        If a string contains all repeating characters, it should\n        return an empty string (\"\") or None -- see sample tests.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test string and verify the output",
+      "time" : {
+        "start" : 1582772536834,
+        "stop" : 1582772536835,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "bb3a0126b509d2e8",
+      "name" : "stdout",
+      "source" : "bb3a0126b509d2e8.txt",
+      "type" : "text/plain",
+      "size" : 392
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1582772536839,
+      "stop" : 1582772536839,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "SEARCH"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "story",
+    "value" : "First non-repeating character"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "11564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.first_non_repeating_character.test_first_non_repeating_letter"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "38b3be40ed64869e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434203659,
+        "stop" : 1582434203660,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a9f0d118f29d1b01",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434076420,
+        "stop" : 1582434076421,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b12ed72b1d16d7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581998959364,
+        "stop" : 1581998959372,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "11d696056fa0dbfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581908959605,
+        "stop" : 1581908959609,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "13eb7d8f899d946a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897530226,
+        "stop" : 1581897530228,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "758096ce50905f55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829130621,
+        "stop" : 1581829130622,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2e0ec1b266e0757f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828904006,
+        "stop" : 1581828904008,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a7dd686f84f9f5c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827422152,
+        "stop" : 1581827422154,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "56b0afc1844837ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696888900,
+        "stop" : 1580696888901,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3aaf787d06c16088",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694857992,
+        "stop" : 1580694857994,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f2e4803726687c2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694175246,
+        "stop" : 1580694175248,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2a90a167e1969f81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588583310,
+        "stop" : 1580588583311,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b37e27004543e565",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093584845,
+        "stop" : 1580093584846,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "23f2ea6795394334",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092931387,
+        "stop" : 1580092931388,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "66950a84591af8bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016117045,
+        "stop" : 1580016117049,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "6c40ae8d6595ffb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015502202,
+        "stop" : 1580015502202,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "721a7ca9842aa57e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011917441,
+        "stop" : 1580011917444,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "2bbf519c267a2b8c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746652003,
+        "stop" : 1579746652004,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7384a752d3d407c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733199776,
+        "stop" : 1579733199777,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "932407e9a865f8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486687814,
+        "stop" : 1579486687815,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8c51f881b12ff215",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482234533,
+        "stop" : 1579482234536,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "66522312e1593e75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476681138,
+        "stop" : 1579476681140,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a681928900145dcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417126935,
+        "stop" : 1579417126938,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8e0c89e5ff6f56ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090486,
+        "stop" : 1579416090487,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b26b5de5290bb7da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048741,
+        "stop" : 1579407048742,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b9a6ae0f10d99558",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406491011,
+        "stop" : 1579406491014,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ee96949cb9ef9b96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406085985,
+        "stop" : 1579406085986,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fd6853b31b7cfcbb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151844923,
+        "stop" : 1579151844925,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a1b08bbe77627aab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684717,
+        "stop" : 1578812684718,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4cc9ce91d66e8915",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810674112,
+        "stop" : 1578810674114,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "168c49f0c498c710",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810574274,
+        "stop" : 1578810574276,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "54ebb07c96660d40",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138206,
+        "stop" : 1578810138207,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f61f7e3d568423dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489514,
+        "stop" : 1578809489517,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "86da1d7ad606987c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951261,
+        "stop" : 1578808951264,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3d425bda56599207",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808370065,
+        "stop" : 1578808370068,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "5eabc20cfb92ebaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803682913,
+        "stop" : 1578803682913,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e42742f24d42111b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802613808,
+        "stop" : 1578802613809,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5bcb4fc275201e12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841661,
+        "stop" : 1578801841662,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "26d0438ea5a0cd1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192310,
+        "stop" : 1577672192311,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 33,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "2ee1fc57dc8467ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1582434203659,
+          "stop" : 1582434203660,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "505129cf9d04585",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581998959364,
+          "stop" : 1581998959372,
+          "duration" : 8
+        }
+      }, {
+        "uid" : "2a3a67e73ebb94ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581908959605,
+          "stop" : 1581908959609,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "562ee308267c209d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581829130621,
+          "stop" : 1581829130622,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "899299926fbfa458",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581827422152,
+          "stop" : 1581827422154,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "SEARCH", "ALGORITHMS" ]
+  },
+  "source" : "1530981fe9ac787d.json",
+  "parameterValues" : [ ]
+}
