@@ -30,6 +30,7 @@ Subpackages
    kyu_6.row_of_the_odd_triangle
    kyu_6.potion_class_101
    kyu_6.disease_spread
+   kyu_6.a_rule_of_divisibility_by_13
 
 Module contents
 ---------------
