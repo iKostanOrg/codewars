@@ -39,5 +39,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |21   |[Help the bookseller !](https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/help_the_bookseller)            |
 |22   |[Row of the odd triangle](https://www.codewars.com/kata/5d5a7525207a674b71aa25b5/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/row_of_the_odd_triangle)        |
 |23   |[Disease Spread](https://www.codewars.com/kata/566543703c72200f0b0000c9)                                            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/disease_spread)                 |
+|24   |[A Rule of Divisibility by 13](https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/a_rule_of_divisibility_by_13)   |
 
 [Source](https://www.codewars.com/about)
