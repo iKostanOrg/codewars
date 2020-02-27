@@ -10,15 +10,15 @@ def thirt(n: int) -> int:
     :param n:
     :return:
     """
-    remainders = (1, 10, 9, 12, 3, 4)
+    REMAINDERS = (1, 10, 9, 12, 3, 4)
 
     while True:
         i = 0
         temp = 0
         t = str(n)[::-1]
         for s in t:
-            temp += int(s) * remainders[i]
-            if i + 1 < len(remainders):
+            temp += int(s) * REMAINDERS[i]
+            if i + 1 < len(REMAINDERS):
                 i += 1
             else:
                 i = 0
