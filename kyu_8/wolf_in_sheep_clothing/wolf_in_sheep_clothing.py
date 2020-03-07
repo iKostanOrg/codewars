@@ -19,10 +19,10 @@ def warn_the_sheep(queue: list) -> str:
     :return:
     """
 
-    warning = "Pls go away and stop eating my sheep"
-    alert_start = "Oi! Sheep number "
-    alert_end = "! You are about to be eaten by a wolf!"
-    wolf = 'wolf'
+    warning: str = "Pls go away and stop eating my sheep"
+    alert_start: str = "Oi! Sheep number "
+    alert_end: str = "! You are about to be eaten by a wolf!"
+    wolf: str = 'wolf'
 
     if queue[-1] == wolf:
         return warning
