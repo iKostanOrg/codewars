@@ -2,8 +2,9 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import List
 
-def men_from_boys(arr: list) -> list:
+def men_from_boys(arr: List[int]) -> list:
     """
     Sort out the men from the boys.
 
@@ -19,8 +20,8 @@ def men_from_boys(arr: list) -> list:
     :return:
     """
 
-    boys = list()
-    men = list()
+    boys: List[int] = list()
+    men: List[int] = list()
 
     for a in arr:
         if a % 2 == 0:
