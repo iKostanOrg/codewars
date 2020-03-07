@@ -2,16 +2,21 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import List
 
-def well(x) -> str:
 
-    counter = sum(1 for i in x if i.lower() == 'good')
+def well(x: List[str]) -> str:
+
+    counter: int = sum(1 for i in x if i.lower() == 'good')
+    result: str = ''
 
     if counter == 0:
-        return 'Fail!'
+        result = 'Fail!'
 
     if 0 < counter < 3:
-        return 'Publish!'
+        result = 'Publish!'
 
     if counter > 2:
-        return 'I smell a series!'
+        result = 'I smell a series!'
+
+    return result

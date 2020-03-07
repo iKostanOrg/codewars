@@ -3,7 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
-def swap_values(args: list) -> list:
+def swap_values(args: list) -> None:
     """
     Swap values
     :param args:

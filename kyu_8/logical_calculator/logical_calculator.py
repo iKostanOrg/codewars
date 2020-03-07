@@ -20,6 +20,7 @@ def logical_calc(array: list, op: str) -> bool:
 
 	logical = op.strip().upper()
 	operators = ['AND', 'OR', 'XOR']
+	result: bool = False
 
 	# op param validation
 	if logical not in operators:
@@ -29,11 +30,11 @@ def logical_calc(array: list, op: str) -> bool:
 
 	# AND
 	if logical == operators[0]:
-		return all(array)
+		result = all(array)
 
 	# OR
 	if logical == operators[1]:
-		return any(array)
+		result = any(array)
 
 	# XOR
 	if logical == operators[2]:
@@ -52,4 +53,4 @@ def logical_calc(array: list, op: str) -> bool:
 
 			i = i + 1
 
-		return result
+	return result
