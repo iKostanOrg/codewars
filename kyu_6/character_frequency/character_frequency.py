@@ -13,8 +13,8 @@ def letter_frequency(text: str) -> list:
     :param text:
     :return:
     """
-    results = []
-    chars = dict()
+    results: list = []
+    chars: dict = dict()
     text = text.lower()
 
     for c in text:
