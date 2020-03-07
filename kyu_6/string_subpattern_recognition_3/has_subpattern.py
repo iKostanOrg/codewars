@@ -39,5 +39,5 @@ def has_subpattern(string: str) -> str:
                 if length % char_dict[char] != 0:
                     return ''.join(sorted(char for char in string))
 
-    result: str = ''.join(sorted(list(set(string))))\
+    result: str = ''.join(sorted(list(set(string))))
     return result
