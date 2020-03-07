@@ -2,8 +2,10 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import Tuple, List
 
-def longest_repetition(chars):
+
+def longest_repetition(chars: str) -> Tuple:
     """
     For a given string s find the character c (or C)
     with longest consecutive repetition and return: (c, l)
@@ -17,7 +19,8 @@ def longest_repetition(chars):
     :return:
     """
 
-    result, current = ('', 0), ['', 0]
+    result: Tuple = ('', 0)
+    current: List = ['', 0]
 
     for c in chars:
 
