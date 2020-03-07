@@ -3,7 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
-def other_angle(a, b):
+def other_angle(a: int, b: int) -> int:
     """
     You are given two angles (in degrees) of a triangle.
 
