@@ -56,7 +56,7 @@ def is_arithmetic(arr: list) -> bool:
     :return:
     """
     delta = arr[1] - arr[0]
-    for index in range(len(l) - 1):
+    for index in range(len(delta) - 1):
         if not (arr[index + 1] - arr[index] == delta):
             return False
     return True
