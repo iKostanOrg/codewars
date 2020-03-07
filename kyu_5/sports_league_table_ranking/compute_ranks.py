@@ -2,6 +2,8 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import Dict
+
 
 def compute_ranks(number: int, games: list) -> list:
     """
@@ -27,7 +29,7 @@ def compute_ranks(number: int, games: list) -> list:
     if not games:
         return [1] * number
 
-    teams = dict()
+    teams: Dict = dict()
     numbers = [i for i in range(number)]
 
     for i, scores in enumerate(games):
