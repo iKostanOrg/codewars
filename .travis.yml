@@ -30,6 +30,7 @@ script:
   - mypy --ignore-missing-imports kyu_6
   - mypy --ignore-missing-imports kyu_5
   - mypy --ignore-missing-imports kyu_4
+  - mypy --ignore-missing-imports utils
 
 after_script:
   - coverage xml
