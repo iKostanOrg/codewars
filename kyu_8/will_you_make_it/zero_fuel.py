@@ -3,7 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
-def zero_fuel(distance_to_pump, mpg, fuel_left) -> bool:
+def zero_fuel(distance_to_pump: int, mpg: int, fuel_left: int) -> bool:
     """
     You were camping with your friends far away from home,
     but when it's time to go back, you realize that you fuel
