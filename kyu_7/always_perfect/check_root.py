@@ -3,6 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 import math
+from typing import List
 
 
 def check_root(string: str) -> str:
@@ -21,7 +22,7 @@ def check_root(string: str) -> str:
     :return:
     """
 
-    string_arr = string.split(',')
+    string_arr: List = string.split(',')
     if len(string_arr) != 4:
         return 'incorrect input'
 
@@ -30,7 +31,7 @@ def check_root(string: str) -> str:
     except ValueError:
         return 'incorrect input'
 
-    result = 1
+    result: int = 1
     for s in string_arr:
         result *= s
 
