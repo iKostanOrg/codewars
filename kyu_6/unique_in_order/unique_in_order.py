@@ -2,8 +2,10 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import Iterable, List
 
-def unique_in_order(iterable) -> list:
+
+def unique_in_order(iterable: Iterable) -> list:
     """
     Takes as argument a sequence and returns a list
     of items without any elements with the same value
@@ -13,7 +15,7 @@ def unique_in_order(iterable) -> list:
     :return:
     """
 
-    result = []
+    result: List = []
 
     for i in iterable:
 
