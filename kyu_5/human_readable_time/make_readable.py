@@ -22,36 +22,34 @@ def make_readable(seconds: int) -> str:
 	minutes = (seconds - (hours * 60 * 60)) // 60
 	seconds = seconds - (hours * 60 * 60) - (minutes * 60)
 
-	print('{}:{}:{}'.format(hours, minutes, seconds))
-
 	if hours == 0:
-		hours = '00'
+		hours_str: str = '00'
 	else:
 		if len(str(hours)) > 1:
-			hours = str(hours)
+			hours_str = str(hours)
 		else:
-			hours = '0' + str(hours)
+			hours_str = '0' + str(hours)
 
 	if minutes == 0:
-		minutes = '00'
+		minutes_str: str = '00'
 	else:
 		if len(str(minutes)) > 1:
-			minutes = str(minutes)
+			minutes_str = str(minutes)
 		else:
-			minutes = '0' + str(minutes)
+			minutes_str = '0' + str(minutes)
 
 	if seconds == 0:
-		seconds = '00'
+		seconds_str: str = '00'
 	else:
 		if len(str(seconds)) > 1:
-			seconds = str(seconds)
+			seconds_str = str(seconds)
 		else:
-			seconds = '0' + str(seconds)
+			seconds_str = '0' + str(seconds)
 
-	result = '{}:{}:{}'.format(
-		hours,
-		minutes,
-		seconds
+	result: str = '{}:{}:{}'.format(
+		hours_str,
+		minutes_str,
+		seconds_str
 	)
 
 	return result
