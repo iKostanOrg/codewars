@@ -3,7 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
-def move(position, roll) -> int:
+def move(position: int, roll: int) -> int:
     """
     A function for the terminal game that takes
     the current position of the hero and the roll
