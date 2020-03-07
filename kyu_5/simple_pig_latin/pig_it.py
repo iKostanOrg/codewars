@@ -2,6 +2,8 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import List
+
 
 def pig_it(text: str) -> str:
     """
@@ -11,7 +13,7 @@ def pig_it(text: str) -> str:
     :param text:
     :return:
     """
-    result = list()
+    result: List[str] = list()
     for word in text.split(' '):
         word_processor(word, result)
 
