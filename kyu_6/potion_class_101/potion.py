@@ -2,6 +2,7 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import Tuple
 import math
 
 
@@ -16,11 +17,11 @@ class Potion:
 	color you also need to figure out what volume will have potion
 	after final mix.
 	"""
-	def __init__(self, color: tuple, volume: int):
-		self._color = color
-		self._volume = volume
+	def __init__(self, color: Tuple[int, int, int], volume: int):
+		self._color: Tuple[int, int, int] = color
+		self._volume: int = volume
 
-	def mix(self, other):
+	def mix(self, other) -> object:
 		"""
 		Based on your programming background you managed to figure
 		that after mixing two potions colors will mix as if mix
@@ -30,7 +31,7 @@ class Potion:
 		:param other:
 		:return:
 		"""
-		new_volume = self._volume + other.volume
+		new_volume = self.volume + other.volume
 
 		r = math.ceil((other.color[0] * other.volume + self.color[0] * self.volume) / (other.volume + self.volume))
 		g = math.ceil((other.color[1] * other.volume + self.color[1] * self.volume) / (other.volume + self.volume))
@@ -39,17 +40,17 @@ class Potion:
 		return Potion((r, g, b), new_volume)
 
 	@property
-	def color(self):
-		return self._color
-
-	@property
-	def volume(self):
+	def volume(self) -> int:
 		return self._volume
 
 	@volume.setter
-	def volume(self, value):
+	def volume(self, value: int) -> None:
 		self._volume = value
 
+	@property
+	def color(self) -> tuple:
+		return self._color
+
 	@color.setter
-	def color(self, value):
+	def color(self, value: Tuple[int, int, int]) -> None:
 		self._color = value
