@@ -13,9 +13,9 @@ def enough(cap: int, on: int, wait: int) -> int:
 
     You have to write a function that accepts three parameters:
 
-	cap is the amount of people the bus can hold excluding the driver.
-	on is the number of people on the bus.
-	wait is the number of people waiting to get on to the bus.
+    cap is the amount of people the bus can hold excluding the driver.
+    on is the number of people on the bus.
+    wait is the number of people waiting to get on to the bus.
 
     :param cap:
     :param on:
