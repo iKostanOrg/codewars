@@ -37,7 +37,7 @@ def check_root(string: str) -> str:
 
     result += 1
 
-    root = math.sqrt(result)
+    root: float = math.sqrt(result)
 
     if root % 1 == 0:
         return '{}, {}'.format(result, int(root))
