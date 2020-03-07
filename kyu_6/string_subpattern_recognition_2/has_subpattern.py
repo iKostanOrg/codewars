@@ -3,6 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 from utils.is_prime import is_prime
+from typing import Set, Dict
 
 
 def has_subpattern(string: str) -> bool:
@@ -19,9 +20,9 @@ def has_subpattern(string: str) -> bool:
     :return:
     """
 
-    primes = set()
+    primes: Set[int] = set()
     length = len(string)
-    char_dict = dict()
+    char_dict: Dict[str, int] = dict()
 
     for char in string:
 
