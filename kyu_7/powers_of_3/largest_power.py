@@ -12,10 +12,13 @@ def largestPower(N: int) -> int:
     :return:
     """
 
-    result = 0
-    n = 0
+    result: int = 0
+    n: int = 0
     while result < N:
         result = 3 ** n
         if result >= N:
-            return n - 1
+            n -= 1
+            break
         n += 1
+
+    return n
