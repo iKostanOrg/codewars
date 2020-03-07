@@ -12,7 +12,7 @@ def is_prime(n: int) -> bool:
     :param n:
     :return:
     """
-    result = True
+    result: bool = True
 
     if n == 1:
         result = False
