@@ -2,8 +2,10 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+from typing import List
 
-def powers(n) -> list:
+
+def powers(n: int) -> list:
 	"""
 	Return an array of numbers
 	(that are a power of 2)
@@ -20,7 +22,7 @@ def powers(n) -> list:
 		power += 1
 
 	i = -1
-	result = list()
+	result: List[int] = list()
 	while sum(result) != n:
 		if sum(result) + lst[i] <= n:
 			result.append(lst[i])
