@@ -86,12 +86,14 @@ def get_string(number: int, string: str) -> str:
     :param string:
     :return:
     """
-
+    result: str = ''
     if number > 0:
         if number == 1:
-            return '{} {}'.format(number, string)
+            result = '{} {}'.format(number, string)
         else:
-            return '{} {}s'.format(number, string)
+            result = '{} {}s'.format(number, string)
+
+    return result
 
 
 def calc_seconds(seconds: int) -> int:
