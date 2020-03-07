@@ -2,13 +2,15 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-TYPES = {'fire': [['grass'], ['electric'], ['water']],
-         'grass': [['water'], ['electric'], ['fire']],
-         'water': [['fire'], [], ['electric', 'grass']],
-         'electric': [['water'], ['grass', 'fire'], []]}
+from typing import Dict
+
+TYPES: Dict[str, list] = {'fire': [['grass'], ['electric'], ['water']],
+                               'grass': [['water'], ['electric'], ['fire']],
+                               'water': [['fire'], [], ['electric', 'grass']],
+                               'electric': [['water'], ['grass', 'fire'], []]}
 
 
-def calculate_damage(your_type: str, opponent_type: str, attack, defense):
+def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int:
     """
     It's a Pokemon battle! Your task is to calculate the damage that a
     particular move would do using the following formula
@@ -26,7 +28,7 @@ def calculate_damage(your_type: str, opponent_type: str, attack, defense):
     return 50 * (attack / defense) * effectiveness(your_type, opponent_type)
 
 
-def effectiveness(your_type, opponent_type) -> float:
+def effectiveness(your_type: str, opponent_type: str) -> float:
     """
     Effectiveness:
 
