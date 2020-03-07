@@ -44,7 +44,7 @@ def compute_ranks(number: int, games: list) -> list:
     return [teams[i]['Rank'] for i in numbers]
 
 
-def process_not_played_games(teams: dict, number: int):
+def process_not_played_games(teams: dict, number: int) -> None:
     """
     Set default values for teams who did not play a single game
     :param teams:
@@ -57,7 +57,7 @@ def process_not_played_games(teams: dict, number: int):
             test_if_team_registered(n, teams, number)
 
 
-def calc_teams_score(team_a, team_b, teams, team, number):
+def calc_teams_score(team_a, team_b, teams, team, number) -> None:
     """
     Calculate following:
         For : Against
@@ -81,7 +81,7 @@ def calc_teams_score(team_a, team_b, teams, team, number):
     calc_team_points(team_b, teams, team[3], team[2])
 
 
-def test_if_team_registered(team, teams, number):
+def test_if_team_registered(team, teams, number) -> None:
     """
     Check if team data was processed.
     Set default values otherwise.
@@ -100,7 +100,7 @@ def test_if_team_registered(team, teams, number):
         teams[team]['Rank'] = number
 
 
-def calc_team_points(team, teams, score_a, score_b):
+def calc_team_points(team, teams, score_a, score_b) -> None:
     """
     Calculates team points
 
@@ -117,7 +117,7 @@ def calc_team_points(team, teams, score_a, score_b):
         teams[team]['Points'] += 1
 
 
-def calc_for_against(teams, team, team_1, team_2):
+def calc_for_against(teams, team, team_1, team_2) -> None:
     """
     Collect "For:Against" data
 
@@ -132,7 +132,7 @@ def calc_for_against(teams, team, team_1, team_2):
     teams[team]["For:Against"][1] += team_2
 
 
-def calc_gd(teams):
+def calc_gd(teams) -> None:
     """
     Calculates "GD"
 
@@ -144,7 +144,7 @@ def calc_gd(teams):
         teams[team]["GD"] = teams[team]["For:Against"][0] - teams[team]["For:Against"][1]
 
 
-def calc_rank(teams: dict):
+def calc_rank(teams: dict) -> None:
     """
     Calculates Rank
 
