@@ -1,0 +1,405 @@
+{
+  "uid" : "d272745fb573970a",
+  "name" : "Testing zero_fuel function",
+  "fullName" : "kyu_8.will_you_make_it.test_zero_fuel.ZeroFuelTestCase#test_zero_fuel",
+  "historyId" : "2f8f18e1fa04b0776df535518795568e",
+  "time" : {
+    "start" : 1583884074036,
+    "stop" : 1583884074038,
+    "duration" : 2
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>You were camping with your friends far away from home, but when it's time to go back, you realize that you fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not. The input values are always positive.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1583884074034,
+      "stop" : 1583884074035,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>You were camping with your friends far away from home, but when it's time to go back, you realize that you fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not. The input values are always positive.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter data ((50, 25, 2)) and verify the expected output (True) vs actual result (True)",
+      "time" : {
+        "start" : 1583884074037,
+        "stop" : 1583884074037,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter data ((100, 50, 1)) and verify the expected output (False) vs actual result (False)",
+      "time" : {
+        "start" : 1583884074037,
+        "stop" : 1583884074037,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "3c5120a9ae6667b9",
+      "name" : "stdout",
+      "source" : "3c5120a9ae6667b9.txt",
+      "type" : "text/plain",
+      "size" : 117
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1583884074039,
+      "stop" : 1583884074040,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "story",
+    "value" : "Will you make it?"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "tag",
+    "value" : "MATHEMATICS"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "feature",
+    "value" : "Math"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "4092-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.will_you_make_it.test_zero_fuel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5861d28f124b35723e00005e/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4c82f8ec46d5c57f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583883094217,
+        "stop" : 1583883094220,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dc8d27e0c18da55f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582772540111,
+        "stop" : 1582772540113,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "72bf18a5ba70869a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434205245,
+        "stop" : 1582434205246,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9a2d03538128be50",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434078680,
+        "stop" : 1582434078681,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "684602d7bf78e826",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581998962667,
+        "stop" : 1581998962668,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "75c21d509d04e99f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581908961988,
+        "stop" : 1581908961989,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7bf2c35211f3f7fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897532432,
+        "stop" : 1581897532433,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "190434af4daeb3a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829133894,
+        "stop" : 1581829133895,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "10974bc972846a52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828906299,
+        "stop" : 1581828906300,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "65a9eaca29ad2a8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827424760,
+        "stop" : 1581827424761,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bfa1132fea24bf58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696891144,
+        "stop" : 1580696891145,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2fa37e5ecccd3422",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694861166,
+        "stop" : 1580694861168,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a7ee50be2ea7a999",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694178078,
+        "stop" : 1580694178079,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "509102ea31853e64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588585856,
+        "stop" : 1580588585859,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dfce624a80e4315a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093589029,
+        "stop" : 1580093589031,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f456ce9b72d64e1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092933587,
+        "stop" : 1580092933588,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d1428d26370cd373",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016119194,
+        "stop" : 1580016119195,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3fc29b24bcd089",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015504415,
+        "stop" : 1580015504416,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a818030e76ac32ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011919815,
+        "stop" : 1580011919816,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b13d36f738d35974",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746654357,
+        "stop" : 1579746654357,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "76463540cba4281e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733201909,
+        "stop" : 1579733201910,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bc05845499538035",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486689751,
+        "stop" : 1579486689752,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "17cd4b9fcfb83463",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482236681,
+        "stop" : 1579482236685,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "c3c394765e38fc1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476683923,
+        "stop" : 1579476683924,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "4958e1177f87f329",
+        "status" : "passed",
+        "time" : {
+          "start" : 1582772540111,
+          "stop" : 1582772540113,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "cb40c10cf178e767",
+        "status" : "passed",
+        "time" : {
+          "start" : 1582434205245,
+          "stop" : 1582434205246,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f111ed3131c01eeb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581998962667,
+          "stop" : 1581998962668,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "1eb02bae4429897c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581908961988,
+          "stop" : 1581908961989,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a42f7863d39fd8ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581829133894,
+          "stop" : 1581829133895,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "MATHEMATICS", "FUNDAMENTALS", "NUMBERS", "ALGORITHMS" ]
+  },
+  "source" : "d272745fb573970a.json",
+  "parameterValues" : [ ]
+}
