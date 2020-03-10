@@ -17,10 +17,10 @@ from kyu_5.count_ip_addresses.ips_between import ips_between
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Count IP Addresses')
-@pytest.mark.skip(reason="The solution is not ready")
 @allure.tag('ALGORITHMS', 'PARSING', 'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/526989a41034285187000de4/train/python',
              name='Source/Kata')
+@pytest.mark.skip(reason="The solution is not ready")
 class IpsBetweenTestCase(unittest.TestCase):
     """
     Testing ips_between function
