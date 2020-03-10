@@ -8,6 +8,8 @@ Can you write a program which calculate `S(n, p)` where `n` is the line where we
 
 The function will take `n` and `p` (with: `n >= p >= 0`) as parameters and will return the sum.
 
+![Pascal's Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
 **Examples:**
 
 ```text
