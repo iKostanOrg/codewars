@@ -4,4 +4,8 @@
 
 
 def make_class(*args):
-    pass
+    class Class:
+        def __init__(self, *vals):
+            for arg, val in zip(args, vals):
+                setattr(self, arg, val)
+    return Class

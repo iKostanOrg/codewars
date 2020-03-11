@@ -6,9 +6,9 @@
 
 import unittest
 import allure
-import pytest
 from kyu_7.make_class.animal import Animal
 from kyu_7.make_class.make_class import make_class
+from utils.log_func import print_log
 
 
 @allure.epic('7 kyu')
@@ -20,7 +20,7 @@ from kyu_7.make_class.make_class import make_class
 @allure.tag()
 @allure.link(url='',
              name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
+# @pytest.mark.skip(reason="The solution is not ready")
 class MakeClassTestCase(unittest.TestCase):
     """
     Testing make_class function
@@ -38,7 +38,9 @@ class MakeClassTestCase(unittest.TestCase):
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
-                                        "<p></p>")
+                                        "<p>Give me the power to create a similar class like this:</p>"
+                                        "<p>Animal = make_class(\"name\, \"species\", "
+                                        "\"age\", \"health\", \"weight\", \"color\")</p>")
 
         with allure.step("Test class creation by using a function"):
 
@@ -47,9 +49,17 @@ class MakeClassTestCase(unittest.TestCase):
             dog1 = Animal("Bob", "Dog", 5, "good", "50lb", "brown")
             dog2 = Animel("Bob", "Dog", 5, "good", "50lb", "brown")
 
-            self.assertEqual(dog1.name, dog2.name)
-            self.assertEqual(dog1.species, dog2.species)
-            self.assertEqual(dog1.age, dog2.age)
-            self.assertEqual(dog1.health, dog2.health)
-            self.assertEqual(dog1.weight, dog2.weight)
-            self.assertEqual(dog1.color, dog2.color)
+            test_data = ((dog1.name, dog2.name),
+                         (dog1.species, dog2.species),
+                         (dog1.age, dog2.age),
+                         (dog1.health, dog2.health),
+                         (dog1.weight, dog2.weight),
+                         (dog1.color, dog2.color))
+
+            for td in test_data:
+                a = td[0]
+                b = td[1]
+                with allure.step("Assert that classes have {} arg".format(a)):
+                    print_log(a=a, b=b)
+                    self.assertEqual(a, b)
+

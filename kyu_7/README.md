@@ -45,5 +45,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |27   |[Basic Math (Add or Subtract)](https://www.codewars.com/kata/5809b62808ad92e31b000031/train/python)                       |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/basic_math_add_or_subtract)                        |
 |28   |[Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/sum_of_odd_numbers)                                |
 |29   |[Help Bob count letters and digits](https://www.codewars.com/kata/5738f5ea9545204cec000155/train/python)                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/help_bob_count_letters_and_digits)                 |
+|30   |[Make Class](https://www.codewars.com/kata/5d774cfde98179002a7cb3c8/train/python)                                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/make_class)                                        |
 
 [Source](https://www.codewars.com/about)
