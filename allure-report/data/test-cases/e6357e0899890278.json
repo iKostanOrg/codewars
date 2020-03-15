@@ -1,0 +1,956 @@
+{
+  "uid" : "e6357e0899890278",
+  "name" : "Testing alphabet_war function",
+  "fullName" : "kyu_5.alphabet_wars_nuclear_strike.test_alphabet_war.AlphabetWarTestCase#test_alphabet_war",
+  "historyId" : "265b67c4139deaadb4d7c9416643f4c8",
+  "time" : {
+    "start" : 1584256243365,
+    "stop" : 1584256243369,
+    "duration" : 4
+  },
+  "description" : "\n        Testing alphabet_war function\n\n        Introduction\n        There is a war and nobody knows - the alphabet war!\n        The letters hide in their nuclear shelters. The\n        nuclear strikes hit the battlefield and killed a\n        lot of them.\n\n        Task\n        Write a function that accepts battlefield string\n        and returns letters that survived the nuclear strike.\n\n        1. The battlefield string consists of only small letters, #,[ and ].\n\n        2. The nuclear shelter is represented by square brackets [].\n        The letters inside the square brackets represent letters\n        inside the shelter.\n\n        3. The # means a place where nuclear strike hit the battlefield.\n        If there is at least one # on the battlefield, all letters outside\n        of shelter die. When there is no any # on the battlefield, all letters\n        survive (but do not expect such scenario too often ;-P ).\n\n        4. The shelters have some durability. When 2 or more # hit close to\n        the shelter, the shelter is destroyed and all letters inside evaporate.\n        The 'close to the shelter' means on the ground between the shelter and\n        the next shelter (or beginning/end of battlefield). The below samples\n        make it clear for you.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function that accepts battlefield string and returns letters that survived the nuclear strike.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1584256243364,
+      "stop" : 1584256243364,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing alphabet_war function\n\n        Introduction\n        There is a war and nobody knows - the alphabet war!\n        The letters hide in their nuclear shelters. The\n        nuclear strikes hit the battlefield and killed a\n        lot of them.\n\n        Task\n        Write a function that accepts battlefield string\n        and returns letters that survived the nuclear strike.\n\n        1. The battlefield string consists of only small letters, #,[ and ].\n\n        2. The nuclear shelter is represented by square brackets [].\n        The letters inside the square brackets represent letters\n        inside the shelter.\n\n        3. The # means a place where nuclear strike hit the battlefield.\n        If there is at least one # on the battlefield, all letters outside\n        of shelter die. When there is no any # on the battlefield, all letters\n        survive (but do not expect such scenario too often ;-P ).\n\n        4. The shelters have some durability. When 2 or more # hit close to\n        the shelter, the shelter is destroyed and all letters inside evaporate.\n        The 'close to the shelter' means on the ground between the shelter and\n        the next shelter (or beginning/end of battlefield). The below samples\n        make it clear for you.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function that accepts battlefield string and returns letters that survived the nuclear strike.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test string ([a]#[b]#[c]) and verify the output (ac) vs expected (ac)",
+      "time" : {
+        "start" : 1584256243366,
+        "stop" : 1584256243366,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string ([a]#b#[c][d]) and verify the output (d) vs expected (d)",
+      "time" : {
+        "start" : 1584256243366,
+        "stop" : 1584256243367,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string ([a][b][c]) and verify the output (abc) vs expected (abc)",
+      "time" : {
+        "start" : 1584256243367,
+        "stop" : 1584256243367,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##a[a]b[c]#) and verify the output (c) vs expected (c)",
+      "time" : {
+        "start" : 1584256243367,
+        "stop" : 1584256243367,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (abde[fgh]ijk) and verify the output (abdefghijk) vs expected (abdefghijk)",
+      "time" : {
+        "start" : 1584256243367,
+        "stop" : 1584256243367,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (ab#de[fgh]ijk) and verify the output (fgh) vs expected (fgh)",
+      "time" : {
+        "start" : 1584256243367,
+        "stop" : 1584256243367,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (ab#de[fgh]ij#k) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1584256243367,
+        "stop" : 1584256243367,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abde[fgh]ijk) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abde[fgh]) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abcde[fgh]) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (abcde[fgh]) and verify the output (abcdefgh) vs expected (abcdefgh)",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abde[fgh]ijk[mn]op) and verify the output (mn) vs expected (mn)",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (#abde[fgh]i#jk[mn]op) and verify the output (mn) vs expected (mn)",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string ([ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#) and verify the output (abijk) vs expected (abijk)",
+      "time" : {
+        "start" : 1584256243368,
+        "stop" : 1584256243368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c7b7c5bc60c23aad",
+      "name" : "stdout",
+      "source" : "c7b7c5bc60c23aad.txt",
+      "type" : "text/plain",
+      "size" : 908
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1584256243371,
+      "stop" : 1584256243371,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "FEATURES"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "REGULAR"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "tag",
+    "value" : "PROGRAMMING"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "tag",
+    "value" : "EXPRESSIONS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "story",
+    "value" : "Alphabet wars - nuclear strike"
+  }, {
+    "name" : "suite",
+    "value" : "Advanced Language Features"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "tag",
+    "value" : "ADVANCED"
+  }, {
+    "name" : "tag",
+    "value" : "DECLARATIVE"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "tag",
+    "value" : "LANGUAGE"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "5588-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.alphabet_wars_nuclear_strike.test_alphabet_war"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a53b1e01b9ef7eba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584255529032,
+        "stop" : 1584255529034,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1e1fc0235a61ca99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584252159514,
+        "stop" : 1584252159520,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "8c66ea1560e94e93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584251097250,
+        "stop" : 1584251097253,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d197b1bda4f28783",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584250524528,
+        "stop" : 1584250524531,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "2c25b0a849546dfd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246519747,
+        "stop" : 1584246519752,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "f6ed095c9030f697",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246345734,
+        "stop" : 1584246345740,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "10d1c466655624f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246169347,
+        "stop" : 1584246169349,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "49071ccf40b4e398",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583887937181,
+        "stop" : 1583887937184,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dd0c8f8126495866",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583884071459,
+        "stop" : 1583884071463,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "ae4225e3a796361b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583883091838,
+        "stop" : 1583883091843,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "306cff4ff4b976a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582772536761,
+        "stop" : 1582772536764,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "70af53103ec694af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434203616,
+        "stop" : 1582434203619,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "12b26935f17333b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434076337,
+        "stop" : 1582434076343,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "b6ad64bd3117f7b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581998959273,
+        "stop" : 1581998959277,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "423b5e99941d78c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581908959503,
+        "stop" : 1581908959509,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "2133eafe8643d9ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897530162,
+        "stop" : 1581897530166,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "543299bfaf8e5fa3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829130558,
+        "stop" : 1581829130562,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "1dc1bb1a4b2a7fff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828903940,
+        "stop" : 1581828903943,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1d1fd16f6a3fc6f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827422009,
+        "stop" : 1581827422013,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "376bfffb8e18592f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696888845,
+        "stop" : 1580696888847,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "af4791d02c43850e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694857862,
+        "stop" : 1580694857866,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "4147f3108fdfee64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694175147,
+        "stop" : 1580694175152,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "f89d6ab868a9326a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588583248,
+        "stop" : 1580588583250,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1cd4627d5f58dcc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093584541,
+        "stop" : 1580093584553,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "36f853291b7292c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092931317,
+        "stop" : 1580092931319,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "680b75782d1b41d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016116971,
+        "stop" : 1580016116974,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8262236f6f34af22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015502135,
+        "stop" : 1580015502139,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "c23b25d7f716ac88",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011917351,
+        "stop" : 1580011917353,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a3c597d960001fc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746651943,
+        "stop" : 1579746651944,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "72aaf2684b31f492",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733199709,
+        "stop" : 1579733199710,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7ae0e6118a6437c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486687739,
+        "stop" : 1579486687742,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "eafe30d73d52c993",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482234476,
+        "stop" : 1579482234479,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "236f0af6cce2a67b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476680904,
+        "stop" : 1579476680908,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "49343d403f8bce3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417126806,
+        "stop" : 1579417126810,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "e4f6dac5eb62ea0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090428,
+        "stop" : 1579416090430,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d5e3d0adb858fdd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048676,
+        "stop" : 1579407048678,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b6d9b2a9cc62fd04",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406490951,
+        "stop" : 1579406490953,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "df2414eb3be6469c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406085923,
+        "stop" : 1579406085925,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2940051e812e8e98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151844864,
+        "stop" : 1579151844865,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a08e743e36039454",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684657,
+        "stop" : 1578812684661,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "cf53bd155db347d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810674057,
+        "stop" : 1578810674059,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8a715bdf5f1c30b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810574205,
+        "stop" : 1578810574208,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "801c72f164db23bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138134,
+        "stop" : 1578810138135,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "317e22a03e726c0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489444,
+        "stop" : 1578809489446,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ff389d04ca2d1501",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951184,
+        "stop" : 1578808951186,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1330acc4b6420ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808370006,
+        "stop" : 1578808370007,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b62602e1bea3cde4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803682855,
+        "stop" : 1578803682857,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f23085d40444248f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802613740,
+        "stop" : 1578802613742,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "872060df1e5fba5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841582,
+        "stop" : 1578801841584,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "10f5d445665e870d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192255,
+        "stop" : 1577672192256,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "278bd3722dde9dd7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953306,
+        "stop" : 1577669953308,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "abaf7f610c221094",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327508890,
+        "stop" : 1577327508891,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d66da0be69abd114",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735558,
+        "stop" : 1577321735560,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f70b8a7e85b02fd7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063533903,
+        "stop" : 1577063533909,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "738034bf1aba164d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062098848,
+        "stop" : 1577062098849,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "34b8ac6f80a08b25",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059477031,
+        "stop" : 1577059477034,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "609107621f1cba09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388867319,
+        "stop" : 1576388867321,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f838080a448076fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387265639,
+        "stop" : 1576387265640,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ec5125b7d570d76c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862137527,
+        "stop" : 1575862137528,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "aaba5c55901040d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760676036,
+        "stop" : 1575760676037,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3d2592cab2e5dd9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760564766,
+        "stop" : 1575760564768,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9b712591c552ac94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227957486,
+        "stop" : 1575227957488,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ce88fc3c2e79b108",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227882526,
+        "stop" : 1575227882529,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e27fd7db8941597f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575221461538,
+        "stop" : 1575221461540,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "98f7ce9f20d9ae6e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574618603673,
+        "stop" : 1574618603674,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "93c7ce6821f38ad3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574616398287,
+        "stop" : 1574616398288,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c72ed185bab98c4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574616295799,
+        "stop" : 1574616295801,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b0075946e31c3f08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574615796402,
+        "stop" : 1574615796403,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1a343cfec0f0a581",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574615720820,
+        "stop" : 1574615720821,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b550d100b27aabb3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574018662994,
+        "stop" : 1574018662996,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ece57918ad739d28",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574012905001,
+        "stop" : 1574012905001,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2cbfd07f530f733f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573966632464,
+        "stop" : 1573966632464,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "64c7bf306e73bf11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1584255529032,
+          "stop" : 1584255529034,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "LANGUAGE", "REGULAR", "EXPRESSIONS", "DECLARATIVE", "PROGRAMMING", "FUNDAMENTALS", "FEATURES", "ADVANCED" ]
+  },
+  "source" : "e6357e0899890278.json",
+  "parameterValues" : [ ]
+}
