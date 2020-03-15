@@ -52,7 +52,7 @@ class GreekComparatorTestCase(unittest.TestCase):
             lhs, rhs, expected = d[0], d[1], d[2]
             result = greek_comparator(lhs, rhs)
 
-            with allure.step("Enter test inputs({}{}) "
+            with allure.step("Enter test inputs({}, {}) "
                              "and assert expected ({}) "
                              "vs actual result ({})".format(lhs, rhs, expected, result)):
                 print_log(lhs=lhs, rhs=rhs, expected=expected, result=result)
