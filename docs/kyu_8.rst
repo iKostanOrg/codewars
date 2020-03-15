@@ -41,6 +41,7 @@ Subpackages
    kyu_8.will_you_make_it
    kyu_8.century_from_year
    kyu_8.holiday_vi_shark_pontoon
+   kyu_8.greek_sort
 
 Module contents
 ---------------
