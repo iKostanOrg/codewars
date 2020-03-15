@@ -17,8 +17,13 @@ from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String subpattern recognition III')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING',
+            'ADVANCED LANGUAGE FEATURES')
+@allure.link(url='https://www.codewars.com/kata/'
+                 '5a4a2973d8e14586c700000a/train/python',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class HasSubpatternTestCase(unittest.TestCase):
