@@ -52,5 +52,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |34   |[Century From Year](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/python)                               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/century_from_year)                    |
 |35   |[Holiday VI - Shark Pontoon](https://www.codewars.com/kata/57e921d8b36340f1fd000059/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/holiday_vi_shark_pontoon)             |
 |36   |[My head is at the wrong end!](https://www.codewars.com/kata/56f699cd9400f5b7d8000b55/train/python)                    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/my_head_is_at_the_wrong_end)          |
+|37   |[Greek Sort](https://www.codewars.com/kata/56bc1acf66a2abc891000561/train/python)                                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/greek_sort)                           |
 
 [Source](https://www.codewars.com/about)
