@@ -19,7 +19,7 @@ easyline(50) => 100891344545564193334812497256
 
 [Reference](http://mathworld.wolfram.com/BinomialCoefficient.html)
 
-<img src="http://i.imgur.com/eUGaNvIm.jpg" alt="alternative text"><br/>
+<img src="https://github.com/ikostan/codewars/tree/master/kyu_7/easy_line/eUGaNvIm.jpg" alt="alternative text"><br/>
 
 **Note:**
 
