@@ -17,5 +17,5 @@ def easy_line(n: int) -> int:
     for i in range(n + 1):
         total += coefficient ** 2
         coefficient = coefficient * (n - i) // (i + 1)
-        
+
     return total
