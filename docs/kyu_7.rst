@@ -36,6 +36,7 @@ Subpackages
    kyu_7.basic_math_add_or_subtract
    kyu_7.sum_of_odd_numbers
    kyu_7.help_bob_count_letters_and_digits
+   kyu_7.easy_line
 
 Module contents
 ---------------
