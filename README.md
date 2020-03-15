@@ -13,7 +13,9 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/test_coverage)](https://codeclimate.com/github/ikostan/codewars/test_coverage)
 ![Maintenance](https://img.shields.io/maintenance/yes/2020)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Known Vulnerabilities](https://snyk.io/test/github/ikostan/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ikostan/codewars?targetFile=requirements.txt)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
+
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
