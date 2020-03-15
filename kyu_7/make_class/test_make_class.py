@@ -39,8 +39,8 @@ class MakeClassTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>Give me the power to create a similar class like this:</p>"
-                                        "<p>Animal = make_class(\"name\, \"species\", "
-                                        "\"age\", \"health\", \"weight\", \"color\")</p>")
+                                        "<p>Animal = make_class(\"name\", \"species\", \"age\", \"health\", "
+                                        "\"weight\", \"color\")</p>")
 
         with allure.step("Test class creation by using a function"):
 
