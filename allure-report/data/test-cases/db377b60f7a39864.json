@@ -1,0 +1,383 @@
+{
+  "uid" : "db377b60f7a39864",
+  "name" : "Testing century function",
+  "fullName" : "kyu_8.century_from_year.test_century.CenturyTestCase#test_century",
+  "historyId" : "47664c0f62c7051b733823a3729b3581",
+  "time" : {
+    "start" : 1584252161868,
+    "stop" : 1584252161871,
+    "duration" : 3
+  },
+  "description" : "\n        Testing century function\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Given a year, the function should return the century it is in.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1584252161865,
+      "stop" : 1584252161865,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing century function\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Given a year, the function should return the century it is in.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test year (1705) and verify the output (18) vs expected (18)",
+      "time" : {
+        "start" : 1584252161869,
+        "stop" : 1584252161869,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test year (1900) and verify the output (19) vs expected (19)",
+      "time" : {
+        "start" : 1584252161869,
+        "stop" : 1584252161869,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test year (1601) and verify the output (17) vs expected (17)",
+      "time" : {
+        "start" : 1584252161869,
+        "stop" : 1584252161869,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test year (2000) and verify the output (20) vs expected (20)",
+      "time" : {
+        "start" : 1584252161870,
+        "stop" : 1584252161870,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test year (356) and verify the output (4) vs expected (4)",
+      "time" : {
+        "start" : 1584252161870,
+        "stop" : 1584252161870,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test year (89) and verify the output (1) vs expected (1)",
+      "time" : {
+        "start" : 1584252161870,
+        "stop" : 1584252161870,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "62bb949889b1c96f",
+      "name" : "stdout",
+      "source" : "62bb949889b1c96f.txt",
+      "type" : "text/plain",
+      "size" : 410
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1584252161872,
+      "stop" : 1584252161872,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALSNUMBERSMATHEMATICSALGORITHMSBASIC LANGUAGE FEATURESDATES/TIME"
+  }, {
+    "name" : "feature",
+    "value" : "Math"
+  }, {
+    "name" : "story",
+    "value" : "Century From Year"
+  }, {
+    "name" : "suite",
+    "value" : "Numbers"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9096-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.century_from_year.test_century"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "877d056f5b5ad135",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584251098957,
+        "stop" : 1584251098960,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b362bdaa79ab7939",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584250526740,
+        "stop" : 1584250526743,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "44d79d49ce2b20c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246521834,
+        "stop" : 1584246521836,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d4c695cca03c0fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246347956,
+        "stop" : 1584246347958,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7abafc8040110ff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246171509,
+        "stop" : 1584246171511,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ee741e84e7e34902",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583887942100,
+        "stop" : 1583887942103,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d0d372e2637bf8bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583884073257,
+        "stop" : 1583884073259,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9f39578771da6110",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583883093516,
+        "stop" : 1583883093517,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "95d996f79e1cce37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582772538717,
+        "stop" : 1582772538719,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "aa61dc0943a8602a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434204754,
+        "stop" : 1582434204755,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a799ad8ce9b20b28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434077971,
+        "stop" : 1582434077973,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ba3676a4559d5865",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581998961566,
+        "stop" : 1581998961568,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "59f16dce2fd7515b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581908961192,
+        "stop" : 1581908961194,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "497fe30431f192b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897531728,
+        "stop" : 1581897531731,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1679234be063e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829132195,
+        "stop" : 1581829132197,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9524da5af7450244",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828905563,
+        "stop" : 1581828905564,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "20c052f2a2430b44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827424004,
+        "stop" : 1581827424007,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "56d2409d05374b14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696890452,
+        "stop" : 1580696890454,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "779820495ab333d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694860159,
+        "stop" : 1580694860161,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1b046bc4b8e7a1be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694177283,
+        "stop" : 1580694177286,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "774a0126bc0ed95c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588585147,
+        "stop" : 1580588585148,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "FUNDAMENTALSNUMBERSMATHEMATICSALGORITHMSBASIC LANGUAGE FEATURESDATES/TIME" ]
+  },
+  "source" : "db377b60f7a39864.json",
+  "parameterValues" : [ ]
+}
