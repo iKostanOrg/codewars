@@ -15,7 +15,8 @@ from kyu_7.easy_line.easyline import easy_line
 @allure.feature("Math")
 @allure.story("Easy Line")
 @allure.tag('FUNDAMENTALS', 'MATHEMATICS', 'ALGORITHMS', 'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/56e7d40129035aed6c000632/train/python',
+@allure.link(url='https://www.codewars.com/kata/'
+                 '56e7d40129035aed6c000632/train/python',
              name='Source/Kata')
 class EasyLineTestCase(unittest.TestCase):
     """
