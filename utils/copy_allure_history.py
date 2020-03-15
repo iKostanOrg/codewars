@@ -29,11 +29,12 @@ def copy_allure_history() -> None:
     if platform.system() == 'Darwin':
         raise OSError("MAC OS is not supported")
 
-    print('\n', "CURRENT_DIR: {}, "
-                "SOURCE_DIR: {}, "
-                "DESTINATION_DIR: {}".format(CURRENT_DIR,
-                                             SOURCE_DIR,
-                                             DESTINATION_DIR))
+    print("\nGenerating Allure test report...",
+          "\nCURRENT_DIR: {}, "
+          "\nSOURCE_DIR: {}, "
+          "\nDESTINATION_DIR: {}".format(CURRENT_DIR,
+                                         SOURCE_DIR,
+                                         DESTINATION_DIR))
 
     src_files = os.listdir(CURRENT_DIR + SOURCE_DIR)
     for file_name in src_files:
