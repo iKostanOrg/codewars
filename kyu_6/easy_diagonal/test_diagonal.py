@@ -3,10 +3,20 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 import unittest
+import allure
 import pytest
 from kyu_6.easy_diagonal.diagonal import diagonal
 
 
+@allure.epic('6 kyu')
+@allure.parent_suite('Novice')
+@allure.suite("Fundamentals")
+@allure.sub_suite("Unit Tests")
+@allure.feature("Algorithms")
+@allure.story('Easy Diagonal')
+@allure.tag("FUNDAMENTALS", "ALGORITHMS")
+@allure.link(url='https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python',
+             name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class DiagonalTestCase(unittest.TestCase):
 	def test_diagonal(self):
