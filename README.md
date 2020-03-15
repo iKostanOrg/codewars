@@ -1,7 +1,7 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![HitCount](http://hits.dwyl.com/ikostan/codewars.svg)](http://hits.dwyl.com/ikostan/codewars)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ikostan/codewars)
 ![GitHub forks](https://img.shields.io/github/forks/ikostan/codewars)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ikostan/codewars)
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f14135ff-6f3e-450c-b391-5a677b8f8d8a/deploy-status)](https://app.netlify.com/sites/codewars-allure-report/deploys)
 [![CircleCI](https://circleci.com/gh/ikostan/codewars.svg?style=svg)](https://circleci.com/gh/ikostan/codewars)
