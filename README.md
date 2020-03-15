@@ -1,4 +1,5 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ikostan/codewars)
 [![HitCount](http://hits.dwyl.com/ikostan/codewars.svg)](http://hits.dwyl.com/ikostan/codewars)
 ![GitHub forks](https://img.shields.io/github/forks/ikostan/codewars)
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
