@@ -19,12 +19,12 @@ def copy_allure_history() -> None:
     DESTINATION_DIR: str = ''
 
     if platform.system() == 'Linux':
-        SOURCE_DIR = 'allure-results/history'
-        DESTINATION_DIR = 'allure-report/history'
+        SOURCE_DIR = 'allure-report/history'
+        DESTINATION_DIR = 'allure-results/history'
 
     if platform.system() == 'Windows':
-        SOURCE_DIR = 'allure-results\history'
-        DESTINATION_DIR = 'allure-report\history'
+        SOURCE_DIR = 'allure-report\history'
+        DESTINATION_DIR = 'allure-results\history'
 
     if platform.system() == 'Darwin':
         raise OSError("MAC OS is not supported")
