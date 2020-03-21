@@ -14,8 +14,8 @@ from kyu_6.color_choice.checkchoose import checkchoose
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
 @allure.sub_suite("Unit Tests")
-@allure.feature("String")
-@allure.story('Factorial')
+@allure.feature("Factorial")
+@allure.story('Color Choice')
 @allure.tag('FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python',
              name='Source/Kata')
