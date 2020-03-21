@@ -61,6 +61,10 @@ class CheckchooseTestCase(unittest.TestCase):
             (4, 2, -1),
             (35, 7, 3),
             (36, 7, -1),
+            (1, 6, 0),
+            (1, 15, 0),
+            (2, 12, -1),
+            (75788358475481302186, 87, -1),
         )
 
         for d in test_data:

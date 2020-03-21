@@ -40,5 +40,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |22   |[Row of the odd triangle](https://www.codewars.com/kata/5d5a7525207a674b71aa25b5/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/row_of_the_odd_triangle)        |
 |23   |[Disease Spread](https://www.codewars.com/kata/566543703c72200f0b0000c9)                                            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/disease_spread)                 |
 |24   |[A Rule of Divisibility by 13](https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/a_rule_of_divisibility_by_13)   |
+|25   |[Color Choice](https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/color_choice)                   |
 
 [Source](https://www.codewars.com/about)
