@@ -30,5 +30,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |12   |[flatten](https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python)                                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/flatten)                                   |
 |13   |[First non-repeating character](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python)                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/first_non_repeating_character)             |
 |14   |[Sports League Table Ranking](https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python)                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/sports_league_table_ranking)               |
+|15   |[Find the safest places in town](https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/find_the_safest_places_in_town)            |
 
 [Source](https://www.codewars.com/about)
