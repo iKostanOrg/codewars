@@ -62,9 +62,9 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
                 ([(0, 0), (0, 9), (1, 5), (5, 1), (9, 0), (9, 9)], 10, sorted([(5, 7), (6, 6), (7, 5)]),
                  "Should return correct solutions for another six agents"),
                 ([(0, 0)], 10, [(9, 9)],
-                 "single agent in top left corner of large grid"),
+                 "Single agent in top left corner of large grid"),
                 ([(0, 0), (1, 1), (99, 99)], 2, sorted([(0, 1), (1, 0)]),
-                 "agent in top left and bottom right"),
+                 "Agent in top left and bottom right"),
             ]
 
             for data in test_data:
