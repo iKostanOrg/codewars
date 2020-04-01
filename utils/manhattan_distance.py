@@ -14,5 +14,5 @@ def get_manhattan_distance(coord_a: tuple, coord_b: tuple) -> int:
 	:return:
 	"""
 	manhattan_distance = abs(coord_a[0] - coord_b[0]) + abs(coord_a[1] - coord_b[1])
-	print('\na: {},\nb: {},\n{}'.format(coord_a, coord_b, manhattan_distance))
+	# print('\na: {},\nb: {},\n{}'.format(coord_a, coord_b, manhattan_distance))
 	return manhattan_distance
