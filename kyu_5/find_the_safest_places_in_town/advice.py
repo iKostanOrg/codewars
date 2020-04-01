@@ -43,7 +43,7 @@ def create_map(n: int, agents: list, COORDINATES, DISTANCES):
 
     for row in range(0, n):
         for col in range(0, n):
-            print("\nrow: {}, col: {}".format(row, col))
+            # print("\nrow: {}, col: {}".format(row, col))
             is_agent = False
             if (row, col) in agents:
                 is_agent = True
