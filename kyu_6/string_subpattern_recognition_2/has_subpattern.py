@@ -2,8 +2,8 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-from utils.is_prime import is_prime
 from typing import Set, Dict
+from utils.is_prime_util.is_prime import is_prime
 
 
 def has_subpattern(string: str) -> bool:
