@@ -1,0 +1,444 @@
+{
+  "uid" : "52976087492722cf",
+  "name" : "Testing epidemic function",
+  "fullName" : "kyu_6.disease_spread.test_epidemic.EpidemicTestCase#test_epidemic",
+  "historyId" : "2cb427f82db56166295274f89427b370",
+  "time" : {
+    "start" : 1586068466251,
+    "stop" : 1586068466256,
+    "duration" : 5
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>The function epidemic should return the maximum number of infected as an integer (truncate to integer the result of max(I)).</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1586068466250,
+      "stop" : 1586068466250,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>The function epidemic should return the maximum number of infected as an integer (truncate to integer the result of max(I)).</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data (tm: 18, n: 432, s0: 1004, i0: 1, b: 0.00209, a: 0.51, expected: 420) and verify the expected output (420) vs actual result (420)",
+      "time" : {
+        "start" : 1586068466251,
+        "stop" : 1586068466251,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 12, n: 288, s0: 1007, i0: 2, b: 0.00206, a: 0.45, expected: 461) and verify the expected output (461) vs actual result (461)",
+      "time" : {
+        "start" : 1586068466252,
+        "stop" : 1586068466252,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 13, n: 312, s0: 999, i0: 1, b: 0.00221, a: 0.55, expected: 409) and verify the expected output (409) vs actual result (409)",
+      "time" : {
+        "start" : 1586068466252,
+        "stop" : 1586068466252,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 24, n: 576, s0: 1005, i0: 1, b: 0.00216, a: 0.45, expected: 474) and verify the expected output (474) vs actual result (474)",
+      "time" : {
+        "start" : 1586068466253,
+        "stop" : 1586068466253,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 24, n: 576, s0: 982, i0: 1, b: 0.00214, a: 0.44, expected: 460) and verify the expected output (460) vs actual result (460)",
+      "time" : {
+        "start" : 1586068466253,
+        "stop" : 1586068466253,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 20, n: 480, s0: 1000, i0: 1, b: 0.00199, a: 0.53, expected: 386) and verify the expected output (386) vs actual result (386)",
+      "time" : {
+        "start" : 1586068466254,
+        "stop" : 1586068466254,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 28, n: 672, s0: 980, i0: 1, b: 0.00198, a: 0.44, expected: 433) and verify the expected output (433) vs actual result (433)",
+      "time" : {
+        "start" : 1586068466255,
+        "stop" : 1586068466255,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 14, n: 336, s0: 996, i0: 2, b: 0.00206, a: 0.41, expected: 483) and verify the expected output (483) vs actual result (483)",
+      "time" : {
+        "start" : 1586068466255,
+        "stop" : 1586068466255,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 13, n: 312, s0: 993, i0: 2, b: 0.0021, a: 0.51, expected: 414) and verify the expected output (414) vs actual result (414)",
+      "time" : {
+        "start" : 1586068466255,
+        "stop" : 1586068466255,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter test data (tm: 28, n: 672, s0: 999, i0: 1, b: 0.00197, a: 0.55, expected: 368) and verify the expected output (368) vs actual result (368)",
+      "time" : {
+        "start" : 1586068466256,
+        "stop" : 1586068466256,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "b9a5b248f9f2f49",
+      "name" : "stdout",
+      "source" : "b9a5b248f9f2f49.txt",
+      "type" : "text/plain",
+      "size" : 1093
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 10
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1586068466258,
+      "stop" : 1586068466258,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Math"
+  }, {
+    "name" : "suite",
+    "value" : "Fundamentals"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "story",
+    "value" : "Disease Spread"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9148-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.disease_spread.test_epidemic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "94bacb05183cef14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584817508795,
+        "stop" : 1584817508816,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "1aecc8556f046ed9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584816665378,
+        "stop" : 1584816665396,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "6497e1b87f85e873",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584256244038,
+        "stop" : 1584256244047,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "15cbb78777bc761e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584255529571,
+        "stop" : 1584255529580,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "7bc7080f9c542f20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584252160275,
+        "stop" : 1584252160290,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "c5f6d0d97303a64f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584251097669,
+        "stop" : 1584251097679,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "539b30f69c99b020",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584250525091,
+        "stop" : 1584250525107,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "76c6d8b096f643d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246520248,
+        "stop" : 1584246520260,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "5e745f1a7b748864",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246346282,
+        "stop" : 1584246346298,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "ffd9bf925effe7b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246169872,
+        "stop" : 1584246169884,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "e6914b828fa6dc6e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583887937664,
+        "stop" : 1583887937716,
+        "duration" : 52
+      }
+    }, {
+      "uid" : "c9ff467fe293eceb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583884071925,
+        "stop" : 1583884071933,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "4df6a077b0b7eb51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583883092390,
+        "stop" : 1583883092398,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "6f74afecf3eef123",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582772537202,
+        "stop" : 1582772537211,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "8973c0574cdbdbb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434203925,
+        "stop" : 1582434203931,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "b6d0ba663575403b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434076848,
+        "stop" : 1582434076854,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "9b8b70c4ff226a16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1584817508795,
+          "stop" : 1584817508816,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "301483f16f8e56ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1584816665378,
+          "stop" : 1584816665396,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "73914ae12de41d24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1584256244038,
+          "stop" : 1584256244047,
+          "duration" : 9
+        }
+      }, {
+        "uid" : "ad6e8777c2f927e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1584255529571,
+          "stop" : 1584255529580,
+          "duration" : 9
+        }
+      } ]
+    },
+    "tags" : [ "FUNDAMENTALS" ]
+  },
+  "source" : "52976087492722cf.json",
+  "parameterValues" : [ ]
+}
