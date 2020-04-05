@@ -14,14 +14,11 @@ def is_prime(n: int) -> bool:
     """
     result: bool = True
 
-    if n == 1:
+    if n <= 1 or (n % 2 == 0 and n > 2) or (n % 3 == 0 and n > 3):
         result = False
 
     if n == 2:
         result = True
-
-    if n % 2 == 0 and n > 2:
-        result = False
 
     for x in range(3, int(math.sqrt(n)) + 1, 2):
         if n % x == 0:
