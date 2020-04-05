@@ -21,6 +21,7 @@ Subpackages
    kyu_5.flatten
    kyu_5.first_non_repeating_character
    kyu_5.sports_league_table_ranking
+   kyu_5.find_the_safest_places_in_town
 
 Module contents
 ---------------
