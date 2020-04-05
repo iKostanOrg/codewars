@@ -7,7 +7,7 @@
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.find_the_safest_places_in_town.advice import advice, create_map
+from kyu_5.find_the_safest_places_in_town.advice import advice, create_map, agents_cleanup
 from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 
 
@@ -22,7 +22,7 @@ from kyu_5.find_the_safest_places_in_town.print_agents import print_map
              name='Source/Kata')
 class FirstAdviceTestCase(unittest.TestCase):
     """
-    Testing advice function
+    Testing advice and all related help functions
     """
 
     def test_create_map(self):
@@ -42,11 +42,11 @@ class FirstAdviceTestCase(unittest.TestCase):
                                         '<h3>Test Description:</h3>'
                                         "<p>The function should generate city map with coordinates.</p>")
 
-        with allure.step("Enter test string and verify the output"):
+        with allure.step("Enter test data and verify the output"):
             test_data = [
-                (2, [(0, 0), (0, 1), (1, 0), (1, 1)]),
-                (0, []),
-                (3, [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]),
+                (2, {(0, 0), (0, 1), (1, 0), (1, 1)}),
+                (0, set()),
+                (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)}),
             ]
 
             for data in test_data:
@@ -56,6 +56,45 @@ class FirstAdviceTestCase(unittest.TestCase):
                 actual = create_map(n)
                 # test log
                 print_log(n=n, expected=expected, actual=actual)
+                # assertion
+                self.assertEqual(expected, actual)
+
+    def test_agents_cleanup(self):
+        """
+        Testing a function named agents_cleanup where:
+            - agents: is an array of agent coordinates
+            - n: defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid.
+
+        The function should remove all agents that are outside of the city boundaries.
+        :return:
+        """
+        allure.dynamic.title("Testing agents_cleanup function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p>The function should remove all agents that are "
+                                        "outside of the city boundaries.</p>")
+
+        with allure.step("Enter test data and verify the output"):
+            test_data = [
+                ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
+                ({(0, 0), (1, 1), (99, 99)}, 2, {(0, 0), (1, 1)}),
+                ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47), (9, 59), (65, 40), (28, 53), (19, 15),
+                  (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13), (36, 38), (29, 54), (50, 15), (14, 28),
+                  (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6), (12, 46), (50, 35), (56, 27)}, 10, set()),
+            ]
+
+            for data in test_data:
+                # test data
+                agents = data[0]
+                n = data[1]
+                expected = data[2]
+                actual = agents_cleanup(agents, n)
+                # test log
+                print_log(agents=agents, n=n, expected=expected, actual=actual)
                 # assertion
                 self.assertEqual(expected, actual)
 
