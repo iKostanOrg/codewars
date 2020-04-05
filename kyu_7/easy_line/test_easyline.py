@@ -6,7 +6,7 @@ import allure
 import pytest
 import unittest
 from utils.log_func import print_log
-from kyu_7.easy_line.easyline import easy_line, calc_combinations_per_row
+from kyu_7.easy_line.easyline import easy_line, calc_combination_per_row_item
 
 
 @allure.epic('7 kyu')
@@ -19,7 +19,6 @@ from kyu_7.easy_line.easyline import easy_line, calc_combinations_per_row
 @allure.link(url='https://www.codewars.com/kata/'
                  '56e7d40129035aed6c000632/train/python',
              name='Source/Kata')
-# @pytest.mark.skip(reason="The solution is not ready")
 class EasyLineTestCase(unittest.TestCase):
     """
     We want to calculate the sum of the squares of the binomial
@@ -65,20 +64,21 @@ class EasyLineTestCase(unittest.TestCase):
                                         "coefficients on line n.</p>")
 
         test_data = (
-            (0, [1]),
-            (1, [1, 1]),
-            (2, [1, 2, 1]),
-            (3, [1, 3, 3, 1]),
-            (4, [1, 4, 6, 4, 1]),
-            (5, [1, 5, 10, 10, 5, 1]),
-            (6, [1, 6, 15, 20, 15, 6, 1]),
-            (7, [1, 7, 21, 35, 35, 21, 7, 1]),
+            (0, 0, 1),
+            (1, 1, 1),
+            (2, 1, 2),
+            (3, 2, 3),
+            (4, 3, 4),
+            (5, 4, 5),
+            (6, 5, 6),
+            (7, 6, 7),
         )
 
         for data in test_data:
             n: int = data[0]
-            expected: list = data[1]
-            actual: list = calc_combinations_per_row(n)
+            i: int = data[1]
+            expected: int = data[2]
+            actual: int = calc_combination_per_row_item(n, i)
 
             with allure.step("Enter row number ({}) "
                              "and assert expected ({}) "
