@@ -3,10 +3,10 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 import allure
-import unittest
 import pytest
+import unittest
 from utils.log_func import print_log
-from kyu_7.easy_line.easyline import easy_line
+from kyu_7.easy_line.easyline import easy_line, calc_combinations_per_row
 
 
 @allure.epic('7 kyu')
@@ -19,7 +19,7 @@ from kyu_7.easy_line.easyline import easy_line
 @allure.link(url='https://www.codewars.com/kata/'
                  '56e7d40129035aed6c000632/train/python',
              name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
+# @pytest.mark.skip(reason="The solution is not ready")
 class EasyLineTestCase(unittest.TestCase):
     """
     We want to calculate the sum of the squares of the binomial
@@ -32,6 +32,62 @@ class EasyLineTestCase(unittest.TestCase):
     The function will take n (with: n>= 0) as parameter and will
     return the sum of the squares of the binomial coefficients on line n.
     """
+
+    def test_easy_line_exception(self):
+        allure.dynamic.title("Testing easy_line function exception message")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p>The function should raise exception for invalid n (n < 0) values.</p>")
+
+        n = -1
+        error_txt = 'ERROR: invalid n ({}) value. n must be >= 0'.format(n)
+
+        # Source: https://dev.to/wangonya/asserting-exceptions-with-pytest-8hl
+        with allure.step("Enter invalid n ({}) "
+                         "and assert exception message: {}).".format(n, error_txt)):
+
+            with pytest.raises(ValueError) as error:
+                self.assertRaises(ValueError, easy_line(n))
+                self.assertEqual(error_txt, error.value)
+
+    def test_calc_combinations_per_row(self):
+        allure.dynamic.title("Testing calc_combinations_per_row function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p>The function should take row number and return Pascal's Triangle "
+                                        "combination per that row "
+                                        "coefficients on line n.</p>")
+
+        test_data = (
+            (0, [1]),
+            (1, [1, 1]),
+            (2, [1, 2, 1]),
+            (3, [1, 3, 3, 1]),
+            (4, [1, 4, 6, 4, 1]),
+            (5, [1, 5, 10, 10, 5, 1]),
+            (6, [1, 6, 15, 20, 15, 6, 1]),
+            (7, [1, 7, 21, 35, 35, 21, 7, 1]),
+        )
+
+        for data in test_data:
+            n: int = data[0]
+            expected: list = data[1]
+            actual: list = calc_combinations_per_row(n)
+
+            with allure.step("Enter row number ({}) "
+                             "and assert expected ({}) "
+                             "vs actual ({}).".format(n, expected, actual)):
+                print_log(n=n,
+                          actual=actual,
+                          expected=expected)
+
+                self.assertEqual(expected, actual)
 
     def test_easy_line(self):
         allure.dynamic.title("Testing easy_line function")
