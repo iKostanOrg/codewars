@@ -7,7 +7,7 @@
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.find_the_safest_places_in_town.advice import advice, create_map, agents_cleanup
+from kyu_5.find_the_safest_places_in_town.advice import advice, create_city_map, agents_cleanup
 from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 
 
@@ -25,16 +25,16 @@ class FirstAdviceTestCase(unittest.TestCase):
     Testing advice and all related help functions
     """
 
-    def test_create_map(self):
+    def test_create_city_map(self):
         """
-        Testing a function named create_map where:
+        Testing a function named create_city_map where:
             - n defines the size of the city that Bassi needs to hide in,
               in other words the side length of the square grid.
 
         The function should generate city map with coordinates.
         :return:
         """
-        allure.dynamic.title("Testing create_map function")
+        allure.dynamic.title("Testing create_city_map function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
                                         '<img src="https://www.codewars.com/users/myFirstCode'
@@ -53,7 +53,7 @@ class FirstAdviceTestCase(unittest.TestCase):
                 # test data
                 n = data[0]
                 expected = data[1]
-                actual = create_map(n)
+                actual = create_city_map(n)
                 # test log
                 print_log(n=n, expected=expected, actual=actual)
                 # assertion
