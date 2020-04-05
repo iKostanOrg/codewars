@@ -48,7 +48,7 @@ def city_map_processing(city: set, agents: set) -> None:
         # print('\nAGENTS\n', agents)  # debug only
 
 
-def advice(agents: list, n: int) -> list:
+def advice(agents: set, n: int) -> list:
     """
     The function should return a list of coordinates that are the
     furthest away (by Manhattan distance) from all agents.
