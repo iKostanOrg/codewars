@@ -1,6 +1,13 @@
 utils package
 =============
 
+Subpackages
+-----------
+
+.. toctree::
+
+   utils.tests
+
 Submodules
 ----------
 
