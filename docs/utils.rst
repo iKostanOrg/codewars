@@ -6,7 +6,7 @@ Subpackages
 
 .. toctree::
 
-   utils.tests
+   utils.is_prime
 
 Submodules
 ----------
