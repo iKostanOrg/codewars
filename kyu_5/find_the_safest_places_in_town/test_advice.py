@@ -7,7 +7,7 @@
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.find_the_safest_places_in_town.advice import advice
+from kyu_5.find_the_safest_places_in_town.advice import advice, create_map
 from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 
 
@@ -20,10 +20,44 @@ from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 @allure.tag('ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python',
              name='Source/Kata')
-class FirstNonRepeatingLetterTestCase(unittest.TestCase):
+class FirstAdviceTestCase(unittest.TestCase):
     """
     Testing advice function
     """
+
+    def test_create_map(self):
+        """
+        Testing a function named create_map where:
+            - n defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid.
+
+        The function should generate city map with coordinates.
+        :return:
+        """
+        allure.dynamic.title("Testing create_map function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
+                                        '<img src="https://www.codewars.com/users/myFirstCode'
+                                        '/badges/large">'
+                                        '<h3>Test Description:</h3>'
+                                        "<p>The function should generate city map with coordinates.</p>")
+
+        with allure.step("Enter test string and verify the output"):
+            test_data = [
+                (2, [(0, 0), (0, 1), (1, 0), (1, 1)]),
+                (0, []),
+                (3, [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]),
+            ]
+
+            for data in test_data:
+                # test data
+                n = data[0]
+                expected = data[1]
+                actual = create_map(n)
+                # test log
+                print_log(n=n, expected=expected, actual=actual)
+                # assertion
+                self.assertEqual(expected, actual)
 
     def test_first_non_repeating_letter(self):
         """
