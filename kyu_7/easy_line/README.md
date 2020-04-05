@@ -25,13 +25,18 @@ easyline(50) => 100891344545564193334812497256
 
 In Javascript, Coffeescript, Typescript, C++, PHP, C, R, Nim, Fortran to get around the fact that we have no big integers the function easyLine(n) will in fact return `round(log(easyline(n)))` and not the `easyline(n)` of the other languages.
 
-So, in Javascript, Coffeescript, Typescript, C++, PHP, R, Nim, C, Fortran:
-
 ```text
 easyLine(0) => 0
 easyLine(1) => 1
-easyLine(4) => 4
-easyLine(50) => 67
+easyLine(4) => 70
+easyLine(50) => 100891344545564193334812497256
 ```
+
+### Video tutorials:
+
+- [Binomial Theorem - Why do we need it? - CBSE 11](https://www.youtube.com/watch?v=nYO2DqoZdd4&list=PLmdFyQYShrjf2BlDFvO-kHT2ftf05yxfR&index=1)
+- [Pascal's Triangle and the Binomial Theorem - CBSE 11](https://www.youtube.com/watch?v=LurI8AYY18E)
+- [Binomial Theorem - General Formula - CBSE 11](https://www.youtube.com/watch?v=MDaHBKx1IyE&list=PLmdFyQYShrjf2BlDFvO-kHT2ftf05yxfR&index=2)
+- [Pascal's triangle for binomial expansion | Algebra II | Khan Academy](https://www.youtube.com/watch?v=v9Evg2tBdRk)
 
 [Source](https://www.codewars.com/kata/56e7d40129035aed6c000632/train/python)
