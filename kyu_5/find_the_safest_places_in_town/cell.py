@@ -41,13 +41,8 @@ class Cell:
             DISTANCES[self.distance] = [(self.row, self.column)]
 
     def __calc_distance(self, agents: list, n: int) -> int:
-        distance = None
+        distances = list()
         for agent in agents:
             if agent[0] < n and agent[1] < n:
-                if not distance:
-                    distance = get_manhattan_distance(coord_a=(self.row, self.column), coord_b=agent)
-                else:
-                    temp = get_manhattan_distance(coord_a=(self.row, self.column), coord_b=agent)
-                    if temp < distance:
-                        distance = temp
-        return distance
+                distances.append(get_manhattan_distance(coord_a=(self.row, self.column), coord_b=agent))
+        return min(distances)
