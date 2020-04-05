@@ -21,7 +21,7 @@
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
 <div align="center"> 
-<img width="90%" height="90%" src="https://github.com/ikostan/codewars/blob/master/img/Document.png" hspace="20">
+<img width="90%" height="90%" src="https://github.com/ikostan/codewars/blob/master/img/document.png" hspace="20">
 </div>
 
 ## About Codewars
