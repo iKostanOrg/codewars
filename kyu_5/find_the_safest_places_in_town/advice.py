@@ -2,41 +2,7 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-from utils.manhattan_distance import get_manhattan_distance
-
-
-class Cell:
-
-    def __init__(self, coord: tuple, is_agent: bool, agents: list, n: int, DISTANCES):
-
-        self.row = coord[0]
-        self.column = coord[1]
-        self.is_agent = is_agent
-
-        if not self.is_agent:
-            self.distance = self.__calc_distance(agents=agents, n=n)
-        else:
-            self.distance = 0
-
-        self.__update_distances(DISTANCES)
-
-    def __update_distances(self, DISTANCES) -> None:
-        if self.distance in DISTANCES:
-            DISTANCES[self.distance].append((self.row, self.column))
-        else:
-            DISTANCES[self.distance] = [(self.row, self.column)]
-
-    def __calc_distance(self, agents: list, n: int) -> int:
-        distance = None
-        for agent in agents:
-            if agent[0] < n and agent[1] < n:
-                if not distance:
-                    distance = get_manhattan_distance(coord_a=(self.row, self.column), coord_b=agent)
-                else:
-                    temp = get_manhattan_distance(coord_a=(self.row, self.column), coord_b=agent)
-                    if temp < distance:
-                        distance = temp
-        return distance
+from kyu_5.find_the_safest_places_in_town.cell import Cell
 
 
 def create_map(n: int, agents: list, COORDINATES, DISTANCES):
@@ -49,6 +15,12 @@ def create_map(n: int, agents: list, COORDINATES, DISTANCES):
                 is_agent = True
             Cell((row, col), is_agent, agents, n, DISTANCES)
             COORDINATES.append((row, col))
+
+
+def agents_cleanup(agents, n):
+    for agent in agents.copy():
+        if agent[0] >= n or agent[1] >= n:
+            agents.remove(agent)
 
 
 def advice(agents: list, n: int) -> list:
@@ -68,27 +40,28 @@ def advice(agents: list, n: int) -> list:
     in other words the side length of the square grid
     :return:
     """
-    DISTANCES = dict()
-    COORDINATES = list()
-
     # if n is 0, return an empty list
     if n == 0:
         return list()
 
     # If there is an agent on every grid cell, there is no safe space,
     # so return an empty list
-    if len(agents) == n * n and max(agents)[0] < n and max(agents)[1] < n:
-        return list()
+    agents_cleanup(agents, n)
+    if len(agents) == n * n:
+        return []
 
     # If there are no agents, then every cell is a safe spaces,
     # so return all coordinates
+    COORDINATES = list()
+
     if not agents:
-        pass
+        for row in range(0, n):
+            for col in range(0, n):
+                COORDINATES.append((row, col))
+        return COORDINATES
 
+    DISTANCES = dict()
     create_map(n, agents, COORDINATES, DISTANCES)
-
-    for key in DISTANCES:
-        print('\nkey: {},\n{}'.format(key, DISTANCES[key]))
 
     if DISTANCES:
         return DISTANCES[max(DISTANCES.keys())]
