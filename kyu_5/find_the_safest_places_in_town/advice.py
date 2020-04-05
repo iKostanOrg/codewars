@@ -1,8 +1,8 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-from typing import Dict
 
+from typing import Dict
 from kyu_5.find_the_safest_places_in_town.cell import Cell
 
 
