@@ -6,22 +6,25 @@ from typing import Dict
 from kyu_5.find_the_safest_places_in_town.cell import Cell
 
 
-def create_map(n: int, agents: list, COORDINATES, DISTANCES):
-
-    for row in range(0, n):
-        for col in range(0, n):
-            # print("\nrow: {}, col: {}".format(row, col))
-            is_agent = False
-            if (row, col) in agents:
-                is_agent = True
-            Cell((row, col), is_agent, agents, n, DISTANCES)
-            COORDINATES.append((row, col))
+def create_map(n: int):
+    """
+    Generate city map with coordinates
+    :param n: defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid
+    :return:
+    """
+    return [(row, col) for row in range(0, n) for col in range(0, n)]
 
 
 def agents_cleanup(agents, n):
-    for agent in agents.copy():
-        if agent[0] >= n or agent[1] >= n:
-            agents.remove(agent)
+    """
+    Remove all agents that are outside of the city boundaries
+    :param agents: is an array of agent coordinates
+    :param n: defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid
+    :return:
+    """
+    return [agent for agent in agents if agent[0] < n and agent[1] < n]
 
 
 def advice(agents: list, n: int) -> list:
