@@ -4,9 +4,7 @@
 
 import allure
 import unittest
-
 import pytest
-
 from utils.log_func import print_log
 from kyu_7.easy_line.easyline import easy_line
 
