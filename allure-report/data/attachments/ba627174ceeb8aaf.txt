@@ -1,0 +1,56 @@
+
+LOG =>
+battlefield: [a]#[b]#[c], result: ac, expected: ac
+
+
+LOG =>
+battlefield: [a]#b#[c][d], result: d, expected: d
+
+
+LOG =>
+battlefield: [a][b][c], result: abc, expected: abc
+
+
+LOG =>
+battlefield: ##a[a]b[c]#, result: c, expected: c
+
+
+LOG =>
+battlefield: abde[fgh]ijk, result: abdefghijk, expected: abdefghijk
+
+
+LOG =>
+battlefield: ab#de[fgh]ijk, result: fgh, expected: fgh
+
+
+LOG =>
+battlefield: ab#de[fgh]ij#k, result: , expected: 
+
+
+LOG =>
+battlefield: ##abde[fgh]ijk, result: , expected: 
+
+
+LOG =>
+battlefield: ##abde[fgh], result: , expected: 
+
+
+LOG =>
+battlefield: ##abcde[fgh], result: , expected: 
+
+
+LOG =>
+battlefield: abcde[fgh], result: abcdefgh, expected: abcdefgh
+
+
+LOG =>
+battlefield: ##abde[fgh]ijk[mn]op, result: mn, expected: mn
+
+
+LOG =>
+battlefield: #abde[fgh]i#jk[mn]op, result: mn, expected: mn
+
+
+LOG =>
+battlefield: [ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#, result: abijk, expected: abijk
+

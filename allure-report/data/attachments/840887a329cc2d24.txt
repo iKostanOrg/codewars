@@ -1,0 +1,20 @@
+
+LOG =>
+seconds: 0, expected: 00:00:00
+
+
+LOG =>
+seconds: 5, expected: 00:00:05
+
+
+LOG =>
+seconds: 60, expected: 00:01:00
+
+
+LOG =>
+seconds: 86399, expected: 23:59:59
+
+
+LOG =>
+seconds: 359999, expected: 99:59:59
+

@@ -1,0 +1,20 @@
+
+LOG =>
+invested: 100, changes: [], expected: False
+
+
+LOG =>
+invested: 100, changes: [-50, 50], expected: False
+
+
+LOG =>
+invested: 100, changes: [-50, 100], expected: False
+
+
+LOG =>
+invested: 100, changes: [-20, 30], expected: False
+
+
+LOG =>
+invested: 1000, changes: [0, 2, 3, 6], expected: False
+
