@@ -15,7 +15,7 @@ def print_map(agents: list, n: int, expected: list):
 	:return:
 	"""
 	empty = ' |'
-	agent = '*|'
+	agent = '-|'
 	longest = '+|'
 
 	for col in range(0, n):
