@@ -32,6 +32,7 @@ Subpackages
    kyu_6.disease_spread
    kyu_6.a_rule_of_divisibility_by_13
    kyu_6.color_choice
+   kyu_6.default_list
 
 Module contents
 ---------------
