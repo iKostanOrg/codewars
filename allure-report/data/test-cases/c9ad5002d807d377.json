@@ -1,0 +1,130 @@
+{
+  "uid" : "c9ad5002d807d377",
+  "name" : "Testing first_non_repeating_letter function",
+  "fullName" : "kyu_5.first_non_repeating_character.test_first_non_repeating_letter.FirstNonRepeatingLetterTestCase#test_first_non_repeating_letter",
+  "historyId" : "b5a1c5eb9c825db6f453100e4dceac7d",
+  "time" : {
+    "start" : 1578801841661,
+    "stop" : 1578801841662,
+    "duration" : 1
+  },
+  "description" : "\n\t\tTesting a function named first_non_repeating_letter\n\t\tthat takes a string input, and returns the first character\n\t\tthat is not repeated anywhere in the string.\n\n\t\tFor example, if given the input 'stress', the function\n\t\tshould return 't', since the letter t only occurs once\n\t\tin the string, and occurs first in the string.\n\n\t\tAs an added challenge, upper- and lowercase letters are\n\t\tconsidered the same character, but the function should\n\t\treturn the correct case for the initial letter. For example,\n\t\tthe input 'sTreSS' should return 'T'.\n\n\t\tIf a string contains all repeating characters, it should\n\t\treturn an empty string (\"\") or None -- see sample tests.\n\t\t:return:\n\t\t",
+  "descriptionHtml" : "<pre><code>\tTesting a function named first_non_repeating_letter\n\tthat takes a string input, and returns the first character\n\tthat is not repeated anywhere in the string.\n\n\tFor example, if given the input 'stress', the function\n\tshould return 't', since the letter t only occurs once\n\tin the string, and occurs first in the string.\n\n\tAs an added challenge, upper- and lowercase letters are\n\tconsidered the same character, but the function should\n\treturn the correct case for the initial letter. For example,\n\tthe input 'sTreSS' should return 'T'.\n\n\tIf a string contains all repeating characters, it should\n\treturn an empty string (&quot;&quot;) or None -- see sample tests.\n\t:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1578801841660,
+      "stop" : 1578801841660,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n\t\tTesting a function named first_non_repeating_letter\n\t\tthat takes a string input, and returns the first character\n\t\tthat is not repeated anywhere in the string.\n\n\t\tFor example, if given the input 'stress', the function\n\t\tshould return 't', since the letter t only occurs once\n\t\tin the string, and occurs first in the string.\n\n\t\tAs an added challenge, upper- and lowercase letters are\n\t\tconsidered the same character, but the function should\n\t\treturn the correct case for the initial letter. For example,\n\t\tthe input 'sTreSS' should return 'T'.\n\n\t\tIf a string contains all repeating characters, it should\n\t\treturn an empty string (\"\") or None -- see sample tests.\n\t\t:return:\n\t\t",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test string and verify the output",
+      "time" : {
+        "start" : 1578801841661,
+        "stop" : 1578801841661,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "28d4c809cd0014c7",
+      "name" : "stdout",
+      "source" : "28d4c809cd0014c7.txt",
+      "type" : "text/plain",
+      "size" : 392
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1578801841664,
+      "stop" : 1578801841664,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "story",
+    "value" : "First non-repeating character"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "3656-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.first_non_repeating_character.test_first_non_repeating_letter"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c9ad5002d807d377.json",
+  "parameterValues" : [ ]
+}
