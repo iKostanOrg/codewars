@@ -2,6 +2,10 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
+#  Created by Egor Kostan.
+#  GitHub: https://github.com/ikostan
+#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
 import allure
 import unittest
 from utils.log_func import print_log
@@ -28,8 +32,8 @@ class IsPrimeTestCase(unittest.TestCase):
         :return:
         """
 
-        allure.dynamic.title("Wolf at the beginning of the queue")
-        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Positive test cases for is_prime function testing")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
@@ -56,8 +60,8 @@ class IsPrimeTestCase(unittest.TestCase):
         :return:
         """
 
-        allure.dynamic.title("Wolf at the beginning of the queue")
-        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.title("Negative test cases for is_prime function testing")
+        allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
