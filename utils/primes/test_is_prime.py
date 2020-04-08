@@ -2,10 +2,6 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
 import allure
 import unittest
 from utils.log_func import print_log
@@ -18,7 +14,7 @@ from kyu_5.master_your_primes_sieve_with_memoization.primes import is_prime
 @allure.sub_suite("Unit Tests")
 @allure.feature("Utils")
 @allure.story('Testing is_prime util')
-@allure.tag('UTILS')
+@allure.tag('UTILS', "PRIME NUMBERS", "PRIMES")
 @allure.link(url='https://github.com/ikostan/codewars/tree/master/utils',
              name='Source')
 class IsPrimeTestCase(unittest.TestCase):
