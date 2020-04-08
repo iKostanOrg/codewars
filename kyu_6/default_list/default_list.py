@@ -23,7 +23,7 @@ class DefaultList:
             return self.__default_value
         return self.__lst[i]
 
-    def extend(self, items: iter) -> None:
+    def extend(self, items: list) -> None:
         """
         This class must also support the regular list functions: extend.
         :param items: iterable
