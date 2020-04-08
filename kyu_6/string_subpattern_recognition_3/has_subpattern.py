@@ -2,8 +2,7 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-from typing import Set, Dict
-from utils.is_prime_util.is_prime import is_prime
+import math
 
 
 def has_subpattern(string: str) -> str:
@@ -21,23 +20,22 @@ def has_subpattern(string: str) -> str:
     :param string:
     :return:
     """
+    # get unique chars
+    filtered_chars = set(s for s in string)
 
-    primes: Set[int] = set()
-    length: int = len(string)
-    char_dict: Dict[str, int] = dict()
+    # set counter for each char in string
+    char_counter = dict()
+    for char in filtered_chars:
+        char_counter[char] = string.count(char)
 
-    for char in string:
+    # get sorted counters
+    sorted_char_counters = sorted(set(char_counter.values()))
 
-        if char not in char_dict:
-            char_dict[char] = string.count(char)
+    # find common greatest divider:
+    divider = sorted_char_counters[0]
+    if len(sorted_char_counters) > 1:
+        for r in sorted_char_counters[1:]:
+            divider = math.gcd(divider, r)
 
-            if char_dict[char] == 1:
-                return ''.join(sorted(char for char in string))
-
-            if char_dict[char] in primes or is_prime(char_dict[char]):
-                primes.add(char_dict[char])
-                if length % char_dict[char] != 0:
-                    return ''.join(sorted(char for char in string))
-
-    result: str = ''.join(sorted(list(set(string))))
-    return result
+    # return result as a string
+    return ''.join(char * (char_counter[char] // divider) for char in sorted(filtered_chars))

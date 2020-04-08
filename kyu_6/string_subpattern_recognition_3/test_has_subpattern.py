@@ -4,9 +4,8 @@
 
 # FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
-import unittest
 import allure
-import pytest
+import unittest
 from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
 
@@ -25,7 +24,6 @@ from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
 @allure.link(url='https://www.codewars.com/kata/'
                  '5a4a2973d8e14586c700000a/train/python',
              name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
 class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
@@ -53,6 +51,67 @@ class HasSubpatternTestCase(unittest.TestCase):
 
         with allure.step("Pass the string and verify the output"):
             data_set = [
+                ('sZZpCWRNzSfvfZy5CMsRbdHeb85L3DmMB7dLMIM33pylSW6hHXp'
+                 'dthSmvynxF7cSUtSVShx8vwSYaa7dg4jyCzHzJqnYHRGD0sTg5z'
+                 'XOB42f9fuo47NhwV7fVZkzCyIfVzUvb90M5FOx3xXPo3fqFOqZk'
+                 'rH5HZ59juv3SWPIJKG7VfWh1R6O3S42by54D0W5rHYtxTjLsP3I'
+                 'PkR5WhsFNbYXMZwfIfcovPKfWzqD0ZTDWDdfMLkTyncVL3fODk9'
+                 '5V3Jz6p0jRsCv8ahOky6BLgffzBfb9SMnq3spM8q9wVZbaLWPVk'
+                 'ywWNypYC3MnCyQKxVd6Mvo1fq2I26uajR5aXMrrKX4MdyhfQfza'
+                 'rK5Pm2nb8IMs8zgNKMDrwKfcD553Os8OZs5eHYyn415Zvy0RCd3'
+                 'FyjFa3DGJs7IhSqnlvVJZYaKiFV45dtxkMsh2m5C2vvz2fyt24C'
+                 'raMULMxJwjYMuGM7Cz65hdWJaNcWCjyguWMqrdMO02Nf8RInK7G'
+                 'MVf2CWrR4RXiSv6yD29XBhIOkT5Cm7TfX8ZFk5FP4sKcWqHZGst'
+                 'DdM0ZHkyNFjQWJZCFQe5h5rguha8COIZVdcH7x4oMRRWXJwTn5o'
+                 'zzR8jYS54fFSwfoCgMkxXBhSjMWyk3PWnRW3vvkYW39vSjMo4bz'
+                 'jdJD1Dq1j3gs5WavPxNfjC0j63Ca6pHt44D5MFCgXaC1rz346wH'
+                 'ldbf89huLqOXg4WqByOW9SR8xXng9xC4CajsOC5HS2jzYuMdUXv'
+                 'jPZuIfgusZDZbReZCJ2fn4mapgL6z0FS94S3HuMwIGwnyyafxQ8'
+                 '84Y0T6kFFMcCknMcZ4uxowP7jzyWNO6SdPxZLZNqYC2roWSZxGN'
+                 'rFKwzfVPZOxPyzzktkW8fQyyv9zCSzgbd3kCvzYFxmrR5CMLiq8'
+                 'xz8cxWDCYWPN1WLNYsngLrCcdop0XDDgQXfXpZyRV56lZsRLZoa'
+                 '6WfCap9B3wNx2k4Z1Cwr5NL8IMCpWmKSsxiQ9MHZ9c5fC8dZJFz'
+                 'DxXXqIFI',
+                 '000112222333333444444555555556666777888889999BBCCCC'
+                 'CCCCCDDDDDFFFFFGGHHHHIIIIJJJKKKLLLLMMMMMMMMMNNNNOOO'
+                 'OPPPPQQRRRRRSSSSSSTTUVVVVWWWWWWWWXXXXXYYYYZZZZZZZZa'
+                 'aaaabbbcccdddddefffffffffgggghhhhijjjjjkkkkklmmnnnn'
+                 'ooopppqqqqrrrrsssssttuuuvvvvvwwwwxxxxxxyyyyyyyzzzzzzz'),
+                ('lcGPumgkSKgXDCAOuYEFfE2oDFCRrMzGoYupyfrDA3UxGGgnlix'
+                 'KobXYNrRlMRIYnq1imYuIyoIrakSmCKq7XDRcDWcmXPuRl67MGi'
+                 'q2g8CJUu0hfuXomi1OGUMIu6mpuJXfUPDzv7q0zN8zhlxoc7arm'
+                 'RmuxvfP3WrfbrrKlY',
+                 '01236778ACCDDDEFGGGIIJKKMMNOPPRRRSUUWXXXYYYabccfffgg'
+                 'hiiklllmmmmnooopqqrrrruuuuuvxxyzz'),
+                ('00000000000000000000000011111111111111111111111111'
+                 '2222222222222222222222333333333333333333333333'
+                 '4444444444444444444444444444444444555555555555555555'
+                 '66666666666666666677777777777777777777777788888888888888888888'
+                 '9999999999999999999999AAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBB'
+                 'CCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEFFFFFFFFFFFFFFFFFFFF'
+                 'GGGGGGGGGGGGGGGGGGGGGGHHHHHHHHHHHHHHHHHHHHHHHHHHIIIIIIIIIIIIIIIIIIIIII'
+                 'JJJJJJJJJJJJJJJJJJJJJJKKKKKKKKKKKKKKKKKKLLLLLLLLLLLLLLLLLLLLLL'
+                 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN'
+                 'OOOOOOOOOOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPPPPQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ'
+                 'RRRRRRRRRRRRRRRRSSSSSSSSSSSSSSSSSSSSSSSSSSTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+                 'UUUUUUUUUUUUUUUUVVVVVVVVVVVVVVVVVVWWWWWWWWWWWWWWWWWWWWWWXXXXXXXXXXXXXXXXXXXXXX'
+                 'YYYYYYYYYYYYYYYYZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZaaaaaaaaaaaaaaaaaaaaaa'
+                 'bbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccdddddddddddddddddddddddddddddddddddd'
+                 'eeeeeeeeeeeeeeeeeeeeeeffffffffffffffffffffffffffgggggggggggggggggggg'
+                 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhiiiiiiiiiiiiiijjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkk'
+                 'llllllllllllllmmmmmmmmmmmmmmmmmmmmmmmmmmmmnnnnnnnnnnnnnnnnnnnn'
+                 'ooooooooooooooooooooooooooooooooooooooppppppppppppppppppppqqqqqqqqqqqqqqqqqqqq'
+                 'rrrrrrrrrrrrrrrrrrrrrrrrrrsssssssssssssssssssssssstttttttttttttttttttttttt'
+                 'uuuuuuuuuuuuuuuuuuvvvvvvvvvvvvvvvvvvwwwwwwwwwwwwwwwwwwxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+                 'yyyyyyyyyyyyyyyyyyyyyyyyzzzzzzzzzzzzzzzzzzzzzzzz',
+                 '00000000000011111111111112222222222233333333333344444444444444444555555555666666666'
+                 '777777777777888888888899999999999AAAAAAAAAAABBBBBBBBBBBCCCCCCCCDDDDDDDDDDEEEEEEEEEEFFFFFFFFFF'
+                 'GGGGGGGGGGGHHHHHHHHHHHHHIIIIIIIIIIIJJJJJJJJJJJKKKKKKKKKLLLLLLLLLLLMMMMMMMMMMMMMMMNNNNNNNNNNNNNNN'
+                 'OOOOOOOOOOOPPPPPPPPPPQQQQQQQQQQQQQQQQQQRRRRRRRRSSSSSSSSSSSSSTTTTTTTTTTTTTTUUUUUUUUVVVVVVVVV'
+                 'WWWWWWWWWWWXXXXXXXXXXXYYYYYYYYZZZZZZZZZZZZZZZZZaaaaaaaaaaabbbbbbbbbccccccccccccc'
+                 'ddddddddddddddddddeeeeeeeeeeefffffffffffffgggggggggghhhhhhhhhhhhhhiiiiiiijjjjjjjkkkkkkkkkkk'
+                 'lllllllmmmmmmmmmmmmmmnnnnnnnnnnoooooooooooooooooooppppppppppqqqqqqqqqqrrrrrrrrrrrrr'
+                 'ssssssssssssttttttttttttuuuuuuuuuvvvvvvvvvwwwwwwwwwxxxxxxxxxxxxxxxxxyyyyyyyyyyyyzzzzzzzzzzzz'),
                 ("a", "a"),
                 ("aaaa", "a"),
                 ("abcd", "abcd"),
@@ -90,40 +149,11 @@ class HasSubpatternTestCase(unittest.TestCase):
                  'xsX0gNRs24OLRwEE2lOM3hL0TZEEFh2c4i0N68xRR4iRTe2m2tj'
                  'N48JeERERix6gyg',
                  '0022344689EEFHJLLMNORRTXYZccdefggghiijlmstwxy'),
-                ('sZZpCWRNzSfvfZy5CMsRbdHeb85L3DmMB7dLMIM33pylSW6hHXp'
-                 'dthSmvynxF7cSUtSVShx8vwSYaa7dg4jyCzHzJqnYHRGD0sTg5z'
-                 'XOB42f9fuo47NhwV7fVZkzCyIfVzUvb90M5FOx3xXPo3fqFOqZk'
-                 'rH5HZ59juv3SWPIJKG7VfWh1R6O3S42by54D0W5rHYtxTjLsP3I'
-                 'PkR5WhsFNbYXMZwfIfcovPKfWzqD0ZTDWDdfMLkTyncVL3fODk9'
-                 '5V3Jz6p0jRsCv8ahOky6BLgffzBfb9SMnq3spM8q9wVZbaLWPVk'
-                 'ywWNypYC3MnCyQKxVd6Mvo1fq2I26uajR5aXMrrKX4MdyhfQfza'
-                 'rK5Pm2nb8IMs8zgNKMDrwKfcD553Os8OZs5eHYyn415Zvy0RCd3'
-                 'FyjFa3DGJs7IhSqnlvVJZYaKiFV45dtxkMsh2m5C2vvz2fyt24C'
-                 'raMULMxJwjYMuGM7Cz65hdWJaNcWCjyguWMqrdMO02Nf8RInK7G'
-                 'MVf2CWrR4RXiSv6yD29XBhIOkT5Cm7TfX8ZFk5FP4sKcWqHZGst'
-                 'DdM0ZHkyNFjQWJZCFQe5h5rguha8COIZVdcH7x4oMRRWXJwTn5o'
-                 'zzR8jYS54fFSwfoCgMkxXBhSjMWyk3PWnRW3vvkYW39vSjMo4bz'
-                 'jdJD1Dq1j3gs5WavPxNfjC0j63Ca6pHt44D5MFCgXaC1rz346wH'
-                 'ldbf89huLqOXg4WqByOW9SR8xXng9xC4CajsOC5HS2jzYuMdUXv'
-                 'jPZuIfgusZDZbReZCJ2fn4mapgL6z0FS94S3HuMwIGwnyyafxQ8'
-                 '84Y0T6kFFMcCknMcZ4uxowP7jzyWNO6SdPxZLZNqYC2roWSZxGN'
-                 'rFKwzfVPZOxPyzzktkW8fQyyv9zCSzgbd3kCvzYFxmrR5CMLiq8'
-                 'xz8cxWDCYWPN1WLNYsngLrCcdop0XDDgQXfXpZyRV56lZsRLZoa'
-                 '6WfCap9B3wNx2k4Z1Cwr5NL8IMCpWmKSsxiQ9MHZ9c5fC8dZJFz'
-                 'DxXXqIFI',
-                 '000112222333333444444555555556666777888889999BBCCCC'
-                 'CCCCCDDDDDFFFFFGGHHHHIIIIJJJKKKLLLLMMMMMMMMMNNNNOOO'
-                 'OPPPPQQRRRRRSSSSSSTTUVVVVWWWWWWWWXXXXXYYYYZZZZZZZZa'
-                 'aaaabbbcccdddddefffffffffgggghhhhijjjjjkkkkklmmnnnn'
-                 'ooopppqqqqrrrrsssssttuuuvvvvvwwwwxxxxxxyyyyyyyzzzzzzz'),
-                ('lcGPumgkSKgXDCAOuYEFfE2oDFCRrMzGoYupyfrDA3UxGGgnlix'
-                 'KobXYNrRlMRIYnq1imYuIyoIrakSmCKq7XDRcDWcmXPuRl67MGi'
-                 'q2g8CJUu0hfuXomi1OGUMIu6mpuJXfUPDzv7q0zN8zhlxoc7arm'
-                 'RmuxvfP3WrfbrrKlY',
-                 '01236778ACCDDDEFGGGIIJKKMMNOPPRRRSUUWXXXYYYabccfffgg'
-                 'hiiklllmmmmnooopqqrrrruuuuuvxxyzz')
             ]
 
             for data in data_set:
-                print_log(string=data[0], expected=data[1])
-                self.assertEqual(data[1], has_subpattern(data[0]))
+                result = has_subpattern(data[0])
+                expected = data[1]
+                print('\n---------------------------------------------------------------\n')
+                print_log(result=result, expected=expected)
+                self.assertEqual(expected, result)
