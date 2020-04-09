@@ -42,5 +42,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |24   |[A Rule of Divisibility by 13](https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/python)                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/a_rule_of_divisibility_by_13)   |
 |25   |[Color Choice](https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/color_choice)                   |
 |26   |[DefaultList](https://www.codewars.com/kata/5e882048999e6c0023412908/train/python)                                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/default_list)                   |
+|27   |[Easy Diagonal](https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python)                                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/easy_diagonal)                  |
 
 [Source](https://www.codewars.com/about)
