@@ -15,6 +15,7 @@ Subpackages
    kyu_5.valid_parentheses
    kyu_5.moving_zeros_to_the_end
    kyu_5.directions_reduction
+   kyu_5.did_i_finish_my_sudoku
    kyu_5.where_my_anagrams_at
    kyu_5.master_your_primes_sieve_with_memoization
    kyu_5.number_of_trailing_zeros_of_n
@@ -22,7 +23,6 @@ Subpackages
    kyu_5.first_non_repeating_character
    kyu_5.sports_league_table_ranking
    kyu_5.find_the_safest_places_in_town
-   kyu_5.did_i_finish_my_sudoku
 
 Module contents
 ---------------
