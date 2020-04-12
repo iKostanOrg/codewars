@@ -1,0 +1,476 @@
+{
+  "uid" : "dcd5124f0c437fa7",
+  "name" : "Testing count_letters_and_digits function",
+  "fullName" : "kyu_7.help_bob_count_letters_and_digits.test_count_letters_and_digits.CalculateTestCase#test_calculate",
+  "historyId" : "3a0022f9e1e56fec3d9bba2b7b27d486",
+  "time" : {
+    "start" : 1586671116871,
+    "stop" : 1586671116872,
+    "duration" : 1
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a method that can determine how many letters and digits are in a given string.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1586671116870,
+      "stop" : 1586671116870,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a method that can determine how many letters and digits are in a given string.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter string (n!!ice!!123) and verify the expected output (7) vs actual result (7)",
+      "time" : {
+        "start" : 1586671116871,
+        "stop" : 1586671116871,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter string (de?=?=tttes!!t) and verify the expected output (8) vs actual result (8)",
+      "time" : {
+        "start" : 1586671116871,
+        "stop" : 1586671116871,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter string () and verify the expected output (0) vs actual result (0)",
+      "time" : {
+        "start" : 1586671116872,
+        "stop" : 1586671116872,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter string (!@#$%^&`~.) and verify the expected output (0) vs actual result (0)",
+      "time" : {
+        "start" : 1586671116872,
+        "stop" : 1586671116872,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter string (u_n_d_e_r__S_C_O_R_E) and verify the expected output (10) vs actual result (10)",
+      "time" : {
+        "start" : 1586671116872,
+        "stop" : 1586671116872,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "bde226c4676c0ce8",
+      "name" : "stdout",
+      "source" : "bde226c4676c0ce8.txt",
+      "type" : "text/plain",
+      "size" : 242
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1586671116874,
+      "stop" : 1586671116874,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "suite",
+    "value" : "Fundamentals"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "epic",
+    "value" : "7 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "story",
+    "value" : "Help Bob count letters and digits."
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9884-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_7.help_bob_count_letters_and_digits.test_count_letters_and_digits"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5738f5ea9545204cec000155/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f8a12e7d2ddd85bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586394917003,
+        "stop" : 1586394917004,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "29ec204b88bac24b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586373706293,
+        "stop" : 1586373706294,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7f932a379c633bab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586327732285,
+        "stop" : 1586327732287,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dab3d63b7467cabf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586122342200,
+        "stop" : 1586122342201,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d1211991fc32cc95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586121729757,
+        "stop" : 1586121729758,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "40bde13107408186",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586111460862,
+        "stop" : 1586111460865,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "97abc42978045c45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586068466723,
+        "stop" : 1586068466724,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ea48186df3675c6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584817510201,
+        "stop" : 1584817510205,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "3ecbafb0964ad274",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584816666237,
+        "stop" : 1584816666238,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "db6dd6253510037e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584256244829,
+        "stop" : 1584256244830,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e41d1d855c20f405",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584255530336,
+        "stop" : 1584255530338,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "14a61bac1f1d21ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584252161189,
+        "stop" : 1584252161190,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a4b230fe14e2999",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584251098365,
+        "stop" : 1584251098366,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "32bbf3ce71eedf21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584250526122,
+        "stop" : 1584250526128,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "3e680302d17dd58b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246521107,
+        "stop" : 1584246521110,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e6aaf026debbb0fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246347305,
+        "stop" : 1584246347307,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "edf2709d84124557",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246170828,
+        "stop" : 1584246170829,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "20c4bbbf0a4838cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583887940019,
+        "stop" : 1583887940040,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "bb57581572f72d29",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583884072722,
+        "stop" : 1583884072723,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c333fe0b1605d8a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583883093073,
+        "stop" : 1583883093077,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "c19aa4d549215d6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582772538109,
+        "stop" : 1582772538111,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "463bdfb30d666592",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434204406,
+        "stop" : 1582434204407,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e69155f945287129",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434077484,
+        "stop" : 1582434077485,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "922c1e337fbc8011",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581998960711,
+        "stop" : 1581998960715,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "74c6ad4591cd8cd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581908960642,
+        "stop" : 1581908960644,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a79ba94de4dc538",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897531298,
+        "stop" : 1581897531299,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ef1296d4c23d455e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829131725,
+        "stop" : 1581829131727,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "470994a4119b9add",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828905107,
+        "stop" : 1581828905108,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "197d6888857cbd7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586394917003,
+          "stop" : 1586394917004,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9f560388d3615aec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586327732285,
+          "stop" : 1586327732287,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "a4b2094db342d5b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586122342200,
+          "stop" : 1586122342201,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "24fd54c9b7e957dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586111460862,
+          "stop" : 1586111460865,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "c7725704f30ee955",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586068466723,
+          "stop" : 1586068466724,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "FUNDAMENTALS" ]
+  },
+  "source" : "dcd5124f0c437fa7.json",
+  "parameterValues" : [ ]
+}
