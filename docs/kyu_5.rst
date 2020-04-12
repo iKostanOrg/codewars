@@ -24,7 +24,6 @@ Subpackages
    kyu_5.find_the_safest_places_in_town
    kyu_5.did_i_finish_my_sudoku
 
-
 Module contents
 ---------------
 
