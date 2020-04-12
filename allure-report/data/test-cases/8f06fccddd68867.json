@@ -1,0 +1,181 @@
+{
+  "uid" : "8f06fccddd68867",
+  "name" : "Testing take function",
+  "fullName" : "kyu_8.enumerable_magic_25.test_take.TakeTestCase#test_take",
+  "historyId" : "4482f1de7682fdd9affc3f0318780098",
+  "time" : {
+    "start" : 1583887942432,
+    "stop" : 1583887942442,
+    "duration" : 10
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Create a method take that accepts a list/array and a number n, and returns a list/array array of the first n elements from the list/array. If you need help, here's a reference: https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1583887942422,
+      "stop" : 1583887942422,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Create a method take that accepts a list/array and a number n, and returns a list/array array of the first n elements from the list/array. If you need help, here's a reference: https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a list ([0, 1, 2, 3, 5, 8, 13]) and verify the expected output ([0, 1, 2]) vs actual result ([0, 1, 2])",
+      "time" : {
+        "start" : 1583887942432,
+        "stop" : 1583887942434,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a list ([51]) and verify the expected output ([51]) vs actual result ([51])",
+      "time" : {
+        "start" : 1583887942435,
+        "stop" : 1583887942435,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a list ([]) and verify the expected output ([]) vs actual result ([])",
+      "time" : {
+        "start" : 1583887942435,
+        "stop" : 1583887942435,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter a list ([0, 1, 2, 3, 5, 8, 13]) and verify the expected output ([]) vs actual result ([])",
+      "time" : {
+        "start" : 1583887942435,
+        "stop" : 1583887942435,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6af1edab1490487c",
+      "name" : "stdout",
+      "source" : "6af1edab1490487c.txt",
+      "type" : "text/plain",
+      "size" : 253
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1583887942444,
+      "stop" : 1583887942446,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "story",
+    "value" : "Enumerable Magic #25 - Take the First N Elements"
+  }, {
+    "name" : "feature",
+    "value" : "Lists"
+  }, {
+    "name" : "suite",
+    "value" : "Data Structures"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "15180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.enumerable_magic_25.test_take"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/545afd0761aa4c3055001386/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "FUNDAMENTALS" ]
+  },
+  "source" : "8f06fccddd68867.json",
+  "parameterValues" : [ ]
+}
