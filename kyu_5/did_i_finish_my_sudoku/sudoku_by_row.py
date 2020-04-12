@@ -5,7 +5,14 @@
 
 def assert_sudoku_by_row(board: list) -> bool:
 	for row in board:
-		if len(row) != len(set(row)):
-			# print('assert_sudoku_by_row')
+		print(row)
+		if len(row) != len(set(row)) or len(row) != len(board[0]):
+			print('assert_sudoku_by_row #1')
 			return False
+
+		for i in row:
+			if not isinstance(i, int):
+				print('assert_sudoku_by_row #2')
+				return False
+
 	return True
