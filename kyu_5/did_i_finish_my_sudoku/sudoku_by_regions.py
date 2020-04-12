@@ -17,7 +17,7 @@ def assert_sudoku_by_region(board: list) -> bool:
 					region.add(b)
 
 			if len(region) != row_length:
-				print('assert_sudoku_by_region')
+				# print('assert_sudoku_by_region')
 				return False
 
 		start, end = end, end + 3

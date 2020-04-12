@@ -10,7 +10,7 @@ def assert_sudoku_by_column(board: list) -> bool:
 		for row in board:
 			col.add(row[i])
 		if len(col) != row_length:
-			print('assert_sudoku_by_column')
+			# print('assert_sudoku_by_column')
 			return False
 
 	return True
