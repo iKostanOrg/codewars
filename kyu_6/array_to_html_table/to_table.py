@@ -2,7 +2,7 @@
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-TABLE = {
+TABLE: dict = {
 	'start': '<table>',
 	'end': '</table>',
 	'head': {
@@ -87,9 +87,7 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
 			rows_and_columns = '{}{}'.format(rows_and_columns,
 			                                 TABLE['row']['end'])
 
-	result: str = '{}{}{}{}'.format(TABLE['start'],
-	                                rows_and_columns,
-	                                TABLE['body']['end'],
-	                                TABLE['end'])
-
-	return result
+	return '{}{}{}{}'.format(TABLE['start'],
+	                         rows_and_columns,
+	                         TABLE['body']['end'],
+	                         TABLE['end'])
