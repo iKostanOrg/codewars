@@ -38,12 +38,17 @@ class ToTableTestCase(unittest.TestCase):
         test_data = ([
             {
                 "input": ([["o"]]),
-                "output": "<table><tbody><tr><td>o</td></tr></tbody></table>"
+                "output": "<table><tbody>"
+                          "<tr><td>o</td></tr>"
+                          "</tbody></table>"
             },
             {
                 "input": ([["lorem", "ipsum"], ["dolor", "sit amet"]], True, True),
-                "output": "<table><thead><tr><th></th><th>lorem</th><th>ipsum</th></tr></thead>"
-                          "<tbody><tr><td>1</td><td>dolor</td><td>sit amet</td></tr></tbody></table>"
+                "output": "<table><thead>"
+                          "<tr><th></th><th>lorem</th><th>ipsum</th></tr>"
+                          "</thead><tbody>"
+                          "<tr><td>1</td><td>dolor</td><td>sit amet</td></tr>"
+                          "</tbody></table>"
             },
             {
                 "input": ([[1, 2, 3], [4, 5, 6], [7, 8, 9]], False, True),
@@ -79,9 +84,12 @@ class ToTableTestCase(unittest.TestCase):
             },
             {
                 "input": ([["a", "b", "c", "d", "e"], [True, False, False, True, True]], True),
-                "output": "<table><thead><tr><th>a</th><th>b</th><th>c</th><th>d</th>"
-                          "<th>e</th></tr></thead><tbody><tr><td>True</td><td>False</td>"
-                          "<td>False</td><td>True</td><td>True</td></tr></tbody></table>"
+                "output": "<table><thead>"
+                          "<tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></tr>"
+                          "</thead>"
+                          "<tbody>"
+                          "<tr><td>True</td><td>False</td><td>False</td><td>True</td><td>True</td></tr>"
+                          "</tbody></table>"
             },
         ])
 
