@@ -1,0 +1,968 @@
+{
+  "uid" : "6f64e4dce81da03",
+  "name" : "Testing format_duration",
+  "fullName" : "kyu_4.human_readable_duration_format.test_format_duration.FormatDurationTestCase#test_format_duration",
+  "historyId" : "296c843106f019f44f0537c523c42ad4",
+  "time" : {
+    "start" : 1586671112725,
+    "stop" : 1586671112730,
+    "duration" : 5
+  },
+  "description" : "\n        Test a function which formats a duration,\n        given as a number of seconds, in a human-friendly way.\n\n        The function must accept a non-negative integer.\n        If it is zero, it just returns \"now\". Otherwise,\n        the duration is expressed as a combination of years,\n        days, hours, minutes and seconds.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function which formats a duration, given as a number of seconds, in a human-friendly way.</p><p>The function must accept a non-negative integer. If it is zero, it just returns \"now\". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1586671112723,
+      "stop" : 1586671112723,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function which formats a duration,\n        given as a number of seconds, in a human-friendly way.\n\n        The function must accept a non-negative integer.\n        If it is zero, it just returns \"now\". Otherwise,\n        the duration is expressed as a combination of years,\n        days, hours, minutes and seconds.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function which formats a duration, given as a number of seconds, in a human-friendly way.</p><p>The function must accept a non-negative integer. If it is zero, it just returns \"now\". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter seconds (1) and verify the expected output (1 second) vs actual result (1 second)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112726,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (62) and verify the expected output (1 minute and 2 seconds) vs actual result (1 minute and 2 seconds)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112726,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (120) and verify the expected output (2 minutes) vs actual result (2 minutes)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112726,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (3600) and verify the expected output (1 hour) vs actual result (1 hour)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112726,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (3662) and verify the expected output (1 hour, 1 minute and 2 seconds) vs actual result (1 hour, 1 minute and 2 seconds)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112726,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (15731080) and verify the expected output (182 days, 1 hour, 44 minutes and 40 seconds) vs actual result (182 days, 1 hour, 44 minutes and 40 seconds)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112726,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (132030240) and verify the expected output (4 years, 68 days, 3 hours and 4 minutes) vs actual result (4 years, 68 days, 3 hours and 4 minutes)",
+      "time" : {
+        "start" : 1586671112726,
+        "stop" : 1586671112729,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (205851834) and verify the expected output (6 years, 192 days, 13 hours, 3 minutes and 54 seconds) vs actual result (6 years, 192 days, 13 hours, 3 minutes and 54 seconds)",
+      "time" : {
+        "start" : 1586671112729,
+        "stop" : 1586671112729,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (253374061) and verify the expected output (8 years, 12 days, 13 hours, 41 minutes and 1 second) vs actual result (8 years, 12 days, 13 hours, 41 minutes and 1 second)",
+      "time" : {
+        "start" : 1586671112729,
+        "stop" : 1586671112729,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (242062374) and verify the expected output (7 years, 246 days, 15 hours, 32 minutes and 54 seconds) vs actual result (7 years, 246 days, 15 hours, 32 minutes and 54 seconds)",
+      "time" : {
+        "start" : 1586671112729,
+        "stop" : 1586671112729,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (101956166) and verify the expected output (3 years, 85 days, 1 hour, 9 minutes and 26 seconds) vs actual result (3 years, 85 days, 1 hour, 9 minutes and 26 seconds)",
+      "time" : {
+        "start" : 1586671112729,
+        "stop" : 1586671112729,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (33243586) and verify the expected output (1 year, 19 days, 18 hours, 19 minutes and 46 seconds) vs actual result (1 year, 19 days, 18 hours, 19 minutes and 46 seconds)",
+      "time" : {
+        "start" : 1586671112729,
+        "stop" : 1586671112729,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter seconds (9041160) and verify the expected output (104 days, 15 hours and 26 minutes) vs actual result (104 days, 15 hours and 26 minutes)",
+      "time" : {
+        "start" : 1586671112729,
+        "stop" : 1586671112729,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d457aac6e5361708",
+      "name" : "stdout",
+      "source" : "d457aac6e5361708.txt",
+      "type" : "text/plain",
+      "size" : 1515
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1586671112731,
+      "stop" : 1586671112731,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "tag",
+    "value" : "FORMATS"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "DATES/TIME"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "epic",
+    "value" : "4 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "FORMATTING"
+  }, {
+    "name" : "story",
+    "value" : "Human readable duration format"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9884-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_4.human_readable_duration_format.test_format_duration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "31bf957c29372d17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586394912663,
+        "stop" : 1586394912667,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "24808f7a217f3fc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586373704635,
+        "stop" : 1586373704638,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "beed89d38a234f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586327730218,
+        "stop" : 1586327730221,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "61aa493e86c1f5c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586122340705,
+        "stop" : 1586122340708,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4bc134d2b729b0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586121728170,
+        "stop" : 1586121728172,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b49184c020e74001",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586111459413,
+        "stop" : 1586111459415,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1a403a0e74280463",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586068462536,
+        "stop" : 1586068462549,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "729c68cb2f0ee3c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584817507586,
+        "stop" : 1584817507591,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "914959f88c893836",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584816664712,
+        "stop" : 1584816664714,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d8058da19ed442ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584256243229,
+        "stop" : 1584256243234,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "ef9a5e3865c43940",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584255528951,
+        "stop" : 1584255528956,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "433511c5250ba52e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584252159380,
+        "stop" : 1584252159384,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "238f71da24ed1e7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584251097177,
+        "stop" : 1584251097179,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f80f48de9e6730c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584250524429,
+        "stop" : 1584250524431,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c3b843bad1f1b374",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246519646,
+        "stop" : 1584246519648,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cbbfbbe6fc0c352c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246345648,
+        "stop" : 1584246345652,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "f1f662e039989fea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246169239,
+        "stop" : 1584246169242,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "2c5d443239aea3c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583887937058,
+        "stop" : 1583887937061,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d890007104e035d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583884071364,
+        "stop" : 1583884071368,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "e0180fbdd3f739fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583883091732,
+        "stop" : 1583883091735,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c4632210984f2a56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582772536638,
+        "stop" : 1582772536641,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "fdfb6aaebbdef258",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434203553,
+        "stop" : 1582434203555,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d73cf3b524ba39e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582434076228,
+        "stop" : 1582434076231,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dd52c675a6457f39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581998959140,
+        "stop" : 1581998959143,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "637bc47b4b2054b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581908959419,
+        "stop" : 1581908959422,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a53deec890cc38b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581897530069,
+        "stop" : 1581897530072,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4083ebd9da8cbd55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581829130471,
+        "stop" : 1581829130477,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "535fa663da5b8e75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581828903851,
+        "stop" : 1581828903855,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "323252b1869d331a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581827421877,
+        "stop" : 1581827421880,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "202dd6f035f61361",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580696888739,
+        "stop" : 1580696888745,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d073bcc732a316ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694857729,
+        "stop" : 1580694857733,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8f342be9b3ba2697",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580694175032,
+        "stop" : 1580694175037,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "b043f7cea775c8e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580588583165,
+        "stop" : 1580588583168,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b141a9b4356ee896",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580093584294,
+        "stop" : 1580093584300,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "b1f2f7401a9563ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580092931211,
+        "stop" : 1580092931214,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "84442e8cf254f6c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580016116828,
+        "stop" : 1580016116833,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "86f953da1b2ab1d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580015502030,
+        "stop" : 1580015502034,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "bb50487922b7de11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580011917120,
+        "stop" : 1580011917123,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d9dfb9db5494a7f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579746651853,
+        "stop" : 1579746651857,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8d3dc0387c1ee8f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579733199615,
+        "stop" : 1579733199617,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fe0b6c7b4557f042",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579486687673,
+        "stop" : 1579486687678,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "2a43a1ee91e6f91e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579482234389,
+        "stop" : 1579482234392,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "bfe87848cf910998",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579476680764,
+        "stop" : 1579476680768,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "9bd8ea5949e6754",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579417126675,
+        "stop" : 1579417126679,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "bfe778a5f87b8090",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579416090361,
+        "stop" : 1579416090364,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9262d167b86b77ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579407048607,
+        "stop" : 1579407048611,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "cbc2e15508ca5e0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406490837,
+        "stop" : 1579406490841,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "79d0bc58c8a4974b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579406085825,
+        "stop" : 1579406085829,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "2d24bed373aef6cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579151844786,
+        "stop" : 1579151844789,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3df1959d7415194e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578812684569,
+        "stop" : 1578812684575,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "11427ce816c67e71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810673983,
+        "stop" : 1578810673988,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "9df942bb78e90135",
+      "status" : "broken",
+      "statusDetails" : "TypeError: description() missing 1 required positional argument: 'test_description'",
+      "time" : {
+        "start" : 1578810574032,
+        "stop" : 1578810574033,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "96539555f3b83836",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578810138051,
+        "stop" : 1578810138055,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "1a5ff5206314985a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578809489370,
+        "stop" : 1578809489372,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9af9d25da5e8ede1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808951086,
+        "stop" : 1578808951089,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ac24b6ca50b39f7d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578808369939,
+        "stop" : 1578808369942,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "14f3edcc081538bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578803682787,
+        "stop" : 1578803682789,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8d0db081f90fd878",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578802613632,
+        "stop" : 1578802613636,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "cf21cfe5035bf814",
+      "status" : "passed",
+      "time" : {
+        "start" : 1578801841481,
+        "stop" : 1578801841483,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c448927ca8c9c0c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577672192187,
+        "stop" : 1577672192190,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8b9a3cfd98fe0ce7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577669953240,
+        "stop" : 1577669953242,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "564807dd58873ba2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577327508825,
+        "stop" : 1577327508827,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "bef7ec709b80d4af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577321735478,
+        "stop" : 1577321735480,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2d4c1174ed29cca0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577063533806,
+        "stop" : 1577063533810,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "9b655ba2ac785aff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577062098774,
+        "stop" : 1577062098776,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "803d31b8174bae33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577059476963,
+        "stop" : 1577059476964,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "732ff2f1366e7a43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576388867253,
+        "stop" : 1576388867255,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "989528fd02aa1ef0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576387265586,
+        "stop" : 1576387265589,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1a095bf6ad02a5fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575862137476,
+        "stop" : 1575862137478,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4b5a0ee0154be989",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760676006,
+        "stop" : 1575760676009,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4e90003f3527edc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575760564712,
+        "stop" : 1575760564718,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "dddb16c96b6a8887",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227957459,
+        "stop" : 1575227957460,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ac89f39a16b9c231",
+      "status" : "passed",
+      "time" : {
+        "start" : 1575227882498,
+        "stop" : 1575227882501,
+        "duration" : 3
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "f443930699b4d418",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586671112725,
+          "stop" : 1586671112730,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "957e31f1f2904508",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586671112725,
+          "stop" : 1586671112730,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "316b6a3e20c36301",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586671112725,
+          "stop" : 1586671112730,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "5e41122be0dd90cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586394912663,
+          "stop" : 1586394912667,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "a681a4857445dafc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586327730218,
+          "stop" : 1586327730221,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "FORMATTING", "DATES/TIME", "FORMATS", "ALGORITHMS" ]
+  },
+  "source" : "6f64e4dce81da03.json",
+  "parameterValues" : [ ]
+}

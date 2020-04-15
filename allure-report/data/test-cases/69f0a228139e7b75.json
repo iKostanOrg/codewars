@@ -1,0 +1,1508 @@
+{
+  "uid" : "69f0a228139e7b75",
+  "name" : "'fix_the_meerkat function function verification",
+  "fullName" : "kyu_8.my_head_is_at_the_wrong_end.test_fix_the_meerkat.FixTheMeerkatTestCase#test_fix_the_meerkat",
+  "historyId" : "a395a9db7232cf7ff71fff0b2b91cd35",
+  "time" : {
+    "start" : 1586671117707,
+    "stop" : 1586671117708,
+    "duration" : 1
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1586671117706,
+      "stop" : 1586671117706,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data: ['tail', 'body', 'head'] and assert actual result: ['head', 'body', 'tail'] vs expected: ['head', 'body', 'tail']",
+      "time" : {
+        "start" : 1586671117707,
+        "stop" : 1586671117707,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test data: ['tails', 'body', 'heads'] and assert actual result: ['heads', 'body', 'tails'] vs expected: ['heads', 'body', 'tails']",
+      "time" : {
+        "start" : 1586671117707,
+        "stop" : 1586671117707,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test data: ['bottom', 'middle', 'top'] and assert actual result: ['top', 'middle', 'bottom'] vs expected: ['top', 'middle', 'bottom']",
+      "time" : {
+        "start" : 1586671117707,
+        "stop" : 1586671117707,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test data: ['lower legs', 'torso', 'upper legs'] and assert actual result: ['upper legs', 'torso', 'lower legs'] vs expected: ['upper legs', 'torso', 'lower legs']",
+      "time" : {
+        "start" : 1586671117707,
+        "stop" : 1586671117707,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test data: ['ground', 'rainbow', 'sky'] and assert actual result: ['sky', 'rainbow', 'ground'] vs expected: ['sky', 'rainbow', 'ground']",
+      "time" : {
+        "start" : 1586671117707,
+        "stop" : 1586671117708,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f73ad8bd73fb5b3d",
+      "name" : "stdout",
+      "source" : "f73ad8bd73fb5b3d.txt",
+      "type" : "text/plain",
+      "size" : 611
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1586671117709,
+      "stop" : 1586671117709,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "LISTS"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "story",
+    "value" : "My head is at the wrong end!"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "tag",
+    "value" : "DATA STRUCTURES"
+  }, {
+    "name" : "suite",
+    "value" : "Data Structures"
+  }, {
+    "name" : "feature",
+    "value" : "Lists"
+  }, {
+    "name" : "tag",
+    "value" : "ARRAYS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9884-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.my_head_is_at_the_wrong_end.test_fix_the_meerkat"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/56f699cd9400f5b7d8000b55/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f0dd8788ab016586",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586394917882,
+        "stop" : 1586394917883,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9c018a72d756b945",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586373707206,
+        "stop" : 1586373707207,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4fbd823f4e282d45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586327733155,
+        "stop" : 1586327733157,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "53ff3b412e9db669",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586122343066,
+        "stop" : 1586122343067,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "535b068dc8774654",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586121730572,
+        "stop" : 1586121730573,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6ba52b575f7f1b6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586111461759,
+        "stop" : 1586111461760,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "76d2ccee4319420c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586068467644,
+        "stop" : 1586068467646,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d17b72017a7688d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584817512107,
+        "stop" : 1584817512109,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f33064d977d746b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584816667156,
+        "stop" : 1584816667158,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b20823b57aa41da9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584256245933,
+        "stop" : 1584256245935,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b579ded493863858",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584255531416,
+        "stop" : 1584255531418,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f519d16c8323466a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584252162659,
+        "stop" : 1584252162661,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5ecb1c63f20708a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584251099487,
+        "stop" : 1584251099492,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "34a7a8bd90447ccf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584250527528,
+        "stop" : 1584250527529,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "13d8a20b0ebcc436",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246522407,
+        "stop" : 1584246522411,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "810190a1fa275ab7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246348578,
+        "stop" : 1584246348582,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "42d67291c536cb68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584246172124,
+        "stop" : 1584246172126,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8caa97dccb239aaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583887943288,
+        "stop" : 1583887943290,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a0f7d5d30f801035",
+      "status" : "passed",
+      "time" : {
+        "start" : 1583884073800,
+        "stop" : 1583884073801,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "404db2894c6a0a23",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1583883093991,
+        "stop" : 1583883093991,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a4f8de9bbc41728a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1582772539640,
+        "stop" : 1582772539640,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4da83c171adf5424",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1582434205066,
+        "stop" : 1582434205066,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5dace1184e80e4fb",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1582434078420,
+        "stop" : 1582434078420,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ffdf5a49c1e038cf",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1581998962284,
+        "stop" : 1581998962284,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ce8d97e34c2dc5af",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1581908961693,
+        "stop" : 1581908961693,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c6d775578f03744a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1581897532192,
+        "stop" : 1581897532192,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ad27f9d43406b02e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1581829133549,
+        "stop" : 1581829133549,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e228a9dd25f79cff",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1581828906067,
+        "stop" : 1581828906067,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8ba4246612e4f616",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1581827424502,
+        "stop" : 1581827424502,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b19914c2c0d773a7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580696890914,
+        "stop" : 1580696890915,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a960beef314757b7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580694860813,
+        "stop" : 1580694860813,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2ac79d09e33a1e48",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580694177813,
+        "stop" : 1580694177813,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f914e596ffd90d3c",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580588585612,
+        "stop" : 1580588585612,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a46fb1ad549cb8b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580093588580,
+        "stop" : 1580093588580,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "240260109edc84e2",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580092933323,
+        "stop" : 1580092933323,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "34aaa7c6cc8563fb",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580016118888,
+        "stop" : 1580016118888,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d944c85057c4615b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580015504133,
+        "stop" : 1580015504133,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "510b5725bba8a8e8",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1580011919574,
+        "stop" : 1580011919574,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b8fc186e495354b5",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579746654079,
+        "stop" : 1579746654079,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea3474ecbf1d33c6",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579733201641,
+        "stop" : 1579733201641,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "222ea80bc81ec678",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579486689506,
+        "stop" : 1579486689506,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7ff288cd12ba1f98",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579482236439,
+        "stop" : 1579482236439,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5ea358d71dfd3cfe",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579476683577,
+        "stop" : 1579476683577,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8bede33408496aee",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579417129507,
+        "stop" : 1579417129507,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ee654018d2925a5d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579416092327,
+        "stop" : 1579416092327,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4b4d9cc1fe7c0062",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579407050618,
+        "stop" : 1579407050618,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "943e6b00ddf4b078",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579406492867,
+        "stop" : 1579406492867,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "dab9f3f2a6765447",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579406087827,
+        "stop" : 1579406087827,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "984d5483bcca3acc",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1579151846985,
+        "stop" : 1579151846985,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "64d58d5443f9c203",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578812686515,
+        "stop" : 1578812686515,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6abfc545f36beae6",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578810676086,
+        "stop" : 1578810676086,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5c265293a456bc2e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578810575948,
+        "stop" : 1578810575948,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e8bd3cd951012d98",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578810139965,
+        "stop" : 1578810139965,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "314baca650181e10",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578809491309,
+        "stop" : 1578809491309,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f1dec17eef81f454",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578808953202,
+        "stop" : 1578808953202,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7fa4b7e571b0aa1b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578808372292,
+        "stop" : 1578808372292,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3e0e7c71168e8b89",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578803684949,
+        "stop" : 1578803684949,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "436fcbc01967cf5d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578802615839,
+        "stop" : 1578802615839,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e1c52a8fa2c39c34",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1578801843834,
+        "stop" : 1578801843834,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f3c36a4f1040be42",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577672194305,
+        "stop" : 1577672194305,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d708f76a25e9032b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577669955389,
+        "stop" : 1577669955389,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "126688d7c9ae6f9",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577327511203,
+        "stop" : 1577327511203,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6d80721095ebffaf",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577321737467,
+        "stop" : 1577321737467,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "efae715b4dda00f6",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577063535765,
+        "stop" : 1577063535765,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4439beefe2d10e2a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577062101103,
+        "stop" : 1577062101103,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "597be52ca86c2f7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1577059479316,
+        "stop" : 1577059479316,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5d829d48ad38cd65",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1576388869101,
+        "stop" : 1576388869101,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "698da2b623ac97da",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1576387267598,
+        "stop" : 1576387267598,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a7d6a6c8e575ea54",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1575862139509,
+        "stop" : 1575862139509,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b42f81f8f002cb1a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1575760677704,
+        "stop" : 1575760677704,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3fc3353901274bee",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1575760569221,
+        "stop" : 1575760569221,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ed0bd55335152a6a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1575227959552,
+        "stop" : 1575227959552,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "44d8fe4343ee263e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1575227884421,
+        "stop" : 1575227884421,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "55c9ba84e57749a4",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1575221463546,
+        "stop" : 1575221463546,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6d1eb22e88023d40",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574618605448,
+        "stop" : 1574618605448,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f36c51fb87c7e032",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574616400041,
+        "stop" : 1574616400041,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fc06fea68e5ebb8f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574616297626,
+        "stop" : 1574616297626,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ee42eba40c9e0b31",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574615798089,
+        "stop" : 1574615798089,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fc27bc48941ee9de",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574615722763,
+        "stop" : 1574615722763,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "85418d7dceddb49a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574018664832,
+        "stop" : 1574018664832,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8030a2eb6e62911d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1574012906789,
+        "stop" : 1574012906789,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2c4a0d0bf9944246",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573966634220,
+        "stop" : 1573966634220,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "17964e6615c030a8",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573956298284,
+        "stop" : 1573956298284,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "75afd96936393ff3",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573517401205,
+        "stop" : 1573517401205,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d6ea070634a9524d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573517320039,
+        "stop" : 1573517320039,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2a851b052f0bf787",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573514551201,
+        "stop" : 1573514551201,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "81a4e154ff658215",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573189086223,
+        "stop" : 1573189086223,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a41d4703c5a4a9c9",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573180174749,
+        "stop" : 1573180174749,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7882113ca7e13dee",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573079197622,
+        "stop" : 1573079197622,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4e1fcc38ee0c0258",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573078943877,
+        "stop" : 1573078943877,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b5fcbd92bd0b1f86",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573078484749,
+        "stop" : 1573078484749,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7ee35a29f4d32664",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573073330166,
+        "stop" : 1573073330166,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "302bf65873f148bf",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1573071122433,
+        "stop" : 1573071122433,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4b097e0f626e7f50",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572811011474,
+        "stop" : 1572811011474,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "904626b4520331a9",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572724431233,
+        "stop" : 1572724431233,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c3230e69f4ab0f57",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572577219631,
+        "stop" : 1572577219631,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5fd3127fb82c2c8e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572577073455,
+        "stop" : 1572577073455,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a9bb694ce049b0b5",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572577033626,
+        "stop" : 1572577033626,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8e64cea818eecc28",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572574525307,
+        "stop" : 1572574525307,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5827f16394fd4cc1",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572494545790,
+        "stop" : 1572494545790,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b6c09d06980a59cc",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572493350034,
+        "stop" : 1572493350034,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "747a5cacc05c0c6d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572462847533,
+        "stop" : 1572462847533,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "66b653f1074c905d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572459877402,
+        "stop" : 1572459877402,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7334701c6674bd4c",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572412530560,
+        "stop" : 1572412530560,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cfa0cee45208c58e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572410671598,
+        "stop" : 1572410671598,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a5468e2dd512ad25",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572410582797,
+        "stop" : 1572410582797,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e74d26d98631d0ad",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572406854531,
+        "stop" : 1572406854531,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "41dc103d9f633106",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572404499523,
+        "stop" : 1572404499523,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2d1b2bd3f2e5cfe3",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572403395038,
+        "stop" : 1572403395038,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9f78dee7807d4d1f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572403330687,
+        "stop" : 1572403330687,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "27c13bbdd92edf07",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572332688351,
+        "stop" : 1572332688351,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ba4012b4d5d2ba0c",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572332650949,
+        "stop" : 1572332650949,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ce52c828fc884d87",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572328975743,
+        "stop" : 1572328975743,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bc56657ca9c1ddeb",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572328944798,
+        "stop" : 1572328944798,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "104acd0b9fa0f738",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572322295642,
+        "stop" : 1572322295642,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "407f752427a0344",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572318569291,
+        "stop" : 1572318569291,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6934a1e4a882466d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572313547787,
+        "stop" : 1572313547787,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fac383e8c45648d0",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572311281904,
+        "stop" : 1572311281904,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1ae00ad7ecf59451",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572233514602,
+        "stop" : 1572233514602,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "394c8925b69e40eb",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572233474979,
+        "stop" : 1572233474979,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2da2058e7ab453f9",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1572134836545,
+        "stop" : 1572134836545,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "814269a510d1201b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571976479998,
+        "stop" : 1571976479998,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "14452a41b7b34d75",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571970169158,
+        "stop" : 1571970169158,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "caf89f155b3d75da",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571970024654,
+        "stop" : 1571970024654,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6414f5f3292f9a78",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571969979769,
+        "stop" : 1571969979769,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d39fa5a16df3481a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571961122817,
+        "stop" : 1571961122817,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "34082746c56fd6bd",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571961082533,
+        "stop" : 1571961082533,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "189a5b39f17c1e68",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571957490600,
+        "stop" : 1571957490600,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2e7e8bc0d42f6d19",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571957330863,
+        "stop" : 1571957330863,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "989c3808e7178d82",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571956038801,
+        "stop" : 1571956038801,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9bf3d7f1e6fb4f37",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571955799825,
+        "stop" : 1571955799825,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8459d6227daf9856",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571889694120,
+        "stop" : 1571889694120,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ac9731d0e663cbc",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571887994890,
+        "stop" : 1571887994890,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "302990f5159a5c94",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571884299929,
+        "stop" : 1571884299929,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d3e7e0a8209fdd85",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571883145422,
+        "stop" : 1571883145422,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b4241e471f644f7f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571881374955,
+        "stop" : 1571881374955,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9d83c8e263353861",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571871245604,
+        "stop" : 1571871245604,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea2a705b7ef8d641",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571866231917,
+        "stop" : 1571866231917,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5b2041cadee6959b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571865530098,
+        "stop" : 1571865530098,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1da0d92ae8157d8b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571865468175,
+        "stop" : 1571865468175,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b539260992abc5b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: The solution is not ready",
+      "time" : {
+        "start" : 1571863593141,
+        "stop" : 1571863593141,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "ce596bbf74977c44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586671117707,
+          "stop" : 1586671117708,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f35f30529ecf0c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586671117707,
+          "stop" : 1586671117708,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "bcceb70f21cd4867",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586671117707,
+          "stop" : 1586671117708,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "23abc6d7502e9911",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586394917882,
+          "stop" : 1586394917883,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "73399c830e951570",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586327733155,
+          "stop" : 1586327733157,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "LISTS", "ALGORITHMS", "DATA STRUCTURES", "ARRAYS" ]
+  },
+  "source" : "69f0a228139e7b75.json",
+  "parameterValues" : [ ]
+}
