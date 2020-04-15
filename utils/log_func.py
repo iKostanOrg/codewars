@@ -12,7 +12,7 @@ def print_log(**kwargs) -> None:
 
 	log = ''
 	for key in kwargs:
-		log += '{}: {}, '.format(key, kwargs[key])
+		log += '{}: {},\n'.format(key, kwargs[key])
 
 	print('\nLOG =>\n{}\n'.format(log[:-2]))
 	return None
