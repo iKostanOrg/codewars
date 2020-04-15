@@ -16,7 +16,7 @@ from kyu_6.array_to_html_table.to_table import to_table
 @allure.sub_suite("Unit Tests")
 @allure.feature('Lists')
 @allure.story('Array to HTML table')
-@allure.tag('FUNDAMENTALS', 'ARRAYS')
+@allure.tag('FUNDAMENTALS', 'ARRAYS', 'LISTS')
 @allure.link(url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python',
              name='Source/Kata')
 class ToTableTestCase(unittest.TestCase):
@@ -24,7 +24,7 @@ class ToTableTestCase(unittest.TestCase):
     Testing to_table function
     """
 
-    def test_to_table(self):
+    def test_to_table_function(self):
         allure.dynamic.title("Testing to_table function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
