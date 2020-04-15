@@ -395,4 +395,3 @@ This fix worked for me (but as of 26-Jan-2020 you have to wipe out the environme
 
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
 </details>
-
