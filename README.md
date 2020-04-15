@@ -19,7 +19,6 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/ikostan/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ikostan/codewars?targetFile=requirements.txt)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
-
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
 <div align="center"> 
