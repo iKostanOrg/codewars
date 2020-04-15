@@ -32,6 +32,7 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
     """
     Takes three arguments: data, headers, index, and returns
     a string containing HTML tags representing the table.
+
     :param data: a 2D array (list)
     :param header: an optional boolean value. If True, the first row of
                    the array is considered a header, defaults to False
@@ -54,11 +55,10 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
                                                    TABLE['header']['start'],
                                                    TABLE['header']['end'])
 
-            for b, col in enumerate(row):
-                rows_and_columns = '{}{}{}{}'.format(rows_and_columns,
-                                                     TABLE['header']['start'],
-                                                     col,
-                                                     TABLE['header']['end'])
+            rows_and_columns += ''.join('{}{}{}'.format(TABLE['header']['start'],
+                                                        col,
+                                                        TABLE['header']['end'])
+                                        for b, col in enumerate(row))
 
             rows_and_columns = '{}{}{}'.format(rows_and_columns,
                                                TABLE['row']['end'],
@@ -77,11 +77,9 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
                                                      i if header else i + 1,
                                                      TABLE['column']['end'])
 
-            for col in row:
-                rows_and_columns = '{}{}{}{}'.format(rows_and_columns,
-                                                     TABLE['column']['start'],
-                                                     '' if col is None else col,
-                                                     TABLE['column']['end'])
+            rows_and_columns += ''.join('{}{}{}'.format(TABLE['column']['start'],
+                                                        '' if col is None else col,
+                                                        TABLE['column']['end']) for col in row)
 
             rows_and_columns = '{}{}'.format(rows_and_columns,
                                              TABLE['row']['end'])
