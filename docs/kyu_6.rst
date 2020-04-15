@@ -34,6 +34,7 @@ Subpackages
    kyu_6.color_choice
    kyu_6.default_list
    kyu_6.easy_diagonal
+   kyu_6.array_to_html_table
 
 Module contents
 ---------------
