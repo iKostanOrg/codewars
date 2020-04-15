@@ -19,12 +19,12 @@ from kyu_6.array_to_html_table.to_table import to_table
 @allure.tag('FUNDAMENTALS', 'ARRAYS', 'LISTS')
 @allure.link(url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python',
              name='Source/Kata')
-class ToTableTestCase(unittest.TestCase):
+class ArrayToTableTestCase(unittest.TestCase):
     """
     Testing to_table function
     """
 
-    def test_to_table_function(self):
+    def test_array_to_table_function(self):
         allure.dynamic.title("Testing to_table function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -97,10 +97,9 @@ class ToTableTestCase(unittest.TestCase):
             data: list = test_item["input"][0]
             header = test_item["input"][1] if len(test_item["input"]) > 1 else False
             index: bool = test_item["input"][2] if len(test_item["input"]) > 2 else False
-            actual_result = to_table(data, header, index)
             expected = test_item["output"]
+            actual_result = to_table(data, header, index)
 
-            with allure.step("Enter a test data and verify the expected output ({}) "
-                             "vs actual result ({})".format(expected, actual_result)):
+            with allure.step("Enter a test data and verify the expected output vs actual result"):
                 print_log(exp=expected, res=actual_result)
                 self.assertEqual(expected, actual_result)
