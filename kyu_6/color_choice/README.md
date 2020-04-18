@@ -30,5 +30,4 @@ checkchoose(a, 50) --> 20
 checkchoose(a + 1, 50) --> -1
 ```
 
-
 [Source](https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python)
