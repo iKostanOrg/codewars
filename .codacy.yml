@@ -1,0 +1,21 @@
+engines:
+    coverage:
+        enabled: true
+    metrics:
+        enabled: true
+    duplication:
+        enabled: true
+    prospector:
+        enabled: true
+    pylint:
+        enabled: true
+        python_version: 3.7
+
+exclude_paths: [
+    'docs/**',
+    'allure-report/**',
+    'img/**',
+    '.circleci/**',
+    '.circleci/**',
+    '.github/**'
+]
