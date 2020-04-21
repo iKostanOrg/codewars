@@ -1,0 +1,273 @@
+{
+  "uid" : "c4181a9dfed13924",
+  "name" : "Testing sum_of_intervals function",
+  "fullName" : "kyu_4.sum_of_intervals.test_sum_of_intervals.SumOfIntervalsTestCase#test_sum_of_intervals",
+  "historyId" : "f33ef5393ae0b8067a498b7663b7a090",
+  "time" : {
+    "start" : 1586936996222,
+    "stop" : 1586936996227,
+    "duration" : 5
+  },
+  "description" : "\n        Testing sum_of_intervals function\n\n        The function should accept an array of intervals,\n        and return the sum of all the interval lengths.\n\n        Overlapping intervals should only be counted once.\n\n        Intervals\n        Intervals are represented by a pair of integers in\n        the form of an array. The first value of the interval\n        will always be less than the second value.\n        Interval example: [1, 5] is an interval from 1 to 5.\n        The length of this interval is 4.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Testing sum_of_intervals function<p>The function should accept an array of intervals, and return the sum of all the interval lengths.<p>Overlapping intervals should only be counted once.<p>Intervals</p><p>Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1586936996221,
+      "stop" : 1586936996221,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing sum_of_intervals function\n\n        The function should accept an array of intervals,\n        and return the sum of all the interval lengths.\n\n        Overlapping intervals should only be counted once.\n\n        Intervals\n        Intervals are represented by a pair of integers in\n        the form of an array. The first value of the interval\n        will always be less than the second value.\n        Interval example: [1, 5] is an interval from 1 to 5.\n        The length of this interval is 4.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Testing sum_of_intervals function<p>The function should accept an array of intervals, and return the sum of all the interval lengths.<p>Overlapping intervals should only be counted once.<p>Intervals</p><p>Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a list of intervals ([(1, 5)]), calculate the result (4) and compare vs expected (4)",
+      "time" : {
+        "start" : 1586936996223,
+        "stop" : 1586936996223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(1, 5), (6, 10)]), calculate the result (8) and compare vs expected (8)",
+      "time" : {
+        "start" : 1586936996223,
+        "stop" : 1586936996223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(1, 5)]), calculate the result (4) and compare vs expected (4)",
+      "time" : {
+        "start" : 1586936996223,
+        "stop" : 1586936996223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(7, 10), (1, 5)]), calculate the result (7) and compare vs expected (7)",
+      "time" : {
+        "start" : 1586936996223,
+        "stop" : 1586936996224,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(476, 493), (-484, 428)]), calculate the result (929) and compare vs expected (929)",
+      "time" : {
+        "start" : 1586936996224,
+        "stop" : 1586936996224,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(-473, 476)]), calculate the result (949) and compare vs expected (949)",
+      "time" : {
+        "start" : 1586936996224,
+        "stop" : 1586936996224,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(-419, 500)]), calculate the result (919) and compare vs expected (919)",
+      "time" : {
+        "start" : 1586936996225,
+        "stop" : 1586936996225,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(-153, 312), (360, 469)]), calculate the result (574) and compare vs expected (574)",
+      "time" : {
+        "start" : 1586936996225,
+        "stop" : 1586936996226,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a list of intervals ([(456, 494), (-500, 436)]), calculate the result (974) and compare vs expected (974)",
+      "time" : {
+        "start" : 1586936996226,
+        "stop" : 1586936996226,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "3d6718fe76361c1",
+      "name" : "stdout",
+      "source" : "3d6718fe76361c1.txt",
+      "type" : "text/plain",
+      "size" : 639
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1586936996228,
+      "stop" : 1586936996228,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "MATHEMATICS"
+  }, {
+    "name" : "tag",
+    "value" : "AGGREGATIONS"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "tag",
+    "value" : "ARITHMETIC"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "epic",
+    "value" : "4 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "tag",
+    "value" : "INTEGERS"
+  }, {
+    "name" : "story",
+    "value" : "Sum of Intervals"
+  }, {
+    "name" : "feature",
+    "value" : "Aggregations"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "10720-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_4.sum_of_intervals.test_sum_of_intervals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "MATHEMATICS", "NUMBERS", "INTEGERS", "ARITHMETIC", "AGGREGATIONS", "ALGORITHMS" ]
+  },
+  "source" : "c4181a9dfed13924.json",
+  "parameterValues" : [ ]
+}
