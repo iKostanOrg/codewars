@@ -35,6 +35,7 @@ Subpackages
    kyu_6.default_list
    kyu_6.easy_diagonal
    kyu_6.array_to_html_table
+   kyu_6.rotate_the_letters_of_each_element
 
 Module contents
 ---------------
