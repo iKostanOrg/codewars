@@ -40,7 +40,7 @@ class OrderTestCase(unittest.TestCase):
         :return:
         """
 
-        allure.dynamic.title("Testing the 'order' function")
+        allure.dynamic.title("Testing 'order' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
                                         '<img src="https://www.codewars.com/users/myFirstCode'
