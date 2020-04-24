@@ -37,6 +37,7 @@ Subpackages
    kyu_6.array_to_html_table
    kyu_6.rotate_the_letters_of_each_element
    kyu_6.number_zoo_patrol
+   kyu_6.your_order_please
 
 Module contents
 ---------------
