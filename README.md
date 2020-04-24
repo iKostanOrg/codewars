@@ -44,7 +44,7 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 * [2 kyu](https://github.com/ikostan/codewars/tree/master/kyu_2)
 * [1 kyu](https://github.com/ikostan/codewars/tree/master/kyu_1)
 
-### My profile
+### My profile on Codewars
 
 <div align="left">
 <img src="https://www.codewars.com/users/myFirstCode/badges/large">
