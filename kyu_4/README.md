@@ -21,5 +21,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |3    |[Sudoku Solution Validator](https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python)                    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sudoku_solution_validator)      |
 |4    |[Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/python)                             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/range_extraction)               |
 |5    |[Validate Sudoku with size `NxN`](https://www.codewars.com/kata/540afbe2dc9f615d5e000425/train/python)              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/validate_sudoku_with_size)      |
+|6    |[Strip Comments](https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python)                               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strip_comments)                 |
 
 [Source](https://www.codewars.com/about)
