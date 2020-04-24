@@ -19,9 +19,9 @@ def order(sentence: str) -> str:
 	:return: sorted string
 	"""
 	results = list()
-	sentence = sentence.split()
+	words = sentence.split()
 	for i in range(1, 10):
-		for word in sentence:
+		for word in words:
 			if str(i) in word:
 				results.append(word)
 				break
