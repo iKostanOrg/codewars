@@ -4,67 +4,67 @@
 
 
 def validSolution(board: list) -> bool:
-	"""
-	A function validSolution/ValidateSolution/valid_solution()
-	that accepts a 2D array representing a Sudoku board,
-	and returns true if it is a valid solution, or false otherwise
-	:param board:
-	:return:
-	"""
-	return all([test_horizontally(board),
-	            test_vertically(board),
-	            test_sub_grids(board)])
+    """
+    A function validSolution/ValidateSolution/valid_solution()
+    that accepts a 2D array representing a Sudoku board,
+    and returns true if it is a valid solution, or false otherwise
+    :param board:
+    :return:
+    """
+    return all([test_horizontally(board),
+                test_vertically(board),
+                test_sub_grids(board)])
 
 
 def test_horizontally(board: list) -> bool:
-	"""
-	test horizontally
-	"""
+    """
+    test horizontally
+    """
 
-	for row in board:
-		if sorted(row) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-			return False
-	return True
+    for row in board:
+        if sorted(row) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+            return False
+    return True
 
 
 def test_vertically(board: list) -> bool:
-	"""
-	test vertically
-	"""
+    """
+    test vertically
+    """
 
-	i = 0
-	while i < 9:
-		col = []
-		for row in board:
-			col.append(row[i])
-		if sorted(col) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-			return False
-		i += 1
-	return True
+    i = 0
+    while i < 9:
+        col = []
+        for row in board:
+            col.append(row[i])
+        if sorted(col) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+            return False
+        i += 1
+    return True
 
 
 def test_sub_grids(board: list) -> bool:
-	"""
-	test each of the nine 3x3 sub-grids
-	(also known as blocks)
-	"""
+    """
+    test each of the nine 3x3 sub-grids
+    (also known as blocks)
+    """
 
-	sub_grids = [
-		board[0][0:3] + board[1][0:3] + board[2][0:3],
-		board[0][3:6] + board[1][3:6] + board[2][3:6],
-		board[0][6:] + board[1][6:] + board[2][6:],
+    sub_grids = [
+        board[0][0:3] + board[1][0:3] + board[2][0:3],
+        board[0][3:6] + board[1][3:6] + board[2][3:6],
+        board[0][6:] + board[1][6:] + board[2][6:],
 
-		board[3][0:3] + board[4][0:3] + board[5][0:3],
-		board[3][3:6] + board[4][3:6] + board[5][3:6],
-		board[3][6:] + board[4][6:] + board[5][6:],
+        board[3][0:3] + board[4][0:3] + board[5][0:3],
+        board[3][3:6] + board[4][3:6] + board[5][3:6],
+        board[3][6:] + board[4][6:] + board[5][6:],
 
-		board[6][0:3] + board[7][0:3] + board[8][0:3],
-		board[6][3:6] + board[7][3:6] + board[8][3:6],
-		board[6][6:] + board[7][6:] + board[8][6:],
-	]
+        board[6][0:3] + board[7][0:3] + board[8][0:3],
+        board[6][3:6] + board[7][3:6] + board[8][3:6],
+        board[6][6:] + board[7][6:] + board[8][6:],
+    ]
 
-	for row in sub_grids:
-		if sorted(row) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-			return False
+    for row in sub_grids:
+        if sorted(row) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+            return False
 
-	return True
+    return True
