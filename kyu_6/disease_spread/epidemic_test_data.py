@@ -5,14 +5,15 @@
 
 class EpidemicTestData:
 
-    def __init__(self, tm, n, s0, i0, b, a, expected):
-        self.__tm = tm
-        self.__n = n
-        self.__s0 = s0
-        self.__i0 = i0
-        self.__b = b
-        self.__a = a
-        self.__expected = expected
+    def __init__(self, **kwargs):
+        # tm, n, s0, i0, b, a, expected
+        self.__tm = kwargs['tm']
+        self.__n = kwargs['n']
+        self.__s0 = kwargs['s0']
+        self.__i0 = kwargs['i0']
+        self.__b = kwargs['b']
+        self.__a = kwargs['a']
+        self.__expected = kwargs['expected']
 
     @property
     def tm(self):
