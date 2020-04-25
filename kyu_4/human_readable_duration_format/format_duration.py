@@ -1,3 +1,8 @@
+"""
+A function which formats a duration, given as a
+number of seconds, in a human-friendly way.
+"""
+
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
@@ -31,6 +36,7 @@ def format_duration(seconds: int) -> str:
     function should not return 61 seconds, but 1 minute and 1 second instead.
     Formally, the duration specified by of a component must not be greater than
     any valid more significant unit of time.
+
     :param seconds:
     :return:
     """
@@ -82,6 +88,7 @@ def format_duration(seconds: int) -> str:
 def get_string(number: int, string: str) -> str:
     """
     Concatenate string result
+
     :param number:
     :param string:
     :return:
@@ -99,10 +106,10 @@ def get_string(number: int, string: str) -> str:
 def calc_seconds(seconds: int) -> int:
     """
     Calculate seconds
+
     :param seconds:
     :return:
     """
-
     if seconds < 60:
         return seconds
 
@@ -112,47 +119,50 @@ def calc_seconds(seconds: int) -> int:
 def calc_minutes(seconds: int) -> int:
     """
     calculate minutes
+
     :param seconds:
     :return:
     """
     minutes = seconds // 60
     if minutes < 60:
         return minutes
-    else:
-        return minutes % 60
+
+    return minutes % 60
 
 
 def calc_hours(seconds: int) -> int:
     """
     Calculate hours
+
     :param seconds:
     :return:
     """
     hours = seconds // (60 * 60)
     if hours < 24:
         return hours
-    else:
-        return hours % 24
+
+    return hours % 24
 
 
 def calc_days(seconds: int) -> int:
     """
     Calculate days
+
     :param seconds:
     :return:
     """
     days = seconds // (60 * 60 * 24)
     if days < 365:
         return days
-    else:
-        return days % 365
+
+    return days % 365
 
 
 def calc_years(seconds: int) -> int:
     """
     Calculate years
+
     :param seconds:
     :return:
     """
-
     return seconds // (60 * 60 * 24 * 365)
