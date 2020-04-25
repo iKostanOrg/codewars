@@ -32,5 +32,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |14   |[Sports League Table Ranking](https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python)                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/sports_league_table_ranking)               |
 |15   |[Find the safest places in town](https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/find_the_safest_places_in_town)            |
 |16   |[Did I Finish my Sudoku?](https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/did_i_finish_my_sudoku)                    |
+|17   |[Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/extract_the_domain_name_from_url)          |
 
 [Source](https://www.codewars.com/about)
