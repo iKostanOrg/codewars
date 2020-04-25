@@ -12,6 +12,7 @@ Subpackages
    kyu_4.range_extraction
    kyu_4.validate_sudoku_with_size
    kyu_4.strip_comments
+   kyu_4.snail
 
 Module contents
 ---------------
