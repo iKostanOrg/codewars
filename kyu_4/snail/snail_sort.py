@@ -1,3 +1,8 @@
+"""
+Returns the array elements arranged from outermost elements
+to the middle element, traveling clockwise.
+"""
+
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
