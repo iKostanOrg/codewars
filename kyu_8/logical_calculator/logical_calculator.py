@@ -4,53 +4,53 @@
 
 
 def logical_calc(array: list, op: str) -> bool:
-	"""
-    Calculates logical value of boolean array.
-
-    Logical operations: AND, OR and XOR.
-
-    Begins at the first value, and repeatedly
-    apply the logical operation across the
-    remaining elements in the array sequentially.
-
-    :param array:
-    :param op:
-    :return:
     """
+Calculates logical value of boolean array.
 
-	logical = op.strip().upper()
-	operators = ['AND', 'OR', 'XOR']
-	result: bool = False
+Logical operations: AND, OR and XOR.
 
-	# op param validation
-	if logical not in operators:
-		raise ValueError('ERROR: {} is not a valid operator. '
-		                 'Please use one of the followings: {}'.
-		                 format(op, operators))
+Begins at the first value, and repeatedly
+apply the logical operation across the
+remaining elements in the array sequentially.
 
-	# AND
-	if logical == operators[0]:
-		result = all(array)
+:param array:
+:param op:
+:return:
+"""
 
-	# OR
-	if logical == operators[1]:
-		result = any(array)
+    logical = op.strip().upper()
+    operators = ['AND', 'OR', 'XOR']
+    result: bool = False
 
-	# XOR
-	if logical == operators[2]:
+    # op param validation
+    if logical not in operators:
+        raise ValueError('ERROR: {} is not a valid operator. '
+                         'Please use one of the followings: {}'.
+                         format(op, operators))
 
-		result = array[0]
-		i = 1
+    # AND
+    if logical == operators[0]:
+        result = all(array)
 
-		while i < len(array):
+    # OR
+    if logical == operators[1]:
+        result = any(array)
 
-			tmp = array[i]
+    # XOR
+    if logical == operators[2]:
 
-			if result == tmp:
-				result = False
-			else:
-				result = True
+        result = array[0]
+        i = 1
 
-			i = i + 1
+        while i < len(array):
 
-	return result
+            tmp = array[i]
+
+            if result == tmp:
+                result = False
+            else:
+                result = True
+
+            i = i + 1
+
+    return result

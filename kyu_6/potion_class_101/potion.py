@@ -7,50 +7,54 @@ import math
 
 
 class Potion:
-	"""
-	This is your first potion class in Hogwarts and professor
-	gave you a homework to figure out what color potion will
-	turn into if he'll mix it with some other potion. All potions
-	have some color that written down as RGB color from [0, 0, 0]
-	to [255, 255, 255]. To make task more complicated teacher will
-	do few mixing and after will ask you for final color. Besides
-	color you also need to figure out what volume will have potion
-	after final mix.
-	"""
-	def __init__(self, color: Tuple[int, int, int], volume: int):
-		self._color: Tuple[int, int, int] = color
-		self._volume: int = volume
+    """
+    This is your first potion class in Hogwarts and professor
+    gave you a homework to figure out what color potion will
+    turn into if he'll mix it with some other potion. All potions
+    have some color that written down as RGB color from [0, 0, 0]
+    to [255, 255, 255]. To make task more complicated teacher will
+    do few mixing and after will ask you for final color. Besides
+    color you also need to figure out what volume will have potion
+    after final mix.
+    """
 
-	def mix(self, other) -> object:
-		"""
-		Based on your programming background you managed to figure
-		that after mixing two potions colors will mix as if mix
-		two RGB colors.
+    def __init__(self, color: Tuple[int, int, int], volume: int):
+        self._color: Tuple[int, int, int] = color
+        self._volume: int = volume
 
-		Note: Use ceiling when calculating the resulting potion's color.
-		:param other:
-		:return:
-		"""
-		new_volume = self.volume + other.volume
+    def mix(self, other) -> object:
+        """
+        Based on your programming background you managed to figure
+        that after mixing two potions colors will mix as if mix
+        two RGB colors.
 
-		r = math.ceil((other.color[0] * other.volume + self.color[0] * self.volume) / (other.volume + self.volume))
-		g = math.ceil((other.color[1] * other.volume + self.color[1] * self.volume) / (other.volume + self.volume))
-		b = math.ceil((other.color[2] * other.volume + self.color[2] * self.volume) / (other.volume + self.volume))
+        Note: Use ceiling when calculating the resulting potion's color.
+        :param other:
+        :return:
+        """
+        new_volume = self.volume + other.volume
 
-		return Potion((r, g, b), new_volume)
+        r = math.ceil((other.color[0] * other.volume + self.color[0]
+                       * self.volume) / (other.volume + self.volume))
+        g = math.ceil((other.color[1] * other.volume + self.color[1]
+                       * self.volume) / (other.volume + self.volume))
+        b = math.ceil((other.color[2] * other.volume + self.color[2]
+                       * self.volume) / (other.volume + self.volume))
 
-	@property
-	def volume(self) -> int:
-		return self._volume
+        return Potion((r, g, b), new_volume)
 
-	@volume.setter
-	def volume(self, value: int) -> None:
-		self._volume = value
+    @property
+    def volume(self) -> int:
+        return self._volume
 
-	@property
-	def color(self) -> tuple:
-		return self._color
+    @volume.setter
+    def volume(self, value: int) -> None:
+        self._volume = value
 
-	@color.setter
-	def color(self, value: Tuple[int, int, int]) -> None:
-		self._color = value
+    @property
+    def color(self) -> tuple:
+        return self._color
+
+    @color.setter
+    def color(self, value: Tuple[int, int, int]) -> None:
+        self._color = value
