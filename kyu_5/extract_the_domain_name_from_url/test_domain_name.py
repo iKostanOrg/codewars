@@ -10,8 +10,8 @@ returns domain name from given URL string.
 # FUNDAMENTALS PARSING ALGORITHMS STRINGS REGULAR EXPRESSIONS
 # DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.extract_the_domain_name_from_url.extract_domain_from_url import domain_name
 
