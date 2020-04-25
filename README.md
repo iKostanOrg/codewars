@@ -1,4 +1,8 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![HitCount](http://hits.dwyl.com/ikostan/codewars.svg)](http://hits.dwyl.com/ikostan/codewars)
 ![GitHub forks](https://img.shields.io/github/forks/ikostan/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ikostan/codewars)
@@ -15,7 +19,6 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2020)
 ![GitHub issues](https://img.shields.io/github/issues-raw/ikostan/codewars)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/ikostan/codewars)
-[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![Known Vulnerabilities](https://snyk.io/test/github/ikostan/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ikostan/codewars?targetFile=requirements.txt)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
