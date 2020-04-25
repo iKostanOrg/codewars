@@ -11,8 +11,12 @@ def domain_name(url: str) -> str:
     :param url: URL as a string
     :return: domain name as a string
     """
+    result = ''
     for url_segment in url.split('/'):
         if '.' in url_segment:
             if 'www' in url_segment:
-                return url_segment.split('.')[1]
-            return url_segment.split('.')[0]
+                result = url_segment.split('.')[1]
+            else:
+                result = url_segment.split('.')[0]
+            break
+    return result
