@@ -6,6 +6,12 @@ from utils.primes.primes_generator import gen_primes
 
 
 def assert_sudoku_by_region(board: list) -> bool:
+	"""
+	Assert Sudoku by region
+
+	:param board: Sudoku list
+	:return: boolean value (is Sudoku done or not)
+	"""
 	row_length = len(board[0])
 
 	step = 0
