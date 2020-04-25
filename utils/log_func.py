@@ -4,15 +4,15 @@
 
 
 def print_log(**kwargs) -> None:
-	"""
-	Print log
-	:param args:
-	:return:
-	"""
+    """
+    Print log
+    :param args:
+    :return:
+    """
 
-	log = ''
-	for key in kwargs:
-		log += '{}: {},\n'.format(key, kwargs[key])
+    log = ''
+    for key in kwargs:
+        log += '{}: {},\n'.format(key, kwargs[key])
 
-	print('\nLOG =>\n{}\n'.format(log[:-2]))
-	return None
+    print('\nLOG =>\n{}\n'.format(log[:-2]))
+    return None

@@ -40,7 +40,8 @@ def copy_allure_history() -> None:
     for file_name in src_files:
 
         source_file = os.path.join(CURRENT_DIR + SOURCE_DIR, file_name)
-        destination_file = os.path.join(CURRENT_DIR + DESTINATION_DIR, file_name)
+        destination_file = os.path.join(
+            CURRENT_DIR + DESTINATION_DIR, file_name)
 
         if os.path.exists(destination_file):
             os.remove(destination_file)
