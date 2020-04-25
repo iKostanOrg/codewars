@@ -8,6 +8,9 @@ Epidemic Test Data Class
 
 
 class EpidemicTestData:
+    """
+    Epidemic Test Data Class
+    """
 
     def __init__(self, **kwargs):
         # tm, n, s0, i0, b, a, expected
