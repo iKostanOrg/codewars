@@ -159,10 +159,6 @@ class SudokuTestCase(unittest.TestCase):
         for data, expected, message in test_data:
             with allure.step("Enter a Sudoku solution and verify if it a valid one."):
 
-                print('\n Sudoku:')
-                # for row in data:
-                    # print(row)
-
                 actual_result = Sudoku(data).is_valid()
 
                 print_log(expected=expected,
