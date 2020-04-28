@@ -11,19 +11,14 @@ def sol_equa(n: int) -> list:
     """
     result = list()
 
-    if n % 2 == 0:
-        for x in range(n//2, 0, -2):
-            for y in range(x//2, -1, -1):
+    start = n//2
+    if n % 2 != 0:
+        start = n // 2 + 1
 
-                if (x - 2*y) * (x + 2*y) == n:
-                    result.append([x, y])
-                    break
-    else:
-        for x in range(n//2 + 1, 0, -2):
-            for y in range(x//2, -1, -1):
-
-                if (x - 2 * y) * (x + 2 * y) == n:
-                    result.append([x, y])
-                    break
+    for x in range(start, 0, -2):
+        for y in range(x//2, -1, -1):
+            if (x - 2 * y) * (x + 2 * y) == n:
+                result.append([x, y])
+                break
 
     return result
