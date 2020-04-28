@@ -4,11 +4,11 @@
 
 # ALGORITHMS
 
-import unittest
 import allure
 import pytest
-from kyu_6.no_arithmetic_progressions.sequence import sequence
+import unittest
 from utils.log_func import print_log
+from kyu_6.no_arithmetic_progressions.sequence import sequence
 
 
 @allure.epic('6 kyu')
