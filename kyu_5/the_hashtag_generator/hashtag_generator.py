@@ -18,7 +18,8 @@ def generate_hashtag(s: str):
 	if len(s.strip()) < 1:
 		return False
 
-	result = [string.capitalize() for string in s.split(' ') if string.strip() != '']
-	result = '#{}'.format(''.join(result))
+	result = '#{}'.format(''.join([string.capitalize()
+	                               for string in s.split(' ')
+	                               if string.strip() != '']))
 
 	return False if len(result) > 140 else result
