@@ -1,3 +1,7 @@
+"""
+Testing 'powers' function
+"""
+
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
@@ -21,7 +25,7 @@ from kyu_7.sum_of_powers_of_2.sum_of_powers_of_2 import powers
              name='Source/Kata')
 class SumOfPowerOfTwoTestCase(unittest.TestCase):
     """
-    Testing powers function
+    Testing 'powers' function
     """
 
     def test_powers(self):
