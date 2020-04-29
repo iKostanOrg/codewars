@@ -3,28 +3,28 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
-[![HitCount](http://hits.dwyl.com/ikostan/codewars.svg)](http://hits.dwyl.com/ikostan/codewars)
-![GitHub forks](https://img.shields.io/github/forks/ikostan/codewars)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ikostan/codewars)
-<a href="https://dependabot.com" rel="nofollow"><img src="https://camo.githubusercontent.com/35a144257b9aec7d472244f972d918c3926d5518/68747470733a2f2f6170692e646570656e6461626f742e636f6d2f6261646765732f7374617475733f686f73743d676974687562267265706f3d79737331342f6d757369637368617265" alt="Dependabot Status" data-canonical-src="https://api.dependabot.com/badges/status?host=github&repo=ikostan/codewars" style="max-width:100%;"></a>
+[![HitCount](http://hits.dwyl.com/iKostanOrg/codewars.svg)](http://hits.dwyl.com/iKostanOrg/codewars)
+![GitHub forks](https://img.shields.io/github/forks/iKostanOrg/codewars)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/iKostanOrg/codewars)
+<a href="https://dependabot.com" rel="nofollow"><img src="https://camo.githubusercontent.com/35a144257b9aec7d472244f972d918c3926d5518/68747470733a2f2f6170692e646570656e6461626f742e636f6d2f6261646765732f7374617475733f686f73743d676974687562267265706f3d79737331342f6d757369637368617265" alt="Dependabot Status" data-canonical-src="https://api.dependabot.com/badges/status?host=github&repo=iKostanOrg/codewars" style="max-width:100%;"></a>
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f14135ff-6f3e-450c-b391-5a677b8f8d8a/deploy-status)](https://app.netlify.com/sites/codewars-allure-report/deploys)
-[![CircleCI](https://circleci.com/gh/ikostan/codewars.svg?style=svg)](https://circleci.com/gh/ikostan/codewars)
-[![Build Status](https://travis-ci.org/ikostan/codewars.svg?branch=master)](https://travis-ci.org/ikostan/codewars)
+[![CircleCI](https://circleci.com/gh/iKostanOrg/codewars.svg?style=svg)](https://circleci.com/gh/iKostanOrg/codewars)
+[![Build Status](https://travis-ci.org/iKostanOrg/codewars.svg?branch=master)](https://travis-ci.org/iKostanOrg/codewars)
 [![codecov](https://codecov.io/gh/ikostan/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/ikostan/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7938d09b8ca6476089bab3ca0b59293c)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iKostanOrg/codewars&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/maintainability)](https://codeclimate.com/github/ikostan/codewars/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/test_coverage)](https://codeclimate.com/github/ikostan/codewars/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
 ![Maintenance](https://img.shields.io/maintenance/yes/2020)
-![GitHub issues](https://img.shields.io/github/issues-raw/ikostan/codewars)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/ikostan/codewars)
-[![Known Vulnerabilities](https://snyk.io/test/github/ikostan/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ikostan/codewars?targetFile=requirements.txt)
+![GitHub issues](https://img.shields.io/github/issues-raw/iKostanOrg/codewars)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iKostanOrg/codewars)
+[![Known Vulnerabilities](https://snyk.io/test/github/iKostanOrg/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ikostan/codewars?targetFile=requirements.txt)
 <img src="https://www.codewars.com/users/myFirstCode/badges/micro">
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
 <div align="center"> 
-<img width="90%" height="90%" src="https://github.com/ikostan/codewars/blob/master/img/document.png" hspace="20">
+<img width="90%" height="90%" src="https://github.com/iKostanOrg/codewars/blob/master/img/document.png" hspace="20">
 </div>
 
 ## About Codewars
@@ -84,7 +84,7 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 ### Python Packages
 
-Full list of dependencies see [here.](https://github.com/ikostan/codewars/blob/master/requirements.txt)
+Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
 
 ### Online Documentation
 
