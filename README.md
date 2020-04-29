@@ -13,8 +13,10 @@
 [![Build Status](https://travis-ci.com/iKostanOrg/codewars.svg?branch=master)](https://travis-ci.com/iKostanOrg/codewars)
 [![codecov](https://codecov.io/gh/ikostan/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/ikostan/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7938d09b8ca6476089bab3ca0b59293c)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iKostanOrg/codewars&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/55fcf993a0ffb15154a2/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
+
 ![Maintenance](https://img.shields.io/maintenance/yes/2020)
 ![GitHub issues](https://img.shields.io/github/issues-raw/iKostanOrg/codewars)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iKostanOrg/codewars)
