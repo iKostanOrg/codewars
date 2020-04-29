@@ -4,7 +4,9 @@
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![HitCount](http://hits.dwyl.com/iKostanOrg/codewars.svg)](http://hits.dwyl.com/iKostanOrg/codewars)
+
 ![GitHub forks](https://img.shields.io/github/forks/iKostanOrg/codewars)
+
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/iKostanOrg/codewars)
 <a href="https://dependabot.com" rel="nofollow"><img src="https://camo.githubusercontent.com/35a144257b9aec7d472244f972d918c3926d5518/68747470733a2f2f6170692e646570656e6461626f742e636f6d2f6261646765732f7374617475733f686f73743d676974687562267265706f3d79737331342f6d757369637368617265" alt="Dependabot Status" data-canonical-src="https://api.dependabot.com/badges/status?host=github&repo=iKostanOrg/codewars" style="max-width:100%;"></a>
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
