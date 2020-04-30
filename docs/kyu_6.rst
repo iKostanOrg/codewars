@@ -38,6 +38,7 @@ Subpackages
    kyu_6.rotate_the_letters_of_each_element
    kyu_6.number_zoo_patrol
    kyu_6.your_order_please
+   kyu_6.who_likes_it
 
 Module contents
 ---------------
