@@ -26,6 +26,7 @@ script:
   # Run pytest for all tests subdirectories and check test coverage with pytest-cov:
   - coverage run -m pytest --cov-config=.coveragerc --cov-report term-missing --cov
   #- coverage report -m
+  - coverage xml
   - mypy --ignore-missing-imports kyu_8
   - mypy --ignore-missing-imports kyu_7
   - mypy --ignore-missing-imports kyu_6
@@ -34,7 +35,7 @@ script:
   - mypy --ignore-missing-imports utils
 
 after_script:
-  - coverage xml
+  #- coverage xml
   #- if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_PYTHON_VERSION" == "3.7" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
 
 after_success:
