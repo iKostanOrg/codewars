@@ -22,5 +22,4 @@ def likes(names: list) -> str:
     if 1 < len(names) <= 3:
         return '{} and {} like this'.format(', '.join(names[:len(names) - 1]), names[-1])
 
-    if len(names) > 3:
-        return '{} and {} others like this'.format(', '.join(names[:2]), len(names) - 2)
+    return '{} and {} others like this'.format(', '.join(names[:2]), len(names) - 2)
