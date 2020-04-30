@@ -24,7 +24,8 @@ before_script:  # code coverage tool
 
 script:
   # Run pytest for all tests subdirectories and check test coverage with pytest-cov:
-  - pytest --cov-config=.coveragerc --cov-report term-missing --cov
+  - coverage run -m pytest --cov-config=.coveragerc --cov-report term-missing --cov
+  - coverage report
   - mypy --ignore-missing-imports kyu_8
   - mypy --ignore-missing-imports kyu_7
   - mypy --ignore-missing-imports kyu_6
