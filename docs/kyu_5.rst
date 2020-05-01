@@ -25,6 +25,7 @@ Subpackages
    kyu_5.find_the_safest_places_in_town
    kyu_5.extract_the_domain_name_from_url
    kyu_5.the_hashtag_generator
+   kyu_5.sum_of_pairs
 
 Module contents
 ---------------
