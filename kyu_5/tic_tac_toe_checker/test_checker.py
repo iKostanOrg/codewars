@@ -65,6 +65,10 @@ class IsSolvedTestCase(unittest.TestCase):
             ([[2, 1, 2],
               [2, 1, 1],
               [1, 2, 1]], 0, 'draw'),
+            ([[1, 2, 0],
+              [0, 1, 2],
+              [0, 0, 1]], 1, 'wining diagonal'
+             )
         )
 
         for board, expected, message in test_data:
