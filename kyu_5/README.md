@@ -34,5 +34,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |16   |[Did I Finish my Sudoku?](https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/did_i_finish_my_sudoku)                    |
 |17   |[Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/extract_the_domain_name_from_url)          |
 |18   |[The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/the_hashtag_generator)                     |
+|19   |[Sum of Pairs](https://www.codewars.com/kata/54d81488b981293527000c8f/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/sum_of_pairs)                              |
 
 [Source](https://www.codewars.com/about)
