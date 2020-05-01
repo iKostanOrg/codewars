@@ -33,6 +33,15 @@ def sum_pairs(ints: list, s: int):
 
 
 def simplify(ints: list) -> list:
+	"""
+	In order to speed up the process we should simplify 
+	the input list by reducing duplicate values, see sample below:
+
+	[1,4,5,1,1,1,1,1,4,7,8] >>> [1,4,5,1,4,7,8]
+
+	:param ints: a list of integers
+	:return: simplified list of integers
+	"""
 	result = list()
 	temp = -1
 
