@@ -26,6 +26,7 @@ Subpackages
    kyu_5.extract_the_domain_name_from_url
    kyu_5.the_hashtag_generator
    kyu_5.sum_of_pairs
+   kyu_5.tic_tac_toe_checker
 
 Module contents
 ---------------
