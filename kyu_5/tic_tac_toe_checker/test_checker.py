@@ -10,10 +10,8 @@ Testing is_solved function
 
 import allure
 import unittest
-
-from kyu_5.tic_tac_toe_checker.checker import is_solved
 from utils.log_func import print_log
-from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
+from kyu_5.tic_tac_toe_checker.checker import is_solved
 
 
 @allure.epic('5 kyu')
