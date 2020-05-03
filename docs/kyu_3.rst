@@ -5,7 +5,9 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
+   kyu_3.calculator
 
 Module contents
 ---------------
