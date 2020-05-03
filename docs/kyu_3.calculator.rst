@@ -11,6 +11,7 @@ kyu\_3.calculator.calculator module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_3.calculator.test\_calculator module
 -----------------------------------------
@@ -19,6 +20,7 @@ kyu\_3.calculator.test\_calculator module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 
 Module contents
@@ -28,3 +30,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
