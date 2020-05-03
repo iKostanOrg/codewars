@@ -10,9 +10,8 @@ Testing Calculator class
 
 import allure
 import unittest
-
-from kyu_3.calculator.calculator import Calculator
 from utils.log_func import print_log
+from kyu_3.calculator.calculator import Calculator
 
 
 @allure.epic('3 kyu')
