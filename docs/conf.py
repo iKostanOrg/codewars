@@ -34,7 +34,8 @@ release = '0.2'
 # ones.
 extensions = ['sphinx.ext.todo',
               'sphinx.ext.viewcode',
-              'sphinx.ext.autodoc']
+              'sphinx.ext.autodoc',
+              'recommonmark']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -44,6 +45,13 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# The following example configures Sphinx to parse all files with
+# the extensions .md and .txt as Markdown:
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output -------------------------------------------------
 
