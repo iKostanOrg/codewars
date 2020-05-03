@@ -1,3 +1,9 @@
+"""
+Create a simple calculator that given a string
+of operators (), +, -, *, / and numbers separated
+by spaces returns the value of that expression
+"""
+
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
@@ -5,80 +11,59 @@
 
 class Calculator:
     """
-    calculator that given a string of operators
-    (), +, -, *, / and numbers separated by spaces
-    returns the value of that expression
+    Given string of operators (), +, -, *, /
+    and numbers separated by spaces.
+    Returns the value of that expression.
     """
 
-    def __calculate_multiplications_and_divisions(self, string: str) -> str:
-        """
-        Perform all operation with multiplications and divisions
-
-        :param string: input string
-        :return: output string with no '*' or '/'
-        """
-        strings = string.split(' ')
-
-        while '*' in strings or '/' in strings:
-            for i, char in enumerate(strings):
-
-                if char == '*':
-                    a = float(strings[i - 1])
-                    b = float(strings[i + 1])
-                    strings[i] = str(self.__multiplication(a, b))
-                    del strings[i + 1]
-                    del strings[i - 1]
-                    break
-
-                if char == '/':
-                    a = float(strings[i - 1])
-                    b = float(strings[i + 1])
-                    strings[i] = str(self.__division(a, b))
-                    del strings[i + 1]
-                    del strings[i - 1]
-                    break
-
-        return ' '.join(strings)
-
-    def __calculate_additions_and_subtractions(self, string: str) -> str:
-        """
-        Perform all operation with addition and subtraction
-
-        :param string: input string
-        :return: output string with no '+' or '-'
-        """
-        strings = string.split(' ')
-
-        while '+' in strings or '-' in strings:
-            for i, char in enumerate(strings):
-
-                if char == '+':
-                    a = float(strings[i - 1])
-                    b = float(strings[i + 1])
-                    strings[i] = str(self.__addition(a, b))
-                    del strings[i + 1]
-                    del strings[i - 1]
-                    break
-
-                if char == '-':
-                    a = float(strings[i - 1])
-                    b = float(strings[i + 1])
-                    strings[i] = str(self.__subtraction(a, b))
-                    del strings[i + 1]
-                    del strings[i - 1]
-                    break
-
-        return ''.join(strings)
-
     @staticmethod
-    def __process_string(string: str) -> str:
+    def __calculate(i: int, char: str, strings: list):
         """
-        Remove all white spaces
+        1. Perform math operation
+        2. Reorganize math expression
+
+        :param i: char (math operation) index
+        :param char: math operation
+        :param strings: math expression
+        :return: result
+        """
+
+        a = float(strings[i - 1])
+        b = float(strings[i + 1])
+
+        if char == '*':
+            strings[i] = str(a * b)
+
+        if char == '/':
+            strings[i] = str(a / b)
+
+        if char == '+':
+            strings[i] = str(a + b)
+
+        if char == '-':
+            strings[i] = str(a - b)
+
+        del strings[i + 1]
+        del strings[i - 1]
+
+    def __process_math_expression(self, string: str, operators: list) -> str:
+        """
+        Perform all operation with:
+        multiplications, divisions, additions and subtractions
 
         :param string: input string
-        :return: string with no white spaces
+        :return: output string with no '*', '/', '+', '-'
         """
-        return ''.join(s for s in string if s != ' ')
+        strings = string.split(' ')
+
+        while any((True if s in operators else False) for s in strings):
+            for i, char in enumerate(strings):
+                if char in operators:
+                    self.__calculate(i, char, strings)
+                    break
+
+        print(strings)
+        return ' '.join(strings)
 
     def evaluate(self, string: str) -> float:
         """
@@ -88,54 +73,6 @@ class Calculator:
                        and numbers separated by spaces
         :return: calculated value of the given expression
         """
-        string: str = self.__calculate_multiplications_and_divisions(string)
-        result: str = self.__calculate_additions_and_subtractions(string)
+        string: str = self.__process_math_expression(string, ['*', '/'])
+        result: str = self.__process_math_expression(string, ['+', '-'])
         return float(result)
-
-    @staticmethod
-    def __addition(a: float, b: float) -> float:
-        """
-        Additions have a lower priority and
-        should be performed left-to-right
-
-        :param a: number in float format
-        :param b: number in float format
-        :return: a + b
-        """
-        return a + b
-
-    @staticmethod
-    def __subtraction(a: float, b: float) -> float:
-        """
-        Subtractions have a lower priority and
-        should be performed left-to-right
-
-        :param a: number in float format
-        :param b: number in float format
-        :return: a - b
-        """
-        return a - b
-
-    @staticmethod
-    def __multiplication(a: float, b: float) -> float:
-        """
-        Multiplications have a higher priority and
-        should be performed left-to-right
-
-        :param a: number in float format
-        :param b: number in float format
-        :return: a * b
-        """
-        return a * b
-
-    @staticmethod
-    def __division(a: float, b: float) -> float:
-        """
-        Divisions have a higher priority and
-        should be performed left-to-right
-
-        :param a: number in float format
-        :param b: number in float format
-        :return: a / b
-        """
-        return a / b
