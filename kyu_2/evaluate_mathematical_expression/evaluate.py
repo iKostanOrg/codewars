@@ -67,8 +67,6 @@ def normalize_string(string: str) -> str:
 
 				if i + 1 < len(string_temp):
 					string_temp = string_temp[i + 1:]
-				else:
-					string_temp = ''
 				break
 
 			if i == len(string_temp) - 1:
@@ -116,10 +114,6 @@ def process_duplicate_minus(string: str) -> str:
 				if strings[i + 1] == '-':
 					done = False
 					strings[i] = '+'
-					del strings[i + 1]
-					break
-				elif strings[i + 1] == '+':
-					done = False
 					del strings[i + 1]
 					break
 				elif any([(True if t.isdigit() else False) for t in strings[i + 1]]):
