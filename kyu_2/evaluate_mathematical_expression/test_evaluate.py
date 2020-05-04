@@ -10,9 +10,8 @@ Testing calc method
 
 import allure
 import unittest
-
-from kyu_2.evaluate_mathematical_expression.evaluate import calc
 from utils.log_func import print_log
+from kyu_2.evaluate_mathematical_expression.evaluate import calc
 
 
 @allure.epic('2 kyu')
