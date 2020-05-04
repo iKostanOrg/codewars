@@ -38,7 +38,7 @@ class CalculatorTestCase(unittest.TestCase):
         and numbers separated by spaces will return the value of that expression
         """
 
-        allure.dynamic.title("Testing sum_of_intervals function")
+        allure.dynamic.title("Testing Calculator class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
                                         '<img src="https://www.codewars.com/users/myFirstCode'
