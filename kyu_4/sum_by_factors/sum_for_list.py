@@ -26,7 +26,7 @@ def sum_for_list(lst: list) -> list:
         if prime > max_l:
             break
 
-        temp = list()  # holds temporary results
+        temp: list = list()  # holds temporary results
         sum_digits = 0  # holds sum of all ij of I for which p is a prime factor
 
         for digit in lst:
