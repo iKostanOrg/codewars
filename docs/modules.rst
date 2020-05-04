@@ -5,6 +5,7 @@ codewars
    :maxdepth: 4
 
    img
+   kyu_2
    kyu_3
    kyu_4
    kyu_5
