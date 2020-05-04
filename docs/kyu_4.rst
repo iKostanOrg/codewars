@@ -13,6 +13,7 @@ Subpackages
    kyu_4.validate_sudoku_with_size
    kyu_4.strip_comments
    kyu_4.snail
+   kyu_4.sum_by_factors
 
 Module contents
 ---------------
