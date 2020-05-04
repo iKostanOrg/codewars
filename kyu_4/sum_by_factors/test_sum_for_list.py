@@ -21,8 +21,9 @@ from kyu_4.sum_by_factors.sum_for_list import sum_for_list
 @allure.feature("Lists")
 @allure.story('Sum by Factors')
 @allure.tag('ALGORITHMS', 'NUMBERS', 'ARRAYS')
-@allure.link(url='https://www.codewars.com/kata/54d496788776e49e6b00052f/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/54d496788776e49e6b00052f/train/python',
+    name='Source/Kata')
 class SumForListTestCase(unittest.TestCase):
     """
     Testing sum_for_list function
@@ -36,15 +37,16 @@ class SumForListTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing sum_for_list function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Verify that one given an array of positive "
-                                        "or negative integers I= [i1,..,in] the function "
-                                        "produces a sorted array P of the form "
-                                        "[[p, sum of all ij of I for which p is a prime factor (p positive) of ij]...]"
-                                        "</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Verify that one given an array of positive "
+            "or negative integers I= [i1,..,in] the function "
+            "produces a sorted array P of the form "
+            "[[p, sum of all ij of I for which p is a prime factor (p positive) of ij]...]"
+            "</p>")
 
         test_data = (
             ([12, 15],
