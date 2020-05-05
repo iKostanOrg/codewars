@@ -73,6 +73,6 @@ class Calculator:
                        and numbers separated by spaces
         :return: calculated value of the given expression
         """
-        string: str = self.__process_math_expression(string, ['*', '/'])
+        string = self.__process_math_expression(string, ['*', '/'])
         result: str = self.__process_math_expression(string, ['+', '-'])
         return float(result)
