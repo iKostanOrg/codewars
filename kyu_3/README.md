@@ -14,8 +14,9 @@ You can advance through the ranks by completing kata at or above your rank - the
 
 ### List of Completed Kata (Python 3)
 
-| No. | Puzzle/Kata Name                                                                                                   | Solution / GitHub Link                                                                          |
-|-----|:------------------------------------------------------------------------------------------------------------------:|------------------------------------------------------------------------------------------------:|
-|1    |[Calculator](https://www.codewars.com/kata/5235c913397cbf2508000048/train/python)                                   |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_3/calculator)                     |
+| No. | Puzzle/Kata Name                                                                                                   | Solution / GitHub Link                                                                                  |
+|-----|:------------------------------------------------------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------------:|
+|1    |[Calculator](https://www.codewars.com/kata/5235c913397cbf2508000048/train/python)                                   |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_3/calculator)                             |
+|2    |[Rail Fence Cipher: Encoding and Decoding](https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python)     |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_3/rail_fence_cipher_encoding_and_decoding)|
 
 [Source](https://www.codewars.com/about)
