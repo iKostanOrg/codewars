@@ -8,6 +8,7 @@ Subpackages
    :maxdepth: 4
 
    kyu_3.calculator
+   kyu_3.rail_fence_cipher_encoding_and_decoding
 
 Module contents
 ---------------
