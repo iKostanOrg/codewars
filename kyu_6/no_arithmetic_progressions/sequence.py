@@ -23,40 +23,14 @@ def sequence(n: int) -> int:
     :param n:
     :return:
     """
-    pass
+    return 0
 
 
-def Nth_of_AP(a, d, N):
-    """
-    Python 3 Program to find nth
-    term of Arithmetic progression
-
-    Using formula to find the
-    Nth term t(n) = a(1) + (n-1)*d
-
-    Driver code
-        a = 2  # starting number
-        d = 1  # Common difference
-        N = 5  # N th term to be find
-
-    :param a:
-    :param d:
-    :param N:
-    :return:
-    """
-    return a + (N - 1) * d
+def sum_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
+    # Sum of an Arithmetic Progression
+    return terms * (a + general_term_of_arithmetic_progression(a, dif)) // 2
 
 
-def is_arithmetic(arr: list) -> bool:
-    """
-    Check a sequence of numbers is an
-    arithmetic progression or not
-
-    :param arr:
-    :return:
-    """
-    delta = arr[1] - arr[0]
-    for index in range(len(delta) - 1):
-        if not (arr[index + 1] - arr[index] == delta):
-            return False
-    return True
+def general_term_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
+    # General Term of an Arithmetic Progression
+    return a + (terms - 1) * dif
