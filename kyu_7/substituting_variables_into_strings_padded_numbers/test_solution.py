@@ -1,3 +1,7 @@
+"""
+Testing 'solution' function
+"""
+
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
@@ -16,8 +20,9 @@ from kyu_7.substituting_variables_into_strings_padded_numbers.solution import so
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Substituting Variables Into Strings: Padded Numbers')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS', 'STRINGS', 'STRING FORMATTING',
+            'FORMATTING', 'ALGORITHMS')
+@allure.link(url='https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/python',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
     """
