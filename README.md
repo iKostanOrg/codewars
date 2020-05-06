@@ -38,14 +38,14 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 ### Difficulty
 
-* [8 kyu](https://github.com/ikostan/codewars/tree/master/kyu_8)
-* [7 kyu](https://github.com/ikostan/codewars/tree/master/kyu_7)
-* [6 kyu](https://github.com/ikostan/codewars/tree/master/kyu_6)
-* [5 kyu](https://github.com/ikostan/codewars/tree/master/kyu_5)
-* [4 kyu](https://github.com/ikostan/codewars/tree/master/kyu_4)
-* [3 kyu](https://github.com/ikostan/codewars/tree/master/kyu_3)
-* [2 kyu](https://github.com/ikostan/codewars/tree/master/kyu_2)
-* [1 kyu](https://github.com/ikostan/codewars/tree/master/kyu_1)
+*   [8 kyu](https://github.com/ikostan/codewars/tree/master/kyu_8)
+*   [7 kyu](https://github.com/ikostan/codewars/tree/master/kyu_7)
+*   [6 kyu](https://github.com/ikostan/codewars/tree/master/kyu_6)
+*   [5 kyu](https://github.com/ikostan/codewars/tree/master/kyu_5)
+*   [4 kyu](https://github.com/ikostan/codewars/tree/master/kyu_4)
+*   [3 kyu](https://github.com/ikostan/codewars/tree/master/kyu_3)
+*   [2 kyu](https://github.com/ikostan/codewars/tree/master/kyu_2)
+*   [1 kyu](https://github.com/ikostan/codewars/tree/master/kyu_1)
 
 ### My profile on Codewars
 
