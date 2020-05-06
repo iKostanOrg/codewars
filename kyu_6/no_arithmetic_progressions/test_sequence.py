@@ -1,3 +1,8 @@
+"""
+Testing sequence function
+A function f(n), should returns the n-th member of sequence.
+"""
+
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
@@ -18,7 +23,7 @@ from kyu_6.no_arithmetic_progressions.sequence import sequence
 @allure.feature("Math")
 @allure.story('No arithmetic progressions')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/5e0607115654a900140b3ce3/train/pythonn',
+@allure.link(url='https://www.codewars.com/kata/5e0607115654a900140b3ce3/train/python',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class SequenceTestCase(unittest.TestCase):
@@ -39,18 +44,18 @@ class SequenceTestCase(unittest.TestCase):
                                         "which is not yet in the sequence, so that no 3 terms of sequence "
                                         "form an arithmetic progression.</p>")
 
-        test_data = [
+        test_data = (
+	        (1233, 62047),
 	        (0, 0),
 	        (1, 1),
 	        (2, 3),
 	        (3, 4),
 	        (4, 9),
-	        (1233, 62047),
 	        (6541, 717373),
 	        (7878, 790248),
 	        (1435, 67909),
 	        (6457, 715501)
-        ]
+        )
 
         for n, expected in test_data:
             actual_result = sequence(n)
