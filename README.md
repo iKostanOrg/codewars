@@ -69,19 +69,19 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 ### Dev Environment
 <a id="dev"></a>
 
-1. [Python 3.7.4](https://www.python.org/downloads/release/python-374/)
+1.  [Python 3.7.4](https://www.python.org/downloads/release/python-374/)
 
-2. [PyTest](https://pypi.org/project/pytest/)
+2.  [PyTest](https://pypi.org/project/pytest/)
 
-3. [Allure Framework](http://allure.qatools.ru/)
+3.  [Allure Framework](http://allure.qatools.ru/)
 
-4. [Win 10 (64 bit)](https://www.microsoft.com/en-ca/software-download/windows10)
+4.  [Win 10 (64 bit)](https://www.microsoft.com/en-ca/software-download/windows10)
 
-5. [PyCharm 2019.2 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)
+5.  [PyCharm 2019.2 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)
 
-6. [GitHub Desktop](https://desktop.github.com/)
+6.  [GitHub Desktop](https://desktop.github.com/)
 
-7. [GIT 2.22.0.windows.1](https://git-scm.com/download/win)
+7.  [GIT 2.22.0.windows.1](https://git-scm.com/download/win)
 
 ### Python Packages
 
@@ -109,13 +109,13 @@ During report generation (second step), the XML files are transformed to a HTML 
 <details>
   <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
 
-1. In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
+1.  In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
 
-2. Expand the list of the available interpreters and click the **Show All** link.
+2.  Expand the list of the available interpreters and click the **Show All** link.
 
-3. Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
+3.  Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
 
-4. The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
+4.  The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
 
 For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
 </details>
@@ -123,11 +123,11 @@ For more info please [check here](https://www.jetbrains.com/help/pycharm/configu
 <details>
   <summary><b>PyCharm - Choosing Your Testing Framework</b></summary>
  
-1. Open the Settings/Preferences dialog, and under the node Tools, click the page **Python Integrated Tools**.
+1.  Open the Settings/Preferences dialog, and under the node Tools, click the page **Python Integrated Tools**.
 
-2. On this page, click the **Default Test Runner** field.
+2.  On this page, click the **Default Test Runner** field.
 
-3. Choose the desired test runner:
+3.  Choose the desired test runner:
 
 <div align="center"> 
 <img width="60%" height="60%" src="https://github.com/ikostan/SELENIUM_WEBDRIVER_WORKING_WITH_ELEMENTS/blob/master/testing_selenium_capabilities/img/py_choosing_test_runner.png" hspace="20">
@@ -139,21 +139,21 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 <details>
   <summary><b>Setting up Python3 virtual environment on Windows machine</b></summary>
 
-1. open CMD
+1.  open CMD
 
-2. navigate to project directory, for example
+2.  navigate to project directory, for example
 
 ```bash
 cd C:\Users\superadmin\Desktop\Python\CodinGame
 ```
 
-3. run following command:
+3.  run following command:
 
 ```bash 
 pip install virtualenv
 ```
 
-4. run following command:
+4.  run following command:
 
 ```bash 
 virtualenv venv --python=python
@@ -165,55 +165,55 @@ virtualenv venv --python=python
 
 ### How to install virtualenv
 
-1. Install **pip** first
+1.  Install **pip** first
 
 ```bash
     sudo apt-get install python3-pip
 ```
 
-2. Then install **virtualenv** using pip3
+2.  Then install **virtualenv** using pip3
 
 ```bash
     sudo pip3 install virtualenv
 ```
 
-3. Now create a virtual environment (>you can use any name insted of **venv**)
+3.  Now create a virtual environment (>you can use any name insted of **venv**)
 
 ```bash
     virtualenv venv
 ```
 
-4. You can also use a Python interpreter of your choice:
+4.  You can also use a Python interpreter of your choice:
 
 ```bash
     virtualenv -p /usr/bin/python2.7 venv
 ```
 
-5. Active your virtual environment:
+5.  Active your virtual environment:
 
 ```bash
     source venv/bin/activate
 ```
 
-6. Using fish shell:
+6.  Using fish shell:
 
 ```bash
     source venv/bin/activate.fish
 ```
 
-7. To deactivate:
+7.  To deactivate:
 
 ```bash
     deactivate
 ```
 
-8. Create virtualenv using Python3:
+8.  Create virtualenv using Python3:
 
 ```bash
     virtualenv -p python3 myenv
 ```
 
-9. Instead of using virtualenv you can use this command in Python3:
+9.  Instead of using virtualenv you can use this command in Python3:
 
 ```bash
     python3 -m venv myenv
@@ -227,9 +227,9 @@ virtualenv venv --python=python
 
 In a newly created virtualenv there will be a bin/activate shell script. For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 
-1. Open Terminal
+1.  Open Terminal
 
-2. Run: \path\to\env\Scripts\activate 
+2.  Run: \path\to\env\Scripts\activate 
   
 [Source](https://pypi.org/project/virtualenv/1.8.2/)
 </details>
@@ -254,9 +254,9 @@ pip install -r requirements.txt
 <details>
   <summary><b>error: RPC failed; curl 56 Recv failure: Connection was reset</b></summary>
 
-1. Open Git Bash
+1.  Open Git Bash
 
-2. Run: "git config --global http.postBuffer 157286400" 
+2.  Run: "git config --global http.postBuffer 157286400" 
   
 [Source](https://stackoverflow.com/questions/36940425/gitlab-push-failed-error)
 </details>
@@ -283,15 +283,15 @@ git commit -m "fixed untracked files"
 
 <br/>Step by step:
 
-1. Run tests from pytest using following arguments: -v --alluredir=allure-results
+1.  Run tests from pytest using following arguments: -v --alluredir=allure-results
 
-2. Copy '.\allure-report\history\' folder into '.\allure-results\history\'
+2.  Copy '.\allure-report\history\' folder into '.\allure-results\history\'
 
-3. Run: allure generate .\allure-results\ -o .\allure-report\ --clean
+3.  Run: allure generate .\allure-results\ -o .\allure-report\ --clean
 
-4. Following output should appear: Report successfully generated to .\allure-report
+4.  Following output should appear: Report successfully generated to .\allure-report
 
-5. Run: allure open .\allure-report\
+5.  Run: allure open .\allure-report\
 
 [Source](https://github.com/allure-framework/allure2/issues/813)
 </details>
@@ -301,15 +301,15 @@ git commit -m "fixed untracked files"
 
 <br/>Step by step:
 
-1. Create docs directory
+1.  Create docs directory
 
-2. Open cmd > Go to docs directory
+2.  Open cmd > Go to docs directory
 
-3. cmd > Run: sphinx-quickstart. **Note:** run with default answers
+3.  cmd > Run: sphinx-quickstart. **Note:** run with default answers
     
-4. Go to docs/conf.py
+4.  Go to docs/conf.py
 
-5. Uncomment following lines:
+5.  Uncomment following lines:
 
 ```python
     import os
@@ -317,26 +317,26 @@ git commit -m "fixed untracked files"
     sys.path.insert(0, os.path.abspath('.'))
 ```
 
-6. Update extensions list as following:
+6.  Update extensions list as following:
 
 ```python
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
 
-7. Update template as following:
+7.  Update template as following:
 
 ```python
 html_theme = 'sphinx_rtd_theme'
 
 ```
 
-8. Update sys.path.insert as following:
+8.  Update sys.path.insert as following:
 
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
 
-9. Go to docs/index.rst > add modules, see example below:
+9.  Go to docs/index.rst > add modules, see example below:
 
 ```bash
 
@@ -347,15 +347,15 @@ sys.path.insert(0, os.path.abspath('..'))
    modules
 ```
 
-10. Open cmd > run: 
+10.  Open cmd > run: 
 
 ```python
 sphinx-apidoc -F -o . ..
 ```
 
-11. cmd > Run: make html
+11.  cmd > Run: make html
 
-12. Install html template:
+12.  Install html template:
 
 ```python
 pip install sphinx_rtd_theme
@@ -371,12 +371,12 @@ pip install sphinx_rtd_theme
 
 <br/>Step by step:
 
-1. Open CMD
-2. Go to docs directory
-3. Run: make clean
-4. Run: sphinx-apidoc -F -P -o . ..
-5. Add doc files name into relevant doc rst file
-6. Run: make html
+1.  Open CMD
+2.  Go to docs directory
+3.  Run: make clean
+4.  Run: sphinx-apidoc -F -P -o . ..
+5.  Add doc files name into relevant doc rst file
+6.  Run: make html
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 </details>
