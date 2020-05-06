@@ -2,7 +2,6 @@
 Epidemic Test Data Class
 """
 
-
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
@@ -10,8 +9,8 @@ Epidemic Test Data Class
 
 class EpidemicTestData:
     """
-Epidemic Test Data Class
-"""
+    Epidemic Test Data Class
+    """
 
     def __init__(self, **kwargs):
         # tm, n, s0, i0, b, a, expected
@@ -25,30 +24,65 @@ Epidemic Test Data Class
 
     @property
     def tm(self):
+        """
+        Returns tm value
+
+        :return:
+        """
         return self.__tm
 
     @property
     def n(self):
+        """
+        Returns n value
+
+        :return:
+        """
         return self.__n
 
     @property
     def s0(self):
+        """
+        Returns s0 value
+
+        :return:
+        """
         return self.__s0
 
     @property
     def i0(self):
+        """
+        Returns i0 value
+
+        :return:
+        """
         return self.__i0
 
     @property
     def b(self):
+        """
+        Returns b value
+
+        :return:
+        """
         return self.__b
 
     @property
     def a(self):
+        """
+        Returns a value
+
+        :return:
+        """
         return self.__a
 
     @property
     def expected(self):
+        """
+        Returns expected value
+
+        :return:
+        """
         return self.__expected
 
     def __repr__(self):
@@ -63,11 +97,12 @@ Epidemic Test Data Class
 
     def __eq__(self, other):
         """
-Object comparison
-Override the default Equals behavior
-:param other:
-:return:
-"""
+        Object comparison
+        Override the default Equals behavior
+
+        :param other:
+        :return:
+        """
         return self.__class__ == other.__class__ and \
             self.tm == other.tm and \
             self.n == other.n and \
