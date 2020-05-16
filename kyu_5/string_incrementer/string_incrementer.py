@@ -21,8 +21,8 @@ def increment_string(string: str) -> str:
         return '{}{}'.format(string[:first_digit], incremented_digit)
     else:
         if string.isdigit():
-            digit: int = int(string)
-            incremented_digit: str = '{}{}'.format(
+            digit = int(string)
+            incremented_digit = '{}{}'.format(
                 ('0' * (len(string) - len(str(digit + 1))) if len(str(digit + 1)) != len(string)
                  else ''), digit + 1)
             return incremented_digit
