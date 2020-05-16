@@ -36,5 +36,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |18   |[The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024/train/python)                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/the_hashtag_generator)                     |
 |19   |[Sum of Pairs](https://www.codewars.com/kata/54d81488b981293527000c8f/train/python)                                 |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/sum_of_pairs)                              |
 |20   |[Tic-Tac-Toe Checker](https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/python)                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/tic_tac_toe_checker)                       |
+|21   |[String incrementer](https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/python)                           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_5/string_incrementer)                        |
 
 [Source](https://www.codewars.com/about)
