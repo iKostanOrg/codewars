@@ -27,6 +27,7 @@ Subpackages
    kyu_5.the_hashtag_generator
    kyu_5.sum_of_pairs
    kyu_5.tic_tac_toe_checker
+   kyu_5.string_incrementer
 
 Module contents
 ---------------
