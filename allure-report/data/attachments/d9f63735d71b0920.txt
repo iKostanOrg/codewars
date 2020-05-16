@@ -1,0 +1,64 @@
+
+LOG =>
+ints: [1, 4, 8, 7, 3, 15],
+s: 8,
+message: should return [1, 7] for sum = 8,
+expected: [1, 7],
+result: [1, 7]
+
+
+LOG =>
+ints: [1, -2, 3, 0, -6, 1],
+s: -6,
+message: should return [0, -6] for sum = -6,
+expected: [0, -6],
+result: [0, -6]
+
+
+LOG =>
+ints: [20, -13, 40],
+s: -7,
+message: should return None for sum = -7,
+expected: None,
+result: None
+
+
+LOG =>
+ints: [1, 2, 3, 4, 1, 0],
+s: 2,
+message: should return [1, 1] for sum = 2,
+expected: [1, 1],
+result: [1, 1]
+
+
+LOG =>
+ints: [10, 5, 2, 3, 7, 5],
+s: 10,
+message: should return [3, 7] for sum = 10,
+expected: [3, 7],
+result: [3, 7]
+
+
+LOG =>
+ints: [4, -2, 3, 3, 4],
+s: 8,
+message: should return [4, 4] for sum = 8,
+expected: [4, 4],
+result: [4, 4]
+
+
+LOG =>
+ints: [0, 2, 0],
+s: 0,
+message: should return [0, 0] for sum = 0,
+expected: [0, 0],
+result: [0, 0]
+
+
+LOG =>
+ints: [5, 9, 13, -3],
+s: 10,
+message: should return [13, -3] for sum = 10,
+expected: [13, -3],
+result: [13, -3]
+

@@ -1,0 +1,40 @@
+
+INITIAL DIRECTION: {'left': False, 'right': True, 'up': False, 'down': False}
+
+LOG =>
+grid: ['X-----|----X'],
+expected: X,
+actual_result: X
+
+
+INITIAL DIRECTION: {'left': False, 'right': False, 'up': False, 'down': True}
+
+LOG =>
+grid: [' X  ', ' |  ', ' +  ', ' X  '],
+expected: X,
+actual_result: X
+
+
+INITIAL DIRECTION: {'left': False, 'right': True, 'up': False, 'down': False}
+
+LOG =>
+grid: ['   |--------+    ', 'X---        ---+ ', '               | ', '               X '],
+expected: X,
+actual_result: X
+
+
+INITIAL DIRECTION: {'left': False, 'right': True, 'up': False, 'down': False}
+
+LOG =>
+grid: ['              ', '   +------    ', '   |          ', 'X--+      X   ', '              '],
+expected: X,
+actual_result: X
+
+
+INITIAL DIRECTION: {'left': False, 'right': True, 'up': False, 'down': False}
+
+LOG =>
+grid: ['      +------+', '      |      |', 'X-----+------+', '      |       ', '      X       '],
+expected: X,
+actual_result: X
+
