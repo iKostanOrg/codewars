@@ -40,7 +40,7 @@ after_success:
   - mypy --ignore-missing-imports utils
   # Generates coverage report, public repo using Travis:
   # Source: https://dev.to/j0nimost/using-codecov-with-travis-ci-pytest-cov-1dfj
-  - codecov
+  - codecov --required || (sleep 5 && codecov --required) || (sleep 5 && codecov --required) || (sleep 5 && codecov --required) || (sleep 5 && codecov --required)
   # python codacy coverage
   # Source: https://github.com/codacy/python-codacy-coverage
   - python-codacy-coverage -r coverage.xml
