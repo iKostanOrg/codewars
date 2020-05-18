@@ -1,0 +1,495 @@
+{
+  "uid" : "503765518024d020",
+  "name" : "Testing checkchoose function",
+  "fullName" : "kyu_6.color_choice.test_checkchoose.CheckchooseTestCase#test_checkchoose",
+  "historyId" : "fc16fe6f8e2f2f0dd1e7d650d0ec62aa",
+  "time" : {
+    "start" : 1589829775110,
+    "stop" : 1589829775112,
+    "duration" : 2
+  },
+  "description" : "\n        In mathematics the number of x combinations you can take from a\n        set of n elements is called the binomial coefficient of n and x,\n        or more often n choose x. The formula to compute m = n choose x is:\n        m = n! / (x! * (n - x)!) where ! is the factorial operator.\n\n        You are a renowned poster designer and painter. You are asked to\n        provide 6 posters all having the same design each in 2 colors.\n        Posters must all have a different color combination and you have\n        the choice of 4 colors: red, blue, yellow, green. How many colors\n        can you choose for each poster?\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Knowing m (number of posters to design), knowing n (total number of available colors), let us search x (number of colors for each poster so that each poster has a unique combination of colors and the number of combinations is exactly the same as the number of posters). In other words we must find x such as n choose x = m (1) for a given m and a given n; m >= 0 and n > 0. If many x are solutions give as result the smallest x. It can happen that when m is given at random there are no x satisfying equation (1) then return -1.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1589829775109,
+      "stop" : 1589829775109,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        In mathematics the number of x combinations you can take from a\n        set of n elements is called the binomial coefficient of n and x,\n        or more often n choose x. The formula to compute m = n choose x is:\n        m = n! / (x! * (n - x)!) where ! is the factorial operator.\n\n        You are a renowned poster designer and painter. You are asked to\n        provide 6 posters all having the same design each in 2 colors.\n        Posters must all have a different color combination and you have\n        the choice of 4 colors: red, blue, yellow, green. How many colors\n        can you choose for each poster?\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Knowing m (number of posters to design), knowing n (total number of available colors), let us search x (number of colors for each poster so that each poster has a unique combination of colors and the number of combinations is exactly the same as the number of posters). In other words we must find x such as n choose x = m (1) for a given m and a given n; m >= 0 and n > 0. If many x are solutions give as result the smallest x. It can happen that when m is given at random there are no x satisfying equation (1) then return -1.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Pass m: 6, n: 4 and assert the result: 2 vs expected: 2",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 4, n: 4 and assert the result: 1 vs expected: 1",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 4, n: 2 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 35, n: 7 and assert the result: 3 vs expected: 3",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 36, n: 7 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 1, n: 6 and assert the result: 0 vs expected: 0",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 1, n: 15 and assert the result: 0 vs expected: 0",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 2, n: 12 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1589829775111,
+        "stop" : 1589829775111,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 75788358475481302186, n: 87 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1589829775112,
+        "stop" : 1589829775112,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "5d14a93510e9852d",
+      "name" : "stdout",
+      "source" : "5d14a93510e9852d.txt",
+      "type" : "text/plain",
+      "size" : 428
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1589829775114,
+      "stop" : 1589829775114,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Factorial"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "story",
+    "value" : "Color Choice"
+  }, {
+    "name" : "suite",
+    "value" : "Fundamentals"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "2864-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.color_choice.test_checkchoose"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5732b380614e4f6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770408061,
+        "stop" : 1589770408064,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ceb8444688579fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524819,
+        "stop" : 1589664524821,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d57c8dac8cf453e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369892,
+        "stop" : 1589664369894,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e72b40810e97c6f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228906,
+        "stop" : 1589664228908,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7f6f2c10a0578f13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788996029,
+        "stop" : 1588788996034,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "6b0197a0af2fd49e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581862,
+        "stop" : 1588788581864,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "920af4cc70c62c2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720911484,
+        "stop" : 1588720911487,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7e566f9f49bc7763",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655765,
+        "stop" : 1588631655767,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e7a890aff0be5f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631386688,
+        "stop" : 1588631386692,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "f334fd468f2ee0ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561975068,
+        "stop" : 1588561975070,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a98aaf10c72e071c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759993,
+        "stop" : 1588486759996,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c7f9a94b9a1c366c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369279081,
+        "stop" : 1588369279083,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "70d4f3c8bf48be68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608898,
+        "stop" : 1588308608900,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6e598dd333ec8af4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207191672,
+        "stop" : 1588207191675,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "67aefc3284498c60",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110161485,
+        "stop" : 1588110161488,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6ba0870401e7d04",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855252032,
+        "stop" : 1587855252034,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6ac14e1036ce668",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775247546,
+        "stop" : 1587775247549,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3670de17367fb9e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933788,
+        "stop" : 1587692933790,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f99b715f139c53a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689217468,
+        "stop" : 1587689217471,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6ce4cbbca2b45180",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689048371,
+        "stop" : 1587689048373,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4e419eadc1f2fe2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202786,
+        "stop" : 1587507202797,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "a541e3cedfcb25cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461190357,
+        "stop" : 1587461190363,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "118eac68cb87a838",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936997110,
+        "stop" : 1586936997119,
+        "duration" : 9
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "5469bdb0766e48f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770408061,
+          "stop" : 1589770408064,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "21d32bdddfc9cb6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589664524819,
+          "stop" : 1589664524821,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "4b00ed9514f2fde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588788996029,
+          "stop" : 1588788996034,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "7205df47a8cb4228",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588720911484,
+          "stop" : 1588720911487,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "500dad83f321a2ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588631655765,
+          "stop" : 1588631655767,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "FUNDAMENTALS" ]
+  },
+  "source" : "503765518024d020.json",
+  "parameterValues" : [ ]
+}

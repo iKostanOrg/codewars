@@ -1,0 +1,378 @@
+{
+  "uid" : "72c8fb710cf8dbeb",
+  "name" : "Testing anagrams function",
+  "fullName" : "kyu_5.where_my_anagrams_at.test_anagrams.AnagramsTestCase#test_anagrams",
+  "historyId" : "e4a3219ae28469fc10d020cba24dd0dd",
+  "time" : {
+    "start" : 1589829774997,
+    "stop" : 1589829774998,
+    "duration" : 1
+  },
+  "description" : "\n        Test a function that will find all the anagrams of a word from a list.\n        You will be given two inputs a word and an array with words. You should\n        return an array of all the anagrams or an empty array if there are none.\n\n        For example:\n\n        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']\n        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']\n        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1589829774996,
+      "stop" : 1589829774996,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function that will find all the anagrams of a word from a list.\n        You will be given two inputs a word and an array with words. You should\n        return an array of all the anagrams or an empty array if there are none.\n\n        For example:\n\n        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']\n        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']\n        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data (list of strings) and verify the output",
+      "time" : {
+        "start" : 1589829774998,
+        "stop" : 1589829774998,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "4e197698cda7981d",
+      "name" : "stdout",
+      "source" : "4e197698cda7981d.txt",
+      "type" : "text/plain",
+      "size" : 170
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1589829774999,
+      "stop" : 1589829774999,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "story",
+    "value" : "Where my anagrams at?"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "2864-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.where_my_anagrams_at.test_anagrams"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d7feb813ab275d04",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770407960,
+        "stop" : 1589770407961,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9ae6c1efa1a29287",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524708,
+        "stop" : 1589664524710,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "94ac03a713d74194",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369806,
+        "stop" : 1589664369807,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "47d37620bd86ab7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228815,
+        "stop" : 1589664228816,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9f51641dc52e35d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995914,
+        "stop" : 1588788995915,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "25373e10dbced136",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581771,
+        "stop" : 1588788581772,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bef42b5687764233",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720911396,
+        "stop" : 1588720911397,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b0bb8ab1f309da16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655643,
+        "stop" : 1588631655645,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "65aca56279cfad3b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631386548,
+        "stop" : 1588631386550,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b6a6a1af6168ea5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974948,
+        "stop" : 1588561974950,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "996b0665f10e23f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759831,
+        "stop" : 1588486759833,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7104ca5efbc3795d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369278970,
+        "stop" : 1588369278971,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5fea6e023ebeae87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608763,
+        "stop" : 1588308608764,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bf06e8c8ea8480a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207191549,
+        "stop" : 1588207191551,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "15076675fdeb356c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110161368,
+        "stop" : 1588110161369,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f3f20cbedac520a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855251915,
+        "stop" : 1587855251915,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "274ceed222d1e779",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775247454,
+        "stop" : 1587775247455,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bd8270703ff4e889",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933696,
+        "stop" : 1587692933697,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "295a7fee3521b9c7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689217378,
+        "stop" : 1587689217379,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "218f4f6952d1034d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689048244,
+        "stop" : 1587689048245,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "84fde7c1529b7e2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202693,
+        "stop" : 1587507202694,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "da1f84942980ed1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461190239,
+        "stop" : 1587461190240,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "45dcb3383501a27e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936996964,
+        "stop" : 1586936996981,
+        "duration" : 17
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "f786780434215822",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770407960,
+          "stop" : 1589770407961,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a982ddc8c1b07196",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589664524708,
+          "stop" : 1589664524710,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "20d204d2e1bd41e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588788995914,
+          "stop" : 1588788995915,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "2be5f320c9c5a735",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588720911396,
+          "stop" : 1588720911397,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "1f00562bd1369edf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588631655643,
+          "stop" : 1588631655645,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "ALGORITHMS" ]
+  },
+  "source" : "72c8fb710cf8dbeb.json",
+  "parameterValues" : [ ]
+}

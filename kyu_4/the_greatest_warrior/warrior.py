@@ -116,27 +116,23 @@ class Warrior:
         # If an enemy level does not fall in the range of 1 to 100,
         # the battle cannot happen and should return "Invalid level".
         if 1 > enemy_level or enemy_level > 100:
-            print('Battle rule #1')
             return "Invalid level"
 
         # Completing a battle against an enemy with the same level
         # as your warrior will be worth 10 experience points.
         if enemy_level == self.level:
-            # print('Battle rule #2')
             self.__update_experience(10)
             return FIGHT_MESSAGES[1]
 
         # Completing a battle against an enemy who is one level lower
         # than your warrior will be worth 5 experience points.
         if enemy_level == self.level - 1:
-            # print('Battle rule #3')
             self.__update_experience(5)
             return FIGHT_MESSAGES[1]
 
         # Completing a battle against an enemy who is two levels lower
         # or more than your warrior will give 0 experience points.
         if enemy_level <= self.level - 2:
-            # print('Battle rule #4')
             self.__update_experience(0)
             return FIGHT_MESSAGES[0]
 
@@ -146,10 +142,8 @@ class Warrior:
         # your warrior will gain. The formula is 20 * diff * diff where diff
         # equals the difference in levels between the enemy and your warrior.
         if enemy_level > self.level:
-            # print('Battle rule #5')
             diff = enemy_level - self.level
             if diff >= 5 and (enemy_level // 10) - (self.level // 10) >= 1:
-                # print('Battle rule #6')
                 return FIGHT_MESSAGES[-1]
             self.__update_experience(20 * diff * diff)
             return FIGHT_MESSAGES[2]

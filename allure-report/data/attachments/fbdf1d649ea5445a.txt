@@ -1,0 +1,24 @@
+
+LOG =>
+employed: True,
+vacation: True,
+expected: False
+
+
+LOG =>
+employed: False,
+vacation: True,
+expected: False
+
+
+LOG =>
+employed: False,
+vacation: False,
+expected: False
+
+
+LOG =>
+employed: True,
+vacation: False,
+expected: True
+
