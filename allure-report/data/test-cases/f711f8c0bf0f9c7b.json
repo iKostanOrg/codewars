@@ -1,0 +1,258 @@
+{
+  "uid" : "f711f8c0bf0f9c7b",
+  "name" : "Testing checkchoose function",
+  "fullName" : "kyu_6.color_choice.test_checkchoose.CheckchooseTestCase#test_checkchoose",
+  "historyId" : "fc16fe6f8e2f2f0dd1e7d650d0ec62aa",
+  "time" : {
+    "start" : 1588369279081,
+    "stop" : 1588369279083,
+    "duration" : 2
+  },
+  "description" : "\n        In mathematics the number of x combinations you can take from a\n        set of n elements is called the binomial coefficient of n and x,\n        or more often n choose x. The formula to compute m = n choose x is:\n        m = n! / (x! * (n - x)!) where ! is the factorial operator.\n\n        You are a renowned poster designer and painter. You are asked to\n        provide 6 posters all having the same design each in 2 colors.\n        Posters must all have a different color combination and you have\n        the choice of 4 colors: red, blue, yellow, green. How many colors\n        can you choose for each poster?\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Knowing m (number of posters to design), knowing n (total number of available colors), let us search x (number of colors for each poster so that each poster has a unique combination of colors and the number of combinations is exactly the same as the number of posters). In other words we must find x such as n choose x = m (1) for a given m and a given n; m >= 0 and n > 0. If many x are solutions give as result the smallest x. It can happen that when m is given at random there are no x satisfying equation (1) then return -1.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1588369279081,
+      "stop" : 1588369279081,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        In mathematics the number of x combinations you can take from a\n        set of n elements is called the binomial coefficient of n and x,\n        or more often n choose x. The formula to compute m = n choose x is:\n        m = n! / (x! * (n - x)!) where ! is the factorial operator.\n\n        You are a renowned poster designer and painter. You are asked to\n        provide 6 posters all having the same design each in 2 colors.\n        Posters must all have a different color combination and you have\n        the choice of 4 colors: red, blue, yellow, green. How many colors\n        can you choose for each poster?\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Knowing m (number of posters to design), knowing n (total number of available colors), let us search x (number of colors for each poster so that each poster has a unique combination of colors and the number of combinations is exactly the same as the number of posters). In other words we must find x such as n choose x = m (1) for a given m and a given n; m >= 0 and n > 0. If many x are solutions give as result the smallest x. It can happen that when m is given at random there are no x satisfying equation (1) then return -1.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Pass m: 6, n: 4 and assert the result: 2 vs expected: 2",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 4, n: 4 and assert the result: 1 vs expected: 1",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 4, n: 2 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 35, n: 7 and assert the result: 3 vs expected: 3",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 36, n: 7 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 1, n: 6 and assert the result: 0 vs expected: 0",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 1, n: 15 and assert the result: 0 vs expected: 0",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 2, n: 12 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1588369279082,
+        "stop" : 1588369279082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Pass m: 75788358475481302186, n: 87 and assert the result: -1 vs expected: -1",
+      "time" : {
+        "start" : 1588369279083,
+        "stop" : 1588369279083,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "e1a64f584df81daf",
+      "name" : "stdout",
+      "source" : "e1a64f584df81daf.txt",
+      "type" : "text/plain",
+      "size" : 428
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1588369279085,
+      "stop" : 1588369279085,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "suite",
+    "value" : "Fundamentals"
+  }, {
+    "name" : "story",
+    "value" : "Color Choice"
+  }, {
+    "name" : "feature",
+    "value" : "Factorial"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "14600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.color_choice.test_checkchoose"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "FUNDAMENTALS" ]
+  },
+  "source" : "f711f8c0bf0f9c7b.json",
+  "parameterValues" : [ ]
+}
