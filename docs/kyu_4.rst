@@ -14,6 +14,7 @@ Subpackages
    kyu_4.strip_comments
    kyu_4.snail
    kyu_4.sum_by_factors
+   kyu_4.most_frequently_used_words
 
 Module contents
 ---------------
