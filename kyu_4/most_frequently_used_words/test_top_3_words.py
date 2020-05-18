@@ -25,11 +25,9 @@ class Top3WordsTestCase(unittest.TestCase):
     Testing top_3_words
     """
 
-    def test_format_duration(self):
+    def test_top_3_words(self):
         """
         Test top_3_words function
-
-        :return:
         """
 
         allure.dynamic.title("Testing top_3_words function")
