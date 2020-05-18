@@ -26,22 +26,21 @@ script:
   # Run pytest for all tests subdirectories and check test coverage with pytest-cov:
   - pytest --cov-config=.coveragerc --cov-report xml:cov.xml --cov-report term-missing --cov=./
   #- coverage report -m
-  #- coverage xml
-  - mypy --ignore-missing-imports kyu_8
-  - mypy --ignore-missing-imports kyu_7
-  - mypy --ignore-missing-imports kyu_6
-  - mypy --ignore-missing-imports kyu_5
-  - mypy --ignore-missing-imports kyu_4
-  - mypy --ignore-missing-imports utils
 
 after_script:
   - coverage xml
   - if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_PYTHON_VERSION" == "3.7" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
 
 after_success:
+  - mypy --ignore-missing-imports kyu_8
+  - mypy --ignore-missing-imports kyu_7
+  - mypy --ignore-missing-imports kyu_6
+  - mypy --ignore-missing-imports kyu_5
+  - mypy --ignore-missing-imports kyu_4
+  - mypy --ignore-missing-imports utils
   # Generates coverage report, public repo using Travis:
   # Source: https://dev.to/j0nimost/using-codecov-with-travis-ci-pytest-cov-1dfj
-  - codecov
+  - codecov --required || (sleep 5 && codecov --required) || (sleep 5 && codecov --required) || (sleep 5 && codecov --required) || (sleep 5 && codecov --required)
   # python codacy coverage
   # Source: https://github.com/codacy/python-codacy-coverage
   - python-codacy-coverage -r coverage.xml
