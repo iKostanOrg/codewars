@@ -15,6 +15,7 @@ Subpackages
    kyu_4.snail
    kyu_4.sum_by_factors
    kyu_4.most_frequently_used_words
+   kyu_4.the_greatest_warrior
 
 Module contents
 ---------------
