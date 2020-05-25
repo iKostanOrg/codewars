@@ -9,6 +9,7 @@ Subpackages
 
    kyu_3.calculator
    kyu_3.rail_fence_cipher_encoding_and_decoding
+   kyu_3.make_spiral
 
 Module contents
 ---------------

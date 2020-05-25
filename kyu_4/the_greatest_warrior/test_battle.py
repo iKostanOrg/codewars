@@ -7,7 +7,6 @@
 
 import allure
 import unittest
-from utils.log_func import print_log
 from kyu_4.the_greatest_warrior.warrior import Warrior
 
 
