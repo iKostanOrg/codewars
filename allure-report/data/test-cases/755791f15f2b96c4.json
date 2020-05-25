@@ -1,0 +1,386 @@
+{
+  "uid" : "755791f15f2b96c4",
+  "name" : "Testing set_alarm function",
+  "fullName" : "kyu_8.set_alarm.test_set_alarm.SetAlarmTestCase#test_set_alarm",
+  "historyId" : "e3b42ce7d56f4739019f8eb0baf01610",
+  "time" : {
+    "start" : 1590447345710,
+    "stop" : 1590447345711,
+    "duration" : 1
+  },
+  "description" : "\n        Testing set_alarm function with various test inputs.\n\n        The function should return true if you are employed\n        and not on vacation (because these are the circumstances\n        under which you need to set an alarm). It should return\n        false otherwise.\n\n        Examples:\n\n        setAlarm(true, true) -> false\n        setAlarm(false, true) -> false\n        setAlarm(false, false) -> false\n        setAlarm(true, false) -> true\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1590447345709,
+      "stop" : 1590447345709,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing set_alarm function with various test inputs.\n\n        The function should return true if you are employed\n        and not on vacation (because these are the circumstances\n        under which you need to set an alarm). It should return\n        false otherwise.\n\n        Examples:\n\n        setAlarm(true, true) -> false\n        setAlarm(false, true) -> false\n        setAlarm(false, false) -> false\n        setAlarm(true, false) -> true\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data and verify the output",
+      "time" : {
+        "start" : 1590447345711,
+        "stop" : 1590447345711,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "139b3b5ac302781d",
+      "name" : "stdout",
+      "source" : "139b3b5ac302781d.txt",
+      "type" : "text/plain",
+      "size" : 231
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1590447345712,
+      "stop" : 1590447345712,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite",
+    "value" : "Data Structures"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "story",
+    "value" : "L1: Set Alarm"
+  }, {
+    "name" : "feature",
+    "value" : "Boolean"
+  }, {
+    "name" : "tag",
+    "value" : "BOOLEANS"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "16192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.set_alarm.test_set_alarm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/568dcc3c7f12767a62000038/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dd5eaf50774d2969",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829779206,
+        "stop" : 1589829779207,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c5d62902f17ec5ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770412066,
+        "stop" : 1589770412066,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9f8f1ba86f4423c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664528833,
+        "stop" : 1589664528834,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "da59c3427a89ee8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664374768,
+        "stop" : 1589664374771,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "73cc6f49a130406b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664232873,
+        "stop" : 1589664232874,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed82a7a953624585",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588789000185,
+        "stop" : 1588789000186,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "547db728f62d785",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788585754,
+        "stop" : 1588788585755,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4089f78377ae1e24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720915350,
+        "stop" : 1588720915351,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2659708e4f7a3027",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631659824,
+        "stop" : 1588631659825,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4d07ae0b01ec0684",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631391128,
+        "stop" : 1588631391130,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b69d4d3b4dd62711",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561980419,
+        "stop" : 1588561980420,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c2836acdfe063c67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486764367,
+        "stop" : 1588486764368,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "db3a4eb976dd54a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369283164,
+        "stop" : 1588369283165,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "30cac248335035ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308612837,
+        "stop" : 1588308612838,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5fcbe75384adf83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207196024,
+        "stop" : 1588207196025,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6003b785bbf8285a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110165533,
+        "stop" : 1588110165534,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "366db8994fb81f60",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855256115,
+        "stop" : 1587855256116,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e0a871c829300d50",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775251480,
+        "stop" : 1587775251481,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a59c13a7720cab17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692937840,
+        "stop" : 1587692937841,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "244764c9e3905584",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689221458,
+        "stop" : 1587689221459,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d9c5ac04e0f7be54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689052300,
+        "stop" : 1587689052301,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "db86bc9eabf42b23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507207187,
+        "stop" : 1587507207188,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "71575d96e9ea46d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461194561,
+        "stop" : 1587461194562,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1a1eaef319df299f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586937002493,
+        "stop" : 1586937002494,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 20,
+        "unknown" : 0,
+        "total" : 20
+      },
+      "items" : [ {
+        "uid" : "120709a16c8bde19",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589829779206,
+          "stop" : 1589829779207,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3a0c91f8473dbbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770412066,
+          "stop" : 1589770412066,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "8c2b9e621a7ea909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589664528833,
+          "stop" : 1589664528834,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "cb03566fb804e6ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588789000185,
+          "stop" : 1588789000186,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "cfb60d364be280fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588720915350,
+          "stop" : 1588720915351,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "FUNDAMENTALS", "BOOLEANS" ]
+  },
+  "source" : "755791f15f2b96c4.json",
+  "parameterValues" : [ ]
+}
