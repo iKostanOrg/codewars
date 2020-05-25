@@ -1,0 +1,430 @@
+{
+  "uid" : "1b3ec1533b28f59b",
+  "name" : "Testing Calculator class",
+  "fullName" : "kyu_3.calculator.test_calculator.CalculatorTestCase#test_calculator",
+  "historyId" : "100f3ec5a4076df24287398b05313e40",
+  "time" : {
+    "start" : 1590447880408,
+    "stop" : 1590447880409,
+    "duration" : 1
+  },
+  "description" : "\n        Testing Calculator class\n\n        A simple calculator that given a string of operators (), +, -, *, /\n        and numbers separated by spaces will return the value of that expression\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>1. given a string of operators (), +, -, *, / and numbers separated by spaces<br/>2. the calculator should return the value of that expression</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1590447880406,
+      "stop" : 1590447880406,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing Calculator class\n\n        A simple calculator that given a string of operators (), +, -, *, /\n        and numbers separated by spaces will return the value of that expression\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>1. given a string of operators (), +, -, *, / and numbers separated by spaces<br/>2. the calculator should return the value of that expression</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a test string (127), calculate the result (127.0) and compare vs expected (127)",
+      "time" : {
+        "start" : 1590447880408,
+        "stop" : 1590447880408,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 + 3), calculate the result (5.0) and compare vs expected (5)",
+      "time" : {
+        "start" : 1590447880408,
+        "stop" : 1590447880408,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 - 3 - 4), calculate the result (-5.0) and compare vs expected (-5)",
+      "time" : {
+        "start" : 1590447880408,
+        "stop" : 1590447880408,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (10 * 5 / 2), calculate the result (25.0) and compare vs expected (25)",
+      "time" : {
+        "start" : 1590447880408,
+        "stop" : 1590447880408,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 / 2 + 3 * 4 - 6), calculate the result (7.0) and compare vs expected (7)",
+      "time" : {
+        "start" : 1590447880409,
+        "stop" : 1590447880409,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 + 3 * 4 / 3 - 6 / 3 * 3 + 8), calculate the result (8.0) and compare vs expected (8)",
+      "time" : {
+        "start" : 1590447880409,
+        "stop" : 1590447880409,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (1.1 + 2.2 + 3.3), calculate the result (6.6) and compare vs expected (6.6)",
+      "time" : {
+        "start" : 1590447880409,
+        "stop" : 1590447880409,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (1.1 * 2.2 * 3.3), calculate the result (7.986000000000001) and compare vs expected (7.986000000000001)",
+      "time" : {
+        "start" : 1590447880409,
+        "stop" : 1590447880409,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (10 * 5 / 2), calculate the result (25.0) and compare vs expected (25)",
+      "time" : {
+        "start" : 1590447880409,
+        "stop" : 1590447880409,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ad49cc2d8c7222c4",
+      "name" : "stdout",
+      "source" : "ad49cc2d8c7222c4.txt",
+      "type" : "text/plain",
+      "size" : 896
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1590447880411,
+      "stop" : 1590447880411,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "story",
+    "value" : "Calculator"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "epic",
+    "value" : "3 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "PARSING"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "tag",
+    "value" : "BASIC LANGUAGE FEATURES"
+  }, {
+    "name" : "tag",
+    "value" : "EXPRESSIONS"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_3.calculator.test_calculator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5235c913397cbf2508000048/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "983c655114ca18e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447340830,
+        "stop" : 1590447340832,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6022f450227805ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829774141,
+        "stop" : 1589829774142,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d28e2addf107e26e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770407026,
+        "stop" : 1589770407027,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cb9b514cd73e14e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664523771,
+        "stop" : 1589664523774,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "780591d89ff0d6ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664368888,
+        "stop" : 1589664368890,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1557e66d1c16ae0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664227878,
+        "stop" : 1589664227880,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5037cf84a605066e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995147,
+        "stop" : 1588788995149,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "592aadeda024b2a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581026,
+        "stop" : 1588788581028,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "28b5105775015df7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720910653,
+        "stop" : 1588720910655,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "efd016a0f873a104",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631654847,
+        "stop" : 1588631654849,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a319f66c97a21066",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631385483,
+        "stop" : 1588631385485,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "530efa5c05aff245",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974243,
+        "stop" : 1588561974246,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "63b813b4f84a5023",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759027,
+        "stop" : 1588486759028,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "fcf8c52cdb397a74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589829774141,
+          "stop" : 1589829774142,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "60d4caec6d16de84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770407026,
+          "stop" : 1589770407027,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "bb29a090a6d03658",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589664523771,
+          "stop" : 1589664523774,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "f93a0a4ba22b0333",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588788995147,
+          "stop" : 1588788995149,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "fcb6150d43b555e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588720910653,
+          "stop" : 1588720910655,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "EXPRESSIONS", "FUNDAMENTALS", "PARSING", "BASIC LANGUAGE FEATURES", "ALGORITHMS" ]
+  },
+  "source" : "1b3ec1533b28f59b.json",
+  "parameterValues" : [ ]
+}

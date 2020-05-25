@@ -1,0 +1,36 @@
+
+LOG =>
+sizes: [4, 4, 4, 3, 3],
+hd: 12,
+expected: 3
+
+
+LOG =>
+sizes: [4, 4, 4, 3, 3],
+hd: 11,
+expected: 2
+
+
+LOG =>
+sizes: [4, 8, 15, 16, 23, 42],
+hd: 108,
+expected: 6
+
+
+LOG =>
+sizes: [13],
+hd: 13,
+expected: 1
+
+
+LOG =>
+sizes: [1, 2, 3, 4],
+hd: 250,
+expected: 4
+
+
+LOG =>
+sizes: [100],
+hd: 500,
+expected: 1
+
