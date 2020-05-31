@@ -26,5 +26,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |8    |[Sum by Factors](https://www.codewars.com/kata/54d496788776e49e6b00052f)                                            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sum_by_factors)                 |
 |9    |[Most frequently used words in a text](https://www.codewars.com/kata/51e056fe544cf36c410000fb)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/most_frequently_used_words)     |
 |10   |[The Greatest Warrior](https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python)                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/the_greatest_warrior)           |
+|11   |[Strings Mix](https://www.codewars.com/kata/5629db57620258aa9d000014/solutions/python/all/newest)                   |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strings_mix)                    |
 
 [Source](https://www.codewars.com/about)
