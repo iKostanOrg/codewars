@@ -11,15 +11,15 @@ LOWERCASE = string.ascii_lowercase
 
 def mix(s1: str, s2: str) -> str:
     """
-Given two strings s1 and s2, we want to visualize
-how different the two strings are. We will only
-take into account the lowercase letters (a to z).
-First let us count the frequency of each lowercase
-letters in s1 and s2.
-:param s1: string a
-:param s2: string b
-:return: the difference between two strings
-"""
+    Given two strings s1 and s2, we want to visualize
+    how different the two strings are. We will only
+    take into account the lowercase letters (a to z).
+    First let us count the frequency of each lowercase
+    letters in s1 and s2.
+    :param s1: string a
+    :param s2: string b
+    :return: the difference between two strings
+    """
     s1_results: dict = get_counters(s1)
     s2_results: dict = get_counters(s2)
     keys: list = sorted(
