@@ -19,8 +19,9 @@ from kyu_4.strings_mix.solution import mix
 @allure.feature("String")
 @allure.story("Strings Mix")
 @allure.tag('FUNDAMENTALS', 'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/5629db57620258aa9d000014/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5629db57620258aa9d000014/train/python',
+    name='Source/Kata')
 class MixTestCase(unittest.TestCase):
 
     def test_smix(self):
@@ -33,15 +34,16 @@ class MixTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'mix' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing pmix function</p>"
-                                        "<p>Given two strings s1 and s2, the 'mix' function should "
-                                        "visualize how different the two strings are. We will only "
-                                        "take into account the lowercase letters (a to z). First let "
-                                        "us count the frequency of each lowercase letters in s1 and s2.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing pmix function</p>"
+            "<p>Given two strings s1 and s2, the 'mix' function should "
+            "visualize how different the two strings are. We will only "
+            "take into account the lowercase letters (a to z). First let "
+            "us count the frequency of each lowercase letters in s1 and s2.</p>")
 
         test_data = (
             ("Are they here",
@@ -71,5 +73,6 @@ class MixTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter s1 and s2 strings and assert the output vs expected result"):
+            with allure.step("Enter s1 and s2 strings and assert "
+                             "the output vs expected result"):
                 self.assertEqual(expected, actual_result)
