@@ -32,9 +32,9 @@
 
 Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
 
-* Codewars supports `Python 2.7.6`, `Python 3.4.3` and `Python 3.6.0`.
+*   Codewars supports `Python 2.7.6`, `Python 3.4.3` and `Python 3.6.0`.
 
-* Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
+*   Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
 
 ### Difficulty
 
@@ -268,8 +268,8 @@ Even if you haven't tracked the files so far, Git seems to be able to "know" abo
 
 **NOTE:**
 
-* First commit your current changes, or you will lose them.
-* Then run the following commands from the top folder of your Git repository:
+*   First commit your current changes, or you will lose them.
+*   Then run the following commands from the top folder of your Git repository:
 
 ```bash 
 git rm -r --cached .
@@ -388,11 +388,11 @@ The issue and the fix are described in read-the-docs issue [#6554](https://githu
 
 The fix is to wipe out the build environment as follows (this is taken from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
 
-* Log in to read-the-docs
-* Go to Versions
-* Click on the Edit button of the version you want to wipe on the right side of the page
-* Go to the bottom of the page and click the wipe link, next to the “Save” button
-* Now you can re-build the version with a fresh build environment!
+*   Log in to read-the-docs
+*   Go to Versions
+*   Click on the Edit button of the version you want to wipe on the right side of the page
+*   Go to the bottom of the page and click the wipe link, next to the “Save” button
+*   Now you can re-build the version with a fresh build environment!
 
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out the environment for every build -- see comment from Grimmy below).
 
