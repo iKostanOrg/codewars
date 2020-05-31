@@ -1,0 +1,618 @@
+{
+  "uid" : "6f75a57305ce67d7",
+  "name" : "Testing alphabet_war function",
+  "fullName" : "kyu_5.alphabet_wars_nuclear_strike.test_alphabet_war.AlphabetWarTestCase#test_alphabet_war",
+  "historyId" : "265b67c4139deaadb4d7c9416643f4c8",
+  "time" : {
+    "start" : 1590952389544,
+    "stop" : 1590952389548,
+    "duration" : 4
+  },
+  "description" : "\n        Testing alphabet_war function\n\n        Introduction\n        There is a war and nobody knows - the alphabet war!\n        The letters hide in their nuclear shelters. The\n        nuclear strikes hit the battlefield and killed a\n        lot of them.\n\n        Task\n        Write a function that accepts battlefield string\n        and returns letters that survived the nuclear strike.\n\n        1. The battlefield string consists of only small letters, #,[ and ].\n\n        2. The nuclear shelter is represented by square brackets [].\n        The letters inside the square brackets represent letters\n        inside the shelter.\n\n        3. The # means a place where nuclear strike hit the battlefield.\n        If there is at least one # on the battlefield, all letters outside\n        of shelter die. When there is no any # on the battlefield, all letters\n        survive (but do not expect such scenario too often ;-P ).\n\n        4. The shelters have some durability. When 2 or more # hit close to\n        the shelter, the shelter is destroyed and all letters inside evaporate.\n        The 'close to the shelter' means on the ground between the shelter and\n        the next shelter (or beginning/end of battlefield). The below samples\n        make it clear for you.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function that accepts battlefield string and returns letters that survived the nuclear strike.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1590952389543,
+      "stop" : 1590952389543,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing alphabet_war function\n\n        Introduction\n        There is a war and nobody knows - the alphabet war!\n        The letters hide in their nuclear shelters. The\n        nuclear strikes hit the battlefield and killed a\n        lot of them.\n\n        Task\n        Write a function that accepts battlefield string\n        and returns letters that survived the nuclear strike.\n\n        1. The battlefield string consists of only small letters, #,[ and ].\n\n        2. The nuclear shelter is represented by square brackets [].\n        The letters inside the square brackets represent letters\n        inside the shelter.\n\n        3. The # means a place where nuclear strike hit the battlefield.\n        If there is at least one # on the battlefield, all letters outside\n        of shelter die. When there is no any # on the battlefield, all letters\n        survive (but do not expect such scenario too often ;-P ).\n\n        4. The shelters have some durability. When 2 or more # hit close to\n        the shelter, the shelter is destroyed and all letters inside evaporate.\n        The 'close to the shelter' means on the ground between the shelter and\n        the next shelter (or beginning/end of battlefield). The below samples\n        make it clear for you.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function that accepts battlefield string and returns letters that survived the nuclear strike.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test string ([a]#[b]#[c]) and verify the output (ac) vs expected (ac)",
+      "time" : {
+        "start" : 1590952389545,
+        "stop" : 1590952389546,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string ([a]#b#[c][d]) and verify the output (d) vs expected (d)",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string ([a][b][c]) and verify the output (abc) vs expected (abc)",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##a[a]b[c]#) and verify the output (c) vs expected (c)",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (abde[fgh]ijk) and verify the output (abdefghijk) vs expected (abdefghijk)",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (ab#de[fgh]ijk) and verify the output (fgh) vs expected (fgh)",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (ab#de[fgh]ij#k) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abde[fgh]ijk) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1590952389546,
+        "stop" : 1590952389547,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abde[fgh]) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1590952389547,
+        "stop" : 1590952389547,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abcde[fgh]) and verify the output () vs expected ()",
+      "time" : {
+        "start" : 1590952389547,
+        "stop" : 1590952389547,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (abcde[fgh]) and verify the output (abcdefgh) vs expected (abcdefgh)",
+      "time" : {
+        "start" : 1590952389547,
+        "stop" : 1590952389547,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (##abde[fgh]ijk[mn]op) and verify the output (mn) vs expected (mn)",
+      "time" : {
+        "start" : 1590952389547,
+        "stop" : 1590952389547,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string (#abde[fgh]i#jk[mn]op) and verify the output (mn) vs expected (mn)",
+      "time" : {
+        "start" : 1590952389547,
+        "stop" : 1590952389547,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter test string ([ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#) and verify the output (abijk) vs expected (abijk)",
+      "time" : {
+        "start" : 1590952389547,
+        "stop" : 1590952389547,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e36b04b8d7a00d0d",
+      "name" : "stdout",
+      "source" : "e36b04b8d7a00d0d.txt",
+      "type" : "text/plain",
+      "size" : 908
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1590952389549,
+      "stop" : 1590952389549,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "tag",
+    "value" : "ADVANCED"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "tag",
+    "value" : "EXPRESSIONS"
+  }, {
+    "name" : "tag",
+    "value" : "PROGRAMMING"
+  }, {
+    "name" : "suite",
+    "value" : "Advanced Language Features"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "REGULAR"
+  }, {
+    "name" : "tag",
+    "value" : "DECLARATIVE"
+  }, {
+    "name" : "tag",
+    "value" : "LANGUAGE"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "tag",
+    "value" : "FEATURES"
+  }, {
+    "name" : "story",
+    "value" : "Alphabet wars - nuclear strike"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "3372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.alphabet_wars_nuclear_strike.test_alphabet_war"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "edf0f0dd0be7a0b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447880746,
+        "stop" : 1590447880749,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ea7c8aa1af9f0c85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447341168,
+        "stop" : 1590447341170,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fc6c68b4fb296cef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829774448,
+        "stop" : 1589829774450,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3b49dbfd3ed66ad0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770407331,
+        "stop" : 1589770407333,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f6b6cb56c6f15909",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524039,
+        "stop" : 1589664524041,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e15707a57d64a256",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369209,
+        "stop" : 1589664369211,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4c558816f973ff79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228270,
+        "stop" : 1589664228272,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d860986dd89368fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995386,
+        "stop" : 1588788995389,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "cfa1baea07cd5806",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581271,
+        "stop" : 1588788581273,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3a580342773f84dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720910893,
+        "stop" : 1588720910895,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "824402fb109c5d28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655073,
+        "stop" : 1588631655076,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7394b0188337053c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631385757,
+        "stop" : 1588631385761,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "2ca263531629f236",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974371,
+        "stop" : 1588561974373,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4363d0514f0d388e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759158,
+        "stop" : 1588486759160,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "11ee67018eb972d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369278388,
+        "stop" : 1588369278390,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "31965a90ca7ac929",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608238,
+        "stop" : 1588308608241,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7503a692a7259dbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207190963,
+        "stop" : 1588207190965,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "20e8f752c37e883b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110160875,
+        "stop" : 1588110160877,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "19f81ba72eb01957",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855251326,
+        "stop" : 1587855251329,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3f12b663077f6468",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775246977,
+        "stop" : 1587775246980,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1ce619093cf336be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933212,
+        "stop" : 1587692933214,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1e41d6331607d642",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689216897,
+        "stop" : 1587689216901,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "d00686d655a8b372",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689047726,
+        "stop" : 1587689047728,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d1fbe9d14223f01",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202223,
+        "stop" : 1587507202225,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c0be15be668f6af5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461189588,
+        "stop" : 1587461189593,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "81827a0d9f6bdfa7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936996282,
+        "stop" : 1586936996285,
+        "duration" : 3
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 21,
+        "unknown" : 0,
+        "total" : 21
+      },
+      "items" : [ {
+        "uid" : "1850665950b9c10e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590447880746,
+          "stop" : 1590447880749,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "54de2ab95ee8cc3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589829774448,
+          "stop" : 1589829774450,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "b2521c8955f92daf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770407331,
+          "stop" : 1589770407333,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "73e39707c66535b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589664524039,
+          "stop" : 1589664524041,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "4c9613e5c9a35502",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588788995386,
+          "stop" : 1588788995389,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "LANGUAGE", "EXPRESSIONS", "REGULAR", "DECLARATIVE", "FUNDAMENTALS", "PROGRAMMING", "ADVANCED", "FEATURES" ]
+  },
+  "source" : "6f75a57305ce67d7.json",
+  "parameterValues" : [ ]
+}
