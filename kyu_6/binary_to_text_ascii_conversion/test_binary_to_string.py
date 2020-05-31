@@ -5,7 +5,6 @@
 # FUNDAMENTALS BINARY ASCII CHARACTER ENCODINGS FORMATS STRINGS
 
 import allure
-import pytest
 import unittest
 from utils.log_func import print_log
 from kyu_6.binary_to_text_ascii_conversion.binary_to_string import binary_to_string
