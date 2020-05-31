@@ -13,7 +13,7 @@ def get_rails(string: str, n: int) -> list:
     """
 
     rails: list = list()
-    for i in range(0, n):
+    while len(rails) != n:
         rails.append(list())
 
     row = 0
