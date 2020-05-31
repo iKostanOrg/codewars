@@ -187,7 +187,7 @@ Set initial parameters: line, spiral, direction, coordinate, done
 :return:
 """
     spiral: list = list()
-    for x in range(0, size):
+    while len(spiral) != size:
         line: list = [0] * size
         spiral.append(line)
 
