@@ -37,6 +37,8 @@ after_success:
   - mypy --ignore-missing-imports kyu_6
   - mypy --ignore-missing-imports kyu_5
   - mypy --ignore-missing-imports kyu_4
+  - mypy --ignore-missing-imports kyu_3
+  - mypy --ignore-missing-imports kyu_2
   - mypy --ignore-missing-imports utils
   # Generates coverage report, public repo using Travis:
   # Source: https://dev.to/j0nimost/using-codecov-with-travis-ci-pytest-cov-1dfj
