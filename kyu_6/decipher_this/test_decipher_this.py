@@ -48,6 +48,8 @@ class DecipherThisTestCase(unittest.TestCase):
             "</p>")
 
         test_data = (
+            ("",
+             ""),
             ('72olle 103doo 100ya',
              'Hello good day'),
             ('82yade 115te 103o',
