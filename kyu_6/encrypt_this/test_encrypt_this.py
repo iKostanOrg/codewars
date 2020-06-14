@@ -20,12 +20,14 @@ from kyu_6.encrypt_this.solution import encrypt_this
 @allure.tag('FUNDAMENTALS', 'STRINGS', 'REGULAR EXPRESSIONS',
             'DECLARATIVE PROGRAMMING', 'ADVANCED LANGUAGE FEATURES',
             'ARRAYS', 'CIPHERS', 'ALGORITHMS', 'CRYPTOGRAPHY', 'SECURITY')
-@allure.link(url='https://www.codewars.com/kata/5848565e273af816fb000449/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5848565e273af816fb000449/train/python',
+    name='Source/Kata')
 class EncryptThisTestCase(unittest.TestCase):
     """
     Testing encrypt_this function
     """
+
     def test_encrypt_this(self):
         """
         Testing encrypt_this function
@@ -34,17 +36,18 @@ class EncryptThisTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing encrypt_this function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "Your message is a string containing space separated words.<br>"
-                                        "You need to encrypt each word in the message using the following rules:<br>"
-                                        " * The first letter needs to be converted to its ASCII code.<br>"
-                                        " * The second letter needs to be switched with the last letter<br>"
-                                        "Keepin' it simple: There are no special characters in input."
-                                        "</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "Your message is a string containing space separated words.<br>"
+            "You need to encrypt each word in the message using the following rules:<br>"
+            " * The first letter needs to be converted to its ASCII code.<br>"
+            " * The second letter needs to be switched with the last letter<br>"
+            "Keepin' it simple: There are no special characters in input."
+            "</p>")
 
         test_data = (
             ("",
