@@ -18,12 +18,14 @@ from utils.log_func import print_log
 @allure.story('Decipher this!')
 @allure.tag('FUNDAMENTALS', 'STRINGS', 'ARRAYS', 'CIPHERS',
             'ALGORITHMS', 'CRYPTOGRAPHY', 'SECURITY')
-@allure.link(url='https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python',
+    name='Source/Kata')
 class DecipherThisTestCase(unittest.TestCase):
     """
     Testing decipher_this function
     """
+
     def test_decipher_this(self):
         """
         Testing decipher_this function
@@ -32,17 +34,18 @@ class DecipherThisTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing decipher_this function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "Given a secret message that you need to decipher.<br>"
-                                        "<br>For each word:<br>"
-                                        " * the second and the last letter is switched (e.g. Hello becomes Holle)<br>"
-                                        " * the first letter is replaced by its character code (e.g. H becomes 72)<br>"
-                                        "<br>Note: there are no special characters used, only letters and spaces."
-                                        "</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "Given a secret message that you need to decipher.<br>"
+            "<br>For each word:<br>"
+            " * the second and the last letter is switched (e.g. Hello becomes Holle)<br>"
+            " * the first letter is replaced by its character code (e.g. H becomes 72)<br>"
+            "<br>Note: there are no special characters used, only letters and spaces."
+            "</p>")
 
         test_data = (
             ('72olle 103doo 100ya',
