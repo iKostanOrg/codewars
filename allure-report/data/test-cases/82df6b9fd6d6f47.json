@@ -1,0 +1,430 @@
+{
+  "uid" : "82df6b9fd6d6f47",
+  "name" : "Testing dirReduc function",
+  "fullName" : "kyu_5.directions_reduction.test_directions_reduction.DirectionsReductionTestCase#test_directions_reduction",
+  "historyId" : "250e37eef35f96fa2557cde52e0899db",
+  "time" : {
+    "start" : 1592096336711,
+    "stop" : 1592096336712,
+    "duration" : 1
+  },
+  "description" : "\n        Test a function dirReduc which will take an array of\n        strings and returns an array of strings with the needless\n        directions removed (W<->E or S<->N side by side).\n\n        The Haskell version takes a list of directions with\n        data Direction = North | East | West | South.\n\n        The Clojure version returns nil when the path is\n        reduced to nothing.\n\n        The Rust version takes a slice of enum Direction\n        {NORTH, SOUTH, EAST, WEST}.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p> Test a function dirReduc which will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side).</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1592096336710,
+      "stop" : 1592096336710,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Test a function dirReduc which will take an array of\n        strings and returns an array of strings with the needless\n        directions removed (W<->E or S<->N side by side).\n\n        The Haskell version takes a list of directions with\n        data Direction = North | East | West | South.\n\n        The Clojure version returns nil when the path is\n        reduced to nothing.\n\n        The Rust version takes a slice of enum Direction\n        {NORTH, SOUTH, EAST, WEST}.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p> Test a function dirReduc which will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side).</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test data (['WEST']) and verify the output (['WEST']) vs expected (['WEST'])",
+      "time" : {
+        "start" : 1592096336711,
+        "stop" : 1592096336712,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test data (['NORTH', 'WEST', 'SOUTH', 'EAST']) and verify the output (['NORTH', 'WEST', 'SOUTH', 'EAST']) vs expected (['NORTH', 'WEST', 'SOUTH', 'EAST'])",
+      "time" : {
+        "start" : 1592096336712,
+        "stop" : 1592096336712,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d20886d906eebfe6",
+      "name" : "stdout",
+      "source" : "d20886d906eebfe6.txt",
+      "type" : "text/plain",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1592096336713,
+      "stop" : 1592096336713,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Directions Reduction"
+  }, {
+    "name" : "feature",
+    "value" : "Lists"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "756-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.directions_reduction.test_directions_reduction"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5f70672b9e432706",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590956550852,
+        "stop" : 1590956550853,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "88423fcf2e101536",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590952389604,
+        "stop" : 1590952389605,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4e84b282222fed49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447880800,
+        "stop" : 1590447880801,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3ce28706a6916de9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447341224,
+        "stop" : 1590447341225,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "25c038589f4112ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829774503,
+        "stop" : 1589829774504,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cdc6fb3d4dd5f58f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770407404,
+        "stop" : 1589770407405,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "895aecb233298188",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524107,
+        "stop" : 1589664524108,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3090582e2b9804aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369272,
+        "stop" : 1589664369273,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ea217f58a808e00e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228328,
+        "stop" : 1589664228329,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "65abd8108e70ed08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995440,
+        "stop" : 1588788995441,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "844aba944d3a759b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581323,
+        "stop" : 1588788581324,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "af617f0ef91e0a6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720910945,
+        "stop" : 1588720910946,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "24dfe62567c7c2d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655131,
+        "stop" : 1588631655132,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f85ab59f99549079",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631385852,
+        "stop" : 1588631385853,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f05e75fd278f8965",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974428,
+        "stop" : 1588561974429,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "711f5eb27461864e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759232,
+        "stop" : 1588486759235,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1a35b8a64664f599",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369278445,
+        "stop" : 1588369278446,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "871c00aac3c8d1d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608290,
+        "stop" : 1588308608291,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c1dcb74a0d626d3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207191031,
+        "stop" : 1588207191034,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1359686c9bc9b639",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110160927,
+        "stop" : 1588110160928,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f6ecbb04ae6fefef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855251389,
+        "stop" : 1587855251389,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "43dc90fd15acbf86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775247030,
+        "stop" : 1587775247033,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "57e0dfa8ff440b82",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933266,
+        "stop" : 1587692933267,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9342ee46d51f4332",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689216951,
+        "stop" : 1587689216952,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "187afdf235bce408",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689047790,
+        "stop" : 1587689047793,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c4c5f3f041708b16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202275,
+        "stop" : 1587507202276,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b4d37f7b173d8b28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461189656,
+        "stop" : 1587461189657,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "707b447984a4c194",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936996357,
+        "stop" : 1586936996358,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 22,
+        "unknown" : 0,
+        "total" : 22
+      },
+      "items" : [ {
+        "uid" : "d58ccb24a93884da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590952389604,
+          "stop" : 1590952389605,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "775b1ff4ab3107d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590447880800,
+          "stop" : 1590447880801,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a10b3e58927617a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589829774503,
+          "stop" : 1589829774504,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "94ca25627f8adda4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770407404,
+          "stop" : 1589770407405,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "da019b3e09f5c430",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589664524107,
+          "stop" : 1589664524108,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "FUNDAMENTALS" ]
+  },
+  "source" : "82df6b9fd6d6f47.json",
+  "parameterValues" : [ ]
+}

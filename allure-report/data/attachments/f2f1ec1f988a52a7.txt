@@ -1,0 +1,50 @@
+
+LOG =>
+string: Abcd1234,
+expected: True
+
+
+LOG =>
+string: Abcd123,
+expected: False
+
+
+LOG =>
+string: abcd1234,
+expected: False
+
+
+LOG =>
+string: AbcdefGhijKlmnopQRsTuvwxyZ1234567890,
+expected: True
+
+
+LOG =>
+string: ABCD1234,
+expected: False
+
+
+LOG =>
+string: Ab1!@#$%^&*()-_+={}[]|\:;?/>.<,,
+expected: True
+
+
+LOG =>
+string: !@#$%^&*()-_+={}[]|\:;?/>.<,,
+expected: False
+
+
+LOG =>
+string: ,
+expected: False
+
+
+LOG =>
+string:  aA1----,
+expected: True
+
+
+LOG =>
+string: 4aA1----,
+expected: True
+
