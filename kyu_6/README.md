@@ -48,5 +48,7 @@ You can advance through the ranks by completing kata at or above your rank - the
 |30   |[Number Zoo Patrol](https://www.codewars.com/kata/5276c18121e20900c0000235/train/python)                            |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/number_zoo_patrol)                 |
 |31   |[Your order, please](https://www.codewars.com/kata/55c45be3b2079eccff00010f)                                        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/your_order_please)                 |
 |32   |[Who likes it?](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/python)                                |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/who_likes_it)                      |
+|33   |[Encrypt this!](https://www.codewars.com/kata/5848565e273af816fb000449)                                             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/encrypt_this)                      |
+|34   |[Decipher this!](https://www.codewars.com/kata/decipher-this)                                                       |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/decipher_this)                     |
 
 [Source](https://www.codewars.com/about)
