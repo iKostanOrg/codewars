@@ -25,6 +25,7 @@ def encrypt_this(text: str) -> str:
         elif len(word) == 2:
             results.append("{}{}".format(ord(word[0]), word[-1]))
         else:
-            results.append("{}{}{}{}".format(ord(word[0]), word[-1], word[2:-1], word[1]))
+            results.append("{}{}{}{}".format(
+                ord(word[0]), word[-1], word[2:-1], word[1]))
 
     return ' '.join(results)
