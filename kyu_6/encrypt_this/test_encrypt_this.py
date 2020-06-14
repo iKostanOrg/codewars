@@ -17,7 +17,9 @@ from kyu_6.encrypt_this.solution import encrypt_this
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Encrypt this!')
-@allure.tag("FUNDAMENTALS", "ALGORITHMS")
+@allure.tag('FUNDAMENTALS', 'STRINGS', 'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING', 'ADVANCED LANGUAGE FEATURES',
+            'ARRAYS', 'CIPHERS', 'ALGORITHMS', 'CRYPTOGRAPHY', 'SECURITY')
 @allure.link(url='https://www.codewars.com/kata/5848565e273af816fb000449/train/python',
              name='Source/Kata')
 class EncryptThisTestCase(unittest.TestCase):
