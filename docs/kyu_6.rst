@@ -39,6 +39,9 @@ Subpackages
    kyu_6.number_zoo_patrol
    kyu_6.your_order_please
    kyu_6.who_likes_it
+   kyu_6.decipher_this
+   kyu_6.encrypt_this
+
 
 Module contents
 ---------------
