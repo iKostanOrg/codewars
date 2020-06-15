@@ -57,17 +57,17 @@ def sort_results(results: list) -> list:
     is_sorted = False
     while not is_sorted:
         is_sorted = True
-        for i in range(0, len(results)):
+        for i, result in enumerate(results):
             if i + 1 < len(results):
 
                 if (len(results[i]) == len(results[i + 1])) and \
                         (results[i][0] > results[i + 1][0]):
                     is_sorted = False
-                    results[i], results[i + 1] = results[i + 1], results[i]
+                    results[i], results[i + 1] = results[i + 1], result
 
                 if len(results[i]) < len(results[i + 1]):
                     is_sorted = False
-                    results[i], results[i + 1] = results[i + 1], results[i]
+                    results[i], results[i + 1] = results[i + 1], result
     return results
 
 
