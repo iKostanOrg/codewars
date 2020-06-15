@@ -1,6 +1,5 @@
 # Find the safest places in town
 
-
 [Laura Bassi](https://en.wikipedia.org/wiki/Laura_Bassi) was the first female professor at a European university. Despite her immense intellect, she was not always allowed to lecture publicly.
 
 One day a professor with very strong beliefs against women in academia sent some `agents` to find Bassi and end her career.
