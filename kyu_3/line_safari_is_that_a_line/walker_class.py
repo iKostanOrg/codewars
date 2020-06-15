@@ -137,7 +137,7 @@ class Walker:
 
 		return False
 
-	def __get_start_point(self) -> dict:
+	def __get_start_point(self):
 		"""
 		Locate starting point
 
