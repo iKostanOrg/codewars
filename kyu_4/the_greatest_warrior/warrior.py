@@ -112,7 +112,7 @@ class Warrior:
     def achievements(self) -> list:
         return self.__achievements
 
-    def battle(self, enemy_level: int) -> str:
+    def battle(self, enemy_level: int):
         # If an enemy level does not fall in the range of 1 to 100,
         # the battle cannot happen and should return "Invalid level".
         if 1 > enemy_level or enemy_level > 100:
