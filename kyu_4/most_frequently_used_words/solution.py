@@ -36,7 +36,7 @@ def top_3_words(text: str) -> list:
             else:
                 counters[counter] = [word]
     # 4
-    results = list()
+    results: list = list()
     n = 3
     keys = sorted(counters.keys(), reverse=True)
     for counter in keys:
