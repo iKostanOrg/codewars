@@ -34,11 +34,11 @@ in any order.
 
 Edge cases:
 
-- If there is an agent on every grid cell, there is no safe space, so return an empty list.
-- If there are no agents, then every cell is a safe spaces, so return all coordinates.
-- If n is 0, return an empty list.
-- If agent coordinates are outside of the map, they are simply not considered.
-- There are no duplicate agents on the same square.
+-   If there is an agent on every grid cell, there is no safe space, so return an empty list.
+-   If there are no agents, then every cell is a safe spaces, so return all coordinates.
+-   If n is 0, return an empty list.
+-   If agent coordinates are outside of the map, they are simply not considered.
+-   There are no duplicate agents on the same square.
 
 ## Performance
 
