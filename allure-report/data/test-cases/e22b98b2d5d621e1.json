@@ -1,0 +1,434 @@
+{
+  "uid" : "e22b98b2d5d621e1",
+  "name" : "Testing 'feast' function",
+  "fullName" : "kyu_8.the_feast_of_many_beasts.test_feast.FeastTestCase#test_feast",
+  "historyId" : "245809d83d6201b756f2d220be6127e5",
+  "time" : {
+    "start" : 1592253261139,
+    "stop" : 1592253261140,
+    "duration" : 1
+  },
+  "description" : "\n        Testing 'feast' function with various test inputs\n\n        Testing a function feast that takes the animal's\n        name and dish as arguments and returns true or\n        false to indicate whether the beast is allowed\n        to bring the dish to the feast.\n\n        Assume that beast and dish are always lowercase strings,\n        and that each has at least two letters. beast and dish\n        may contain hyphens and spaces, but these will not appear\n        at the beginning or end of the string. They will not\n        contain numerals.\n\n        There is just one rule: the dish must start and end with\n        the same letters as the animal's name. For example, the\n        great blue heron is bringing garlic naan and the chickadee\n        is bringing chocolate cake.\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1592253261138,
+      "stop" : 1592253261138,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing 'feast' function with various test inputs\n\n        Testing a function feast that takes the animal's\n        name and dish as arguments and returns true or\n        false to indicate whether the beast is allowed\n        to bring the dish to the feast.\n\n        Assume that beast and dish are always lowercase strings,\n        and that each has at least two letters. beast and dish\n        may contain hyphens and spaces, but these will not appear\n        at the beginning or end of the string. They will not\n        contain numerals.\n\n        There is just one rule: the dish must start and end with\n        the same letters as the animal's name. For example, the\n        great blue heron is bringing garlic naan and the chickadee\n        is bringing chocolate cake.\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter animal's name and dish as arguments and assert the output",
+      "time" : {
+        "start" : 1592253261139,
+        "stop" : 1592253261140,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ab69d2cb39f8781",
+      "name" : "stdout",
+      "source" : "ab69d2cb39f8781.txt",
+      "type" : "text/plain",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1592253261141,
+      "stop" : 1592253261141,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "epic",
+    "value" : "8 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "suite",
+    "value" : "Data Structures"
+  }, {
+    "name" : "story",
+    "value" : "The Feast of Many Beasts"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "12236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_8.the_feast_of_many_beasts.test_feast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5aa736a455f906981800360d/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "21b5063b05341649",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253193758,
+        "stop" : 1592253193759,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f8a878477121cc9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592096341212,
+        "stop" : 1592096341213,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1b3552e57ffcd90c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590956555484,
+        "stop" : 1590956555484,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1401f35b64784f75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590952394126,
+        "stop" : 1590952394127,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a2c7d3b86d3e97b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447885345,
+        "stop" : 1590447885346,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "77e82219edd55391",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447345752,
+        "stop" : 1590447345753,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6e0c0c86033e6e4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829779248,
+        "stop" : 1589829779248,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "304b18c25f5e3e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770412108,
+        "stop" : 1589770412109,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7be71cce4b57cc2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664528874,
+        "stop" : 1589664528875,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "38abfceee0a8e8f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664374919,
+        "stop" : 1589664374920,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ddfae57facc325f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664232917,
+        "stop" : 1589664232918,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "567ed5215b1f4da6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588789000234,
+        "stop" : 1588789000235,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1f4f5aabb3c1a6eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788585796,
+        "stop" : 1588788585797,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "eb56d2bf09690033",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720915390,
+        "stop" : 1588720915391,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9ad313f1c50ed260",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631659874,
+        "stop" : 1588631659875,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f9c7eb52816814c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631391187,
+        "stop" : 1588631391188,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "de8a30163804b071",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561980471,
+        "stop" : 1588561980472,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "449e9a6c08f7fe0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486764432,
+        "stop" : 1588486764434,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9552c8dc3faf9d5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369283207,
+        "stop" : 1588369283208,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e5ba873661daa973",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308612884,
+        "stop" : 1588308612884,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a9672d94a905ed81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207196070,
+        "stop" : 1588207196071,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "572feccfcbc17df1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110165577,
+        "stop" : 1588110165578,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8327df5897f295e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855256158,
+        "stop" : 1587855256159,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ae835a9df7be4cbb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775251524,
+        "stop" : 1587775251525,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "65166274687444a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692937883,
+        "stop" : 1587692937884,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5b1e86d6afdf174",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689221503,
+        "stop" : 1587689221504,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7b195e271cc62738",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689052345,
+        "stop" : 1587689052346,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "14f54e01e39973f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507207256,
+        "stop" : 1587507207257,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f0880dabc8823759",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461194605,
+        "stop" : 1587461194605,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "571ab911b2617fae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586937002562,
+        "stop" : 1586937002563,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 23,
+        "unknown" : 0,
+        "total" : 23
+      },
+      "items" : [ {
+        "uid" : "7c1c979f785a4e01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592096341212,
+          "stop" : 1592096341213,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "dcc974bd5f440a9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590952394126,
+          "stop" : 1590952394127,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "d92165b611d1e705",
+        "status" : "passed",
+        "time" : {
+          "start" : 1590447885345,
+          "stop" : 1590447885346,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "b90e0f0b1aab4937",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589829779248,
+          "stop" : 1589829779248,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "655818dfa0942b20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589770412108,
+          "stop" : 1589770412109,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "FUNDAMENTALS" ]
+  },
+  "source" : "e22b98b2d5d621e1.json",
+  "parameterValues" : [ ]
+}

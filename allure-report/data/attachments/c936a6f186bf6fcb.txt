@@ -1,0 +1,54 @@
+
+LOG =>
+string: foo,
+expected: foo1,
+result: foo1
+
+
+LOG =>
+string: foobar001,
+expected: foobar002,
+result: foobar002
+
+
+LOG =>
+string: foobar1,
+expected: foobar2,
+result: foobar2
+
+
+LOG =>
+string: foobar00,
+expected: foobar01,
+result: foobar01
+
+
+LOG =>
+string: foobar99,
+expected: foobar100,
+result: foobar100
+
+
+LOG =>
+string: foobar099,
+expected: foobar100,
+result: foobar100
+
+
+LOG =>
+string: ,
+expected: 1,
+result: 1
+
+
+LOG =>
+string: 009,
+expected: 010,
+result: 010
+
+
+LOG =>
+string: ^0000007,
+expected: ^0000008,
+result: ^0000008
+

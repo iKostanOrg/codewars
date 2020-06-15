@@ -1,0 +1,250 @@
+{
+  "uid" : "3eeef41f44d153b3",
+  "name" : "Testing calculate_damage function",
+  "fullName" : "kyu_6.pokemon_damage_calculator.test_calculate_damage.CalculateDamageTestCase#test_calculate_damage",
+  "historyId" : "fdc9a1360d77d4313e2885c36e2d5f96",
+  "time" : {
+    "start" : 1587855254975,
+    "stop" : 1587855254977,
+    "duration" : 2
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Verify that the function calculates the damage that a particular move would do using the following formula (not the actual one from the game): damage = 50 * (attack / defense) * effectiveness</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1587855254974,
+      "stop" : 1587855254974,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Verify that the function calculates the damage that a particular move would do using the following formula (not the actual one from the game): damage = 50 * (attack / defense) * effectiveness</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a test data (('fire', 'water', 100, 100)) and verify the expected output (25) vs actual result (25.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254976,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'water', 100, 100)) and verify the expected output (100) vs actual result (100.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254976,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a test data (('electric', 'fire', 100, 100)) and verify the expected output (50) vs actual result (50.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254976,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'electric', 57, 19)) and verify the expected output (150) vs actual result (150.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254976,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'water', 40, 40)) and verify the expected output (100) vs actual result (100.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254976,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a test data (('grass', 'fire', 35, 5)) and verify the expected output (175) vs actual result (175.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254976,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a test data (('fire', 'electric', 10, 2)) and verify the expected output (250) vs actual result (250.0)",
+      "time" : {
+        "start" : 1587855254976,
+        "stop" : 1587855254977,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c3fea641ade8f583",
+      "name" : "stdout",
+      "source" : "c3fea641ade8f583.txt",
+      "type" : "text/plain",
+      "size" : 544
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1587855254978,
+      "stop" : 1587855254978,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "CONTROL FLOW"
+  }, {
+    "name" : "tag",
+    "value" : "BASIC LANGUAGE FEATURES"
+  }, {
+    "name" : "tag",
+    "value" : "ARRAYS"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "tag",
+    "value" : "PUZZLES"
+  }, {
+    "name" : "feature",
+    "value" : "Numbers"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Games"
+  }, {
+    "name" : "tag",
+    "value" : "GAMES"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "tag",
+    "value" : "FUNCTIONS"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "story",
+    "value" : "Pokemon Damage Calculator"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "12652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.pokemon_damage_calculator.test_calculate_damage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/536e9a7973130a06eb000e9f/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "STRINGS", "FUNDAMENTALS", "NUMBERS", "CONTROL FLOW", "GAMES", "PUZZLES", "BASIC LANGUAGE FEATURES", "FUNCTIONS", "ARRAYS" ]
+  },
+  "source" : "3eeef41f44d153b3.json",
+  "parameterValues" : [ ]
+}

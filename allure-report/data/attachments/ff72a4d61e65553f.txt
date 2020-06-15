@@ -1,0 +1,75 @@
+
+LOG =>
+inp: 1,
+expected: 1
+
+
+LOG =>
+inp: 0,
+expected: 0
+
+
+LOG =>
+inp: 0003,
+expected: 1
+
+
+LOG =>
+inp: 3000,
+expected: 1
+
+
+LOG =>
+inp: 404,
+expected: 3
+
+
+LOG =>
+inp: 050030210,
+expected: 7
+
+
+LOG =>
+inp: 0.1,
+expected: 1
+
+
+LOG =>
+inp: 1.0,
+expected: 2
+
+
+LOG =>
+inp: 4.40,
+expected: 3
+
+
+LOG =>
+inp: 90.00,
+expected: 4
+
+
+LOG =>
+inp: 0.0,
+expected: 1
+
+
+LOG =>
+inp: 03.27310000,
+expected: 9
+
+
+LOG =>
+inp: 23625700.00,
+expected: 10
+
+
+LOG =>
+inp: 09.971730000,
+expected: 10
+
+
+LOG =>
+inp: 0000.0673560000,
+expected: 10
+
