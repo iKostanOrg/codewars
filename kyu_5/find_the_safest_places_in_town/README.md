@@ -10,8 +10,8 @@ Help her escape by telling her the safest places in town!
 
 Implement the function `advice(agents, n)` where
 
-- agents is an array of agent coordinates.
-- `n` defines the size of the city that Bassi needs to hide in, in other words the side length of the square grid.
+-   agents is an array of agent coordinates.
+-   `n` defines the size of the city that Bassi needs to hide in, in other words the side length of the square grid.
 
 The function should return a list of coordinates that are the furthest away (by [Manhattan distance](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)) from all agents.
 
