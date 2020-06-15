@@ -19,29 +19,21 @@ def assert_sudoku_by_region(board: list) -> bool:
         if row_length % i == 0:
             step = i
             break
-    print('Step: {}'.format(step))
 
-    start, end = 0, step
+    t, start, end = 0, 0, step
 
-    # limit = (row_length // step)  # + 1 if step % 2 != 0 else 0
-    # print('limit: {}'.format(limit))
-
-    for t in range(0, step):
-        print()
+    while t < step:
         for i in range(0, row_length, step):
             region = list()
             for a in range(i, i + step):
-                print('a: {}, start: {}, end: {}'.format(a, start, end))
                 row = board[a][start: end]
                 for b in row:
                     region.append(b)
-            print(region)
             s_region = set(region)
             if len(s_region) != row_length:
-                print(s_region)
-                print('assert_sudoku_by_region')
                 return False
 
         start, end = end, end + step
+        t += 1
 
     return True
