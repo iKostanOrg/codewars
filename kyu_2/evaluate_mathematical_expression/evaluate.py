@@ -132,7 +132,7 @@ def process_duplicate_minus(string: str) -> str:
 
 
 def calc(string: str) -> float:
-	string: str = normalize_string(string)
+	string = normalize_string(string)
 	string = ' '.join(string.split('+'))
 	string = process_brakets(string)
 	string = process_duplicate_minus(string)
