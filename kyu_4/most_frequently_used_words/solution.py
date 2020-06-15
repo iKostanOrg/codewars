@@ -26,7 +26,7 @@ def top_3_words(text: str) -> list:
     words: list = [word for word in text_lower.split() if word.replace("'", '') != '']
     processed = set()
     # 3
-    counters = dict()
+    counters: dict = dict()
     for word in words:
         if word not in processed:
             processed.add(word)
