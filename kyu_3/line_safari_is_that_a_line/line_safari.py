@@ -32,7 +32,6 @@ def line(grid: list) -> bool:
 
 
 def assert_x_has_rout(grid: list) -> bool:
-    results = list()
     counter = 0
     for row_i, row in enumerate(grid):
 
