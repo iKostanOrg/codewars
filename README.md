@@ -347,19 +347,11 @@ sys.path.insert(0, os.path.abspath('..'))
    modules
 ```
 
-10.  Open cmd > run: 
-
-```python
-sphinx-apidoc -F -o . ..
-```
+10.  Open cmd > run: `sphinx-apidoc -F -o . ..`
 
 11.  cmd > Run: make html
 
-12.  Install html template:
-
-```python
-pip install sphinx_rtd_theme
-```
+12.  Install html template: `pip install sphinx_rtd_theme`
 
 [Video Tutorial](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
