@@ -1,4 +1,4 @@
-# Line Safari - Is that a line?
+# Line Safari - Is that a line
 
 ## Kata Task
 
