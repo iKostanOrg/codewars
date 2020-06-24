@@ -4,9 +4,9 @@ The task is simple - given a 2D array (list), generate an HTML table representin
 
 You need to write a function called `to_table`/`toTable`, that takes three arguments:
 
-- `data` - a 2D array (list),
-- `headers` - an optional boolean value. If `True`, the first row of the array is considered a header. Defaults to False,
-- `index` - an optional boolean value. If `True`, the first column in the table should contain 1-based indices of the corresponding row. If `headers` arguments is `True`, this column should have empty header. Defaults to False.
+-   `data` - a 2D array (list),
+-   `headers` - an optional boolean value. If `True`, the first row of the array is considered a header. Defaults to False,
+-   `index` - an optional boolean value. If `True`, the first column in the table should contain 1-based indices of the corresponding row. If `headers` arguments is `True`, this column should have empty header. Defaults to False.
 
 and returns a string containing HTML tags representing the table.
 
