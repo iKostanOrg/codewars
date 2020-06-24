@@ -21,7 +21,7 @@ Create a class called Warrior which calculates and keeps track of their level an
 -   Completing a battle against an enemy with the same level as your warrior will be worth 10 experience points.
 -   Completing a battle against an enemy who is one level lower than your warrior will be worth 5 experience points.
 -   Completing a battle against an enemy who is two levels lower or more than your warrior will give 0 experience points.
--   Completing a battle against an enemy who is one level higher or more than your warrior will accelarate your experience gaining. The greater the difference between levels, the more experinece your warrior will gain. The formula is 20 * diff * diff where diff equals the difference in levels between the enemy and your warrior.
+-   Completing a battle against an enemy who is one level higher or more than your warrior will accelerate your experience gaining. The greater the difference between levels, the more experience your warrior will gain. The formula is `20 * diff * diff` where `diff` equals the difference in levels between the enemy and your warrior.
 -   However, if your warrior is at least one rank lower than your enemy, and at least 5 levels lower, your warrior cannot fight against an enemy that strong and must instead return "You've been defeated".
 -   Every successful battle will also return one of three responses: "Easy fight", "A good fight", "An intense fight". Return "Easy fight" if your warrior is 2 or more levels higher than your enemy's level. Return "A good fight" if your warrior is either 1 level higher or equal to your enemy's level. Return "An intense fight" if your warrior's level is lower than the enemy's level.
 
