@@ -6,16 +6,16 @@
 
 You organize a sports league in a round-robin-system. Each team meets all other teams. In your league a win gives a team 2 points, a draw gives both teams 1 point. After some games you have to compute the order of the teams in your league. You use the following criteria to arrange the teams:
 
-* Points
-* Scoring differential (the difference between goals scored and those conceded)
-* Goals scored
+*   Points
+*   Scoring differential (the difference between goals scored and those conceded)
+*   Goals scored
 
 First you sort the teams by their points. If two or more teams reached the same number of points, the second criteria comes into play and so on. Finally, if all criteria are the same, the teams share a place.
 
 ### Input
 
-* `number`: Number of teams in your league.
-* `games`: An array of arrays. Each item represents a played game with an array of four elements `[TeamA,TeamB,GoalA,GoalB]` (TeamA played against TeamB and scored GoalA goals and conceded GoalB goals ).
+*   `number`: Number of teams in your league.
+*   `games`: An array of arrays. Each item represents a played game with an array of four elements `[TeamA,TeamB,GoalA,GoalB]` (TeamA played against TeamB and scored GoalA goals and conceded GoalB goals ).
 
 ### Output
 
