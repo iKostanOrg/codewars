@@ -15,7 +15,7 @@ There are already more or less efficient (or sloppy) katas asking you to find pr
 
 You will be given a preset array/list with the first few primes. And you must write a function that checks if a given number n is a prime looping through it and, possibly, expanding the array/list of known primes only if/when necessary (ie: as soon as you check for a potential prime which is greater than a given threshold for each n, stop).
 
-### Memoization
+## Memoization
 
 Storing precomputed results for later re-use is a very popular programming technique that you would better master soon and that is called memoization; while you have your wiki open, you might also wish to get some info about the sieve of Eratosthenes (one of the few good things I learnt as extra-curricular activity in middle grade) and, to be even more efficient, you might wish to consider an interesting reading on searching from prime from a friend of mine (she thought about an explanation all on her own after an evening event in which I discussed primality tests with my guys).
 
