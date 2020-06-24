@@ -25,15 +25,15 @@ he N dimension neighbours of the cell
 
 Your code should be performant.
 
-* There will be one Tests with a very highdimensional matrix
-* There will be 300 Tests with 9 <= distance <= 12
-* There will be 1000 Tests with N == 4, Dimension size == 5
-* There will be 400 Tests with N == 8, Dimension size == 3
+*   There will be one Tests with a very highdimensional matrix
+*   There will be 300 Tests with 9 <= distance <= 12
+*   There will be 1000 Tests with N == 4, Dimension size == 5
+*   There will be 400 Tests with N == 8, Dimension size == 3
 
 **Note:** you should return an empty array if any of these conditions is true:
 
-* Index is outside the matrix (python: negative indexes are outside the matrix too)
-* Matrix is empty
-* Distance equals 0
+*   Index is outside the matrix (python: negative indexes are outside the matrix too)
+*   Matrix is empty
+*   Distance equals 0
 
 [Source](https://www.codewars.com/kata/5b47ba689c9a7591e70001a3/train/python)
