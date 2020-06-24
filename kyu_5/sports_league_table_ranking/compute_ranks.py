@@ -32,7 +32,7 @@ def compute_ranks(number: int, games: list) -> list:
     teams: Dict = dict()
     numbers = [i for i in range(number)]
 
-    for i, scores in enumerate(games):
+    for scores in games:
         team_a = scores[0]
         team_b = scores[1]
         calc_teams_score(team_a, team_b, teams, scores, number)
