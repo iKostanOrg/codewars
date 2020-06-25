@@ -6,10 +6,10 @@ Your job is to create a simple password validation function, as seen on many web
 
 The rules for a valid password are as follows:
 
-* There needs to be at least 1 uppercase letter.
-* There needs to be at least 1 lowercase letter.
-* There needs to be at least 1 number.
-* The password needs to be at least 8 characters long.
+*   There needs to be at least 1 uppercase letter.
+*   There needs to be at least 1 lowercase letter.
+*   There needs to be at least 1 number.
+*   The password needs to be at least 8 characters long.
 
 You are permitted to use any methods to validate the password.
 
@@ -31,8 +31,8 @@ You are permitted to use any methods to validate the password.
 
 **Extra info**
 
-* You will only be passed strings.
-* The string can contain any standard keyboard character.
-* Accepted strings can be any length, as long as they are 8 characters or more.
+*   You will only be passed strings.
+*   The string can contain any standard keyboard character.
+*   Accepted strings can be any length, as long as they are 8 characters or more.
 
 [Source](https://www.codewars.com/kata/56a921fa8c5167d8e7000053/train/python)
