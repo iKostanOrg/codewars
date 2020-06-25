@@ -1,6 +1,6 @@
 # Encrypt this
 
-### Description
+## Description
 
 You want to create secret messages which can be deciphered by the [Decipher this!](https://www.codewars.com/kata/decipher-this) kata. Here are the conditions:
 
@@ -10,7 +10,7 @@ You want to create secret messages which can be deciphered by the [Decipher this
   *  The second letter needs to be switched with the last letter
 3. Keepin' it simple: There are no special characters in input.
 
-### Examples
+## Examples
 
 ```text
 encrypt_this("Hello") == "72olle"
