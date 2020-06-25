@@ -1,4 +1,4 @@
-# Encrypt this!
+# Encrypt this
 
 ### Description
 
