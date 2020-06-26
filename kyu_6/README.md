@@ -12,7 +12,7 @@ Honor represents the level of respect a user has earned from the community, base
 
 You can advance through the ranks by completing kata at or above your rank - the harder the kata the faster you advance.
 
-### List of Completed Kata (Python 3):
+### List of Completed Kata (Python 3)
 
 | No. | Puzzle/Kata Name                                                                                                           | Solution / GitHub Link                                                                             |
 |-----|:--------------------------------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------:|
