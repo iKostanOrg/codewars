@@ -4,6 +4,7 @@
 
 # FUNDAMENTALS
 
+import ast
 import unittest
 import allure
 from kyu_8.greek_sort.greek_comparator import greek_comparator
@@ -55,5 +56,6 @@ class GreekComparatorTestCase(unittest.TestCase):
             with allure.step("Enter test inputs({}, {}) "
                              "and assert expected ({}) "
                              "vs actual result ({})".format(lhs, rhs, expected, result)):
-                print_log(lhs=lhs, rhs=rhs, expected=expected, result=result)
-                self.assertTrue(eval('{}{}'.format(result, expected)))
+                expression: str = '{} {}'.format(result, expected)
+                print_log(lhs=lhs, rhs=rhs, expected=expected, result=result, expression=expression)
+                self.assertTrue(eval(expression))
