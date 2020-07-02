@@ -49,15 +49,14 @@ class OrderTestCase(unittest.TestCase):
                                         """<p>
                                         Your task is to verify that 'order' function sorts 
                                         a given string by following rules:
-        
+
                                             1. Each word in the string will contain a single number. 
                                                This number is the position the word should have in the result.
-                                    
+
                                             2. Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
-                                    
+
                                             3. If the input string is empty, return an empty string. The words in the 
-                                               input String will only contain valid consecutive numbers.
-                                        </p>""")
+                                               input String will only contain valid consecutive numbers.</p>""")
 
         test_data = (
             ("is2 Thi1s T4est 3a",
