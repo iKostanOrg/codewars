@@ -3,11 +3,10 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
-def permutations(string) -> list:
+def permutations(string: str) -> list:
     """
     creates all permutations of an input string and
     remove duplicates, if present. This means, you
     have to shuffle all letters from the input in all
     possible orders.
     """
-    pass
