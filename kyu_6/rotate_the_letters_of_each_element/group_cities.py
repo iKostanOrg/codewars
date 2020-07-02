@@ -52,6 +52,7 @@ def group_cities(seq: list) -> list:
 def rotate(item: str, element: str) -> bool:
     item = item.lower()
     element = element.lower()
+    
     for i in range(0, len(item) * len(item)):
         item = '{}{}'.format(item[1:], item[0])
         if item == element:
@@ -76,7 +77,7 @@ def sort_results(results: list) -> None:
                     is_sorted = False
                     results[i], results[i + 1] = results[i + 1], element
                 # in the case of a tie, by the first element of the group alphabetically
-                if len(element) == len(results[i + 1]):
+                elif len(element) == len(results[i + 1]):
                     if results[i][0] > results[i + 1][0]:
                         is_sorted = False
                         results[i], results[i + 1] = results[i + 1], element
