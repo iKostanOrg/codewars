@@ -72,11 +72,11 @@ def sort_results(results: list) -> None:
         for i, element in enumerate(results):
             if i + 1 < len(results):
                 # Sort the groups deafeningly by size
-                if len(results[i]) < len(results[i + 1]):
+                if len(element) < len(results[i + 1]):
                     is_sorted = False
-                    results[i], results[i + 1] = results[i + 1], results[i]
+                    results[i], results[i + 1] = results[i + 1], element
                 # in the case of a tie, by the first element of the group alphabetically
-                if len(results[i]) == len(results[i + 1]):
+                if len(element) == len(results[i + 1]):
                     if results[i][0] > results[i + 1][0]:
                         is_sorted = False
-                        results[i], results[i + 1] = results[i + 1], results[i]
+                        results[i], results[i + 1] = results[i + 1], element
