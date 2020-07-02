@@ -28,7 +28,7 @@ def group_cities(seq: list) -> list:
         else:
             found = False
             for i, sublist in enumerate(results):
-                for element in results[i]:
+                for element in sublist:
                     if len(element) == len(item) and \
                             sorted([char for char in element.lower()]) == \
                             sorted([char for char in item.lower()]) and \
