@@ -298,9 +298,11 @@ sys.path.insert(0, os.path.abspath('..'))
 
 12.  Install html template: `pip install sphinx_rtd_theme`
 
-[Video Tutorial](https://www.youtube.com/watch?v=b4iFyrLQQh4)
-[Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
-[More Info](https://stackoverflow.com/questions/13516404/sphinx-error-unknown-directive-type-automodule-or-autoclass)
+More info:
+*   [Video Tutorial](https://www.youtube.com/watch?v=b4iFyrLQQh4)
+*   [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+*   [More Info](https://stackoverflow.com/questions/13516404/sphinx-error-unknown-directive-type-automodule-or-autoclass)
+
 </details>
 
 <details>
