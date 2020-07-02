@@ -29,7 +29,7 @@ top_3_words("  //wont won't won't")
 
 Bonus points (not really, but just for fun):
 
-1. Avoid creating an array whose memory footprint is roughly as big as the input text.
-2. Avoid sorting the entire array of unique words.
+1.  Avoid creating an array whose memory footprint is roughly as big as the input text.
+2.  Avoid sorting the entire array of unique words.
 
 [Source](https://www.codewars.com/kata/51e056fe544cf36c410000fb/train/python)
