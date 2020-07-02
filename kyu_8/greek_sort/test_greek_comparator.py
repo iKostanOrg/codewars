@@ -4,7 +4,6 @@
 
 # FUNDAMENTALS
 
-import ast
 import unittest
 import allure
 from kyu_8.greek_sort.greek_comparator import greek_comparator
