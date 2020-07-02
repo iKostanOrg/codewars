@@ -12,10 +12,10 @@ Number may be both whole numbers and/or decimal numbers. The same goes for the r
 
 You need to support the following mathematical operators:
 
-- Multiplication `*`
-- Division `/` (as true division)
-- Addition `+`
-- Subtraction `-`
+-   Multiplication `*`
+-   Division `/` (as true division)
+-   Addition `+`
+-   Subtraction `-`
 
 Operators are always evaluated from left-to-right, and `*` and `/` must be evaluated before `+` and `-`.
 
