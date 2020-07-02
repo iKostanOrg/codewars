@@ -52,7 +52,6 @@ def group_cities(seq: list) -> list:
 def rotate(item: str, element: str) -> bool:
     item = item.lower()
     element = element.lower()
-
     i = 0
     max_i = len(item) * len(item)
     while i < max_i:
