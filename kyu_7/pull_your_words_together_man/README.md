@@ -14,10 +14,10 @@ Robbie has pulled multiple all-nighters to get this project finished, and he nee
 
 **Your function should:**
 
-1. Capitalise the first letter of the first word.
-2. Add a period `(.)` to the end of the sentence.
-3. Join the words into a complete string, with spaces.
-4. Do no other manipulation on the words.
+1.  Capitalise the first letter of the first word.
+2.  Add a period `(.)` to the end of the sentence.
+3.  Join the words into a complete string, with spaces.
+4.  Do no other manipulation on the words.
 
 Here are a few examples of what your function should do:
 
