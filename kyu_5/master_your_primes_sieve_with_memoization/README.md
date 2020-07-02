@@ -2,8 +2,8 @@
 
 As most of you might know already, a prime number is an integer n with the following properties:
 
-* it must be greater than 1
-* it must be divisible only by itself and 1
+*   it must be greater than 1
+*   it must be divisible only by itself and 1
 
 And that's it: -15 or 8 are not primes, 5 or 97 are; pretty easy, isn't it?
 
