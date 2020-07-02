@@ -18,6 +18,4 @@ def get_sum(a, b):
     """
     if a > b:
         a, b = b, a
-
-    nums = range(a, (b + 1))
-    return sum(nums)
+    return sum(i for i in range(a, (b + 1)))
