@@ -38,25 +38,25 @@ Because the plant reach to the desired height at day 1(10 meters).
 
 ### Input/Output
 
-- `input` integer upSpeed
+-   `input` integer upSpeed
 
     A positive integer representing the daily growth.
 
     Constraints: `5 ≤ upSpeed ≤ 100.`
 
-- `input` integer downSpeed
+-   `input` integer downSpeed
 
     A positive integer representing the nightly decline.
 
     Constraints: `2 ≤ downSpeed < upSpeed.`
 
-- `input` integer desiredHeight
+-   `input` integer desiredHeight
 
     A positive integer representing the threshold.
 
     Constraints: `4 ≤ desiredHeight ≤ 1000.`
 
-- `output` an integer
+-   `output` an integer
 
 The number of days that it will take for the plant to reach/pass desiredHeight (including the last day in the total count).
 
