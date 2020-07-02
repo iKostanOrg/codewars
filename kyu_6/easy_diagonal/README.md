@@ -10,17 +10,18 @@ The function will take `n` and `p` (with: `n >= p >= 0`) as parameters and will 
 
 ![Pascal's Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 
-**Examples:**
+## Examples
 
 ```text
 diagonal(20, 3) => 5985
 diagonal(20, 4) => 20349
 ```
 
-**Hint:**
+## Hint
 
 When following a diagonal from top to bottom have a look at the numbers on the diagonal at its right.
 
-Ref: [Binomial Coefficient](http://mathworld.wolfram.com/BinomialCoefficient.html)
+References: 
 
-[Source](https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python)
+*  [Binomial Coefficient](http://mathworld.wolfram.com/BinomialCoefficient.html)
+*  [Source](https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python)
