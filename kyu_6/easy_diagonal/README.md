@@ -23,5 +23,5 @@ When following a diagonal from top to bottom have a look at the numbers on the d
 
 References: 
 
-*  [Binomial Coefficient](http://mathworld.wolfram.com/BinomialCoefficient.html)
-*  [Source](https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python)
+*   [Binomial Coefficient](http://mathworld.wolfram.com/BinomialCoefficient.html)
+*   [Source](https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python)
