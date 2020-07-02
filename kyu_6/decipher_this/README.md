@@ -9,7 +9,7 @@ For each word:
 
 Note: there are no special characters used, only letters and spaces
 
-### Examples
+## Examples
 
 ```text
 decipherThis('72olle 103doo 100ya'); // 'Hello good day'
