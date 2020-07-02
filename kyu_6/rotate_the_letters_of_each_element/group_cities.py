@@ -52,11 +52,14 @@ def group_cities(seq: list) -> list:
 def rotate(item: str, element: str) -> bool:
     item = item.lower()
     element = element.lower()
-    
-    for i in range(0, len(item) * len(item)):
+
+    i = 0
+    max_i = len(item) * len(item)
+    while i < max_i:
         item = '{}{}'.format(item[1:], item[0])
         if item == element:
             return True
+        i += 1
     return False
 
 
