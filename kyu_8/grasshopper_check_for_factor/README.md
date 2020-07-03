@@ -14,8 +14,8 @@ Factors are numbers you can multiply together to get another number.
 
 > 2 * 3 = 6
 
-* You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
-* In Javascript and C# you can use % to check for a remainder
+*   You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+*   In Javascript and C# you can use % to check for a remainder
 
 For example 2 is not a factor of 7 because:
 
