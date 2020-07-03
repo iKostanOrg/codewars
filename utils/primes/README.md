@@ -2,5 +2,5 @@
 
 Project's utils testing: 
 
-- is_prime
-- primes_generator
+-   is_prime
+-   primes_generator
