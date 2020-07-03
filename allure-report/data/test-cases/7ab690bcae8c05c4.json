@@ -1,0 +1,461 @@
+{
+  "uid" : "7ab690bcae8c05c4",
+  "name" : "Testing valid_parentheses function",
+  "fullName" : "kyu_5.valid_parentheses.test_valid_parentheses.ValidParenthesesTestCase#test_valid_parentheses",
+  "historyId" : "9cc20e8c3c9bafa6f94ecaef044db1be",
+  "time" : {
+    "start" : 1593813254240,
+    "stop" : 1593813254242,
+    "duration" : 2
+  },
+  "description" : "\n        Test the function called that takes a string of parentheses,\n        and determines if the order of the parentheses is valid.\n        The function should return true if the string is valid,\n        and false if it's invalid.\n\n        Examples\n\n        \"()\"              =>  true\n        \")(()))\"          =>  false\n        \"(\"               =>  false\n        \"(())((()())())\"  =>  true\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1593813254238,
+      "stop" : 1593813254238,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Test the function called that takes a string of parentheses,\n        and determines if the order of the parentheses is valid.\n        The function should return true if the string is valid,\n        and false if it's invalid.\n\n        Examples\n\n        \"()\"              =>  true\n        \")(()))\"          =>  false\n        \"(\"               =>  false\n        \"(())((()())())\"  =>  true\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test string and verify the output",
+      "time" : {
+        "start" : 1593813254240,
+        "stop" : 1593813254241,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a714f5ae30932869",
+      "name" : "stdout",
+      "source" : "a714f5ae30932869.txt",
+      "type" : "text/plain",
+      "size" : 356
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1593813254243,
+      "stop" : 1593813254243,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Valid Parentheses"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "feature",
+    "value" : "Validation"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "tag",
+    "value" : "UTILITIES"
+  }, {
+    "name" : "tag",
+    "value" : "VALIDATION"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "epic",
+    "value" : "5 kyu"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "2976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_5.valid_parentheses.test_valid_parentheses"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2ea6a6599fde2209",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593811474871,
+        "stop" : 1593811474872,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "86d4d7938f7d2240",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593736483904,
+        "stop" : 1593736483905,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ab8673657a8e8f73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253256879,
+        "stop" : 1592253256881,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "204cff7dc726a4d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253189534,
+        "stop" : 1592253189535,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8e4d8499a366e441",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592096337165,
+        "stop" : 1592096337166,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f8c02a34f5735cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590956551339,
+        "stop" : 1590956551340,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8cf6617a947b649c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590952390073,
+        "stop" : 1590952390074,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bbc75ee75aa7616d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447881259,
+        "stop" : 1590447881260,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bc65871559f03d63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447341668,
+        "stop" : 1590447341669,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d077721ebabf0dc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829774977,
+        "stop" : 1589829774978,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f87fd13d82f01022",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770407942,
+        "stop" : 1589770407947,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "4eaf0b334c4a4897",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524693,
+        "stop" : 1589664524695,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "208a5e4af9b05d9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369796,
+        "stop" : 1589664369797,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cdba50f1f25f6736",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228801,
+        "stop" : 1589664228803,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "45e8c5c2dcc73b0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995897,
+        "stop" : 1588788995899,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6e2362e620a40810",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581762,
+        "stop" : 1588788581763,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "535f1a5474a12f16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720911386,
+        "stop" : 1588720911387,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f943f5b10b6ee95e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655623,
+        "stop" : 1588631655624,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "18e5c6c6065c0b6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631386528,
+        "stop" : 1588631386531,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "190af3a1801edf96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974934,
+        "stop" : 1588561974935,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "69be9e3e42272f13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759813,
+        "stop" : 1588486759814,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1a2926bc3171249e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369278960,
+        "stop" : 1588369278961,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "51911b1fc4336973",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608750,
+        "stop" : 1588308608752,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9e9d959ec34dc88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207191531,
+        "stop" : 1588207191532,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "acf5bb4dc8ac6613",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110161355,
+        "stop" : 1588110161356,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "49e30da088677da0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855251901,
+        "stop" : 1587855251902,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b985d5fa4fd9e20c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775247441,
+        "stop" : 1587775247442,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "db31473d88e217b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933684,
+        "stop" : 1587692933685,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c70b5f394f736689",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689217366,
+        "stop" : 1587689217367,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "98cce7cc35071231",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689048229,
+        "stop" : 1587689048230,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "11d4ee4912cca5fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202683,
+        "stop" : 1587507202683,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5ba5cc70eede7cca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461190224,
+        "stop" : 1587461190225,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4df72ca20d8f9f50",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936996947,
+        "stop" : 1586936996947,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 27,
+        "unknown" : 0,
+        "total" : 27
+      },
+      "items" : [ {
+        "uid" : "a3619e9e5aecb152",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593811474871,
+          "stop" : 1593811474872,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "89c234ccf513502f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593736483904,
+          "stop" : 1593736483905,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "7d2e79fcbfbd487a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593736483904,
+          "stop" : 1593736483905,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "7ffb10de11079e4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592253256879,
+          "stop" : 1592253256881,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "6b625798005e147c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592096337165,
+          "stop" : 1592096337166,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "UTILITIES", "VALIDATION", "ALGORITHMS" ]
+  },
+  "source" : "7ab690bcae8c05c4.json",
+  "parameterValues" : [ ]
+}

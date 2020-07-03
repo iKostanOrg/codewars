@@ -1,0 +1,528 @@
+{
+  "uid" : "51a46a596f2d68f0",
+  "name" : "Testing binary_to_string function",
+  "fullName" : "kyu_6.binary_to_text_ascii_conversion.test_binary_to_string.SequenceTestCase#test_binary_to_string",
+  "historyId" : "d96286d004d21bd579d7fafcd6645054",
+  "time" : {
+    "start" : 1593813254308,
+    "stop" : 1593813254309,
+    "duration" : 1
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function that takes in a binary string and returns the equivalent decoded text (the text is ASCII encoded).</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1593813254306,
+      "stop" : 1593813254306,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Test a function that takes in a binary string and returns the equivalent decoded text (the text is ASCII encoded).</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a binary (0100100001100101011011000110110001101111) and verify the expected output (Hello) vs actual result (Hello)",
+      "time" : {
+        "start" : 1593813254308,
+        "stop" : 1593813254308,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a binary (00110001001100000011000100110001) and verify the expected output (1011) vs actual result (1011)",
+      "time" : {
+        "start" : 1593813254309,
+        "stop" : 1593813254309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a binary (0101001101110000011000010111001001101011011100110010000001100110011011000110010101110111001011100010111000100000011001010110110101101111011101000110100101101111011011100111001100100000011100100110000101101110001000000110100001101001011001110110100000100001) and verify the expected output (Sparks flew.. emotions ran high!) vs actual result (Sparks flew.. emotions ran high!)",
+      "time" : {
+        "start" : 1593813254309,
+        "stop" : 1593813254309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a binary (0010000101000000001000110010010000100101010111100010011000101010001010000010100101010001010101110100010101110010011101000111100101010101010010010100111101001100011001000110011001100111011000100110001001101000011011100110110101001001010010110100001001001010010010110100100001001001010101010100111100101000001111110011111000111111001111000111111001111110011111100111111001111110001010010010100000101010001001100010010101011110001110010011100000110111001100010011001100101111001011010010111100101010001011010010101000101111) and verify the expected output (!@#$%^&*()QWErtyUIOLdfgbbhnmIKBJKHIUO(?>?<~~~~~)(*&%^98713/-/*-*/) vs actual result (!@#$%^&*()QWErtyUIOLdfgbbhnmIKBJKHIUO(?>?<~~~~~)(*&%^98713/-/*-*/)",
+      "time" : {
+        "start" : 1593813254309,
+        "stop" : 1593813254309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter a binary (011001100111011101101111001100010110001101101110001101100110011001101010011100010110010101110001) and verify the expected output (fwo1cn6fjqeq) vs actual result (fwo1cn6fjqeq)",
+      "time" : {
+        "start" : 1593813254309,
+        "stop" : 1593813254309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "fdff62de14c00363",
+      "name" : "stdout",
+      "source" : "fdff62de14c00363.txt",
+      "type" : "text/plain",
+      "size" : 1380
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1593813254312,
+      "stop" : 1593813254312,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Binary to Text (ASCII) Conversion"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "tag",
+    "value" : "FORMATS"
+  }, {
+    "name" : "tag",
+    "value" : "CHARACTER ENCODINGS"
+  }, {
+    "name" : "tag",
+    "value" : "BINARY"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "tag",
+    "value" : "ASCII"
+  }, {
+    "name" : "suite",
+    "value" : "Character Encodings"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "2976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.binary_to_text_ascii_conversion.test_binary_to_string"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5583d268479559400d000064/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e8dead00873c6ee0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593811474939,
+        "stop" : 1593811474941,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "53a492786012de8c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593736483956,
+        "stop" : 1593736483957,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2d33c8d9288b341a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253256932,
+        "stop" : 1592253256933,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2867ea50e81e0b9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253189592,
+        "stop" : 1592253189593,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f2123134e1f306ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592096337216,
+        "stop" : 1592096337217,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "72a033ce1c313663",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590956551392,
+        "stop" : 1590956551394,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8e2248c33c04ffc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590952390126,
+        "stop" : 1590952390129,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3901aaeed8281666",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447881317,
+        "stop" : 1590447881319,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f244ef46e81855b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447341715,
+        "stop" : 1590447341716,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "42ca85428661e10d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829775044,
+        "stop" : 1589829775047,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "bfe6270bf65e3945",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770408003,
+        "stop" : 1589770408004,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "95c5b96029ed5583",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524756,
+        "stop" : 1589664524758,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "88df656f161d0cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369841,
+        "stop" : 1589664369842,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d9da2fd8a081588a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228852,
+        "stop" : 1589664228853,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "710f03f4dc957d89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995964,
+        "stop" : 1588788995967,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "1e822206a91ee2c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581811,
+        "stop" : 1588788581813,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "19b56d3a0f3e2124",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720911433,
+        "stop" : 1588720911434,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "47d02ab4a2482072",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655698,
+        "stop" : 1588631655700,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "506d90b06ed31958",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631386612,
+        "stop" : 1588631386615,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "cdc2d33f7b6909bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974994,
+        "stop" : 1588561974996,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d27ad7cb2bd77070",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759909,
+        "stop" : 1588486759915,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "b765cdf741ed11a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369279021,
+        "stop" : 1588369279023,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1cc80980c2a5c229",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608824,
+        "stop" : 1588308608826,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "19b1c87899afc8f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207191604,
+        "stop" : 1588207191606,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "66ab8f5b59b5c937",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110161416,
+        "stop" : 1588110161418,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a726e3115e6de5b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855251968,
+        "stop" : 1587855251970,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b0948e766a34c7a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775247488,
+        "stop" : 1587775247489,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f58d0609cf1abd8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933731,
+        "stop" : 1587692933733,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7219141cb3e98257",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689217415,
+        "stop" : 1587689217417,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "becb5989fcda353",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689048297,
+        "stop" : 1587689048299,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c43414a6d35fa30a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202728,
+        "stop" : 1587507202730,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "42cd12921167ef8c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461190294,
+        "stop" : 1587461190296,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9f1e5e3047d9cd4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936997045,
+        "stop" : 1586936997047,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 27,
+        "unknown" : 0,
+        "total" : 27
+      },
+      "items" : [ {
+        "uid" : "644a4acbe170b45b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593811474939,
+          "stop" : 1593811474941,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "832d24ca21b4e502",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593736483956,
+          "stop" : 1593736483957,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "86d4103e41c8842a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593736483956,
+          "stop" : 1593736483957,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "47fcd59ac2dcdd1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592253256932,
+          "stop" : 1592253256933,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "83cd22c5c9e9d212",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592096337216,
+          "stop" : 1592096337217,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "CHARACTER ENCODINGS", "STRINGS", "FUNDAMENTALS", "FORMATS", "BINARY", "ASCII" ]
+  },
+  "source" : "51a46a596f2d68f0.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,36 @@
+
+LOG =>
+expected: True,
+value: Dermatoglyphics,
+message: 
+
+
+LOG =>
+expected: True,
+value: isogram,
+message: 
+
+
+LOG =>
+expected: False,
+value: aba,
+message: same chars may not be adjacent
+
+
+LOG =>
+expected: False,
+value: moOse,
+message: same chars may not be same case
+
+
+LOG =>
+expected: False,
+value: isIsogram,
+message: 
+
+
+LOG =>
+expected: True,
+value: ,
+message: an empty string is a valid isogram
+
