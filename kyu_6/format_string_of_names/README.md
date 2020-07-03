@@ -1,4 +1,4 @@
-# Format a string of names like 'Bart, Lisa & Maggie'.
+# Format a string of names like 'Bart, Lisa & Maggie'
 
 ## Given
 
