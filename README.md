@@ -69,17 +69,11 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 <a id="dev"></a>
 
 1.  [Python 3.7.4](https://www.python.org/downloads/release/python-374/)
-
 2.  [PyTest](https://pypi.org/project/pytest/)
-
 3.  [Allure Framework](http://allure.qatools.ru/)
-
 4.  [Win 10 (64 bit)](https://www.microsoft.com/en-ca/software-download/windows10)
-
 5.  [PyCharm 2019.2 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)
-
 6.  [GitHub Desktop](https://desktop.github.com/)
-
 7.  [GIT 2.22.0.windows.1](https://git-scm.com/download/win)
 
 ### Python Packages
@@ -281,17 +275,17 @@ git commit -m "fixed untracked files"
        modules
      ```
 10.  Open cmd > run: 
-     ```bash
-     sphinx-apidoc -F -o . ..
-     ```
+         ```bash
+         sphinx-apidoc -F -o . ..
+         ```
 11.  cmd > Run: 
-     ```bash
-     make html
-     ```
+        ```bash
+        make html
+        ```
 12.  Install html template: 
-     ```bash
-     pip install sphinx_rtd_theme
-     ```
+        ```bash
+        pip install sphinx_rtd_theme
+        ```
 
 **More info:**
 
