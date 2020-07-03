@@ -250,41 +250,50 @@ git commit -m "fixed untracked files"
 
 <br/>Step by step:
 
-1.  Create docs directory
-2.  Open cmd > Go to docs directory
-3.  cmd > Run: `sphinx-quickstart`. **Note:** run with default answers
-4.  Go to `docs/conf.py`
-5.  Uncomment following lines: 
-```python
-import os
-import sys
-sys.path.insert(0, os.path.abspath('.'))
-```
-6.  Update extensions list as following: 
-```python 
-extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
-```
-7.  Update template as following:
-```python
-html_theme = 'sphinx_rtd_theme'
-```
-8.  Update sys.path.insert as following:
-```python
-sys.path.insert(0, os.path.abspath('..'))
-```
-9.  Go to docs/index.rst > add modules, see example below:
-```bash
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+1. Create docs directory
+2. Open cmd > Go to docs directory
+3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers
+4. Go to `docs/conf.py`
+5. Uncomment following lines: 
+    ```python
+    import os
+    import sys
+    sys.path.insert(0, os.path.abspath('.'))
+    ```
+6. Update extensions list as following: 
+    ```python 
+    extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
+    ```
+7. Update template as following: 
+    ```python
+    html_theme = 'sphinx_rtd_theme'
+    ```
+8. Update sys.path.insert as following: 
+    ```python
+    sys.path.insert(0, os.path.abspath('..'))
+    ```
+9. Go to docs/index.rst > add modules, see example below:
+    ```bash
+    .. toctree::
+       :maxdepth: 2
+       :caption: Contents:
+    
+       modules
+    ```
+10. Open cmd > run: 
+    ```bash
+    sphinx-apidoc -F -o . ..
+    ```
+11. cmd > Run: 
+    ```bash
+    make html
+    ```
+12. Install html template: 
+    ```bash
+    pip install sphinx_rtd_theme
+    ```
 
-   modules
-```
-10.  Open cmd > run: `sphinx-apidoc -F -o . ..`
-11.  cmd > Run: `make html`
-12.  Install html template: `pip install sphinx_rtd_theme`
-
-More info:
+**More info:**
 
 *   [Video Tutorial](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 *   [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
