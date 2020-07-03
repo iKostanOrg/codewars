@@ -11,6 +11,7 @@ def copy_allure_history() -> None:
     """
     Copy '.\allure-report\history' folder
     into '.\allure-results\history'
+
     :return:
     """
 
