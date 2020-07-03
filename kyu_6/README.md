@@ -51,5 +51,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |33   |[Encrypt this!](https://www.codewars.com/kata/5848565e273af816fb000449)                                                     |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/encrypt_this)                      |
 |34   |[Decipher this!](https://www.codewars.com/kata/decipher-this)                                                               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/decipher_this)                     |
 |35   |[Format a string of names like 'Bart, Lisa & Maggie'.](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/python) |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/format_string_of_names)            |
+|36   |[Sort the odd](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python)                                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/sort_the_odd)                      |
 
 [Source](https://www.codewars.com/about)
