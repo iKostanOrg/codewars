@@ -19,7 +19,6 @@ from utils.log_func import print_log
 @allure.tag('FUNDAMENTALS', 'ARRAYS')
 @allure.link(url='https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python',
              name='Source/Kata')
-#@pytest.mark.skip(reason="The solution is not ready")
 class SortArrayTestCase(unittest.TestCase):
     """
     Testing 'sort_array' function
