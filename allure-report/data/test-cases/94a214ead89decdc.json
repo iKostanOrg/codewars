@@ -1,0 +1,234 @@
+{
+  "uid" : "94a214ead89decdc",
+  "name" : "Testing sum_for_list function",
+  "fullName" : "kyu_4.sum_by_factors.test_sum_for_list.SumForListTestCase#test_sum_for_list",
+  "historyId" : "9f1de1fe45fbdc513df7a1c52ccbe6cd",
+  "time" : {
+    "start" : 1590447880560,
+    "stop" : 1590447880674,
+    "duration" : 114
+  },
+  "description" : "\n        Testing sum_for_list function\n        :return:\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Verify that one given an array of positive or negative integers I= [i1,..,in] the function produces a sorted array P of the form [[p, sum of all ij of I for which p is a prime factor (p positive) of ij]...]</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1590447880559,
+      "stop" : 1590447880559,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing sum_for_list function\n        :return:\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>Verify that one given an array of positive or negative integers I= [i1,..,in] the function produces a sorted array P of the form [[p, sum of all ij of I for which p is a prime factor (p positive) of ij]...]</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter test list ([12, 15]) and verify the output ([[2, 12], [3, 27], [5, 15]]) vs expected ([[2, 12], [3, 27], [5, 15]])",
+      "time" : {
+        "start" : 1590447880561,
+        "stop" : 1590447880561,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test list ([15, 21, 24, 30, 45]) and verify the output ([[2, 54], [3, 135], [5, 90], [7, 21]]) vs expected ([[2, 54], [3, 135], [5, 90], [7, 21]])",
+      "time" : {
+        "start" : 1590447880561,
+        "stop" : 1590447880561,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test list ([107, 158, 204, 100, 118, 123, 126, 110, 116, 100]) and verify the output ([[2, 1032], [3, 453], [5, 310], [7, 126], [11, 110], [17, 204], [29, 116], [41, 123], [59, 118], [79, 158], [107, 107]]) vs expected ([[2, 1032], [3, 453], [5, 310], [7, 126], [11, 110], [17, 204], [29, 116], [41, 123], [59, 118], [79, 158], [107, 107]])",
+      "time" : {
+        "start" : 1590447880561,
+        "stop" : 1590447880561,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test list ([-29804, -4209, -28265, -72769, -31744]) and verify the output ([[2, -61548], [3, -4209], [5, -28265], [23, -4209], [31, -31744], [53, -72769], [61, -4209], [1373, -72769], [5653, -28265], [7451, -29804]]) vs expected ([[2, -61548], [3, -4209], [5, -28265], [23, -4209], [31, -31744], [53, -72769], [61, -4209], [1373, -72769], [5653, -28265], [7451, -29804]])",
+      "time" : {
+        "start" : 1590447880673,
+        "stop" : 1590447880673,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test list ([15, -36, -133, -61, -54, 78, -126, -113, -106, -158]) and verify the output ([[2, -402], [3, -123], [5, 15], [7, -259], [13, 78], [19, -133], [53, -106], [61, -61], [79, -158], [113, -113]]) vs expected ([[2, -402], [3, -123], [5, 15], [7, -259], [13, 78], [19, -133], [53, -106], [61, -61], [79, -158], [113, -113]])",
+      "time" : {
+        "start" : 1590447880673,
+        "stop" : 1590447880673,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test list ([154, -150, -196, -164, -57, 133, -110, -126, -191, -171, 131, -55, -85, -37, -113]) and verify the output ([[2, -592], [3, -504], [5, -400], [7, -35], [11, -11], [17, -85], [19, -95], [37, -37], [41, -164], [113, -113], [131, 131], [191, -191]]) vs expected ([[2, -592], [3, -504], [5, -400], [7, -35], [11, -11], [17, -85], [19, -95], [37, -37], [41, -164], [113, -113], [131, 131], [191, -191]])",
+      "time" : {
+        "start" : 1590447880674,
+        "stop" : 1590447880674,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter test list ([12, -138, -175, -64, -153, 11, -11, -126, -67, -30, 153, -72, -102]) and verify the output ([[2, -520], [3, -456], [5, -205], [7, -301], [11, 0], [17, -102], [23, -138], [67, -67]]) vs expected ([[2, -520], [3, -456], [5, -205], [7, -301], [11, 0], [17, -102], [23, -138], [67, -67]])",
+      "time" : {
+        "start" : 1590447880674,
+        "stop" : 1590447880674,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "dc3ea969d71ddef",
+      "name" : "stdout",
+      "source" : "dc3ea969d71ddef.txt",
+      "type" : "text/plain",
+      "size" : 1579
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1590447880676,
+      "stop" : 1590447880676,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "story",
+    "value" : "Sum by Factors"
+  }, {
+    "name" : "feature",
+    "value" : "Lists"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "tag",
+    "value" : "ARRAYS"
+  }, {
+    "name" : "epic",
+    "value" : "4 kyu"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "9952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_4.sum_by_factors.test_sum_for_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/54d496788776e49e6b00052f/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "NUMBERS", "ALGORITHMS", "ARRAYS" ]
+  },
+  "source" : "94a214ead89decdc.json",
+  "parameterValues" : [ ]
+}
