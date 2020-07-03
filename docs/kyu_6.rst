@@ -42,7 +42,7 @@ Subpackages
    kyu_6.decipher_this
    kyu_6.encrypt_this
    kyu_6.format_string_of_names
-
+   kyu_6.sort_the_odd
 
 Module contents
 ---------------
