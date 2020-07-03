@@ -279,19 +279,19 @@ git commit -m "fixed untracked files"
        :caption: Contents:
     
        modules
-    ```
+     ```
 10.  Open cmd > run: 
-    ```bash
-    sphinx-apidoc -F -o . ..
-    ```
+     ```bash
+     sphinx-apidoc -F -o . ..
+     ```
 11.  cmd > Run: 
-    ```bash
-    make html
-    ```
+     ```bash
+     make html
+     ```
 12.  Install html template: 
-    ```bash
-    pip install sphinx_rtd_theme
-    ```
+     ```bash
+     pip install sphinx_rtd_theme
+     ```
 
 **More info:**
 
