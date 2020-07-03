@@ -31,7 +31,7 @@ Given an `array/list []` of n integers , **Separate** The even numbers from the 
 
 ### Explanation 2
 
-*   Since , `{ -100, -96 , -94 }` is the even numbers here , So it came first in ascending order , *then** *the odds in descending order `{ -99 }`
+*   Since , `{ -100, -96 , -94 }` is the even numbers here , So it came first in ascending order , *then* the odds in descending order `{ -99 }`
 *   Since , (Duplications are not included when separating) , then you can see only one `(-99)` was appeared in the final array/list .
 
 > menFromBoys ({49 , 818 , -282 , 900 , 928 , 281 , -282 , -1 }) ==> return ({-282 , 818 , 900 , 928 , 281 , 49 , -1})
