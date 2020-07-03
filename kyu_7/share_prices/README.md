@@ -8,8 +8,8 @@ You bought it for `invested`, and want to know how much it's worth, but all the 
 
 Write the function `sharePrice()` that calculates, and returns the current price of your share, given the following two arguments:
 
-* `invested` (number), the amount of money you initially invested in the given share
-* `changes` (array of numbers), contains your shares daily movement percentages
+*   `invested` (number), the amount of money you initially invested in the given share
+*   `changes` (array of numbers), contains your shares daily movement percentages
 
 The returned number, should be in string format, and it's precision should be fixed at 2 decimal numbers.
 
