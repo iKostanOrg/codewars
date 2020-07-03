@@ -33,7 +33,6 @@
 Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
 
 *   Codewars supports `Python 2.7.6`, `Python 3.4.3` and `Python 3.6.0`.
-
 *   Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
 
 ### Difficulty
@@ -140,12 +139,10 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
   <summary><b>Setting up Python3 virtual environment on Windows machine</b></summary>
 
 1.  open CMD
-
 2.  navigate to project directory, for example: ```bash cd C:\Users\superadmin\Desktop\Python\CodinGame```
-
 3.  run following command: ```bash  pip install virtualenv ```
-
 4.  run following command:```bash virtualenv venv --python=python```
+
 </details>
 
 <details>
@@ -254,35 +251,27 @@ git commit -m "fixed untracked files"
 <br/>Step by step:
 
 1.  Create docs directory
-
 2.  Open cmd > Go to docs directory
-
 3.  cmd > Run: `sphinx-quickstart`. **Note:** run with default answers
-    
 4.  Go to `docs/conf.py`
-
 5.  Uncomment following lines: 
 ```python
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 ```
-
 6.  Update extensions list as following: 
 ```python 
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
-
 7.  Update template as following:
 ```python
 html_theme = 'sphinx_rtd_theme'
 ```
-
 8.  Update sys.path.insert as following:
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
-
 9.  Go to docs/index.rst > add modules, see example below:
 ```bash
 .. toctree::
@@ -291,14 +280,12 @@ sys.path.insert(0, os.path.abspath('..'))
 
    modules
 ```
-
 10.  Open cmd > run: `sphinx-apidoc -F -o . ..`
-
-11.  cmd > Run: make html
-
+11.  cmd > Run: `make html`
 12.  Install html template: `pip install sphinx_rtd_theme`
 
 More info:
+
 *   [Video Tutorial](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 *   [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
 *   [More Info](https://stackoverflow.com/questions/13516404/sphinx-error-unknown-directive-type-automodule-or-autoclass)
