@@ -45,10 +45,9 @@ class OrderTestCase(unittest.TestCase):
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        """<p>Your task is to verify that 'order' function sorts 
-                                        a given string by following rules:
-                                        1. Each word in the string will contain a single number. 
+                                        '<h3>Test Description:</h3><p>Your task is to verify that \'order\' '
+                                        'function sorts a given string by following rules:'
+                                        """1. Each word in the string will contain a single number. 
                                         This number is the position the word should have in the result.<br/>
                                         2. Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).<br/>
                                         3. If the input string is empty, return an empty string. The words in the 
