@@ -244,28 +244,36 @@ git commit -m "fixed untracked files"
 
 <br/>Step by step:
 
-1.  Create docs directory
-2.  Open cmd > Go to docs directory
-3.  cmd > Run: `sphinx-quickstart`. **Note:** run with default answers
-4.  Go to `docs/conf.py`
+1.  Create docs directory.
+
+2.  Open cmd > Go to docs directory.
+
+3.  cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
+
+4.  Go to `docs/conf.py`.
+
 5.  Uncomment following lines: 
     ```python
     import os
     import sys
     sys.path.insert(0, os.path.abspath('.'))
     ```
+
 6.  Update extensions list as following: 
     ```python 
     extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
     ```
+
 7.  Update template as following: 
     ```python
     html_theme = 'sphinx_rtd_theme'
     ```
+
 8.  Update sys.path.insert as following: 
     ```python
     sys.path.insert(0, os.path.abspath('..'))
     ```
+
 9.  Go to docs/index.rst > add modules, see example below:
     ```bash
     .. toctree::
@@ -274,14 +282,17 @@ git commit -m "fixed untracked files"
     
        modules
      ```
+
 10.  Open cmd > run: 
          ```bash
          sphinx-apidoc -F -o . ..
          ```
+
 11.  cmd > Run: 
         ```bash
         make html
         ```
+
 12.  Install html template: 
         ```bash
         pip install sphinx_rtd_theme
