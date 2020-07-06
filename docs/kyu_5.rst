@@ -28,6 +28,7 @@ Subpackages
    kyu_5.sum_of_pairs
    kyu_5.tic_tac_toe_checker
    kyu_5.string_incrementer
+   kyu_5.integers_recreation_one
 
 Module contents
 ---------------
