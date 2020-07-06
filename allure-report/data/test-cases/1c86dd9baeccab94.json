@@ -1,0 +1,658 @@
+{
+  "uid" : "1c86dd9baeccab94",
+  "name" : "Testing solve function",
+  "fullName" : "kyu_6.casino_chips.test_solve.SolveTestCase#test_solve",
+  "historyId" : "337bbc1cc632cf0323c6dd0c274cf890",
+  "time" : {
+    "start" : 1594003964273,
+    "stop" : 1594003964277,
+    "duration" : 4
+  },
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>You will be given an array representing the number of chips of each color and your task is to return the maximum number of days you can pick the chips. Each day you need to take exactly two chips.</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1594003964271,
+      "stop" : 1594003964271,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>You will be given an array representing the number of chips of each color and your task is to return the maximum number of days you can pick the chips. Each day you need to take exactly two chips.</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter an array ([8, 8, 8]) and verify the expected output (12) vs actual result (12)",
+      "time" : {
+        "start" : 1594003964273,
+        "stop" : 1594003964273,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([1, 1, 1]) and verify the expected output (1) vs actual result (1)",
+      "time" : {
+        "start" : 1594003964273,
+        "stop" : 1594003964273,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([8, 1, 4]) and verify the expected output (5) vs actual result (5)",
+      "time" : {
+        "start" : 1594003964273,
+        "stop" : 1594003964273,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([7, 4, 10]) and verify the expected output (10) vs actual result (10)",
+      "time" : {
+        "start" : 1594003964274,
+        "stop" : 1594003964274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([12, 12, 12]) and verify the expected output (18) vs actual result (18)",
+      "time" : {
+        "start" : 1594003964274,
+        "stop" : 1594003964274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([6, 6, 6]) and verify the expected output (9) vs actual result (9)",
+      "time" : {
+        "start" : 1594003964274,
+        "stop" : 1594003964274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([1, 23, 2]) and verify the expected output (3) vs actual result (3)",
+      "time" : {
+        "start" : 1594003964274,
+        "stop" : 1594003964274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([9, 8, 6]) and verify the expected output (11) vs actual result (11)",
+      "time" : {
+        "start" : 1594003964274,
+        "stop" : 1594003964275,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([10, 9, 6]) and verify the expected output (12) vs actual result (12)",
+      "time" : {
+        "start" : 1594003964275,
+        "stop" : 1594003964275,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([4, 4, 3]) and verify the expected output (5) vs actual result (5)",
+      "time" : {
+        "start" : 1594003964275,
+        "stop" : 1594003964276,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([1, 2, 1]) and verify the expected output (2) vs actual result (2)",
+      "time" : {
+        "start" : 1594003964276,
+        "stop" : 1594003964276,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([4, 1, 1]) and verify the expected output (2) vs actual result (2)",
+      "time" : {
+        "start" : 1594003964276,
+        "stop" : 1594003964276,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter an array ([8, 2, 8]) and verify the expected output (9) vs actual result (9)",
+      "time" : {
+        "start" : 1594003964276,
+        "stop" : 1594003964276,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "657dda9b7423d3ca",
+      "name" : "stdout",
+      "source" : "657dda9b7423d3ca.txt",
+      "type" : "text/plain",
+      "size" : 640
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1594003964278,
+      "stop" : 1594003964278,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "tag",
+    "value" : "NUMBERS"
+  }, {
+    "name" : "tag",
+    "value" : "MATHEMATICS"
+  }, {
+    "name" : "feature",
+    "value" : "Math"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "epic",
+    "value" : "6 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Novice"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "story",
+    "value" : "Casino chips"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "5280-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_6.casino_chips.test_solve"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5e0b72d2d772160011133654/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "54b36f6dc376582e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593814705684,
+        "stop" : 1593814705687,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4e57c1609bc7167c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593813254325,
+        "stop" : 1593813254330,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "c8906d05b3dd3bce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593811474953,
+        "stop" : 1593811474960,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "15a4cd672a9934d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593736483971,
+        "stop" : 1593736483974,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d2763f8d6cfd6d4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253256945,
+        "stop" : 1592253256947,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6044914515c103fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253189609,
+        "stop" : 1592253189614,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "2c9662b30951804a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592096337227,
+        "stop" : 1592096337229,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4db41192744a3ac3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590956551409,
+        "stop" : 1590956551411,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5c2384aad1daa7e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590952390144,
+        "stop" : 1590952390147,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "30bd47caaaa00ce2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447881329,
+        "stop" : 1590447881330,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c8ba2d28a02eda36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447341727,
+        "stop" : 1590447341730,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "112a566eb6a3d20e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829775062,
+        "stop" : 1589829775065,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dd7e016cf8f3c5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770408017,
+        "stop" : 1589770408018,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b8231057cf10bf43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664524771,
+        "stop" : 1589664524775,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8613370cbd418656",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664369853,
+        "stop" : 1589664369855,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "191a08d0508eaba8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664228863,
+        "stop" : 1589664228865,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c4149a4c286f1a92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995982,
+        "stop" : 1588788995985,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4194553c00558658",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581824,
+        "stop" : 1588788581826,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d9a1829b297ad353",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720911444,
+        "stop" : 1588720911447,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "61de618201694d6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631655716,
+        "stop" : 1588631655719,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6938c538269be403",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631386639,
+        "stop" : 1588631386641,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9c45983c08988dde",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561975015,
+        "stop" : 1588561975020,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "94c41cb817a532dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759934,
+        "stop" : 1588486759936,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3c32a69b2c243023",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588369279035,
+        "stop" : 1588369279041,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "f754def856f28c40",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588308608846,
+        "stop" : 1588308608856,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "cff93151a3e42284",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588207191618,
+        "stop" : 1588207191620,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "343482b361522875",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588110161430,
+        "stop" : 1588110161432,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ffeb097c41759955",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587855251989,
+        "stop" : 1587855251992,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a2c1abd044b48ddf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587775247501,
+        "stop" : 1587775247503,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ef784e8a5dd02322",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587692933745,
+        "stop" : 1587692933748,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "511ce2f23d6ec7f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689217428,
+        "stop" : 1587689217430,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3a85ea9dd095df48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587689048314,
+        "stop" : 1587689048317,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7cc805203aeaa82a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587507202742,
+        "stop" : 1587507202746,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "7e0ebfdd2c898dd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587461190310,
+        "stop" : 1587461190312,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8ff43b587e20d3c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586936997061,
+        "stop" : 1586936997067,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 29,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "804841551b6d7d9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593814705684,
+          "stop" : 1593814705687,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "cde358e793af80f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593813254325,
+          "stop" : 1593813254330,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "7ec223bf72a16684",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593811474953,
+          "stop" : 1593811474960,
+          "duration" : 7
+        }
+      }, {
+        "uid" : "9d6ac8eaa0e14028",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593736483971,
+          "stop" : 1593736483974,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "ff65bb3c90af3c0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593736483971,
+          "stop" : 1593736483974,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ "MATHEMATICS", "FUNDAMENTALS", "NUMBERS", "ALGORITHMS" ]
+  },
+  "source" : "1c86dd9baeccab94.json",
+  "parameterValues" : [ ]
+}
