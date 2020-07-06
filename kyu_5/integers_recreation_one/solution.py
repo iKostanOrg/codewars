@@ -36,7 +36,7 @@ def is_perfect_square(n: str) -> bool:
 	"""
 	# Step 1: 1.A Perfect Square always ends
 	# with one of these numbers ( 0, 1, 4, 5, 6, 9).
-	if n[-1] in [0, 1, 4, 5, 6, 9]:
+	if n[-1] not in "014569":
 		return False
 	# Step #2: No number can be a perfect square unless its
 	# digital root is 1, 4, 7, or 9.
