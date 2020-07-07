@@ -17,6 +17,7 @@ Subpackages
    kyu_4.most_frequently_used_words
    kyu_4.the_greatest_warrior
    kyu_4.strings_mix
+   kyu_4.next_smaller_number_with_the_same_digits
 
 Module contents
 ---------------
