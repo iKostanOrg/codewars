@@ -28,9 +28,9 @@ class NextSmallerTestCase(unittest.TestCase):
         You have to test a function that takes a positive integer number
         and returns the next smaller number formed by the same digits:
 
-        12 ==> 21
-        513 ==> 531
-        2017 ==> 2071
+        21 ==> 12
+        531 ==> 513
+        2071 ==> 2017
 
         If no smaller number can be composed using those digits, return -1
         """
