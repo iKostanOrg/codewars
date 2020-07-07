@@ -21,8 +21,6 @@ def next_smaller(n: int) -> int:
     # Then find the index of the largest digit that is to the
     # right of X, and is smaller than X. We'll call that digit Y.
     y_i: int = find_y(n, x_i)
-    if y_i < 0:
-        return y_i
 
     # 3
     # Swap X and Y. This makes the number smaller.
