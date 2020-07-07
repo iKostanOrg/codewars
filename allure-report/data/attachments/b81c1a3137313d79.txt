@@ -1,0 +1,40 @@
+
+LOG =>
+a: [1, 2],
+b: [1],
+exp: [2],
+message: a was [1,2], b was [1], expected [2],
+res: [2]
+
+
+LOG =>
+a: [1, 2, 2],
+b: [1],
+exp: [2, 2],
+message: a was [1,2,2], b was [1], expected [2,2],
+res: [2, 2]
+
+
+LOG =>
+a: [1, 2, 2],
+b: [2],
+exp: [1],
+message: a was [1,2,2], b was [2], expected [1],
+res: [1]
+
+
+LOG =>
+a: [1, 2, 2],
+b: [],
+exp: [1, 2, 2],
+message: a was [1,2,2], b was [], expected [1,2,2],
+res: [1, 2, 2]
+
+
+LOG =>
+a: [],
+b: [1, 2],
+exp: [],
+message: a was [], b was [1,2], expected [],
+res: []
+

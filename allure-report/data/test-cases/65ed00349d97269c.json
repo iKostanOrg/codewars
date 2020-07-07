@@ -1,0 +1,134 @@
+{
+  "uid" : "65ed00349d97269c",
+  "name" : "Testing growing_plant function",
+  "fullName" : "kyu_7.growing_plant.test_growing_plant.GrowingPlantTestCase#test_growing_plant",
+  "historyId" : "fcd618577998a86f372b0608156ae679",
+  "time" : {
+    "start" : 1586937001442,
+    "stop" : 1586937001446,
+    "duration" : 4
+  },
+  "description" : "\n        Testing growing_plant function\n\n        Task\n\n        Each day a plant is growing by upSpeed meters.\n        Each night that plant's height decreases by downSpeed\n        meters due to the lack of sun heat. Initially, plant\n        is 0 meters tall. We plant the seed at the beginning\n        of a day. We want to know when the height of the plant\n        will reach a certain level.\n\n        Example\n\n        For upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n        the output should be 10.\n\n        For upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n        the output should be 1. Because the plant reach to the desired\n        height at day 1(10 meters).\n\n        Input/Output\n\n        [input] integer upSpeed\n        A positive integer representing the daily growth.\n        Constraints: 5 ≤ upSpeed ≤ 100.\n\n        [input] integer downSpeed\n        A positive integer representing the nightly decline.\n        Constraints: 2 ≤ downSpeed < upSpeed.\n\n        [input] integer desiredHeight\n        A positive integer representing the threshold.\n        Constraints: 4 ≤ desiredHeight ≤ 1000.\n\n        [output] an integer\n\n        The number of days that it will take for the plant to\n        reach/pass desiredHeight (including the last day in the\n        total count).\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1586937001442,
+      "stop" : 1586937001442,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing growing_plant function\n\n        Task\n\n        Each day a plant is growing by upSpeed meters.\n        Each night that plant's height decreases by downSpeed\n        meters due to the lack of sun heat. Initially, plant\n        is 0 meters tall. We plant the seed at the beginning\n        of a day. We want to know when the height of the plant\n        will reach a certain level.\n\n        Example\n\n        For upSpeed = 100, downSpeed = 10 and desiredHeight = 910,\n        the output should be 10.\n\n        For upSpeed = 10, downSpeed = 9 and desiredHeight = 4,\n        the output should be 1. Because the plant reach to the desired\n        height at day 1(10 meters).\n\n        Input/Output\n\n        [input] integer upSpeed\n        A positive integer representing the daily growth.\n        Constraints: 5 ≤ upSpeed ≤ 100.\n\n        [input] integer downSpeed\n        A positive integer representing the nightly decline.\n        Constraints: 2 ≤ downSpeed < upSpeed.\n\n        [input] integer desiredHeight\n        A positive integer representing the threshold.\n        Constraints: 4 ≤ desiredHeight ≤ 1000.\n\n        [output] an integer\n\n        The number of days that it will take for the plant to\n        reach/pass desiredHeight (including the last day in the\n        total count).\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p></p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter upSpeed, downSpeed and desiredHeight and verify the output",
+      "time" : {
+        "start" : 1586937001442,
+        "stop" : 1586937001442,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e9ab17c886abd2c1",
+      "name" : "stdout",
+      "source" : "e9ab17c886abd2c1.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1586937001448,
+      "stop" : 1586937001448,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "epic",
+    "value" : "7 kyu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Beginner"
+  }, {
+    "name" : "story",
+    "value" : "Simple Fun #74: Growing Plant"
+  }, {
+    "name" : "feature",
+    "value" : "Calculation"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "10720-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_7.growing_plant.test_growing_plant"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "65ed00349d97269c.json",
+  "parameterValues" : [ ]
+}
