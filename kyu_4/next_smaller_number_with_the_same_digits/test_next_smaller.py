@@ -44,9 +44,9 @@ class NextSmallerTestCase(unittest.TestCase):
                                         "<p>Testing next_bigger function</p>"
                                         "<p>You have to test a function that takes a positive integer "
                                         "number and returns the next smaller number formed by the same digits:</p>"
-                                        "<p>12 ==> 21</p>"
-                                        "<p>513 ==> 531</p>"
-                                        "<p>2017 ==> 2071</p>"
+                                        "<p>21 ==> 12</p>"
+                                        "<p>531 ==> 513</p>"
+                                        "<p>2071 ==> 2017</p>"
                                         "<p>If no smaller number can be composed using those digits, return -1</p>")
 
         test_data = [
