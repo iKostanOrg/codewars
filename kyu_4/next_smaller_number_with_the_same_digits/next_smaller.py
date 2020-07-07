@@ -14,7 +14,6 @@ def next_smaller(n: int) -> int:
     # Starting from the right, find the index of the first digit that
     # has at least one smaller digit to its right. We'll call that digit X.
     x_i: int = find_x(n)
-    #print('\nx: {}, index: {}'.format(str(n)[x_i], x_i))
     if x_i < 0:
         return x_i
 
@@ -22,7 +21,6 @@ def next_smaller(n: int) -> int:
     # Then find the index of the largest digit that is to the
     # right of X, and is smaller than X. We'll call that digit Y.
     y_i: int = find_y(n, x_i)
-    #print('y: {}, index: {}'.format(str(n)[y_i], y_i))
     if y_i < 0:
         return y_i
 
