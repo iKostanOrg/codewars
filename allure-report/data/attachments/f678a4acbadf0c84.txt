@@ -1,0 +1,35 @@
+
+LOG =>
+names: [{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}, {'name': 'Homer'}, {'name': 'Marge'}],
+expected: Bart, Lisa, Maggie, Homer & Marge,
+result: Bart, Lisa, Maggie, Homer & Marge,
+message: Must work with many names
+
+
+LOG =>
+names: [{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}],
+expected: Bart, Lisa & Maggie,
+result: Bart, Lisa & Maggie,
+message: Must work with many names
+
+
+LOG =>
+names: [{'name': 'Bart'}, {'name': 'Lisa'}],
+expected: Bart & Lisa,
+result: Bart & Lisa,
+message: Must work with two names
+
+
+LOG =>
+names: [{'name': 'Bart'}],
+expected: Bart,
+result: Bart,
+message: Wrong output for a single name
+
+
+LOG =>
+names: [],
+expected: ,
+result: ,
+message: Must work with no names
+
