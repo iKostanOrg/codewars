@@ -6,21 +6,19 @@
 
 import allure
 import unittest
-import pytest
 from utils.log_func import print_log
 from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigger
 
 
 @allure.epic("4 kyu")
 @allure.parent_suite('Competent')
-@allure.suite("Numbers")
+@allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
-@allure.feature("Integers")
+@allure.feature("String")
 @allure.story("Next bigger number with the same digits")
-@allure.tag('REFACTORING', 'NUMBERS', 'STRINGS', 'INTEGERS')
+@allure.tag('ALGORITHMS', 'NUMBERS', 'STRINGS', 'INTEGERS', 'MATHEMATICS')
 @allure.link(url='https://www.codewars.com/kata/55983863da40caa2c900004e/train/python',
              name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
 class NextBiggerTestCase(unittest.TestCase):
 
     def test_next_bigger(self):
@@ -46,29 +44,30 @@ class NextBiggerTestCase(unittest.TestCase):
                                         "<p>Testing next_bigger function</p>"
                                         "<p>You have to test a function that takes a positive integer "
                                         "number and returns the next bigger number formed by the same digits:</p>"
-                                        "<p>12 ==> 21"
-                                        "513 ==> 531"
-                                        "2017 ==> 2071</p>"
+                                        "<p>12 ==> 21</p>"
+                                        "<p>513 ==> 531</p>"
+                                        "<p>2017 ==> 2071</p>"
                                         "<p>If no bigger number can be composed using those digits, return -1</p>")
 
         test_data = [
-                (12, 21),
-                (513, 531),
-                (2017, 2071),
-                (414, 441),
-                (144, 414),
-            ]
+            (6, -1),
+            (12, 21),
+            (513, 531),
+            (2017, 2071),
+            (414, 441),
+            (144, 414),
+            (6938652, 6952368),
+            (123456789, 123456798)
+        ]
 
-        for d in test_data:
-            n = d[0]
-            expected = d[1]
+        for n, expected in test_data:
             actual_result = next_bigger(n)
             print_log(n=n,
                       expected=expected,
                       actual_result=actual_result)
 
             with allure.step("Enter an integer ({}), "
-                             "calculate the result ({}) and "
+                             "generate the result ({}) and "
                              "compare it with expected ({})".format(n,
                                                                     actual_result,
                                                                     expected)):

@@ -28,5 +28,6 @@ You can advance through the ranks by completing kata at or above your rank - the
 |10   |[The Greatest Warrior](https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python)                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/the_greatest_warrior)                       |
 |11   |[Strings Mix](https://www.codewars.com/kata/5629db57620258aa9d000014/solutions/python/all/newest)                   |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strings_mix)                                |
 |12   |[Next smaller number with the same digits](https://www.codewars.com/kata/5659c6d896bc135c4c00021e/solutions/python) |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_smaller_number_with_the_same_digits)   |
+|12   |[Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e/train/python)      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_bigger_number_with_the_same_digits)    |
 
 [Source](https://www.codewars.com/about)
