@@ -18,6 +18,7 @@ Subpackages
    kyu_4.the_greatest_warrior
    kyu_4.strings_mix
    kyu_4.next_smaller_number_with_the_same_digits
+   kyu_4.next_bigger_number_with_the_same_digits
 
 Module contents
 ---------------
