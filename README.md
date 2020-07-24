@@ -341,7 +341,7 @@ This fix worked for me (but as of 26-Jan-2020 you have to wipe out the environme
 </details>
 
 <details>
-<summary>How to use requirements.txt to install all dependencies in a python project</summary>
+<summary><b>How to use requirements.txt to install all dependencies in a python project</b></summary>
 
 1.   Run `pip install -r requirements.txt`
 2.   Run `pip freeze > requirements.txt`
