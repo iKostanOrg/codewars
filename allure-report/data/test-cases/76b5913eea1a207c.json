@@ -1,0 +1,558 @@
+{
+  "uid" : "76b5913eea1a207c",
+  "name" : "Testing Calculator class",
+  "fullName" : "kyu_3.calculator.test_calculator.CalculatorTestCase#test_calculator",
+  "historyId" : "100f3ec5a4076df24287398b05313e40",
+  "time" : {
+    "start" : 1596047919066,
+    "stop" : 1596047919069,
+    "duration" : 3
+  },
+  "description" : "\n        Testing Calculator class\n\n        A simple calculator that given a string of operators (), +, -, *, /\n        and numbers separated by spaces will return the value of that expression\n        ",
+  "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>1. given a string of operators (), +, -, *, / and numbers separated by spaces<br/>2. the calculator should return the value of that expression</p>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1596047919066,
+      "stop" : 1596047919066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        Testing Calculator class\n\n        A simple calculator that given a string of operators (), +, -, *, /\n        and numbers separated by spaces will return the value of that expression\n        ",
+    "descriptionHtml" : "<h3>Codewars badge:</h3><img src=\"https://www.codewars.com/users/myFirstCode/badges/large\"><h3>Test Description:</h3><p>1. given a string of operators (), +, -, *, / and numbers separated by spaces<br/>2. the calculator should return the value of that expression</p>",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter a test string (127), calculate the result (127.0) and compare vs expected (127)",
+      "time" : {
+        "start" : 1596047919067,
+        "stop" : 1596047919067,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 + 3), calculate the result (5.0) and compare vs expected (5)",
+      "time" : {
+        "start" : 1596047919067,
+        "stop" : 1596047919067,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 - 3 - 4), calculate the result (-5.0) and compare vs expected (-5)",
+      "time" : {
+        "start" : 1596047919067,
+        "stop" : 1596047919067,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (10 * 5 / 2), calculate the result (25.0) and compare vs expected (25)",
+      "time" : {
+        "start" : 1596047919067,
+        "stop" : 1596047919067,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 / 2 + 3 * 4 - 6), calculate the result (7.0) and compare vs expected (7)",
+      "time" : {
+        "start" : 1596047919068,
+        "stop" : 1596047919068,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (2 + 3 * 4 / 3 - 6 / 3 * 3 + 8), calculate the result (8.0) and compare vs expected (8)",
+      "time" : {
+        "start" : 1596047919068,
+        "stop" : 1596047919068,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (1.1 + 2.2 + 3.3), calculate the result (6.6) and compare vs expected (6.6)",
+      "time" : {
+        "start" : 1596047919068,
+        "stop" : 1596047919068,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (1.1 * 2.2 * 3.3), calculate the result (7.986000000000001) and compare vs expected (7.986000000000001)",
+      "time" : {
+        "start" : 1596047919068,
+        "stop" : 1596047919068,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter a test string (10 * 5 / 2), calculate the result (25.0) and compare vs expected (25)",
+      "time" : {
+        "start" : 1596047919068,
+        "stop" : 1596047919068,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "bbbabb3fd03feb90",
+      "name" : "stdout",
+      "source" : "bbbabb3fd03feb90.txt",
+      "type" : "text/plain",
+      "size" : 896
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1596047919070,
+      "stop" : 1596047919070,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "EXPRESSIONS"
+  }, {
+    "name" : "tag",
+    "value" : "FUNDAMENTALS"
+  }, {
+    "name" : "tag",
+    "value" : "BASIC LANGUAGE FEATURES"
+  }, {
+    "name" : "epic",
+    "value" : "3 kyu"
+  }, {
+    "name" : "tag",
+    "value" : "PARSING"
+  }, {
+    "name" : "suite",
+    "value" : "Algorithms"
+  }, {
+    "name" : "tag",
+    "value" : "ALGORITHMS"
+  }, {
+    "name" : "subSuite",
+    "value" : "Unit Tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Competent"
+  }, {
+    "name" : "feature",
+    "value" : "String"
+  }, {
+    "name" : "tag",
+    "value" : "STRINGS"
+  }, {
+    "name" : "story",
+    "value" : "Calculator"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RJASUD2"
+  }, {
+    "name" : "thread",
+    "value" : "3472-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "kyu_3.calculator.test_calculator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Source/Kata",
+    "url" : "https://www.codewars.com/kata/5235c913397cbf2508000048/train/python",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2f607217f81a0f8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596005119127,
+        "stop" : 1596005119131,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "82a1f5760ece1a03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596003822849,
+        "stop" : 1596003822852,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "54366c0807128f48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594531284026,
+        "stop" : 1594531284028,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d2cf5915c52f8f79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594163429598,
+        "stop" : 1594163429599,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "63522bfaf3d346c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594163035758,
+        "stop" : 1594163035760,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cdb21fbbe157c8d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594003963129,
+        "stop" : 1594003963132,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8506cb68aed038d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593814704638,
+        "stop" : 1593814704640,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "823650edf1c23308",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593813253179,
+        "stop" : 1593813253181,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d97115d0aa752d21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593811473810,
+        "stop" : 1593811473813,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9c9ab5f9d092e88e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593736482955,
+        "stop" : 1593736482957,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e71ea5d66fb07eab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253256005,
+        "stop" : 1592253256007,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9175955288ea7c38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592253188611,
+        "stop" : 1592253188613,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c41738a280630867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592096336318,
+        "stop" : 1592096336320,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "57732c6c7894796b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590956550380,
+        "stop" : 1590956550382,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7ddb53c557d89de3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590952389193,
+        "stop" : 1590952389195,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ac6826892d56eebb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447880408,
+        "stop" : 1590447880409,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6100270a853d20cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590447340830,
+        "stop" : 1590447340832,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "36226c71891ec67a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589829774141,
+        "stop" : 1589829774142,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "470a51a8e6662429",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589770407026,
+        "stop" : 1589770407027,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "587a0c1d0f2c60af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664523771,
+        "stop" : 1589664523774,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4659049ec13efe87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664368888,
+        "stop" : 1589664368890,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "be7b2f67a854d4b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589664227878,
+        "stop" : 1589664227880,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "801718f12d79ce59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788995147,
+        "stop" : 1588788995149,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "75eb362089d4d7c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588788581026,
+        "stop" : 1588788581028,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5accaaaaad6c3993",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588720910653,
+        "stop" : 1588720910655,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2a997ae33479ecaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631654847,
+        "stop" : 1588631654849,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "96937cea1f85a5e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588631385483,
+        "stop" : 1588631385485,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dddd7cfdd3f21e06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588561974243,
+        "stop" : 1588561974246,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "50670e83ac4ee747",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588486759027,
+        "stop" : 1588486759028,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 23,
+        "unknown" : 0,
+        "total" : 23
+      },
+      "items" : [ {
+        "uid" : "703eccc37aa4480a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596005119127,
+          "stop" : 1596005119131,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "5b733b15ffd4d21b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594531284026,
+          "stop" : 1594531284028,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "ea891ee495efae08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594163429598,
+          "stop" : 1594163429599,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "e247bba949d0fae1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594163035758,
+          "stop" : 1594163035760,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "cd51042cffa818e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594003963129,
+          "stop" : 1594003963132,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ "STRINGS", "EXPRESSIONS", "FUNDAMENTALS", "PARSING", "BASIC LANGUAGE FEATURES", "ALGORITHMS" ]
+  },
+  "source" : "76b5913eea1a207c.json",
+  "parameterValues" : [ ]
+}
