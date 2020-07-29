@@ -51,9 +51,6 @@ def ship_counter_by_row(field: list, ships: dict):
 						ships[len(ship)].append(ship)
 					else:
 						return False
-				# Any additional ships are not allowed
-				elif len(ship) > 4:
-					return False
 				ship = list()
 
 		# Allowed ship sizes between 1 to 4 cells
@@ -62,17 +59,11 @@ def ship_counter_by_row(field: list, ships: dict):
 		                                        cell=cell,
 		                                        direction='submarine') for cell in ship):
 			ships[len(ship)].append(ship)
-		elif 1 < len(ship) <= 4:
-			if all(is_valid_cell(ships=ships,
-			                     field=field,
-			                     cell=cell,
-			                     direction='horizontal') for cell in ship):
-				ships[len(ship)].append(ship)
-			else:
-				return False
-		# Any additional ships are not allowed
-		elif len(ship) > 4:
-			return False
+		elif 1 < len(ship) <= 4 and all(is_valid_cell(ships=ships,
+		                                              field=field,
+		                                              cell=cell,
+		                                              direction='horizontal') for cell in ship):
+			ships[len(ship)].append(ship)
 
 
 def ship_counter_by_col(field: list, ships: dict):
@@ -97,9 +88,6 @@ def ship_counter_by_col(field: list, ships: dict):
 						ships[len(ship)].append(ship)
 					else:
 						return False
-				# Any additional ships are not allowed
-				elif len(ship) > 4:
-					return False
 				ship = list()
 
 		# Allowed ship sizes between 1 to 4 cells
@@ -108,17 +96,11 @@ def ship_counter_by_col(field: list, ships: dict):
 		                                        cell=cell,
 		                                        direction='submarine') for cell in ship):
 			ships[len(ship)].append(ship)
-		elif 1 < len(ship) <= 4:
-			if all(is_valid_cell(ships=ships,
-			                     field=field,
-			                     cell=cell,
-			                     direction='vertical') for cell in ship):
-				ships[len(ship)].append(ship)
-			else:
-				return False
-		# Any additional ships are not allowed
-		elif len(ship) > 4:
-			return False
+		elif 1 < len(ship) <= 4 and all(is_valid_cell(ships=ships,
+		                                              field=field,
+		                                              cell=cell,
+		                                              direction='vertical') for cell in ship):
+			ships[len(ship)].append(ship)
 
 
 def is_valid_cell(ships: dict, field: list, cell: list, direction: str) -> bool:
