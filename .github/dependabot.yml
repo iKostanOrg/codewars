@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: pytest
+    versions:
+    - 6.2.2
+  - dependency-name: allure-python-commons
+    versions:
+    - 2.8.32
+    - 2.8.33
+    - 2.8.34
+    - 2.8.35
+    - 2.8.36
+  - dependency-name: gitpython
+    versions:
+    - 3.1.12
+    - 3.1.13
+  - dependency-name: pygments
+    versions:
+    - 2.7.4
+    - 2.8.0
+  - dependency-name: urllib3
+    versions:
+    - 1.26.3
+  - dependency-name: zipp
+    versions:
+    - 3.4.0
+  - dependency-name: mypy
+    versions:
+    - "0.800"
