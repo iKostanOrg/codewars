@@ -15,7 +15,7 @@ jobs: # A basic unit of work in a run
       - run:
           command: |
             echo $PATH
-            sudo pip3 install --upgrade pip
+            pip3 install --upgrade pip
             sudo mkdir /home/circleci/project/test-results
             pip3 install -r requirements.txt
       - run:
