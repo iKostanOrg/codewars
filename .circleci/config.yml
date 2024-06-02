@@ -14,6 +14,7 @@ jobs: # A basic unit of work in a run
       - run: sudo chown -R circleci:circleci /home/circleci/.pyenv/versions/3.8.12/lib/python3.8/site-packages
       - run:
           command: |
+            $ echo $PATH
             sudo pip3 install --upgrade pip
             sudo mkdir /home/circleci/project/test-results
             pip3 install -r requirements.txt
