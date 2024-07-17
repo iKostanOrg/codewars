@@ -11,7 +11,7 @@ jobs: # A basic unit of work in a run
       - checkout # check out source code to working directory
       - run: python3 -c "import sysconfig; print(sysconfig.get_path('purelib'))"
       - run: sudo chown -R circleci:circleci /usr/local/bin
-      - run: sudo chown -R circleci:circleci /home/circleci/.pyenv/versions/3.8.12/lib/python3.8/site-packages
+      - run: sudo chown -R circleci:circleci /home/circleci/.pyenv/versions/3.12.3/lib/python3.12/site-packages
       - run:
           command: |
             echo $PATH
