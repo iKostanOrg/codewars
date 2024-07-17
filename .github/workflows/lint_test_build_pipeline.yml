@@ -1,0 +1,11 @@
+name: Main Build Pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    uses: iKostanOrg/codewars/tree/master/.github/workflows/markdown-lint.yml@master
