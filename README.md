@@ -6,11 +6,9 @@
 [![HitCount](http://hits.dwyl.com/iKostanOrg/codewars.svg)](http://hits.dwyl.com/iKostanOrg/codewars)
 ![GitHub forks](https://img.shields.io/github/forks/iKostanOrg/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/iKostanOrg/codewars)
-<a href="https://dependabot.com" rel="nofollow"><img src="https://camo.githubusercontent.com/35a144257b9aec7d472244f972d918c3926d5518/68747470733a2f2f6170692e646570656e6461626f742e636f6d2f6261646765732f7374617475733f686f73743d676974687562267265706f3d79737331342f6d757369637368617265" alt="Dependabot Status" data-canonical-src="https://api.dependabot.com/badges/status?host=github&repo=iKostanOrg/codewars" style="max-width:100%;"></a>
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f14135ff-6f3e-450c-b391-5a677b8f8d8a/deploy-status)](https://app.netlify.com/sites/codewars-allure-report/deploys)
 [![CircleCI](https://circleci.com/gh/iKostanOrg/codewars.svg?style=svg)](https://circleci.com/gh/iKostanOrg/codewars)
-[![Build Status](https://travis-ci.com/iKostanOrg/codewars.svg?branch=master)](https://travis-ci.com/iKostanOrg/codewars)
 [![codecov](https://codecov.io/gh/iKostanOrg/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/iKostanOrg/codewars)
 [![CodeFactor](https://www.codefactor.io/repository/github/ikostanorg/codewars/badge)](https://www.codefactor.io/repository/github/ikostanorg/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/647e16e648f748a28fce36b4895f7729)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iKostanOrg/codewars&amp;utm_campaign=Badge_Grade)
