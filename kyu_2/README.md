@@ -1,8 +1,6 @@
 ## 2 kyu - Proficient
 
-<div align="center"> 
-<img width="30%" height="30%" src="https://github.com/ikostan/codewars/blob/master/img/copy-rank-kyu.png" hspace="10">
-</div>
+![rank kyu](https://github.com/ikostan/codewars/blob/master/img/copy-rank-kyu.png)
 
 ### Honor
 
