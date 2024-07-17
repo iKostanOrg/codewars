@@ -4,7 +4,7 @@ jobs: # A basic unit of work in a run
     # directory where steps are run
     docker: # run the steps with Docker
       # CircleCI Python images available at: https://hub.docker.com/r/circleci/python/
-      - image: cimg/python:3.8.12
+      - image: cimg/python:3.12.3
         environment: # environment variables for primary container
           PIPENV_VENV_IN_PROJECT: true
     steps: # steps that comprise the `build` job
