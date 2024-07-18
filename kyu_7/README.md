@@ -13,7 +13,7 @@ Honor represents the level of respect a user has earned from the community, base
 You can advance through the ranks by completing kata at or above your rank - the harder the kata the faster you advance.
 
 ### List of Completed Kata (Python 3)
-
+<!-- markdownlint-disable MD013 -->
 | No. | Puzzle/Kata Name                                                                                                         | Solution / GitHub Link                                                                                             |
 |-----|:------------------------------------------------------------------------------------------------------------------------:|-------------------------------------------------------------------------------------------------------------------:|
 |1    |[Always perfect](https://www.codewars.com/kata/55f3facb78a9fd5b26000036/train/python)                                     |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/always_perfect)                                    |
@@ -47,5 +47,5 @@ You can advance through the ranks by completing kata at or above your rank - the
 |29   |[Help Bob count letters and digits](https://www.codewars.com/kata/5738f5ea9545204cec000155/train/python)                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/help_bob_count_letters_and_digits)                 |
 |30   |[Make Class](https://www.codewars.com/kata/5d774cfde98179002a7cb3c8/train/python)                                         |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/make_class)                                        |
 |30   |[Easy Line](https://www.codewars.com/kata/56e7d40129035aed6c000632/train/python)                                          |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_7/easy_line)                                         |
-
+<!-- markdownlint-enable MD013 -->
 [Source](https://www.codewars.com/about)

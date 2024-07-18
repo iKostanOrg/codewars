@@ -13,7 +13,7 @@ Honor represents the level of respect a user has earned from the community, base
 You can advance through the ranks by completing kata at or above your rank - the harder the kata the faster you advance.
 
 ### List of Completed Kata (Python 3)
-
+<!-- markdownlint-disable MD013 -->
 | No. | Puzzle/Kata Name                                                                                                      |                                         Solution / GitHub Link                                        |
 |-----|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 |1    |[altERnaTIng cAsE <=> ALTerNAtiNG CaSe](https://www.codewars.com/kata/56efc695740d30f963000557/train/python)           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/alternating_case)                     |
@@ -53,5 +53,5 @@ You can advance through the ranks by completing kata at or above your rank - the
 |35   |[Holiday VI - Shark Pontoon](https://www.codewars.com/kata/57e921d8b36340f1fd000059/train/python)                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/holiday_vi_shark_pontoon)             |
 |36   |[My head is at the wrong end!](https://www.codewars.com/kata/56f699cd9400f5b7d8000b55/train/python)                    |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/my_head_is_at_the_wrong_end)          |
 |37   |[Greek Sort](https://www.codewars.com/kata/56bc1acf66a2abc891000561/train/python)                                      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_8/greek_sort)                           |
-
+<!-- markdownlint-enable MD013 -->
 [Source](https://www.codewars.com/about)
