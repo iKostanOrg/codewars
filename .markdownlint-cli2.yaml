@@ -29,18 +29,13 @@ modulePaths:
   - "./modules"
 
 # Disable banner message on stdout (only valid at root)
-noBanner: true
+noBanner: false
 
 # Disable inline config comments
 noInlineConfig: true
 
 # Disable progress on stdout (only valid at root)
 noProgress: true
-
-# Use a specific formatter (only valid at root)
-outputFormatters:
-  -
-    - markdownlint-cli2 v0.13.0
 
 # Show found files on stdout (only valid at root)
 showFound: true
