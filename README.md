@@ -19,20 +19,18 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/iKostanOrg/codewars)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iKostanOrg/codewars)
 [![Known Vulnerabilities](https://snyk.io/test/github/iKostanOrg/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/iKostanOrg/codewars?targetFile=requirements.txt)
-<img src="https://www.codewars.com/users/myFirstCode/badges/micro">
+![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
 
 # Python3 solutions for [codewars](https://www.codewars.com) problems
 
-<div align="center"> 
-<img width="90%" height="90%" src="https://github.com/iKostanOrg/codewars/blob/master/img/document.png" hspace="20">
-</div>
+![Document PNG](https://github.com/iKostanOrg/codewars/blob/master/img/document.png)
 
 ## About Codewars
 
-Codewars is a collective effort by its users. They are creators - authoring kata to teach various techniques, solving kata with solutions that enlighten others, and commenting with constructive feedback. The leaders among them moderate the content and community.
-
-*   Codewars supports `Python 2.7.6`, `Python 3.4.3` and `Python 3.6.0`.
-*   Since `Python 3` support is relatively new to Codewars, a lot of the `Python` katas are only available for `Python 2`.
+Codewars is a collective effort by its users. They are creators - authoring
+kata to teach various techniques, solving kata with solutions that enlighten
+others, and commenting with constructive feedback. The leaders among them
+moderate the content and community.
 
 ### Difficulty
 
@@ -47,9 +45,7 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 
 ### My profile on Codewars
 
-<div align="left">
-<img src="https://www.codewars.com/users/myFirstCode/badges/large">
-</div>
+![My Codewars Profile](https://www.codewars.com/users/myFirstCode/badges/large)
 
 ### [Ranking](http://www.codewars.com/about)
 
@@ -67,13 +63,13 @@ Codewars is a collective effort by its users. They are creators - authoring kata
 ### Dev Environment
 <a id="dev"></a>
 
-1.  [Python 3.7.4](https://www.python.org/downloads/release/python-374/)
+1.  [Python 3.12.3](https://www.python.org/downloads/release/python-3123/)
 2.  [PyTest](https://pypi.org/project/pytest/)
 3.  [Allure Framework](http://allure.qatools.ru/)
 4.  [Win 10 (64 bit)](https://www.microsoft.com/en-ca/software-download/windows10)
-5.  [PyCharm 2019.2 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)
+5.  [PyCharm 2024.1.1 (Community Edition)](https://www.jetbrains.com/pycharm/download/#section=windows)
 6.  [GitHub Desktop](https://desktop.github.com/)
-7.  [GIT 2.22.0.windows.1](https://git-scm.com/download/win)
+7.  [GIT 2.39.1.windows.1](https://git-scm.com/download/win)
 
 ### Python Packages
 
@@ -147,7 +143,7 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 
 2.  Then install **virtualenv** using pip3: ```bash sudo pip3 install virtualenv```
 
-3.  Now create a virtual environment (>you can use any name insted of **venv**): ```bash virtualenv venv```
+3.  Now create a virtual environment (>you can use any name instead of **venv**): ```bash virtualenv venv```
 
 4.  You can also use a Python interpreter of your choice: ```bash virtualenv -p /usr/bin/python2.7 venv```
 
@@ -179,13 +175,17 @@ In a newly created virtualenv there will be a bin/activate shell script. For Win
 <details>
   <summary><b>Auto generate requirements.txt</b></summary>
 
-Any application typically has a set of dependencies that are required for that application to work. The requirements file is a way to specify and install specific set of package dependencies at once.<br/>
+Any application typically has a set of dependencies that are required
+for that application to work. The requirements file is a way to specify 
+and install specific set of package dependencies at once.
+
 Use pip’s freeze command to generate a requirements.txt file for your project:
 ```bash
 pip freeze > requirements.txt
 ```
 
-If you save this in requirements.txt, you can follow this guide: [PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html), or you can:<br/>
+If you save this in requirements.txt, you can follow this guide:
+[PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html), or you can:
    
 ```bash
 pip install -r requirements.txt
@@ -206,7 +206,8 @@ pip install -r requirements.txt
 <details>
   <summary><b>How to fix in case .gitignore is ignored by Git</b></summary>
 
-Even if you haven't tracked the files so far, Git seems to be able to "know" about them even after you add them to .gitignore<br/> 
+Even if you haven't tracked the files so far, Git seems to be able to "know"
+about them even after you add them to .gitignore
 
 **NOTE:**
 
@@ -321,9 +322,11 @@ git commit -m "fixed untracked files"
 </details>
 
 <details>
-  <summary><b>Read-the-docs build fails with “cannot import name 'PackageFinder' from 'pip._internal.index'</b></summary>
+  <summary><b>Read-the-docs build fails with “cannot import name
+'PackageFinder' from 'pip._internal.index'</b></summary>
     <p></p>
-The issue and the fix are described in read-the-docs issue [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
+The issue and the fix are described in read-the-docs issue
+[#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
 The fix is to wipe out the build environment as follows (this is taken from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
 
@@ -333,7 +336,8 @@ The fix is to wipe out the build environment as follows (this is taken from [her
 *   Go to the bottom of the page and click the wipe link, next to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
 
-This fix worked for me (but as of 26-Jan-2020 you have to wipe out the environment for every build -- see comment from Grimmy below).
+This fix worked for me (but as of 26-Jan-2020 you have to wipe out the
+environment for every build -- see comment from Grimmy below).
 
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
 </details>
