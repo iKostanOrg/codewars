@@ -24,11 +24,6 @@ globs:
 ignores:
   - "ignore*.md"
 
-# Use a plugin to recognize math
-markdownItPlugins:
-  -
-    - "@iktakahiro/markdown-it-katex"
-
 # Additional paths to resolve module locations from
 modulePaths:
   - "./modules"
