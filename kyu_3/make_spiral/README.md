@@ -1,4 +1,4 @@
-## Make a spiral
+# Make a spiral
 
 Your task, is to create a `NxN` spiral with a given size.
 
@@ -27,7 +27,8 @@ and with the size `10`:
 0000000000
 ```
 
-Return value should contain array of arrays, of `0` and `1`, for example for given size `5` result should be:
+Return value should contain array of arrays, of `0` and `1`,
+for example for given size `5` result should be:
 
 ```text
 [[1,1,1,1,1],[0,0,0,0,1],[1,1,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]
@@ -36,6 +37,7 @@ Return value should contain array of arrays, of `0` and `1`, for example for giv
 
 Because of the edge-cases for tiny spirals, the size will be at least `5`.
 
-General rule-of-a-thumb is, that the snake made with `'1'` cannot touch to itself.
+General rule-of-a-thumb is, that the snake made with `'1'` cannot
+touch to itself.
 
 [Source](https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/python)
