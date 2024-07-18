@@ -2,11 +2,6 @@
 # An example .markdownlint-cli2.yaml file
 #
 
-# Disable some built-in rules
-config:
-  no-trailing-spaces: false
-  no-multiple-blanks: false
-
 # Fix any fixable errors
 fix: true
 
@@ -37,9 +32,9 @@ noProgress: true
 # Show found files on stdout (only valid at root)
 showFound: true
 
-# MD013 - Line length
-# https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md013.md
-MD013:
+config:
+  # MD013 - Line length
+  # https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md013.md
   tables: false
   ignore_code_blocks: true
   tables_line_length: 215
