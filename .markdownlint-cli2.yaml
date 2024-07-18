@@ -38,7 +38,9 @@ noProgress: true
 showFound: true
 
 # MD013 - Line length
+# https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md013.md
 MD013:
   tables: false
   ignore_code_blocks: true
-  line-length: 215
+  tables_line_length: 215
+  code_block_line_length: 100
