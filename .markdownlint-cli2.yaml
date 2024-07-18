@@ -1,6 +1,9 @@
-#
 # An example .markdownlint-cli2.yaml file
-#
+# Example markdownlint configuration with all properties set to their default value
+# https://github.com/DavidAnson/markdownlint/blob/v0.32.1/schema/.markdownlint.yaml
+
+# Default state for all rules
+default: true
 
 # Fix any fixable errors
 fix: true
@@ -20,22 +23,21 @@ ignores:
 modulePaths:
   - "./modules"
 
-# Disable banner message on stdout (only valid at root)
-noBanner: false
-
-# Disable inline config comments
-noInlineConfig: true
-
-# Disable progress on stdout (only valid at root)
-noProgress: true
-
-# Show found files on stdout (only valid at root)
-showFound: true
-
-config:
-  # MD013 - Line length
-  # https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md013.md
+# MD013/line-length : Line length : https://github.com/DavidAnson/markdownlint/blob/v0.32.1/doc/md013.md
+MD013:
+  # Number of characters
+  line_length: 80
+  # Number of characters for headings
+  heading_line_length: 80
+  # Number of characters for code blocks
+  code_block_line_length: 80
+  # Include code blocks
+  code_blocks: true
+  # Include tables
   tables: false
-  ignore_code_blocks: true
-  tables_line_length: 215
-  code_block_line_length: 100
+  # Include headings
+  headings: true
+  # Strict length checking
+  strict: false
+  # Stern length checking
+  stern: false
