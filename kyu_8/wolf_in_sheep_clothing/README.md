@@ -31,7 +31,7 @@ where N is the sheep's position in the queue
 
 **Note:** there will always be exactly one wolf in the array.
 
-### Examples
+## Examples
 
 <!-- markdownlint-disable MD013 -->
 ```text
