@@ -1,4 +1,4 @@
-## Third Angle of a Triangle
+# Third Angle of a Triangle
 
 You are given two angles (in degrees) of a triangle.
 
