@@ -1,6 +1,7 @@
-## Is it a palindrome
+# Is it a palindrome
 
-Write function isPalindrome that checks if a given string (case insensitive) is a palindrome.
+Write function isPalindrome that checks if a given string
+(case insensitive) is a palindrome.
 
 In Racket, the function is called palindrome?
 
