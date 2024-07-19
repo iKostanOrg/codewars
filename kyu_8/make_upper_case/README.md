@@ -1,4 +1,4 @@
-## MakeUpperCase
+# MakeUpperCase
 
 Write function makeUpperCase.
 

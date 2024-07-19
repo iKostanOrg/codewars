@@ -249,50 +249,50 @@ Step by step:
 4.  Go to `docs/conf.py`.
 
 5.  Uncomment following lines: 
-    ```python
-    import os
-    import sys
-    sys.path.insert(0, os.path.abspath('.'))
-    ```
+```python
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+```
 
-6.  Update extensions list as following: 
-    ```python 
-    extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
-    ```
+6. Update extensions list as following: 
+```python 
+extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
+```
 
 7.  Update template as following: 
-    ```python
-    html_theme = 'sphinx_rtd_theme'
-    ```
+```python
+html_theme = 'sphinx_rtd_theme'
+```
 
 8.  Update sys.path.insert as following: 
-    ```python
-    sys.path.insert(0, os.path.abspath('..'))
-    ```
+```python
+sys.path.insert(0, os.path.abspath('..'))
+```
 
 9.  Go to docs/index.rst > add modules, see example below:
-    ```bash
-    .. toctree::
-       :maxdepth: 2
-       :caption: Contents:
+```bash
+.. toctree::
+  :maxdepth: 2
+  :caption: Contents:
     
-       modules
-     ```
+  modules
+```
 
 10.  Open cmd > run:
-         ```bash
-         sphinx-apidoc -F -o . ..
-         ```
+```bash
+sphinx-apidoc -F -o . ..
+```
 
 11.  cmd > Run:
-        ```bash
-        make html
-        ```
+```bash
+make html
+```
 
 12.  Install html template:
-        ```bash
-        pip install sphinx_rtd_theme
-        ```
+```bash
+pip install sphinx_rtd_theme
+```
 
 **More info:**
 

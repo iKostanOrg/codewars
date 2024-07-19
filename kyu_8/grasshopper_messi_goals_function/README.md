@@ -1,4 +1,4 @@
-## Grasshopper - Messi goals function
+# Grasshopper - Messi goals function
 
 Messi is a soccer player with goals in three leagues:
 
