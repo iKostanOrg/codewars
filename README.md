@@ -61,7 +61,6 @@ moderate the content and community.
 **Note**: For each completed kata, there is a corresponding unittest file.
 
 ### Dev Environment
-<a id="dev"></a>
 
 1.  [Python 3.12.3](https://www.python.org/downloads/release/python-3123/)
 2.  [PyTest](https://pypi.org/project/pytest/)
@@ -92,7 +91,6 @@ During report generation (second step), the XML files are transformed to a HTML 
 [Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
 
 ## Tech Issues and Problem Solving
-<a id="tech_issues"></a>
 
 <details>
   <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
@@ -117,9 +115,7 @@ For more info please [check here](https://www.jetbrains.com/help/pycharm/configu
 
 3.  Choose the desired test runner:
 
-<div align="center"> 
-<img width="60%" height="60%" src="https://github.com/ikostan/SELENIUM_WEBDRIVER_WORKING_WITH_ELEMENTS/blob/master/testing_selenium_capabilities/img/py_choosing_test_runner.png" hspace="20">
-</div>
+![choosing_test_runner](https://github.com/ikostan/SELENIUM_WEBDRIVER_WORKING_WITH_ELEMENTS/blob/master/testing_selenium_capabilities/img/py_choosing_test_runner.png)
 
 For more info please see [Enable Pytest for you project](https://www.jetbrains.com/help/pycharm/pytest.html)
 </details>
@@ -242,7 +238,7 @@ git commit -m "fixed untracked files"
 <details>
   <summary><b>Sphinx Documentation Set Up</b></summary>
 
-<br/>Step by step:
+Step by step:
 
 1.  Create docs directory.
 
@@ -253,50 +249,50 @@ git commit -m "fixed untracked files"
 4.  Go to `docs/conf.py`.
 
 5.  Uncomment following lines: 
-    ```python
-    import os
-    import sys
-    sys.path.insert(0, os.path.abspath('.'))
-    ```
+```python
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+```
 
-6.  Update extensions list as following: 
-    ```python 
-    extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
-    ```
+6. Update extensions list as following: 
+```python 
+extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
+```
 
 7.  Update template as following: 
-    ```python
-    html_theme = 'sphinx_rtd_theme'
-    ```
+```python
+html_theme = 'sphinx_rtd_theme'
+```
 
 8.  Update sys.path.insert as following: 
-    ```python
-    sys.path.insert(0, os.path.abspath('..'))
-    ```
+```python
+sys.path.insert(0, os.path.abspath('..'))
+```
 
 9.  Go to docs/index.rst > add modules, see example below:
-    ```bash
-    .. toctree::
-       :maxdepth: 2
-       :caption: Contents:
+```bash
+.. toctree::
+  :maxdepth: 2
+  :caption: Contents:
     
-       modules
-     ```
+  modules
+```
 
 10.  Open cmd > run:
-         ```bash
-         sphinx-apidoc -F -o . ..
-         ```
+```bash
+sphinx-apidoc -F -o . ..
+```
 
 11.  cmd > Run:
-        ```bash
-        make html
-        ```
+```bash
+make html
+```
 
 12.  Install html template:
-        ```bash
-        pip install sphinx_rtd_theme
-        ```
+```bash
+pip install sphinx_rtd_theme
+```
 
 **More info:**
 
