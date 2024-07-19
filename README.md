@@ -61,7 +61,6 @@ moderate the content and community.
 **Note**: For each completed kata, there is a corresponding unittest file.
 
 ### Dev Environment
-<a id="dev"></a>
 
 1.  [Python 3.12.3](https://www.python.org/downloads/release/python-3123/)
 2.  [PyTest](https://pypi.org/project/pytest/)
@@ -92,7 +91,6 @@ During report generation (second step), the XML files are transformed to a HTML 
 [Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
 
 ## Tech Issues and Problem Solving
-<a id="tech_issues"></a>
 
 <details>
   <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
@@ -117,9 +115,7 @@ For more info please [check here](https://www.jetbrains.com/help/pycharm/configu
 
 3.  Choose the desired test runner:
 
-<div align="center"> 
-<img width="60%" height="60%" src="https://github.com/ikostan/SELENIUM_WEBDRIVER_WORKING_WITH_ELEMENTS/blob/master/testing_selenium_capabilities/img/py_choosing_test_runner.png" hspace="20">
-</div>
+![choosing_test_runner](https://github.com/ikostan/SELENIUM_WEBDRIVER_WORKING_WITH_ELEMENTS/blob/master/testing_selenium_capabilities/img/py_choosing_test_runner.png)
 
 For more info please see [Enable Pytest for you project](https://www.jetbrains.com/help/pycharm/pytest.html)
 </details>
@@ -224,7 +220,7 @@ git commit -m "fixed untracked files"
 <details>
   <summary><b>How to generate Allure report with history trends (Windows OS)</b></summary>
 
-<br/>Step by step:
+Step by step:
 
 1.  Run tests from pytest using following arguments: `-v --alluredir=allure-results`
 
@@ -242,7 +238,7 @@ git commit -m "fixed untracked files"
 <details>
   <summary><b>Sphinx Documentation Set Up</b></summary>
 
-<br/>Step by step:
+Step by step:
 
 1.  Create docs directory.
 
@@ -309,7 +305,7 @@ git commit -m "fixed untracked files"
 <details>
   <summary><b>Auto-Generated Python Documentation with Sphinx</b></summary>
 
-<br/>Step by step:
+Step by step:
 
 1.  Open CMD
 2.  Go to docs directory
@@ -324,7 +320,7 @@ git commit -m "fixed untracked files"
 <details>
   <summary><b>Read-the-docs build fails with “cannot import name
 'PackageFinder' from 'pip._internal.index'</b></summary>
-    <p></p>
+
 The issue and the fix are described in read-the-docs issue
 [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
