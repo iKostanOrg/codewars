@@ -1,6 +1,10 @@
-## altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+# altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 
-Define String.prototype.toAlternatingCase (or a similar function/method such as to_alternating_case/toAlternatingCase/ToAlternatingCase in your selected language; **see the initial solution for details**) such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase. For example:
+Define String.prototype.toAlternatingCase (or a similar function/method
+such as to_alternating_case/toAlternatingCase/ToAlternatingCase in your
+selected language; **see the initial solution for details**) such that
+each lowercase letter becomes uppercase and each uppercase letter becomes
+lowercase. For example:
 
 ```test
 > "hello world".toAlternatingCase() === "HELLO WORLD"
@@ -18,6 +22,7 @@ Define String.prototype.toAlternatingCase (or a similar function/method such as 
 > "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 ```
 
-As usual, your function/method should be pure, i.e. it should not mutate the original string.
+As usual, your function/method should be pure, i.e. it should not
+mutate the original string.
 
 [Source](https://www.codewars.com/kata/56efc695740d30f963000557/train/python)
