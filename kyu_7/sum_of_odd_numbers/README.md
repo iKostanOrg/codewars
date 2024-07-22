@@ -1,4 +1,4 @@
-## Sum of odd numbers
+# Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -11,7 +11,8 @@ Given the triangle of consecutive odd numbers:
 ...
 ```
 
-Calculate the row sums of this triangle from the row index (starting at index 1) e.g.:
+Calculate the row sums of this triangle from the row index
+(starting at index 1) e.g.:
 
 ```text
 row_sum_odd_numbers(1); # 1
