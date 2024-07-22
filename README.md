@@ -342,10 +342,10 @@ Step by step:
 
 1.  Open CMD
 2.  Go to docs directory
-3.  Run: make clean
-4.  Run: sphinx-apidoc -F -P -o . ..
+3.  Run: ```make clean```
+4.  Run: ```sphinx-apidoc -F -P -o . ..```
 5.  Add doc files name into relevant doc rst file
-6.  Run: make html
+6.  Run: ```make html```
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 </details>
