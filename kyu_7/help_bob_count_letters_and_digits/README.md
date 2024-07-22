@@ -1,8 +1,9 @@
-## Help Bob count letters and digits
+# Help Bob count letters and digits
 
 Bob is a lazy man.
 
-He needs you to create a method that can determine how many letters and digits are in a given string.
+He needs you to create a method that can determine how
+many letters and digits are in a given string.
 
 Example:
 
