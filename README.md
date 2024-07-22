@@ -102,7 +102,7 @@ for CI or a build tool.
 ## Tech Issues and Problem Solving
 
 <details>
-  <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
+  <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
 1.  In the **Settings/Preferences dialog** (Ctrl+Alt+S), select
     **Project <project name> | Project Interpreter**.
@@ -122,7 +122,7 @@ For more info please [check here](https://www.jetbrains.com/help/pycharm/configu
 </details>
 
 <details>
-  <summary><b>PyCharm - Choosing Your Testing Framework</b></summary>
+  <summary>PyCharm - Choosing Your Testing Framework</summary>
  
 1.  Open the Settings/Preferences dialog, and under the node Tools,
     click the page **Python Integrated Tools**.
@@ -137,7 +137,7 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 </details>
 
 <details>
-  <summary><b>Setting up Python3 virtual environment on Windows machine</b></summary>
+  <summary>Setting up Python3 virtual environment on Windows machine</summary>
 
 1.  open CMD
 2.  navigate to project directory, for example:
@@ -150,7 +150,7 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 </details>
 
 <details>
-  <summary><b>Setting up Python3 virtual environment on Linx (Ubuntu) machine</b></summary>
+  <summary>Setting up Python3 virtual environment on Linx (Ubuntu) machine</summary>
 
 ### How to install virtualenv
 
@@ -185,7 +185,7 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 </details>
 
 <details>
-  <summary><b>Activate Virtual Environment</b></summary>
+  <summary>Activate Virtual Environment</summary>
 
 In a newly created virtualenv there will be a bin/activate shell script.
 For Windows systems, activation scripts are provided for CMD.exe and Powershell.
@@ -198,7 +198,7 @@ For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 </details>
 
 <details>
-  <summary><b>Auto generate requirements.txt</b></summary>
+  <summary>Auto generate requirements.txt</summary>
 
 Any application typically has a set of dependencies that are required
 for that application to work. The requirements file is a way to specify 
@@ -219,7 +219,7 @@ pip install -r requirements.txt
 </details>
 
 <details>
-  <summary><b>error: RPC failed; curl 56 Recv failure: Connection was reset</b></summary>
+  <summary>error: RPC failed; curl 56 Recv failure: Connection was reset</summary>
 
 1.  Open Git Bash
 
@@ -229,7 +229,7 @@ pip install -r requirements.txt
 </details>
 
 <details>
-  <summary><b>How to fix in case .gitignore is ignored by Git</b></summary>
+  <summary>How to fix in case .gitignore is ignored by Git</summary>
 
 Even if you haven't tracked the files so far, Git seems to be able to "know"
 about them even after you add them to .gitignore
@@ -247,22 +247,23 @@ git commit -m "fixed untracked files"
 </details>
 
 <details>
-  <summary><b>How to generate Allure report with history trends (Windows OS)</b></summary>
+  <summary>How to generate Allure report with history trends (Windows OS)</summary>
 
 Step by step:
 
-1.  Run tests from pytest using following arguments:
-    `-v --alluredir=allure-results`
+1. Run tests from pytest using following arguments:
+   `-v --alluredir=allure-results`
 
-2.  Copy '.\allure-report\history\' folder into '.\allure-results\history\'
+2. Copy '.\allure-report\history\' folder into '.\allure-results\history\'
 
-3.  Run:
-    `allure generate .\allure-results\ -o .\allure-report\ --clean`
+3. Run:
+   `allure generate .\allure-results\ -o .\allure-report\ --clean`
 
-4.  Following output should appear:
-    `Report successfully generated to .\allure-report`
+4. Following output should appear:
+   `Report successfully generated to .\allure-report`
 
-5.  Run: `allure open .\allure-report\`
+5. Run: 
+   `allure open .\allure-report\`
 
 [Source](https://github.com/allure-framework/allure2/issues/813)
 </details>
@@ -272,15 +273,15 @@ Step by step:
 
 Step by step:
 
-1.  Create docs directory.
+1. Create docs directory.
 
-2.  Open cmd > Go to docs directory.
+2. Open cmd > Go to docs directory.
 
-3.  cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
+3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
 
-4.  Go to `docs/conf.py`.
+4. Go to `docs/conf.py`.
 
-5.  Uncomment following lines: 
+5. Uncomment following lines: 
 ```python
 import os
 import sys
@@ -292,17 +293,17 @@ sys.path.insert(0, os.path.abspath('.'))
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
 
-7.  Update template as following: 
+7. Update template as following: 
 ```python
 html_theme = 'sphinx_rtd_theme'
 ```
 
-8.  Update sys.path.insert as following: 
+8. Update sys.path.insert as following: 
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
 
-9.  Go to docs/index.rst > add modules, see example below:
+9. Go to docs/index.rst > add modules, see example below:
 ```bash
 .. toctree::
   :maxdepth: 2
@@ -311,17 +312,17 @@ sys.path.insert(0, os.path.abspath('..'))
   modules
 ```
 
-10.  Open cmd > run:
+10. Open cmd > run:
 ```bash
 sphinx-apidoc -F -o . ..
 ```
 
-11.  cmd > Run:
+11. cmd > Run:
 ```bash
 make html
 ```
 
-12.  Install html template:
+12. Install html template:
 ```bash
 pip install sphinx_rtd_theme
 ```
@@ -335,7 +336,7 @@ pip install sphinx_rtd_theme
 </details>
 
 <details>
-  <summary><b>Auto-Generated Python Documentation with Sphinx</b></summary>
+  <summary>Auto-Generated Python Documentation with Sphinx</summary>
 
 Step by step:
 
@@ -350,8 +351,7 @@ Step by step:
 </details>
 
 <details>
-  <summary><b>Read-the-docs build fails with “cannot import name
-'PackageFinder' from 'pip._internal.index'</b></summary>
+  <summary>Read-the-docs build fails with “cannot import name 'PackageFinder' from 'pip._internal.index'</summary>
 
 The issue and the fix are described in read-the-docs issue
 [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
@@ -374,7 +374,7 @@ environment for every build -- see comment from Grimmy below).
 </details>
 
 <details>
-<summary><b>How to use requirements.txt to install all dependencies in a python project</b></summary>
+<summary>How to use requirements.txt to install all dependencies in a python project</summary>
 
 1.   Run `pip install -r requirements.txt`
 2.   Run `pip freeze > requirements.txt`
