@@ -1,22 +1,25 @@
-## Significant Figures Challenge
+# Significant Figures Challenge
 
-### The Challenge
+## The Challenge
 
-Write a function that takes a number and returns the number of significant figures in the given number. You can read about significant figures below.
+Write a function that takes a number and returns the number of
+significant figures in the given number. You can read about
+significant figures below.
 
-### Helpful information
+## Helpful information
 
 -   the type of the given number will be string
 -   you must return the number of significant figures as type int
 -   no blank strings will be given
 
-### Significant Figures
+## Significant Figures
 
 **What are they?**
 
-Significant Figures are the meaningful digits in a measured or computed value.
+Significant Figures are the meaningful digits in a measured
+or computed value.
 
-### Counting significant figures
+## Counting significant figures
 
 **All non-zero digits are significant**
 

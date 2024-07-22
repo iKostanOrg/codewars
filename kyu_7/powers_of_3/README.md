@@ -1,4 +1,4 @@
-## Powers of 3
+# Powers of 3
 
 Given a positive integer N, return the largest integer k such that 3^k < N.
 

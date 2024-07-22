@@ -1,16 +1,23 @@
-## Pull your words together, man
+# Pull your words together, man
 
-Your friend Robbie has successfully created an AI that is capable of communicating in English!
+Your friend Robbie has successfully created an AI that is
+capable of communicating in English!
 
-Robbie's almost done with the project, however the machine's output isn't working as expected. Here's a sample of a sentence that it outputs:
+Robbie's almost done with the project, however the machine's
+output isn't working as expected. Here's a sample of a sentence
+that it outputs:
 
 ```text
 > ["this","is","a","sentence"]
 ```
 
-Every time that it tries to say a sentence, instead of formatting it in normal English orthography, it just outputs a list of words.
+Every time that it tries to say a sentence, instead of formatting
+it in normal English orthography, it just outputs a list of words.
 
-Robbie has pulled multiple all-nighters to get this project finished, and he needs some beauty sleep. So, he wants you to write the last part of his code, a sentencify function, which takes the output that the machine gives, and formats it into proper English orthography.
+Robbie has pulled multiple all-nighters to get this project finished,
+and he needs some beauty sleep. So, he wants you to write the last part
+of his code, a sentencify function, which takes the output that the
+machine gives, and formats it into proper English orthography.
 
 **Your function should:**
 
@@ -20,11 +27,11 @@ Robbie has pulled multiple all-nighters to get this project finished, and he nee
 4.  Do no other manipulation on the words.
 
 Here are a few examples of what your function should do:
-
+<!-- markdownlint-disable MD013 -->
 ```bash
 ["i", "am", "an", "AI"]  =>  "I am an AI."
 ["FIELDS","of","CORN","are","to","be","sown"]  =>  "FIELDS of CORN are to be sown."
 ["i'm","afraid","I","can't","let","you","do","that"]  =>  "I'm afraid I can't let you do that."
 ```
-
+<!-- markdownlint-enable MD013 -->
 [Source](https://www.codewars.com/kata/59ad7d2e07157af687000070/train/python)

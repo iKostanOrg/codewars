@@ -220,7 +220,7 @@ git commit -m "fixed untracked files"
 <details>
   <summary><b>How to generate Allure report with history trends (Windows OS)</b></summary>
 
-<br/>Step by step:
+Step by step:
 
 1.  Run tests from pytest using following arguments: `-v --alluredir=allure-results`
 
@@ -305,7 +305,7 @@ pip install sphinx_rtd_theme
 <details>
   <summary><b>Auto-Generated Python Documentation with Sphinx</b></summary>
 
-<br/>Step by step:
+Step by step:
 
 1.  Open CMD
 2.  Go to docs directory
@@ -320,7 +320,7 @@ pip install sphinx_rtd_theme
 <details>
   <summary><b>Read-the-docs build fails with “cannot import name
 'PackageFinder' from 'pip._internal.index'</b></summary>
-    <p></p>
+
 The issue and the fix are described in read-the-docs issue
 [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
