@@ -76,17 +76,26 @@ Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blo
 
 ### Online Documentation
 
-Python3 solutions for codewars problems’s documentation is built with Sphinx using a theme provided by Read the Docs.
+Python3 solutions for codewars problems’s documentation is built
+with Sphinx using a theme provided by Read the Docs.
 
-Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license. 
+Sphinx is a tool that makes it easy to create intelligent and
+beautiful documentation, written by Georg Brandl and licensed under
+the BSD license. 
 
 [Online version of the latest tech documentation](https://codewars.readthedocs.io/en/latest/)
 
 ### Allure Report
 
-Allure is based on standard xUnit results output but adds some supplementary data. Any report is generated in two steps. During test execution (first step), a small library called adapter attached to the testing framework saves information about executed tests to XML files.
+Allure is based on standard xUnit results output but adds some
+supplementary data. Any report is generated in two steps. During
+test execution (first step), a small library called adapter attached
+to the testing framework saves information about executed tests
+to XML files.
 
-During report generation (second step), the XML files are transformed to a HTML report. This can be done with a command line tool, a plugin for CI or a build tool.
+During report generation (second step), the XML files are transformed
+to a HTML report. This can be done with a command line tool, a plugin
+for CI or a build tool.
 
 [Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
 
@@ -95,13 +104,19 @@ During report generation (second step), the XML files are transformed to a HTML 
 <details>
   <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
 
-1.  In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
+1.  In the **Settings/Preferences dialog** (Ctrl+Alt+S), select
+    **Project <project name> | Project Interpreter**.
 
-2.  Expand the list of the available interpreters and click the **Show All** link.
+2.  Expand the list of the available interpreters and click the
+    **Show All** link.
 
-3.  Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
+3.  Select the target interpreter. When PyCharm stops supporting
+    any of the outdated Python versions, the corresponding project
+    interpreter is marked as unsupported.
 
-4.  The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
+4.  The Python interpreter name specified in the **Name** field,
+    becomes visible in the list of available interpreters. Click
+    **OK** to apply the changes.
 
 For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
 </details>
@@ -109,7 +124,8 @@ For more info please [check here](https://www.jetbrains.com/help/pycharm/configu
 <details>
   <summary><b>PyCharm - Choosing Your Testing Framework</b></summary>
  
-1.  Open the Settings/Preferences dialog, and under the node Tools, click the page **Python Integrated Tools**.
+1.  Open the Settings/Preferences dialog, and under the node Tools,
+    click the page **Python Integrated Tools**.
 
 2.  On this page, click the **Default Test Runner** field.
 
@@ -124,9 +140,12 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
   <summary><b>Setting up Python3 virtual environment on Windows machine</b></summary>
 
 1.  open CMD
-2.  navigate to project directory, for example: ```bash cd C:\Users\superadmin\Desktop\Python\CodinGame```
-3.  run following command: ```bash  pip install virtualenv ```
-4.  run following command:```bash virtualenv venv --python=python```
+2.  navigate to project directory, for example:
+    ```bash cd C:\Users\superadmin\Desktop\Python\CodinGame```
+3.  run following command:
+    ```bash  pip install virtualenv ```
+4.  run following command:
+    ```bash virtualenv venv --python=python```
 
 </details>
 
@@ -135,23 +154,32 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 
 ### How to install virtualenv
 
-1.  Install **pip** first: ```bash sudo apt-get install python3-pip```
+1.  Install **pip** first:
+   ```bash sudo apt-get install python3-pip```
 
-2.  Then install **virtualenv** using pip3: ```bash sudo pip3 install virtualenv```
+2.  Then install **virtualenv** using pip3:
+    ```bash sudo pip3 install virtualenv```
 
-3.  Now create a virtual environment (>you can use any name instead of **venv**): ```bash virtualenv venv```
+3.  Now create a virtual environment (>you can use any name instead of **venv**):
+    ```bash virtualenv venv```
 
-4.  You can also use a Python interpreter of your choice: ```bash virtualenv -p /usr/bin/python2.7 venv```
+4.  You can also use a Python interpreter of your choice:
+    ```bash virtualenv -p /usr/bin/python2.7 venv```
 
-5.  Active your virtual environment: ```bash source venv/bin/activate```
+5.  Active your virtual environment:
+    ```bash source venv/bin/activate```
 
-6.  Using fish shell: ```bash source venv/bin/activate.fish```
+6.  Using fish shell:
+    ```bash source venv/bin/activate.fish```
 
-7.  To deactivate: ```bash deactivate```
+7.  To deactivate:
+    ```bash deactivate```
 
-8.  Create virtualenv using Python3: ```bash virtualenv -p python3 myenv```
+8.  Create virtualenv using Python3:
+    ```bash virtualenv -p python3 myenv```
 
-9.  Instead of using virtualenv you can use this command in Python3: ```bash python3 -m venv myenv```
+9.  Instead of using virtualenv you can use this command in Python3:
+    ```bash python3 -m venv myenv```
 
 [Source](https://gist.github.com/frfahim/73c0fad6350332cef7a653bcd762f08d)
 </details>
@@ -159,7 +187,8 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 <details>
   <summary><b>Activate Virtual Environment</b></summary>
 
-In a newly created virtualenv there will be a bin/activate shell script. For Windows systems, activation scripts are provided for CMD.exe and Powershell.
+In a newly created virtualenv there will be a bin/activate shell script.
+For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 
 1.  Open Terminal
 
@@ -222,13 +251,16 @@ git commit -m "fixed untracked files"
 
 Step by step:
 
-1.  Run tests from pytest using following arguments: `-v --alluredir=allure-results`
+1.  Run tests from pytest using following arguments:
+    `-v --alluredir=allure-results`
 
 2.  Copy '.\allure-report\history\' folder into '.\allure-results\history\'
 
-3.  Run: `allure generate .\allure-results\ -o .\allure-report\ --clean`
+3.  Run:
+    `allure generate .\allure-results\ -o .\allure-report\ --clean`
 
-4.  Following output should appear: `Report successfully generated to .\allure-report`
+4.  Following output should appear:
+    `Report successfully generated to .\allure-report`
 
 5.  Run: `allure open .\allure-report\`
 
@@ -324,12 +356,15 @@ Step by step:
 The issue and the fix are described in read-the-docs issue
 [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
-The fix is to wipe out the build environment as follows (this is taken from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
+The fix is to wipe out the build environment as follows (this is taken
+from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
 
 *   Log in to read-the-docs
 *   Go to Versions
-*   Click on the Edit button of the version you want to wipe on the right side of the page
-*   Go to the bottom of the page and click the wipe link, next to the “Save” button
+*   Click on the Edit button of the version you want to wipe
+    on the right side of the page
+*   Go to the bottom of the page and click the wipe link, next
+    to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
 
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out the
