@@ -1,6 +1,8 @@
-## Substituting Variables Into Strings: Padded Numbers
+# Substituting Variables Into Strings: Padded Numbers
 
-Complete the solution so that it returns a formatted string. The return value should equal "Value is VALUE" where value is a 5 digit padded number.
+Complete the solution so that it returns a formatted string.
+The return value should equal "Value is VALUE" where value
+is a 5 digit padded number.
 
 **Example:**
 
