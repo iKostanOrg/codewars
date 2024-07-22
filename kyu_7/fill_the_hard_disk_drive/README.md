@@ -1,15 +1,16 @@
-## Computer problem series #1
+# Computer problem series #1
 
-### Fill the Hard Disk Drive
+## Fill the Hard Disk Drive
 
-Your task is to determine how many files of the copy queue you will be able to save into your Hard Disk Drive.
+Your task is to determine how many files of the copy queue you
+will be able to save into your Hard Disk Drive.
 
-### Input
+## Input
 
 *   Array of file sizes (0 <= s <= 100)
 *   Capacity of the HD (0 <= c <= 500)
 
-### Output
+## Output
 
 *   Number of files that can be fully saved in the HD
 

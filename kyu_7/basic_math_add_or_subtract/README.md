@@ -1,10 +1,11 @@
-## Basic Math (Add or Subtract)
+# Basic Math (Add or Subtract)
 
-In this kata, you will do addition and subtraction on a given string. The return value must be also a string.
+In this kata, you will do addition and subtraction on a given string.
+The return value must be also a string.
 
 Note: the input will not be empty.
 
-### Examples
+## Examples
 
 ```text
 "1plus2plus3plus4"  --> "10"

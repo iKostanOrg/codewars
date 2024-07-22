@@ -1,4 +1,4 @@
-## Make Class
+# Make Class
 
 I don't like writing classes like this:
 
