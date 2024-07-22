@@ -76,40 +76,56 @@ Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blo
 
 ### Online Documentation
 
-Python3 solutions for codewars problems’s documentation is built with Sphinx using a theme provided by Read the Docs.
+Python3 solutions for codewars problems’s documentation is built
+with Sphinx using a theme provided by Read the Docs.
 
-Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license. 
+Sphinx is a tool that makes it easy to create intelligent and
+beautiful documentation, written by Georg Brandl and licensed under
+the BSD license. 
 
 [Online version of the latest tech documentation](https://codewars.readthedocs.io/en/latest/)
 
 ### Allure Report
 
-Allure is based on standard xUnit results output but adds some supplementary data. Any report is generated in two steps. During test execution (first step), a small library called adapter attached to the testing framework saves information about executed tests to XML files.
+Allure is based on standard xUnit results output but adds some
+supplementary data. Any report is generated in two steps. During
+test execution (first step), a small library called adapter attached
+to the testing framework saves information about executed tests
+to XML files.
 
-During report generation (second step), the XML files are transformed to a HTML report. This can be done with a command line tool, a plugin for CI or a build tool.
+During report generation (second step), the XML files are transformed
+to a HTML report. This can be done with a command line tool, a plugin
+for CI or a build tool.
 
 [Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
 
 ## Tech Issues and Problem Solving
 
 <details>
-  <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
+  <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
-1.  In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
+1.  In the **Settings/Preferences dialog** (Ctrl+Alt+S), select
+    **Project <project name> | Project Interpreter**.
 
-2.  Expand the list of the available interpreters and click the **Show All** link.
+2.  Expand the list of the available interpreters and click the
+    **Show All** link.
 
-3.  Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
+3.  Select the target interpreter. When PyCharm stops supporting
+    any of the outdated Python versions, the corresponding project
+    interpreter is marked as unsupported.
 
-4.  The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
+4.  The Python interpreter name specified in the **Name** field,
+    becomes visible in the list of available interpreters. Click
+    **OK** to apply the changes.
 
 For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
 </details>
 
 <details>
-  <summary><b>PyCharm - Choosing Your Testing Framework</b></summary>
+  <summary>PyCharm - Choosing Your Testing Framework</summary>
  
-1.  Open the Settings/Preferences dialog, and under the node Tools, click the page **Python Integrated Tools**.
+1.  Open the Settings/Preferences dialog, and under the node Tools,
+    click the page **Python Integrated Tools**.
 
 2.  On this page, click the **Default Test Runner** field.
 
@@ -121,45 +137,58 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 </details>
 
 <details>
-  <summary><b>Setting up Python3 virtual environment on Windows machine</b></summary>
+  <summary>Setting up Python3 virtual environment on Windows machine</summary>
 
 1.  open CMD
-2.  navigate to project directory, for example: ```bash cd C:\Users\superadmin\Desktop\Python\CodinGame```
-3.  run following command: ```bash  pip install virtualenv ```
-4.  run following command:```bash virtualenv venv --python=python```
+2.  navigate to project directory, for example:
+    ```bash cd C:\Users\superadmin\Desktop\Python\CodinGame```
+3.  run following command:
+    ```bash  pip install virtualenv ```
+4.  run following command:
+    ```bash virtualenv venv --python=python```
 
 </details>
 
 <details>
-  <summary><b>Setting up Python3 virtual environment on Linx (Ubuntu) machine</b></summary>
+  <summary>Setting up Python3 virtual environment on Linx (Ubuntu) machine</summary>
 
 ### How to install virtualenv
 
-1.  Install **pip** first: ```bash sudo apt-get install python3-pip```
+1.  Install **pip** first:
+   ```bash sudo apt-get install python3-pip```
 
-2.  Then install **virtualenv** using pip3: ```bash sudo pip3 install virtualenv```
+2.  Then install **virtualenv** using pip3:
+    ```bash sudo pip3 install virtualenv```
 
-3.  Now create a virtual environment (>you can use any name instead of **venv**): ```bash virtualenv venv```
+3.  Now create a virtual environment (>you can use any name instead of **venv**):
+    ```bash virtualenv venv```
 
-4.  You can also use a Python interpreter of your choice: ```bash virtualenv -p /usr/bin/python2.7 venv```
+4.  You can also use a Python interpreter of your choice:
+    ```bash virtualenv -p /usr/bin/python2.7 venv```
 
-5.  Active your virtual environment: ```bash source venv/bin/activate```
+5.  Active your virtual environment:
+    ```bash source venv/bin/activate```
 
-6.  Using fish shell: ```bash source venv/bin/activate.fish```
+6.  Using fish shell:
+    ```bash source venv/bin/activate.fish```
 
-7.  To deactivate: ```bash deactivate```
+7.  To deactivate:
+    ```bash deactivate```
 
-8.  Create virtualenv using Python3: ```bash virtualenv -p python3 myenv```
+8.  Create virtualenv using Python3:
+    ```bash virtualenv -p python3 myenv```
 
-9.  Instead of using virtualenv you can use this command in Python3: ```bash python3 -m venv myenv```
+9.  Instead of using virtualenv you can use this command in Python3:
+    ```bash python3 -m venv myenv```
 
 [Source](https://gist.github.com/frfahim/73c0fad6350332cef7a653bcd762f08d)
 </details>
 
 <details>
-  <summary><b>Activate Virtual Environment</b></summary>
+  <summary>Activate Virtual Environment</summary>
 
-In a newly created virtualenv there will be a bin/activate shell script. For Windows systems, activation scripts are provided for CMD.exe and Powershell.
+In a newly created virtualenv there will be a bin/activate shell script.
+For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 
 1.  Open Terminal
 
@@ -169,7 +198,7 @@ In a newly created virtualenv there will be a bin/activate shell script. For Win
 </details>
 
 <details>
-  <summary><b>Auto generate requirements.txt</b></summary>
+  <summary>Auto generate requirements.txt</summary>
 
 Any application typically has a set of dependencies that are required
 for that application to work. The requirements file is a way to specify 
@@ -190,7 +219,7 @@ pip install -r requirements.txt
 </details>
 
 <details>
-  <summary><b>error: RPC failed; curl 56 Recv failure: Connection was reset</b></summary>
+  <summary>error: RPC failed; curl 56 Recv failure: Connection was reset</summary>
 
 1.  Open Git Bash
 
@@ -200,7 +229,7 @@ pip install -r requirements.txt
 </details>
 
 <details>
-  <summary><b>How to fix in case .gitignore is ignored by Git</b></summary>
+  <summary>How to fix in case .gitignore is ignored by Git</summary>
 
 Even if you haven't tracked the files so far, Git seems to be able to "know"
 about them even after you add them to .gitignore
@@ -218,19 +247,23 @@ git commit -m "fixed untracked files"
 </details>
 
 <details>
-  <summary><b>How to generate Allure report with history trends (Windows OS)</b></summary>
+  <summary>How to generate Allure report with history trends (Windows OS)</summary>
 
 Step by step:
 
-1.  Run tests from pytest using following arguments: `-v --alluredir=allure-results`
+1. Run tests from pytest using following arguments:
+   `-v --alluredir=allure-results`
 
-2.  Copy '.\allure-report\history\' folder into '.\allure-results\history\'
+2. Copy '.\allure-report\history\' folder into '.\allure-results\history\'
 
-3.  Run: `allure generate .\allure-results\ -o .\allure-report\ --clean`
+3. Run:
+   `allure generate .\allure-results\ -o .\allure-report\ --clean`
 
-4.  Following output should appear: `Report successfully generated to .\allure-report`
+4. Following output should appear:
+   `Report successfully generated to .\allure-report`
 
-5.  Run: `allure open .\allure-report\`
+5. Run: 
+   `allure open .\allure-report\`
 
 [Source](https://github.com/allure-framework/allure2/issues/813)
 </details>
@@ -240,15 +273,15 @@ Step by step:
 
 Step by step:
 
-1.  Create docs directory.
+1. Create docs directory.
 
-2.  Open cmd > Go to docs directory.
+2. Open cmd > Go to docs directory.
 
-3.  cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
+3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
 
-4.  Go to `docs/conf.py`.
+4. Go to `docs/conf.py`.
 
-5.  Uncomment following lines: 
+5. Uncomment following lines: 
 ```python
 import os
 import sys
@@ -260,17 +293,17 @@ sys.path.insert(0, os.path.abspath('.'))
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
 
-7.  Update template as following: 
+7. Update template as following: 
 ```python
 html_theme = 'sphinx_rtd_theme'
 ```
 
-8.  Update sys.path.insert as following: 
+8. Update sys.path.insert as following: 
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
 
-9.  Go to docs/index.rst > add modules, see example below:
+9. Go to docs/index.rst > add modules, see example below:
 ```bash
 .. toctree::
   :maxdepth: 2
@@ -279,17 +312,17 @@ sys.path.insert(0, os.path.abspath('..'))
   modules
 ```
 
-10.  Open cmd > run:
+10. Open cmd > run:
 ```bash
 sphinx-apidoc -F -o . ..
 ```
 
-11.  cmd > Run:
+11. cmd > Run:
 ```bash
 make html
 ```
 
-12.  Install html template:
+12. Install html template:
 ```bash
 pip install sphinx_rtd_theme
 ```
@@ -303,33 +336,35 @@ pip install sphinx_rtd_theme
 </details>
 
 <details>
-  <summary><b>Auto-Generated Python Documentation with Sphinx</b></summary>
+  <summary>Auto-Generated Python Documentation with Sphinx</summary>
 
 Step by step:
 
 1.  Open CMD
 2.  Go to docs directory
-3.  Run: make clean
-4.  Run: sphinx-apidoc -F -P -o . ..
+3.  Run: ```make clean```
+4.  Run: ```sphinx-apidoc -F -P -o . ..```
 5.  Add doc files name into relevant doc rst file
-6.  Run: make html
+6.  Run: ```make html```
 
 [Source](https://www.youtube.com/watch?v=b4iFyrLQQh4)
 </details>
 
 <details>
-  <summary><b>Read-the-docs build fails with “cannot import name
-'PackageFinder' from 'pip._internal.index'</b></summary>
+  <summary>Read-the-docs build fails with “cannot import name 'PackageFinder' from 'pip._internal.index'</summary>
 
 The issue and the fix are described in read-the-docs issue
 [#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
-The fix is to wipe out the build environment as follows (this is taken from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
+The fix is to wipe out the build environment as follows (this is taken
+from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
 
 *   Log in to read-the-docs
 *   Go to Versions
-*   Click on the Edit button of the version you want to wipe on the right side of the page
-*   Go to the bottom of the page and click the wipe link, next to the “Save” button
+*   Click on the Edit button of the version you want to wipe
+    on the right side of the page
+*   Go to the bottom of the page and click the wipe link, next
+    to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
 
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out the
@@ -339,7 +374,7 @@ environment for every build -- see comment from Grimmy below).
 </details>
 
 <details>
-<summary><b>How to use requirements.txt to install all dependencies in a python project</b></summary>
+<summary>How to use requirements.txt to install all dependencies in a python project</summary>
 
 1.   Run `pip install -r requirements.txt`
 2.   Run `pip freeze > requirements.txt`

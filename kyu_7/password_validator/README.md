@@ -14,7 +14,7 @@ The rules for a valid password are as follows:
 
 You are permitted to use any methods to validate the password.
 
-**Examples:**
+### Examples:
 
 > password("Abcd1234"); ===> true
 >
@@ -30,7 +30,7 @@ You are permitted to use any methods to validate the password.
 >
 > password("!@#$%^&*()-_+={}[]|\:;?/>.<,"); ===> false;
 
-**Extra info**
+### Extra info:
 
 *   You will only be passed strings.
 *   The string can contain any standard keyboard character.
