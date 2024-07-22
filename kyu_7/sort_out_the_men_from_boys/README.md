@@ -45,7 +45,8 @@ from the odds , or **Separate the men from the boys**
 ### Explanation 3
 
 *   Since , `{-282 , 818 , 900 , 928 }` is the even numbers here , So it
-    came first in ascending order , then the odds in descending order `{ 281 , 49 , -1 }`
+    came first in ascending order , then the odds in descending order
+    `{ 281 , 49 , -1 }`
 *   Since , (Duplications are not included when separating) , then you can
     see only one `(-282)` was appeared in the final array/list .
 
