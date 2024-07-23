@@ -9,6 +9,7 @@ The input string will always be a valid binary string.
 
 Characters can be in the range from "00000000" to "11111111" (inclusive)
 
-Note: In the case of an empty binary string your function should return an empty string.
+Note: In the case of an empty binary string your function should return an
+empty string.
 
 [Source](https://www.codewars.com/kata/5583d268479559400d000064/train/python)
