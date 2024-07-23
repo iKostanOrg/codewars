@@ -1,6 +1,7 @@
-## Binary to Text (ASCII) Conversion
+# Binary to Text (ASCII) Conversion
 
-Write a function that takes in a binary string and returns the equivalent decoded text (the text is ASCII encoded).
+Write a function that takes in a binary string and returns the equivalent
+decoded text (the text is ASCII encoded).
 
 Each 8 bits on the binary string represent 1 character on the ASCII table.
 

@@ -1,6 +1,7 @@
-## Pyramid Array
+# Pyramid Array
 
-Write a function that when given a number >= 0, returns an Array of ascending length subarrays.
+Write a function that when given a number >= 0, returns an
+Array of ascending length subarrays.
 
 > pyramid(0) => `[]`
 >
