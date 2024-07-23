@@ -8,7 +8,7 @@ already seen it...
 
 But will your code be **performant enough**?
 
-### Examples
+## Examples
 
 > input   =  "Hello, World!"
 >
