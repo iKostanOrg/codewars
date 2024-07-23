@@ -14,11 +14,13 @@ You will be given an array representing the number of chips of each color and
 your task is to return the maximum number of days you can pick the chips. Each
 day you need to take exactly two chips.
 
+<!-- markdownlint-disable MD013 -->
 ```text
 solve([1,1,1]) = 1, because after you pick on day one, there will be only one chip left
 solve([1,2,1] = 2, you can pick twice; you pick two chips on day one then on day two
 solve([4,1,1]) = 2
 ```
+<!-- markdownlint-enable MD013 -->
 
 More examples in the test cases. Good luck!
 
