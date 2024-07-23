@@ -1,4 +1,4 @@
-## Casino chips
+# Casino chips
 
 You are given three piles of casino chips: white, green and black chips:
 
@@ -6,9 +6,13 @@ You are given three piles of casino chips: white, green and black chips:
 *   the second pile contains only green chips
 *   the third pile contains only black chips
 
-Each day you take exactly two chips of different colors and head to the casino. You can chose any color, but you are not allowed to take two chips of the same color in a day.
+Each day you take exactly two chips of different colors and head to the casino.
+You can chose any color, but you are not allowed to take two chips of the same
+color in a day.
 
-You will be given an array representing the number of chips of each color and your task is to return the maximum number of days you can pick the chips. Each day you need to take exactly two chips.
+You will be given an array representing the number of chips of each color and
+your task is to return the maximum number of days you can pick the chips. Each
+day you need to take exactly two chips.
 
 ```text
 solve([1,1,1]) = 1, because after you pick on day one, there will be only one chip left
