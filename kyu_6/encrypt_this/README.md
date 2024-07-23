@@ -2,7 +2,8 @@
 
 ## Description
 
-You want to create secret messages which can be deciphered by the [Decipher this!](https://www.codewars.com/kata/decipher-this) kata. Here are the conditions:
+You want to create secret messages which can be deciphered by the
+[Decipher this!](https://www.codewars.com/kata/decipher-this) kata. Here are the conditions:
 
 1.  Your message is a string containing space separated words.
 
