@@ -1,6 +1,8 @@
 # Sports League Table Ranking
 
+<!-- markdownlint-disable MD013 -->
 `Note`: There is a harder version [(Sports League Table Ranking (with Head-to-head))](https://www.codewars.com/kata/5e0e17220d5bc9002dc4e9c4) of this.
+<!-- markdownlint-enable MD013 -->
 
 ## Description
 
