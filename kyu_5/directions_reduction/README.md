@@ -80,8 +80,8 @@ of strings with the needless directions removed (W<->E or S<->N side by side).
 
 *   Not all paths can be made simpler. The path `["NORTH", "WEST", "SOUTH", "EAST"]`
     is not reducible. `"NORTH"` and `"WEST"`, `"WEST"` and `"SOUTH"`, `"SOUTH"` and
-    `"EAST"` are not directly opposite of each other and can't become such. Hence the
-    result path is itself : `["NORTH", "WEST", "SOUTH", "EAST"]`.
+    `"EAST"` are not directly opposite of each other and can't become such. Hence
+    the result path is itself : `["NORTH", "WEST", "SOUTH", "EAST"]`.
 *   if you want to translate, please ask before translating.
 
 [Source](https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python)
