@@ -76,7 +76,7 @@ of strings with the needless directions removed (W<->E or S<->N side by side).
 
 ### See more examples in "Sample Tests:"
 
-*Notes*
+#### Notes
 
 *   Not all paths can be made simpler. The path `["NORTH", "WEST", "SOUTH", "EAST"]`
     is not reducible. `"NORTH"` and `"WEST"`, `"WEST"` and `"SOUTH"`, `"SOUTH"` and
