@@ -1,23 +1,26 @@
-## Multidimensional Neighbourhood
+# Multidimensional Neighbourhood
 
 I advise you to do some of the previous katas from the: [Neighbourhood collection.](https://www.codewars.com/collections/5b2f4db591c746349d0000ce)
 
-This is the next step. We are going multidimensional. You should build a function that return the neighbourhood of a cell within a matrix with the given distance and type. AND it should work for any dimension.
+This is the next step. We are going multidimensional. You should build a function
+that return the neighbourhood of a cell within a matrix with the given distance
+and type. AND it should work for any dimension.
 
-### Input
-
+## Input
+<!-- markdownlint-disable MD013 -->
 ```text
 * type "moore" or "von_neumann"
 * matrix a N-dimensional matrix. N >= 0 (the matrix is always rectangular; could be a list or a tuple)
 * coordinates of the cell. It is a N-length tuple. Order of the indices: The first index should be applied for the outer/first matrix layer. The last index for the most inner/last layer. coordinates = (m, n, k) should be apllied like mat[m][n][k]
 * distance
 ```
+<!-- markdownlint-enable MD013 -->
 
-### Task
+## Task
 
 construct get_neighbourhood(n_type, matrix, coordinates, distance)
 
-### Ouput
+## Output
 
 he N dimension neighbours of the cell
 
@@ -32,7 +35,8 @@ Your code should be performant.
 
 **Note:** you should return an empty array if any of these conditions is true:
 
-*   Index is outside the matrix (python: negative indexes are outside the matrix too)
+*   Index is outside the matrix (python: negative indexes are outside the
+    matrix too)
 *   Matrix is empty
 *   Distance equals 0
 
