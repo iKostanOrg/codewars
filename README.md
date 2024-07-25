@@ -157,28 +157,20 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 
 1.  Install **pip** first:
    ```bash sudo apt-get install python3-pip```
-
 2.  Then install **virtualenv** using pip3:
     ```bash sudo pip3 install virtualenv```
-
 3.  Now create a virtual environment (>you can use any name instead of **venv**):
     ```bash virtualenv venv```
-
 4.  You can also use a Python interpreter of your choice:
     ```bash virtualenv -p /usr/bin/python2.7 venv```
-
 5.  Active your virtual environment:
     ```bash source venv/bin/activate```
-
 6.  Using fish shell:
     ```bash source venv/bin/activate.fish```
-
 7.  To deactivate:
     ```bash deactivate```
-
 8.  Create virtualenv using Python3:
     ```bash virtualenv -p python3 myenv```
-
 9.  Instead of using virtualenv you can use this command in Python3:
     ```bash python3 -m venv myenv```
 
@@ -192,8 +184,7 @@ In a newly created virtualenv there will be a bin/activate shell script.
 For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 
 1.  Open Terminal
-
-2.  Run: \path\to\env\Scripts\activate 
+2.  Run: `\path\to\env\Scripts\activate`
   
 [Source](https://pypi.org/project/virtualenv/1.8.2/)
 </details>
@@ -226,7 +217,6 @@ pip install -r requirements.txt
   <summary>error: RPC failed; curl 56 Recv failure: Connection was reset</summary>
 
 1.  Open Git Bash
-
 2.  Run: "git config --global http.postBuffer 157286400" 
   
 [Source](https://stackoverflow.com/questions/36940425/gitlab-push-failed-error)
@@ -257,15 +247,11 @@ Step by step:
 
 1. Run tests from pytest using following arguments:
    `-v --alluredir=allure-results`
-
 2. Copy '.\allure-report\history\' folder into '.\allure-results\history\'
-
 3. Run:
    `allure generate .\allure-results\ -o .\allure-report\ --clean`
-
 4. Following output should appear:
    `Report successfully generated to .\allure-report`
-
 5. Run: 
    `allure open .\allure-report\`
 
@@ -278,35 +264,27 @@ Step by step:
 Step by step:
 
 1. Create docs directory.
-
 2. Open cmd > Go to docs directory.
-
 3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
-
 4. Go to `docs/conf.py`.
-
 5. Uncomment following lines: 
 ```python
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 ```
-
 6. Update extensions list as following: 
 ```python 
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
-
 7. Update template as following: 
 ```python
 html_theme = 'sphinx_rtd_theme'
 ```
-
 8. Update sys.path.insert as following: 
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
-
 9. Go to docs/index.rst > add modules, see example below:
 ```bash
 .. toctree::
@@ -315,17 +293,14 @@ sys.path.insert(0, os.path.abspath('..'))
     
   modules
 ```
-
 10. Open cmd > run:
 ```bash
 sphinx-apidoc -F -o . ..
 ```
-
 11. cmd > Run:
 ```bash
 make html
 ```
-
 12. Install html template:
 ```bash
 pip install sphinx_rtd_theme
