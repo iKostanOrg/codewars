@@ -263,6 +263,7 @@ Step by step:
 
 Step by step:
 
+<!-- markdownlint-disable MD029 -->
 1. Create docs directory.
 2. Open cmd > Go to docs directory.
 3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
@@ -305,6 +306,7 @@ make html
 ```bash
 pip install sphinx_rtd_theme
 ```
+<!-- markdownlint-enable MD029 -->
 
 **More info:**
 
