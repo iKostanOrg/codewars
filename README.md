@@ -345,7 +345,6 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
 <!-- markdownlint-disable MD013 -->
 *   Click on the Edit button of the version you want to wipe
     on the right side of the page
-<!-- markdownlint-enable MD013 -->
 *   Go to the bottom of the page and click the wipe link, next
     to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
@@ -353,7 +352,6 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out the
 environment for every build -- see comment from Grimmy below).
 
-<!-- markdownlint-disable MD013 -->
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
 <!-- markdownlint-enable MD013 -->
 </details>
