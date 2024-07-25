@@ -1,3 +1,7 @@
+# Python3 solutions for [codewars](https://www.codewars.com) problems
+
+![Document PNG](https://github.com/iKostanOrg/codewars/blob/master/img/document.png)
+
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
@@ -20,10 +24,6 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iKostanOrg/codewars)
 [![Known Vulnerabilities](https://snyk.io/test/github/iKostanOrg/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/iKostanOrg/codewars?targetFile=requirements.txt)
 ![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
-
-# Python3 solutions for [codewars](https://www.codewars.com) problems
-
-![Document PNG](https://github.com/iKostanOrg/codewars/blob/master/img/document.png)
 
 ## About Codewars
 
@@ -101,6 +101,7 @@ for CI or a build tool.
 
 ## Tech Issues and Problem Solving
 
+<!-- markdownlint-disable MD033 -->
 <details>
   <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
@@ -381,3 +382,5 @@ environment for every build -- see comment from Grimmy below).
 
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 </details>
+
+<!-- markdownlint-enable MD033 -->
