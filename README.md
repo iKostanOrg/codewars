@@ -273,7 +273,7 @@ Step by step:
 </details>
 
 <details>
-  <summary><b>Sphinx Documentation Set Up</b></summary>
+  <summary>Sphinx Documentation Set Up</summary>
 
 Step by step:
 
@@ -365,8 +365,10 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
 
 *   Log in to read-the-docs
 *   Go to Versions
+<!-- markdownlint-disable MD013 -->
 *   Click on the Edit button of the version you want to wipe
     on the right side of the page
+<!-- markdownlint-enable MD013 -->
 *   Go to the bottom of the page and click the wipe link, next
     to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
