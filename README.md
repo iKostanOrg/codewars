@@ -210,9 +210,12 @@ Use pip’s freeze command to generate a requirements.txt file for your project:
 pip freeze > requirements.txt
 ```
 
+<!-- markdownlint-disable MD013 -->
 If you save this in requirements.txt, you can follow this guide:
-[PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html), or you can:
-   
+[PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html),
+or you can:
+<!-- markdownlint-enable MD013 -->
+
 ```bash
 pip install -r requirements.txt
 ```   
@@ -371,7 +374,9 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out the
 environment for every build -- see comment from Grimmy below).
 
+<!-- markdownlint-disable MD013 -->
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
+<!-- markdownlint-enable MD013 -->
 </details>
 
 <details>
@@ -380,7 +385,9 @@ environment for every build -- see comment from Grimmy below).
 1.   Run `pip install -r requirements.txt`
 2.   Run `pip freeze > requirements.txt`
 
+<!-- markdownlint-disable MD013 -->
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
+<!-- markdownlint-enable MD013 -->
 </details>
 
 <!-- markdownlint-enable MD033 -->
