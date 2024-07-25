@@ -78,8 +78,8 @@ level and skills, and ranks them as the warrior they've proven to be.
     the experience points from it and store the description of the training. It should
     end up returning that description as well.
 -   If the warrior's level does not meet the minimum level requirement, the warrior
-    doesn't receive the experience points and description and instead returns "Not strong
-    enough", without any archiving of the result.
+    doesn't receive the experience points and description and instead returns "Not
+    strong enough", without any archiving of the result.
 
 *Code Examples:*
 
