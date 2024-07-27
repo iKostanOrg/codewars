@@ -205,7 +205,7 @@ pip freeze > requirements.txt
 If you save this in requirements.txt, you can follow this guide:
 [PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html),
 or you can:
-<!-- markdownlint-enable MD013 -->
+<!-- markdownlint-restore MD013 -->
 
 ```bash
 pip install -r requirements.txt
@@ -306,7 +306,7 @@ make html
 ```bash
 pip install sphinx_rtd_theme
 ```
-<!-- markdownlint-enable MD029 -->
+<!-- markdownlint-restore MD029 -->
 
 **More info:**
 
@@ -361,4 +361,4 @@ This fix worked for me (but as of 26-Jan-2020 you have to wipe out the environme
 
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 </details>
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-restore MD033 -->
