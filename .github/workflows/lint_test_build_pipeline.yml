@@ -6,9 +6,9 @@ on:
       - master
 
 jobs:
-  markdown-lint:
+  markdown:
     name: Markdown Lint
     uses: iKostanOrg/codewars/.github/workflows/markdown_lint.yml@master
   pyint:
-    name: Markdown Lint
+    name: PyLint
     uses: iKostanOrg/codewars/.github/workflows/pylint.yml@master
