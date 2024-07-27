@@ -201,11 +201,9 @@ Use pip’s freeze command to generate a requirements.txt file for your project:
 pip freeze > requirements.txt
 ```
 
-<!-- markdownlint-disable MD013 -->
 If you save this in requirements.txt, you can follow this guide:
 [PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html),
 or you can:
-<!-- markdownlint-restore MD013 -->
 
 ```bash
 pip install -r requirements.txt
@@ -263,7 +261,6 @@ Step by step:
 
 Step by step:
 
-<!-- markdownlint-disable MD029 -->
 1. Create docs directory.
 2. Open cmd > Go to docs directory.
 3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
@@ -306,7 +303,6 @@ make html
 ```bash
 pip install sphinx_rtd_theme
 ```
-<!-- markdownlint-restore MD029 -->
 
 **More info:**
 
@@ -351,9 +347,7 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out
 the environment for every build, see comment from Grimmy below).
 
-<!-- markdownlint-disable MD013 -->
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
-<!-- markdownlint-restore MD013 -->
 </details>
 
 <details>
