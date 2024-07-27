@@ -38,4 +38,4 @@ jobs:
         pylint --version
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        python pylint $(git ls-files '*.py')
