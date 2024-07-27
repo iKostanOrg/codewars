@@ -364,5 +364,4 @@ environment for every build -- see comment from Grimmy below).
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 <!-- markdownlint-enable MD013 -->
 </details>
-
 <!-- markdownlint-enable MD033 -->
