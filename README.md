@@ -101,7 +101,7 @@ for CI or a build tool.
 
 ## Tech Issues and Problem Solving
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD013 MD029 -->
 <details>
   <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
@@ -344,11 +344,10 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
     to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
 
-<!-- markdownlint-disable MD013 -->
 This fix worked for me (but as of 26-Jan-2020 you have to wipe out
 the environment for every build, see comment from Grimmy below).
+
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
-<!-- markdownlint-enable MD013 -->
 </details>
 
 <details>
@@ -359,4 +358,4 @@ the environment for every build, see comment from Grimmy below).
 
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 </details>
-<!-- markdownlint-restore MD033 -->
+<!-- markdownlint-restore MD033 MD013 MD029 -->
