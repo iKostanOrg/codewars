@@ -36,8 +36,10 @@ jobs:
     - name: Version check
       run: |
         pylint --version
-    - name: Get current directory
-      run: python -c "import os; print(os.getcwd())"
+    - name: Get/Export current directory
+      run: |
+        python -c "import os; print(os.getcwd())"
+        export PYTHONPATH=.:$PYTHONPATH
     - name: Analysing the code with pylint
       run: |
         python -m pylint $(git ls-files '*.py')
