@@ -36,7 +36,7 @@ jobs:
     - name: Get/Export current directory
       run: |
         pwd
-        export PYTHONPATH=$PYTHONPATH:./codewars/utils
+        export PYTHONPATH=$PYTHONPATH:./codewars
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
