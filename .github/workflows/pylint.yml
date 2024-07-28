@@ -35,9 +35,8 @@ jobs:
         pylint --version
     - name: Get/Export current directory
       run: |
-        python -c "import os; print(os.getcwd())"
         pwd
-        export PYTHONPATH=$PYTHONPATH:./codewars
+        export PYTHONPATH=$PYTHONPATH:./codewars/utils
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
