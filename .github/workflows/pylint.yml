@@ -36,6 +36,7 @@ jobs:
     - name: Get/Export current directory
       run: |
         python -c "import os; print(os.getcwd())"
+        pwd
         $export PYTHONPATH=$PYTHONPATH:./my_module
     - name: Check to make sure that the module is in your Python path
       run: |
