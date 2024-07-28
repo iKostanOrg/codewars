@@ -30,16 +30,17 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         pip install -r requirements.txt
         pip install pylint
-    - name: Check to make sure that the module is in your Python path
-      run: |
-        echo $PYTHONPATH
     - name: Version check
       run: |
         pylint --version
     - name: Get/Export current directory
       run: |
         python -c "import os; print(os.getcwd())"
+        echo PYTHONPATH
         export PYTHONPATH=.:$PYTHONPATH
+    - name: Check to make sure that the module is in your Python path
+      run: |
+        echo $PYTHONPATH
     - name: Analysing the code with pylint
       run: |
         python -m pylint $(git ls-files '*.py')
