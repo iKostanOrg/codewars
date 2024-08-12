@@ -4,8 +4,6 @@ Testing spiralize function
 
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
 # ALGORITHMS ARRAYS CONTROL FLOW BASIC LANGUAGE FEATURES FUNDAMENTALS
 
 import allure

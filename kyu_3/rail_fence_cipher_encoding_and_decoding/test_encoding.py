@@ -4,8 +4,6 @@ Testing Encoding functionality
 
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
 # ALGORITHMS CIPHERS CRYPTOGRAPHY SECURITY STRINGS
 
 import allure
