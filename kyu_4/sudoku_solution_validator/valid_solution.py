@@ -19,6 +19,8 @@ def validSolution(board: list) -> bool:
 def test_horizontally(board: list) -> bool:
     """
     test horizontally
+    :param board:
+    :return:
     """
 
     for row in board:
@@ -30,6 +32,8 @@ def test_horizontally(board: list) -> bool:
 def test_vertically(board: list) -> bool:
     """
     test vertically
+    :param board:
+    :return:
     """
 
     i = 0
@@ -47,6 +51,8 @@ def test_sub_grids(board: list) -> bool:
     """
     test each of the nine 3x3 sub-grids
     (also known as blocks)
+    :param board:
+    :return:
     """
 
     sub_grids = [
