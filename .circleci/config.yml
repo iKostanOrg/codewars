@@ -9,6 +9,10 @@ jobs: # A basic unit of work in a run
     steps: # steps that comprise the `build` job
       - checkout
       - run:
+            command:
+              python --version
+            name: Check python version
+      - run:
           command:
             python -m pip install --upgrade pip
           name: Upgrade pip
