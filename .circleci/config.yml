@@ -28,16 +28,17 @@ jobs: # A basic unit of work in a run
           name: Display system path
       - run:
           command: |
-            python -m pytest --version
+            pytest --version
           name: Show pytest version
       - run:
-          command: |
+          command:
             sudo mkdir /home/circleci/project/test-results
           name: Create test-results folder
       - run:
-          name: run tests
-          command: |
+          command:
             python -m pytest
+          name: Run tests with pytest
+
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results/
 
