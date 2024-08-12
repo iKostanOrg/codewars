@@ -8,8 +8,6 @@ jobs: # A basic unit of work in a run
     executor: python/default # use the default executor defined within the orb
     steps: # steps that comprise the `build` job
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
       - run:
           command:
             python -m pip install --upgrade pip
