@@ -2,11 +2,7 @@
 
 ![Document PNG](https://github.com/iKostanOrg/codewars/blob/master/img/document.png)
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
-[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Main Build Pipeline](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml/badge.svg)](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml)
 [![HitCount](http://hits.dwyl.com/iKostanOrg/codewars.svg)](http://hits.dwyl.com/iKostanOrg/codewars)
 ![GitHub forks](https://img.shields.io/github/forks/iKostanOrg/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/iKostanOrg/codewars)
@@ -101,7 +97,7 @@ for CI or a build tool.
 
 ## Tech Issues and Problem Solving
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD013 MD029 -->
 <details>
   <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
@@ -157,28 +153,20 @@ For more info please see [Enable Pytest for you project](https://www.jetbrains.c
 
 1.  Install **pip** first:
    ```bash sudo apt-get install python3-pip```
-
 2.  Then install **virtualenv** using pip3:
     ```bash sudo pip3 install virtualenv```
-
 3.  Now create a virtual environment (>you can use any name instead of **venv**):
     ```bash virtualenv venv```
-
 4.  You can also use a Python interpreter of your choice:
     ```bash virtualenv -p /usr/bin/python2.7 venv```
-
 5.  Active your virtual environment:
     ```bash source venv/bin/activate```
-
 6.  Using fish shell:
     ```bash source venv/bin/activate.fish```
-
 7.  To deactivate:
     ```bash deactivate```
-
 8.  Create virtualenv using Python3:
     ```bash virtualenv -p python3 myenv```
-
 9.  Instead of using virtualenv you can use this command in Python3:
     ```bash python3 -m venv myenv```
 
@@ -192,8 +180,7 @@ In a newly created virtualenv there will be a bin/activate shell script.
 For Windows systems, activation scripts are provided for CMD.exe and Powershell.
 
 1.  Open Terminal
-
-2.  Run: \path\to\env\Scripts\activate 
+2.  Run: `\path\to\env\Scripts\activate`
   
 [Source](https://pypi.org/project/virtualenv/1.8.2/)
 </details>
@@ -211,8 +198,9 @@ pip freeze > requirements.txt
 ```
 
 If you save this in requirements.txt, you can follow this guide:
-[PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html), or you can:
-   
+[PyCharm - Manage dependencies using requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html),
+or you can:
+
 ```bash
 pip install -r requirements.txt
 ```   
@@ -223,7 +211,6 @@ pip install -r requirements.txt
   <summary>error: RPC failed; curl 56 Recv failure: Connection was reset</summary>
 
 1.  Open Git Bash
-
 2.  Run: "git config --global http.postBuffer 157286400" 
   
 [Source](https://stackoverflow.com/questions/36940425/gitlab-push-failed-error)
@@ -254,15 +241,11 @@ Step by step:
 
 1. Run tests from pytest using following arguments:
    `-v --alluredir=allure-results`
-
 2. Copy '.\allure-report\history\' folder into '.\allure-results\history\'
-
 3. Run:
    `allure generate .\allure-results\ -o .\allure-report\ --clean`
-
 4. Following output should appear:
    `Report successfully generated to .\allure-report`
-
 5. Run: 
    `allure open .\allure-report\`
 
@@ -270,40 +253,32 @@ Step by step:
 </details>
 
 <details>
-  <summary><b>Sphinx Documentation Set Up</b></summary>
+  <summary>Sphinx Documentation Set Up</summary>
 
 Step by step:
 
 1. Create docs directory.
-
 2. Open cmd > Go to docs directory.
-
 3. cmd > Run: `sphinx-quickstart`. **Note:** run with default answers.
-
 4. Go to `docs/conf.py`.
-
 5. Uncomment following lines: 
 ```python
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 ```
-
 6. Update extensions list as following: 
 ```python 
 extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 ```
-
 7. Update template as following: 
 ```python
 html_theme = 'sphinx_rtd_theme'
 ```
-
 8. Update sys.path.insert as following: 
 ```python
 sys.path.insert(0, os.path.abspath('..'))
 ```
-
 9. Go to docs/index.rst > add modules, see example below:
 ```bash
 .. toctree::
@@ -312,17 +287,14 @@ sys.path.insert(0, os.path.abspath('..'))
     
   modules
 ```
-
 10. Open cmd > run:
 ```bash
 sphinx-apidoc -F -o . ..
 ```
-
 11. cmd > Run:
 ```bash
 make html
 ```
-
 12. Install html template:
 ```bash
 pip install sphinx_rtd_theme
@@ -368,8 +340,8 @@ from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html))
     to the “Save” button
 *   Now you can re-build the version with a fresh build environment!
 
-This fix worked for me (but as of 26-Jan-2020 you have to wipe out the
-environment for every build -- see comment from Grimmy below).
+This fix worked for me (but as of 26-Jan-2020 you have to wipe out
+the environment for every build, see comment from Grimmy below).
 
 [Source](https://stackoverflow.com/questions/59846065/read-the-docs-build-fails-with-cannot-import-name-packagefinder-from-pip-in)
 </details>
@@ -382,5 +354,4 @@ environment for every build -- see comment from Grimmy below).
 
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 </details>
-
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-restore MD033 MD013 MD029 -->

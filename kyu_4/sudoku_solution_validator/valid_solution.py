@@ -3,7 +3,7 @@
 #  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
-def validSolution(board: list) -> bool:
+def valid_solution(board: list) -> bool:
     """
     A function validSolution/ValidateSolution/valid_solution()
     that accepts a 2D array representing a Sudoku board,
