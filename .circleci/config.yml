@@ -8,7 +8,7 @@ jobs: # A basic unit of work in a run
     executor:
       name: python/default
       # use Python 3.10
-      tag: ‘3.10’
+      tag: "3.12"
     steps: # steps that comprise the `build` job
       - checkout
       - run:
