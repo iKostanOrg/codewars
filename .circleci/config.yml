@@ -10,15 +10,19 @@ jobs: # A basic unit of work in a run
       - checkout
       - python/install-packages:
           pkg-manager: pip
+      - run:
+          command:
+            python -m pip install --upgrade pip
+          name: Upgrade pip
       - python/install-packages:
           pip-dependency-file: requirements.txt
           pkg-manager: pip
       - run:
           command: |
             echo $PATH
-            pytest --version
+            python -m pytest --version
             sudo mkdir /home/circleci/project/test-results
-            pip install -r requirements.txt
+            python -m pip install -r requirements.txt
       - run:
           name: run tests
           command: |
