@@ -1,6 +1,6 @@
 version: 2.1 # use CircleCI 2.1
 orbs:
-  python: circleci/python@2.0.3
+  python: circleci/python@1.1.0
 
 jobs: # A basic unit of work in a run
 
@@ -10,10 +10,13 @@ jobs: # A basic unit of work in a run
       - checkout
       - python/install-packages:
           pkg-manager: pip
+      - python/install-packages:
+          pip-dependency-file: requirements.txt
+          pkg-manager: pip
       - run:
           command: |
             echo $PATH
-            pip3 install --upgrade pip
+            pytest --version
             sudo mkdir /home/circleci/project/test-results
             pip install -r requirements.txt
       - run:
