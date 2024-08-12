@@ -5,7 +5,10 @@ orbs:
 jobs: # A basic unit of work in a run
 
   build: # runs not using Workflows must have a `build` job as entry point
-    executor: python/default # use the default executor defined within the orb
+    executor:
+      name: python/default
+      # use Python 3.10
+      tag: ‘3.10’
     steps: # steps that comprise the `build` job
       - checkout
       - run:
