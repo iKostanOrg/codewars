@@ -25,9 +25,15 @@ jobs: # A basic unit of work in a run
       - run:
           command: |
             echo $PATH
+          name: Display system path
+      - run:
+          command: |
             python -m pytest --version
+          name: Show pytest version
+      - run:
+          command: |
             sudo mkdir /home/circleci/project/test-results
-            python -m pip install -r requirements.txt
+          name: Create test-results folder
       - run:
           name: run tests
           command: |
