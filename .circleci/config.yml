@@ -5,6 +5,8 @@ orbs:
 jobs: # A basic unit of work in a run
 
   build: # runs not using Workflows must have a `build` job as entry point
+    # How to specify Python version in circleCI orb?
+    # https://discuss.circleci.com/t/how-to-specify-python-version-in-circleci-orb/47322/3
     executor:
       name: python/default
       # use Python 3.10
@@ -26,6 +28,10 @@ jobs: # A basic unit of work in a run
           command: |
             echo $PATH
           name: Display system path
+      - run:
+          command: |
+            python -m pip install pytest
+          name: Install pytest
       - run:
           command: |
             pytest --version
