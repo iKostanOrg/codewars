@@ -7,7 +7,6 @@ string you must return the result as a number.
 
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 OPERATORS = ['*', '/', '+', '-']
 

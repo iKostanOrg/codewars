@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 
