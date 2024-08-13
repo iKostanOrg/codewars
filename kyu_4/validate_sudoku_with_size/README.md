@@ -1,8 +1,10 @@
 # Validate Sudoku with size `NxN`
 
-Given a Sudoku data structure with size `NxN, N > 0 and √N == integer`, write a method to validate if it has been filled out correctly.
+Given a Sudoku data structure with size `NxN, N > 0 and √N == integer`,
+write a method to validate if it has been filled out correctly.
 
-The data structure is a multi-dimensional `Array(in Rust: Vec<Vec<u32>>)`, ie:
+The data structure is a multi-dimensional `Array(in Rust: Vec<Vec<u32>>)`,
+ie:
 
 ```text
 [
@@ -25,7 +27,8 @@ The data structure is a multi-dimensional `Array(in Rust: Vec<Vec<u32>>)`, ie:
 -   Data structure dimension: `NxN where N > 0 and √N == integer`
 -   Rows may only contain integers: `1..N (N included)`
 -   Columns may only contain integers: `1..N (N included)`
--   'Little squares' (`3x3` in example above) may also only contain integers: `1..N (N included)`
+-   'Little squares' (`3x3` in example above) may also only contain
+    integers: `1..N (N included)`
 
 Note: the matrix may include non-integer elements.
 

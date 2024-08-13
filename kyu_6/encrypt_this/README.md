@@ -1,8 +1,10 @@
 # Encrypt this
 
 ## Description
-
-You want to create secret messages which can be deciphered by the [Decipher this!](https://www.codewars.com/kata/decipher-this) kata. Here are the conditions:
+<!-- markdownlint-disable MD013 -->
+You want to create secret messages which can be deciphered by the
+[Decipher this!](https://www.codewars.com/kata/decipher-this) kata. Here are the conditions:
+<!-- markdownlint-enable MD013 -->
 
 1.  Your message is a string containing space separated words.
 

@@ -1,4 +1,4 @@
-## Row of the odd triangle
+# Row of the odd triangle
 
 Given a triangle of consecutive odd numbers:
 

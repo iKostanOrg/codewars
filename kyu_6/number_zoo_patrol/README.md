@@ -1,8 +1,10 @@
-## Number Zoo Patrol
+# Number Zoo Patrol
 
-### Task
+## Task
 
-Write a function that takes a shuffled list of unique numbers from `1` to `n` with one element missing (which can be any number including `n`). Return this missing number.
+Write a function that takes a shuffled list of unique numbers from
+`1` to `n` with one element missing (which can be any number including
+`n`). Return this missing number.
 
 Note: huge lists will be tested.
 
