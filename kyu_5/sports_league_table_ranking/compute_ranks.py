@@ -54,7 +54,7 @@ def process_not_played_games(teams: dict, number: int) -> None:
 
     for n in range(number):
         if n not in teams:
-            test_if_team_registered(n, teams, number)
+            check_if_team_registered(n, teams, number)
 
 
 def calc_teams_score(team_a, team_b, teams, team, number) -> None:
@@ -72,16 +72,16 @@ def calc_teams_score(team_a, team_b, teams, team, number) -> None:
     :param number:
     :return:
     """
-    test_if_team_registered(team_a, teams, number)
+    check_if_team_registered(team_a, teams, number)
     calc_for_against(teams, team_a, team[2], team[3])
     calc_team_points(team_a, teams, team[2], team[3])
 
-    test_if_team_registered(team_b, teams, number)
+    check_if_team_registered(team_b, teams, number)
     calc_for_against(teams, team_b, team[3], team[2])
     calc_team_points(team_b, teams, team[3], team[2])
 
 
-def test_if_team_registered(team, teams, number) -> None:
+def check_if_team_registered(team, teams, number) -> None:
     """
     Check if team data was processed.
     Set default values otherwise.
