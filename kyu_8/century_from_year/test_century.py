@@ -20,7 +20,12 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Century From Year')
-@allure.tag('FUNDAMENTALS' 'NUMBERS' 'MATHEMATICS' 'ALGORITHMS' 'BASIC LANGUAGE FEATURES' 'DATES/TIME')
+@allure.tag('FUNDAMENTALS',
+            'NUMBERS',
+            'MATHEMATICS',
+            'ALGORITHMS',
+            'BASIC LANGUAGE FEATURES',
+            'DATES/TIME')
 @allure.link(url='https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/python',
              name='Source/Kata')
 class CenturyTestCase(unittest.TestCase):
