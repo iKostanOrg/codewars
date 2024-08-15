@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS ARRAYS LOOPS CONTROL FLOW
 
@@ -10,15 +9,20 @@ from utils.log_func import print_log
 from kyu_8.wolf_in_sheep_clothing.wolf_in_sheep_clothing import warn_the_sheep
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Control Flow")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('A wolf in sheep\'s clothing')
-@allure.tag('FUNDAMENTALS', 'ARRAYS', 'LOOPS', 'CONTROL FLOW')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS',
+            'LOOPS',
+            'CONTROL FLOW')
 @allure.link(url='https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class WarnTheSheepTestCase(unittest.TestCase):
     """
     Testing warn_the_sheep function

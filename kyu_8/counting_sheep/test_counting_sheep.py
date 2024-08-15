@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS ARRAYS
 
@@ -10,15 +9,18 @@ from utils.log_func import print_log
 from kyu_8.counting_sheep.counting_sheep import count_sheeps
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Counting sheep...')
-@allure.tag('FUNDAMENTALS', 'ARRAYS')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS')
 @allure.link(url='https://www.codewars.com/kata/54edbc7200b811e956000556/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class CountingSheepTestCase(unittest.TestCase):
     """
     Testing 'count_sheeps' function

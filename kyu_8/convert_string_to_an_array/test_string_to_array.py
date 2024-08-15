@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS ARRAYS STRINGS
 
@@ -10,15 +9,19 @@ from utils.log_func import print_log
 from kyu_8.convert_string_to_an_array.string_to_array import string_to_array
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Convert a string to an array')
-@allure.tag('FUNDAMENTALS', 'ARRAYS', 'STRINGS')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS',
+            'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class StringToArrayTestCase(unittest.TestCase):
     """
     Testing string_to_array function.
