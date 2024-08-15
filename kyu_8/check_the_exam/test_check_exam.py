@@ -45,6 +45,7 @@ class CheckExamTestCase(unittest.TestCase):
         :return:
         """
 
+        # pylint: disable=R0801
         allure.dynamic.title("Testing check_exam function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -52,7 +53,7 @@ class CheckExamTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Enter arr1 and arr2 and verify the output"):
 
             data = [
