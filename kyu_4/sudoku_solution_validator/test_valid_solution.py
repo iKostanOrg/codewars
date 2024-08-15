@@ -7,7 +7,7 @@
 import allure
 import unittest
 from utils.log_func import print_log
-from kyu_4.sudoku_solution_validator.valid_solution import validSolution
+from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
 
 
 @allure.epic('4 kyu')
@@ -87,7 +87,7 @@ class ValidSolutionTestCase(unittest.TestCase):
         for data in test_data:
             board = data[0]
             expected = data[1]
-            actual_result = validSolution(board)
+            actual_result = valid_solution(board)
             print_log(board=board,
                       expected=expected,
                       actual_result=actual_result)

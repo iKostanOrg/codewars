@@ -4,8 +4,6 @@ Testing calc method
 
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
 # ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS PARSING STRINGS
 
 import allure
