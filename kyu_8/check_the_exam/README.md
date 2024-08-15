@@ -10,7 +10,7 @@ each incorrect answer, and +0 for each blank answer(empty string).
 
 If the score < 0, return 0.
 
-**For example:**
+## For example:
 
 ```text
 > checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]) → 6

@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Check the exam
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ARRAYS NUMBERS BASIC LANGUAGE FEATURES
 
@@ -16,7 +19,10 @@ from kyu_8.check_the_exam.check_exam import check_exam
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Check the exam')
-@allure.tag('FUNDAMENTALS', 'ARRAYS', 'NUMBERS', 'BASIC LANGUAGE FEATURES')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS',
+            'NUMBERS',
+            'BASIC LANGUAGE FEATURES')
 @allure.link(url='https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/python',
              name='Source/Kata')
 class CheckExamTestCase(unittest.TestCase):
@@ -33,6 +39,7 @@ class CheckExamTestCase(unittest.TestCase):
         for each correct answer, -1 for each
         incorrect answer, and +0 for each blank
         answer(empty string).
+
         :return:
         """
 
