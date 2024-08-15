@@ -1,18 +1,20 @@
-## 4 kyu - Competent
+# 4 kyu - Competent
 
-<div align="center"> 
-<img width="30%" height="30%" src="https://github.com/ikostan/codewars/blob/master/img/copy-rank-kyu.png" hspace="10">
-</div>
+![Rank](https://github.com/ikostan/codewars/blob/master/img/copy-rank-kyu.png)
 
-### Honor
+## Honor
 
-Honor represents the level of respect a user has earned from the community, based on their skill and contributions. Honor is earned fastest through creating kata, crafting great solutions, and constructive comments.
+Honor represents the level of respect a user has earned from the community,
+based on their skill and contributions. Honor is earned fastest through
+creating kata, crafting great solutions, and constructive comments.
 
-### Earning Ranks
+## Earning Ranks
 
-You can advance through the ranks by completing kata at or above your rank - the harder the kata the faster you advance.
+You can advance through the ranks by completing kata at or above your
+rank - the harder the kata the faster you advance.
 
-### List of Completed Kata (Python 3)
+## List of Completed Kata (Python 3)
+
 <!-- markdownlint-disable MD013 -->
 | No. | Puzzle/Kata Name                                                                                                   | Solution / GitHub Link                                                                                      |
 |-----|:------------------------------------------------------------------------------------------------------------------:|------------------------------------------------------------------------------------------------------------:|
@@ -30,4 +32,5 @@ You can advance through the ranks by completing kata at or above your rank - the
 |12   |[Next smaller number with the same digits](https://www.codewars.com/kata/5659c6d896bc135c4c00021e/solutions/python) |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_smaller_number_with_the_same_digits)   |
 |12   |[Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e/train/python)      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_bigger_number_with_the_same_digits)    |
 <!-- markdownlint-enable MD013 -->
+
 [Source](https://www.codewars.com/about)

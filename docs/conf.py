@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'Python3 solutions for codewars problems'
-copyright = '2020, Egor Kostan'
+project_copyright = '2024, Egor Kostan'
 author = 'Egor Kostan'
 
 # The full version, including alpha/beta/rc tags

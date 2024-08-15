@@ -5,15 +5,11 @@ Negative test cases
 
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
 # ALGORITHMS STRINGS
 
 import allure
 import unittest
-
 import pytest
-
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.line_safari import line
 

@@ -1,4 +1,4 @@
-## Find the odd int
+# Find the odd int
 
 Given an array, find the int that appears an odd number of times.
 

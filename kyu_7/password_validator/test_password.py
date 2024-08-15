@@ -1,7 +1,5 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
+# Created by Egor Kostan.
+# GitHub: https://github.com/ikostan
 # FUNDAMENTALS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES STRINGS
 
 import unittest
@@ -45,8 +43,8 @@ class PasswordTestCase(unittest.TestCase):
                 ("abcd1234", False),
                 ("AbcdefGhijKlmnopQRsTuvwxyZ1234567890", True),
                 ("ABCD1234", False),
-                ("Ab1!@#$%^&*()-_+={}[]|\:;?/>.<,", True),
-                ("!@#$%^&*()-_+={}[]|\:;?/>.<,", False),
+                (r"Ab1!@#$%^&*()-_+={}[]|\:;?/>.<,", True),
+                (r"!@#$%^&*()-_+={}[]|\:;?/>.<,", False),
                 ("", False),
                 (" aA1----", True),
                 ("4aA1----", True),

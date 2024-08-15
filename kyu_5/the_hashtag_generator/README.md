@@ -1,4 +1,4 @@
-## The Hashtag Generator
+# The Hashtag Generator
 
 The marketing team is spending way too much time typing in `hashtags`.
 
@@ -11,7 +11,7 @@ Here's the deal:
 -   If the final result is longer than 140 chars it must return `false`.
 -   If the input or the result is an empty string it must return `false`.
 
-### Examples
+## Examples
 
 ```text
 " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
