@@ -49,16 +49,14 @@ class CenturyTestCase(unittest.TestCase):
             (1601, 17, 'Testing for year 1601'),
             (2000, 20, 'Testing for year 2000'),
             (356, 4, 'Testing for year 356'),
-            (89, 1, 'Testing for year 89')
-        ]
+            (89, 1, 'Testing for year 89')]
 
         for year, expected, message in test_data:
             print('\n', message)
             result = century(year)
-            with allure.step("Enter test year ({}) and verify "
-                             "the output ({}) vs expected ({})".format(year,
-                                                                       result,
-                                                                       expected)):
+            with allure.step(f"Enter test year ({year}) and verify "
+                             f"the output ({result}) vs expected ({expected})"):
+
                 print_log(year=year,
                           result=result,
                           expected=expected)
