@@ -16,7 +16,9 @@ from kyu_8.convert_string_to_an_array.string_to_array import string_to_array
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Convert a string to an array')
-@allure.tag('FUNDAMENTALS', 'ARRAYS', 'STRINGS')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS',
+            'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/python',
              name='Source/Kata')
 # pylint: enable=R0801
