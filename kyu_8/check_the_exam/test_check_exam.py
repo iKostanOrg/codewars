@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_8.check_the_exam.check_exam import check_exam
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -25,6 +26,7 @@ from kyu_8.check_the_exam.check_exam import check_exam
             'BASIC LANGUAGE FEATURES')
 @allure.link(url='https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class CheckExamTestCase(unittest.TestCase):
     """
     Testing check_exam function
