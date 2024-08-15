@@ -34,9 +34,11 @@ class CountingSheepTestCase(unittest.TestCase):
         We need a function that counts the
         number of sheep present in the array
         (true means present).
+
         :return:
         """
 
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'count_sheeps' function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -44,7 +46,7 @@ class CountingSheepTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p></p>")
-
+        # pylint: enable=R0801
         lst = [True, True, True, False,
                True, True, True, True,
                True, False, True, False,
