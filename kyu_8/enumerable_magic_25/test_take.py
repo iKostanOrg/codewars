@@ -26,6 +26,7 @@ class TakeTestCase(unittest.TestCase):
     """
 
     def test_take(self):
+        # pylint: disable=R0801
         allure.dynamic.title("Testing take function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -37,7 +38,7 @@ class TakeTestCase(unittest.TestCase):
                                         "list/array. If you need help, here's a reference: "
                                         "https://docs.python.org/3/library/stdtypes"
                                         ".html#sequence-types-list-tuple-range</p>")
-
+        # pylint: enable=R0801
         test_data = [
             ([0, 1, 2, 3, 5, 8, 13],
              3,
