@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Century From Year
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def century(year):

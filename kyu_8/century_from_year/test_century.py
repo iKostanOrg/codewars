@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Century From Year
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS NUMBERS MATHEMATICS ALGORITHMS BASIC LANGUAGE FEATURES DATES/TIME
 
@@ -33,11 +36,12 @@ class CenturyTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing century function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Given a year, the function should return the century it is in.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Given a year, the function should return the century it is in.</p>")
 
         test_data = [
             (1705, 18, 'Testing for year 1705'),
