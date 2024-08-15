@@ -36,6 +36,7 @@ class StringToArrayTestCase(unittest.TestCase):
         :return:
         """
 
+        # pylint: disable=R0801
         allure.dynamic.title("Testing string_to_array function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -43,7 +44,7 @@ class StringToArrayTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Enter a test string and verify the output"):
 
             test_data = [
