@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS NUMBERS STRINGS MATHEMATICS ALGORITHMS
 
@@ -26,12 +25,14 @@ class SharkTestCase(unittest.TestCase):
     """
     Testing shark function
     """
+
     def test_shark_alive_1(self):
         """
         Testing shark function -> positive
         :return:
         """
 
+        # pylint: disable=R0801
         allure.dynamic.title("Testing shark function (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -46,9 +47,14 @@ class SharkTestCase(unittest.TestCase):
                                         "<p>dolphin = a boolean, if true, you can half the swimming speed of the shark "
                                         "as the dolphin will attack it.</p>"
                                         "<p>If you make it, return \"Alive!\", if not, return \"Shark Bait!\".</p>")
-
+        # pylint: enable=R0801
         with allure.step("Enter test data and verify the output"):
-            self.assertEqual(shark(12, 50, 4, 8, True), "Alive!")
+            self.assertEqual(shark(12,
+                                   50,
+                                   4,
+                                   8,
+                                   True),
+                             "Alive!")
 
     def test_shark_alive_2(self):
         """
@@ -72,7 +78,12 @@ class SharkTestCase(unittest.TestCase):
                                         "<p>If you make it, return \"Alive!\", if not, return \"Shark Bait!\".</p>")
 
         with allure.step("Enter test data and verify the output"):
-            self.assertEqual(shark(7, 55, 4, 16, True), "Alive!")
+            self.assertEqual(shark(7,
+                                   55,
+                                   4,
+                                   16,
+                                   True),
+                             "Alive!")
 
     def test_shark_bait(self):
         """
@@ -96,4 +107,9 @@ class SharkTestCase(unittest.TestCase):
                                         "<p>If you make it, return \"Alive!\", if not, return \"Shark Bait!\".</p>")
 
         with allure.step("Enter test data and verify the output"):
-            self.assertEqual(shark(24, 0, 4, 8, True), "Shark Bait!")
+            self.assertEqual(shark(24,
+                                   0,
+                                   4,
+                                   8,
+                                   True),
+                             "Shark Bait!")
