@@ -1,5 +1,5 @@
 """
-A wolf in sheep's clothing
+Tests for -> A wolf in sheep's clothing
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
