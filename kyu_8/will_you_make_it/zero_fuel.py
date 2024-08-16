@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Will you make it?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def zero_fuel(distance_to_pump: int, mpg: int, fuel_left: int) -> bool:
