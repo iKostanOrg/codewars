@@ -1,11 +1,13 @@
 """
+Solution for -> Calculator
+
 Create a simple calculator that given a string
 of operators (), +, -, *, / and numbers separated
 by spaces returns the value of that expression
-"""
 
-# Created by Egor Kostan.
-# GitHub: https://github.com/ikostan
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 class Calculator:
