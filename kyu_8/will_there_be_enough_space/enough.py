@@ -1,7 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
+"""
+Solution for -> Will there be enough space?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 def enough(cap: int, on: int, wait: int) -> int:
     """
