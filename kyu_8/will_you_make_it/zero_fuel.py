@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
 def zero_fuel(distance_to_pump: int, mpg: int, fuel_left: int) -> bool:
