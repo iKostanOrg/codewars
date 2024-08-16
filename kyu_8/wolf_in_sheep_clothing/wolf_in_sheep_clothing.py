@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> A wolf in sheep's clothing
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def warn_the_sheep(queue: list) -> str:
