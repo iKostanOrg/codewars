@@ -1,12 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Well of Ideas - Easy Version
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import List
 
 
 def well(x: List[str]) -> str:
-
     counter: int = sum(1 for i in x if i.lower() == 'good')
     result: str = ''
 
