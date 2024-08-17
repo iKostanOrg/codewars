@@ -2,7 +2,7 @@
 Solution for -> Calculator
 
 Create a simple calculator that given a string
-of operators ''(), +, -, *, /'' and numbers separated
+of operators (), +, -, *, / and numbers separated
 by spaces returns the value of that expression.
 
 Created by Egor Kostan.
@@ -12,7 +12,7 @@ GitHub: https://github.com/ikostan
 
 class Calculator:
     """
-    Given string of operators (), +, -, *, /
+    Given string of operators '(), +, -, *, /'
     and numbers separated by spaces.
     Returns the value of that expression.
     """
@@ -69,7 +69,7 @@ class Calculator:
     def evaluate(self, string: str) -> float:
         """
         Returns value of the given expression
-        
+
         :param string:
         :return:
         """
