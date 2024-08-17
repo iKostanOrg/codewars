@@ -26,7 +26,6 @@ class Calculator:
         :param i:'char (math operation) index'
         :param char:'math operation'
         :param strings:'math expression'
-        :return:'result'
         """
 
         a = float(strings[i - 1])
@@ -52,8 +51,8 @@ class Calculator:
         Perform all operation with:
         multiplications, divisions, additions and subtractions
 
-        :param string: input string
-        :return: output string with no '*', '/', '+', '-'
+        :param string:'input string'
+        :return string:'output string with no *, /, +, -'
         """
         strings = string.split(' ')
 
