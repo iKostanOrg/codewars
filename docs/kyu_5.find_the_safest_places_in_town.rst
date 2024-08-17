@@ -12,14 +12,6 @@ kyu\_5.find\_the\_safest\_places\_in\_town.advice module
    :undoc-members:
    :show-inheritance:
 
-kyu\_5.find\_the\_safest\_places\_in\_town.manhattan\_distance module
----------------------------------------------------------------------
-
-.. automodule:: kyu_5.find_the_safest_places_in_town.manhattan_distance
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 kyu\_5.find\_the\_safest\_places\_in\_town.print\_agents module
 ---------------------------------------------------------------
 
