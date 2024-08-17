@@ -70,9 +70,8 @@ class Calculator:
         """
         Returns value of the given expression
 
-        :param string: a string of operators (), +, -, *, /
-                       and numbers separated by spaces
-        :return: calculated value of the given expression
+        :param string:'a string of operators (), +, -, *, / and numbers separated by spaces'
+        :return float:'calculated value of the given expression'
         """
         string = self.__process_math_expression(string, ['*', '/'])
         result: str = self.__process_math_expression(string, ['+', '-'])
