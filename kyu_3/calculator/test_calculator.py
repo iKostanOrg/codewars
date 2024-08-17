@@ -36,6 +36,8 @@ class CalculatorTestCase(unittest.TestCase):
         Testing Calculator class
         A simple calculator that given a string of operators '(), +, -, *, /'
         and numbers separated by spaces will return the value of that expression
+        
+        :return:
         """
 
         allure.dynamic.title("Testing Calculator class")
