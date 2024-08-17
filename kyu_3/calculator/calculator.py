@@ -23,10 +23,10 @@ class Calculator:
         1. Perform math operation
         2. Reorganize math expression
 
-        :param i: char (math operation) index
-        :param char: math operation
-        :param strings: math expression
-        :return: result
+        :param i:char (math operation) index
+        :param char:math operation
+        :param strings:math expression
+        :return:result
         """
 
         a = float(strings[i - 1])
