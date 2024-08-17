@@ -1,10 +1,8 @@
 """
 Solution for -> Calculator
-
 Create a simple calculator that given a string
 of operators '(), +, -, *, /' and numbers separated
-by spaces returns the value of that expression
-
+by spaces returns the value of that expression.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -22,7 +20,6 @@ class Calculator:
         """
         1. Perform math operation
         2. Reorganize math expression
-
         :param i:'char (math operation) index'
         :param char:'math operation'
         :param strings:'math expression'
@@ -50,7 +47,6 @@ class Calculator:
         """
         Perform all operation with:
         multiplications, divisions, additions and subtractions
-
         :param string:'input string'
         :return string:'output string with no *, /, +, -'
         """
@@ -68,7 +64,6 @@ class Calculator:
     def evaluate(self, string: str) -> float:
         """
         Returns value of the given expression
-
         :param string:'a string of operators (), +, -, *, / and numbers separated by spaces'
         :return float:'calculated value of the given expression'
         """
