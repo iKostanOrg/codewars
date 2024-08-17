@@ -1,8 +1,10 @@
 """
 Solution for -> Calculator
+
 Create a simple calculator that given a string
 of operators ''(), +, -, *, /'' and numbers separated
 by spaces returns the value of that expression.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,7 +12,7 @@ GitHub: https://github.com/ikostan
 
 class Calculator:
     """
-    Given string of operators ''(), +, -, *, /''
+    Given string of operators (), +, -, *, /
     and numbers separated by spaces.
     Returns the value of that expression.
     """
@@ -20,9 +22,11 @@ class Calculator:
         """
         1. Perform math operation
         2. Reorganize math expression
-        :param:'i (int) char (math operation) index'
-        :param:'char (str) math operation'
-        :param:'strings (list) math expression'
+
+        :param i:
+        :param char:
+        :param strings:
+        :return:
         """
 
         a = float(strings[i - 1])
@@ -46,9 +50,10 @@ class Calculator:
     def __process_math_expression(self, string: str, operators: list) -> str:
         """
         Perform all operation with multiplications, divisions, additions and subtractions
-        :param:'string (str) input string'
-        :param:'operators (list)'
-        :return:'output string with no *, /, +, -'
+
+        :param string:
+        :param operators:
+        :return:
         """
         strings = string.split(' ')
 
@@ -64,8 +69,9 @@ class Calculator:
     def evaluate(self, string: str) -> float:
         """
         Returns value of the given expression
-        :param:'string (str) a string of operators '(), +, -, *, /' and numbers separated by spaces'
-        :return float:'(float) calculated value of the given expression'
+        
+        :param string:
+        :return:
         """
         string = self.__process_math_expression(string, ['*', '/'])
         result: str = self.__process_math_expression(string, ['+', '-'])
