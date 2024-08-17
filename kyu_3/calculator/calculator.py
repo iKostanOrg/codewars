@@ -20,9 +20,9 @@ class Calculator:
         """
         1. Perform math operation
         2. Reorganize math expression
-        :param i:'char (math operation) index'
-        :param char:'math operation'
-        :param strings:'math expression'
+        :param:'i (int) char (math operation) index'
+        :param:'char (str) math operation'
+        :param:'strings (list) math expression'
         """
 
         a = float(strings[i - 1])
@@ -46,8 +46,9 @@ class Calculator:
     def __process_math_expression(self, string: str, operators: list) -> str:
         """
         Perform all operation with multiplications, divisions, additions and subtractions
-        :param string:'input string'
-        :return string:'output string with no ''*, /, +, -''
+        :param:'string (str) input string'
+        :param:'operators (list)'
+        :return:'output string with no *, /, +, -'
         """
         strings = string.split(' ')
 
@@ -63,8 +64,8 @@ class Calculator:
     def evaluate(self, string: str) -> float:
         """
         Returns value of the given expression
-        :param string:'a string of operators ''(), +, -, *, /'' and numbers separated by spaces'
-        :return float:'calculated value of the given expression'
+        :param:'string (str) a string of operators '(), +, -, *, /' and numbers separated by spaces'
+        :return float:'(float) calculated value of the given expression'
         """
         string = self.__process_math_expression(string, ['*', '/'])
         result: str = self.__process_math_expression(string, ['+', '-'])
