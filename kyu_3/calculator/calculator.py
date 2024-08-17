@@ -1,7 +1,7 @@
 """
 Solution for -> Calculator
 Create a simple calculator that given a string
-of operators '(), +, -, *, /' and numbers separated
+of operators ''(), +, -, *, /'' and numbers separated
 by spaces returns the value of that expression.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -10,7 +10,7 @@ GitHub: https://github.com/ikostan
 
 class Calculator:
     """
-    Given string of operators '(), +, -, *, /'
+    Given string of operators ''(), +, -, *, /''
     and numbers separated by spaces.
     Returns the value of that expression.
     """
@@ -48,7 +48,7 @@ class Calculator:
         Perform all operation with:
         multiplications, divisions, additions and subtractions
         :param string:'input string'
-        :return string:'output string with no *, /, +, -'
+        :return string:'output string with no ''*, /, +, -'''
         """
         strings = string.split(' ')
 
@@ -64,7 +64,7 @@ class Calculator:
     def evaluate(self, string: str) -> float:
         """
         Returns value of the given expression
-        :param string:'a string of operators (), +, -, *, / and numbers separated by spaces'
+        :param string:'a string of operators ''(), +, -, *, /'' and numbers separated by spaces'
         :return float:'calculated value of the given expression'
         """
         string = self.__process_math_expression(string, ['*', '/'])
