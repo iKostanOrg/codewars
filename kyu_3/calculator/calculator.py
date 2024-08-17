@@ -2,7 +2,7 @@
 Solution for -> Calculator
 
 Create a simple calculator that given a string
-of operators (), +, -, *, / and numbers separated
+of operators '(), +, -, *, /' and numbers separated
 by spaces returns the value of that expression
 
 Created by Egor Kostan.
@@ -12,7 +12,7 @@ GitHub: https://github.com/ikostan
 
 class Calculator:
     """
-    Given string of operators (), +, -, *, /
+    Given string of operators '(), +, -, *, /'
     and numbers separated by spaces.
     Returns the value of that expression.
     """
@@ -23,10 +23,10 @@ class Calculator:
         1. Perform math operation
         2. Reorganize math expression
 
-        :param i:char (math operation) index
-        :param char:math operation
-        :param strings:math expression
-        :return:result
+        :param i:'char (math operation) index'
+        :param char:'math operation'
+        :param strings:'math expression'
+        :return:'result'
         """
 
         a = float(strings[i - 1])
