@@ -45,7 +45,7 @@ class CalculatorTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>"
-                                        "1. given a string of operators (), +, -, *, / "
+                                        "1. given a string of operators '(), +, -, *, /'"
                                         "and numbers separated by spaces<br/>"
                                         "2. the calculator should return the value of that expression"
                                         "</p>")

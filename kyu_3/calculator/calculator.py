@@ -45,10 +45,9 @@ class Calculator:
 
     def __process_math_expression(self, string: str, operators: list) -> str:
         """
-        Perform all operation with:
-        multiplications, divisions, additions and subtractions
+        Perform all operation with multiplications, divisions, additions and subtractions
         :param string:'input string'
-        :return string:'output string with no ''*, /, +, -'''
+        :return string:'output string with no ''*, /, +, -''
         """
         strings = string.split(' ')
 
