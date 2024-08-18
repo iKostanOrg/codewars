@@ -17,7 +17,7 @@ with docstrings, organizing the code with clear file structure, and testing the
 functions, you can make sure your functions are well-written and easy to work with.
 
 ## Related sources:
-<!-- markdownlint-disable -->
+<!--markdownlint-disable MD013-->
 - [Useful Python Utils](https://python-utils.readthedocs.io/en/latest/usage.html)
 - [Python Pro Tips: Organizing and Simplifying Your Codebase with Utilities and Helper Functions](https://medium.com/@ryk.kiel/python-pro-tips-organizing-and-simplifying-your-codebase-with-utilities-and-helper-functions-6a344d6a1873)
-<!-- markdownlint-enable -->
+<!--markdownlint-enable MD013-->
