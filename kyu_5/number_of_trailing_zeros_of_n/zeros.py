@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Number of trailing zeros of N!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def zeros(n):
+def zeros(n) -> int:
     """
     A program that will calculate the number of
     trailing zeros in a factorial of a given number.
@@ -21,17 +23,15 @@ def zeros(n):
     then divide by 25 to remove extra 5s and so on.
 
     Following is the summarized formula for counting trailing 0s.
-        Trailing 0s in n! = Count of 5s in prime factors of n!
-                  = floor(n/5) + floor(n/25) + floor(n/125) + ....
-    :param n:
-    :return:
+    Trailing 0s in n! = Count of 5s in prime factors of n!
+    = floor(n/5) + floor(n/25) + floor(n/125) + ....
+
+    :param n: int
+    :return: int
     """
 
     # Initialize result
     count = 0
-
-    # Keep dividing n by
-    # powers of 5 and
 
     i = 5
     while (n / i) >= 1:
