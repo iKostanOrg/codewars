@@ -1,5 +1,5 @@
-utils.scripts.module package
-============================
+utils.scripts package
+=====================
 
 Submodules
 ----------
@@ -33,7 +33,7 @@ utils.log\_func module
 Module contents
 ---------------
 
-.. automodule:: utils.scripts.module
+.. automodule:: utils.scripts
    :members:
    :undoc-members:
    :show-inheritance:

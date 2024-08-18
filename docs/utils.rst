@@ -7,8 +7,8 @@ Subpackages
 .. toctree::
 
    utils.readme
+   utils.scripts
    utils.primes.module
-   utils.scripts.module
 
 Module contents
 ---------------
