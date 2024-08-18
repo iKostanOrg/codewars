@@ -35,10 +35,24 @@ def sequence(n: int) -> int:
 
 
 def sum_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
-    # Sum of an Arithmetic Progression
+    """
+    Sum of an Arithmetic Progression
+
+    :param a:
+    :param dif:
+    :param terms:
+    :return:
+    """
     return terms * (a + general_term_of_arithmetic_progression(a, dif)) // 2
 
 
 def general_term_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
-    # General Term of an Arithmetic Progression
+    """
+    General Term of an Arithmetic Progression
+
+    :param a:
+    :param dif:
+    :param terms:
+    :return:
+    """
     return a + (terms - 1) * dif
