@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Not very secure
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def alphanumeric(password: str) -> bool:
