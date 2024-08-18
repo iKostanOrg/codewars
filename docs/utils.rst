@@ -6,6 +6,7 @@ Subpackages
 
 .. toctree::
 
+   readme
    utils.primes
 
 Submodules
