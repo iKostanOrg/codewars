@@ -7,6 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
+   readme
    kyu_6.a_rule_of_divisibility_by_13
    kyu_6.array_diff
    kyu_6.array_to_html_table

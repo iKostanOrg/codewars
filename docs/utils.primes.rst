@@ -4,6 +4,14 @@ utils.primes package
 Submodules
 ----------
 
+utils.primes.readme module
+-----------------------------
+
+.. automodule:: utils.primes.readme
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 utils.primes.is\_prime module
 -----------------------------
 
