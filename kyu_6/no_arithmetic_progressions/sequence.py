@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> No arithmetic progressions
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def sequence(n: int) -> int:
@@ -13,13 +15,19 @@ def sequence(n: int) -> int:
     form an arithmetic progression.
 
     Example:
-        f(0) = 0 -- smallest non-negative
-        f(1) = 1 -- smallest non-negative, which is not yet in the sequence
-        f(2) = 3 -- since 0, 1, 2 form an arithmetic progression
-        f(3) = 4 -- neither of 0, 1, 4, 0, 3, 4, 1, 3, 4 form an arithmetic
-                    progression, so we can take smallest non-negative, which is larger than 3
-        f(4) = 9 -- 5, 6, 7, 8 are not good, since 1, 3, 5, 0, 3, 6, 1, 4, 7, 0, 4, 8
-                    are all valid arithmetic progressions.
+
+    f(0) = 0 -- smallest non-negative
+
+    f(1) = 1 -- smallest non-negative, which is not yet in the sequence
+
+    f(2) = 3 -- since 0, 1, 2 form an arithmetic progression
+
+    f(3) = 4 -- neither of 0, 1, 4, 0, 3, 4, 1, 3, 4 form an arithmetic
+    progression, so we can take smallest non-negative, which is larger than 3
+
+    f(4) = 9 -- 5, 6, 7, 8 are not good, since 1, 3, 5, 0, 3, 6, 1, 4, 7, 0, 4, 8
+    are all valid arithmetic progressions.
+
     :param n:
     :return:
     """
