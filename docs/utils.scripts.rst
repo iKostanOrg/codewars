@@ -33,7 +33,7 @@ utils.log\_func module
 Module contents
 ---------------
 
-.. automodule:: utils.scripts
+.. automodule:: utils
    :members:
    :undoc-members:
    :show-inheritance:
