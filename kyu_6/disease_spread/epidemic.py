@@ -11,9 +11,9 @@ def epidemic(tm: int, n: int, s0: int, i0: int, b: float, a: float) -> int:
     """
     We want to study the spread of the disease through the population of this school.
     The total population may be divided into three:
-        - the infecteds (i),
+        - the infecteds (i)
         - those who have recovered (r), and those who are still susceptible (s)
-          to get the disease.
+        to get the disease
 
     We will study the disease on a period of tm days.
 
