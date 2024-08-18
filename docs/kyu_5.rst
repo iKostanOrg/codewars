@@ -7,7 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   readme
+   kyu_5.readme
    kyu_5.alphabet_wars_nuclear_strike
    kyu_5.count_ip_addresses
    kyu_5.did_i_finish_my_sudoku
