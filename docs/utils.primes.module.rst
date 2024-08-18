@@ -1,3 +1,9 @@
+utils.primes module
+===================
+
+Subpackages
+-----------
+
 .. toctree::
    :maxdepth: 4
 
