@@ -1,5 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Script in order to copy Allure history.
+
+Created by Egor Kostan.
+itHub: https://github.com/ikostan
+"""
 
 import os
 import platform

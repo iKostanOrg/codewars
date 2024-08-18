@@ -1,6 +1,10 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Script for generating Allure report.
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 import os
 import platform
