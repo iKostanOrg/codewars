@@ -1,9 +1,8 @@
 """
 Epidemic Test Data Class
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 
 
 class EpidemicTestData:
@@ -25,7 +24,6 @@ class EpidemicTestData:
     def tm(self):
         """
         Returns tm value
-
         :return:
         """
         return self.__tm
