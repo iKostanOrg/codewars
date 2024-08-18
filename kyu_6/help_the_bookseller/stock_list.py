@@ -9,8 +9,8 @@ def stock_list(listOfArt: list, listOfCat: list) -> str:
     """
     You will be given a stockist (e.g. : L) and a
     list of categories in capital letters e.g :
-        M = {"A", "B", "C", "W"}
-        M = ["A", "B", "C", "W"]
+    M = {"A", "B", "C", "W"}
+    M = ["A", "B", "C", "W"]
 
     and your task is to find all the books of L with
     codes belonging to each category of M and to sum
