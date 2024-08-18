@@ -36,7 +36,7 @@ class StringTransformerTestCase(unittest.TestCase):
 
         1. Change case of every character, ie. lower
         case to upper case, upper case to lower case.
-        
+
         2. Reverse the order of words from the input.
 
         :return:
