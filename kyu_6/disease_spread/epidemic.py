@@ -36,8 +36,8 @@ def epidemic(tm: int, n: int, s0: int, i0: int, b: float, a: float) -> int:
 
     # susceptible, infected, recovered at time t
     # Whatever S0 and I0, R0 (number of recovered at time 0) is always 0.
-    S: List[float] = [s0, ]
-    I: List[float] = [i0, ]
+    S: List[float] = [s0]
+    I: List[float] = [i0]
 
     for k in range(n):
         S.append(S[k] - dt * b * S[k] * I[k])
