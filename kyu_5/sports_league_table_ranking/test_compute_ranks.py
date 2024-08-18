@@ -1,7 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
+"""
+Test for -> Sports League Table Ranking
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 import unittest
 import allure
 from utils.log_func import print_log
@@ -28,9 +29,10 @@ class ComputeRanksTestCase(unittest.TestCase):
         the order of the teams in your league. You use the following
         criteria to arrange the teams:
 
-        - Points
-        - Scoring differential (the difference between goals scored and those conceded)
-        - Goals scored
+            - Points
+            - Scoring differential (the difference between goals scored and those conceded)
+            - Goals scored
+
         :return:
         """
 
