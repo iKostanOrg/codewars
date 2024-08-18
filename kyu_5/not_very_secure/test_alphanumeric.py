@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Not very secure
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # BUGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES FUNDAMENTALS STRINGS
 
