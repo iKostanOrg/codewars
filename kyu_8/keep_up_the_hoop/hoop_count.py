@@ -9,7 +9,7 @@ def hoop_count(n) -> str:
     """
     A program where Alex can input (n) how many times the
     hoop goes round and it will return him an encouraging message
-    
+
     :param n: int
     :return: str
     """
