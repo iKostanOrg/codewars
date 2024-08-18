@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> String transformer
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -15,7 +18,7 @@ from kyu_6.string_transformer.string_transformer import string_transformer
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String transformer')
-@allure.tag()
+@allure.tag('FUNDAMENTALS')
 @allure.link(url='',
              name='Source/Kata')
 class StringTransformerTestCase(unittest.TestCase):
