@@ -13,7 +13,7 @@ Submodules
 ----------
 
 utils.copy\_allure\_history module
-----------------------
+----------------------------------
 
 .. automodule:: utils.copy_allure_history
    :members:
@@ -21,7 +21,7 @@ utils.copy\_allure\_history module
    :show-inheritance:
 
 utils.generate\_allure\_report module
-----------------------
+-------------------------------------
 
 .. automodule:: utils.generate_allure_report
    :members:
