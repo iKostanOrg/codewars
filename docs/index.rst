@@ -10,6 +10,7 @@ Welcome to Python3 solutions for codewars problems's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   readme
    kyu_2
    kyu_3
    kyu_4
