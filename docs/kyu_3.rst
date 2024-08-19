@@ -8,7 +8,7 @@ Subpackages
    :maxdepth: 4
 
    kyu_3.readme
-   kyu_3.battleship_field_validator
+   kyu_3.battleship_field_validator.module
    kyu_3.calculator.module
    kyu_3.line_safari_is_that_a_line
    kyu_3.make_spiral
