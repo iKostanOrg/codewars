@@ -136,7 +136,7 @@ class Walker:
 
         :return: dict, starting point X
         """
-        result: dict = dict()
+        result: dict = {}
         done: bool = False
 
         for row_i, row in enumerate(self.__grid):
