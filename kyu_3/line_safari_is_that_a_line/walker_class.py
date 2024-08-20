@@ -1,5 +1,6 @@
 """
 Walker class: make moves, check directions, etc...
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -18,7 +19,6 @@ class Walker:
         self.__direction = self.__set_initial_direction()
 
     def __set_initial_direction(self) -> dict:
-        # print('__set_initial_direction')
         DIRECTION = {
             'left': False,
             'right': False,
@@ -58,7 +58,7 @@ class Walker:
         """
         Return char from grid based on current position
 
-        :return: current char
+        :return: str, current char
         """
         row: int = self.__position['row']
         col: int = self.__position['col']
@@ -123,20 +123,18 @@ class Walker:
                 print('\nRule #2')
                 return True
 
-            # if self.__count_possible_directions() != 2:
             if len([val for val in self.__direction.values() if val]) != 1:
                 print('\nRule #3')
-                # print('possible directions: {}'.format(self.__count_possible_directions()))
                 print(self.__direction)
                 return True
 
         return False
 
-    def __get_start_point(self):
+    def __get_start_point(self) -> dict:
         """
         Locate starting point
 
-        :return: starting point X
+        :return: dict, starting point X
         """
         for row_i, row in enumerate(self.__grid):
             for col_i, col in enumerate(row):
@@ -147,7 +145,6 @@ class Walker:
                             'col': col_i}
 
     def __reset_direction(self) -> None:
-        # print('__reset_direction')
         for key in self.__direction:
             self.__direction[key] = False
 

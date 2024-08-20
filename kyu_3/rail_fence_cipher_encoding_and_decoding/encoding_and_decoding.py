@@ -1,5 +1,6 @@
 """
 Solution for -> Rail Fence Cipher: Encoding and Decoding
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

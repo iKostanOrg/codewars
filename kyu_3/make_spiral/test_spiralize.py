@@ -1,6 +1,7 @@
 """
 Testing spiralizer function
 Created by Egor Kostan.
+
 GitHub: https://github.com/ikostan
 """
 
