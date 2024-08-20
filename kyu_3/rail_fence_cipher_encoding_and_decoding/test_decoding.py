@@ -1,5 +1,6 @@
 """
 Testing Decoding functionality
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

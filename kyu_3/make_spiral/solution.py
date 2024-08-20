@@ -1,6 +1,7 @@
 
 """
 Solution for -> Make a spiral
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

@@ -3,10 +3,10 @@ Evaluate mathematical expression.
 
 Given a mathematical expression as a
 string you must return the result as a number.
-"""
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 OPERATORS = ['*', '/', '+', '-']
 
