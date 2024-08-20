@@ -136,13 +136,22 @@ class Walker:
 
         :return: dict, starting point X
         """
+        result: dict = dict()
+        done: bool = False
+
         for row_i, row in enumerate(self.__grid):
             for col_i, col in enumerate(row):
                 if col == 'X':
-                    return {'prev_row': row_i,
-                            'prev_col': col_i,
-                            'row': row_i,
-                            'col': col_i}
+                    result = {'prev_row': row_i,
+                              'prev_col': col_i,
+                              'row': row_i,
+                              'col': col_i}
+                    done = True
+                    break
+            if done:
+                break
+
+        return result
 
     def __reset_direction(self) -> None:
         for key in self.__direction:
