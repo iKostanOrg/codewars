@@ -1,9 +1,9 @@
 """
 Testing Walker Class
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import allure
