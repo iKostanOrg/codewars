@@ -1,10 +1,10 @@
 """
 Testing Line Safari functionality
 Negative test cases
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import allure
