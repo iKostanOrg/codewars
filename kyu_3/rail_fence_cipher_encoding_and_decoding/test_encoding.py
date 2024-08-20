@@ -1,9 +1,9 @@
 """
 Testing Encoding functionality
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 # ALGORITHMS CIPHERS CRYPTOGRAPHY SECURITY STRINGS
 
 import allure
@@ -19,7 +19,11 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Rail Fence Cipher: Encoding and Decoding')
-@allure.tag('ALGORITHMS', 'CIPHERS', 'CRYPTOGRAPHY', 'SECURITY', 'STRINGS')
+@allure.tag('ALGORITHMS',
+            'CIPHERS',
+            'CRYPTOGRAPHY',
+            'SECURITY',
+            'STRINGS')
 @allure.link(
     url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python',
     name='Source/Kata')
