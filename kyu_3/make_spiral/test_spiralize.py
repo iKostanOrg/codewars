@@ -1,9 +1,9 @@
 """
-Testing spiralize function
+Testing spiralizer function
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 # ALGORITHMS ARRAYS CONTROL FLOW BASIC LANGUAGE FEATURES FUNDAMENTALS
 
 import allure
@@ -18,8 +18,11 @@ from kyu_3.make_spiral.solution import spiralize
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Make a spiral')
-@allure.tag('ALGORITHMS', 'ARRAYS', 'CONTROL FLOW',
-            'BASIC LANGUAGE FEATURES', 'FUNDAMENTALS')
+@allure.tag('ALGORITHMS',
+            'ARRAYS',
+            'CONTROL FLOW',
+            'BASIC LANGUAGE FEATURES',
+            'FUNDAMENTALS')
 @allure.link(
     url='https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/python',
     name='Source/Kata')

@@ -1,5 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+
+"""
+Solution for -> Make a spiral
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 DIRECTIONS = {
@@ -12,12 +16,12 @@ DIRECTIONS = {
 
 def right(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral right
+    Move spiral right
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: boolean 'done'
-"""
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: boolean 'done'
+    """
     done = True
 
     while coordinates['col'] < len(spiral[coordinates['row']]):
@@ -75,12 +79,12 @@ Move spiral right
 
 def down(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral down
+    Move spiral down
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: boolean 'done'
-"""
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: boolean 'done'
+    """
     done = True
 
     while coordinates['row'] < len(spiral):
@@ -111,12 +115,12 @@ Move spiral down
 
 def left(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral left
+    Move spiral left
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: None
-"""
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: bool
+    """
     done = True
 
     while coordinates['col'] >= 0:
@@ -155,12 +159,12 @@ Move spiral left
 
 def up(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral up
+    Move spiral up
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: None
-"""
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: boole
+    """
     done = True
 
     while coordinates['row'] >= 0:
@@ -180,11 +184,11 @@ Move spiral up
 
 def set_initial_params(size: int) -> tuple:
     """
-Set initial parameters: line, spiral, direction, coordinate, done
+    Set initial parameters: line, spiral, direction, coordinate, done
 
-:param size:
-:return:
-"""
+    :param size:
+    :return: tuple
+    """
     spiral: list = list()
     while len(spiral) != size:
         line: list = [0] * size
@@ -202,11 +206,11 @@ Set initial parameters: line, spiral, direction, coordinate, done
 
 def spiralize(size: int) -> list:
     """
-Creates a NxN spiral 2D list with a given size
+    Creates a NxN spiral 2D list with a given size
 
-:param size: size of the 2D array
-:return: NxN spiral 2D array
-"""
+    :param size: size of the 2D array
+    :return: list, NxN spiral 2D array
+    """
     spiral, direction, coordinates, done = set_initial_params(size)
 
     while not done:
