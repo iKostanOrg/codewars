@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for 'Most frequently used words in a text'
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS STRINGS PARSING RANKING FILTERING
 
@@ -16,7 +19,11 @@ from kyu_4.most_frequently_used_words.solution import top_3_words
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Most frequently used words in a text')
-@allure.tag('ALGORITHMS', 'STRINGS', 'PARSING', 'RANKING', 'FILTERING')
+@allure.tag('ALGORITHMS',
+            'STRINGS',
+            'PARSING',
+            'RANKING',
+            'FILTERING')
 @allure.link(
     url='https://www.codewars.com/kata/51e056fe544cf36c410000fb/train/python',
     name='Source/Kata')

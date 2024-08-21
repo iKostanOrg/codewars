@@ -9,7 +9,7 @@ Subpackages
 
    kyu_4.readme
    kyu_4.human_readable_duration_format.module
-   kyu_4.most_frequently_used_words
+   kyu_4.most_frequently_used_words.module
    kyu_4.next_bigger_number_with_the_same_digits
    kyu_4.next_smaller_number_with_the_same_digits
    kyu_4.permutations
