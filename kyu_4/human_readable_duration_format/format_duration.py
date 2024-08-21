@@ -1,11 +1,10 @@
 """
 A function which formats a duration, given as a
 number of seconds, in a human-friendly way.
-"""
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def format_duration(seconds: int) -> str:
