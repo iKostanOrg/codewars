@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Next smaller number with the same digits
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS NUMBERS STRINGS INTEGERS MATHEMATICS
 
@@ -16,7 +19,11 @@ from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_sma
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story("Next smaller number with the same digits")
-@allure.tag('ALGORITHMS', 'NUMBERS', 'STRINGS', 'INTEGERS', 'MATHEMATICS')
+@allure.tag('ALGORITHMS',
+            'NUMBERS',
+            'STRINGS',
+            'INTEGERS',
+            'MATHEMATICS')
 @allure.link(url='https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/python',
              name='Source/Kata')
 class NextSmallerTestCase(unittest.TestCase):
