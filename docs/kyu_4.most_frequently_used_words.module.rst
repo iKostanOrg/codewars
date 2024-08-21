@@ -7,8 +7,8 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   kyu_4.kyu_4.most_frequently_used_words.readme
-   kyu_4.kyu_4.most_frequently_used_words
+   kyu_4.most_frequently_used_words.readme
+   kyu_4.most_frequently_used_words
 
 
 
