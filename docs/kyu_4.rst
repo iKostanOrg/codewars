@@ -13,7 +13,7 @@ Subpackages
    kyu_4.next_bigger_number_with_the_same_digits.module
    kyu_4.next_smaller_number_with_the_same_digits.module
    kyu_4.permutations.module
-   kyu_4.range_extraction
+   kyu_4.range_extraction.module
    kyu_4.snail
    kyu_4.strings_mix
    kyu_4.strip_comments
