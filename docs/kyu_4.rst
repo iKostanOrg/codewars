@@ -15,7 +15,7 @@ Subpackages
    kyu_4.permutations.module
    kyu_4.range_extraction.module
    kyu_4.snail.module
-   kyu_4.strings_mix
+   kyu_4.strings_mix.module
    kyu_4.strip_comments
    kyu_4.sudoku_solution_validator
    kyu_4.sum_by_factors
