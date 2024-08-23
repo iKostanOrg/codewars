@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Strip Comments
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def solution(string: str, markers: list) -> str:
@@ -9,9 +12,9 @@ def solution(string: str, markers: list) -> str:
     of comment markers passed in. Any whitespace at the end
     of the line will be stripped out as well.
 
-    :param string:
-    :param markers:
-    :return:
+    :param string: str
+    :param markers: list
+    :return: str
     """
     strings: list = string.split('\n')
     for marker in markers:
