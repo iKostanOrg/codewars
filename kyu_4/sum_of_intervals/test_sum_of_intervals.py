@@ -1,6 +1,10 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sum of Intervals
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 # ALGORITHMS AGGREGATIONS ARITHMETIC MATHEMATICS NUMBERS INTEGERS
 
@@ -16,7 +20,12 @@ from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
 @allure.sub_suite("Unit Tests")
 @allure.feature("Aggregations")
 @allure.story('Sum of Intervals')
-@allure.tag('ALGORITHMS', 'AGGREGATIONS', 'ARITHMETIC', 'MATHEMATICS', 'NUMBERS', 'INTEGERS')
+@allure.tag('ALGORITHMS',
+            'AGGREGATIONS',
+            'ARITHMETIC',
+            'MATHEMATICS',
+            'NUMBERS',
+            'INTEGERS')
 @allure.link(url='https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/python',
              name='Source/Kata')
 class SumOfIntervalsTestCase(unittest.TestCase):
