@@ -21,7 +21,7 @@ Subpackages
    kyu_4.sum_by_factors.module
    kyu_4.sum_of_intervals.module
    kyu_4.the_greatest_warrior.module
-   kyu_4.validate_sudoku_with_size
+   kyu_4.validate_sudoku_with_size.module
 
 Module contents
 ---------------

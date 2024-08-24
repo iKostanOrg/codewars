@@ -1,6 +1,10 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Validate Sudoku with size `NxN`
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 # PUZZLES ARRAYS GAMES ALGORITHMS VALIDATION
 
@@ -16,7 +20,11 @@ from kyu_4.validate_sudoku_with_size.sudoku import Sudoku
 @allure.sub_suite("Unit Tests")
 @allure.feature("Control Flow")
 @allure.story('Validate Sudoku with size `NxN`')
-@allure.tag('PUZZLES', 'ARRAYS', 'GAMES', 'ALGORITHMS', 'VALIDATION')
+@allure.tag('PUZZLES',
+            'ARRAYS',
+            'GAMES',
+            'ALGORITHMS',
+            'VALIDATION')
 @allure.link(url='https://www.codewars.com/kata/540afbe2dc9f615d5e000425/train/python',
              name='Source/Kata')
 class SudokuTestCase(unittest.TestCase):
