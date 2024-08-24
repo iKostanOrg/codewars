@@ -1,7 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sudoku Solution Validator
 
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 # ALGORITHMS DATA STRUCTURES VALIDATION
 
 import allure
@@ -16,7 +18,9 @@ from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("Validation")
 @allure.story('Sudoku Solution Validator')
-@allure.tag('ALGORITHMS', 'DATA STRUCTURES', 'VALIDATION')
+@allure.tag('ALGORITHMS',
+            'DATA STRUCTURES',
+            'VALIDATION')
 @allure.link(url='https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python',
              name='Source/Kata')
 class ValidSolutionTestCase(unittest.TestCase):
