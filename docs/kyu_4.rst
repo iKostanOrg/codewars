@@ -18,7 +18,7 @@ Subpackages
    kyu_4.strings_mix.module
    kyu_4.strip_comments.module
    kyu_4.sudoku_solution_validator.module
-   kyu_4.sum_by_factors
+   kyu_4.sum_by_factors.module
    kyu_4.sum_of_intervals
    kyu_4.the_greatest_warrior
    kyu_4.validate_sudoku_with_size
