@@ -7,5 +7,5 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   kuy_4.sum_of_intervals.readme
-   kuy_4.sum_of_intervals
+   kyu_4.sum_of_intervals.readme
+   kyu_4.sum_of_intervals
