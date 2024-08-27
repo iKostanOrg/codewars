@@ -1,0 +1,47 @@
+---
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+# Configuring Dependabot for a Python project
+# https://til.simonwillison.net/github/dependabot-python-setup
+
+version: 2
+updates:
+  # BUG: Dependabot couldn't fetch path-based dependencies (pip)
+  # https://github.com/dependabot/dependabot-core/issues/9554
+  - package-ecosystem: "pip"
+    # Specify the root directories
+    directories:
+      - "/"
+      - "/docs/sphinx_requirements.txt"
+    schedule:
+      interval: "daily"
+    groups:
+      common:
+        patterns:
+          - pip
+          - flake8
+          - mypy
+          - pylint
+      pip-tools:
+        patterns:
+          - pip-tools
+      pipenv:
+        patterns:
+          - pipfile
+          - pipenv
+    # Labels on pull requests for version updates only
+    labels:
+      - 'pip'
+      - "pip dependencies"
+      - "python dependencies"
+  # Enable version updates for GitHub actions
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows"
+    schedule:
+      interval: "daily"
+    # Labels on pull requests for version updates only
+    labels:
+      - "GitHub actions versions"

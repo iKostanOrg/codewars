@@ -22,7 +22,6 @@ kyu\_5.find\_the\_smallest.test\_smallest module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

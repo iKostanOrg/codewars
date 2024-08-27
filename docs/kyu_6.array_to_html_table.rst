@@ -4,13 +4,14 @@ kyu\_6.array\_to\_html\_table package
 Submodules
 ----------
 
-kyu\_6.array\_to\_html\_table.test\_to\_table module
-----------------------------------------------------
+kyu\_6.array\_to\_html\_table.test\_list\_to\_html\_table module
+----------------------------------------------------------------
 
-.. automodule:: kyu_6.array_to_html_table.test_to_table
+.. automodule:: kyu_6.array_to_html_table.test_list_to_html_table
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.array\_to\_html\_table.to\_table module
 ----------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.array\_to\_html\_table.to\_table module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -22,7 +22,6 @@ kyu\_4.sum\_by\_factors.test\_sum\_for\_list module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

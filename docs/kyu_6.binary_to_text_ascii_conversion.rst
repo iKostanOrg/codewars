@@ -11,6 +11,7 @@ kyu\_6.binary\_to\_text\_ascii\_conversion.binary\_to\_string module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.binary\_to\_text\_ascii\_conversion.test\_binary\_to\_string module
 --------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.binary\_to\_text\_ascii\_conversion.test\_binary\_to\_string module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

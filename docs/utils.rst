@@ -1,29 +1,12 @@
-utils package
+utils module
 =============
 
 Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
-   utils.primes
-
-Submodules
-----------
-
-utils.log\_func module
-----------------------
-
-.. automodule:: utils.log_func
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-Module contents
----------------
-
-.. automodule:: utils
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   utils.readme
+   utils.scripts
+   utils.primes.module

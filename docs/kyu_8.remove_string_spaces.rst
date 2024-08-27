@@ -11,6 +11,7 @@ kyu\_8.remove\_string\_spaces.remove\_string\_spaces module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.remove\_string\_spaces.test\_remove\_string\_spaces module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.remove\_string\_spaces.test\_remove\_string\_spaces module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -. Permutations
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def permutations(string: str) -> list:

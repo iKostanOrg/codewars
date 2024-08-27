@@ -11,6 +11,7 @@ kyu\_7.fun\_with\_lists\_length.length module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.fun\_with\_lists\_length.node module
 -------------------------------------------
@@ -19,6 +20,7 @@ kyu\_7.fun\_with\_lists\_length.node module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.fun\_with\_lists\_length.test\_length module
 ---------------------------------------------------
@@ -27,7 +29,7 @@ kyu\_7.fun\_with\_lists\_length.test\_length module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -36,3 +38,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

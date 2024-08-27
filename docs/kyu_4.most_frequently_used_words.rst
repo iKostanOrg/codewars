@@ -22,7 +22,6 @@ kyu\_4.most\_frequently\_used\_words.test\_top\_3\_words module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

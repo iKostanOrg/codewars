@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def to_alternating_case(string: str) -> str:
@@ -10,5 +13,4 @@ def to_alternating_case(string: str) -> str:
     :param string:
     :return:
     """
-
     return ''.join((char.upper() if char.islower() else char.lower()) for char in string)

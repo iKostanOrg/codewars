@@ -11,6 +11,7 @@ kyu\_6.string\_subpattern\_recognition\_2.has\_subpattern module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.string\_subpattern\_recognition\_2.test\_has\_subpattern module
 ----------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.string\_subpattern\_recognition\_2.test\_has\_subpattern module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

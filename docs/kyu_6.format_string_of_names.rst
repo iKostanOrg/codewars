@@ -22,7 +22,6 @@ kyu\_6.format\_string\_of\_names.test\_namelist module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS
 
@@ -10,6 +9,7 @@ from utils.log_func import print_log
 from kyu_8.make_upper_case.make_upper_case import make_upper_case
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -19,6 +19,7 @@ from kyu_8.make_upper_case.make_upper_case import make_upper_case
 @allure.tag('FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class MakeUpperCaseTestCase(unittest.TestCase):
     """
     Testing make_upper_case function

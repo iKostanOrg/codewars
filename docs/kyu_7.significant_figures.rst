@@ -11,6 +11,7 @@ kyu\_7.significant\_figures.number\_of\_sigfigs module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.significant\_figures.test\_number\_of\_sigfigs module
 ------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.significant\_figures.test\_number\_of\_sigfigs module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -1,9 +1,10 @@
 """
-Testing Calculator class
+Testing for -> Calculator class
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-# Created by Egor Kostan.
-# GitHub: https://github.com/ikostan
 # ALGORITHMS PARSING STRINGS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS
 
 import allure
@@ -18,8 +19,11 @@ from kyu_3.calculator.calculator import Calculator
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Calculator')
-@allure.tag('ALGORITHMS', 'PARSING', 'STRINGS',
-            'EXPRESSIONS', 'BASIC LANGUAGE FEATURES',
+@allure.tag('ALGORITHMS',
+            'PARSING',
+            'STRINGS',
+            'EXPRESSIONS',
+            'BASIC LANGUAGE FEATURES',
             'FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/5235c913397cbf2508000048/train/python',
              name='Source/Kata')
@@ -31,9 +35,10 @@ class CalculatorTestCase(unittest.TestCase):
     def test_calculator(self):
         """
         Testing Calculator class
-
-        A simple calculator that given a string of operators (), +, -, *, /
+        A simple calculator that given a string of operators '()', '+', '-', '*', '/'
         and numbers separated by spaces will return the value of that expression
+
+        :return: None
         """
 
         allure.dynamic.title("Testing Calculator class")
@@ -43,7 +48,7 @@ class CalculatorTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>"
-                                        "1. given a string of operators (), +, -, *, / "
+                                        "1. given a string of operators '(), +, -, *, /'"
                                         "and numbers separated by spaces<br/>"
                                         "2. the calculator should return the value of that expression"
                                         "</p>")

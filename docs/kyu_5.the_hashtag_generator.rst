@@ -11,6 +11,7 @@ kyu\_5.the\_hashtag\_generator.hashtag\_generator module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.the\_hashtag\_generator.test\_generate\_hashtag module
 -------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.the\_hashtag\_generator.test\_generate\_hashtag module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

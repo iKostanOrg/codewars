@@ -1,5 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Line Safari - Is that a line?
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 

@@ -11,6 +11,7 @@ kyu\_6.row\_of\_the\_odd\_triangle.odd\_row module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.row\_of\_the\_odd\_triangle.test\_odd\_row module
 --------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.row\_of\_the\_odd\_triangle.test\_odd\_row module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

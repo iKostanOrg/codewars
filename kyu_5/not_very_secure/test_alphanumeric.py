@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Not very secure
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # BUGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES FUNDAMENTALS STRINGS
 
@@ -31,13 +33,14 @@ class AlphanumericTestCase(unittest.TestCase):
         various test inputs
 
         The string has the following conditions
-        to be alphanumeric only:
+        to be alphanumeric only
 
         1. At least one character ("" is not valid)
-        2. Allowed characters are uppercase / lowercase
+        2. Allowed characters are uppercase or lowercase
            latin letters and digits from 0 to 9
-        3. No whitespaces / underscore / special chars
-        :return:
+        3. No whitespaces or underscore or special chars
+
+        :return: None
         """
 
         allure.dynamic.title("Testing alphanumeric function")

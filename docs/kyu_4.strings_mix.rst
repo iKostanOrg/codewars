@@ -22,7 +22,6 @@ kyu\_4.strings\_mix.test\_mix module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

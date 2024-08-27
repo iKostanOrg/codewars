@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Sports League Table Ranking
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import Dict
 
@@ -21,9 +23,9 @@ def compute_ranks(number: int, games: list) -> list:
     number of points, the second criteria comes into play and so on. Finally, if all
     criteria are the same, the teams share a place.
 
-    :param number:
-    :param games:
-    :return:
+    :param number: int
+    :param games: list
+    :return: list
     """
 
     if not games:

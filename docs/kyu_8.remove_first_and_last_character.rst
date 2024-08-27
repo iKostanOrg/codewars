@@ -11,6 +11,7 @@ kyu\_8.remove\_first\_and\_last\_character.remove\_char module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.remove\_first\_and\_last\_character.test\_remove\_char module
 --------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.remove\_first\_and\_last\_character.test\_remove\_char module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -11,6 +11,7 @@ kyu\_7.fill\_the\_hard\_disk\_drive.save module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.fill\_the\_hard\_disk\_drive.test\_save module
 -----------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.fill\_the\_hard\_disk\_drive.test\_save module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
