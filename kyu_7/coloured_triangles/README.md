@@ -41,8 +41,8 @@ You will be given the first row of the triangle as a string, and it is your job 
 return the final colour which would appear in the bottom row as a string. In the
 case of the example above, you would the given *RRGBRGBB* you should return *G*.
 
-- The input string will only contain the uppercase letters *R, G, B* and there will be
-at least one letter, so you do not have to test for invalid input.
+- The input string will only contain the uppercase letters *R, G, B* and there
+will be at least one letter, so you do not have to test for invalid input.
 
 - If you are only  given one colour as the input, return that colour.
 
