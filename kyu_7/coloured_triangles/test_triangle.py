@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # Logic Strings Algorithms
 
-import allure  # pylint: disable=import-error
 import unittest
+import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_7.coloured_triangles.solution_for_triangle import triangle
 
@@ -29,13 +29,13 @@ class TriangleTestCase(unittest.TestCase):
     Testing triangle function
     """
 
-    def test_basic(self):
+    def test_triangle(self):
         """
         Basic test case
         :return:
         """
 
-        with allure.step("Test basic string and verify the output"):
+        with allure.step("Enter test string and verify the output"):
             test_data = [
                 ('GB', 'R'),
                 ('RRR', 'R'),
@@ -43,20 +43,6 @@ class TriangleTestCase(unittest.TestCase):
                 ('RBRGBRB', 'G'),
                 ('RBRGBRBGGRRRBGBBBGG', 'G'),
                 ('B', 'B'),
-            ]
-
-            for string, expected in test_data:
-                print_log(string=string, expected=expected)
-                self.assertEqual(expected, triangle(string))
-
-    def test_random(self):
-        """
-        Advanced/random test case
-        :return:
-        """
-
-        with allure.step("Test advanced string and verify the output"):
-            test_data = [
                 ('BGBGB', 'R'),
                 ('BBRRBRGBRRBRGRRBGGRRBBGBGGRGGB', 'G'),
                 ('RB', 'G'),
