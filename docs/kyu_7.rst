@@ -11,6 +11,7 @@ Subpackages
    kyu_7.always_perfect
    kyu_7.basic_math_add_or_subtract
    kyu_7.beginner_series_sum_of_numbers
+   kyu_7.coloured_triangles.module
    kyu_7.disemvowel_trolls
    kyu_7.easy_line
    kyu_7.factorial
