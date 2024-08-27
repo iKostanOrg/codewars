@@ -35,7 +35,7 @@ def triangle(row) -> str:
         return row
 
     while len(row) > 1:
-        row_list = [c for c in row]
+        row_list = list(c for c in row)
         row = ''
 
         for i in range(len(row_list) - 1):
