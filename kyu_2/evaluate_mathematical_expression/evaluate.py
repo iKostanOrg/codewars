@@ -43,7 +43,7 @@ def process_math_expression(string: str, operators: list) -> str:
     """
     strings = [s for s in string.split(' ') if bool(s != '+')]
 
-    while any((s in operators) for s in strings):
+    while any(s in operators for s in strings):
         for i, char in enumerate(strings):
             if char in operators:
                 calculate(i, char, strings)
@@ -171,7 +171,7 @@ def process_duplicate_minus(string: str) -> str:
                     del strings[i + 1]
                     break
 
-                if any([(True if t.isdigit() else False) for t in strings[i + 1]]):
+                if any([t.isdigit() for t in strings[i + 1]]):
                     done = False
                     strings[i] = str(float(strings[i + 1]) * (-1))
                     del strings[i + 1]
