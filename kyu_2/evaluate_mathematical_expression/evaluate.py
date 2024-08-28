@@ -12,6 +12,14 @@ OPERATORS = ['*', '/', '+', '-']
 
 
 def calculate(i: int, char: str, strings: list) -> None:
+    """
+    Calculate math expression
+
+    :param i: int
+    :param char: str
+    :param strings: list
+    :return: None
+    """
     a = float(strings[i - 1])
     b = float(strings[i + 1])
 
@@ -26,6 +34,13 @@ def calculate(i: int, char: str, strings: list) -> None:
 
 
 def process_math_expression(string: str, operators: list) -> str:
+    """
+    Process math expression
+
+    :param string: str
+    :param operators: list
+    :return: str
+    """
     strings = [s for s in string.split(' ') if s != '+']
 
     while any((True if s in operators else False) for s in strings):
@@ -38,6 +53,12 @@ def process_math_expression(string: str, operators: list) -> str:
 
 
 def normalize_string(string: str) -> str:
+    """
+    Normalizing string input
+
+    :param string: str
+    :return: str
+    """
     strings = list()
     string_temp = ''.join([s for s in string if s != ' '])
 
@@ -76,7 +97,14 @@ def normalize_string(string: str) -> str:
     return ' '.join([s for s in strings if s != ''])
 
 
-def process_brakets(string):
+def process_brackets(string: str) -> str:
+    """
+    Process brackets in order to convert
+    input string into math expression
+
+    :param string: str
+    :return: str
+    """
     strings = string.split(' ')
 
     while '(' in strings:
@@ -102,6 +130,12 @@ def process_brakets(string):
 
 
 def process_duplicate_minus(string: str) -> str:
+    """
+    Eliminate duplicate minus
+
+    :param string: str
+    :return: str
+    """
     done = False
     strings = string.split(' ')
 
@@ -131,9 +165,15 @@ def process_duplicate_minus(string: str) -> str:
 
 
 def calc(string: str) -> float:
+    """
+    Calculate math expression from input string
+
+    :param string: str
+    :return: float
+    """
     string = normalize_string(string)
     string = ' '.join(string.split('+'))
-    string = process_brakets(string)
+    string = process_brackets(string)
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
     string = str(sum([float(s) for s in string.split(' ')]))
