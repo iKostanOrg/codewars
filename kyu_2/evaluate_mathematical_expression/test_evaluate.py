@@ -6,10 +6,12 @@ GitHub: https://github.com/ikostan
 """
 
 
-# ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS PARSING STRINGS
+# ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS
+# BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS
+# PARSING STRINGS
 
-import allure
 import unittest
+import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_2.evaluate_mathematical_expression.evaluate import calc
 
@@ -84,10 +86,8 @@ class CalcTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}), "
-                             "calculate the result ({}) and "
-                             "compare vs expected ({})".format(string,
-                                                               actual_result,
-                                                               expected)):
+            with allure.step(f"Enter a test string ({string}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)
