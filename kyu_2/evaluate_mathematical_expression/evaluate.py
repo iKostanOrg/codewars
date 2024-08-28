@@ -41,7 +41,7 @@ def process_math_expression(string: str, operators: list) -> str:
     :param operators: list
     :return: str
     """
-    strings = [s for s in string.split(' ') if s != '+']
+    strings = [s for s in string.split(' ') if bool(s != '+')]
 
     while any((True if s in operators else False) for s in strings):
         for i, char in enumerate(strings):
@@ -97,6 +97,27 @@ def normalize_string(string: str) -> str:
     return ' '.join([s for s in strings if s != ''])
 
 
+def bracket_start(strings: list) -> int:
+    """
+    Return index of first (open) bracket
+
+    :param strings: list
+    :return: int
+    """
+    return ([i for i, strg in enumerate(strings) if strg == '('])[-1]
+
+
+def bracket_end(strings: list, start: int) -> int:
+    """
+    Return index of last (close) bracket
+
+    :param strings:
+    :param start:
+    :return:
+    """
+    return strings[start:].index(')') + start
+
+
 def process_brackets(string: str) -> str:
     """
     Process brackets in order to convert
@@ -108,8 +129,8 @@ def process_brackets(string: str) -> str:
     strings = string.split(' ')
 
     while '(' in strings:
-        start = ([i for i, strg in enumerate(strings) if strg == '('])[-1]
-        end = strings[start:].index(')') + start
+        start = bracket_start(strings=strings)
+        end = bracket_end(strings=strings, start=start)
 
         if len(strings[start + 1: end]) < 3:
             del strings[end]
