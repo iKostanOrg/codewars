@@ -59,7 +59,7 @@ def normalize_string(string: str) -> str:
     :param string: str
     :return: str
     """
-    strings = list()
+    strings = []
     string_temp = ''.join([s for s in string if s != ' '])
 
     while string_temp != '':
@@ -170,7 +170,8 @@ def process_duplicate_minus(string: str) -> str:
                     strings[i] = '+'
                     del strings[i + 1]
                     break
-                elif any([(True if t.isdigit() else False) for t in strings[i + 1]]):
+
+                if any([(True if t.isdigit() else False) for t in strings[i + 1]]):
                     done = False
                     strings[i] = str(float(strings[i + 1]) * (-1))
                     del strings[i + 1]
