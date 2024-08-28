@@ -43,7 +43,7 @@ def process_math_expression(string: str, operators: list) -> str:
     """
     strings = [s for s in string.split(' ') if bool(s != '+')]
 
-    while any((True if s in operators else False) for s in strings):
+    while any((s in operators) for s in strings):
         for i, char in enumerate(strings):
             if char in operators:
                 calculate(i, char, strings)
