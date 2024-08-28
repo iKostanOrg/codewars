@@ -172,7 +172,8 @@ def process_duplicate_minus(string: str) -> str:
                     del strings[i + 1]
                     break
 
-                if any([t.isdigit() for t in strings[i + 1]]):
+                str_temp = [t.isdigit() for t in strings[i + 1]]
+                if any(str_temp):
                     done = False
                     strings[i] = str(float(strings[i + 1]) * (-1))
                     del strings[i + 1]
