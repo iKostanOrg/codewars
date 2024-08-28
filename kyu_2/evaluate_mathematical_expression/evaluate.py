@@ -118,16 +118,14 @@ def bracket_end(strings: list, start: int) -> int:
     return strings[start:].index(')') + start
 
 
-def process_brackets(string: str) -> str:
+def process_brackets(strings: list) -> str:
     """
     Process brackets in order to convert
     input string into math expression
 
-    :param string: str
+    :param strings: list
     :return: str
     """
-    strings = string.split(' ')
-
     while '(' in strings:
         start = bracket_start(strings=strings)
         end = bracket_end(strings=strings, start=start)
@@ -197,7 +195,8 @@ def calc(string: str) -> float:
     """
     string = normalize_string(string)
     string = ' '.join(string.split('+'))
-    string = process_brackets(string)
+    strings = string.split(' ')
+    string = process_brackets(strings)
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
     string = string.split(' ')
