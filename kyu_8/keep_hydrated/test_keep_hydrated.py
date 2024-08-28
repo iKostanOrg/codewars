@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS ALGORITHMS MATHEMATICS NUMBERS
 
@@ -10,6 +9,7 @@ from utils.log_func import print_log
 from kyu_8.keep_hydrated.keep_hydrated import litres
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Math")
@@ -22,6 +22,7 @@ from kyu_8.keep_hydrated.keep_hydrated import litres
             'NUMBERS')
 @allure.link(url='https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python',
              name='Source/Kata')
+# pylint: disable=R0801
 class KeepHydratedTestCase(unittest.TestCase):
     """
     Testing litres function

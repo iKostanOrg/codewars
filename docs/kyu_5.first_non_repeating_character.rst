@@ -11,6 +11,7 @@ kyu\_5.first\_non\_repeating\_character.first\_non\_repeating\_letter module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.first\_non\_repeating\_character.test\_first\_non\_repeating\_letter module
 ----------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.first\_non\_repeating\_character.test\_first\_non\_repeating\_letter modu
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

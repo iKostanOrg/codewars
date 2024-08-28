@@ -1,9 +1,11 @@
 """
 Testing calc method
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+
 # ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS PARSING STRINGS
 
 import allure
@@ -18,9 +20,14 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Evaluate mathematical expression')
-@allure.tag('ALGORITHMS', 'MATHEMATICS', 'NUMBERS',
-            'EXPRESSIONS', 'BASIC LANGUAGE FEATURES',
-            'FUNDAMENTALS', 'OPERATORS', 'PARSING STRINGS')
+@allure.tag('ALGORITHMS',
+            'MATHEMATICS',
+            'NUMBERS',
+            'EXPRESSIONS',
+            'BASIC LANGUAGE FEATURES',
+            'FUNDAMENTALS',
+            'OPERATORS',
+            'PARSING STRINGS')
 @allure.link(url='https://www.codewars.com/kata/52a78825cdfc2cfc87000005/train/python',
              name='Source/Kata')
 class CalcTestCase(unittest.TestCase):

@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS ARRAYS FUNDAMENTALS RANGES BASIC LANGUAGE FEATURES LISTS DATA STRUCTURES
 
@@ -10,17 +9,23 @@ from utils.log_func import print_log
 from kyu_8.count_the_monkeys.monkey_count import monkey_count
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Count the Monkeys!')
-@allure.tag('ALGORITHMS', 'ARRAYS', 'FUNDAMENTALS',
-            'RANGES', 'BASIC LANGUAGE FEATURES',
-            'LISTS' 'DATA STRUCTURES')
+@allure.tag('ALGORITHMS',
+            'ARRAYS',
+            'FUNDAMENTALS',
+            'RANGES',
+            'BASIC LANGUAGE FEATURES',
+            'LISTS',
+            'DATA STRUCTURES')
 @allure.link(url='https://www.codewars.com/kata/count-the-monkeys/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class MonkeyCountTestCase(unittest.TestCase):
     """
     Testing monkey_count function

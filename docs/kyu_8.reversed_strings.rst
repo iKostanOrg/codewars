@@ -11,6 +11,7 @@ kyu\_8.reversed\_strings.reversed\_strings module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.reversed\_strings.test\_reversed\_strings module
 -------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.reversed\_strings.test\_reversed\_strings module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -1,16 +1,18 @@
 """
-Create a simple calculator that given a string
-of operators (), +, -, *, / and numbers separated
-by spaces returns the value of that expression
-"""
+Solution for -> Calculator
 
-# Created by Egor Kostan.
-# GitHub: https://github.com/ikostan
+Create a simple calculator that given a string
+of operators '()', '+', '-', '*', '/'  and numbers separated
+by spaces returns the value of that expression.
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 class Calculator:
     """
-    Given string of operators (), +, -, *, /
+    Given string of operators '()', '+', '-', '*', '/'
     and numbers separated by spaces.
     Returns the value of that expression.
     """
@@ -21,10 +23,10 @@ class Calculator:
         1. Perform math operation
         2. Reorganize math expression
 
-        :param i: char (math operation) index
-        :param char: math operation
-        :param strings: math expression
-        :return: result
+        :param i: (int) math operation index
+        :param char: (str) math operation
+        :param strings: (list) math expression
+        :return: None
         """
 
         a = float(strings[i - 1])
@@ -47,11 +49,11 @@ class Calculator:
 
     def __process_math_expression(self, string: str, operators: list) -> str:
         """
-        Perform all operation with:
-        multiplications, divisions, additions and subtractions
+        Perform all operation with multiplications, divisions, additions and subtractions
 
         :param string: input string
-        :return: output string with no '*', '/', '+', '-'
+        :param operators: (list) contains math operators
+        :return: output string with no ‘*’, ‘/’, ‘+’, ‘-‘
         """
         strings = string.split(' ')
 
@@ -68,9 +70,8 @@ class Calculator:
         """
         Returns value of the given expression
 
-        :param string: a string of operators (), +, -, *, /
-                       and numbers separated by spaces
-        :return: calculated value of the given expression
+        :param string: input string to evaluate
+        :return: (float) result
         """
         string = self.__process_math_expression(string, ['*', '/'])
         result: str = self.__process_math_expression(string, ['+', '-'])

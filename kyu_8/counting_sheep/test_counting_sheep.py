@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS ARRAYS
 
@@ -10,15 +9,18 @@ from utils.log_func import print_log
 from kyu_8.counting_sheep.counting_sheep import count_sheeps
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Counting sheep...')
-@allure.tag('FUNDAMENTALS', 'ARRAYS')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS')
 @allure.link(url='https://www.codewars.com/kata/54edbc7200b811e956000556/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class CountingSheepTestCase(unittest.TestCase):
     """
     Testing 'count_sheeps' function
@@ -32,9 +34,11 @@ class CountingSheepTestCase(unittest.TestCase):
         We need a function that counts the
         number of sheep present in the array
         (true means present).
+
         :return:
         """
 
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'count_sheeps' function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -42,7 +46,7 @@ class CountingSheepTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p></p>")
-
+        # pylint: enable=R0801
         lst = [True, True, True, False,
                True, True, True, True,
                True, False, True, False,

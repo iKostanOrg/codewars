@@ -22,7 +22,6 @@ kyu\_6.sort\_the\_odd.test\_sort\_array module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

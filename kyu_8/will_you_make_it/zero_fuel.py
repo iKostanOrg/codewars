@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Will you make it?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def zero_fuel(distance_to_pump: int, mpg: int, fuel_left: int) -> bool:
@@ -15,9 +17,9 @@ def zero_fuel(distance_to_pump: int, mpg: int, fuel_left: int) -> bool:
     (1 in Prolog) if it is possible and false (0 in Prolog)
     if not. The input values are always positive.
 
-    :param distance_to_pump:
-    :param mpg:
-    :param fuel_left:
-    :return:
+    :param distance_to_pump: int
+    :param mpg: int
+    :param fuel_left: int
+    :return: bool
     """
     return distance_to_pump <= mpg * fuel_left

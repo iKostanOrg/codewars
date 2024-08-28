@@ -1,6 +1,12 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Snail
+
+Returns the array elements arranged from outermost elements
+to the middle element, traveling clockwise.
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS ARRAYS
 
@@ -16,7 +22,9 @@ from kyu_4.snail.snail_sort import snail
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story("Snail")
-@allure.tag('ALGORITHMS', 'ARRAYS', 'LISTS')
+@allure.tag('ALGORITHMS',
+            'ARRAYS',
+            'LISTS')
 @allure.link(url='https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/python',
              name='Source/Kata')
 class SnailTestCase(unittest.TestCase):

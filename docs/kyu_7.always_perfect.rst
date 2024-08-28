@@ -11,6 +11,7 @@ kyu\_7.always\_perfect.check\_root module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.always\_perfect.test\_check\_root module
 -----------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.always\_perfect.test\_check\_root module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

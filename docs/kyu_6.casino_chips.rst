@@ -11,6 +11,7 @@ kyu\_6.casino\_chips.solve module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.casino\_chips.test\_solve module
 ---------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.casino\_chips.test\_solve module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

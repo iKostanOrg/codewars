@@ -11,6 +11,7 @@ kyu\_5.simple\_pig\_latin.pig\_it module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.simple\_pig\_latin.test\_pig\_it module
 ----------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.simple\_pig\_latin.test\_pig\_it module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

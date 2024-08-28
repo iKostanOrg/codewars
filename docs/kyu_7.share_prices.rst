@@ -11,6 +11,7 @@ kyu\_7.share\_prices.share\_price module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.share\_prices.test\_share\_price module
 ----------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.share\_prices.test\_share\_price module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

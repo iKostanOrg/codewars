@@ -1,5 +1,9 @@
-# Created by Egor Kostan.
-# GitHub: https://github.com/ikostan
+"""
+Solution for -> Battleship field validator
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def validate_battlefield(field: list) -> bool:

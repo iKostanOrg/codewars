@@ -11,6 +11,7 @@ kyu\_5.valid\_parentheses.test\_valid\_parentheses module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.valid\_parentheses.valid\_parentheses module
 ---------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.valid\_parentheses.valid\_parentheses module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

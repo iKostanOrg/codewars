@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Maximum Multiple
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import unittest
 import allure
@@ -16,7 +18,12 @@ from kyu_7.maximum_multiple.maximum_multiple import max_multiple
 @allure.sub_suite("Unit Tests")
 @allure.feature("Control Flow")
 @allure.story('Maximum Multiple')
-@allure.tag()
+@allure.tag('FUNDAMENTALS',
+            'NUMBERS',
+            'BASIC LANGUAGE FEATURES',
+            'ARRAYS',
+            'LOOPS',
+            'CONTROL FLOW')
 @allure.link(url='',
              name='Source/Kata')
 class MaximumMultipleTestCase(unittest.TestCase):
@@ -29,18 +36,6 @@ class MaximumMultipleTestCase(unittest.TestCase):
         Testing max_multiple function with
         various test data
 
-        Given a Divisor and a Bound ,
-        Find the largest integer N , Such That ,
-
-        Conditions:
-        1. N is divisible by divisor
-        2. N is less than or equal to bound
-        3. N is greater than 0.
-
-        Notes:
-        1. The parameters (divisor, bound)
-            passed to the function are only positve values .
-        2. It's guaranteed that a divisor is Found .
         :return:
         """
 

@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Will there be enough space?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def enough(cap: int, on: int, wait: int) -> int:
@@ -17,10 +19,10 @@ def enough(cap: int, on: int, wait: int) -> int:
     on is the number of people on the bus.
     wait is the number of people waiting to get on to the bus.
 
-    :param cap:
-    :param on:
-    :param wait:
-    :return:
+    :param cap: int
+    :param on: int
+    :param wait: int
+    :return: int
     """
     if cap - on < wait:
         return wait - (cap - on)

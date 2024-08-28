@@ -1,5 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Rail Fence Cipher: Encoding and Decoding
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def get_rails(string: str, n: int) -> list:

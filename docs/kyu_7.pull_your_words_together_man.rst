@@ -11,6 +11,7 @@ kyu\_7.pull\_your\_words\_together\_man.sentencify module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.pull\_your\_words\_together\_man.test\_sentencify module
 ---------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.pull\_your\_words\_together\_man.test\_sentencify module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS
 
@@ -31,6 +30,7 @@ class GreekComparatorTestCase(unittest.TestCase):
         :return:
         """
 
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'greek_comparator' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -41,7 +41,7 @@ class GreekComparatorTestCase(unittest.TestCase):
                                         "which should return a negative, zero or positive number depending on "
                                         "whether the first argument is considered smaller than, equal to, or "
                                         "larger than the second argument</p>")
-
+        # pylint: enable=R0801
         test_data = [
             ('alpha', 'beta', '< 0'),
             ('psi', 'psi', '== 0'),

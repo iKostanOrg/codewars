@@ -1,8 +1,10 @@
-"""The Greatest Warrior"""
+"""
+Solution for -> The Greatest Warrior
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 RANKS = ("Pushover",
          "Novice",

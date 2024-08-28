@@ -31,7 +31,6 @@ kyu\_4.the\_greatest\_warrior.warrior module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

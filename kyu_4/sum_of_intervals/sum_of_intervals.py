@@ -1,3 +1,11 @@
+"""
+Solution for -> Sum of Intervals
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
+
 def sum_of_intervals(intervals: list) -> int:
     """
     Accepts an array of intervals, and returns

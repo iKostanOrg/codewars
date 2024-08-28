@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> sum_for_list function
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from utils.primes.primes_generator import gen_primes
 

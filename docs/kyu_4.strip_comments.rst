@@ -11,6 +11,7 @@ kyu\_4.strip\_comments.solution module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_4.strip\_comments.test\_solution module
 --------------------------------------------
@@ -19,7 +20,7 @@ kyu\_4.strip\_comments.test\_solution module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

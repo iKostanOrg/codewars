@@ -1,9 +1,10 @@
 """
 Testing Walker Class
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import allure
@@ -19,7 +20,8 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Line Safari - Is that a line?')
-@allure.tag('ALGORITHMS', 'STRINGS')
+@allure.tag('ALGORITHMS',
+            'STRINGS')
 @allure.link(
     url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python',
     name='Source/Kata')
