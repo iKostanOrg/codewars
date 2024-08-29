@@ -7,7 +7,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-DIRECTIONS = {
+DIRECTIONS: dict = {
     'right': 'down',
     'down': 'left',
     'left': 'up',
@@ -23,7 +23,7 @@ def right(spiral: list, coordinates: dict) -> bool:
     :param spiral: NxN spiral 2D array
     :return: boolean 'done'
     """
-    done = True
+    done: bool = True
 
     while coordinates['col'] < len(spiral[coordinates['row']]):
 
@@ -86,7 +86,7 @@ def down(spiral: list, coordinates: dict) -> bool:
     :param spiral: NxN spiral 2D array
     :return: boolean 'done'
     """
-    done = True
+    done: bool = True
 
     while coordinates['row'] < len(spiral):
 
@@ -122,7 +122,7 @@ def left(spiral: list, coordinates: dict) -> bool:
     :param spiral: NxN spiral 2D array
     :return: bool
     """
-    done = True
+    done: bool = True
 
     while coordinates['col'] >= 0:
 
@@ -166,7 +166,7 @@ def up(spiral: list, coordinates: dict) -> bool:
     :param spiral: NxN spiral 2D array
     :return: boole
     """
-    done = True
+    done: bool = True
 
     while coordinates['row'] >= 0:
 
@@ -200,7 +200,7 @@ def set_initial_params(size: int) -> tuple:
         'row': 0,
         'col': 0
     }
-    done = False
+    done: bool = False
 
     return spiral, direction, coordinate, done
 
