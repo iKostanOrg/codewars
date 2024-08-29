@@ -229,9 +229,3 @@ class Walker:
         if col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-':
             return True
         return False
-
-    def __count_possible_directions(self) -> int:
-        return len([val for val in [self.__test_left(),
-                                    self.__test_right(),
-                                    self.__test_up(),
-                                    self.__test_down()] if val])
