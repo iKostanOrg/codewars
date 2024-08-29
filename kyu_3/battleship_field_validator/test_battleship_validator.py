@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS GAMES VALIDATION ARRAYS GAME BOARDS
 
-import allure
 import unittest
+import allure
 from kyu_3.battleship_field_validator.validator import validate_battlefield
 from utils.log_func import print_log
 
