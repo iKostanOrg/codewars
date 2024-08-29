@@ -37,7 +37,7 @@ def ship_counter_by_row(field: list, ships: dict):
     for index_row, row in enumerate(field):
         ship: list = []
         for index_col, cell in enumerate(row):
-            if field[index_row][index_col] == 1:
+            if row[index_col] == 1:
                 ship.append([index_row, index_col])
             else:
                 # Allowed ship sizes between 1 to 4 cells
@@ -72,9 +72,9 @@ def ship_counter_by_row(field: list, ships: dict):
 def ship_counter_by_col(field: list, ships: dict):
     # ship counter by col
     for index_col in range(0, len(field[0])):
-        ship: list = list()
+        ship: list = []
         for index_row, row in enumerate(field):
-            if field[index_row][index_col] == 1:
+            if row[index_col] == 1:
                 ship.append([index_row, index_col])
             else:
                 # Allowed ship sizes between 1 to 4 cells
