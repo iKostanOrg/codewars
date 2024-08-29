@@ -14,8 +14,8 @@ def validate_battlefield(field: list) -> bool:
     Elements in the array are numbers, 0 if the cell is free
     and 1 if occupied by ship.
 
-    :param field: list,  board game "Battleship" (2D list)
-    :return: bool, true if it has a valid disposition of ships, false otherwise
+    :param field: 2D list,  board game "Battleship"
+    :return: bool, true if there is a valid disposition of ships
     """
     counters: list = [row.count(1) for row in field]
     if sum(counters) != 20:
