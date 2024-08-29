@@ -33,7 +33,13 @@ def validate_battlefield(field: list) -> bool:
 
 
 def ship_counter_by_row(field: list, ships: dict):
-    # ship counter by row
+    """
+    Ship counter by row
+
+    :param field:
+    :param ships:
+    :return:
+    """
     for index_row, row in enumerate(field):
         ship: list = []
         for index_col, cell in enumerate(row):
@@ -70,7 +76,13 @@ def ship_counter_by_row(field: list, ships: dict):
 
 
 def ship_counter_by_col(field: list, ships: dict):
-    # ship counter by col
+    """
+    Ship counter by col
+
+    :param field:
+    :param ships:
+    :return:
+    """
     for index_col in range(0, len(field[0])):
         ship: list = []
         for index_row, row in enumerate(field):
