@@ -50,8 +50,8 @@ class CalculatorTestCase(unittest.TestCase):
                                         "<p>"
                                         "1. given a string of operators '(), +, -, *, /'"
                                         "and numbers separated by spaces<br/>"
-                                        "2. the calculator should return the value of that expression"
-                                        "</p>")
+                                        "2. the calculator should return the value of that "
+                                        "expression</p>")
 
         test_data = (
             ('127', 127),
