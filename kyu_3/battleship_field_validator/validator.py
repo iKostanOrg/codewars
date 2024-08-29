@@ -13,10 +13,11 @@ def validate_battlefield(field: list) -> bool:
     false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
     Elements in the array are numbers, 0 if the cell is free and 1 if occupied by ship.
 
-    :param field: board game "Battleship" (2D list)
-    :return: returns true if it has a valid disposition of ships, false otherwise
+    :param field: list,  board game "Battleship" (2D list)
+    :return: bool, returns true if it has a valid disposition of ships, false otherwise
     """
-    if sum([row.count(1) for row in field]) != 20:
+    counters: list = [row.count(1) for row in field]
+    if sum(counters) != 20:
         return False
 
     ships: dict = {
@@ -36,8 +37,8 @@ def ship_counter_by_row(field: list, ships: dict):
     """
     Ship counter by row
 
-    :param field:
-    :param ships:
+    :param field: list
+    :param ships: dict
     :return:
     """
     for index_row, row in enumerate(field):
@@ -60,7 +61,7 @@ def ship_counter_by_row(field: list, ships: dict):
                         ships[len(ship)].append(ship)
                     else:
                         return False
-                ship = []
+                ship: list = []
 
         # Allowed ship sizes between 1 to 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
@@ -79,8 +80,8 @@ def ship_counter_by_col(field: list, ships: dict):
     """
     Ship counter by col
 
-    :param field:
-    :param ships:
+    :param field: list
+    :param ships: dict
     :return:
     """
     for index_col in range(0, len(field[0])):
@@ -103,7 +104,7 @@ def ship_counter_by_col(field: list, ships: dict):
                         ships[len(ship)].append(ship)
                     else:
                         return False
-                ship = []
+                ship: list = []
 
         # Allowed ship sizes between 1 to 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
@@ -123,11 +124,11 @@ def is_valid_cell(ships: dict, field: list, cell: list, direction: str) -> bool:
     Validates if single cell result is valid
     (valid submarine or single ship cell)
 
-    :param ships: collection of valid ships (dict)
-    :param field: board game "Battleship" (list)
-    :param cell: candidate for single ship/submarine
-    :param direction: str -> horizontal, vertical, submarine
-    :return:
+    :param ships: dict, collection of valid ships (dict)
+    :param field: list, board game "Battleship" (list)
+    :param cell: list, candidate for single ship/submarine
+    :param direction: str, horizontal, vertical, submarine
+    :return: bool
     """
     row, col = cell[0], cell[1]
 
