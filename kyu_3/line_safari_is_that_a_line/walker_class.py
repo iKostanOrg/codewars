@@ -168,9 +168,10 @@ class Walker:
 
         # reset all directions
         self.__reset_direction()
-        print('prev: {}, pos: {}'.format(previous_position, self.position))
+        print(f'prev: {previous_position}, pos: {self.position}')
 
-        if self.position == '+' and (previous_position == '-' or previous_position == 'X'):
+        if self.position == '+' and (previous_position == '-'
+                                     or previous_position == 'X'):
             self.__direction['up'] = self.__test_up()
             self.__direction['down'] = self.__test_down()
         elif self.position == '+' and previous_position == '|':
@@ -183,7 +184,8 @@ class Walker:
             elif self.__position['row'] == self.__position['prev_row']:
                 self.__direction['up'] = self.__test_up()
                 self.__direction['down'] = self.__test_down()
-        elif self.position == '-' and (previous_position == '-' or previous_position == 'X'):
+        elif self.position == '-' and (previous_position == '-'
+                                       or previous_position == 'X'):
             if self.__position['col'] < self.__position['prev_col']:
                 self.__direction['left'] = self.__test_left()
             elif self.__position['col'] > self.__position['prev_col']:
@@ -193,7 +195,8 @@ class Walker:
                 self.__direction['left'] = self.__test_left()
             elif self.__position['col'] > self.__position['prev_col']:
                 self.__direction['right'] = self.__test_right()
-        elif self.position == '|' and (previous_position == '|' or previous_position == 'X'):
+        elif self.position == '|' and (previous_position == '|'
+                                       or previous_position == 'X'):
             if self.__position['row'] < self.__position['prev_row']:
                 self.__direction['up'] = self.__test_up()
             elif self.__position['row'] > self.__position['prev_row']:
