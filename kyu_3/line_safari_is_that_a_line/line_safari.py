@@ -43,7 +43,7 @@ def assert_x_has_rout(grid: list) -> bool:
 
         for col_i, char in enumerate(row):
             if char == 'X':
-                temp = list()
+                temp = []
                 # up
                 if row_i - 1 >= 0 and grid[row_i - 1][col_i] in 'X|+':
                     temp.append(True)
@@ -64,6 +64,11 @@ def assert_x_has_rout(grid: list) -> bool:
 
 
 def x_counter(grid: list) -> int:
+    """
+    Counter number of X
+    :param grid: list
+    :return: int
+    """
     counter = 0
     for row in grid:
         counter += row.count('X')
