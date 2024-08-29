@@ -38,7 +38,8 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
         Testing a method that takes a field for well-known board game "Battleship"
         as an argument and returns true if it has a valid disposition of ships,
         false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
-        Elements in the array are numbers, 0 if the cell is free and 1 if occupied by ship.
+        Elements in the array are numbers, 0 if the cell is free and 1 if occupied
+        by ship.
         """
 
         allure.dynamic.title("Testing validate_battlefield function")
@@ -48,10 +49,10 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>"
-                                        "Testing a method that takes a field for well-known "
-                                        "board game \"Battleship\" as an argument and returns "
-                                        "true if it has a valid disposition of ships, false "
-                                        "otherwise.</p>")
+                                        "Testing a method that takes a field for well-known"
+                                        " board game \"Battleship\" as an argument and"
+                                        " returns true if it has a valid disposition of"
+                                        " ships, false otherwise.</p>")
 
         test_data = (
             ([[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
