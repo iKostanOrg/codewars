@@ -1,8 +1,9 @@
-"""Testing 'mix' function"""
+"""
+Test for -> Strings Mix
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS STRINGS
 
@@ -18,7 +19,8 @@ from kyu_4.strings_mix.solution import mix
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story("Strings Mix")
-@allure.tag('FUNDAMENTALS', 'STRINGS')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS')
 @allure.link(
     url='https://www.codewars.com/kata/5629db57620258aa9d000014/train/python',
     name='Source/Kata')

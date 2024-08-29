@@ -11,6 +11,7 @@ kyu\_5.diophantine\_equation.solution module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.diophantine\_equation.test\_solution module
 --------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.diophantine\_equation.test\_solution module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -11,6 +11,7 @@ kyu\_5.josephus\_survivor.josephus\_survivor module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.josephus\_survivor.test\_josephus\_survivor module
 ---------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.josephus\_survivor.test\_josephus\_survivor module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

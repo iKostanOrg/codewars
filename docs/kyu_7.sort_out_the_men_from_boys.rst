@@ -11,6 +11,7 @@ kyu\_7.sort\_out\_the\_men\_from\_boys.men\_from\_boys module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.sort\_out\_the\_men\_from\_boys.test\_men\_from\_boys module
 -------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.sort\_out\_the\_men\_from\_boys.test\_men\_from\_boys module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

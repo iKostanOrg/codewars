@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Testing for altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -10,6 +13,7 @@ from utils.log_func import print_log
 from kyu_8.alternating_case.alternating_case import to_alternating_case
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -19,6 +23,7 @@ from kyu_8.alternating_case.alternating_case import to_alternating_case
 @allure.tag('FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/56efc695740d30f963000557/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class AlternatingCaseTestCase(unittest.TestCase):
     """
     Testing to_alternating_case function
@@ -29,7 +34,7 @@ class AlternatingCaseTestCase(unittest.TestCase):
         Testing to_alternating_case function
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing to_alternating_case function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -37,7 +42,7 @@ class AlternatingCaseTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Enter test string and verify the output"):
 
             test_data = [

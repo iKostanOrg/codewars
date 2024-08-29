@@ -11,6 +11,7 @@ kyu\_5.sum\_of\_pairs.sum\_pairs module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.sum\_of\_pairs.test\_sum\_pairs module
 ---------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.sum\_of\_pairs.test\_sum\_pairs module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

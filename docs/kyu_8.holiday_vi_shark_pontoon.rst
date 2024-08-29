@@ -11,6 +11,7 @@ kyu\_8.holiday\_vi\_shark\_pontoon.shark module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.holiday\_vi\_shark\_pontoon.test\_shark module
 -----------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.holiday\_vi\_shark\_pontoon.test\_shark module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

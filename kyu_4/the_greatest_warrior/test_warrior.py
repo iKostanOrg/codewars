@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> The Greatest Warrior -> test warrior
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
 # FUNDAMENTALS RULES
@@ -17,8 +20,12 @@ from kyu_4.the_greatest_warrior.warrior import Warrior
 @allure.sub_suite("Unit Tests")
 @allure.feature('Classes')
 @allure.story('The Greatest Warrior')
-@allure.tag('ALGORITHMS', 'CLASSES', 'BASIC LANGUAGE FEATURES',
-            'OBJECT-ORIENTED PROGRAMMING', 'FUNDAMENTALS', 'RULES')
+@allure.tag('ALGORITHMS',
+            'CLASSES',
+            'BASIC LANGUAGE FEATURES',
+            'OBJECT-ORIENTED PROGRAMMING',
+            'FUNDAMENTALS',
+            'RULES')
 @allure.link(
     url='https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python',
     name='Source/Kata')

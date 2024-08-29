@@ -11,6 +11,7 @@ kyu\_7.sum\_of\_two\_lowest\_int.sum\_two\_smallest\_int module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.sum\_of\_two\_lowest\_int.test\_sum\_two\_smallest\_numbers module
 -------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.sum\_of\_two\_lowest\_int.test\_sum\_two\_smallest\_numbers module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

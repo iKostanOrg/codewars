@@ -11,6 +11,7 @@ kyu\_6.rotate\_the\_letters\_of\_each\_element.group\_cities module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.rotate\_the\_letters\_of\_each\_element.test\_group\_cities module
 -------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.rotate\_the\_letters\_of\_each\_element.test\_group\_cities module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

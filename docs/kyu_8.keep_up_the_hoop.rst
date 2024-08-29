@@ -11,6 +11,7 @@ kyu\_8.keep\_up\_the\_hoop.hoop\_count module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.keep\_up\_the\_hoop.test\_hoop\_count module
 ---------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.keep\_up\_the\_hoop.test\_hoop\_count module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

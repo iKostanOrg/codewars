@@ -11,15 +11,16 @@ kyu\_7.maximum\_multiple.maximum\_multiple module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
-kyu\_7.maximum\_multiple.test\_maximum multiple module
-------------------------------------------------------
+kyu\_7.maximum\_multiple.test\_maximum\_multiple module
+-------------------------------------------------------
 
-.. automodule:: kyu_7.maximum_multiple.test_maximum multiple
+.. automodule:: kyu_7.maximum_multiple.test_maximum_multiple
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

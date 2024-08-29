@@ -1,9 +1,10 @@
 """
 Testing Battleship field validator
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-# Created by Egor Kostan.
-# GitHub: https://github.com/ikostan
 # ALGORITHMS GAMES VALIDATION ARRAYS GAME BOARDS
 
 import allure
@@ -18,7 +19,11 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Battleship field validator')
-@allure.tag('ALGORITHMS', 'GAMES', 'VALIDATION', 'ARRAYS', 'GAME BOARDS')
+@allure.tag('ALGORITHMS',
+            'GAMES',
+            'VALIDATION',
+            'ARRAYS',
+            'GAME BOARDS')
 @allure.link(url='https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7/train/python',
              name='Source/Kata')
 class BattleshipFieldValidatorTestCase(unittest.TestCase):

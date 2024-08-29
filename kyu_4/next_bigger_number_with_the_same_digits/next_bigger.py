@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Next bigger number with the same digits
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def next_bigger(n: int) -> int:

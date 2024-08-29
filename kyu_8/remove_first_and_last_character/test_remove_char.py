@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS  BASIC LANGUAGE FEATURES  STRINGS
 
@@ -10,6 +9,7 @@ from utils.log_func import print_log
 from kyu_8.remove_first_and_last_character.remove_char import remove_char
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -21,6 +21,7 @@ from kyu_8.remove_first_and_last_character.remove_char import remove_char
             'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class RemoveCharTestCase(unittest.TestCase):
     """
     Testing remove_char function

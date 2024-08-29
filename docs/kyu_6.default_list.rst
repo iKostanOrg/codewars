@@ -11,6 +11,7 @@ kyu\_6.default\_list.default\_list module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.default\_list.test\_default\_list module
 -----------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.default\_list.test\_default\_list module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

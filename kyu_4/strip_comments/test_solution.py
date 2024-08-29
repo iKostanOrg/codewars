@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Strip Comments
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS STRINGS
 
@@ -16,7 +19,8 @@ from kyu_4.strip_comments.solution import solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story("Strip Comments")
-@allure.tag('ALGORITHMS', 'STRINGS')
+@allure.tag('ALGORITHMS',
+            'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):

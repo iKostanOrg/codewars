@@ -22,7 +22,6 @@ kyu\_6.decipher\_this.test\_decipher\_this module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

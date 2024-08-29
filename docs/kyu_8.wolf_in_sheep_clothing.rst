@@ -11,6 +11,7 @@ kyu\_8.wolf\_in\_sheep\_clothing.test\_wolf\_in\_sheep\_clothing module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.wolf\_in\_sheep\_clothing.wolf\_in\_sheep\_clothing module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.wolf\_in\_sheep\_clothing.wolf\_in\_sheep\_clothing module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -1,6 +1,10 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Validate Sudoku with size `NxN`
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 from kyu_5.did_i_finish_my_sudoku.sudoku_by_row import assert_sudoku_by_row
 from kyu_5.did_i_finish_my_sudoku.sudoku_by_column import assert_sudoku_by_column
@@ -14,10 +18,10 @@ class Sudoku:
 
     def is_valid(self) -> bool:
         """
-A method to validate if given a Sudoku has been filled out correctly.
-Sudoku: data structure with size NxN, N > 0 and √N == integer.
-:return:
-"""
+        A method to validate if given a Sudoku has been filled out correctly.
+        Sudoku -> data structure with size NxN, N > 0 and √N == integer.
+        :return: bool
+        """
         if not self.__is_data_valid() \
                 or not assert_sudoku_by_row(self.__data) \
                 or not assert_sudoku_by_column(self.__data):

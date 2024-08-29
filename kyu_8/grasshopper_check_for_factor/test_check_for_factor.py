@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS MATHEMATICS ALGORITHMS NUMBERS
 
@@ -10,6 +9,7 @@ from utils.log_func import print_log
 from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Math")
@@ -22,6 +22,7 @@ from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
             'NUMBERS')
 @allure.link(url='https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/python',
              name='Source/Kata')
+# pylint: disable=R0801
 class CheckForFactorTestCase(unittest.TestCase):
     """
     Testing check_for_factor function.

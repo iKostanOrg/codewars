@@ -11,6 +11,7 @@ kyu\_8.find\_the\_first\_non\_consecutive\_number.first\_non\_consecutive module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.find\_the\_first\_non\_consecutive\_number.test\_first\_non\_consecutive module
 --------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.find\_the\_first\_non\_consecutive\_number.test\_first\_non\_consecutive 
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

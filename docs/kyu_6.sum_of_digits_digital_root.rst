@@ -11,6 +11,7 @@ kyu\_6.sum\_of\_digits\_digital\_root.digital\_root module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.sum\_of\_digits\_digital\_root.test\_digital\_root module
 ----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.sum\_of\_digits\_digital\_root.test\_digital\_root module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for 'Human readable duration format'
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS FORMATS STRINGS DATES/TIME FORMATTING
 
@@ -16,7 +19,9 @@ from kyu_4.human_readable_duration_format.format_duration import format_duration
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Human readable duration format')
-@allure.tag('ALGORITHMS', 'FORMATS', 'STRINGS',
+@allure.tag('ALGORITHMS',
+            'FORMATS',
+            'STRINGS',
             'DATES/TIME', 'FORMATTING')
 @allure.link(url='https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python',
              name='Source/Kata')

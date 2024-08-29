@@ -22,7 +22,6 @@ kyu\_3.battleship\_field\_validator.validator module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

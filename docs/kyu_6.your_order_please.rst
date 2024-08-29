@@ -11,6 +11,7 @@ kyu\_6.your\_order\_please.order module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.your\_order\_please.test\_order module
 ---------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.your\_order\_please.test\_order module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

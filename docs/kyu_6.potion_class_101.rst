@@ -11,6 +11,7 @@ kyu\_6.potion\_class\_101.potion module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.potion\_class\_101.test\_potion module
 ---------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.potion\_class\_101.test\_potion module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
