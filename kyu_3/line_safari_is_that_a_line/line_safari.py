@@ -35,6 +35,11 @@ def line(grid: list) -> bool:
 
 
 def assert_x_has_rout(grid: list) -> bool:
+    """
+    Make sure x has a valid route
+    :param grid:
+    :return:
+    """
     counter = 0
     for row_i, row in enumerate(grid):
 
