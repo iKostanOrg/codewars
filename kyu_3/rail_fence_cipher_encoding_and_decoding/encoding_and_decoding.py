@@ -17,7 +17,7 @@ def get_rails(string: str, n: int) -> list:
 
     rails: list = []
     while len(rails) != n:
-        rails.append(list())
+        rails.append([])
 
     row = 0
     down = True
