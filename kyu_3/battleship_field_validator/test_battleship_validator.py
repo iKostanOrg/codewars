@@ -160,8 +160,7 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
                       expected=expected,
                       message=message,
                       actual_result=actual_result)
-            step_txt = "Field validation: expected -> {}, actual -> {}".format(
-                expected,
-                actual_result)
+            step_txt = (f"Field validation: "
+                        f"expected -> {expected}, actual -> {actual_result}")
             with allure.step(step_txt):
                 self.assertEqual(expected, actual_result, msg=message)
