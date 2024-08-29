@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS CIPHERS CRYPTOGRAPHY SECURITY STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
     import encode_rail_fence_cipher
