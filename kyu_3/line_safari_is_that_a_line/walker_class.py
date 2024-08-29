@@ -95,7 +95,8 @@ class Walker:
             # DEBUG ONLY
             row: int = self.__position['row']
             col: int = self.__position['col']
-            direction = [key for key in self.__direction if self.__direction[key]]
+            direction = \
+                [key for key in self.__direction if self.__direction[key]]
             print(f'\nchar: {self.__grid[row][col]}, '
                   f'direction: {direction}, '
                   f'row: {row}, '
