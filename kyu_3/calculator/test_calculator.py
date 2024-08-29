@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS PARSING STRINGS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_3.calculator.calculator import Calculator
 
@@ -71,10 +71,9 @@ class CalculatorTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}), "
-                             "calculate the result ({}) and "
-                             "compare vs expected ({})".format(string,
-                                                               actual_result,
-                                                               expected)):
+            with allure.step(f"Enter a test string ({string}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare vs expected ({expected})"):
+
                 self.assertEqual(expected,
                                  actual_result)
