@@ -104,7 +104,10 @@ def bracket_start(strings: list) -> int:
     :param strings: list
     :return: int
     """
-    return ([i for i, strg in enumerate(strings) if strg == '('])[-1]
+    a = ([i for i, strg in enumerate(strings) if strg == '('])[-1]
+    b = ''.join(strings).rindex('(')
+    print(f"str: {strings}, a: {a}, b: {b}")
+    return a
 
 
 def bracket_end(strings: list, start: int) -> int:
@@ -194,8 +197,8 @@ def calc(string: str) -> float:
     :return: float
     """
     string = normalize_string(string)
-    string = ' '.join(string.split('+'))
-    strings = string.split(' ')
+    string = ''.join(string.split('+'))
+    strings = string.split()
     string = process_brackets(strings)
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
