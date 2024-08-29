@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS ARRAYS CONTROL FLOW BASIC LANGUAGE FEATURES FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_3.make_spiral.solution import spiralize
 
