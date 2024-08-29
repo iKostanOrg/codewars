@@ -191,7 +191,7 @@ def set_initial_params(size: int) -> tuple:
     :param size:
     :return: tuple
     """
-    spiral: list = list()
+    spiral: list = []
     while len(spiral) != size:
         line: list = [0] * size
         spiral.append(line)
