@@ -11,10 +11,11 @@ def validate_battlefield(field: list) -> bool:
     A method that takes a field for well-known board game "Battleship"
     as an argument and returns true if it has a valid disposition of ships,
     false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
-    Elements in the array are numbers, 0 if the cell is free and 1 if occupied by ship.
+    Elements in the array are numbers, 0 if the cell is free
+    and 1 if occupied by ship.
 
     :param field: list,  board game "Battleship" (2D list)
-    :return: bool, returns true if it has a valid disposition of ships, false otherwise
+    :return: bool, true if it has a valid disposition of ships, false otherwise
     """
     counters: list = [row.count(1) for row in field]
     if sum(counters) != 20:
