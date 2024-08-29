@@ -59,7 +59,7 @@ def assert_x_has_rout(grid: list) -> bool:
                 if col_i - 1 >= 0 and row[col_i - 1] in 'X+-':
                     temp.append(True)
                 # right
-                if col_i + 1 < len(row) and grid[row_i][col_i + 1] in 'X+-':
+                if col_i + 1 < len(row) and row[col_i + 1] in 'X+-':
                     temp.append(True)
 
                 if len(temp) != 1:
