@@ -51,9 +51,9 @@ class Calculator:
         """
         Perform all operation with multiplications, divisions, additions and subtractions
 
-        :param string: input string
-        :param operators: (list) contains math operators
-        :return: output string with no ‘*’, ‘/’, ‘+’, ‘-‘
+        :param string: str, input string
+        :param operators: list, contains math operators
+        :return: str, output string with no ‘*’, ‘/’, ‘+’, ‘-‘
         """
         strings = string.split(' ')
 
@@ -70,7 +70,7 @@ class Calculator:
         """
         Returns value of the given expression
 
-        :param string: input string to evaluate
+        :param string: str, input string to evaluate
         :return: (float) result
         """
         string = self.__process_math_expression(string, ['*', '/'])
