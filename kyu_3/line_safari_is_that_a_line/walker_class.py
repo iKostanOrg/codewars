@@ -19,7 +19,7 @@ class Walker:
         self.__direction = self.__set_initial_direction()
 
     def __set_initial_direction(self) -> dict:
-        DIRECTION = {
+        DIRECTION: dict = {
             'left': False,
             'right': False,
             'up': False,
@@ -50,7 +50,7 @@ class Walker:
             if self.__grid[row][col + 1] in 'X+-':
                 DIRECTION['right'] = True
 
-        print("\nINITIAL DIRECTION: {}".format(DIRECTION))
+        print(f"\nINITIAL DIRECTION: {DIRECTION}")
         return DIRECTION
 
     @property
