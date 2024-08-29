@@ -95,15 +95,11 @@ class Walker:
             # DEBUG ONLY
             row: int = self.__position['row']
             col: int = self.__position['col']
-            print('\nchar: {}, '
-                  'direction: {}, '
-                  'row: {}, '
-                  'col: {}, '
-                  'is_done: {}\n'.format(self.__grid[row][col],
-                                         [key for key in self.__direction if self.__direction[key]],
-                                         row,
-                                         col,
-                                         self.is_done))
+            print(f'\nchar: {self.__grid[row][col]}, '
+                  f'direction: {[key for key in self.__direction if self.__direction[key]]}, '
+                  f'row: {row}, '
+                  f'col: {col}, '
+                  f'is_done: {self.is_done}\n')
             self.__set_direction()
 
     @property
