@@ -46,7 +46,7 @@ class SpiralizeTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should create a NxN spiral with a given size.</p>")
 
-        test_data = (
+        test_data: tuple = (
             (5, [[1, 1, 1, 1, 1],
                  [0, 0, 0, 0, 1],
                  [1, 1, 1, 0, 1],
