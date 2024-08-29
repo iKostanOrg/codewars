@@ -20,10 +20,10 @@ def validate_battlefield(field: list) -> bool:
         return False
 
     ships: dict = {
-        1: list(),
-        2: list(),
-        3: list(),
-        4: list(),
+        1: [],
+        2: [],
+        3: [],
+        4: [],
     }
 
     ship_counter_by_row(field, ships)
@@ -35,7 +35,7 @@ def validate_battlefield(field: list) -> bool:
 def ship_counter_by_row(field: list, ships: dict):
     # ship counter by row
     for index_row, row in enumerate(field):
-        ship: list = list()
+        ship: list = []
         for index_col, cell in enumerate(row):
             if field[index_row][index_col] == 1:
                 ship.append([index_row, index_col])
@@ -54,7 +54,7 @@ def ship_counter_by_row(field: list, ships: dict):
                         ships[len(ship)].append(ship)
                     else:
                         return False
-                ship = list()
+                ship = []
 
         # Allowed ship sizes between 1 to 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
@@ -91,7 +91,7 @@ def ship_counter_by_col(field: list, ships: dict):
                         ships[len(ship)].append(ship)
                     else:
                         return False
-                ship = list()
+                ship = []
 
         # Allowed ship sizes between 1 to 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
@@ -108,15 +108,15 @@ def ship_counter_by_col(field: list, ships: dict):
 
 def is_valid_cell(ships: dict, field: list, cell: list, direction: str) -> bool:
     """
-	Validates if single cell result is valid
-	(valid submarine or single ship cell)
+    Validates if single cell result is valid
+    (valid submarine or single ship cell)
 
-	:param ships: collection of valid ships (dict)
-	:param field: board game "Battleship" (list)
-	:param cell: candidate for single ship/submarine
-	:param direction: str -> horizontal, vertical, submarine
-	:return:
-	"""
+    :param ships: collection of valid ships (dict)
+    :param field: board game "Battleship" (list)
+    :param cell: candidate for single ship/submarine
+    :param direction: str -> horizontal, vertical, submarine
+    :return:
+    """
     row, col = cell[0], cell[1]
 
     if direction == 'submarine':
