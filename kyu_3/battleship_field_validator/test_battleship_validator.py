@@ -44,15 +44,16 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing validate_battlefield function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "Testing a method that takes a field for well-known"
-                                        " board game \"Battleship\" as an argument and"
-                                        " returns true if it has a valid disposition of"
-                                        " ships, false otherwise.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "Testing a method that takes a field for well-known"
+            " board game \"Battleship\" as an argument and"
+            " returns true if it has a valid disposition of"
+            " ships, false otherwise.</p>")
 
         test_data = (
             ([[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
@@ -64,7 +65,8 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
               [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
-              [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]], True, "Must return TRUE for valid field"),
+              [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],
+             True, "Must return TRUE for valid field"),
             ([[1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               [1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
               [1, 0, 0, 1, 0, 0, 0, 0, 0, 1],
@@ -74,7 +76,8 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
               [0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
-              [0, 0, 0, 0, 1, 0, 1, 0, 0, 0]], True, 'Must return TRUE for valid field'),
+              [0, 0, 0, 0, 1, 0, 1, 0, 0, 0]],
+             True, 'Must return TRUE for valid field'),
             ([[1, 0, 0, 0, 0, 1, 1, 0, 0, 0],
               [1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
               [1, 0, 1, 0, 1, 1, 1, 0, 1, 0],
