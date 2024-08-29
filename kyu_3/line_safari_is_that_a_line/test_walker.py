@@ -7,9 +7,9 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS STRINGS
 
-import allure
 import unittest
 import pytest
+import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 
@@ -83,7 +83,7 @@ class WalkerClassTestCase(unittest.TestCase):
 
             with allure.step("Enter a test grid and compare "
                              "the output/position vs expected "
-                             "result {}".format(expected)):
+                             f"result {expected}"):
                 self.assertEqual(expected, actual_result)
 
     def test_starting_position_from_negatives(self):
@@ -133,5 +133,5 @@ class WalkerClassTestCase(unittest.TestCase):
 
             with allure.step("Enter a test grid and compare "
                              "the output/position vs expected "
-                             "result {}".format(expected)):
+                             f"result {expected}"):
                 self.assertEqual(expected, actual_result)
