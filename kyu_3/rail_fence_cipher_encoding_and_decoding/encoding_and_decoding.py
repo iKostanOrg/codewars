@@ -10,12 +10,12 @@ def get_rails(string: str, n: int) -> list:
     """
     Create rails matrix.
 
-    :param string: a string
-    :param n: the number of rails
-    :return: rails matrix
+    :param string: str
+    :param n: int, the number of rails
+    :return: list, rails matrix
     """
 
-    rails: list = list()
+    rails: list = []
     while len(rails) != n:
         rails.append(list())
 
@@ -52,9 +52,9 @@ def encode_rail_fence_cipher(string: str, n: int) -> str:
     Continue until you reach the end of the string. Each "rail" is then
     read left to right to derive the encoded string.
 
-    :param string: a string
-    :param n: the number of rails
-    :return: the ENCODED string
+    :param string: str
+    :param n: int, the number of rails
+    :return: str, the ENCODED string
     """
     rails: list = get_rails(string, n)
     return ''.join(''.join(row) for row in rails)
@@ -65,9 +65,9 @@ def decode_rail_fence_cipher(string: str, n: int) -> str:
     Function/method that takes 2 arguments, an encoded string
     and the number of rails, and returns the DECODED string.
 
-    :param string: an encoded string
-    :param n: the number of rails
-    :return: the DECODED string
+    :param string: str, an encoded string
+    :param n: int, the number of rails
+    :return: str, the DECODED string
     """
     rails: list = get_rails(''.join(['_'] * len(string)), n)
 
@@ -80,7 +80,7 @@ def decode_rail_fence_cipher(string: str, n: int) -> str:
                 char_index += 1
 
     # decode string based on rail
-    result: list = list()
+    result: list = []
     char_index = 0
     while len(result) != len(string):
         for row in rails:
