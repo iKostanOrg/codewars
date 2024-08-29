@@ -35,7 +35,8 @@ def right(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             done = False
             break
-        elif col + 1 == len(spiral[0]) - 1 and \
+
+        if col + 1 == len(spiral[0]) - 1 and \
                 spiral[row][col + 1] == 0 and \
                 spiral[row][col] == 0:
             spiral[row][col] = 1
