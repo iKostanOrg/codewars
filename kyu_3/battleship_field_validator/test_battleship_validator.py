@@ -48,10 +48,10 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>"
-                                        "Testing a method that takes a field for well-known board game"
-                                        " \"Battleship\" as an argument and returns true if it has a "
-                                        "valid disposition of ships, false otherwise."
-                                        "</p>")
+                                        "Testing a method that takes a field for well-known "
+                                        "board game \"Battleship\" as an argument and returns "
+                                        "true if it has a valid disposition of ships, false "
+                                        "otherwise.</p>")
 
         test_data = (
             ([[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
@@ -160,7 +160,8 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
                       expected=expected,
                       message=message,
                       actual_result=actual_result)
-
-            with allure.step("Field validation: expected -> {}, actual -> {}".format(expected,
-                                                                                     actual_result)):
+            step_txt = "Field validation: expected -> {}, actual -> {}".format(
+                expected,
+                actual_result)
+            with allure.step(step_txt):
                 self.assertEqual(expected, actual_result, msg=message)
