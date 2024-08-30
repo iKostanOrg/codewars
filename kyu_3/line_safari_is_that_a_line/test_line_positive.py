@@ -49,7 +49,6 @@ class LinePositiveTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should return true/false if it can detect a one "
             "and only one \"valid\" line joining those points.</p>")
-        # pylint: enable-msg=R0801
         test_data = (
             ["           ",
              "X---------X",
@@ -88,7 +87,7 @@ class LinePositiveTestCase(unittest.TestCase):
              "   |      +++---+     ",
              "X--+      +-+   X     "],
         )
-
+        # pylint: enable-msg=R0801
         expected = True
         for grid in test_data:
             actual_result = line(grid)
