@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_3.calculator.calculator import Calculator
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -27,6 +28,7 @@ from kyu_3.calculator.calculator import Calculator
             'FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/5235c913397cbf2508000048/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class CalculatorTestCase(unittest.TestCase):
     """
     Testing Calculator class
