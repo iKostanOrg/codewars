@@ -116,7 +116,7 @@ def ship_counter_by_col(field: list, ships: dict):
             ships[len(ship)].append(ship)
 
 
-def is_valid_cell(ships: dict, field: list, cell: list, direction: str) -> bool:
+def is_valid_cell(**kwargs) -> bool:
     """
     Validates if single cell result is valid
     (valid submarine or single ship cell)
@@ -127,34 +127,34 @@ def is_valid_cell(ships: dict, field: list, cell: list, direction: str) -> bool:
     :param direction: str, horizontal, vertical, submarine
     :return: bool
     """
-    row, col = cell[0], cell[1]
+    row, col = kwargs['cell'][0], kwargs['cell'][1]
 
-    if direction == 'submarine':
+    if kwargs['direction'] == 'submarine':
 
         # check if submarine already in list (avoid duplicates)
-        for submarine in ships[1]:
-            if [cell] == submarine:
+        for submarine in kwargs['ships'][1]:
+            if [kwargs['cell']] == submarine:
                 return False
 
         # validates if submarine cell has contacts with other ships/cells
         for row_id in range(row - 1, row + 2):
             for col_id in range(col - 1, col + 2):
-                if (0 <= row_id < len(field)) and (0 <= col_id < len(field)):
-                    if (col_id != col or row_id != row) and field[row_id][col_id] == 1:
+                if (0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])):
+                    if (col_id != col or row_id != row) and kwargs['field'][row_id][col_id] == 1:
                         return False
 
-    if direction == 'horizontal':
+    if kwargs['direction'] == 'horizontal':
         for row_id in range(row - 1, row + 2):
             for col_id in range(col - 1, col + 2):
-                if (0 <= row_id < len(field)) and (0 <= col_id < len(field)):
-                    if (row_id != row) and field[row_id][col_id] == 1:
+                if (0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])):
+                    if (row_id != row) and kwargs['field'][row_id][col_id] == 1:
                         return False
 
-    if direction == 'vertical':
+    if kwargs['direction'] == 'vertical':
         for row_id in range(row - 1, row + 2):
             for col_id in range(col - 1, col + 2):
-                if (0 <= row_id < len(field)) and (0 <= col_id < len(field)):
-                    if (col_id != col) and field[row_id][col_id] == 1:
+                if (0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])):
+                    if (col_id != col) and kwargs['field'][row_id][col_id] == 1:
                         return False
 
     return True
