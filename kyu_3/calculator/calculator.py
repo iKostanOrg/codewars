@@ -57,7 +57,7 @@ class Calculator:
         """
         strings = string.split(' ')
 
-        while any((True if s in operators else False) for s in strings):
+        while any((s in operators) for s in strings):
             for i, char in enumerate(strings):
                 if char in operators:
                     self.__calculate(i, char, strings)
