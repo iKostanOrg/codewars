@@ -139,22 +139,22 @@ def is_valid_cell(**kwargs) -> bool:
         # validates if submarine cell has contacts with other ships/cells
         for row_id in range(row - 1, row + 2):
             for col_id in range(col - 1, col + 2):
-                if (0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])):
-                    if (col_id != col or row_id != row) and kwargs['field'][row_id][col_id] == 1:
-                        return False
+                if (((0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])))
+                        and ((col_id != col or row_id != row) and kwargs['field'][row_id][col_id] == 1)):
+                    return False
 
     if kwargs['direction'] == 'horizontal':
         for row_id in range(row - 1, row + 2):
             for col_id in range(col - 1, col + 2):
-                if (0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])):
-                    if (row_id != row) and kwargs['field'][row_id][col_id] == 1:
-                        return False
+                if (((0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])))
+                        and ((row_id != row) and kwargs['field'][row_id][col_id] == 1)):
+                    return False
 
     if kwargs['direction'] == 'vertical':
         for row_id in range(row - 1, row + 2):
             for col_id in range(col - 1, col + 2):
-                if (0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])):
-                    if (col_id != col) and kwargs['field'][row_id][col_id] == 1:
-                        return False
+                if (((0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])))
+                        and ((col_id != col) and kwargs['field'][row_id][col_id] == 1)):
+                    return False
 
     return True
