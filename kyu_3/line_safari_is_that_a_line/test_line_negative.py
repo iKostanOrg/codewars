@@ -15,6 +15,7 @@ from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.line_safari import line
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -27,6 +28,7 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
     url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python',
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
+# pylint: enable-msg=R0801
 class LineNegativeTestCase(unittest.TestCase):
     """
     Testing Line Safari functionality
