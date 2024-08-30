@@ -93,7 +93,7 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing Walker class
         Testing starting position property based on negative grids
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Walker class - position property from negative grids")
         allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html(
@@ -102,7 +102,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on negative grids.</p>")
-
+        # pylint: disable-msg=R0801
         test_data = (
             ["X-----|----X"],
             [" X  ",
