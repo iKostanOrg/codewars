@@ -39,7 +39,7 @@ class EncodingTestCase(unittest.TestCase):
         """
         Testing Encoding functionality
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Encoding functionality")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -50,7 +50,7 @@ class EncodingTestCase(unittest.TestCase):
             "<p>Verify cipher function. This \"encode\" is used to encode "
             "a string by placing each character successively in a "
             "diagonal along a set of \"rails\". </p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("WEAREDISCOVEREDFLEEATONCE", 3, "WECRLTEERDSOEEFEAOCAIVDEN"),
             ("Hello, World!", 3, "Hoo!el,Wrdl l"),
