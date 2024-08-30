@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_3.make_spiral.solution import spiralize
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -27,6 +28,7 @@ from kyu_3.make_spiral.solution import spiralize
 @allure.link(
     url='https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class SpiralizeTestCase(unittest.TestCase):
     """
     Testing spiralize function
