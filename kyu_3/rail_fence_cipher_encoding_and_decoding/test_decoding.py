@@ -14,6 +14,7 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
     import decode_rail_fence_cipher
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -28,6 +29,7 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
 @allure.link(
     url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class DecodingTestCase(unittest.TestCase):
     """
     Testing Decoding functionality

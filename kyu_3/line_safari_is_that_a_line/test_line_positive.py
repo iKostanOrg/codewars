@@ -40,8 +40,8 @@ class LinePositiveTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing Line Safari functionality - POSITIVE")
-        allure.dynamic.severity(allure.severity_level.NORMAL) # pylint: disable-msg=R0801
         # pylint: disable-msg=R0801
+        allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
             '<img src="https://www.codewars.com/users/myFirstCode'
@@ -49,7 +49,7 @@ class LinePositiveTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should return true/false if it can detect a one "
             "and only one \"valid\" line joining those points.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ["           ",
              "X---------X",
