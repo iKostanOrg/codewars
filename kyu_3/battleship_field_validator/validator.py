@@ -116,45 +116,89 @@ def ship_counter_by_col(field: list, ships: dict):
             ships[len(ship)].append(ship)
 
 
+def check_vertical(row, col, field) -> bool:
+    """
+    Verify vertical direction
+    :param row:
+    :param col:
+    :param field: list, board game "Battleship" (list)
+    :return:
+    """
+    for row_id in range(row - 1, row + 2):
+        for col_id in range(col - 1, col + 2):
+            if ((0 <= row_id < len(field)) and (0 <= col_id < len(field))
+                    and ((col_id != col) and field[row_id][col_id] == 1)):
+                return False
+    return True
+
+
+def check_horizontal(row, col, field) -> bool:
+    """
+    Verify horizontal direction
+    :param row:
+    :param col:
+    :param field: list, board game "Battleship" (list)
+    :return:
+    """
+    for row_id in range(row - 1, row + 2):
+        for col_id in range(col - 1, col + 2):
+            if (((0 <= row_id < len(field)) and (0 <= col_id < len(field)))
+                    and ((row_id != row) and field[row_id][col_id] == 1)):
+                return False
+    return True
+
+
+def check_submarine(row, col, ships, field, cell) -> bool:
+    """
+    Check if submarine already in list (avoid duplicates)
+    Validates if submarine cell has contacts with other ships/cells
+    :param row:
+    :param col:
+    :param ships: dict, collection of valid ships (dict)
+    :param field: list, board game "Battleship" (list)
+    :param cell: list, candidate for single ship/submarine
+    :return:
+    """
+    # check if submarine already in list (avoid duplicates)
+    for submarine in ships[1]:
+        if [cell] == submarine:
+            return False
+
+    # validates if submarine cell has contacts with other ships/cells
+    for row_id in range(row - 1, row + 2):
+        for col_id in range(col - 1, col + 2):
+            if (((0 <= row_id < len(field)) and (0 <= col_id < len(field)))
+                    and ((col_id != col or row_id != row) and field[row_id][col_id] == 1)):
+                return False
+    return True
+
+
 def is_valid_cell(**kwargs) -> bool:
     """
     Validates if single cell result is valid
     (valid submarine or single ship cell)
-
-    :param ships: dict, collection of valid ships (dict)
-    :param field: list, board game "Battleship" (list)
-    :param cell: list, candidate for single ship/submarine
-    :param direction: str, horizontal, vertical, submarine
     :return: bool
     """
     row, col = kwargs['cell'][0], kwargs['cell'][1]
 
     if kwargs['direction'] == 'submarine':
-
-        # check if submarine already in list (avoid duplicates)
-        for submarine in kwargs['ships'][1]:
-            if [kwargs['cell']] == submarine:
-                return False
-
-        # validates if submarine cell has contacts with other ships/cells
-        for row_id in range(row - 1, row + 2):
-            for col_id in range(col - 1, col + 2):
-                if (((0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])))
-                        and ((col_id != col or row_id != row) and kwargs['field'][row_id][col_id] == 1)):
-                    return False
+        if not check_submarine(row=row,
+                               col=col,
+                               ships=kwargs['ships'],
+                               field=kwargs['field'],
+                               cell=kwargs['cell']):
+            return False
 
     if kwargs['direction'] == 'horizontal':
-        for row_id in range(row - 1, row + 2):
-            for col_id in range(col - 1, col + 2):
-                if (((0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])))
-                        and ((row_id != row) and kwargs['field'][row_id][col_id] == 1)):
-                    return False
+        if not check_horizontal(row=row,
+                                col=col,
+                                field=kwargs['field']):
+            return False
 
     if kwargs['direction'] == 'vertical':
-        for row_id in range(row - 1, row + 2):
-            for col_id in range(col - 1, col + 2):
-                if (((0 <= row_id < len(kwargs['field'])) and (0 <= col_id < len(kwargs['field'])))
-                        and ((col_id != col) and kwargs['field'][row_id][col_id] == 1)):
-                    return False
+        if not check_vertical(row=row,
+                              col=col,
+                              field=kwargs['field']):
+            return False
 
     return True
