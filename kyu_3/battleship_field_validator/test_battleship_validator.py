@@ -41,7 +41,7 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
         Elements in the array are numbers, 0 if the cell is free and 1 if occupied
         by ship.
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing validate_battlefield function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -54,7 +54,7 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
             " board game \"Battleship\" as an argument and"
             " returns true if it has a valid disposition of"
             " ships, false otherwise.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ([[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
               [1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
