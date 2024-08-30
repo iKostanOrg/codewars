@@ -38,7 +38,7 @@ class SpiralizeTestCase(unittest.TestCase):
         """
         Testing spiralize function
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing spiralize function")
         allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html(
@@ -47,7 +47,7 @@ class SpiralizeTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>The function should create a NxN spiral with a given size.</p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             (5, [[1, 1, 1, 1, 1],
                  [0, 0, 0, 0, 1],
