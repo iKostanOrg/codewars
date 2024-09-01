@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS FORMATS STRINGS DATES/TIME FORMATTING
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.human_readable_duration_format.format_duration import format_duration
 
