@@ -11,6 +11,7 @@ kyu\_7.sum\_of\_powers\_of\_2.sum\_of\_powers\_of\_2 module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.sum\_of\_powers\_of\_2.test\_sum\_of\_powers\_of\_2 module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.sum\_of\_powers\_of\_2.test\_sum\_of\_powers\_of\_2 module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

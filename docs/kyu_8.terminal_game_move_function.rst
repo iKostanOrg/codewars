@@ -11,6 +11,7 @@ kyu\_8.terminal\_game\_move\_function.terminal\_game\_move\_function module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.terminal\_game\_move\_function.test\_terminal\_game\_move\_function module
 ---------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.terminal\_game\_move\_function.test\_terminal\_game\_move\_function modul
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

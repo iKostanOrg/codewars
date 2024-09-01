@@ -11,6 +11,7 @@ kyu\_5.master\_your\_primes\_sieve\_with\_memoization.primes module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.master\_your\_primes\_sieve\_with\_memoization.test\_primes module
 -------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.master\_your\_primes\_sieve\_with\_memoization.test\_primes module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

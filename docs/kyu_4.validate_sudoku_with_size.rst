@@ -11,6 +11,7 @@ kyu\_4.validate\_sudoku\_with\_size.sudoku module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_4.validate\_sudoku\_with\_size.test\_sudoku module
 -------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_4.validate\_sudoku\_with\_size.test\_sudoku module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

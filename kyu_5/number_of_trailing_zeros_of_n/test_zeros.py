@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Number of trailing zeros of N!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS MATHEMATICS NUMBERS
 
@@ -28,7 +30,7 @@ class ZerosTestCase(unittest.TestCase):
         """
         Testing 'zeros' program that should calculate the number
         of trailing zeros in a factorial of a given number.
-        :return:
+        :return: None
         """
 
         allure.dynamic.title("Testing zeros function")

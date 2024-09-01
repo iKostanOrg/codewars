@@ -1,10 +1,9 @@
 """
 Testing sum_for_list function
-"""
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS NUMBERS ARRAYS
 
@@ -20,7 +19,9 @@ from kyu_4.sum_by_factors.sum_for_list import sum_for_list
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Sum by Factors')
-@allure.tag('ALGORITHMS', 'NUMBERS', 'ARRAYS')
+@allure.tag('ALGORITHMS',
+            'NUMBERS',
+            'ARRAYS')
 @allure.link(
     url='https://www.codewars.com/kata/54d496788776e49e6b00052f/train/python',
     name='Source/Kata')

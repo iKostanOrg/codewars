@@ -11,6 +11,7 @@ kyu\_7.basic\_math\_add\_or\_subtract.calculate module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.basic\_math\_add\_or\_subtract.test\_calculate module
 ------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.basic\_math\_add\_or\_subtract.test\_calculate module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

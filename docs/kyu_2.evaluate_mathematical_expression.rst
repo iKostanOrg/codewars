@@ -22,7 +22,6 @@ kyu\_2.evaluate\_mathematical\_expression.test\_evaluate module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

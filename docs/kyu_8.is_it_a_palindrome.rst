@@ -11,6 +11,7 @@ kyu\_8.is\_it\_a\_palindrome.is\_palindrome module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.is\_it\_a\_palindrome.test\_is\_palindrome module
 --------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.is\_it\_a\_palindrome.test\_is\_palindrome module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

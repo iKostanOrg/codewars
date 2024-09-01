@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Range Extraction
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS STRING FORMATTING FORMATTING STRINGS
 
@@ -16,8 +19,11 @@ from kyu_4.range_extraction.solution import solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story("Range Extraction")
-@allure.tag('ALGORITHMS', 'STRING', 'FORMATTING',
-            'FORMATTING', 'STRINGS')
+@allure.tag('ALGORITHMS',
+            'STRING',
+            'FORMATTING',
+            'FORMATTING',
+            'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/python',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):

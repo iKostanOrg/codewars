@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Formatting decimal places #1
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS FORMATTING ALGORITHMS NUMBERS
 
@@ -39,6 +41,7 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
 
         Don't round the numbers! Just cut them
         after two decimal places!
+
         :return:
         """
 

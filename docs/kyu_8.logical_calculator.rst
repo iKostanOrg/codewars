@@ -11,6 +11,7 @@ kyu\_8.logical\_calculator.logical\_calculator module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.logical\_calculator.test\_logical\_calculator module
 -----------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.logical\_calculator.test\_logical\_calculator module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

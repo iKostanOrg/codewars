@@ -11,6 +11,7 @@ kyu\_8.will\_there\_be\_enough\_space.enough module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.will\_there\_be\_enough\_space.test\_enough module
 ---------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.will\_there\_be\_enough\_space.test\_enough module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

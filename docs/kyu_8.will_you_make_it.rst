@@ -11,6 +11,7 @@ kyu\_8.will\_you\_make\_it.test\_zero\_fuel module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.will\_you\_make\_it.zero\_fuel module
 --------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.will\_you\_make\_it.zero\_fuel module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

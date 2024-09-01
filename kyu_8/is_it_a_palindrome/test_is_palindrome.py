@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS
 
@@ -10,6 +9,7 @@ from utils.log_func import print_log
 from kyu_8.is_it_a_palindrome.is_palindrome import is_palindrome
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -19,6 +19,7 @@ from kyu_8.is_it_a_palindrome.is_palindrome import is_palindrome
 @allure.tag('FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class IsPalindromeTestCase(unittest.TestCase):
     """
     Testing is_palindrome function

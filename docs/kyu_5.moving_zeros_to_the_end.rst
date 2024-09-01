@@ -11,6 +11,7 @@ kyu\_5.moving\_zeros\_to\_the\_end.move\_zeros module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.moving\_zeros\_to\_the\_end.test\_move\_zeros module
 -----------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.moving\_zeros\_to\_the\_end.test\_move\_zeros module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

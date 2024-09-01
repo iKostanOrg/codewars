@@ -22,7 +22,6 @@ kyu\_6.encrypt\_this.test\_encrypt\_this module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

@@ -11,6 +11,7 @@ kyu\_7.make\_class.animal module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.make\_class.make\_class module
 -------------------------------------
@@ -19,6 +20,7 @@ kyu\_7.make\_class.make\_class module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.make\_class.test\_make\_class module
 -------------------------------------------
@@ -27,7 +29,7 @@ kyu\_7.make\_class.test\_make\_class module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -36,3 +38,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

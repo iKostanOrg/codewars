@@ -22,7 +22,6 @@ kyu\_3.calculator.test\_calculator module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

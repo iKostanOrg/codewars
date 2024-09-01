@@ -11,6 +11,7 @@ kyu\_7.help\_bob\_count\_letters\_and\_digits.count\_letters\_and\_digits module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.help\_bob\_count\_letters\_and\_digits.test\_count\_letters\_and\_digits module
 --------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.help\_bob\_count\_letters\_and\_digits.test\_count\_letters\_and\_digits 
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

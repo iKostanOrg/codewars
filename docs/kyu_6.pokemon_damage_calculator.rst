@@ -11,6 +11,7 @@ kyu\_6.pokemon\_damage\_calculator.calculate\_damage module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.pokemon\_damage\_calculator.test\_calculate\_damage module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.pokemon\_damage\_calculator.test\_calculate\_damage module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
