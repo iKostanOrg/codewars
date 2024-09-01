@@ -166,7 +166,7 @@ def up(spiral: list, coordinates: dict) -> bool:
         row = coordinates['row']
         col = coordinates['col']
 
-        if row - 2 >= 0 and spiral[row - 2][col] == 0 and spiral[row - 1][col] == 0:
+        if row - 2 >= 0 and spiral[row - 2][col] == spiral[row - 1][col] == 0:
             spiral[row][col] = 1
             coordinates['row'] -= 1
             done = False
