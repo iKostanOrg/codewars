@@ -58,8 +58,7 @@ def right(spiral: list, coordinates: dict) -> bool:
             break
         elif col + 2 < len(spiral[0]) - 1 and \
                 spiral[row][col + 2] == 1 and \
-                spiral[row][col + 1] == 0 and \
-                spiral[row][col] == 0 and \
+                spiral[row][col + 1] == spiral[row][col] == 0 and \
                 col + 2 < len(spiral[0]) and \
                 spiral[row + 1][col] != 1:
             spiral[row][col] = 1
