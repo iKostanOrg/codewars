@@ -167,8 +167,10 @@ def check_submarine(row, col, ships, field, cell) -> bool:
     # validates if submarine cell has contacts with other ships/cells
     for row_id in range(row - 1, row + 2):
         for col_id in range(col - 1, col + 2):
-            if (((0 <= row_id < len(field)) and (0 <= col_id < len(field)))
-                    and ((col_id != col or row_id != row) and field[row_id][col_id] == 1)):
+            if (((0 <= row_id < len(field))
+                 and (0 <= col_id < len(field)))
+                    and ((col_id != col or row_id != row)
+                         and field[row_id][col_id] == 1)):
                 return False
     return True
 
