@@ -10,8 +10,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS ARRAYS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.snail.snail_sort import snail
 
@@ -44,8 +44,9 @@ class SnailTestCase(unittest.TestCase):
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
-                                        "<p>Verify that 'snail' function returns the array elements "
-                                        "arranged from outermost elements to the middle element, "
+                                        "<p>Verify that 'snail' function returns the array"
+                                        " elements arranged from outermost elements to the"
+                                        " middle element, "
                                         "traveling clockwise</p>")
 
         test_data = (
