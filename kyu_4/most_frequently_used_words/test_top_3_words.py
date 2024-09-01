@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS STRINGS PARSING RANKING FILTERING
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.most_frequently_used_words.solution import top_3_words
 
