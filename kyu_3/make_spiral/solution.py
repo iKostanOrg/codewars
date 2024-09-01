@@ -134,7 +134,8 @@ def left(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             done = False
             break
-        elif col - 2 >= 0 and \
+
+        if col - 2 >= 0 and \
                 spiral[row][col - 2] == 0 and \
                 spiral[row][col - 1] == 0:
             spiral[row][col] = 1
@@ -147,7 +148,8 @@ def left(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             done = False
             break
-        elif col - 1 == 0 and \
+
+        if col - 1 == 0 and \
                 spiral[row][col - 1] == 0 and \
                 spiral[row][col] == 0:
             spiral[row][col] = 1
