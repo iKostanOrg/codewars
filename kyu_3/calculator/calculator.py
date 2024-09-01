@@ -18,7 +18,7 @@ class Calculator:
     """
 
     @staticmethod
-    def __calculate(i: int, char: str, strings: list):
+    def _calculate(i: int, char: str, strings: list):
         """
         1. Perform math operation
         2. Reorganize math expression
@@ -60,7 +60,7 @@ class Calculator:
         while any((s in operators) for s in strings):
             for i, char in enumerate(strings):
                 if char in operators:
-                    self.__calculate(i, char, strings)
+                    self._calculate(i, char, strings)
                     break
 
         print(strings)
