@@ -7,13 +7,14 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS CIPHERS CRYPTOGRAPHY SECURITY STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
     import decode_rail_fence_cipher
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -28,6 +29,7 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
 @allure.link(
     url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class DecodingTestCase(unittest.TestCase):
     """
     Testing Decoding functionality
@@ -55,7 +57,7 @@ class DecodingTestCase(unittest.TestCase):
             ("WEAREDISCOVEREDFLEEATONCE", 10, "WADCEDETNECOEFROIREESVELA"),
             ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE")
         )
-
+        # pylint: disable-msg=R0801
         for string, n, expected in test_data:
             actual_result = decode_rail_fence_cipher(string, n)
             print_log(string=string,
@@ -66,3 +68,4 @@ class DecodingTestCase(unittest.TestCase):
             with allure.step("Enter a test string and compare "
                              "the output vs expected result"):
                 self.assertEqual(expected, actual_result)
+        # pylint: enable-msg=R0801
