@@ -7,13 +7,14 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS STRINGS
 
-import allure
 import unittest
 import pytest
+import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -26,6 +27,7 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
     url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python',
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
+# pylint: enable-msg=R0801
 class WalkerClassTestCase(unittest.TestCase):
     """
     Testing Walker class
@@ -36,7 +38,7 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing Walker class
         Testing starting position property based on positive grids
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Walker class - position property from positive grids")
         allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html(
@@ -45,7 +47,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on positive grids.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ["           ",
              "X---------X",
@@ -83,7 +85,7 @@ class WalkerClassTestCase(unittest.TestCase):
 
             with allure.step("Enter a test grid and compare "
                              "the output/position vs expected "
-                             "result {}".format(expected)):
+                             f"result {expected}"):
                 self.assertEqual(expected, actual_result)
 
     def test_starting_position_from_negatives(self):
@@ -91,7 +93,7 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing Walker class
         Testing starting position property based on negative grids
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Walker class - position property from negative grids")
         allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html(
@@ -100,7 +102,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on negative grids.</p>")
-
+        # pylint: disable-msg=R0801
         test_data = (
             ["X-----|----X"],
             [" X  ",
@@ -133,5 +135,5 @@ class WalkerClassTestCase(unittest.TestCase):
 
             with allure.step("Enter a test grid and compare "
                              "the output/position vs expected "
-                             "result {}".format(expected)):
+                             f"result {expected}"):
                 self.assertEqual(expected, actual_result)
