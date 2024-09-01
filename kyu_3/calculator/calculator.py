@@ -23,6 +23,12 @@ class Calculator:
 
     @property
     def result(self) -> float:
+        """
+        1. Set result value by converting
+        string value to a float
+        2. Return result value
+        :return: float
+        """
         self.__result = float(self.__string)
         return self.__result
 
