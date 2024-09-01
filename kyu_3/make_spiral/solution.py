@@ -97,7 +97,8 @@ def down(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             done = False
             break
-        elif row + 2 <= len(spiral) - 1 and \
+
+        if row + 2 <= len(spiral) - 1 and \
                 spiral[row + 2][col] == 0 and \
                 spiral[row + 1][col] == 0:
             spiral[row][col] = 1
