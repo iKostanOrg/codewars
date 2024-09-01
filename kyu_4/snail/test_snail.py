@@ -28,6 +28,9 @@ from kyu_4.snail.snail_sort import snail
 @allure.link(url='https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/python',
              name='Source/Kata')
 class SnailTestCase(unittest.TestCase):
+    """
+    Testing snail function
+    """
 
     def test_snail(self):
         """
