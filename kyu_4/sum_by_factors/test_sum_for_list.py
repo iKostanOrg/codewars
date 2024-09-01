@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS NUMBERS ARRAYS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.sum_by_factors.sum_for_list import sum_for_list
 
@@ -68,7 +68,8 @@ class SumForListTestCase(unittest.TestCase):
              [[2, -592], [3, -504], [5, -400], [7, -35], [11, -11], [17, -85], [19, -95],
               [37, -37], [41, -164], [113, -113], [131, 131], [191, -191]]),
             ([12, -138, -175, -64, -153, 11, -11, -126, -67, -30, 153, -72, -102],
-             [[2, -520], [3, -456], [5, -205], [7, -301], [11, 0], [17, -102], [23, -138], [67, -67]])
+             [[2, -520], [3, -456], [5, -205], [7, -301], [11, 0], [17, -102], [23, -138],
+              [67, -67]])
         )
 
         for lst, expected in test_data:
@@ -77,9 +78,7 @@ class SumForListTestCase(unittest.TestCase):
             print_log(expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter test list ({}) and "
-                             "verify the output ({}) vs "
-                             "expected ({})".format(lst,
-                                                    actual_result,
-                                                    expected)):
+            with allure.step(f"Enter test list ({lst}) and "
+                             f"verify the output ({actual_result}) vs "
+                             f"expected ({expected})"):
                 self.assertListEqual(expected, actual_result)
