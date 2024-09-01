@@ -148,29 +148,29 @@ def check_horizontal(row, col, field) -> bool:
     return True
 
 
-def check_submarine(row, col, ships, field, cell) -> bool:
+def check_submarine(**kwargs) -> bool:
     """
     Check if submarine already in list (avoid duplicates)
     Validates if submarine cell has contacts with other ships/cells
-    :param row:
-    :param col:
-    :param ships: dict, collection of valid ships (dict)
-    :param field: list, board game "Battleship" (list)
-    :param cell: list, candidate for single ship/submarine
-    :return:
+    row:
+    col:
+    ships: dict, collection of valid ships (dict)
+    field: list, board game "Battleship" (list)
+    cell: list, candidate for single ship/submarine
+    :return: bool
     """
     # check if submarine already in list (avoid duplicates)
-    for submarine in ships[1]:
-        if [cell] == submarine:
+    for submarine in kwargs['ships'][1]:
+        if [kwargs['cell']] == submarine:
             return False
 
     # validates if submarine cell has contacts with other ships/cells
-    for row_id in range(row - 1, row + 2):
-        for col_id in range(col - 1, col + 2):
-            if (((0 <= row_id < len(field))
-                 and (0 <= col_id < len(field)))
-                    and ((col_id != col or row_id != row)
-                         and field[row_id][col_id] == 1)):
+    for row_id in range(kwargs['row'] - 1, kwargs['row'] + 2):
+        for col_id in range(kwargs['col'] - 1, kwargs['col'] + 2):
+            if (((0 <= row_id < len(kwargs['field']))
+                 and (0 <= col_id < len(kwargs['field'])))
+                    and ((col_id != kwargs['col'] or row_id != kwargs['row'])
+                         and kwargs['field'][row_id][col_id] == 1)):
                 return False
     return True
 
