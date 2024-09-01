@@ -17,8 +17,17 @@ class Calculator:
     Returns the value of that expression.
     """
 
+    def __init__(self):
+        self.__string = None
+        self.__result = None
+
+    @property
+    def result(self) -> float:
+        self.__result = float(self.__string)
+        return self.__result
+
     @staticmethod
-    def _calculate(i: int, char: str, strings: list):
+    def __calculate(i: int, char: str, strings: list):
         """
         1. Perform math operation
         2. Reorganize math expression
@@ -60,7 +69,7 @@ class Calculator:
         while any((s in operators) for s in strings):
             for i, char in enumerate(strings):
                 if char in operators:
-                    self._calculate(i, char, strings)
+                    self.__calculate(i, char, strings)
                     break
 
         print(strings)
@@ -73,6 +82,7 @@ class Calculator:
         :param string: str, input string to evaluate
         :return: (float) result
         """
-        string = self.__process_math_expression(string, ['*', '/'])
-        result: str = self.__process_math_expression(string, ['+', '-'])
-        return float(result)
+        self.__string: str = string
+        self.__string: str = self.__process_math_expression(self.__string, ['*', '/'])
+        self.__string: str = self.__process_math_expression(self.__string, ['+', '-'])
+        return self.result
