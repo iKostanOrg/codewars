@@ -34,7 +34,9 @@ def next_smaller(n: int) -> int:
     # Then sort all of the digits to the right of Y in descending order.
     # This makes the number as big as possible, without making it bigger
     # than the original.
-    result: int = int(''.join([str(i) for i in (n_list[:x_i + 1] + sorted(n_list[x_i + 1:], reverse=True))]))
+    result: int = int(
+        ''.join([str(i) for i in (n_list[:x_i + 1] + sorted(n_list[x_i + 1:],
+                                                            reverse=True))]))
     return result if len(str(result)) == len(str(n)) else -1
 
 
