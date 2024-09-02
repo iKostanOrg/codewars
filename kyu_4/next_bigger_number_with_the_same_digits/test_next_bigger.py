@@ -49,9 +49,10 @@ class NextBiggerTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>Testing next_bigger function</p>"
-                                        "<p>You have to test a function that takes a positive "
-                                        "integer number and returns the next bigger number "
-                                        "formed by the same digits:</p>"
+                                        "<p>You have to test a function that takes "
+                                        "a positive integer number and returns the "
+                                        "next bigger number formed by the same "
+                                        "digits:</p>"
                                         "<p>12 ==> 21</p>"
                                         "<p>513 ==> 531</p>"
                                         "<p>2017 ==> 2071</p>"
