@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_4.human_readable_duration_format.format_duration import format_duration
 
 
+# pylint: disable-msg=R0801
 @allure.epic('4 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -25,6 +26,7 @@ from kyu_4.human_readable_duration_format.format_duration import format_duration
             'DATES/TIME', 'FORMATTING')
 @allure.link(url='https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class FormatDurationTestCase(unittest.TestCase):
     """
     Testing format_duration
