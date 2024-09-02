@@ -50,13 +50,13 @@ class NextBiggerTestCase(unittest.TestCase):
                                         '<h3>Test Description:</h3>'
                                         "<p>Testing next_bigger function</p>"
                                         "<p>You have to test a function that takes a positive "
-                                        "integer number and returns the next bigger number formed "
-                                        "by the same digits:</p>"
+                                        "integer number and returns the next bigger number "
+                                        "formed by the same digits:</p>"
                                         "<p>12 ==> 21</p>"
                                         "<p>513 ==> 531</p>"
                                         "<p>2017 ==> 2071</p>"
-                                        "<p>If no bigger number can be composed using those digits, "
-                                        "return -1</p>")
+                                        "<p>If no bigger number can be composed using those "
+                                        "digits, return -1</p>")
 
         test_data = [
             (6, -1),
