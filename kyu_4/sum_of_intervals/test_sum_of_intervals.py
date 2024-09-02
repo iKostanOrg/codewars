@@ -52,20 +52,21 @@ class SumOfIntervalsTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing sum_of_intervals function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing sum_of_intervals function"
-                                        "<p>The function should accept an array of intervals, "
-                                        "and return the sum of all the interval lengths."
-                                        "<p>Overlapping intervals should only be counted once."
-                                        "<p>Intervals</p>"
-                                        "<p>Intervals are represented by a pair of integers in"
-                                        " the form of an array. The first value of the interval"
-                                        " will always be less than the second value."
-                                        " Interval example: [1, 5] is an interval from 1 to 5."
-                                        " The length of this interval is 4.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing sum_of_intervals function"
+            "<p>The function should accept an array of intervals, "
+            "and return the sum of all the interval lengths."
+            "<p>Overlapping intervals should only be counted once."
+            "<p>Intervals</p>"
+            "<p>Intervals are represented by a pair of integers in"
+            " the form of an array. The first value of the interval"
+            " will always be less than the second value."
+            " Interval example: [1, 5] is an interval from 1 to 5."
+            " The length of this interval is 4.</p>")
 
         test_data = [
             ([(1, 5)], 4),
