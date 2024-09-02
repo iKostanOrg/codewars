@@ -13,6 +13,7 @@ import allure
 from utils.log_func import print_log
 from kyu_4.the_greatest_warrior.warrior import Warrior
 
+
 # pylint: disable-msg=R0801
 @allure.epic('4 kyu')
 @allure.parent_suite('Competent')
