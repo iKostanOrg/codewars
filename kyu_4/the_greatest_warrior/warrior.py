@@ -91,7 +91,6 @@ class Warrior:
     def level(self) -> int:
         """
         A warrior's level
-
         :return: A warrior's level
         """
         return self.__level
@@ -101,20 +100,32 @@ class Warrior:
         """
         A warrior starts at rank "Pushover" and
         can progress all the way to "Greatest"
-
         :return: warrior's rank
         """
         return self.__rank
 
     @property
     def experience(self) -> int:
+        """
+        Return experience value
+        :return:
+        """
         return self.__experience
 
     @property
     def achievements(self) -> list:
+        """
+        Return achievements as a list
+        :return:
+        """
         return self.__achievements
 
-    def battle(self, enemy_level: int):
+    def battle(self, enemy_level: int) -> str:
+        """
+        Return message based on the result of the battle
+        :param enemy_level:
+        :return:
+        """
         # If an enemy level does not fall in the range of 1 to 100,
         # the battle cannot happen and should return "Invalid level".
         if 1 > enemy_level or enemy_level > 100:
