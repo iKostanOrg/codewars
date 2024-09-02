@@ -54,11 +54,13 @@ class NextSmallerTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Testing next_bigger function</p>"
             "<p>You have to test a function that takes a positive integer "
-            "number and returns the next smaller number formed by the same digits:</p>"
+            "number and returns the next smaller number formed by the same"
+            " digits:</p>"
             "<p>21 ==> 12</p>"
             "<p>531 ==> 513</p>"
             "<p>2071 ==> 2017</p>"
-            "<p>If no smaller number can be composed using those digits, return -1</p>")
+            "<p>If no smaller number can be composed using those digits,"
+            " return -1</p>")
 
         test_data = [
             (1027, -1),
