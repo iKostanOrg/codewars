@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # FUNDAMENTALS STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.strings_mix.solution import mix
 
