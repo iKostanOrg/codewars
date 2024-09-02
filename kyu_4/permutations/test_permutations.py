@@ -7,9 +7,9 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS PERMUTATIONS STRINGS
 
-import allure
 import pytest
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.permutations.permutations import permutations
 
@@ -66,7 +66,7 @@ class PermutationsTestCase(unittest.TestCase):
                           'cabd', 'cadb', 'cbad', 'cbda', 'cdab', 'cdba',
                           'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba'])
             ]
-
+        # pylint: disable-msg=R0801
         for string, expected in test_data:
 
             actual_result = sorted(permutations(string))
@@ -80,3 +80,4 @@ class PermutationsTestCase(unittest.TestCase):
                                                     actual_result,
                                                     expected)):
                 self.assertListEqual(sorted(expected), actual_result)
+        # pylint: enable-msg=R0801
