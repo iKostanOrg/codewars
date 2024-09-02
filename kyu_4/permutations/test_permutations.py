@@ -74,10 +74,8 @@ class PermutationsTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}) and "
-                             "verify the output ({}) vs "
-                             "expected ({})".format(string,
-                                                    actual_result,
-                                                    expected)):
+            with allure.step(f"Enter a test string ({string}) and "
+                             f"verify the output ({actual_result}) vs "
+                             f"expected ({expected})"):
                 self.assertListEqual(sorted(expected), actual_result)
         # pylint: enable-msg=R0801
