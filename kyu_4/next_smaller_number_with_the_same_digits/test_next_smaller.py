@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_smaller
 
 
+# pylint: disable-msg=R0801
 @allure.epic("4 kyu")
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -26,6 +27,7 @@ from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_sma
             'MATHEMATICS')
 @allure.link(url='https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class NextSmallerTestCase(unittest.TestCase):
     """
     Testing next_smaller function
