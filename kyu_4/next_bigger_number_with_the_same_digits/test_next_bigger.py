@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigger
 
 
+# pylint: disable-msg=R0801
 @allure.epic("4 kyu")
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -26,6 +27,7 @@ from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigge
             'MATHEMATICS')
 @allure.link(url='https://www.codewars.com/kata/55983863da40caa2c900004e/train/python',
              name='Source/Kata')
+# pylint: disable-msg=R0801
 class NextBiggerTestCase(unittest.TestCase):
 
     def test_next_bigger(self):
