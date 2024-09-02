@@ -31,16 +31,16 @@ def mix(s1: str, s2: str) -> str:
     for key in keys:
         if key in s2_results and key in s1_results:
             if s1_results[key] == s2_results[key]:
-                results.append('=:{}'.format(key * s1_results[key]))
+                results.append(f'=:{key * s1_results[key]}')
             elif s1_results[key] > s2_results[key]:
-                results.append('1:{}'.format(key * s1_results[key]))
+                results.append(f'1:{key * s1_results[key]}')
             else:
-                results.append('2:{}'.format(key * s2_results[key]))
+                results.append(f'2:{key * s2_results[key]}')
         else:
             if key in s1_results:
-                results.append('1:{}'.format(key * s1_results[key]))
+                results.append(f'1:{key * s1_results[key]}')
             else:
-                results.append('2:{}'.format(key * s2_results[key]))
+                results.append(f'2:{key * s2_results[key]}')
 
     return '/'.join(sort_results(results))
 
