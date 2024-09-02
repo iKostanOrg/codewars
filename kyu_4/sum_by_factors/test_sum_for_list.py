@@ -35,7 +35,7 @@ class SumForListTestCase(unittest.TestCase):
         Testing sum_for_list function
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing sum_for_list function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -48,7 +48,7 @@ class SumForListTestCase(unittest.TestCase):
             "produces a sorted array P of the form "
             "[[p, sum of all ij of I for which p is a prime factor (p positive) of ij]...]"
             "</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ([12, 15],
              [[2, 12], [3, 27], [5, 15]]),
