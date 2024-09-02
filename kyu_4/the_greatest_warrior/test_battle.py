@@ -8,8 +8,8 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
 # FUNDAMENTALS RULES
 
-import allure
 import unittest
+import allure
 from kyu_4.the_greatest_warrior.warrior import Warrior
 
 
