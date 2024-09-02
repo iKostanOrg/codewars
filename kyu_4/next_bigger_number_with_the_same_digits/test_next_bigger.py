@@ -43,7 +43,7 @@ class NextBiggerTestCase(unittest.TestCase):
 
         If no bigger number can be composed using those digits, return -1
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing next_bigger function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -61,7 +61,7 @@ class NextBiggerTestCase(unittest.TestCase):
             "<p>2017 ==> 2071</p>"
             "<p>If no bigger number can be composed using"
             " those digits, return -1</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             (6, -1),
             (12, 21),
