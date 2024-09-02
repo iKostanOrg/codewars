@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.strip_comments.solution import solution
 
@@ -33,25 +33,26 @@ class SolutionTestCase(unittest.TestCase):
         of a set of comment markers passed in. Any whitespace at
         the end of the line should also be stripped out.
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'solution' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing permutations function</p>"
-                                        "<p>The solution should strips all text that follows any "
-                                        "of a set of comment markers passed in. Any whitespace at "
-                                        "the end of the line should also be stripped out.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing permutations function</p>"
+            "<p>The solution should strips all text that follows any "
+            "of a set of comment markers passed in. Any whitespace at "
+            "the end of the line should also be stripped out.</p>")
+        # pylint: disable-msg=R0801
         test_data = (
-             ("apples, pears # and bananas\ngrapes\nbananas !apples",
-              ["#", "!"],
-              "apples, pears\ngrapes\nbananas"),
-             ("a #b\nc\nd $e f g",
-              ["#", "$"],
-              "a\nc\nd"),
+            ("apples, pears # and bananas\ngrapes\nbananas !apples",
+             ["#", "!"],
+             "apples, pears\ngrapes\nbananas"),
+            ("a #b\nc\nd $e f g",
+             ["#", "$"],
+             "a\nc\nd"),
         )
 
         for string, markers, expected in test_data:
@@ -60,9 +61,7 @@ class SolutionTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}) and "
-                             "verify the output ({}) vs "
-                             "expected ({})".format(string,
-                                                    actual_result,
-                                                    expected)):
+            with allure.step(f"Enter a test string ({string}) and "
+                             f"verify the output ({actual_result}) vs "
+                             f"expected ({expected})"):
                 self.assertEqual(expected, actual_result)
