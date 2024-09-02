@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # PUZZLES ARRAYS GAMES ALGORITHMS VALIDATION
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.validate_sudoku_with_size.sudoku import Sudoku
 
