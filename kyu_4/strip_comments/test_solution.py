@@ -24,6 +24,9 @@ from kyu_4.strip_comments.solution import solution
 @allure.link(url='https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
+    """
+    Testing solution for Strip Comments problem
+    """
 
     def test_solution(self):
         """
