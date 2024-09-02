@@ -12,6 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
 
+
 # pylint: disable-msg=R0801
 @allure.epic('4 kyu')
 @allure.parent_suite('Competent')
