@@ -43,7 +43,7 @@ class FormatDurationTestCase(unittest.TestCase):
         days, hours, minutes and seconds.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing format_duration")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -57,7 +57,7 @@ class FormatDurationTestCase(unittest.TestCase):
             "If it is zero, it just returns \"now\". Otherwise, "
             "the duration is expressed as a combination of years, "
             "days, hours, minutes and seconds.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             (1, "1 second"),
             (62, "1 minute and 2 seconds"),
