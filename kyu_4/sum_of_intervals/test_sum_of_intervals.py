@@ -5,15 +5,14 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-
 # ALGORITHMS AGGREGATIONS ARITHMETIC MATHEMATICS NUMBERS INTEGERS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
 
-
+# pylint: disable-msg=R0801
 @allure.epic('4 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
@@ -28,6 +27,7 @@ from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
             'INTEGERS')
 @allure.link(url='https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class SumOfIntervalsTestCase(unittest.TestCase):
     """
     Testing sum_of_intervals function
