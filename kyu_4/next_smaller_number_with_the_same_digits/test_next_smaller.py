@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS NUMBERS STRINGS INTEGERS MATHEMATICS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_smaller
 
@@ -27,6 +27,9 @@ from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_sma
 @allure.link(url='https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/python',
              name='Source/Kata')
 class NextSmallerTestCase(unittest.TestCase):
+    """
+    Testing next_smaller function
+    """
 
     def test_next_smaller(self):
         """
@@ -44,17 +47,18 @@ class NextSmallerTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing next_smaller function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing next_bigger function</p>"
-                                        "<p>You have to test a function that takes a positive integer "
-                                        "number and returns the next smaller number formed by the same digits:</p>"
-                                        "<p>21 ==> 12</p>"
-                                        "<p>531 ==> 513</p>"
-                                        "<p>2071 ==> 2017</p>"
-                                        "<p>If no smaller number can be composed using those digits, return -1</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing next_bigger function</p>"
+            "<p>You have to test a function that takes a positive integer "
+            "number and returns the next smaller number formed by the same digits:</p>"
+            "<p>21 ==> 12</p>"
+            "<p>531 ==> 513</p>"
+            "<p>2071 ==> 2017</p>"
+            "<p>If no smaller number can be composed using those digits, return -1</p>")
 
         test_data = [
             (1027, -1),
@@ -75,9 +79,7 @@ class NextSmallerTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter an integer ({}), "
-                             "calculate the result ({}) and "
-                             "compare it with expected ({})".format(n,
-                                                                    actual_result,
-                                                                    expected)):
+            with allure.step(f"Enter an integer ({n}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare it with expected ({expected})"):
                 self.assertEqual(expected, actual_result)
