@@ -47,6 +47,13 @@ Remove overlaps and duplicates
 
 
 def clean_interval(intervals, i, b) -> bool:
+    """
+    Remove intervals
+    :param intervals:
+    :param i:
+    :param b:
+    :return:
+    """
 
     result = True
 
