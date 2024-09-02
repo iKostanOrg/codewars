@@ -40,7 +40,7 @@ class PermutationsTestCase(unittest.TestCase):
         have to shuffle all letters from the input in all
         possible orders.
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing permutations function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -54,7 +54,7 @@ class PermutationsTestCase(unittest.TestCase):
             "remove duplicates, if present. This means, you "
             "have to shuffle all letters from the input in all "
             "possible orders.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             ('a', ['a']),
             ('ab', ['ab', 'ba']),
