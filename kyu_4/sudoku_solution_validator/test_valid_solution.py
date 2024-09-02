@@ -97,9 +97,7 @@ class ValidSolutionTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter test list ({}) and "
-                             "verify the output ({}) vs "
-                             "expected ({})".format(board,
-                                                    actual_result,
-                                                    expected)):
+            with allure.step(f"Enter test list ({board}) and "
+                             f"verify the output ({actual_result}) vs "
+                             f"expected ({expected})"):
                 self.assertEqual(expected, actual_result)
