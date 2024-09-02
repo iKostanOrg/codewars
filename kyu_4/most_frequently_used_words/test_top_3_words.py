@@ -98,5 +98,4 @@ class Top3WordsTestCase(unittest.TestCase):
                 print_log(text=text,
                           expected=expected,
                           result=actual_result)
-
                 self.assertListEqual(expected, actual_result)
