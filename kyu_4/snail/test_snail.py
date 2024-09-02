@@ -52,7 +52,7 @@ class SnailTestCase(unittest.TestCase):
             " elements arranged from outermost elements to the"
             " middle element, "
             "traveling clockwise</p>")
-        # pylint: disable-msg=R0801
+        # pylint: enable-msg=R0801
         test_data = (
             ([[]], []),
             ([[1]], [1]),
