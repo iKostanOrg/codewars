@@ -5,7 +5,6 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-
 import string
 
 LOWERCASE = string.ascii_lowercase
@@ -25,7 +24,10 @@ def mix(s1: str, s2: str) -> str:
     s1_results: dict = get_counters(s1)
     s2_results: dict = get_counters(s2)
     keys: list = sorted(
-        list(set([key for key in s1_results] + [key for key in s2_results])))
+        list(
+            set(
+                list(s1_results.keys()) + list(s2_results.keys())
+            )))
 
     results: list = list()
     for key in keys:
