@@ -17,7 +17,7 @@ def sum_of_intervals(intervals: list) -> int:
     """
 
     intervals = remove_overlaps(intervals)
-    results = list()
+    results = []
 
     for i in intervals:
         results.append(i[1] - i[0])
