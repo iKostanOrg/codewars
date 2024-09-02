@@ -41,7 +41,7 @@ class ValidSolutionTestCase(unittest.TestCase):
         cell only contains integers from 0 to 9.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing validSolution")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -60,7 +60,7 @@ class ValidSolutionTestCase(unittest.TestCase):
             "<p>The board is always 9 cells by 9 cells,"
             " and every cell only contains integers from"
             " 0 to 9.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             ([[5, 3, 4, 6, 7, 8, 9, 1, 2],
               [6, 7, 2, 1, 9, 5, 3, 4, 8],
