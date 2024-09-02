@@ -97,10 +97,8 @@ class SumOfIntervalsTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a list of intervals ({}), "
-                             "calculate the result ({}) and "
-                             "compare vs expected ({})".format(intervals,
-                                                               actual_result,
-                                                               expected)):
+            with allure.step(f"Enter a list of intervals ({intervals}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)
