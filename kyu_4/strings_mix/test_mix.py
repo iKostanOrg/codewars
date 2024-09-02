@@ -33,7 +33,7 @@ class MixTestCase(unittest.TestCase):
         Given two strings s1 and s2, the 'mix' function
         should visualize how different the two strings are.
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'mix' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,7 +46,7 @@ class MixTestCase(unittest.TestCase):
             "visualize how different the two strings are. We will only "
             "take into account the lowercase letters (a to z). First let "
             "us count the frequency of each lowercase letters in s1 and s2.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("Are they here",
              "yes, they are here",
