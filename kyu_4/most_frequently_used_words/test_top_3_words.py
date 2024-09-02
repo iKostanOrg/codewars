@@ -47,7 +47,7 @@ class Top3WordsTestCase(unittest.TestCase):
             "<p>Given a string of text (possibly with punctuation and line-breaks), "
             "the function should return an array of the top-3 most occurring words, "
             "in descending order of the number of occurrences.</p>")
-        # pylint: disable-msg=R0801
+        # pylint: enable-msg=R0801
         test_data = (
             ("a a a  b  c c  d d d d  e e e e e", ["e", "d", "a"]),
             ("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e", ["e", "ddd", "aa"]),
