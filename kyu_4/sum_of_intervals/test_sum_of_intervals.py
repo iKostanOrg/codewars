@@ -49,7 +49,7 @@ class SumOfIntervalsTestCase(unittest.TestCase):
         The length of this interval is 4.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing sum_of_intervals function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -67,7 +67,7 @@ class SumOfIntervalsTestCase(unittest.TestCase):
             " will always be less than the second value."
             " Interval example: [1, 5] is an interval from 1 to 5."
             " The length of this interval is 4.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             ([(1, 5)], 4),
             ([(1, 5), (6, 10)], 8),
