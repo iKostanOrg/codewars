@@ -37,7 +37,7 @@ class BattleTestCase(unittest.TestCase):
         """
         Testing Battle method
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Battle method")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,7 +46,7 @@ class BattleTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing Battle method</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("If a warrior level 1 fights an enemy level 1, "
                          "they will receive 10 experience points."):
             warrior_1 = Warrior()
