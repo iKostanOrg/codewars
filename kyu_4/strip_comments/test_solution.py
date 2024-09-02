@@ -45,7 +45,7 @@ class SolutionTestCase(unittest.TestCase):
             "<p>The solution should strips all text that follows any "
             "of a set of comment markers passed in. Any whitespace at "
             "the end of the line should also be stripped out.</p>")
-        # pylint: disable-msg=R0801
+        # pylint: enable-msg=R0801
         test_data = (
             ("apples, pears # and bananas\ngrapes\nbananas !apples",
              ["#", "!"],
