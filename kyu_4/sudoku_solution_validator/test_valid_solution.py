@@ -6,8 +6,8 @@ GitHub: https://github.com/ikostan
 """
 # ALGORITHMS DATA STRUCTURES VALIDATION
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
 
@@ -48,12 +48,13 @@ class ValidSolutionTestCase(unittest.TestCase):
                                         '<img src="https://www.codewars.com/users/myFirstCode'
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
-                                        "<p>Test a function validSolution/ValidateSolution/valid_solution()"
-                                        " that accepts a 2D array representing a Sudoku board, and returns"
-                                        " true if it is a valid solution, or false otherwise. The cells of"
-                                        " the sudoku board may also contain 0's, which will represent empty"
-                                        " cells. Boards containing one or more zeroes are considered to be"
-                                        " invalid solutions.</p>"
+                                        "<p>Test a function valid_solution()"
+                                        " that accepts a 2D array representing a Sudoku board,"
+                                        " and returns true if it is a valid solution, or false"
+                                        " otherwise. The cells of the sudoku board may also "
+                                        "contain 0's, which will represent empty cells. "
+                                        "Boards containing one or more zeroes are considered"
+                                        " to be invalid solutions.</p>"
                                         "<p>The board is always 9 cells by 9 cells, and every "
                                         "cell only contains integers from 0 to 9.</p>")
 
