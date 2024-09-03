@@ -76,6 +76,11 @@ def sort_results(results: list) -> list:
 
 
 def get_counters(s: str) -> dict:
+    """
+    Get counters
+    :param s: str
+    :return: dict
+    """
     s_results: dict = dict()
     for char in s:
         counter = s.count(char)
