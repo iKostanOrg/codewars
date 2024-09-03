@@ -5,11 +5,10 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-
 # PUZZLES ARRAYS GAMES ALGORITHMS VALIDATION
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.validate_sudoku_with_size.sudoku import Sudoku
 
@@ -40,18 +39,19 @@ class SudokuTestCase(unittest.TestCase):
         assert a method that validates if it has been filled out correctly.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Sudoku class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing Sudoku class</p>"
-                                        "<p>Given a Sudoku data structure with size NxN, "
-                                        "N > 0 and √N == integer, assert a method that validates "
-                                        "if it has been filled out correctly.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing Sudoku class</p>"
+            "<p>Given a Sudoku data structure with size NxN, "
+            "N > 0 and √N == integer, assert a method that validates "
+            "if it has been filled out correctly.</p>")
+        # pylint: enable-msg=R0801
         test_data = [
             ([
                  [7, 8, 4, 1, 5, 9, 3, 2, 6],
@@ -166,7 +166,6 @@ class SudokuTestCase(unittest.TestCase):
 
         for data, expected, message in test_data:
             with allure.step("Enter a Sudoku solution and verify if it a valid one."):
-
                 actual_result = Sudoku(data).is_valid()
 
                 print_log(expected=expected,
