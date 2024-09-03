@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Tests for -> Will you make it?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS MATHEMATICS ALGORITHMS NUMBERS
 
@@ -16,7 +18,10 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Will you make it?')
-@allure.tag('FUNDAMENTALS', 'MATHEMATICS', 'ALGORITHMS', 'NUMBERS')
+@allure.tag('FUNDAMENTALS',
+            'MATHEMATICS',
+            'ALGORITHMS',
+            'NUMBERS')
 @allure.link(url='https://www.codewars.com/kata/5861d28f124b35723e00005e/train/python',
              name='Source/Kata')
 class ZeroFuelTestCase(unittest.TestCase):
@@ -25,6 +30,7 @@ class ZeroFuelTestCase(unittest.TestCase):
     """
 
     def test_zero_fuel(self):
+        # pylint: disable=R0801
         allure.dynamic.title("Testing zero_fuel function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -40,7 +46,7 @@ class ZeroFuelTestCase(unittest.TestCase):
                                         "the pump or not. Function should return true (1 in Prolog) if "
                                         "it is possible and false (0 in Prolog) if not. The input values "
                                         "are always positive.</p>")
-
+        # pylint: enable=R0801
         test_data = [
             ((50, 25, 2), True),
             ((100, 50, 1), False),

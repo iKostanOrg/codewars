@@ -11,6 +11,7 @@ kyu\_8.keep\_hydrated.keep\_hydrated module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.keep\_hydrated.test\_keep\_hydrated module
 -------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.keep\_hydrated.test\_keep\_hydrated module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

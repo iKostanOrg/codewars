@@ -1,26 +1,37 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Next bigger number with the same digits
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # REFACTORING NUMBERS STRINGS INTEGERS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigger
 
 
+# pylint: disable-msg=R0801
 @allure.epic("4 kyu")
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story("Next bigger number with the same digits")
-@allure.tag('ALGORITHMS', 'NUMBERS', 'STRINGS', 'INTEGERS', 'MATHEMATICS')
+@allure.tag('ALGORITHMS',
+            'NUMBERS',
+            'STRINGS',
+            'INTEGERS',
+            'MATHEMATICS')
 @allure.link(url='https://www.codewars.com/kata/55983863da40caa2c900004e/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class NextBiggerTestCase(unittest.TestCase):
-
+    """
+    Testing next_bigger function
+    """
     def test_next_bigger(self):
         """
         Testing next_bigger function
@@ -34,21 +45,25 @@ class NextBiggerTestCase(unittest.TestCase):
 
         If no bigger number can be composed using those digits, return -1
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing next_bigger function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing next_bigger function</p>"
-                                        "<p>You have to test a function that takes a positive integer "
-                                        "number and returns the next bigger number formed by the same digits:</p>"
-                                        "<p>12 ==> 21</p>"
-                                        "<p>513 ==> 531</p>"
-                                        "<p>2017 ==> 2071</p>"
-                                        "<p>If no bigger number can be composed using those digits, return -1</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing next_bigger function</p>"
+            "<p>You have to test a function that takes"
+            " a positive integer number and returns "
+            "the next bigger number formed by the same "
+            "digits:</p>"
+            "<p>12 ==> 21</p>"
+            "<p>513 ==> 531</p>"
+            "<p>2017 ==> 2071</p>"
+            "<p>If no bigger number can be composed using"
+            " those digits, return -1</p>")
+        # pylint: enable-msg=R0801
         test_data = [
             (6, -1),
             (12, 21),
@@ -66,9 +81,7 @@ class NextBiggerTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter an integer ({}), "
-                             "generate the result ({}) and "
-                             "compare it with expected ({})".format(n,
-                                                                    actual_result,
-                                                                    expected)):
+            with allure.step(f"Enter an integer ({n}), "
+                             f"generate the result ({actual_result}) and "
+                             f"compare it with expected ({expected})"):
                 self.assertEqual(expected, actual_result)

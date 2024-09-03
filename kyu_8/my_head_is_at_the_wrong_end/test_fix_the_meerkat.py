@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS ARRAYS LISTS DATA STRUCTURES
 
@@ -16,7 +15,10 @@ from kyu_8.my_head_is_at_the_wrong_end.fix_the_meerkat import fix_the_meerkat
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('My head is at the wrong end!')
-@allure.tag('ALGORITHMS', 'ARRAYS', 'LISTS', 'DATA STRUCTURES')
+@allure.tag('ALGORITHMS',
+            'ARRAYS',
+            'LISTS',
+            'DATA STRUCTURES')
 @allure.link(url='https://www.codewars.com/kata/56f699cd9400f5b7d8000b55/train/python',
              name='Source/Kata')
 # @pytest.mark.skip(reason="The solution is not ready")
@@ -26,6 +28,7 @@ class FixTheMeerkatTestCase(unittest.TestCase):
     """
 
     def test_fix_the_meerkat(self):
+        # pylint: disable=R0801
         allure.dynamic.title("'fix_the_meerkat function function verification")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -36,7 +39,7 @@ class FixTheMeerkatTestCase(unittest.TestCase):
                                         "You will be given an array which will have three values "
                                         "(tail, body, head). It is your job to re-arrange the array "
                                         "so that the animal is the right way round (head, body, tail).</p>")
-
+        # pylint: disable=R0801
         test_data = (
             (["tail", "body", "head"], ["head", "body", "tail"]),
             (["tails", "body", "heads"], ["heads", "body", "tails"]),

@@ -1,28 +1,34 @@
 """
-Testing Calculator class
+Testing for -> Calculator class
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-# Created by Egor Kostan.
-# GitHub: https://github.com/ikostan
 # ALGORITHMS PARSING STRINGS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_3.calculator.calculator import Calculator
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Calculator')
-@allure.tag('ALGORITHMS', 'PARSING', 'STRINGS',
-            'EXPRESSIONS', 'BASIC LANGUAGE FEATURES',
+@allure.tag('ALGORITHMS',
+            'PARSING',
+            'STRINGS',
+            'EXPRESSIONS',
+            'BASIC LANGUAGE FEATURES',
             'FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/5235c913397cbf2508000048/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class CalculatorTestCase(unittest.TestCase):
     """
     Testing Calculator class
@@ -31,9 +37,10 @@ class CalculatorTestCase(unittest.TestCase):
     def test_calculator(self):
         """
         Testing Calculator class
-
-        A simple calculator that given a string of operators (), +, -, *, /
+        A simple calculator that given a string of operators '()', '+', '-', '*', '/'
         and numbers separated by spaces will return the value of that expression
+
+        :return: None
         """
 
         allure.dynamic.title("Testing Calculator class")
@@ -43,10 +50,10 @@ class CalculatorTestCase(unittest.TestCase):
                                         '/badges/large">'
                                         '<h3>Test Description:</h3>'
                                         "<p>"
-                                        "1. given a string of operators (), +, -, *, / "
+                                        "1. given a string of operators '(), +, -, *, /'"
                                         "and numbers separated by spaces<br/>"
-                                        "2. the calculator should return the value of that expression"
-                                        "</p>")
+                                        "2. the calculator should return the value of that "
+                                        "expression</p>")
 
         test_data = (
             ('127', 127),
@@ -66,10 +73,9 @@ class CalculatorTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}), "
-                             "calculate the result ({}) and "
-                             "compare vs expected ({})".format(string,
-                                                               actual_result,
-                                                               expected)):
+            with allure.step(f"Enter a test string ({string}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare vs expected ({expected})"):
+
                 self.assertEqual(expected,
                                  actual_result)

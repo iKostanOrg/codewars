@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> String transformer
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -16,7 +18,7 @@ from kyu_6.string_transformer.string_transformer import string_transformer
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String transformer')
-@allure.tag()
+@allure.tag('FUNDAMENTALS')
 @allure.link(url='',
              name='Source/Kata')
 class StringTransformerTestCase(unittest.TestCase):
@@ -32,9 +34,11 @@ class StringTransformerTestCase(unittest.TestCase):
         Given a string, return a new string that has
         transformed based on the input:
 
-                1. Change case of every character, ie. lower
-                case to upper case, upper case to lower case.
-                2. Reverse the order of words from the input.
+        1. Change case of every character, ie. lower
+        case to upper case, upper case to lower case.
+
+        2. Reverse the order of words from the input.
+
         :return:
         """
 

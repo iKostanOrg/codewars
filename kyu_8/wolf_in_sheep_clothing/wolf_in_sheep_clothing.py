@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> A wolf in sheep's clothing
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def warn_the_sheep(queue: list) -> str:
@@ -15,8 +17,8 @@ def warn_the_sheep(queue: list) -> str:
     You are about to be eaten by a wolf!"
     where N is the sheep's position in the queue.
 
-    :param queue:
-    :return:
+    :param queue: list
+    :return: str
     """
 
     warning: str = "Pls go away and stop eating my sheep"

@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Check the exam
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def check_exam(arr1, arr2):
@@ -15,6 +18,7 @@ def check_exam(arr1, arr2):
     and +0 for each blank answer(empty string).
 
     If the score < 0, return 0.
+
     :param arr1:
     :param arr2:
     :return:
@@ -28,7 +32,8 @@ def check_exam(arr1, arr2):
     return 0 if total < 0 else total
 
 
-def char_processor(char: str, results: list) -> None:
+def char_processor(char: str,
+                   results: list) -> None:
     """
     Processing chars based on specified rule
     :param char:

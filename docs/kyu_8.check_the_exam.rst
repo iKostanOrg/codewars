@@ -11,6 +11,7 @@ kyu\_8.check\_the\_exam.check\_exam module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.check\_the\_exam.test\_check\_exam module
 ------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.check\_the\_exam.test\_check\_exam module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

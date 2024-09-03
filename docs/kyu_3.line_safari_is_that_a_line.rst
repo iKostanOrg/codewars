@@ -49,7 +49,6 @@ kyu\_3.line\_safari\_is\_that\_a\_line.walker\_class module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

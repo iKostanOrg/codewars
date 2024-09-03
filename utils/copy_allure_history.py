@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Script in order to copy Allure history.
+
+Created by Egor Kostan.
+itHub: https://github.com/ikostan
+"""
 
 import os
 import platform
@@ -9,8 +12,8 @@ import shutil
 
 def copy_allure_history() -> None:
     """
-    Copy '.\allure-report\history' folder
-    into '.\allure-results\history'
+    Copy '.\\allure-report\\history' folder
+    into '.\\allure-results\\history'
 
     :return:
     """
@@ -24,8 +27,8 @@ def copy_allure_history() -> None:
         DESTINATION_DIR = 'allure-results/history'
 
     if platform.system() == 'Windows':
-        SOURCE_DIR = 'allure-report\history'
-        DESTINATION_DIR = 'allure-results\history'
+        SOURCE_DIR = r'allure-report\history'
+        DESTINATION_DIR = r'allure-results\history'
 
     if platform.system() == 'Darwin':
         raise OSError("MAC OS is not supported")

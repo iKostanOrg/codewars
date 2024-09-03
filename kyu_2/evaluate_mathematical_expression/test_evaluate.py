@@ -1,13 +1,16 @@
 """
 Testing calc method
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-# ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS PARSING STRINGS
+# ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS
+# BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS
+# PARSING STRINGS
 
-import allure
 import unittest
+import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_2.evaluate_mathematical_expression.evaluate import calc
 
@@ -18,9 +21,14 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Evaluate mathematical expression')
-@allure.tag('ALGORITHMS', 'MATHEMATICS', 'NUMBERS',
-            'EXPRESSIONS', 'BASIC LANGUAGE FEATURES',
-            'FUNDAMENTALS', 'OPERATORS', 'PARSING STRINGS')
+@allure.tag('ALGORITHMS',
+            'MATHEMATICS',
+            'NUMBERS',
+            'EXPRESSIONS',
+            'BASIC LANGUAGE FEATURES',
+            'FUNDAMENTALS',
+            'OPERATORS',
+            'PARSING STRINGS')
 @allure.link(url='https://www.codewars.com/kata/52a78825cdfc2cfc87000005/train/python',
              name='Source/Kata')
 class CalcTestCase(unittest.TestCase):
@@ -77,10 +85,8 @@ class CalcTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}), "
-                             "calculate the result ({}) and "
-                             "compare vs expected ({})".format(string,
-                                                               actual_result,
-                                                               expected)):
+            with allure.step(f"Enter a test string ({string}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)

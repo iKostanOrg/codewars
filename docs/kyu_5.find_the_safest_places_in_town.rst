@@ -11,22 +11,7 @@ kyu\_5.find\_the\_safest\_places\_in\_town.advice module
    :members:
    :undoc-members:
    :show-inheritance:
-
-kyu\_5.find\_the\_safest\_places\_in\_town.cell module
-------------------------------------------------------
-
-.. automodule:: kyu_5.find_the_safest_places_in_town.cell
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-kyu\_5.find\_the\_safest\_places\_in\_town.manhattan\_distance module
----------------------------------------------------------------------
-
-.. automodule:: kyu_5.find_the_safest_places_in_town.manhattan_distance
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   :private-members:
 
 kyu\_5.find\_the\_safest\_places\_in\_town.print\_agents module
 ---------------------------------------------------------------
@@ -35,6 +20,7 @@ kyu\_5.find\_the\_safest\_places\_in\_town.print\_agents module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.find\_the\_safest\_places\_in\_town.test\_advice module
 --------------------------------------------------------------
@@ -43,7 +29,7 @@ kyu\_5.find\_the\_safest\_places\_in\_town.test\_advice module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -52,3 +38,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

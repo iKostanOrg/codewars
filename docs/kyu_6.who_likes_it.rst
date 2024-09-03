@@ -11,6 +11,7 @@ kyu\_6.who\_likes\_it.likes\_function module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.who\_likes\_it.test\_likes\_function module
 --------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.who\_likes\_it.test\_likes\_function module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

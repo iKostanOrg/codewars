@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Next smaller number with the same digits
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def next_smaller(n: int) -> int:
@@ -31,19 +34,32 @@ def next_smaller(n: int) -> int:
     # Then sort all of the digits to the right of Y in descending order.
     # This makes the number as big as possible, without making it bigger
     # than the original.
-    result: int = int(''.join([str(i) for i in (n_list[:x_i + 1] + sorted(n_list[x_i + 1:], reverse=True))]))
+    result: int = int(
+        ''.join([str(i) for i in (n_list[:x_i + 1] + sorted(n_list[x_i + 1:],
+                                                            reverse=True))]))
     return result if len(str(result)) == len(str(n)) else -1
 
 
 def find_x(n: int) -> int:
+    """
+    Find x
+    :param n: int
+    :return: int
+    """
     n_list: list = [int(i) for i in str(n)[::-1]]
     for index, digit in enumerate(n_list):
-        if index - 1 >= 0 and n_list[index] > n_list[index - 1]:
+        if index - 1 >= 0 and digit > n_list[index - 1]:
             return len(n_list) - index - 1
     return -1
 
 
 def find_y(n: int, x_i: int) -> int:
+    """
+    Find y
+    :param n: int
+    :param x_i: int
+    :return: int
+    """
     n_list: list = [int(i) for i in str(n)]
     comparable_x = {
         'x': n_list[x_i],

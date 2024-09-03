@@ -1,12 +1,15 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> The Greatest Warrior -> test battle
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
 # FUNDAMENTALS RULES
 
-import allure
 import unittest
+import allure
 from kyu_4.the_greatest_warrior.warrior import Warrior
 
 
@@ -16,8 +19,12 @@ from kyu_4.the_greatest_warrior.warrior import Warrior
 @allure.sub_suite("Unit Tests")
 @allure.feature('Classes')
 @allure.story('The Greatest Warrior')
-@allure.tag('ALGORITHMS', 'CLASSES', 'BASIC LANGUAGE FEATURES',
-            'OBJECT-ORIENTED PROGRAMMING', 'FUNDAMENTALS', 'RULES')
+@allure.tag('ALGORITHMS',
+            'CLASSES',
+            'BASIC LANGUAGE FEATURES',
+            'OBJECT-ORIENTED PROGRAMMING',
+            'FUNDAMENTALS',
+            'RULES')
 @allure.link(
     url='https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python',
     name='Source/Kata')
@@ -30,7 +37,7 @@ class BattleTestCase(unittest.TestCase):
         """
         Testing Battle method
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Battle method")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -39,7 +46,7 @@ class BattleTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing Battle method</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("If a warrior level 1 fights an enemy level 1, "
                          "they will receive 10 experience points."):
             warrior_1 = Warrior()

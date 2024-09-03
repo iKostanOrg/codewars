@@ -11,6 +11,7 @@ kyu\_7.substituting\_variables\_into\_strings\_padded\_numbers.solution module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.substituting\_variables\_into\_strings\_padded\_numbers.test\_solution module
 ------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.substituting\_variables\_into\_strings\_padded\_numbers.test\_solution mo
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -11,6 +11,7 @@ kyu\_7.the\_first\_non\_repeated\_character\_in\_string.first\_non\_repeated mod
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.the\_first\_non\_repeated\_character\_in\_string.test\_first\_non\_repeated module
 -----------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.the\_first\_non\_repeated\_character\_in\_string.test\_first\_non\_repeat
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

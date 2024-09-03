@@ -1,11 +1,12 @@
 """
+Solution for -> Snail
+
 Returns the array elements arranged from outermost elements
 to the middle element, traveling clockwise.
-"""
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def snail(snail_map: list) -> list:
@@ -14,13 +15,13 @@ def snail(snail_map: list) -> list:
     to the middle element, traveling clockwise.
 
     :param snail_map: n x n array
-    :return: array elements arranged from outermost elements to
+    :return:  list of elements arranged from outermost elements to
              the middle element, traveling clockwise
     """
     if not snail_map:
-        return list()
+        return []
 
-    result = list()
+    result = []
     while snail_map:
         try:
             # 1 left to right

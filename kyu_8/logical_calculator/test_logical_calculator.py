@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS ARRAYS
 
@@ -10,15 +9,18 @@ from utils.log_func import print_log
 from kyu_8.logical_calculator.logical_calculator import logical_calc
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Logical Calculator')
-@allure.tag('FUNDAMENTALS', 'ARRAYS')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS')
 @allure.link(url='https://www.codewars.com/kata/57096af70dad013aa200007b/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class LogicalCalculatorTestCase(unittest.TestCase):
     """
     Testing logical_calc function

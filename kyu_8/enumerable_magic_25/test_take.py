@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # FUNDAMENTALS
 
@@ -10,6 +9,7 @@ from utils.log_func import print_log
 from kyu_8.enumerable_magic_25.take import take
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -19,12 +19,14 @@ from kyu_8.enumerable_magic_25.take import take
 @allure.tag("FUNDAMENTALS")
 @allure.link(url='https://www.codewars.com/kata/545afd0761aa4c3055001386/train/python',
              name='Source/Kata')
+# pylint: enable=R0801
 class TakeTestCase(unittest.TestCase):
     """
     Testing take function
     """
 
     def test_take(self):
+        # pylint: disable=R0801
         allure.dynamic.title("Testing take function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -36,7 +38,7 @@ class TakeTestCase(unittest.TestCase):
                                         "list/array. If you need help, here's a reference: "
                                         "https://docs.python.org/3/library/stdtypes"
                                         ".html#sequence-types-list-tuple-range</p>")
-
+        # pylint: enable=R0801
         test_data = [
             ([0, 1, 2, 3, 5, 8, 13],
              3,

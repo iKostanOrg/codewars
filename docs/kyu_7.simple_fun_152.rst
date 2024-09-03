@@ -11,6 +11,7 @@ kyu\_7.simple\_fun\_152.invite\_more\_women module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.simple\_fun\_152.test\_invite\_more\_women module
 --------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.simple\_fun\_152.test\_invite\_more\_women module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

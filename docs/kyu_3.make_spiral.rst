@@ -22,7 +22,6 @@ kyu\_3.make\_spiral.test\_spiralize module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

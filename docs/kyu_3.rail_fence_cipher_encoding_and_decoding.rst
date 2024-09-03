@@ -31,7 +31,6 @@ kyu\_3.rail\_fence\_cipher\_encoding\_and\_decoding.test\_encoding module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

@@ -22,7 +22,6 @@ kyu\_5.string\_incrementer.test\_increment\_string module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

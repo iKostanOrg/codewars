@@ -3,7 +3,6 @@
 ![Document PNG](https://github.com/iKostanOrg/codewars/blob/master/img/document.png)
 
 [![Main Build Pipeline](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml/badge.svg)](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml)
-[![HitCount](http://hits.dwyl.com/iKostanOrg/codewars.svg)](http://hits.dwyl.com/iKostanOrg/codewars)
 ![GitHub forks](https://img.shields.io/github/forks/iKostanOrg/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/iKostanOrg/codewars)
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
@@ -79,7 +78,7 @@ Sphinx is a tool that makes it easy to create intelligent and
 beautiful documentation, written by Georg Brandl and licensed under
 the BSD license. 
 
-[Online version of the latest tech documentation](https://codewars.readthedocs.io/en/latest/)
+[Online version of the latest tech documentation](https://codewars.readthedocs.io/)
 
 ### Allure Report
 

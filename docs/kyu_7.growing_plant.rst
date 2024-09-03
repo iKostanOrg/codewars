@@ -11,6 +11,7 @@ kyu\_7.growing\_plant.growing\_plant module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.growing\_plant.test\_growing\_plant module
 -------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.growing\_plant.test\_growing\_plant module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -22,7 +22,6 @@ kyu\_4.next\_smaller\_number\_with\_the\_same\_digits.test\_next\_smaller module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

@@ -1,11 +1,10 @@
 """
+Test for -> No arithmetic progressions
 Testing sequence function
 A function f(n), should returns the n-th member of sequence.
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS
 
@@ -45,16 +44,16 @@ class SequenceTestCase(unittest.TestCase):
                                         "form an arithmetic progression.</p>")
 
         test_data = (
-	        (1233, 62047),
-	        (0, 0),
-	        (1, 1),
-	        (2, 3),
-	        (3, 4),
-	        (4, 9),
-	        (6541, 717373),
-	        (7878, 790248),
-	        (1435, 67909),
-	        (6457, 715501)
+            (1233, 62047),
+            (0, 0),
+            (1, 1),
+            (2, 3),
+            (3, 4),
+            (4, 9),
+            (6541, 717373),
+            (7878, 790248),
+            (1435, 67909),
+            (6457, 715501)
         )
 
         for n, expected in test_data:
