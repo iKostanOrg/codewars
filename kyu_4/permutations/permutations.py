@@ -13,3 +13,5 @@ def permutations(string: str) -> list:
     have to shuffle all letters from the input in all
     possible orders.
     """
+    for char in string:
+        pass
