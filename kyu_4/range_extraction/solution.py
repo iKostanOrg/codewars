@@ -7,6 +7,12 @@ GitHub: https://github.com/ikostan
 
 
 def solution(args: list) -> str:
+    """
+    Tt takes a list of integers in increasing order and returns
+    a correctly formatted string in the range format.
+    :param args:
+    :return:
+    """
     current = [args[0], args[0], False]
     result = ''
 
@@ -14,17 +20,19 @@ def solution(args: list) -> str:
 
         if current[1] == a:
             continue
-        elif a == current[1] + 1:
+
+        if abs(current[0] - current[1]) >= 2 and i == 1:
+            current[0] = a
+            current[1] = a
+            continue
+
+        if a == current[1] + 1:
             current[1] = a
             current[2] = False
         else:
             if abs(current[1] - current[0]) >= 2 and i != 1:
                 result += str(current[0]) + '-' + str(current[1]) + ','
                 current[2] = True
-            elif abs(current[0] - current[1]) >= 2 and i == 1:
-                current[0] = a
-                current[1] = a
-                continue
             else:
                 if current[0] != current[1]:
                     result += str(current[0]) + ',' + str(current[1]) + ','
