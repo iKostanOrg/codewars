@@ -8,10 +8,10 @@ GitHub: https://github.com/ikostan
 def is_solved(board):
 	"""
 	Checks whether the board's current state is solved:
-		-1 if the board is not yet finished (there are empty spots),
-		1 if "X" won,
-		2 if "O" won,
-		0 if it's a cat's game (i.e. a draw).
+	-1 if the board is not yet finished (there are empty spots),
+	1 if "X" won,
+	2 if "O" won,
+	0 if it's a cat's game (i.e. a draw).
 
 	:param board: list
 	:return: -1, 0, 1, or 2
