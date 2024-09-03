@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Human Readable Time
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def make_readable(seconds: int) -> str:
@@ -27,23 +30,23 @@ def make_readable(seconds: int) -> str:
         if len(str(hours)) > 1:
             hours_str = str(hours)
         else:
-            hours_str = '0' + str(hours)
+            hours_str: str = '0' + str(hours)
 
     if minutes == 0:
         minutes_str: str = '00'
     else:
         if len(str(minutes)) > 1:
-            minutes_str = str(minutes)
+            minutes_str: str = str(minutes)
         else:
-            minutes_str = '0' + str(minutes)
+            minutes_str: str = '0' + str(minutes)
 
     if seconds == 0:
         seconds_str: str = '00'
     else:
         if len(str(seconds)) > 1:
-            seconds_str = str(seconds)
+            seconds_str: str = str(seconds)
         else:
-            seconds_str = '0' + str(seconds)
+            seconds_str: str = '0' + str(seconds)
 
     result: str = '{}:{}:{}'.format(
         hours_str,
