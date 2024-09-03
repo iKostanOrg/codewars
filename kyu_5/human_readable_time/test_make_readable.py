@@ -11,6 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.human_readable_time.make_readable import make_readable
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
