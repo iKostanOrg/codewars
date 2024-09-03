@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Tic-Tac-Toe Checker
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def is_solved(board):
@@ -36,7 +38,6 @@ def is_solved(board):
 def check_diagonals(board):
 	"""
 	Check board by diagonal
-
 	:param board: list
 	:return: 1, 2, or None
 	"""
@@ -64,7 +65,6 @@ def check_diagonals(board):
 def check_cols(board):
 	"""
 	Check board by column
-
 	:param board: list
 	:return: 1, 2, or None
 	"""
@@ -82,7 +82,6 @@ def check_cols(board):
 def check_rows(board: list):
 	"""
 	Check board by row
-
 	:param board: list
 	:return: 1, 2, or None
 	"""

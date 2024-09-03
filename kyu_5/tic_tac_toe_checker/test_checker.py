@@ -1,15 +1,13 @@
 """
 Testing is_solved function
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS ARRAYS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.tic_tac_toe_checker.checker import is_solved
 
@@ -20,7 +18,8 @@ from kyu_5.tic_tac_toe_checker.checker import is_solved
 @allure.sub_suite("Unit Tests")
 @allure.feature('Lists')
 @allure.story('Tic-Tac-Toe Checker')
-@allure.tag('ALGORITHMS', 'ARRAY')
+@allure.tag('ALGORITHMS',
+            'ARRAY')
 @allure.link(url='https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/python',
              name='Source/Kata')
 class IsSolvedTestCase(unittest.TestCase):
