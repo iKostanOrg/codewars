@@ -7,12 +7,12 @@ GitHub: https://github.com/ikostan
 # FUNDAMENTALS STRINGS REGULAR EXPRESSIONS
 # DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.alphabet_wars_nuclear_strike.alphabet_war import alphabet_war
 
-
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Advanced Language Features")
@@ -30,6 +30,7 @@ from kyu_5.alphabet_wars_nuclear_strike.alphabet_war import alphabet_war
             'FEATURES')
 @allure.link(url='https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class AlphabetWarTestCase(unittest.TestCase):
     """
     Testing alphabet_war function
