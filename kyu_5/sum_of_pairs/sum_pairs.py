@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Sum of Pairs
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def sum_pairs(ints: list, s: int):
@@ -13,7 +15,6 @@ def sum_pairs(ints: list, s: int):
 	:param s: a single sum value
 	:return: the first two values = s
 	"""
-
 	results = dict()
 	short_ints = simplify(ints)
 
