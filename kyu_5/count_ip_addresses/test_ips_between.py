@@ -12,6 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.count_ip_addresses.ips_between import ips_between
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
@@ -78,7 +79,6 @@ class IpsBetweenTestCase(unittest.TestCase):
                              f"end: {end}) and verify "
                              f"the output ({result}) "
                              f"vs expected ({expected})"):
-
                 print_log(start=start,
                           end=end,
                           result=result,
