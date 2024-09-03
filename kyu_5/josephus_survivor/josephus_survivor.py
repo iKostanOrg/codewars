@@ -14,5 +14,3 @@ def josephus_survivor(total: int, eliminated: int) -> int:
     """
     print(f"total: {total}, eliminated: {eliminated}")
     return 0
-
-
