@@ -5,11 +5,14 @@ GitHub: https://github.com/ikostan
 """
 
 
-def josephus_survivor(n) -> int:
+def josephus_survivor(total: int, eliminated: int) -> int:
     """
     Return who is the "survivor"
-    :param n:
+    :param total: int
+    :param eliminated: int
     :return:
     """
-    n_list = [i for i in range(1, n + 1)]
-    return n_list[0]
+    print(f"total: {total}, eliminated: {eliminated}")
+    return 0
+
+

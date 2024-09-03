@@ -61,17 +61,17 @@ class JosephusSurvivorTestCase(unittest.TestCase):
         ]
 
         for test_data, expected in test_data:
-            n = test_data[0]
-            k = test_data[1]
-            result = josephus_survivor(n, k)
+            total = test_data[0]
+            eliminated = test_data[1]
+            result = josephus_survivor(total, eliminated)
 
             with allure.step(f"Enter test data "
-                             f"(n: {n}, k: {k}) and verify "
+                             f"(n: {total}, k: {eliminated}) and verify "
                              f"the output ({result}) "
                              f"vs expected ({expected})"):
 
-                print_log(n=n,
-                          k=k,
+                print_log(total=total,
+                          eliminated=eliminated,
                           result=result,
                           expected=expected)
 
