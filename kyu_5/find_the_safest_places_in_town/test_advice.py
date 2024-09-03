@@ -125,7 +125,8 @@ class FirstAdviceTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>The function should return a list of coordinates that "
-            "are the furthest away (by Manhattan distance) from all agents.</p>")
+            "are the furthest away (by Manhattan distance) from all "
+            "agents.</p>")
 
         with allure.step("Enter test string and verify the output"):
             test_data = [
