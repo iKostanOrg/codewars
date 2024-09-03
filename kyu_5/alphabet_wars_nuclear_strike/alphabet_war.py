@@ -54,7 +54,7 @@ def clean_battlefield(battlefield: str) -> str:
     result: list = battlefield.split('[')
     result: list = [string for string in result if string != '']
     result: list = list(reversed(result))
-    temp: list = list()
+    temp: list = []
 
     while result:
         for i, r in enumerate(result):
