@@ -29,7 +29,7 @@ def mix(s1: str, s2: str) -> str:
                 list(s1_results.keys()) + list(s2_results.keys())
             )))
 
-    results: list = list()
+    results: list = []
     for key in keys:
         if key in s2_results and key in s1_results:
             if s1_results[key] == s2_results[key]:
@@ -56,9 +56,9 @@ def sort_results(results: list) -> list:
     :param results:
     :return:
     """
-    results = sorted(results)
+    results: list = sorted(results)
+    is_sorted: bool = False
 
-    is_sorted = False
     while not is_sorted:
         is_sorted = True
         for i, result in enumerate(results):
@@ -81,7 +81,7 @@ def get_counters(s: str) -> dict:
     :param s: str
     :return: dict
     """
-    s_results: dict = dict()
+    s_results: dict = {}
     for char in s:
         counter = s.count(char)
         if char in LOWERCASE and counter > 1 and char not in s_results:
