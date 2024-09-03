@@ -41,6 +41,11 @@ def next_smaller(n: int) -> int:
 
 
 def find_x(n: int) -> int:
+    """
+    Find x
+    :param n: int
+    :return: int
+    """
     n_list: list = [int(i) for i in str(n)[::-1]]
     for index, digit in enumerate(n_list):
         if index - 1 >= 0 and n_list[index] > n_list[index - 1]:
@@ -49,6 +54,12 @@ def find_x(n: int) -> int:
 
 
 def find_y(n: int, x_i: int) -> int:
+    """
+    Find y
+    :param n: int
+    :param x_i: int
+    :return: int
+    """
     n_list: list = [int(i) for i in str(n)]
     comparable_x = {
         'x': n_list[x_i],
