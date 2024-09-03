@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Alphabet wars - nuclear strike
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
+# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS
+# DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
 import allure
 import unittest
@@ -16,8 +19,15 @@ from kyu_5.alphabet_wars_nuclear_strike.alphabet_war import alphabet_war
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Alphabet wars - nuclear strike')
-@allure.tag('FUNDAMENTALS', 'STRINGS', 'REGULAR', 'EXPRESSIONS',
-            'DECLARATIVE', 'PROGRAMMING', 'ADVANCED', 'LANGUAGE', 'FEATURES')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'REGULAR',
+            'EXPRESSIONS',
+            'DECLARATIVE',
+            'PROGRAMMING',
+            'ADVANCED',
+            'LANGUAGE',
+            'FEATURES')
 @allure.link(url='https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python',
              name='Source/Kata')
 class AlphabetWarTestCase(unittest.TestCase):
@@ -60,12 +70,13 @@ class AlphabetWarTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing alphabet_war function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test a function that accepts battlefield string and "
-                                        "returns letters that survived the nuclear strike.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test a function that accepts battlefield string and "
+            "returns letters that survived the nuclear strike.</p>")
 
         test_data = [
             ('[a]#[b]#[c]', 'ac'),
@@ -85,18 +96,14 @@ class AlphabetWarTestCase(unittest.TestCase):
         ]
 
         for battlefield, expected in test_data:
-
             result = alphabet_war(battlefield)
 
-            with allure.step("Enter test string ({}) "
-                             "and verify the output ({}) "
-                             "vs expected ({})".format(battlefield,
-                                                       result,
-                                                       expected)):
+            with allure.step(f"Enter test string ({battlefield}) "
+                             f"and verify the output ({result}) "
+                             f"vs expected ({expected})"):
 
                 print_log(battlefield=battlefield,
                           result=result,
                           expected=expected)
 
-                self.assertEqual(expected,
-                                 result)
+                self.assertEqual(expected, result)
