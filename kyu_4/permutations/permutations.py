@@ -14,4 +14,4 @@ def permutations(string: str) -> list:
     possible orders.
     """
     for char in string:
-        pass
+        print(char)
