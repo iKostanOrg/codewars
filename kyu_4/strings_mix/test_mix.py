@@ -25,7 +25,9 @@ from kyu_4.strings_mix.solution import mix
     url='https://www.codewars.com/kata/5629db57620258aa9d000014/train/python',
     name='Source/Kata')
 class MixTestCase(unittest.TestCase):
-
+    """
+    Testing solution for Strings Mix problem
+    """
     def test_smix(self):
         """
         Testing 'mix' function
