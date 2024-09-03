@@ -36,8 +36,8 @@ def format_duration(seconds: int) -> str:
     Formally, the duration specified by of a component must not be greater than
     any valid more significant unit of time.
 
-    :param seconds:
-    :return:
+    :param seconds: int
+    :return: str
     """
 
     if seconds == 0:
@@ -45,41 +45,43 @@ def format_duration(seconds: int) -> str:
 
     result = ''
 
-    years = calc_years(seconds)
-    days = calc_days(seconds)
-    hours = calc_hours(seconds)
-    minutes = calc_minutes(seconds)
-    seconds = calc_seconds(seconds)
+    years: int = calc_years(seconds)
+    days: int = calc_days(seconds)
+    hours: int = calc_hours(seconds)
+    minutes: int = calc_minutes(seconds)
+    seconds: int = calc_seconds(seconds)
+
+    year: str = get_string(years, 'year')
+    day: str = get_string(days, 'day')
+    hour: str = get_string(hours, 'hour')
+    minute: str = get_string(minutes, 'minute')
+    second: str = get_string(seconds, 'second')
 
     if years > 0:
-        result += '{}'.format(get_string(years, 'year'))
+        result += f'{year}'
 
-    if days > 0:
-        if result != '':
-            result += ', {}'.format(get_string(days, 'day'))
-        else:
-            result += '{}'.format(get_string(days, 'day'))
+    if days > 0 and result != '':
+        result += f', {day}'
+    elif days > 0:
+        result += f'{day}'
 
-    if hours > 0:
-        if result != '':
-            result += ', {}'.format(get_string(hours, 'hour'))
-        else:
-            result += '{}'.format(get_string(hours, 'hour'))
+    if hours > 0 and result != '':
+        result += f', {hour}'
+    elif hours > 0:
+        result += f'{hour}'
 
     if minutes > 0:
-        if result != '':
-            if seconds == 0:
-                result += ' and {}'.format(get_string(minutes, 'minute'))
-            else:
-                result += ', {}'.format(get_string(minutes, 'minute'))
+        if result != '' and seconds == 0:
+            result += f' and {minute}'
+        elif result != '':
+            result += f', {minute}'
         else:
-            result += '{}'.format(get_string(minutes, 'minute'))
+            result += f'{minute}'
 
-    if seconds > 0:
-        if result != '':
-            result += ' and {}'.format(get_string(seconds, 'second'))
-        else:
-            result += '{}'.format(get_string(seconds, 'second'))
+    if seconds > 0 and result != '':
+        result += f' and {second}'
+    elif seconds > 0:
+        result += f'{second}'
 
     return result
 
@@ -87,17 +89,15 @@ def format_duration(seconds: int) -> str:
 def get_string(number: int, string: str) -> str:
     """
     Concatenate string result
-
     :param number:
     :param string:
     :return:
     """
     result: str = ''
-    if number > 0:
-        if number == 1:
-            result = '{} {}'.format(number, string)
-        else:
-            result = '{} {}s'.format(number, string)
+    if number == 1:
+        result = f'{number} {string}'
+    elif number > 0:
+        result = f'{number} {string}s'
 
     return result
 
@@ -105,7 +105,6 @@ def get_string(number: int, string: str) -> str:
 def calc_seconds(seconds: int) -> int:
     """
     Calculate seconds
-
     :param seconds:
     :return:
     """
@@ -118,7 +117,6 @@ def calc_seconds(seconds: int) -> int:
 def calc_minutes(seconds: int) -> int:
     """
     calculate minutes
-
     :param seconds:
     :return:
     """
@@ -132,7 +130,6 @@ def calc_minutes(seconds: int) -> int:
 def calc_hours(seconds: int) -> int:
     """
     Calculate hours
-
     :param seconds:
     :return:
     """
@@ -146,7 +143,6 @@ def calc_hours(seconds: int) -> int:
 def calc_days(seconds: int) -> int:
     """
     Calculate days
-
     :param seconds:
     :return:
     """
@@ -160,7 +156,6 @@ def calc_days(seconds: int) -> int:
 def calc_years(seconds: int) -> int:
     """
     Calculate years
-
     :param seconds:
     :return:
     """

@@ -19,9 +19,9 @@ def snail(snail_map: list) -> list:
              the middle element, traveling clockwise
     """
     if not snail_map:
-        return list()
+        return []
 
-    result = list()
+    result = []
     while snail_map:
         try:
             # 1 left to right

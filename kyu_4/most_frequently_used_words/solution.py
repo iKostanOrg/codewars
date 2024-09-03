@@ -24,9 +24,9 @@ def top_3_words(text: str) -> list:
         text_lower = text_lower.replace(char, ' ')
     # 2
     words: list = [word for word in text_lower.split() if word.replace("'", '') != '']
-    processed = set()
+    processed: set = set()
     # 3
-    counters: dict = dict()
+    counters: dict = {}
     for word in words:
         if word not in processed:
             processed.add(word)
@@ -36,11 +36,11 @@ def top_3_words(text: str) -> list:
             else:
                 counters[counter] = [word]
     # 4
-    results: list = list()
+    results: list = []
     n = 3
     keys = sorted(counters.keys(), reverse=True)
     for counter in keys:
-        diff = n - len(results)
+        diff: int = n - len(results)
         results += counters[counter][:diff]
 
         if len(results) == 3:
