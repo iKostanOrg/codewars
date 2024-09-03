@@ -38,17 +38,19 @@ class FirstAdviceTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing create_city_map function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should generate city map with coordinates.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should generate city map with coordinates.</p>")
 
         with allure.step("Enter test data and verify the output"):
             test_data = [
                 (2, {(0, 0), (0, 1), (1, 0), (1, 1)}),
                 (0, set()),
-                (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)}),
+                (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1),
+                     (1, 2), (2, 0), (2, 1), (2, 2)}),
             ]
 
             for data in test_data:
@@ -73,20 +75,24 @@ class FirstAdviceTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing agents_cleanup function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should remove all agents that are "
-                                        "outside of the city boundaries.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should remove all agents that are "
+            "outside of the city boundaries.</p>")
 
         with allure.step("Enter test data and verify the output"):
             test_data = [
                 ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
                 ({(0, 0), (1, 1), (99, 99)}, 2, {(0, 0), (1, 1)}),
-                ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47), (9, 59), (65, 40), (28, 53), (19, 15),
-                  (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13), (36, 38), (29, 54), (50, 15), (14, 28),
-                  (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6), (12, 46), (50, 35), (56, 27)}, 10, set()),
+                ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47),
+                  (9, 59), (65, 40), (28, 53), (19, 15),
+                  (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13),
+                  (36, 38), (29, 54), (50, 15), (14, 28),
+                  (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6),
+                  (12, 46), (50, 35), (56, 27)}, 10, set()),
             ]
 
             for data in test_data:
@@ -113,12 +119,13 @@ class FirstAdviceTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing advice function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should return a list of coordinates that "
-                                        "are the furthest away (by Manhattan distance) from all agents.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should return a list of coordinates that "
+            "are the furthest away (by Manhattan distance) from all agents.</p>")
 
         with allure.step("Enter test string and verify the output"):
             test_data = [
@@ -130,29 +137,42 @@ class FirstAdviceTestCase(unittest.TestCase):
                  "Works for the example in description"),
                 ([(9, 9)], 1, [(0, 0)],
                  "Should return all locations for only ignored agents"),
-                ([(1, 1), (3, 5), (4, 8), (7, 3), (7, 8), (9, 1)], 10, sorted([(0, 9), (0, 7), (5, 0)]),
+                ([(1, 1), (3, 5), (4, 8), (7, 3), (7, 8), (9, 1)], 10,
+                 sorted([(0, 9), (0, 7), (5, 0)]),
                  "Should return correct solutions for six agents"),
                 ([(1, 3), (2, 3), (2, 7), (4, 1), (5, 9), (7, 0), (9, 5)], 10,
-                 sorted([(0, 0), (0, 9), (4, 5), (5, 5), (5, 4), (6, 3), (6, 4), (6, 6), (7, 7), (8, 8), (9, 9)]),
+                 sorted([(0, 0), (0, 9), (4, 5), (5, 5), (5, 4), (6, 3),
+                         (6, 4), (6, 6), (7, 7), (8, 8), (9, 9)]),
                  "Should return correct solutions for seven agents"),
-                ([(0, 0), (0, 9), (1, 5), (5, 1), (9, 0), (9, 9)], 10, sorted([(5, 7), (6, 6), (7, 5)]),
+                ([(0, 0), (0, 9), (1, 5), (5, 1), (9, 0), (9, 9)], 10,
+                 sorted([(5, 7), (6, 6), (7, 5)]),
                  "Should return correct solutions for another six agents"),
                 ([(0, 0)], 10, [(9, 9)],
                  "Single agent in top left corner of large grid"),
                 ([(0, 0), (1, 1), (99, 99)], 2, sorted([(0, 1), (1, 0)]),
                  "Agent in top left and bottom right"),
-                ([(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (0, 8), (0, 9), (1, 0), (1, 1),
-                  (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9), (2, 0), (2, 1), (2, 2), (2, 3),
-                  (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5),
-                  (3, 6), (3, 7), (3, 8), (3, 9), (4, 0), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (4, 6), (4, 7),
-                  (4, 8), (4, 9), (5, 0), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7), (5, 8), (5, 9),
-                  (6, 0), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (6, 8), (6, 9), (7, 0), (7, 1),
-                  (7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7), (7, 8), (7, 9), (8, 0), (8, 1), (8, 2), (8, 3),
-                  (8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (9, 0), (9, 1), (9, 2), (9, 3), (9, 4), (9, 5),
+                ([(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6),
+                  (0, 7), (0, 8), (0, 9), (1, 0), (1, 1),
+                  (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 8),
+                  (1, 9), (2, 0), (2, 1), (2, 2), (2, 3),
+                  (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (3, 0),
+                  (3, 1), (3, 2), (3, 3), (3, 4), (3, 5),
+                  (3, 6), (3, 7), (3, 8), (3, 9), (4, 0), (4, 1), (4, 2),
+                  (4, 3), (4, 4), (4, 5), (4, 6), (4, 7),
+                  (4, 8), (4, 9), (5, 0), (5, 1), (5, 2), (5, 3), (5, 4),
+                  (5, 5), (5, 6), (5, 7), (5, 8), (5, 9),
+                  (6, 0), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6),
+                  (6, 7), (6, 8), (6, 9), (7, 0), (7, 1),
+                  (7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7), (7, 8),
+                  (7, 9), (8, 0), (8, 1), (8, 2), (8, 3),
+                  (8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (9, 0),
+                  (9, 1), (9, 2), (9, 3), (9, 4), (9, 5),
                   (9, 6), (9, 7), (9, 8), (9, 9)], 10, [],
                  "Returns empty list for agents everywhere"),
-                ([(12, 8), (0, 14), (10, 16), (7, 11)], 2, [(0, 0), (0, 1), (1, 0), (1, 1)],
+                ([(12, 8), (0, 14), (10, 16), (7, 11)], 2, [(0, 0), (0, 1),
+                                                            (1, 0), (1, 1)],
                  'No agents on map'),
+                # pylint: enable-msg=C0301
                 ([(9, 50), (29, 27), (37, 51), (19, 24), (62, 41), (8, 57), (1, 7), (26, 58), (28, 39), (12, 5),
                   (53, 26), (8, 51), (33, 12), (25, 58), (30, 23), (8, 17), (19, 30), (56, 27), (14, 26), (35, 60),
                   (60, 51), (22, 59), (48, 0), (56, 13), (13, 6), (6, 25), (56, 19), (44, 0), (19, 48), (8, 2),
@@ -466,7 +486,7 @@ class FirstAdviceTestCase(unittest.TestCase):
                   (22, 54)],
                  47, [(46, 38)], 'Big lists'),
             ]
-
+            # pylint: enable-msg=C0301
             for data in test_data:
                 # test data
                 agents = data[0]
