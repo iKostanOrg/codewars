@@ -43,8 +43,8 @@ class Warrior:
         self.__level = self.__set_level()
         # A warrior starts at rank "Pushover"
         self.__rank = self.__set_rank()
-        #
-        self.__achievements = list()
+        # A list of all achievements
+        self.__achievements = []
 
     def __set_rank(self) -> str:
         """
@@ -182,5 +182,4 @@ class Warrior:
         # the warrior does not receive the experience points and description
         # and instead returns "Not strong enough", without any archiving of
         # the result.
-        else:
-            return "Not strong enough"
+        return "Not strong enough"
