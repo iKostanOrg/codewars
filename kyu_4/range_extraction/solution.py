@@ -46,8 +46,7 @@ def solution(args: list) -> str:
             result += str(current[0])
             if abs(current[1] - current[0]) >= 2:
                 result += '-' + str(current[1])
-            else:
-                if current[0] != current[1]:
+            elif current[0] != current[1]:
                     result += ',' + str(current[1])
 
         if i == len(args) - 1 and current[-1] != a and current[2] is True:
