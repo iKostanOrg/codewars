@@ -11,6 +11,7 @@ import allure
 from kyu_5.number_of_trailing_zeros_of_n.zeros import zeros
 from utils.log_func import print_log
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
