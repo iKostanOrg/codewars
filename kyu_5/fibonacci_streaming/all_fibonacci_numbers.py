@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Fibonacci Streaming
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def all_fibonacci_numbers():

@@ -1,16 +1,20 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Fibonacci Streaming
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS
 
-import allure
-import itertools
+
 import unittest
+import itertools
+import allure
 from utils.log_func import print_log
 from kyu_5.fibonacci_streaming.all_fibonacci_numbers import all_fibonacci_numbers
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -20,6 +24,7 @@ from kyu_5.fibonacci_streaming.all_fibonacci_numbers import all_fibonacci_number
 @allure.tag('ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/55695bc4f75bbaea5100016b/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class AllFibonacciNumbersTestCase(unittest.TestCase):
     """
     Testing all_fibonacci_numbers function
@@ -43,15 +48,15 @@ class AllFibonacciNumbersTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing all_fibonacci_numbers function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Run all_fibonacci_numbers function"
                          " and verify the result"):
-
             expected = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
                         233, 377, 610, 987, 1597, 2584, 4181, 6765,
                         10946, 17711, 28657, 46368, 75025, 121393,
