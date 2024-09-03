@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS PERMUTATIONS STRINGS
 
-import pytest
 import unittest
+import pytest
 import allure
 from utils.log_func import print_log
 from kyu_4.permutations.permutations import permutations
@@ -29,6 +29,9 @@ from kyu_4.permutations.permutations import permutations
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class PermutationsTestCase(unittest.TestCase):
+    """
+    Testing permutations function
+    """
 
     def test_permutations(self):
         """
