@@ -48,7 +48,7 @@ def find_x(n: int) -> int:
     """
     n_list: list = [int(i) for i in str(n)[::-1]]
     for index, digit in enumerate(n_list):
-        if index - 1 >= 0 and n_list[index] > n_list[index - 1]:
+        if index - 1 >= 0 and digit > n_list[index - 1]:
             return len(n_list) - index - 1
     return -1
 
