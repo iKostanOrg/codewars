@@ -28,6 +28,9 @@ from kyu_4.range_extraction.solution import solution
 @allure.link(url='https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/python',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
+    """
+    Testing solution for Range Extraction problem
+    """
 
     def test_solution(self):
         """
