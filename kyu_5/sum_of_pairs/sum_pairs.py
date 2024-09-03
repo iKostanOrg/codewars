@@ -20,15 +20,15 @@ def sum_pairs(ints: list, s: int):
 
 	for indx_a, a in enumerate(short_ints):
 		for indx_b, b in enumerate(short_ints):
-			if indx_a != indx_b:
-				if a + b == s:
-					dif = abs(indx_a - indx_b)
 
-					if dif == 1:
-						return [a, b]
+			if indx_a != indx_b and a + b == s:
+				dif = abs(indx_a - indx_b)
 
-					if dif not in results:
-						results[dif] = [a, b]
+				if dif == 1:
+					return [a, b]
+
+				if dif not in results:
+					results[dif] = [a, b]
 
 	return results[min(results)] if len(results) > 0 else None
 
