@@ -29,7 +29,9 @@ from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigge
              name='Source/Kata')
 # pylint: enable-msg=R0801
 class NextBiggerTestCase(unittest.TestCase):
-
+    """
+    Testing next_bigger function
+    """
     def test_next_bigger(self):
         """
         Testing next_bigger function
