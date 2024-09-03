@@ -36,8 +36,8 @@ def format_duration(seconds: int) -> str:
     Formally, the duration specified by of a component must not be greater than
     any valid more significant unit of time.
 
-    :param seconds:
-    :return:
+    :param seconds: int
+    :return: str
     """
 
     if seconds == 0:
@@ -60,32 +60,28 @@ def format_duration(seconds: int) -> str:
     if years > 0:
         result += f'{year}'
 
-    if days > 0:
-        if result != '':
-            result += f', {day}'
-        else:
-            result += f'{day}'
+    if days > 0 and result != '':
+        result += f', {day}'
+    elif days > 0:
+        result += f'{day}'
 
-    if hours > 0:
-        if result != '':
-            result += f', {hour}'
-        else:
-            result += f'{hour}'
+    if hours > 0 and result != '':
+        result += f', {hour}'
+    elif hours > 0:
+        result += f'{hour}'
 
     if minutes > 0:
-        if result != '':
-            if seconds == 0:
-                result += f' and {minute}'
-            else:
-                result += f', {minute}'
+        if result != '' and seconds == 0:
+            result += f' and {minute}'
+        elif result != '':
+            result += f', {minute}'
         else:
             result += f'{minute}'
 
-    if seconds > 0:
-        if result != '':
-            result += f' and {second}'
-        else:
-            result += f'{second}'
+    if seconds > 0 and result != '':
+        result += f' and {second}'
+    elif seconds > 0:
+        result += f'{second}'
 
     return result
 
@@ -98,11 +94,10 @@ def get_string(number: int, string: str) -> str:
     :return:
     """
     result: str = ''
-    if number > 0:
-        if number == 1:
-            result = f'{number} {string}'
-        else:
-            result = f'{number} {string}s'
+    if number == 1:
+        result = f'{number} {string}'
+    elif number > 0:
+        result = f'{number} {string}s'
 
     return result
 
