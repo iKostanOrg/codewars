@@ -46,7 +46,7 @@ class MakeReadableTestCase(unittest.TestCase):
         The maximum time never exceeds 359999 (99:59:59)
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing make_readable function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -55,7 +55,7 @@ class MakeReadableTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the output"):
             data = [
                 (0, "00:00:00"),
