@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Directions Reduction
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def dirReduc(arr: list) -> list:
@@ -21,14 +23,14 @@ def dirReduc(arr: list) -> list:
     :return:
     """
 
-    pairs = {
+    pairs: dict = {
         "NORTH": "SOUTH",
         "SOUTH": "NORTH",
         "EAST": "WEST",
         "WEST": "EAST",
     }
 
-    is_sorted = False
+    is_sorted: bool = False
     while not is_sorted:
         is_sorted = True
         for i, a in enumerate(arr):

@@ -4,12 +4,13 @@
 
 # FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.directions_reduction.directions_reduction import dirReduc
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -19,6 +20,7 @@ from kyu_5.directions_reduction.directions_reduction import dirReduc
 @allure.tag('FUNDAMENTALS')
 @allure.link(url='https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class DirectionsReductionTestCase(unittest.TestCase):
     """
     Testing dirReduc function
@@ -43,32 +45,30 @@ class DirectionsReductionTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing dirReduc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p> Test a function dirReduc which will take an array of "
-                                        "strings and returns an array of strings with the needless "
-                                        "directions removed (W<->E or S<->N side by side).</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p> Test a function dirReduc which will take an array of "
+            "strings and returns an array of strings with the needless "
+            "directions removed (W<->E or S<->N side by side).</p>")
 
         test_data = [
             (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
-            ['WEST']),
+             ['WEST']),
             (["NORTH", "WEST", "SOUTH", "EAST"],
-            ["NORTH", "WEST", "SOUTH", "EAST"])
+             ["NORTH", "WEST", "SOUTH", "EAST"])
         ]
 
         for d in test_data:
-
             array = d[0]
             expected = d[1]
             result = dirReduc(array)
 
-            with allure.step("Enter test data ({}) "
-                             "and verify the output ({}) "
-                             "vs expected ({})".format(array,
-                                                       result,
-                                                       expected)):
+            with allure.step(f"Enter test data ({array}) "
+                             f"and verify the output ({result}) "
+                             f"vs expected ({expected})"):
 
                 print_log(array=array,
                           result=result,
