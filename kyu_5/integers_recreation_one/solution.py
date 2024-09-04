@@ -10,7 +10,6 @@ import math
 def divisor_generator(n: int):
     """
     The best way to get all the divisors of a number.
-
     :param n: integers
     :return: all dividers of n
     """
@@ -32,7 +31,6 @@ def is_perfect_square(n: str) -> bool:
     Check if a number is a perfect square.
     (number made by squaring a whole number:
     4 * $ = 16).
-
     :param n: integer
     :return: bool
     """

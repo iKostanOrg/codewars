@@ -42,7 +42,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
         {NORTH, SOUTH, EAST, WEST}.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing dirReduc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -53,7 +53,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
             "<p> Test a function dirReduc which will take an array of "
             "strings and returns an array of strings with the needless "
             "directions removed (W<->E or S<->N side by side).</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
              ['WEST']),
