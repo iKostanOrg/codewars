@@ -28,16 +28,16 @@ def increment_string(string: str) -> str:
         str2 = f'{digit + 1}'
         incremented_digit: str = f'{str1}{str2}'
         return f'{string[:first_digit]}{incremented_digit}'
-    else:
-        if string.isdigit():
-            digit = int(string)
-            incremented_digit = str(('0' * (len(string) - len(str(digit + 1)))
+
+    if string.isdigit():
+        digit = int(string)
+        incremented_digit = str(('0' * (len(string) - len(str(digit + 1)))
                                      if len(str(digit + 1)) != len(string)
                                      else ''))
-            incremented_digit += str(digit + 1)
-            return incremented_digit
-        else:
-            return f'{string}{1}'
+        incremented_digit += str(digit + 1)
+        return incremented_digit
+
+    return f'{string}{1}'
 
 
 def get_first_digit_index(string: str):
