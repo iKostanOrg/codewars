@@ -1,8 +1,12 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Prints city map with agents.
+Use for debug purposes only.
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def print_map(agents: list, n: int, expected: list):
+def print_map(agents: list, n: int, expected: list) -> None:
     """
     Use for debug purposes only. Prints city map with agents (*)
     and expected results (longest distance as +) on it.

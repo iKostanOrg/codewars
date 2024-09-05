@@ -43,7 +43,6 @@ def city_map_processing(city: set, agents: set) -> None:
                 if pos in city:
                     temp.add(pos)
         agents = temp
-        # print('\nAGENTS\n', agents)  # debug only
 
 
 def advice(agents: set, n: int) -> list:
@@ -62,7 +61,7 @@ def advice(agents: set, n: int) -> list:
     """
     # if n is 0, return an empty list
     if n == 0:
-        return list()
+        return []
 
     # If agent coordinates are outside of the map, they are simply not considered.
     # There are no duplicate agents on the same square.
@@ -71,7 +70,7 @@ def advice(agents: set, n: int) -> list:
     # If there is an agent on every grid cell, there is no safe space,
     # so return an empty list
     if len(agents) == n * n:
-        return list()
+        return []
 
     # If there are no agents, then every cell is a safe spaces,
     # so return all coordinates
