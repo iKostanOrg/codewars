@@ -4,8 +4,6 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-primes = [2, 3, 5, 7]
-
 
 def is_prime(n: int) -> bool:
     """
@@ -17,6 +15,7 @@ def is_prime(n: int) -> bool:
     :param n: int
     :return: bool
     """
+    primes = [2, 3, 5, 7]
 
     if n < 2:
         return False
