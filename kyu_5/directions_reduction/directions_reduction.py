@@ -19,8 +19,8 @@ def dirReduc(arr: list) -> list:
 
     The Rust version takes a slice of enum Direction
     {NORTH, SOUTH, EAST, WEST}.
-    :param arr:
-    :return:
+    :param arr: lst
+    :return: lst
     """
 
     pairs: dict = {
@@ -29,8 +29,8 @@ def dirReduc(arr: list) -> list:
         "EAST": "WEST",
         "WEST": "EAST",
     }
-
     is_sorted: bool = False
+
     while not is_sorted:
         is_sorted = True
         for i, a in enumerate(arr):
