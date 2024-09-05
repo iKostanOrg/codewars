@@ -11,6 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.moving_zeros_to_the_end.move_zeros import move_zeros
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
