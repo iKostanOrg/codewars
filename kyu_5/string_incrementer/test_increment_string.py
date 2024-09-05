@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> String incrementer
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES STRINGS PARSING ALGORITHMS
+# FUNDAMENTALS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING
+# ADVANCED LANGUAGE FEATURES STRINGS PARSING ALGORITHMS
 
 import unittest
 import allure
@@ -16,9 +19,12 @@ from kyu_5.string_incrementer.string_incrementer import increment_string
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String incrementer')
-@allure.tag('FUNDAMENTALS', 'REGULAR EXPRESSIONS',
-            'DECLARATIVE PROGRAMMING', 'ADVANCED LANGUAGE FEATURES',
-            'STRINGS PARSING', 'ALGORITHMS')
+@allure.tag('FUNDAMENTALS',
+            'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING',
+            'ADVANCED LANGUAGE FEATURES',
+            'STRINGS PARSING',
+            'ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/python',
              name='Source/Kata')
 class StringIncrementerTestCase(unittest.TestCase):
@@ -29,21 +35,21 @@ class StringIncrementerTestCase(unittest.TestCase):
     def test_increment_string(self):
         """
         Testing a function named increment_string
-
         :return:
         """
         allure.dynamic.title("Testing increment_string function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "- If the string already ends with a number, the number "
-                                        "should be incremented by 1.<br/>"
-                                        "- If the string does not end with a number. the number 1 "
-                                        "should be appended to the new string."
-                                        "</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "- If the string already ends with a number, the number "
+            "should be incremented by 1.<br/>"
+            "- If the string does not end with a number. the number 1 "
+            "should be appended to the new string."
+            "</p>")
 
         test_data = (
             ("foo", "foo1"),
@@ -60,5 +66,7 @@ class StringIncrementerTestCase(unittest.TestCase):
         for sting, expected in test_data:
             with allure.step("Enter test string and verify the output"):
                 result = increment_string(sting)
-                print_log(string=sting, expected=expected, result = result)
-                self.assertEqual(expected,result)
+                print_log(string=sting,
+                          expected=expected,
+                          result=result)
+                self.assertEqual(expected, result)
