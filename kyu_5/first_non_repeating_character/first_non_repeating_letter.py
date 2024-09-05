@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> First non-repeating character
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def first_non_repeating_letter(string: str) -> str:

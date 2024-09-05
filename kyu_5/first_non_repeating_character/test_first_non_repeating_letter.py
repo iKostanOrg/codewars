@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> First non-repeating character
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS STRINGS SEARCH
 
@@ -16,7 +18,9 @@ from kyu_5.first_non_repeating_character.first_non_repeating_letter import first
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('First non-repeating character')
-@allure.tag('ALGORITHMS', 'STRINGS', 'SEARCH')
+@allure.tag('ALGORITHMS',
+            'STRINGS',
+            'SEARCH')
 @allure.link(url='https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python',
              name='Source/Kata')
 class FirstNonRepeatingLetterTestCase(unittest.TestCase):
@@ -45,11 +49,12 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing first_non_repeating_letter function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
             test_data = [
