@@ -79,8 +79,8 @@ def list_squared(m_int: int, n_int: int) -> list:
              squared divisors is itself a square
     """
     results: list = []
-    for z in range(m_int, n_int + 1):
-        sum_squared_dividers = sum(i * i for i in divisor_generator(z))
+    for digit in range(m_int, n_int + 1):
+        sum_squared_dividers = sum(i * i for i in divisor_generator(digit))
         if is_perfect_square(str(sum_squared_dividers)):
-            results.append([z, sum_squared_dividers])
+            results.append([digit, sum_squared_dividers])
     return results
