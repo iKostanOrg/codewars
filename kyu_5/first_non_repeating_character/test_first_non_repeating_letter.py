@@ -11,6 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.first_non_repeating_character.first_non_repeating_letter import first_non_repeating_letter
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
