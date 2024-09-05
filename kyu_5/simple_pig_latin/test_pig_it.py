@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Simple Pig Latin
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.simple_pig_latin.pig_it import pig_it
 
@@ -36,14 +38,14 @@ class PigItTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing pig_it function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
-
             test_data = [
                 ('Pig latin is cool', 'igPay atinlay siay oolcay'),
                 ('This is my string', 'hisTay siay ymay tringsay'),
