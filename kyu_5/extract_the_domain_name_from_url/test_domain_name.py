@@ -14,6 +14,7 @@ from utils.log_func import print_log
 from kyu_5.extract_the_domain_name_from_url.extract_domain_from_url import domain_name
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -29,6 +30,7 @@ from kyu_5.extract_the_domain_name_from_url.extract_domain_from_url import domai
             'ADVANCED LANGUAGE FEATURES')
 @allure.link(url='https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class DomainNameTestCase(unittest.TestCase):
     """
     Testing domain_name function
