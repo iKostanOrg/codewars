@@ -4,8 +4,6 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-from typing import Dict
-
 
 def compute_ranks(number: int, games: list) -> list:
     """
