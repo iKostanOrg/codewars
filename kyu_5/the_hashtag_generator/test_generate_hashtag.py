@@ -1,10 +1,8 @@
 """
 Testing 'generate_hashtag' function
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS STRINGS
 
@@ -20,7 +18,8 @@ from kyu_5.the_hashtag_generator.hashtag_generator import generate_hashtag
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('The Hashtag Generator')
-@allure.tag('ALGORITHMS', 'SORTING')
+@allure.tag('ALGORITHMS',
+            'SORTING')
 @allure.link(url='https://www.codewars.com/kata/52449b062fb80683ec000024/train/python',
              name='Source/Kata')
 class GenerateHashtagTestCase(unittest.TestCase):
@@ -32,15 +31,16 @@ class GenerateHashtagTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'generate_hashtag' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should do the following:"
-                                        "<br/>1. It must start with a hashtag (#)."
-                                        "<br/>2. All words must have their first letter capitalized."
-                                        "<br/>3. If the final result is longer than 140 chars it must return false."
-                                        "<br/>4. If the input or the result is an empty string it must return false."
-                                        "</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should do the following:"
+            "<br/>1. It must start with a hashtag (#)."
+            "<br/>2. All words must have their first letter capitalized."
+            "<br/>3. If the final result is longer than 140 chars it must return false."
+            "<br/>4. If the input or the result is an empty string it must return false."
+            "</p>")
 
         test_data = (
             ('',
@@ -70,8 +70,8 @@ class GenerateHashtagTestCase(unittest.TestCase):
             ('Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
              'ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
              'oooooong Cat',
-            False,
-            'Should return False if the final word is longer than 140 chars.'),
+             False,
+             'Should return False if the final word is longer than 140 chars.'),
         )
 
         for string, expected, message in test_data:
