@@ -11,7 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.first_non_repeating_character.first_non_repeating_letter import first_non_repeating_letter
 
-
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -23,6 +23,7 @@ from kyu_5.first_non_repeating_character.first_non_repeating_letter import first
             'SEARCH')
 @allure.link(url='https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class FirstNonRepeatingLetterTestCase(unittest.TestCase):
     """
     Testing first_non_repeating_letter function
