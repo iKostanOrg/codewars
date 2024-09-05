@@ -11,7 +11,7 @@ import allure
 from kyu_5.flatten.flatten import flatten
 from utils.log_func import print_log
 
-
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -22,6 +22,7 @@ from utils.log_func import print_log
             'ARRAYS')
 @allure.link(url='https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class FlattenTestCase(unittest.TestCase):
     """
     Testing flatten function
@@ -45,7 +46,7 @@ class FlattenTestCase(unittest.TestCase):
         ['a', 'b', 2, 3, None, 4, 'c']
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing flatten function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -54,7 +55,7 @@ class FlattenTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test data #1 and verify the output"):
             expected = []
             print_log(args=None,
