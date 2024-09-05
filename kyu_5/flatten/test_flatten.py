@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> flatten()
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS ARRAYS
 
@@ -16,7 +18,8 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('flatten()')
-@allure.tag('ALGORITHMS', 'ARRAYS')
+@allure.tag('ALGORITHMS',
+            'ARRAYS')
 @allure.link(url='https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python',
              name='Source/Kata')
 class FlattenTestCase(unittest.TestCase):
@@ -38,20 +41,21 @@ class FlattenTestCase(unittest.TestCase):
         used and what the expected results would be:
 
         flatten(1, [2, 3], 4, 5, [6, [7]]) # returns [1, 2, 3, 4, 5, 6, 7]
-        flatten('a', ['b', 2], 3, None, [[4], ['c']]) # returns ['a', 'b', 2, 3, None, 4, 'c']
+        flatten('a', ['b', 2], 3, None, [[4], ['c']]) # returns
+        ['a', 'b', 2, 3, None, 4, 'c']
         :return:
         """
 
         allure.dynamic.title("Testing flatten function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test data #1 and verify the output"):
-
             expected = []
             print_log(args=None,
                       expected=expected)
@@ -59,7 +63,6 @@ class FlattenTestCase(unittest.TestCase):
                                  flatten())
 
         with allure.step("Enter test data #2 and verify the output"):
-
             expected = [1, 2, 3]
             print_log(args=(1, 2, 3),
                       expected=expected)
@@ -67,7 +70,6 @@ class FlattenTestCase(unittest.TestCase):
                                  flatten(1, 2, 3))
 
         with allure.step("Enter test data #3 and verify the output"):
-
             expected = [1, 2, 3, 4, 5, 6, 7, 8]
             print_log(args=([1, 2], [3, 4, 5], [6, [7], [[8]]]),
                       expected=expected)
@@ -75,7 +77,6 @@ class FlattenTestCase(unittest.TestCase):
                                  flatten([1, 2], [3, 4, 5], [6, [7], [[8]]]))
 
         with allure.step("Enter test data #4 and verify the output"):
-
             expected = [1, 2, '9', None]
             print_log(args=(1, 2, ['9', [], []], None),
                       expected=expected)
@@ -83,7 +84,6 @@ class FlattenTestCase(unittest.TestCase):
                                  flatten(1, 2, ['9', [], []], None))
 
         with allure.step("Enter test data #5 and verify the output"):
-
             expected = ['hello', 2, 'text', 4, 5, '[list]']
             print_log(args=(['hello', 2, ['text', [4, 5]]], [[]], '[list]'), expected=expected)
             self.assertListEqual(expected, flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))
