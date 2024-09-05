@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Assert Sudoku by region
+Helper method for Did I Finish my Sudoku?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from utils.primes.primes_generator import gen_primes
 
@@ -8,7 +11,6 @@ from utils.primes.primes_generator import gen_primes
 def assert_sudoku_by_region(board: list) -> bool:
     """
     Assert Sudoku by region
-
     :param board: Sudoku list
     :return: boolean value (is Sudoku done or not)
     """

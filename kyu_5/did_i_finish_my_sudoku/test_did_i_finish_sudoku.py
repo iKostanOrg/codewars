@@ -1,11 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Did I Finish my Sudoku?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# PUZZLES LISTS DATA STRUCTURES LOOPS CONTROL FLOW BASIC LANGUAGE FEATURES FUNDAMENTALS MATHEMATICS ALGORITHMS
+# PUZZLES LISTS DATA STRUCTURES LOOPS CONTROL FLOW
+# BASIC LANGUAGE FEATURES FUNDAMENTALS MATHEMATICS ALGORITHMS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
 
@@ -16,9 +19,15 @@ from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
 @allure.sub_suite("Unit Tests")
 @allure.feature('Control Flow')
 @allure.story('Did I Finish my Sudoku?')
-@allure.tag('PUZZLES', 'LISTS', 'DATA STRUCTURES', 'LOOPS',
-            'CONTROL FLOW', 'BASIC LANGUAGE FEATURES', 'FUNDAMENTALS',
-            'MATHEMATICS', 'ALGORITHMS')
+@allure.tag('PUZZLES',
+            'LISTS',
+            'DATA STRUCTURES',
+            'LOOPS',
+            'CONTROL FLOW',
+            'BASIC LANGUAGE FEATURES',
+            'FUNDAMENTALS',
+            'MATHEMATICS',
+            'ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python',
              name='Source/Kata')
 class DidIFinishedSudokuTestCase(unittest.TestCase):
@@ -38,13 +47,14 @@ class DidIFinishedSudokuTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing done_or_not function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing a function done_or_not/DoneOrNot passing a "
-                                        "board (list[list_lines]) as parameter. If the board is "
-                                        "valid return 'Finished!', otherwise return 'Try again!'</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing a function done_or_not/DoneOrNot passing a "
+            "board (list[list_lines]) as parameter. If the board is "
+            "valid return 'Finished!', otherwise return 'Try again!'</p>")
 
         test_data = [
             ([[1, 3, 2, 5, 7, 9, 4, 6, 8],
