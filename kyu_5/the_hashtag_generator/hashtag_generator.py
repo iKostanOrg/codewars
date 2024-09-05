@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def generate_hashtag(s: str) -> (bool, str):
+def generate_hashtag(word: str) -> (bool, str):
     """
     The Hashtag Generator.
 
@@ -14,13 +14,13 @@ def generate_hashtag(s: str) -> (bool, str):
     3. If the final result is longer than 140 chars it must return false.
     4. If the input or t he result is an empty string it must return false.
 
-    :param s: str
+    :param word: str
     :return:
     """
-    if len(s.strip()) < 1:
+    if len(word.strip()) < 1:
         return False
 
-    result: str = ''.join(string.capitalize() for string in s.split(' ')
+    result: str = ''.join(string.capitalize() for string in word.split(' ')
                           if string.strip() != '')
     result = '#' + result
 
