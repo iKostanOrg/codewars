@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_5.not_very_secure.alphanumeric import alphanumeric
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Advanced Language Features")
@@ -22,9 +23,12 @@ from kyu_5.not_very_secure.alphanumeric import alphanumeric
 @allure.tag('BUGS',
             'REGULAR EXPRESSIONS',
             'DECLARATIVE PROGRAMMING',
-            'ADVANCED LANGUAGE FEATURES', 'FUNDAMENTALS', 'STRINGS')
+            'ADVANCED LANGUAGE FEATURES',
+            'FUNDAMENTALS',
+            'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/526dbd6c8c0eb53254000110/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class AlphanumericTestCase(unittest.TestCase):
     """
     Testing alphanumeric function

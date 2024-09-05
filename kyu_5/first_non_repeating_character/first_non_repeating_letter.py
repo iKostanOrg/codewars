@@ -10,10 +10,10 @@ def first_non_repeating_letter(string: str) -> str:
     A function named first_non_repeating_letter that
     takes a string input, and returns the first
     character that is not repeated anywhere in the string.
-    :param string:
-    :return:
+    :param string: str
+    :return: str
     """
-    result = ''
+    result: str = ''
     string_lower = string.lower()
 
     for i, s in enumerate(string_lower):
