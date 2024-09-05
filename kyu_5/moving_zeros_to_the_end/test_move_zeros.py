@@ -1,24 +1,30 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Moving Zeros To The End
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS INTERVIEW QUESTIONS ARRAYS SORTING
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.moving_zeros_to_the_end.move_zeros import move_zeros
 
-
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Moving Zeros To The End')
-@allure.tag('ALGORITHMS', 'INTERVIEW QUESTIONS', 'ARRAYS', 'SORTING')
+@allure.tag('ALGORITHMS',
+            'INTERVIEW QUESTIONS',
+            'ARRAYS',
+            'SORTING')
 @allure.link(url='',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class MoveZerosTestCase(unittest.TestCase):
     """
     Testing move_zeros function
@@ -33,11 +39,12 @@ class MoveZerosTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing move_zeros function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test data (list) and verify the output"):
             test_data = [
