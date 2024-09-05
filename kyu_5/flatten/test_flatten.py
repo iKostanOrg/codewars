@@ -11,6 +11,7 @@ import allure
 from kyu_5.flatten.flatten import flatten
 from utils.log_func import print_log
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
