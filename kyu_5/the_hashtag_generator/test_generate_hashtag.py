@@ -1,5 +1,5 @@
 """
-Testing 'generate_hashtag' function
+Test for ->  'generate_hashtag' function
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -23,6 +23,9 @@ from kyu_5.the_hashtag_generator.hashtag_generator import generate_hashtag
 @allure.link(url='https://www.codewars.com/kata/52449b062fb80683ec000024/train/python',
              name='Source/Kata')
 class GenerateHashtagTestCase(unittest.TestCase):
+    """
+    Testing generate_hashtag function
+    """
 
     def test_generate_hashtag(self):
         """
