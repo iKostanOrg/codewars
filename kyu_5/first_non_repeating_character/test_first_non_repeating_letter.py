@@ -49,6 +49,7 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
         return an empty string ("") or None -- see sample tests.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing first_non_repeating_letter function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -57,7 +58,7 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             test_data = [
                 ('a', 'a'),
