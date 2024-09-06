@@ -1,12 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Find the smallest
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
-import allure
 import unittest
 import pytest
+import allure
 from utils.log_func import print_log
 from kyu_5.find_the_smallest.solution import smallest
 
@@ -33,18 +35,20 @@ class FindSmallestTestCase(unittest.TestCase):
 
           1) the smallest number you got
           2) the index i of the digit d you took, i as small as possible
-          3) the index j (as small as possible) where you insert this digit d to have the smallest number.
+          3) the index j (as small as possible) where you insert this
+          digit d to have the smallest number.
 
         :return:
         """
 
         allure.dynamic.title("Testing smallest function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         test_data = ((261235, [126235, 2, 0]),
                      (209917, [29917, 0, 1]),
@@ -65,7 +69,6 @@ class FindSmallestTestCase(unittest.TestCase):
         for n, expected in test_data:
             result = smallest(n)
             with allure.step("Enter test data and verify the output vs expected"):
-
                 print_log(n=n,
                           expected=expected,
                           result=result)
