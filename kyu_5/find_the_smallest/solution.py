@@ -11,7 +11,6 @@ def get_min_digit(digits: list) -> int:
     :param digits: list
     :return: int
     """
-
     min_digit = min(digits)
     if digits.index(min_digit) != 0:
         return min_digit
@@ -31,7 +30,6 @@ def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
     :param min_index: int
     :return: list
     """
-
     if min_digit < digits[0] and min_digit != 0:
         i, j = min_index, 0
         del digits[min_index]
