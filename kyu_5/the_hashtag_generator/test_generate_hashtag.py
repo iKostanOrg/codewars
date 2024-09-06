@@ -44,9 +44,11 @@ class GenerateHashtagTestCase(unittest.TestCase):
             "<br/>2. "
             "All words must have their first letter capitalized."
             "<br/>3. "
-            "If the final result is longer than 140 chars it must return false."
+            "If the final result is longer than 140 chars it "
+            "must return false."
             "<br/>4. "
-            "If the input or the result is an empty string it must return false."
+            "If the input or the result is an empty string it "
+            "must return false."
             "</p>")
 
         test_data = (
