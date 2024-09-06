@@ -84,7 +84,8 @@ class GenerateHashtagTestCase(unittest.TestCase):
              'ooooooooooooooooooooooooooooooooooooo'
              'oooooong Cat',
              False,
-             'Should return False if the final word is longer than 140 chars.'),
+             'Should return False if the final word is '
+             'longer than 140 chars.'),
         )
 
         for string, expected, message in test_data:
