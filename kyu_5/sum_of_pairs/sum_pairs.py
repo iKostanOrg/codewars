@@ -15,8 +15,8 @@ def sum_pairs(ints: list, s: int):
     :param s: a single sum value
     :return: the first two values = s
     """
-    results = dict()
-    short_ints = simplify(ints)
+    results: dict = {}
+    short_ints: list = simplify(ints)
 
     for indx_a, a in enumerate(short_ints):
         for indx_b, b in enumerate(short_ints):
@@ -43,8 +43,8 @@ def simplify(ints: list) -> list:
     :param ints: a list of integers
     :return: simplified list of integers
     """
-    result = list()
-    temp = -1
+    result: list = []
+    temp: int = -1
 
     for i in ints:
         if temp != i:
