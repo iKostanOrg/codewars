@@ -41,9 +41,12 @@ class GenerateHashtagTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should do the following:"
             "<br/>1. It must start with a hashtag (#)."
-            "<br/>2. All words must have their first letter capitalized."
-            "<br/>3. If the final result is longer than 140 chars it must return false."
-            "<br/>4. If the input or the result is an empty string it must return false."
+            "<br/>2. "
+            "All words must have their first letter capitalized."
+            "<br/>3. "
+            "If the final result is longer than 140 chars it must return false."
+            "<br/>4. "
+            "If the input or the result is an empty string it must return false."
             "</p>")
 
         test_data = (
@@ -64,15 +67,19 @@ class GenerateHashtagTestCase(unittest.TestCase):
              'Should capitalize first letters of words.'),
             ('CodeWars is nice',
              '#CodewarsIsNice',
-             'Should capitalize all letters of words - all lower case but the first.'),
+             'Should capitalize all letters of words - '
+             'all lower case but the first.'),
             ('c i n',
              '#CIN',
-             'Should capitalize first letters of words even when single letters.'),
+             'Should capitalize first letters of words even '
+             'when single letters.'),
             ('codewars  is  nice',
              '#CodewarsIsNice',
              'Should deal with unnecessary middle spaces.'),
-            ('Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
-             'ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
+            ('Loooooooooooooooooooooooooooooooooooo'
+             'oooooooooooooooooooooooooooooooooooooo'
+             'oooooooooooooooooooooooooooooooooooooo'
+             'ooooooooooooooooooooooooooooooooooooo'
              'oooooong Cat',
              False,
              'Should return False if the final word is longer than 140 chars.'),
