@@ -36,7 +36,8 @@ class GenerateHashtagTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode/badges/large">'
+            '<img src='
+            '"https://www.codewars.com/users/myFirstCode/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>The function should do the following:"
             "<br/>1. It must start with a hashtag (#)."
