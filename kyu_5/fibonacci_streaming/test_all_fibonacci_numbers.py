@@ -6,7 +6,6 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS
 
-
 import unittest
 import itertools
 import allure
@@ -45,7 +44,7 @@ class AllFibonacciNumbersTestCase(unittest.TestCase):
         the two previous elements.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing all_fibonacci_numbers function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -54,7 +53,7 @@ class AllFibonacciNumbersTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Run all_fibonacci_numbers function"
                          " and verify the result"):
             expected = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,

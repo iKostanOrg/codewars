@@ -19,7 +19,7 @@ def divisor_generator(digit: int):
     large_divisors = []
     for i in range(1, int(math.sqrt(digit) + 1)):
         if digit % i == 0:
-            yield i
+            large_divisors.append(i)
             if i * i != digit:
                 large_divisors.append(digit // i)
 

@@ -10,9 +10,8 @@ def all_fibonacci_numbers():
     A utility method that generates an infinite sized,
     sequential IntStream (in Python generator) which
     contains all the numbers in a fibonacci sequence.
-    :return:
+    :return: int
     """
-
     a = 0
     b = 1
     yield 1
