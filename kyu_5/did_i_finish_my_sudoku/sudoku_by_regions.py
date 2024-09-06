@@ -26,7 +26,7 @@ def assert_sudoku_by_region(board: list) -> bool:
 
     while t < step:
         for i in range(0, row_length, step):
-            region = list()
+            region = []
             for a in range(i, i + step):
                 row = board[a][start: end]
                 for b in row:
