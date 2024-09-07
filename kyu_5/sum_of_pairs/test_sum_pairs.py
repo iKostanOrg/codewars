@@ -40,7 +40,7 @@ class SumPairsTestCase(unittest.TestCase):
         (parse from the left please) in order of appearance
         that add up to form the sum.
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing done_or_not function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -52,7 +52,7 @@ class SumPairsTestCase(unittest.TestCase):
             "the function should return the first two values (parse "
             "from the left please) in order of appearance that add up "
             "to form the sum.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ([1, 4, 8, 7, 3, 15], 8, [1, 7],
              "should return [1, 7] for sum = 8"),
