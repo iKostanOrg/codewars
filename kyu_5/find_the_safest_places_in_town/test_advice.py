@@ -119,6 +119,7 @@ class FirstAdviceTestCase(unittest.TestCase):
         away (by Manhattan distance) from all agents.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing advice function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -129,7 +130,7 @@ class FirstAdviceTestCase(unittest.TestCase):
             "<p>The function should return a list of coordinates that "
             "are the furthest away (by Manhattan distance) from all "
             "agents.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             test_data = [
                 ([(1, 1)], 2, [(0, 0)],
