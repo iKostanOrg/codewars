@@ -4,7 +4,8 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-# ALGORITHMS MEMOIZATION DESIGN PATTERNS DESIGN PRINCIPLES OPTIMIZATION
+# ALGORITHMS MEMOIZATION DESIGN PATTERNS
+# DESIGN PRINCIPLES OPTIMIZATION
 
 import unittest
 import allure
@@ -40,7 +41,7 @@ class PrimesTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing is_prime function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,7 +50,7 @@ class PrimesTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the output"):
             test_data = [
                 (1, False),
