@@ -41,7 +41,7 @@ class FindSmallestTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing smallest function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -50,7 +50,7 @@ class FindSmallestTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         test_data = ((261235, [126235, 2, 0]),
                      (209917, [29917, 0, 1]),
                      (285365, [238565, 3, 1]),
@@ -64,8 +64,7 @@ class FindSmallestTestCase(unittest.TestCase):
                      (400360725952391834, [3460725952391834, 0, 3]),
                      (914459749498173781, [144597494981737819, 0, 17]),
                      (113343536213382181, [111334353621338218, 17, 0]),
-                     (614132919143656569, [141326919143656569, 0, 5]),
-                     )
+                     (614132919143656569, [141326919143656569, 0, 5]))
 
         for n, expected in test_data:
             result = smallest(n)
