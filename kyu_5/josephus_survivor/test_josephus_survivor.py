@@ -40,7 +40,7 @@ class JosephusSurvivorTestCase(unittest.TestCase):
         Josephus permutation.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing josephus_survivor function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -51,7 +51,7 @@ class JosephusSurvivorTestCase(unittest.TestCase):
             "<p>In this kata you have to verify that the function "
             "correctly returns who is the \"survivor\", ie: the "
             "last element of a Josephus permutation.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             ((7, 3), 4),
             ((11, 19), 10),
