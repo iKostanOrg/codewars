@@ -9,7 +9,9 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.first_non_repeating_character.first_non_repeating_letter import first_non_repeating_letter
+from kyu_5.first_non_repeating_character.first_non_repeating_letter import (
+    first_non_repeating_letter
+)
 
 
 # pylint: disable-msg=R0801
