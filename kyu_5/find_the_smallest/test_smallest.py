@@ -12,7 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.find_the_smallest.solution import smallest
 
-
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -23,6 +23,7 @@ from kyu_5.find_the_smallest.solution import smallest
 @allure.link(url='https://www.codewars.com/kata/573992c724fc289553000e95/train/python',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
+# pylint: enable-msg=R0801
 class FindSmallestTestCase(unittest.TestCase):
     """
     Testing smallest function
