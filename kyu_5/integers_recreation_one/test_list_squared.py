@@ -48,7 +48,7 @@ class ListSquaredTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing list_squared function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -59,7 +59,7 @@ class ListSquaredTestCase(unittest.TestCase):
             "<p>Given two integers m, n (1 <= m <= n) we want to find "
             "all integers between m and n whose sum of squared divisors "
             "is itself a square.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             (1, 250,
              [[1, 1], [42, 2500], [246, 84100]]),
