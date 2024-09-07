@@ -4,10 +4,11 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-# FUNDAMENTALS PARSING ALGORITHMS STRINGS MEMOIZATION DESIGN PATTERNS DESIGN PRINCIPLES
+# FUNDAMENTALS PARSING ALGORITHMS STRINGS MEMOIZATION
+# DESIGN PATTERNS DESIGN PRINCIPLES
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.sum_of_pairs.sum_pairs import sum_pairs
 
