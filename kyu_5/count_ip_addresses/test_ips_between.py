@@ -45,7 +45,7 @@ class IpsBetweenTestCase(unittest.TestCase):
         than the first one.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing alphabet_war function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -59,7 +59,7 @@ class IpsBetweenTestCase(unittest.TestCase):
             "<p>All inputs will be valid IPv4 addresses in the form "
             "of strings. The last address will always be greater "
             "than the first one.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             ("10.0.0.0", "10.0.0.50", 50),
             ("20.0.0.10", "20.0.1.0", 246),
