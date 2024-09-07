@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_5.string_incrementer.string_incrementer import increment_string
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -27,6 +28,7 @@ from kyu_5.string_incrementer.string_incrementer import increment_string
             'ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class StringIncrementerTestCase(unittest.TestCase):
     """
     Testing increment_string function
