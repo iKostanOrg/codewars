@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_5.simple_pig_latin.pig_it import pig_it
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -21,6 +22,7 @@ from kyu_5.simple_pig_latin.pig_it import pig_it
 @allure.tag('ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class PigItTestCase(unittest.TestCase):
     """
     Testing pig_it function
