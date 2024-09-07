@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_5.the_hashtag_generator.hashtag_generator import generate_hashtag
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -22,6 +23,7 @@ from kyu_5.the_hashtag_generator.hashtag_generator import generate_hashtag
             'SORTING')
 @allure.link(url='https://www.codewars.com/kata/52449b062fb80683ec000024/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class GenerateHashtagTestCase(unittest.TestCase):
     """
     Testing generate_hashtag function
