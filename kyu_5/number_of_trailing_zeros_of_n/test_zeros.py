@@ -36,7 +36,7 @@ class ZerosTestCase(unittest.TestCase):
         of trailing zeros in a factorial of a given number.
         :return: None
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing zeros function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -45,7 +45,7 @@ class ZerosTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the result"):
             test_data = [
                 (0, 0, "Testing with n = 0"),
