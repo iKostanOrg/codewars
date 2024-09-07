@@ -39,6 +39,7 @@ class StringIncrementerTestCase(unittest.TestCase):
         Testing a function named increment_string
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing increment_string function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -52,7 +53,7 @@ class StringIncrementerTestCase(unittest.TestCase):
             "- If the string does not end with a number. the number 1 "
             "should be appended to the new string."
             "</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("foo", "foo1"),
             ("foobar001", "foobar002"),
