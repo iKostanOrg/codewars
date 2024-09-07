@@ -69,7 +69,7 @@ class AlphabetWarTestCase(unittest.TestCase):
         make it clear for you.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing alphabet_war function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -79,7 +79,7 @@ class AlphabetWarTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Test a function that accepts battlefield string and "
             "returns letters that survived the nuclear strike.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             ('[a]#[b]#[c]', 'ac'),
             ('[a]#b#[c][d]', 'd'),
