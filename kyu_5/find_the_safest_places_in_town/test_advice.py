@@ -13,6 +13,7 @@ from kyu_5.find_the_safest_places_in_town.advice import advice, create_city_map,
 from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -22,6 +23,7 @@ from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 @allure.tag('ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class FirstAdviceTestCase(unittest.TestCase):
     """
     Testing advice and all related help functions
