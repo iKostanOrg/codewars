@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 # BUGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING
 # ADVANCED LANGUAGE FEATURES FUNDAMENTALS STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_5.not_very_secure.alphanumeric import alphanumeric
 
