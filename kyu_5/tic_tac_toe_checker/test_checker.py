@@ -41,16 +41,17 @@ class IsSolvedTestCase(unittest.TestCase):
             2 if "O" won,
             0 if it's a cat's game (i.e. a draw).
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing done_or_not function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should return whether the board's "
-                                        "current state is solved.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should return whether the board's "
+            "current state is solved.</p>")
+        # pylint: enable-msg=R0801
         test_data = (
             ([[0, 0, 1],
               [0, 1, 2],
