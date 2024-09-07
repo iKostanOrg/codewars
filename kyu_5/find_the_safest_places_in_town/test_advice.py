@@ -75,6 +75,7 @@ class FirstAdviceTestCase(unittest.TestCase):
         The function should remove all agents that are outside of the city boundaries.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing agents_cleanup function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -84,7 +85,7 @@ class FirstAdviceTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should remove all agents that are "
             "outside of the city boundaries.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test data and verify the output"):
             test_data = [
                 ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
