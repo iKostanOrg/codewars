@@ -37,7 +37,7 @@ class MoveZerosTestCase(unittest.TestCase):
         zeros to the end, preserving the order of the other elements.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing move_zeros function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,7 +46,7 @@ class MoveZerosTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test data (list) and verify the output"):
             test_data = [
                 ([1, 2, 0, 1, 0, 1, 0, 3, 0, 1], [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]),
