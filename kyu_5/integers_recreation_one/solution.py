@@ -23,8 +23,7 @@ def divisor_generator(digit: int):
             if i * i != digit:
                 large_divisors.append(digit // i)
 
-    for divisor in reversed(large_divisors):
-        yield divisor
+    yield from large_divisors
 
 
 def is_perfect_square(n_str: str) -> bool:

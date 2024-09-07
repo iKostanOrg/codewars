@@ -37,7 +37,7 @@ class PigItTestCase(unittest.TestCase):
         of the word. Leave punctuation marks untouched.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing pig_it function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,7 +46,7 @@ class PigItTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             test_data = [
                 ('Pig latin is cool', 'igPay atinlay siay oolcay'),
