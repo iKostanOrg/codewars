@@ -21,13 +21,8 @@ def dir_reduc(arr: list) -> list:
     The Haskell version takes a list of directions with data
     Direction = North | East | West | South.
 
-    The Clojure version returns nil when the path is reduced
-    to nothing.
-
-    The Rust version takes a slice of enum Direction
-    {NORTH, SOUTH, EAST, WEST}.
-    :param arr: lst
-    :return: lst
+    :param arr: list
+    :return: list
     """
 
     is_sorted: bool = False
@@ -38,14 +33,13 @@ def dir_reduc(arr: list) -> list:
             if check_pairs(i, arr, a):
                 del_directions(i, arr)
                 is_sorted = False
-                break
 
     return arr
 
 
 def check_pairs(i: int, arr: list, a: str) -> bool:
     """
-    Check conditions
+    Check conditions for pairs
     :param i: int
     :param arr: list
     :param a: str
@@ -56,7 +50,7 @@ def check_pairs(i: int, arr: list, a: str) -> bool:
 
 def del_directions(i: int, arr: list) -> None:
     """
-    Delete array members
+    Remove directions from the list
     :param i: int
     :param arr:list
     :return: None
