@@ -53,4 +53,4 @@ def clean_up_string(string: str) -> str:
     :param string: str
     :return: str
     """
-    return ''.join(s for s in string if s == '(' or s == ')')
+    return ''.join(s for s in string if s in '()')
