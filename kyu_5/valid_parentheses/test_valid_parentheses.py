@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Valid Parentheses
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS VALIDATION UTILITIES
 
@@ -16,7 +18,9 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Validation")
 @allure.story('Valid Parentheses')
-@allure.tag('ALGORITHMS', 'VALIDATION', 'UTILITIES')
+@allure.tag('ALGORITHMS',
+            'VALIDATION',
+            'UTILITIES')
 @allure.link(url='https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python',
              name='Source/Kata')
 class ValidParenthesesTestCase(unittest.TestCase):
@@ -42,11 +46,12 @@ class ValidParenthesesTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing valid_parentheses function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
             test_data = [
