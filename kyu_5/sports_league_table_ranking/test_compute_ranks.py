@@ -23,6 +23,9 @@ from kyu_5.sports_league_table_ranking.compute_ranks import compute_ranks
 @allure.link(url='https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python',
              name='Source/Kata')
 class ComputeRanksTestCase(unittest.TestCase):
+    """
+    Testing Sports League Table Ranking
+    """
 
     def test_something(self):
         """
