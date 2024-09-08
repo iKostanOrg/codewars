@@ -29,23 +29,23 @@ def dir_reduc(arr: list) -> list:
 
     while not is_sorted:
         is_sorted = True
-        for i, a in enumerate(arr):
-            if check_pairs(i, arr, a):
+        for i, arr_item in enumerate(arr):
+            if check_pairs(i, arr, arr_item):
                 del_directions(i, arr)
                 is_sorted = False
 
     return arr
 
 
-def check_pairs(i: int, arr: list, a: str) -> bool:
+def check_pairs(i: int, arr: list, arr_item: str) -> bool:
     """
     Check conditions for pairs
     :param i: int
     :param arr: list
-    :param a: str
+    :param arr_item: str
     :return: bool
     """
-    return i + 1 < len(arr) and PAIRS[a] == arr[i + 1]
+    return i + 1 < len(arr) and PAIRS[arr_item] == arr[i + 1]
 
 
 def del_directions(i: int, arr: list) -> None:

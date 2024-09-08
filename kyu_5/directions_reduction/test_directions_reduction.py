@@ -60,7 +60,19 @@ class DirectionsReductionTestCase(unittest.TestCase):
             (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
              ['WEST']),
             (["NORTH", "WEST", "SOUTH", "EAST"],
-             ["NORTH", "WEST", "SOUTH", "EAST"])
+             ["NORTH", "WEST", "SOUTH", "EAST"]),
+            (['NORTH', 'EAST', 'NORTH', 'EAST', 'WEST', 'WEST', 'EAST',
+              'EAST', 'WEST', 'SOUTH'],
+             ['NORTH', 'EAST']),
+            (['EAST', 'NORTH', 'SOUTH', 'NORTH', 'SOUTH', 'SOUTH', 'SOUTH',
+              'SOUTH', 'NORTH', 'SOUTH', 'SOUTH', 'EAST', 'SOUTH', 'SOUTH',
+              'NORTH', 'NORTH', 'SOUTH', 'WEST', 'NORTH', 'EAST', 'WEST',
+              'WEST', 'WEST', 'EAST', 'SOUTH', 'SOUTH'],
+             ['EAST', 'SOUTH', 'SOUTH', 'SOUTH', 'SOUTH', 'EAST', 'SOUTH',
+              'WEST', 'NORTH', 'WEST', 'SOUTH', 'SOUTH']),
+            (['WEST', 'NORTH', 'EAST', 'EAST', 'EAST', 'EAST', 'WEST', 'WEST',
+              'WEST', 'WEST', 'NORTH', 'NORTH', 'SOUTH', 'EAST'],
+             ['WEST', 'NORTH', 'NORTH', 'EAST'])
         ]
 
         for d in test_data:
