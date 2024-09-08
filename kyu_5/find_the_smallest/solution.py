@@ -12,13 +12,6 @@ def get_min_digit(digits: list) -> int:
     :return: int
     """
     min_digit = min(digits)
-    if digits.index(min_digit) != 0:
-        return min_digit
-
-    min_digit = digits[1]
-    for digit in digits[2:]:
-        if digit < min_digit:
-            min_digit = digit
     return min_digit
 
 

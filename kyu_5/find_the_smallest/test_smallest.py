@@ -12,6 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_5.find_the_smallest.solution import smallest
 
+
 # pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
