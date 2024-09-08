@@ -31,7 +31,6 @@ def dir_reduc(arr: list) -> list:
         is_sorted = True
         for i, arr_item in enumerate(arr):
             if check_pairs(i, arr, arr_item):
-                del_directions(i, arr)
                 is_sorted = False
 
     return arr
@@ -45,7 +44,10 @@ def check_pairs(i: int, arr: list, arr_item: str) -> bool:
     :param arr_item: str
     :return: bool
     """
-    return i + 1 < len(arr) and PAIRS[arr_item] == arr[i + 1]
+    if i + 1 < len(arr) and PAIRS[arr_item] == arr[i + 1]:
+        del_directions(i, arr)
+        return True
+    return False
 
 
 def del_directions(i: int, arr: list) -> None:
