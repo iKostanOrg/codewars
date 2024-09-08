@@ -39,7 +39,7 @@ def city_map_processing(city: set, agents: set) -> None:
         # Recalculate distance from each agent
         for x, y in agents:
             # Manhattan distance kind a calculation
-            for pos in {(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)}:
+            for pos in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
                 if pos in city:
                     temp.add(pos)
         agents = temp
