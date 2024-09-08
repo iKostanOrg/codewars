@@ -34,11 +34,10 @@ def dir_reduc(arr: list) -> list:
     while not is_sorted:
         is_sorted = True
         for i, a in enumerate(arr):
-            if i + 1 < len(arr):
-                if pairs[a] == arr[i + 1]:
-                    del arr[i + 1]
-                    del arr[i]
-                    is_sorted = False
-                    break
+            if i + 1 < len(arr) and pairs[a] == arr[i + 1]:
+                del arr[i + 1]
+                del arr[i]
+                is_sorted = False
+                break
 
     return arr
