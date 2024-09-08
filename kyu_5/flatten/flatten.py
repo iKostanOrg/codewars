@@ -17,7 +17,7 @@ def flatten(*args) -> list:
     single array result.
     :return:
     """
-    result = []
+    result: list = []
 
     if args:
         unpack(args, result)
