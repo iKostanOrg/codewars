@@ -5,11 +5,12 @@ GitHub: https://github.com/ikostan
 """
 
 PAIRS: dict = {
-        "NORTH": "SOUTH",
-        "SOUTH": "NORTH",
-        "EAST": "WEST",
-        "WEST": "EAST",
-    }
+    "NORTH": "SOUTH",
+    "SOUTH": "NORTH",
+    "EAST": "WEST",
+    "WEST": "EAST",
+}
+
 
 def dir_reduc(arr: list) -> list:
     """
