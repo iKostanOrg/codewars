@@ -35,10 +35,31 @@ def dir_reduc(arr: list) -> list:
     while not is_sorted:
         is_sorted = True
         for i, a in enumerate(arr):
-            if i + 1 < len(arr) and PAIRS[a] == arr[i + 1]:
-                del arr[i + 1]
-                del arr[i]
+            if check_pairs(i, arr, a):
+                del_directions(i, arr)
                 is_sorted = False
                 break
 
     return arr
+
+
+def check_pairs(i: int, arr: list, a: str) -> bool:
+    """
+    Check conditions
+    :param i: int
+    :param arr: list
+    :param a: str
+    :return: bool
+    """
+    return i + 1 < len(arr) and PAIRS[a] == arr[i + 1]
+
+
+def del_directions(i: int, arr: list) -> None:
+    """
+    Delete array members
+    :param i: int
+    :param arr:list
+    :return: None
+    """
+    del arr[i + 1]
+    del arr[i]
