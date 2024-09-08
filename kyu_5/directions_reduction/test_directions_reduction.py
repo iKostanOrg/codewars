@@ -9,7 +9,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.directions_reduction.directions_reduction import dirReduc
+from kyu_5.directions_reduction.directions_reduction import dir_reduc
 
 
 # pylint: disable-msg=R0801
@@ -25,12 +25,12 @@ from kyu_5.directions_reduction.directions_reduction import dirReduc
 # pylint: enable-msg=R0801
 class DirectionsReductionTestCase(unittest.TestCase):
     """
-    Testing dirReduc function
+    Testing dir_reduc function
     """
 
     def test_directions_reduction(self):
         """
-        Test a function dirReduc which will take an array of
+        Test a function dir_reduc which will take an array of
         strings and returns an array of strings with the needless
         directions removed (W<->E or S<->N side by side).
 
@@ -45,7 +45,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing dirReduc function")
+        allure.dynamic.title("Testing dir_reduc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -66,7 +66,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
         for d in test_data:
             array = d[0]
             expected = d[1]
-            result = dirReduc(array)
+            result = dir_reduc(array)
 
             with allure.step(f"Enter test data ({array}) "
                              f"and verify the output ({result}) "
