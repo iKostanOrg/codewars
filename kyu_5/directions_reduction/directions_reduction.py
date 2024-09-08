@@ -4,6 +4,12 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+PAIRS: dict = {
+        "NORTH": "SOUTH",
+        "SOUTH": "NORTH",
+        "EAST": "WEST",
+        "WEST": "EAST",
+    }
 
 def dir_reduc(arr: list) -> list:
     """
@@ -23,18 +29,12 @@ def dir_reduc(arr: list) -> list:
     :return: lst
     """
 
-    pairs: dict = {
-        "NORTH": "SOUTH",
-        "SOUTH": "NORTH",
-        "EAST": "WEST",
-        "WEST": "EAST",
-    }
     is_sorted: bool = False
 
     while not is_sorted:
         is_sorted = True
         for i, a in enumerate(arr):
-            if i + 1 < len(arr) and pairs[a] == arr[i + 1]:
+            if i + 1 < len(arr) and PAIRS[a] == arr[i + 1]:
                 del arr[i + 1]
                 del arr[i]
                 is_sorted = False
