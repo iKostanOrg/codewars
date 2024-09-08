@@ -11,8 +11,8 @@ def valid_parentheses(string: str) -> bool:
     and determines if the order of the parentheses is valid.
     The function should return true if the string is valid,
     and false if it's invalid.
-    :param string:
-    :return:
+    :param string: str
+    :return: bool
     """
 
     string: str = clean_up_string(string)
@@ -50,7 +50,7 @@ def valid_parentheses(string: str) -> bool:
 def clean_up_string(string: str) -> str:
     """
     Cleaning up string from invalid chars
-    :param string:
-    :return:
+    :param string: str
+    :return: str
     """
     return ''.join(s for s in string if s == '(' or s == ')')
