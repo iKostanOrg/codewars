@@ -61,7 +61,6 @@ class ComputeRanksTestCase(unittest.TestCase):
             "<li>- Scoring differential (the difference between goals "
             "scored and those conceded)</li>"
             "<li>- Goals scored</li></ul>")
-        
         # pylint: enable-msg=R0801
         test_data = [
             (6,
