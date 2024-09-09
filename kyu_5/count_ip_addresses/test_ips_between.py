@@ -1,26 +1,32 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Count IP Addresses
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS PARSING STRINGS
 
-import allure
 import unittest
 import pytest
+import allure
 from utils.log_func import print_log
 from kyu_5.count_ip_addresses.ips_between import ips_between
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Count IP Addresses')
-@allure.tag('ALGORITHMS', 'PARSING', 'STRINGS')
+@allure.tag('ALGORITHMS',
+            'PARSING',
+            'STRINGS')
 @allure.link(url='https://www.codewars.com/kata/526989a41034285187000de4/train/python',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
+# pylint: enable-msg=R0801
 class IpsBetweenTestCase(unittest.TestCase):
     """
     Testing ips_between function
@@ -39,20 +45,21 @@ class IpsBetweenTestCase(unittest.TestCase):
         than the first one.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing alphabet_war function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing a function that receives two IPv4 addresses, "
-                                        "and returns the number of addresses between them (including "
-                                        "the first one, excluding the last one).</p>"
-                                        "<p>All inputs will be valid IPv4 addresses in the form "
-                                        "of strings. The last address will always be greater "
-                                        "than the first one.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing a function that receives two IPv4 addresses, "
+            "and returns the number of addresses between them (including "
+            "the first one, excluding the last one).</p>"
+            "<p>All inputs will be valid IPv4 addresses in the form "
+            "of strings. The last address will always be greater "
+            "than the first one.</p>")
+        # pylint: enable-msg=R0801
         test_data = [
             ("10.0.0.0", "10.0.0.50", 50),
             ("20.0.0.10", "20.0.1.0", 246),
@@ -66,14 +73,12 @@ class IpsBetweenTestCase(unittest.TestCase):
         ]
 
         for start, end, expected in test_data:
-
             result = ips_between(start, end)
 
-            with allure.step("Enter test data (start: {}, end: {}) and verify "
-                             "the output ({}) vs expected ({})".format(start,
-                                                                       end,
-                                                                       result,
-                                                                       expected)):
+            with allure.step(f"Enter test data (start: {start}, "
+                             f"end: {end}) and verify "
+                             f"the output ({result}) "
+                             f"vs expected ({expected})"):
                 print_log(start=start,
                           end=end,
                           result=result,
