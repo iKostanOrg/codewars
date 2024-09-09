@@ -27,10 +27,10 @@ class ComputeRanksTestCase(unittest.TestCase):
     Testing Sports League Table Ranking
     """
 
-    def test_something(self):
+    def test_compute_ranks(self):
         """
-        Test the function that organizes a sports league in a
-        round-robin-system. Each team meets all other teams.
+        Test the compute_ranks function that organizes a sports
+        league in a round-robin-system. Each team meets all other teams.
         In your league a win gives a team 2 points, a draw gives
         both teams 1 point. After some games you have to compute
         the order of the teams in your league. You use the following
@@ -42,7 +42,7 @@ class ComputeRanksTestCase(unittest.TestCase):
         scored and those conceded).
 
         - Goals scored.
-        
+    
         :return:
         """
         # pylint: disable-msg=R0801
