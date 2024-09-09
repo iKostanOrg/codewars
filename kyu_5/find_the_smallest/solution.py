@@ -65,7 +65,7 @@ def smallest(n: int) -> list:
     The index i of the digit d you took, i as small as possible.
     The index j (as small as possible) where you insert this
     digit d to have the smallest number.
-    
+
     :param n: a positive number n consisting of digits
     :return: an array with: smallest number, index, digit
     """
