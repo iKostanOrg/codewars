@@ -40,7 +40,7 @@ class ComputeRanksTestCase(unittest.TestCase):
 
         Scoring differential (the difference between goals
         scored and those conceded).
-        
+
         Goals scored.
 
         :return:
