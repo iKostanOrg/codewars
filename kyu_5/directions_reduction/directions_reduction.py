@@ -24,30 +24,27 @@ def dir_reduc(arr: list) -> list:
     :param arr: list
     :return: list
     """
-
     is_sorted: bool = False
 
     while not is_sorted:
-        is_sorted = True
-        for i, arr_item in enumerate(arr):
-            if check_pairs(i, arr, arr_item):
-                is_sorted = False
+        is_sorted = check_pairs(arr)
 
     return arr
 
 
-def check_pairs(i: int, arr: list, arr_item: str) -> bool:
+def check_pairs(arr: list) -> bool:
     """
-    Check conditions for pairs
-    :param i: int
+    Check conditions for pairs.
+    Return False if any pairs were removed.
+    Return True if there was nothing to remove.
     :param arr: list
-    :param arr_item: str
     :return: bool
     """
-    if i + 1 < len(arr) and PAIRS[arr_item] == arr[i + 1]:
-        del_directions(i, arr)
-        return True
-    return False
+    for i, arr_item in enumerate(arr):
+        if i + 1 < len(arr) and PAIRS[arr_item] == arr[i + 1]:
+            del_directions(i, arr)
+            return False
+    return True
 
 
 def del_directions(i: int, arr: list) -> None:
