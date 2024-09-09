@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Simple Pig Latin
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import List
 
@@ -10,10 +12,10 @@ def pig_it(text: str) -> str:
     Move the first letter of each word to the end of it,
     then add "ay" to the end of the word. Leave
     punctuation marks untouched.
-    :param text:
-    :return:
+    :param text: str
+    :return: str
     """
-    result: List[str] = list()
+    result: List[str] = []
     for word in text.split(' '):
         word_processor(word, result)
 
@@ -23,13 +25,13 @@ def pig_it(text: str) -> str:
 def word_processor(word: str, result: list) -> None:
     """
     Processing a single word for the requested pattern
-    :param word:
-    :param result:
-    :return:
+    :param word: str
+    :param result: list
+    :return: None
     """
     if len(word) > 1:
-        result.append('{}ay'.format(word[1:] + word[0]))
+        result.append(f'{word[1:] + word[0]}ay')
     elif len(word) == 1 and word.isalpha():
-        result.append('{}ay'.format(word))
+        result.append(f'{word}ay')
     else:
         result.append(word)

@@ -41,7 +41,7 @@ class Sudoku:
     def is_data_valid(self) -> bool:
         """
         Verify data validity
-        :return:
+        :return: bool
         """
         if not self.__data:
             return False

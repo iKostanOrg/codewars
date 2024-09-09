@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Valid Parentheses
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def valid_parentheses(string: str) -> bool:
@@ -9,11 +11,11 @@ def valid_parentheses(string: str) -> bool:
     and determines if the order of the parentheses is valid.
     The function should return true if the string is valid,
     and false if it's invalid.
-    :param string:
-    :return:
+    :param string: str
+    :return: bool
     """
 
-    string = clean_up_string(string)
+    string: str = clean_up_string(string)
 
     if string == "" or not string:
         return True
@@ -27,7 +29,7 @@ def valid_parentheses(string: str) -> bool:
     string_list = list(s for s in string)
 
     while string_list:
-        pair = False
+        pair: bool = False
 
         if string_list[0] == ')':
             return False
@@ -48,7 +50,7 @@ def valid_parentheses(string: str) -> bool:
 def clean_up_string(string: str) -> str:
     """
     Cleaning up string from invalid chars
-    :param string:
-    :return:
+    :param string: str
+    :return: str
     """
-    return ''.join(s for s in string if s == '(' or s == ')')
+    return ''.join(s for s in string if s in '()')
