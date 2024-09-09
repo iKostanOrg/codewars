@@ -36,10 +36,11 @@ class ComputeRanksTestCase(unittest.TestCase):
         the order of the teams in your league. You use the following
         criteria to arrange the teams:
 
-            - Points
-            - Scoring differential (the difference between goals
-            scored and those conceded)
-            - Goals scored
+        - Points
+        - Scoring differential (the difference between goals
+        scored and those conceded)
+        - Goals scored
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -60,6 +61,7 @@ class ComputeRanksTestCase(unittest.TestCase):
             "<li>- Scoring differential (the difference between goals "
             "scored and those conceded)</li>"
             "<li>- Goals scored</li></ul>")
+        
         # pylint: enable-msg=R0801
         test_data = [
             (6,
