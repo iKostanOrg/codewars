@@ -22,7 +22,6 @@ kyu\_5.integers\_recreation\_one.test\_list\_squared module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

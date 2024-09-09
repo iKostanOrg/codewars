@@ -1,15 +1,16 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Diophantine Equation
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def sol_equa(n: int) -> list:
     """
     Finds all integers x, y (x >= 0, y >= 0)
-    solutions of a diophantine equation of the form:
-            x2 - 4 * y2 = n
+    solutions of a diophantine equation of the form x2 - 4 * y2 = n
     """
-    result = list()
+    result = []
 
     start = n//2
     if n % 2 != 0:

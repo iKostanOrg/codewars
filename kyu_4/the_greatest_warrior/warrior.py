@@ -1,8 +1,10 @@
-"""The Greatest Warrior"""
+"""
+Solution for -> The Greatest Warrior
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 RANKS = ("Pushover",
          "Novice",
@@ -41,8 +43,8 @@ class Warrior:
         self.__level = self.__set_level()
         # A warrior starts at rank "Pushover"
         self.__rank = self.__set_rank()
-        #
-        self.__achievements = list()
+        # A list of all achievements
+        self.__achievements = []
 
     def __set_rank(self) -> str:
         """
@@ -89,7 +91,6 @@ class Warrior:
     def level(self) -> int:
         """
         A warrior's level
-
         :return: A warrior's level
         """
         return self.__level
@@ -99,54 +100,65 @@ class Warrior:
         """
         A warrior starts at rank "Pushover" and
         can progress all the way to "Greatest"
-
         :return: warrior's rank
         """
         return self.__rank
 
     @property
     def experience(self) -> int:
+        """
+        Return experience value
+        :return:
+        """
         return self.__experience
 
     @property
     def achievements(self) -> list:
+        """
+        Return achievements as a list
+        :return:
+        """
         return self.__achievements
 
-    def battle(self, enemy_level: int):
+    def battle(self, enemy_level: int) -> str:
+        """
+        Return message based on the result of the battle
+        :param enemy_level:
+        :return:
+        """
+        msg: str = ''
         # If an enemy level does not fall in the range of 1 to 100,
         # the battle cannot happen and should return "Invalid level".
         if 1 > enemy_level or enemy_level > 100:
-            return "Invalid level"
-
+            msg = "Invalid level"
         # Completing a battle against an enemy with the same level
         # as your warrior will be worth 10 experience points.
-        if enemy_level == self.level:
+        elif enemy_level == self.level:
             self.__update_experience(10)
-            return FIGHT_MESSAGES[1]
-
+            msg = FIGHT_MESSAGES[1]
         # Completing a battle against an enemy who is one level lower
         # than your warrior will be worth 5 experience points.
-        if enemy_level == self.level - 1:
+        elif enemy_level == self.level - 1:
             self.__update_experience(5)
-            return FIGHT_MESSAGES[1]
-
+            msg = FIGHT_MESSAGES[1]
         # Completing a battle against an enemy who is two levels lower
         # or more than your warrior will give 0 experience points.
-        if enemy_level <= self.level - 2:
+        elif enemy_level <= self.level - 2:
             self.__update_experience(0)
-            return FIGHT_MESSAGES[0]
-
+            msg = FIGHT_MESSAGES[0]
         # Completing a battle against an enemy who is one level higher
         # or more than your warrior will accelarate your experience gaining.
         # The greater the difference between levels, the more experinece
         # your warrior will gain. The formula is 20 * diff * diff where diff
         # equals the difference in levels between the enemy and your warrior.
-        if enemy_level > self.level:
+        elif enemy_level > self.level:
             diff = enemy_level - self.level
             if diff >= 5 and (enemy_level // 10) - (self.level // 10) >= 1:
                 return FIGHT_MESSAGES[-1]
             self.__update_experience(20 * diff * diff)
-            return FIGHT_MESSAGES[2]
+            msg = FIGHT_MESSAGES[2]
+
+        return msg
 
     def training(self, params: list) -> str:
         """
@@ -170,5 +182,4 @@ class Warrior:
         # the warrior does not receive the experience points and description
         # and instead returns "Not strong enough", without any archiving of
         # the result.
-        else:
-            return "Not strong enough"
+        return "Not strong enough"

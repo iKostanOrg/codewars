@@ -1,16 +1,16 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Josephus Survivor
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def josephus_survivor(n, k):
+def josephus_survivor(total: int, eliminated: int) -> int:
     """
-
-    :param n:
-    :param k:
+    Return who is the "survivor"
+    :param total: int
+    :param eliminated: int
     :return:
     """
-
-    n_list = [i for i in range(1, n + 1)]
-
-    return n_list[0]
+    print(f"total: {total}, eliminated: {eliminated}")
+    return 0

@@ -1,23 +1,28 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> String transformer
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def string_transformer(s: str) -> str:
     """
     Given a string, return a new string that has
     transformed based on the input:
-            1. Change case of every character, ie. lower
-            case to upper case, upper case to lower case.
-            2. Reverse the order of words from the input.
+
+    1. Change case of every character, ie. lower
+    case to upper case, upper case to lower case.
+
+    2. Reverse the order of words from the input.
 
     Note: You will have to handle multiple spaces, and
     leading/trailing spaces.
 
     You may assume the input only contain English
     alphabet and spaces.
-    :param s:
-    :return:
+
+    :param s: str
+    :return: str
     """
     s_arr = s.split(' ')[::-1]
 

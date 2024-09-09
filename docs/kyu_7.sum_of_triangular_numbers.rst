@@ -11,6 +11,7 @@ kyu\_7.sum\_of\_triangular\_numbers.sum\_triangular\_numbers module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.sum\_of\_triangular\_numbers.test\_sum\_triangular\_numbers module
 -------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.sum\_of\_triangular\_numbers.test\_sum\_triangular\_numbers module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

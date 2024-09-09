@@ -1,6 +1,7 @@
-## Extract the domain name from a URL
+# Extract the domain name from a URL
 
-Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
+Write a function that when given a URL as a string, parses out just
+the domain name and returns it as a string. For example:
 
 ```text
 domain_name("http://github.com/carbonfive/raygun") == "github" 

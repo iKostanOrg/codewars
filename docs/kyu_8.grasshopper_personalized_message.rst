@@ -11,6 +11,7 @@ kyu\_8.grasshopper\_personalized\_message.grasshopper\_personalized\_message mod
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.grasshopper\_personalized\_message.test\_grasshopper\_personalized\_message module
 -----------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.grasshopper\_personalized\_message.test\_grasshopper\_personalized\_messa
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

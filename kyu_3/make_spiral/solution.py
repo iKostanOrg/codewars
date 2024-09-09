@@ -1,9 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+
+"""
+Solution for -> Make a spiral
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-DIRECTIONS = {
+DIRECTIONS: dict = {
     'right': 'down',
     'down': 'left',
     'left': 'up',
@@ -13,13 +17,13 @@ DIRECTIONS = {
 
 def right(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral right
+    Move spiral right
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: boolean 'done'
-"""
-    done = True
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: boolean 'done'
+    """
+    done: bool = True
 
     while coordinates['col'] < len(spiral[coordinates['row']]):
 
@@ -31,40 +35,34 @@ Move spiral right
             spiral[row][col] = 1
             done = False
             break
-        elif col + 1 == len(spiral[0]) - 1 and \
-                spiral[row][col + 1] == 0 and \
-                spiral[row][col] == 0:
+
+        if col + 1 == len(spiral[0]) - 1 and \
+                spiral[row][col + 1] == spiral[row][col] == 0:
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
-        elif col + 2 == len(spiral[0]) - 1 and \
-                spiral[row][col + 2] == 0 and \
-                spiral[row][col + 1] == 0 and \
-                spiral[row][col] == 0:
+        elif (col + 2 == len(spiral[0]) - 1 and
+              spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0):
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
         elif col + 2 == len(spiral[0]) - 1 and \
                 spiral[row][col + 2] == 1 and \
-                spiral[row][col + 1] == 0 and \
-                spiral[row][col] == 0:
+                spiral[row][col + 1] == spiral[row][col] == 0:
             spiral[row][col] = 1
             done = False
             break
-        elif col + 2 < len(spiral[0]) - 1 and \
-                spiral[row][col + 2] == 1 and \
-                spiral[row][col + 1] == 0 and \
-                spiral[row][col] == 0 and \
-                col + 2 < len(spiral[0]) and \
-                spiral[row + 1][col] != 1:
+        elif (col + 2 < len(spiral[0]) - 1 and
+              spiral[row][col + 2] == 1 and
+              spiral[row][col + 1] == spiral[row][col] == 0
+              and col + 2 < len(spiral[0])
+              and spiral[row + 1][col] != 1):
             spiral[row][col] = 1
             done = False
             break
-        elif col + 2 < len(spiral[0]) - 1 and \
-                spiral[row][col + 2] == 0 and \
-                spiral[row][col + 1] == 0 and \
-                spiral[row][col] == 0 and \
-                col + 2 < len(spiral[0]):
+        elif (col + 2 < len(spiral[0]) - 1 and
+              spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0
+              and col + 2 < len(spiral[0])):
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
@@ -76,13 +74,13 @@ Move spiral right
 
 def down(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral down
+    Move spiral down
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: boolean 'done'
-"""
-    done = True
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: boolean 'done'
+    """
+    done: bool = True
 
     while coordinates['row'] < len(spiral):
 
@@ -93,9 +91,9 @@ Move spiral down
             spiral[row][col] = 1
             done = False
             break
-        elif row + 2 <= len(spiral) - 1 and \
-                spiral[row + 2][col] == 0 and \
-                spiral[row + 1][col] == 0:
+
+        if row + 2 <= len(spiral) - 1 and \
+                spiral[row + 2][col] == spiral[row + 1][col] == 0:
             spiral[row][col] = 1
             coordinates['row'] += 1
             done = False
@@ -112,39 +110,38 @@ Move spiral down
 
 def left(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral left
+    Move spiral left
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: None
-"""
-    done = True
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: bool
+    """
+    done: bool = True
 
     while coordinates['col'] >= 0:
 
         row = coordinates['row']
         col = coordinates['col']
 
-        if col == 0 and spiral[row][col] == 0:
+        if col == spiral[row][col] == 0:
             spiral[row][col] = 1
             done = False
             break
-        elif col - 2 >= 0 and \
-                spiral[row][col - 2] == 0 and \
-                spiral[row][col - 1] == 0:
-            spiral[row][col] = 1
-            coordinates['col'] -= 1
-            done = False
-        elif col - 2 >= 0 and \
+
+        if col - 2 >= 0 and \
                 spiral[row][col - 2] == 1 and \
                 spiral[row][col - 1] == 0 and \
                 spiral[row - 1][col] != 1:
             spiral[row][col] = 1
             done = False
             break
-        elif col - 1 == 0 and \
-                spiral[row][col - 1] == 0 and \
-                spiral[row][col] == 0:
+
+        if col - 2 >= 0 and \
+                spiral[row][col - 2] == spiral[row][col - 1] == 0:
+            spiral[row][col] = 1
+            coordinates['col'] -= 1
+            done = False
+        elif col - 1 == spiral[row][col - 1] == spiral[row][col] == 0:
             spiral[row][col] = 1
             coordinates['col'] -= 1
             done = False
@@ -156,20 +153,20 @@ Move spiral left
 
 def up(spiral: list, coordinates: dict) -> bool:
     """
-Move spiral up
+    Move spiral up
 
-:param coordinates: starting point
-:param spiral: NxN spiral 2D array
-:return: None
-"""
-    done = True
+    :param coordinates: starting point
+    :param spiral: NxN spiral 2D array
+    :return: boole
+    """
+    done: bool = True
 
     while coordinates['row'] >= 0:
 
         row = coordinates['row']
         col = coordinates['col']
 
-        if row - 2 >= 0 and spiral[row - 2][col] == 0 and spiral[row - 1][col] == 0:
+        if row - 2 >= 0 and spiral[row - 2][col] == spiral[row - 1][col] == 0:
             spiral[row][col] = 1
             coordinates['row'] -= 1
             done = False
@@ -181,12 +178,12 @@ Move spiral up
 
 def set_initial_params(size: int) -> tuple:
     """
-Set initial parameters: line, spiral, direction, coordinate, done
+    Set initial parameters: line, spiral, direction, coordinate, done
 
-:param size:
-:return:
-"""
-    spiral: list = list()
+    :param size:
+    :return: tuple
+    """
+    spiral: list = []
     while len(spiral) != size:
         line: list = [0] * size
         spiral.append(line)
@@ -196,18 +193,18 @@ Set initial parameters: line, spiral, direction, coordinate, done
         'row': 0,
         'col': 0
     }
-    done = False
+    done: bool = False
 
     return spiral, direction, coordinate, done
 
 
 def spiralize(size: int) -> list:
     """
-Creates a NxN spiral 2D list with a given size
+    Creates a NxN spiral 2D list with a given size
 
-:param size: size of the 2D array
-:return: NxN spiral 2D array
-"""
+    :param size: size of the 2D array
+    :return: list, NxN spiral 2D array
+    """
     spiral, direction, coordinates, done = set_initial_params(size)
 
     while not done:

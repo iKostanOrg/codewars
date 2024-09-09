@@ -1,17 +1,19 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Moving Zeros To The End
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def move_zeros(array: list):
+def move_zeros(array: list) -> list:
     """
     An algorithm that takes an array and moves all of the
     zeros to the end, preserving the order of the other elements.
-    :param array:
-    :return:
+    :param array: list
+    :return: list
     """
 
-    moving_zero = True
+    moving_zero: bool = True
 
     while moving_zero:
         moving_zero = False

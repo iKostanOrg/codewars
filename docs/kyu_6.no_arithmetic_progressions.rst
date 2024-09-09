@@ -11,6 +11,7 @@ kyu\_6.no\_arithmetic\_progressions.sequence module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.no\_arithmetic\_progressions.test\_sequence module
 ---------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.no\_arithmetic\_progressions.test\_sequence module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

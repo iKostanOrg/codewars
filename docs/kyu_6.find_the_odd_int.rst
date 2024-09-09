@@ -11,6 +11,7 @@ kyu\_6.find\_the\_odd\_int.find\_the\_odd\_int module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.find\_the\_odd\_int.test\_find\_the\_odd\_int module
 -----------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.find\_the\_odd\_int.test\_find\_the\_odd\_int module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

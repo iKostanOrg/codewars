@@ -1,25 +1,31 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Maximum Multiple
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def max_multiple(divisor: int, bound: int) -> int:
     """
-    Given a Divisor and a Bound , Find the
-    largest integer N , Such That ,
+    Given a Divisor and a Bound, find the
+    largest integer N
 
     Conditions:
-        1. N is divisible by divisor
-        2. N is less than or equal to bound
-        3. N is greater than 0.
+
+    1. N is divisible by divisor
+    2. N is less than or equal to bound
+    3. N is greater than 0.
 
     Notes:
-        1. The parameters (divisor, bound)
-            passed to the function are only positve values .
-        2. It's guaranteed that a divisor is Found .
-    :param divisor:
-    :param bound:
-    :return:
+
+    1. The parameters (divisor, bound) passed to the
+    function are only positive values.
+
+    2. It's guaranteed that a divisor is Found.
+
+    :param divisor: int
+    :param bound: int
+    :return: int
     """
 
     while bound > 0:

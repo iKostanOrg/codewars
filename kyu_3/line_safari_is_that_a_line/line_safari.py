@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Line Safari - Is that a line?
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 
@@ -32,6 +35,11 @@ def line(grid: list) -> bool:
 
 
 def assert_x_has_rout(grid: list) -> bool:
+    """
+    Make sure x has a valid route
+    :param grid:
+    :return:
+    """
     counter = 0
     for row_i, row in enumerate(grid):
 
@@ -40,7 +48,7 @@ def assert_x_has_rout(grid: list) -> bool:
 
         for col_i, char in enumerate(row):
             if char == 'X':
-                temp = list()
+                temp = []
                 # up
                 if row_i - 1 >= 0 and grid[row_i - 1][col_i] in 'X|+':
                     temp.append(True)
@@ -48,10 +56,10 @@ def assert_x_has_rout(grid: list) -> bool:
                 if row_i + 1 < len(grid) and grid[row_i + 1][col_i] in 'X|+':
                     temp.append(True)
                 # left
-                if col_i - 1 >= 0 and grid[row_i][col_i - 1] in 'X+-':
+                if col_i - 1 >= 0 and row[col_i - 1] in 'X+-':
                     temp.append(True)
                 # right
-                if col_i + 1 < len(grid[row_i]) and grid[row_i][col_i + 1] in 'X+-':
+                if col_i + 1 < len(row) and row[col_i + 1] in 'X+-':
                     temp.append(True)
 
                 if len(temp) != 1:
@@ -61,6 +69,11 @@ def assert_x_has_rout(grid: list) -> bool:
 
 
 def x_counter(grid: list) -> int:
+    """
+    Counter number of X
+    :param grid: list
+    :return: int
+    """
     counter = 0
     for row in grid:
         counter += row.count('X')

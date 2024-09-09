@@ -11,6 +11,7 @@ kyu\_7.formatting\_decimal\_places\_1.test\_two\_decimal\_places module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.formatting\_decimal\_places\_1.two\_decimal\_places module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.formatting\_decimal\_places\_1.two\_decimal\_places module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

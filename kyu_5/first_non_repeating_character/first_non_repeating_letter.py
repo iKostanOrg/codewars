@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> First non-repeating character
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def first_non_repeating_letter(string: str) -> str:
@@ -8,10 +10,10 @@ def first_non_repeating_letter(string: str) -> str:
     A function named first_non_repeating_letter that
     takes a string input, and returns the first
     character that is not repeated anywhere in the string.
-    :param string:
-    :return:
+    :param string: str
+    :return: str
     """
-    result = ''
+    result: str = ''
     string_lower = string.lower()
 
     for i, s in enumerate(string_lower):

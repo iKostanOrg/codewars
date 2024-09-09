@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sports League Table Ranking
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import unittest
 import allure
@@ -14,43 +16,54 @@ from kyu_5.sports_league_table_ranking.compute_ranks import compute_ranks
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Sports League Table Ranking')
-@allure.tag('ALGORITHMS', 'FUNDAMENTALS', 'ARRAYS', 'SORTING')
+@allure.tag('ALGORITHMS',
+            'FUNDAMENTALS',
+            'ARRAYS',
+            'SORTING')
 @allure.link(url='https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python',
              name='Source/Kata')
 class ComputeRanksTestCase(unittest.TestCase):
+    """
+    Testing Sports League Table Ranking
+    """
 
-    def test_something(self):
+    def test_compute_ranks(self):
         """
-        Test the function that organizes a sports league in a
-        round-robin-system. Each team meets all other teams.
+        Test the compute_ranks function that organizes a sports
+        league in a round-robin-system. Each team meets all other teams.
         In your league a win gives a team 2 points, a draw gives
         both teams 1 point. After some games you have to compute
         the order of the teams in your league. You use the following
         criteria to arrange the teams:
 
-        - Points
-        - Scoring differential (the difference between goals scored and those conceded)
-        - Goals scored
+        1. Points.
+
+        2. Scoring differential (the difference between goals
+        scored and those conceded).
+
+        3. Goals scored.
+        
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing compute_ranks")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test the function taht organizes a sports league in a "
-                                        "round-robin-system. Each team meets all other teams. "
-                                        "In your league a win gives a team 2 points, a draw gives "
-                                        "both teams 1 point. After some games you have to compute "
-                                        "the order of the teams in your league. You use the following "
-                                        "criteria to arrange the teams:</p>"
-                                        "<ul><li>- Points</li>"
-                                        "<li>- Scoring differential (the difference between goals "
-                                        "scored and those conceded)</li>"
-                                        "<li>- Goals scored</li></ul>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test the function taht organizes a sports league in a "
+            "round-robin-system. Each team meets all other teams. "
+            "In your league a win gives a team 2 points, a draw gives "
+            "both teams 1 point. After some games you have to compute "
+            "the order of the teams in your league. You use the following "
+            "criteria to arrange the teams:</p>"
+            "<ul><li>- Points</li>"
+            "<li>- Scoring differential (the difference between goals "
+            "scored and those conceded)</li>"
+            "<li>- Goals scored</li></ul>")
+        # pylint: enable-msg=R0801
         test_data = [
             (6,
              [[0, 5, 2, 2],

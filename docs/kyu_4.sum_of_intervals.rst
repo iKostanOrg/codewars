@@ -11,6 +11,7 @@ kyu\_4.sum\_of\_intervals.sum\_of\_intervals module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_4.sum\_of\_intervals.test\_sum\_of\_intervals module
 ---------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_4.sum\_of\_intervals.test\_sum\_of\_intervals module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

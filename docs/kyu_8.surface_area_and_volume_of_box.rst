@@ -11,6 +11,7 @@ kyu\_8.surface\_area\_and\_volume\_of\_box.get\_size module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.surface\_area\_and\_volume\_of\_box.test\_get\_size module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.surface\_area\_and\_volume\_of\_box.test\_get\_size module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

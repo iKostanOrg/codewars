@@ -22,7 +22,6 @@ kyu\_6.array\_diff.test\_array\_diff module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

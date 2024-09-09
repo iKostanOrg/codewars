@@ -11,6 +11,7 @@ kyu\_6.first\_character\_that\_repeats.first\_character\_that\_repeats module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.first\_character\_that\_repeats.test\_first\_character\_that\_repeats module
 -----------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.first\_character\_that\_repeats.test\_first\_character\_that\_repeats mod
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

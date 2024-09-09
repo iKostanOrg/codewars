@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Tests for -> Well of Ideas - Easy Version
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # REFACTORING FUNDAMENTALS ARRAYS STRINGS
 

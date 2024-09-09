@@ -1,9 +1,12 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Sudoku Solution Validator
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def validSolution(board: list) -> bool:
+def valid_solution(board: list) -> bool:
     """
     A function validSolution/ValidateSolution/valid_solution()
     that accepts a 2D array representing a Sudoku board,
@@ -11,14 +14,16 @@ def validSolution(board: list) -> bool:
     :param board:
     :return:
     """
-    return all([test_horizontally(board),
-                test_vertically(board),
-                test_sub_grids(board)])
+    return all([check_horizontally(board),
+                check_vertically(board),
+                check_sub_grids(board)])
 
 
-def test_horizontally(board: list) -> bool:
+def check_horizontally(board: list) -> bool:
     """
     test horizontally
+    :param board:
+    :return:
     """
 
     for row in board:
@@ -27,9 +32,11 @@ def test_horizontally(board: list) -> bool:
     return True
 
 
-def test_vertically(board: list) -> bool:
+def check_vertically(board: list) -> bool:
     """
     test vertically
+    :param board:
+    :return:
     """
 
     i = 0
@@ -43,10 +50,12 @@ def test_vertically(board: list) -> bool:
     return True
 
 
-def test_sub_grids(board: list) -> bool:
+def check_sub_grids(board: list) -> bool:
     """
     test each of the nine 3x3 sub-grids
     (also known as blocks)
+    :param board:
+    :return:
     """
 
     sub_grids = [

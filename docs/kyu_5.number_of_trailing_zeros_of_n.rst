@@ -11,6 +11,7 @@ kyu\_5.number\_of\_trailing\_zeros\_of\_n.test\_zeros module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.number\_of\_trailing\_zeros\_of\_n.zeros module
 ------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.number\_of\_trailing\_zeros\_of\_n.zeros module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
