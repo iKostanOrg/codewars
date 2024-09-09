@@ -35,7 +35,8 @@ class ThirtTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Test a function that processes sequence of operations "
-            "on an integer n (>=0). 'thirt' should return the stationary number.</p>")
+            "on an integer n (>=0). 'thirt' should return the stationary"
+            " number.</p>")
 
         test_data = (
             (1234567, 87),
