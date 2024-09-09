@@ -42,7 +42,7 @@ class ComputeRanksTestCase(unittest.TestCase):
         scored and those conceded).
 
         - Goals scored.
-
+        
         :return:
         """
         # pylint: disable-msg=R0801
