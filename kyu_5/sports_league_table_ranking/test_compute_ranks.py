@@ -36,12 +36,12 @@ class ComputeRanksTestCase(unittest.TestCase):
         the order of the teams in your league. You use the following
         criteria to arrange the teams:
 
-        Points.
+        - Points.
 
-        Scoring differential (the difference between goals
+        - Scoring differential (the difference between goals
         scored and those conceded).
 
-        Goals scored.
+        - Goals scored.
 
         :return:
         """
