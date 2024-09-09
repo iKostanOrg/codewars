@@ -37,12 +37,10 @@ class ComputeRanksTestCase(unittest.TestCase):
         criteria to arrange the teams:
 
         - Points.
-
         - Scoring differential (the difference between goals
         scored and those conceded).
-
         - Goals scored.
-    
+        
         :return:
         """
         # pylint: disable-msg=R0801
