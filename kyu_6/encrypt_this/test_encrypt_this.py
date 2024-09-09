@@ -1,12 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Encrypt this!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING
 # ADVANCED LANGUAGE FEATURES ARRAYS CIPHERS ALGORITHMS CRYPTOGRAPHY SECURITY
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.encrypt_this.solution import encrypt_this
 
@@ -17,9 +19,16 @@ from kyu_6.encrypt_this.solution import encrypt_this
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Encrypt this!')
-@allure.tag('FUNDAMENTALS', 'STRINGS', 'REGULAR EXPRESSIONS',
-            'DECLARATIVE PROGRAMMING', 'ADVANCED LANGUAGE FEATURES',
-            'ARRAYS', 'CIPHERS', 'ALGORITHMS', 'CRYPTOGRAPHY', 'SECURITY')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING',
+            'ADVANCED LANGUAGE FEATURES',
+            'ARRAYS',
+            'CIPHERS',
+            'ALGORITHMS',
+            'CRYPTOGRAPHY',
+            'SECURITY')
 @allure.link(
     url='https://www.codewars.com/kata/5848565e273af816fb000449/train/python',
     name='Source/Kata')
@@ -43,7 +52,8 @@ class EncryptThisTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>"
             "Your message is a string containing space separated words.<br>"
-            "You need to encrypt each word in the message using the following rules:<br>"
+            "You need to encrypt each word in the message using the following"
+            " rules:<br>"
             " * The first letter needs to be converted to its ASCII code.<br>"
             " * The second letter needs to be switched with the last letter<br>"
             "Keepin' it simple: There are no special characters in input."
@@ -67,7 +77,7 @@ class EncryptThisTestCase(unittest.TestCase):
             ("Why can we not all be like that wise old bird",
              "87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri"),
             ("Thank you Piotr for all your help",
-             "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple"),
+             "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple")
         )
 
         for text, expected in test_data:
