@@ -4,9 +4,8 @@
 
 # FUNDAMENTALS ARRAYS
 
-import allure
 import unittest
-
+import allure
 from kyu_6.array_diff.solution import array_diff
 from utils.log_func import print_log
 
