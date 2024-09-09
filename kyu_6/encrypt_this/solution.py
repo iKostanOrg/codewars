@@ -14,8 +14,7 @@ def encrypt_this(text: str) -> str:
     Keepin' it simple: There are no special characters in input.
 
     :param text: a string containing space separated words
-    :return: secret messages which can be deciphered by the
-    "Decipher this!" kata
+    :return: messages which can be deciphered by the "Decipher this!"
     """
 
     if not text:
