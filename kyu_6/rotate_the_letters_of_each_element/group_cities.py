@@ -29,7 +29,7 @@ def group_cities(seq: list) -> list:
             results.append(temp)
         else:
             found: bool = False
-            for i, sublist in enumerate(results):
+            for sublist in results:
                 for element in sublist:
                     if len(element) == len(item) and \
                             sorted(element.lower()) == sorted(item.lower()) and \
