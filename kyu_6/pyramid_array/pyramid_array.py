@@ -12,7 +12,7 @@ def pyramid(n: int) -> list:
 
     Note: the subarrays should be filled with 1s
     :param n: int
-    :return:
+    :return: list
     """
     result: list = []
     if n is None or n == 0:
