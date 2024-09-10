@@ -32,9 +32,10 @@ def group_cities(seq: list) -> list:
         found: bool = False
         for sublist in results:
             for element in sublist:
-                conditions = (len(element) == len(item),
-                            sorted(element.lower()) == sorted(item.lower()),
-                            rotate(item, element))
+                conditions = \
+                    (len(element) == len(item),
+                     sorted(element.lower()) == sorted(item.lower()),
+                     rotate(item, element))
                 if all(conditions):
                     sublist.add(element)
                     sublist.add(item)
