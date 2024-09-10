@@ -54,7 +54,8 @@ class GroupCitiesTestCase(unittest.TestCase):
             "groups the elements that can be obtained by rotating others, "
             "ignoring upper or lower cases. In the event that an element "
             "appears more than once in the input sequence, only one of them "
-            "will be taken into account for the result, discarding the rest.</p>")
+            "will be taken into account for the result, discarding the rest."
+            "</p>")
 
         test_data = (
             (['Tokyo', 'London', 'Rome', 'Donlon', 'Kyoto', 'Paris', 'Okyot'],
