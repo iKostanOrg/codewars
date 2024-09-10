@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.first_character_that_repeats.first_character_that_repeats import first_dup
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -21,6 +22,7 @@ from kyu_6.first_character_that_repeats.first_character_that_repeats import firs
 @allure.tag('ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/54f9f4d7c41722304e000bbb',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class FirstDupTestCase(unittest.TestCase):
     """
     Testing first_dup function.
