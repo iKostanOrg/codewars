@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> String subpattern recognition II
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
+# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS
+# DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
 import unittest
 import allure
@@ -16,7 +19,11 @@ from kyu_6.string_subpattern_recognition_2.has_subpattern import has_subpattern
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String subpattern recognition II')
-@allure.tag()
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING',
+            'ADVANCED LANGUAGE FEATURES')
 @allure.link(url='',
              name='Source/Kata')
 class HasSubpatternTestCase(unittest.TestCase):
@@ -42,11 +49,12 @@ class HasSubpatternTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'has_subpattern' (part 2) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Pass the string and verify the output"):
             test_data = [
