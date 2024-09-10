@@ -1,10 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> String subpattern recognition III
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
+# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS
+# DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
 
@@ -20,9 +24,9 @@ from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
             'REGULAR EXPRESSIONS',
             'DECLARATIVE PROGRAMMING',
             'ADVANCED LANGUAGE FEATURES')
-@allure.link(url='https://www.codewars.com/kata/'
-                 '5a4a2973d8e14586c700000a/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5a4a2973d8e14586c700000a/train/python',
+    name='Source/Kata')
 class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
@@ -42,12 +46,13 @@ class HasSubpatternTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'has_subpattern' (part 3) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: disable-msg=C0301
         with allure.step("Pass the string and verify the output"):
             data_set = [
                 ('sZZpCWRNzSfvfZy5CMsRbdHeb85L3DmMB7dLMIM33pylSW6hHXp'
@@ -149,10 +154,9 @@ class HasSubpatternTestCase(unittest.TestCase):
                  'N48JeERERix6gyg',
                  '0022344689EEFHJLLMNORRTXYZccdefggghiijlmstwxy'),
             ]
-
+            # pylint: enable-msg=C0301
             for data in data_set:
                 result = has_subpattern(data[0])
                 expected = data[1]
-                print('\n---------------------------------------------------------------\n')
                 print_log(result=result, expected=expected)
                 self.assertEqual(expected, result)
