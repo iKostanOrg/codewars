@@ -76,7 +76,7 @@ class EpidemicTestCase(unittest.TestCase):
             b = etd.b
             a = etd.a
             expected = etd.expected
-            actual_result = epidemic(tm, n, s0, i0, b, a)
+            actual_result = epidemic(tm=tm, n=n, s0=s0, i0=i0, b=b, a=a)
 
             with allure.step(f"Enter test data ({etd}) and verify the "
                              f"expected output ({expected}) vs "
