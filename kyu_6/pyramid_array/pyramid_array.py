@@ -1,18 +1,20 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Pyramid Array
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def pyramid(n):
+def pyramid(n: int) -> list:
     """
     Write a function that when given a number >= 0,
     returns an Array of ascending length subarrays.
 
     Note: the subarrays should be filled with 1s
-    :param n:
+    :param n: int
     :return:
     """
-    result = []
+    result: list = []
     if n is None or n == 0:
         return result
 
