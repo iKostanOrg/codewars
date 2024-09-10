@@ -32,11 +32,10 @@ def group_cities(seq: list) -> list:
             for i, sublist in enumerate(results):
                 for element in sublist:
                     if len(element) == len(item) and \
-                            sorted([char for char in element.lower()]) == \
-                            sorted([char for char in item.lower()]) and \
+                            sorted(element.lower()) == sorted(item.lower()) and \
                             rotate(item, element):
-                        results[i].add(element)
-                        results[i].add(item)
+                        sublist.add(element)
+                        sublist.add(item)
                         found = True
                         break
             if not found:
