@@ -5,14 +5,14 @@ GitHub: https://github.com/ikostan
 """
 
 
-def first_dup(s: str) -> (str, None):
+def first_dup(word: str) -> (str, None):
     """
     Find the first character that repeats
     in a String and return that character.
-    :param s: str
+    :param word: str
     :return: str, None
     """
-    for char in s:
-        if s.count(char) > 1:
+    for char in word:
+        if word.count(char) > 1:
             return char
     return None
