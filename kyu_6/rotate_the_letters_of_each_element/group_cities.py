@@ -27,22 +27,23 @@ def group_cities(seq: list) -> list:
             temp: set = set()
             temp.add(item)
             results.append(temp)
-        else:
-            found: bool = False
-            for sublist in results:
-                for element in sublist:
-                    conditions = (len(element) == len(item),
-                                  sorted(element.lower()) == sorted(item.lower()),
-                                  rotate(item, element))
-                    if all(conditions):
-                        sublist.add(element)
-                        sublist.add(item)
-                        found = True
-                        break
-            if not found:
-                temp = set()
-                temp.add(item)
-                results.append(temp)
+            continue
+
+        found: bool = False
+        for sublist in results:
+            for element in sublist:
+                conditions = (len(element) == len(item),
+                            sorted(element.lower()) == sorted(item.lower()),
+                            rotate(item, element))
+                if all(conditions):
+                    sublist.add(element)
+                    sublist.add(item)
+                    found = True
+                    break
+        if not found:
+            temp = set()
+            temp.add(item)
+            results.append(temp)
 
     # Sort the elements of each group alphabetically.
     results: list = ([sorted(list(r)) for r in results])
