@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Array.diff
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ARRAYS
 
@@ -16,7 +18,9 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature('Lists')
 @allure.story('Array.diff')
-@allure.tag('FUNDAMENTALS', 'ARRAYS', 'LISTS')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS',
+            'LISTS')
 @allure.link(url='https://www.codewars.com/kata/523f5d21c841566fde000009/train/python',
              name='Source/Kata')
 class ArrayDiffTestCase(unittest.TestCase):
@@ -36,15 +40,20 @@ class ArrayDiffTestCase(unittest.TestCase):
     """
 
     def test_array_diff_function(self):
+        """
+        Testing array_diff function
+        :return:
+        """
         allure.dynamic.title("Testing array_diff function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test that function subtracts one list from another"
-                                        "and returns the result. It should remove all values from "
-                                        "list a, which are present in list b.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test that function subtracts one list from another"
+            "and returns the result. It should remove all values from "
+            "list a, which are present in list b.</p>")
 
         test_data = (
             ([1, 2], [1], [2], "a was [1,2], b was [1], expected [2]"),
@@ -61,10 +70,15 @@ class ArrayDiffTestCase(unittest.TestCase):
             message: str = test_item[-1]
             actual_result: list = array_diff(a, b)
 
-            with allure.step("Enter a test data and verify the expected output vs actual result"):
+            with allure.step("Enter a test data and verify the "
+                             "expected output vs actual result"):
+
                 print_log(a=a,
                           b=b,
                           exp=expected,
                           message=message,
                           res=actual_result)
-                self.assertEqual(expected, actual_result, message)
+
+                self.assertEqual(expected,
+                                 actual_result,
+                                 message)
