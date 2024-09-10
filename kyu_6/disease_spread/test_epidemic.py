@@ -6,8 +6,8 @@ GitHub: https://github.com/ikostan
 
 # FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.disease_spread.epidemic import epidemic
 from kyu_6.disease_spread.epidemic_test_data import EpidemicTestData
@@ -20,19 +20,29 @@ from kyu_6.disease_spread.epidemic_test_data import EpidemicTestData
 @allure.feature('Math')
 @allure.story('Disease Spread')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python',
+    name='Source/Kata')
 class EpidemicTestCase(unittest.TestCase):
+    """
+    Testing for solution Disease Spread
+    """
+
     def test_epidemic(self):
+        """
+        Testing epidemic function
+        :return:
+        """
         allure.dynamic.title("Testing epidemic function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function epidemic should return the maximum number "
-                                        "of infected as an integer (truncate to integer the result "
-                                        "of max(I)).</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function epidemic should return the maximum number "
+            "of infected as an integer (truncate to integer the result "
+            "of max(I)).</p>")
 
         # tm , n, s0, i0, b, a, expected
         test_data = (
@@ -68,9 +78,13 @@ class EpidemicTestCase(unittest.TestCase):
             expected = etd.expected
             actual_result = epidemic(tm, n, s0, i0, b, a)
 
-            with allure.step("Enter test data ({}) and verify the "
-                             "expected output ({}) vs actual result ({})".format(etd,
-                                                                                 expected,
-                                                                                 actual_result)):
-                print_log(etd=etd, expected=expected, result=actual_result)
-                self.assertEqual(expected, actual_result)
+            with allure.step(f"Enter test data ({etd}) and verify the "
+                             f"expected output ({expected}) vs "
+                             f"actual result ({actual_result})"):
+
+                print_log(etd=etd,
+                          expected=expected,
+                          result=actual_result)
+
+                self.assertEqual(expected,
+                                 actual_result)
