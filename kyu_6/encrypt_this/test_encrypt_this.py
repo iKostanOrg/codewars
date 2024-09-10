@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_6.encrypt_this.solution import encrypt_this
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
@@ -32,6 +33,7 @@ from kyu_6.encrypt_this.solution import encrypt_this
 @allure.link(
     url='https://www.codewars.com/kata/5848565e273af816fb000449/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class EncryptThisTestCase(unittest.TestCase):
     """
     Testing encrypt_this function
