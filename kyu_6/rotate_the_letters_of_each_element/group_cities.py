@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> ROTATE THE LETTERS OF EACH ELEMENT
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def group_cities(seq: list) -> list:
@@ -18,15 +20,15 @@ def group_cities(seq: list) -> list:
     :return: Sequence of elements. Each element is the group of
              inputs that can be obtained by rotating the strings.
     """
-    results: list = list()
+    results: list = []
 
     for item in seq:
         if len(results) == 0:
-            temp = set()
+            temp: set = set()
             temp.add(item)
             results.append(temp)
         else:
-            found = False
+            found: bool = False
             for i, sublist in enumerate(results):
                 for element in sublist:
                     if len(element) == len(item) and \
@@ -43,19 +45,25 @@ def group_cities(seq: list) -> list:
                 results.append(temp)
 
     # Sort the elements of each group alphabetically.
-    results = ([sorted(list(r)) for r in results])
+    results: list = ([sorted(list(r)) for r in results])
     # Sort the groups
     sort_results(results)
     return results
 
 
 def rotate(item: str, element: str) -> bool:
-    item = item.lower()
-    element = element.lower()
-    i = 0
+    """
+    Rotate elements/chars
+    :param item: str
+    :param element: str
+    :return: bool
+    """
+    item: str = item.lower()
+    element: str = element.lower()
+    i: int = 0
     max_i = len(item) * len(item)
     while i < max_i:
-        item = '{}{}'.format(item[1:], item[0])
+        item = f'{item[1:]}{item[0]}'
         if item == element:
             return True
         i += 1
@@ -66,10 +74,10 @@ def sort_results(results: list) -> None:
     """
     Sort the groups deafeningly by size and in the case of a tie,
     by the first element of the group alphabetically.
-    :param results:
-    :return:
+    :param results: list
+    :return: None
     """
-    is_sorted = False
+    is_sorted: bool = False
     while not is_sorted:
         is_sorted = True
         for i, element in enumerate(results):
