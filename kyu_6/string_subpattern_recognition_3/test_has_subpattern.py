@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Advanced Language Features")
@@ -27,6 +28,7 @@ from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
 @allure.link(
     url='https://www.codewars.com/kata/5a4a2973d8e14586c700000a/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
