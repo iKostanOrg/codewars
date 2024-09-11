@@ -29,7 +29,6 @@ class NumericalsTestCase(unittest.TestCase):
     """
     Testing 'numericals' function
     """
-
     def test_numericals(self):
         """
         Testing 'numericals' function
