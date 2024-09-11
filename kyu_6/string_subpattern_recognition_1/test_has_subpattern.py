@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> String subpattern recognition I
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
+# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS
+# DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
 import unittest
 import allure
@@ -10,6 +13,7 @@ from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Advanced Language Features")
@@ -21,8 +25,10 @@ from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
             'REGULAR EXPRESSIONS',
             'DECLARATIVE PROGRAMMING',
             'ADVANCED LANGUAGE FEATURES')
-@allure.link(url='',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5a49f074b3bfa89b4c00002b',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
     """
     String subpattern recognition I
@@ -41,11 +47,12 @@ class HasSubpatternTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing 'has_subpattern' (part 1) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Pass the string and verify the output"):
             test_data = [
