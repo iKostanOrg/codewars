@@ -46,7 +46,7 @@ class UniqueInOrderTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: disable-msg=C0301
         with allure.step("Pass test data and verify the output"):
             data = [
                 ('AAAABBBCCDAABBB',
@@ -87,7 +87,7 @@ class UniqueInOrderTestCase(unittest.TestCase):
                  'Should work with randomly generated sequence')
 
             ]
-
+            # pylint: enable-msg=C0301
             for test_data, expected, msg in data:
                 print_log(iterable=test_data, expected=expected, msg=msg)
                 self.assertEqual(expected, unique_in_order(test_data), msg=msg)
