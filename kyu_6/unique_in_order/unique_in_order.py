@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Unique In Order
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import Iterable, List
 
@@ -14,12 +16,8 @@ def unique_in_order(iterable: Iterable) -> list:
     :param iterable:
     :return:
     """
-
     result: List = []
-
     for i in iterable:
-
         if len(result) == 0 or i != result[-1]:
             result.append(i)
-
     return result
