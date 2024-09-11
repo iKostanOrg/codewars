@@ -65,7 +65,7 @@ class FirstDupTestCase(unittest.TestCase):
         Test string with mixed type of chars.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String with mixed type of chars")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -74,7 +74,7 @@ class FirstDupTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Input consist of mixed type of chars"):
             string = '1a2b3a3c'
             expected = 'a'
@@ -94,6 +94,7 @@ class FirstDupTestCase(unittest.TestCase):
         Test string with alphabet chars only.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String with alphabet chars only")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -102,7 +103,7 @@ class FirstDupTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Input consist of alphabet chars only"):
             string = 'tweet'
             expected = 't'
@@ -115,6 +116,7 @@ class FirstDupTestCase(unittest.TestCase):
         Repeating char is a space.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String alphabet chars and spaces")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -123,7 +125,7 @@ class FirstDupTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Input consist of alphabet chars and spaces"):
             string = 'Ode to Joy'
             expected = ' '
@@ -136,6 +138,7 @@ class FirstDupTestCase(unittest.TestCase):
         Test string with no alphabet chars.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String with no alphabet chars")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -144,7 +147,7 @@ class FirstDupTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass string with digits only"):
             string = '123123'
             expected = '1'
