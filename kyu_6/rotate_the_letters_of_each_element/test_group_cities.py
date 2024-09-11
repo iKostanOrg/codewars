@@ -11,7 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_6.rotate_the_letters_of_each_element.group_cities import group_cities
 
-
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -26,6 +26,7 @@ from kyu_6.rotate_the_letters_of_each_element.group_cities import group_cities
 @allure.link(
     url='https://www.codewars.com/kata/5e98712b7de14f0026ef1cc1/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class GroupCitiesTestCase(unittest.TestCase):
     """
     Testing 'group_cities' function
