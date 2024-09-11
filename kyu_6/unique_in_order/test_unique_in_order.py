@@ -46,7 +46,7 @@ class UniqueInOrderTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-        # pylint: disable-msg=C0301
+        # pylint: disable=line-too-long
         with allure.step("Pass test data and verify the output"):
             data = [
                 ('AAAABBBCCDAABBB',
@@ -84,10 +84,8 @@ class UniqueInOrderTestCase(unittest.TestCase):
                   -1682985580, -308066619, 807682642, 1886853360, 1165912447, -1816272783, 2088008817, -2119157678,
                   1041981535, 661938680, 438934930, 1442648715, 468638621, 258893461, -46757153, 1997749513, 78748495,
                   1555244045, 1506976994, -804276632, -367750677, -733550250],
-                 'Should work with randomly generated sequence')
-
-            ]
-            # pylint: enable-msg=C0301
+                 'Should work with randomly generated sequence')]
+            # pylint: enable=line-too-long
             for test_data, expected, msg in data:
                 print_log(iterable=test_data, expected=expected, msg=msg)
                 self.assertEqual(expected, unique_in_order(test_data), msg=msg)
