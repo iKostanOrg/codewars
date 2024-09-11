@@ -12,6 +12,7 @@ from kyu_6.array_diff.solution import array_diff
 from utils.log_func import print_log
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
@@ -21,8 +22,10 @@ from utils.log_func import print_log
 @allure.tag('FUNDAMENTALS',
             'ARRAYS',
             'LISTS')
-@allure.link(url='https://www.codewars.com/kata/523f5d21c841566fde000009/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/523f5d21c841566fde000009/train/python',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class ArrayDiffTestCase(unittest.TestCase):
     """
     Testing array_diff function
@@ -72,7 +75,6 @@ class ArrayDiffTestCase(unittest.TestCase):
 
             with allure.step("Enter a test data and verify the "
                              "expected output vs actual result"):
-
                 print_log(a=a,
                           b=b,
                           exp=expected,
