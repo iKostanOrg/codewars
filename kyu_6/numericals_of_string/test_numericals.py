@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Numericals of a String
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS GAMES PUZZLES PERFORMANCE
 
@@ -16,9 +18,13 @@ from kyu_6.numericals_of_string.numericals import numericals
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Numericals of a String')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('ALGORITHMS',
+            'GAMES',
+            'PUZZLES',
+            'PERFORMANCE')
+@allure.link(
+    url='https://www.codewars.com/kata/5b4070144d7d8bbfe7000001',
+    name='Source/Kata')
 class NumericalsTestCase(unittest.TestCase):
     """
     Testing 'numericals' function
@@ -29,15 +35,16 @@ class NumericalsTestCase(unittest.TestCase):
         Testing 'numericals' function
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'numericals' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Pass the string and verify the output"):
             string = "Hello, World!"
             expected = "1112111121311"

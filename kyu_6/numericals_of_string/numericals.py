@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Numericals of a String
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def numericals(s):
+def numericals(s: str) -> str:
     """
     For each symbol in the string if it's the
     first character occurrence, replace it with
@@ -13,8 +15,8 @@ def numericals(s):
     :return:
     """
 
-    char_dict = dict()
-    result = ''
+    char_dict: dict = dict()
+    result: str = ''
 
     for char in s:
         if char in char_dict:
