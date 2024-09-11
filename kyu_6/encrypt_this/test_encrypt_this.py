@@ -45,6 +45,7 @@ class EncryptThisTestCase(unittest.TestCase):
         :param self:
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing encrypt_this function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -60,7 +61,7 @@ class EncryptThisTestCase(unittest.TestCase):
             " * The second letter needs to be switched with the last letter<br>"
             "Keepin' it simple: There are no special characters in input."
             "</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("",
              ""),
