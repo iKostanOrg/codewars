@@ -36,7 +36,7 @@ class FirstDupTestCase(unittest.TestCase):
         Test string with no duplicate chars.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String with no duplicate chars")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -45,7 +45,7 @@ class FirstDupTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass string with no repeating chars"):
             string = 'like'
             expected = None
