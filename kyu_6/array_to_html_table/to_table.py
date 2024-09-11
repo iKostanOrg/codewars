@@ -1,30 +1,27 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Array to HTML table
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 TABLE: dict = {
     'start': '<table>',
     'end': '</table>',
     'head': {
         'start': '<thead>',
-        'end': '</thead>'
-    },
+        'end': '</thead>'},
     'header': {
         'start': '<th>',
-        'end': '</th>'
-    },
+        'end': '</th>'},
     'body': {
         'start': '<tbody>',
-        'end': '</tbody>'
-    },
+        'end': '</tbody>'},
     'row': {
         'start': '<tr>',
-        'end': '</tr>'
-    },
+        'end': '</tr>'},
     'column': {
         'start': '<td>',
-        'end': '</td>'
-    },
+        'end': '</td>'}
 }
 
 
@@ -47,44 +44,44 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
     for i, row in enumerate(data):
 
         if header and i == 0:
-            rows_and_columns = '{}{}{}'.format(rows_and_columns,
-                                               TABLE['head']['start'],
-                                               TABLE['row']['start'])
+            rows_and_columns = (f'{rows_and_columns}'
+                                f'{TABLE['head']['start']}'
+                                f'{TABLE['row']['start']}')
             if index:
-                rows_and_columns = '{}{}{}'.format(rows_and_columns,
-                                                   TABLE['header']['start'],
-                                                   TABLE['header']['end'])
+                rows_and_columns = (f'{rows_and_columns}'
+                                    f'{TABLE['header']['start']}'
+                                    f'{TABLE['header']['end']}')
 
-            rows_and_columns += ''.join('{}{}{}'.format(TABLE['header']['start'],
-                                                        col,
-                                                        TABLE['header']['end'])
+            rows_and_columns += ''.join(f'{TABLE['header']['start']}'
+                                        f'{col}'
+                                        f'{ TABLE['header']['end']}'
                                         for b, col in enumerate(row))
 
-            rows_and_columns = '{}{}{}'.format(rows_and_columns,
-                                               TABLE['row']['end'],
-                                               TABLE['head']['end'])
+            rows_and_columns = (f'{rows_and_columns}'
+                                f'{TABLE['row']['end']}'
+                                f'{TABLE['head']['end']}')
         else:
             if TABLE['body']['start'] not in rows_and_columns:
-                rows_and_columns = '{}{}'.format(rows_and_columns,
-                                                 TABLE['body']['start'])
+                rows_and_columns = (f'{rows_and_columns}'
+                                    f'{TABLE['body']['start']}')
 
-            rows_and_columns = '{}{}'.format(rows_and_columns,
-                                             TABLE['row']['start'])
+            rows_and_columns = (f'{rows_and_columns}'
+                                f'{TABLE['row']['start']}')
 
             if index:
-                rows_and_columns = '{}{}{}{}'.format(rows_and_columns,
-                                                     TABLE['column']['start'],
-                                                     i if header else i + 1,
-                                                     TABLE['column']['end'])
+                rows_and_columns = (f'{rows_and_columns}'
+                                    f'{TABLE['column']['start']}'
+                                    f'{i if header else i + 1}'
+                                    f'{TABLE['column']['end']}')
 
-            rows_and_columns += ''.join('{}{}{}'.format(TABLE['column']['start'],
+            rows_and_columns += ''.join("{}{}{}".format(TABLE['column']['start'],
                                                         '' if col is None else col,
                                                         TABLE['column']['end']) for col in row)
 
-            rows_and_columns = '{}{}'.format(rows_and_columns,
-                                             TABLE['row']['end'])
+            rows_and_columns = (f'{rows_and_columns}'
+                                f'{TABLE['row']['end']}')
 
-    return '{}{}{}{}'.format(TABLE['start'],
-                             rows_and_columns,
-                             TABLE['body']['end'],
-                             TABLE['end'])
+    return (f'{TABLE['start']}'
+            f'{rows_and_columns}'
+            f'{TABLE['body']['end']}'
+            f'{TABLE['end']}')
