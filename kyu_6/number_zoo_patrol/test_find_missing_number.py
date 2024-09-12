@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Number Zoo Patrol
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS PERFORMANCE MATHEMATICS NUMBERS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.number_zoo_patrol.missing_number import find_missing_number
 
@@ -16,9 +18,13 @@ from kyu_6.number_zoo_patrol.missing_number import find_missing_number
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Number Zoo Patrol')
-@allure.tag('ALGORITHMS', 'PERFORMANCE', 'MATHEMATICS', 'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/5276c18121e20900c0000235/train/python',
-             name='Source/Kata')
+@allure.tag('ALGORITHMS',
+            'PERFORMANCE',
+            'MATHEMATICS',
+            'NUMBERS')
+@allure.link(
+    url='https://www.codewars.com/kata/5276c18121e20900c0000235/train/python',
+    name='Source/Kata')
 class FindMissingNumberTestCase(unittest.TestCase):
     """
     Testing 'find_missing_number' function
@@ -32,18 +38,19 @@ class FindMissingNumberTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing the 'find_missing_number' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test a function that should take a shuffled list of "
-                                        "unique numbers from 1 to n with one element missing "
-                                        "(which can be any number including n). The function should return the "
-                                        "missing number.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test a function that should take a shuffled list of "
+            "unique numbers from 1 to n with one element missing "
+            "(which can be any number including n). The function should"
+            " return the missing number.</p>")
+        # pylint: enable-msg=R0801
         test_data = (
             ([2, 3, 4], 1),
             ([1, 3, 4], 2),
@@ -80,7 +87,8 @@ class FindMissingNumberTestCase(unittest.TestCase):
               440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454,
               455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469,
               470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484,
-              485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500], 36),
+              485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499,
+              500], 36),
         )
 
         for data in test_data:
@@ -88,9 +96,10 @@ class FindMissingNumberTestCase(unittest.TestCase):
             expected: int = data[1]
             actual_result: int = find_missing_number(numbers)
 
-            with allure.step("Enter a list and verify the "
-                             "expected output: {} vs actual result: {}".format(expected,
-                                                                               actual_result)):
+            with allure.step(f"Enter a list and verify the "
+                             f"expected output: {expected} vs "
+                             f"actual result: {actual_result}"):
+
                 print_log(seq=numbers,
                           expected=expected,
                           result=actual_result)
