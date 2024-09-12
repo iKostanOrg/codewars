@@ -17,7 +17,8 @@ from kyu_6.easy_diagonal.diagonal import diagonal
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Easy Diagonal')
-@allure.tag("FUNDAMENTALS", "ALGORITHMS")
+@allure.tag("FUNDAMENTALS",
+            "ALGORITHMS")
 @allure.link(
     url='https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python',
     name='Source/Kata')
