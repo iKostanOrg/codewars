@@ -10,6 +10,7 @@ from utils.log_func import print_log
 from kyu_6.easy_diagonal.diagonal import diagonal
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
@@ -20,6 +21,7 @@ from kyu_6.easy_diagonal.diagonal import diagonal
 @allure.link(
     url='https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class EasyDiagonalTestCase(unittest.TestCase):
     """
     Testing easy_diagonal function
