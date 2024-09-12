@@ -34,7 +34,7 @@ def epidemic(**kwargs) -> int:
     :return: the maximum number of infected as an integer
             (truncate to integer the result of max(I)).
     """
-    dt = float(kwargs['tm']) / kwargs['n']
+    dt: float = float(kwargs['tm']) / kwargs['n']
 
     # susceptible, infected, recovered at time t
     # Whatever S0 and I0, R0 (number of recovered at time 0) is always 0.

@@ -33,6 +33,7 @@ class EpidemicTestCase(unittest.TestCase):
         Testing epidemic function
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing epidemic function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -43,7 +44,7 @@ class EpidemicTestCase(unittest.TestCase):
             "<p>The function epidemic should return the maximum number "
             "of infected as an integer (truncate to integer the result "
             "of max(I)).</p>")
-
+        # pylint: enable-msg=R0801
         # tm , n, s0, i0, b, a, expected
         test_data = (
             EpidemicTestData(tm=18, n=432, s0=1004, i0=1,
