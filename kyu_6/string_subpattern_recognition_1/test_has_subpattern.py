@@ -44,7 +44,7 @@ class HasSubpatternTestCase(unittest.TestCase):
         seen as the repetition of a simpler/shorter subpattern or not.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'has_subpattern' (part 1) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -55,6 +55,7 @@ class HasSubpatternTestCase(unittest.TestCase):
             "<p></p>")
 
         with allure.step("Pass the string and verify the output"):
+            # pylint: disable-msg=R0801
             test_data = [
                 ("a", False),
                 ("aaaa", True),
