@@ -1,13 +1,16 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Pokemon Damage Calculator
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import Dict
 
-TYPES: Dict[str, list] = {'fire': [['grass'], ['electric'], ['water']],
-                               'grass': [['water'], ['electric'], ['fire']],
-                               'water': [['fire'], [], ['electric', 'grass']],
-                               'electric': [['water'], ['grass', 'fire'], []]}
+TYPES: Dict[str, list] = \
+    {'fire': [['grass'], ['electric'], ['water']],
+     'grass': [['water'], ['electric'], ['fire']],
+     'water': [['fire'], [], ['electric', 'grass']],
+     'electric': [['water'], ['grass', 'fire'], []]}
 
 
 def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int:
