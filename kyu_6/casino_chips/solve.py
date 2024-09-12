@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for Casino chips
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def solve(arr: list) -> int:
@@ -24,7 +26,7 @@ def solve(arr: list) -> int:
     :return:
     """
 
-    arr = sorted(arr)
+    arr: list = sorted(arr)
 
     if arr[0] + arr[1] <= arr[2]:
         return arr[0] + arr[1]
