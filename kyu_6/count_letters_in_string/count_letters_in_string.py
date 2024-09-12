@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Count letters in string
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def letter_count(s: str) -> dict:
