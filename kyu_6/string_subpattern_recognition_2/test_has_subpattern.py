@@ -48,7 +48,7 @@ class HasSubpatternTestCase(unittest.TestCase):
         shuffling the result.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'has_subpattern' (part 2) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -57,7 +57,7 @@ class HasSubpatternTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass the string and verify the output"):
             test_data = [
                 ("a", False),
