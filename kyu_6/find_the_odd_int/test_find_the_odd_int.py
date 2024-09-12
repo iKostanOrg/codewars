@@ -1,5 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Find the odd int
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 
 # FUNDAMENTALS
 
@@ -26,7 +30,6 @@ class FindTheOddIntTestCase(unittest.TestCase):
     def test_something(self):
         """
         Sample testing.
-        Expected result is 5
         :return:
         """
         # pylint: disable-msg=R0801
