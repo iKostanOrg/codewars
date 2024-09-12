@@ -18,7 +18,8 @@ from kyu_6.your_order_please.order import order
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Your order, please')
-@allure.tag('FUNDAMENTALS', 'STRINGS')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS')
 @allure.link(
     url='https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/python',
     name='Source/Kata')
@@ -45,7 +46,7 @@ class OrderTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'order' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -61,7 +62,7 @@ class OrderTestCase(unittest.TestCase):
             '3. If the input string is empty, return an empty string. '
             'The words in the input String will only contain valid consecutive '
             'numbers.</p>')
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("is2 Thi1s T4est 3a",
              "Thi1s is2 3a T4est"),
