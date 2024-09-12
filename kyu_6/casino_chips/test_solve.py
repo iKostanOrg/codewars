@@ -64,7 +64,7 @@ class SolveTestCase(unittest.TestCase):
 
         for arr, expected in test_data:
             actual_result = solve(arr)
-            
+
             with allure.step(f"Enter an array ({arr}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
