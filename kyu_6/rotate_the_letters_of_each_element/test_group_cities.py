@@ -43,7 +43,7 @@ class GroupCitiesTestCase(unittest.TestCase):
         account for the result, discarding the rest.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing the 'group_cities' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -57,7 +57,7 @@ class GroupCitiesTestCase(unittest.TestCase):
             "appears more than once in the input sequence, only one of them "
             "will be taken into account for the result, discarding the rest."
             "</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             (['Tokyo', 'London', 'Rome', 'Donlon', 'Kyoto', 'Paris', 'Okyot'],
              [['Kyoto', 'Okyot', 'Tokyo'], ['Donlon', 'London'],
