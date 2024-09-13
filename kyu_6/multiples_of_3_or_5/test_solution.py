@@ -64,6 +64,6 @@ class SolutionTestCase(unittest.TestCase):
             number, expected, msg = td
             with allure.step(
                     f"Pass test data ({number}) and verify the output"):
-                
+
                 print_log(expected=expected, number=number, msg=msg)
                 self.assertEqual(expected, solution(number), msg)
