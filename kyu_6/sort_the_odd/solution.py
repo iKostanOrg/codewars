@@ -19,16 +19,19 @@ def sort_array(source_array: list) -> list:
     """
     output: list = source_array[:]
     is_sorted: bool = False
+
     while not is_sorted:
         is_sorted = True
         for i_o, o in enumerate(output):
-            if output[i_o] != 0 and output[i_o] % 2 != 0:
+            conditions_o: tuple = (output[i_o] != 0,
+                                   output[i_o] % 2 != 0)
+            if all(conditions_o):
                 for i_b, b in enumerate(output):
-                    conditions: tuple = (output[i_b] != 0,
+                    conditions_b: tuple = (output[i_b] != 0,
                                   output[i_b] % 2 != 0,
                                   output[i_o] > output[i_b],
                                   i_o < i_b)
-                    if all(conditions):
+                    if all(conditions_b):
                         is_sorted = False
                         output[i_o], output[i_b] = b, o
                         break
