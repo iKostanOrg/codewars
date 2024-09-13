@@ -27,7 +27,6 @@ class OddRowTestCase(unittest.TestCase):
     """
     Testing odd_row function
     """
-
     def test_odd_row(self):
         """
         Testing odd_row function with various test data
