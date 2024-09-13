@@ -28,9 +28,9 @@ def sort_array(source_array: list) -> list:
             if all(conditions_o):
                 for i_b, b in enumerate(output):
                     conditions_b: tuple = (output[i_b] != 0,
-                                  output[i_b] % 2 != 0,
-                                  output[i_o] > output[i_b],
-                                  i_o < i_b)
+                                           output[i_b] % 2 != 0,
+                                           output[i_o] > output[i_b],
+                                           i_o < i_b)
                     if all(conditions_b):
                         is_sorted = False
                         output[i_o], output[i_b] = b, o
