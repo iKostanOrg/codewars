@@ -14,7 +14,7 @@ import pytest
 from utils.log_func import print_log
 from kyu_6.no_arithmetic_progressions.sequence import sequence
 
-
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -25,6 +25,7 @@ from kyu_6.no_arithmetic_progressions.sequence import sequence
 @allure.link(
     url='https://www.codewars.com/kata/5e0607115654a900140b3ce3/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 @pytest.mark.skip(reason="The solution is not ready")
 class SequenceTestCase(unittest.TestCase):
     """
