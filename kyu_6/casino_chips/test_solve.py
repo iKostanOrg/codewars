@@ -12,6 +12,7 @@ from kyu_6.casino_chips.solve import solve
 from utils.log_func import print_log
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -25,6 +26,7 @@ from utils.log_func import print_log
 @allure.link(
     url='https://www.codewars.com/kata/5e0b72d2d772160011133654/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class SolveTestCase(unittest.TestCase):
     """
     Testing solve function
