@@ -14,6 +14,7 @@ import pytest
 from utils.log_func import print_log
 from kyu_6.no_arithmetic_progressions.sequence import sequence
 
+
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
@@ -31,6 +32,7 @@ class SequenceTestCase(unittest.TestCase):
     """
     Testing sequence function
     """
+
     def test_sequence(self):
         """
         A function f(n), should returns the n-th member of sequence.
@@ -68,7 +70,6 @@ class SequenceTestCase(unittest.TestCase):
                     f"Enter a number ({n}) and verify the "
                     f"expected output ({expected}) vs "
                     f"actual result ({actual_result})"):
-
                 print_log(n=n,
                           expected=expected,
                           result=actual_result)
