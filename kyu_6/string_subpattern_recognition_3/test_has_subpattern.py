@@ -33,7 +33,6 @@ class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
     """
-
     def test_has_subpattern(self):
         """
         Verify that 'has_subpattern' function
@@ -45,7 +44,7 @@ class HasSubpatternTestCase(unittest.TestCase):
         only once and thus equalling the original input string).
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'has_subpattern' (part 3) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -54,6 +53,7 @@ class HasSubpatternTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
+        # pylint: enable-msg=R0801
         # pylint: disable-msg=C0301
         with allure.step("Pass the string and verify the output"):
             data_set = [
