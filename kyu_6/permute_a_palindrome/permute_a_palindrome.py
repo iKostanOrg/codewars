@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Permute a Palindrome
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def permute_a_palindrome(string: str) -> bool:
