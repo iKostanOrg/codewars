@@ -11,7 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_6.number_zoo_patrol.missing_number import find_missing_number
 
-
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -25,16 +25,17 @@ from kyu_6.number_zoo_patrol.missing_number import find_missing_number
 @allure.link(
     url='https://www.codewars.com/kata/5276c18121e20900c0000235/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class FindMissingNumberTestCase(unittest.TestCase):
     """
     Testing 'find_missing_number' function
     """
-
     def test_find_missing_number(self):
         """
-        Test a function that should take a shuffled list of unique numbers
-        from 1 to n with one element missing (which can be any
-        number including n). Should return this missing number.
+        Test a function that should take a shuffled list of
+        unique numbers from 1 to n with one element missing
+        (which can be any number including n). Should return
+        this missing number.
 
         :return:
         """
