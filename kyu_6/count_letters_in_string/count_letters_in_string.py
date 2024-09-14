@@ -17,10 +17,9 @@ def letter_count(s: str) -> dict:
     result: dict = dict()
 
     for char in s:
-        if char.islower():
-            if char not in result:
-                result[char] = 1
-            else:
-                result[char] += 1
+        if char.islower() and char not in result:
+            result[char] = 1
+        else:
+            result[char] += 1
 
     return result

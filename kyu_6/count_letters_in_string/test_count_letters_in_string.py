@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.count_letters_in_string.count_letters_in_string import letter_count
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Data Structures")
@@ -25,11 +26,11 @@ from kyu_6.count_letters_in_string.count_letters_in_string import letter_count
 @allure.link(
     url='https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class CountLettersInStringTestCase(unittest.TestCase):
     """
     Testing 'letter_count' function
     """
-
     def test_count_letters_in_string(self):
         """
         Testing 'letter_count' function
