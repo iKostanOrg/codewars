@@ -1,11 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> DefaultList
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
+# FUNDAMENTALS CLASSES BASIC LANGUAGE FEATURES
+# OBJECT-ORIENTED PROGRAMMING
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.default_list.default_list import DefaultList
 
@@ -26,35 +29,41 @@ class DefaultListTestCase(unittest.TestCase):
     """
     Testing 'DefaultList' class
 
-    Your job is to create a class (or a function which returns an object)
-    called DefaultList. The class will have two parameters to be given:
-    a list, and a default value. The list will obviously be the list that
-    corresponds to that object. The default value will be returned any time
-    an index of the list is called in the code that would normally raise an
-    error (i.e. i > len(list) - 1 or i < -len(list)). This class must also
-    support the regular list functions extend, append, insert, remove, and pop.
+    Your job is to create a class (or a function which
+    returns an object) called DefaultList. The class will
+    have two parameters to be given: a list, and a default
+    value. The list will obviously be the list that
+    corresponds to that object. The default value will be
+    returned any time an index of the list is called in the
+    code that would normally raise an error
+    (i.e. i > len(list) - 1 or i < -len(list)).
+
+    This class must also support the regular list functions
+    extend, append, insert, remove, and pop.
     """
 
     def test_default_list_basic(self):
         """
         Testing 'DefaultList' class: __getitem__
 
-        Called to implement evaluation of self[key]. For sequence types,
-        the accepted keys should be integers and slice objects.
+        Called to implement evaluation of self[key]. For sequence
+        types, the accepted keys should be integers and slice objects.
         Note that the special interpretation of negative indexes
         (if the class wishes to emulate a sequence type) is up to the
         __getitem__() method.
         :return:
         """
-
-        allure.dynamic.title("Testing 'DefaultList' class: __getitem__")
+        # pylint: disable-msg=R0801
+        allure.dynamic.title(
+            "Testing 'DefaultList' class: __getitem__")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing __getitem__ method.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing __getitem__ method.</p>")
+        # pylint: enable-msg=R0801
         with allure.step("Create a list"):
             lst = DefaultList([1, 3, 4, 7, 2, 34], 'def')
 
@@ -84,14 +93,14 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: extend
         :return:
         """
-
         allure.dynamic.title("Testing 'DefaultList' class: extend")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing extend method.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing extend method.</p>")
 
         with allure.step("Create a list"):
             lst = DefaultList([1, 3, 4, 7, 2, 34], 'def')
@@ -125,17 +134,19 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: append
         :return:
         """
-
         allure.dynamic.title("Testing 'DefaultList' class: append")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing append method.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing append method.</p>")
 
         with allure.step("Create a list"):
-            lst = DefaultList([1, 3, 4, 7, 2, 34, 3, 23, 'hello', 'lists', 'word', 344], 'def')
+            lst = DefaultList(
+                [1, 3, 4, 7, 2, 34, 3, 23, 'hello', 'lists', 'word', 344],
+                'def')
 
         with allure.step("Append the list"):
             lst.append(233344455)
@@ -159,17 +170,19 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: remove
         :return:
         """
-
         allure.dynamic.title("Testing 'DefaultList' class: remove")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing remove method.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing remove method.</p>")
 
         with allure.step("Create a list"):
-            lst = DefaultList([1, 3, 4, 7, 2, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], 'def')
+            lst = DefaultList(
+                [1, 3, 4, 7, 2, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455],
+                'def')
 
         with allure.step("Remove items from the list"):
             lst.remove(2)
@@ -195,17 +208,19 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: insert
         :return:
         """
-
         allure.dynamic.title("Testing 'DefaultList' class: insert")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing insert method.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing insert method.</p>")
 
         with allure.step("Create a list"):
-            lst = DefaultList([4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], 'def')
+            lst = DefaultList(
+                [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455],
+                'def')
 
         with allure.step("Insert items to the list"):
             lst.insert(-3, 34.34)
@@ -229,17 +244,19 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: pop
         :return:
         """
-
         allure.dynamic.title("Testing 'DefaultList' class: pop")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Testing pop method.</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing pop method.</p>")
 
         with allure.step("Create a list"):
-            lst = DefaultList([4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], 'def')
+            lst = DefaultList(
+                [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455],
+                'def')
 
         with allure.step("Pop an item and verify the result"):
             i = 5
