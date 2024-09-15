@@ -6,13 +6,17 @@ GitHub: https://github.com/ikostan
 
 
 def last_digit_index(word: str) -> int:
-    index = 0
+    """
+    Find last digit index
+    :param word:
+    :return:
+    """
+    index: int = 0
     for char in word:
         if char.isdigit():
             index += 1
         else:
             break
-
     return index
 
 
