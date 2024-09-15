@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.numericals_of_string.numericals import numericals
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -25,6 +26,7 @@ from kyu_6.numericals_of_string.numericals import numericals
 @allure.link(
     url='https://www.codewars.com/kata/5b4070144d7d8bbfe7000001',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class NumericalsTestCase(unittest.TestCase):
     """
     Testing 'numericals' function
