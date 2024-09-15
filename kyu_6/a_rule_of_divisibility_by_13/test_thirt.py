@@ -25,7 +25,6 @@ class ThirtTestCase(unittest.TestCase):
     """
     Testing 'thirt' function
     """
-
     # pylint: disable-msg=R0801
     def test_thirt(self):
         allure.dynamic.title("Testing 'thirt' function")

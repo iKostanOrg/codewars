@@ -39,6 +39,7 @@ class CheckchooseTestCase(unittest.TestCase):
         the choice of 4 colors: red, blue, yellow, green. How many colors
         can you choose for each poster?
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing checkchoose function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -56,7 +57,7 @@ class CheckchooseTestCase(unittest.TestCase):
             "are solutions give as result the smallest x. It can happen "
             "that when m is given at random there are no x satisfying "
             "equation (1) then return -1.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             (6, 4, 2),
             (4, 4, 1),
