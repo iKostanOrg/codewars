@@ -39,6 +39,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
         For empty string return: ('', 0)
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'longest_repetition' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -47,7 +48,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
             test_data = [
                 # [input, expected],
@@ -57,8 +58,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
                 ["abbbbb", ('b', 5)],
                 ["aabb", ('a', 2)],
                 ["ba", ('b', 1)],
-                ["", ('', 0)],
-            ]
+                ["", ('', 0)]]
 
             for t in test_data:
                 print_log(string=t[0], expected=t[1])
