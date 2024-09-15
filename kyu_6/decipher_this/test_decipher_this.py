@@ -75,8 +75,7 @@ class DecipherThisTestCase(unittest.TestCase):
             ("87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri",
              "Why can we not all be like that wise old bird"),
             ("84kanh 121uo 80roti 102ro 97ll 121ruo 104ple",
-             "Thank you Piotr for all your help")
-        )
+             "Thank you Piotr for all your help"))
 
         for text, expected in test_data:
             result = decipher_this(text)
