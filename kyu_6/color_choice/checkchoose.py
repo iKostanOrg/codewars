@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Color Choice
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from math import factorial
 
