@@ -36,8 +36,8 @@ class CalculateDamageTestCase(unittest.TestCase):
     Testing calculate_damage function:
     damage = 50 * (attack / defense) * effectiveness
     """
-
     def test_calculate_damage(self):
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing calculate_damage function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,7 +49,7 @@ class CalculateDamageTestCase(unittest.TestCase):
             "that a particular move would do using the following"
             " formula (not the actual one from the game): "
             "damage = 50 * (attack / defense) * effectiveness</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             (("fire", "water", 100, 100), 25),
             (("grass", "water", 100, 100), 100),
