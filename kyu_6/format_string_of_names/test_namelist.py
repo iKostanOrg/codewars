@@ -30,7 +30,6 @@ class NamelistTestCase(unittest.TestCase):
     """
     Testing namelist function
     """
-
     def test_namelist(self):
         """
         Test namelist
@@ -45,6 +44,7 @@ class NamelistTestCase(unittest.TestCase):
 
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String with no duplicate chars")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -55,7 +55,7 @@ class NamelistTestCase(unittest.TestCase):
             "<p>Should a string formatted as a list of names separated "
             "by commas except for the last two names, which should be "
             "separated by an ampersand.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'},
               {'name': 'Homer'}, {'name': 'Marge'}],

@@ -14,7 +14,6 @@ def namelist(names: list) -> str:
              by commas except for the last two names, which
              should be separated by an ampersand.
     """
-
     if not names:
         return ""
 
