@@ -47,6 +47,7 @@ class ArrayDiffTestCase(unittest.TestCase):
         Testing array_diff function
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing array_diff function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -57,14 +58,13 @@ class ArrayDiffTestCase(unittest.TestCase):
             "<p>Test that function subtracts one list from another"
             "and returns the result. It should remove all values from "
             "list a, which are present in list b.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ([1, 2], [1], [2], "a was [1,2], b was [1], expected [2]"),
             ([1, 2, 2], [1], [2, 2], "a was [1,2,2], b was [1], expected [2,2]"),
             ([1, 2, 2], [2], [1], "a was [1,2,2], b was [2], expected [1]"),
             ([1, 2, 2], [], [1, 2, 2], "a was [1,2,2], b was [], expected [1,2,2]"),
-            ([], [1, 2], [], "a was [], b was [1,2], expected []"),
-        )
+            ([], [1, 2], [], "a was [], b was [1,2], expected []"))
 
         for test_item in test_data:
             a: list = test_item[0]
