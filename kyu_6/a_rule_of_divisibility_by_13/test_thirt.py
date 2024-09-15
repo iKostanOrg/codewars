@@ -26,6 +26,7 @@ class ThirtTestCase(unittest.TestCase):
     Testing 'thirt' function
     """
 
+    # pylint: disable-msg=R0801
     def test_thirt(self):
         allure.dynamic.title("Testing 'thirt' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -37,7 +38,7 @@ class ThirtTestCase(unittest.TestCase):
             "<p>Test a function that processes sequence of operations "
             "on an integer n (>=0). 'thirt' should return the stationary"
             " number.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             (1234567, 87),
             (321, 48),
@@ -45,8 +46,7 @@ class ThirtTestCase(unittest.TestCase):
             (85299258, 31),
             (5634, 57),
             (1111111111, 71),
-            (987654321, 30)
-        )
+            (987654321, 30))
 
         for n, expected in test_data:
             actual_result = thirt(n)
