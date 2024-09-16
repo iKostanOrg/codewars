@@ -1,13 +1,16 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Pokemon Damage Calculator
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import Dict
 
-TYPES: Dict[str, list] = {'fire': [['grass'], ['electric'], ['water']],
-                               'grass': [['water'], ['electric'], ['fire']],
-                               'water': [['fire'], [], ['electric', 'grass']],
-                               'electric': [['water'], ['grass', 'fire'], []]}
+TYPES: Dict[str, list] = \
+    {'fire': [['grass'], ['electric'], ['water']],
+     'grass': [['water'], ['electric'], ['fire']],
+     'water': [['fire'], [], ['electric', 'grass']],
+     'electric': [['water'], ['grass', 'fire'], []]}
 
 
 def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int:
@@ -24,7 +27,6 @@ def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int
     :param defense:
     :return:
     """
-
     return 50 * (attack / defense) * effectiveness(your_type, opponent_type)
 
 
@@ -51,10 +53,10 @@ def effectiveness(your_type: str, opponent_type: str) -> float:
     :param opponent_type:
     :return:
     """
-
     if opponent_type in TYPES[your_type][0]:
         return 2.0
-    elif opponent_type in TYPES[your_type][1]:
+
+    if opponent_type in TYPES[your_type][1]:
         return 1.0
-    else:
-        return 0.5
+
+    return 0.5

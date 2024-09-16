@@ -24,7 +24,7 @@ def string_transformer(s: str) -> str:
     :param s: str
     :return: str
     """
-    s_arr = s.split(' ')[::-1]
+    s_arr: list = s.split(' ')[::-1]
 
     for i, word in enumerate(s_arr):
         s_arr[i] = ''.join((char.upper() if char.islower()
