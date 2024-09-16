@@ -171,6 +171,7 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: remove
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'DefaultList' class: remove")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -179,7 +180,7 @@ class DefaultListTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing remove method.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Create a list"):
             lst = DefaultList(
                 [1, 3, 4, 7, 2, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455],
@@ -209,6 +210,7 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: insert
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'DefaultList' class: insert")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -217,7 +219,7 @@ class DefaultListTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing insert method.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Create a list"):
             lst = DefaultList(
                 [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455],
@@ -245,6 +247,7 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: pop
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'DefaultList' class: pop")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -253,7 +256,7 @@ class DefaultListTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing pop method.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Create a list"):
             lst = DefaultList(
                 [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455],
