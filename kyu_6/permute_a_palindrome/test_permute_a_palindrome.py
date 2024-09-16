@@ -80,6 +80,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
         Negative testing permute_a_palindrome function
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title(
             "Testing permute_a_palindrome (negative)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -89,7 +90,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
             string = "baabcd"
             expected = False
