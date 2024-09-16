@@ -32,6 +32,7 @@ class StockListTestCase(unittest.TestCase):
         Testing stock_list function with various test data
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing stock_list function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -44,7 +45,7 @@ class StockListTestCase(unittest.TestCase):
             "the function finds all the books of L with codes belonging "
             "to each category of M and to sum their quantity according to "
             "each category.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = [
             (["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"],
              ["A", "B"],
