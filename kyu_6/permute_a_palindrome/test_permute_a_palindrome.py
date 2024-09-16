@@ -120,6 +120,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
         Testing permute_a_palindrome function with empty string
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title(
             "Testing permute_a_palindrome (empty string)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -129,7 +130,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter empty string and verify the result"):
             string = ''
             expected = True
