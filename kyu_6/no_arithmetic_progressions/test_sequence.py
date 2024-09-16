@@ -66,6 +66,7 @@ class SequenceTestCase(unittest.TestCase):
 
         for n, expected in test_data:
             actual_result = sequence(n)
+            # pylint: disable-msg=R0801
             with allure.step(
                     f"Enter a number ({n}) and verify the "
                     f"expected output ({expected}) vs "
@@ -76,3 +77,4 @@ class SequenceTestCase(unittest.TestCase):
 
                 self.assertEqual(expected,
                                  actual_result)
+            # pylint: enable-msg=R0801
