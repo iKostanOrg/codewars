@@ -28,8 +28,8 @@ class ArrayToTableTestCase(unittest.TestCase):
     """
     Testing to_table function
     """
-
     def test_array_to_table_function(self):
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing to_table function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -40,7 +40,7 @@ class ArrayToTableTestCase(unittest.TestCase):
             "<p>Test that function takes three arguments "
             "(data, header, index) and returns a string "
             "containing HTML tags representing the table.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = ([
             {
                 "input": ([["o"]]),
