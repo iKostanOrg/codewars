@@ -18,7 +18,6 @@ def checkchoose(m: int, n: int) -> int:
     :param n:
     :return:
     """
-
     for x in range(1, n + 1):
 
         temp: int = factorial(n) // (factorial(x) * factorial(n - x))

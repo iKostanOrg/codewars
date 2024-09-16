@@ -35,7 +35,6 @@ def epidemic(**kwargs) -> int:
             (truncate to integer the result of max(I)).
     """
     dt: float = float(kwargs['tm']) / kwargs['n']
-
     # susceptible, infected, recovered at time t
     # Whatever S0 and I0, R0 (number of recovered at time 0) is always 0.
     susceptible: List[float] = [kwargs['s0']]

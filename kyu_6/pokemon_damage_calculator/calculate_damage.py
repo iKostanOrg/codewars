@@ -27,7 +27,6 @@ def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int
     :param defense:
     :return:
     """
-
     return 50 * (attack / defense) * effectiveness(your_type, opponent_type)
 
 

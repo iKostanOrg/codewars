@@ -27,7 +27,6 @@ class EpidemicTestCase(unittest.TestCase):
     """
     Testing for solution Disease Spread
     """
-
     def test_epidemic(self):
         """
         Testing epidemic function

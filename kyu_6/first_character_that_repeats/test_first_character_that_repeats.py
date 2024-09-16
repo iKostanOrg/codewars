@@ -30,7 +30,6 @@ class FirstDupTestCase(unittest.TestCase):
     Find the first character that repeats
     in a String and return that character.
     """
-
     def test_first_dup_none(self):
         """
         Test string with no duplicate chars.

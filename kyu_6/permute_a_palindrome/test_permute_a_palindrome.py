@@ -26,7 +26,6 @@ class PermutePalindromeTestCase(unittest.TestCase):
     """
     Testing permute_a_palindrome function
     """
-
     def test_permute_a_palindrome_positive(self):
         """
         Testing permute_a_palindrome function

@@ -14,7 +14,6 @@ def numericals(s: str) -> str:
     :param s:
     :return:
     """
-
     char_dict: dict = {}
     result: str = ''
 

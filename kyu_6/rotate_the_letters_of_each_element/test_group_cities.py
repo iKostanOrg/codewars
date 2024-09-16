@@ -31,7 +31,6 @@ class GroupCitiesTestCase(unittest.TestCase):
     """
     Testing 'group_cities' function
     """
-
     def test_group_cities(self):
         """
         Test that a function that given a sequence of strings,

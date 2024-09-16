@@ -32,7 +32,6 @@ class SequenceTestCase(unittest.TestCase):
     """
     Testing sequence function
     """
-
     def test_sequence(self):
         """
         A function f(n), should returns the n-th member of sequence.

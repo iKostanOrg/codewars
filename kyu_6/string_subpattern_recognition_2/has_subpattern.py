@@ -21,7 +21,6 @@ def has_subpattern(string: str) -> bool:
     :param string:
     :return:
     """
-
     primes: Set[int] = set()
     length: int = len(string)
     char_dict: Dict[str, int] = {}

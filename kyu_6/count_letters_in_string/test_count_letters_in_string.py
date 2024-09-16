@@ -52,7 +52,6 @@ class CountLettersInStringTestCase(unittest.TestCase):
                         "o": 1, "r": 1, "s": 1, "w": 1}
 
             print_log(string=string, expected=expected)
-
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
@@ -61,7 +60,6 @@ class CountLettersInStringTestCase(unittest.TestCase):
                         "v": 1, "y": 1}
 
             print_log(string=string, expected=expected)
-
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
@@ -70,7 +68,6 @@ class CountLettersInStringTestCase(unittest.TestCase):
                         "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
 
             print_log(string=string, expected=expected)
-
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
@@ -79,7 +76,6 @@ class CountLettersInStringTestCase(unittest.TestCase):
                         "r": 2, "t": 1, "v": 1}
 
             print_log(string=string, expected=expected)
-
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
@@ -88,5 +84,4 @@ class CountLettersInStringTestCase(unittest.TestCase):
                         "m": 1, "r": 2, "y": 1}
 
             print_log(string=string, expected=expected)
-
             self.assertEqual(expected, letter_count(string))

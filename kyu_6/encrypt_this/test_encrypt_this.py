@@ -38,7 +38,6 @@ class EncryptThisTestCase(unittest.TestCase):
     """
     Testing encrypt_this function
     """
-
     def test_encrypt_this(self):
         """
         Testing encrypt_this function

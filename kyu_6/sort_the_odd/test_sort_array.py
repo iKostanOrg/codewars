@@ -27,7 +27,6 @@ class SortArrayTestCase(unittest.TestCase):
     """
     Testing 'sort_array' function
     """
-
     def test_sort_array(self):
         """
         The 'sort_array' function.

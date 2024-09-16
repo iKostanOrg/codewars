@@ -9,7 +9,6 @@ class DefaultList:
     """
     A class called DefaultList
     """
-
     def __init__(self, lst: list, default_value: str):
         # The class will have two parameters to be given:
         # a list, and a default value.

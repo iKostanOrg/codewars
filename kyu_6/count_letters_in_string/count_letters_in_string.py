@@ -13,7 +13,6 @@ def letter_count(s: str) -> dict:
     :param s:
     :return:
     """
-
     result: dict = {}
 
     for char in s:

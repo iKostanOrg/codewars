@@ -20,7 +20,6 @@ def has_subpattern(string: str) -> bool:
     :param string:
     :return:
     """
-
     length: int = len(string)
 
     n: int = 2

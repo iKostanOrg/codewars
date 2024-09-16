@@ -33,7 +33,6 @@ class LikesTestCase(unittest.TestCase):
     of people who like an item. It must return the display text.
     For 4 or more names, the number in and 2 others simply increases.
     """
-
     def test_likes_function(self):
         """
         Testing likes function with various test data

@@ -34,7 +34,6 @@ class HasSubpatternTestCase(unittest.TestCase):
     String subpattern recognition I
     Testing 'has_subpattern' function
     """
-
     def test_has_subpattern(self):
         """
         String subpattern recognition I

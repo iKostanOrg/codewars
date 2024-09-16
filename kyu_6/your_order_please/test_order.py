@@ -27,7 +27,6 @@ class OrderTestCase(unittest.TestCase):
     """
     Testing 'order' function
     """
-
     def test_order(self):
         """
         Your task is to verify that 'order' function

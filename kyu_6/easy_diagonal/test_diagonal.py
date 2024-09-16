@@ -27,7 +27,6 @@ class EasyDiagonalTestCase(unittest.TestCase):
     """
     Testing easy_diagonal function
     """
-
     def test_easy_diagonal(self):
         """
         Testing easy_diagonal function

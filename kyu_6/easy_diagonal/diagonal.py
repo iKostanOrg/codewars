@@ -24,7 +24,7 @@ def diagonal(n: int, p: int) -> int:
     if p < 0:
         raise ValueError('ERROR: invalid p ({}) value. p must be >= 0')
 
-    result = math.factorial(
+    result: int = math.factorial(
         n + 1) // (math.factorial(p + 1) * math.factorial(n - p))
 
     return result

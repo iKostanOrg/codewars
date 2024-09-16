@@ -32,7 +32,6 @@ class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
     """
-
     def test_has_subpattern(self):
         """
         Verify that 'has_subpattern' function to returns

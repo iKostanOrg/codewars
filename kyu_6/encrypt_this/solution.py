@@ -16,7 +16,6 @@ def encrypt_this(text: str) -> str:
     :param text: a string containing space separated words
     :return: messages which can be deciphered by the "Decipher this!"
     """
-
     if not text:
         return ""
 
