@@ -35,13 +35,13 @@ class DecipherThisTestCase(unittest.TestCase):
     """
     Testing decipher_this function
     """
-
     def test_decipher_this(self):
         """
         Testing decipher_this function
         :param self:
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing decipher_this function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -58,7 +58,7 @@ class DecipherThisTestCase(unittest.TestCase):
             "<br>Note: there are no special characters used, only "
             "letters and spaces."
             "</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("",
              ""),
