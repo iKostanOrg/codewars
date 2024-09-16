@@ -18,7 +18,7 @@ def pyramid(n: int) -> list:
     if n is None or n == 0:
         return result
 
-    for n in range(1, n + 1):
-        result.append([1] * n)
+    for i in range(1, n + 1):
+        result.append([1] * i)
 
     return result
