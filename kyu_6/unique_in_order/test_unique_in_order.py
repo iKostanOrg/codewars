@@ -30,14 +30,13 @@ class UniqueInOrderTestCase(unittest.TestCase):
     """
     Testing the 'unique_in_order' function
     """
-
     def test_unique_in_order(self):
         """
         Testing the 'unique_in_order' function
         with various test data
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing the 'unique_in_order' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -45,7 +44,8 @@ class UniqueInOrderTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p></p>"
+        # pylint: enable-msg=R0801
         # pylint: disable=line-too-long
         with allure.step("Pass test data and verify the output"):
             data = [
