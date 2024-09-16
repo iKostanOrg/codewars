@@ -20,7 +20,7 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 @allure.story('Permute a Palindrome')
 @allure.tag('FUNDAMENTALS',
             'ALGORITHMS')
-@allure.link(url='',
+@allure.link(url='https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/python',
              name='Source/Kata')
 class PermutePalindromeTestCase(unittest.TestCase):
     """
@@ -32,6 +32,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
         Testing permute_a_palindrome function
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title(
             "Testing permute_a_palindrome (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -41,7 +42,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
             string = "a"
             expected = True

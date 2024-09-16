@@ -12,15 +12,15 @@ def permute_a_palindrome(string: str) -> bool:
     :param string:
     :return:
     """
-
     if string == '' or \
             string is None or \
             len(string) == 1 or \
             string == string[::-1]:
         return True
 
-    non_even = 0
-    chars = set(string)
+    non_even: int = 0
+    chars: set = set(string)
+
     for char in chars:
         if string.count(char) % 2 != 0:
             non_even += 1
