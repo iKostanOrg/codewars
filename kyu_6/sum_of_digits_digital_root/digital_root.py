@@ -20,9 +20,10 @@ def digital_root(n: int) -> int:
     """
     if len(str(n)) == 1:
         return n
-    else:
-        temp: int = 0
-        n_str: str = str(n)
-        for char in n_str:
-            temp += int(char)
-        return digital_root(temp)
+
+    temp: int = 0
+    n_str: str = str(n)
+    for char in n_str:
+        temp += int(char)
+
+    return digital_root(temp)
