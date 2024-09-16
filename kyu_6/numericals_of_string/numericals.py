@@ -15,7 +15,7 @@ def numericals(s: str) -> str:
     :return:
     """
 
-    char_dict: dict = dict()
+    char_dict: dict = {}
     result: str = ''
 
     for char in s:
