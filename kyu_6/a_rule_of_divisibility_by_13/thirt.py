@@ -27,5 +27,5 @@ def thirt(n: int) -> int:
 
         if int(n) == temp:
             return temp
-        else:
-            n = temp
+
+        n = temp
