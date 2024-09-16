@@ -37,6 +37,10 @@ class CalculateDamageTestCase(unittest.TestCase):
     damage = 50 * (attack / defense) * effectiveness
     """
     def test_calculate_damage(self):
+        """
+        Testing calculate_damage with various test data
+        :return:
+        """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing calculate_damage function")
         allure.dynamic.severity(allure.severity_level.NORMAL)

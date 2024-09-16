@@ -54,10 +54,10 @@ def effectiveness(your_type: str, opponent_type: str) -> float:
     :param opponent_type:
     :return:
     """
-
     if opponent_type in TYPES[your_type][0]:
         return 2.0
-    elif opponent_type in TYPES[your_type][1]:
+
+    if opponent_type in TYPES[your_type][1]:
         return 1.0
-    else:
-        return 0.5
+
+    return 0.5
