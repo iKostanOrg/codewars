@@ -29,6 +29,10 @@ class ArrayToTableTestCase(unittest.TestCase):
     Testing to_table function
     """
     def test_array_to_table_function(self):
+        """
+        Testing to_table with various test data
+        :return:
+        """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing to_table function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -94,7 +98,8 @@ class ArrayToTableTestCase(unittest.TestCase):
                           "<tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></tr>"
                           "</thead>"
                           "<tbody>"
-                          "<tr><td>True</td><td>False</td><td>False</td><td>True</td><td>True</td></tr>"
+                          "<tr><td>True</td><td>False</td><td>False</td><td>True</td>"
+                          "<td>True</td></tr>"
                           "</tbody></table>"
             },
         ])
