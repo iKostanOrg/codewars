@@ -21,7 +21,8 @@ def namelist(names: list) -> str:
 
     if len(names_list) == 1:
         return names_list[0]
-    elif len(names_list) == 2:
+
+    if len(names_list) == 2:
         return f'{names_list[0]} & {names_list[1]}'
-    else:
-        return ', '.join(names_list[:-1]) + ' & ' + names_list[-1]
+
+    return ', '.join(names_list[:-1]) + ' & ' + names_list[-1]
