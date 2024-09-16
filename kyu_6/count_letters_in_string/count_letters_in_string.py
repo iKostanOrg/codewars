@@ -14,7 +14,7 @@ def letter_count(s: str) -> dict:
     :return:
     """
 
-    result: dict = dict()
+    result: dict = {}
 
     for char in s:
         if char.islower() and char not in result:
