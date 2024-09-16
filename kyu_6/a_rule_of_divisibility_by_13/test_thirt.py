@@ -49,6 +49,7 @@ class ThirtTestCase(unittest.TestCase):
 
         for n, expected in test_data:
             actual_result = thirt(n)
+            # pylint: disable-msg=R0801
             with allure.step(f"Enter a n ({n}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
@@ -59,3 +60,4 @@ class ThirtTestCase(unittest.TestCase):
 
                 self.assertEqual(expected,
                                  actual_result)
+            # pylint: enable-msg=R0801
