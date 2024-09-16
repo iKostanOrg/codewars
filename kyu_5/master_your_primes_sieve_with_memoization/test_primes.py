@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Master your primes: sieve with memoization
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# ALGORITHMS MEMOIZATION DESIGN PATTERNS DESIGN PRINCIPLES OPTIMIZATION
+# ALGORITHMS MEMOIZATION DESIGN PATTERNS
+# DESIGN PRINCIPLES OPTIMIZATION
 
 import unittest
 import allure
@@ -16,7 +19,11 @@ from kyu_5.master_your_primes_sieve_with_memoization.primes import is_prime
 @allure.sub_suite("Unit Tests")
 @allure.feature("Memoization")
 @allure.story('Master your primes: sieve with memoization')
-@allure.tag('ALGORITHMS', 'MEMOIZATION', 'DESIGN PATTERNS', 'DESIGN PRINCIPLES', 'OPTIMIZATION')
+@allure.tag('ALGORITHMS',
+            'MEMOIZATION',
+            'DESIGN PATTERNS',
+            'DESIGN PRINCIPLES',
+            'OPTIMIZATION')
 @allure.link(url='https://www.codewars.com/kata/58603c898989d15e9e000475',
              name='Source/Kata')
 class PrimesTestCase(unittest.TestCase):
@@ -34,17 +41,17 @@ class PrimesTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing is_prime function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the output"):
-
             test_data = [
                 (1, False),
                 (2, True),

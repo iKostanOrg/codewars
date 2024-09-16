@@ -17,7 +17,7 @@ A line can have the following characters :
 ## Rules for valid lines
 
 *   The most basic kind of valid line is when the end-points are
-* already adjacent
+already adjacent
 
 ```text
 X

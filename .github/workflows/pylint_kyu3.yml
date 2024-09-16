@@ -38,4 +38,4 @@ jobs:
         echo $PYTHONPATH
     - name: Analysing the code with pylint
       run: |
-        python -m pylint -v .\kyu_3\
+        python -m pylint -v ./kyu_3

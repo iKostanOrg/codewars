@@ -8,9 +8,9 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS STRINGS
 
-import allure
 import unittest
 import pytest
+import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.line_safari import line
 
@@ -40,6 +40,7 @@ class LinePositiveTestCase(unittest.TestCase):
         """
 
         allure.dynamic.title("Testing Line Safari functionality - POSITIVE")
+        # pylint: disable-msg=R0801
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -48,7 +49,6 @@ class LinePositiveTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should return true/false if it can detect a one "
             "and only one \"valid\" line joining those points.</p>")
-
         test_data = (
             ["           ",
              "X---------X",
@@ -87,7 +87,6 @@ class LinePositiveTestCase(unittest.TestCase):
              "   |      +++---+     ",
              "X--+      +-+   X     "],
         )
-
         expected = True
         for grid in test_data:
             actual_result = line(grid)
@@ -102,3 +101,4 @@ class LinePositiveTestCase(unittest.TestCase):
             with allure.step("Enter a test grid and compare "
                              "the output vs expected result"):
                 self.assertEqual(expected, actual_result)
+        # pylint: enable-msg=R0801

@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> flatten()
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def flatten(*args):
+def flatten(*args) -> list:
     """
     The method takes in any number of arguments
     and flattens them into a single array. If any
@@ -15,7 +17,7 @@ def flatten(*args):
     single array result.
     :return:
     """
-    result = []
+    result: list = []
 
     if args:
         unpack(args, result)

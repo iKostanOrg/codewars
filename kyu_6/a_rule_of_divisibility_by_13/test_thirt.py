@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> A Rule of Divisibility by 13
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -23,17 +25,23 @@ class ThirtTestCase(unittest.TestCase):
     """
     Testing 'thirt' function
     """
-
+    # pylint: disable-msg=R0801
     def test_thirt(self):
+        """
+        Testing 'thirt' function with various test data
+        :return:
+        """
         allure.dynamic.title("Testing 'thirt' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test a function that processes sequence of operations "
-                                        "on an integer n (>=0). 'thirt' should return the stationary number.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test a function that processes sequence of operations "
+            "on an integer n (>=0). 'thirt' should return the stationary"
+            " number.</p>")
+        # pylint: enable-msg=R0801
         test_data = (
             (1234567, 87),
             (321, 48),
@@ -41,18 +49,19 @@ class ThirtTestCase(unittest.TestCase):
             (85299258, 31),
             (5634, 57),
             (1111111111, 71),
-            (987654321, 30),
-        )
+            (987654321, 30))
 
         for n, expected in test_data:
             actual_result = thirt(n)
-            with allure.step("Enter a n ({}) and verify the "
-                             "expected output ({}) vs actual result ({})".format(n,
-                                                                                 expected,
-                                                                                 actual_result)):
+            # pylint: disable-msg=R0801
+            with allure.step(f"Enter a n ({n}) and verify the "
+                             f"expected output ({expected}) vs "
+                             f"actual result ({actual_result})"):
+
                 print_log(n=n,
                           expected=expected,
                           result=actual_result)
 
                 self.assertEqual(expected,
                                  actual_result)
+            # pylint: enable-msg=R0801

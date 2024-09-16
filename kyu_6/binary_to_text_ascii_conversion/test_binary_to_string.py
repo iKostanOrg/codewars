@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Binary to Text (ASCII) Conversion
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS BINARY ASCII CHARACTER ENCODINGS FORMATS STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.binary_to_text_ascii_conversion.binary_to_string import binary_to_string
 
@@ -16,25 +18,37 @@ from kyu_6.binary_to_text_ascii_conversion.binary_to_string import binary_to_str
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Binary to Text (ASCII) Conversion')
-@allure.tag('FUNDAMENTALS', 'BINARY', 'ASCII',
-            'CHARACTER ENCODINGS', 'FORMATS', 'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/5583d268479559400d000064/train/python',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'BINARY',
+            'ASCII',
+            'CHARACTER ENCODINGS',
+            'FORMATS',
+            'STRINGS')
+@allure.link(
+    url='https://www.codewars.com/kata/5583d268479559400d000064/train/python',
+    name='Source/Kata')
 class SequenceTestCase(unittest.TestCase):
     """
     Testing binary_to_string function
     """
 
     def test_binary_to_string(self):
+        """
+        Testing binary_to_string function
+        with various test data
+        :return:
+        """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing binary_to_string function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test a function that takes in a binary string and returns "
-                                        "the equivalent decoded text (the text is ASCII encoded).</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test a function that takes in a binary string and returns "
+            "the equivalent decoded text (the text is ASCII encoded).</p>")
+        # pylint: enable-msg=R0801
         test_data = [
             ('0100100001100101011011000110110001101111', 'Hello'),
             ('00110001001100000011000100110001', '1011'),
@@ -67,10 +81,10 @@ class SequenceTestCase(unittest.TestCase):
 
         for binary, expected in test_data:
             actual_result = binary_to_string(binary)
-            with allure.step("Enter a binary ({}) and verify the "
-                             "expected output ({}) vs actual result ({})".format(binary,
-                                                                                 expected,
-                                                                                 actual_result)):
+            with allure.step(f"Enter a binary ({binary}) and verify the "
+                             f"expected output ({expected}) vs "
+                             f"actual result ({actual_result})"):
+
                 print_log(binary=binary,
                           expected=expected,
                           result=actual_result)

@@ -1,8 +1,8 @@
-"""Character frequency"""
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Character frequency
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def letter_frequency(text: str) -> list:
@@ -14,8 +14,8 @@ def letter_frequency(text: str) -> list:
     :return:
     """
     results: list = []
-    chars: dict = dict()
-    text = text.lower()
+    chars: dict = {}
+    text: str = text.lower()
 
     for c in text:
         if c.isalpha() and c not in chars:
@@ -26,10 +26,15 @@ def letter_frequency(text: str) -> list:
     return results
 
 
-def sort_list(results) -> list:
+def sort_list(results: list) -> list:
+    """
+    Sort results list
+    :param results: list
+    :return: list
+    """
 
-    is_sorted = False
-    results_length = len(results)
+    is_sorted: bool = False
+    results_length: int = len(results)
 
     while not is_sorted:
         is_sorted = True

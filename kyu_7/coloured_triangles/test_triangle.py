@@ -22,7 +22,7 @@ from kyu_7.coloured_triangles.solution_for_triangle import triangle
 @allure.tag('Logic',
             'Strings',
             'Algorithms')
-@allure.link(url='',
+@allure.link(url='https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111',
              name='Source/Kata')
 class TriangleTestCase(unittest.TestCase):
     """

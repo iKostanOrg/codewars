@@ -1,29 +1,37 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> String subpattern recognition II
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
+# FUNDAMENTALS STRINGS REGULAR EXPRESSIONS
+# DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
 import unittest
 import allure
 from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_2.has_subpattern import has_subpattern
 
-
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Advanced Language Features")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String subpattern recognition II')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING',
+            'ADVANCED LANGUAGE FEATURES')
+@allure.link(
+    url='https://www.codewars.com/kata/5a4a391ad8e145cdee0000c4',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
     """
-
     def test_has_subpattern(self):
         """
         Verify that 'has_subpattern' function to returns
@@ -39,15 +47,16 @@ class HasSubpatternTestCase(unittest.TestCase):
         shuffling the result.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'has_subpattern' (part 2) function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Pass the string and verify the output"):
             test_data = [
                 ("a", False),

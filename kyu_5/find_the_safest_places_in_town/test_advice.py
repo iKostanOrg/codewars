@@ -13,6 +13,7 @@ from kyu_5.find_the_safest_places_in_town.advice import advice, create_city_map,
 from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 
 
+# pylint: disable-msg=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -22,6 +23,7 @@ from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 @allure.tag('ALGORITHMS')
 @allure.link(url='https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python',
              name='Source/Kata')
+# pylint: enable-msg=R0801
 class FirstAdviceTestCase(unittest.TestCase):
     """
     Testing advice and all related help functions
@@ -36,19 +38,22 @@ class FirstAdviceTestCase(unittest.TestCase):
         The function should generate city map with coordinates.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing create_city_map function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should generate city map with coordinates.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should generate city map with coordinates.</p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test data and verify the output"):
             test_data = [
                 (2, {(0, 0), (0, 1), (1, 0), (1, 1)}),
                 (0, set()),
-                (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)}),
+                (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1),
+                     (1, 2), (2, 0), (2, 1), (2, 2)}),
             ]
 
             for data in test_data:
@@ -71,22 +76,27 @@ class FirstAdviceTestCase(unittest.TestCase):
         The function should remove all agents that are outside of the city boundaries.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing agents_cleanup function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should remove all agents that are "
-                                        "outside of the city boundaries.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should remove all agents that are "
+            "outside of the city boundaries.</p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test data and verify the output"):
             test_data = [
                 ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
                 ({(0, 0), (1, 1), (99, 99)}, 2, {(0, 0), (1, 1)}),
-                ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47), (9, 59), (65, 40), (28, 53), (19, 15),
-                  (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13), (36, 38), (29, 54), (50, 15), (14, 28),
-                  (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6), (12, 46), (50, 35), (56, 27)}, 10, set()),
+                ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47),
+                  (9, 59), (65, 40), (28, 53), (19, 15),
+                  (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13),
+                  (36, 38), (29, 54), (50, 15), (14, 28),
+                  (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6),
+                  (12, 46), (50, 35), (56, 27)}, 10, set()),
             ]
 
             for data in test_data:
@@ -111,15 +121,18 @@ class FirstAdviceTestCase(unittest.TestCase):
         away (by Manhattan distance) from all agents.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing advice function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function should return a list of coordinates that "
-                                        "are the furthest away (by Manhattan distance) from all agents.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should return a list of coordinates that "
+            "are the furthest away (by Manhattan distance) from all "
+            "agents.</p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             test_data = [
                 ([(1, 1)], 2, [(0, 0)],
@@ -130,29 +143,42 @@ class FirstAdviceTestCase(unittest.TestCase):
                  "Works for the example in description"),
                 ([(9, 9)], 1, [(0, 0)],
                  "Should return all locations for only ignored agents"),
-                ([(1, 1), (3, 5), (4, 8), (7, 3), (7, 8), (9, 1)], 10, sorted([(0, 9), (0, 7), (5, 0)]),
+                ([(1, 1), (3, 5), (4, 8), (7, 3), (7, 8), (9, 1)], 10,
+                 sorted([(0, 9), (0, 7), (5, 0)]),
                  "Should return correct solutions for six agents"),
                 ([(1, 3), (2, 3), (2, 7), (4, 1), (5, 9), (7, 0), (9, 5)], 10,
-                 sorted([(0, 0), (0, 9), (4, 5), (5, 5), (5, 4), (6, 3), (6, 4), (6, 6), (7, 7), (8, 8), (9, 9)]),
+                 sorted([(0, 0), (0, 9), (4, 5), (5, 5), (5, 4), (6, 3),
+                         (6, 4), (6, 6), (7, 7), (8, 8), (9, 9)]),
                  "Should return correct solutions for seven agents"),
-                ([(0, 0), (0, 9), (1, 5), (5, 1), (9, 0), (9, 9)], 10, sorted([(5, 7), (6, 6), (7, 5)]),
+                ([(0, 0), (0, 9), (1, 5), (5, 1), (9, 0), (9, 9)], 10,
+                 sorted([(5, 7), (6, 6), (7, 5)]),
                  "Should return correct solutions for another six agents"),
                 ([(0, 0)], 10, [(9, 9)],
                  "Single agent in top left corner of large grid"),
                 ([(0, 0), (1, 1), (99, 99)], 2, sorted([(0, 1), (1, 0)]),
                  "Agent in top left and bottom right"),
-                ([(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (0, 8), (0, 9), (1, 0), (1, 1),
-                  (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9), (2, 0), (2, 1), (2, 2), (2, 3),
-                  (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5),
-                  (3, 6), (3, 7), (3, 8), (3, 9), (4, 0), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (4, 6), (4, 7),
-                  (4, 8), (4, 9), (5, 0), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7), (5, 8), (5, 9),
-                  (6, 0), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (6, 8), (6, 9), (7, 0), (7, 1),
-                  (7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7), (7, 8), (7, 9), (8, 0), (8, 1), (8, 2), (8, 3),
-                  (8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (9, 0), (9, 1), (9, 2), (9, 3), (9, 4), (9, 5),
+                ([(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6),
+                  (0, 7), (0, 8), (0, 9), (1, 0), (1, 1),
+                  (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 8),
+                  (1, 9), (2, 0), (2, 1), (2, 2), (2, 3),
+                  (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (3, 0),
+                  (3, 1), (3, 2), (3, 3), (3, 4), (3, 5),
+                  (3, 6), (3, 7), (3, 8), (3, 9), (4, 0), (4, 1), (4, 2),
+                  (4, 3), (4, 4), (4, 5), (4, 6), (4, 7),
+                  (4, 8), (4, 9), (5, 0), (5, 1), (5, 2), (5, 3), (5, 4),
+                  (5, 5), (5, 6), (5, 7), (5, 8), (5, 9),
+                  (6, 0), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6),
+                  (6, 7), (6, 8), (6, 9), (7, 0), (7, 1),
+                  (7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7), (7, 8),
+                  (7, 9), (8, 0), (8, 1), (8, 2), (8, 3),
+                  (8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (9, 0),
+                  (9, 1), (9, 2), (9, 3), (9, 4), (9, 5),
                   (9, 6), (9, 7), (9, 8), (9, 9)], 10, [],
                  "Returns empty list for agents everywhere"),
-                ([(12, 8), (0, 14), (10, 16), (7, 11)], 2, [(0, 0), (0, 1), (1, 0), (1, 1)],
+                ([(12, 8), (0, 14), (10, 16), (7, 11)], 2, [(0, 0), (0, 1),
+                                                            (1, 0), (1, 1)],
                  'No agents on map'),
+                # pylint: disable-msg=C0301
                 ([(9, 50), (29, 27), (37, 51), (19, 24), (62, 41), (8, 57), (1, 7), (26, 58), (28, 39), (12, 5),
                   (53, 26), (8, 51), (33, 12), (25, 58), (30, 23), (8, 17), (19, 30), (56, 27), (14, 26), (35, 60),
                   (60, 51), (22, 59), (48, 0), (56, 13), (13, 6), (6, 25), (56, 19), (44, 0), (19, 48), (8, 2),
@@ -384,8 +410,7 @@ class FirstAdviceTestCase(unittest.TestCase):
                   (37, 38), (35, 8), (21, 19), (1, 50), (38, 58), (32, 60), (55, 39), (23, 21), (54, 50), (29, 5),
                   (21, 42), (42, 36), (29, 19), (33, 5), (4, 59), (53, 57), (7, 30), (60, 51), (49, 43), (0, 32),
                   (31, 26), (25, 38), (58, 50), (25, 58), (46, 60), (47, 62), (7, 51), (44, 62), (39, 18), (51, 51)],
-                 45, [(44, 44)],
-                 'Big lists'),
+                 45, [(44, 44)], 'Big lists'),
                 ([(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47), (9, 59), (65, 40), (28, 53), (19, 15),
                   (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13), (36, 38), (29, 54), (50, 15), (14, 28),
                   (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6), (12, 46), (50, 35), (56, 27), (30, 64),
@@ -463,10 +488,8 @@ class FirstAdviceTestCase(unittest.TestCase):
                   (66, 49), (39, 11), (12, 26), (7, 21), (58, 47), (5, 52), (29, 19), (1, 20), (62, 44), (54, 38),
                   (25, 19), (8, 36), (41, 53), (3, 57), (8, 61), (40, 22), (63, 36), (0, 11), (23, 53), (47, 44),
                   (22, 7), (5, 56), (10, 64), (4, 12), (5, 48), (34, 11), (38, 5), (37, 27), (54, 67), (36, 54),
-                  (22, 54)],
-                 47, [(46, 38)], 'Big lists'),
-            ]
-
+                  (22, 54)], 47, [(46, 38)], 'Big lists')]
+            # pylint: enable-msg=C0301
             for data in test_data:
                 # test data
                 agents = data[0]

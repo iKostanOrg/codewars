@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS STRINGS PARSING RANKING FILTERING
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.most_frequently_used_words.solution import top_3_words
 
@@ -36,7 +36,7 @@ class Top3WordsTestCase(unittest.TestCase):
         """
         Test top_3_words function
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing top_3_words function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -47,7 +47,7 @@ class Top3WordsTestCase(unittest.TestCase):
             "<p>Given a string of text (possibly with punctuation and line-breaks), "
             "the function should return an array of the top-3 most occurring words, "
             "in descending order of the number of occurrences.</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("a a a  b  c c  d d d d  e e e e e", ["e", "d", "a"]),
             ("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e", ["e", "ddd", "aa"]),
@@ -95,9 +95,7 @@ class Top3WordsTestCase(unittest.TestCase):
         for text, expected in test_data:
             actual_result: list = top_3_words(text)
             with allure.step("Enter a test string and verify the output"):
-
                 print_log(text=text,
                           expected=expected,
                           result=actual_result)
-
                 self.assertListEqual(expected, actual_result)

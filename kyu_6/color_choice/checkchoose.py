@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Color Choice
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from math import factorial
 
@@ -16,7 +18,6 @@ def checkchoose(m: int, n: int) -> int:
     :param n:
     :return:
     """
-
     for x in range(1, n + 1):
 
         temp: int = factorial(n) // (factorial(x) * factorial(n - x))
