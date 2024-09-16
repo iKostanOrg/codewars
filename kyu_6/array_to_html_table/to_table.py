@@ -74,9 +74,10 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
                                     f'{i if header else i + 1}'
                                     f'{TABLE['column']['end']}')
 
-            rows_and_columns += ''.join("{}{}{}".format(TABLE['column']['start'],
-                                                        '' if col is None else col,
-                                                        TABLE['column']['end']) for col in row)
+            for col in row:
+                rows_and_columns += ''.join(f"{TABLE['column']['start']}"
+                                            f"{'' if col is None else col}"
+                                            f"{TABLE['column']['end']}")
 
             rows_and_columns = (f'{rows_and_columns}'
                                 f'{TABLE['row']['end']}')
