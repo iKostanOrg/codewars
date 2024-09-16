@@ -44,7 +44,7 @@ class UniqueInOrderTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>"
+            "<p></p>")
         # pylint: enable-msg=R0801
         # pylint: disable=line-too-long
         with allure.step("Pass test data and verify the output"):
