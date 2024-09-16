@@ -30,6 +30,7 @@ class PotionTestCase(unittest.TestCase):
         Testing potion function with various test inputs
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Potion class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -38,7 +39,7 @@ class PotionTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Test Potion class that mix between 2 RGB colors.</p>")
-
+        # pylint: enable-msg=R0801
         potions = [
             Potion((153, 210, 199), 32),
             Potion((135, 34, 0), 17),
