@@ -27,6 +27,10 @@ class ThirtTestCase(unittest.TestCase):
     """
     # pylint: disable-msg=R0801
     def test_thirt(self):
+        """
+        Testing 'thirt' function with various test data
+        :return:
+        """
         allure.dynamic.title("Testing 'thirt' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
