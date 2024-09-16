@@ -134,6 +134,7 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: append
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'DefaultList' class: append")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -142,7 +143,7 @@ class DefaultListTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing append method.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Create a list"):
             lst = DefaultList(
                 [1, 3, 4, 7, 2, 34, 3, 23, 'hello', 'lists', 'word', 344],
