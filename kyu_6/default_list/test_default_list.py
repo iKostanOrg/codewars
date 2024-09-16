@@ -41,7 +41,6 @@ class DefaultListTestCase(unittest.TestCase):
     This class must also support the regular list functions
     extend, append, insert, remove, and pop.
     """
-
     def test_default_list_basic(self):
         """
         Testing 'DefaultList' class: __getitem__
@@ -93,6 +92,7 @@ class DefaultListTestCase(unittest.TestCase):
         Testing 'DefaultList' class: extend
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'DefaultList' class: extend")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -101,7 +101,7 @@ class DefaultListTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Testing extend method.</p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Create a list"):
             lst = DefaultList([1, 3, 4, 7, 2, 34], 'def')
 
