@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Always perfect
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS STRING FORMATTING FORMATTING ALGORITHMS ARRAYS MATHEMATICS
+# FUNDAMENTALS STRINGS STRING FORMATTING
+# FORMATTING ALGORITHMS ARRAYS MATHEMATICS
 
 import unittest
 import allure
@@ -16,7 +19,13 @@ from kyu_7.always_perfect.check_root import check_root
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Always perfect')
-@allure.tag()
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'STRING FORMATTING',
+            'FORMATTING',
+            'ALGORITHMS',
+            'ARRAYS',
+            'MATHEMATICS')
 @allure.link(url='',
              name='Source/Kata')
 class CheckRootTestCase(unittest.TestCase):
@@ -43,14 +52,14 @@ class CheckRootTestCase(unittest.TestCase):
 
         allure.dynamic.title("Testing check_root function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
-
             test_data = [
                 ('4,5,6,7', '841, 29'),
                 ('3,s,5,6', 'incorrect input'),
