@@ -28,6 +28,7 @@ class ArrayToTableTestCase(unittest.TestCase):
     """
     Testing to_table function
     """
+
     def test_array_to_table_function(self):
         """
         Testing to_table with various test data
@@ -114,3 +115,7 @@ class ArrayToTableTestCase(unittest.TestCase):
             with allure.step("Enter a test data and verify the expected output vs actual result"):
                 print_log(exp=expected, res=actual_result)
                 self.assertEqual(expected, actual_result)
+
+
+if __name__ == '__main__':
+    unittest.main()
