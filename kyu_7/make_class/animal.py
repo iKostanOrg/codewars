@@ -1,9 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Animal class implementation for -> Make Class
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 class Animal:
+    """
+    Animal class implementation
+    """
     def __init__(self, name, species, age, health, weight, color):
         self.name = name
         self.species = species
