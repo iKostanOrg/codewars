@@ -1,10 +1,8 @@
 """
-Testing 'powers' function
+Test for -> Sum of powers of 2
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # ALGORITHMS FUNDAMENTALS NUMBERS
 
@@ -20,29 +18,32 @@ from kyu_7.sum_of_powers_of_2.sum_of_powers_of_2 import powers
 @allure.sub_suite("Unit Tests")
 @allure.feature("Calculation")
 @allure.story('Sum of powers of 2')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('ALGORITHMS',
+            'FUNDAMENTALS',
+            'NUMBERS')
+@allure.link(
+    url='https://www.codewars.com/kata/5d9f95424a336600278a9632/train/python',
+    name='Source/Kata')
 class SumOfPowerOfTwoTestCase(unittest.TestCase):
     """
     Testing 'powers' function
     """
-
     def test_powers(self):
         """
         The function powers takes a single parameter,
-        the number n, and should return an array of unique numbers.
+        the number n, and should return an array of
+        unique numbers.
         :return:
         """
-
         allure.dynamic.title("powers function should return "
                              "an array of unique numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Pass n = 1 and verify the output"):
             number = 1
