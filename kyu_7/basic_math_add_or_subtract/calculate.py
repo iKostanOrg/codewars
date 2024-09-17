@@ -1,15 +1,22 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Basic Math (Add or Subtract)
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
+
+CONVERSION: dict = {
+    'plus': '+',
+    'minus': '-'}
 
 
 def calculate(s: str) -> str:
-    CONVERSION = {
-        'plus': '+',
-        'minus': '-',
-    }
-
-    s = s.lower()
+    """
+    Perform addition and subtraction on a given string
+    :param s: str
+    :return: str
+    """
+    s: str = s.lower()
     for key in CONVERSION:
         if key in s:
             s = s.replace(key, CONVERSION[key])
