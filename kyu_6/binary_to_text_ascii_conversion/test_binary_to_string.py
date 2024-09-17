@@ -84,10 +84,13 @@ class SequenceTestCase(unittest.TestCase):
             with allure.step(f"Enter a binary ({binary}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
-
                 print_log(binary=binary,
                           expected=expected,
                           result=actual_result)
 
                 self.assertEqual(expected,
                                  actual_result)
+
+
+if __name__ == '__main__':
+    unittest.main()
