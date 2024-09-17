@@ -27,7 +27,6 @@ class CalculateTestCase(unittest.TestCase):
     """
     Testing calculate function
     """
-
     def test_calculate(self):
         """
         Testing calculate function with various test data
