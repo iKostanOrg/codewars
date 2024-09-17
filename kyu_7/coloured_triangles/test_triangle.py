@@ -61,7 +61,3 @@ class TriangleTestCase(unittest.TestCase):
                           expected=expected,
                           result=result)
                 self.assertEqual(expected, result)
-
-
-if __name__ == '__main__':
-    unittest.main()

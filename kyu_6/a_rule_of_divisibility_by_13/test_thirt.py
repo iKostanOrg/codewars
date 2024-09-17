@@ -65,7 +65,3 @@ class ThirtTestCase(unittest.TestCase):
                 self.assertEqual(expected,
                                  actual_result)
             # pylint: enable-msg=R0801
-
-
-if __name__ == '__main__':
-    unittest.main()

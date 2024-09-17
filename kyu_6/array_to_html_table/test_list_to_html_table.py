@@ -115,7 +115,3 @@ class ArrayToTableTestCase(unittest.TestCase):
             with allure.step("Enter a test data and verify the expected output vs actual result"):
                 print_log(exp=expected, res=actual_result)
                 self.assertEqual(expected, actual_result)
-
-
-if __name__ == '__main__':
-    unittest.main()
