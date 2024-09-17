@@ -1,6 +1,5 @@
 """
 Test for -> Coloured Triangles
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -12,7 +11,7 @@ import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_7.coloured_triangles.solution_for_triangle import triangle
 
-
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -22,19 +21,19 @@ from kyu_7.coloured_triangles.solution_for_triangle import triangle
 @allure.tag('Logic',
             'Strings',
             'Algorithms')
-@allure.link(url='https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class TriangleTestCase(unittest.TestCase):
     """
     Testing triangle function
     """
-
     def test_triangle(self):
         """
         Basic test case
         :return:
         """
-
         with allure.step("Enter test string and verify the output"):
             test_data = [
                 ('GB', 'R'),
@@ -54,8 +53,7 @@ class TriangleTestCase(unittest.TestCase):
                 ('GBBRBRGGGGBRGGBBGGBGBRGRBGRGBB', 'G'),
                 ('RRRBRRGRRGBGBBRGRGRGRB', 'B'),
                 ('BRGGRBBBBGBRRRRBRBRRBGBGRBGB', 'B'),
-                ('RRBRBRBBBBBRBRRBBBGBBGBGGGRGR', 'G'),
-            ]
+                ('RRBRBRBBBBBRBRRBBBGBBGBGGGRGR', 'G')]
 
             for string, expected in test_data:
                 result = triangle(string)
