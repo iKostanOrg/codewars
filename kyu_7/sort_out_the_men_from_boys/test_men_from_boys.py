@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sort Out The Men From Boys
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS NUMBERS BASIC LANGUAGE FEATURES CONDITIONAL STATEMENTS CONTROL FLOW ALGORITHMS
 
@@ -16,14 +18,19 @@ from kyu_7.sort_out_the_men_from_boys.men_from_boys import men_from_boys
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Sort Out The Men From Boys')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'NUMBERS',
+            'BASIC LANGUAGE FEATURES',
+            'CONDITIONAL STATEMENTS',
+            'CONTROL FLOW',
+            'ALGORITHMS')
+@allure.link(
+    url='https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/python',
+    name='Source/Kata')
 class MenFromBoysTestCase(unittest.TestCase):
     """
     Testing men_from_boys function
     """
-
     def test_men_from_boys(self):
         """
         Testing men_from_boys function with
@@ -51,11 +58,12 @@ class MenFromBoysTestCase(unittest.TestCase):
         """
         allure.dynamic.title('Testing men_from_boys function')
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step('Given an list of integers => '
                          'separate the even numbers from the odds'):
