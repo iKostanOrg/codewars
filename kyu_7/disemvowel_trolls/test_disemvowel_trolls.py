@@ -55,7 +55,8 @@ class DisemvowelTestCase(unittest.TestCase):
              "Wht r y,  cmmnst?"),
             ("IeiIvp EIfgoIh,d(kaM]A>EuiGzEooOoW oK f&uswtee pKAUI<ZuuEi\\g)aIAOU !_Lu",
              "vp fgh,d(kM]>GzW K f&swt pK<Z\\g) !_L"),
-            ("Nt/I'OvegOI*UdAaEobaE{Gi} I^@*Ieua\\uU}d%AoUII}ue>*]IkEI GqrjOal`E\" eeAeSuaTdAu-FISac",
+            ("Nt/I'OvegOI*UdAaEobaE{Gi} I^@*Ieua\\uU}d%AoUII}ue>*"
+             "]IkEI GqrjOal`E\" eeAeSuaTdAu-FISac",
             "Nt/'vg*db{G} ^@*\}d%}>*]k Gqrjl`\" STd-FSc"))
 
         for data in test_data:
