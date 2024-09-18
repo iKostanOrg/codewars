@@ -31,6 +31,7 @@ class DisemvowelTestCase(unittest.TestCase):
     """
     Testing disemvowel function
     """
+
     def test_disemvowel(self):
         """
         The string "This website is for losers LOL!"
@@ -57,7 +58,7 @@ class DisemvowelTestCase(unittest.TestCase):
              "vp fgh,d(kM]>GzW K f&swt pK<Z\\g) !_L"),
             ("Nt/I'OvegOI*UdAaEobaE{Gi} I^@*Ieua\\uU}d%AoUII}ue>*"
              "]IkEI GqrjOal`E\" eeAeSuaTdAu-FISac",
-            "Nt/'vg*db{G} ^@*\}d%}>*]k Gqrjl`\" STd-FSc"))
+             "Nt/'vg*db{G} ^@*\\}d%}>*]k Gqrjl`\" STd-FSc"))
 
         for data in test_data:
             input_data, expected = data
