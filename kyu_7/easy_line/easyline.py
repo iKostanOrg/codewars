@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Easy Line
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import math
 
 
-def easy_line(n: int) -> int:
+def easy_line(n: int) -> (int, ValueError):
     """
     The function will take n (with: n>= 0) as parameter
     and will return the sum of the squares of the binomial
@@ -20,8 +22,8 @@ def easy_line(n: int) -> int:
     if n == 0:
         return 1
 
-    result = 0
-    i = 0
+    result: int = 0
+    i: int = 0
     for row in range(n - 1, 2 * n):
         result += calc_combination_per_row_item(row, i)
         i += 1
@@ -36,6 +38,6 @@ def calc_combination_per_row_item(row: int, i: int) -> int:
     :param i: index
     :return:
     """
-    combination = int(math.factorial(row)) // (int(math.factorial(i)) * int(math.factorial(row - i)))
-    # print(f'\n{row}! / ({i}! * ({row} - {i})!) = {combination}') # debug only
+    combination: int = (
+            int(math.factorial(row)) // (int(math.factorial(i)) * int(math.factorial(row - i))))
     return combination
