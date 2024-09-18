@@ -31,7 +31,6 @@ class DisemvowelTestCase(unittest.TestCase):
     """
     Testing disemvowel function
     """
-
     def test_disemvowel(self):
         """
         The string "This website is for losers LOL!"
