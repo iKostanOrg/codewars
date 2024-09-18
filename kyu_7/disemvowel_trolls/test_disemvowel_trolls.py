@@ -53,8 +53,8 @@ class DisemvowelTestCase(unittest.TestCase):
              "N ffns bt, Yr wrtng s mng th wrst 'v vr rd"),
             ("What are you, a communist?",
              "Wht r y,  cmmnst?"),
-            ("IeiIvp EIfgoIh,d(kaM]A>EuiGzEooOoW oK f&uswtee pKAUI<ZuuEi\g)aIAOU !_Lu",
-             "vp fgh,d(kM]>GzW K f&swt pK<Z\g) !_L"),
+            ("IeiIvp EIfgoIh,d(kaM]A>EuiGzEooOoW oK f&uswtee pKAUI<ZuuEi\\g)aIAOU !_Lu",
+             "vp fgh,d(kM]>GzW K f&swt pK<Z\\g) !_L"),
             ("Nt/I'OvegOI*UdAaEobaE{Gi} I^@*Ieua\\uU}d%AoUII}ue>*]IkEI GqrjOal`E\" eeAeSuaTdAu-FISac",
             "Nt/'vg*db{G} ^@*\}d%}>*]k Gqrjl`\" STd-FSc"))
 
