@@ -11,7 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_7.pull_your_words_together_man.sentencify import sentencify
 
-
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -24,6 +24,7 @@ from kyu_7.pull_your_words_together_man.sentencify import sentencify
 @allure.link(
     url='https://www.codewars.com/kata/59ad7d2e07157af687000070/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class SentencifyTestCase(unittest.TestCase):
     """
     Testing 'sentencify' function
