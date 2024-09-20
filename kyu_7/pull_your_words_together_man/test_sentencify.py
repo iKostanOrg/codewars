@@ -33,9 +33,7 @@ class SentencifyTestCase(unittest.TestCase):
     def test_sentencify(self):
         """
         Testing 'sentencify' function.
-
         The function should:
-
         1. Capitalise the first letter of the first word.
         2. Add a period (.) to the end of the sentence.
         3. Join the words into a complete string, with spaces.
