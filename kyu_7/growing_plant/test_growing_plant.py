@@ -11,6 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_7.growing_plant.growing_plant import growing_plant
 
+
 # pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
