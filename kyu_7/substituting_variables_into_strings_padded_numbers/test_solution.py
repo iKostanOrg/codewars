@@ -40,6 +40,7 @@ class SolutionTestCase(unittest.TestCase):
         where value is a 5 digit padded number.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'solution' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -48,7 +49,7 @@ class SolutionTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter a number and verify the result"):
             test_data: tuple = (
                 (0, 'Value is 00000'),
