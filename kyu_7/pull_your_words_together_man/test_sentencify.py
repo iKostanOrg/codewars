@@ -61,8 +61,7 @@ class SentencifyTestCase(unittest.TestCase):
                 (["FIELDS", "of", "CORN", "are", "to", "be", "sown"],
                  "FIELDS of CORN are to be sown."),
                 (["i'm", "afraid", "I", "can't", "let", "you", "do", "that"],
-                 "I'm afraid I can't let you do that."),
-            ]
+                 "I'm afraid I can't let you do that.")]
 
             for words, expected in test_data:
                 print_log(expected=expected,

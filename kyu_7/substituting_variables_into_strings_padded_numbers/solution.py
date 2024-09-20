@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Substituting Variables Into Strings: Padded Numbers
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def solution(value: int) -> str:
@@ -11,13 +13,13 @@ def solution(value: int) -> str:
     The return value should equal "Value
     is VALUE" where value is a 5 digit
     padded number.
-    :param value:
-    :return:
-    """
 
-    result = str(value)
+    :param value: int
+    :return: str
+    """
+    result: str = str(value)
 
     while len(result) != 5:
         result = '0' + result
 
-    return 'Value is {}'.format(result)
+    return f'Value is {result}'
