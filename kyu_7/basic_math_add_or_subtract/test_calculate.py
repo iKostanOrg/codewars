@@ -12,6 +12,7 @@ from kyu_7.basic_math_add_or_subtract.calculate import calculate
 from utils.log_func import print_log
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite('Fundamentals')
@@ -23,10 +24,12 @@ from utils.log_func import print_log
 @allure.link(
     url='https://www.codewars.com/kata/5809b62808ad92e31b000031/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class CalculateTestCase(unittest.TestCase):
     """
     Testing calculate function
     """
+
     def test_calculate(self):
         """
         Testing calculate function with various test data
@@ -53,7 +56,6 @@ class CalculateTestCase(unittest.TestCase):
             with allure.step(f"Enter string ({s}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
-
                 print_log(s=s,
                           expected=expected,
                           result=actual_result)
