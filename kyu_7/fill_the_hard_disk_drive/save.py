@@ -1,8 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
-# FUNDAMENTALS LISTS DATA STRUCTURES ARRAYS
+"""
+Solution for -> Computer problem series #1: Fill the Hard Disk Drive
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def save(sizes: list, hd: int) -> int:
@@ -22,12 +22,10 @@ def save(sizes: list, hd: int) -> int:
     :param hd:
     :return:
     """
-
-    counter = 0
-    total = 0
+    counter: int = 0
+    total: int = 0
 
     for size in sizes:
-
         total += size
         counter += 1
 
