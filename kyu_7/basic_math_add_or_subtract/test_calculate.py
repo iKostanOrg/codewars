@@ -52,6 +52,7 @@ class CalculateTestCase(unittest.TestCase):
             ('1plus2plus3minus4', '2')]
 
         for s, expected in test_data:
+            # pylint: disable-msg=R0801
             actual_result = calculate(s)
             with allure.step(f"Enter string ({s}) and verify the "
                              f"expected output ({expected}) vs "
@@ -59,6 +60,6 @@ class CalculateTestCase(unittest.TestCase):
                 print_log(s=s,
                           expected=expected,
                           result=actual_result)
-
+            # pylint: enable-msg=R0801
                 self.assertEqual(expected,
                                  actual_result)
