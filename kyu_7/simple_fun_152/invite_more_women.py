@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Simple Fun #152: Invite More Women?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def invite_more_women(arr: list) -> bool:
