@@ -12,6 +12,7 @@ from numpy.random import randint
 from kyu_7.remove_the_minimum.remove_the_minimum import remove_smallest
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -25,6 +26,7 @@ from kyu_7.remove_the_minimum.remove_the_minimum import remove_smallest
 @allure.link(
     url='https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class RemoveSmallestTestCase(unittest.TestCase):
     """
     Testing remove_smallest function
