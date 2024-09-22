@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> The First Non Repeated Character In A String
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ALGORITHMS STRINGS
 
@@ -10,15 +12,20 @@ from utils.log_func import print_log
 from kyu_7.the_first_non_repeated_character_in_string.first_non_repeated import first_non_repeated
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('The First Non Repeated Character In A String')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'ALGORITHMS',
+            'STRINGS')
+@allure.link(
+    url='https://www.codewars.com/kata/570f6436b29c708a32000826/train/python',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class FirstNonRepeatedTestCase(unittest.TestCase):
     """
     Testing first_non_repeated function
@@ -29,19 +36,18 @@ class FirstNonRepeatedTestCase(unittest.TestCase):
         Testing first_non_repeated function
         :return:
         """
-
         allure.dynamic.title("Testing first_non_repeated "
                              "function with various inputs")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
-
-            test_data = [
+            test_data: tuple = (
                 ("test", 'e'),
                 ("teeter", 'r'),
                 ("1122321235121222", '5'),
@@ -57,8 +63,7 @@ class FirstNonRepeatedTestCase(unittest.TestCase):
                  '21235121222dsfasddssdf1122321235121222dsfasddssdf112'
                  'p2321235121222dsfasddssdf1122321235121222dsfasddssdf', 'z'),
                 ('ogmhrsoqiklqfmhgnpjsrikmnlpfj', None),
-                ('knioolrpnutskmqmhqtriipjjushl', None),
-            ]
+                ('knioolrpnutskmqmhqtriipjjushl', None))
 
             for s, expected in test_data:
 
