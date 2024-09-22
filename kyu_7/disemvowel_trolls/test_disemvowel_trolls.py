@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Advanced Language Features")
@@ -27,6 +28,7 @@ from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
 @allure.link(
     url='https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class DisemvowelTestCase(unittest.TestCase):
     """
     Testing disemvowel function
@@ -37,6 +39,7 @@ class DisemvowelTestCase(unittest.TestCase):
         should become "Ths wbst s fr lsrs LL!"
         :return:
         """
+        global input_data
         allure.dynamic.title("a and b are equal")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -61,6 +64,7 @@ class DisemvowelTestCase(unittest.TestCase):
 
         for data in test_data:
             input_data, expected = data
+
             with allure.step("Enter test data ans assert the result"):
                 print_log(input=input_data,
                           expected=expected)
