@@ -1,11 +1,11 @@
-"""Beginner Series #3 Sum of Numbers"""
+"""
+Beginner Series #3 Sum of Numbers
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
-
-def get_sum(a, b):
+def get_sum(a: int, b: int) -> int:
     """
     Given two integers a and b,
     which can be positive or negative,
