@@ -37,7 +37,6 @@ def check_root(string: str) -> str:
         result *= s
 
     result += 1
-
     root: float = math.sqrt(result)
 
     if root % 1 == 0:
