@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Jaden Casing Strings
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def toJadenCase(string):
+def toJadenCase(string: str) -> str:
     """
     Convert strings to how they would
     be written by Jaden Smith. The strings
@@ -24,12 +26,9 @@ def toJadenCase(string):
     :param string:
     :return:
     """
-
-    list_string = string.split()
+    list_string: list = string.split()
 
     for i, el in enumerate(list_string):
         list_string[i] = el.capitalize()
 
-    new_string = ' '.join(list_string)
-
-    return new_string
+    return ' '.join(list_string)
