@@ -4,7 +4,6 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-
 CONVERSION: dict = {
     'plus': '+',
     'minus': '-'}
@@ -20,5 +19,4 @@ def calculate(s: str) -> str:
     for key, item in CONVERSION.items():
         if key in s:
             s = s.replace(key, item)
-
-    return f'{eval(s)}'
+    return f'{eval(s)}'  # pylint: disable=W0123
