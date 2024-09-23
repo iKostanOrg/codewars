@@ -58,7 +58,7 @@ class SharePriceTestCase(unittest.TestCase):
                 (1000, [0, 2, 3, 6], '1113.64'))
 
             for invested, changes, expected in test_data:
-                
+
                 print_log(invested=invested,
                           changes=changes,
                           expected=False)
