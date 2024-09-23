@@ -50,15 +50,15 @@ class SharePriceTestCase(unittest.TestCase):
 
         with allure.step("Enter invested, changes "
                          "and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 (100, [], '100.00'),
                 (100, [-50, 50], '75.00'),
                 (100, [-50, 100], '100.00'),
                 (100, [-20, 30], '104.00'),
-                (1000, [0, 2, 3, 6], '1113.64'),
-            ]
+                (1000, [0, 2, 3, 6], '1113.64'))
 
             for invested, changes, expected in test_data:
+                
                 print_log(invested=invested,
                           changes=changes,
                           expected=False)

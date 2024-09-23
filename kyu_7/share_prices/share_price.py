@@ -25,4 +25,4 @@ def share_price(invested: int, changes: list) -> str:
     for c in changes:
         invested = invested + ((invested * c) / 100.00)
 
-    return '{:.2f}'.format(invested)
+    return f'{invested:.2f}'
