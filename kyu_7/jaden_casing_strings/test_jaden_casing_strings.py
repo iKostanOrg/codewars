@@ -36,6 +36,7 @@ class JadenCasingStringsTestCase(unittest.TestCase):
         Simple positive test
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing toJadenCase function (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -44,7 +45,7 @@ class JadenCasingStringsTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
             quote = "How can mirrors be real if our eyes aren't real"
             expected = "How Can Mirrors Be Real If Our Eyes Aren't Real"
