@@ -35,6 +35,7 @@ class CalculateTestCase(unittest.TestCase):
         Testing calculate function with various test data
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing calculate function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -45,11 +46,11 @@ class CalculateTestCase(unittest.TestCase):
             "<p>In this kata, you will do addition and subtraction "
             "on a given string. The return value must be also a "
             "string.</p>")
-
-        test_data = [
+        # pylint: enable-msg=R0801
+        test_data: tuple = (
             ('1plus2plus3plus4', '10'),
             ('1minus2minus3minus4', '-8'),
-            ('1plus2plus3minus4', '2')]
+            ('1plus2plus3minus4', '2'))
 
         for s, expected in test_data:
             # pylint: disable-msg=R0801
