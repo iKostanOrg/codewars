@@ -46,6 +46,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
         Test lists with multiple digits
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("'multiply' function verification: "
                              "lists with multiple digits")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -55,7 +56,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Remove smallest value from "
                          "the start of the list"):
             self.assertEqual(remove_smallest([1, 2, 3, 4, 5]),
@@ -79,6 +80,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
         Test with empty list
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("'multiply' function verification "
                              "with empty list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -88,7 +90,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Remove smallest value from "
                          "the empty list"):
             self.assertEqual(remove_smallest([]),
@@ -100,6 +102,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
         Returns [] if list has only one element
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("'multiply' function verification "
                              "with one element list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -109,7 +112,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Remove smallest value from "
                          "the empty list with one element only"):
             i: int = 0
@@ -125,6 +128,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
         Returns a list that misses only one element
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("'multiply' function verification "
                              "with random list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -134,7 +138,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Remove smallest value from "
                          "the random list"):
             i: int = 0
