@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Powers of 3
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def largestPower(N: int) -> int:
@@ -11,7 +13,6 @@ def largestPower(N: int) -> int:
     :param N:
     :return:
     """
-
     result: int = 0
     n: int = 0
     while result < N:
