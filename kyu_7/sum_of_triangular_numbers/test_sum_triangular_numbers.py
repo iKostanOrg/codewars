@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sum of Triangular Numbers
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS NUMBERS MATHEMATICS ALGORITHMS ARITHMETIC
 
@@ -16,9 +18,14 @@ from kyu_7.sum_of_triangular_numbers.sum_triangular_numbers import sum_triangula
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Sum of Triangular Numbers')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'NUMBERS',
+            'MATHEMATICS',
+            'ALGORITHMS',
+            'ARITHMETIC')
+@allure.link(
+    url='https://www.codewars.com/kata/580878d5d27b84b64c000b51/train/python',
+    name='Source/Kata')
 class SumTriangularNumbersTestCase(unittest.TestCase):
     """
     Testing 'sum_triangular_numbers' function
@@ -30,27 +37,26 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         with negative numbers
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'sum_triangular_numbers' "
                              "with negative numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter negative number and verify the output"):
-            n = -291
-            expected = 0
-
+            n: int = -291
+            expected: int = 0
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 
         with allure.step("Enter negative number and verify the output"):
-            n = -971
-            expected = 0
-
+            n: int = -971
+            expected: int = 0
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 
@@ -60,19 +66,19 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         with zero as an input
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'sum_triangular_numbers' with zero")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter zero and verify the output"):
-            n = 0
-            expected = 0
-
+            n: int = 0
+            expected: int = 0
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 
@@ -82,29 +88,28 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         with positive numbers
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'sum_triangular_numbers' "
                              "with positive numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter a positive number as an input "
                          "and verify the output"):
-            n = 6
-            expected = 56
-
+            n: int = 6
+            expected: int = 56
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 
         with allure.step("Enter a positive number as an input "
                          "and verify the output"):
-            n = 34
-            expected = 7140
-
+            n: int = 34
+            expected: int = 7140
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 
@@ -114,20 +119,20 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         with big number as an input
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'sum_triangular_numbers' "
                              "with big number as an input")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter a big number as an input "
                          "and verify the output"):
-            n = 943
-            expected = 140205240
-
+            n:int = 943
+            expected:int = 140205240
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
