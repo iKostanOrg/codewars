@@ -35,6 +35,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
         a and b are equal
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("a and b are equal")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -43,7 +44,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Assert the result"):
             a = b = expected = 1
             print_log(a=a, b=b, expected=expected)
@@ -54,6 +55,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
         a an b are positive numbers
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("a an b are positive numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -62,7 +64,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Assert the result"):
             a = 0
             b = expected = 1
@@ -87,6 +89,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
         a or b is negative
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("a or b is negative")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -95,7 +98,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Assert the result"):
             a = 0
             b = -1
