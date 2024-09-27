@@ -29,6 +29,7 @@ class CalculateTestCase(unittest.TestCase):
     """
 
     def test_calculate(self):
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing count_letters_and_digits function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -38,13 +39,13 @@ class CalculateTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Test a method that can determine how many letters "
             "and digits are in a given string.</p>")
-
-        test_data = [
+        # pylint: enable-msg=R0801
+        test_data: tuple = (
             ('n!!ice!!123', 7),
             ('de?=?=tttes!!t', 8),
             ('', 0),
             ('!@#$%^&`~.', 0),
-            ('u_n_d_e_r__S_C_O_R_E', 10)]
+            ('u_n_d_e_r__S_C_O_R_E', 10))
 
         for s, expected in test_data:
             actual_result: int = count_letters_and_digits(s)
