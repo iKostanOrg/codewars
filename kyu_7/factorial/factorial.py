@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Sum of Numbers
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def factorial(n: int) -> int:
@@ -11,12 +13,12 @@ def factorial(n: int) -> int:
     :param n:
     :return:
     """
-
     if n < 0 or n > 12:
         raise ValueError('Invalid input: {}'.format(n))
 
-    result = 1
+    result: int = 1
     while n > 0:
         result *= n
         n -= 1
+
     return result

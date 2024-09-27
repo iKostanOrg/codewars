@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sum of Numbers
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ALGORITHMS NUMBERS
 
@@ -38,24 +40,25 @@ class FactorialTestCase(unittest.TestCase):
         ValueError (Python).
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'factorial' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter a number and verify the output"):
-            data = [
+            data: tuple = (
                 (0, 1, "factorial for 0 is 1"),
                 (1, 1, "factorial for 1 is 1"),
                 (2, 2, "factorial for 2 is 2"),
-                (3, 6, "factorial for 3 is 6"),
-            ]
+                (3, 6, "factorial for 3 is 6"))
 
             for n, expected, msg in data:
+                
                 print_log(n=n,
                           expected=expected,
                           msg=msg)
