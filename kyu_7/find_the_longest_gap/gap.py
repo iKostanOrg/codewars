@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Find the longest gap!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def gap(num: int) -> int:
@@ -13,7 +15,7 @@ def gap(num: int) -> int:
     :param num:
     :return:
     """
-    binary = "{0:b}".format(num)
+    binary: str = "{0:b}".format(num)
     g_max = g_cur = 0
 
     for i, char in enumerate(binary):
@@ -26,7 +28,7 @@ def gap(num: int) -> int:
     return g_max
 
 
-def calc_g_cur(g_cur, char):
+def calc_g_cur(g_cur: int, char: str) -> int:
     """
     Calculates g_cur
     :param g_cur:
@@ -40,9 +42,12 @@ def calc_g_cur(g_cur, char):
     return g_cur
 
 
-def calc_g_max(g_cur, g_max):
+def calc_g_max(g_cur: int, g_max: int) -> int:
     """
     Calculates g_max
+    :param g_cur:
+    :param g_max:
+    :return:
     """
     if g_cur > g_max:
         g_max = g_cur
