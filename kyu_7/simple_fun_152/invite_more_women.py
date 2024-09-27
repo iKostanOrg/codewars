@@ -19,7 +19,6 @@ def invite_more_women(arr: list) -> bool:
     :param arr:
     :return:
     """
-
     if not arr or arr == []:
         return False
 
