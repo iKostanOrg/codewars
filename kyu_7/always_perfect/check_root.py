@@ -40,6 +40,6 @@ def check_root(string: str) -> str:
     root: float = math.sqrt(result)
 
     if root % 1 == 0:
-        return '{}, {}'.format(result, int(root))
+        return f'{result}, {int(root)}'
     else:
         return 'not consecutive'
