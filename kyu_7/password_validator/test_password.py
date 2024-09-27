@@ -12,6 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_7.password_validator.password import password
 
+
 # pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
@@ -38,6 +39,7 @@ class PasswordTestCase(unittest.TestCase):
         Testing password function with various test inputs
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing password function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,9 +48,9 @@ class PasswordTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
-            test_data = [
+            test_data: tuple = (
                 ("Abcd1234", True),
                 ("Abcd123", False),
                 ("abcd1234", False),
@@ -58,8 +60,7 @@ class PasswordTestCase(unittest.TestCase):
                 (r"!@#$%^&*()-_+={}[]|\:;?/>.<,", False),
                 ("", False),
                 (" aA1----", True),
-                ("4aA1----", True),
-            ]
+                ("4aA1----", True))
 
             for string, expected in test_data:
                 print_log(string=string, expected=expected)
