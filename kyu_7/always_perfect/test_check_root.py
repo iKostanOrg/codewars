@@ -52,6 +52,7 @@ class CheckRootTestCase(unittest.TestCase):
         returns "not consecutive".
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing check_root function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -60,7 +61,7 @@ class CheckRootTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             test_data: tuple = (
                 ('4,5,6,7', '841, 29'),
