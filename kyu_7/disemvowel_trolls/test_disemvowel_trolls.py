@@ -39,6 +39,7 @@ class DisemvowelTestCase(unittest.TestCase):
         should become "Ths wbst s fr lsrs LL!"
         :return:
         """
+        # pylint: disable-msg=R0801
         global input_data
         allure.dynamic.title("a and b are equal")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -48,7 +49,7 @@ class DisemvowelTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             ("This website is for losers LOL!",
              "Ths wbst s fr lsrs LL!"),
