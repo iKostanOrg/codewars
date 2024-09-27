@@ -41,6 +41,7 @@ class LengthTestCase(unittest.TestCase):
         (head), and returns the length of the list.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title('Testing length function where head = None')
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,7 +50,7 @@ class LengthTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step('Enter test node and verify the output'):
             head = None
             self.assertEqual(length(head), 0)
@@ -62,6 +63,7 @@ class LengthTestCase(unittest.TestCase):
         (head), and returns the length of the list.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title('Testing length function')
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -70,13 +72,13 @@ class LengthTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step('Enter test node and verify the output'):
             n1 = Node(1)
             n2 = Node(2, n1)
             n3 = Node(3, n2)
             head = Node(4, n3)
-            expected = 4
+            expected: int = 4
 
             print_log(node=head, expected=expected)
             self.assertEqual(expected, length(head))
