@@ -50,6 +50,7 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
 
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing two_decimal_places function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -58,17 +59,18 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass a number and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 (10.1289767789, 10.12,
                  "didn't work for 10.1289767789"),
                 (-7488.83485834983, -7488.83,
                  "didn't work for -7488.83485834983"),
                 (4.653725356, 4.65,
-                 "didn't work for 4.653725356")]
+                 "didn't work for 4.653725356"))
 
             for number, expected, msg in test_data:
+
                 print_log(number=number,
                           expected=expected)
 
