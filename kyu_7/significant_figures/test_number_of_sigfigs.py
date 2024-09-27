@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Significant Figures
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS MATHEMATICS NUMBERS STRINGS
 
@@ -16,9 +18,13 @@ from kyu_7.significant_figures.number_of_sigfigs import number_of_sigfigs
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Significant Figures')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('ALGORITHMS',
+            'MATHEMATICS',
+            'NUMBERS',
+            'STRINGS')
+@allure.link(
+    url='https://www.codewars.com/kata/5d9fe0ace0aad7001290acb7/train/python',
+    name='Source/Kata')
 class NumberOfSigFigsTestCase(unittest.TestCase):
     """
     Testing number_of_sigfigs function
@@ -30,17 +36,19 @@ class NumberOfSigFigsTestCase(unittest.TestCase):
         with various test inputs
         :return:
         """
-
-        allure.dynamic.title('Testing number_of_sigfigs function')
+        # pylint: disable-msg=R0801
+        allure.dynamic.title(
+            'Testing number_of_sigfigs function')
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 (1, "1"),
                 (0, "0"),
                 (1, "0003"),
@@ -55,8 +63,7 @@ class NumberOfSigFigsTestCase(unittest.TestCase):
                 (9, '03.27310000'),
                 (10, '23625700.00'),
                 (10, '09.971730000'),
-                (10, '0000.0673560000')
-            ]
+                (10, '0000.0673560000'))
 
             for exp, inp in test_data:
                 print_log(inp=inp, expected=exp)

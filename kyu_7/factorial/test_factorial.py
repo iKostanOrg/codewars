@@ -58,7 +58,7 @@ class FactorialTestCase(unittest.TestCase):
                 (3, 6, "factorial for 3 is 6"))
 
             for n, expected, msg in data:
-                
+
                 print_log(n=n,
                           expected=expected,
                           msg=msg)
