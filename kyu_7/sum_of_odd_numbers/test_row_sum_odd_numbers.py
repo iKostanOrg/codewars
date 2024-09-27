@@ -36,6 +36,7 @@ class OddRowTestCase(unittest.TestCase):
     """
 
     def test_row_sum_odd_numbers(self):
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing row_sum_odd_numbers function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,7 +47,7 @@ class OddRowTestCase(unittest.TestCase):
             "<p>Given the triangle of consecutive odd numbers "
             "verify that the function calculates the row sums "
             "of this triangle from the row index (starting at index 1)</p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             (1, 1),
             (2, 8),
