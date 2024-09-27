@@ -113,6 +113,7 @@ class EasyLineTestCase(unittest.TestCase):
         Testing easy_line function
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title(
             "Testing easy_line function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -124,7 +125,7 @@ class EasyLineTestCase(unittest.TestCase):
             "<p>The function should take n (with: n>= 0) as parameter "
             "and must return the sum of the squares of the binomial "
             "coefficients on line n.</p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             (0, 1),
             (1, 2),
