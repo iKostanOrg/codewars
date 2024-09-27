@@ -33,6 +33,7 @@ class MenFromBoysTestCase(unittest.TestCase):
     """
     Testing men_from_boys function
     """
+
     def test_men_from_boys(self):
         """
         Testing men_from_boys function with
@@ -58,6 +59,7 @@ class MenFromBoysTestCase(unittest.TestCase):
         While odds in descending.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title('Testing men_from_boys function')
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -66,10 +68,10 @@ class MenFromBoysTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step('Given an list of integers => '
                          'separate the even numbers from the odds'):
-            test_data = [
+            test_data: tuple = (
                 ([7, 3, 14, 17],
                  [14, 17, 7, 3]),
                 ([2, 43, 95, 90, 37],
@@ -99,8 +101,7 @@ class MenFromBoysTestCase(unittest.TestCase):
                 ([63, -57, 76, -85, 88, 2, -28],
                  [-28, 2, 76, 88, 63, -57, -85]),
                 ([49, 818, -282, 900, 928, 281, -282, -1],
-                 [-282, 818, 900, 928, 281, 49, -1])
-            ]
+                 [-282, 818, 900, 928, 281, 49, -1]))
 
             for arr, expected in test_data:
                 print_log(arr=arr, expected=expected)
