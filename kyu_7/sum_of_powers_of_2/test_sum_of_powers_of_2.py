@@ -36,6 +36,7 @@ class SumOfPowerOfTwoTestCase(unittest.TestCase):
         unique numbers.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("powers function should return "
                              "an array of unique numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -45,7 +46,7 @@ class SumOfPowerOfTwoTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass n = 1 and verify the output"):
             number: int = 1
             expected = [1]
