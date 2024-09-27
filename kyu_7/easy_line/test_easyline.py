@@ -36,11 +36,13 @@ class EasyLineTestCase(unittest.TestCase):
     The function will take n (with: n>= 0) as parameter and will
     return the sum of the squares of the binomial coefficients on line n.
     """
+
     def test_easy_line_exception(self):
         """
         Testing easy line function exception
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title(
             "Testing easy_line function exception message")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -51,7 +53,7 @@ class EasyLineTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should raise exception for invalid "
             "n (n < 0) values.</p>")
-
+        # pylint: enable-msg=R0801
         n: int = -1
         error_txt: str = f'ERROR: invalid n ({n}) value. n must be >= 0'
 
