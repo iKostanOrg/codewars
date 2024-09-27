@@ -42,6 +42,7 @@ class SaveTestCase(unittest.TestCase):
         to save into your Hard Disk Drive.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'save' function: negative")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -50,12 +51,11 @@ class SaveTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter sizes, hd and verify the output"):
-            data = [
+            data: tuple = (
                 ([11, 13, 15, 17, 19], 8, 0),
-                ([45], 12, 0),
-            ]
+                ([45], 12, 0))
 
             for sizes, hd, expected in data:
                 print_log(sizes=sizes,
@@ -84,16 +84,16 @@ class SaveTestCase(unittest.TestCase):
             "<p></p>")
 
         with allure.step("Enter sizes, hd and verify the output"):
-            data = [
+            data: tuple = (
                 ([4, 4, 4, 3, 3], 12, 3),
                 ([4, 4, 4, 3, 3], 11, 2),
                 ([4, 8, 15, 16, 23, 42], 108, 6),
                 ([13], 13, 1),
                 ([1, 2, 3, 4], 250, 4),
-                ([100], 500, 1),
-            ]
+                ([100], 500, 1))
 
             for sizes, hd, expected in data:
+
                 print_log(sizes=sizes,
                           hd=hd,
                           expected=expected)
