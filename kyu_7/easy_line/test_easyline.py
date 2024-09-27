@@ -69,6 +69,7 @@ class EasyLineTestCase(unittest.TestCase):
         Testing calc_combinations_per_row function
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title(
             "Testing calc_combinations_per_row function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -81,7 +82,7 @@ class EasyLineTestCase(unittest.TestCase):
             "Pascal's Triangle "
             "combination per that row "
             "coefficients on line n.</p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             (0, 0, 1),
             (1, 1, 1),
