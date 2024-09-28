@@ -74,5 +74,5 @@ def remove_extra_leading_zeroes(number: str) -> str:
 
     if after_dot == new_after_dot:
         return new_number
-    else:
-        return new_number + ('0' * (after_dot - new_after_dot))
+
+    return new_number + ('0' * (after_dot - new_after_dot))
