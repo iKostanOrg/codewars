@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers import row_sum_odd_numbers
+from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
+    import row_sum_odd_numbers
 
 
 @allure.epic('7 kyu')
@@ -36,6 +37,10 @@ class OddRowTestCase(unittest.TestCase):
     """
 
     def test_row_sum_odd_numbers(self):
+        """
+        Testing the function with various test data
+        :return:
+        """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing row_sum_odd_numbers function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
