@@ -63,12 +63,12 @@ class MakeClassTestCase(unittest.TestCase):
                           weight="50lb",
                           color="brown")
 
-            dog2 = Animel("Bob",
-                          "Dog",
-                          5,
-                          "good",
-                          "50lb",
-                          "brown")
+            dog2 = Animel(name="Bob",
+                          species="Dog",
+                          age=5,
+                          health="good",
+                          weight="50lb",
+                          color="brown")
 
             test_data = ((dog1.name, dog2.name),
                          (dog1.species, dog2.species),
