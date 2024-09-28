@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.help_bob_count_letters_and_digits.count_letters_and_digits import count_letters_and_digits
+from kyu_7.help_bob_count_letters_and_digits.count_letters_and_digits \
+    import (count_letters_and_digits)
 
 
 @allure.epic('7 kyu')
@@ -28,7 +29,11 @@ class CalculateTestCase(unittest.TestCase):
     Testing count_letters_and_digits function
     """
 
-    def test_calculate(self):
+    def test_count_letters_and_digits(self):
+        """
+        Testing the function with various test data
+        :return:
+        """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing count_letters_and_digits function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
