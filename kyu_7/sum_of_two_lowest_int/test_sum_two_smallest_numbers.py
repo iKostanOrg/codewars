@@ -23,6 +23,9 @@ from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int import sum_two_smallest_nu
     url='https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/python',
     name='Source/Kata')
 class SumTwoSmallestNumbersTestCase(unittest.TestCase):
+    """
+    Testing sum_two_smallest_numbers function
+    """
 
     def test_sum_two_smallest_numbers(self):
         """
