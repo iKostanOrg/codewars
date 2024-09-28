@@ -11,8 +11,14 @@ def make_class(*args):
     :param args:
     :return:
     """
+
+    # pylint: disable-msg=R0903
     class Class:
+        """
+        Generic class
+        """
         def __init__(self, *vals):
             for arg, val in zip(args, vals):
                 setattr(self, arg, val)
+    # pylint: enable-msg=R0903
     return Class
