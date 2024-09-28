@@ -48,6 +48,7 @@ class MakeClassTestCase(unittest.TestCase):
             "\"weight\", \"color\")</p>")
         # pylint: enable-msg=R0801
         with allure.step("Test class creation by using a function"):
+
             Animel = make_class("name",
                                 "species",
                                 "age",
@@ -55,12 +56,12 @@ class MakeClassTestCase(unittest.TestCase):
                                 "weight",
                                 "color")
 
-            dog1 = Animal("Bob",
-                          "Dog",
-                          5,
-                          "good",
-                          "50lb",
-                          "brown")
+            dog1 = Animal(name="Bob",
+                          species="Dog",
+                          age=5,
+                          health="good",
+                          weight="50lb",
+                          color="brown")
 
             dog2 = Animel("Bob",
                           "Dog",
