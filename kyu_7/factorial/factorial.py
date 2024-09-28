@@ -14,7 +14,7 @@ def factorial(n: int) -> int:
     :return:
     """
     if n < 0 or n > 12:
-        raise ValueError('Invalid input: {}'.format(n))
+        raise ValueError(f'Invalid input: {n}')
 
     result: int = 1
     while n > 0:
