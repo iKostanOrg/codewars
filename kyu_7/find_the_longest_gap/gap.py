@@ -15,7 +15,7 @@ def gap(num: int) -> int:
     :param num:
     :return:
     """
-    binary: str = "{0:b}".format(num)
+    binary: str = f"{num:b}"
     g_max = g_cur = 0
 
     for i, char in enumerate(binary):
@@ -49,6 +49,4 @@ def calc_g_max(g_cur: int, g_max: int) -> int:
     :param g_max:
     :return:
     """
-    if g_cur > g_max:
-        g_max = g_cur
-    return g_max
+    return max(g_cur, g_max)
