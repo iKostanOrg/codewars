@@ -41,5 +41,5 @@ def check_root(string: str) -> str:
 
     if root % 1 == 0:
         return f'{result}, {int(root)}'
-    else:
-        return 'not consecutive'
+
+    return 'not consecutive'
