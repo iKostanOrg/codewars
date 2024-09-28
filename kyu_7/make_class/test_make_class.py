@@ -62,21 +62,22 @@ class MakeClassTestCase(unittest.TestCase):
                           health="good",
                           weight="50lb",
                           color="brown")
-
+            # pylint: disable-msg=E1123
             dog2 = Animel(name="Bob",
                           species="Dog",
                           age=5,
                           health="good",
                           weight="50lb",
                           color="brown")
-
+            # pylint: enable-msg=E1123
+            # pylint: disable-msg=E1101
             test_data = ((dog1.name, dog2.name),
                          (dog1.species, dog2.species),
                          (dog1.age, dog2.age),
                          (dog1.health, dog2.health),
                          (dog1.weight, dog2.weight),
                          (dog1.color, dog2.color))
-
+            # pylint: enable-msg=E1101
             for td in test_data:
                 a = td[0]
                 b = td[1]
