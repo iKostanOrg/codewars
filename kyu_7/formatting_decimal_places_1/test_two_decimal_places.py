@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.formatting_decimal_places_1.two_decimal_places import two_decimal_places
+from kyu_7.formatting_decimal_places_1.two_decimal_places \
+    import two_decimal_places
 
 
 # pylint: disable-msg=R0801
@@ -24,7 +25,7 @@ from kyu_7.formatting_decimal_places_1.two_decimal_places import two_decimal_pla
             'ALGORITHMS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/5641c3f809bf31f008000042/train/python',
+    url='https://www.codewars.com/kata/5641c3f809bf31f008000042',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class TwoDecimalPlacesTestCase(unittest.TestCase):
