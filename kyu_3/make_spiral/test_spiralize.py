@@ -89,7 +89,6 @@ class SpiralizeTestCase(unittest.TestCase):
         for size, expected in test_data:
 
             with allure.step("Enter spiral list size and verify the result"):
-                
                 result: list = spiralize(size)
                 print_log(size=size,
                           result=result,
