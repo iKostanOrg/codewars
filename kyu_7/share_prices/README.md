@@ -21,4 +21,4 @@ Have fun!
 
 > Hint: Try to write the function in a functional manner!
 
-[Source](https://www.codewars.com/kata/5603a4dd3d96ef798f000068/train/python)
+[Source](https://www.codewars.com/kata/5603a4dd3d96ef798f000068)
