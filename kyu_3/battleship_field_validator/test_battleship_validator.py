@@ -154,11 +154,9 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
-             False, 'Must return FALSE if ships are in contact')
-        )
+             False, 'Must return FALSE if ships are in contact'))
 
         for field, expected, message in test_data:
-
             actual_result: bool = validate_battlefield(field)
 
             print_log(field=field,
@@ -166,8 +164,8 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
                       message=message,
                       actual_result=actual_result)
 
-            step_txt: str = (f"Field validation: "
-                        f"expected -> {expected}, actual -> {actual_result}")
+            step_txt: str = (f"Field validation: expected -> {expected}, "
+                             f"actual -> {actual_result}")
 
             with allure.step(step_txt):
                 self.assertEqual(expected, actual_result, msg=message)
