@@ -66,7 +66,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Assert the result"):
-            a:int = 0
+            a: int = 0
             b = expected = 1
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
@@ -78,8 +78,8 @@ class SumOfNumbersTestCase(unittest.TestCase):
             self.assertEqual(get_sum(a, b), expected)
 
         with allure.step("Assert the result"):
-            a:int = 1
-            b:int = 2
+            a: int = 1
+            b: int = 2
             expected = a + b
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
@@ -100,20 +100,20 @@ class SumOfNumbersTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Assert the result"):
-            a:int = 0
+            a: int = 0
             b = expected = -1
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
 
         with allure.step("Assert the result"):
-            a:int = -1
-            b:int = 0
-            expected:int = a + b
+            a: int = -1
+            b: int = 0
+            expected: int = a + b
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
 
         with allure.step("Assert the result"):
-            a:int = -1
+            a: int = -1
             b = expected = 2
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
