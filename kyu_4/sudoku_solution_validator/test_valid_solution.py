@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sudoku Solution Validator
 
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 # ALGORITHMS DATA STRUCTURES VALIDATION
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
 
@@ -16,7 +18,9 @@ from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
 @allure.sub_suite("Unit Tests")
 @allure.feature("Validation")
 @allure.story('Sudoku Solution Validator')
-@allure.tag('ALGORITHMS', 'DATA STRUCTURES', 'VALIDATION')
+@allure.tag('ALGORITHMS',
+            'DATA STRUCTURES',
+            'VALIDATION')
 @allure.link(url='https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python',
              name='Source/Kata')
 class ValidSolutionTestCase(unittest.TestCase):
@@ -37,22 +41,26 @@ class ValidSolutionTestCase(unittest.TestCase):
         cell only contains integers from 0 to 9.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing validSolution")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test a function validSolution/ValidateSolution/valid_solution()"
-                                        " that accepts a 2D array representing a Sudoku board, and returns"
-                                        " true if it is a valid solution, or false otherwise. The cells of"
-                                        " the sudoku board may also contain 0's, which will represent empty"
-                                        " cells. Boards containing one or more zeroes are considered to be"
-                                        " invalid solutions.</p>"
-                                        "<p>The board is always 9 cells by 9 cells, and every "
-                                        "cell only contains integers from 0 to 9.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test a function valid_solution()"
+            " that accepts a 2D array representing a Sudoku"
+            " board, and returns true if it is a valid "
+            "solution, or false otherwise. The cells of the"
+            " sudoku board may also contain 0's, which will"
+            " represent empty cells. Boards containing one"
+            " or more zeroes are considered to be invalid"
+            " solutions.</p>"
+            "<p>The board is always 9 cells by 9 cells,"
+            " and every cell only contains integers from"
+            " 0 to 9.</p>")
+        # pylint: enable-msg=R0801
         test_data = [
             ([[5, 3, 4, 6, 7, 8, 9, 1, 2],
               [6, 7, 2, 1, 9, 5, 3, 4, 8],
@@ -92,9 +100,7 @@ class ValidSolutionTestCase(unittest.TestCase):
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter test list ({}) and "
-                             "verify the output ({}) vs "
-                             "expected ({})".format(board,
-                                                    actual_result,
-                                                    expected)):
+            with allure.step(f"Enter test list ({board}) and "
+                             f"verify the output ({actual_result}) vs "
+                             f"expected ({expected})"):
                 self.assertEqual(expected, actual_result)

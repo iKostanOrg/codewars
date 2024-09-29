@@ -1,6 +1,9 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Next bigger number with the same digits
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def next_bigger(n: int) -> int:
@@ -13,7 +16,7 @@ def next_bigger(n: int) -> int:
     # 1. Starting from last digit of given number, find the first digit
     # which breaks the sorted ordering. Let the index of this found
     # digit be 'i' and the digit be number[i].
-    digits: list = [char for char in str(n)]
+    digits: list = list(str(n))
     i: int = digit_that_breaks_ordering_index(digits)
     # 2. Find the next greater digit in the right portion of number[i] - that
     # is from digit at index i+1 to last digit. Let that digit be number[j]
@@ -58,13 +61,13 @@ def next_greater_digit_index(digits: list, i: int) -> int:
     current = ''
     if len(digits[i:]) == 1 and digits[1] > digits[0]:
         return i
-    else:
-        for index, digit in enumerate(digits[i:]):
-            if digits[i - 1] < digit:
-                if current == '':
-                    current = digit
-                    j = i + index
-                elif current > digit:
-                    current = digit
-                    j = i + index
+
+    for index, digit in enumerate(digits[i:]):
+        if digits[i - 1] < digit:
+            if current == '':
+                current = digit
+                j = i + index
+            elif current > digit:
+                current = digit
+                j = i + index
     return j

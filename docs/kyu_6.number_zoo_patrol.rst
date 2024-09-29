@@ -11,6 +11,7 @@ kyu\_6.number\_zoo\_patrol.missing\_number module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.number\_zoo\_patrol.test\_find\_missing\_number module
 -------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.number\_zoo\_patrol.test\_find\_missing\_number module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

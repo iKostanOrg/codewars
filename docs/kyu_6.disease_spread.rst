@@ -11,6 +11,7 @@ kyu\_6.disease\_spread.epidemic module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.disease\_spread.epidemic\_test\_data module
 --------------------------------------------------
@@ -19,6 +20,7 @@ kyu\_6.disease\_spread.epidemic\_test\_data module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.disease\_spread.test\_epidemic module
 --------------------------------------------
@@ -27,7 +29,7 @@ kyu\_6.disease\_spread.test\_epidemic module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -36,3 +38,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

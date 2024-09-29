@@ -11,6 +11,7 @@ kyu\_8.grasshopper\_messi\_goals\_function.messi\_goals\_function module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.grasshopper\_messi\_goals\_function.test\_messi\_goals\_function module
 ------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.grasshopper\_messi\_goals\_function.test\_messi\_goals\_function module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

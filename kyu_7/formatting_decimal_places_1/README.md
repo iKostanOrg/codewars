@@ -19,4 +19,4 @@ Don't round the numbers! Just cut them after two decimal places!
 >
 > 14.3286 is 14.33
 
-[Source](https://www.codewars.com/kata/5641c3f809bf31f008000042/train/python)
+[Source](https://www.codewars.com/kata/5641c3f809bf31f008000042)

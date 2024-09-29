@@ -11,6 +11,7 @@ kyu\_7.find\_the\_longest\_gap.gap module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.find\_the\_longest\_gap.test\_gap module
 -----------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.find\_the\_longest\_gap.test\_gap module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

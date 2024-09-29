@@ -11,6 +11,7 @@ kyu\_8.well\_of\_ideas\_easy\_version.test\_well\_of\_ideas\_easy\_version modul
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.well\_of\_ideas\_easy\_version.well\_of\_ideas\_easy\_version module
 ---------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.well\_of\_ideas\_easy\_version.well\_of\_ideas\_easy\_version module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

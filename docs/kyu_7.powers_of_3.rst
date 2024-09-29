@@ -11,6 +11,7 @@ kyu\_7.powers\_of\_3.largest\_power module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.powers\_of\_3.test\_largest\_power module
 ------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.powers\_of\_3.test\_largest\_power module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

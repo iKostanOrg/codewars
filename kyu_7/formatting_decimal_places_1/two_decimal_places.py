@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Formatting decimal places #1
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def two_decimal_places(number):
+def two_decimal_places(number) -> float:
     """
     Each floating-point number should be formatted that
     only the first two decimal places are returned.
@@ -11,10 +13,11 @@ def two_decimal_places(number):
     You don't need to check whether the input is a valid
     number because only valid numbers are used in the tests.
 
-	Don't round the numbers! Just cut them after two decimal
-	places!
+    Don't round the numbers! Just cut them after two decimal
+    places!
+
     :param number:
-    :return:
+    :return: float
     """
-    number = str(number)
+    number: str = str(number)
     return float(number[0:number.index('.') + 3])

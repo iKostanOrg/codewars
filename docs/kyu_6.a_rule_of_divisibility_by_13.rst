@@ -11,6 +11,7 @@ kyu\_6.a\_rule\_of\_divisibility\_by\_13.test\_thirt module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.a\_rule\_of\_divisibility\_by\_13.thirt module
 -----------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.a\_rule\_of\_divisibility\_by\_13.thirt module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

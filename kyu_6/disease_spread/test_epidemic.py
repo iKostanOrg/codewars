@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Disease Spread
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.disease_spread.epidemic import epidemic
 from kyu_6.disease_spread.epidemic_test_data import EpidemicTestData
@@ -18,20 +20,30 @@ from kyu_6.disease_spread.epidemic_test_data import EpidemicTestData
 @allure.feature('Math')
 @allure.story('Disease Spread')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python',
+    name='Source/Kata')
 class EpidemicTestCase(unittest.TestCase):
+    """
+    Testing for solution Disease Spread
+    """
     def test_epidemic(self):
+        """
+        Testing epidemic function
+        :return:
+        """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing epidemic function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>The function epidemic should return the maximum number "
-                                        "of infected as an integer (truncate to integer the result "
-                                        "of max(I)).</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function epidemic should return the maximum number "
+            "of infected as an integer (truncate to integer the result "
+            "of max(I)).</p>")
+        # pylint: enable-msg=R0801
         # tm , n, s0, i0, b, a, expected
         test_data = (
             EpidemicTestData(tm=18, n=432, s0=1004, i0=1,
@@ -64,11 +76,15 @@ class EpidemicTestCase(unittest.TestCase):
             b = etd.b
             a = etd.a
             expected = etd.expected
-            actual_result = epidemic(tm, n, s0, i0, b, a)
+            actual_result = epidemic(tm=tm, n=n, s0=s0, i0=i0, b=b, a=a)
 
-            with allure.step("Enter test data ({}) and verify the "
-                             "expected output ({}) vs actual result ({})".format(etd,
-                                                                                 expected,
-                                                                                 actual_result)):
-                print_log(etd=etd, expected=expected, result=actual_result)
-                self.assertEqual(expected, actual_result)
+            with allure.step(f"Enter test data ({etd}) and verify the "
+                             f"expected output ({expected}) vs "
+                             f"actual result ({actual_result})"):
+
+                print_log(etd=etd,
+                          expected=expected,
+                          result=actual_result)
+
+                self.assertEqual(expected,
+                                 actual_result)

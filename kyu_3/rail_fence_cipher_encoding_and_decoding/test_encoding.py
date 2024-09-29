@@ -1,28 +1,35 @@
 """
 Testing Encoding functionality
+Created by Egor Kostan.
+
+GitHub: https://github.com/ikostan
 """
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
 # ALGORITHMS CIPHERS CRYPTOGRAPHY SECURITY STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
     import encode_rail_fence_cipher
 
 
+# pylint: disable-msg=R0801
 @allure.epic('3 kyu')
 @allure.parent_suite('Competent')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Rail Fence Cipher: Encoding and Decoding')
-@allure.tag('ALGORITHMS', 'CIPHERS', 'CRYPTOGRAPHY', 'SECURITY', 'STRINGS')
+@allure.tag('ALGORITHMS',
+            'CIPHERS',
+            'CRYPTOGRAPHY',
+            'SECURITY',
+            'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python',
+    url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class EncodingTestCase(unittest.TestCase):
     """
     Testing Encoding functionality
@@ -32,7 +39,7 @@ class EncodingTestCase(unittest.TestCase):
         """
         Testing Encoding functionality
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Encoding functionality")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -43,8 +50,8 @@ class EncodingTestCase(unittest.TestCase):
             "<p>Verify cipher function. This \"encode\" is used to encode "
             "a string by placing each character successively in a "
             "diagonal along a set of \"rails\". </p>")
-
-        test_data = (
+        # pylint: enable-msg=R0801
+        test_data: tuple = (
             ("WEAREDISCOVEREDFLEEATONCE", 3, "WECRLTEERDSOEEFEAOCAIVDEN"),
             ("Hello, World!", 3, "Hoo!el,Wrdl l"),
             ("Hello, World!", 4, "H !e,Wdloollr"),
@@ -56,7 +63,9 @@ class EncodingTestCase(unittest.TestCase):
         )
 
         for string, n, expected in test_data:
-            actual_result = encode_rail_fence_cipher(string, n)
+
+            actual_result: str = encode_rail_fence_cipher(string, n)
+
             print_log(string=string,
                       n=n,
                       expected=expected,
@@ -64,4 +73,5 @@ class EncodingTestCase(unittest.TestCase):
 
             with allure.step("Enter a test string and compare "
                              "the output vs expected result"):
+
                 self.assertEqual(expected, actual_result)

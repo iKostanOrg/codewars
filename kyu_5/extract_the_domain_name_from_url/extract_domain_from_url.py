@@ -1,10 +1,8 @@
 """
 Extract the domain name from a URL
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
 def domain_name(url: str) -> str:
@@ -15,7 +13,7 @@ def domain_name(url: str) -> str:
     :param url: URL as a string
     :return: domain name as a string
     """
-    result = ''
+    result: str = ''
     for url_segment in url.split('/'):
         if '.' in url_segment:
             if 'www' in url_segment:

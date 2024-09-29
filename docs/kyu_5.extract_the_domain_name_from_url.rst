@@ -11,6 +11,7 @@ kyu\_5.extract\_the\_domain\_name\_from\_url.extract\_domain\_from\_url module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.extract\_the\_domain\_name\_from\_url.test\_domain\_name module
 ----------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.extract\_the\_domain\_name\_from\_url.test\_domain\_name module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

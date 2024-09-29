@@ -1,17 +1,14 @@
 """
 Epidemic Test Data Class
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 
 class EpidemicTestData:
     """
     Epidemic Test Data Class
     """
-
     def __init__(self, **kwargs):
         # tm, n, s0, i0, b, a, expected
         self.__tm = kwargs['tm']
@@ -26,7 +23,6 @@ class EpidemicTestData:
     def tm(self):
         """
         Returns tm value
-
         :return:
         """
         return self.__tm
@@ -86,14 +82,9 @@ class EpidemicTestData:
         return self.__expected
 
     def __repr__(self):
-        return 'tm: {}, n: {}, s0: {}, i0: {}, ' \
-               'b: {}, a: {}, expected: {}'.format(self.tm,
-                                                   self.n,
-                                                   self.s0,
-                                                   self.i0,
-                                                   self.b,
-                                                   self.a,
-                                                   self.expected)
+        return (f'tm: {self.tm}, n: {self.n}, s0: {self.s0}, '
+                f'i0: {self.i0}, b: {self.b}, a: {self.a}, '
+                f'expected: {self.expected}')
 
     def __eq__(self, other):
         """

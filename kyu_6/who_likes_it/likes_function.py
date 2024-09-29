@@ -1,25 +1,32 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Who likes it?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def likes(names: list) -> str:
     """
-    A function which must take in input array, containing the names of people
-    who like an item. It must return the display text.
+    A function which must take in input array, containing the
+    names of people who like an item. It must return the
+    display text.
 
-    For 4 or more names, the number in and 2 others simply increases.
+    For 4 or more names, the number in and 2 others simply
+    increases.
 
-    :param names: input array, containing the names of people who like an item
+    :param names: input array, containing the names of people
+                  who like an item
     :return: the display text
     """
     if not names:
         return 'no one likes this'
 
     if len(names) == 1:
-        return '{} likes this'.format(names[0])
+        return f'{names[0]} likes this'
 
     if 1 < len(names) <= 3:
-        return '{} and {} like this'.format(', '.join(names[:len(names) - 1]), names[-1])
+        return (f'{', '.join(names[:len(names) - 1])} and '
+                f'{names[-1]} like this')
 
-    return '{} and {} others like this'.format(', '.join(names[:2]), len(names) - 2)
+    return (f'{', '.join(names[:2])} and '
+            f'{len(names) - 2} others like this')

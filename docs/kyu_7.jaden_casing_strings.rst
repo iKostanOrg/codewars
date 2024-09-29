@@ -11,6 +11,7 @@ kyu\_7.jaden\_casing\_strings.jaden\_casing\_strings module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.jaden\_casing\_strings.test\_jaden\_casing\_strings module
 -----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.jaden\_casing\_strings.test\_jaden\_casing\_strings module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

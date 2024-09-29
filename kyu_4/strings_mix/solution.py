@@ -1,8 +1,9 @@
-"""Strings Mix"""
+"""
+Solution for -> Strings Mix
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import string
 
@@ -23,22 +24,25 @@ def mix(s1: str, s2: str) -> str:
     s1_results: dict = get_counters(s1)
     s2_results: dict = get_counters(s2)
     keys: list = sorted(
-        list(set([key for key in s1_results] + [key for key in s2_results])))
+        list(
+            set(
+                list(s1_results.keys()) + list(s2_results.keys())
+            )))
 
-    results: list = list()
+    results: list = []
     for key in keys:
         if key in s2_results and key in s1_results:
             if s1_results[key] == s2_results[key]:
-                results.append('=:{}'.format(key * s1_results[key]))
+                results.append(f'=:{key * s1_results[key]}')
             elif s1_results[key] > s2_results[key]:
-                results.append('1:{}'.format(key * s1_results[key]))
+                results.append(f'1:{key * s1_results[key]}')
             else:
-                results.append('2:{}'.format(key * s2_results[key]))
+                results.append(f'2:{key * s2_results[key]}')
         else:
             if key in s1_results:
-                results.append('1:{}'.format(key * s1_results[key]))
+                results.append(f'1:{key * s1_results[key]}')
             else:
-                results.append('2:{}'.format(key * s2_results[key]))
+                results.append(f'2:{key * s2_results[key]}')
 
     return '/'.join(sort_results(results))
 
@@ -52,9 +56,9 @@ def sort_results(results: list) -> list:
     :param results:
     :return:
     """
-    results = sorted(results)
+    results: list = sorted(results)
+    is_sorted: bool = False
 
-    is_sorted = False
     while not is_sorted:
         is_sorted = True
         for i, result in enumerate(results):
@@ -72,7 +76,12 @@ def sort_results(results: list) -> list:
 
 
 def get_counters(s: str) -> dict:
-    s_results: dict = dict()
+    """
+    Get counters
+    :param s: str
+    :return: dict
+    """
+    s_results: dict = {}
     for char in s:
         counter = s.count(char)
         if char in LOWERCASE and counter > 1 and char not in s_results:

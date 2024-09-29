@@ -46,4 +46,4 @@ easyLine(50) => 100891344545564193334812497256
 -   [Binomial Theorem - General Formula - CBSE 11](https://www.youtube.com/watch?v=MDaHBKx1IyE&list=PLmdFyQYShrjf2BlDFvO-kHT2ftf05yxfR&index=2)
 -   [Pascal's triangle for binomial expansion | Algebra II | Khan Academy](https://www.youtube.com/watch?v=v9Evg2tBdRk)
 
-[Source](https://www.codewars.com/kata/56e7d40129035aed6c000632/train/python)
+[Source](https://www.codewars.com/kata/56e7d40129035aed6c000632)

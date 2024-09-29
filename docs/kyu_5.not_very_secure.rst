@@ -11,6 +11,7 @@ kyu\_5.not\_very\_secure.alphanumeric module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.not\_very\_secure.test\_alphanumeric module
 --------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.not\_very\_secure.test\_alphanumeric module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

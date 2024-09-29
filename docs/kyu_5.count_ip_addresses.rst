@@ -11,6 +11,7 @@ kyu\_5.count\_ip\_addresses.ips\_between module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.count\_ip\_addresses.test\_ips\_between module
 -----------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.count\_ip\_addresses.test\_ips\_between module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

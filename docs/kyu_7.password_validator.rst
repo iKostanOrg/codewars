@@ -11,6 +11,7 @@ kyu\_7.password\_validator.password module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_7.password\_validator.test\_password module
 ------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_7.password\_validator.test\_password module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

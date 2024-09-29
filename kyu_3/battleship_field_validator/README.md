@@ -34,4 +34,4 @@ accordingly to the following rules:
 This is all you need to solve this kata. If you're interested in more information
 about the game, visit [this link](http://en.wikipedia.org/wiki/Battleship_(game)).
 
-[Source](https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7/train/python)
+[Source](https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7)

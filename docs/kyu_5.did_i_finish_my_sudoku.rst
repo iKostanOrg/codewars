@@ -11,6 +11,7 @@ kyu\_5.did\_i\_finish\_my\_sudoku.is\_sudoku\_done module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.did\_i\_finish\_my\_sudoku.sudoku\_by\_column module
 -----------------------------------------------------------
@@ -19,6 +20,7 @@ kyu\_5.did\_i\_finish\_my\_sudoku.sudoku\_by\_column module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.did\_i\_finish\_my\_sudoku.sudoku\_by\_regions module
 ------------------------------------------------------------
@@ -27,6 +29,7 @@ kyu\_5.did\_i\_finish\_my\_sudoku.sudoku\_by\_regions module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.did\_i\_finish\_my\_sudoku.sudoku\_by\_row module
 --------------------------------------------------------
@@ -35,6 +38,7 @@ kyu\_5.did\_i\_finish\_my\_sudoku.sudoku\_by\_row module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.did\_i\_finish\_my\_sudoku.test\_did\_i\_finish\_sudoku module
 ---------------------------------------------------------------------
@@ -43,7 +47,7 @@ kyu\_5.did\_i\_finish\_my\_sudoku.test\_did\_i\_finish\_sudoku module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -52,3 +56,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

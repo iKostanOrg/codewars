@@ -11,6 +11,7 @@ kyu\_5.fibonacci\_streaming.all\_fibonacci\_numbers module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_5.fibonacci\_streaming.test\_all\_fibonacci\_numbers module
 ----------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_5.fibonacci\_streaming.test\_all\_fibonacci\_numbers module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

@@ -11,6 +11,7 @@ kyu\_8.my\_head\_is\_at\_the\_wrong\_end.fix\_the\_meerkat module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_8.my\_head\_is\_at\_the\_wrong\_end.test\_fix\_the\_meerkat module
 -----------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_8.my\_head\_is\_at\_the\_wrong\_end.test\_fix\_the\_meerkat module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

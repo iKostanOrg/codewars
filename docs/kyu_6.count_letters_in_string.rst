@@ -11,6 +11,7 @@ kyu\_6.count\_letters\_in\_string.count\_letters\_in\_string module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_6.count\_letters\_in\_string.test\_count\_letters\_in\_string module
 -------------------------------------------------------------------------
@@ -19,7 +20,7 @@ kyu\_6.count\_letters\_in\_string.test\_count\_letters\_in\_string module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

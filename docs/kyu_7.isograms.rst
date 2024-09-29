@@ -22,7 +22,6 @@ kyu\_7.isograms.test\_is\_isogram module
    :show-inheritance:
    :private-members:
 
-
 Module contents
 ---------------
 

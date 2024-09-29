@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> String subpattern recognition III
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import math
 
@@ -21,15 +23,15 @@ def has_subpattern(string: str) -> str:
     :return:
     """
     # get unique chars
-    filtered_chars = set(s for s in string)
+    filtered_chars: set = set(list(string))
 
     # set counter for each char in string
-    char_counter = dict()
+    char_counter: dict = {}
     for char in filtered_chars:
         char_counter[char] = string.count(char)
 
     # get sorted counters
-    sorted_char_counters = sorted(set(char_counter.values()))
+    sorted_char_counters: list = sorted(set(char_counter.values()))
 
     # find common greatest divider:
     divider = sorted_char_counters[0]

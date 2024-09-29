@@ -1,12 +1,9 @@
 name: 'Markdown Lint'
 
 on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - reopened
-      - synchronize
+  push:
+    branches:
+      - 'Documentation'
   workflow_call:
 
 permissions:
@@ -24,7 +21,7 @@ jobs:
     #    npm install markdownlint-cli2 --global
     #    markdownlint-cli2 "**/*.md" --config ".markdownlint-cli2.yaml"
     - name: markdownlint-cli2-action v16
-      uses: DavidAnson/markdownlint-cli2-action@v16
+      uses: DavidAnson/markdownlint-cli2-action@v17
       with:
        config: '.markdownlint-cli2.yaml'
        fix: true

@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Format a string of names like \'Bart, Lisa & Maggie\'.
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS STRINGS FORMATTING ALGORITHMS
 
@@ -9,21 +11,25 @@ import allure
 from utils.log_func import print_log
 from kyu_6.format_string_of_names.solution import namelist
 
-
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Format a string of names like \'Bart, Lisa & Maggie\'.')
-@allure.tag('FUNDAMENTALS', 'STRINGS', 'FORMATTING', 'ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/53368a47e38700bd8300030d/train/python',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'FORMATTING',
+            'ALGORITHMS')
+@allure.link(
+    url='https://www.codewars.com/kata/53368a47e38700bd8300030d/train/python',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class NamelistTestCase(unittest.TestCase):
     """
     Testing namelist function
     """
-
     def test_namelist(self):
         """
         Test namelist
@@ -38,17 +44,18 @@ class NamelistTestCase(unittest.TestCase):
 
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("String with no duplicate chars")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Should a string formatted as a list of names separated "
-                                        "by commas except for the last two names, which should be "
-                                        "separated by an ampersand.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Should a string formatted as a list of names separated "
+            "by commas except for the last two names, which should be "
+            "separated by an ampersand.</p>")
+        # pylint: enable-msg=R0801
         test_data = (
             ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'},
               {'name': 'Homer'}, {'name': 'Marge'}],

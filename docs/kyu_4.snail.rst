@@ -11,6 +11,7 @@ kyu\_4.snail.snail\_sort module
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:
 
 kyu\_4.snail.test\_snail module
 -------------------------------
@@ -19,7 +20,7 @@ kyu\_4.snail.test\_snail module
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :private-members:
 
 Module contents
 ---------------
@@ -28,3 +29,4 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
+   :private-members:

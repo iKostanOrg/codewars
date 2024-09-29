@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> String transformer
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -16,14 +18,14 @@ from kyu_6.string_transformer.string_transformer import string_transformer
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('String transformer')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS')
+@allure.link(
+    url='https://www.codewars.com/kata/5878520d52628a092f0002d0/train/python',
+    name='Source/Kata')
 class StringTransformerTestCase(unittest.TestCase):
     """
     Testing string_transformer function
     """
-
     def test_string_transformer(self):
         """
         Testing string_transformer function
@@ -32,12 +34,13 @@ class StringTransformerTestCase(unittest.TestCase):
         Given a string, return a new string that has
         transformed based on the input:
 
-                1. Change case of every character, ie. lower
-                case to upper case, upper case to lower case.
-                2. Reverse the order of words from the input.
+        1. Change case of every character, ie. lower
+        case to upper case, upper case to lower case.
+
+        2. Reverse the order of words from the input.
+
         :return:
         """
-
         allure.dynamic.title("Testing string_transformer function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html('<h3>Codewars badge:</h3>'
@@ -81,8 +84,7 @@ class StringTransformerTestCase(unittest.TestCase):
                 ("UOtfi  erH kCk KXzg Io  Y  I TYAf "
                  "EGXVSvASIyJ p Zf p kV g RI  V",
                  "v  ri G Kv P zF P egxvsVasiYj tyaF "
-                 "i  y  iO kxZG KcK ERh  uoTFI")
-            ]
+                 "i  y  iO kxZG KcK ERh  uoTFI")]
 
             for s, expected in test_data:
                 print_log(s=s, expected=expected)

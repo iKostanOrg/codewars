@@ -1,8 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
-
-from typing import Dict
+"""
+Solution for -> Sports League Table Ranking
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def compute_ranks(number: int, games: list) -> list:
@@ -21,16 +21,16 @@ def compute_ranks(number: int, games: list) -> list:
     number of points, the second criteria comes into play and so on. Finally, if all
     criteria are the same, the teams share a place.
 
-    :param number:
-    :param games:
-    :return:
+    :param number: int
+    :param games: list
+    :return: list
     """
 
     if not games:
         return [1] * number
 
-    teams: Dict = dict()
-    numbers = [i for i in range(number)]
+    teams: dict = {}
+    numbers: list = list(range(number))
 
     for scores in games:
         team_a = scores[0]
@@ -52,9 +52,9 @@ def process_not_played_games(teams: dict, number: int) -> None:
     :return:
     """
 
-    for n in range(number):
-        if n not in teams:
-            check_if_team_registered(n, teams, number)
+    for num in range(number):
+        if num not in teams:
+            check_if_team_registered(num, teams, number)
 
 
 def calc_teams_score(team_a, team_b, teams, team, number) -> None:
@@ -93,7 +93,7 @@ def check_if_team_registered(team, teams, number) -> None:
     """
 
     if team not in teams:
-        teams[team] = dict()
+        teams[team]: dict = {}
         teams[team]["GD"] = 0
         teams[team]["For:Against"] = [0, 0]
         teams[team]["Points"] = 0

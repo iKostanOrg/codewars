@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Sum of two lowest positive integers
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def sum_two_smallest_numbers(numbers) -> int:
+def sum_two_smallest_numbers(numbers: list) -> int:
     """
     Returns the sum of the two lowest
     positive numbers given an array of
