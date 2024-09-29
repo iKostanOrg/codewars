@@ -23,7 +23,7 @@ from kyu_7.significant_figures.number_of_sigfigs import number_of_sigfigs
             'NUMBERS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/5d9fe0ace0aad7001290acb7/train/python',
+    url='https://www.codewars.com/kata/5d9fe0ace0aad7001290acb7',
     name='Source/Kata')
 class NumberOfSigFigsTestCase(unittest.TestCase):
     """
