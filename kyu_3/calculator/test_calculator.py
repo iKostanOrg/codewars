@@ -26,8 +26,9 @@ from kyu_3.calculator.calculator import Calculator
             'EXPRESSIONS',
             'BASIC LANGUAGE FEATURES',
             'FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/5235c913397cbf2508000048/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5235c913397cbf2508000048',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class CalculatorTestCase(unittest.TestCase):
     """
@@ -39,23 +40,22 @@ class CalculatorTestCase(unittest.TestCase):
         Testing Calculator class
         A simple calculator that given a string of operators '()', '+', '-', '*', '/'
         and numbers separated by spaces will return the value of that expression
-
         :return: None
         """
-
         allure.dynamic.title("Testing Calculator class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "1. given a string of operators '(), +, -, *, /'"
-                                        "and numbers separated by spaces<br/>"
-                                        "2. the calculator should return the value of that "
-                                        "expression</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "1. given a string of operators '(), +, -, *, /'"
+            "and numbers separated by spaces<br/>"
+            "2. the calculator should return the value of that "
+            "expression</p>")
 
-        test_data = (
+        test_data: tuple = (
             ('127', 127),
             ('2 + 3', 5),
             ('2 - 3 - 4', -5),
@@ -68,6 +68,7 @@ class CalculatorTestCase(unittest.TestCase):
         )
 
         for string, expected in test_data:
+
             actual_result = Calculator().evaluate(string)
             print_log(string=string,
                       expected=expected,
@@ -76,6 +77,5 @@ class CalculatorTestCase(unittest.TestCase):
             with allure.step(f"Enter a test string ({string}), "
                              f"calculate the result ({actual_result}) and "
                              f"compare vs expected ({expected})"):
-
                 self.assertEqual(expected,
                                  actual_result)
