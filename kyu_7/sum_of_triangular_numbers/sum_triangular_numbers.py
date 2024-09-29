@@ -15,7 +15,7 @@ def sum_triangular_numbers(n: int) -> int:
     if n <= 0:
         return 0
 
-    sum_nums:list = [0]
+    sum_nums: list = [0]
     for i in range(1, n + 1):
         sum_nums.append(sum_nums[-1] + i)
 
