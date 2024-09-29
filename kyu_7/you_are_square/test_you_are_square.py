@@ -20,7 +20,7 @@ from kyu_7.you_are_square.you_are_square import is_square
 @allure.tag('FUNDAMENTALS',
             'MATH')
 @allure.link(
-    url='https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/python',
+    url='https://www.codewars.com/kata/54c27a33fb7da0db0100040e',
     name='Source/Kata')
 class YouAreSquareTestCase(unittest.TestCase):
     """
