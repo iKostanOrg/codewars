@@ -22,7 +22,7 @@ from kyu_7.simple_fun_152.invite_more_women import invite_more_women
 @allure.tag('PUZZLES',
             'GAMES')
 @allure.link(
-    url='https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/python',
+    url='https://www.codewars.com/kata/58acfe4ae0201e1708000075',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class InviteMoreWomenTestCase(unittest.TestCase):
