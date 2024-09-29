@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Help Bob count letters and digits.
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def count_letters_and_digits(s: str) -> int:
@@ -10,8 +12,7 @@ def count_letters_and_digits(s: str) -> int:
     :param s:
     :return:
     """
-
-    result = 0
+    result: int = 0
 
     for char in s:
         if char.isalpha() or char.isdigit():

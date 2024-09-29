@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Array to HTML table
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ARRAYS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.array_to_html_table.to_table import to_table
 
@@ -16,25 +18,34 @@ from kyu_6.array_to_html_table.to_table import to_table
 @allure.sub_suite("Unit Tests")
 @allure.feature('Lists')
 @allure.story('Array to HTML table')
-@allure.tag('FUNDAMENTALS', 'ARRAYS', 'LISTS')
-@allure.link(url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'ARRAYS',
+            'LISTS')
+@allure.link(
+    url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python',
+    name='Source/Kata')
 class ArrayToTableTestCase(unittest.TestCase):
     """
     Testing to_table function
     """
 
     def test_array_to_table_function(self):
+        """
+        Testing to_table with various test data
+        :return:
+        """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing to_table function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test that function takes three arguments "
-                                        "(data, header, index) and returns a string "
-                                        "containing HTML tags representing the table.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test that function takes three arguments "
+            "(data, header, index) and returns a string "
+            "containing HTML tags representing the table.</p>")
+        # pylint: enable-msg=R0801
         test_data = ([
             {
                 "input": ([["o"]]),
@@ -88,7 +99,8 @@ class ArrayToTableTestCase(unittest.TestCase):
                           "<tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></tr>"
                           "</thead>"
                           "<tbody>"
-                          "<tr><td>True</td><td>False</td><td>False</td><td>True</td><td>True</td></tr>"
+                          "<tr><td>True</td><td>False</td><td>False</td><td>True</td>"
+                          "<td>True</td></tr>"
                           "</tbody></table>"
             },
         ])

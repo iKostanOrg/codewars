@@ -50,4 +50,4 @@ from the odds , or **Separate the men from the boys**
 *   Since , (Duplications are not included when separating) , then you can
     see only one `(-282)` was appeared in the final array/list .
 
-[Source](https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/python)
+[Source](https://www.codewars.com/kata/5af15a37de4c7f223e00012d)

@@ -22,4 +22,4 @@ e.g. If `4` is given: `1 + 3 + 6 + 10 = 20`.
 
 Triangular Numbers cannot be negative so return 0 if a negative number is given.
 
-[Source](https://www.codewars.com/kata/580878d5d27b84b64c000b51/train/python)
+[Source](https://www.codewars.com/kata/580878d5d27b84b64c000b51)

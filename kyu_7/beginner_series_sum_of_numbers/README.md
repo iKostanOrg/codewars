@@ -17,4 +17,4 @@ get_sum(-1, 0) == -1 // -1 + 0 = -1
 get_sum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
 ```
 
-[Source](https://www.codewars.com/kata/55f2b110f61eb01779000053/train/python)
+[Source](https://www.codewars.com/kata/55f2b110f61eb01779000053)
