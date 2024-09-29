@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.sum_of_triangular_numbers.sum_triangular_numbers import sum_triangular_numbers
+from kyu_7.sum_of_triangular_numbers.sum_triangular_numbers \
+    import sum_triangular_numbers
 
 
 @allure.epic('7 kyu')
@@ -24,7 +25,7 @@ from kyu_7.sum_of_triangular_numbers.sum_triangular_numbers import sum_triangula
             'ALGORITHMS',
             'ARITHMETIC')
 @allure.link(
-    url='https://www.codewars.com/kata/580878d5d27b84b64c000b51/train/python',
+    url='https://www.codewars.com/kata/580878d5d27b84b64c000b51',
     name='Source/Kata')
 class SumTriangularNumbersTestCase(unittest.TestCase):
     """
