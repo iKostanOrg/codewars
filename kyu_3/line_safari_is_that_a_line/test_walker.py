@@ -125,10 +125,12 @@ class WalkerClassTestCase(unittest.TestCase):
              "      |       ",
              "      X       "])
 
-        expected = 'X'
+        expected: str = 'X'
         for grid in test_data:
-            walker = Walker(grid)
-            actual_result = walker.position
+
+            walker: Walker = Walker(grid)
+            actual_result: str = walker.position
+
             print_log(grid=grid,
                       expected=expected,
                       actual_result=actual_result)
@@ -136,4 +138,5 @@ class WalkerClassTestCase(unittest.TestCase):
             with allure.step("Enter a test grid and compare "
                              "the output/position vs expected "
                              f"result {expected}"):
+
                 self.assertEqual(expected, actual_result)

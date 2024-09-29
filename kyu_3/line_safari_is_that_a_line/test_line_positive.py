@@ -88,7 +88,7 @@ class LinePositiveTestCase(unittest.TestCase):
         expected: bool = True
         for grid in test_data:
 
-            actual_result = line(grid)
+            actual_result: bool = line(grid)
             for row in grid:
                 print(row)
 
@@ -97,5 +97,6 @@ class LinePositiveTestCase(unittest.TestCase):
 
             with allure.step("Enter a test grid and compare "
                              "the output vs expected result"):
+
                 self.assertEqual(expected, actual_result)
         # pylint: enable-msg=R0801

@@ -39,7 +39,6 @@ class LineNegativeTestCase(unittest.TestCase):
         Testing Line Safari functionality
         Negative test cases
         """
-
         allure.dynamic.title("Testing Line Safari functionality - NEGATIVE")
         # pylint: disable-msg=R0801
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -75,7 +74,7 @@ class LineNegativeTestCase(unittest.TestCase):
         expected: bool = False
         for grid in test_data:
 
-            actual_result = line(grid)
+            actual_result: bool = line(grid)
             for row in grid:
                 print(row)
 
@@ -84,4 +83,5 @@ class LineNegativeTestCase(unittest.TestCase):
 
             with allure.step("Enter a test grid and compare "
                              "the output vs expected result"):
+
                 self.assertEqual(expected, actual_result)
