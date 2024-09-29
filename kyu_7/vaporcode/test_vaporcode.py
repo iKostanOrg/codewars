@@ -20,7 +20,7 @@ from kyu_7.vaporcode.vaporcode import vaporcode
 @allure.story('V A P O R C O D E')
 @allure.tag('FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/5966eeb31b229e44eb00007a/train/python',
+    url='https://www.codewars.com/kata/5966eeb31b229e44eb00007a',
     name='Source/Kata')
 class VaporcodeTestCase(unittest.TestCase):
     """
