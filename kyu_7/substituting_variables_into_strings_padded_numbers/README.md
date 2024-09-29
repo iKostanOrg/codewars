@@ -8,4 +8,4 @@ is a 5 digit padded number.
 
 > solution(5)  # should return "Value is 00005"
 
-[Source](https://www.codewars.com/kata/51c89385ee245d7ddf000001/train/python)
+[Source](https://www.codewars.com/kata/51c89385ee245d7ddf000001)

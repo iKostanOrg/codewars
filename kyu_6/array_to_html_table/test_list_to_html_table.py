@@ -28,6 +28,7 @@ class ArrayToTableTestCase(unittest.TestCase):
     """
     Testing to_table function
     """
+
     def test_array_to_table_function(self):
         """
         Testing to_table with various test data

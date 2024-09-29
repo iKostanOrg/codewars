@@ -48,4 +48,4 @@ will be at least one letter, so you do not have to test for invalid input.
 
 #### Adapted from the 2017 British Informatics Olympiad
 
-[Source](https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111/python)
+[Source](https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111)

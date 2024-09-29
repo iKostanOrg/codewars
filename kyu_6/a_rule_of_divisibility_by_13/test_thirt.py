@@ -25,6 +25,7 @@ class ThirtTestCase(unittest.TestCase):
     """
     Testing 'thirt' function
     """
+
     # pylint: disable-msg=R0801
     def test_thirt(self):
         """
@@ -57,7 +58,6 @@ class ThirtTestCase(unittest.TestCase):
             with allure.step(f"Enter a n ({n}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
-
                 print_log(n=n,
                           expected=expected,
                           result=actual_result)

@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> V A P O R C O D E
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def vaporcode(s: str) -> str:
@@ -10,5 +12,4 @@ def vaporcode(s: str) -> str:
     :param s:
     :return:
     """
-
     return '  '.join(char.upper() for char in s if char != ' ')
