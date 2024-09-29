@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def growing_plant(up_speed: int, down_speed:int, desired_height: int) -> int:
+def growing_plant(up_speed: int, down_speed: int, desired_height: int) -> int:
     """
     Each day a plant is growing by upSpeed meters. Each night
     that plant's height decreases by downSpeed meters due to the
