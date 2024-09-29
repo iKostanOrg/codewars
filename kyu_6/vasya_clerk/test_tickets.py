@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Vasya - Clerk
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS MATHEMATICS ALGORITHMS NUMBERS GAMES
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.vasya_clerk.tickets import tickets
 
@@ -16,9 +18,14 @@ from kyu_6.vasya_clerk.tickets import tickets
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Vasya - Clerk')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'MATHEMATICS',
+            'ALGORITHMS',
+            'NUMBERS',
+            'GAMES')
+@allure.link(
+    url='https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/python',
+    name='Source/Kata')
 class TicketsTestCase(unittest.TestCase):
     """
     Testing tickets function
@@ -46,17 +53,18 @@ class TicketsTestCase(unittest.TestCase):
         bills he has at hand at that moment. Otherwise return NO.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing tickets function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test input (list) and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ([25, 25, 50],
                  'YES',
                  'All good'),
@@ -77,9 +85,9 @@ class TicketsTestCase(unittest.TestCase):
                 ([25, 25, 25, 100, 25, 25, 25, 100, 25,
                   25, 50, 100, 25, 25, 50, 100, 50, 50],
                  'NO',
-                 'N/A')
-            ]
+                 'N/A'))
 
             for arr, expected, msg in test_data:
-                print_log(people=arr, expected=expected)
+
+                print_log(people=arr, expected=expected, msg=msg)
                 self.assertEqual(expected, tickets(arr), msg)

@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Multiples of 3 or 5
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def solution(number: int) -> int:
@@ -14,8 +16,7 @@ def solution(number: int) -> int:
     :param number:
     :return:
     """
-
-    result = 0
+    result: int = 0
     for n in range(1, number):
         if n % 3 == 0 or n % 5 == 0:
             result += n

@@ -34,4 +34,4 @@ Here are a few examples of what your function should do:
 ["i'm","afraid","I","can't","let","you","do","that"]  =>  "I'm afraid I can't let you do that."
 ```
 <!-- markdownlint-enable MD013 -->
-[Source](https://www.codewars.com/kata/59ad7d2e07157af687000070/train/python)
+[Source](https://www.codewars.com/kata/59ad7d2e07157af687000070)

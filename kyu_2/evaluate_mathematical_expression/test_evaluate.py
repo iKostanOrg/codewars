@@ -1,15 +1,15 @@
 """
-Testing calc method
-
+Test for -> calc method
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+# ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS
+# BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS
+# PARSING STRINGS
 
-# ALGORITHMS MATHEMATICS NUMBERS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS OPERATORS PARSING STRINGS
-
-import allure
 import unittest
+import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_2.evaluate_mathematical_expression.evaluate import calc
 
@@ -28,8 +28,9 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
             'FUNDAMENTALS',
             'OPERATORS',
             'PARSING STRINGS')
-@allure.link(url='https://www.codewars.com/kata/52a78825cdfc2cfc87000005/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52a78825cdfc2cfc87000005',
+    name='Source/Kata')
 class CalcTestCase(unittest.TestCase):
     """
     Testing calc method
@@ -38,23 +39,22 @@ class CalcTestCase(unittest.TestCase):
     def test_calc(self):
         """
         Testing calc class
-
         Given a mathematical expression as a string you
         must return the result as a number.
         """
-
         allure.dynamic.title("Testing calc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "Given a mathematical expression as a string you must "
-                                        "return the result as a number."
-                                        "</p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "Given a mathematical expression as a string you must "
+            "return the result as a number."
+            "</p>")
 
-        test_data = (
+        test_data: tuple = (
             ["1 + 1", 2],
             ["8/16", 0.5],
             ["3 -(-1)", 4],
@@ -79,15 +79,14 @@ class CalcTestCase(unittest.TestCase):
         )
 
         for string, expected in test_data:
+
             actual_result = calc(string)
             print_log(string=string,
                       expected=expected,
                       actual_result=actual_result)
 
-            with allure.step("Enter a test string ({}), "
-                             "calculate the result ({}) and "
-                             "compare vs expected ({})".format(string,
-                                                               actual_result,
-                                                               expected)):
+            with allure.step(f"Enter a test string ({string}), "
+                             f"calculate the result ({actual_result}) and "
+                             f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)

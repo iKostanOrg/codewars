@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def two_decimal_places(number):
+def two_decimal_places(number) -> float:
     """
     Each floating-point number should be formatted that
     only the first two decimal places are returned.
@@ -19,5 +19,5 @@ def two_decimal_places(number):
     :param number:
     :return: float
     """
-    number = str(number)
+    number: str = str(number)
     return float(number[0:number.index('.') + 3])

@@ -1,9 +1,12 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Potion Class 101
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-from typing import Tuple
+
 import math
+from typing import Tuple
 
 
 class Potion:
@@ -45,16 +48,34 @@ class Potion:
 
     @property
     def volume(self) -> int:
+        """
+        Return volume value
+        :return: int
+        """
         return self._volume
 
     @volume.setter
     def volume(self, value: int) -> None:
+        """
+        Set volume value
+        :param value: int
+        :return:
+        """
         self._volume = value
 
     @property
     def color(self) -> tuple:
+        """
+        Get color value
+        :return: tuple
+        """
         return self._color
 
     @color.setter
     def color(self, value: Tuple[int, int, int]) -> None:
+        """
+        Set color value
+        :param value: tuple
+        :return:
+        """
         self._color = value

@@ -10,8 +10,8 @@ GitHub: https://github.com/ikostan
 
 # ALGORITHMS ARRAYS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_4.snail.snail_sort import snail
 
@@ -28,6 +28,9 @@ from kyu_4.snail.snail_sort import snail
 @allure.link(url='https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/python',
              name='Source/Kata')
 class SnailTestCase(unittest.TestCase):
+    """
+    Testing snail function
+    """
 
     def test_snail(self):
         """
@@ -37,17 +40,19 @@ class SnailTestCase(unittest.TestCase):
         elements arranged from outermost elements to the middle element,
         traveling clockwise.
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'snail' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Verify that 'snail' function returns the array elements "
-                                        "arranged from outermost elements to the middle element, "
-                                        "traveling clockwise</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Verify that 'snail' function returns the array"
+            " elements arranged from outermost elements to the"
+            " middle element, "
+            "traveling clockwise</p>")
+        # pylint: enable-msg=R0801
         test_data = (
             ([[]], []),
             ([[1]], [1]),

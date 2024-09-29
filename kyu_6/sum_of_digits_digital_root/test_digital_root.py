@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sum of Digits / Digital Root
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS MATHEMATICS NUMBERS ARITHMETIC
 
@@ -16,14 +18,17 @@ from kyu_6.sum_of_digits_digital_root.digital_root import digital_root
 @allure.sub_suite("Unit Tests")
 @allure.feature("Math")
 @allure.story('Sum of Digits / Digital Root')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('ALGORITHMS',
+            'MATHEMATICS',
+            'NUMBERS',
+            'ARITHMETIC')
+@allure.link(
+    url='https://www.codewars.com/kata/541c8630095125aba6000c00/train/python',
+    name='Source/Kata')
 class DigitalRootTestCase(unittest.TestCase):
     """
     Testing digital_root function
     """
-
     def test_digital_root(self):
         """
         In this kata, you must create a digital root function.
@@ -35,23 +40,23 @@ class DigitalRootTestCase(unittest.TestCase):
         is only applicable to the natural numbers.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing digital_root function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter a number and verify the output"):
             test_data = [
                 (16, 7),
                 (456, 6),
                 (942, 6),
                 (132189, 6),
-                (493193, 2)
-            ]
+                (493193, 2)]
 
             for n, expected in test_data:
                 print_log(n=n, expected=expected)

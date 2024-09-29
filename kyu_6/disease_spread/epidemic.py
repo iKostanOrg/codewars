@@ -7,7 +7,7 @@ GitHub: https://github.com/ikostan
 from typing import List
 
 
-def epidemic(tm: int, n: int, s0: int, i0: int, b: float, a: float) -> int:
+def epidemic(**kwargs) -> int:
     """
     We want to study the spread of the disease through the population of this school.
     The total population may be divided into three:
@@ -24,23 +24,34 @@ def epidemic(tm: int, n: int, s0: int, i0: int, b: float, a: float) -> int:
     The function epidemic will return the maximum number of infecteds as an
     integer (truncate to integer the result of max(I)).
 
-    :param tm: the disease on a period of days
-    :param n: small intervals of length
-    :param s0: those who are still susceptible to get the disease (Initial conditions)
-    :param i0: the infected (Initial conditions)
-    :param b: representing a number of contacts which can spread the disease
-    :param a: fraction of the infected that will recover
-    :return: the maximum number of infected as an integer (truncate to integer the result of max(I)).
-    """
-    dt = float(tm) / n
+    tm: the disease on a period of days
+    n: small intervals of length
+    s0: those who are still susceptible to get the disease (Initial conditions)
+    i0: the infected (Initial conditions)
+    b: representing a number of contacts which can spread the disease
+    a: fraction of the infected that will recover
 
+    :return: the maximum number of infected as an integer
+            (truncate to integer the result of max(I)).
+    """
+    dt: float = float(kwargs['tm']) / kwargs['n']
     # susceptible, infected, recovered at time t
     # Whatever S0 and I0, R0 (number of recovered at time 0) is always 0.
-    S: List[float] = [s0]
-    I: List[float] = [i0]
+    susceptible: List[float] = [kwargs['s0']]
+    infecteds: List[float] = [kwargs['i0']]
 
-    for k in range(n):
-        S.append(S[k] - dt * b * S[k] * I[k])
-        I.append(I[k] + dt * (b * S[k] * I[k] - a * I[k]))
+    for k in range(kwargs['n']):
+        susceptible.append(
+            susceptible[k] - dt *
+            kwargs['b'] *
+            susceptible[k] *
+            infecteds[k])
 
-    return int(max(I))
+        infecteds.append(
+            infecteds[k] + dt *
+            (kwargs['b'] *
+             susceptible[k] *
+             infecteds[k] - kwargs['a'] *
+             infecteds[k]))
+
+    return int(max(infecteds))

@@ -1,33 +1,33 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Find the smallest
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def get_min_digit(digits: list) -> int:
-
+    """
+    Find a min
+    :param digits: list
+    :return: int
+    """
     min_digit = min(digits)
-    if digits.index(min_digit) != 0:
-        return min_digit
-    else:
-        min_digit = digits[1]
-        for digit in digits[2:]:
-            if digit < min_digit:
-                min_digit = digit
-        return min_digit
+    return min_digit
 
 
 def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
-
-    print()
+    """
+    Find new n
+    :param digits: list
+    :param min_digit: int
+    :param min_index: int
+    :return: list
+    """
     if min_digit < digits[0] and min_digit != 0:
-        print('Rule #1')
-
         i, j = min_index, 0
         del digits[min_index]
         digits = [min_digit] + digits
     elif min_digit == 0:
-        print('Rule #2')
-
         if min_index == 1:
             i, j = 0, min_index
             del digits[min_index]
@@ -41,8 +41,6 @@ def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
             i, j = min_index + 1, 0
             del digits[min_index + 1]
     else:
-        print('Rule #3')
-
         max_digit = max(digits)
         i = min_index
         j = digits.index(max_digit)
@@ -60,11 +58,15 @@ def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
 
 def smallest(n: int) -> list:
     """
-    Return an array or a tuple or a string depending on the language (see "Sample Tests") with
+    Return an array or a tuple or a string depending on the language
+    (see "Sample Tests") with:
 
-        1) the smallest number you got
-        2) the index i of the digit d you took, i as small as possible
-        3) the index j (as small as possible) where you insert this digit d to have the smallest number.
+    1. The smallest number you got.
+
+    2. The index i of the digit d you took, i as small as possible.
+
+    3. The index j (as small as possible) where you insert this
+    digit d to have the smallest number.
 
     :param n: a positive number n consisting of digits
     :return: an array with: smallest number, index, digit

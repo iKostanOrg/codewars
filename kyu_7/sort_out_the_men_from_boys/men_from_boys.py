@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Sort Out The Men From Boys
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import List
+
 
 def men_from_boys(arr: List[int]) -> list:
     """
@@ -16,19 +19,17 @@ def men_from_boys(arr: List[int]) -> list:
     Since, Men are stronger than Boys,
     then Even numbers in ascending order
     while odds in descending.
-    :param arr:
-    :return:
+    :param arr: list
+    :return: list
     """
-
-    boys: List[int] = list()
-    men: List[int] = list()
+    boys: List[int] = []
+    men: List[int] = []
 
     for a in arr:
         if a % 2 == 0:
             if a not in men:
                 men.append(a)
-        else:
-            if a not in boys:
-                boys.append(a)
+        elif a not in boys:
+            boys.append(a)
 
     return sorted(men) + sorted(boys, reverse=True)

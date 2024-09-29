@@ -21,7 +21,7 @@ def sum_for_list(lst: list) -> list:
     :return: sorted array P
     """
     max_l = max(lst) if abs(max(lst)) > abs(min(lst)) else abs(min(lst))
-    results = list()
+    results = []
 
     for prime in gen_primes():
         # stop execution in case current
@@ -29,7 +29,7 @@ def sum_for_list(lst: list) -> list:
         if prime > max_l:
             break
 
-        temp: list = list()  # holds temporary results
+        temp: list = []  # holds temporary results
         sum_digits = 0  # holds sum of all ij of I for which p is a prime factor
 
         for digit in lst:

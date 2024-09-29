@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> String subpattern recognition I
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def has_subpattern(string: str) -> bool:
@@ -18,19 +20,15 @@ def has_subpattern(string: str) -> bool:
     :param string:
     :return:
     """
+    length: int = len(string)
 
-    length = len(string)
-
-    n = 2
+    n: int = 2
     while n < (length // 2) + 1:
-
         if length % n != 0:
             n += 1
             continue
-
         if string[0:length // n] * n == string:
             return True
-
         n += 1
 
     return False
