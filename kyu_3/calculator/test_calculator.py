@@ -42,6 +42,7 @@ class CalculatorTestCase(unittest.TestCase):
         and numbers separated by spaces will return the value of that expression
         :return: None
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Calculator class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -54,7 +55,7 @@ class CalculatorTestCase(unittest.TestCase):
             "and numbers separated by spaces<br/>"
             "2. the calculator should return the value of that "
             "expression</p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             ('127', 127),
             ('2 + 3', 5),
