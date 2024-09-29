@@ -12,6 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_7.sort_out_the_men_from_boys.men_from_boys import men_from_boys
 
+
 # pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
