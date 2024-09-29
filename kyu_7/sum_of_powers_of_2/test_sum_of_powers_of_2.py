@@ -22,7 +22,7 @@ from kyu_7.sum_of_powers_of_2.sum_of_powers_of_2 import powers
             'FUNDAMENTALS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/5d9f95424a336600278a9632/train/python',
+    url='https://www.codewars.com/kata/5d9f95424a336600278a9632',
     name='Source/Kata')
 class SumOfPowerOfTwoTestCase(unittest.TestCase):
     """
