@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Fun with lists: length
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def length(head) -> int:
@@ -10,7 +12,7 @@ def length(head) -> int:
     :param head:
     :return:
     """
-    i = 0
+    i: int = 0
 
     if head is None:
         return 0

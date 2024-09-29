@@ -19,4 +19,4 @@ row_sum_odd_numbers(1); # 1
 row_sum_odd_numbers(2); # 3 + 5 = 8
 ```
 
-[Source](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python)
+[Source](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064)

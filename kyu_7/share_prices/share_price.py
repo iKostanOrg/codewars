@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Share prices
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def share_price(invested: int, changes: list) -> str:
@@ -16,12 +18,11 @@ def share_price(invested: int, changes: list) -> str:
 
     The returned number, should be in string format, and it's
     precision should be fixed at 2 decimal numbers.
-    :param invested:
-    :param changes:
-    :return:
+    :param invested: int
+    :param changes: list
+    :return: str
     """
-
     for c in changes:
         invested = invested + ((invested * c) / 100.00)
 
-    return '{:.2f}'.format(invested)
+    return f'{invested:.2f}'

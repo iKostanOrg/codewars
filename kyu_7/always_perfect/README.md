@@ -15,4 +15,4 @@ numbers separated by comma function returns "incorrect input".
 
 If string contains 4 numbers but not consecutive it returns "not consecutive".
 
-[Source](https://www.codewars.com/kata/55f3facb78a9fd5b26000036/train/python)
+[Source](https://www.codewars.com/kata/55f3facb78a9fd5b26000036)

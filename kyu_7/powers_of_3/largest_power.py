@@ -1,22 +1,23 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Powers of 3
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def largestPower(N: int) -> int:
+def largest_power(num: int) -> int:
     """
     Given a positive integer N,
     return the largest integer k
     such that 3^k < N.
-    :param N:
+    :param num:
     :return:
     """
-
     result: int = 0
     n: int = 0
-    while result < N:
+    while result < num:
         result = 3 ** n
-        if result >= N:
+        if result >= num:
             n -= 1
             break
         n += 1

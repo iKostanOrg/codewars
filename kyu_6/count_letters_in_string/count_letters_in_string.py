@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Count letters in string
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def letter_count(s: str) -> dict:
@@ -11,14 +13,12 @@ def letter_count(s: str) -> dict:
     :param s:
     :return:
     """
-
-    result: dict = dict()
+    result: dict = {}
 
     for char in s:
-        if char.islower():
-            if char not in result:
-                result[char] = 1
-            else:
-                result[char] += 1
+        if char.islower() and char not in result:
+            result[char] = 1
+        else:
+            result[char] += 1
 
     return result

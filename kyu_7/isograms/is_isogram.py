@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Isograms
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def is_isogram(string: str) -> bool:

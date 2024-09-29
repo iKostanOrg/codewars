@@ -33,13 +33,7 @@ class FindSmallestTestCase(unittest.TestCase):
     def test_smallest(self):
         """
         Test a function `smallest` which will return an array or a tuple or a string
-        depending on the language (see "Sample Tests") with
-
-          1) the smallest number you got
-          2) the index i of the digit d you took, i as small as possible
-          3) the index j (as small as possible) where you insert this
-          digit d to have the smallest number.
-
+        depending on the language (see "Sample Tests").
         :return:
         """
         # pylint: disable-msg=R0801

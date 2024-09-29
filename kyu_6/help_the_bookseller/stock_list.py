@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def stock_list(listOfArt: list, listOfCat: list) -> str:
+def stock_list(list_of_art: list, list_of_cat: list) -> str:
     """
     You will be given a stockist (e.g. : L) and a
     list of categories in capital letters e.g :
@@ -16,25 +16,25 @@ def stock_list(listOfArt: list, listOfCat: list) -> str:
     codes belonging to each category of M and to sum
     their quantity according to each category.
 
-    :param listOfArt: list
-    :param listOfCat: list
+    :param list_of_art: list
+    :param list_of_cat: list
     :return: string
     """
-    result = ''
+    result: str = ''
 
-    if not listOfArt:
+    if not list_of_art:
         return result
 
-    for cat in listOfCat:
+    for cat in list_of_cat:
         total = 0
 
-        for art in listOfArt:
+        for art in list_of_art:
             if cat in art[0]:
                 total += int(art.split(' ')[1])
 
         if result != '':
-            result += ' - ({} : {})'.format(cat, total)
+            result += f' - ({cat} : {total})'
         else:
-            result += '({} : {})'.format(cat, total)
+            result += f'({cat} : {total})'
 
     return result

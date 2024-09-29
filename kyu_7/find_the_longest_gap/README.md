@@ -19,4 +19,4 @@ the length of its longest binary gap.
 
 The function should return `0` if num doesn't contain a binary gap.
 <!-- markdownlint-enable MD013 -->
-[Source](https://www.codewars.com/kata/55b86beb1417eab500000051/train/python)
+[Source](https://www.codewars.com/kata/55b86beb1417eab500000051)

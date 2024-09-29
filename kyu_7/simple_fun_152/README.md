@@ -26,4 +26,4 @@ the attendees, where `-1` represents women and `1` represents men.
 
 `true` if Arthur need to invite more women, `false` otherwise.
 
-[Source](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/python)
+[Source](https://www.codewars.com/kata/58acfe4ae0201e1708000075)

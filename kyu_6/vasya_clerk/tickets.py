@@ -1,14 +1,19 @@
+"""
+Solution for -> Vasya - Clerk
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
+
 def tickets(people: list) -> str:
     """
-Return YES, if Vasya can sell a ticket to every
-person and give change with the bills he has at
-hand at that moment. Otherwise return NO.
-:param people:
-:return:
-"""
-    print(people)
-
-    vasya = list()
+    Return YES, if Vasya can sell a ticket to every
+    person and give change with the bills he has at
+    hand at that moment. Otherwise return NO.
+    :param people:
+    :return:
+    """
+    vasya: list = []
 
     for p in people:
 
@@ -37,5 +42,4 @@ hand at that moment. Otherwise return NO.
                 continue
 
         return 'NO'
-
     return "YES"

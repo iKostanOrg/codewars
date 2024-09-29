@@ -10,4 +10,4 @@ For example,
 
 You may assume that the input to your function is always a positive integer.
 
-[Source](https://www.codewars.com/kata/57be674b93687de78c0001d9/train/python)
+[Source](https://www.codewars.com/kata/57be674b93687de78c0001d9)
