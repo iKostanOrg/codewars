@@ -28,7 +28,7 @@ from kyu_7.always_perfect.check_root import check_root
             'ARRAYS',
             'MATHEMATICS')
 @allure.link(
-    url='https://www.codewars.com/kata/55f3facb78a9fd5b26000036/train/python',
+    url='https://www.codewars.com/kata/55f3facb78a9fd5b26000036',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CheckRootTestCase(unittest.TestCase):
