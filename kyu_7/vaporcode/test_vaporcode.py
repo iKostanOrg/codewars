@@ -58,7 +58,7 @@ class VaporcodeTestCase(unittest.TestCase):
             expected: str = "W  H  Y  I  S  N  '  T  M  Y  " \
                             "C  O  D  E  W  O  R  K  I  N  G  ?"
             print_log(s=string, expected=expected)
-            self.assertEqual(vaporcode(s), expected)
+            self.assertEqual(vaporcode(string), expected)
 
         with allure.step("Enter crazy string and verify the output"):
             string: str = " ; FUV! qd vz  Xy-b pM.!:F  lEqRLY,p RGS:;Rh Z "
