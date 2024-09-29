@@ -25,7 +25,7 @@ from kyu_7.fill_the_hard_disk_drive.save import save
             'DATA STRUCTURES',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/5d49c93d089c6e000ff8428c/train/python',
+    url='https://www.codewars.com/kata/5d49c93d089c6e000ff8428c',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SaveTestCase(unittest.TestCase):
