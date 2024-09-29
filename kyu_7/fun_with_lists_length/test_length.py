@@ -24,7 +24,7 @@ from kyu_7.fun_with_lists_length.length import length
             'LISTS',
             'DATA STRUCTURES')
 @allure.link(
-    url='https://www.codewars.com/kata/581e476d5f59408553000a4b/train/python',
+    url='https://www.codewars.com/kata/581e476d5f59408553000a4b',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LengthTestCase(unittest.TestCase):
