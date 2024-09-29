@@ -1,10 +1,19 @@
 name: PyLint
 
 on:
-  push:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
     branches:
-      - 'master'
+      - master
   workflow_call:
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   build:
