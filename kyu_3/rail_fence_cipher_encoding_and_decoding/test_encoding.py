@@ -27,7 +27,7 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
             'SECURITY',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python',
+    url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class EncodingTestCase(unittest.TestCase):
@@ -51,7 +51,7 @@ class EncodingTestCase(unittest.TestCase):
             "a string by placing each character successively in a "
             "diagonal along a set of \"rails\". </p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("WEAREDISCOVEREDFLEEATONCE", 3, "WECRLTEERDSOEEFEAOCAIVDEN"),
             ("Hello, World!", 3, "Hoo!el,Wrdl l"),
             ("Hello, World!", 4, "H !e,Wdloollr"),
