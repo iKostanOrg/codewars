@@ -25,7 +25,7 @@ from kyu_7.share_prices.share_price import share_price
             'MATHEMATICS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/5603a4dd3d96ef798f000068/train/python',
+    url='https://www.codewars.com/kata/5603a4dd3d96ef798f000068',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SharePriceTestCase(unittest.TestCase):
