@@ -63,4 +63,4 @@ valid mathematical expressions following the above rules.
 
 NOTE: `eval` and `exec` are disallowed in your solution.
 
-[Source](https://www.codewars.com/kata/52a78825cdfc2cfc87000005/train/python)
+[Source](https://www.codewars.com/kata/52a78825cdfc2cfc87000005)
