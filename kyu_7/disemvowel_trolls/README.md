@@ -13,4 +13,4 @@ become "Ths wbst s fr lsrs LL!".
 
 **Note:** for this kata **y** isn't considered a vowel.
 
-[Source](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python)
+[Source](https://www.codewars.com/kata/52fba66badcd10859f00097e)
