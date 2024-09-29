@@ -58,7 +58,9 @@ class DecodingTestCase(unittest.TestCase):
         )
         # pylint: disable-msg=R0801
         for string, n, expected in test_data:
-            actual_result = decode_rail_fence_cipher(string, n)
+
+            actual_result: str = decode_rail_fence_cipher(string, n)
+
             print_log(string=string,
                       n=n,
                       expected=expected,
@@ -66,5 +68,6 @@ class DecodingTestCase(unittest.TestCase):
 
             with allure.step("Enter a test string and compare "
                              "the output vs expected result"):
+
                 self.assertEqual(expected, actual_result)
         # pylint: enable-msg=R0801

@@ -63,7 +63,9 @@ class EncodingTestCase(unittest.TestCase):
         )
 
         for string, n, expected in test_data:
-            actual_result = encode_rail_fence_cipher(string, n)
+
+            actual_result: str = encode_rail_fence_cipher(string, n)
+
             print_log(string=string,
                       n=n,
                       expected=expected,
@@ -71,4 +73,5 @@ class EncodingTestCase(unittest.TestCase):
 
             with allure.step("Enter a test string and compare "
                              "the output vs expected result"):
+
                 self.assertEqual(expected, actual_result)
