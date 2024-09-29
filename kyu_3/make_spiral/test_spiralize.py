@@ -26,7 +26,7 @@ from kyu_3.make_spiral.solution import spiralize
             'BASIC LANGUAGE FEATURES',
             'FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/python',
+    url='https://www.codewars.com/kata/534e01fbbb17187c7e0000c6',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SpiralizeTestCase(unittest.TestCase):
