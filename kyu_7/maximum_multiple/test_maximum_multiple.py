@@ -27,7 +27,7 @@ from kyu_7.maximum_multiple.maximum_multiple import max_multiple
             'LOOPS',
             'CONTROL FLOW')
 @allure.link(
-    url='https://www.codewars.com/kata/5aba780a6a176b029800041c/train/python',
+    url='https://www.codewars.com/kata/5aba780a6a176b029800041c',
     name='Source/Kata')
 class MaximumMultipleTestCase(unittest.TestCase):
     """
