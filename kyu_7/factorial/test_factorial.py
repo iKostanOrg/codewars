@@ -18,9 +18,12 @@ from kyu_7.factorial.factorial import factorial
 @allure.sub_suite("Unit Tests")
 @allure.feature("Addition")
 @allure.story('Sum of Numbers')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'ALGORITHMS',
+            'NUMBERS')
+@allure.link(
+    url='https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc',
+    name='Source/Kata')
 class FactorialTestCase(unittest.TestCase):
     """
     Testing 'factorial' function
@@ -58,7 +61,6 @@ class FactorialTestCase(unittest.TestCase):
                 (3, 6, "factorial for 3 is 6"))
 
             for n, expected, msg in data:
-
                 print_log(n=n,
                           expected=expected,
                           msg=msg)
