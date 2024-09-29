@@ -40,7 +40,6 @@ class DisemvowelTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable-msg=R0801
-        global input_data
         allure.dynamic.title("a and b are equal")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
