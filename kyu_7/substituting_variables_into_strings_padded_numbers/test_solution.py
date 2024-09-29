@@ -25,7 +25,7 @@ from kyu_7.substituting_variables_into_strings_padded_numbers.solution import so
             'FORMATTING',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/python',
+    url='https://www.codewars.com/kata/54ba84be607a92aa900000f1',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SolutionTestCase(unittest.TestCase):
