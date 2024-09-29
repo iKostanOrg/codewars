@@ -27,7 +27,7 @@ from kyu_7.powers_of_3.largest_power import largest_power
             'MATHEMATICS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/57be674b93687de78c0001d9/train/python',
+    url='https://www.codewars.com/kata/57be674b93687de78c0001d9',
     name='Source/Kata')
 class LargestPowerTestCase(unittest.TestCase):
     """
