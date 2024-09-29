@@ -44,7 +44,8 @@ class MakeClassTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Give me the power to create a similar class like this:</p>"
-            "<p>Animal = make_class(\"name\", \"species\", \"age\", \"health\", "
+            "<p>Animal = "
+            "make_class(\"name\", \"species\", \"age\", \"health\", "
             "\"weight\", \"color\")</p>")
         # pylint: enable-msg=R0801
         with allure.step("Test class creation by using a function"):
