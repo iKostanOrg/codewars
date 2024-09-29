@@ -19,4 +19,6 @@ def calculate(s: str) -> str:
     for key, item in CONVERSION.items():
         if key in s:
             s = s.replace(key, item)
-    return f'{eval(s)}'  # pylint: disable=W0123
+    # pylint: disable=W0123
+    return f'{eval(s)}'   # nosec B311
+    # pylint: enable=W0123
