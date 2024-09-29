@@ -24,7 +24,7 @@ from kyu_7.find_the_longest_gap.gap import gap
             'DECLARATIVE PROGRAMMING',
             'ADVANCED LANGUAGE FEATURES',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/55b86beb1417eab500000051/train/python',
+@allure.link(url='https://www.codewars.com/kata/55b86beb1417eab500000051',
              name='Source/Kata')
 class GapTestCase(unittest.TestCase):
     """
