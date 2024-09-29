@@ -26,7 +26,7 @@ from kyu_7.password_validator.password import password
             'ADVANCED LANGUAGE FEATURES',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/56a921fa8c5167d8e7000053/train/python',
+    url='https://www.codewars.com/kata/56a921fa8c5167d8e7000053',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class PasswordTestCase(unittest.TestCase):
