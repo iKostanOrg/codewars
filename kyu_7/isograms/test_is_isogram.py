@@ -42,7 +42,8 @@ class IsIsogramTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Verify that the function that determines corectly "
             "whether a string that contains only letters is an isogram. "
-            "Assume the empty string is an isogram. Ignore letter case.</p>")
+            "Assume the empty string is an isogram. Ignore letter case."
+            "</p>")
         # pylint: enable-msg=R0801
         test_data: tuple = (
             ("Dermatoglyphics", True, ''),
@@ -53,7 +54,8 @@ class IsIsogramTestCase(unittest.TestCase):
             ('', True, "an empty string is a valid isogram"))
 
         for string, expected, message in test_data:
-            with allure.step(f"Enter a test string {string} and verify the result"):
+            with allure.step(
+                    f"Enter a test string {string} and verify the result"):
                 actual_result: bool = is_isogram(string)
 
                 print_log(expected=expected,
