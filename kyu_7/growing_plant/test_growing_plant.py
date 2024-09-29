@@ -21,7 +21,7 @@ from kyu_7.growing_plant.growing_plant import growing_plant
 @allure.story('Simple Fun #74: Growing Plant')
 @allure.tag('ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/58941fec8afa3618c9000184/train/python',
+    url='https://www.codewars.com/kata/58941fec8afa3618c9000184',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class GrowingPlantTestCase(unittest.TestCase):
