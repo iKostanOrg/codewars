@@ -26,7 +26,7 @@ from kyu_7.sort_out_the_men_from_boys.men_from_boys import men_from_boys
             'CONTROL FLOW',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/python',
+    url='https://www.codewars.com/kata/5af15a37de4c7f223e00012d',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class MenFromBoysTestCase(unittest.TestCase):
