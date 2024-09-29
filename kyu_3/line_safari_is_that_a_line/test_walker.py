@@ -1,6 +1,5 @@
 """
 Testing Walker Class
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,7 +23,7 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 @allure.tag('ALGORITHMS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python',
+    url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237',
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
@@ -39,7 +38,8 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing starting position property based on positive grids
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing Walker class - position property from positive grids")
+        allure.dynamic.title(
+            "Testing Walker class - position property from positive grids")
         allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -48,7 +48,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on positive grids.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ["           ",
              "X---------X",
              "           ",
@@ -94,7 +94,8 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing starting position property based on negative grids
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing Walker class - position property from negative grids")
+        allure.dynamic.title(
+            "Testing Walker class - position property from negative grids")
         allure.dynamic.severity(allure.severity_level.CRITICAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -103,7 +104,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on negative grids.</p>")
         # pylint: disable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ["X-----|----X"],
             [" X  ",
              " |  ",
@@ -122,8 +123,7 @@ class WalkerClassTestCase(unittest.TestCase):
              "      |      |",
              "X-----+------+",
              "      |       ",
-             "      X       "],
-        )
+             "      X       "])
 
         expected = 'X'
         for grid in test_data:

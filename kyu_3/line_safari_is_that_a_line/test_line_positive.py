@@ -1,7 +1,6 @@
 """
 Testing Line Safari functionality
 Positive test cases
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,7 +23,7 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
 @allure.tag('ALGORITHMS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python',
+    url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237',
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class LinePositiveTestCase(unittest.TestCase):
@@ -38,7 +37,6 @@ class LinePositiveTestCase(unittest.TestCase):
         Testing Line Safari functionality
         Positive test cases
         """
-
         allure.dynamic.title("Testing Line Safari functionality - POSITIVE")
         # pylint: disable-msg=R0801
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -49,7 +47,7 @@ class LinePositiveTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should return true/false if it can detect a one "
             "and only one \"valid\" line joining those points.</p>")
-        test_data = (
+        test_data: tuple = (
             ["           ",
              "X---------X",
              "           ",
@@ -85,13 +83,12 @@ class LinePositiveTestCase(unittest.TestCase):
             ["                      ",
              "   +-------+          ",
              "   |      +++---+     ",
-             "X--+      +-+   X     "],
-        )
-        expected = True
-        for grid in test_data:
-            actual_result = line(grid)
+             "X--+      +-+   X     "])
 
-            print()
+        expected: bool = True
+        for grid in test_data:
+
+            actual_result = line(grid)
             for row in grid:
                 print(row)
 

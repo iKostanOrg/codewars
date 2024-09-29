@@ -1,7 +1,6 @@
 """
 Testing Line Safari functionality
 Negative test cases
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,7 +24,7 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
 @allure.tag('ALGORITHMS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python',
+    url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237',
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
@@ -51,7 +50,7 @@ class LineNegativeTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should return true/false if it can detect a one "
             "and only one \"valid\" line joining those points.</p>")
-        test_data = (
+        test_data: tuple = (
             ["X-----|----X"],
             [" X  ",
              " |  ",
@@ -70,14 +69,13 @@ class LineNegativeTestCase(unittest.TestCase):
              "      |      |",
              "X-----+------+",
              "      |       ",
-             "      X       "],
-        )
-        # pylint: enable-msg=R0801
-        expected = False
-        for grid in test_data:
-            actual_result = line(grid)
+             "      X       "])
 
-            print()
+        # pylint: enable-msg=R0801
+        expected: bool = False
+        for grid in test_data:
+
+            actual_result = line(grid)
             for row in grid:
                 print(row)
 
