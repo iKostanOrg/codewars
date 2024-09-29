@@ -30,4 +30,4 @@ Members should be sorted in **ascending order** (small -> large).
 
 > `[2, 4]`, not `[4, 2]`)
 
-[Source](https://www.codewars.com/kata/5d9f95424a336600278a9632/train/python)
+[Source](https://www.codewars.com/kata/5d9f95424a336600278a9632)
