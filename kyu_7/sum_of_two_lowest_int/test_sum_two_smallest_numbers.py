@@ -6,7 +6,8 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
-from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int import sum_two_smallest_numbers
+from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int \
+    import sum_two_smallest_numbers
 
 # FUNDAMENTALS, ARRAYS
 
@@ -20,7 +21,7 @@ from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int import sum_two_smallest_nu
 @allure.tag('FUNDAMENTALS',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/python',
+    url='https://www.codewars.com/kata/558fc85d8fd1938afb000014',
     name='Source/Kata')
 class SumTwoSmallestNumbersTestCase(unittest.TestCase):
     """
