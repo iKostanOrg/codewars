@@ -133,7 +133,7 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         with allure.step("Enter a big number as an input "
                          "and verify the output"):
-            n:int = 943
-            expected:int = 140205240
+            n: int = 943
+            expected: int = 140205240
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
