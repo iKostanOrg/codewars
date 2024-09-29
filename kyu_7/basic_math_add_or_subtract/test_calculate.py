@@ -22,7 +22,7 @@ from utils.log_func import print_log
 @allure.tag('FUNDAMENTALS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/5809b62808ad92e31b000031/train/python',
+    url='https://www.codewars.com/kata/5809b62808ad92e31b000031',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CalculateTestCase(unittest.TestCase):
