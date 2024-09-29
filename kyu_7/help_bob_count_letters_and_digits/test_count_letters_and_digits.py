@@ -22,7 +22,7 @@ from kyu_7.help_bob_count_letters_and_digits.count_letters_and_digits \
 @allure.tag('FUNDAMENTALS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/5738f5ea9545204cec000155/train/python',
+    url='https://www.codewars.com/kata/5738f5ea9545204cec000155',
     name='Source/Kata')
 class CalculateTestCase(unittest.TestCase):
     """
