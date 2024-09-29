@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Permute a Palindrome
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ALGORITHMS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 
@@ -16,28 +18,30 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Permute a Palindrome')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'ALGORITHMS')
+@allure.link(url='https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/python',
              name='Source/Kata')
 class PermutePalindromeTestCase(unittest.TestCase):
     """
     Testing permute_a_palindrome function
     """
-
     def test_permute_a_palindrome_positive(self):
         """
         Testing permute_a_palindrome function
         :return:
         """
-
-        allure.dynamic.title("Testing permute_a_palindrome (positive)")
+        # pylint: disable-msg=R0801
+        allure.dynamic.title(
+            "Testing permute_a_palindrome (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
             string = "a"
             expected = True
@@ -71,14 +75,21 @@ class PermutePalindromeTestCase(unittest.TestCase):
             self.assertEqual(permute_a_palindrome(string), expected)
 
     def test_permute_a_palindrome_negative(self):
-        allure.dynamic.title("Testing permute_a_palindrome (negative)")
+        """
+        Negative testing permute_a_palindrome function
+        :return:
+        """
+        # pylint: disable-msg=R0801
+        allure.dynamic.title(
+            "Testing permute_a_palindrome (negative)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
             string = "baabcd"
             expected = False
@@ -104,14 +115,21 @@ class PermutePalindromeTestCase(unittest.TestCase):
             self.assertEqual(permute_a_palindrome(string), expected)
 
     def test_permute_a_palindrome_empty_string(self):
-        allure.dynamic.title("Testing permute_a_palindrome (empty string)")
+        """
+        Testing permute_a_palindrome function with empty string
+        :return:
+        """
+        # pylint: disable-msg=R0801
+        allure.dynamic.title(
+            "Testing permute_a_palindrome (empty string)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter empty string and verify the result"):
             string = ''
             expected = True

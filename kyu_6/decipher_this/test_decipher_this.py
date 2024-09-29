@@ -1,37 +1,47 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Decipher this!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS ARRAYS CIPHERS ALGORITHMS CRYPTOGRAPHY SECURITY
+# FUNDAMENTALS STRINGS ARRAYS CIPHERS
+# ALGORITHMS CRYPTOGRAPHY SECURITY
 
-import allure
 import unittest
+import allure
 from kyu_6.decipher_this.solution import decipher_this
 from utils.log_func import print_log
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Decipher this!')
-@allure.tag('FUNDAMENTALS', 'STRINGS', 'ARRAYS', 'CIPHERS',
-            'ALGORITHMS', 'CRYPTOGRAPHY', 'SECURITY')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'ARRAYS',
+            'CIPHERS',
+            'ALGORITHMS',
+            'CRYPTOGRAPHY',
+            'SECURITY')
 @allure.link(
     url='https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class DecipherThisTestCase(unittest.TestCase):
     """
     Testing decipher_this function
     """
-
     def test_decipher_this(self):
         """
         Testing decipher_this function
         :param self:
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing decipher_this function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -42,11 +52,13 @@ class DecipherThisTestCase(unittest.TestCase):
             "<p>"
             "Given a secret message that you need to decipher.<br>"
             "<br>For each word:<br>"
-            " * the second and the last letter is switched (e.g. Hello becomes Holle)<br>"
-            " * the first letter is replaced by its character code (e.g. H becomes 72)<br>"
-            "<br>Note: there are no special characters used, only letters and spaces."
+            " * the second and the last letter is switched (e.g. "
+            "Hello becomes Holle)<br> * the first letter is replaced "
+            "by its character code (e.g. H becomes 72)<br>"
+            "<br>Note: there are no special characters used, only "
+            "letters and spaces."
             "</p>")
-
+        # pylint: enable-msg=R0801
         test_data = (
             ("",
              ""),
@@ -63,11 +75,14 @@ class DecipherThisTestCase(unittest.TestCase):
             ("87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri",
              "Why can we not all be like that wise old bird"),
             ("84kanh 121uo 80roti 102ro 97ll 121ruo 104ple",
-             "Thank you Piotr for all your help")
-        )
+             "Thank you Piotr for all your help"))
 
         for text, expected in test_data:
             result = decipher_this(text)
-            print_log(text=text, expected=expected, result=result)
+            print_log(text=text,
+                      expected=expected,
+                      result=result)
+
             with allure.step("Enter test string and verify the output"):
-                self.assertEqual(expected, result)
+                self.assertEqual(expected,
+                                 result)

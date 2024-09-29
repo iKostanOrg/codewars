@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Make Class
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS GAMES OBJECT-ORIENTED PROGRAMMING
 
@@ -17,49 +19,71 @@ from utils.log_func import print_log
 @allure.sub_suite("Unit Tests")
 @allure.feature("Classes")
 @allure.story('Make Class')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('ALGORITHMS',
+            'GAMES',
+            'OBJECT-ORIENTED PROGRAMMING')
+@allure.link(
+    url='https://www.codewars.com/kata/523f5d21c841566fde000009',
+    name='Source/Kata')
 # @pytest.mark.skip(reason="The solution is not ready")
 class MakeClassTestCase(unittest.TestCase):
     """
     Testing make_class function
     """
-
     def test_make_class(self):
         """
         Testing make_class function
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing make_class function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Give me the power to create a similar class like this:</p>"
-                                        "<p>Animal = make_class(\"name\", \"species\", \"age\", \"health\", "
-                                        "\"weight\", \"color\")</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Give me the power to create a similar class like this:</p>"
+            "<p>Animal = "
+            "make_class(\"name\", \"species\", \"age\", \"health\", "
+            "\"weight\", \"color\")</p>")
+        # pylint: enable-msg=R0801
         with allure.step("Test class creation by using a function"):
 
-            Animel = make_class("name", "species", "age", "health", "weight", "color")
+            Animel = make_class("name",
+                                "species",
+                                "age",
+                                "health",
+                                "weight",
+                                "color")
 
-            dog1 = Animal("Bob", "Dog", 5, "good", "50lb", "brown")
-            dog2 = Animel("Bob", "Dog", 5, "good", "50lb", "brown")
-
+            dog1 = Animal(name="Bob",
+                          species="Dog",
+                          age=5,
+                          health="good",
+                          weight="50lb",
+                          color="brown")
+            # pylint: disable-msg=E1123
+            dog2 = Animel("Bob",
+                          "Dog",
+                          5,
+                          "good",
+                          "50lb",
+                          "brown")
+            # pylint: enable-msg=E1123
+            # pylint: disable-msg=E1101
             test_data = ((dog1.name, dog2.name),
                          (dog1.species, dog2.species),
                          (dog1.age, dog2.age),
                          (dog1.health, dog2.health),
                          (dog1.weight, dog2.weight),
                          (dog1.color, dog2.color))
-
+            # pylint: enable-msg=E1101
             for td in test_data:
                 a = td[0]
                 b = td[1]
-                with allure.step("Assert that classes have {} arg".format(a)):
+
+                with allure.step(f"Assert that classes {a} and "
+                                 f"{b} have equal properties"):
                     print_log(a=a, b=b)
                     self.assertEqual(a, b)
-

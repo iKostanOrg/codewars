@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Easy Diagonal
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import math
 
@@ -22,29 +24,7 @@ def diagonal(n: int, p: int) -> int:
     if p < 0:
         raise ValueError('ERROR: invalid p ({}) value. p must be >= 0')
 
-    #print('\nn: {}, p: {}'.format(n, p))
-    #combinations = list()
-
-    result = math.factorial(
+    result: int = math.factorial(
         n + 1) // (math.factorial(p + 1) * math.factorial(n - p))
-
-    # for row in range(p, n + 1):
-    #temp = list()
-    # for col in range(p, row + 1):
-    #number = math.factorial(row) // (math.factorial(col) * math.factorial(row - col))
-    # temp.append(number)
-    #print('row: {}, col: {}, number: {} '.format(row, col, number), end='')
-    # print(temp)
-    #result += temp[0]
-    #number = math.factorial(row) // (math.factorial(p) * math.factorial(row - p))
-    #print(' ', number, end='')
-    #result += number
-    # combinations.append(temp)
-
-    # print()
-    #length: int = len('{}'.format(combinations[-1]))
-    # for row in combinations:
-    #space = ' ' * ((length - len('{}'.format(row))) // 2)
-    #print('{}{}'.format(space, row))
 
     return result

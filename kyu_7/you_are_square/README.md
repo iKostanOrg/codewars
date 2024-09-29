@@ -32,4 +32,4 @@ isSquare(25) returns  true
 isSquare(26) returns  false
 ```
 
-[Source](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/python)
+[Source](https://www.codewars.com/kata/54c27a33fb7da0db0100040e)

@@ -31,7 +31,7 @@ def sequence(n: int) -> int:
     :param n:
     :return:
     """
-    return 0
+    return n
 
 
 def sum_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:

@@ -10,4 +10,4 @@ For example:
     the output should be 7.
 -   ```[10, 343445353, 3453445, 3453545353453]``` should return 3453455.
 
-[Source](https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/python)
+[Source](https://www.codewars.com/kata/558fc85d8fd1938afb000014)

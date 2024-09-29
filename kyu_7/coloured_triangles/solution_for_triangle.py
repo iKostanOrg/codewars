@@ -1,6 +1,5 @@
 """
 Solution for -> Coloured Triangles
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -22,7 +21,7 @@ COLORS = {
 }
 
 
-def triangle(row) -> str:
+def triangle(row: str) -> str:
     """
     You will be given the first row of the triangle as a string
     and its your job to return the final colour which would

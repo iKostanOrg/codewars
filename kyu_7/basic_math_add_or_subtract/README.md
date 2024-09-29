@@ -12,4 +12,4 @@ Note: the input will not be empty.
 "1plus2plus3minus4" -->  "2"
 ```
 
-[Source](https://www.codewars.com/kata/5809b62808ad92e31b000031/train/python)
+[Source](https://www.codewars.com/kata/5809b62808ad92e31b000031)

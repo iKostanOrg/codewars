@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Sort Out The Men From Boys
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS NUMBERS BASIC LANGUAGE FEATURES CONDITIONAL STATEMENTS CONTROL FLOW ALGORITHMS
+# FUNDAMENTALS NUMBERS BASIC LANGUAGE FEATURES
+# CONDITIONAL STATEMENTS CONTROL FLOW ALGORITHMS
 
 import unittest
 import allure
@@ -10,15 +13,23 @@ from utils.log_func import print_log
 from kyu_7.sort_out_the_men_from_boys.men_from_boys import men_from_boys
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Sort Out The Men From Boys')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'NUMBERS',
+            'BASIC LANGUAGE FEATURES',
+            'CONDITIONAL STATEMENTS',
+            'CONTROL FLOW',
+            'ALGORITHMS')
+@allure.link(
+    url='https://www.codewars.com/kata/5af15a37de4c7f223e00012d',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class MenFromBoysTestCase(unittest.TestCase):
     """
     Testing men_from_boys function
@@ -49,17 +60,19 @@ class MenFromBoysTestCase(unittest.TestCase):
         While odds in descending.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title('Testing men_from_boys function')
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step('Given an list of integers => '
                          'separate the even numbers from the odds'):
-            test_data = [
+            test_data: tuple = (
                 ([7, 3, 14, 17],
                  [14, 17, 7, 3]),
                 ([2, 43, 95, 90, 37],
@@ -89,8 +102,7 @@ class MenFromBoysTestCase(unittest.TestCase):
                 ([63, -57, 76, -85, 88, 2, -28],
                  [-28, 2, 76, 88, 63, -57, -85]),
                 ([49, 818, -282, 900, 928, 281, -282, -1],
-                 [-282, 818, 900, 928, 281, 49, -1])
-            ]
+                 [-282, 818, 900, 928, 281, 49, -1]))
 
             for arr, expected in test_data:
                 print_log(arr=arr, expected=expected)

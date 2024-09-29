@@ -17,4 +17,4 @@ class Node:
 
 **Note:** the list may be null and can hold any type of value.
 
-[Source](https://www.codewars.com/kata/581e476d5f59408553000a4b/train/python)
+[Source](https://www.codewars.com/kata/581e476d5f59408553000a4b)

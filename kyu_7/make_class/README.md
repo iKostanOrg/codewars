@@ -19,4 +19,4 @@ Give me the power to create a similar class like this:
 Animal = make_class("name", "species", "age", "health", "weight", "color")
 ```
 
-[Source](https://www.codewars.com/kata/5d774cfde98179002a7cb3c8/train/python)
+[Source](https://www.codewars.com/kata/5d774cfde98179002a7cb3c8)
