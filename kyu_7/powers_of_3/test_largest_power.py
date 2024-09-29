@@ -10,7 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.powers_of_3.largest_power import largestPower
+from kyu_7.powers_of_3.largest_power import largest_power
 
 
 @allure.epic('7 kyu')
@@ -53,10 +53,10 @@ class LargestPowerTestCase(unittest.TestCase):
             n: int = 3
             expected: int = 0
             print_log(N=n, expected=expected)
-            self.assertEqual(largestPower(n), expected)
+            self.assertEqual(largest_power(n), expected)
 
         with allure.step("Pass an integer and verify the output"):
             n: int = 4
             expected: int = 1
             print_log(N=n, expected=expected)
-            self.assertEqual(largestPower(n), expected)
+            self.assertEqual(largest_power(n), expected)
