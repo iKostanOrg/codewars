@@ -21,7 +21,7 @@ from kyu_7.isograms.is_isogram import is_isogram
 @allure.tag('FUNDAMENTALS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/python',
+    url='https://www.codewars.com/kata/54ba84be607a92aa900000f1',
     name='Source/Kata')
 class IsIsogramTestCase(unittest.TestCase):
     """
