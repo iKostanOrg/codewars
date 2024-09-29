@@ -22,7 +22,7 @@ from kyu_7.beginner_series_sum_of_numbers.sum_of_numbers import get_sum
 @allure.tag('FUNDAMENTALS',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/55f2b110f61eb01779000053/train/python',
+    url='https://www.codewars.com/kata/55f2b110f61eb01779000053',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SumOfNumbersTestCase(unittest.TestCase):
