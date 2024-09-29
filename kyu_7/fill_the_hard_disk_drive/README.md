@@ -26,4 +26,4 @@ will be able to save into your Hard Disk Drive.
 
 Do not expect any negative or invalid inputs.
 
-[Source](https://www.codewars.com/kata/5d49c93d089c6e000ff8428c/train/python)
+[Source](https://www.codewars.com/kata/5d49c93d089c6e000ff8428c)
