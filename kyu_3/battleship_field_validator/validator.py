@@ -1,6 +1,5 @@
 """
 Solution for -> Battleship field validator
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -13,7 +12,6 @@ def validate_battlefield(field: list) -> bool:
     false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
     Elements in the array are numbers, 0 if the cell is free
     and 1 if occupied by ship.
-
     :param field: 2D list,  board game "Battleship"
     :return: bool, true if there is a valid disposition of ships
     """
@@ -37,7 +35,6 @@ def validate_battlefield(field: list) -> bool:
 def ship_counter_by_row(field: list, ships: dict):
     """
     Ship counter by row
-
     :param field: list
     :param ships: dict
     :return:
@@ -78,7 +75,6 @@ def ship_counter_by_row(field: list, ships: dict):
 def ship_counter_by_col(field: list, ships: dict):
     """
     Ship counter by col
-
     :param field: list
     :param ships: dict
     :return:
