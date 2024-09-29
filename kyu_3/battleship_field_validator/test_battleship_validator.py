@@ -1,6 +1,5 @@
 """
 Testing Battleship field validator
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,8 +23,9 @@ from utils.log_func import print_log
             'VALIDATION',
             'ARRAYS',
             'GAME BOARDS')
-@allure.link(url='https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7',
+    name='Source/Kata')
 class BattleshipFieldValidatorTestCase(unittest.TestCase):
     """
     Testing Battleship field validator
