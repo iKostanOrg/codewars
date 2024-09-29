@@ -1,10 +1,8 @@
 """
 Solution for -> Calculator
-
 Create a simple calculator that given a string
 of operators '()', '+', '-', '*', '/'  and numbers separated
 by spaces returns the value of that expression.
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -37,15 +35,14 @@ class Calculator:
         """
         1. Perform math operation
         2. Reorganize math expression
-
         :param i: (int) math operation index
         :param char: (str) math operation
         :param strings: (list) math expression
         :return: None
         """
 
-        a = float(strings[i - 1])
-        b = float(strings[i + 1])
+        a: float = float(strings[i - 1])
+        b: float = float(strings[i + 1])
 
         if char == '*':
             strings[i] = str(a * b)
@@ -70,7 +67,7 @@ class Calculator:
         :param operators: list, contains math operators
         :return: str, output string with no ‘*’, ‘/’, ‘+’, ‘-‘
         """
-        strings = string.split(' ')
+        strings: list = string.split(' ')
 
         while any((s in operators) for s in strings):
             for i, char in enumerate(strings):
@@ -78,7 +75,6 @@ class Calculator:
                     self.__calculate(i, char, strings)
                     break
 
-        print(strings)
         return ' '.join(strings)
 
     def evaluate(self, string: str) -> float:
