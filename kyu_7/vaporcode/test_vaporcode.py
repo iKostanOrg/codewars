@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_7.vaporcode.vaporcode import vaporcode
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -22,6 +23,7 @@ from kyu_7.vaporcode.vaporcode import vaporcode
 @allure.link(
     url='https://www.codewars.com/kata/5966eeb31b229e44eb00007a',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class VaporcodeTestCase(unittest.TestCase):
     """
     Testing 'vaporcode' function
