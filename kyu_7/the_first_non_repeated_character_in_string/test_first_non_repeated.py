@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.the_first_non_repeated_character_in_string.first_non_repeated import first_non_repeated
+from kyu_7.the_first_non_repeated_character_in_string.first_non_repeated \
+    import first_non_repeated
 
 
 # pylint: disable-msg=R0801
@@ -23,7 +24,7 @@ from kyu_7.the_first_non_repeated_character_in_string.first_non_repeated import 
             'ALGORITHMS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/570f6436b29c708a32000826/train/python',
+    url='https://www.codewars.com/kata/570f6436b29c708a32000826',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstNonRepeatedTestCase(unittest.TestCase):
