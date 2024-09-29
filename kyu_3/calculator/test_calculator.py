@@ -1,6 +1,5 @@
 """
 Testing for -> Calculator class
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -65,12 +64,12 @@ class CalculatorTestCase(unittest.TestCase):
             ('2 + 3 * 4 / 3 - 6 / 3 * 3 + 8', 8),
             ('1.1 + 2.2 + 3.3', 6.6),
             ('1.1 * 2.2 * 3.3', 7.986000000000001),
-            ('10 * 5 / 2', 25)
-        )
+            ('10 * 5 / 2', 25))
 
         for string, expected in test_data:
 
-            actual_result = Calculator().evaluate(string)
+            actual_result: float = Calculator().evaluate(string)
+
             print_log(string=string,
                       expected=expected,
                       actual_result=actual_result)
@@ -78,5 +77,6 @@ class CalculatorTestCase(unittest.TestCase):
             with allure.step(f"Enter a test string ({string}), "
                              f"calculate the result ({actual_result}) and "
                              f"compare vs expected ({expected})"):
+
                 self.assertEqual(expected,
                                  actual_result)
