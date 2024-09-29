@@ -22,7 +22,7 @@ from kyu_7.easy_line.easyline import easy_line, calc_combination_per_row_item
             'ALGORITHMS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/56e7d40129035aed6c000632/train/python',
+    url='https://www.codewars.com/kata/56e7d40129035aed6c000632',
     name='Source/Kata')
 class EasyLineTestCase(unittest.TestCase):
     """
