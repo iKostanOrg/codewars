@@ -23,7 +23,7 @@ from kyu_7.jaden_casing_strings.jaden_casing_strings import to_jaden_case
             'STRINGS',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/python',
+    url='https://www.codewars.com/kata/5390bac347d09b7da40006f6',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class JadenCasingStringsTestCase(unittest.TestCase):
