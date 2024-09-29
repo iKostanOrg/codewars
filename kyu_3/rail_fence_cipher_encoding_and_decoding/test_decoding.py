@@ -27,7 +27,7 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
             'SECURITY',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python',
+    url='https://www.codewars.com/kata/58c5577d61aefcf3ff000081',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DecodingTestCase(unittest.TestCase):
@@ -39,7 +39,6 @@ class DecodingTestCase(unittest.TestCase):
         """
         Testing Decoding functionality
         """
-
         allure.dynamic.title("Testing Decoding functionality")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -50,7 +49,7 @@ class DecodingTestCase(unittest.TestCase):
             "<p>Verify cipher function. This \"decode\" is used "
             "to decode a string.</p>")
 
-        test_data = (
+        test_data: tuple = (
             ("H !e,Wdloollr", 4, "Hello, World!"),
             ("WECRLTEERDSOEEFEAOCAIVDEN", 3, "WEAREDISCOVEREDFLEEATONCE"),
             ("", 3, ""),
@@ -59,7 +58,9 @@ class DecodingTestCase(unittest.TestCase):
         )
         # pylint: disable-msg=R0801
         for string, n, expected in test_data:
-            actual_result = decode_rail_fence_cipher(string, n)
+
+            actual_result: str = decode_rail_fence_cipher(string, n)
+
             print_log(string=string,
                       n=n,
                       expected=expected,
@@ -67,5 +68,6 @@ class DecodingTestCase(unittest.TestCase):
 
             with allure.step("Enter a test string and compare "
                              "the output vs expected result"):
+
                 self.assertEqual(expected, actual_result)
         # pylint: enable-msg=R0801

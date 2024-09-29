@@ -86,4 +86,4 @@ X-----+------+
 Imagine yourself walking a path where you can only see your very next step.
 Can you know which step you must take, or not?
 
-[Source](https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237/train/python)
+[Source](https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237)
