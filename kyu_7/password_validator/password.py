@@ -27,7 +27,7 @@ def password(string: str) -> bool:
         'uppercase': False,
         'lowercase': False,
         'number': False,
-        'length': True if len(string) >= 8 else False}
+        'length': len(string) >= 8}
 
     for char in string:
         if char.isdigit():
