@@ -38,6 +38,7 @@ def calc_combination_per_row_item(row: int, i: int) -> int:
     :param i: index
     :return:
     """
-    combination: int = (
-            int(math.factorial(row)) // (int(math.factorial(i)) * int(math.factorial(row - i))))
+    combination: int = (int(math.factorial(row)) //
+                        (int(math.factorial(i)) *
+                         int(math.factorial(row - i))))
     return combination
