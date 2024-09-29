@@ -23,7 +23,7 @@ from utils.log_func import print_log
             'GAMES',
             'OBJECT-ORIENTED PROGRAMMING')
 @allure.link(
-    url='https://www.codewars.com/kata/523f5d21c841566fde000009/train/python',
+    url='https://www.codewars.com/kata/523f5d21c841566fde000009',
     name='Source/Kata')
 # @pytest.mark.skip(reason="The solution is not ready")
 class MakeClassTestCase(unittest.TestCase):
