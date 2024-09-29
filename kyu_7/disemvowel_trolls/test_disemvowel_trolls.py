@@ -26,7 +26,7 @@ from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
             'DECLARATIVE PROGRAMMING',
             'ADVANCED LANGUAGE FEATURES')
 @allure.link(
-    url='https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python',
+    url='https://www.codewars.com/kata/52fba66badcd10859f00097e',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DisemvowelTestCase(unittest.TestCase):
