@@ -11,6 +11,7 @@ import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_7.coloured_triangles.solution_for_triangle import triangle
 
+
 # pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
@@ -29,6 +30,7 @@ class TriangleTestCase(unittest.TestCase):
     """
     Testing triangle function
     """
+
     def test_triangle(self):
         """
         Basic test case
