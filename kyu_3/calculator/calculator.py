@@ -25,6 +25,7 @@ class Calculator:
         1. Set result value by converting
         string value to a float
         2. Return result value
+        
         :return: float
         """
         self.__result = float(self.__string)
@@ -35,6 +36,7 @@ class Calculator:
         """
         1. Perform math operation
         2. Reorganize math expression
+
         :param i: (int) math operation index
         :param char: (str) math operation
         :param strings: (list) math expression
@@ -62,7 +64,6 @@ class Calculator:
     def __process_math_expression(self, string: str, operators: list) -> str:
         """
         Perform all operation with multiplications, divisions, additions and subtractions
-
         :param string: str, input string
         :param operators: list, contains math operators
         :return: str, output string with no ‘*’, ‘/’, ‘+’, ‘-‘
@@ -80,7 +81,6 @@ class Calculator:
     def evaluate(self, string: str) -> float:
         """
         Returns value of the given expression
-
         :param string: str, input string to evaluate
         :return: (float) result
         """
