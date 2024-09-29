@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def toJadenCase(string: str) -> str:
+def to_jaden_case(string: str) -> str:
     """
     Convert strings to how they would
     be written by Jaden Smith. The strings

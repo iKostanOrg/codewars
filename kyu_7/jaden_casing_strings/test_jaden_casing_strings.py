@@ -9,7 +9,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.jaden_casing_strings.jaden_casing_strings import toJadenCase
+from kyu_7.jaden_casing_strings.jaden_casing_strings import to_jaden_case
 
 
 # pylint: disable-msg=R0801
@@ -51,7 +51,7 @@ class JadenCasingStringsTestCase(unittest.TestCase):
             expected = "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
             print_log(string=quote, expected=expected)
-            self.assertEqual(toJadenCase(quote), expected)
+            self.assertEqual(to_jaden_case(quote), expected)
 
     def test_to_jaden_case_negative(self):
         """
@@ -72,4 +72,4 @@ class JadenCasingStringsTestCase(unittest.TestCase):
             quote = "How can mirrors be real if our eyes aren't real"
 
             print_log(string=quote, expected=False)
-            self.assertNotEqual(toJadenCase(quote), quote)
+            self.assertNotEqual(to_jaden_case(quote), quote)
