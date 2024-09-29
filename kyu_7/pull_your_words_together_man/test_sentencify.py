@@ -22,7 +22,7 @@ from kyu_7.pull_your_words_together_man.sentencify import sentencify
             'STRINGS',
             'FORMATTING')
 @allure.link(
-    url='https://www.codewars.com/kata/59ad7d2e07157af687000070/train/python',
+    url='https://www.codewars.com/kata/59ad7d2e07157af687000070',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SentencifyTestCase(unittest.TestCase):
