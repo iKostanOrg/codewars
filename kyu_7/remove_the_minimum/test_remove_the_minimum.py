@@ -24,7 +24,7 @@ from kyu_7.remove_the_minimum.remove_the_minimum import remove_smallest
             'DATA STRUCTURES',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/python',
+    url='https://www.codewars.com/kata/563cf89eb4747c5fb100001b',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class RemoveSmallestTestCase(unittest.TestCase):
