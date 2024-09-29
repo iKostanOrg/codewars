@@ -55,7 +55,7 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
             " returns true if it has a valid disposition of"
             " ships, false otherwise.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
               [1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
               [1, 0, 0, 0, 1, 0, 0, 1, 0, 0],
@@ -158,13 +158,16 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
         )
 
         for field, expected, message in test_data:
-            actual_result = validate_battlefield(field)
+
+            actual_result: bool = validate_battlefield(field)
 
             print_log(field=field,
                       expected=expected,
                       message=message,
                       actual_result=actual_result)
-            step_txt = (f"Field validation: "
+
+            step_txt: str = (f"Field validation: "
                         f"expected -> {expected}, actual -> {actual_result}")
+
             with allure.step(step_txt):
                 self.assertEqual(expected, actual_result, msg=message)
