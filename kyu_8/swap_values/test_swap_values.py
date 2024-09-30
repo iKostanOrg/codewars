@@ -1,6 +1,5 @@
 #  Created by Egor Kostan.
 #  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
 
 # BUGS ARRAYS FUNDAMENTALS
 
@@ -16,13 +15,17 @@ from kyu_8.swap_values.swap_values import swap_values
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Swap Values')
-@allure.tag('BUGS', 'ARRAYS', 'FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/python',
-             name='Source/Kata')
+@allure.tag('BUGS',
+            'ARRAYS',
+            'FUNDAMENTALS')
+@allure.link(
+    url='https://www.codewars.com/kata/5388f0e00b24c5635e000fc6',
+    name='Source/Kata')
 class SwapValuesTestCase(unittest.TestCase):
     """
     Testing swap_values function
     """
+
     def test_swap_values(self):
         """
         Testing swap_values function
@@ -37,7 +40,6 @@ class SwapValuesTestCase(unittest.TestCase):
                                         "<p></p>")
 
         with allure.step("Pass a list with 2 values and swap them"):
-
             swap = [1, 2]
             expected = [2, 1]
             swap_values(swap)
