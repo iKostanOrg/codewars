@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Counting sheep...
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ARRAYS
 
@@ -18,8 +21,9 @@ from kyu_8.counting_sheep.counting_sheep import count_sheeps
 @allure.story('Counting sheep...')
 @allure.tag('FUNDAMENTALS',
             'ARRAYS')
-@allure.link(url='https://www.codewars.com/kata/54edbc7200b811e956000556/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/54edbc7200b811e956000556',
+    name='Source/Kata')
 # pylint: enable=R0801
 class CountingSheepTestCase(unittest.TestCase):
     """
@@ -37,24 +41,23 @@ class CountingSheepTestCase(unittest.TestCase):
 
         :return:
         """
-
         # pylint: disable=R0801
         allure.dynamic.title("Testing 'count_sheeps' function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
         # pylint: enable=R0801
-        lst = [True, True, True, False,
-               True, True, True, True,
-               True, False, True, False,
-               True, False, False, True,
-               True, True, True, True,
-               False, False, True, True]
-
-        expected = 17
+        lst: list = [True, True, True, False,
+                     True, True, True, True,
+                     True, False, True, False,
+                     True, False, False, True,
+                     True, True, True, True,
+                     False, False, True, True]
+        expected: int = 17
 
         print_log(list=lst,
                   expected=expected)
@@ -71,18 +74,18 @@ class CountingSheepTestCase(unittest.TestCase):
         bad values like null/undefined
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'count_sheeps' function: bad input")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
-        lst = list()
-
-        expected = 0
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
+        lst: list = []
+        expected: int = 0
 
         print_log(list=lst,
                   expected=expected)
@@ -99,18 +102,18 @@ class CountingSheepTestCase(unittest.TestCase):
         bad values like empty list
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'count_sheeps' function: empty list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
-        lst = []
-
-        expected = 0
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
+        lst: list = []
+        expected: int = 0
 
         print_log(list=lst,
                   expected=expected)
@@ -127,18 +130,18 @@ class CountingSheepTestCase(unittest.TestCase):
         bad values like mixed list
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'count_sheeps' function: mixed list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
-        lst = [True, False, None]
-
-        expected = 1
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
+        lst: list = [True, False, None]
+        expected: int = 1
 
         print_log(list=lst,
                   expected=expected)
@@ -147,4 +150,3 @@ class CountingSheepTestCase(unittest.TestCase):
                          count_sheeps(lst),
                          "There are 0 sheep in total, "
                          "not %s" % count_sheeps(lst))
-

@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Counting sheep...
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def count_sheeps(arrayOfSheeps: list) -> int:
+def count_sheeps(array_of_sheeps: list) -> int:
 	"""
 	Consider an array of sheep where some sheep
 	may be missing from their place. We need a
@@ -12,8 +14,8 @@ def count_sheeps(arrayOfSheeps: list) -> int:
 
 	Hint: Don't forget to check for bad values
 	like null/undefined
-	:param arrayOfSheeps:
+	:param array_of_sheeps:
 	:return:
 	"""
-	return 0 if arrayOfSheeps is None \
-		else arrayOfSheeps.count(True)
+	return 0 if array_of_sheeps is None \
+		else array_of_sheeps.count(True)
