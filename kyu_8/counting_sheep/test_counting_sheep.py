@@ -62,7 +62,8 @@ class CountingSheepTestCase(unittest.TestCase):
         print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         f"There are 17 sheep in total, not {count_sheeps(lst)}")
+                         f"There are 17 sheep in total, "
+                         f"not {count_sheeps(lst)}")
 
     def test_counting_sheep_bad_input(self):
         """
@@ -72,7 +73,8 @@ class CountingSheepTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable=R0801
-        allure.dynamic.title("Testing 'count_sheeps' function: bad input")
+        allure.dynamic.title(
+            "Testing 'count_sheeps' function: bad input")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -86,7 +88,8 @@ class CountingSheepTestCase(unittest.TestCase):
         print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         f"There are 0 sheep in total, not {count_sheeps(lst)}")
+                         f"There are 0 sheep in total, "
+                         f"not {count_sheeps(lst)}")
 
     def test_counting_sheep_empty_list(self):
         """
@@ -96,7 +99,8 @@ class CountingSheepTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable=R0801
-        allure.dynamic.title("Testing 'count_sheeps' function: empty list")
+        allure.dynamic.title(
+            "Testing 'count_sheeps' function: empty list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -110,7 +114,8 @@ class CountingSheepTestCase(unittest.TestCase):
         print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         f"There are 0 sheep in total, not {count_sheeps(lst)}")
+                         f"There are 0 sheep in total, "
+                         f"not {count_sheeps(lst)}")
 
     def test_counting_sheep_mixed_list(self):
         """
@@ -120,7 +125,8 @@ class CountingSheepTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable=R0801
-        allure.dynamic.title("Testing 'count_sheeps' function: mixed list")
+        allure.dynamic.title(
+            "Testing 'count_sheeps' function: mixed list")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -134,4 +140,5 @@ class CountingSheepTestCase(unittest.TestCase):
         print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         f"There are 0 sheep in total, not {count_sheeps(lst)}")
+                         f"There are 0 sheep in total, "
+                         f"not {count_sheeps(lst)}")
