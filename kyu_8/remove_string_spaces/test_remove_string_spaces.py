@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_8.remove_string_spaces.remove_string_spaces import no_space
 
 
+# pylint: disable-msg=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -24,6 +25,7 @@ from kyu_8.remove_string_spaces.remove_string_spaces import no_space
 @allure.link(
     url='https://www.codewars.com/kata/57eae20f5500ad98e50002c5',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class NoSpaceTestCase(unittest.TestCase):
     """
     Testing no_space function
