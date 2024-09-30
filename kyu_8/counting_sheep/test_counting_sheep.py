@@ -38,7 +38,6 @@ class CountingSheepTestCase(unittest.TestCase):
         We need a function that counts the
         number of sheep present in the array
         (true means present).
-
         :return:
         """
         # pylint: disable=R0801
