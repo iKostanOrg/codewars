@@ -42,7 +42,8 @@ class CountingSheepTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable=R0801
-        allure.dynamic.title("Testing 'count_sheeps' function: positive flow")
+        allure.dynamic.title(
+            "Testing 'count_sheeps' function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -58,14 +59,10 @@ class CountingSheepTestCase(unittest.TestCase):
                      True, True, True, True,
                      False, False, True, True]
         expected: int = 17
-
-        print_log(list=lst,
-                  expected=expected)
-
+        print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         "There are 17 sheep in total, "
-                         "not %s" % count_sheeps(lst))
+                         f"There are 17 sheep in total, not {count_sheeps(lst)}")
 
     def test_counting_sheep_bad_input(self):
         """
@@ -86,14 +83,10 @@ class CountingSheepTestCase(unittest.TestCase):
         # pylint: enable=R0801
         lst: list = []
         expected: int = 0
-
-        print_log(list=lst,
-                  expected=expected)
-
+        print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         "There are 0 sheep in total, "
-                         "not %s" % count_sheeps(lst))
+                         f"There are 0 sheep in total, not {count_sheeps(lst)}")
 
     def test_counting_sheep_empty_list(self):
         """
@@ -114,14 +107,10 @@ class CountingSheepTestCase(unittest.TestCase):
         # pylint: enable=R0801
         lst: list = []
         expected: int = 0
-
-        print_log(list=lst,
-                  expected=expected)
-
+        print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         "There are 0 sheep in total, "
-                         "not %s" % count_sheeps(lst))
+                         f"There are 0 sheep in total, not {count_sheeps(lst)}")
 
     def test_counting_sheep_mixed_list(self):
         """
@@ -142,11 +131,7 @@ class CountingSheepTestCase(unittest.TestCase):
         # pylint: enable=R0801
         lst: list = [True, False, None]
         expected: int = 1
-
-        print_log(list=lst,
-                  expected=expected)
-
+        print_log(list=lst, expected=expected)
         self.assertEqual(expected,
                          count_sheeps(lst),
-                         "There are 0 sheep in total, "
-                         "not %s" % count_sheeps(lst))
+                         f"There are 0 sheep in total, not {count_sheeps(lst)}")
