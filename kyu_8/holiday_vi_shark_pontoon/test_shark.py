@@ -23,7 +23,7 @@ from kyu_8.holiday_vi_shark_pontoon.shark import shark
             'MATHEMATICS',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/57e921d8b36340f1fd000059/train/python',
+    url='https://www.codewars.com/kata/57e921d8b36340f1fd000059',
     name='Source/Kata')
 class SharkTestCase(unittest.TestCase):
     """
