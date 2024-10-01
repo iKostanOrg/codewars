@@ -83,13 +83,13 @@ class LogicalCalculatorTestCase(unittest.TestCase):
             self.assertEqual(logical_calc(lst, operator), expected)
 
         with allure.step("Pass large array (negative)"):
-            lst: list = [False, False, False, False, True, True, False, True,
-                         True, False, False, True, True, False, False, False,
-                         False, True, True, False, True, False, False, True,
-                         True, True, False, True, True, False, False, False,
-                         False, False, False, True, True, True, True, False,
-                         True, True, False, True, True, False, False, True,
-                         False, False]
+            lst: list = [False, False, False, False, True, True, False,
+                         True, True, False, False, True, True, False,
+                         False, False, False, True, True, False, True,
+                         False, False, True, True, True, False, True,
+                         True, False, False, False, False, False, False,
+                         True, True, True, True, False, True, True, False,
+                         True, True, False, False, True, False, False]
             operator: str = 'AND'
             expected: bool = False
             print_log(list=lst, operator=operator, expected=expected)
@@ -143,10 +143,11 @@ class LogicalCalculatorTestCase(unittest.TestCase):
         with allure.step('Pass large array (positive)'):
             lst: list = [False, True, True, False, False, False, True, False,
                          False, False, False, True, True, False, False, False,
-                         True, False, False, True, True, True, True, True, False,
-                         True, True, True, False, True, False, False, True, True,
-                         True, True, True, True, False, True, False, True, False,
-                         True, False, True, False, True, True, True]
+                         True, False, False, True, True, True, True, True,
+                         False, True, True, True, False, True, False, False,
+                         True, True, True, True, True, True, False, True,
+                         False, True, False, True, False, True, False, True,
+                         True, True]
             operator: str = 'OR'
             expected: bool = True
             print_log(list=lst, operator=operator, expected=expected)
@@ -189,7 +190,8 @@ class LogicalCalculatorTestCase(unittest.TestCase):
             self.assertEqual(logical_calc(lst, operator), expected)
 
         with allure.step('Pass medium size array'):
-            lst: list = [False, False, True, True, False, False, False, False, True]
+            lst: list = [False, False, True, True, False,
+                         False, False, False, True]
             operator: str = 'XOR'
             expected: bool = True
             print_log(list=lst, operator=operator, expected=expected)
@@ -202,7 +204,8 @@ class LogicalCalculatorTestCase(unittest.TestCase):
                          False, False, True, True, True, False, False,
                          False, False, True, False, False, False, False,
                          False, True, False, False, False, True, True,
-                         False, True, False, True, False, False, True, False]
+                         False, True, False, True, False, False, True,
+                         False]
             operator: str = 'XOR'
             expected: bool = False
             print_log(list=lst, operator=operator, expected=expected)
