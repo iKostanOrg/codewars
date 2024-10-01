@@ -68,7 +68,7 @@ class LogicalCalculatorTestCase(unittest.TestCase):
             print_log(list=lst, operator=operator, expected=expected)
             self.assertEqual(logical_calc(lst, operator), expected)
 
-        with (allure.step("Pass an array with 3 members (negative)")):
+        with allure.step("Pass an array with 3 members (negative)"):
             lst: list = [False, False, False]
             operator: str = 'AND'
             expected: bool = False
