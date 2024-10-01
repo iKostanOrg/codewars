@@ -37,6 +37,7 @@ class NoSpaceTestCase(unittest.TestCase):
         from the string, then return the resultant string.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Test that no_space function "
                              "removes the spaces")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -46,7 +47,7 @@ class NoSpaceTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Pass string with spaces "
                          "and verify the result"):
             string: str = '8 j 8   mBliB8g  imjB8B8  jl  B'
