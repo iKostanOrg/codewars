@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Messi goals function
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -17,8 +19,9 @@ from kyu_8.grasshopper_messi_goals_function.messi_goals_function import goals
 @allure.feature("Addition")
 @allure.story('Messi goals function')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/55f73be6e12baaa5900000d4',
+    name='Source/Kata')
 class GoalsTestCase(unittest.TestCase):
     """
     Testing goals function
@@ -30,20 +33,20 @@ class GoalsTestCase(unittest.TestCase):
         total number of goals in all three leagues.
         :return:
         """
-
         allure.dynamic.title("goals function verification")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Test with all zeroes"):
-            la_liga = 0
-            copa_del_rey = 0
-            champions = 0
-            expected = 0
+            la_liga: int = 0
+            copa_del_rey: int = 0
+            champions: int = 0
+            expected: int = 0
 
             print_log(la_liga=la_liga,
                       copa_del_rey=copa_del_rey,
@@ -54,10 +57,10 @@ class GoalsTestCase(unittest.TestCase):
                          expected)
 
         with allure.step("Test with positive integers"):
-            la_liga = 5
-            copa_del_rey = 10
-            champions = 2
-            expected = 17
+            la_liga: int = 5
+            copa_del_rey: int = 10
+            champions: int = 2
+            expected: int = 17
 
             print_log(la_liga=la_liga,
                       copa_del_rey=copa_del_rey,
