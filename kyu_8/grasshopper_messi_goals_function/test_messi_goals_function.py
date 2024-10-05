@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_8.grasshopper_messi_goals_function.messi_goals_function import goals
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Math")
@@ -22,6 +23,7 @@ from kyu_8.grasshopper_messi_goals_function.messi_goals_function import goals
 @allure.link(
     url='https://www.codewars.com/kata/55f73be6e12baaa5900000d4',
     name='Source/Kata')
+# pylint: enable=R0801
 class GoalsTestCase(unittest.TestCase):
     """
     Testing goals function
@@ -33,6 +35,7 @@ class GoalsTestCase(unittest.TestCase):
         total number of goals in all three leagues.
         :return:
         """
+        # pylint: disable=R0801
         allure.dynamic.title("goals function verification")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -41,7 +44,7 @@ class GoalsTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Test with all zeroes"):
             la_liga: int = 0
             copa_del_rey: int = 0
