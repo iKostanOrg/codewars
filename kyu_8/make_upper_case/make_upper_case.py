@@ -1,12 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> MakeUpperCase
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def make_upper_case(s):
+def make_upper_case(s: str) -> str:
     """
     Function that make UpperCase.
-    :param s:
-    :return:
+    :param s: str
+    :return: str
     """
-
     return s.upper()
