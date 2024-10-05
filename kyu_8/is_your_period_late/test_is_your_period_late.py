@@ -178,5 +178,5 @@ class PeriodIsLateTestCase(unittest.TestCase):
                       today=today,
                       cycle_length=cycle_length,
                       expected=False)
-            
+
             self.assertFalse(period_is_late(last, today, cycle_length))
