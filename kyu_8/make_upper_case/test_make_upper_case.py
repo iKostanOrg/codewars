@@ -34,6 +34,7 @@ class MakeUpperCaseTestCase(unittest.TestCase):
         Sample Tests for make_upper_case function
         :return:
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Testing make_upper_case function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -42,7 +43,7 @@ class MakeUpperCaseTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Pass lower case string and verify the output"):
             string: str = "hello"
             expected: str = "HELLO"
