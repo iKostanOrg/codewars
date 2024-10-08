@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> L1: Set Alarm
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def set_alarm(employed, vacation):
+def set_alarm(employed: bool, vacation: bool) -> bool:
     """
     A function named setAlarm which receives two parameters.
     The first parameter, employed, is true whenever you are
@@ -22,9 +24,9 @@ def set_alarm(employed, vacation):
     setAlarm(false, false) -> false
     setAlarm(true, false) -> true
 
-    :param employed:
-    :param vacation:
-    :return:
+    :param employed: bool
+    :param vacation: bool
+    :return: bool
     """
 
     if employed and not vacation:

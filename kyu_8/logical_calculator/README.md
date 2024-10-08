@@ -40,4 +40,4 @@ operation across the remaining elements in the array sequentially.
 
 > calculated boolean
 
-[Source](https://www.codewars.com/kata/57096af70dad013aa200007b/train/python)
+[Source](https://www.codewars.com/kata/57096af70dad013aa200007b)

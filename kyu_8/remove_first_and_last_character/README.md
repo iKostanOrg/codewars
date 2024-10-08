@@ -5,4 +5,4 @@ removes the first and last characters of a string. You're given one
 parameter, the original string. You don't have to worry with strings
 with less than two characters.
 
-[Source](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/python)
+[Source](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0)

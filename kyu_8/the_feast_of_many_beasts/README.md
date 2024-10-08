@@ -14,4 +14,4 @@ has at least two letters. `beast` and `dish` may contain hyphens and spaces,
 but these will not appear at the beginning or end of the string. They will
 not contain numerals.
 
-[Source](https://www.codewars.com/kata/5aa736a455f906981800360d/train/python)
+[Source](https://www.codewars.com/kata/5aa736a455f906981800360d)

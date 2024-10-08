@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Grasshopper - Terminal game move function
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def move(position: int, roll: int) -> int:
@@ -12,5 +14,4 @@ def move(position: int, roll: int) -> int:
     :param roll:
     :return:
     """
-
     return position + (roll * 2)

@@ -12,4 +12,4 @@ numbers are used in the tests.
 > 3.3424 is rounded 3.34
 ```
 
-[Source](https://www.codewars.com/kata/5641a03210e973055a00000d/train/python)
+[Source](https://www.codewars.com/kata/5641a03210e973055a00000d)

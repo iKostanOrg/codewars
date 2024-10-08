@@ -15,4 +15,4 @@ For example:
 >
 > 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
 
-[Source](https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/python)
+[Source](https://www.codewars.com/kata/55d24f55d7dd296eb9000030)

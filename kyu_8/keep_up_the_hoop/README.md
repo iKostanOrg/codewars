@@ -9,4 +9,4 @@ goes round and it will return him an encouraging message :)
 *   If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
 *   If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 
-[Source](https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/python)
+[Source](https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145)

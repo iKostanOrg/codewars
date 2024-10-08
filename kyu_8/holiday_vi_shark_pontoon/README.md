@@ -21,4 +21,4 @@ the swimming speed of the shark as the dolphin will attack it.
 
 If you make it, return "Alive!", if not, return "Shark Bait!".
 
-[Source](https://www.codewars.com/kata/57e921d8b36340f1fd000059/train/python)
+[Source](https://www.codewars.com/kata/57e921d8b36340f1fd000059)

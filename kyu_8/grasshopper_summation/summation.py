@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Grasshopper - Summation
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def summation(num: int) -> int:
@@ -12,9 +14,7 @@ def summation(num: int) -> int:
     :param num:
     :return:
     """
-
-    result = 0
-
+    result: int = 0
     for i in range(1, num + 1):
         result += i
 

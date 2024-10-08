@@ -14,4 +14,4 @@ For example:
 
 > 5, 10, 2  -->  17
 
-[Source](https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/python)
+[Source](https://www.codewars.com/kata/55f73be6e12baaa5900000d4)

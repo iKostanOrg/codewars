@@ -12,4 +12,4 @@ of the hero and the roll (1-6) and return the new position.
 
 > move(3, 6) should equal 15
 
-[Source](https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/python)
+[Source](https://www.codewars.com/kata/563a631f7cbbc236cf0000c2)

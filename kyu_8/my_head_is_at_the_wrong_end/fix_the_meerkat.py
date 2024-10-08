@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> My head is at the wrong end!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def fix_the_meerkat(arr: list) -> list:
@@ -13,5 +15,4 @@ def fix_the_meerkat(arr: list) -> list:
     :param arr:
     :return:
     """
-
     return arr[::-1]

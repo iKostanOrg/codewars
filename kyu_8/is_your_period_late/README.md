@@ -18,4 +18,4 @@ return **true**.
 We consider it to be late if the number of passed days is larger than the
 cycleLength. Otherwise return **false**.
 
-[Source](https://www.codewars.com/kata/578a8a01e9fd1549e50001f1/train/python)
+[Source](https://www.codewars.com/kata/578a8a01e9fd1549e50001f1)

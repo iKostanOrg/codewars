@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Swap Values
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def swap_values(args: list) -> None:

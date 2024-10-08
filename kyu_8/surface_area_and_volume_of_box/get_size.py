@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Surface Area and Volume of a Box
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def get_size(w, h, d) -> list:
+def get_size(w: int, h: int, d: int) -> list:
     """
     Write a function that returns the total surface
     area and volume of a box as an array: [area, volume]
@@ -12,9 +14,7 @@ def get_size(w, h, d) -> list:
     :param d:
     :return:
     """
-
-    volume = w * h * d
+    volume: int = w * h * d
     # Source: http://www.webmath.com/geo_box.html
     area = 2 * (h * w) + 2 * (h * d) + 2 * (w * d)
-
     return [area, volume]
