@@ -36,6 +36,7 @@ class OtherAngleTestCase(unittest.TestCase):
         Find the 3rd.
         :return:
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("You are given two angles -> find the 3rd.")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -44,7 +45,7 @@ class OtherAngleTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable-msg=R0801
         with allure.step("Enter values of two angles and return the 3rd"):
             a: int = 30
             b: int = 60
