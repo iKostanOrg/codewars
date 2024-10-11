@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Count the Monkeys!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def monkey_count(n: int) -> list:
@@ -14,12 +16,10 @@ def monkey_count(n: int) -> list:
     Given the number (n), populate an array with all
     numbers up to and including that number, but
     excluding zero.
-    :param n:
-    :return:
+    :param n: int
+    :return: list
     """
-
-    monkeys = list()
-
+    monkeys: list = []
     for n in range(1, n + 1):
         monkeys.append(n)
 

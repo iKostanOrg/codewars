@@ -16,4 +16,4 @@ excluding zero.
 > monkeyCount(1) # --> [1]
 ```
 
-[Source](https://www.codewars.com/kata/count-the-monkeys/train/python)
+[Source](https://www.codewars.com/kata/count-the-monkeys)
