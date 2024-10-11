@@ -9,4 +9,4 @@ possible to get to the pump or not. Function should return true
 (1 in Prolog) if it is possible and false (0 in Prolog) if not.
 The input values are always positive.
 
-[Source](https://www.codewars.com/kata/5861d28f124b35723e00005e/train/python)
+[Source](https://www.codewars.com/kata/5861d28f124b35723e00005e)
