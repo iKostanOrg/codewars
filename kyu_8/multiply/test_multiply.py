@@ -50,6 +50,5 @@ class MultiplyTestCase(unittest.TestCase):
             a: int = 1
             b: int = 2
             expected: int = a * b
-
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(expected, multiply(a, b))
