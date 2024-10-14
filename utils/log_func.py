@@ -12,8 +12,8 @@ def print_log(**kwargs) -> None:
     :return:
     """
     log: str = ''
-    for key in kwargs:
-        log += f'{key}: {kwargs[key]},\n'
+    for key, item in kwargs.items():
+        log += f'{key}: {item},\n'
 
     print(f'\nLOG =>\n{log[:-2]}\n')
     return None
