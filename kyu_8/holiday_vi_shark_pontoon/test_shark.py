@@ -44,12 +44,12 @@ class SharkTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>You are given 5 variables:</p>"
-            "<p>sharkDistance = distance the shark needs to cover to "
+            "<p>shark_distance = distance the shark needs to cover to "
             "eat you in metres,</p>"
-            "<p>sharkSpeed = how fast it can move in metres/second,</p>"
+            "<p>shark_speed = how fast it can move in metres/second,</p>"
             "<p>pontoonDistance = how far you need to swim to safety "
             "in metres,</p>"
-            "<p>youSpeed = how fast you can swim in metres/second,</p>"
+            "<p>you_speed = how fast you can swim in metres/second,</p>"
             "<p>dolphin = a boolean, if true, you can half the swimming "
             "speed of the shark "
             "as the dolphin will attack it.</p>"
@@ -78,12 +78,12 @@ class SharkTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>You are given 5 variables:</p>"
-            "<p>sharkDistance = distance the shark needs to cover to "
+            "<p>shark_distance = distance the shark needs to cover to "
             "eat you in metres,</p>"
-            "<p>sharkSpeed = how fast it can move in metres/second,</p>"
+            "<p>shark_speed = how fast it can move in metres/second,</p>"
             "<p>pontoonDistance = how far you need to swim to safety in "
             "metres,</p>"
-            "<p>youSpeed = how fast you can swim in metres/second,</p>"
+            "<p>you_speed = how fast you can swim in metres/second,</p>"
             "<p>dolphin = a boolean, if true, you can half the swimming "
             "speed of the shark "
             "as the dolphin will attack it.</p>"
@@ -112,12 +112,12 @@ class SharkTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>You are given 5 variables:</p>"
-            "<p>sharkDistance = distance the shark needs to cover to "
+            "<p>shark_distance = distance the shark needs to cover to "
             "eat you in metres,</p>"
-            "<p>sharkSpeed = how fast it can move in metres/second,</p>"
+            "<p>shark_speed = how fast it can move in metres/second,</p>"
             "<p>pontoonDistance = how far you need to swim to safety "
             "in metres,</p>"
-            "<p>youSpeed = how fast you can swim in metres/second,</p>"
+            "<p>you_speed = how fast you can swim in metres/second,</p>"
             "<p>dolphin = a boolean, if true, you can half the swimming "
             "speed of the shark "
             "as the dolphin will attack it.</p>"
