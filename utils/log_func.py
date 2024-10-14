@@ -16,4 +16,3 @@ def print_log(**kwargs) -> None:
         log += f'{key}: {item},\n'
 
     print(f'\nLOG =>\n{log[:-2]}\n')
-    return None
