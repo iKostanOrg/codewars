@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Keep Hydrated!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def litres(time) -> int:
@@ -13,5 +16,4 @@ def litres(time) -> int:
     :param time:
     :return:
     """
-
     return int(time * 0.5)
