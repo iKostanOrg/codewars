@@ -22,4 +22,4 @@ For example 2 is not a factor of 7 because:
 
 > 7 % 2 = 1
 
-[Source](https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/python)
+[Source](https://www.codewars.com/kata/55cbc3586671f6aa070000fb)
