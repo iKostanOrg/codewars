@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.grasshopper_messi_goals_function.messi_goals_function import goals
+from kyu_8.grasshopper_messi_goals_function.messi_goals_function \
+    import goals
 
 
 # pylint: disable=R0801
