@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.find_the_first_non_consecutive_number.first_non_consecutive import first_non_consecutive
+from kyu_8.find_the_first_non_consecutive_number.first_non_consecutive \
+    import first_non_consecutive
 
 
 # pylint: disable=R0801
