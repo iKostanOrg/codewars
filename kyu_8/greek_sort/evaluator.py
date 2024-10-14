@@ -10,9 +10,15 @@ def evaluator(result: int, expected: str) -> bool:
     :param expected: str
     :return: bool
     """
+    val: bool = False
+
     if expected == '< 0':
-        return result < 0
-    elif expected == '== 0':
-        return result == 0
-    elif expected == '> 0':
-        return result > 0
+        val = result < 0
+
+    if expected == '== 0':
+        val = result == 0
+
+    if expected == '> 0':
+        val = result > 0
+
+    return val
