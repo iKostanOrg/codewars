@@ -55,8 +55,7 @@ class DidIFinishedSudokuTestCase(unittest.TestCase):
             "<p>Testing a function done_or_not/DoneOrNot passing a "
             "board (list[list_lines]) as parameter. If the board is "
             "valid return 'Finished!', otherwise return 'Try again!'</p>")
-        # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([[1, 3, 2, 5, 7, 9, 4, 6, 8],
               [4, 9, 8, 2, 6, 1, 3, 7, 5],
               [7, 5, 6, 3, 8, 4, 2, 1, 9],
@@ -86,9 +85,8 @@ class DidIFinishedSudokuTestCase(unittest.TestCase):
               [7, 8, 9, 1, 2, 3, 4, 5, 6],
               [8, 9, 1, 2, 3, 4, 5, 6, 7],
               [9, 1, 2, 3, 4, 5, 6, 7, 8]],
-             'Try again!')
-        ]
-
+             'Try again!'))
+        # pylint: enable-msg=R0801
         for board, expected in test_data:
             result = done_or_not(board)
 
