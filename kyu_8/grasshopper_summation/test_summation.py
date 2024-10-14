@@ -24,7 +24,7 @@ from kyu_8.grasshopper_summation.summation import summation
             'CONTROL FLOW',
             'BASIC LANGUAGE FEATURES')
 @allure.link(
-    url='https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/python',
+    url='https://www.codewars.com/kata/55d24f55d7dd296eb9000030',
     name='Source/Kata')
 # pylint: enable=R0801
 class SummationTestCase(unittest.TestCase):
