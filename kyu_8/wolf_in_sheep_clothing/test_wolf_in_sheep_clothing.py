@@ -38,6 +38,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
         return "Pls go away and stop eating my sheep".
         :return:
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Wolf at the beginning of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -46,7 +47,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         lst: list = ['wolf', 'sheep', 'sheep',
                      'sheep', 'sheep', 'sheep',
                      'sheep']
@@ -63,6 +64,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
         return "Pls go away and stop eating my sheep".
         :return:
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Wolf in the middle of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -71,7 +73,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         # 1
         lst: list = ['sheep', 'sheep', 'sheep',
                      'sheep', 'sheep', 'wolf',
@@ -110,6 +112,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
         where N is the sheep's position in the queue.
         :return:
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Wolf at the end of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -118,7 +121,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         lst: list = ['sheep', 'sheep', 'wolf']
         expected: str = 'Pls go away and stop eating my sheep'
         print_log(list=lst, expected=expected)
