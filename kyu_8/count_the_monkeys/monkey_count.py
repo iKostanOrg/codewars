@@ -20,7 +20,7 @@ def monkey_count(n: int) -> list:
     :return: list
     """
     monkeys: list = []
-    for n in range(1, n + 1):
-        monkeys.append(n)
+    for m in range(1, n + 1):
+        monkeys.append(m)
 
     return monkeys
