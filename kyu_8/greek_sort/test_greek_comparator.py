@@ -41,10 +41,11 @@ class GreekComparatorTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>A custom comparison function of two arguments (iterable elements) "
-            "which should return a negative, zero or positive number depending on "
-            "whether the first argument is considered smaller than, equal to, or "
-            "larger than the second argument</p>")
+            "<p>A custom comparison function of two arguments (iterable"
+            " elements) which should return a negative, zero or positive"
+            " number depending on whether the first argument is considered"
+            " smaller than, equal to, or larger than the second argument"
+            "</p>")
         # pylint: enable=R0801
         test_data: tuple = (
             ('alpha', 'beta', '< 0'),
