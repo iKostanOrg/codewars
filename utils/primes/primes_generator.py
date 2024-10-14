@@ -1,6 +1,8 @@
-# Sieve of Eratosthenes
-# Code by David Eppstein, UC Irvine, 28 Feb 2002
-# http://code.activestate.com/recipes/117119/
+"""
+Sieve of Eratosthenes
+Code by David Eppstein, UC Irvine, 28 Feb 2002
+http://code.activestate.com/recipes/117119/
+"""
 
 
 def gen_primes():
@@ -12,10 +14,10 @@ def gen_primes():
     # indefinitely, but only as long as required by the current
     # number being tested.
     #
-    D = {}
+    D: dict = {}
 
     # The running integer that's checked for primeness
-    q = 2
+    q: int = 2
 
     while True:
         if q not in D:
