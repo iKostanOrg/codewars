@@ -26,8 +26,8 @@ if __name__ == "__main__":
 
     copy_allure_history()
 
-    generate_clean_report = 'allure generate {} -o {} --clean'.format(path_results, path_report)
+    generate_clean_report = f'allure generate {path_results} -o {path_report} --clean'
     os.system(generate_clean_report)
 
-    OPEN_REPORT = 'allure open {}'.format(path_report)
+    OPEN_REPORT = f'allure open {path_report}'
     os.system(OPEN_REPORT)
