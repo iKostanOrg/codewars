@@ -9,4 +9,4 @@ def multiply(a, b):
   a * b
 ```
 
-[Source](https://www.codewars.com/kata/50654ddff44f800200000004/train/python)
+[Source](https://www.codewars.com/kata/50654ddff44f800200000004)
