@@ -12,9 +12,7 @@ def evaluator(result: int, expected: str) -> bool:
     """
     if expected == '< 0':
         return result < 0
-
-    if expected == '== 0':
+    elif expected == '== 0':
         return result == 0
-
-    if expected == '> 0':
+    elif expected == '> 0':
         return result > 0
