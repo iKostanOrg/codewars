@@ -13,21 +13,21 @@ from utils.copy_allure_history import copy_allure_history
 if __name__ == "__main__":
 
     current_dir: str = str(os.getcwd()).replace("utils", '')
-    path_results: str = ''
-    path_report: str = ''
+    PATH_RESULTS: str = ''
+    PATH_REPORT: str = ''
 
     if platform.system() == 'Linux':
-        path_results = current_dir + 'allure-results/'
-        path_report = current_dir + 'allure-report/'
+        PATH_RESULTS = current_dir + 'allure-results/'
+        PATH_REPORT = current_dir + 'allure-report/'
 
     if platform.system() == 'Windows':
-        path_results = current_dir + 'allure-results\\'
-        path_report = current_dir + 'allure-report\\'
+        PATH_RESULTS = current_dir + 'allure-results\\'
+        PATH_REPORT = current_dir + 'allure-report\\'
 
     copy_allure_history()
 
-    generate_clean_report = f'allure generate {path_results} -o {path_report} --clean'
+    generate_clean_report = f'allure generate {PATH_RESULTS} -o {PATH_REPORT} --clean'
     os.system(generate_clean_report)
 
-    open_report = f'allure open {path_report}'
-    os.system(open_report)
+    OPEN_REPORT = f'allure open {PATH_REPORT}'
+    os.system(OPEN_REPORT)
