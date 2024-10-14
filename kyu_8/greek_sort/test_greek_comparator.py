@@ -66,5 +66,6 @@ class GreekComparatorTestCase(unittest.TestCase):
                           expected=expected,
                           result=result,
                           expression=expression)
-
+                # pylint: disable=W0123
                 self.assertTrue(eval(expression))
+                # pylint: enable=W0123
