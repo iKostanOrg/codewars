@@ -10,6 +10,7 @@ from utils.log_func import print_log
 from kyu_5.master_your_primes_sieve_with_memoization.primes \
     import is_prime
 
+
 # pylint: disable=R0801
 @allure.epic('No kyu')
 @allure.parent_suite('Helper methods')
