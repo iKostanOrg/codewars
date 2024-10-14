@@ -6,9 +6,9 @@ GitHub: https://github.com/ikostan
 
 # FUNDAMENTALS
 
+from datetime import date
 import unittest
 import allure
-from datetime import date
 from utils.log_func import print_log
 from kyu_8.is_your_period_late.is_your_period_late \
     import period_is_late
