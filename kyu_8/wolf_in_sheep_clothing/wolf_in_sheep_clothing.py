@@ -20,7 +20,6 @@ def warn_the_sheep(queue: list) -> str:
     :param queue: list
     :return: str
     """
-
     warning: str = "Pls go away and stop eating my sheep"
     alert_start: str = "Oi! Sheep number "
     alert_end: str = "! You are about to be eaten by a wolf!"
@@ -31,4 +30,4 @@ def warn_the_sheep(queue: list) -> str:
     else:
         index = len(queue) - queue.index(wolf) - 1
 
-    return '{}{}{}'.format(alert_start, index, alert_end)
+    return f'{alert_start}{index}{alert_end}'
