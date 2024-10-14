@@ -55,13 +55,13 @@ class ZeroFuelTestCase(unittest.TestCase):
 
         for data, expected in test_data:
             actual_result = zero_fuel(data[0], data[1], data[2])
-            with allure.step(f"Enter data ({dat}) and verify the "
+            with allure.step(f"Enter data ({data}) and verify the "
                              f"expected output ({expected}) "
                              f"vs actual result ({actual_result})"):
 
                 print_log(data=data,
                           expected=expected,
                           result=actual_result)
-                
+
                 self.assertEqual(expected,
                                  actual_result)
