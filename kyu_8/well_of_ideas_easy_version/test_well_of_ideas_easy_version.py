@@ -95,8 +95,8 @@ class WellTestCase(unittest.TestCase):
         # pylint: enable=R0801
         with allure.step("Pass list with more than 2 'good' in it"):
             lst: list = ['good', 'bad', 'bad',
-                   'bad', 'bad', 'good',
-                   'bad', 'bad', 'good']
+                         'bad', 'bad', 'good',
+                         'bad', 'bad', 'good']
             expected: str = 'I smell a series!'
             print_log(list=lst, expected=expected)
             self.assertEqual(well(lst), expected)
