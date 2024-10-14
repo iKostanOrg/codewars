@@ -29,5 +29,5 @@ if __name__ == "__main__":
     generate_clean_report = f'allure generate {path_results} -o {path_report} --clean'
     os.system(generate_clean_report)
 
-    OPEN_REPORT = f'allure open {path_report}'
-    os.system(OPEN_REPORT)
+    open_report = f'allure open {path_report}'
+    os.system(open_report)
