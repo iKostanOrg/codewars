@@ -30,6 +30,10 @@ class TakeTestCase(unittest.TestCase):
     """
 
     def test_take(self):
+        """
+        Testing the function with various test data
+        :return:
+        """
         # pylint: disable=R0801
         allure.dynamic.title("Testing take function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
