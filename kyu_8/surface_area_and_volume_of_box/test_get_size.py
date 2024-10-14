@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.surface_area_and_volume_of_box.get_size import get_size
+from kyu_8.surface_area_and_volume_of_box.get_size \
+    import get_size
 
 
 # pylint: disable=R0801
