@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from kyu_8.greek_sort.greek_comparator import greek_comparator
+from kyu_8.greek_sort.evaluator import evaluator
 from utils.log_func import print_log
 
 
@@ -67,6 +68,6 @@ class GreekComparatorTestCase(unittest.TestCase):
                           expected=expected,
                           result=result,
                           expression=expression)
-                # pylint: disable=W0123
-                self.assertTrue(eval(expression))
-                # pylint: enable=W0123
+
+                self.assertTrue(evaluator(result=result,
+                                          expected=expected))
