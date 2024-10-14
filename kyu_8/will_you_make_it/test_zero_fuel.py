@@ -31,6 +31,10 @@ class ZeroFuelTestCase(unittest.TestCase):
     """
 
     def test_zero_fuel(self):
+        """
+        Testing the function with various test data
+        :return:
+        """
         # pylint: disable=R0801
         allure.dynamic.title("Testing zero_fuel function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
