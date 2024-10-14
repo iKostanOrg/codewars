@@ -5,10 +5,10 @@ GitHub: https://github.com/ikostan
 """
 
 
-def shark(pontoonDistance,
-          sharkDistance,
-          youSpeed,
-          sharkSpeed,
+def shark(pontoon_distance,
+          shark_distance,
+          you_speed,
+          shark_speed,
           dolphin) -> str:
     """
     You are given 5 variables: sharkDistance = distance the shark
@@ -20,18 +20,17 @@ def shark(pontoonDistance,
 
     If you make it, return "Alive!", if not, return "Shark Bait!".
 
-    :param pontoonDistance:
-    :param sharkDistance:
-    :param youSpeed:
-    :param sharkSpeed:
+    :param pontoon_distance:
+    :param shark_distance:
+    :param you_speed:
+    :param shark_speed:
     :param dolphin:
     :return:
     """
-
     if dolphin:
-        sharkSpeed = sharkSpeed / 2
+        shark_speed = shark_speed / 2
 
-    if pontoonDistance / youSpeed < sharkDistance / sharkSpeed:
+    if pontoon_distance / you_speed < shark_distance / shark_speed:
         return "Alive!"
 
     return "Shark Bait!"
