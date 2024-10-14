@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.remove_string_spaces.remove_string_spaces import no_space
+from kyu_8.remove_string_spaces.remove_string_spaces \
+    import no_space
 
 
 # pylint: disable-msg=R0801
