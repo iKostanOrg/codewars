@@ -27,7 +27,6 @@ def warn_the_sheep(queue: list) -> str:
 
     if queue[-1] == wolf:
         return warning
-    else:
-        index = len(queue) - queue.index(wolf) - 1
 
+    index = len(queue) - queue.index(wolf) - 1
     return f'{alert_start}{index}{alert_end}'
