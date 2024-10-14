@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
+from kyu_8.grasshopper_check_for_factor.check_for_factor \
+    import check_for_factor
 
 
 # pylint: disable=R0801
