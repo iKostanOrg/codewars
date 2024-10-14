@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.count_the_monkeys.monkey_count import monkey_count
+from kyu_8.count_the_monkeys.monkey_count \
+    import monkey_count
 
 
 # pylint: disable=R0801
