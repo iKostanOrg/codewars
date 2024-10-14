@@ -1,24 +1,30 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> The Feast of Many Beasts
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_8.the_feast_of_many_beasts.feast import feast
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('The Feast of Many Beasts')
-@allure.tag('FUNDAMENTALS', 'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/5aa736a455f906981800360d/train/python',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS')
+@allure.link(
+    url='https://www.codewars.com/kata/5aa736a455f906981800360d',
+    name='Source/Kata')
+# pylint: enable=R0801
 class FeastTestCase(unittest.TestCase):
     """
     Testing 'feast' function
@@ -45,30 +51,23 @@ class FeastTestCase(unittest.TestCase):
         is bringing chocolate cake.
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing 'feast' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Enter animal's name and dish "
                          "as arguments and assert the output"):
-
-            data = [
+            data: tuple = (
                 ("great blue heron", "garlic naan", True),
                 ("chickadee", "chocolate cake", True),
-                ("brown bear", "bear claw", False),
-            ]
+                ("brown bear", "bear claw", False))
 
             for beast, dish, expected in data:
-
-                print_log(beast=beast,
-                          dish=dish,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 feast(beast,
-                                       dish))
+                print_log(beast=beast, dish=dish, expected=expected)
+                self.assertEqual(expected, feast(beast, dish))

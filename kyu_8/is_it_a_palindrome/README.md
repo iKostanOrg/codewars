@@ -9,4 +9,4 @@ In Racket, the function is called palindrome?
 >
 > (palindrome? "Yay")  ; returns #t
 
-[Source](https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/python)
+[Source](https://www.codewars.com/kata/57a1fd2ce298a731b20006a4)
