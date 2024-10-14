@@ -23,7 +23,7 @@ from kyu_8.grasshopper_personalized_message.grasshopper_personalized_message \
 @allure.tag('FUNDAMENTALS',
             'CONDITIONAL STATEMENTS',
             'CONTROL FLOW')
-@allure.link(url='https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/python',
+@allure.link(url='https://www.codewars.com/kata/5772da22b89313a4d50012f7',
              name='Source/Kata')
 # pylint: enable=R0801
 class GreetTestCase(unittest.TestCase):
