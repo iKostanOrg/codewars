@@ -11,10 +11,10 @@ jobs: # A basic unit of work in a run
       name: python/default
       # use Python 3.10
       tag: "3.12"
-      
+
     filters:
       branches:
-        only: main # only deploy when on main
+        only: master # only deploy when on main
 
     steps: # steps that comprise the `build` job
       - checkout
