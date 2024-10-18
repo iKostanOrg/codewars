@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.row_of_the_odd_triangle.odd_row import odd_row
 
 
+# pylint: disable=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Performance")
@@ -23,6 +24,7 @@ from kyu_6.row_of_the_odd_triangle.odd_row import odd_row
 @allure.link(
     url='https://www.codewars.com/kata/5d5a7525207a674b71aa25b5/train/python',
     name='Source/Kata')
+# pylint: enable=R0801
 class OddRowTestCase(unittest.TestCase):
     """
     Testing odd_row function
@@ -43,7 +45,7 @@ class OddRowTestCase(unittest.TestCase):
             "<p>Given a triangle of consecutive odd numbers find "
             "the triangle's row knowing its index (the rows are 1-indexed)</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (1, [1]),
             (2, [3, 5]),
             (13, [157, 159, 161, 163, 165, 167, 169, 171,
@@ -56,8 +58,7 @@ class OddRowTestCase(unittest.TestCase):
                   1669, 1671, 1673, 1675, 1677, 1679, 1681,
                   1683, 1685, 1687, 1689, 1691, 1693, 1695,
                   1697, 1699, 1701, 1703, 1705, 1707, 1709,
-                  1711, 1713, 1715, 1717, 1719, 1721]),
-        ]
+                  1711, 1713, 1715, 1717, 1719, 1721]))
 
         for n, expected in test_data:
             actual_result = odd_row(n)

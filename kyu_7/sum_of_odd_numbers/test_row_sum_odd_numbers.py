@@ -14,6 +14,7 @@ from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
     import row_sum_odd_numbers
 
 
+# pylint: disable=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -30,7 +31,8 @@ from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
             'ALGORITHMS')
 @allure.link(
     url='https://www.codewars.com/kata/55fd2d567d94ac3bc9000064',
-    name='Source/Kata')
+    name='Source/Kata'
+# pylint: enable=R0801
 class OddRowTestCase(unittest.TestCase):
     """
     Testing row_sum_odd_numbers function
