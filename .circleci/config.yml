@@ -2,58 +2,53 @@ version: 2.1 # use CircleCI 2.1
 orbs:
   python: circleci/python@2.1.1
 
-tagged-build:
-    jobs:
+jobs: # A basic unit of work in a run
 
-    - build: # runs not using Workflows must have a `build` job as entry point
-      # How to specify Python version in circleCI orb?
-      # https://discuss.circleci.com/t/how-to-specify-python-version-in-circleci-orb/47322/3
-      filters:
-        branches:
-          only: master # only deploy when on master
+  build: # runs not using Workflows must have a `build` job as entry point
+    # How to specify Python version in circleCI orb?
+    # https://discuss.circleci.com/t/how-to-specify-python-version-in-circleci-orb/47322/3
+    executor:
+      name: python/default
+      # use Python 3.10
+      tag: "3.12"
 
-      executor:
-        name: python/default
-        # use Python 3.10
-        tag: "3.12"
+    steps: # steps that comprise the `build` job
+      - checkout
+      - run:
+          command:
+              python --version
+          name: Check python version
+      - run:
+          command:
+            python -m pip install --upgrade pip
+          name: Upgrade pip
+      - python/install-packages:
+          pip-dependency-file: requirements.txt
+          pkg-manager: pip
+      - run:
+          command: |
+            echo $PATH
+          name: Display system path
+      - run:
+          command: |
+            python -m pip install pytest
+          name: Install pytest
+      - run:
+          command: |
+            pytest --version
+          name: Show pytest version
+      - run:
+          command:
+            sudo mkdir /home/circleci/project/test-results
+          name: Create test-results folder
+      - run:
+          command:
+            python -m pytest
+          name: Run tests with pytest
 
-      steps: # steps that comprise the `build` job
-        - checkout
-        - run:
-              command:
-                python --version
-              name: Check python version
-        - run:
-            command:
-              python -m pip install --upgrade pip
-            name: Upgrade pip
-        - python/install-packages:
-            pip-dependency-file: requirements.txt
-            pkg-manager: pip
-        - run:
-            command: |
-              echo $PATH
-            name: Display system path
-        - run:
-            command: |
-              python -m pip install pytest
-            name: Install pytest
-        - run:
-            command: |
-              pytest --version
-            name: Show pytest version
-        - run:
-            command:
-              sudo mkdir /home/circleci/project/test-results
-            name: Create test-results folder
-        - run:
-            command:
-              python -m pytest
-            name: Run tests with pytest
+      - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+          path: test-results/
 
-        - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
-            path: test-results/
-
-        - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
-            path: test-results/
-            destination: tr1
+      - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+          path: test-results/
+          destination: tr1
