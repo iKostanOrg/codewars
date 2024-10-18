@@ -80,7 +80,7 @@ class IsPrimeTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Negative test cases for is_prime function testing."
             "</p>")
-        
+
         test_data: tuple = (
             3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
             61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127,
@@ -88,8 +88,10 @@ class IsPrimeTestCase(unittest.TestCase):
             193, 197, 199)
 
         results: list = []
+        
         for n in test_data:
             results.append(is_prime(n + 1))
+
         actual: bool = all(results)
 
         with allure.step(
