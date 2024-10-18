@@ -11,12 +11,13 @@ jobs: # A basic unit of work in a run
       name: python/default
       # use Python 3.10
       tag: "3.12"
+
     steps: # steps that comprise the `build` job
       - checkout
       - run:
-            command:
+          command:
               python --version
-            name: Check python version
+          name: Check python version
       - run:
           command:
             python -m pip install --upgrade pip
