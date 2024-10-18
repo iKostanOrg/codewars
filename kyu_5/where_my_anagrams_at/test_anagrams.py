@@ -12,6 +12,7 @@ from kyu_5.where_my_anagrams_at.anagrams import anagrams
 from utils.log_func import print_log
 
 
+# pylint: disable=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Algorithms")
@@ -20,8 +21,10 @@ from utils.log_func import print_log
 @allure.story('Where my anagrams at?')
 @allure.tag('ALGORITHMS',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python',
+    name='Source/Kata')
+# pylint: enable=R0801
 class AnagramsTestCase(unittest.TestCase):
     """
     Testing anagrams function
@@ -34,7 +37,7 @@ class AnagramsTestCase(unittest.TestCase):
         return an array of all the anagrams or an empty array if there are none.
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing anagrams function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -43,7 +46,7 @@ class AnagramsTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Enter test data (list of strings)"
                          " and verify the output"):
             test_data = [

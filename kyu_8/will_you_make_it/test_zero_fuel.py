@@ -12,6 +12,7 @@ from kyu_8.will_you_make_it.zero_fuel import zero_fuel
 from utils.log_func import print_log
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Algorithms")
@@ -25,6 +26,7 @@ from utils.log_func import print_log
 @allure.link(
     url='https://www.codewars.com/kata/5861d28f124b35723e00005e',
     name='Source/Kata')
+# pylint: enable=R0801
 class ZeroFuelTestCase(unittest.TestCase):
     """
     Testing zero_fuel
