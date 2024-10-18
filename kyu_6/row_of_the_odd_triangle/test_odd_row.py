@@ -67,10 +67,11 @@ class OddRowTestCase(unittest.TestCase):
                     f"Enter the triangle's row ({n}) and verify the "
                     f"expected output ({expected}) vs "
                     f"actual result ({actual_result})"):
-
+                # pylint: disable=R0801
                 print_log(n=n,
                           expected=expected,
                           result=actual_result)
 
                 self.assertEqual(expected,
                                  actual_result)
+                # pylint: disable=R0801
