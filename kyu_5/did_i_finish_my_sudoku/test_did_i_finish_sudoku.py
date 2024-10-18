@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
 
 
+# pylint: disable=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite('Algorithms')
@@ -28,8 +29,10 @@ from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
             'FUNDAMENTALS',
             'MATHEMATICS',
             'ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python',
+    name='Source/Kata')
+# pylint: enable=R0801
 class DidIFinishedSudokuTestCase(unittest.TestCase):
     """
     Testing done_or_not function
