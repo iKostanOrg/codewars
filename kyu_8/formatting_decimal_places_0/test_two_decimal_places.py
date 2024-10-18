@@ -1,15 +1,19 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Formatting decimal places #0
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS FORMATTING ALGORITHMS NUMBERS
 
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.formatting_decimal_places_0.two_decimal_places import two_decimal_places
+from kyu_8.formatting_decimal_places_0.two_decimal_places \
+    import two_decimal_places
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -20,8 +24,10 @@ from kyu_8.formatting_decimal_places_0.two_decimal_places import two_decimal_pla
             'FORMATTING',
             'ALGORITHMS',
             'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/5641a03210e973055a00000d/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5641a03210e973055a00000d',
+    name='Source/Kata')
+# pylint: enable=R0801
 class TwoDecimalPlacesTestCase(unittest.TestCase):
     """
     Testing two_decimal_places function
@@ -39,18 +45,18 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
         in the tests.
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing two_decimal_places function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Pass a number and verify the output"):
-
-            data = [
+            data: tuple = (
                 (4.659725356,
                  4.66,
                  "didn't work for 4.659725356"),
@@ -59,14 +65,10 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
                  "didn't work for 173735326.3783732637948948"),
                 (4.653725356,
                  4.65,
-                 "didn't work for 4.653725356"),
-            ]
+                 "didn't work for 4.653725356"))
 
             for n, expected, msg in data:
-
-                print_log(n=n,
-                          expected=expected)
-
+                print_log(n=n, expected=expected)
                 self.assertEqual(expected,
                                  two_decimal_places(n),
                                  msg)

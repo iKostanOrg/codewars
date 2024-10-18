@@ -1,12 +1,16 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Convert a string to an array
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ARRAYS STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
-from kyu_8.convert_string_to_an_array.string_to_array import string_to_array
+from kyu_8.convert_string_to_an_array.string_to_array \
+    import string_to_array
 
 
 # pylint: disable=R0801
@@ -19,8 +23,9 @@ from kyu_8.convert_string_to_an_array.string_to_array import string_to_array
 @allure.tag('FUNDAMENTALS',
             'ARRAYS',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/57e76bc428d6fbc2d500036d',
+    name='Source/Kata')
 # pylint: enable=R0801
 class StringToArrayTestCase(unittest.TestCase):
     """
@@ -35,26 +40,24 @@ class StringToArrayTestCase(unittest.TestCase):
         convert it into an array of words.
         :return:
         """
-
         # pylint: disable=R0801
         allure.dynamic.title("Testing string_to_array function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
         # pylint: enable=R0801
         with allure.step("Enter a test string and verify the output"):
-
-            test_data = [
+            test_data: tuple = (
                 ("Robin Singh", ["Robin", "Singh"]),
                 ("CodeWars", ["CodeWars"]),
                 ("I love arrays they are my favorite",
                  ["I", "love", "arrays", "they", "are", "my", "favorite"]),
                 ("1 2 3", ["1", "2", "3"]),
-                ("", [""]),
-            ]
+                ("", [""]))
 
             for s, expected in test_data:
                 print_log(s=s, expected=expected)

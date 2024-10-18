@@ -1,8 +1,10 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Is your period late
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-from datetime import date
+from datetime import date, timedelta
 
 
 def period_is_late(last: date, today: date, cycle_length: int) -> bool:
@@ -12,11 +14,9 @@ def period_is_late(last: date, today: date, cycle_length: int) -> bool:
     :param last: The Date object with the date of the last period
     :param today: The Date object with the date of the check
     :param cycle_length: Integer representing the length of the cycle in days
-    :return:
+    :return: bool
     """
-
-    delta = today - last
-
+    delta: timedelta = today - last
     if int(delta.days) > cycle_length:
         return True
     return False

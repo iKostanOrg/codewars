@@ -14,6 +14,7 @@ from utils.log_func import print_log
 from kyu_2.evaluate_mathematical_expression.evaluate import calc
 
 
+# pylint: disable=R0801
 @allure.epic('2 kyu')
 @allure.parent_suite('Proficient')
 @allure.suite("Algorithms")
@@ -31,6 +32,7 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
 @allure.link(
     url='https://www.codewars.com/kata/52a78825cdfc2cfc87000005',
     name='Source/Kata')
+# pylint: enable=R0801
 class CalcTestCase(unittest.TestCase):
     """
     Testing calc method
@@ -42,6 +44,7 @@ class CalcTestCase(unittest.TestCase):
         Given a mathematical expression as a string you
         must return the result as a number.
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Testing calc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -53,7 +56,7 @@ class CalcTestCase(unittest.TestCase):
             "Given a mathematical expression as a string you must "
             "return the result as a number."
             "</p>")
-
+        # pylint: enable=R0801
         test_data: tuple = (
             ["1 + 1", 2],
             ["8/16", 0.5],

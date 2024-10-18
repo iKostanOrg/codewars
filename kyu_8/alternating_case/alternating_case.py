@@ -1,6 +1,5 @@
 """
 altERnaTIng cAsE <=> ALTerNAtiNG CaSe
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

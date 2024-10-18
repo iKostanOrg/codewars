@@ -3,7 +3,8 @@ name: PyLint
 on:
   push:
     branches:
-      - master
+      - 'utils'
+      - 'none'
   workflow_call:
 
 permissions:

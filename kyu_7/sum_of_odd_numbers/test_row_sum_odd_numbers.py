@@ -14,6 +14,7 @@ from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
     import row_sum_odd_numbers
 
 
+# pylint: disable=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -31,6 +32,7 @@ from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
 @allure.link(
     url='https://www.codewars.com/kata/55fd2d567d94ac3bc9000064',
     name='Source/Kata')
+# pylint: enable=R0801
 class OddRowTestCase(unittest.TestCase):
     """
     Testing row_sum_odd_numbers function
@@ -65,10 +67,11 @@ class OddRowTestCase(unittest.TestCase):
             with allure.step(f"Enter the triangle's row ({n}) and verify the "
                              f"expected output ({expected}) "
                              f"vs actual result ({actual_result})"):
-
+                # pylint: disable=R0801
                 print_log(n=n,
                           expected=expected,
                           result=actual_result)
 
                 self.assertEqual(expected,
                                  actual_result)
+                # pylint: enable=R0801
