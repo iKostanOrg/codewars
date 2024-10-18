@@ -88,7 +88,7 @@ class IsPrimeTestCase(unittest.TestCase):
             193, 197, 199)
 
         results: list = []
-        
+
         for n in test_data:
             results.append(is_prime(n + 1))
 
