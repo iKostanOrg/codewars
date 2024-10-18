@@ -15,8 +15,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024)
-![GitHub issues](https://img.shields.io/github/issues-raw/iKostanOrg/codewars)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iKostanOrg/codewars)
 [![Known Vulnerabilities](https://snyk.io/test/github/iKostanOrg/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/iKostanOrg/codewars?targetFile=requirements.txt)
 ![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
 

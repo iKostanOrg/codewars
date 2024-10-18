@@ -13,6 +13,15 @@ kyu\_8.greek\_sort.greek\_comparator module
    :show-inheritance:
    :private-members:
 
+kyu\_8.greek\_sort.evaluator module
+-------------------------------------------
+
+.. automodule:: kyu_8.greek_sort.evaluator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:
+
 kyu\_8.greek\_sort.test\_greek\_comparator module
 -------------------------------------------------
 

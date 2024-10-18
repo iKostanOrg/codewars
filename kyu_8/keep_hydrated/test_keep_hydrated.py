@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Keep Hydrated!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS ALGORITHMS MATHEMATICS NUMBERS
 
@@ -20,8 +23,9 @@ from kyu_8.keep_hydrated.keep_hydrated import litres
             'ALGORITHMS',
             'MATHEMATICS',
             'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/582cb0224e56e068d800003c',
+    name='Source/Kata')
 # pylint: disable=R0801
 class KeepHydratedTestCase(unittest.TestCase):
     """
@@ -33,26 +37,25 @@ class KeepHydratedTestCase(unittest.TestCase):
         Testing litres function with various test inputs
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing litres function with various test inputs")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Enter hours and verify the output"):
-
-            test_data = [
+            test_data: tuple = (
                 (2, 1, 'should return 1 litre'),
                 (1.4, 0, 'should return 0 litres'),
                 (12.3, 6, 'should return 6 litres'),
                 (0.82, 0, 'should return 0 litres'),
                 (11.8, 5, 'should return 5 litres'),
                 (1787, 893, 'should return 893 litres'),
-                (0, 0, 'should return 0 litres')
-            ]
+                (0, 0, 'should return 0 litres'))
 
             for hours, expected, message in test_data:
                 print_log(hours=hours, expected=expected)

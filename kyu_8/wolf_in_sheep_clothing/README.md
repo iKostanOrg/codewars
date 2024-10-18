@@ -41,4 +41,4 @@ where N is the sheep's position in the queue
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python)
+[Source](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15)

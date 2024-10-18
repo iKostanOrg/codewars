@@ -28,4 +28,4 @@ greek_comparator('psi', 'psi')      == 0
 greek_comparator('upsilon', 'rho')  >  0
 ```
 
-[Source](https://www.codewars.com/kata/56bc1acf66a2abc891000561/train/python)
+[Source](https://www.codewars.com/kata/56bc1acf66a2abc891000561)

@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Grasshopper - Check for factor
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def check_for_factor(base, factor):
+def check_for_factor(base: int, factor: int) -> bool:
     """
     This function should test if the
     factor is a factor of base.
@@ -12,9 +15,8 @@ def check_for_factor(base, factor):
 
     Return true if it is a factor or
     false if it is not.
-    :param base:
-    :param factor:
-    :return:
+    :param base: int
+    :param factor: int
+    :return: bool
     """
-
-    return True if base % factor == 0 else False
+    return base % factor == 0

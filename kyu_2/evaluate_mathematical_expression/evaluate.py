@@ -19,6 +19,7 @@ def calculate(i: int, char: str, strings: list) -> None:
     :param strings: list
     :return: None
     """
+    # pylint: disable=R0801
     a: float = float(strings[i - 1])
     b: float = float(strings[i + 1])
 
@@ -27,7 +28,7 @@ def calculate(i: int, char: str, strings: list) -> None:
 
     if char == '/':
         strings[i] = str(a / b)
-
+    # pylint: enable=R0801
     del strings[i + 1]
     del strings[i - 1]
 

@@ -25,4 +25,4 @@ lowercase. For example:
 As usual, your function/method should be pure, i.e. it should not
 mutate the original string.
 
-[Source](https://www.codewars.com/kata/56efc695740d30f963000557/train/python)
+[Source](https://www.codewars.com/kata/56efc695740d30f963000557)
