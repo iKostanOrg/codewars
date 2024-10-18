@@ -90,10 +90,11 @@ class IsPrimeTestCase(unittest.TestCase):
         results: list = []
         for n in test_data:
             results.append(is_prime(n + 1))
-
+        # pylint: disable=R0801
         actual: bool = all(results)
 
         with allure.step(
                 f"Answer for all numbers from the test data is: {actual}."):
             print_log(actual=actual)
             self.assertFalse(actual)
+        # pylint: enable=R0801
