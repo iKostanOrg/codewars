@@ -84,8 +84,8 @@ class Calculator:
         :param string: str, input string to evaluate
         :return: (float) result
         """
-        self.__string: str = (
+        self.__string = (
             self.__process_math_expression(string,['*', '/']))
-        self.__string: str = (
+        self.__string = (
             self.__process_math_expression(self.__string,['+', '-']))
         return self.result
