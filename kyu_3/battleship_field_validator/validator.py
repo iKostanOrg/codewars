@@ -16,6 +16,7 @@ def validate_battlefield(field: list) -> bool:
     :return: bool, true if there is a valid disposition of ships
     """
     counters: list = [row.count(1) for row in field]
+
     if sum(counters) != 20:
         return False
 
@@ -23,8 +24,7 @@ def validate_battlefield(field: list) -> bool:
         1: [],
         2: [],
         3: [],
-        4: [],
-    }
+        4: []}
 
     ship_counter_by_row(field, ships)
     ship_counter_by_col(field, ships)
@@ -57,7 +57,7 @@ def ship_counter_by_row(field: list, ships: dict):
                                          cell=cell,
                                          direction='horizontal') for cell in ship):
                         ships[len(ship)].append(ship)
-                ship: list = []
+                ship = []
 
         # Allowed ship sizes between 1 to 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
@@ -97,7 +97,7 @@ def ship_counter_by_col(field: list, ships: dict):
                                          cell=cell,
                                          direction='vertical') for cell in ship):
                         ships[len(ship)].append(ship)
-                ship: list = []
+                ship = []
 
         # Allowed ship sizes between 1 to 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
