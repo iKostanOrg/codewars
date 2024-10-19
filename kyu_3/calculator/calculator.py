@@ -16,8 +16,8 @@ class Calculator:
     """
 
     def __init__(self):
-        self.__string = None
-        self.__result = None
+        self.__string: str = ''
+        self.__result: float = 0.0
 
     @property
     def result(self) -> float:
@@ -84,9 +84,8 @@ class Calculator:
         :param string: str, input string to evaluate
         :return: (float) result
         """
-        self.__string: str = string
-        self.__string: str = self.__process_math_expression(self.__string,
-                                                            ['*', '/'])
-        self.__string: str = self.__process_math_expression(self.__string,
-                                                            ['+', '-'])
+        self.__string: str = (
+            self.__process_math_expression(string,['*', '/']))
+        self.__string: str = (
+            self.__process_math_expression(self.__string,['+', '-']))
         return self.result
