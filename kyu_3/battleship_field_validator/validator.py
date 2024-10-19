@@ -87,28 +87,32 @@ def ship_counter_by_col(field: list, ships: dict):
                 ship.append([index_row, index_col])
             else:
                 # Allowed ship sizes between 1 and 4 cells
-                if len(ship) == 1 and all_cells_valid(ships=ships,
-                                                      field=field,
-                                                      direction='submarine',
-                                                      ship=ship):
+                if (len(ship) == 1 and
+                        all_cells_valid(ships=ships,
+                                        field=field,
+                                        direction='submarine',
+                                        ship=ship)):
                     ships[len(ship)].append(ship)
-                elif 1 < len(ship) <= 4 and all_cells_valid(ships=ships,
-                                                            field=field,
-                                                            direction='vertical',
-                                                            ship=ship):
+                elif (1 < len(ship) <= 4 and
+                      all_cells_valid(ships=ships,
+                                      field=field,
+                                      direction='vertical',
+                                      ship=ship)):
                     ships[len(ship)].append(ship)
                 ship = []
 
         # Allowed ship sizes between 1 and 4 cells
-        if len(ship) == 1 and all_cells_valid(ships=ships,
-                                              field=field,
-                                              direction='submarine',
-                                              ship=ship):
+        if (len(ship) == 1 and
+                all_cells_valid(ships=ships,
+                                field=field,
+                                direction='submarine',
+                                ship=ship)):
             ships[len(ship)].append(ship)
-        elif 1 < len(ship) <= 4 and all_cells_valid(ships=ships,
-                                                    field=field,
-                                                    direction='vertical',
-                                                    ship=ship):
+        elif (1 < len(ship) <= 4 and
+              all_cells_valid(ships=ships,
+                              field=field,
+                              direction='vertical',
+                              ship=ship)):
             ships[len(ship)].append(ship)
 
 
