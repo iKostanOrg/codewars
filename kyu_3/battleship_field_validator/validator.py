@@ -42,9 +42,9 @@ def ship_counter_by_row(field: list, ships: dict):
     for index_row, row in enumerate(field):
         ship: list = []
 
-        for index_col, cell in enumerate(row):
-            if row[index_col] == 1:
-                ship.append([index_row, index_col])
+        for cell in enumerate(row):
+            if row[cell[0]] == 1:
+                ship.append([index_row, cell[0]])
             else:
                 # Allowed ship sizes between 1 and 4 cells
                 if len(ship) == 1 and all_cells_valid(ships=ships,
