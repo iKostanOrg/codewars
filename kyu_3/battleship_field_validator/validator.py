@@ -43,39 +43,34 @@ def ship_counter_by_row(field: list, ships: dict):
         ship: list = []
 
         for index_col, cell in enumerate(row):
-
             if row[index_col] == 1:
                 ship.append([index_row, index_col])
             else:
-                is_valid_cell_s = (
-                    is_valid_cell(ships=ships,
-                                  field=field,
-                                  cell=cell,
-                                  direction='submarine') for cell in ship)
                 # Allowed ship sizes between 1 and 4 cells
-                if len(ship) == 1 and all(is_valid_cell_s):
+                if len(ship) == 1 and all_cells_valid(ships=ships,
+                                                      field=field,
+                                                      direction='submarine',
+                                                      ship=ship):
                     ships[len(ship)].append(ship)
                 elif 1 < len(ship) <= 4:
-                    is_valid_cell_h = (
-                        is_valid_cell(ships=ships,
-                                      field=field,
-                                      cell=cell,
-                                      direction='horizontal') for cell in ship)
-                    if all(is_valid_cell_h):
+                    if all_cells_valid(ships=ships,
+                                       field=field,
+                                       direction='horizontal',
+                                       ship=ship):
                         ships[len(ship)].append(ship)
 
                 ship = []
 
         # Allowed ship sizes between 1 and 4 cells
-        if len(ship) == 1 and all(is_valid_cell(ships=ships,
-                                                field=field,
-                                                cell=cell,
-                                                direction='submarine') for cell in ship):
+        if len(ship) == 1 and all_cells_valid(ships=ships,
+                                              field=field,
+                                              direction='submarine',
+                                              ship=ship):
             ships[len(ship)].append(ship)
-        elif 1 < len(ship) <= 4 and all(is_valid_cell(ships=ships,
-                                                      field=field,
-                                                      cell=cell,
-                                                      direction='horizontal') for cell in ship):
+        elif 1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                    field=field,
+                                                    direction='horizontal',
+                                                    ship=ship):
             ships[len(ship)].append(ship)
 
 
@@ -92,31 +87,43 @@ def ship_counter_by_col(field: list, ships: dict):
             if row[index_col] == 1:
                 ship.append([index_row, index_col])
             else:
-                # Allowed ship sizes between 1 to 4 cells
-                if len(ship) == 1 and all(is_valid_cell(ships=ships,
-                                                        field=field,
-                                                        cell=cell,
-                                                        direction='submarine') for cell in ship):
+                # Allowed ship sizes between 1 and 4 cells
+                if len(ship) == 1 and all_cells_valid(ships=ships,
+                                                      field=field,
+                                                      direction='submarine',
+                                                      ship=ship):
                     ships[len(ship)].append(ship)
                 elif 1 < len(ship) <= 4:
-                    if all(is_valid_cell(ships=ships,
-                                         field=field,
-                                         cell=cell,
-                                         direction='vertical') for cell in ship):
+                    if all_cells_valid(ships=ships,
+                                       field=field,
+                                       direction='vertical',
+                                       ship=ship):
                         ships[len(ship)].append(ship)
                 ship = []
 
-        # Allowed ship sizes between 1 to 4 cells
-        if len(ship) == 1 and all(is_valid_cell(ships=ships,
-                                                field=field,
-                                                cell=cell,
-                                                direction='submarine') for cell in ship):
+        # Allowed ship sizes between 1 and 4 cells
+        if len(ship) == 1 and all_cells_valid(ships=ships,
+                                              field=field,
+                                              direction='submarine',
+                                              ship=ship):
             ships[len(ship)].append(ship)
-        elif 1 < len(ship) <= 4 and all(is_valid_cell(ships=ships,
-                                                      field=field,
-                                                      cell=cell,
-                                                      direction='vertical') for cell in ship):
+        elif 1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                    field=field,
+                                                    direction='vertical',
+                                                    ship=ship):
             ships[len(ship)].append(ship)
+
+
+def all_cells_valid(**kwargs):
+    """
+    Validate all cells
+    :param kwargs:
+    :return:
+    """
+    return all(is_valid_cell(ships=kwargs['ships'],
+                             field=kwargs['field'],
+                             cell=cell,
+                             direction=kwargs['direction']) for cell in kwargs['ship'])
 
 
 def check_vertical(row, col, field) -> bool:
@@ -205,5 +212,4 @@ def is_valid_cell(**kwargs) -> bool:
                               col=col,
                               field=kwargs['field']):
             return False
-
     return True
