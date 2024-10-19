@@ -11,6 +11,7 @@ from utils.log_func import print_log
 from kyu_7.easy_line.easyline import easy_line, calc_combination_per_row_item
 
 
+# pylint: disable=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Fundamentals")
@@ -24,6 +25,7 @@ from kyu_7.easy_line.easyline import easy_line, calc_combination_per_row_item
 @allure.link(
     url='https://www.codewars.com/kata/56e7d40129035aed6c000632',
     name='Source/Kata')
+# pylint: enable=R0801
 class EasyLineTestCase(unittest.TestCase):
     """
     We want to calculate the sum of the squares of the binomial

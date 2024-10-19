@@ -10,4 +10,4 @@ This function takes two parameters: name and owner.
 | *name equals owner*     | 'Hello boss'              |
 | *otherwise*             | 'Hello guest'             |
 <!-- markdownlint-enable MD013 -->
-[Source](https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/python)
+[Source](https://www.codewars.com/kata/5772da22b89313a4d50012f7)

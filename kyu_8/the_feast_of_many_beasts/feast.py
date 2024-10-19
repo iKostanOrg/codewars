@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> The Feast of Many Beasts
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def feast(beast: str, dish: str) -> bool:
@@ -15,9 +17,8 @@ def feast(beast: str, dish: str) -> bool:
     may contain hyphens and spaces, but these will not appear
     at the beginning or end of the string. They will not
     contain numerals.
-    :param beast:
-    :param dish:
-    :return:
+    :param beast: str
+    :param dish: str
+    :return: bool
     """
-
     return beast[0] == dish[0] and beast[-1] == dish[-1]

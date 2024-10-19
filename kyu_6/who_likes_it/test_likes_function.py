@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.who_likes_it.likes_function import likes
 
 
+# pylint: disable=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
@@ -25,6 +26,7 @@ from kyu_6.who_likes_it.likes_function import likes
 @allure.link(
     url='https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/python',
     name='Source/Kata')
+# pylint: enable=R0801
 class LikesTestCase(unittest.TestCase):
     """
     Testing likes function
@@ -38,6 +40,7 @@ class LikesTestCase(unittest.TestCase):
         Testing likes function with various test data
         :return:
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Testing likes function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,15 +52,14 @@ class LikesTestCase(unittest.TestCase):
             "the names of people who like an item. It must return the "
             "display text. For 4 or more names, the number in and 2 "
             "others simply increases.</p>")
-
-        test_data = (
+        # pylint: enable=R0801
+        test_data: tuple = (
             ([], 'no one likes this'),
             (['Peter'], 'Peter likes this'),
             (['Jacob', 'Alex'], 'Jacob and Alex like this'),
             (['Max', 'John', 'Mark'], 'Max, John and Mark like this'),
             (['Alex', 'Jacob', 'Mark', 'Max'],
-             'Alex, Jacob and 2 others like this'),
-        )
+             'Alex, Jacob and 2 others like this'))
 
         with allure.step(
                 "Enter a test data and verify the expected "

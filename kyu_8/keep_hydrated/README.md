@@ -16,4 +16,4 @@ For example:
 >
 > time = 11.8--> litres = 5
 
-[Source](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
+[Source](https://www.codewars.com/kata/582cb0224e56e068d800003c)
