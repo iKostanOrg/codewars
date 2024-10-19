@@ -51,7 +51,7 @@ def ship_counter_by_row(field: list, ships: dict):
                                                  field=field,
                                                  cell=cell,
                                                  direction='submarine') for cell in ship)
-                # Allowed ship sizes between 1 to 4 cells
+                # Allowed ship sizes between 1 and 4 cells
                 if len(ship) == 1 and all(is_valid_cell_s):
                     ships[len(ship)].append(ship)
                 elif 1 < len(ship) <= 4:
@@ -64,7 +64,7 @@ def ship_counter_by_row(field: list, ships: dict):
 
                 ship = []
 
-        # Allowed ship sizes between 1 to 4 cells
+        # Allowed ship sizes between 1 and 4 cells
         if len(ship) == 1 and all(is_valid_cell(ships=ships,
                                                 field=field,
                                                 cell=cell,
