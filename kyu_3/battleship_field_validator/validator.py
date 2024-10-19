@@ -41,27 +41,27 @@ def ship_counter_by_row(field: list, ships: dict):
     """
     for index_row, row in enumerate(field):
         ship: list = []
+
         for index_col, cell in enumerate(row):
-
-            is_valid_cell_s = (is_valid_cell(ships=ships,
-                                             field=field,
-                                             cell=cell,
-                                             direction='submarine') for cell in ship)
-
-            is_valid_cell_h = (is_valid_cell(ships=ships,
-                                             field=field,
-                                             cell=cell,
-                                             direction='horizontal') for cell in ship)
 
             if row[index_col] == 1:
                 ship.append([index_row, index_col])
             else:
+                is_valid_cell_s = (is_valid_cell(ships=ships,
+                                                 field=field,
+                                                 cell=cell,
+                                                 direction='submarine') for cell in ship)
                 # Allowed ship sizes between 1 to 4 cells
                 if len(ship) == 1 and all(is_valid_cell_s):
                     ships[len(ship)].append(ship)
                 elif 1 < len(ship) <= 4:
+                    is_valid_cell_h = (is_valid_cell(ships=ships,
+                                                     field=field,
+                                                     cell=cell,
+                                                     direction='horizontal') for cell in ship)
                     if all(is_valid_cell_h):
                         ships[len(ship)].append(ship)
+
                 ship = []
 
         # Allowed ship sizes between 1 to 4 cells
