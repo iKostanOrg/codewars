@@ -52,12 +52,11 @@ def ship_counter_by_row(field: list, ships: dict):
                                                       direction='submarine',
                                                       ship=ship):
                     ships[len(ship)].append(ship)
-                elif 1 < len(ship) <= 4:
-                    if all_cells_valid(ships=ships,
-                                       field=field,
-                                       direction='horizontal',
-                                       ship=ship):
-                        ships[len(ship)].append(ship)
+                elif 1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                            field=field,
+                                                            direction='horizontal',
+                                                            ship=ship):
+                    ships[len(ship)].append(ship)
 
                 ship = []
 
@@ -93,12 +92,11 @@ def ship_counter_by_col(field: list, ships: dict):
                                                       direction='submarine',
                                                       ship=ship):
                     ships[len(ship)].append(ship)
-                elif 1 < len(ship) <= 4:
-                    if all_cells_valid(ships=ships,
-                                       field=field,
-                                       direction='vertical',
-                                       ship=ship):
-                        ships[len(ship)].append(ship)
+                elif 1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                            field=field,
+                                                            direction='vertical',
+                                                            ship=ship):
+                    ships[len(ship)].append(ship)
                 ship = []
 
         # Allowed ship sizes between 1 and 4 cells
@@ -120,10 +118,11 @@ def all_cells_valid(**kwargs):
     :param kwargs:
     :return:
     """
-    return all(is_valid_cell(ships=kwargs['ships'],
-                             field=kwargs['field'],
-                             cell=cell,
-                             direction=kwargs['direction']) for cell in kwargs['ship'])
+    return all(
+        is_valid_cell(ships=kwargs['ships'],
+                      field=kwargs['field'],
+                      cell=cell,
+                      direction=kwargs['direction']) for cell in kwargs['ship'])
 
 
 def check_vertical(row, col, field) -> bool:
