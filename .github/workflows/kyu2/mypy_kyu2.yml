@@ -1,9 +1,10 @@
-name: MyPy for kyu3
+name: MyPy for kyu2
 
 on:
   push:
     branches:
-      - 'kyu3'
+      - 'kyu2'
+  workflow_call:
 
 jobs:
   build:

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'kyu2'
+  workflow_call:
 
 jobs:
   build:
