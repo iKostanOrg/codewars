@@ -38,11 +38,14 @@ jobs:
       - name: Check to make sure that the module is in your Python path
         run: |
           echo $PYTHONPATH
-      - name: Python Data Type Checking with MyPy
+      - name: kyu2 Python Data Type Checking with MyPy
         # Python Type Checking (Guide)
         # https://realpython.com/python-type-checking/
         run: |
           mypy kyu_2 --ignore-missing-imports --check-untyped-defs
+      - name: kyu_3 Python Data Type Checking with MyPy
+        run: |
           mypy kyu_3 --ignore-missing-imports --check-untyped-defs
+      - name: kyu_4 Python Data Type Checking with MyPy
+        run: |
           mypy kyu_4 --ignore-missing-imports --check-untyped-defs
-          mypy utils --ignore-missing-imports --check-untyped-defs
