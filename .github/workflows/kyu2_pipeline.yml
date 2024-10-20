@@ -1,6 +1,9 @@
 name: kyu2 pipeline
 
-on: [push]
+on:
+  push:
+    branches:
+      - kyu2
 
 jobs:
   mypy:
