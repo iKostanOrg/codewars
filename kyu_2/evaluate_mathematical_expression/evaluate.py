@@ -136,8 +136,8 @@ def process_brackets(strings: list) -> str:
             temp = ' '.join(strings[start + 1: end])
             temp = process_duplicate_minus(temp)
             temp = process_math_expression(temp, ['*', '/'])
-            temp = [float(t) for t in temp.split() if t != '+']
-            temp = str(sum(temp))
+            temp_lst: list = [float(t) for t in temp.split() if t != '+']
+            temp = str(sum(temp_lst))
             tmp_strings = strings[:start]
             tmp_strings.append(temp)
             if end < len(strings) - 1:
