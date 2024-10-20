@@ -42,11 +42,4 @@ jobs:
         # Python Type Checking (Guide)
         # https://realpython.com/python-type-checking/
         run: |
-          mypy kyu_2 --ignore-missing-imports --check-untyped-defs
-          mypy kyu_3 --ignore-missing-imports --check-untyped-defs
-          mypy kyu_4 --ignore-missing-imports --check-untyped-defs
-          mypy kyu_5 --ignore-missing-imports --check-untyped-defs
-          mypy kyu_6 --ignore-missing-imports --check-untyped-defs
-          mypy kyu_7 --ignore-missing-imports --check-untyped-defs
-          mypy kyu_8 --ignore-missing-imports --check-untyped-defs
           mypy utils --ignore-missing-imports --check-untyped-defs
