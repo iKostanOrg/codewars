@@ -196,6 +196,6 @@ def calc(string: str) -> float:
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
     string_lst: list = string.split(' ')
-    string = [float(s) for s in string_lst]
-    string = str(sum(string))
+    string_lst = [float(s) for s in string_lst]
+    string = str(sum(string_lst))
     return float(string)
