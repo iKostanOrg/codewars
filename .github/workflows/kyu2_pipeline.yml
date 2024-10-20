@@ -1,9 +1,7 @@
 name: kyu2 pipeline
 
 on:
-  push:
-    branches:
-      - kyu2
+  workflow_dispatch:
 
 jobs:
   mypy:
