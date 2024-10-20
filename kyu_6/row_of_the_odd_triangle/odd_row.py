@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Row of the odd triangle
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def odd_row(n: int) -> list:
@@ -11,11 +13,10 @@ def odd_row(n: int) -> list:
     :param n:
     :return:
     """
-    row = list()
-
-    number = calc_first_number(n)
-    last = calc_last_number(n)
-
+    row: list = []
+    number: int = calc_first_number(n)
+    last: int = calc_last_number(n)
+    # pylint: disable-msg=R0801
     while number <= last:
         row.append(number)
         number += 2
@@ -39,3 +40,4 @@ def calc_last_number(n: int) -> int:
     :return:
     """
     return (n * n) + (n - 1)
+    # pylint: disable-msg=R0801

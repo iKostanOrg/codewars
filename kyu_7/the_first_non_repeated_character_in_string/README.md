@@ -17,4 +17,4 @@ You can assume, that the input string has always non-zero length.
 If there is no repeating character, return `null` in JS or Java,
 and `None` in Python.
 
-[Source](https://www.codewars.com/kata/570f6436b29c708a32000826/train/python)
+[Source](https://www.codewars.com/kata/570f6436b29c708a32000826)

@@ -1,16 +1,22 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Decipher this!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def last_digit_index(word: str) -> int:
-    index = 0
+    """
+    Find last digit index
+    :param word:
+    :return:
+    """
+    index: int = 0
     for char in word:
         if char.isdigit():
             index += 1
         else:
             break
-
     return index
 
 
@@ -30,25 +36,22 @@ def decipher_this(string: str) -> str:
     if not string:
         return ""
 
-    results = list()
+    results: list = []
     for word in string.split(' '):
 
         last_digit: int = last_digit_index(word)
         char: str = chr(int(word[0: last_digit]))
 
         if len(word[last_digit:]) == 0:
-            results.append("{}".format(char))
+            results.append(f"{char}")
         elif len(word[last_digit:]) == 1:
-            results.append("{}{}".format(char,
-                                         word[last_digit:]))
+            results.append(f"{char}{word[last_digit:]}")
         elif len(word[last_digit:]) == 2:
-            results.append("{}{}{}".format(char,
-                                           word[-1],
-                                           word[last_digit]))
+            results.append(f"{char}{word[-1]}{word[last_digit]}")
         else:
-            results.append("{}{}{}{}".format(char,
-                                             word[-1],
-                                             word[last_digit + 1: -1],
-                                             word[last_digit]))
+            results.append(f"{char}"
+                           f"{word[-1]}"
+                           f"{word[last_digit + 1: -1]}"
+                           f"{word[last_digit]}")
 
     return ' '.join(results)

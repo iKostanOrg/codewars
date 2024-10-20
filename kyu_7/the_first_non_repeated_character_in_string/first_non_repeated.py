@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> The First Non Repeated Character In A String
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def first_non_repeated(s: str):
+def first_non_repeated(s: str) -> (str, None):
     """
     You need to write a function, that returns the
     first non-repeated character in the given string.
@@ -20,7 +22,6 @@ def first_non_repeated(s: str):
     :param s:
     :return:
     """
-
     for char in s:
         if s.count(char) == 1:
             return char

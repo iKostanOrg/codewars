@@ -8,4 +8,4 @@ By convention the value of `0!` is `1`.
 Write a function to calculate factorial for a given input. If input
 is below `0` or above `12` throw an exception of type ValueError (Python).
 
-[Source](https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc/train/python)
+[Source](https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc)

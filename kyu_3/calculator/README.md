@@ -15,4 +15,4 @@ have a higher priority and should be performed left-to-right. Additions
 and subtractions have a lower priority and should also be performed
 left-to-right.
 
-[Source](https://www.codewars.com/kata/5235c913397cbf2508000048/train/python)
+[Source](https://www.codewars.com/kata/5235c913397cbf2508000048)

@@ -1,6 +1,5 @@
 """
 Solution for -> Rail Fence Cipher: Encoding and Decoding
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,7 +8,6 @@ GitHub: https://github.com/ikostan
 def get_rails(string: str, n: int) -> list:
     """
     Create rails matrix.
-
     :param string: str
     :param n: int, the number of rails
     :return: list, rails matrix
@@ -51,7 +49,6 @@ def encode_rail_fence_cipher(string: str, n: int) -> str:
     direction and move diagonally and up until you reach the top rail.
     Continue until you reach the end of the string. Each "rail" is then
     read left to right to derive the encoded string.
-
     :param string: str
     :param n: int, the number of rails
     :return: str, the ENCODED string
@@ -64,7 +61,6 @@ def decode_rail_fence_cipher(string: str, n: int) -> str:
     """
     Function/method that takes 2 arguments, an encoded string
     and the number of rails, and returns the DECODED string.
-
     :param string: str, an encoded string
     :param n: int, the number of rails
     :return: str, the DECODED string

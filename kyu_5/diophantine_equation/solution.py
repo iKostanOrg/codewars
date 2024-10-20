@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Solution for -> Diophantine Equation
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def sol_equa(n: int) -> list:
@@ -7,7 +10,7 @@ def sol_equa(n: int) -> list:
     Finds all integers x, y (x >= 0, y >= 0)
     solutions of a diophantine equation of the form x2 - 4 * y2 = n
     """
-    result = list()
+    result = []
 
     start = n//2
     if n % 2 != 0:

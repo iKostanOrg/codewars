@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> You\'re a square
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS, MATH
 
@@ -9,15 +11,19 @@ import allure
 from kyu_7.you_are_square.you_are_square import is_square
 
 
+# pylint: disable=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Math")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Square Calculation")
 @allure.story('You\'re a square')
-@allure.tag('FUNDAMENTALS', 'MATH')
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'MATH')
+@allure.link(
+    url='https://www.codewars.com/kata/54c27a33fb7da0db0100040e',
+    name='Source/Kata')
+# pylint: enable=R0801
 class YouAreSquareTestCase(unittest.TestCase):
     """
     Testing is_square function
@@ -31,15 +37,16 @@ class YouAreSquareTestCase(unittest.TestCase):
         -1: Negative numbers cannot be square numbers
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Negative numbers")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Test -1"):
             self.assertEqual(is_square(-1),
                              False,
@@ -50,15 +57,16 @@ class YouAreSquareTestCase(unittest.TestCase):
         0 is a square number
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Zero")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("0 is a square number"):
             self.assertEqual(is_square(0),
                              True,
@@ -69,15 +77,16 @@ class YouAreSquareTestCase(unittest.TestCase):
         3 is not a square number
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Non square numbers (negative)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Test non square number: 3"):
             self.assertEqual(is_square(3),
                              False,
@@ -88,15 +97,16 @@ class YouAreSquareTestCase(unittest.TestCase):
         4 is a square number
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Square numbers (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Test square number: 4"):
             self.assertEqual(is_square(4),
                              True,
@@ -107,15 +117,16 @@ class YouAreSquareTestCase(unittest.TestCase):
         25 is a square number
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Square numbers (positive)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Test square number: 25"):
             self.assertEqual(is_square(25),
                              True,
@@ -126,15 +137,16 @@ class YouAreSquareTestCase(unittest.TestCase):
         26 is not a square number
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Non square numbers (negative)")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Test non square number: 26"):
             self.assertEqual(is_square(26),
                              False,

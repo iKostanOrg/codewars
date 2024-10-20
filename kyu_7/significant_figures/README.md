@@ -46,4 +46,4 @@ All zeroes between significant figures are significant
 -   90.09 has 4 significant figures
 -   5050 has 3 significant figures
 
-[Source](https://www.codewars.com/kata/5d9fe0ace0aad7001290acb7/train/python)
+[Source](https://www.codewars.com/kata/5d9fe0ace0aad7001290acb7)

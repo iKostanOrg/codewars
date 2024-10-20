@@ -40,7 +40,7 @@ class WarriorTestCase(unittest.TestCase):
         """
         Testing Warrior class >>> tom
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing Warrior class >>> tom")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,7 +49,7 @@ class WarriorTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Basic test: level, experience, rank</p>")
-
+        # pylint: enable=R0801
         with allure.step("Instantiate a new warrior >>> tom"):
             tom = Warrior()
 
@@ -69,7 +69,7 @@ class WarriorTestCase(unittest.TestCase):
         """
         Testing Warrior class >>> bruce_lee
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing Warrior class >>> bruce_lee")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -78,7 +78,7 @@ class WarriorTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Advanced Warrior class assertions</p>")
-
+        # pylint: enable=R0801
         with allure.step("Instantiate a new warrior >>> bruce_lee"):
             bruce_lee = Warrior()
 

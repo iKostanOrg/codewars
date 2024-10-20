@@ -1,6 +1,5 @@
 """
 Testing for -> Calculator class
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,8 +25,9 @@ from kyu_3.calculator.calculator import Calculator
             'EXPRESSIONS',
             'BASIC LANGUAGE FEATURES',
             'FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/5235c913397cbf2508000048/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5235c913397cbf2508000048',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class CalculatorTestCase(unittest.TestCase):
     """
@@ -39,23 +39,23 @@ class CalculatorTestCase(unittest.TestCase):
         Testing Calculator class
         A simple calculator that given a string of operators '()', '+', '-', '*', '/'
         and numbers separated by spaces will return the value of that expression
-
         :return: None
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Calculator class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>"
-                                        "1. given a string of operators '(), +, -, *, /'"
-                                        "and numbers separated by spaces<br/>"
-                                        "2. the calculator should return the value of that "
-                                        "expression</p>")
-
-        test_data = (
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "1. given a string of operators '(), +, -, *, /'"
+            "and numbers separated by spaces<br/>"
+            "2. the calculator should return the value of that "
+            "expression</p>")
+        # pylint: enable-msg=R0801
+        test_data: tuple = (
             ('127', 127),
             ('2 + 3', 5),
             ('2 - 3 - 4', -5),
@@ -64,11 +64,12 @@ class CalculatorTestCase(unittest.TestCase):
             ('2 + 3 * 4 / 3 - 6 / 3 * 3 + 8', 8),
             ('1.1 + 2.2 + 3.3', 6.6),
             ('1.1 * 2.2 * 3.3', 7.986000000000001),
-            ('10 * 5 / 2', 25)
-        )
+            ('10 * 5 / 2', 25))
 
         for string, expected in test_data:
-            actual_result = Calculator().evaluate(string)
+
+            actual_result: float = Calculator().evaluate(string)
+            # pylint: disable=R0801
             print_log(string=string,
                       expected=expected,
                       actual_result=actual_result)
@@ -79,3 +80,4 @@ class CalculatorTestCase(unittest.TestCase):
 
                 self.assertEqual(expected,
                                  actual_result)
+            # pylint: enable=R0801

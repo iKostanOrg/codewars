@@ -1,12 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Diophantine Equation
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS MATHEMATICS ALGORITHMS NUMBERS
 
 import unittest
-import allure
 import pytest
+import allure
 from kyu_5.diophantine_equation.solution import sol_equa
 
 
@@ -16,12 +18,22 @@ from kyu_5.diophantine_equation.solution import sol_equa
 @allure.sub_suite("Unit Tests")
 @allure.feature('Math')
 @allure.story('Diophantine Equation')
-@allure.tag('FUNDAMENTALS', 'MATHEMATICS', 'ALGORITHMS', 'NUMBERS')
+@allure.tag('FUNDAMENTALS',
+            'MATHEMATICS',
+            'ALGORITHMS',
+            'NUMBERS')
 @allure.link(url='https://www.codewars.com/kata/554f76dca89983cc400000bb/train/python',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class SolutionTestCase(unittest.TestCase):
+    """
+    Testing sol_equa function
+    """
     def test_solution_basic(self):
+        """
+        Testing using basic test data
+        :return:
+        """
         self.assertEqual(sol_equa(5), [[3, 1]])
         self.assertEqual(sol_equa(12), [[4, 1]])
         self.assertEqual(sol_equa(13), [[7, 3]])
@@ -30,6 +42,10 @@ class SolutionTestCase(unittest.TestCase):
         self.assertEqual(sol_equa(20), [[6, 2]])
 
     def test_solution_medium(self):
+        """
+        Testing using medium test data
+        :return:
+        """
         self.assertEqual(sol_equa(9001), [[4501, 2250]])
 
         self.assertEqual(sol_equa(9004), [[2252, 1125]])
@@ -50,6 +66,10 @@ class SolutionTestCase(unittest.TestCase):
                                           [95, 2]])
 
     def test_solution_big(self):
+        """
+        Testing using big test data
+        :return:
+        """
         self.assertEqual(sol_equa(900000), [[112502, 56249],
                                             [56254, 28123],
                                             [37506, 18747],
@@ -84,4 +104,8 @@ class SolutionTestCase(unittest.TestCase):
                                            [315, 48]])
 
     def test_solution_empty(self):
+        """
+        Testing using empty test data
+        :return:
+        """
         self.assertEqual(sol_equa(90002), [])

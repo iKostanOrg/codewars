@@ -1,12 +1,16 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Grasshopper - Check for factor
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS MATHEMATICS ALGORITHMS NUMBERS
 
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
+from kyu_8.grasshopper_check_for_factor.check_for_factor \
+    import check_for_factor
 
 
 # pylint: disable=R0801
@@ -20,8 +24,9 @@ from kyu_8.grasshopper_check_for_factor.check_for_factor import check_for_factor
             'MATHEMATICS',
             'ALGORITHMS',
             'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/55cbc3586671f6aa070000fb',
+    name='Source/Kata')
 # pylint: disable=R0801
 class CheckForFactorTestCase(unittest.TestCase):
     """
@@ -38,24 +43,23 @@ class CheckForFactorTestCase(unittest.TestCase):
         Return true if it is a factor.
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing check_for_factor "
                              "function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Return true if it is a factor"):
-
-            data = [
+            data: tuple = (
                 (10, 2, True),
                 (63, 7, True),
                 (2450, 5, True),
-                (24612, 3, True),
-            ]
+                (24612, 3, True))
 
             for base, factor, expected in data:
 
@@ -76,24 +80,23 @@ class CheckForFactorTestCase(unittest.TestCase):
         Return false if it is not a factor.
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing check_for_factor "
                              "function: positive flow")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Return false if it is not a factor"):
-
-            data = [
+            data: tuple = (
                 (9, 2, False),
                 (653, 7, False),
                 (2453, 5, False),
-                (24617, 3, False),
-            ]
+                (24617, 3, False))
 
             for base, factor, expected in data:
 

@@ -1,11 +1,13 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Color Choice
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_6.color_choice.checkchoose import checkchoose
 
@@ -17,13 +19,13 @@ from kyu_6.color_choice.checkchoose import checkchoose
 @allure.feature("Factorial")
 @allure.story('Color Choice')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python',
+    name='Source/Kata')
 class CheckchooseTestCase(unittest.TestCase):
     """
     Testing checkchoose function
     """
-
     def test_checkchoose(self):
         """
         In mathematics the number of x combinations you can take from a
@@ -37,24 +39,25 @@ class CheckchooseTestCase(unittest.TestCase):
         the choice of 4 colors: red, blue, yellow, green. How many colors
         can you choose for each poster?
         """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing checkchoose function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Knowing m (number of posters to design), knowing n "
-                                        "(total number of available colors), let us search x "
-                                        "(number of colors for each poster so that each poster "
-                                        "has a unique combination of colors and the number of "
-                                        "combinations is exactly the same as the number of posters). "
-                                        "In other words we must find x such as n choose x = m (1) "
-                                        "for a given m and a given n; m >= 0 and n > 0. If many x "
-                                        "are solutions give as result the smallest x. It can happen "
-                                        "that when m is given at random there are no x satisfying "
-                                        "equation (1) then return -1.</p>")
-
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Knowing m (number of posters to design), knowing n "
+            "(total number of available colors), let us search x "
+            "(number of colors for each poster so that each poster "
+            "has a unique combination of colors and the number of "
+            "combinations is exactly the same as the number of posters). "
+            "In other words we must find x such as n choose x = m (1) "
+            "for a given m and a given n; m >= 0 and n > 0. If many x "
+            "are solutions give as result the smallest x. It can happen "
+            "that when m is given at random there are no x satisfying "
+            "equation (1) then return -1.</p>")
+        # pylint: enable-msg=R0801
         test_data = (
             (6, 4, 2),
             (4, 4, 1),
@@ -64,19 +67,18 @@ class CheckchooseTestCase(unittest.TestCase):
             (1, 6, 0),
             (1, 15, 0),
             (2, 12, -1),
-            (75788358475481302186, 87, -1),
-        )
+            (75788358475481302186, 87, -1))
 
         for d in test_data:
-            m = d[0]
-            n = d[1]
-            expected = d[2]
-            result = checkchoose(m, n)
+            m: int = d[0]
+            n: int = d[1]
+            expected: int = d[2]
+            result: int = checkchoose(m, n)
 
-            with allure.step("Pass m: {}, "
-                             "n: {} and assert the "
-                             "result: {} vs "
-                             "expected: {}".format(m, n, result, expected)):
+            with allure.step(f"Pass m: {m}, "
+                             f"n: {n} and assert the "
+                             f"result: {result} vs "
+                             f"expected: {expected}"):
 
                 print_log(m=m, n=n, result=result, expected=expected)
                 self.assertEqual(expected, result)

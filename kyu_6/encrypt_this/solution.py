@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Encrypt this!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def encrypt_this(text: str) -> str:
@@ -12,20 +14,23 @@ def encrypt_this(text: str) -> str:
     Keepin' it simple: There are no special characters in input.
 
     :param text: a string containing space separated words
-    :return: secret messages which can be deciphered by the "Decipher this!" kata
+    :return: messages which can be deciphered by the "Decipher this!"
     """
-
     if not text:
         return ""
 
-    results = list()
+    results: list = []
     for word in text.split(' '):
         if len(word) == 1:
-            results.append("{}".format(ord(word[0])))
+            # Python ord() Function:
+            # return the integer that represents the character
+            results.append(f"{ord(word[0])}")
         elif len(word) == 2:
-            results.append("{}{}".format(ord(word[0]), word[-1]))
+            results.append(f"{ord(word[0])}{word[-1]}")
         else:
-            results.append("{}{}{}{}".format(
-                ord(word[0]), word[-1], word[2:-1], word[1]))
+            results.append(f"{ord(word[0])}"
+                           f"{word[-1]}"
+                           f"{word[2:-1]}"
+                           f"{word[1]}")
 
     return ' '.join(results)

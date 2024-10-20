@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Potion Class 101
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # ALGORITHMS
 
@@ -16,18 +18,28 @@ from kyu_6.potion_class_101.potion import Potion
 @allure.feature('Algorithms')
 @allure.story('Potion Class 101')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/5981ff1daf72e8747d000091/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5981ff1daf72e8747d000091/train/python',
+    name='Source/Kata')
 class PotionTestCase(unittest.TestCase):
+    """
+    Testing potion func for Potion Class 101 problem
+    """
     def test_potion(self):
+        """
+        Testing potion function with various test inputs
+        :return:
+        """
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Potion class")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p>Test Potion class that mix between 2 RGB colors.</p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Test Potion class that mix between 2 RGB colors.</p>")
+        # pylint: enable-msg=R0801
         potions = [
             Potion((153, 210, 199), 32),
             Potion((135, 34, 0), 17),
@@ -46,6 +58,7 @@ class PotionTestCase(unittest.TestCase):
             potions[3]).mix(potions[4]).mix(potions[5])
 
         with allure.step("Mix between RGB colors and verify the output"):
+
             self.assertEqual((147, 149, 130), a.color)
             self.assertEqual(49, a.volume)
 

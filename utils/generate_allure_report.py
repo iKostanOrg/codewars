@@ -1,6 +1,5 @@
 """
 Script for generating Allure report.
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -13,22 +12,23 @@ from utils.copy_allure_history import copy_allure_history
 
 if __name__ == "__main__":
 
-    CURRENT_DIR: str = str(os.getcwd()).replace("utils", '')
+    current_dir: str = str(os.getcwd()).replace("utils", '')
     PATH_RESULTS: str = ''
     PATH_REPORT: str = ''
 
     if platform.system() == 'Linux':
-        PATH_RESULTS = CURRENT_DIR + 'allure-results/'
-        PATH_REPORT = CURRENT_DIR + 'allure-report/'
+        PATH_RESULTS = current_dir + 'allure-results/'
+        PATH_REPORT = current_dir + 'allure-report/'
 
     if platform.system() == 'Windows':
-        PATH_RESULTS = CURRENT_DIR + 'allure-results\\'
-        PATH_REPORT = CURRENT_DIR + 'allure-report\\'
+        PATH_RESULTS = current_dir + 'allure-results\\'
+        PATH_REPORT = current_dir + 'allure-report\\'
 
     copy_allure_history()
 
-    GENERATE_CLEAN_REPORT = 'allure generate {} -o {} --clean'.format(PATH_RESULTS, PATH_REPORT)
+    GENERATE_CLEAN_REPORT = \
+        f'allure generate {PATH_RESULTS} -o {PATH_REPORT} --clean'
     os.system(GENERATE_CLEAN_REPORT)
 
-    OPEN_REPORT = 'allure open {}'.format(PATH_REPORT)
+    OPEN_REPORT = f'allure open {PATH_REPORT}'
     os.system(OPEN_REPORT)
