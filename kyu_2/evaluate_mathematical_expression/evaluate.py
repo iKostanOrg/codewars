@@ -189,7 +189,7 @@ def calc(string: str) -> float:
     :param string: str
     :return: float
     """
-    string: str = normalize_string(string)
+    string = normalize_string(string)
     string = ''.join(string.split('+'))
     strings: list = string.split()
     string = process_brackets(strings)
