@@ -44,4 +44,5 @@ jobs:
         run: |
           mypy kyu_2 --ignore-missing-imports --check-untyped-defs
           mypy kyu_3 --ignore-missing-imports --check-untyped-defs
+          mypy kyu_4 --ignore-missing-imports --check-untyped-defs
           mypy utils --ignore-missing-imports --check-untyped-defs
