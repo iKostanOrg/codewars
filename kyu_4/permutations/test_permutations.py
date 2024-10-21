@@ -1,6 +1,5 @@
 """
 Solution for -. Permutations
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,7 +23,7 @@ from kyu_4.permutations.permutations import permutations
 @allure.tag('ALGORITHMS',
             'PERMUTATIONS',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/python',
+@allure.link(url='https://www.codewars.com/kata/5254ca2719453dcc0b00027d',
              name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
@@ -58,7 +57,7 @@ class PermutationsTestCase(unittest.TestCase):
             "have to shuffle all letters from the input in all "
             "possible orders.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ('a', ['a']),
             ('ab', ['ab', 'ba']),
             ('aabb', ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']),
@@ -70,8 +69,7 @@ class PermutationsTestCase(unittest.TestCase):
             ('dcba', ['abcd', 'abdc', 'acbd', 'acdb', 'adbc', 'adcb',
                       'bacd', 'badc', 'bcad', 'bcda', 'bdac', 'bdca',
                       'cabd', 'cadb', 'cbad', 'cbda', 'cdab', 'cdba',
-                      'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba'])
-        ]
+                      'dabc', 'dacb', 'dbac', 'dbca', 'dcab', 'dcba']))
         # pylint: disable-msg=R0801
         for string, expected in test_data:
             actual_result = sorted(permutations(string))

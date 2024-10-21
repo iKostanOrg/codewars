@@ -1,6 +1,5 @@
 """
 Solution for -> Strings Mix
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

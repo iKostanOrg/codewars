@@ -1,6 +1,5 @@
 """
 Test for 'Most frequently used words in a text'
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.most_frequently_used_words.solution import top_3_words
+from kyu_4.most_frequently_used_words.solution \
+    import top_3_words
 
 
 @allure.epic('4 kyu')
@@ -25,7 +25,7 @@ from kyu_4.most_frequently_used_words.solution import top_3_words
             'RANKING',
             'FILTERING')
 @allure.link(
-    url='https://www.codewars.com/kata/51e056fe544cf36c410000fb/train/python',
+    url='https://www.codewars.com/kata/51e056fe544cf36c410000fb',
     name='Source/Kata')
 class Top3WordsTestCase(unittest.TestCase):
     """
@@ -48,7 +48,7 @@ class Top3WordsTestCase(unittest.TestCase):
             "the function should return an array of the top-3 most occurring words, "
             "in descending order of the number of occurrences.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("a a a  b  c c  d d d d  e e e e e", ["e", "d", "a"]),
             ("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e", ["e", "ddd", "aa"]),
             ("  //wont won't won't ", ["won't", "wont"]),
@@ -89,8 +89,7 @@ class Top3WordsTestCase(unittest.TestCase):
              'KdAFZ/KdAFZ-!_.:aqNSrVD._;VCDeGux_!QsF PVDdpw_,KdAFZ/ ;_/CUQhpOptV;.PVDdpw?/ '
              ',rKlP:,uYVx? _-QsF-.VCDeGux-;;.wWHf,- QsF_rKlP:?.,/PVDdpw!,VCDeGux-:wWHf __;Q'
              'sF,_.QsF:VCDeGux:',
-             ['aqywzhe', 'vcdegux', 'uyvx'])
-        )
+             ['aqywzhe', 'vcdegux', 'uyvx']))
 
         for text, expected in test_data:
             actual_result: list = top_3_words(text)
