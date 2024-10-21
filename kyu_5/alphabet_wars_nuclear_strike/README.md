@@ -41,4 +41,4 @@ ab#de[fgh]ij#k   => ""  (all letters dies, there are 2 # close to the shellter )
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/alphabet-wars-nuclear-strike/train/python)
+[Source](https://www.codewars.com/kata/alphabet-wars-nuclear-strike)

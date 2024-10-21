@@ -23,8 +23,9 @@ from kyu_5.count_ip_addresses.ips_between import ips_between
 @allure.tag('ALGORITHMS',
             'PARSING',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/526989a41034285187000de4/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/526989a41034285187000de4',
+    name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class IpsBetweenTestCase(unittest.TestCase):
@@ -60,7 +61,7 @@ class IpsBetweenTestCase(unittest.TestCase):
             "of strings. The last address will always be greater "
             "than the first one.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ("10.0.0.0", "10.0.0.50", 50),
             ("20.0.0.10", "20.0.1.0", 246),
             ("10.0.0.0", "10.0.1.0", 256),
@@ -69,8 +70,7 @@ class IpsBetweenTestCase(unittest.TestCase):
             ("180.0.0.0", "181.0.0.0", 16777216),
             ("1.2.3.4", "5.6.7.8", 67372036),
             ("180.0.0.0", "181.0.0.0", 16777216),
-            ("117.170.96.190", "117.172.196.242", 156724)
-        ]
+            ("117.170.96.190", "117.172.196.242", 156724))
 
         for start, end, expected in test_data:
             result = ips_between(start, end)
@@ -79,6 +79,7 @@ class IpsBetweenTestCase(unittest.TestCase):
                              f"end: {end}) and verify "
                              f"the output ({result}) "
                              f"vs expected ({expected})"):
+
                 print_log(start=start,
                           end=end,
                           result=result,
