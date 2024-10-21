@@ -52,6 +52,15 @@ jobs:
       - name: kyu_5 Python Data Type Checking with MyPy
         run: |
           mypy kyu_5 --ignore-missing-imports --check-untyped-defs
+      - name: kyu_6 Python Data Type Checking with MyPy
+        run: |
+          mypy kyu_6 --ignore-missing-imports --check-untyped-defs
+      - name: kyu_7 Python Data Type Checking with MyPy
+        run: |
+          mypy kyu_7 --ignore-missing-imports --check-untyped-defs
+      - name: kyu_8 Python Data Type Checking with MyPy
+        run: |
+          mypy kyu_8 --ignore-missing-imports --check-untyped-defs
       - name: utils Python Data Type Checking with MyPy
         run: |
           mypy utils --ignore-missing-imports --check-untyped-defs
