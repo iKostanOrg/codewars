@@ -1,12 +1,11 @@
 """
 Test for -> The Greatest Warrior -> test warrior
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-# ALGORITHMS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
-# FUNDAMENTALS RULES
+# ALGORITHMS CLASSES BASIC LANGUAGE FEATURES
+# OBJECT-ORIENTED PROGRAMMING FUNDAMENTALS RULES
 
 import unittest
 import allure
@@ -28,7 +27,7 @@ from kyu_4.the_greatest_warrior.warrior import Warrior
             'FUNDAMENTALS',
             'RULES')
 @allure.link(
-    url='https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python',
+    url='https://www.codewars.com/kata/5941c545f5c394fef900000c',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class WarriorTestCase(unittest.TestCase):
@@ -40,7 +39,7 @@ class WarriorTestCase(unittest.TestCase):
         """
         Testing Warrior class >>> tom
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing Warrior class >>> tom")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,7 +48,7 @@ class WarriorTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Basic test: level, experience, rank</p>")
-
+        # pylint: enable=R0801
         with allure.step("Instantiate a new warrior >>> tom"):
             tom = Warrior()
 
@@ -69,7 +68,7 @@ class WarriorTestCase(unittest.TestCase):
         """
         Testing Warrior class >>> bruce_lee
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing Warrior class >>> bruce_lee")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -78,7 +77,7 @@ class WarriorTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p>Advanced Warrior class assertions</p>")
-
+        # pylint: enable=R0801
         with allure.step("Instantiate a new warrior >>> bruce_lee"):
             bruce_lee = Warrior()
 

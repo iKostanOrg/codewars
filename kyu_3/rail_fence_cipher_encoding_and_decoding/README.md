@@ -36,4 +36,4 @@ Note that the example above excludes the punctuation and spaces just
 for simplicity. There are, however, tests that include punctuation.
 Don't filter out punctuation as they are a part of the string.
 
-[Source](https://www.codewars.com/kata/58c5577d61aefcf3ff000081/train/python)
+[Source](https://www.codewars.com/kata/58c5577d61aefcf3ff000081)

@@ -3,7 +3,6 @@
 ![Document PNG](https://github.com/iKostanOrg/codewars/blob/master/img/document.png)
 
 [![Main Build Pipeline](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml/badge.svg)](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml)
-![GitHub forks](https://img.shields.io/github/forks/iKostanOrg/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/iKostanOrg/codewars)
 [![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f14135ff-6f3e-450c-b391-5a677b8f8d8a/deploy-status)](https://app.netlify.com/sites/codewars-allure-report/deploys)
@@ -15,8 +14,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024)
-![GitHub issues](https://img.shields.io/github/issues-raw/iKostanOrg/codewars)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iKostanOrg/codewars)
 [![Known Vulnerabilities](https://snyk.io/test/github/iKostanOrg/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/iKostanOrg/codewars?targetFile=requirements.txt)
 ![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
 

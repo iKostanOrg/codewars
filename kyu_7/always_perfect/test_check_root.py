@@ -1,8 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Always perfect
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS STRINGS STRING FORMATTING FORMATTING ALGORITHMS ARRAYS MATHEMATICS
+# FUNDAMENTALS STRINGS STRING FORMATTING
+# FORMATTING ALGORITHMS ARRAYS MATHEMATICS
 
 import unittest
 import allure
@@ -10,15 +13,24 @@ from utils.log_func import print_log
 from kyu_7.always_perfect.check_root import check_root
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Lists")
 @allure.story('Always perfect')
-@allure.tag()
-@allure.link(url='',
-             name='Source/Kata')
+@allure.tag('FUNDAMENTALS',
+            'STRINGS',
+            'STRING FORMATTING',
+            'FORMATTING',
+            'ALGORITHMS',
+            'ARRAYS',
+            'MATHEMATICS')
+@allure.link(
+    url='https://www.codewars.com/kata/55f3facb78a9fd5b26000036',
+    name='Source/Kata')
+# pylint: enable-msg=R0801
 class CheckRootTestCase(unittest.TestCase):
     """
     Testing check_root function
@@ -40,25 +52,24 @@ class CheckRootTestCase(unittest.TestCase):
         returns "not consecutive".
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing check_root function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-
-            test_data = [
+            test_data: tuple = (
                 ('4,5,6,7', '841, 29'),
                 ('3,s,5,6', 'incorrect input'),
                 ('11,13,14,15', 'not consecutive'),
                 ('10,11,12,13,15', 'incorrect input'),
                 ('10,11,12,13', '17161, 131'),
-                ('*-3,-2,-1,0', 'incorrect input'),
-            ]
+                ('*-3,-2,-1,0', 'incorrect input'))
 
             for string, expected in test_data:
                 print_log(string=string, expected=expected)

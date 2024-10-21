@@ -1,11 +1,14 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Find the longest gap!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-# FUNDAMENTALS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES STRINGS
+# FUNDAMENTALS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING
+# ADVANCED LANGUAGE FEATURES STRINGS
 
-import allure
 import unittest
+import allure
 from utils.log_func import print_log
 from kyu_7.find_the_longest_gap.gap import gap
 
@@ -16,8 +19,12 @@ from kyu_7.find_the_longest_gap.gap import gap
 @allure.sub_suite("Unit Tests")
 @allure.feature("String")
 @allure.story('Find the longest gap!')
-@allure.tag()
-@allure.link(url='',
+@allure.tag('FUNDAMENTALS',
+            'REGULAR EXPRESSIONS',
+            'DECLARATIVE PROGRAMMING',
+            'ADVANCED LANGUAGE FEATURES',
+            'STRINGS')
+@allure.link(url='https://www.codewars.com/kata/55b86beb1417eab500000051',
              name='Source/Kata')
 class GapTestCase(unittest.TestCase):
     """
@@ -40,23 +47,22 @@ class GapTestCase(unittest.TestCase):
         contain a binary gap.
         :return:
         """
-
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing gap function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable-msg=R0801
         with allure.step("Enter integer and assert the result"):
-
-            data = [
+            data: tuple = (
                 (9, 2),
                 (529, 4),
                 (20, 1),
-                (15, 0),
-            ]
+                (15, 0))
 
             for num, expected in data:
 

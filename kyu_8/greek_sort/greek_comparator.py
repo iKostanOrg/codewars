@@ -1,10 +1,12 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Greek Sort
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 # the tuple greek_alphabet is defined in the global namespace
-GREEK_ALPHABET = (
+GREEK_ALPHABET: tuple = (
     'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta',
     'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu',
     'nu', 'xi', 'omicron', 'pi', 'rho', 'sigma',
@@ -17,8 +19,8 @@ def greek_comparator(lhs: str, rhs: str) -> int:
     which should return a negative, zero or positive number depending
     on whether the first argument is considered smaller than, equal to,
     or larger than the second argument
-    :param lhs:
-    :param rhs:
-    :return:
+    :param lhs: str
+    :param rhs: str
+    :return: int
     """
     return GREEK_ALPHABET.index(lhs) - GREEK_ALPHABET.index(rhs)

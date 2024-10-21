@@ -1,8 +1,8 @@
-"""Find the odd int"""
-
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Find the odd int
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 from typing import List, Dict
 
@@ -14,7 +14,7 @@ def find_it(seq: List[int]) -> int:
     :param seq:
     :return:
     """
-    pares: Dict[int, int] = dict()
+    pares: Dict[int, int] = {}
     result: int = 0
 
     for n in seq:
@@ -23,8 +23,8 @@ def find_it(seq: List[int]) -> int:
         else:
             pares[n] = pares[n] + 1
 
-    for key in pares.keys():
-        if pares[key] % 2 > 0:
+    for key, item in pares.items():
+        if item % 2 > 0:
             result = key
             break
 

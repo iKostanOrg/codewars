@@ -1,10 +1,12 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Your order, please
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def order(sentence: str) -> str:
-	"""
+    """
     Sorts a given string by following rules:
 
         1. Each word in the string will contain a single number.
@@ -15,14 +17,14 @@ def order(sentence: str) -> str:
         3. If the input string is empty, return an empty string. The words in the
            input String will only contain valid consecutive numbers.
 
-	:param sentence: Each word in the string will contain a single number
-	:return: sorted string
-	"""
-	results = list()
-	words = sentence.split()
-	for i in range(1, 10):
-		for word in words:
-			if str(i) in word:
-				results.append(word)
-				break
-	return ' '.join(results)
+    :param sentence: Each word in the string will contain a single number
+    :return: sorted string
+    """
+    results: list = []
+    words: list = sentence.split()
+    for i in range(1, 10):
+        for word in words:
+            if str(i) in word:
+                results.append(word)
+                break
+    return ' '.join(results)

@@ -13,4 +13,4 @@ to create this V A P O R W A V E effect.
 >
 > vaporcode("Why isn't my code working?") # output => "W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"
 <!-- markdownlint-enable MD013 -->
-[Source](https://www.codewars.com/kata/5966eeb31b229e44eb00007a/train/python)
+[Source](https://www.codewars.com/kata/5966eeb31b229e44eb00007a)

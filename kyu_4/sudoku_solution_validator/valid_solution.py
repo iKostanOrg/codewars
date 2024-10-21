@@ -1,6 +1,5 @@
 """
 Solution for -> Sudoku Solution Validator
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,7 +24,6 @@ def check_horizontally(board: list) -> bool:
     :param board:
     :return:
     """
-
     for row in board:
         if sorted(row) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
             return False
@@ -38,8 +36,8 @@ def check_vertically(board: list) -> bool:
     :param board:
     :return:
     """
+    i: int = 0
 
-    i = 0
     while i < 9:
         col = []
         for row in board:
@@ -57,8 +55,7 @@ def check_sub_grids(board: list) -> bool:
     :param board:
     :return:
     """
-
-    sub_grids = [
+    sub_grids: list = [
         board[0][0:3] + board[1][0:3] + board[2][0:3],
         board[0][3:6] + board[1][3:6] + board[2][3:6],
         board[0][6:] + board[1][6:] + board[2][6:],

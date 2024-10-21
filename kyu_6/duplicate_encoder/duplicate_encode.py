@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Duplicate Encoder
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def duplicate_encode(word: str) -> str:
@@ -17,8 +19,8 @@ def duplicate_encode(word: str) -> str:
     :return:
     """
 
-    result = ''
-    word = ''.join(char.lower() for char in word)
+    result: str = ''
+    word: str = ''.join(char.lower() for char in word)
 
     for char in word:
         if word.count(char) > 1:
