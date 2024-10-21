@@ -12,4 +12,7 @@ def permutations(string: str) -> list:
     have to shuffle all letters from the input in all
     possible orders.
     """
-    pass
+    for strg in string:
+        print(strg)
+
+    return []
