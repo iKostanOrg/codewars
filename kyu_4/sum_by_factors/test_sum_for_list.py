@@ -1,6 +1,5 @@
 """
 Testing sum_for_list function
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -23,7 +22,7 @@ from kyu_4.sum_by_factors.sum_for_list import sum_for_list
             'NUMBERS',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/54d496788776e49e6b00052f/train/python',
+    url='https://www.codewars.com/kata/54d496788776e49e6b00052f',
     name='Source/Kata')
 class SumForListTestCase(unittest.TestCase):
     """
@@ -49,7 +48,7 @@ class SumForListTestCase(unittest.TestCase):
             "[[p, sum of all ij of I for which p is a prime factor (p positive) of ij]...]"
             "</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([12, 15],
              [[2, 12], [3, 27], [5, 15]]),
             ([15, 21, 24, 30, 45],
@@ -69,8 +68,7 @@ class SumForListTestCase(unittest.TestCase):
               [37, -37], [41, -164], [113, -113], [131, 131], [191, -191]]),
             ([12, -138, -175, -64, -153, 11, -11, -126, -67, -30, 153, -72, -102],
              [[2, -520], [3, -456], [5, -205], [7, -301], [11, 0], [17, -102], [23, -138],
-              [67, -67]])
-        )
+              [67, -67]]))
 
         for lst, expected in test_data:
 

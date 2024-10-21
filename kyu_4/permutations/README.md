@@ -14,4 +14,4 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 
 The order of the permutations doesn't matter.
 
-[Source](https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/python)
+[Source](https://www.codewars.com/kata/5254ca2719453dcc0b00027d)

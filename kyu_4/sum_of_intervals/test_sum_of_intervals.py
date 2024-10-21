@@ -1,6 +1,5 @@
 """
 Test for -> Sum of Intervals
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,7 +24,7 @@ from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
             'MATHEMATICS',
             'NUMBERS',
             'INTEGERS')
-@allure.link(url='https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/python',
+@allure.link(url='https://www.codewars.com/kata/52b7ed099cdc285c300001cd',
              name='Source/Kata')
 class SumOfIntervalsTestCase(unittest.TestCase):
     """
@@ -68,7 +67,7 @@ class SumOfIntervalsTestCase(unittest.TestCase):
             " Interval example: [1, 5] is an interval from 1 to 5."
             " The length of this interval is 4.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([(1, 5)], 4),
             ([(1, 5), (6, 10)], 8),
             ([(1, 5), (1, 5)], 4),
@@ -89,8 +88,7 @@ class SumOfIntervalsTestCase(unittest.TestCase):
             ([(289, 353), (342, 351), (-231, 202), (-304, -194), (31, 277), (-73, 247),
               (-371, -262), (77, 436), (368, 420), (235, 295), (-135, 294), (204, 325),
               (14, 344), (456, 494), (-500, 288), (326, 360), (313, 379), (-260, -94),
-              (93, 328), (456, 493)], 974)
-        ]
+              (93, 328), (456, 493)], 974))
 
         for intervals, expected in test_data:
             actual_result = sum_of_intervals(intervals)
