@@ -1,6 +1,5 @@
 """
 Test for -> Validate Sudoku with size `NxN`
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,8 +23,9 @@ from kyu_4.validate_sudoku_with_size.sudoku import Sudoku
             'GAMES',
             'ALGORITHMS',
             'VALIDATION')
-@allure.link(url='https://www.codewars.com/kata/540afbe2dc9f615d5e000425/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/540afbe2dc9f615d5e000425',
+    name='Source/Kata')
 class SudokuTestCase(unittest.TestCase):
     """
     Testing Sudoku class

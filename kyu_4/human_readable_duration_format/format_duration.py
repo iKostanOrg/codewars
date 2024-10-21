@@ -49,7 +49,7 @@ def format_duration(seconds: int) -> str:
     days: int = calc_days(seconds)
     hours: int = calc_hours(seconds)
     minutes: int = calc_minutes(seconds)
-    seconds: int = calc_seconds(seconds)
+    seconds = calc_seconds(seconds)
 
     year: str = get_string(years, 'year')
     day: str = get_string(days, 'day')
