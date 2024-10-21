@@ -1,6 +1,5 @@
 """
 Solution for -. Permutations
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

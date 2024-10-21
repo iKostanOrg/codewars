@@ -1,7 +1,6 @@
 """
 A function which formats a duration, given as a
 number of seconds, in a human-friendly way.
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -43,7 +42,7 @@ def format_duration(seconds: int) -> str:
     if seconds == 0:
         return 'now'
 
-    result = ''
+    result: str = ''
 
     years: int = calc_years(seconds)
     days: int = calc_days(seconds)
