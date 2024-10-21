@@ -16,21 +16,21 @@ rank - the harder the kata the faster you advance.
 ## List of Completed Kata (Python 3)
 
 <!-- markdownlint-disable MD013 -->
-| No. |                                         Puzzle/Kata Name                                          | Solution / GitHub Link                                                                                      |
-|-----|:-------------------------------------------------------------------------------------------------:|------------------------------------------------------------------------------------------------------------:|
-|1    |            [Sum of Intervals](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sum_of_intervals)                           |
-|2    |     [Human readable duration format](https://www.codewars.com/kata/52742f58faf5485cae000b9a)      |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/human_readable_duration_format)             |
-|3    |        [Sudoku Solution Validator](https://www.codewars.com/kata/529bf0e9bdf7657179000008)        |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sudoku_solution_validator)                  |
-|4    |            [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)             |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/range_extraction)                           |
-|5    |     [Validate Sudoku with size `NxN`](https://www.codewars.com/kata/540afbe2dc9f615d5e000425)     |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/validate_sudoku_with_size)                  |
-|6    |             [Strip Comments](https://www.codewars.com/kata/51c8e37cee245da6b40000bd)              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strip_comments)                             |
-|7    |                  [Snail](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1)                  |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/snail)                                      |
-|8    |             [Sum by Factors](https://www.codewars.com/kata/54d496788776e49e6b00052f)              |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sum_by_factors)                             |
-|9    |  [Most frequently used words in a text](https://www.codewars.com/kata/51e056fe544cf36c410000fb)   |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/most_frequently_used_words)                 |
-|10   |          [The Greatest Warrior](https://www.codewars.com/kata/5941c545f5c394fef900000c)           |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/the_greatest_warrior)                       |
-|11   |               [Strings Mix](https://www.codewars.com/kata/5629db57620258aa9d000014)               |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strings_mix)                                |
-|12   |[Next smaller number with the same digits](https://www.codewars.com/kata/5659c6d896bc135c4c00021e) |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_smaller_number_with_the_same_digits)   |
-|12   | [Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e) |[Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_bigger_number_with_the_same_digits)    |
+| No. |                                          Puzzle/Kata Name                                          |                                                                                     Solution / GitHub Link |
+|-----|:--------------------------------------------------------------------------------------------------:|-----------------------------------------------------------------------------------------------------------:|
+| 1   |             [Sum of Intervals](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)             |                         [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sum_of_intervals) |
+| 2   |      [Human readable duration format](https://www.codewars.com/kata/52742f58faf5485cae000b9a)      |           [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/human_readable_duration_format) |
+| 3   |        [Sudoku Solution Validator](https://www.codewars.com/kata/529bf0e9bdf7657179000008)         |                [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sudoku_solution_validator) |
+| 4   |             [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)             |                         [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/range_extraction) |
+| 5   |     [Validate Sudoku with size `NxN`](https://www.codewars.com/kata/540afbe2dc9f615d5e000425)      |                [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/validate_sudoku_with_size) |
+| 6   |              [Strip Comments](https://www.codewars.com/kata/51c8e37cee245da6b40000bd)              |                           [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strip_comments) |
+| 7   |                  [Snail](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1)                   |                                    [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/snail) |
+| 8   |              [Sum by Factors](https://www.codewars.com/kata/54d496788776e49e6b00052f)              |                           [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/sum_by_factors) |
+| 9   |   [Most frequently used words in a text](https://www.codewars.com/kata/51e056fe544cf36c410000fb)   |               [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/most_frequently_used_words) |
+| 10  |           [The Greatest Warrior](https://www.codewars.com/kata/5941c545f5c394fef900000c)           |                     [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/the_greatest_warrior) |
+| 11  |               [Strings Mix](https://www.codewars.com/kata/5629db57620258aa9d000014)                |                              [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/strings_mix) |
+| 12  | [Next smaller number with the same digits](https://www.codewars.com/kata/5659c6d896bc135c4c00021e) | [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_smaller_number_with_the_same_digits) |
+| 12  | [Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e)  |  [Solution](https://github.com/ikostan/codewars/tree/master/kyu_4/next_bigger_number_with_the_same_digits) |
 <!-- markdownlint-enable MD013 -->
 
 [Source](https://www.codewars.com/about)
