@@ -21,8 +21,9 @@ from kyu_5.find_the_smallest.solution import smallest
 @allure.feature("Lists")
 @allure.story('Find the smallest')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/573992c724fc289553000e95/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/573992c724fc289553000e95',
+    name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class FindSmallestTestCase(unittest.TestCase):
@@ -46,7 +47,7 @@ class FindSmallestTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        test_data = ((261235, [126235, 2, 0]),
+        test_data: tuple = ((261235, [126235, 2, 0]),
                      (209917, [29917, 0, 1]),
                      (285365, [238565, 3, 1]),
                      (269045, [26945, 3, 0]),

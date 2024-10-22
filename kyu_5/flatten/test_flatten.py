@@ -21,8 +21,9 @@ from utils.log_func import print_log
 @allure.story('flatten()')
 @allure.tag('ALGORITHMS',
             'ARRAYS')
-@allure.link(url='https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/513fa1d75e4297ba38000003',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FlattenTestCase(unittest.TestCase):
     """
@@ -58,34 +59,34 @@ class FlattenTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data #1 and verify the output"):
-            expected = []
+            expected: list = []
             print_log(args=None,
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten())
 
         with allure.step("Enter test data #2 and verify the output"):
-            expected = [1, 2, 3]
+            expected: list = [1, 2, 3]
             print_log(args=(1, 2, 3),
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten(1, 2, 3))
 
         with allure.step("Enter test data #3 and verify the output"):
-            expected = [1, 2, 3, 4, 5, 6, 7, 8]
+            expected: list = [1, 2, 3, 4, 5, 6, 7, 8]
             print_log(args=([1, 2], [3, 4, 5], [6, [7], [[8]]]),
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten([1, 2], [3, 4, 5], [6, [7], [[8]]]))
 
         with allure.step("Enter test data #4 and verify the output"):
-            expected = [1, 2, '9', None]
+            expected: list = [1, 2, '9', None]
             print_log(args=(1, 2, ['9', [], []], None),
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten(1, 2, ['9', [], []], None))
 
         with allure.step("Enter test data #5 and verify the output"):
-            expected = ['hello', 2, 'text', 4, 5, '[list]']
+            expected: list = ['hello', 2, 'text', 4, 5, '[list]']
             print_log(args=(['hello', 2, ['text', [4, 5]]], [[]], '[list]'), expected=expected)
             self.assertListEqual(expected, flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))

@@ -9,8 +9,10 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.find_the_safest_places_in_town.advice import advice, create_city_map, agents_cleanup
-from kyu_5.find_the_safest_places_in_town.print_agents import print_map
+from kyu_5.find_the_safest_places_in_town.advice \
+    import advice, create_city_map, agents_cleanup
+from kyu_5.find_the_safest_places_in_town.print_agents \
+    import print_map
 
 
 # pylint: disable-msg=R0801
@@ -21,8 +23,9 @@ from kyu_5.find_the_safest_places_in_town.print_agents import print_map
 @allure.feature("Lists")
 @allure.story('Find the safest places in town')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstAdviceTestCase(unittest.TestCase):
     """
@@ -49,18 +52,17 @@ class FirstAdviceTestCase(unittest.TestCase):
             "<p>The function should generate city map with coordinates.</p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 (2, {(0, 0), (0, 1), (1, 0), (1, 1)}),
                 (0, set()),
                 (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1),
-                     (1, 2), (2, 0), (2, 1), (2, 2)}),
-            ]
+                     (1, 2), (2, 0), (2, 1), (2, 2)}))
 
             for data in test_data:
                 # test data
-                n = data[0]
-                expected = data[1]
-                actual = create_city_map(n)
+                n: int = data[0]
+                expected: set = data[1]
+                actual: set = create_city_map(n)
                 # test log
                 print_log(n=n, expected=expected, actual=actual)
                 # assertion
@@ -88,7 +90,7 @@ class FirstAdviceTestCase(unittest.TestCase):
             "outside of the city boundaries.</p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
                 ({(0, 0), (1, 1), (99, 99)}, 2, {(0, 0), (1, 1)}),
                 ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47),
@@ -96,15 +98,14 @@ class FirstAdviceTestCase(unittest.TestCase):
                   (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13),
                   (36, 38), (29, 54), (50, 15), (14, 28),
                   (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6),
-                  (12, 46), (50, 35), (56, 27)}, 10, set()),
-            ]
+                  (12, 46), (50, 35), (56, 27)}, 10, set()))
 
             for data in test_data:
                 # test data
-                agents = data[0]
-                n = data[1]
-                expected = data[2]
-                actual = agents_cleanup(agents, n)
+                agents: set= data[0]
+                n: int = data[1]
+                expected: set = data[2]
+                actual: set = agents_cleanup(agents, n)
                 # test log
                 print_log(agents=agents, n=n, expected=expected, actual=actual)
                 # assertion
@@ -134,7 +135,7 @@ class FirstAdviceTestCase(unittest.TestCase):
             "agents.</p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ([(1, 1)], 2, [(0, 0)],
                  "Should return top left corner for agent in the bottom right"),
                 ([(1, 1)], 0, [],
@@ -488,7 +489,7 @@ class FirstAdviceTestCase(unittest.TestCase):
                   (66, 49), (39, 11), (12, 26), (7, 21), (58, 47), (5, 52), (29, 19), (1, 20), (62, 44), (54, 38),
                   (25, 19), (8, 36), (41, 53), (3, 57), (8, 61), (40, 22), (63, 36), (0, 11), (23, 53), (47, 44),
                   (22, 7), (5, 56), (10, 64), (4, 12), (5, 48), (34, 11), (38, 5), (37, 27), (54, 67), (36, 54),
-                  (22, 54)], 47, [(46, 38)], 'Big lists')]
+                  (22, 54)], 47, [(46, 38)], 'Big lists'))
             # pylint: enable-msg=C0301
             for data in test_data:
                 # test data

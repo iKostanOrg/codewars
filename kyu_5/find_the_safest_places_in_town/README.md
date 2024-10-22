@@ -55,4 +55,4 @@ There are `200` random tests with `n <= 50`. Inefficient solutions might time ou
 
 This kata is inspired by [ThoughtWorks' coding challenge.](https://github.com/Fun-Coding-Challenges/ada-lovelace-coding-challenge)
 
-[Source](https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed/train/python)
+[Source](https://www.codewars.com/kata/5dd82b7cd3d6c100109cb4ed)
