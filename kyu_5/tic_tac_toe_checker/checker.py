@@ -3,7 +3,6 @@ Solution for -> Tic-Tac-Toe Checker
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
-from typing import Any
 
 
 def is_solved(board) -> int:
