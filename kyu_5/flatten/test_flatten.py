@@ -66,27 +66,27 @@ class FlattenTestCase(unittest.TestCase):
                                  flatten())
 
         with allure.step("Enter test data #2 and verify the output"):
-            expected: list = [1, 2, 3]
+            expected = [1, 2, 3]
             print_log(args=(1, 2, 3),
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten(1, 2, 3))
 
         with allure.step("Enter test data #3 and verify the output"):
-            expected: list = [1, 2, 3, 4, 5, 6, 7, 8]
+            expected = [1, 2, 3, 4, 5, 6, 7, 8]
             print_log(args=([1, 2], [3, 4, 5], [6, [7], [[8]]]),
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten([1, 2], [3, 4, 5], [6, [7], [[8]]]))
 
         with allure.step("Enter test data #4 and verify the output"):
-            expected: list = [1, 2, '9', None]
+            expected = [1, 2, '9', None]
             print_log(args=(1, 2, ['9', [], []], None),
                       expected=expected)
             self.assertListEqual(expected,
                                  flatten(1, 2, ['9', [], []], None))
 
         with allure.step("Enter test data #5 and verify the output"):
-            expected: list = ['hello', 2, 'text', 4, 5, '[list]']
+            expected = ['hello', 2, 'text', 4, 5, '[list]']
             print_log(args=(['hello', 2, ['text', [4, 5]]], [[]], '[list]'), expected=expected)
             self.assertListEqual(expected, flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))
