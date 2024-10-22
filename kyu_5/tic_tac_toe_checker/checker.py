@@ -63,7 +63,7 @@ def check_diagonals(board) -> int | None:
     return None
 
 
-def check_cols(board) -> [int, None]:
+def check_cols(board) -> int | None:
     """
     Check board by column
     :param board: list
@@ -80,7 +80,7 @@ def check_cols(board) -> [int, None]:
     return None
 
 
-def check_rows(board: list) -> [int, None]:
+def check_rows(board: list) -> int | None:
     """
     Check board by row
     :param board: list
