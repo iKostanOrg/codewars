@@ -26,8 +26,9 @@ from kyu_5.not_very_secure.alphanumeric import alphanumeric
             'ADVANCED LANGUAGE FEATURES',
             'FUNDAMENTALS',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/526dbd6c8c0eb53254000110/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/526dbd6c8c0eb53254000110',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class AlphanumericTestCase(unittest.TestCase):
     """
@@ -60,11 +61,10 @@ class AlphanumericTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ("hello world_", False),
                 ("PassW0rd", True),
-                ("     ", False)
-            ]
+                ("     ", False))
 
             for password, expected in test_data:
                 print_log(password=password,

@@ -15,7 +15,7 @@ def valid_parentheses(string: str) -> bool:
     :return: bool
     """
 
-    string = clean_up_string(string)
+    string: str = clean_up_string(string)
 
     if string == "" or not string:
         return True

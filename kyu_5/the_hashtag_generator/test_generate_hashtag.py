@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.the_hashtag_generator.hashtag_generator import generate_hashtag
+from kyu_5.the_hashtag_generator.hashtag_generator \
+    import generate_hashtag
 
 
 # pylint: disable-msg=R0801
@@ -21,8 +22,9 @@ from kyu_5.the_hashtag_generator.hashtag_generator import generate_hashtag
 @allure.story('The Hashtag Generator')
 @allure.tag('ALGORITHMS',
             'SORTING')
-@allure.link(url='https://www.codewars.com/kata/52449b062fb80683ec000024/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52449b062fb80683ec000024',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class GenerateHashtagTestCase(unittest.TestCase):
     """
@@ -33,7 +35,6 @@ class GenerateHashtagTestCase(unittest.TestCase):
         """
         Testing 'generate_hashtag' function
         """
-
         allure.dynamic.title("Testing 'generate_hashtag' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -53,7 +54,7 @@ class GenerateHashtagTestCase(unittest.TestCase):
             "must return false."
             "</p>")
 
-        test_data = (
+        test_data: tuple = (
             ('',
              False,
              'Expected an empty string to return False'),
@@ -87,8 +88,7 @@ class GenerateHashtagTestCase(unittest.TestCase):
              'oooooong Cat',
              False,
              'Should return False if the final word is '
-             'longer than 140 chars.'),
-        )
+             'longer than 140 chars.'))
 
         for string, expected, message in test_data:
             actual_result = generate_hashtag(string)

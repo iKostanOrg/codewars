@@ -8,7 +8,8 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
-from kyu_5.valid_parentheses.valid_parentheses import valid_parentheses
+from kyu_5.valid_parentheses.valid_parentheses \
+    import valid_parentheses
 from utils.log_func import print_log
 
 
@@ -21,8 +22,9 @@ from utils.log_func import print_log
 @allure.tag('ALGORITHMS',
             'VALIDATION',
             'UTILITIES')
-@allure.link(url='https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52774a314c2333f0a7000688',
+    name='Source/Kata')
 class ValidParenthesesTestCase(unittest.TestCase):
     """
     Testing valid_parentheses function
@@ -54,7 +56,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ("  (", False),
                 (")test", False),
                 ("", True),
@@ -63,8 +65,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
                 ("()", True),
                 (")(()))", False),
                 ("(", False),
-                ("(())((()())())", True),
-            ]
+                ("(())((()())())", True))
 
             for string, expected in test_data:
                 print_log(string=string,

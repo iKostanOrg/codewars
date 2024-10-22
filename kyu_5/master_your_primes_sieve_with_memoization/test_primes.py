@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.master_your_primes_sieve_with_memoization.primes import is_prime
+from kyu_5.master_your_primes_sieve_with_memoization.primes \
+    import is_prime
 
 
 @allure.epic('5 kyu')
@@ -24,8 +25,9 @@ from kyu_5.master_your_primes_sieve_with_memoization.primes import is_prime
             'DESIGN PATTERNS',
             'DESIGN PRINCIPLES',
             'OPTIMIZATION')
-@allure.link(url='https://www.codewars.com/kata/58603c898989d15e9e000475',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/58603c898989d15e9e000475',
+    name='Source/Kata')
 class PrimesTestCase(unittest.TestCase):
     """
     Testing is_prime function
@@ -52,7 +54,7 @@ class PrimesTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 (1, False),
                 (2, True),
                 (5, True),
@@ -72,8 +74,7 @@ class PrimesTestCase(unittest.TestCase):
                 (17, True),
                 (19, True),
                 (23, True),
-                (29, True),
-            ]
+                (29, True))
 
             for data in test_data:
                 number = data[0]

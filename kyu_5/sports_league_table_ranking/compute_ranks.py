@@ -25,7 +25,6 @@ def compute_ranks(number: int, games: list) -> list:
     :param games: list
     :return: list
     """
-
     if not games:
         return [1] * number
 
@@ -51,7 +50,6 @@ def process_not_played_games(teams: dict, number: int) -> None:
     :param number:
     :return:
     """
-
     for num in range(number):
         if num not in teams:
             check_if_team_registered(num, teams, number)
@@ -91,7 +89,6 @@ def check_if_team_registered(team, teams, number) -> None:
     :param number:
     :return:
     """
-
     if team not in teams:
         teams[team]: dict = {}
         teams[team]["GD"] = 0
@@ -110,7 +107,6 @@ def calc_team_points(team, teams, score_a, score_b) -> None:
     :param score_b:
     :return:
     """
-
     if score_a > score_b:
         teams[team]['Points'] += 2
     elif score_a == score_b:
@@ -127,7 +123,6 @@ def calc_for_against(teams, team, team_1, team_2) -> None:
     :param team_2:
     :return:
     """
-
     teams[team]["For:Against"][0] += team_1
     teams[team]["For:Against"][1] += team_2
 
@@ -139,7 +134,6 @@ def calc_gd(teams) -> None:
     :param teams:
     :return:
     """
-
     for team in teams:
         teams[team]["GD"] = teams[team]["For:Against"][0] - teams[team]["For:Against"][1]
 
@@ -156,7 +150,6 @@ def calc_rank(teams: dict) -> None:
     :param teams:
     :return:
     """
-
     for team_a in teams:
         for team_b in teams:
             if team_a != team_b:
