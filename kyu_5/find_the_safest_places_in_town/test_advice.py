@@ -102,7 +102,7 @@ class FirstAdviceTestCase(unittest.TestCase):
 
             for data in test_data:
                 # test data
-                agents: set= data[0]
+                agents: set = data[0]
                 n: int = data[1]
                 expected: set = data[2]
                 actual: set = agents_cleanup(agents, n)
