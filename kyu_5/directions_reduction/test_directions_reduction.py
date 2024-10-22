@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.directions_reduction.directions_reduction import dir_reduc
+from kyu_5.directions_reduction.directions_reduction \
+    import dir_reduc
 
 
 # pylint: disable-msg=R0801
@@ -20,8 +21,9 @@ from kyu_5.directions_reduction.directions_reduction import dir_reduc
 @allure.feature("Lists")
 @allure.story('Directions Reduction')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/550f22f4d758534c1100025a',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class DirectionsReductionTestCase(unittest.TestCase):
     """
@@ -56,7 +58,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
             "strings and returns an array of strings with the needless "
             "directions removed (W<->E or S<->N side by side).</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
              ['WEST']),
             (["NORTH", "WEST", "SOUTH", "EAST"],
@@ -72,8 +74,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
               'WEST', 'NORTH', 'WEST', 'SOUTH', 'SOUTH']),
             (['WEST', 'NORTH', 'EAST', 'EAST', 'EAST', 'EAST', 'WEST', 'WEST',
               'WEST', 'WEST', 'NORTH', 'NORTH', 'SOUTH', 'EAST'],
-             ['WEST', 'NORTH', 'NORTH', 'EAST'])
-        )
+             ['WEST', 'NORTH', 'NORTH', 'EAST']))
 
         for d in test_data:
             test_array = d[0].copy()

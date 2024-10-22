@@ -13,4 +13,4 @@ For example, the input 'sTreSS' should return 'T'.
 If a string contains all repeating characters, it should return an empty string
 ("") or None -- see sample tests.
 
-[Source](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python)
+[Source](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e)

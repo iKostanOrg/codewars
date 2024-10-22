@@ -21,8 +21,9 @@ from utils.log_func import print_log
 @allure.story('flatten()')
 @allure.tag('ALGORITHMS',
             'ARRAYS')
-@allure.link(url='https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/513fa1d75e4297ba38000003',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FlattenTestCase(unittest.TestCase):
     """
@@ -58,7 +59,7 @@ class FlattenTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data #1 and verify the output"):
-            expected = []
+            expected: list = []
             print_log(args=None,
                       expected=expected)
             self.assertListEqual(expected,

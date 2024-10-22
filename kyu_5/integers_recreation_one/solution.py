@@ -16,7 +16,7 @@ def divisor_generator(digit: int):
     # You should only be running your loop from 1 to the
     # square root of n. Then to find the pair, do n / i,
     # and this will cover the whole problem space.
-    large_divisors = []
+    large_divisors: list = []
     for i in range(1, int(math.sqrt(digit) + 1)):
         if digit % i == 0:
             large_divisors.append(i)

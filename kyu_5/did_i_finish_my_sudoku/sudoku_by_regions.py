@@ -14,9 +14,9 @@ def assert_sudoku_by_region(board: list) -> bool:
     :param board: Sudoku list
     :return: boolean value (is Sudoku done or not)
     """
-    row_length = len(board[0])
+    row_length: int = len(board[0])
+    step: int = 0
 
-    step = 0
     for i in gen_primes():
         if row_length % i == 0:
             step = i

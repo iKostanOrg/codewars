@@ -17,7 +17,7 @@ def alphabet_war(battlefield: str) -> str:
         return ''.join(char for char in battlefield if char.isalpha())
 
     result: str = clean_unsheltered(battlefield)
-    result: str = clean_battlefield(result)
+    result = clean_battlefield(result)
     return result
 
 
@@ -52,8 +52,8 @@ def clean_battlefield(battlefield: str) -> str:
     :return: str
     """
     result: list = battlefield.split('[')
-    result: list = [string for string in result if string != '']
-    result: list = list(reversed(result))
+    result = [string for string in result if string != '']
+    result = list(reversed(result))
     temp: list = []
 
     while result:
