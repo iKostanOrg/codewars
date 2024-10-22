@@ -35,7 +35,7 @@ def is_solved(board) -> int:
     return 0
 
 
-def check_diagonals(board) -> (None, int):
+def check_diagonals(board) -> tuple[None, int]:
     """
     Check board by diagonal
     :param board: list
