@@ -136,7 +136,7 @@ def calc_gd(teams) -> None:
     """
     for team in teams:
         teams[team]["GD"] = (
-                teams[team]["For:Against"][0] - teams[team]["For:Against"][1])
+            teams[team]["For:Against"][0] - teams[team]["For:Against"][1])
 
 
 def calc_rank(teams: dict) -> None:
