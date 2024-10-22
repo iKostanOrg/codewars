@@ -90,7 +90,7 @@ def check_if_team_registered(team, teams, number) -> None:
     :return:
     """
     if team not in teams:
-        teams[team]: dict = {}
+        teams[team] = {}
         teams[team]["GD"] = 0
         teams[team]["For:Against"] = [0, 0]
         teams[team]["Points"] = 0
