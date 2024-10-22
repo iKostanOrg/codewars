@@ -14,21 +14,21 @@ OPERATORS = ['*', '/', '+', '-']
 def calculate(i: int, char: str, strings: list) -> None:
     """
     Calculate math expression
-
     :param i: int
     :param char: str
     :param strings: list
     :return: None
     """
-    a = float(strings[i - 1])
-    b = float(strings[i + 1])
+    # pylint: disable=R0801
+    a: float = float(strings[i - 1])
+    b: float = float(strings[i + 1])
 
     if char == '*':
         strings[i] = str(a * b)
 
     if char == '/':
         strings[i] = str(a / b)
-
+    # pylint: enable=R0801
     del strings[i + 1]
     del strings[i - 1]
 
@@ -36,12 +36,11 @@ def calculate(i: int, char: str, strings: list) -> None:
 def process_math_expression(string: str, operators: list) -> str:
     """
     Process math expression
-
     :param string: str
     :param operators: list
     :return: str
     """
-    strings = [s for s in string.split(' ') if bool(s != '+')]
+    strings: list = [s for s in string.split(' ') if bool(s != '+')]
 
     while any(s in operators for s in strings):
         for i, char in enumerate(strings):
@@ -55,15 +54,14 @@ def process_math_expression(string: str, operators: list) -> str:
 def normalize_string(string: str) -> str:
     """
     Normalizing string input
-
     :param string: str
     :return: str
     """
-    strings = []
-    string_temp = ''.join([s for s in string if s != ' '])
+    strings: list = []
+    string_temp: str = ''.join([s for s in string if s != ' '])
 
     while string_temp != '':
-        temp = ''
+        temp: str = ''
 
         for i, s in enumerate(string_temp):
             if s.isdigit():
@@ -100,12 +98,11 @@ def normalize_string(string: str) -> str:
 def bracket_start(strings: list) -> int:
     """
     Return index of first (open) bracket
-
     :param strings: list
     :return: int
     """
-    a = ([i for i, strg in enumerate(strings) if strg == '('])[-1]
-    b = ''.join(strings).rindex('(')
+    a: int = ([i for i, strg in enumerate(strings) if strg == '('])[-1]
+    b: int = ''.join(strings).rindex('(')
     print(f"str: {strings}, a: {a}, b: {b}")
     return a
 
@@ -113,7 +110,6 @@ def bracket_start(strings: list) -> int:
 def bracket_end(strings: list, start: int) -> int:
     """
     Return index of last (close) bracket
-
     :param strings:
     :param start:
     :return:
@@ -125,7 +121,6 @@ def process_brackets(strings: list) -> str:
     """
     Process brackets in order to convert
     input string into math expression
-
     :param strings: list
     :return: str
     """
@@ -138,12 +133,12 @@ def process_brackets(strings: list) -> str:
             del strings[start]
 
         if len(strings[start + 1: end]) > 2:
-            temp = ' '.join(strings[start + 1: end])
+            temp: str = ' '.join(strings[start + 1: end])
             temp = process_duplicate_minus(temp)
             temp = process_math_expression(temp, ['*', '/'])
-            temp = [float(t) for t in temp.split() if t != '+']
-            temp = str(sum(temp))
-            tmp_strings = strings[:start]
+            temp_lst: list = [float(t) for t in temp.split() if t != '+']
+            temp = str(sum(temp_lst))
+            tmp_strings: list = strings[:start]
             tmp_strings.append(temp)
             if end < len(strings) - 1:
                 tmp_strings += strings[end + 1:]
@@ -155,12 +150,11 @@ def process_brackets(strings: list) -> str:
 def process_duplicate_minus(string: str) -> str:
     """
     Eliminate duplicate minus
-
     :param string: str
     :return: str
     """
-    done = False
-    strings = string.split(' ')
+    done: bool = False
+    strings: list = string.split(' ')
 
     while not done:
         done = True
@@ -192,17 +186,16 @@ def process_duplicate_minus(string: str) -> str:
 def calc(string: str) -> float:
     """
     Calculate math expression from input string
-
     :param string: str
     :return: float
     """
     string = normalize_string(string)
     string = ''.join(string.split('+'))
-    strings = string.split()
+    strings: list = string.split()
     string = process_brackets(strings)
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
-    string = string.split(' ')
-    string = [float(s) for s in string]
-    string = str(sum(string))
+    string_lst: list = string.split(' ')
+    string_lst = [float(s) for s in string_lst]
+    string = str(sum(string_lst))
     return float(string)

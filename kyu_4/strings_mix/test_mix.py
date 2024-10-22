@@ -1,6 +1,5 @@
 """
 Test for -> Strings Mix
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -22,7 +21,7 @@ from kyu_4.strings_mix.solution import mix
 @allure.tag('FUNDAMENTALS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/5629db57620258aa9d000014/train/python',
+    url='https://www.codewars.com/kata/5629db57620258aa9d000014',
     name='Source/Kata')
 class MixTestCase(unittest.TestCase):
     """
@@ -49,7 +48,7 @@ class MixTestCase(unittest.TestCase):
             "take into account the lowercase letters (a to z). First let "
             "us count the frequency of each lowercase letters in s1 and s2.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("Are they here",
              "yes, they are here",
              "2:eeeee/2:yy/=:hh/=:rr"),
@@ -67,8 +66,7 @@ class MixTestCase(unittest.TestCase):
              "",),
             ("A generation must confront the looming ",
              "codewarrs",
-             "1:nnnnn/1:ooooo/1:tttt/1:eee/1:gg/1:ii/1:mm/=:rr"),
-        )
+             "1:nnnnn/1:ooooo/1:tttt/1:eee/1:gg/1:ii/1:mm/=:rr"))
 
         for s1, s2, expected in test_data:
             actual_result = mix(s1, s2)

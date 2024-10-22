@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Always perfect
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 import math
 from typing import List
@@ -21,7 +23,6 @@ def check_root(string: str) -> str:
     :param string:
     :return:
     """
-
     string_arr: List = string.split(',')
     if len(string_arr) != 4:
         return 'incorrect input'
@@ -36,10 +37,9 @@ def check_root(string: str) -> str:
         result *= s
 
     result += 1
-
     root: float = math.sqrt(result)
 
     if root % 1 == 0:
-        return '{}, {}'.format(result, int(root))
-    else:
-        return 'not consecutive'
+        return f'{result}, {int(root)}'
+
+    return 'not consecutive'

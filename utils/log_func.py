@@ -1,6 +1,5 @@
 """
 Print logs function.
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,13 +8,11 @@ GitHub: https://github.com/ikostan
 def print_log(**kwargs) -> None:
     """
     Print log
-    :param args:
+    :param kwargs:
     :return:
     """
+    log: str = ''
+    for key, item in kwargs.items():
+        log += f'{key}: {item},\n'
 
-    log = ''
-    for key in kwargs:
-        log += '{}: {},\n'.format(key, kwargs[key])
-
-    print('\nLOG =>\n{}\n'.format(log[:-2]))
-    return None
+    print(f'\nLOG =>\n{log[:-2]}\n')

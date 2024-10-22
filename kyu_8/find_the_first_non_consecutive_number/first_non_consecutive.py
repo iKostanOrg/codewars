@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Find the first non-consecutive number
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def first_non_consecutive(arr: list):
+def first_non_consecutive(arr: list) -> int:
     """
     Find the first element of an array that is not consecutive.
 
@@ -12,10 +14,13 @@ def first_non_consecutive(arr: list):
     so that's the first non-consecutive number.
 
     If the whole array is consecutive then return null or Nothing.
-    :param arr:
-    :return:
+    :param arr: list
+    :return: int
     """
-
+    result = None
     for index, n in enumerate(arr):
         if index + 1 < len(arr) and n + 1 != arr[index + 1]:
-            return arr[index + 1]
+            result = arr[index + 1]
+            break
+
+    return result

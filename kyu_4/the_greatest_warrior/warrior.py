@@ -1,6 +1,5 @@
 """
 Solution for -> The Greatest Warrior
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

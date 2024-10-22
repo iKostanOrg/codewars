@@ -1,6 +1,5 @@
 """
-Check the exam
-
+Test for -> Check the exam
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,8 +23,9 @@ from kyu_8.check_the_exam.check_exam import check_exam
             'ARRAYS',
             'NUMBERS',
             'BASIC LANGUAGE FEATURES')
-@allure.link(url='https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5a3dd29055519e23ec000074',
+    name='Source/Kata')
 # pylint: enable=R0801
 class CheckExamTestCase(unittest.TestCase):
     """
@@ -44,27 +44,24 @@ class CheckExamTestCase(unittest.TestCase):
 
         :return:
         """
-
         # pylint: disable=R0801
         allure.dynamic.title("Testing check_exam function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
         # pylint: enable=R0801
         with allure.step("Enter arr1 and arr2 and verify the output"):
-
-            data = [
+            data: tuple = (
                 (["a", "a", "b", "b"], ["a", "c", "b", "d"], 6),
                 (["a", "a", "c", "b"], ["a", "a", "b", ""], 7),
                 (["a", "a", "b", "c"], ["a", "a", "b", "c"], 16),
-                (["b", "c", "b", "a"], ["", "a", "a", "c"], 0),
-            ]
+                (["b", "c", "b", "a"], ["", "a", "a", "c"], 0))
 
             for arr1, arr2, expected in data:
-
                 print_log(arr1=arr1,
                           arr2=arr2,
                           expected=expected)

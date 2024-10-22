@@ -1,6 +1,5 @@
 """
 Testing Battleship field validator
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,8 +23,9 @@ from utils.log_func import print_log
             'VALIDATION',
             'ARRAYS',
             'GAME BOARDS')
-@allure.link(url='https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7',
+    name='Source/Kata')
 class BattleshipFieldValidatorTestCase(unittest.TestCase):
     """
     Testing Battleship field validator
@@ -55,7 +55,7 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
             " returns true if it has a valid disposition of"
             " ships, false otherwise.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
               [1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
               [1, 0, 0, 0, 1, 0, 0, 1, 0, 0],
@@ -154,17 +154,18 @@ class BattleshipFieldValidatorTestCase(unittest.TestCase):
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
-             False, 'Must return FALSE if ships are in contact')
-        )
+             False, 'Must return FALSE if ships are in contact'))
 
         for field, expected, message in test_data:
-            actual_result = validate_battlefield(field)
+            actual_result: bool = validate_battlefield(field)
 
             print_log(field=field,
                       expected=expected,
                       message=message,
                       actual_result=actual_result)
-            step_txt = (f"Field validation: "
-                        f"expected -> {expected}, actual -> {actual_result}")
+
+            step_txt: str = (f"Field validation: expected -> {expected}, "
+                             f"actual -> {actual_result}")
+
             with allure.step(step_txt):
                 self.assertEqual(expected, actual_result, msg=message)

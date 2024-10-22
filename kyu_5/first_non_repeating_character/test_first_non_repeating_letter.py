@@ -24,8 +24,9 @@ from kyu_5.first_non_repeating_character.first_non_repeating_letter import (
 @allure.tag('ALGORITHMS',
             'STRINGS',
             'SEARCH')
-@allure.link(url='https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52bc74d4ac05d0945d00054e',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstNonRepeatingLetterTestCase(unittest.TestCase):
     """
@@ -62,7 +63,7 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ('a', 'a'),
                 ('stress', 't'),
                 ('moonmen', 'e'),
@@ -72,8 +73,7 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
                 ('~><#~><', '#'),
                 ('hello world, eh?', 'w'),
                 ('sTreSS', 'T'),
-                ('Go hang a salami, I\'m a lasagna hog!', ',')
-            ]
+                ('Go hang a salami, I\'m a lasagna hog!', ','))
 
             for data in test_data:
                 string = data[0]

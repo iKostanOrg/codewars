@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.string_incrementer.string_incrementer import increment_string
+from kyu_5.string_incrementer.string_incrementer \
+    import increment_string
 
 
 # pylint: disable-msg=R0801
@@ -26,8 +27,9 @@ from kyu_5.string_incrementer.string_incrementer import increment_string
             'ADVANCED LANGUAGE FEATURES',
             'STRINGS PARSING',
             'ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/54a91a4883a7de5d7800009c',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class StringIncrementerTestCase(unittest.TestCase):
     """
@@ -54,7 +56,7 @@ class StringIncrementerTestCase(unittest.TestCase):
             "should be appended to the new string."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("foo", "foo1"),
             ("foobar001", "foobar002"),
             ("foobar1", "foobar2"),
@@ -63,8 +65,7 @@ class StringIncrementerTestCase(unittest.TestCase):
             ("foobar099", "foobar100"),
             ("", "1"),
             ('009', '010'),
-            ('^0000007', '^0000008')
-        )
+            ('^0000007', '^0000008'))
 
         for sting, expected in test_data:
             with allure.step("Enter test string and verify the output"):

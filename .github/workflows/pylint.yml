@@ -1,21 +1,15 @@
 name: PyLint
 
 on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - reopened
-      - synchronize
+  push:
     branches:
-      - 'kyu8'
-      - 'kyu7'
-      - 'kyu6'
-      - 'kyu5'
-      - 'kyu4'
-      - 'kyu3'
-      - 'kyu2'
+      - 'utils'
+      - 'none'
   workflow_call:
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   build:

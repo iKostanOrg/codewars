@@ -24,4 +24,4 @@ We want our function to return:
 You may assume that the board passed in is valid in the context of a game
 of Tic-Tac-Toe.
 
-[Source](https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/python)
+[Source](https://www.codewars.com/kata/525caa5c1bf619d28c000335)

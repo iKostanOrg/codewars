@@ -1,9 +1,11 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Pull your words together, man!
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
-def sentencify(words):
+def sentencify(words: list) -> str:
     """
     The function should:
 
@@ -12,7 +14,7 @@ def sentencify(words):
     3. Join the words into a complete string, with spaces.
     4. Do no other manipulation on the words.
 
-    :param words:
-    :return:
+    :param words: list
+    :return: str
     """
     return words[0][0].upper() + ' '.join(words)[1:] + '.'

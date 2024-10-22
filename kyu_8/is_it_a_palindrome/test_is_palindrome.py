@@ -1,5 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
+"""
+Test for -> Is it a palindrome?
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS
 
@@ -17,8 +20,9 @@ from kyu_8.is_it_a_palindrome.is_palindrome import is_palindrome
 @allure.feature("String")
 @allure.story('Is it a palindrome?')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/57a1fd2ce298a731b20006a4',
+    name='Source/Kata')
 # pylint: enable=R0801
 class IsPalindromeTestCase(unittest.TestCase):
     """
@@ -34,18 +38,18 @@ class IsPalindromeTestCase(unittest.TestCase):
         given string (case insensitive)
         is a palindrome.
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Testing is_palindrome function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
-
-            test_data = [
+            test_data: tuple = (
                 ('a', True),
                 ('aba', True),
                 ('Abba', True),
@@ -56,8 +60,7 @@ class IsPalindromeTestCase(unittest.TestCase):
                 ('NdjXglGnYGKhQtuAcxNWFwVRZZDMrFmiOPMZsvr', False),
                 ('XqmUTaAmrrYitgNwkCwaWdFYsEhfIeOohViba', False),
                 ('ZtItThFBUPCSCbtcUfDwXzyajhRIWioUHpVzN', False),
-                ('XqNeuBjbshHwqjoUNGHhVRolqxWRRWYYbN', False)
-            ]
+                ('XqNeuBjbshHwqjoUNGHhVRolqxWRRWYYbN', False))
 
             for string, expected in test_data:
                 print_log(string=string, expected=expected)

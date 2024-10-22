@@ -17,4 +17,4 @@ centuryFromYear(1601)  returns (17)
 centuryFromYear(2000)  returns (20)
 ```
 
-[Source](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/python)
+[Source](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097)

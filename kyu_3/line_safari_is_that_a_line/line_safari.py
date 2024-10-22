@@ -1,6 +1,5 @@
 """
 Solution for -> Line Safari - Is that a line?
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -11,10 +10,8 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 def line(grid: list) -> bool:
     """
     You are given a grid.
-
     You simply need to return true/false if you
     can detect a one and only one "valid" line joining those points.
-
     :param grid: which always includes exactly two end-points indicated by X
     :return: true/false
     """
@@ -40,7 +37,7 @@ def assert_x_has_rout(grid: list) -> bool:
     :param grid:
     :return:
     """
-    counter = 0
+    counter: int = 0
     for row_i, row in enumerate(grid):
 
         if counter == 2:
@@ -74,7 +71,7 @@ def x_counter(grid: list) -> int:
     :param grid: list
     :return: int
     """
-    counter = 0
+    counter: int = 0
     for row in grid:
         counter += row.count('X')
     return counter

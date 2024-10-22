@@ -1,6 +1,8 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Solution for -> Significant Figures
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 
 def number_of_sigfigs(number: str) -> int:
@@ -10,16 +12,14 @@ def number_of_sigfigs(number: str) -> int:
     :param number:
     :return:
     """
-
-    number = normalize_string(number)
+    number: str = normalize_string(number)
     if number == '0':
         return 0
     if number == '0.0':
         return 1
 
-    result = 0
+    result: int = 0
     for i, char in enumerate(number):
-
         if char.isdigit() and not (i == 0 and char == '0'):
             result += 1
 
@@ -33,7 +33,6 @@ def normalize_string(number: str) -> str:
     :param number:
     :return:
     """
-
     if '.' not in number:
         number = str(int(number))
         number = remove_extra_zeroes(number)
@@ -49,7 +48,6 @@ def remove_extra_zeroes(number: str) -> str:
     :param number:
     :return:
     """
-
     index = None
 
     for i in range(-1, len(number) * -1, -1):
@@ -70,12 +68,11 @@ def remove_extra_leading_zeroes(number: str) -> str:
     :param number:
     :return:
     """
-    new_number = str(float(number))
-
-    after_dot = len(number[number.index('.'):])
-    new_after_dot = len(new_number[new_number.index('.'):])
+    new_number: str = str(float(number))
+    after_dot: int = len(number[number.index('.'):])
+    new_after_dot: int = len(new_number[new_number.index('.'):])
 
     if after_dot == new_after_dot:
         return new_number
-    else:
-        return new_number + ('0' * (after_dot - new_after_dot))
+
+    return new_number + ('0' * (after_dot - new_after_dot))

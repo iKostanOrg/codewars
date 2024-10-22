@@ -1,8 +1,10 @@
-import math
+"""
+Solution for -> You\'re a square
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+import math
 
 
 def is_square(n) -> bool:

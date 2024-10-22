@@ -1,6 +1,5 @@
 """
 Solution for -> sum_for_list function
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -21,7 +20,7 @@ def sum_for_list(lst: list) -> list:
     :return: sorted array P
     """
     max_l = max(lst) if abs(max(lst)) > abs(min(lst)) else abs(min(lst))
-    results = []
+    results: list = []
 
     for prime in gen_primes():
         # stop execution in case current

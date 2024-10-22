@@ -67,4 +67,4 @@ Because the plant reach to the desired height at day 1(10 meters).
 The number of days that it will take for the plant to reach/pass
 desiredHeight (including the last day in the total count).
 
-[Source](https://www.codewars.com/kata/58941fec8afa3618c9000184/train/python)
+[Source](https://www.codewars.com/kata/58941fec8afa3618c9000184)
