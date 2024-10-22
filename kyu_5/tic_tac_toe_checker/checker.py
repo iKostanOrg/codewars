@@ -35,7 +35,7 @@ def is_solved(board) -> int:
     return 0
 
 
-def check_diagonals(board) -> [int, None]:
+def check_diagonals(board) -> (None, int):
     """
     Check board by diagonal
     :param board: list
@@ -50,7 +50,7 @@ def check_diagonals(board) -> [int, None]:
     if len(temp) == 1:
         return temp.pop()
 
-    i: int = 2
+    i = 2
     temp: set = set()
     for row in board:
         temp.add(row[i])
