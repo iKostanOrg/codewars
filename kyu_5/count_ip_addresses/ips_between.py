@@ -22,7 +22,7 @@ def ips_between(start: str, end: str) -> int:
 
     ip_start: list = [int(a) for a in start.split('.')]
     ip_end: list = [int(b) for b in end.split('.')]
-    ips: list = zip(ip_start, ip_end)
+    ips = zip(ip_start, ip_end)
     ips_range: list = [0, 0, 0, 0]
 
     for ip_id, ip in enumerate(ips):
