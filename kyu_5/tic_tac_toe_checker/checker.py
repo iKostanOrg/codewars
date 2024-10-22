@@ -52,7 +52,7 @@ def check_diagonals(board) -> int | None:
         return temp.pop()
 
     i = 2
-    temp: set = set()
+    temp = set()
     for row in board:
         temp.add(row[i])
         i -= 1
