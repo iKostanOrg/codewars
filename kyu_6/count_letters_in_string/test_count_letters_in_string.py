@@ -57,33 +57,33 @@ class CountLettersInStringTestCase(unittest.TestCase):
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string: str = "activity"
-            expected: dict = {"a": 1, "c": 1, "i": 2, "t": 2,
-                              "v": 1, "y": 1}
+            string = "activity"
+            expected = {"a": 1, "c": 1, "i": 2, "t": 2,
+                        "v": 1, "y": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string: str = "arithmetics"
-            expected: dict = {"a": 1, "c": 1, "e": 1, "h": 1,
-                              "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
+            string = "arithmetics"
+            expected = {"a": 1, "c": 1, "e": 1, "h": 1,
+                        "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string: str = "traveller"
-            expected: dict = {"a": 1, "e": 2, "l": 2,
-                              "r": 2, "t": 1, "v": 1}
+            string = "traveller"
+            expected = {"a": 1, "e": 2, "l": 2,
+                        "r": 2, "t": 1, "v": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string: str = "daydreamer"
-            expected: dict = {"a": 2, "d": 2, "e": 2,
-                              "m": 1, "r": 2, "y": 1}
+            string = "daydreamer"
+            expected = {"a": 2, "d": 2, "e": 2,
+                        "m": 1, "r": 2, "y": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
