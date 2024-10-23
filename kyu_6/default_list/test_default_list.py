@@ -23,8 +23,9 @@ from kyu_6.default_list.default_list import DefaultList
             'CLASSES',
             'BASIC LANGUAGE FEATURES',
             'OBJECT-ORIENTED PROGRAMMING')
-@allure.link(url='https://www.codewars.com/kata/5e882048999e6c0023412908/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5e882048999e6c0023412908',
+    name='Source/Kata')
 class DefaultListTestCase(unittest.TestCase):
     """
     Testing 'DefaultList' class
@@ -41,6 +42,7 @@ class DefaultListTestCase(unittest.TestCase):
     This class must also support the regular list functions
     extend, append, insert, remove, and pop.
     """
+
     def test_default_list_basic(self):
         """
         Testing 'DefaultList' class: __getitem__
@@ -67,7 +69,7 @@ class DefaultListTestCase(unittest.TestCase):
             lst = DefaultList([1, 3, 4, 7, 2, 34], 'def')
 
         with allure.step("Get list item by index and verify the results"):
-            i = 1
+            i: int = 1
             expected = 3
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected, actual=actual)
