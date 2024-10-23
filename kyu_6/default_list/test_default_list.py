@@ -80,14 +80,14 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'def'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
         with allure.step("Get list item by index and verify the results"):
             i = 23
             expected_str = 'def'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
     def test_default_list_extend(self):
         """
@@ -129,7 +129,7 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'def'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
     def test_default_list_append(self):
         """
@@ -166,7 +166,7 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'def'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
     def test_default_list_remove(self):
         """
