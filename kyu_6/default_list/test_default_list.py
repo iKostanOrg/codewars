@@ -283,4 +283,4 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'def'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
