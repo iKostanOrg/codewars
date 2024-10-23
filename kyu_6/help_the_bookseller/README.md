@@ -54,4 +54,4 @@ Note:
 
 In the result codes and their values are in the same order as in M.
 
-[Source](https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/python)
+[Source](https://www.codewars.com/kata/54dc6f5a224c26032800005c)
