@@ -77,16 +77,16 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Get list item by index and verify the results"):
             i = 333000
-            expected = 'def'
+            expected_str = 'def'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
         with allure.step("Get list item by index and verify the results"):
             i = 23
-            expected = 'def'
+            expected_str = 'def'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
     def test_default_list_extend(self):
@@ -112,9 +112,9 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Get list item by index and verify the results"):
             i = 9
-            expected = 'lists'
+            expected_str = 'lists'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
         with allure.step("Get list item by index and verify the results"):
@@ -126,9 +126,9 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Get list item by index and verify the results"):
             i = 12
-            expected = 'def'
+            expected_str = 'def'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
     def test_default_list_append(self):
@@ -163,9 +163,9 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Get list item by index and verify the results"):
             i = 100
-            expected = 'def'
+            expected_str = 'def'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
     def test_default_list_remove(self):
@@ -232,9 +232,9 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Get list item by index and verify the results"):
             i = 8
-            expected = 'word'
+            expected_str = 'word'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
         with allure.step("Get list item by index and verify the results"):
@@ -266,21 +266,21 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Pop an item and verify the result"):
             i = 5
-            expected = 'hello'
+            expected_str = 'hello'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
         with allure.step("Pop an item and verify the result"):
             i = 6
-            expected = 'lists'
+            expected_str = 'lists'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
 
         with allure.step("Pop an un-existing item and verify the result"):
             i = 45
-            expected = 'def'
+            expected_str = 'def'
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected, actual)
