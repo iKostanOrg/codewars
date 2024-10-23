@@ -115,7 +115,7 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'lists'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
         with allure.step("Get list item by index and verify the results"):
             i = 11
@@ -235,7 +235,7 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'word'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
         with allure.step("Get list item by index and verify the results"):
             i = 10
@@ -269,14 +269,14 @@ class DefaultListTestCase(unittest.TestCase):
             expected_str = 'hello'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
         with allure.step("Pop an item and verify the result"):
             i = 6
             expected_str = 'lists'
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected, actual)
+            self.assertEqual(expected_str, actual)
 
         with allure.step("Pop an un-existing item and verify the result"):
             i = 45
