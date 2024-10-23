@@ -32,7 +32,6 @@ def sort_list(results: list) -> list:
     :param results: list
     :return: list
     """
-
     is_sorted: bool = False
     results_length: int = len(results)
 

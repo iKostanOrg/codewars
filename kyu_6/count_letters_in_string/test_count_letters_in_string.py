@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.count_letters_in_string.count_letters_in_string import letter_count
+from kyu_6.count_letters_in_string.count_letters_in_string \
+    import letter_count
 
 
 # pylint: disable-msg=R0801
@@ -24,13 +25,14 @@ from kyu_6.count_letters_in_string.count_letters_in_string import letter_count
             'HASHES',
             'DATA STRUCTURES')
 @allure.link(
-    url='https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/python',
+    url='https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CountLettersInStringTestCase(unittest.TestCase):
     """
     Testing 'letter_count' function
     """
+
     def test_count_letters_in_string(self):
         """
         Testing 'letter_count' function
@@ -47,41 +49,41 @@ class CountLettersInStringTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            string = "codewars"
-            expected = {"a": 1, "c": 1, "d": 1, "e": 1,
-                        "o": 1, "r": 1, "s": 1, "w": 1}
+            string: str = "codewars"
+            expected: dict = {"a": 1, "c": 1, "d": 1, "e": 1,
+                              "o": 1, "r": 1, "s": 1, "w": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string = "activity"
-            expected = {"a": 1, "c": 1, "i": 2, "t": 2,
-                        "v": 1, "y": 1}
+            string: str = "activity"
+            expected: dict = {"a": 1, "c": 1, "i": 2, "t": 2,
+                              "v": 1, "y": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string = "arithmetics"
-            expected = {"a": 1, "c": 1, "e": 1, "h": 1,
-                        "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
+            string: str = "arithmetics"
+            expected: dict = {"a": 1, "c": 1, "e": 1, "h": 1,
+                              "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string = "traveller"
-            expected = {"a": 1, "e": 2, "l": 2,
-                        "r": 2, "t": 1, "v": 1}
+            string: str = "traveller"
+            expected: dict = {"a": 1, "e": 2, "l": 2,
+                              "r": 2, "t": 1, "v": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
 
         with allure.step("Enter test string and verify the output"):
-            string = "daydreamer"
-            expected = {"a": 2, "d": 2, "e": 2,
-                        "m": 1, "r": 2, "y": 1}
+            string: str = "daydreamer"
+            expected: dict = {"a": 2, "d": 2, "e": 2,
+                              "m": 1, "r": 2, "y": 1}
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, letter_count(string))
