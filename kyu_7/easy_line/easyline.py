@@ -7,7 +7,7 @@ GitHub: https://github.com/ikostan
 import math
 
 
-def easy_line(n: int) -> int:
+def easy_line(n: int):
     """
     The function will take n (with: n>= 0) as parameter
     and will return the sum of the squares of the binomial
