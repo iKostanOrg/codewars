@@ -15,7 +15,7 @@ def letter_frequency(text: str) -> list:
     """
     results: list = []
     chars: dict = {}
-    text: str = text.lower()
+    text = text.lower()
 
     for c in text:
         if c.isalpha() and c not in chars:
