@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.string_transformer.string_transformer import string_transformer
+from kyu_6.string_transformer.string_transformer \
+    import string_transformer
 
 
 @allure.epic('6 kyu')
@@ -20,12 +21,13 @@ from kyu_6.string_transformer.string_transformer import string_transformer
 @allure.story('String transformer')
 @allure.tag('FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/5878520d52628a092f0002d0/train/python',
+    url='https://www.codewars.com/kata/5878520d52628a092f0002d0',
     name='Source/Kata')
 class StringTransformerTestCase(unittest.TestCase):
     """
     Testing string_transformer function
     """
+
     def test_string_transformer(self):
         """
         Testing string_transformer function
@@ -43,14 +45,15 @@ class StringTransformerTestCase(unittest.TestCase):
         """
         allure.dynamic.title("Testing string_transformer function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
 
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ("Example string", "STRING eXAMPLE"),
                 ("Example Input", "iNPUT eXAMPLE"),
                 ("To be OR not to be That is the Question",
@@ -84,7 +87,7 @@ class StringTransformerTestCase(unittest.TestCase):
                 ("UOtfi  erH kCk KXzg Io  Y  I TYAf "
                  "EGXVSvASIyJ p Zf p kV g RI  V",
                  "v  ri G Kv P zF P egxvsVasiYj tyaF "
-                 "i  y  iO kxZG KcK ERh  uoTFI")]
+                 "i  y  iO kxZG KcK ERh  uoTFI"))
 
             for s, expected in test_data:
                 print_log(s=s, expected=expected)
