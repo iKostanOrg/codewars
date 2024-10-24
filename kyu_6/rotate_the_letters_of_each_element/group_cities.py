@@ -47,7 +47,7 @@ def group_cities(seq: list) -> list:
             results.append(temp)
 
     # Sort the elements of each group alphabetically.
-    results: list = ([sorted(list(r)) for r in results])
+    results = ([sorted(list(r)) for r in results])
     # Sort the groups
     sort_results(results)
     return results
@@ -60,8 +60,8 @@ def rotate(item: str, element: str) -> bool:
     :param element: str
     :return: bool
     """
-    item: str = item.lower()
-    element: str = element.lower()
+    item = item.lower()
+    element = element.lower()
     i: int = 0
     max_i = len(item) * len(item)
     while i < max_i:
