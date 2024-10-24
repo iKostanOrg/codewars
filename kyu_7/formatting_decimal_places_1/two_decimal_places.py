@@ -11,7 +11,7 @@ def two_decimal_places(number) -> float:
     only the first two decimal places are returned.
 
     You don't need to check whether the input is a valid
-    number because only valid numbers ae used in the tests.
+    number because only valid numbers are used in the tests.
 
     Don't round the numbers! Just cut them after two decimal
     places!
@@ -20,4 +20,4 @@ def two_decimal_places(number) -> float:
     :return: float
     """
     number_str: str = str(number)
-    return float(number[0: number_str.index('.') + 3])
+    return float(number_str[0:number_str.index('.') + 3])
