@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def first_dup(word: str) -> (str, None):
+def first_dup(word: str) -> str| None:
     """
     Find the first character that repeats
     in a String and return that character.
