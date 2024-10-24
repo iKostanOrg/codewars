@@ -109,7 +109,7 @@ class SumOfNumbersTestCase(unittest.TestCase):
         with allure.step("Assert the result"):
             a = -1
             b = 0
-            expected: int = a + b
+            expected = a + b
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
 
