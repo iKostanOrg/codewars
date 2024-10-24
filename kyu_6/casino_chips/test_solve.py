@@ -24,7 +24,7 @@ from utils.log_func import print_log
             'ALGORITHMS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/5e0b72d2d772160011133654/train/python',
+    url='https://www.codewars.com/kata/5e0b72d2d772160011133654',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SolveTestCase(unittest.TestCase):
@@ -49,7 +49,7 @@ class SolveTestCase(unittest.TestCase):
             "maximum number of days you can pick the chips. Each "
             "day you need to take exactly two chips.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([8, 8, 8], 12),
             ([1, 1, 1], 1),
             ([8, 1, 4], 5),
@@ -62,7 +62,7 @@ class SolveTestCase(unittest.TestCase):
             ([4, 4, 3], 5),
             ([1, 2, 1], 2),
             ([4, 1, 1], 2),
-            ([8, 2, 8], 9),]
+            ([8, 2, 8], 9))
 
         for arr, expected in test_data:
             actual_result = solve(arr)

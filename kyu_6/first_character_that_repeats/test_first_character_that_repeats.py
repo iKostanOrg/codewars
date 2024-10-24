@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.first_character_that_repeats.first_character_that_repeats import first_dup
+from kyu_6.first_character_that_repeats.first_character_that_repeats \
+    import first_dup
 
 
 # pylint: disable-msg=R0801
@@ -46,7 +47,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass string with no repeating chars"):
-            string = 'like'
+            string: str = 'like'
             expected = None
 
             print_log(string=string, expected=expected)
@@ -75,7 +76,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Input consist of mixed type of chars"):
-            string = '1a2b3a3c'
+            string: str = '1a2b3a3c'
             expected = 'a'
 
             print_log(string=string, expected=expected)
@@ -104,7 +105,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Input consist of alphabet chars only"):
-            string = 'tweet'
+            string: str = 'tweet'
             expected = 't'
 
             print_log(string=string, expected=expected)
@@ -126,7 +127,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Input consist of alphabet chars and spaces"):
-            string = 'Ode to Joy'
+            string: str = 'Ode to Joy'
             expected = ' '
 
             print_log(string=string, expected=expected)
@@ -148,7 +149,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass string with digits only"):
-            string = '123123'
+            string: str = '123123'
             expected = '1'
 
             print_log(string=string, expected=expected)

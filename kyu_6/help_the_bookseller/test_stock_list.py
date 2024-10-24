@@ -21,7 +21,7 @@ from kyu_6.help_the_bookseller.stock_list import stock_list
 @allure.tag('FUNDAMENTALS',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/python',
+    url='https://www.codewars.com/kata/54dc6f5a224c26032800005c',
     name='Source/Kata')
 class StockListTestCase(unittest.TestCase):
     """
@@ -46,7 +46,7 @@ class StockListTestCase(unittest.TestCase):
             "to each category of M and to sum their quantity according to "
             "each category.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"],
              ["A", "B"],
              "(A : 200) - (B : 1140)"),
@@ -66,8 +66,7 @@ class StockListTestCase(unittest.TestCase):
              '(U : 0) - (V : 0) - (R : 225)'),
             ([],
              ['B', 'R', 'D', 'X'],
-             '')
-        ]
+             ''))
 
         for list_of_art, list_of_cat, expected in test_data:
             actual_result = stock_list(list_of_art, list_of_cat)
