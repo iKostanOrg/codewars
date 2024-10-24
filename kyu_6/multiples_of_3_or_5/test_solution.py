@@ -22,7 +22,7 @@ from kyu_6.multiples_of_3_or_5.solution import solution
             'MATHEMATICS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/514b92a657cdc65150000006/train/python',
+    url='https://www.codewars.com/kata/514b92a657cdc65150000006',
     name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
     """
@@ -57,8 +57,7 @@ class SolutionTestCase(unittest.TestCase):
             (4, 3, 'Should return 3 for n=4'),
             (200, 9168, 'Should return 9168 for n=200'),
             (-1, 0, 'Should return 0 for n=-1'),
-            (1291, 388935, 'Random test')
-        )
+            (1291, 388935, 'Random test'))
 
         for td in test_data:
             number, expected, msg = td
