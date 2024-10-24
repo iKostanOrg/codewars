@@ -12,4 +12,4 @@ Example:
 sort_array([5, 3, 2, 8, 1, 4]) == [1, 3, 2, 8, 5, 4]
 ```
 
-[Source](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python)
+[Source](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d)
