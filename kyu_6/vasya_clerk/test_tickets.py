@@ -24,7 +24,7 @@ from kyu_6.vasya_clerk.tickets import tickets
             'NUMBERS',
             'GAMES')
 @allure.link(
-    url='https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/python',
+    url='https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8',
     name='Source/Kata')
 class TicketsTestCase(unittest.TestCase):
     """
@@ -88,6 +88,5 @@ class TicketsTestCase(unittest.TestCase):
                  'N/A'))
 
             for arr, expected, msg in test_data:
-
                 print_log(people=arr, expected=expected, msg=msg)
                 self.assertEqual(expected, tickets(arr), msg)

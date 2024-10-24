@@ -20,4 +20,4 @@ But will your code be **performant enough**?
 
 There might be some non-ascii characters in the string.
 
-[Source](https://www.codewars.com/kata/5b4070144d7d8bbfe7000001/train/python)
+[Source](https://www.codewars.com/kata/5b4070144d7d8bbfe7000001)

@@ -42,4 +42,4 @@ not return 61 seconds, but `1 minute and 1 second` instead. Formally, the durati
 specified by of a component must not be greater than any valid more significant unit
 of time.
 
-[Source](https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python)
+[Source](https://www.codewars.com/kata/52742f58faf5485cae000b9a)

@@ -29,11 +29,10 @@ def zeros(n) -> int:
     :param n: int
     :return: int
     """
-
     # Initialize result
-    count = 0
+    count: int = 0
+    i: int = 5
 
-    i = 5
     while (n / i) >= 1:
         # update Count
         count += int(n / i)

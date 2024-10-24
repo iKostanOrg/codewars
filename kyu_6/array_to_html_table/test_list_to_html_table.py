@@ -22,7 +22,7 @@ from kyu_6.array_to_html_table.to_table import to_table
             'ARRAYS',
             'LISTS')
 @allure.link(
-    url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python',
+    url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a',
     name='Source/Kata')
 class ArrayToTableTestCase(unittest.TestCase):
     """
@@ -46,7 +46,7 @@ class ArrayToTableTestCase(unittest.TestCase):
             "(data, header, index) and returns a string "
             "containing HTML tags representing the table.</p>")
         # pylint: enable-msg=R0801
-        test_data = ([
+        test_data: tuple = (
             {
                 "input": ([["o"]]),
                 "output": "<table><tbody>"
@@ -101,9 +101,7 @@ class ArrayToTableTestCase(unittest.TestCase):
                           "<tbody>"
                           "<tr><td>True</td><td>False</td><td>False</td><td>True</td>"
                           "<td>True</td></tr>"
-                          "</tbody></table>"
-            },
-        ])
+                          "</tbody></table>"})
 
         for test_item in test_data:
             data: list = test_item["input"][0]

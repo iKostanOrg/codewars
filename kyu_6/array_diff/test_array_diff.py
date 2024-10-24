@@ -23,7 +23,7 @@ from utils.log_func import print_log
             'ARRAYS',
             'LISTS')
 @allure.link(
-    url='https://www.codewars.com/kata/523f5d21c841566fde000009/train/python',
+    url='https://www.codewars.com/kata/523f5d21c841566fde000009',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class ArrayDiffTestCase(unittest.TestCase):
@@ -59,7 +59,7 @@ class ArrayDiffTestCase(unittest.TestCase):
             "and returns the result. It should remove all values from "
             "list a, which are present in list b.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([1, 2], [1], [2], "a was [1,2], b was [1], expected [2]"),
             ([1, 2, 2], [1], [2, 2], "a was [1,2,2], b was [1], expected [2,2]"),
             ([1, 2, 2], [2], [1], "a was [1,2,2], b was [2], expected [1]"),
@@ -75,6 +75,7 @@ class ArrayDiffTestCase(unittest.TestCase):
 
             with allure.step("Enter a test data and verify the "
                              "expected output vs actual result"):
+
                 print_log(a=a,
                           b=b,
                           exp=expected,

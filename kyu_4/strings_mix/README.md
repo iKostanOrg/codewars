@@ -66,4 +66,4 @@ mix(s1, s2) --> "1:mmmmmm/E:nnnnnn/1:aaaa/1:hhh/2:yyy/2:dd/2:ff/2:ii/2:rr/E:ee/E
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/5629db57620258aa9d000014/train/python)
+[Source](https://www.codewars.com/kata/5629db57620258aa9d000014)

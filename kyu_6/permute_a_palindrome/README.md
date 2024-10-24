@@ -19,4 +19,4 @@ permutations of the string and check each one of them whether it
 is a palindrome. However, an optimized approach will not require
 this at all.
 
-[Source](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/python)
+[Source](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079)

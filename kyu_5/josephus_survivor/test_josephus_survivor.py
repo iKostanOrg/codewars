@@ -10,7 +10,8 @@ import unittest
 import pytest
 import allure
 from utils.log_func import print_log
-from kyu_5.josephus_survivor.josephus_survivor import josephus_survivor
+from kyu_5.josephus_survivor.josephus_survivor \
+    import josephus_survivor
 
 
 @allure.epic('5 kyu')
@@ -25,8 +26,9 @@ from kyu_5.josephus_survivor.josephus_survivor import josephus_survivor
             'LISTS',
             'DATA STRUCTURES',
             'ARRAYS')
-@allure.link(url='https://www.codewars.com/kata/555624b601231dc7a400017a/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/555624b601231dc7a400017a',
+    name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class JosephusSurvivorTestCase(unittest.TestCase):
     """
@@ -52,13 +54,12 @@ class JosephusSurvivorTestCase(unittest.TestCase):
             "correctly returns who is the \"survivor\", ie: the "
             "last element of a Josephus permutation.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ((7, 3), 4),
             ((11, 19), 10),
             ((1, 300), 1),
             ((14, 2), 13),
-            ((100, 1), 100)
-        ]
+            ((100, 1), 100))
 
         for test_data, expected in test_data:
             total = test_data[0]

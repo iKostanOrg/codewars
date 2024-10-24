@@ -24,7 +24,7 @@ from kyu_6.who_likes_it.likes_function import likes
             'ALGORITHMS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/python',
+    url='https://www.codewars.com/kata/5266876b8f4bf2da9b000362',
     name='Source/Kata')
 # pylint: enable=R0801
 class LikesTestCase(unittest.TestCase):
