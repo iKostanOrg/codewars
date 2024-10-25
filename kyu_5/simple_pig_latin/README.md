@@ -10,4 +10,4 @@ the end of the word. Leave punctuation marks untouched.
 > pig_it('Hello world !')     # elloHay orldway !
 ```
 
-[Source](https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python)
+[Source](https://www.codewars.com/kata/520b9d2ad5c005041100000f)

@@ -1,6 +1,5 @@
 """
 Test for -> Next smaller number with the same digits
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_smaller
+from kyu_4.next_smaller_number_with_the_same_digits.next_smaller \
+    import next_smaller
 
 
 # pylint: disable-msg=R0801
@@ -25,7 +25,7 @@ from kyu_4.next_smaller_number_with_the_same_digits.next_smaller import next_sma
             'STRINGS',
             'INTEGERS',
             'MATHEMATICS')
-@allure.link(url='https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/python',
+@allure.link(url='https://www.codewars.com/kata/5659c6d896bc135c4c00021e',
              name='Source/Kata')
 # pylint: enable-msg=R0801
 class NextSmallerTestCase(unittest.TestCase):
@@ -64,7 +64,7 @@ class NextSmallerTestCase(unittest.TestCase):
             "<p>If no smaller number can be composed using those digits,"
             " return -1</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (1027, -1),
             (1262347, 1247632),
             (907, 790),
@@ -74,8 +74,7 @@ class NextSmallerTestCase(unittest.TestCase):
             (414, 144),
             (123456798, 123456789),
             (123456789, -1),
-            (1234567908, 1234567890),
-        ]
+            (1234567908, 1234567890))
 
         for n, expected in test_data:
             actual_result = next_smaller(n)

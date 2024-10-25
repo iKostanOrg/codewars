@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.sum_of_digits_digital_root.digital_root import digital_root
+from kyu_6.sum_of_digits_digital_root.digital_root \
+    import digital_root
 
 
 @allure.epic('6 kyu')
@@ -23,7 +24,7 @@ from kyu_6.sum_of_digits_digital_root.digital_root import digital_root
             'NUMBERS',
             'ARITHMETIC')
 @allure.link(
-    url='https://www.codewars.com/kata/541c8630095125aba6000c00/train/python',
+    url='https://www.codewars.com/kata/541c8630095125aba6000c00',
     name='Source/Kata')
 class DigitalRootTestCase(unittest.TestCase):
     """
@@ -51,12 +52,12 @@ class DigitalRootTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter a number and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 (16, 7),
                 (456, 6),
                 (942, 6),
                 (132189, 6),
-                (493193, 2)]
+                (493193, 2))
 
             for n, expected in test_data:
                 print_log(n=n, expected=expected)

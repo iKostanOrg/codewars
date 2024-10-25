@@ -13,6 +13,7 @@ from utils.log_func import print_log
 from kyu_7.powers_of_3.largest_power import largest_power
 
 
+# pylint: disable=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Algorithms")
@@ -29,6 +30,7 @@ from kyu_7.powers_of_3.largest_power import largest_power
 @allure.link(
     url='https://www.codewars.com/kata/57be674b93687de78c0001d9',
     name='Source/Kata')
+# pylint: enable=R0801
 class LargestPowerTestCase(unittest.TestCase):
     """
     Testing largestPower function
@@ -56,7 +58,7 @@ class LargestPowerTestCase(unittest.TestCase):
             self.assertEqual(largest_power(n), expected)
 
         with allure.step("Pass an integer and verify the output"):
-            n: int = 4
-            expected: int = 1
+            n = 4
+            expected = 1
             print_log(N=n, expected=expected)
             self.assertEqual(largest_power(n), expected)

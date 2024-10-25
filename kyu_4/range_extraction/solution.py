@@ -1,6 +1,5 @@
 """
 Solution for -> Range Extraction
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -13,8 +12,8 @@ def solution(args: list) -> str:
     :param args:
     :return:
     """
-    current = [args[0], args[0], False]
-    result = ''
+    current: list = [args[0], args[0], False]
+    result: str = ''
 
     for i, a in enumerate(args):
 

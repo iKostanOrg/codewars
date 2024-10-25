@@ -20,12 +20,14 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
 @allure.story('Permute a Palindrome')
 @allure.tag('FUNDAMENTALS',
             'ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/58ae6ae22c3aaafc58000079',
+    name='Source/Kata')
 class PermutePalindromeTestCase(unittest.TestCase):
     """
     Testing permute_a_palindrome function
     """
+
     def test_permute_a_palindrome_positive(self):
         """
         Testing permute_a_palindrome function
@@ -43,35 +45,27 @@ class PermutePalindromeTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
-            string = "a"
-            expected = True
-
+            string: str = "a"
+            expected: bool = True
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
         with allure.step("Enter test string and verify the result"):
             string = "aa"
             expected = True
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
         with allure.step("Enter test string and verify the result"):
             string = "baa"
             expected = True
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
         with allure.step("Enter test string and verify the result"):
             string = "aab"
             expected = True
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
     def test_permute_a_palindrome_negative(self):
@@ -91,27 +85,21 @@ class PermutePalindromeTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the result"):
-            string = "baabcd"
-            expected = False
-
+            string: str = "baabcd"
+            expected: bool = False
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
         with allure.step("Enter test string and verify the result"):
             string = "racecars"
             expected = False
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
         with allure.step("Enter test string and verify the result"):
             string = "abcdefghba"
             expected = False
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)
 
     def test_permute_a_palindrome_empty_string(self):
@@ -131,9 +119,7 @@ class PermutePalindromeTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter empty string and verify the result"):
-            string = ''
-            expected = True
-
+            string: str = ''
+            expected: bool = True
             print_log(string=string, expected=expected)
-
             self.assertEqual(permute_a_palindrome(string), expected)

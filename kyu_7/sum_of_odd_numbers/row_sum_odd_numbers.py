@@ -13,10 +13,11 @@ def odd_row(n: int) -> list:
     :param n:
     :return:
     """
+    # pylint: disable-msg=R0801
     row: list = []
     number: int = calc_first_number(n)
     last: int = calc_last_number(n)
-
+    # pylint: enable-msg=R0801
     while number <= last:
         row.append(number)
         number += 2

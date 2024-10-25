@@ -35,6 +35,7 @@ class SwapValuesTestCase(unittest.TestCase):
         """
         Testing swap_values function
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Testing swap_values function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -43,7 +44,7 @@ class SwapValuesTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-
+        # pylint: enable=R0801
         with allure.step("Pass a list with 2 values and swap them"):
             swap: list = [1, 2]
             expected: list = [2, 1]

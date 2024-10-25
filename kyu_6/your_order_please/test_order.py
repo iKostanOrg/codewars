@@ -21,7 +21,7 @@ from kyu_6.your_order_please.order import order
 @allure.tag('FUNDAMENTALS',
             'STRINGS')
 @allure.link(
-    url='https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/python',
+    url='https://www.codewars.com/kata/55c45be3b2079eccff00010f',
     name='Source/Kata')
 class OrderTestCase(unittest.TestCase):
     """
@@ -62,13 +62,12 @@ class OrderTestCase(unittest.TestCase):
             'The words in the input String will only contain valid consecutive '
             'numbers.</p>')
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("is2 Thi1s T4est 3a",
              "Thi1s is2 3a T4est"),
             ("4of Fo1r pe6ople g3ood th5e the2",
              "Fo1r the2 g3ood 4of th5e pe6ople"),
-            ("", ""),
-        )
+            ("", ""))
 
         for (sentence, expected) in test_data:
             actual_result: str = order(sentence)

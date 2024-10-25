@@ -35,4 +35,4 @@ we have `[5, 0]` in the result amongst others.
     permitted to contain any redundant trailing whitespace: you can use
     dynamically allocated character strings.
 
-[Source](https://www.codewars.com/kata/54d496788776e49e6b00052f/train/python)
+[Source](https://www.codewars.com/kata/54d496788776e49e6b00052f)

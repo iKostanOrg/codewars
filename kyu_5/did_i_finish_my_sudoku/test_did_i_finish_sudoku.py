@@ -10,9 +10,11 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
+from kyu_5.did_i_finish_my_sudoku.is_sudoku_done \
+    import done_or_not
 
 
+# pylint: disable=R0801
 @allure.epic('5 kyu')
 @allure.parent_suite('Novice')
 @allure.suite('Algorithms')
@@ -28,8 +30,10 @@ from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
             'FUNDAMENTALS',
             'MATHEMATICS',
             'ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2',
+    name='Source/Kata')
+# pylint: enable=R0801
 class DidIFinishedSudokuTestCase(unittest.TestCase):
     """
     Testing done_or_not function
@@ -55,8 +59,7 @@ class DidIFinishedSudokuTestCase(unittest.TestCase):
             "<p>Testing a function done_or_not/DoneOrNot passing a "
             "board (list[list_lines]) as parameter. If the board is "
             "valid return 'Finished!', otherwise return 'Try again!'</p>")
-        # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([[1, 3, 2, 5, 7, 9, 4, 6, 8],
               [4, 9, 8, 2, 6, 1, 3, 7, 5],
               [7, 5, 6, 3, 8, 4, 2, 1, 9],
@@ -86,11 +89,10 @@ class DidIFinishedSudokuTestCase(unittest.TestCase):
               [7, 8, 9, 1, 2, 3, 4, 5, 6],
               [8, 9, 1, 2, 3, 4, 5, 6, 7],
               [9, 1, 2, 3, 4, 5, 6, 7, 8]],
-             'Try again!')
-        ]
-
+             'Try again!'))
+        # pylint: enable-msg=R0801
         for board, expected in test_data:
-            result = done_or_not(board)
+            result: str = done_or_not(board)
 
             with allure.step("Enter sudoku and verify the output."):
                 print_log(expected=expected, result=result)

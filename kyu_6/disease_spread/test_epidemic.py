@@ -21,7 +21,7 @@ from kyu_6.disease_spread.epidemic_test_data import EpidemicTestData
 @allure.story('Disease Spread')
 @allure.tag('FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python',
+    url='https://www.codewars.com/kata/566543703c72200f0b0000c9',
     name='Source/Kata')
 class EpidemicTestCase(unittest.TestCase):
     """
@@ -45,7 +45,7 @@ class EpidemicTestCase(unittest.TestCase):
             "of max(I)).</p>")
         # pylint: enable-msg=R0801
         # tm , n, s0, i0, b, a, expected
-        test_data = (
+        test_data: tuple = (
             EpidemicTestData(tm=18, n=432, s0=1004, i0=1,
                              b=0.00209, a=0.51, expected=420),
             EpidemicTestData(tm=12, n=288, s0=1007, i0=2,
@@ -65,8 +65,7 @@ class EpidemicTestCase(unittest.TestCase):
             EpidemicTestData(tm=13, n=312, s0=993, i0=2,
                              b=0.0021, a=0.51, expected=414),
             EpidemicTestData(tm=28, n=672, s0=999, i0=1,
-                             b=0.00197, a=0.55, expected=368)
-        )
+                             b=0.00197, a=0.55, expected=368))
 
         for etd in test_data:
             tm = etd.tm

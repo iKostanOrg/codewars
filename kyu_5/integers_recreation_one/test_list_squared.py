@@ -22,8 +22,9 @@ from kyu_5.integers_recreation_one.solution import list_squared
             'ARRAYS',
             'FUNDAMENTALS',
             'OPTIMIZATION')
-@allure.link(url='https://www.codewars.com/kata/55aa075506463dac6600010d/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/55aa075506463dac6600010d',
+    name='Source/Kata')
 class ListSquaredTestCase(unittest.TestCase):
     """
     Integers: Recreation One
@@ -60,7 +61,7 @@ class ListSquaredTestCase(unittest.TestCase):
             "all integers between m and n whose sum of squared divisors "
             "is itself a square.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             (1, 250,
              [[1, 1], [42, 2500], [246, 84100]]),
             (42, 250,
@@ -76,8 +77,7 @@ class ListSquaredTestCase(unittest.TestCase):
               [4264, 24304900]]),
             (257, 4195, [[287, 84100], [728, 722500],
                          [1434, 2856100], [1673, 2856100],
-                         [1880, 4884100]])
-        )
+                         [1880, 4884100]]))
 
         for m, n, expected in test_data:
             with allure.step("Enter test data and verify the output..."):

@@ -9,7 +9,9 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.character_frequency.character_frequency import letter_frequency
+from kyu_6.character_frequency.character_frequency \
+    import letter_frequency
+
 
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
@@ -22,7 +24,7 @@ from kyu_6.character_frequency.character_frequency import letter_frequency
             'STRINGS',
             'UTILITIES')
 @allure.link(
-    url='https://www.codewars.com/kata/53e895e28f9e66a56900011a/train/python',
+    url='https://www.codewars.com/kata/53e895e28f9e66a56900011a',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LetterFrequencyTestCase(unittest.TestCase):
@@ -47,13 +49,11 @@ class LetterFrequencyTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass a test string and verify the result"):
-            string = 'wklv lv d vhfuhw phvvdjh'
-
-            result = letter_frequency(string)
-
-            expected = [('v', 5), ('h', 4), ('d', 2), ('l', 2),
-                        ('w', 2), ('f', 1), ('j', 1), ('k', 1),
-                        ('p', 1), ('u', 1)]
+            string: str = 'wklv lv d vhfuhw phvvdjh'
+            result: list = letter_frequency(string)
+            expected: list = [('v', 5), ('h', 4), ('d', 2), ('l', 2),
+                              ('w', 2), ('f', 1), ('j', 1), ('k', 1),
+                              ('p', 1), ('u', 1)]
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, result)
@@ -75,16 +75,14 @@ class LetterFrequencyTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass a test string and verify the result"):
-            string = "As long as I'm learning something, " \
-                     "I figure I'm OK - it's a decent day."
-
-            result = letter_frequency(string)
-
-            expected = [('i', 7), ('a', 5), ('e', 5), ('n', 5),
-                        ('g', 4), ('s', 4), ('m', 3), ('o', 3),
-                        ('t', 3), ('d', 2), ('l', 2), ('r', 2),
-                        ('c', 1), ('f', 1), ('h', 1), ('k', 1),
-                        ('u', 1), ('y', 1)]
+            string: str = "As long as I'm learning something, " \
+                          "I figure I'm OK - it's a decent day."
+            result: list = letter_frequency(string)
+            expected: list = [('i', 7), ('a', 5), ('e', 5), ('n', 5),
+                              ('g', 4), ('s', 4), ('m', 3), ('o', 3),
+                              ('t', 3), ('d', 2), ('l', 2), ('r', 2),
+                              ('c', 1), ('f', 1), ('h', 1), ('k', 1),
+                              ('u', 1), ('y', 1)]
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, result)
@@ -106,17 +104,15 @@ class LetterFrequencyTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass a test string and verify the result"):
-            string = 'IWT LDGAS XH HIXAA P LTXGS EAPRT, ' \
-                     'STHEXIT BN TUUDGIH ID BPZT RATPG ' \
-                     'PCS ETGUTRI HTCHT DU XI.'
-
-            result = letter_frequency(string)
-
-            expected = [('t', 12), ('i', 7), ('h', 6), ('a', 5),
-                        ('g', 5), ('p', 5), ('x', 5), ('d', 4),
-                        ('s', 4), ('u', 4), ('e', 3), ('r', 3),
-                        ('b', 2), ('c', 2), ('l', 2), ('n', 1),
-                        ('w', 1), ('z', 1)]
+            string: str = 'IWT LDGAS XH HIXAA P LTXGS EAPRT, ' \
+                          'STHEXIT BN TUUDGIH ID BPZT RATPG ' \
+                          'PCS ETGUTRI HTCHT DU XI.'
+            result: list = letter_frequency(string)
+            expected: list = [('t', 12), ('i', 7), ('h', 6), ('a', 5),
+                              ('g', 5), ('p', 5), ('x', 5), ('d', 4),
+                              ('s', 4), ('u', 4), ('e', 3), ('r', 3),
+                              ('b', 2), ('c', 2), ('l', 2), ('n', 1),
+                              ('w', 1), ('z', 1)]
 
             print_log(string=string, expected=expected)
             self.assertEqual(expected, result)

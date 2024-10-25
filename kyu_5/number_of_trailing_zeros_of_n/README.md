@@ -22,4 +22,4 @@ zeros(12) = 2
 Hint: You're not meant to calculate the factorial. Find another way to
 find the number of zeros.
 
-[Source](https://www.codewars.com/kata/52f787eb172a8b4ae1000a34/train/python)
+[Source](https://www.codewars.com/kata/52f787eb172a8b4ae1000a34)
