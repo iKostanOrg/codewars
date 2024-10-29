@@ -61,10 +61,10 @@ class GoalsTestCase(unittest.TestCase):
                          expected)
 
         with allure.step("Test with positive integers"):
-            la_liga: int = 5
-            copa_del_rey: int = 10
-            champions: int = 2
-            expected: int = 17
+            la_liga = 5
+            copa_del_rey = 10
+            champions = 2
+            expected = 17
 
             print_log(la_liga=la_liga,
                       copa_del_rey=copa_del_rey,
