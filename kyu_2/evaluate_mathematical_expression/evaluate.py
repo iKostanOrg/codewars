@@ -158,7 +158,7 @@ def calc(string: str) -> float:
     return float(string)
 
 
-def check_conditions(strings, string, temp) -> (str, str):
+def check_conditions(strings, string, temp) -> [str, str]:
     """
     Check conditions
     :param strings:
@@ -170,9 +170,10 @@ def check_conditions(strings, string, temp) -> (str, str):
         if s.isdigit():
             temp += s
 
+        if (s in ''.join(OPERATORS) + '()' or i == len(string) - 1) and temp:
+            strings.append(temp)
+
         if s in '()':
-            if temp != '':
-                strings.append(temp)
             strings.append(s)
 
             if i + 1 < len(string):
@@ -182,8 +183,6 @@ def check_conditions(strings, string, temp) -> (str, str):
             break
 
         if s in OPERATORS:
-            if temp != '':
-                strings.append(temp)
             strings.append(s)
 
             if i + 1 < len(string):
@@ -191,8 +190,6 @@ def check_conditions(strings, string, temp) -> (str, str):
             break
 
         if i == len(string) - 1:
-            if temp != '':
-                strings.append(temp)
             string = ''
 
     return temp, string
