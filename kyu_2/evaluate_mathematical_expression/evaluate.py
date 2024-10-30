@@ -51,10 +51,6 @@ def process_math_expression(string: str, operators: list) -> str:
     return ' '.join(strings)
 
 
-def condition_checker():
-    pass
-
-
 def bracket_start(strings: list) -> int:
     """
     Return index of first (open) bracket
