@@ -186,6 +186,7 @@ def check_conditions(strings: list, string: str, temp: str) -> (str, str):
                 string = string[i + 1:]
             else:
                 string = ''
+
             break
 
         if s in OPERATORS:
@@ -193,6 +194,7 @@ def check_conditions(strings: list, string: str, temp: str) -> (str, str):
 
             if i + 1 < len(string):
                 string = string[i + 1:]
+                
             break
 
         if i == len(string) - 1:
