@@ -51,48 +51,8 @@ def process_math_expression(string: str, operators: list) -> str:
     return ' '.join(strings)
 
 
-def normalize_string(string: str) -> str:
-    """
-    Normalizing string input
-    :param string: str
-    :return: str
-    """
-    strings: list = []
-    string_temp: str = ''.join([s for s in string if s != ' '])
-
-    while string_temp != '':
-        temp: str = ''
-
-        for i, s in enumerate(string_temp):
-            if s.isdigit():
-                temp += s
-
-            if s in '()':
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
-                if i + 1 < len(string_temp):
-                    string_temp = string_temp[i + 1:]
-                else:
-                    string_temp = ''
-                break
-
-            if s in OPERATORS:
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
-                if i + 1 < len(string_temp):
-                    string_temp = string_temp[i + 1:]
-                break
-
-            if i == len(string_temp) - 1:
-                if temp != '':
-                    strings.append(temp)
-                string_temp = ''
-
-    return ' '.join([s for s in strings if s != ''])
+def condition_checker():
+    pass
 
 
 def bracket_start(strings: list) -> int:
@@ -199,3 +159,47 @@ def calc(string: str) -> float:
     string_lst = [float(s) for s in string_lst]
     string = str(sum(string_lst))
     return float(string)
+
+
+def normalize_string(string: str) -> str:
+    """
+    Normalizing string input
+    :param string: str
+    :return: str
+    """
+    strings: list = []
+    string_temp: str = ''.join([s for s in string if s != ' '])
+
+    while string_temp != '':
+        temp: str = ''
+
+        for i, s in enumerate(string_temp):
+            if s.isdigit():
+                temp += s
+
+            if s in '()':
+                if temp != '':
+                    strings.append(temp)
+                strings.append(s)
+
+                if i + 1 < len(string_temp):
+                    string_temp = string_temp[i + 1:]
+                else:
+                    string_temp = ''
+                break
+
+            if s in OPERATORS:
+                if temp != '':
+                    strings.append(temp)
+                strings.append(s)
+
+                if i + 1 < len(string_temp):
+                    string_temp = string_temp[i + 1:]
+                break
+
+            if i == len(string_temp) - 1:
+                if temp != '':
+                    strings.append(temp)
+                string_temp = ''
+
+    return ' '.join([s for s in strings if s != ''])
