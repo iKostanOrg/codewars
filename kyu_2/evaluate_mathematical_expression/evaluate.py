@@ -146,7 +146,13 @@ def calc(string: str) -> float:
     :return: float
     """
     string = ''.join([s for s in string if s != ' '])
-    string = normalize_string(string)
+
+    strings: list = []
+    while string:
+        temp: str = ''
+        temp, string = check_conditions(strings, string, temp)
+    string = ' '.join(strings)
+
     string = ''.join(string.split('+'))
     strings: list = string.split()
     string = process_brackets(strings)
@@ -160,7 +166,7 @@ def calc(string: str) -> float:
 
 def check_conditions(strings, string, temp) -> (str, str):
     """
-    Check conditions
+    Checking conditions and normalizing string input
     :param strings:
     :param string:
     :param temp:
@@ -193,18 +199,3 @@ def check_conditions(strings, string, temp) -> (str, str):
             string = ''
 
     return temp, string
-
-
-def normalize_string(string: str) -> str:
-    """
-    Normalizing string input
-    :param string: str
-    :return: str
-    """
-    strings: list = []
-
-    while string:
-        temp: str = ''
-        temp, string = check_conditions(strings, string, temp)
-
-    return ' '.join(strings)
