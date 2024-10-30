@@ -10,7 +10,8 @@ import unittest
 import itertools
 import allure
 from utils.log_func import print_log
-from kyu_5.fibonacci_streaming.all_fibonacci_numbers import all_fibonacci_numbers
+from kyu_5.fibonacci_streaming.all_fibonacci_numbers \
+    import all_fibonacci_numbers
 
 
 # pylint: disable-msg=R0801
@@ -21,8 +22,9 @@ from kyu_5.fibonacci_streaming.all_fibonacci_numbers import all_fibonacci_number
 @allure.feature("Lists")
 @allure.story('Fibonacci Streaming')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/55695bc4f75bbaea5100016b/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/55695bc4f75bbaea5100016b',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class AllFibonacciNumbersTestCase(unittest.TestCase):
     """
@@ -56,10 +58,10 @@ class AllFibonacciNumbersTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         with allure.step("Run all_fibonacci_numbers function"
                          " and verify the result"):
-            expected = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
-                        233, 377, 610, 987, 1597, 2584, 4181, 6765,
-                        10946, 17711, 28657, 46368, 75025, 121393,
-                        196418, 317811, 514229, 832040]
+            expected: list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
+                              233, 377, 610, 987, 1597, 2584, 4181, 6765,
+                              10946, 17711, 28657, 46368, 75025, 121393,
+                              196418, 317811, 514229, 832040]
 
             result = list(itertools.islice(all_fibonacci_numbers(),
                                            30))

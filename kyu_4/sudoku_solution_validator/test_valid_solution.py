@@ -1,6 +1,5 @@
 """
 Test for -> Sudoku Solution Validator
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,7 +8,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
+from kyu_4.sudoku_solution_validator.valid_solution \
+    import valid_solution
 
 
 @allure.epic('4 kyu')
@@ -21,7 +21,7 @@ from kyu_4.sudoku_solution_validator.valid_solution import valid_solution
 @allure.tag('ALGORITHMS',
             'DATA STRUCTURES',
             'VALIDATION')
-@allure.link(url='https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python',
+@allure.link(url='https://www.codewars.com/kata/529bf0e9bdf7657179000008',
              name='Source/Kata')
 class ValidSolutionTestCase(unittest.TestCase):
     """
@@ -61,7 +61,7 @@ class ValidSolutionTestCase(unittest.TestCase):
             " and every cell only contains integers from"
             " 0 to 9.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([[5, 3, 4, 6, 7, 8, 9, 1, 2],
               [6, 7, 2, 1, 9, 5, 3, 4, 8],
               [1, 9, 8, 3, 4, 2, 5, 6, 7],
@@ -90,7 +90,7 @@ class ValidSolutionTestCase(unittest.TestCase):
               [6, 7, 8, 9, 1, 2, 3, 4, 5],
               [7, 8, 9, 1, 2, 3, 4, 5, 6],
               [8, 9, 1, 2, 3, 4, 5, 6, 7],
-              [9, 1, 2, 3, 4, 5, 6, 7, 8]], False)]
+              [9, 1, 2, 3, 4, 5, 6, 7, 8]], False))
 
         for data in test_data:
             board = data[0]

@@ -20,8 +20,9 @@ from kyu_5.simple_pig_latin.pig_it import pig_it
 @allure.feature("String")
 @allure.story('Simple Pig Latin')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/520b9d2ad5c005041100000f',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class PigItTestCase(unittest.TestCase):
     """
@@ -48,12 +49,11 @@ class PigItTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ('Pig latin is cool', 'igPay atinlay siay oolcay'),
                 ('This is my string', 'hisTay siay ymay tringsay'),
                 ('Hello world !', 'elloHay orldway !'),
-                ("O tempora o mores !", 'Oay emporatay oay oresmay !')
-            ]
+                ("O tempora o mores !", 'Oay emporatay oay oresmay !'))
 
             for text, expected in test_data:
                 print_log(expected=expected, text=text)

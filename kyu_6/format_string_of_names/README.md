@@ -27,4 +27,4 @@ namelist([])
 
 Note: all the hashes are pre-validated and will only contain A-Z, a-z, '-' and '.'.
 
-[Source](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/python)
+[Source](https://www.codewars.com/kata/53368a47e38700bd8300030d)

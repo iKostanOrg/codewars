@@ -20,8 +20,9 @@ from kyu_5.tic_tac_toe_checker.checker import is_solved
 @allure.story('Tic-Tac-Toe Checker')
 @allure.tag('ALGORITHMS',
             'ARRAY')
-@allure.link(url='https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/525caa5c1bf619d28c000335',
+    name='Source/Kata')
 class IsSolvedTestCase(unittest.TestCase):
     """
     Testing is_solved function
@@ -52,7 +53,7 @@ class IsSolvedTestCase(unittest.TestCase):
             "<p>The function should return whether the board's "
             "current state is solved.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([[0, 0, 1],
               [0, 1, 2],
               [2, 1, 0]], -1, 'not yet finished'),
@@ -67,12 +68,10 @@ class IsSolvedTestCase(unittest.TestCase):
               [1, 2, 1]], 0, 'draw'),
             ([[1, 2, 0],
               [0, 1, 2],
-              [0, 0, 1]], 1, 'wining diagonal'
-             )
-        )
+              [0, 0, 1]], 1, 'wining diagonal'))
 
         for board, expected, message in test_data:
-            result = is_solved(board)
+            result: int = is_solved(board)
             with allure.step("Enter Tic-Tac-Toe board and verify the output."):
                 print_log(expected=expected, result=result, message=message)
                 self.assertEqual(expected, result, msg=message)

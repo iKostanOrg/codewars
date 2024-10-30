@@ -1,6 +1,5 @@
 """
 Most frequently used words in a text
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -18,8 +17,8 @@ def top_3_words(text: str) -> list:
     # 1
     # Matches should be case-insensitive, and the words
     # in the result should be lower-cased.
-    illegals = ';/_?,.:!-'
-    text_lower = text.lower()
+    illegals: str = ';/_?,.:!-'
+    text_lower: str = text.lower()
     for char in illegals:
         text_lower = text_lower.replace(char, ' ')
     # 2

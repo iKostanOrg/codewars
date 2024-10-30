@@ -20,7 +20,7 @@ def duplicate_encode(word: str) -> str:
     """
 
     result: str = ''
-    word: str = ''.join(char.lower() for char in word)
+    word = ''.join(char.lower() for char in word)
 
     for char in word:
         if word.count(char) > 1:

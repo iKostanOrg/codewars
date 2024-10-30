@@ -1,18 +1,18 @@
 """
 Test for -> The Greatest Warrior -> test battle
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-# ALGORITHMS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
-# FUNDAMENTALS RULES
+# ALGORITHMS CLASSES BASIC LANGUAGE FEATURES
+# OBJECT-ORIENTED PROGRAMMING FUNDAMENTALS RULES
 
 import unittest
 import allure
 from kyu_4.the_greatest_warrior.warrior import Warrior
 
 
+# pylint: disable-msg=R0801
 @allure.epic('4 kyu')
 @allure.parent_suite('Competent')
 @allure.suite('OOP')
@@ -26,8 +26,9 @@ from kyu_4.the_greatest_warrior.warrior import Warrior
             'FUNDAMENTALS',
             'RULES')
 @allure.link(
-    url='https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python',
+    url='https://www.codewars.com/kata/5941c545f5c394fef900000c',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class BattleTestCase(unittest.TestCase):
     """
     Testing Battle method

@@ -56,8 +56,8 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
             self.assertEqual(sum_triangular_numbers(n), expected)
 
         with allure.step("Enter negative number and verify the output"):
-            n: int = -971
-            expected: int = 0
+            n = -971
+            expected = 0
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 
@@ -109,8 +109,8 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
 
         with allure.step("Enter a positive number as an input "
                          "and verify the output"):
-            n: int = 34
-            expected: int = 7140
+            n = 34
+            expected = 7140
             print_log(n=n, expected=expected)
             self.assertEqual(sum_triangular_numbers(n), expected)
 

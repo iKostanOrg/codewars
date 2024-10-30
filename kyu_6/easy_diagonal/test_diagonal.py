@@ -20,7 +20,7 @@ from kyu_6.easy_diagonal.diagonal import diagonal
 @allure.tag("FUNDAMENTALS",
             "ALGORITHMS")
 @allure.link(
-    url='https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf/train/python',
+    url='https://www.codewars.com/kata/559b8e46fa060b2c6a0000bf',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class EasyDiagonalTestCase(unittest.TestCase):
@@ -48,7 +48,7 @@ class EasyDiagonalTestCase(unittest.TestCase):
             " 0 is the number of the diagonal). In the same way S(7, 1) "
             "is 28, S(7, 2) is 56.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             (7, 0, 8),
             (7, 1, 28),
             (7, 2, 56),
@@ -57,8 +57,7 @@ class EasyDiagonalTestCase(unittest.TestCase):
             (20, 4, 20349),
             (20, 15, 20349),
             (1291, 5, 6385476296235036),
-            (129100, 5, 6429758786797926366807779220),
-        )
+            (129100, 5, 6429758786797926366807779220))
 
         for td in test_data:
             n = td[0]

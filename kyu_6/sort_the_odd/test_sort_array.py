@@ -21,7 +21,7 @@ from utils.log_func import print_log
 @allure.tag('FUNDAMENTALS',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python',
+    url='https://www.codewars.com/kata/578aa45ee9fd15ff4600090d',
     name='Source/Kata')
 class SortArrayTestCase(unittest.TestCase):
     """
@@ -67,4 +67,5 @@ class SortArrayTestCase(unittest.TestCase):
                 print_log(source_array=source_array,
                           expected=expected,
                           result=actual_result)
+
                 self.assertListEqual(expected, actual_result)

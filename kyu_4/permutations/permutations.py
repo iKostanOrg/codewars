@@ -1,6 +1,5 @@
 """
 Solution for -. Permutations
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -13,5 +12,7 @@ def permutations(string: str) -> list:
     have to shuffle all letters from the input in all
     possible orders.
     """
-    for char in string:
-        print(char)
+    for strg in string:
+        print(strg)
+
+    return []

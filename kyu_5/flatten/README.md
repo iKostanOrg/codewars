@@ -16,4 +16,4 @@ flatten('a', ['b', 2], 3, None, [[4], ['c']]) # returns ['a', 'b', 2, 3, None, 4
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python)
+[Source](https://www.codewars.com/kata/513fa1d75e4297ba38000003)

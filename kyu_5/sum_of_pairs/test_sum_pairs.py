@@ -25,8 +25,9 @@ from kyu_5.sum_of_pairs.sum_pairs import sum_pairs
             'MEMOIZATION',
             'DESIGN PATTERNS',
             'DESIGN PRINCIPLES')
-@allure.link(url='https://www.codewars.com/kata/54d81488b981293527000c8f/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/54d81488b981293527000c8f',
+    name='Source/Kata')
 class SumPairsTestCase(unittest.TestCase):
     """
     Testing 'sum_pairs' function
@@ -54,7 +55,7 @@ class SumPairsTestCase(unittest.TestCase):
             "from the left please) in order of appearance that add up "
             "to form the sum.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([1, 4, 8, 7, 3, 15], 8, [1, 7],
              "should return [1, 7] for sum = 8"),
             ([1, -2, 3, 0, -6, 1], -6, [0, -6],
@@ -70,8 +71,7 @@ class SumPairsTestCase(unittest.TestCase):
             ([0, 2, 0], 0, [0, 0],
              "should return [0, 0] for sum = 0"),
             ([5, 9, 13, -3], 10, [13, -3],
-             "should return [13, -3] for sum = 10"),
-        )
+             "should return [13, -3] for sum = 10"))
 
         with allure.step("Enter a test list and verify the output."):
             for ints, s, expected, message in test_data:

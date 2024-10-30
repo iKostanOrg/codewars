@@ -12,3 +12,9 @@ jobs:
   pyint:
     name: PyLint
     uses: iKostanOrg/codewars/.github/workflows/pylint.yml@master
+  mypy:
+    name: MyPy Lint
+    uses: iKostanOrg/codewars/.github/workflows/mypy.yml@master
+  flake8:
+    name: MyPy Lint
+    uses: iKostanOrg/codewars/.github/workflows/flake8.yml@master

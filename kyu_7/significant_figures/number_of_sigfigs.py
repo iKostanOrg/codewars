@@ -12,7 +12,7 @@ def number_of_sigfigs(number: str) -> int:
     :param number:
     :return:
     """
-    number: str = normalize_string(number)
+    number = normalize_string(number)
     if number == '0':
         return 0
     if number == '0.0':

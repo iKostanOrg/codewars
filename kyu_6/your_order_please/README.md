@@ -17,4 +17,4 @@ in the input String will only contain valid consecutive numbers.
 ""  -->  ""
 ```
 
-[Source](https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/python)
+[Source](https://www.codewars.com/kata/55c45be3b2079eccff00010f)

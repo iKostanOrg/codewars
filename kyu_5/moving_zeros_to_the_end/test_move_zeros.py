@@ -23,8 +23,9 @@ from kyu_5.moving_zeros_to_the_end.move_zeros import move_zeros
             'INTERVIEW QUESTIONS',
             'ARRAYS',
             'SORTING')
-@allure.link(url='',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52597aa56021e91c93000cb0',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class MoveZerosTestCase(unittest.TestCase):
     """
@@ -48,7 +49,7 @@ class MoveZerosTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data (list) and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ([1, 2, 0, 1, 0, 1, 0, 3, 0, 1], [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]),
                 ([9, 0.0, 0, 9, 1, 2, 0, 1, 0, 1, 0.0, 3, 0, 1, 9, 0, 0, 0, 0, 9],
                  [9, 9, 1, 2, 1, 1, 3, 1, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
@@ -64,11 +65,10 @@ class MoveZerosTestCase(unittest.TestCase):
                 ([0, 0], [0, 0]),
                 ([0], [0]),
                 ([False], [False]),
-                ([], []),
-            ]
+                ([], []))
 
             for d in test_data:
-                array = d[0]
-                expected = d[1]
+                array: list = d[0]
+                expected: list = d[1]
                 print_log(array=array, expected=expected)
                 self.assertEqual(expected, move_zeros(array))

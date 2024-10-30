@@ -1,6 +1,5 @@
 """
 Test for 'Human readable duration format'
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.human_readable_duration_format.format_duration import format_duration
+from kyu_4.human_readable_duration_format.format_duration \
+    import format_duration
 
 
 # pylint: disable-msg=R0801
@@ -23,8 +23,9 @@ from kyu_4.human_readable_duration_format.format_duration import format_duration
 @allure.tag('ALGORITHMS',
             'FORMATS',
             'STRINGS',
-            'DATES/TIME', 'FORMATTING')
-@allure.link(url='https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python',
+            'DATES/TIME',
+            'FORMATTING')
+@allure.link(url='https://www.codewars.com/kata/52742f58faf5485cae000b9a',
              name='Source/Kata')
 # pylint: enable-msg=R0801
 class FormatDurationTestCase(unittest.TestCase):
@@ -58,7 +59,7 @@ class FormatDurationTestCase(unittest.TestCase):
             "the duration is expressed as a combination of years, "
             "days, hours, minutes and seconds.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (1, "1 second"),
             (62, "1 minute and 2 seconds"),
             (120, "2 minutes"),
@@ -79,14 +80,14 @@ class FormatDurationTestCase(unittest.TestCase):
             (33243586,
              '1 year, 19 days, 18 hours, 19 minutes and 46 seconds'),
             (9041160,
-             '104 days, 15 hours and 26 minutes'),
-        ]
+             '104 days, 15 hours and 26 minutes'))
 
         for seconds, expected in test_data:
             actual_result = format_duration(seconds)
             with allure.step(f"Enter seconds ({seconds}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
+
                 print_log(seconds=seconds,
                           expected=expected,
                           result=actual_result)

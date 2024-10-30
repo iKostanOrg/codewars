@@ -21,7 +21,8 @@ def snail(snail_map: list) -> list:
     if not snail_map:
         return []
 
-    result = []
+    result: list = []
+
     while snail_map:
         try:
             # 1 left to right

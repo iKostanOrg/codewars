@@ -17,9 +17,9 @@ def print_map(agents: list, digit: int, expected: list) -> None:
     :param expected: expected results
     :return:
     """
-    empty = ' |'
-    agent = '-|'
-    longest = '+|'
+    empty: str = ' |'
+    agent: str = '-|'
+    longest: str = '+|'
 
     for col in range(0, digit):
         temp = "|"

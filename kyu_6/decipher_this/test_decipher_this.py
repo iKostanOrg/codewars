@@ -28,7 +28,7 @@ from utils.log_func import print_log
             'CRYPTOGRAPHY',
             'SECURITY')
 @allure.link(
-    url='https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python',
+    url='https://www.codewars.com/kata/581e014b55f2c52bb00000f8',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DecipherThisTestCase(unittest.TestCase):
@@ -59,7 +59,7 @@ class DecipherThisTestCase(unittest.TestCase):
             "letters and spaces."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("",
              ""),
             ('72olle 103doo 100ya',
@@ -78,7 +78,7 @@ class DecipherThisTestCase(unittest.TestCase):
              "Thank you Piotr for all your help"))
 
         for text, expected in test_data:
-            result = decipher_this(text)
+            result: str = decipher_this(text)
             print_log(text=text,
                       expected=expected,
                       result=result)

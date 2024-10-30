@@ -22,8 +22,9 @@ from utils.log_func import print_log
 @allure.tag('ALGORITHMS',
             'MATHEMATICS',
             'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/52f787eb172a8b4ae1000a34/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52f787eb172a8b4ae1000a34',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class ZerosTestCase(unittest.TestCase):
     """
@@ -47,18 +48,18 @@ class ZerosTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the result"):
-            test_data = [
+            test_data: tuple = (
                 (0, 0, "Testing with n = 0"),
                 (6, 1, "Testing with n = 6"),
                 (10, 2, "Testing with n = 10"),
                 (12, 2, "Testing with n = 12"),
-                (30, 7, "Testing with n = 30"),
-            ]
+                (30, 7, "Testing with n = 30"))
 
             for data in test_data:
-                number = data[0]
-                expected = data[1]
-                message = data[2]
+
+                number: int = data[0]
+                expected: int = data[1]
+                message: str = data[2]
 
                 print_log(message=message,
                           number=number,
