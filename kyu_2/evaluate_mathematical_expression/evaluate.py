@@ -136,7 +136,7 @@ def process_duplicate_minus(string: str) -> str:
                     del strings[i]
                     break
 
-    return ' '.join([s for s in strings if s != ''])
+    return ' '.join(strings)
 
 
 def calc(string: str) -> float:
@@ -158,6 +158,46 @@ def calc(string: str) -> float:
     return float(string)
 
 
+def check_conditions(strings, string, temp) -> (str, str):
+    """
+    Check conditions
+    :param strings:
+    :param string:
+    :param temp:
+    :return:
+    """
+    for i, s in enumerate(string):
+        if s.isdigit():
+            temp += s
+
+        if s in '()':
+            if temp != '':
+                strings.append(temp)
+            strings.append(s)
+
+            if i + 1 < len(string):
+                string = string[i + 1:]
+            else:
+                string = ''
+            break
+
+        if s in OPERATORS:
+            if temp != '':
+                strings.append(temp)
+            strings.append(s)
+
+            if i + 1 < len(string):
+                string = string[i + 1:]
+            break
+
+        if i == len(string) - 1:
+            if temp != '':
+                strings.append(temp)
+            string = ''
+
+    return temp, string
+
+
 def normalize_string(string: str) -> str:
     """
     Normalizing string input
@@ -166,36 +206,8 @@ def normalize_string(string: str) -> str:
     """
     strings: list = []
 
-    while string != '':
+    while string:
         temp: str = ''
-
-        for i, s in enumerate(string):
-            if s.isdigit():
-                temp += s
-
-            if s in '()':
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
-                if i + 1 < len(string):
-                    string = string[i + 1:]
-                else:
-                    string = ''
-                break
-
-            if s in OPERATORS:
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
-                if i + 1 < len(string):
-                    string = string[i + 1:]
-                break
-
-            if i == len(string) - 1:
-                if temp != '':
-                    strings.append(temp)
-                string = ''
+        temp, string = check_conditions(strings, string, temp)
 
     return ' '.join(strings)
