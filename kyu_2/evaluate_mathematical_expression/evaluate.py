@@ -164,13 +164,13 @@ def calc(string: str) -> float:
     return float(string)
 
 
-def check_conditions(strings, string, temp) -> (str, str):
+def check_conditions(strings: list, string: str, temp: str) -> (str, str):
     """
-    Checking conditions and normalizing string input
-    :param strings:
-    :param string:
-    :param temp:
-    :return:
+    Normalizing string input by checking conditions
+    :param strings: list
+    :param string: str
+    :param temp: str
+    :return: tuple(str, str)
     """
     for i, s in enumerate(string):
         if s.isdigit():
