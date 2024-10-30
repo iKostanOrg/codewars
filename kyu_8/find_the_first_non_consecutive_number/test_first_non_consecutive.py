@@ -108,9 +108,9 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
                    123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133,
                    134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144,
                    145, 146, 147, 148, 149]
-            expected: int = 101
-            print_log(list=lst, expected=expected)
-            self.assertEqual(first_non_consecutive(lst), expected)
+            expected_int: int = 101
+            print_log(list=lst, expected=expected_int)
+            self.assertEqual(first_non_consecutive(lst), expected_int)
 
     def test_first_non_consecutive_positive(self):
         """
