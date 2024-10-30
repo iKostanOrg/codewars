@@ -154,7 +154,7 @@ def calc(string: str) -> float:
     string = ' '.join(strings)
 
     string = ''.join(string.split('+'))
-    strings: list = string.split()
+    strings = string.split()
     string = process_brackets(strings)
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
