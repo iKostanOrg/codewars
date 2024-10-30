@@ -158,7 +158,7 @@ def calc(string: str) -> float:
     return float(string)
 
 
-def check_conditions(strings, string, temp) -> [str, str]:
+def check_conditions(strings, string, temp) -> (str, str):
     """
     Check conditions
     :param strings:
