@@ -173,11 +173,14 @@ def normalize_string(string: str) -> str:
             if s.isdigit():
                 temp += s
 
-            if s in '()':
-                if temp != '':
-                    strings.append(temp)
+            if (s in '()' or s in OPERATORS or i == len(string_temp) - 1) \
+                    and temp != '':
+                strings.append(temp)
+
+            if s in '()' or s in OPERATORS:
                 strings.append(s)
 
+            if s in '()':
                 if i + 1 < len(string_temp):
                     string_temp = string_temp[i + 1:]
                 else:
@@ -185,17 +188,11 @@ def normalize_string(string: str) -> str:
                 break
 
             if s in OPERATORS:
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
                 if i + 1 < len(string_temp):
                     string_temp = string_temp[i + 1:]
                 break
 
             if i == len(string_temp) - 1:
-                if temp != '':
-                    strings.append(temp)
                 string_temp = ''
 
     return ' '.join([s for s in strings if s != ''])
