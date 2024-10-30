@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def check_exam(arr1, arr2) -> int:
+def check_exam(arr1: list, arr2: list) -> int:
     """
     The first input array contains the correct answers
     to an exam, like ["a", "a", "b", "d"]. The second
@@ -18,9 +18,9 @@ def check_exam(arr1, arr2) -> int:
 
     If the score < 0, return 0.
 
-    :param arr1:
-    :param arr2:
-    :return:
+    :param arr1: list
+    :param arr2: list
+    :return: int
     """
     results: list = []
     for char in zip(arr1, arr2):
@@ -30,7 +30,7 @@ def check_exam(arr1, arr2) -> int:
     return 0 if total < 0 else total
 
 
-def char_processor(char: str, results: list) -> None:
+def char_processor(char: tuple, results: list) -> None:
     """
     Processing chars based on specified rule
     :param char: str
