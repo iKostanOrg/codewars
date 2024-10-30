@@ -198,4 +198,4 @@ def normalize_string(string: str) -> str:
                     strings.append(temp)
                 string_temp = ''
 
-    return ' '.join([s for s in strings if s != ''])
+    return ' '.join([s for s in strings])
