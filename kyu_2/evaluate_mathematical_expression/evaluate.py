@@ -164,7 +164,7 @@ def calc(string: str) -> float:
     return float(string)
 
 
-def check_conditions(strings: list, string: str, temp: str) -> (str, str):
+def check_conditions(strings: list, string: str, temp: str) -> tuple[str, str]:
     """
     Normalizing string input by checking conditions
     :param strings: list
@@ -194,7 +194,7 @@ def check_conditions(strings: list, string: str, temp: str) -> (str, str):
 
             if i + 1 < len(string):
                 string = string[i + 1:]
-                
+
             break
 
         if i == len(string) - 1:
