@@ -20,7 +20,7 @@ from kyu_6.color_choice.checkchoose import checkchoose
 @allure.story('Color Choice')
 @allure.tag('FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/55be10de92aad5ef28000023/train/python',
+    url='https://www.codewars.com/kata/55be10de92aad5ef28000023',
     name='Source/Kata')
 class CheckchooseTestCase(unittest.TestCase):
     """
@@ -58,7 +58,7 @@ class CheckchooseTestCase(unittest.TestCase):
             "that when m is given at random there are no x satisfying "
             "equation (1) then return -1.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             (6, 4, 2),
             (4, 4, 1),
             (4, 2, -1),

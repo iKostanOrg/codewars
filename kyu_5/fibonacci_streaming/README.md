@@ -11,4 +11,4 @@ of the two previous elements. See:
 > 1, 1, 2, 3, 5, 8, 13, ..., 89, 144, 233, 377, ...
 ```
 
-[Source](https://www.codewars.com/kata/55695bc4f75bbaea5100016b/train/python)
+[Source](https://www.codewars.com/kata/55695bc4f75bbaea5100016b)

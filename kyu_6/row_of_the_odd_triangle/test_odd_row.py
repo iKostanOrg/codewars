@@ -22,7 +22,7 @@ from kyu_6.row_of_the_odd_triangle.odd_row import odd_row
 @allure.tag('ALGORITHMS',
             'PERFORMANCE')
 @allure.link(
-    url='https://www.codewars.com/kata/5d5a7525207a674b71aa25b5/train/python',
+    url='https://www.codewars.com/kata/5d5a7525207a674b71aa25b5',
     name='Source/Kata')
 # pylint: enable=R0801
 class OddRowTestCase(unittest.TestCase):

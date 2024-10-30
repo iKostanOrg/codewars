@@ -7,7 +7,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.sports_league_table_ranking.compute_ranks import compute_ranks
+from kyu_5.sports_league_table_ranking.compute_ranks \
+    import compute_ranks
 
 
 @allure.epic('5 kyu')
@@ -20,8 +21,9 @@ from kyu_5.sports_league_table_ranking.compute_ranks import compute_ranks
             'FUNDAMENTALS',
             'ARRAYS',
             'SORTING')
-@allure.link(url='https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5e0baea9d772160032022e8c',
+    name='Source/Kata')
 class ComputeRanksTestCase(unittest.TestCase):
     """
     Testing Sports League Table Ranking
@@ -64,7 +66,7 @@ class ComputeRanksTestCase(unittest.TestCase):
             "scored and those conceded)</li>"
             "<li>- Goals scored</li></ul>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (6,
              [[0, 5, 2, 2],
               [1, 4, 0, 2],
@@ -95,14 +97,13 @@ class ComputeRanksTestCase(unittest.TestCase):
              [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]),
             (8,
              [[0, 7, 2, 0]],
-             [1, 2, 2, 2, 2, 2, 2, 8])
-        ]
+             [1, 2, 2, 2, 2, 2, 2, 8]))
 
         for data in test_data:
-            number = data[0]
-            games = data[1]
-            expected = data[2]
-            actual_result = compute_ranks(number, games)
+            number: int = data[0]
+            games: list = data[1]
+            expected: list = data[2]
+            actual_result: list = compute_ranks(number, games)
             print_log(number=number,
                       games=games,
                       expected=expected,

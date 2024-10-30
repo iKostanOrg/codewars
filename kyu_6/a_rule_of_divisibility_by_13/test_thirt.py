@@ -19,8 +19,9 @@ from utils.log_func import print_log
 @allure.feature("Math")
 @allure.story('A Rule of Divisibility by 13')
 @allure.tag('FUNDAMENTALS')
-@allure.link(url='https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/564057bc348c7200bd0000ff',
+    name='Source/Kata')
 class ThirtTestCase(unittest.TestCase):
     """
     Testing 'thirt' function
@@ -43,7 +44,7 @@ class ThirtTestCase(unittest.TestCase):
             "on an integer n (>=0). 'thirt' should return the stationary"
             " number.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             (1234567, 87),
             (321, 48),
             (8529, 79),
@@ -58,6 +59,7 @@ class ThirtTestCase(unittest.TestCase):
             with allure.step(f"Enter a n ({n}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
+
                 print_log(n=n,
                           expected=expected,
                           result=actual_result)

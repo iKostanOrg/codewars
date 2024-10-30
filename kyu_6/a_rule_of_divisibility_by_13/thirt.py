@@ -4,7 +4,7 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-REMAINDERS = (1, 10, 9, 12, 3, 4)
+REMAINDERS: tuple = (1, 10, 9, 12, 3, 4)
 
 
 def thirt(n: int) -> int:

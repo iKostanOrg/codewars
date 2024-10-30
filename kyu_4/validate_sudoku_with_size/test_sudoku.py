@@ -1,6 +1,5 @@
 """
 Test for -> Validate Sudoku with size `NxN`
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,8 +23,9 @@ from kyu_4.validate_sudoku_with_size.sudoku import Sudoku
             'GAMES',
             'ALGORITHMS',
             'VALIDATION')
-@allure.link(url='https://www.codewars.com/kata/540afbe2dc9f615d5e000425/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/540afbe2dc9f615d5e000425',
+    name='Source/Kata')
 class SudokuTestCase(unittest.TestCase):
     """
     Testing Sudoku class
@@ -52,7 +52,7 @@ class SudokuTestCase(unittest.TestCase):
             "N > 0 and √N == integer, assert a method that validates "
             "if it has been filled out correctly.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([
                  [7, 8, 4, 1, 5, 9, 3, 2, 6],
                  [5, 3, 9, 6, 7, 2, 8, 4, 1],
@@ -160,9 +160,7 @@ class SudokuTestCase(unittest.TestCase):
               [7, 8, 9, 1, 2, 3, 4, 5, 6],
               [8, 9, 7, 2, 3, 1, 5, 6, 4],
               [9, 7, 8, 3, 1, 2, 6, 4, 5]],
-             False, 'Sudoku with invalid boxes (little squares), but valid rows and columns'),
-
-        ]
+             False, 'Sudoku with invalid boxes (little squares), but valid rows and columns'))
 
         for data, expected, message in test_data:
             with allure.step("Enter a Sudoku solution and verify if it a valid one."):

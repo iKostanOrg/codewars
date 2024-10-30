@@ -1,6 +1,5 @@
 """
 Solution for -> Next bigger number with the same digits
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

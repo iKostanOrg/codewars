@@ -24,7 +24,7 @@ from kyu_6.no_arithmetic_progressions.sequence import sequence
 @allure.story('No arithmetic progressions')
 @allure.tag('ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/5e0607115654a900140b3ce3/train/python',
+    url='https://www.codewars.com/kata/5e0607115654a900140b3ce3',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 @pytest.mark.skip(reason="The solution is not ready")

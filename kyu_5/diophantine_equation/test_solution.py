@@ -22,13 +22,15 @@ from kyu_5.diophantine_equation.solution import sol_equa
             'MATHEMATICS',
             'ALGORITHMS',
             'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/554f76dca89983cc400000bb/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/554f76dca89983cc400000bb',
+    name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class SolutionTestCase(unittest.TestCase):
     """
     Testing sol_equa function
     """
+
     def test_solution_basic(self):
         """
         Testing using basic test data

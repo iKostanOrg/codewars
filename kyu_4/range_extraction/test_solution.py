@@ -1,6 +1,5 @@
 """
 Test for -> Range Extraction
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,7 +24,7 @@ from kyu_4.range_extraction.solution import solution
             'FORMATTING',
             'FORMATTING',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/python',
+@allure.link(url='https://www.codewars.com/kata/51ba717bb08c1cd60f00002f',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
     """
@@ -36,7 +35,6 @@ class SolutionTestCase(unittest.TestCase):
         """
         Testing solution function
         """
-
         allure.dynamic.title("Testing solution function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -49,7 +47,7 @@ class SolutionTestCase(unittest.TestCase):
             "in increasing order and returns a correctly formatted "
             "string in the range format.</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             ([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9,
               10, 11, 14, 15, 17, 18, 19, 20],
              '-6,-3-1,3-5,7-11,14,15,17-20'),
@@ -57,8 +55,7 @@ class SolutionTestCase(unittest.TestCase):
              '-3--1,2,10,15,16,18-20'),
             ([-91, -90, -87, -84, -81, -78, -77, -76, -74, -72,
               -70, -69, -66, -65, -63, -60, -58, -57, -54],
-             '-91,-90,-87,-84,-81,-78--76,-74,-72,-70,-69,-66,-65,-63,-60,-58,-57,-54')
-        ]
+             '-91,-90,-87,-84,-81,-78--76,-74,-72,-70,-69,-66,-65,-63,-60,-58,-57,-54'))
 
         for test_list, expected in test_data:
             actual_result = solution(test_list)

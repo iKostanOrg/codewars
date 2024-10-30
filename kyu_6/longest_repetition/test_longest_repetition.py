@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.longest_repetition.longest_repetition import longest_repetition
+from kyu_6.longest_repetition.longest_repetition \
+    import longest_repetition
 
 
 # pylint: disable-msg=R0801
@@ -23,7 +24,7 @@ from kyu_6.longest_repetition.longest_repetition import longest_repetition
             'STRINGS',
             'FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/586d6cefbcc21eed7a001155/train/python',
+    url='https://www.codewars.com/kata/586d6cefbcc21eed7a001155',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LongestRepetitionTestCase(unittest.TestCase):
@@ -50,7 +51,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 # [input, expected],
                 ["aaaabb", ('a', 4)],
                 ["bbbaaabaaaa", ('a', 4)],
@@ -58,7 +59,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
                 ["abbbbb", ('b', 5)],
                 ["aabb", ('a', 2)],
                 ["ba", ('b', 1)],
-                ["", ('', 0)]]
+                ["", ('', 0)])
 
             for t in test_data:
                 print_log(string=t[0], expected=t[1])

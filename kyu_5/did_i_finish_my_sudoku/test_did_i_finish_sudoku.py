@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
+from kyu_5.did_i_finish_my_sudoku.is_sudoku_done \
+    import done_or_not
 
 
 # pylint: disable=R0801
@@ -30,7 +31,7 @@ from kyu_5.did_i_finish_my_sudoku.is_sudoku_done import done_or_not
             'MATHEMATICS',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python',
+    url='https://www.codewars.com/kata/53db96041f1a7d32dc0004d2',
     name='Source/Kata')
 # pylint: enable=R0801
 class DidIFinishedSudokuTestCase(unittest.TestCase):
@@ -91,7 +92,7 @@ class DidIFinishedSudokuTestCase(unittest.TestCase):
              'Try again!'))
         # pylint: enable-msg=R0801
         for board, expected in test_data:
-            result = done_or_not(board)
+            result: str = done_or_not(board)
 
             with allure.step("Enter sudoku and verify the output."):
                 print_log(expected=expected, result=result)

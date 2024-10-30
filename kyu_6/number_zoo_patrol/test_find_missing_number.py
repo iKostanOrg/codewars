@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.number_zoo_patrol.missing_number import find_missing_number
+from kyu_6.number_zoo_patrol.missing_number \
+    import find_missing_number
 
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
@@ -23,7 +24,7 @@ from kyu_6.number_zoo_patrol.missing_number import find_missing_number
             'MATHEMATICS',
             'NUMBERS')
 @allure.link(
-    url='https://www.codewars.com/kata/5276c18121e20900c0000235/train/python',
+    url='https://www.codewars.com/kata/5276c18121e20900c0000235',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class FindMissingNumberTestCase(unittest.TestCase):
@@ -52,7 +53,7 @@ class FindMissingNumberTestCase(unittest.TestCase):
             "(which can be any number including n). The function should"
             " return the missing number.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([2, 3, 4], 1),
             ([1, 3, 4], 2),
             ([1, 2, 4], 3),
@@ -89,8 +90,7 @@ class FindMissingNumberTestCase(unittest.TestCase):
               455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469,
               470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484,
               485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499,
-              500], 36),
-        )
+              500], 36))
 
         for data in test_data:
             numbers: list = data[0]

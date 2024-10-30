@@ -15,7 +15,7 @@ def calculate(s: str) -> str:
     :param s: str
     :return: str
     """
-    s: str = s.lower()
+    s = s.lower()
     for key, item in CONVERSION.items():
         if key in s:
             s = s.replace(key, item)

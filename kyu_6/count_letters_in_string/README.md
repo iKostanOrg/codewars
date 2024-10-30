@@ -10,4 +10,4 @@ Example:
 > letter_count('arithmetics') #=> {"a": 1, "c": 1, "e": 1, "h": 1, "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/python)
+[Source](https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d)

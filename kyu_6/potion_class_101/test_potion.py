@@ -19,7 +19,7 @@ from kyu_6.potion_class_101.potion import Potion
 @allure.story('Potion Class 101')
 @allure.tag('ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/5981ff1daf72e8747d000091/train/python',
+    url='https://www.codewars.com/kata/5981ff1daf72e8747d000091',
     name='Source/Kata')
 class PotionTestCase(unittest.TestCase):
     """
@@ -40,14 +40,13 @@ class PotionTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Test Potion class that mix between 2 RGB colors.</p>")
         # pylint: enable-msg=R0801
-        potions = [
+        potions: list = [
             Potion((153, 210, 199), 32),
             Potion((135, 34, 0), 17),
             Potion((18, 19, 20), 25),
             Potion((174, 211, 13), 4),
             Potion((255, 23, 148), 19),
-            Potion((51, 102, 51), 6)
-        ]
+            Potion((51, 102, 51), 6)]
 
         a = potions[0].mix(potions[1])
         b = potions[0].mix(potions[2]).mix(potions[4])

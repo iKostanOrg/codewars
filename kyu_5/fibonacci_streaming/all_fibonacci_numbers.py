@@ -12,8 +12,8 @@ def all_fibonacci_numbers():
     contains all the numbers in a fibonacci sequence.
     :return: int
     """
-    a = 0
-    b = 1
+    a: int = 0
+    b: int = 1
     yield 1
 
     while True:

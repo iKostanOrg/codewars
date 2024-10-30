@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_5.human_readable_time.make_readable import make_readable
+from kyu_5.human_readable_time.make_readable \
+    import make_readable
 
 
 # pylint: disable-msg=R0801
@@ -23,8 +24,9 @@ from kyu_5.human_readable_time.make_readable import make_readable
             'DATES/TIME',
             'MATHEMATICS',
             'NUMBERS')
-@allure.link(url='https://www.codewars.com/kata/52685f7382004e774f0001f7/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/52685f7382004e774f0001f7',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class MakeReadableTestCase(unittest.TestCase):
     """
@@ -57,13 +59,12 @@ class MakeReadableTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test number and verify the output"):
-            data = [
+            data: tuple = (
                 (0, "00:00:00"),
                 (5, "00:00:05"),
                 (60, "00:01:00"),
                 (86399, "23:59:59"),
-                (359999, "99:59:59"),
-            ]
+                (359999, "99:59:59"))
 
             for seconds, expected in data:
                 print_log(seconds=seconds, expected=expected)
