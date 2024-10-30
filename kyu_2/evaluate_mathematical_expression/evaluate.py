@@ -145,6 +145,7 @@ def calc(string: str) -> float:
     :param string: str
     :return: float
     """
+    string = ''.join([s for s in string if s != ' '])
     string = normalize_string(string)
     string = ''.join(string.split('+'))
     strings: list = string.split()
@@ -164,12 +165,11 @@ def normalize_string(string: str) -> str:
     :return: str
     """
     strings: list = []
-    string_temp: str = ''.join([s for s in string if s != ' '])
 
-    while string_temp != '':
+    while string != '':
         temp: str = ''
 
-        for i, s in enumerate(string_temp):
+        for i, s in enumerate(string):
             if s.isdigit():
                 temp += s
 
@@ -178,10 +178,10 @@ def normalize_string(string: str) -> str:
                     strings.append(temp)
                 strings.append(s)
 
-                if i + 1 < len(string_temp):
-                    string_temp = string_temp[i + 1:]
+                if i + 1 < len(string):
+                    string = string[i + 1:]
                 else:
-                    string_temp = ''
+                    string = ''
                 break
 
             if s in OPERATORS:
@@ -189,13 +189,13 @@ def normalize_string(string: str) -> str:
                     strings.append(temp)
                 strings.append(s)
 
-                if i + 1 < len(string_temp):
-                    string_temp = string_temp[i + 1:]
+                if i + 1 < len(string):
+                    string = string[i + 1:]
                 break
 
-            if i == len(string_temp) - 1:
+            if i == len(string) - 1:
                 if temp != '':
                     strings.append(temp)
-                string_temp = ''
+                string = ''
 
     return ' '.join(strings)
