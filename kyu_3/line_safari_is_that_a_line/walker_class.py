@@ -9,6 +9,7 @@ class Walker:
     """
     Walker class: make moves, check directions, etc...
     """
+
     def __init__(self, grid: list):
         # print('__init__')
         self.__grid: list = grid
@@ -157,7 +158,7 @@ class Walker:
         self.__reset_direction()
         print(f'prev: {previous_position}, pos: {self.position}')
 
-        if self.position == '+' and (previous_position in ('-', 'X')):
+        if self.position == '+' and previous_position in '-X':
             self.__direction['up'] = self.__test_up()
             self.__direction['down'] = self.__test_down()
 
@@ -165,7 +166,7 @@ class Walker:
             self.__direction['left'] = self.__test_left()
             self.__direction['right'] = self.__test_right()
 
-        if self.position == '+' and previous_position == '+':
+        if self.position == previous_position == '+':
             if self.__position['col'] == self.__position['prev_col']:
                 self.__direction['left'] = self.__test_left()
                 self.__direction['right'] = self.__test_right()
@@ -173,15 +174,13 @@ class Walker:
                 self.__direction['up'] = self.__test_up()
                 self.__direction['down'] = self.__test_down()
 
-        if ((self.position == '-' and (previous_position in ('-', 'X')))
-              or (self.position == '-' and previous_position == '+')):
+        if self.position == '-' and previous_position in '-X+':
             if self.__position['col'] < self.__position['prev_col']:
                 self.__direction['left'] = self.__test_left()
             elif self.__position['col'] > self.__position['prev_col']:
                 self.__direction['right'] = self.__test_right()
 
-        if ((self.position == '|' and (previous_position in ('|', 'X')))
-              or (self.position == '|' and previous_position == '+')):
+        if self.position == '|' and previous_position in '|X+':
             if self.__position['row'] < self.__position['prev_row']:
                 self.__direction['up'] = self.__test_up()
             elif self.__position['row'] > self.__position['prev_row']:
