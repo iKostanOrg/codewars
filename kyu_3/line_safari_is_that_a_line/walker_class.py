@@ -11,7 +11,6 @@ class Walker:
     """
 
     def __init__(self, grid: list):
-        # print('__init__')
         self.__grid: list = grid
         self.__is_start: bool = True
         self.__position: dict = self.__get_start_point()
@@ -158,6 +157,8 @@ class Walker:
         self.__reset_direction()
         print(f'prev: {previous_position}, pos: {self.position}')
 
+        case_i = self.__get_case_i(previous_position)
+
         if self.position == '+' and previous_position in '-X':
             self.__direction['up'] = self.__test_up()
             self.__direction['down'] = self.__test_down()
@@ -185,6 +186,46 @@ class Walker:
                 self.__direction['up'] = self.__test_up()
             elif self.__position['row'] > self.__position['prev_row']:
                 self.__direction['down'] = self.__test_down()
+
+    def __get_case_i(self, previous_position) -> int:
+        """
+        Get case i base on the current position vs previous_position
+        :param previous_position:
+        :return:
+        """
+        i: int = 0
+
+        if self.position == '+' and previous_position in '-X':
+            i = 1
+
+        if self.position == '+' and previous_position == '|':
+            i = 2
+
+        if self.position == previous_position == '+' \
+                and self.__position['col'] == self.__position['prev_col']:
+            i = 3
+
+        if self.position == previous_position == '+' \
+                and self.__position['row'] == self.__position['prev_row']:
+            i = 4
+
+        if self.position == '-' and previous_position in '-X+' \
+                and self.__position['col'] < self.__position['prev_col']:
+            i = 5
+
+        if self.position == '-' and previous_position in '-X+' \
+                and self.__position['col'] > self.__position['prev_col']:
+            i = 6
+
+        if self.position == '|' and previous_position in '|X+' \
+                and self.__position['row'] < self.__position['prev_row']:
+            i = 7
+
+        if self.position == '|' and previous_position in '|X+' \
+                and self.__position['row'] > self.__position['prev_row']:
+            i = 8
+
+        return i
 
     def __test_up(self) -> bool:
         row: int = self.__position['row']
