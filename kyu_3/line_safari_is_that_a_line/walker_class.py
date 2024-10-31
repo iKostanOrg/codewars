@@ -21,32 +21,27 @@ class Walker:
             'left': False,
             'right': False,
             'up': False,
-            'down': False,
-        }
+            'down': False}
 
         # coordinates
         row: int = self.__position['row']
         col: int = self.__position['col']
 
         # up
-        if row - 1 >= 0:
-            if self.__grid[row - 1][col] in 'X|+':
-                direction['up'] = True
+        if row - 1 >= 0 and self.__grid[row - 1][col] in 'X|+':
+            direction['up'] = True
 
         # down
-        if row + 1 < len(self.__grid):
-            if self.__grid[row + 1][col] in 'X|+':
-                direction['down'] = True
+        if row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+':
+            direction['down'] = True
 
         # left
-        if col - 1 >= 0:
-            if self.__grid[row][col - 1] in 'X+-':
-                direction['left'] = True
+        if col - 1 >= 0 and self.__grid[row][col - 1] in 'X+-':
+            direction['left'] = True
 
         # right
-        if col + 1 < len(self.__grid[row]):
-            if self.__grid[row][col + 1] in 'X+-':
-                direction['right'] = True
+        if col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-':
+            direction['right'] = True
 
         print(f"\nINITIAL DIRECTION: {direction}")
         return direction
@@ -165,23 +160,27 @@ class Walker:
         if self.position == '+' and (previous_position in ('-', 'X')):
             self.__direction['up'] = self.__test_up()
             self.__direction['down'] = self.__test_down()
-        elif self.position == '+' and previous_position == '|':
+
+        if self.position == '+' and previous_position == '|':
             self.__direction['left'] = self.__test_left()
             self.__direction['right'] = self.__test_right()
-        elif self.position == '+' and previous_position == '+':
+
+        if self.position == '+' and previous_position == '+':
             if self.__position['col'] == self.__position['prev_col']:
                 self.__direction['left'] = self.__test_left()
                 self.__direction['right'] = self.__test_right()
             elif self.__position['row'] == self.__position['prev_row']:
                 self.__direction['up'] = self.__test_up()
                 self.__direction['down'] = self.__test_down()
-        elif ((self.position == '-' and (previous_position in ('-', 'X')))
+
+        if ((self.position == '-' and (previous_position in ('-', 'X')))
               or (self.position == '-' and previous_position == '+')):
             if self.__position['col'] < self.__position['prev_col']:
                 self.__direction['left'] = self.__test_left()
             elif self.__position['col'] > self.__position['prev_col']:
                 self.__direction['right'] = self.__test_right()
-        elif ((self.position == '|' and (previous_position in ('|', 'X')))
+
+        if ((self.position == '|' and (previous_position in ('|', 'X')))
               or (self.position == '|' and previous_position == '+')):
             if self.__position['row'] < self.__position['prev_row']:
                 self.__direction['up'] = self.__test_up()
