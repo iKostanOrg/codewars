@@ -47,4 +47,4 @@ The function you must implement takes in:
 3.  your attack power
 4.  the opponent's defense
 
-[Source](https://www.codewars.com/kata/536e9a7973130a06eb000e9f/train/python)
+[Source](https://www.codewars.com/kata/536e9a7973130a06eb000e9f)

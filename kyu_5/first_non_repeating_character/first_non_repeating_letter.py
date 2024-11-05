@@ -14,7 +14,7 @@ def first_non_repeating_letter(string: str) -> str:
     :return: str
     """
     result: str = ''
-    string_lower = string.lower()
+    string_lower: str = string.lower()
 
     for i, s in enumerate(string_lower):
         if string_lower.count(s) == 1:

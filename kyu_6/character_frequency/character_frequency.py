@@ -15,7 +15,7 @@ def letter_frequency(text: str) -> list:
     """
     results: list = []
     chars: dict = {}
-    text: str = text.lower()
+    text = text.lower()
 
     for c in text:
         if c.isalpha() and c not in chars:
@@ -32,7 +32,6 @@ def sort_list(results: list) -> list:
     :param results: list
     :return: list
     """
-
     is_sorted: bool = False
     results_length: int = len(results)
 

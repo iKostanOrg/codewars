@@ -5,7 +5,8 @@ GitHub: https://github.com/ikostan
 """
 
 # FUNDAMENTALS STRINGS REGULAR EXPRESSIONS DECLARATIVE PROGRAMMING
-# ADVANCED LANGUAGE FEATURES ARRAYS CIPHERS ALGORITHMS CRYPTOGRAPHY SECURITY
+# ADVANCED LANGUAGE FEATURES ARRAYS CIPHERS ALGORITHMS CRYPTOGRAPHY
+# SECURITY
 
 import unittest
 import allure
@@ -31,7 +32,7 @@ from kyu_6.encrypt_this.solution import encrypt_this
             'CRYPTOGRAPHY',
             'SECURITY')
 @allure.link(
-    url='https://www.codewars.com/kata/5848565e273af816fb000449/train/python',
+    url='https://www.codewars.com/kata/5848565e273af816fb000449',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class EncryptThisTestCase(unittest.TestCase):
@@ -61,7 +62,7 @@ class EncryptThisTestCase(unittest.TestCase):
             "Keepin' it simple: There are no special characters in input."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("",
              ""),
             ("Hello",
@@ -79,8 +80,7 @@ class EncryptThisTestCase(unittest.TestCase):
             ("Why can we not all be like that wise old bird",
              "87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri"),
             ("Thank you Piotr for all your help",
-             "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple")
-        )
+             "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple"))
 
         for text, expected in test_data:
             result = encrypt_this(text)

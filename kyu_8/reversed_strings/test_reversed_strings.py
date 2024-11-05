@@ -94,7 +94,7 @@ class ReversedStringsTestCase(unittest.TestCase):
             self.assertEqual(solution(string), expected)
 
         with allure.step("Pass regular string and verify the output"):
-            string: str = 'hello'
-            expected: str = 'olleh'
+            string = 'hello'
+            expected = 'olleh'
             print_log(string=string, expected=expected)
             self.assertEqual(solution(string), expected)

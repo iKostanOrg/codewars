@@ -47,41 +47,31 @@ class NumericalsTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass the string and verify the output"):
-            string = "Hello, World!"
-            expected = "1112111121311"
-
+            string: str = "Hello, World!"
+            expected: str = "1112111121311"
             print_log(string=string, expected=expected)
-
             self.assertEqual(numericals(string), expected)
 
         with allure.step("Pass the string and verify the output"):
             string = "Hello, World! It's me, JomoPipi!"
             expected = "11121111213112111131224132411122"
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(numericals(string), expected)
 
         with allure.step("Pass the string and verify the output"):
             string = "hello hello"
             expected = "11121122342"
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(numericals(string), expected)
 
         with allure.step("Pass the string and verify the output"):
             string = "Hello"
             expected = "11121"
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(numericals(string), expected)
 
         with allure.step("Pass the string and verify the output"):
             string = "aaaaaaaaaaaa"
             expected = "123456789101112"
-
             print_log(string=string, expected=expected)
-
             self.assertEqual(numericals(string), expected)

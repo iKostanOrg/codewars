@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def is_solved(board):
+def is_solved(board) -> int:
     """
     Checks whether the board's current state is solved:
     -1 if the board is not yet finished (there are empty spots),
@@ -35,14 +35,14 @@ def is_solved(board):
     return 0
 
 
-def check_diagonals(board):
+def check_diagonals(board) -> int | None:
     """
     Check board by diagonal
     :param board: list
     :return: 1, 2, or None
     """
-    i = 0
-    temp = set()
+    i: int = 0
+    temp: set = set()
     for row in board:
         temp.add(row[i])
         i += 1
@@ -62,7 +62,7 @@ def check_diagonals(board):
     return None
 
 
-def check_cols(board):
+def check_cols(board) -> int | None:
     """
     Check board by column
     :param board: list
@@ -79,7 +79,7 @@ def check_cols(board):
     return None
 
 
-def check_rows(board: list):
+def check_rows(board: list) -> int | None:
     """
     Check board by row
     :param board: list

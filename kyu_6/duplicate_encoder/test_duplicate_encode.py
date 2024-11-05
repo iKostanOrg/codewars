@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.duplicate_encoder.duplicate_encode import duplicate_encode
+from kyu_6.duplicate_encoder.duplicate_encode \
+    import duplicate_encode
 
 
 # pylint: disable-msg=R0801
@@ -23,7 +24,7 @@ from kyu_6.duplicate_encoder.duplicate_encode import duplicate_encode
             'STRINGS',
             'ARRAYS')
 @allure.link(
-    url='https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/python',
+    url='https://www.codewars.com/kata/54b42f9314d9229fd6000d9c',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DuplicateEncodeTestCase(unittest.TestCase):
@@ -47,11 +48,11 @@ class DuplicateEncodeTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ("din", "((("),
                 ("recede", "()()()"),
                 ("Success", ")())())"),
-                ("(( @", "))((")]
+                ("(( @", "))(("))
 
             for string, expected in test_data:
                 print_log(string=string, expected=expected)

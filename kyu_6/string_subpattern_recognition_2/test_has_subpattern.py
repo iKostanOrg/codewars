@@ -58,7 +58,7 @@ class HasSubpatternTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass the string and verify the output"):
-            test_data = [
+            test_data: tuple = (
                 ("a", False),
                 ("aaaa", True),
                 ("abcd", False),
@@ -88,9 +88,9 @@ class HasSubpatternTestCase(unittest.TestCase):
                  "ClwmA2bGkHLVayBb5Cayl2m9w4TBgkGbTw0lHB2VG5NnFwyF17Gk"
                  "Tn5TdH7HVnlyvG51do9k35zO4aqmPBTwnXu5wdBvvTPdL715ln4o"
                  "jGVTTlgks119kuCV3Ta5vLa7nqmdolmjPG5wqGynXG2n1XTCbz10"
-                 "BadOFvTbbgHOnywVG50wwNnzObkddNF5BGzobX", True)
-            ]
-
+                 "BadOFvTbbgHOnywVG50wwNnzObkddNF5BGzobX", True))
+            # pylint: disable-msg=R0801
             for data in test_data:
                 print_log(string=data[0], expected=data[1])
                 self.assertEqual(data[1], has_subpattern(data[0]))
+            # pylint: enable-msg=R0801

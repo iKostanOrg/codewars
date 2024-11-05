@@ -8,8 +8,7 @@ PAIRS: dict = {
     "NORTH": "SOUTH",
     "SOUTH": "NORTH",
     "EAST": "WEST",
-    "WEST": "EAST",
-}
+    "WEST": "EAST"}
 
 
 def dir_reduc(arr: list) -> list:

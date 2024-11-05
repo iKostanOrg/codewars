@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def generate_hashtag(word: str) -> (bool, str):
+def generate_hashtag(word: str) -> bool | str:
     """
     The Hashtag Generator.
 

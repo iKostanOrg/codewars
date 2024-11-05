@@ -41,8 +41,8 @@ def time_converter(time: int) -> str:
     if time == 0:
         time_str: str = '00'
     elif len(str(time)) > 1:
-        time_str: str = str(time)
+        time_str = str(time)
     else:
-        time_str: str = '0' + str(time)
+        time_str = '0' + str(time)
 
     return time_str
