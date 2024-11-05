@@ -59,18 +59,42 @@ def format_duration(seconds: int) -> str:
     if years > 0:
         result += f'{year}'
 
+    result = format_days(days, day, result)
+    result = format_hours(hours, hour, result)
+    result = format_minutes(minutes, seconds, minute, result)
+    result = format_seconds(seconds, second, result)
+
+    return result
+
+
+def format_days(days: int, day: str, result: str) -> str:
+    """
+    Format days for the final string
+    :param days:
+    :param day:
+    :param result:
+    :return: 
+    """
     if days > 0 and result != '':
         result += f', {day}'
     elif days > 0:
         result += f'{day}'
 
+    return result
+
+
+def format_hours(hours: int, hour: str, result: str) -> str:
+    """
+    Format hours for the final string
+    :param hours:
+    :param hour:
+    :param result:
+    :return:
+    """
     if hours > 0 and result != '':
         result += f', {hour}'
     elif hours > 0:
         result += f'{hour}'
-
-    result = format_minutes(minutes, seconds, minute, result)
-    result = format_seconds(seconds, second, result)
 
     return result
 
