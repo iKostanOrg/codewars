@@ -73,7 +73,7 @@ def format_days(days: int, day: str, result: str) -> str:
     :param days:
     :param day:
     :param result:
-    :return: 
+    :return:
     """
     if days > 0 and result != '':
         result += f', {day}'
@@ -99,7 +99,10 @@ def format_hours(hours: int, hour: str, result: str) -> str:
     return result
 
 
-def format_minutes(minutes: int, seconds: int, minute: str, result: str) -> str:
+def format_minutes(minutes: int,
+                   seconds: int,
+                   minute: str,
+                   result: str) -> str:
     """
     Format minutes for the final string
     :param minutes:
