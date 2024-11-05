@@ -143,6 +143,52 @@ class Walker:
         for key in self.__direction:
             self.__direction[key] = False
 
+    def position_plus(self, previous_position) -> None:
+        """
+        Process cells if current position is +
+        :param previous_position:
+        :return:
+        """
+        if self.position == '+' and previous_position in '-X':
+            self.__direction['up'] = self.__test_up()
+            self.__direction['down'] = self.__test_down()
+
+        if self.position == '+' and previous_position == '|':
+            self.__direction['left'] = self.__test_left()
+            self.__direction['right'] = self.__test_right()
+
+        if self.position == previous_position == '+':
+            if self.__position['col'] == self.__position['prev_col']:
+                self.__direction['left, '] = self.__test_left()
+                self.__direction['right'] = self.__test_right()
+            elif self.__position['row'] == self.__position['prev_row']:
+                self.__direction['up'] = self.__test_up()
+                self.__direction['down'] = self.__test_down()
+
+    def position_minus(self, previous_position) -> None:
+        """
+        Process cells if current position is -
+        :param previous_position:
+        :return:
+        """
+        if self.position == '-' and previous_position in '-X+':
+            if self.__position['col'] < self.__position['prev_col']:
+                self.__direction['left'] = self.__test_left()
+            elif self.__position['col'] > self.__position['prev_col']:
+                self.__direction['right'] = self.__test_right()
+
+    def position_pipe(self, previous_position) -> None:
+        """
+        Process cells if current position is |
+        :param previous_position:
+        :return:
+        """
+        if self.position == '|' and previous_position in '|X+':
+            if self.__position['row'] < self.__position['prev_row']:
+                self.__direction['up'] = self.__test_up()
+            elif self.__position['row'] > self.__position['prev_row']:
+                self.__direction['down'] = self.__test_down()
+
     def __set_direction(self) -> None:
         """
         Update directions based on current
@@ -157,33 +203,9 @@ class Walker:
         self.__reset_direction()
         print(f'prev: {previous_position}, pos: {self.position}')
 
-        if self.position == '+' and previous_position in '-X':
-            self.__direction['up'] = self.__test_up()
-            self.__direction['down'] = self.__test_down()
-
-        if self.position == '+' and previous_position == '|':
-            self.__direction['left'] = self.__test_left()
-            self.__direction['right'] = self.__test_right()
-
-        if self.position == previous_position == '+':
-            if self.__position['col'] == self.__position['prev_col']:
-                self.__direction['left'] = self.__test_left()
-                self.__direction['right'] = self.__test_right()
-            elif self.__position['row'] == self.__position['prev_row']:
-                self.__direction['up'] = self.__test_up()
-                self.__direction['down'] = self.__test_down()
-
-        if self.position == '-' and previous_position in '-X+':
-            if self.__position['col'] < self.__position['prev_col']:
-                self.__direction['left'] = self.__test_left()
-            elif self.__position['col'] > self.__position['prev_col']:
-                self.__direction['right'] = self.__test_right()
-
-        if self.position == '|' and previous_position in '|X+':
-            if self.__position['row'] < self.__position['prev_row']:
-                self.__direction['up'] = self.__test_up()
-            elif self.__position['row'] > self.__position['prev_row']:
-                self.__direction['down'] = self.__test_down()
+        self.position_plus(previous_position)
+        self.position_minus(previous_position)
+        self.position_pipe(previous_position)
 
     def __test_up(self) -> bool:
         row: int = self.__position['row']
