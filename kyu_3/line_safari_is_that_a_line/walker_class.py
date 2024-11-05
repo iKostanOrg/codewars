@@ -157,11 +157,13 @@ class Walker:
             self.__direction['left'] = self.__test_left()
             self.__direction['right'] = self.__test_right()
 
-        if self.position == previous_position == '+':
-            if self.__position['col'] == self.__position['prev_col']:
+        if self.position == previous_position == '+' and \
+                self.__position['col'] == self.__position['prev_col']:
                 self.__direction['left, '] = self.__test_left()
                 self.__direction['right'] = self.__test_right()
-            elif self.__position['row'] == self.__position['prev_row']:
+
+        if self.position == previous_position == '+' and \
+                self.__position['row'] == self.__position['prev_row']:
                 self.__direction['up'] = self.__test_up()
                 self.__direction['down'] = self.__test_down()
 
