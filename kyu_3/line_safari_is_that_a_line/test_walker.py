@@ -7,7 +7,6 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import unittest
-import pytest
 import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
@@ -25,7 +24,6 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 @allure.link(
     url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237',
     name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class WalkerClassTestCase(unittest.TestCase):
     """
