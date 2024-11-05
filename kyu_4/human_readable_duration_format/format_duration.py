@@ -69,14 +69,39 @@ def format_duration(seconds: int) -> str:
     elif hours > 0:
         result += f'{hour}'
 
-    if minutes > 0:
-        if result != '' and seconds == 0:
-            result += f' and {minute}'
-        elif result != '':
-            result += f', {minute}'
-        else:
-            result += f'{minute}'
+    result = format_minutes(minutes, seconds, minute, result)
+    result = format_seconds(seconds, second, result)
 
+    return result
+
+
+def format_minutes(minutes: int, seconds: int, minute: str, result: str) -> str:
+    """
+    Format minutes for the final string
+    :param minutes:
+    :param seconds:
+    :param minute:
+    :param result:
+    :return:
+    """
+    if minutes > 0 and result != '' and seconds == 0:
+        result += f' and {minute}'
+    elif minutes > 0 and result != '':
+        result += f', {minute}'
+    else:
+        result += f'{minute}'
+
+    return result
+
+
+def format_seconds(seconds: int, second: str, result: str) -> str:
+    """
+    Format seconds for the final string
+    :param seconds:
+    :param second:
+    :param result:
+    :return:
+    """
     if seconds > 0 and result != '':
         result += f' and {second}'
     elif seconds > 0:
