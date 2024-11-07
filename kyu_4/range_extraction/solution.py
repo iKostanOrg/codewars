@@ -24,21 +24,19 @@ def solution(args: list) -> str:
             current[1] = a
             current[2] = False
         else:
+            current[2] = True
+
             if abs(current[1] - current[0]) >= 2 and i != 1:
                 result += str(current[0]) + '-' + str(current[1]) + ','
-                current[2] = True
             else:
                 result += str(current[0]) + ','
-                current[2] = True
-
                 if current[0] != current[1]:
                     result += str(current[1]) + ','
 
             current[0] = a
             current[1] = a
 
-        if i == len(args) - 1 and current[2] is False:
-
+        if i == len(args) - 1 and not current[2]:
             if current[1] + 1 == a:
                 current[1] = a
 
@@ -48,7 +46,7 @@ def solution(args: list) -> str:
             elif current[0] != current[1]:
                 result += ',' + str(current[1])
 
-        if i == len(args) - 1 and current[-1] != a and current[2] is True:
+        if i == len(args) - 1 and current[-1] != a and current[2]:
             result += str(a)
 
     return result
