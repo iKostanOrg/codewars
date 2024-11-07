@@ -25,15 +25,7 @@ def solution(args: list) -> str:
         result = case_2(a, i, current, result)
 
         # case 3
-        if i == len(args) - 1 and not current[2]:
-            if current[1] + 1 == a:
-                current[1] = a
-
-            result += str(current[0])
-            if abs(current[1] - current[0]) >= 2:
-                result += '-' + str(current[1])
-            elif current[0] != current[1]:
-                result += ',' + str(current[1])
+        result = case_3(args, a, i, current, result)
 
         # case 4
         if i == len(args) - 1 and current[-1] != a and current[2]:
@@ -42,7 +34,30 @@ def solution(args: list) -> str:
     return result
 
 
-def case_2(a: int, i: int,  current: list, result: str) -> str:
+def case_3(args: list, a: int, i: int, current: list, result: str) -> str:
+    """
+    Case #3
+    :param args:
+    :param a:
+    :param i:
+    :param current:
+    :param result:
+    :return:
+    """
+    if i == len(args) - 1 and not current[2]:
+        if current[1] + 1 == a:
+            current[1] = a
+
+        result += str(current[0])
+        if abs(current[1] - current[0]) >= 2:
+            result += '-' + str(current[1])
+        elif current[0] != current[1]:
+            result += ',' + str(current[1])
+
+    return result
+
+
+def case_2(a: int, i: int, current: list, result: str) -> str:
     """
     Case #2
     :param i:
