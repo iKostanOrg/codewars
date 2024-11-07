@@ -60,13 +60,8 @@ def case_3(args: list, a: int, i: int, current: list, result: str) -> str:
 def case_2(**kwargs) -> str:
     """
     Case #2
-    :param i:
-    :param a:
-    :param current:
-    :param result:
     :return:
     """
-
     a: int = kwargs['a']
     i: int = kwargs['i']
     current: list = kwargs['current']
