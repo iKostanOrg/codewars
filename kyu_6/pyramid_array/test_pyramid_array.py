@@ -53,19 +53,19 @@ class PyramidTestCase(unittest.TestCase):
             self.assertEqual(pyramid(n), expected)
 
         with allure.step("Pass one"):
-            n: int = 1
-            expected: list = [[1]]
+            n = 1
+            expected = [[1]]
             print_log(n=n, expected=expected)
             self.assertEqual(pyramid(n), expected)
 
         with allure.step("Pass two"):
-            n: int = 2
-            expected: list = [[1], [1, 1]]
+            n = 2
+            expected = [[1], [1, 1]]
             print_log(n=n, expected=expected)
             self.assertEqual(pyramid(n), expected)
 
         with allure.step("Pass three"):
-            n: int = 3
-            expected: list = [[1], [1, 1], [1, 1, 1]]
+            n = 3
+            expected = [[1], [1, 1], [1, 1, 1]]
             print_log(n=n, expected=expected)
             self.assertEqual(pyramid(n), expected)

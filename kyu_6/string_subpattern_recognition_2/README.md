@@ -27,4 +27,4 @@ Strings will never be empty and can be composed of any character
 (just consider upper- and lowercase letters as different entities) and
 can be pretty long (keep an eye on performances!).
 
-[Source](https://www.codewars.com/kata/5a4a391ad8e145cdee0000c4/train/python)
+[Source](https://www.codewars.com/kata/5a4a391ad8e145cdee0000c4)

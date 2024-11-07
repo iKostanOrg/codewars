@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_7.beginner_series_sum_of_numbers.sum_of_numbers import get_sum
+from kyu_7.beginner_series_sum_of_numbers.sum_of_numbers \
+    import get_sum
 
 
 # pylint: disable-msg=R0801
@@ -73,13 +74,13 @@ class SumOfNumbersTestCase(unittest.TestCase):
 
         with allure.step("Assert the result"):
             a = expected = 1
-            b: int = 0
+            b = 0
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
 
         with allure.step("Assert the result"):
-            a: int = 1
-            b: int = 2
+            a = 1
+            b = 2
             expected = a + b
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
@@ -106,14 +107,14 @@ class SumOfNumbersTestCase(unittest.TestCase):
             self.assertEqual(get_sum(a, b), expected)
 
         with allure.step("Assert the result"):
-            a: int = -1
-            b: int = 0
-            expected: int = a + b
+            a = -1
+            b = 0
+            expected = a + b
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)
 
         with allure.step("Assert the result"):
-            a: int = -1
+            a = -1
             b = expected = 2
             print_log(a=a, b=b, expected=expected)
             self.assertEqual(get_sum(a, b), expected)

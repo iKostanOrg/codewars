@@ -24,4 +24,4 @@ tickets([25, 25, 50, 50, 100]) # => NO. Vasya will not have the right bills to g
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/python)
+[Source](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8)

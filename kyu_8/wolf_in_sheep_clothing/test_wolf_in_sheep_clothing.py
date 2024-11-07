@@ -86,21 +86,21 @@ class WarnTheSheepTestCase(unittest.TestCase):
         self.assertEqual(warn_the_sheep(lst), expected)
 
         # 2
-        lst: list = ['sheep', 'wolf', 'sheep',
-                     'sheep', 'sheep', 'sheep',
-                     'sheep']
+        lst = ['sheep', 'wolf', 'sheep',
+               'sheep', 'sheep', 'sheep',
+               'sheep']
 
-        expected: str = 'Oi! Sheep number 5! You are ' \
-                        'about to be eaten by a wolf!'
+        expected = 'Oi! Sheep number 5! You are ' \
+                   'about to be eaten by a wolf!'
 
         print_log(list=lst, expected=expected)
         self.assertEqual(warn_the_sheep(lst), expected)
 
         # 3
-        lst: list = ['sheep', 'wolf', 'sheep']
+        lst = ['sheep', 'wolf', 'sheep']
 
-        expected: str = 'Oi! Sheep number 1! You are ' \
-                        'about to be eaten by a wolf!'
+        expected = 'Oi! Sheep number 1! You are ' \
+                   'about to be eaten by a wolf!'
 
         print_log(list=lst, expected=expected)
         self.assertEqual(warn_the_sheep(lst), expected)

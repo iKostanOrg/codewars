@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def first_non_repeated(s: str) -> (str, None):
+def first_non_repeated(s: str) -> str | None:
     """
     You need to write a function, that returns the
     first non-repeated character in the given string.

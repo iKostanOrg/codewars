@@ -43,7 +43,7 @@ class FindTheOddIntTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5],
              5,
              'should return 5 (because it appears 3 times)'),

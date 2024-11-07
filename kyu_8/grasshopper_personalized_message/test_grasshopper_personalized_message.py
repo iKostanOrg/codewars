@@ -58,8 +58,8 @@ class GreetTestCase(unittest.TestCase):
 
         # otherwise
         with allure.step("Test name not equals owner"):
-            name: str = 'Greg'
-            owner: str = 'Daniel'
-            expected: str = 'Hello guest'
+            name = 'Greg'
+            owner = 'Daniel'
+            expected = 'Hello guest'
             print_log(name=name, owner=owner, expected=expected)
             self.assertEqual(greet(name, owner), expected)

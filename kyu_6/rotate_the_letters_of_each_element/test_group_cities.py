@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.rotate_the_letters_of_each_element.group_cities import group_cities
+from kyu_6.rotate_the_letters_of_each_element.group_cities \
+    import group_cities
 
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
@@ -24,7 +25,7 @@ from kyu_6.rotate_the_letters_of_each_element.group_cities import group_cities
             'STRINGS',
             'SORTING ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/5e98712b7de14f0026ef1cc1/train/python',
+    url='https://www.codewars.com/kata/5e98712b7de14f0026ef1cc1',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class GroupCitiesTestCase(unittest.TestCase):
@@ -57,7 +58,7 @@ class GroupCitiesTestCase(unittest.TestCase):
             "will be taken into account for the result, discarding the rest."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             (['Tokyo', 'London', 'Rome', 'Donlon', 'Kyoto', 'Paris', 'Okyot'],
              [['Kyoto', 'Okyot', 'Tokyo'], ['Donlon', 'London'],
               ['Paris'], ['Rome']]),
@@ -77,8 +78,7 @@ class GroupCitiesTestCase(unittest.TestCase):
             (['Ab', 'Aba', 'A', 'Bbab', 'Baa', 'B', 'Cac', 'A', 'Baa',
               'Bbbb', 'Ac', 'Bcbaa', 'Ab'],
              [['Aba', 'Baa'], ['A'], ['Ab'], ['Ac'], ['B'], ['Bbab'],
-              ['Bbbb'], ['Bcbaa'], ['Cac']])
-        )
+              ['Bbbb'], ['Bcbaa'], ['Cac']]))
 
         for data in test_data:
             seq: list = data[0]
