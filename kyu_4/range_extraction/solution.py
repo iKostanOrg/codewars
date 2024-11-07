@@ -17,25 +17,14 @@ def solution(args: list) -> str:
 
     for i, a in enumerate(args):
 
+        # case 1
         if current[1] == a:
             continue
 
-        if a == current[1] + 1:
-            current[1] = a
-            current[2] = False
-        else:
-            current[2] = True
+        # case 2
+        result = case_2(a, i, current, result)
 
-            if abs(current[1] - current[0]) >= 2 and i != 1:
-                result += str(current[0]) + '-' + str(current[1]) + ','
-            else:
-                result += str(current[0]) + ','
-                if current[0] != current[1]:
-                    result += str(current[1]) + ','
-
-            current[0] = a
-            current[1] = a
-
+        # case 3
         if i == len(args) - 1 and not current[2]:
             if current[1] + 1 == a:
                 current[1] = a
@@ -46,7 +35,36 @@ def solution(args: list) -> str:
             elif current[0] != current[1]:
                 result += ',' + str(current[1])
 
+        # case 4
         if i == len(args) - 1 and current[-1] != a and current[2]:
             result += str(a)
+
+    return result
+
+
+def case_2(a: int, i: int,  current: list, result: str) -> str:
+    """
+    Case #2
+    :param i:
+    :param a:
+    :param current:
+    :param result:
+    :return:
+    """
+    if a == current[1] + 1:
+        current[1] = a
+        current[2] = False
+    else:
+        current[2] = True
+
+        if abs(current[1] - current[0]) >= 2 and i != 1:
+            result += str(current[0]) + '-' + str(current[1]) + ','
+        else:
+            result += str(current[0]) + ','
+            if current[0] != current[1]:
+                result += str(current[1]) + ','
+
+        current[0] = a
+        current[1] = a
 
     return result
