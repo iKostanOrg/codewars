@@ -19,5 +19,5 @@ def two_decimal_places(number) -> float:
     :param number:
     :return: float
     """
-    number: str = str(number)
-    return float(number[0:number.index('.') + 3])
+    number_str: str = str(number)
+    return float(number_str[0:number_str.index('.') + 3])

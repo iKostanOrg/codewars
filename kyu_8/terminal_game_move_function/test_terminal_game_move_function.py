@@ -60,9 +60,9 @@ class MoveTestCase(unittest.TestCase):
             self.assertEqual(move(position, roll), expected)
 
         with allure.step("Test start position even number"):
-            position: int = 3
-            roll: int = 6
-            expected: int = 15
+            position = 3
+            roll = 6
+            expected = 15
 
             print_log(position=position,
                       roll=roll,
@@ -70,9 +70,9 @@ class MoveTestCase(unittest.TestCase):
             self.assertEqual(move(position, roll), expected)
 
         with allure.step("Test start position odd number"):
-            position: int = 2
-            roll: int = 5
-            expected: int = 12
+            position = 2
+            roll = 5
+            expected = 12
 
             print_log(position=position,
                       roll=roll,

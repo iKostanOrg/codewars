@@ -58,7 +58,7 @@ class LargestPowerTestCase(unittest.TestCase):
             self.assertEqual(largest_power(n), expected)
 
         with allure.step("Pass an integer and verify the output"):
-            n: int = 4
-            expected: int = 1
+            n = 4
+            expected = 1
             print_log(N=n, expected=expected)
             self.assertEqual(largest_power(n), expected)
