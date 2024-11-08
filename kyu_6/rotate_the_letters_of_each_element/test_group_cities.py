@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.rotate_the_letters_of_each_element.group_cities \
     import group_cities
 
+
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
@@ -32,6 +33,7 @@ class GroupCitiesTestCase(unittest.TestCase):
     """
     Testing 'group_cities' function
     """
+
     def test_group_cities(self):
         """
         Test that a function that given a sequence of strings,

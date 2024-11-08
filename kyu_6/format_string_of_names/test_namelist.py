@@ -11,6 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_6.format_string_of_names.solution import namelist
 
+
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
@@ -30,6 +31,7 @@ class NamelistTestCase(unittest.TestCase):
     """
     Testing namelist function
     """
+
     def test_namelist(self):
         """
         Test namelist
