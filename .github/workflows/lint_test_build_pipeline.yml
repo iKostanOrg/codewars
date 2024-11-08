@@ -18,3 +18,6 @@ jobs:
   flake8:
     name: Flake8 Lint
     uses: iKostanOrg/codewars/.github/workflows/flake8.yml@master
+  Yamllint:
+    name: YAML Lint
+    uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
