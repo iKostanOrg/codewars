@@ -16,10 +16,6 @@ jobs:
     steps:
     - name: Checkout v4
       uses: actions/checkout@v4
-    #- name: Install markdownlint
-    #  run: |
-    #    npm install markdownlint-cli2 --global
-    #    markdownlint-cli2 "**/*.md" --config ".markdownlint-cli2.yaml"
     - name: markdownlint-cli2-action v16
       uses: DavidAnson/markdownlint-cli2-action@v17
       with:
