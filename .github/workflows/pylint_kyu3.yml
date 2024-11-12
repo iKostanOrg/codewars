@@ -15,7 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
-        # This is the version of the action for setting up Python, not the Python version.
+        # This is the version of the action for setting up Python,
+        #  not the Python version.
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
