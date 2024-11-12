@@ -94,16 +94,12 @@ class Walker:
         """
         if self.__is_start:
             if len([val for val in self.__direction.values() if val]) != 1:
-                #print('\nRule #1')
                 return True
         else:
             if self.position == 'X' and not self.__is_start:
-                #print('\nRule #2')
                 return True
 
             if len([val for val in self.__direction.values() if val]) != 1:
-                #print('\nRule #3')
-                #print(self.__direction)
                 return True
 
         return False
