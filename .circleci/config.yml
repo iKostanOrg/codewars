@@ -1,10 +1,11 @@
-version: 2.1 # use CircleCI 2.1
+---
+version: 2.1  # use CircleCI 2.1
 orbs:
   python: circleci/python@2.1.1
 
-jobs: # A basic unit of work in a run
+jobs:  # A basic unit of work in a run
 
-  build: # runs not using Workflows must have a `build` job as entry point
+  build:  # runs not using Workflows must have a `build` job as entry point
     # How to specify Python version in circleCI orb?
     # https://discuss.circleci.com/t/how-to-specify-python-version-in-circleci-orb/47322/3
     executor:
@@ -12,7 +13,7 @@ jobs: # A basic unit of work in a run
       # use Python 3.10
       tag: "3.12"
 
-    steps: # steps that comprise the `build` job
+    steps:  # steps that comprise the `build` job
       - checkout
       - run:
           command:
@@ -46,9 +47,9 @@ jobs: # A basic unit of work in a run
             python -m pytest
           name: Run tests with pytest
 
-      - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+      - store_test_results:  # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results/
 
-      - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+      - store_artifacts:  # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: test-results/
           destination: tr1
