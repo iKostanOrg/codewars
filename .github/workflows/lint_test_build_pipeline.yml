@@ -22,3 +22,13 @@ jobs:
   yamllint:
     name: YAML Lint
     uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
+  pytest:
+    name: Unitest with pytest
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+    uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+
