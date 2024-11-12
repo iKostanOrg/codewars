@@ -20,7 +20,7 @@ jobs:
       - name: markdownlint-cli2-action v16
         uses: DavidAnson/markdownlint-cli2-action@v17
         with:
-         config: '.markdownlint-cli2.yaml'
-         fix: true
-         globs: '**/*.md'
-         separator: ','
+          config: '.markdownlint-cli2.yaml'
+          fix: true
+          globs: '**/*.md'
+          separator: ','
