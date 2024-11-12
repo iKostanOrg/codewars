@@ -87,11 +87,7 @@ class LinePositiveTestCase(unittest.TestCase):
 
         expected: bool = True
         for grid in test_data:
-
             actual_result: bool = line(grid)
-            for row in grid:
-                print(row)
-
             print_log(expected=expected,
                       actual_result=actual_result)
 
