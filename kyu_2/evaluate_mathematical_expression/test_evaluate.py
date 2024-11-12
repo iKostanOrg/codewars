@@ -93,6 +93,6 @@ class CalcTestCase(unittest.TestCase):
                 self.assertEqual(expected,
                                  actual_result)
 
-                
+
 if __name__ == '__main__':
     unittest.main()
