@@ -92,3 +92,7 @@ class CalcTestCase(unittest.TestCase):
                              f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)
+
+                
+if __name__ == '__main__':
+    unittest.main()
