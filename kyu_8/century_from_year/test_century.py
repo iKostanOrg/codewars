@@ -69,7 +69,8 @@ class CenturyTestCase(unittest.TestCase):
 
                 print_log(year=year,
                           result=result,
-                          expected=expected)
+                          expected=expected,
+                          message=message)
 
                 self.assertEqual(expected,
                                  result)
