@@ -83,17 +83,6 @@ class Walker:
             if self.__is_start:
                 self.__is_start = False
             # 3. set direction
-            # DEBUG ONLY
-            row: int = self.__position['row']
-            col: int = self.__position['col']
-            direction = [key for key, item in self.__direction if item]
-            """
-            print(f'\nchar: {self.__grid[row][col]}, '
-                  f'direction: {direction}, '
-                  f'row: {row}, '
-                  f'col: {col}, '
-                  f'is_done: {self.is_done}\n')
-            """
             self.__set_direction()
 
     @property
@@ -205,8 +194,6 @@ class Walker:
 
         # reset all directions
         self.__reset_direction()
-        #print(f'prev: {previous_position}, pos: {self.position}')
-
         self.position_plus(previous_position)
         self.position_minus(previous_position)
         self.position_pipe(previous_position)
