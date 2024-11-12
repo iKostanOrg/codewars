@@ -43,7 +43,6 @@ class Walker:
         if col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-':
             direction['right'] = True
 
-        print(f"\nINITIAL DIRECTION: {direction}")
         return direction
 
     @property
