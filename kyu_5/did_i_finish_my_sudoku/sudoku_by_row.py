@@ -13,7 +13,6 @@ def assert_sudoku_by_row(board: list) -> bool:
     :return: bool
     """
     for row in board:
-        #print(row)
         if len(row) != len(set(row)) or len(row) != len(board[0]):
             return False
 
