@@ -125,7 +125,6 @@ class WalkerClassTestCase(unittest.TestCase):
 
         expected: str = 'X'
         for grid in test_data:
-
             walker: Walker = Walker(grid)
             actual_result: str = walker.position
 
