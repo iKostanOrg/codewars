@@ -17,7 +17,7 @@ jobs:  # A basic unit of work in a run
       - checkout
       - run:
           command:
-              python --version
+            python --version
           name: Check python version
       - run:
           command:
@@ -46,10 +46,12 @@ jobs:  # A basic unit of work in a run
           command:
             python -m pytest
           name: Run tests with pytest
-
-      - store_test_results:  # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+      # Upload test results for display in Test Summary:
+      # https://circleci.com/docs/2.0/collect-test-data/
+      - store_test_results:
           path: test-results/
-
-      - store_artifacts:  # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+      # Upload test summary for display in Artifacts:
+      # https://circleci.com/docs/2.0/artifacts/
+      - store_artifacts:
           path: test-results/
           destination: tr1
