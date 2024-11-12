@@ -48,7 +48,7 @@ jobs:
       - name: Unitest with pytest
         # yamllint disable rule:line-length
         run:
-          python -m pytest . -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
+          python -m pytest . -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=./kyu_2 --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
       # yamllint enable rule:line-length
       - name: Upload pytest test artifacts
         uses: actions/upload-artifact@v4
