@@ -31,6 +31,15 @@ jobs:
       - mypy
       - yamllint
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+  codecov:
+    name: Codecov GitHub Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codecov.yml@master
+    # Why is Codecov upload step in GitHub Actions not finding the token?
+    # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
+    secrets:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
   codeclimate:
     name: Codeclimate Github Action
     needs:
