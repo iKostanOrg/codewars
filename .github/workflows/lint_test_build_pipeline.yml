@@ -31,3 +31,10 @@ jobs:
       - mypy
       - yamllint
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+  codeclimate:
+    name: Codeclimate Github Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
+    secrets:
+      cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
