@@ -18,7 +18,7 @@ jobs:
       - name: Checkout v4
         uses: actions/checkout@v4
       - name: markdownlint-cli2-action v16
-        uses: DavidAnson/markdownlint-cli2-action@v17
+        uses: DavidAnson/markdownlint-cli2-action@v18
         with:
           config: '.markdownlint-cli2.yaml'
           fix: true
