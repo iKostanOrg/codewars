@@ -58,6 +58,6 @@ jobs:
     needs:
       - codecov
       - codeclimate
-    uses: iKostanOrg/codewars/.github/workflows/snyk.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/snyk-security.yml@master
     secrets:
       snyk_token: ${{ secrets.SNYK_TOKEN }}
