@@ -53,3 +53,9 @@ jobs:
       - codecov
       - codeclimate
     uses: iKostanOrg/codewars/.github/workflows/codeql.yml@master
+  snyk:
+    name: Snyk for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: iKostanOrg/codewars/.github/workflows/snyk.yml@master
