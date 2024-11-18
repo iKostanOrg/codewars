@@ -53,3 +53,11 @@ jobs:
       - codecov
       - codeclimate
     uses: ikostan/pico/.github/workflows/codeql.yml@master
+  snyk:
+    name: Snyk for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: ikostan/pico/.github/workflows/snyk.yml@master
+    secrets:
+      snyk_token: ${{ secrets.SNYK_TOKEN }}
