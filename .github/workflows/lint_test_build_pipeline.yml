@@ -47,3 +47,9 @@ jobs:
     uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
     secrets:
       cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
+  codeql:
+    name: CodeQL for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: ikostan/pico/.github/workflows/codeql.yml@master
