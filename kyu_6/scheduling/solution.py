@@ -9,12 +9,11 @@ def shortest_job_first(jobs: list, index: int) -> int:
     """
     It takes in:
     1. "jobs" a non-empty array of positive integers.
-        They represent the clock-cycles(cc) needed to finish the job.
+    They represent the clock-cycles(cc) needed to finish the job.
     2. "index" a positive integer. That represents the job we're interested in.
 
     SJF returns:
     1. A positive integer representing the cc it takes to complete the job at index.
-
     :param jobs:
     :param index:
     :return:
