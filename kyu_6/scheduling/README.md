@@ -1,12 +1,16 @@
 # Scheduling (Shortest Job First or SJF)
 
-Scheduling is how the processor decides which jobs(processes) get to use the processor and for how long. 
-This can cause a lot of problems. Like a really long process taking the entire CPU and freezing all the 
-other processes. One solution is Shortest Job First(SJF), which today you will be implementing.
+Scheduling is how the processor decides which jobs(processes) get to use 
+the processor and for how long. This can cause a lot of problems. Like a 
+really long process taking the entire CPU and freezing all the other  
+processes. One solution is Shortest Job First(SJF), which today you will 
+be implementing.
 
-SJF works by, well, letting the shortest jobs take the CPU first. If the jobs are the same size then it is 
-First In First Out (FIFO). The idea is that the shorter jobs will finish quicker, so theoretically jobs won't 
-get frozen because of large jobs. (In practice they're frozen because of small jobs).
+SJF works by, well, letting the shortest jobs take the CPU first. If the 
+jobs are the same size then it is First In First Out (FIFO). The idea is 
+that the shorter jobs will finish quicker, so theoretically jobs won't 
+get frozen because of large jobs. (In practice they're frozen because of 
+small jobs).
 
 You will be implementing:
 
@@ -16,7 +20,8 @@ def SJF(jobs, index)
 
 ## It takes in:
 
-1. "jobs" a non-empty array of positive integers. They represent the clock-cycles(cc) needed to finish the job.
+1. "jobs" a non-empty array of positive integers. They represent the 
+2. clock-cycles(cc) needed to finish the job.
 2. "index" a positive integer. That represents the job we're interested in.
 
 ## SJF returns:
