@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.scheduling.solution import SJF
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
@@ -22,6 +23,7 @@ from kyu_6.scheduling.solution import SJF
 @allure.link(
     url='https://www.codewars.com/kata/550cc572b9e7b563be00054f',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class SJFTestCase(unittest.TestCase):
     """
     Testing 'SJF' function
@@ -65,8 +67,7 @@ class SJFTestCase(unittest.TestCase):
                20, 5, 20, 20, 5, 1, 20, 14, 4, 11, 5, 9, 2, 6, 20, 11, 17, 4, 12, 13,
                16, 13, 19, 5, 18, 20, 6, 19, 10, 19, 12, 4, 18, 5, 14, 9, 1, 1, 5, 13,
                14, 9, 18, 9, 11, 19, 10, 20, 17, 13, 1, 13, 8, 12, 2, 19, 3, 14, 1, 20,
-               7, 14, 12, 11, 18, 3, 4, 9, 5, 19], 24), 275)
-        )
+               7, 14, 12, 11, 18, 3, 4, 9, 5, 19], 24), 275))
 
         for n, expected in test_data:
             jobs, index = n
