@@ -9,7 +9,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.scheduling.solution import SJF
+from kyu_6.scheduling.solution import shortest_job_first
 
 
 # pylint: disable-msg=R0801
@@ -26,16 +26,16 @@ from kyu_6.scheduling.solution import SJF
 # pylint: enable-msg=R0801
 class SJFTestCase(unittest.TestCase):
     """
-    Testing 'SJF' function
+    Testing 'shortest_job_first(' function
     """
 
     # pylint: disable-msg=R0801
     def test_sjf(self):
         """
-        Testing 'sjf' function with various test data
+        Testing 'shortest_job_first(' function with various test data
         :return:
         """
-        allure.dynamic.title("Testing 'sjf' function")
+        allure.dynamic.title("Testing 'shortest_job_first(' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -71,7 +71,7 @@ class SJFTestCase(unittest.TestCase):
 
         for n, expected in test_data:
             jobs, index = n
-            actual_result = SJF(jobs, index)
+            actual_result = shortest_job_first(jobs, index)
             # pylint: disable-msg=R0801
             with allure.step(f"Enter a n ({n}) and verify the "
                              f"expected output ({expected}) vs "

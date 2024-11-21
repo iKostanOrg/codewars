@@ -5,7 +5,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def SJF(jobs: list, index: int) -> int:
+def shortest_job_first(jobs: list, index: int) -> int:
     """
     It takes in:
     1. "jobs" a non-empty array of positive integers.
