@@ -21,7 +21,7 @@ def SJF(jobs, index)
 ## It takes in:
 
 1. "jobs" a non-empty array of positive integers. They represent the 
-2. clock-cycles(cc) needed to finish the job.
+    clock-cycles(cc) needed to finish the job.
 2. "index" a positive integer. That represents the job we're interested in.
 
 ## SJF returns:
