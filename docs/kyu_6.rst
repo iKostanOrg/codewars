@@ -37,6 +37,7 @@ Subpackages
    kyu_6.pyramid_array
    kyu_6.rotate_the_letters_of_each_element
    kyu_6.row_of_the_odd_triangle
+   kyu_6.scheduling.module
    kyu_6.sort_the_odd
    kyu_6.string_subpattern_recognition_1
    kyu_6.string_subpattern_recognition_2
