@@ -41,11 +41,12 @@ def shortest_job_first(jobs: list, index: int) -> int:
 
 def get_min_job(jobs: list) -> int:
     """
-    Get the smallest job value of jobs that is not equals to 0
+    Get the smallest job value of jobs that is not equal to 0
     :param jobs:
     :return:
     """
-    min_job = max(jobs)
+    min_job: int = max(jobs)
+    
     for j in jobs:
         if j <= min_job and j != 0:
             min_job = j
