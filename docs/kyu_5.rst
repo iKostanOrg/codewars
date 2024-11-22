@@ -9,7 +9,7 @@ Subpackages
 
    kyu_5.readme
    kyu_5.alphabet_wars_nuclear_strike.module
-   kyu_5.count_ip_addresses
+   kyu_5.count_ip_addresses.module
    kyu_5.did_i_finish_my_sudoku
    kyu_5.diophantine_equation
    kyu_5.directions_reduction
