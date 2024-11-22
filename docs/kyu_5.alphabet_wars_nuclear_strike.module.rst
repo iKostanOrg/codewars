@@ -1,4 +1,4 @@
-kyu\_4.validate\_sudoku\_with\_size.module module
+kyu\_5.alphabet\_wars\_nuclear\_strike.module module
 =================================================
 
 Subpackages
