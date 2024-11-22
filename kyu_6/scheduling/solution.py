@@ -46,7 +46,7 @@ def get_min_job(jobs: list) -> int:
     :return:
     """
     min_job: int = max(jobs)
-    
+
     for j in jobs:
         if j <= min_job and j != 0:
             min_job = j
