@@ -27,4 +27,4 @@ Notes
   to contain any redundant trailing whitespace: you can use dynamically allocated
   character strings.
 
-[Source](https://www.codewars.com/kata/5a045fee46d843effa000070/train/python)
+[Source](https://www.codewars.com/kata/5a045fee46d843effa000070)

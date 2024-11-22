@@ -25,4 +25,4 @@ Write a function f(n), which returns the n-th member of sequence.
 There are 1000 random tests with 0 <= n <= 10^9, so you should
 consider algorithmic complexity of your solution.
 
-[Source](https://www.codewars.com/kata/5e0607115654a900140b3ce3/train/python)
+[Source](https://www.codewars.com/kata/5e0607115654a900140b3ce3)

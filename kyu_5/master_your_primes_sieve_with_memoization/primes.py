@@ -15,7 +15,7 @@ def is_prime(digit: int) -> bool:
     :param digit: int
     :return: bool
     """
-    primes = [2, 3, 5, 7]
+    primes: list = [2, 3, 5, 7]
 
     if digit < 2:
         return False

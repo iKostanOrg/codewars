@@ -69,7 +69,7 @@ class CalculatorTestCase(unittest.TestCase):
         for string, expected in test_data:
 
             actual_result: float = Calculator().evaluate(string)
-
+            # pylint: disable=R0801
             print_log(string=string,
                       expected=expected,
                       actual_result=actual_result)
@@ -80,3 +80,4 @@ class CalculatorTestCase(unittest.TestCase):
 
                 self.assertEqual(expected,
                                  actual_result)
+            # pylint: enable=R0801

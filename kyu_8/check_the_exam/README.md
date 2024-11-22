@@ -19,4 +19,4 @@ If the score < 0, return 0.
 > checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 ```
 
-[Source](https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/python)
+[Source](https://www.codewars.com/kata/5a3dd29055519e23ec000074)

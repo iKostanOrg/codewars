@@ -10,7 +10,7 @@ def sol_equa(n: int) -> list:
     Finds all integers x, y (x >= 0, y >= 0)
     solutions of a diophantine equation of the form x2 - 4 * y2 = n
     """
-    result = []
+    result: list = []
 
     start = n//2
     if n % 2 != 0:

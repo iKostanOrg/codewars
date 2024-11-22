@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.pokemon_damage_calculator.calculate_damage import calculate_damage
+from kyu_6.pokemon_damage_calculator.calculate_damage \
+    import calculate_damage
 
 
 @allure.epic('6 kyu')
@@ -29,7 +30,7 @@ from kyu_6.pokemon_damage_calculator.calculate_damage import calculate_damage
             'BASIC LANGUAGE FEATURES',
             'FUNDAMENTALS')
 @allure.link(
-    url='https://www.codewars.com/kata/536e9a7973130a06eb000e9f/train/python',
+    url='https://www.codewars.com/kata/536e9a7973130a06eb000e9f',
     name='Source/Kata')
 class CalculateDamageTestCase(unittest.TestCase):
     """
@@ -54,15 +55,14 @@ class CalculateDamageTestCase(unittest.TestCase):
             " formula (not the actual one from the game): "
             "damage = 50 * (attack / defense) * effectiveness</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (("fire", "water", 100, 100), 25),
             (("grass", "water", 100, 100), 100),
             (("electric", "fire", 100, 100), 50),
             (("grass", "electric", 57, 19), 150),
             (("grass", "water", 40, 40), 100),
             (("grass", "fire", 35, 5), 175),
-            (("fire", "electric", 10, 2), 250),
-        ]
+            (("fire", "electric", 10, 2), 250))
 
         for test_data, expected in test_data:
             your_type = test_data[0]

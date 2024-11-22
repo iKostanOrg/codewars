@@ -19,4 +19,4 @@ will return
 Letter frequency analysis is often used to analyse simple substitution
 cipher texts like those created by the Caesar cipher.
 
-[Source](https://www.codewars.com/kata/53e895e28f9e66a56900011a/train/python)
+[Source](https://www.codewars.com/kata/53e895e28f9e66a56900011a)

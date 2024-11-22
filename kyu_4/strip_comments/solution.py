@@ -1,6 +1,5 @@
 """
 Solution for -> Strip Comments
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

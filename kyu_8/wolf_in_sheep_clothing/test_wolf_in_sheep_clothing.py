@@ -9,7 +9,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.wolf_in_sheep_clothing.wolf_in_sheep_clothing import warn_the_sheep
+from kyu_8.wolf_in_sheep_clothing.wolf_in_sheep_clothing \
+    import warn_the_sheep
 
 
 # pylint: disable=R0801
@@ -23,7 +24,7 @@ from kyu_8.wolf_in_sheep_clothing.wolf_in_sheep_clothing import warn_the_sheep
             'ARRAYS',
             'LOOPS',
             'CONTROL FLOW')
-@allure.link(url='https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/python',
+@allure.link(url='https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15',
              name='Source/Kata')
 # pylint: enable=R0801
 class WarnTheSheepTestCase(unittest.TestCase):
@@ -37,20 +38,22 @@ class WarnTheSheepTestCase(unittest.TestCase):
         return "Pls go away and stop eating my sheep".
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Wolf at the beginning of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
+        lst: list = ['wolf', 'sheep', 'sheep',
+                     'sheep', 'sheep', 'sheep',
+                     'sheep']
 
-        lst = ['wolf', 'sheep', 'sheep',
-               'sheep', 'sheep', 'sheep',
-               'sheep']
-        expected = 'Oi! Sheep number 6! You are ' \
-                   'about to be eaten by a wolf!'
+        expected: str = 'Oi! Sheep number 6! You are ' \
+                        'about to be eaten by a wolf!'
 
         print_log(list=lst, expected=expected)
         self.assertEqual(warn_the_sheep(lst), expected)
@@ -61,21 +64,23 @@ class WarnTheSheepTestCase(unittest.TestCase):
         return "Pls go away and stop eating my sheep".
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Wolf in the middle of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         # 1
-        lst = ['sheep', 'sheep', 'sheep',
-               'sheep', 'sheep', 'wolf',
-               'sheep', 'sheep']
-        expected = 'Oi! Sheep number 2! You are about ' \
-                   'to be eaten by a wolf!'
+        lst: list = ['sheep', 'sheep', 'sheep',
+                     'sheep', 'sheep', 'wolf',
+                     'sheep', 'sheep']
+
+        expected: str = 'Oi! Sheep number 2! You are about ' \
+                        'to be eaten by a wolf!'
 
         print_log(list=lst, expected=expected)
         self.assertEqual(warn_the_sheep(lst), expected)
@@ -84,6 +89,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
         lst = ['sheep', 'wolf', 'sheep',
                'sheep', 'sheep', 'sheep',
                'sheep']
+
         expected = 'Oi! Sheep number 5! You are ' \
                    'about to be eaten by a wolf!'
 
@@ -92,6 +98,7 @@ class WarnTheSheepTestCase(unittest.TestCase):
 
         # 3
         lst = ['sheep', 'wolf', 'sheep']
+
         expected = 'Oi! Sheep number 1! You are ' \
                    'about to be eaten by a wolf!'
 
@@ -105,17 +112,17 @@ class WarnTheSheepTestCase(unittest.TestCase):
         where N is the sheep's position in the queue.
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("Wolf at the end of the queue")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
-        lst = ['sheep', 'sheep', 'wolf']
-        expected = 'Pls go away and stop eating my sheep'
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
+        lst: list = ['sheep', 'sheep', 'wolf']
+        expected: str = 'Pls go away and stop eating my sheep'
         print_log(list=lst, expected=expected)
         self.assertEqual(warn_the_sheep(lst), expected)

@@ -1,15 +1,19 @@
-#  Created by Egor Kostan.
-#  GitHub: https://github.com/ikostan
-#  LinkedIn: https://www.linkedin.com/in/egor-kostan/
+"""
+Test for -> Surface Area and Volume of a Box
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
 
 # FUNDAMENTALS GEOMETRY ALGEBRA MATHEMATICS ALGORITHMS
 
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.surface_area_and_volume_of_box.get_size import get_size
+from kyu_8.surface_area_and_volume_of_box.get_size \
+    import get_size
 
 
+# pylint: disable=R0801
 @allure.epic('8 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Math")
@@ -21,8 +25,9 @@ from kyu_8.surface_area_and_volume_of_box.get_size import get_size
             'ALGEBRA',
             'MATHEMATICS',
             'ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/565f5825379664a26b00007c/train/python',
+@allure.link(url='https://www.codewars.com/kata/565f5825379664a26b00007c',
              name='Source/Kata')
+# pylint: enable=R0801
 class GetSizeTestCase(unittest.TestCase):
     """
     Testing get_size function
@@ -33,24 +38,27 @@ class GetSizeTestCase(unittest.TestCase):
         Testing get_size function with various inputs
         :return:
         """
-
+        # pylint: disable=R0801
         allure.dynamic.title("get_size function tests")
         allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html('<h3>Codewars badge:</h3>'
-                                        '<img src="https://www.codewars.com/users/myFirstCode'
-                                        '/badges/large">'
-                                        '<h3>Test Description:</h3>'
-                                        "<p></p>")
-
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p></p>")
+        # pylint: enable=R0801
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 4, 2, 6
-            expected = [88, 48]
+            expected: list = [88, 48]
 
             print_log(w=w,
                       h=h,
                       d=d,
                       expected=expected)
-            self.assertEqual(get_size(w, h, d), expected)
+
+            self.assertEqual(get_size(w, h, d),
+                             expected)
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 1, 1, 1
@@ -60,7 +68,9 @@ class GetSizeTestCase(unittest.TestCase):
                       h=h,
                       d=d,
                       expected=expected)
-            self.assertEqual(get_size(w, h, d), expected)
+
+            self.assertEqual(get_size(w, h, d),
+                             expected)
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 1, 2, 1
@@ -70,7 +80,9 @@ class GetSizeTestCase(unittest.TestCase):
                       h=h,
                       d=d,
                       expected=expected)
-            self.assertEqual(get_size(w, h, d), expected)
+
+            self.assertEqual(get_size(w, h, d),
+                             expected)
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 1, 2, 2
@@ -80,7 +92,9 @@ class GetSizeTestCase(unittest.TestCase):
                       h=h,
                       d=d,
                       expected=expected)
-            self.assertEqual(get_size(w, h, d), expected)
+
+            self.assertEqual(get_size(w, h, d),
+                             expected)
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 10, 10, 10
@@ -90,4 +104,6 @@ class GetSizeTestCase(unittest.TestCase):
                       h=h,
                       d=d,
                       expected=expected)
-            self.assertEqual(get_size(w, h, d), expected)
+
+            self.assertEqual(get_size(w, h, d),
+                             expected)

@@ -11,6 +11,7 @@ import allure
 from utils.log_func import print_log
 from kyu_6.format_string_of_names.solution import namelist
 
+
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
@@ -23,13 +24,14 @@ from kyu_6.format_string_of_names.solution import namelist
             'FORMATTING',
             'ALGORITHMS')
 @allure.link(
-    url='https://www.codewars.com/kata/53368a47e38700bd8300030d/train/python',
+    url='https://www.codewars.com/kata/53368a47e38700bd8300030d',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class NamelistTestCase(unittest.TestCase):
     """
     Testing namelist function
     """
+
     def test_namelist(self):
         """
         Test namelist
@@ -56,7 +58,7 @@ class NamelistTestCase(unittest.TestCase):
             "by commas except for the last two names, which should be "
             "separated by an ampersand.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'},
               {'name': 'Homer'}, {'name': 'Marge'}],
              'Bart, Lisa, Maggie, Homer & Marge',
@@ -72,11 +74,10 @@ class NamelistTestCase(unittest.TestCase):
              "Wrong output for a single name"),
             ([],
              '',
-             "Must work with no names"),
-        )
+             "Must work with no names"))
 
         for names, expected, message in test_data:
-            result = namelist(names)
+            result: str = namelist(names)
             print_log(names=names,
                       expected=expected,
                       result=result,

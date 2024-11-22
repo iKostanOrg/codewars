@@ -14,6 +14,7 @@ from utils.log_func import print_log
 from kyu_2.evaluate_mathematical_expression.evaluate import calc
 
 
+# pylint: disable=R0801
 @allure.epic('2 kyu')
 @allure.parent_suite('Proficient')
 @allure.suite("Algorithms")
@@ -31,6 +32,7 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
 @allure.link(
     url='https://www.codewars.com/kata/52a78825cdfc2cfc87000005',
     name='Source/Kata')
+# pylint: enable=R0801
 class CalcTestCase(unittest.TestCase):
     """
     Testing calc method
@@ -42,6 +44,7 @@ class CalcTestCase(unittest.TestCase):
         Given a mathematical expression as a string you
         must return the result as a number.
         """
+        # pylint: disable=R0801
         allure.dynamic.title("Testing calc function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -53,7 +56,7 @@ class CalcTestCase(unittest.TestCase):
             "Given a mathematical expression as a string you must "
             "return the result as a number."
             "</p>")
-
+        # pylint: enable=R0801
         test_data: tuple = (
             ["1 + 1", 2],
             ["8/16", 0.5],
@@ -75,8 +78,7 @@ class CalcTestCase(unittest.TestCase):
             ['-(-93) / (-36 + 26 + -(18)) + (-7 * -(((-(-67 + -95)))) + -9)', 1121.6785714285713],
             ['-(-23) + (-4 * -13 + -(1)) - (-30 / (((-(57 + -20)))) + 85)', -11.810810810810807],
             ['(72) / (-82 - -93 * -(88)) + (-18 - -(((-(60 * 97)))) + -79)', -5917.00871037987],
-            ['-(77) / (7 * -76 + (59)) + (98 / -(((-(-74 - -47)))) / -5)', 0.8887166236003445]
-        )
+            ['-(77) / (7 * -76 + (59)) + (98 / -(((-(-74 - -47)))) / -5)', 0.8887166236003445])
 
         for string, expected in test_data:
 
@@ -90,3 +92,7 @@ class CalcTestCase(unittest.TestCase):
                              f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)
+
+
+if __name__ == '__main__':
+    unittest.main()

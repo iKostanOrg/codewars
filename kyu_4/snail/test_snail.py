@@ -25,7 +25,7 @@ from kyu_4.snail.snail_sort import snail
 @allure.tag('ALGORITHMS',
             'ARRAYS',
             'LISTS')
-@allure.link(url='https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/python',
+@allure.link(url='https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1',
              name='Source/Kata')
 class SnailTestCase(unittest.TestCase):
     """
@@ -53,7 +53,7 @@ class SnailTestCase(unittest.TestCase):
             " middle element, "
             "traveling clockwise</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ([[]], []),
             ([[1]], [1]),
             ([[1, 2, 3],
@@ -78,8 +78,7 @@ class SnailTestCase(unittest.TestCase):
               215, 121, 825, 295, 741, 124, 1, 437, 987,
               431, 949, 675, 466, 182, 132, 846, 200, 383,
               122, 371, 179, 76, 684, 268, 480, 256, 168,
-              805, 672, 169, 173, 458, 568, 92, 107, 552, 884])
-        )
+              805, 672, 169, 173, 458, 568, 92, 107, 552, 884]))
 
         for snail_map, expected in test_data:
             actual_result: list = snail(snail_map)

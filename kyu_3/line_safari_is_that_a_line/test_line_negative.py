@@ -73,11 +73,7 @@ class LineNegativeTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         expected: bool = False
         for grid in test_data:
-
             actual_result: bool = line(grid)
-            for row in grid:
-                print(row)
-
             print_log(expected=expected,
                       actual_result=actual_result)
 

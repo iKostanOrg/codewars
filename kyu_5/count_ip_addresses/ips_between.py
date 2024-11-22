@@ -20,10 +20,10 @@ def ips_between(start: str, end: str) -> int:
     :return: int
     """
 
-    ip_start = [int(a) for a in start.split('.')]
-    ip_end = [int(b) for b in end.split('.')]
+    ip_start: list = [int(a) for a in start.split('.')]
+    ip_end: list = [int(b) for b in end.split('.')]
     ips = zip(ip_start, ip_end)
-    ips_range = [0, 0, 0, 0]
+    ips_range: list = [0, 0, 0, 0]
 
     for ip_id, ip in enumerate(ips):
         calc_ip_range(ip, ip_id, ips_range)
@@ -55,7 +55,7 @@ def calc_result(ips_range) -> int:
     :param ips_range:
     :return: int
     """
-    result = 1
+    result: int = 1
     for i in ips_range:
         if i != 0:
             result *= i

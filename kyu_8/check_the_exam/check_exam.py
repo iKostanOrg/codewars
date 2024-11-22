@@ -1,12 +1,11 @@
 """
-Check the exam
-
+Solution for -> Check the exam
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
 
-def check_exam(arr1, arr2):
+def check_exam(arr1: list, arr2: list) -> int:
     """
     The first input array contains the correct answers
     to an exam, like ["a", "a", "b", "d"]. The second
@@ -19,12 +18,11 @@ def check_exam(arr1, arr2):
 
     If the score < 0, return 0.
 
-    :param arr1:
-    :param arr2:
-    :return:
+    :param arr1: list
+    :param arr2: list
+    :return: int
     """
-
-    results = list()
+    results: list = []
     for char in zip(arr1, arr2):
         char_processor(char, results)
 
@@ -32,15 +30,13 @@ def check_exam(arr1, arr2):
     return 0 if total < 0 else total
 
 
-def char_processor(char: str,
-                   results: list) -> None:
+def char_processor(char: tuple, results: list) -> None:
     """
     Processing chars based on specified rule
-    :param char:
-    :param results:
-    :return:
+    :param char: str
+    :param results: list
+    :return: None
     """
-
     if char[1] == '':
         results.append(0)
     elif char[0] == char[1]:

@@ -1,6 +1,5 @@
 """
 Solution for -> Strings Mix
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -56,7 +55,7 @@ def sort_results(results: list) -> list:
     :param results:
     :return:
     """
-    results: list = sorted(results)
+    results = sorted(results)
     is_sorted: bool = False
 
     while not is_sorted:

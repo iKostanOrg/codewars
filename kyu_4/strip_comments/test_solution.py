@@ -1,6 +1,5 @@
 """
 Test for -> Strip Comments
-
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -21,7 +20,7 @@ from kyu_4.strip_comments.solution import solution
 @allure.story("Strip Comments")
 @allure.tag('ALGORITHMS',
             'STRINGS')
-@allure.link(url='https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python',
+@allure.link(url='https://www.codewars.com/kata/51c8e37cee245da6b40000bd',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
     """
@@ -49,14 +48,13 @@ class SolutionTestCase(unittest.TestCase):
             "of a set of comment markers passed in. Any whitespace at "
             "the end of the line should also be stripped out.</p>")
         # pylint: enable-msg=R0801
-        test_data = (
+        test_data: tuple = (
             ("apples, pears # and bananas\ngrapes\nbananas !apples",
              ["#", "!"],
              "apples, pears\ngrapes\nbananas"),
             ("a #b\nc\nd $e f g",
              ["#", "$"],
-             "a\nc\nd"),
-        )
+             "a\nc\nd"))
 
         for string, markers, expected in test_data:
             actual_result = solution(string, markers)
