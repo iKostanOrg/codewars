@@ -1,5 +1,5 @@
-kyu\_2.kyu\_2 package
-=====================
+kyu\_2 package
+==============
 
 Subpackages
 -----------
@@ -7,8 +7,8 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   kyu_2.kyu_2.readme
-   kyu_2.kyu_2.evaluate_mathematical_expression.module
+   kyu_2.readme
+   kyu_2.evaluate_mathematical_expression.module
 
 Module contents
 ---------------
