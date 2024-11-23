@@ -14,7 +14,7 @@ Welcome to Python3 solutions for codewars problems's documentation!
    kyu_2/kyu_2
    kyu_3/kyu_3
    kyu_4/kyu_4
-   kyu_5
+   kyu_5/kyu_5
    kyu_6
    kyu_7
    kyu_8
