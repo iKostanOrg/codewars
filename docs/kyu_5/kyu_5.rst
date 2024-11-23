@@ -13,7 +13,7 @@ Subpackages
    kyu_5.did_i_finish_my_sudoku.module
    kyu_5.diophantine_equation.module
    kyu_5.directions_reduction.module
-   kyu_5.extract_the_domain_name_from_url
+   kyu_5.extract_the_domain_name_from_url.module
    kyu_5.fibonacci_streaming
    kyu_5.find_the_safest_places_in_town
    kyu_5.find_the_smallest
