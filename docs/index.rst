@@ -11,7 +11,7 @@ Welcome to Python3 solutions for codewars problems's documentation!
    :caption: Contents:
 
    readme
-   kyu_2
+   kyu_2.kyu_2
    kyu_3
    kyu_4
    kyu_5
