@@ -16,7 +16,7 @@ Subpackages
    kyu_5.extract_the_domain_name_from_url.module
    kyu_5.fibonacci_streaming.module
    kyu_5.find_the_safest_places_in_town.module
-   kyu_5.find_the_smallest
+   kyu_5.find_the_smallest.module
    kyu_5.first_non_repeating_character
    kyu_5.flatten
    kyu_5.human_readable_time
