@@ -1,22 +1,22 @@
-kyu\_2.kyu\_2.evaluate\_mathematical\_expression package
-========================================================
+kyu\_2.evaluate\_mathematical\_expression package
+=================================================
 
 Submodules
 ----------
 
-kyu\_2.kyu\_2.evaluate\_mathematical\_expression.evaluate module
-----------------------------------------------------------------
+kyu\_2.evaluate\_mathematical\_expression.evaluate module
+---------------------------------------------------------
 
-.. automodule:: kyu_2.kyu_2.evaluate_mathematical_expression.evaluate
+.. automodule:: kyu_2.evaluate_mathematical_expression.evaluate
    :members:
    :undoc-members:
    :show-inheritance:
    :private-members:
 
-kyu\_2.kyu\_2.evaluate\_mathematical\_expression.test\_evaluate module
-----------------------------------------------------------------------
+kyu\_2.evaluate\_mathematical\_expression.test\_evaluate module
+---------------------------------------------------------------
 
-.. automodule:: kyu_2.kyu_2.evaluate_mathematical_expression.test_evaluate
+.. automodule:: kyu_2.evaluate_mathematical_expression.test_evaluate
    :members:
    :undoc-members:
    :show-inheritance:
@@ -25,7 +25,7 @@ kyu\_2.kyu\_2.evaluate\_mathematical\_expression.test\_evaluate module
 Module contents
 ---------------
 
-.. automodule:: kyu_2.kyu_2.evaluate_mathematical_expression
+.. automodule:: kyu_2.evaluate_mathematical_expression
    :members:
    :undoc-members:
    :show-inheritance:
