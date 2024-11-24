@@ -12,5 +12,17 @@ def parts_sums(ls: list) -> list:
     :param ls:
     :return:
     """
+    # empty list should return 0
+    if not ls:
+        return [0]
+
     result: list = []
+    ls_sum: int = sum(ls)
+    result.append(ls_sum)
+
+    for num in ls:
+        n = ls_sum - num
+        result.append(n)
+        ls_sum = n
+
     return result
