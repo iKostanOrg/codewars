@@ -56,6 +56,5 @@ rank - the harder the kata the faster you advance.
 | 37  | [Array.diff](https://www.codewars.com/kata/523f5d21c841566fde000009)                                                       | [Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/array_diff)                         |
 | 38  | [Scheduling](https://www.codewars.com/kata/550cc572b9e7b563be00054f)                                                       | [Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/scheduling )                        |
 | 39  | [Sums of Parts](https://www.codewars.com/kata/5ce399e0047a45001c853c2b)                                                    | [Solution](https://github.com/ikostan/codewars/tree/master/kyu_6/sums_of_parts )                     |
-
 <!-- markdownlint-enable MD013 -->
 [Source](https://www.codewars.com/about)
