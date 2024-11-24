@@ -12,4 +12,5 @@ def parts_sums(ls: list) -> list:
     :param ls:
     :return:
     """
-    pass
+    result: list = []
+    return result
