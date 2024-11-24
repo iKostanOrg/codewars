@@ -26,13 +26,13 @@ from kyu_6.scheduling.solution import shortest_job_first
 # pylint: enable-msg=R0801
 class SJFTestCase(unittest.TestCase):
     """
-    Testing 'shortest_job_first(' function
+    Testing 'shortest_job_first' function
     """
 
     # pylint: disable-msg=R0801
     def test_sjf(self):
         """
-        Testing 'shortest_job_first(' function with various test data
+        Testing 'shortest_job_first' function with various test data
         :return:
         """
         allure.dynamic.title("Testing 'shortest_job_first(' function")
