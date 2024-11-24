@@ -21,8 +21,8 @@ def parts_sums(input_ls: list) -> list:
     result.append(ls_sum)
 
     for num in input_ls:
-        n = ls_sum - num
-        result.append(n)
-        ls_sum = n
+        current_sum: int = ls_sum - num
+        result.append(current_sum)
+        ls_sum = current_sum
 
     return result
