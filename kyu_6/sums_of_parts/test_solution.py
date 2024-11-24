@@ -58,14 +58,14 @@ class SJFTestCase(unittest.TestCase):
              [10037855, 9293730, 9292795, 9292388, 9291934, 9291504, 9291414,
               9291270, 2581057, 2580168, 2579358, 0]))
 
-        for ls, expected in test_data:
-            actual_result = parts_sums(ls)
+        for input_ls, expected in test_data:
+            actual_result = parts_sums(input_ls)
             # pylint: disable-msg=R0801
-            with allure.step(f"Enter a list ls ({ls}) and verify the "
+            with allure.step(f"Enter a list ls ({input_ls}) and verify the "
                              f"expected output ({expected}) vs "
                              f"actual result ({actual_result})"):
 
-                print_log(ls=ls,
+                print_log(input_ls=input_ls,
                           expected=expected,
                           result=actual_result)
 
