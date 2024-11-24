@@ -5,22 +5,22 @@ GitHub: https://github.com/ikostan
 """
 
 
-def parts_sums(ls: list) -> list:
+def parts_sums(input_ls: list) -> list:
     """
-    The function parts_sums will take as parameter a list ls
+    The function parts_sums will take as parameter a list input_ls
     and return a list of the sums of its parts.
-    :param ls:
+    :param input_ls:
     :return:
     """
     # empty list should return 0
-    if not ls:
+    if not input_ls:
         return [0]
 
     result: list = []
-    ls_sum: int = sum(ls)
+    ls_sum: int = sum(input_ls)
     result.append(ls_sum)
 
-    for num in ls:
+    for num in input_ls:
         n = ls_sum - num
         result.append(n)
         ls_sum = n
