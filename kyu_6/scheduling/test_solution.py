@@ -4,7 +4,7 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-# Scheduling Queues Algorithms
+# SCHEDULING QUEUES ALGORITHMS
 
 import unittest
 import allure
@@ -19,7 +19,7 @@ from kyu_6.scheduling.solution import shortest_job_first
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Scheduling (Shortest Job First or SJF)')
-@allure.tag('Scheduling', 'Queues', 'Algorithms')
+@allure.tag('SCHEDULING', 'QUEUES', 'ALGORITHMS')
 @allure.link(
     url='https://www.codewars.com/kata/550cc572b9e7b563be00054f',
     name='Source/Kata')
