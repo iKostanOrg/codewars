@@ -1,6 +1,7 @@
+---
 name: Main Build Pipeline
 
-on:
+on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - master
@@ -9,8 +10,8 @@ jobs:
   markdown:
     name: Markdown Lint
     uses: iKostanOrg/codewars/.github/workflows/markdown_lint.yml@master
-  pyint:
-    name: PyLint
+  pylint:
+    name: Py Lint
     uses: iKostanOrg/codewars/.github/workflows/pylint.yml@master
   mypy:
     name: MyPy Lint
@@ -18,3 +19,45 @@ jobs:
   flake8:
     name: Flake8 Lint
     uses: iKostanOrg/codewars/.github/workflows/flake8.yml@master
+  yamllint:
+    name: YAML Lint
+    uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
+  pytest:
+    name: Unitest with pytest
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+    uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+  codecov:
+    name: Codecov GitHub Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codecov.yml@master
+    # Why is Codecov upload step in GitHub Actions not finding the token?
+    # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
+    secrets:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  codeclimate:
+    name: Codeclimate Github Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
+    secrets:
+      cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
+  codeql:
+    name: CodeQL for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: ikostan/pico/.github/workflows/codeql.yml@master
+  snyk:
+    name: Snyk for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: ikostan/pico/.github/workflows/snyk.yml@master
+    secrets:
+      snyk_token: ${{ secrets.SNYK_TOKEN }}

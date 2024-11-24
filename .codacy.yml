@@ -1,34 +1,34 @@
 ---
 engines:
  duplication:
-   enabled: true
+  enabled: true
  metric:
-   enabled: true
+  enabled: true
  coverage:
-   enabled: true
+  enabled: true
  prospector:
   enabled: true
  pylint:
   enabled: true
   python_version: 3.7
 languages:
-  python:
-    extensions:
-      - '.py'
+ python:
+  extensions:
+   - '.py'
   markup:
-    extensions:
-     - '.md'
+   extensions:
+    - '.md'
 exclude_paths:
-  - 'docs/**'
-  - 'allure-report/**'
-  - 'img/**'
-  - '.circleci/**'
-  - '.circleci/**'
-  - '.github/**'
-  - '*__init__.py'
-  - 'rocro.yml'
-  - 'requirements.txt'
-  - 'pytest.ini'
-  - '.travis.yml'
-  - '.gitignore'
-  - '.gitattributes'
+ - 'docs/**'
+ - 'allure-report/**'
+ - 'img/**'
+ - '.circleci/**'
+ - '.circleci/**'
+ - '.github/**'
+ - '*__init__.py'
+ - 'rocro.yml'
+ - 'requirements.txt'
+ - 'pytest.ini'
+ - '.travis.yml'
+ - '.gitignore'
+ - '.gitattributes'

@@ -58,8 +58,6 @@ def bracket_start(strings: list) -> int:
     :return: int
     """
     a: int = ([i for i, strg in enumerate(strings) if strg == '('])[-1]
-    b: int = ''.join(strings).rindex('(')
-    print(f"str: {strings}, a: {a}, b: {b}")
     return a
 
 

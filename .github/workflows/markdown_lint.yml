@@ -1,6 +1,7 @@
+---
 name: 'Markdown Lint'
 
-on:
+on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'Documentation'
@@ -14,16 +15,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout v4
-      uses: actions/checkout@v4
-    #- name: Install markdownlint
-    #  run: |
-    #    npm install markdownlint-cli2 --global
-    #    markdownlint-cli2 "**/*.md" --config ".markdownlint-cli2.yaml"
-    - name: markdownlint-cli2-action v16
-      uses: DavidAnson/markdownlint-cli2-action@v17
-      with:
-       config: '.markdownlint-cli2.yaml'
-       fix: true
-       globs: '**/*.md'
-       separator: ','
+      - name: Checkout v4
+        uses: actions/checkout@v4
+      - name: markdownlint-cli2-action v16
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          config: '.markdownlint-cli2.yaml'
+          fix: true
+          globs: '**/*.md'
+          separator: ','

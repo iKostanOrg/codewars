@@ -4,17 +4,17 @@
 
 [![Main Build Pipeline](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml/badge.svg)](https://github.com/iKostanOrg/codewars/actions/workflows/lint_test_build_pipeline.yml)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/iKostanOrg/codewars)
-[![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/codewars/badge/?version=latest)](https://codewars.readthedocs.io/?badge=latest)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f14135ff-6f3e-450c-b391-5a677b8f8d8a/deploy-status)](https://app.netlify.com/sites/codewars-allure-report/deploys)
 [![CircleCI](https://circleci.com/gh/iKostanOrg/codewars.svg?style=svg)](https://circleci.com/gh/iKostanOrg/codewars)
 [![codecov](https://codecov.io/gh/iKostanOrg/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/iKostanOrg/codewars)
 [![CodeFactor](https://www.codefactor.io/repository/github/ikostanorg/codewars/badge)](https://www.codefactor.io/repository/github/ikostanorg/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/647e16e648f748a28fce36b4895f7729)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iKostanOrg/codewars&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/647e16e648f748a28fce36b4895f7729)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&utm_medium=referral&utm_content=iKostanOrg/codewars&utm_campaign=Badge_Coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024)
-[![Known Vulnerabilities](https://snyk.io/test/github/iKostanOrg/codewars/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/iKostanOrg/codewars?targetFile=requirements.txt)
+![GitHub repo size](https://img.shields.io/github/repo-size/iKostanOrg/codewars?color=green)
+![GitHub last commit](https://img.shields.io/github/last-commit/iKostanOrg/codewars?color=green)
 ![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
 
 ## About Codewars
