@@ -44,6 +44,7 @@ Subpackages
    kyu_6.string_subpattern_recognition_3
    kyu_6.string_transformer
    kyu_6.sum_of_digits_digital_root
+   kyu_6.sums_of_parts
    kyu_6.unique_in_order
    kyu_6.vasya_clerk
    kyu_6.who_likes_it
