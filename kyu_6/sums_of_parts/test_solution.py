@@ -26,13 +26,13 @@ from kyu_6.sums_of_parts.solution import parts_sums
     url='https://www.codewars.com/kata/5ce399e0047a45001c853c2b',
     name='Source/Kata')
 # pylint: enable-msg=R0801
-class SJFTestCase(unittest.TestCase):
+class PartsSumTestCase(unittest.TestCase):
     """
     Testing 'parts_sums' function
     """
 
     # pylint: disable-msg=R0801
-    def test_sjf(self):
+    def test_parts_sum(self):
         """
         Testing 'parts_sums' function with various test data
         :return:
