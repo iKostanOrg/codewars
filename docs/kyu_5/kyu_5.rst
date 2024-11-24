@@ -19,8 +19,8 @@ Subpackages
    kyu_5.find_the_smallest.module
    kyu_5.first_non_repeating_character.module
    kyu_5.flatten.module
-   kyu_5.human_readable_time
-   kyu_5.integers_recreation_one
+   kyu_5.human_readable_time.module
+   kyu_5.integers_recreation_one.module
    kyu_5.josephus_survivor
    kyu_5.master_your_primes_sieve_with_memoization
    kyu_5.moving_zeros_to_the_end
