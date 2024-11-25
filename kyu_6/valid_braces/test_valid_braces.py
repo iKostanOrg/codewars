@@ -64,7 +64,10 @@ class ValidBracesTestCase(unittest.TestCase):
                 ("(({{[[]]}}))", True),
                 ("(((({{", False),
                 (")(}{][", False),
-                ("())({}}{()][][", False)
+                ("())({}}{()][][", False),
+                ("{}()[]", True),
+                ("([}{])", False),
+                ("{}({})[]", True),
             )
 
             # pylint: enable=line-too-long
