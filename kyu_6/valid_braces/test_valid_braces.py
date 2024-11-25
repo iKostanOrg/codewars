@@ -1,5 +1,5 @@
 """
-Test for -> Unique In Order
+Test for -> Valid Braces
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,7 +9,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.valid_braces.valid_braces import valid_braces, BRACES
+from kyu_6.valid_braces.valid_braces import valid_braces
 
 
 # pylint: disable-msg=R0801
@@ -18,7 +18,7 @@ from kyu_6.valid_braces.valid_braces import valid_braces, BRACES
 @allure.suite("Fundamentals")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
-@allure.story('Unique In Order')
+@allure.story('Valid Braces')
 @allure.tag('FUNDAMENTALS',
             'ALGORITHMS')
 @allure.link(
@@ -69,10 +69,5 @@ class ValidBracesTestCase(unittest.TestCase):
 
             # pylint: enable=line-too-long
             for string, expected in data:
-
-                # Set all flags to False:
-                for key, value in BRACES.items():
-                    BRACES[key][2] = False
-
                 print_log(string=string, expected=expected)
                 self.assertEqual(expected, valid_braces(string))
