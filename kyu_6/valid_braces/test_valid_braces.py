@@ -9,7 +9,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.valid_braces.valid_braces import valid_braces
+from kyu_6.valid_braces.valid_braces import valid_braces, BRACES
 
 
 # pylint: disable-msg=R0801
@@ -66,7 +66,13 @@ class ValidBracesTestCase(unittest.TestCase):
                 (")(}{][", False),
                 ("())({}}{()][][", False)
             )
+
             # pylint: enable=line-too-long
             for string, expected in data:
+
+                # Set all flags to False:
+                for key, value in BRACES.items():
+                    BRACES[key][2] = False
+
                 print_log(string=string, expected=expected)
                 self.assertEqual(expected, valid_braces(string))
