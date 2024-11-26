@@ -38,8 +38,9 @@ def valid_braces(string: str) -> bool:
         # not be any closing brackets
         if index < (len_str // 2) and char in CLOSING:
             return False
+
         # next two brackets are matching pair
-        elif BRACES[char] == string[index + 1]:
+        if BRACES[char] == string[index + 1]:
             index += 2
         # matching pair consist of brackets in each
         # half of the string
