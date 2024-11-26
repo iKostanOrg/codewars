@@ -15,6 +15,7 @@ BRACES: dict = {
 
 CLOSING: str = ')}]'
 
+
 def valid_braces(string: str) -> bool:
     """
     A function that takes a string of braces, and determines if the order
