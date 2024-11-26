@@ -13,6 +13,7 @@ BRACES: dict = {
     '}': '{',
 }
 
+CLOSING: str = ')}]'
 
 def valid_braces(string: str) -> bool:
     """
@@ -28,13 +29,23 @@ def valid_braces(string: str) -> bool:
     if len_str % 2 > 0:
         return False
 
-    # calculate indexes in order to process matching pairs
-    a, b = (len_str // 2) - 1, len_str // 2
-    while a > -1 and b < len_str:
-        # Pair does not match, fails the test
-        if BRACES[string[a]] != string[b]:
+    index: int = 0
+    while index < len(string) - 1:
+        char = string[index]
+
+        # in the first half of the string should
+        # not be any closing brackets
+        if index < (len_str // 2) and char in CLOSING:
             return False
-        a -= 1
-        b += 1
+        # next two brackets are matching pair
+        elif BRACES[char] == string[index + 1]:
+            index += 2
+        # matching pair consist of brackets in each
+        # half of the string
+        elif BRACES[char] == string[(index + 1) * -1]:
+            index += 1
+        # no matching pair
+        else:
+            return False
 
     return True
