@@ -72,5 +72,6 @@ class ValidBracesTestCase(unittest.TestCase):
 
             # pylint: enable=line-too-long
             for string, expected in data:
-                print_log(string=string, expected=expected)
-                self.assertEqual(expected, valid_braces(string))
+                actual = valid_braces(string)
+                print_log(string=string, expected=expected, actual=actual)
+                self.assertEqual(expected, actual)
