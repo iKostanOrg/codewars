@@ -21,8 +21,8 @@ def valid_braces(string: str) -> bool:
     A function that takes a string of braces, and determines if the order
     of the braces is valid. It should return true if the string is valid,
     and false if it's invalid.
-    :param string:
-    :return:
+    :param string: a string consist of brackets
+    :return: boolean, indicates if input string is valid
     """
     # Calc length of the input string
     len_str: int = len(string)
