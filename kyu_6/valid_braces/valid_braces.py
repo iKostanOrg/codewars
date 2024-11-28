@@ -24,18 +24,12 @@ def valid_braces(string: str) -> bool:
     :param string: a string consist of brackets
     :return: boolean, indicates if input string is valid
     """
-    # Calc length of the input string
-    len_str: int = len(string)
-    # If the length is not even number -> return False
-    if len_str % 2 > 0:
-        return False
-
     index: int = 0
     while index < len(string) - 1:
-        char = string[index]
+        char: str = string[index]
         # in the first half of the string a new pair
         # should not be starting from closing brackets
-        if index < (len_str // 2) and char in CLOSING:
+        if index < (len(string) // 2) and char in CLOSING:
             return False
         # neighbor two brackets are matching pair
         if BRACES[char] == string[index + 1]:
