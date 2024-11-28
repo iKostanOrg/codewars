@@ -34,7 +34,7 @@ def valid_braces(string: str) -> bool:
     return True
 
 
-def validate_next_pair(string: str, index: int) -> int | None:
+def validate_next_pair(string: str, index: int) -> None | int:
     """
     Check if next pair of brackets is valid
     :param string: string of brackets
