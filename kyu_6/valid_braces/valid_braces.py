@@ -26,20 +26,37 @@ def valid_braces(string: str) -> bool:
     """
     index: int = 0
     while index < len(string) - 1:
-        # in the first half of the string a new pair
-        # should not be starting from closing brackets
-        if index < (len(string) // 2) and string[index] in CLOSING:
+        index = validate_next_pair(string, index)
+        if not index:
             return False
-        # neighbor two brackets are matching pair
-        if BRACES[string[index]] == string[index + 1]:
-            index += 2
-            continue
-        # matching pair consist of brackets
-        # in each half of the string
-        if BRACES[string[index]] == string[(index + 1) * -1]:
-            index += 1
-            continue
-        # no matching pair
-        return False
 
     return True
+
+
+def validate_next_pair(string: str, index: int) -> [int, None]:
+    """
+    Check if next pair of brackets is valid
+    :param string: string of brackets
+    :param index: current index to validate
+    :return: next index or None if no matching brackets
+    """
+    char: str = string[index]
+
+    # in the first half of the string a new pair
+    # should not be starting from closing brackets
+    if index < (len(string) // 2) and char in CLOSING:
+        return None
+
+    # neighbor two brackets are matching pair
+    if BRACES[char] == string[index + 1]:
+        index += 2
+        return index
+
+    # matching pair consist of brackets
+    # in each half of the string
+    if BRACES[char] == string[(index + 1) * -1]:
+        index += 1
+        return index
+
+    # no matching pair found
+    return None
