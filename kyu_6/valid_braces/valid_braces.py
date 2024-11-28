@@ -40,12 +40,13 @@ def valid_braces(string: str) -> bool:
         # neighbor two brackets are matching pair
         if BRACES[char] == string[index + 1]:
             index += 2
+            continue
         # matching pair consist of brackets
         # in each half of the string
-        elif BRACES[char] == string[(index + 1) * -1]:
+        if BRACES[char] == string[(index + 1) * -1]:
             index += 1
+            continue
         # no matching pair
-        else:
-            return False
+        return False
 
     return True
