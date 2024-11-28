@@ -3,6 +3,7 @@ Test for -> Valid Braces
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
+import typing
 
 BRACES: dict = {
     '(': ')',
@@ -34,6 +35,7 @@ def valid_braces(string: str) -> bool:
     return True
 
 
+@typing.no_type_check
 def validate_next_pair(string: str, index: int) -> None | int:
     """
     Check if next pair of brackets is valid
