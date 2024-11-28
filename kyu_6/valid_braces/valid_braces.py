@@ -26,18 +26,17 @@ def valid_braces(string: str) -> bool:
     """
     index: int = 0
     while index < len(string) - 1:
-        char: str = string[index]
         # in the first half of the string a new pair
         # should not be starting from closing brackets
-        if index < (len(string) // 2) and char in CLOSING:
+        if index < (len(string) // 2) and string[index] in CLOSING:
             return False
         # neighbor two brackets are matching pair
-        if BRACES[char] == string[index + 1]:
+        if BRACES[string[index]] == string[index + 1]:
             index += 2
             continue
         # matching pair consist of brackets
         # in each half of the string
-        if BRACES[char] == string[(index + 1) * -1]:
+        if BRACES[string[index]] == string[(index + 1) * -1]:
             index += 1
             continue
         # no matching pair
