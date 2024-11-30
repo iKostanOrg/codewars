@@ -1,3 +1,9 @@
+"""
+Solution for -> Valid Parentheses
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
+"""
+
 def valid_parentheses(paren_str: str) -> bool:
     """
     A function that takes a string of parentheses, and determines
