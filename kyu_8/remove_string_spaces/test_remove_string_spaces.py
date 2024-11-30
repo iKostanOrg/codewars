@@ -58,28 +58,28 @@ class NoSpaceTestCase(unittest.TestCase):
 
         with allure.step("Pass string with spaces "
                          "and verify the result"):
-            string: str = '8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'
-            expected: str = '88Bifk8hB8BB8BBBB888chl8BhBfd'
+            string = '8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'
+            expected = '88Bifk8hB8BB8BBBB888chl8BhBfd'
             print_log(string=string, expected=expected)
             self.assertEqual(no_space(string), expected)
 
         with allure.step("Pass string with spaces "
                          "and verify the result"):
-            string: str = '8aaaaa dddd r     '
-            expected: str = '8aaaaaddddr'
+            string = '8aaaaa dddd r     '
+            expected = '8aaaaaddddr'
             print_log(string=string, expected=expected)
             self.assertEqual(no_space(string), expected)
 
         with allure.step("Pass string with spaces "
                          "and verify the result"):
-            string: str = 'jfBm  gk lf8hg  88lbe8 '
-            expected: str = 'jfBmgklf8hg88lbe8'
+            string = 'jfBm  gk lf8hg  88lbe8 '
+            expected = 'jfBmgklf8hg88lbe8'
             print_log(string=string, expected=expected)
             self.assertEqual(no_space(string), expected)
 
         with allure.step("Pass string with spaces "
                          "and verify the result"):
-            string: str = '8j aam'
-            expected: str = '8jaam'
+            string = '8j aam'
+            expected = '8jaam'
             print_log(string=string, expected=expected)
             self.assertEqual(no_space(string), expected)

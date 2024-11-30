@@ -15,7 +15,7 @@ from kyu_6.unique_in_order.unique_in_order import unique_in_order
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
-@allure.suite("Advanced Language Features")
+@allure.suite("Fundamentals")
 @allure.sub_suite("Unit Tests")
 @allure.feature("Algorithms")
 @allure.story('Unique In Order')

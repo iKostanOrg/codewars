@@ -58,9 +58,9 @@ class OtherAngleTestCase(unittest.TestCase):
             self.assertEqual(other_angle(a, b), expected)
 
         with allure.step("Enter values of two angles and return the 3rd"):
-            a: int = 60
-            b: int = 60
-            expected: int = 60
+            a = 60
+            b = 60
+            expected = 60
 
             print_log(a=a,
                       b=b,
@@ -70,9 +70,9 @@ class OtherAngleTestCase(unittest.TestCase):
             self.assertEqual(other_angle(60, 60), 60)
 
         with allure.step("Enter values of two angles and return the 3rd"):
-            a: int = 43
-            b: int = 78
-            expected: int = 59
+            a = 43
+            b = 78
+            expected = 59
 
             print_log(a=a,
                       b=b,
@@ -81,9 +81,9 @@ class OtherAngleTestCase(unittest.TestCase):
             self.assertEqual(other_angle(a, b), expected)
 
         with allure.step("Enter values of two angles and return the 3rd"):
-            a: int = 10
-            b: int = 20
-            expected: int = 150
+            a = 10
+            b = 20
+            expected = 150
 
             print_log(a=a,
                       b=b,

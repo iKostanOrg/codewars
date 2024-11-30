@@ -37,14 +37,10 @@ class ComputeRanksTestCase(unittest.TestCase):
         both teams 1 point. After some games you have to compute
         the order of the teams in your league. You use the following
         criteria to arrange the teams:
-
         1. Points.
-
         2. Scoring differential (the difference between goals
         scored and those conceded).
-
         3. Goals scored.
-        
         :return:
         """
         # pylint: disable-msg=R0801

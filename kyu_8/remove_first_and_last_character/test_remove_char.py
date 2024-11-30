@@ -56,25 +56,25 @@ class RemoveCharTestCase(unittest.TestCase):
             self.assertEqual(remove_char(string), expected)
 
         with allure.step("Pass 'country' string and verify the output"):
-            string: str = 'country'
-            expected: str = 'ountr'
+            string = 'country'
+            expected = 'ountr'
             print_log(string=string, expected=expected)
             self.assertEqual(remove_char(string), expected)
 
         with allure.step("Pass 'person' string and verify the output"):
-            string: str = 'person'
-            expected: str = 'erso'
+            string = 'person'
+            expected = 'erso'
             print_log(string=string, expected=expected)
             self.assertEqual(remove_char(string), expected)
 
         with allure.step("Pass 'place' string and verify the output"):
-            string: str = 'place'
-            expected: str = 'lac'
+            string = 'place'
+            expected = 'lac'
             print_log(string=string, expected=expected)
             self.assertEqual(remove_char(string), expected)
 
         with allure.step("Pass 'ok' string and verify the output"):
-            string: str = 'ok'
-            expected: str = ''
+            string = 'ok'
+            expected = ''
             print_log(string=string, expected=expected)
             self.assertEqual(remove_char(string), expected)
