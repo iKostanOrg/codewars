@@ -105,8 +105,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Should return True for empty strings.</p>")
         # pylint: enable=R0801
-        with allure.step(f"Enter empty test string and verify"
-                         f"that the function returns True."):
+        with allure.step("Enter empty test string and verify"
+                         "that the function returns True."):
             result: bool = valid_parentheses('')
             print_log(test_data='', result=result)
             self.assertTrue(result)
@@ -129,8 +129,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
         # pylint: enable=R0801
         with (allure.step(f"Enter a large valid test string and verify"
                           f"that the function returns True.")):
-            test_str: str = (f'()(()()()()(()())((()()())((((())(()))(()))((('
-                             f')(())((()))((())()))(())(()()(())))())))')
+            test_str: str = ('()(()()()()(()())((()()())((((())(()))(()))((('
+                             ')(())((()))((())()))(())(()()(())))())))')
             result: bool = valid_parentheses(test_str)
             print_log(test_str=test_str, result=result)
             self.assertTrue(result)
@@ -153,8 +153,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
         # pylint: enable=R0801
         with (allure.step(f"Enter a large invalid test string and verify"
                           f"that the function returns False.")):
-            test_str: str = (f'(((())(()()(()()))(())())(((()(()))))()(()()(('
-                             f'))))()()()(()())(()()(()()()(()()()((()())))))())()')
+            test_str: str = ('(((())(()()(()()))(())())(((()(()))))()(()()(('
+                             '))))()()()(()())(()()(()()()(()()()((()())))))())()')
             result: bool = valid_parentheses(test_str)
             print_log(test_str=test_str, result=result)
             self.assertFalse(result)
