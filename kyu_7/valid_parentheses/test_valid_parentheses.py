@@ -128,7 +128,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
             "<p>Valid large test string</p>")
         # pylint: enable=R0801
         with (allure.step(f"Enter a large valid test string and verify"
-                         f"that the function returns True.")):
+                          f"that the function returns True.")):
             test_str: str = (f'()(()()()()(()())((()()())((((())(()))(()))((('
                              f')(())((()))((())()))(())(()()(())))())))')
             result: bool = valid_parentheses(test_str)
