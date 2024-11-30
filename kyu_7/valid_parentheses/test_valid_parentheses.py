@@ -127,8 +127,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Valid large test string</p>")
         # pylint: enable=R0801
-        with (allure.step(f"Enter a large valid test string and verify"
-                          f"that the function returns True.")):
+        with (allure.step("Enter a large valid test string and verify"
+                          "that the function returns True.")):
             test_str: str = ('()(()()()()(()())((()()())((((())(()))(()))((('
                              ')(())((()))((())()))(())(()()(())))())))')
             result: bool = valid_parentheses(test_str)
@@ -151,8 +151,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Invalid large test string</p>")
         # pylint: enable=R0801
-        with (allure.step(f"Enter a large invalid test string and verify"
-                          f"that the function returns False.")):
+        with (allure.step("Enter a large invalid test string and verify"
+                          "that the function returns False.")):
             test_str: str = ('(((())(()()(()()))(())())(((()(()))))()(()()(('
                              '))))()()()(()())(()()(()()()(()()()((()())))))())()')
             result: bool = valid_parentheses(test_str)
