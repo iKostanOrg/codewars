@@ -50,4 +50,4 @@ def update_str(paren_str: str, i: int) -> str:
     :param i: int
     :return: str
     """
-    return ''.join(paren_str[indx] for indx, char in enumerate(paren_str) if indx not in [0, i])
+    return ''.join(char for indx, char in enumerate(paren_str) if indx not in [0, i])
