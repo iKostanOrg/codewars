@@ -12,6 +12,7 @@ from utils.log_func import print_log
 from kyu_6.number_zoo_patrol.missing_number \
     import find_missing_number
 
+
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
@@ -31,6 +32,7 @@ class FindMissingNumberTestCase(unittest.TestCase):
     """
     Testing 'find_missing_number' function
     """
+
     def test_find_missing_number(self):
         """
         Test a function that should take a shuffled list of
@@ -100,7 +102,6 @@ class FindMissingNumberTestCase(unittest.TestCase):
             with allure.step(f"Enter a list and verify the "
                              f"expected output: {expected} vs "
                              f"actual result: {actual_result}"):
-
                 print_log(seq=numbers,
                           expected=expected,
                           result=actual_result)
