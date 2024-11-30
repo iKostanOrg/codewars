@@ -158,4 +158,3 @@ class ValidParenthesesTestCase(unittest.TestCase):
             result: bool = valid_parentheses(test_str)
             print_log(test_str=test_str, result=result)
             self.assertFalse(result)
-
