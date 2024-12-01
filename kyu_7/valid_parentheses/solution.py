@@ -19,7 +19,7 @@ def valid_parentheses(paren_str: str) -> bool:
         return False
 
     # convert string into list
-    paren_str = list(paren_str)
+    paren_str = list(char for char in paren_str)
 
     while paren_str:
         # Fail if starts from closing bracket
