@@ -57,7 +57,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
             with allure.step(f"Enter test string {test_data}"
                              f"and verify that the function returns True."):
                 result: bool = valid_parentheses(test_str)
-                print_log(test_data=test_data, result=result)
+                print_log(test_str=test_str, result=result)
                 self.assertTrue(result)
 
     def test_valid_parentheses_false(self):
