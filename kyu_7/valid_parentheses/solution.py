@@ -13,20 +13,13 @@ def valid_parentheses(paren_str: str) -> bool:
     :param paren_str: str
     :return: bool
     """
-    print(paren_str)
-
-    # Should return True for empty strings
-    if not paren_str:
-        return True
-
-    # Fail if starts from closing bracket
-    if paren_str[0] == ')':
-        return False
-
     # A number of closing and opening
     # brackets should be equal
     if paren_str.count('(') != paren_str.count(')'):
         return False
+
+    # convert string into list
+    paren_str = list(paren_str)
 
     while paren_str:
         # Fail if starts from closing bracket
@@ -35,19 +28,10 @@ def valid_parentheses(paren_str: str) -> bool:
         # Find matching pair and remove them from the string
         for i in range(1, len(paren_str)):
             if paren_str[i] == ')':
-                paren_str = update_str(paren_str, i)
+                # delete a matching pair
+                del paren_str[i]
+                del paren_str[0]
+                # start all over again
                 break
 
     return True
-
-
-def update_str(paren_str: str, i: int) -> str:
-    """
-    Update string:
-    1. remove first char.
-    2. remove matching char/bracket.
-    :param paren_str: str
-    :param i: int
-    :return: str
-    """
-    return ''.join(char for indx, char in enumerate(paren_str) if indx not in [0, i])
