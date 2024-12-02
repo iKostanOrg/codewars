@@ -38,8 +38,8 @@ jobs:
           echo $PYTHONPATH
       - name: Check pydocstyle version
         run: |
-          pydocstyle --versio
-      - name: Doc style Checking with pydocstyle
+          pydocstyle --version
+      - name: Doc style checking with pydocstyle
         # Pydocstyle testing (Guide)
         # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
         run: |
