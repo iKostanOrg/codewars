@@ -1,6 +1,7 @@
+---
 name: MyPy for kyu4
 
-on:
+on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu4'

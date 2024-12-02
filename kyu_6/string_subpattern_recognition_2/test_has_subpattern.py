@@ -12,6 +12,7 @@ import allure
 from utils.log_func import print_log
 from kyu_6.string_subpattern_recognition_2.has_subpattern import has_subpattern
 
+
 # pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
@@ -32,6 +33,7 @@ class HasSubpatternTestCase(unittest.TestCase):
     """
     Testing 'has_subpattern' function
     """
+
     def test_has_subpattern(self):
         """
         Verify that 'has_subpattern' function to returns
