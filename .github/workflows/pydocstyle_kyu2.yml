@@ -39,7 +39,7 @@ jobs:
       - name: Check pydocstyle version
         run: |
           pydocstyle --versio
-      - name: Python Data Type Checking with MyPy
+      - name: Doc style Checking with pydocstyle
         # Pydocstyle testing (Guide)
         # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
         run: |
