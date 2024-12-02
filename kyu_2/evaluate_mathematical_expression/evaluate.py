@@ -77,9 +77,10 @@ def bracket_end(strings: list, start: int) -> int:
 
 def process_brackets(strings: list) -> str:
     """
-    Process brackets in order to convert
-    input string into math expression.
+    Test bracket processing.
 
+    Process brackets in order to convert input
+    string into math expression.
     :param strings: list
     :return: str
     """
