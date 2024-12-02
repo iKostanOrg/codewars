@@ -1,1 +1,1 @@
-"""Codewars kyu_2 package"""
+"""Codewars kyu_2 package."""
