@@ -37,12 +37,14 @@ Subpackages
    kyu_6.pyramid_array
    kyu_6.rotate_the_letters_of_each_element
    kyu_6.row_of_the_odd_triangle
+   kyu_6.scheduling.module
    kyu_6.sort_the_odd
    kyu_6.string_subpattern_recognition_1
    kyu_6.string_subpattern_recognition_2
    kyu_6.string_subpattern_recognition_3
    kyu_6.string_transformer
    kyu_6.sum_of_digits_digital_root
+   kyu_6.sums_of_parts
    kyu_6.unique_in_order
    kyu_6.vasya_clerk
    kyu_6.who_likes_it
