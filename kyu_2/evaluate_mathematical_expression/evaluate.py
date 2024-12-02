@@ -13,7 +13,8 @@ OPERATORS = ['*', '/', '+', '-']
 
 def calculate(i: int, char: str, strings: list) -> None:
     """
-    Calculate math expression
+    Calculate math expression.
+    
     :param i: int
     :param char: str
     :param strings: list
