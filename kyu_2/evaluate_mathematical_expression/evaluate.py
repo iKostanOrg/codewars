@@ -172,8 +172,9 @@ def calc(string: str) -> float:
 
 def check_conditions(strings: list, string: str, temp: str) -> tuple[str, str]:
     """
-    Normalizing string input by checking conditions.
+    Test string normalization.
 
+    Normalize string input by checking conditions.
     :param strings: list
     :param string: str
     :param temp: str
