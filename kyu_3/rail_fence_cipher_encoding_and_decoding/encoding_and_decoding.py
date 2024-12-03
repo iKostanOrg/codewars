@@ -13,7 +13,6 @@ def get_rails(string: str, n: int) -> list:
     :param n: int, the number of rails
     :return: list, rails matrix
     """
-
     rails: list = []
     while len(rails) != n:
         rails.append([])
