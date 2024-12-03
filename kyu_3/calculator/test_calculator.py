@@ -31,9 +31,7 @@ from kyu_3.calculator.calculator import Calculator
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CalculatorTestCase(unittest.TestCase):
-    """
-    Testing Calculator class
-    """
+    """Testing Calculator class."""
 
     def test_calculator(self):
         """
