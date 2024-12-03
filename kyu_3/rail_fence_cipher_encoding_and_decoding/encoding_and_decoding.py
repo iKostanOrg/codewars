@@ -9,7 +9,6 @@ GitHub: https://github.com/ikostan
 def get_rails(string: str, n: int) -> list:
     """
     Create rails matrix.
-
     :param string: str
     :param n: int, the number of rails
     :return: list, rails matrix
@@ -23,7 +22,7 @@ def get_rails(string: str, n: int) -> list:
     down = True
     for char in string:
 
-        for char_index in range(0, n):
+        for char_index in range(n):
             if char_index != row:
                 rails[char_index].append("")
             else:
