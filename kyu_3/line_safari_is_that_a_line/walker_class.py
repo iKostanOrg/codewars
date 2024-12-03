@@ -9,7 +9,6 @@ class Walker:
     """
     Walker class: make moves, check directions, etc...
     """
-
     def __init__(self, grid: list):
         self.__grid: list = grid
         self.__is_start: bool = True
@@ -28,7 +27,7 @@ class Walker:
         col: int = self.__position['col']
 
         # up
-        if row - 1 >= 0 and self.__grid[row - 1][col] in 'X|+':
+        if row >= 1 and self.__grid[row - 1][col] in 'X|+':
             direction['up'] = True
 
         # down
@@ -36,7 +35,7 @@ class Walker:
             direction['down'] = True
 
         # left
-        if col - 1 >= 0 and self.__grid[row][col - 1] in 'X+-':
+        if col >= 1 and self.__grid[row][col - 1] in 'X+-':
             direction['left'] = True
 
         # right
@@ -57,7 +56,7 @@ class Walker:
 
     def move(self) -> None:
         """
-        Make one step if possible
+        Make one step if possible.
         :return: None
         """
         if not self.is_done:
@@ -87,8 +86,7 @@ class Walker:
     @property
     def is_done(self) -> bool:
         """
-        Check if get to the 'X' point
-        or can make one move only
+        Check if get to the 'X' point or can make one move only.
         :return: true/false
         """
         if self.__is_start:
@@ -105,7 +103,7 @@ class Walker:
 
     def __get_start_point(self) -> dict:
         """
-        Locate starting point
+        Locate starting point.
         :return: dict, starting point X
         """
         result: dict = {}
@@ -131,7 +129,7 @@ class Walker:
 
     def position_plus(self, previous_position) -> None:
         """
-        Process cells if current position is +
+        Process cells if current position is +.
         :param previous_position:
         :return:
         """
@@ -155,7 +153,7 @@ class Walker:
 
     def position_minus(self, previous_position) -> None:
         """
-        Process cells if current position is -
+        Process cells if current position is -.
         :param previous_position:
         :return:
         """
@@ -167,7 +165,7 @@ class Walker:
 
     def position_pipe(self, previous_position) -> None:
         """
-        Process cells if current position is |
+        Process cells if current position is |.
         :param previous_position:
         :return:
         """
@@ -179,8 +177,7 @@ class Walker:
 
     def __set_direction(self) -> None:
         """
-        Update directions based on current
-        position and previous direction
+        Update directions based on current position and previous direction.
         :return: None
         """
         prev_row = self.__position['prev_row']
@@ -194,6 +191,10 @@ class Walker:
         self.position_pipe(previous_position)
 
     def __test_up(self) -> bool:
+        """
+        Test u
+        :return:
+        """
         row: int = self.__position['row']
         col: int = self.__position['col']
         if row - 1 >= 0 and self.__grid[row - 1][col] in 'X|+':
