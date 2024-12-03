@@ -178,7 +178,7 @@ def up(spiral: list, coordinates: dict) -> bool:
 
 def set_initial_params(size: int) -> tuple:
     """
-    Setting initial params.
+    Set initial params.
 
     Initial parameters: line, spiral, direction, coordinate, done.
     :param size:
@@ -201,7 +201,7 @@ def set_initial_params(size: int) -> tuple:
 
 def spiralize(size: int) -> list:
     """
-    Creates a NxN spiral 2D list with a given size.
+    Create a NxN spiral 2D list with a given size.
 
     :param size: size of the 2D array
     :return: list, NxN spiral 2D array
