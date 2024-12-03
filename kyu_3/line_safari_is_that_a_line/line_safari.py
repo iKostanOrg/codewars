@@ -33,7 +33,7 @@ def line(grid: list) -> bool:
 
 def assert_x_has_rout(grid: list) -> bool:
     """
-    Make sure x has a valid route
+    Make sure x has a valid route.
     :param grid:
     :return:
     """
@@ -47,13 +47,13 @@ def assert_x_has_rout(grid: list) -> bool:
             if char == 'X':
                 temp = []
                 # up
-                if row_i - 1 >= 0 and grid[row_i - 1][col_i] in 'X|+':
+                if row_i >= 1 and grid[row_i - 1][col_i] in 'X|+':
                     temp.append(True)
                 # down
                 if row_i + 1 < len(grid) and grid[row_i + 1][col_i] in 'X|+':
                     temp.append(True)
                 # left
-                if col_i - 1 >= 0 and row[col_i - 1] in 'X+-':
+                if col_i >= 1 and row[col_i - 1] in 'X+-':
                     temp.append(True)
                 # right
                 if col_i + 1 < len(row) and row[col_i + 1] in 'X+-':
@@ -67,11 +67,9 @@ def assert_x_has_rout(grid: list) -> bool:
 
 def x_counter(grid: list) -> int:
     """
-    Counter number of X
+    Counter number of X.
     :param grid: list
     :return: int
     """
-    counter: int = 0
-    for row in grid:
-        counter += row.count('X')
+    counter: int = sum(row.count('X') for row in grid)
     return counter
