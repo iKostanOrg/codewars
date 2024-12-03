@@ -90,7 +90,7 @@ def ship_counter_by_col(field: list, ships: dict):
     :param ships: dict
     :return:
     """
-    for index_col in range(0, len(field[0])):
+    for index_col in range(len(field[0])):
         ship: list = []
         for index_row, row in enumerate(field):
             if row[index_col] == 1:
@@ -218,16 +218,15 @@ def is_valid_cell(**kwargs) -> bool:
                                field=kwargs['field'],
                                cell=kwargs['cell']):
             return False
-
-    if kwargs['direction'] == 'horizontal':
+    elif kwargs['direction'] == 'horizontal':
         if not check_horizontal(row=row,
                                 col=col,
                                 field=kwargs['field']):
             return False
-
-    if kwargs['direction'] == 'vertical':
+    elif kwargs['direction'] == 'vertical':
         if not check_vertical(row=row,
                               col=col,
                               field=kwargs['field']):
             return False
+
     return True
