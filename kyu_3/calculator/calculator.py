@@ -42,8 +42,9 @@ class Calculator:
         """
         Calculate method.
 
-        1. Perform math operation
-        2. Reorganize math expression
+        1. Perform math operation.
+        2. Reorganize math expression.
+
         :param i: (int) math operation index
         :param char: (str) math operation
         :param strings: (list) math expression
