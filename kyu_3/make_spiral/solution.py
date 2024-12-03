@@ -1,6 +1,7 @@
 
 """
-Solution for -> Make a spiral
+Solution for -> Make a spiral.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -16,7 +17,7 @@ DIRECTIONS: dict = {
 
 def right(spiral: list, coordinates: dict) -> bool:
     """
-    Move spiral right
+    Move spiral right.
 
     :param coordinates: starting point
     :param spiral: NxN spiral 2D array
@@ -73,7 +74,8 @@ def right(spiral: list, coordinates: dict) -> bool:
 
 def down(spiral: list, coordinates: dict) -> bool:
     """
-    Move spiral down
+    Move spiral down.
+
     :param coordinates: starting point
     :param spiral: NxN spiral 2D array
     :return: boolean 'done'
@@ -108,7 +110,8 @@ def down(spiral: list, coordinates: dict) -> bool:
 
 def left(spiral: list, coordinates: dict) -> bool:
     """
-    Move spiral left
+    Move spiral left.
+
     :param coordinates: starting point
     :param spiral: NxN spiral 2D array
     :return: bool
@@ -150,7 +153,8 @@ def left(spiral: list, coordinates: dict) -> bool:
 
 def up(spiral: list, coordinates: dict) -> bool:
     """
-    Move spiral up
+    Move spiral up.
+
     :param coordinates: starting point
     :param spiral: NxN spiral 2D array
     :return: boole
@@ -174,7 +178,9 @@ def up(spiral: list, coordinates: dict) -> bool:
 
 def set_initial_params(size: int) -> tuple:
     """
-    Set initial parameters: line, spiral, direction, coordinate, done
+    Setting initial params.
+
+    Initial parameters: line, spiral, direction, coordinate, done.
     :param size:
     :return: tuple
     """
@@ -195,7 +201,8 @@ def set_initial_params(size: int) -> tuple:
 
 def spiralize(size: int) -> list:
     """
-    Creates a NxN spiral 2D list with a given size
+    Creates a NxN spiral 2D list with a given size.
+
     :param size: size of the 2D array
     :return: list, NxN spiral 2D array
     """
