@@ -19,6 +19,7 @@ class Calculator:
     """
 
     def __init__(self):
+        """Init method."""
         self.__string: str = ''
         self.__result: float = 0.0
 
@@ -37,13 +38,12 @@ class Calculator:
         return self.__result
 
     @staticmethod
-    def __calculate(i: int, char: str, strings: list):
+    def __calculate(i: int, char: str, strings: list) -> None:
         """
         Calculate method.
 
         1. Perform math operation
         2. Reorganize math expression
-
         :param i: (int) math operation index
         :param char: (str) math operation
         :param strings: (list) math expression
