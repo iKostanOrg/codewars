@@ -41,7 +41,6 @@ class Calculator:
     def __calculate(i: int, char: str, strings: list) -> None:
         """
         Calculate method.
-
         1. Perform math operation.
         2. Reorganize math expression.
 
