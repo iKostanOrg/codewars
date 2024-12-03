@@ -56,14 +56,11 @@ class Calculator:
 
         if char == '*':
             strings[i] = str(a * b)
-
-        if char == '/':
+        elif char == '/':
             strings[i] = str(a / b)
-
-        if char == '+':
+        elif char == '+':
             strings[i] = str(a + b)
-
-        if char == '-':
+        elif char == '-':
             strings[i] = str(a - b)
 
         del strings[i + 1]
