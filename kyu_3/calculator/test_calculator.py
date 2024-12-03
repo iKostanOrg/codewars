@@ -1,5 +1,6 @@
 """
-Testing for -> Calculator class
+Testing for -> Calculator class.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -36,7 +37,8 @@ class CalculatorTestCase(unittest.TestCase):
 
     def test_calculator(self):
         """
-        Testing Calculator class
+        Testing Calculator class.
+
         A simple calculator that given a string of operators '()', '+', '-', '*', '/'
         and numbers separated by spaces will return the value of that expression
         :return: None
