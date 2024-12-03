@@ -1,5 +1,6 @@
 """
-Solution for -> Battleship field validator
+Solution for -> Battleship field validator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def validate_battlefield(field: list) -> bool:
     """
+    Validate battlefield.
+
     A method that takes a field for well-known board game "Battleship"
     as an argument and returns true if it has a valid disposition of ships,
     false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
@@ -35,7 +38,8 @@ def validate_battlefield(field: list) -> bool:
 
 def ship_counter_by_row(field: list, ships: dict):
     """
-    Ship counter by row
+    Ship counter by row.
+
     :param field: list
     :param ships: dict
     :return:
@@ -80,7 +84,8 @@ def ship_counter_by_row(field: list, ships: dict):
 
 def ship_counter_by_col(field: list, ships: dict):
     """
-    Ship counter by col
+    Ship counter by col.
+
     :param field: list
     :param ships: dict
     :return:
@@ -123,7 +128,8 @@ def ship_counter_by_col(field: list, ships: dict):
 
 def all_cells_valid(**kwargs):
     """
-    Validate all cells
+    Validate all cells.
+
     :param kwargs:
     :return:
     """
@@ -136,7 +142,8 @@ def all_cells_valid(**kwargs):
 
 def check_vertical(row, col, field) -> bool:
     """
-    Verify vertical direction
+    Verify vertical direction.
+
     :param row:
     :param col:
     :param field: list, board game "Battleship" (list)
@@ -152,7 +159,8 @@ def check_vertical(row, col, field) -> bool:
 
 def check_horizontal(row, col, field) -> bool:
     """
-    Verify horizontal direction
+    Verify horizontal direction.
+
     :param row:
     :param col:
     :param field: list, board game "Battleship" (list)
@@ -168,10 +176,10 @@ def check_horizontal(row, col, field) -> bool:
 
 def check_submarine(**kwargs) -> bool:
     """
+    Check submarine.
+
     Check if submarine already in list (avoid duplicates)
     Validates if submarine cell has contacts with other ships/cells
-    row:
-    col:
     ships: dict, collection of valid ships (dict)
     field: list, board game "Battleship" (list)
     cell: list, candidate for single ship/submarine
@@ -195,6 +203,8 @@ def check_submarine(**kwargs) -> bool:
 
 def is_valid_cell(**kwargs) -> bool:
     """
+    Check if cell is valid.
+
     Validates if single cell result is valid
     (valid submarine or single ship cell)
     :return: bool
