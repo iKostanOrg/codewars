@@ -17,7 +17,6 @@ class Calculator:
     and numbers separated by spaces.
     Returns the value of that expression.
     """
-
     def __init__(self):
         """Init method."""
         self.__string: str = ''
@@ -41,6 +40,7 @@ class Calculator:
     def __calculate(i: int, char: str, strings: list) -> None:
         """
         Calculate method.
+
         1. Perform math operation.
         2. Reorganize math expression.
 
@@ -49,7 +49,6 @@ class Calculator:
         :param strings: (list) math expression
         :return: None
         """
-
         a: float = float(strings[i - 1])
         b: float = float(strings[i + 1])
 
