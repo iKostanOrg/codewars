@@ -1,5 +1,5 @@
 """
-Solution for -> Line Safari - Is that a line?
+Solution for -> Line Safari - Is that a line?...
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
