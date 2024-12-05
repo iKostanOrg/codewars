@@ -71,7 +71,7 @@ def assert_x_has_rout(grid: list) -> bool:
 def x_counter(grid: list) -> int:
     """
     Counter number of X.
-    
+
     :param grid: list
     :return: int
     """
