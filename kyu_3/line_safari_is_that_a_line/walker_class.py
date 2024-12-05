@@ -141,11 +141,11 @@ class Walker:
         for key in self.__direction:
             self.__direction[key] = False
 
-    def position_plus(self, previous_position) -> None:
+    def position_plus(self, previous_position: str) -> None:
         """
         Process cells if current position is +.
 
-        :param previous_position: dict
+        :param previous_position: str
         :return: None
         """
         if self.position == '+' and previous_position in '-X':
@@ -166,11 +166,11 @@ class Walker:
             self.__direction['up'] = self.__test_up()
             self.__direction['down'] = self.__test_down()
 
-    def position_minus(self, previous_position) -> None:
+    def position_minus(self, previous_position: str) -> None:
         """
         Process cells if current position is -.
 
-        :param previous_position: dict
+        :param previous_position: str
         :return: None
         """
         if self.position == '-' and previous_position in '-X+':
@@ -216,27 +216,22 @@ class Walker:
         """
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if row >= 1 and self.__grid[row - 1][col] in 'X|+':
-            return True
-        return False
+        return row >= 1 and self.__grid[row - 1][col] in 'X|+'
+
 
     def __test_down(self) -> bool:
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+':
-            return True
-        return False
+        return row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+'
+
 
     def __test_left(self) -> bool:
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if col >= 1 and self.__grid[row][col - 1] in 'X+-':
-            return True
-        return False
+        return col >= 1 and self.__grid[row][col - 1] in 'X+-'
+
 
     def __test_right(self) -> bool:
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-':
-            return True
-        return False
+        return col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-'
