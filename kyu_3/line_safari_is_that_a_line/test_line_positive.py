@@ -31,8 +31,11 @@ class LinePositiveTestCase(unittest.TestCase):
     """Testing Line Safari functionality."""
 
     def test_line_positive(self):
-        """Positive test cases."""
-
+        """
+        Positive test cases.
+        
+        :return:
+        """
         allure.dynamic.title("Testing Line Safari functionality - POSITIVE")
         # pylint: disable-msg=R0801
         allure.dynamic.severity(allure.severity_level.NORMAL)
