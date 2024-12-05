@@ -39,7 +39,7 @@ class LineNegativeTestCase(unittest.TestCase):
     def test_line_negative(self):
         """
         Testing Line Safari functionality.
-        
+
         Negative test cases.
         :return:
         """
