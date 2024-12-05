@@ -1,5 +1,6 @@
 """
-Testing Battleship field validator
+Testing Battleship field validator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
