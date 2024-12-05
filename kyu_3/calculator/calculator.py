@@ -17,7 +17,7 @@ class Calculator:
     and numbers separated by spaces.
     Returns the value of that expression.
     """
-    
+
     def __init__(self):
         """Init method."""
         self.__string: str = ''
