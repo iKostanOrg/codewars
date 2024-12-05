@@ -10,6 +10,11 @@ class Walker:
     """Walker class: make moves, check directions, etc..."""
 
     def __init__(self, grid: list):
+        """
+        Create a new Walker instance.
+
+        :param grid:
+        """
         self.__grid: list = grid
         self.__is_start: bool = True
         self.__position: dict = self.__get_start_point()
@@ -211,7 +216,7 @@ class Walker:
         """
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if row - 1 >= 0 and self.__grid[row - 1][col] in 'X|+':
+        if row >= 1 and self.__grid[row - 1][col] in 'X|+':
             return True
         return False
 
@@ -225,7 +230,7 @@ class Walker:
     def __test_left(self) -> bool:
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if col - 1 >= 0 and self.__grid[row][col - 1] in 'X+-':
+        if col >= 1 and self.__grid[row][col - 1] in 'X+-':
             return True
         return False
 
