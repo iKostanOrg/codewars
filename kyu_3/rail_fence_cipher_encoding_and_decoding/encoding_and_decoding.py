@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 def get_rails(string: str, n: int) -> list:
     """
     Create rails matrix.
+    
     :param string: str
     :param n: int, the number of rails
     :return: list, rails matrix
