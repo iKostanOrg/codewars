@@ -1,5 +1,6 @@
 """
-Testing Walker Class
+Testing Walker Class.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -32,6 +33,7 @@ class WalkerClassTestCase(unittest.TestCase):
     def test_starting_position_from_positives(self):
         """
         Testing Walker class.
+
         Testing starting position property based on positive grids.
         """
         # pylint: disable-msg=R0801
@@ -88,6 +90,7 @@ class WalkerClassTestCase(unittest.TestCase):
     def test_starting_position_from_negatives(self):
         """
         Testing Walker class.
+        
         Testing starting position property based on negative grids.
         """
         # pylint: disable-msg=R0801
