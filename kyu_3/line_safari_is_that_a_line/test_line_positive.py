@@ -33,7 +33,7 @@ class LinePositiveTestCase(unittest.TestCase):
     def test_line_positive(self):
         """
         Positive test cases.
-        
+
         :return:
         """
         allure.dynamic.title("Testing Line Safari functionality - POSITIVE")
