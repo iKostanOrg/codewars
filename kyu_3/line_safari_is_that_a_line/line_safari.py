@@ -1,5 +1,6 @@
 """
 Solution for -> Line Safari - Is that a line?
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,6 +11,7 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 def line(grid: list) -> bool:
     """
     You are given a grid.
+
     You simply need to return true/false if you
     can detect a one and only one "valid" line joining those points.
     :param grid: which always includes exactly two end-points indicated by X
@@ -34,6 +36,7 @@ def line(grid: list) -> bool:
 def assert_x_has_rout(grid: list) -> bool:
     """
     Make sure x has a valid route.
+
     :param grid:
     :return:
     """
@@ -68,6 +71,7 @@ def assert_x_has_rout(grid: list) -> bool:
 def x_counter(grid: list) -> int:
     """
     Counter number of X.
+    
     :param grid: list
     :return: int
     """
