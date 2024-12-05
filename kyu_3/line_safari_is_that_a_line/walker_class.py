@@ -179,11 +179,11 @@ class Walker:
             elif self.__position['col'] > self.__position['prev_col']:
                 self.__direction['right'] = self.__test_right()
 
-    def position_pipe(self, previous_position: dict) -> None:
+    def position_pipe(self, previous_position: str) -> None:
         """
         Process cells if current position is '|'.
 
-        :param previous_position: dict
+        :param previous_position: str
         :return: None
         """
         if self.position == '|' and previous_position in '|X+':
