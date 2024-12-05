@@ -1,14 +1,14 @@
 """
 Walker class: make moves, check directions, etc...
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
 
 class Walker:
-    """
-    Walker class: make moves, check directions, etc...
-    """
+    """Walker class: make moves, check directions, etc..."""
+
     def __init__(self, grid: list):
         self.__grid: list = grid
         self.__is_start: bool = True
@@ -16,6 +16,11 @@ class Walker:
         self.__direction = self.__set_initial_direction()
 
     def __set_initial_direction(self) -> dict:
+        """
+        Set initial direction.
+
+        :return: dict
+        """
         direction: dict = {
             'left': False,
             'right': False,
@@ -47,7 +52,8 @@ class Walker:
     @property
     def position(self) -> str:
         """
-        Return char from grid based on current position
+        Return char from grid based on current position.
+
         :return: str, current char
         """
         row: int = self.__position['row']
@@ -57,6 +63,7 @@ class Walker:
     def move(self) -> None:
         """
         Make one step if possible.
+
         :return: None
         """
         if not self.is_done:
@@ -87,6 +94,7 @@ class Walker:
     def is_done(self) -> bool:
         """
         Check if get to the 'X' point or can make one move only.
+
         :return: true/false
         """
         if self.__is_start:
@@ -104,6 +112,7 @@ class Walker:
     def __get_start_point(self) -> dict:
         """
         Locate starting point.
+
         :return: dict, starting point X
         """
         result: dict = {}
@@ -130,6 +139,7 @@ class Walker:
     def position_plus(self, previous_position) -> None:
         """
         Process cells if current position is +.
+
         :param previous_position:
         :return:
         """
@@ -154,6 +164,7 @@ class Walker:
     def position_minus(self, previous_position) -> None:
         """
         Process cells if current position is -.
+
         :param previous_position:
         :return:
         """
@@ -166,6 +177,7 @@ class Walker:
     def position_pipe(self, previous_position) -> None:
         """
         Process cells if current position is |.
+
         :param previous_position:
         :return:
         """
@@ -178,6 +190,7 @@ class Walker:
     def __set_direction(self) -> None:
         """
         Update directions based on current position and previous direction.
+
         :return: None
         """
         prev_row = self.__position['prev_row']
@@ -192,7 +205,8 @@ class Walker:
 
     def __test_up(self) -> bool:
         """
-        Test u
+        Test up.
+
         :return:
         """
         row: int = self.__position['row']
