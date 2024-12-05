@@ -27,13 +27,11 @@ from utils.log_func import print_log
     url='https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7',
     name='Source/Kata')
 class BattleshipFieldValidatorTestCase(unittest.TestCase):
-    """
-    Testing Battleship field validator
-    """
+    """Testing Battleship field validator."""
 
     def test_validate_battlefield(self):
         """
-        Testing Battleship field validator
+        Testing Battleship field validator.
 
         Testing a method that takes a field for well-known board game "Battleship"
         as an argument and returns true if it has a valid disposition of ships,
