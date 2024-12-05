@@ -1,5 +1,5 @@
 """
-Walker class: make moves, check directions, etc...
+Walker class: make moves, check directions, etc.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -7,7 +7,7 @@ GitHub: https://github.com/ikostan
 
 
 class Walker:
-    """Walker class: make moves, check directions, etc..."""
+    """Walker class: make moves, check directions, etc."""
 
     def __init__(self, grid: list):
         """
