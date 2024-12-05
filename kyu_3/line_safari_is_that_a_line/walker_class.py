@@ -100,7 +100,7 @@ class Walker:
         """
         Check if get to the 'X' point or can make one move only.
 
-        :return: true/false
+        :return: bool
         """
         if self.__is_start:
             if len([val for val in self.__direction.values() if val]) != 1:
@@ -145,8 +145,8 @@ class Walker:
         """
         Process cells if current position is +.
 
-        :param previous_position:
-        :return:
+        :param previous_position: dict
+        :return: None
         """
         if self.position == '+' and previous_position in '-X':
             self.__direction['up'] = self.__test_up()
@@ -170,8 +170,8 @@ class Walker:
         """
         Process cells if current position is -.
 
-        :param previous_position:
-        :return:
+        :param previous_position: dict
+        :return: None
         """
         if self.position == '-' and previous_position in '-X+':
             if self.__position['col'] < self.__position['prev_col']:
@@ -179,12 +179,12 @@ class Walker:
             elif self.__position['col'] > self.__position['prev_col']:
                 self.__direction['right'] = self.__test_right()
 
-    def position_pipe(self, previous_position) -> None:
+    def position_pipe(self, previous_position: dict) -> None:
         """
-        Process cells if current position is |.
+        Process cells if current position is '|'.
 
-        :param previous_position:
-        :return:
+        :param previous_position: dict
+        :return: None
         """
         if self.position == '|' and previous_position in '|X+':
             if self.__position['row'] < self.__position['prev_row']:
