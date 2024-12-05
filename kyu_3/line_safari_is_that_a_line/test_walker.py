@@ -27,9 +27,7 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class WalkerClassTestCase(unittest.TestCase):
-    """
-    Testing Walker class.
-    """
+    """Testing Walker class."""
     def test_starting_position_from_positives(self):
         """
         Testing Walker class.
