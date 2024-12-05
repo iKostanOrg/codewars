@@ -218,18 +218,15 @@ class Walker:
         col: int = self.__position['col']
         return row >= 1 and self.__grid[row - 1][col] in 'X|+'
 
-
     def __test_down(self) -> bool:
         row: int = self.__position['row']
         col: int = self.__position['col']
         return row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+'
 
-
     def __test_left(self) -> bool:
         row: int = self.__position['row']
         col: int = self.__position['col']
         return col >= 1 and self.__grid[row][col - 1] in 'X+-'
-
 
     def __test_right(self) -> bool:
         row: int = self.__position['row']
