@@ -90,7 +90,7 @@ class WalkerClassTestCase(unittest.TestCase):
     def test_starting_position_from_negatives(self):
         """
         Testing Walker class.
-        
+
         Testing starting position property based on negative grids.
         """
         # pylint: disable-msg=R0801
