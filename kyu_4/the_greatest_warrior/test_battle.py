@@ -1,5 +1,6 @@
 """
-Test for -> The Greatest Warrior -> test battle
+Test for -> The Greatest Warrior -> test battle.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -30,13 +31,13 @@ from kyu_4.the_greatest_warrior.warrior import Warrior
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class BattleTestCase(unittest.TestCase):
-    """
-    Testing Battle method
-    """
+    """Testing Battle method."""
 
     def test_battle(self):
         """
-        Testing Battle method
+        Testing Battle method with various test data.
+        
+        :return: 
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Battle method")
