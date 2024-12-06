@@ -1,5 +1,6 @@
 """
-Solution for -> Sum of Intervals
+Solution for -> Sum of Intervals.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -11,30 +12,26 @@ def sum_of_intervals(intervals: list) -> int:
     the sum of all the interval lengths.
 
     Overlapping intervals should only be counted once.
-    :param intervals:
-    :return:
+    :param intervals: list
+    :return: int
     """
 
     intervals = remove_overlaps(intervals)
-    results: list = []
-
-    for i in intervals:
-        results.append(i[1] - i[0])
-
+    results: list = [(i[1] - i[0]) for i in intervals]
     return sum(results)
 
 
 def remove_overlaps(intervals: list) -> list:
     """
-    Remove overlaps and duplicates
-    :param intervals:
-    :return:
+    Remove overlaps and duplicates.
+
+    :param intervals: list
+    :return: int
     """
     is_clean: bool = False
 
     while not is_clean:
         is_clean = True
-
         for index_i, i in enumerate(intervals):
             for index_b, b in enumerate(intervals):
                 if index_b != index_i:
@@ -45,13 +42,16 @@ def remove_overlaps(intervals: list) -> list:
     return intervals
 
 
-def clean_interval(intervals, i, b) -> bool:
+def clean_interval(intervals: list,
+                   i: tuple,
+                   b: tuple) -> bool:
     """
-    Remove intervals
-    :param intervals:
-    :param i:
-    :param b:
-    :return:
+    Remove intervals.
+
+    :param intervals: list
+    :param i: tuple
+    :param b: tuple
+    :return: bool
     """
     result: bool = True
 
