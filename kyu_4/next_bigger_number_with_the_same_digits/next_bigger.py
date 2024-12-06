@@ -1,5 +1,6 @@
 """
-Solution for -> Next bigger number with the same digits
+Solution for -> Next bigger number with the same digits.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -62,11 +63,8 @@ def next_greater_digit_index(digits: list, i: int) -> int:
         return i
 
     for index, digit in enumerate(digits[i:]):
-        if digits[i - 1] < digit:
-            if current == '':
-                current = digit
-                j = i + index
-            elif current > digit:
-                current = digit
-                j = i + index
+        if digits[i - 1] < digit and (current == '' or current > digit):
+            current = digit
+            j = i + index
+
     return j
