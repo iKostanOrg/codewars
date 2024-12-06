@@ -36,8 +36,8 @@ class BattleTestCase(unittest.TestCase):
     def test_battle(self):
         """
         Testing Battle method with various test data.
-        
-        :return: 
+
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Battle method")
