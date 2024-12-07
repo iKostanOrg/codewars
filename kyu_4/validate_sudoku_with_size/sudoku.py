@@ -26,7 +26,7 @@ class Sudoku:
     def __init__(self, data: list):
         """
         Create a new Sudoku instance.
-        
+
         :param data:
         """
         self.__data: list = data
