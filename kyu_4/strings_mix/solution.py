@@ -85,7 +85,7 @@ def sort_results(results: list) -> list:
 def get_counters(s: str) -> dict:
     """
     Get counters.
-    
+
     :param s: str
     :return: dict
     """
