@@ -33,7 +33,7 @@ class SolutionTestCase(unittest.TestCase):
     def test_solution(self):
         """
         Testing solution function.
-        
+
         :return:
         """
         allure.dynamic.title("Testing solution function")
