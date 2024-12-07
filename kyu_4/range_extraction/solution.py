@@ -1,5 +1,6 @@
 """
-Solution for -> Range Extraction
+Solution for -> Range Extraction.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,10 +8,12 @@ GitHub: https://github.com/ikostan
 
 def solution(args: list) -> str:
     """
+    Solution for Range Extraction problem.
+    
     Tt takes a list of integers in increasing order and returns
     a correctly formatted string in the range format.
-    :param args:
-    :return:
+    :param args: list
+    :return: str
     """
     current: list = [args[0], args[0], False]
     result: str = ''
@@ -35,30 +38,34 @@ def solution(args: list) -> str:
     return result
 
 
-def case_3(a: int, current: list, result: str) -> str:
+def case_3(a: int, 
+           current: list, 
+           result: str) -> str:
     """
-    Case #3
-    :param a:
-    :param current:
-    :param result:
-    :return:
+    Case #3.
+    
+    :param a: int
+    :param current: list
+    :param result: str
+    :return: str
     """
     if current[1] + 1 == a:
         current[1] = a
 
     result += str(current[0])
     if abs(current[1] - current[0]) >= 2:
-        result += '-' + str(current[1])
+        result += f'-{str(current[1])}'
     elif current[0] != current[1]:
-        result += ',' + str(current[1])
+        result += f',{str(current[1])}'
 
     return result
 
 
 def case_2(**kwargs) -> str:
     """
-    Case #2
-    :return:
+    Case #2.
+    
+    :return: str
     """
     a: int = kwargs['a']
     i: int = kwargs['i']
@@ -72,11 +79,11 @@ def case_2(**kwargs) -> str:
         current[2] = True
 
         if abs(current[1] - current[0]) >= 2 and i != 1:
-            result += str(current[0]) + '-' + str(current[1]) + ','
+            result += f'{str(current[0])}-{str(current[1])},'
         else:
-            result += str(current[0]) + ','
+            result += f'{str(current[0])},'
             if current[0] != current[1]:
-                result += str(current[1]) + ','
+                result += f'{str(current[1])},'
 
         current[0] = a
         current[1] = a
