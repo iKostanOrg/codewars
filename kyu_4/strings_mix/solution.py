@@ -33,33 +33,30 @@ def mix(s1: str, s2: str) -> str:
 
     results: list = []
     for key in keys:
-        if (
-            key in s2_results
-            and key in s1_results
-            and s1_results[key] == s2_results[key]
-        ):
-            results.append(f'=:{key * s1_results[key]}')
-        elif (
-            key in s2_results
-            and key in s1_results
-            and s1_results[key] > s2_results[key]
-            or (key not in s2_results or key not in s1_results)
-            and key in s1_results
-        ):
-            results.append(f'1:{key * s1_results[key]}')
+        if key in s2_results and key in s1_results:
+            if s1_results[key] == s2_results[key]:
+                results.append(f'=:{key * s1_results[key]}')
+            elif s1_results[key] > s2_results[key]:
+                results.append(f'1:{key * s1_results[key]}')
+            else:
+                results.append(f'2:{key * s2_results[key]}')
         else:
-            results.append(f'2:{key * s2_results[key]}')
+            if key in s1_results:
+                results.append(f'1:{key * s1_results[key]}')
+            else:
+                results.append(f'2:{key * s2_results[key]}')
+
     return '/'.join(sort_results(results))
 
 
 def sort_results(results: list) -> list:
     """
-    Sorting results.
+    Sorting results function.
 
     The results will be in decreasing order of their length
     and when they have the same length sorted in ascending
     lexicographic order (letters and digits - more precisely
-    sorted by code-point).
+    sorted by code-point)
     :param results:
     :return:
     """
