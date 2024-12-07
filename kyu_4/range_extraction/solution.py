@@ -9,7 +9,7 @@ GitHub: https://github.com/ikostan
 def solution(args: list) -> str:
     """
     Solution for Range Extraction problem.
-    
+
     Tt takes a list of integers in increasing order and returns
     a correctly formatted string in the range format.
     :param args: list
@@ -38,12 +38,12 @@ def solution(args: list) -> str:
     return result
 
 
-def case_3(a: int, 
-           current: list, 
+def case_3(a: int,
+           current: list,
            result: str) -> str:
     """
     Case #3.
-    
+
     :param a: int
     :param current: list
     :param result: str
@@ -64,7 +64,7 @@ def case_3(a: int,
 def case_2(**kwargs) -> str:
     """
     Case #2.
-    
+
     :return: str
     """
     a: int = kwargs['a']
