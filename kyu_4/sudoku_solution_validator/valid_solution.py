@@ -1,5 +1,6 @@
 """
-Solution for -> Sudoku Solution Validator
+Solution for -> Sudoku Solution Validator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -20,9 +21,10 @@ def valid_solution(board: list) -> bool:
 
 def check_horizontally(board: list) -> bool:
     """
-    test horizontally
-    :param board:
-    :return:
+    Test horizontally.
+
+    :param board: list
+    :return: bool
     """
     for row in board:
         if sorted(row) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
@@ -32,14 +34,15 @@ def check_horizontally(board: list) -> bool:
 
 def check_vertically(board: list) -> bool:
     """
-    test vertically
+    Test vertically.
+
     :param board:
     :return:
     """
     i: int = 0
 
     while i < 9:
-        col = []
+        col: list = []
         for row in board:
             col.append(row[i])
         if sorted(col) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
@@ -50,21 +53,22 @@ def check_vertically(board: list) -> bool:
 
 def check_sub_grids(board: list) -> bool:
     """
-    test each of the nine 3x3 sub-grids
+    Test each of the nine 3x3 sub-grids.
+
     (also known as blocks)
     :param board:
     :return:
     """
     sub_grids: list = [
-        board[0][0:3] + board[1][0:3] + board[2][0:3],
+        board[0][:3] + board[1][:3] + board[2][:3],
         board[0][3:6] + board[1][3:6] + board[2][3:6],
         board[0][6:] + board[1][6:] + board[2][6:],
 
-        board[3][0:3] + board[4][0:3] + board[5][0:3],
+        board[3][:3] + board[4][:3] + board[5][:3],
         board[3][3:6] + board[4][3:6] + board[5][3:6],
         board[3][6:] + board[4][6:] + board[5][6:],
 
-        board[6][0:3] + board[7][0:3] + board[8][0:3],
+        board[6][:3] + board[7][:3] + board[8][:3],
         board[6][3:6] + board[7][3:6] + board[8][3:6],
         board[6][6:] + board[7][6:] + board[8][6:],
     ]
