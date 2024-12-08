@@ -32,6 +32,8 @@ FIGHT_MESSAGES = ["Easy fight",
 
 class Warrior:
     """
+    Warrior class.
+
     A class called Warrior which calculates and
     keeps track of level and skills, and ranks.
     """
