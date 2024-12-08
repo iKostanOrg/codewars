@@ -48,12 +48,16 @@ class Warrior:
 
     def __set_rank(self) -> str:
         """
+        Set rank.
+
         :return: warrior's experience
         """
         return RANKS[(self.level // 10)]
 
     def __set_level(self) -> int:
         """
+        Set level.
+
         A warrior starts at level 1 and
         can progress all the way to 100.
 
@@ -70,13 +74,14 @@ class Warrior:
 
     def __update_experience(self, experience: int):
         """
+        Update expirience.
+
         A warrior's experience is cumulative, and does not
         reset with each rise of level. The only exception
         is when the warrior reaches level 100, with which
         the experience stops at 10000.
         :return:
         """
-
         if self.level == 100:
             self.__experience = MAX_EXPERIENCE
         elif self.experience + experience > MAX_EXPERIENCE:
@@ -99,6 +104,8 @@ class Warrior:
     @property
     def rank(self) -> str:
         """
+        Rank.
+
         A warrior starts at rank "Pushover" and
         can progress all the way to "Greatest".
 
@@ -118,7 +125,8 @@ class Warrior:
     @property
     def achievements(self) -> list:
         """
-        Return achievements as a list
+        Return achievements as a list.
+
         :return:
         """
         return self.__achievements
@@ -126,7 +134,7 @@ class Warrior:
     def battle(self, enemy_level: int) -> str:
         """
         Return message based on the result of the battle.
-        
+
         :param enemy_level:
         :return:
         """
