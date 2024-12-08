@@ -16,7 +16,6 @@ def sum_of_intervals(intervals: list) -> int:
     :param intervals: list
     :return: int
     """
-
     intervals = remove_overlaps(intervals)
     results: list = [(i[1] - i[0]) for i in intervals]
     return sum(results)
