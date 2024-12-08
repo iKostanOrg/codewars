@@ -10,8 +10,7 @@ def valid_solution(board: list) -> bool:
     """
     Sudoku solution validator.
 
-    A function validSolution/ValidateSolution/valid_solution()
-    that accepts a 2D array representing a Sudoku board,
+    A function that accepts a 2D array representing a Sudoku board,
     and returns true if it is a valid solution, or false otherwise.
     :param board: list
     :return: bool
