@@ -1,5 +1,6 @@
 """
-Test for -> Alphabet wars - nuclear strike
+Test for -> Alphabet wars - nuclear strike.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -35,13 +36,11 @@ from kyu_5.alphabet_wars_nuclear_strike.alphabet_war \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class AlphabetWarTestCase(unittest.TestCase):
-    """
-    Testing alphabet_war function
-    """
+    """Testing alphabet_war function."""
 
     def test_alphabet_war(self):
         """
-        Testing alphabet_war function
+        Testing alphabet_war function.
 
         Introduction
         There is a war and nobody knows - the alphabet war!
