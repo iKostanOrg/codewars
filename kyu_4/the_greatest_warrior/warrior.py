@@ -37,6 +37,7 @@ class Warrior:
     """
 
     def __init__(self):
+        """Create a new warrior instance."""
         # A warrior's experience starts from 100
         self.__experience = BASIC_EXPERIENCE
         # A warrior starts at level 1
@@ -67,14 +68,14 @@ class Warrior:
         by another 100, the warrior's level rises to
         the next level.
 
-        :return:
+        :return: int
         """
         new_level = self.experience // BASIC_EXPERIENCE
         return new_level if new_level <= 100 else 100
 
-    def __update_experience(self, experience: int):
+    def __update_experience(self, experience: int) -> None:
         """
-        Update expirience.
+        Update experience.
 
         A warrior's experience is cumulative, and does not
         reset with each rise of level. The only exception
@@ -82,9 +83,8 @@ class Warrior:
         the experience stops at 10000.
         :return:
         """
-        if self.level == 100:
-            self.__experience = MAX_EXPERIENCE
-        elif self.experience + experience > MAX_EXPERIENCE:
+        if (self.level == 100
+                or self.experience + experience > MAX_EXPERIENCE):
             self.__experience = MAX_EXPERIENCE
         else:
             self.__experience += experience
@@ -118,7 +118,7 @@ class Warrior:
         """
         Return experience value.
 
-        :return:
+        :return: int
         """
         return self.__experience
 
@@ -127,7 +127,7 @@ class Warrior:
         """
         Return achievements as a list.
 
-        :return:
+        :return: list
         """
         return self.__achievements
 
@@ -135,8 +135,8 @@ class Warrior:
         """
         Return message based on the result of the battle.
 
-        :param enemy_level:
-        :return:
+        :param enemy_level: int
+        :return: str
         """
         msg: str = ''
         # If an enemy level does not fall in the range of 1 to 100,
@@ -174,13 +174,15 @@ class Warrior:
 
     def training(self, params: list) -> str:
         """
-        Training will accept an array of three elements:
-            the description,
-            the experience points your warrior earns,
-            and the minimum level requirement.
+        Training method.
 
-        :param params:
-        :return:
+        Training will accept an array of three elements:
+            1. the description.
+            2. the experience points your warrior earns.
+            3. the minimum level requirement.
+
+        :param params: list
+        :return: str
         """
         # If the warrior's level meets the minimum level requirement,
         # the warrior will receive the experience points from it and
