@@ -1,5 +1,6 @@
 """
-Solution for -> The Greatest Warrior
+Solution for -> The Greatest Warrior.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -89,7 +90,8 @@ class Warrior:
     @property
     def level(self) -> int:
         """
-        A warrior's level
+        A warrior's level.
+
         :return: A warrior's level
         """
         return self.__level
@@ -98,7 +100,8 @@ class Warrior:
     def rank(self) -> str:
         """
         A warrior starts at rank "Pushover" and
-        can progress all the way to "Greatest"
+        can progress all the way to "Greatest".
+
         :return: warrior's rank
         """
         return self.__rank
@@ -106,7 +109,8 @@ class Warrior:
     @property
     def experience(self) -> int:
         """
-        Return experience value
+        Return experience value.
+
         :return:
         """
         return self.__experience
@@ -121,7 +125,8 @@ class Warrior:
 
     def battle(self, enemy_level: int) -> str:
         """
-        Return message based on the result of the battle
+        Return message based on the result of the battle.
+        
         :param enemy_level:
         :return:
         """
