@@ -8,11 +8,13 @@ GitHub: https://github.com/ikostan
 
 def valid_solution(board: list) -> bool:
     """
+    Sudoku solution validator.
+
     A function validSolution/ValidateSolution/valid_solution()
     that accepts a 2D array representing a Sudoku board,
-    and returns true if it is a valid solution, or false otherwise
-    :param board:
-    :return:
+    and returns true if it is a valid solution, or false otherwise.
+    :param board: list
+    :return: bool
     """
     return all([check_horizontally(board),
                 check_vertically(board),
@@ -40,7 +42,6 @@ def check_vertically(board: list) -> bool:
     :return:
     """
     i: int = 0
-
     while i < 9:
         col: list = []
         for row in board:
@@ -56,8 +57,8 @@ def check_sub_grids(board: list) -> bool:
     Test each of the nine 3x3 sub-grids.
 
     (also known as blocks)
-    :param board:
-    :return:
+    :param board: list
+    :return: bool
     """
     sub_grids: list = [
         board[0][:3] + board[1][:3] + board[2][:3],
