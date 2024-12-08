@@ -8,9 +8,10 @@ GitHub: https://github.com/ikostan
 
 def sum_of_intervals(intervals: list) -> int:
     """
-    Accepts an array of intervals, and returns
-    the sum of all the interval lengths.
+    Sum of intervals.
 
+    Accept an array of intervals, and returns
+    the sum of all the interval lengths.
     Overlapping intervals should only be counted once.
     :param intervals: list
     :return: int
