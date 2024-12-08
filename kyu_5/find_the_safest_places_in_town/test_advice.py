@@ -11,8 +11,6 @@ import allure
 from utils.log_func import print_log
 from kyu_5.find_the_safest_places_in_town.advice \
     import advice, create_city_map, agents_cleanup
-from kyu_5.find_the_safest_places_in_town.print_agents \
-    import print_map
 
 
 # pylint: disable-msg=R0801
@@ -499,7 +497,6 @@ class FirstAdviceTestCase(unittest.TestCase):
                 message = data[3]
                 # test log
                 print_log(agents=agents, n=n, expected=expected, message=message)
-                print_map(agents, n, expected)
                 # assertion
                 self.assertEqual(expected,
                                  sorted(advice(agents=agents, n=n)),

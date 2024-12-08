@@ -1,7 +1,7 @@
 ---
 name: Flake8 for kyu5
 
-on:
+on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu5'

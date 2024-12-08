@@ -1,9 +1,720 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","0","Testing permute_a_palindrome (empty string)","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
 "
-        Returns [] if list has only one element
+        Testing list_squared function
+
         :return:
-        ","0","'multiply' function verification with one element list","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","140","Testing list_squared function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Returns a list that misses only one element
+        :return:
+        ","0","'multiply' function verification with random list","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing 'feast' function with various test inputs
+
+        Testing a function feast that takes the animal's
+        name and dish as arguments and returns true or
+        false to indicate whether the beast is allowed
+        to bring the dish to the feast.
+
+        Assume that beast and dish are always lowercase strings,
+        and that each has at least two letters. beast and dish
+        may contain hyphens and spaces, but these will not appear
+        at the beginning or end of the string. They will not
+        contain numerals.
+
+        There is just one rule: the dish must start and end with
+        the same letters as the animal's name. For example, the
+        great blue heron is bringing garlic naan and the chickadee
+        is bringing chocolate cake.
+        :return:
+        ","0","Testing 'feast' function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Test the function called that takes a string of parentheses,
+        and determines if the order of the parentheses is valid.
+        The function should return true if the string is valid,
+        and false if it's invalid.
+
+        Examples
+
+        ""()""              =>  true
+        "")(()))""          =>  false
+        ""(""               =>  false
+        ""(())((()())())""  =>  true
+        :return:
+        ","0","Testing valid_parentheses function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing hoop_count function (positive)
+
+        Alex just got a new hula hoop, he loves it but feels
+        discouraged because his little brother is better than him
+
+        Write a program where Alex can input (n) how many times
+        the hoop goes round and it will return him an encouraging message
+
+        - 10 or more hoops, return ""Great, now move on to tricks"".
+
+        - Not 10 hoops, return ""Keep at it until you get it"".
+
+        :return:
+        ","0","Testing hoop_count function (positive test case)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing is_solved function
+
+        The function should return whether the
+        board's current state is solved.
+
+        We want our function to return:
+
+            -1 if the board is not yet finished (there are empty spots),
+            1 if ""X"" won,
+            2 if ""O"" won,
+            0 if it's a cat's game (i.e. a draw).
+        ","16","Testing done_or_not function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        25 is a square number
+        :return:
+        ","16","Square numbers (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Exclusive or or exclusive disjunction is a
+        logical operation that outputs true only when
+        inputs differ (one is true, the other is false).
+
+        XOR outputs true whenever the inputs differ:
+
+        Source:
+        https://en.wikipedia.org/wiki/Exclusive_or
+        :return:
+        ","0","XOR logical operator","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        If the wolf is not the closest animal to you,
+        return ""Oi! Sheep number N! You are about to be eaten by a wolf!""
+        where N is the sheep's position in the queue.
+        :return:
+        ","0","Wolf at the end of the queue","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Control Flow","",""
+"
+        Testing the 'unique_in_order' function
+        with various test data
+        :return:
+        ","0","Testing the 'unique_in_order' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing easy line function exception
+        :return:
+        ","0","Testing easy_line function exception message","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Verify that the function returns Messi's
+        total number of goals in all three leagues.
+        :return:
+        ","0","goals function verification","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Testing easy_line function
+        :return:
+        ","0","Testing easy_line function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing check_exam function
+
+        The function should return the score
+        for this array of answers, giving +4
+        for each correct answer, -1 for each
+        incorrect answer, and +0 for each blank
+        answer(empty string).
+
+        :return:
+        ","0","Testing check_exam function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Test an algorithm that takes an array and moves all of the
+        zeros to the end, preserving the order of the other elements.
+        :return:
+        ","0","Testing move_zeros function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing using empty test data
+        :return:
+        ","0","test_solution_empty","Novice","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing Encoding functionality
+        ","0","Testing Encoding functionality","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing Battle method
+        ","0","Testing Battle method","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","OOP","",""
+"
+        Testing string_to_array function.
+
+        A function to split a string and
+        convert it into an array of words.
+        :return:
+        ","0","Testing string_to_array function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing litres function with various test inputs
+        :return:
+        ","0","Testing litres function with various test inputs","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        In this kata you have to correctly return who
+        is the ""survivor"", ie: the last element of a
+        Josephus permutation.
+        :return:
+        ","0","test_josephus_survivor","Novice","Sat Nov 30 21:14:59 PST 2024","skipped","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing solution function
+
+        If we list all the natural numbers below 10
+        that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+        The sum of these multiples is 23.
+
+        Finish the solution so that it returns the sum of
+        all the multiples of 3 or 5 below the number passed in.
+
+        Note: If the number is a multiple of both 3 and 5,
+        only count it once.
+        :return:
+        ","0","Testing the 'solution' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Test a function which formats a duration,
+        given as a number of seconds, in a human-friendly way.
+
+        The function must accept a non-negative integer.
+        If it is zero, it just returns ""now"". Otherwise,
+        the duration is expressed as a combination of years,
+        days, hours, minutes and seconds.
+        :return:
+        ","0","Testing format_duration","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing array_diff function
+        :return:
+        ","0","Testing array_diff function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing permute_a_palindrome function with empty string
+        :return:
+        ","0","Testing permute_a_palindrome (empty string)","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        In mathematics the number of x combinations you can take from a
+        set of n elements is called the binomial coefficient of n and x,
+        or more often n choose x. The formula to compute m = n choose x is:
+        m = n! / (x! * (n - x)!) where ! is the factorial operator.
+
+        You are a renowned poster designer and painter. You are asked to
+        provide 6 posters all having the same design each in 2 colors.
+        Posters must all have a different color combination and you have
+        the choice of 4 colors: red, blue, yellow, green. How many colors
+        can you choose for each poster?
+        ","0","Testing checkchoose function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing 'DefaultList' class: extend
+        :return:
+        ","0","Testing 'DefaultList' class: extend","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Object-Oriented Programming","",""
+"
+        Testing 'sentencify' function.
+        The function should:
+        1. Capitalise the first letter of the first word.
+        2. Add a period (.) to the end of the sentence.
+        3. Join the words into a complete string, with spaces.
+        4. Do no other manipulation on the words.
+
+        :return:
+        ","0","Testing 'solution' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing spiralize function
+        ","0","Testing spiralize function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        For a given string s find the character c (or C) with
+        longest consecutive repetition and return: (c, l)
+        where l (or L) is the length of the repetition.
+
+        For empty string return: ('', 0)
+        :return:
+        ","0","Testing 'longest_repetition' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Test the compute_ranks function that organizes a sports
+        league in a round-robin-system. Each team meets all other teams.
+        In your league a win gives a team 2 points, a draw gives
+        both teams 1 point. After some games you have to compute
+        the order of the teams in your league. You use the following
+        criteria to arrange the teams:
+        1. Points.
+        2. Scoring differential (the difference between goals
+        scored and those conceded).
+        3. Goals scored.
+        :return:
+        ","0","Testing compute_ranks","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Simple positive test
+        :return:
+        ","0","Testing toJadenCase function (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        And (∧) is the truth-functional
+        operator of logical conjunction
+
+        The and of a set of operands is true
+        if and only if all of its operands are true.
+
+        Source:
+        https://en.wikipedia.org/wiki/Logical_conjunction
+
+        :return:
+        ","0","AND logical operator","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing calc class
+        Given a mathematical expression as a string you
+        must return the result as a number.
+        ","0","Testing calc function","Proficient","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing next_smaller function
+
+        You have to test a function that takes a positive integer number
+        and returns the next smaller number formed by the same digits:
+
+        21 ==> 12
+        531 ==> 513
+        2071 ==> 2017
+
+        If no smaller number can be composed using those digits, return -1
+        ","0","Testing next_smaller function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing a function named first_non_repeating_letter
+        that takes a string input, and returns the first character
+        that is not repeated anywhere in the string.
+
+        For example, if given the input 'stress', the function
+        should return 't', since the letter t only occurs once
+        in the string, and occurs first in the string.
+
+        As an added challenge, upper- and lowercase letters are
+        considered the same character, but the function should
+        return the correct case for the initial letter. For example,
+        the input 'sTreSS' should return 'T'.
+
+        If a string contains all repeating characters, it should
+        return an empty string ("""") or None -- see sample tests.
+        :return:
+        ","0","Testing first_non_repeating_letter function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing men_from_boys function with
+        various test inputs
+
+        Scenario
+        Now that the competition gets tough it
+        will Sort out the men from the boys .
+
+        Men are the Even numbers and Boys are
+        the odd !alt !alt
+
+        Task
+        Given an array/list [] of n integers ,
+        Separate The even numbers from the odds ,
+        or Separate the men from the boys !alt !alt
+
+        Notes
+        Return an array/list where Even numbers
+        come first then odds.
+        Since , Men are stronger than Boys ,
+        Then Even numbers in ascending order
+        While odds in descending.
+        :return:
+        ","0","Testing men_from_boys function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing using basic test data
+        :return:
+        ","0","test_solution_basic","Novice","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing Warrior class >>> tom
+        ","0","Testing Warrior class >>> tom","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","OOP","",""
+"
+        Your task is to verify that 'order' function
+        sorts a given string by following rules:
+
+            1. Each word in the string will contain a single number.
+               This number is the position the word should have in
+               the result.
+
+            2. Note: Numbers can be from 1 to 9. So 1 will be the
+               first word (not 0).
+
+            3. If the input string is empty, return an empty string.
+               The words in the input String will only contain valid
+               consecutive numbers.
+
+        :return:
+        ","0","Testing 'order' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing the function with various test data
+        :return:
+        ","0","Testing count_letters_and_digits function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing 'snail' function
+
+        Given an n x n array, 'snail' function should return the array
+        elements arranged from outermost elements to the middle element,
+        traveling clockwise.
+        ","0","Testing 'snail' function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing tickets function with various test inputs.
+
+        The new ""Avengers"" movie has just been released!
+        There are a lot of people at the cinema box office
+        standing in a huge line. Each of them has a single
+        100, 50 or 25 dollar bill. An ""Avengers"" ticket
+        costs 25 dollars.
+
+        Vasya is currently working as a clerk.
+        He wants to sell a ticket to every single person
+        in this line.
+
+        Can Vasya sell a ticket to every person and give change
+        if he initially has no money and sells the tickets strictly
+        in the order people queue?
+
+        The function should return YES, if Vasya can sell
+        a ticket to every person and give change with the
+        bills he has at hand at that moment. Otherwise return NO.
+        :return:
+        ","0","Testing tickets function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Advanced Language Features","",""
+"
+        Testing gap function with various test inputs
+
+        A binary gap within a positive number num is
+        any sequence of consecutive zeros that is
+        surrounded by ones at both ends in the binary
+        representation of num.
+
+        The gap function should return the length of
+        its longest binary gap.
+
+        The function should return 0 if num doesn't
+        contain a binary gap.
+        :return:
+        ","0","Testing gap function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Advanced Language Features","",""
+"
+        Test with regular string
+        :return:
+        ","0","Test with regular string","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing number_of_sigfigs function
+        with various test inputs
+        :return:
+        ","16","Testing number_of_sigfigs function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        The function should return a formatted string.
+        The return value should equal ""Value is VALUE""
+        where value is a 5 digit padded number.
+        :return:
+        ","0","Testing 'solution' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing 'DefaultList' class: append
+        :return:
+        ","0","Testing 'DefaultList' class: append","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Object-Oriented Programming","",""
+"
+        3 is not a square number
+        :return:
+        ","0","Simple test for empty string.","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Large lists
+        :return:
+        ","0","Large lists","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing largestPower function
+        :return:
+        ","0","Testing largestPower function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing easy_diagonal function
+        :param self:
+        :return:
+        ","695","Testing easy_diagonal function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing enough function
+        with various test data
+
+        If there is enough space, return 0,
+        and if there isn't, return the number
+        of passengers he can't take.
+        :return:
+        ","0","STesting enough function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Math","",""
+"
+        Testing the 'valid_braces' function
+        with various test data
+        :return:
+        ","0","Testing the 'valid_braces' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Test the function that organizes a sports league in a
+        round-robin-system. Each team meets all other teams.
+        In your league a win gives a team 2 points, a draw gives
+        both teams 1 point. After some games you have to compute
+        the order of the teams in your league. You use the following
+        criteria to arrange the teams:
+
+            - Points
+            - Scoring differential (the difference between goals scored and those conceded)
+            - Goals scored
+
+        :return:
+        ","0","Testing compute_ranks","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+"
+        Verify that 'has_subpattern' function to returns
+        either true/True or false/False if a string can be
+        seen as the repetition of a simpler/shorter subpattern or not.
+
+        1. if a subpattern has been used, it will be repeated
+        at least twice, meaning the subpattern has to be
+        shorter than the original string;
+
+        2. the strings you will be given might or might not
+        be created repeating a given subpattern, then
+        shuffling the result.
+        :return:
+        ","0","Testing 'has_subpattern' (part 2) function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Advanced Language Features","",""
+"
+        Testing Sudoku class
+
+        Given a Sudoku data structure with size NxN, N > 0 and √N == integer,
+        assert a method that validates if it has been filled out correctly.
+        :return:
+        ","0","Testing Sudoku class","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing stock_list function with various test data
+        :return:
+        ","0","Testing stock_list function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Test string with no duplicate chars.
+        :return:
+        ","0","String with no duplicate chars","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing first_non_repeated function
+        :return:
+        ","0","Testing first_non_repeated function with various inputs","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Verify that multiply function
+        returns correct result
+        :return:
+        ","0","'multiply' function verification","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Math","",""
+"
+        Repeating char is a space.
+        :return:
+        ","0","String alphabet chars and spaces","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'letter_count' function
+        :return:
+        ","0","Testing 'letter_count' function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Data Structures","",""
+"
+        Test a function `smallest` which will return an array or a tuple or a string
+        depending on the language (see ""Sample Tests"").
+        :return:
+        ","0","test_smallest","Novice","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Test a function validSolution/ValidateSolution/valid_solution()
+        that accepts a 2D array representing a Sudoku board, and returns
+        true if it is a valid solution, or false otherwise. The cells of
+        the sudoku board may also contain 0's, which will represent empty
+        cells. Boards containing one or more zeroes are considered to be
+        invalid solutions.
+
+        The board is always 9 cells by 9 cells, and every
+        cell only contains integers from 0 to 9.
+        :return:
+        ","0","Testing validSolution","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'count_sheeps' function
+        Hint: Don't forget to check for
+        bad values like null/undefined
+        :return:
+        ","0","Testing 'count_sheeps' function: bad input","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing Line Safari functionality
+        Positive test cases
+        ","0","test_line_positive","Competent","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing binary_to_string function
+        with various test data
+        :return:
+        ","0","Testing binary_to_string function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Character Encodings","",""
+"
+        a or b is negative
+        :return:
+        ","0","a or b is negative","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'vaporcode' function
+        :return:
+        ","0","Testing 'vaporcode' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Sample testing.
+        :return:
+        ","0","Find the int that appears an odd number of times","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing Walker class
+        Testing starting position property based on positive grids
+        ","0","Testing Walker class - position property from positive grids","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Positive tests
+        :return:
+        ","0","Testing period_is_late function (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Negative testing permute_a_palindrome function
+        :return:
+        ","0","Testing permute_a_palindrome (negative)","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing pig_it function
+
+        The function should mpve the first letter of each
+        word to the end of it, then add ""ay"" to the end
+        of the word. Leave punctuation marks untouched.
+        :return:
+        ","0","Testing pig_it function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        The 'pyramid' function should return
+        an Array of ascending length subarrays.
+
+        Note: the subarrays should be filled with 1s.
+        :return:
+        ","0","Testing the 'pyramid' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing two_decimal_places function
+        with various test inputs
+
+        Each floating-point number should be
+        formatted that only the first two
+        decimal places are returned.
+
+        You don't need to check whether the input
+        is a valid number because only valid numbers
+        are used in the tests.
+
+        Don't round the numbers! Just cut them
+        after two decimal places!
+
+        :return:
+        ","0","Testing two_decimal_places function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing shark function -> positive
+        :return:
+        ","0","Testing shark function (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        The player rolls the dice and moves the number
+        of spaces indicated by the dice two times.
+
+        Pass position and roll and compare the output
+        to the expected result
+        :return:
+        ","0","move function tests","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Math","",""
+"
+        Testing epidemic function
+        :return:
+        ","0","Testing epidemic function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Use conditionals to to verify that greet
+        function returns the proper message.
+        :return:
+        ","0","Verify that greet function returns the proper message","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Control Flow","",""
+"
+        Simple Fun #152: Invite More Women?
+        Testing invite_more_women function (positive)
+        :return:
+        ","0","Testing invite_more_women function (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        If the wolf is the closest animal to you,
+        return ""Pls go away and stop eating my sheep"".
+        :return:
+        ","0","Wolf at the beginning of the queue","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Control Flow","",""
+"
+        Testing ips_between function
+
+        Testing a function that receives two IPv4 addresses,
+        and returns the number of addresses between them
+        (including the first one, excluding the last one).
+
+        All inputs will be valid IPv4 addresses in the form
+        of strings. The last address will always be greater
+        than the first one.
+        :return:
+        ","0","test_ips_between","Novice","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'parts_sums' function with various test data
+        :return:
+        ","0","Testing 'parts_sums' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing 'sum_triangular_numbers' function
+        with zero as an input
+        :return:
+        ","0","Testing 'sum_triangular_numbers' with zero","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing summation function
+        with various test inputs
+        :return:
+        ","0","Testing 'summation' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Control Flow","",""
+"
+        Testing sum_for_list function
+        :return:
+        ","78","Testing sum_for_list function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing get_size function with various inputs
+        :return:
+        ","0","get_size function tests","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Math","",""
+"
+        Testing letter_frequency function
+        where all chars are in mixed case
+        :return:
+        ","0","All chars are in mixed case","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        a an b are positive numbers
+        :return:
+        ","0","a an b are positive numbers","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing a function named agents_cleanup where:
+            - agents: is an array of agent coordinates
+            - n: defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid.
+
+        The function should remove all agents that are outside of the city boundaries.
+        :return:
+        ","0","Testing agents_cleanup function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing encrypt_this function
+        :param self:
+        :return:
+        ","0","Testing encrypt_this function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        In logic and mathematics, or is the
+        truth-functional operator of (inclusive)
+        disjunction, also known as alternation.
+
+        The or of a set of operands is true if
+        and only if one or more of its operands is true.
+
+        Source:
+        https://en.wikipedia.org/wiki/Logical_disjunction
+
+        :return:
+        ","0","OR logical operator","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing swap_values function
+        ","0","Testing swap_values function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Test lists with multiple digits
+        :return:
+        ","0","'multiply' function verification: lists with multiple digits","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing potion function with various test inputs
+        :return:
+        ","0","Testing Potion class","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Classes","",""
+"
+        In this kata, you must create a digital root function.
+
+        A digital root is the recursive sum of all the digits
+        in a number. Given n, take the sum of the digits of n.
+        If that value has more than one digit, continue reducing
+        in this way until a single-digit number is produced. This
+        is only applicable to the natural numbers.
+        :return:
+        ","0","Testing digital_root function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Simple Fun #152: Invite More Women?
+        Testing invite_more_women function (negative)
+        :return:
+        ","0","Testing invite_more_women function (negative)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing a function named increment_string
+        :return:
+        ","0","Testing increment_string function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing greek_comparator function
+        with various test inputs
+        :return:
+        ","0","Testing 'greek_comparator' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
 "
         Testing alphabet_war function
 
@@ -34,411 +745,45 @@
         the next shelter (or beginning/end of battlefield). The below samples
         make it clear for you.
         :return:
-        ","15","Testing alphabet_war function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Advanced Language Features","",""
+        ","0","Testing alphabet_war function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Advanced Language Features","",""
 "
-        Test a function which formats a duration,
-        given as a number of seconds, in a human-friendly way.
+        Test top_3_words function
+        ","0","Testing top_3_words function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'solution' function
 
-        The function must accept a non-negative integer.
-        If it is zero, it just returns ""now"". Otherwise,
-        the duration is expressed as a combination of years,
-        days, hours, minutes and seconds.
+        The solution should strips all text that follows any
+        of a set of comment markers passed in. Any whitespace at
+        the end of the line should also be stripped out.
+        ","0","Testing 'solution' function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        -1: Negative numbers cannot be square numbers
         :return:
-        ","0","Testing format_duration","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Negative numbers","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
 "
-        Testing 'DefaultList' class: remove
+        26 is not a square number
         :return:
-        ","15","Testing 'DefaultList' class: remove","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Object-Oriented Programming","",""
-"
-        Testing Battle method
-        ","0","Testing Battle method","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","OOP","",""
-"
-        The function powers takes a single parameter,
-        the number n, and should return an array of unique numbers.
-        :return:
-        ","0","powers function should return an array of unique numbers","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing is_palindrome function
-        with various test inputs
-
-        The function should check if a
-        given string (case insensitive)
-        is a palindrome.
-        ","0","Testing is_palindrome function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing duplicate_encode function
-        with various test inputs
-        :return:
-        ","0","Testing duplicate_encode function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        And (∧) is the truth-functional
-        operator of logical conjunction
-
-        The and of a set of operands is true
-        if and only if all of its operands are true.
-
-        Source:
-        https://en.wikipedia.org/wiki/Logical_conjunction
-
-        :return:
-        ","0","AND logical operator","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing solution function
-
-        If we list all the natural numbers below 10
-        that are multiples of 3 or 5, we get 3, 5, 6 and 9.
-        The sum of these multiples is 23.
-
-        Finish the solution so that it returns the sum of
-        all the multiples of 3 or 5 below the number passed in.
-
-        Note: If the number is a multiple of both 3 and 5,
-        only count it once.
-        :return:
-        ","0","Testing the 'solution' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Non square numbers (negative)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
 "
         Test a function that will find all the anagrams of a word from a list.
         You will be given two inputs a word and an array with words. You should
         return an array of all the anagrams or an empty array if there are none.
+        :return:
+        ","0","Testing anagrams function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Test that a function that given a sequence of strings,
+        groups the elements that can be obtained by rotating others,
+        ignoring upper or lower cases.
 
-        For example:
-
-        anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
-        anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
-        anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
+        In the event that an element appears more than once in
+        the input sequence, only one of them will be taken into
+        account for the result, discarding the rest.
         :return:
-        ","0","Testing anagrams function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing the 'group_cities' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Large lists
+        Testing to_alternating_case function
         :return:
-        ","0","Large lists","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Simple negative test
-        :return:
-        ","0","Testing toJadenCase function (negative)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing Warrior class >>> tom
-        ","0","Testing Warrior class >>> tom","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","OOP","",""
-"
-        Testing next_smaller function
-
-        You have to test a function that takes a positive integer number
-        and returns the next smaller number formed by the same digits:
-
-        21 ==> 12
-        531 ==> 513
-        2071 ==> 2017
-
-        If no smaller number can be composed using those digits, return -1
-        ","15","Testing next_smaller function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing gap function with various test inputs
-
-        A binary gap within a positive number num is
-        any sequence of consecutive zeros that is
-        surrounded by ones at both ends in the binary
-        representation of num.
-
-        The gap function should return the length of
-        its longest binary gap.
-
-        The function should return 0 if num doesn't
-        contain a binary gap.
-        :return:
-        ","0","Testing gap function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Advanced Language Features","",""
-"
-        Testing string_to_array function.
-
-        A function to split a string and
-        convert it into an array of words.
-        :return:
-        ","0","Testing string_to_array function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing two_decimal_places function
-        with various test inputs.
-
-        Each number should be formatted that it is
-        rounded to two decimal places. You don't
-        need to check whether the input is a valid
-        number because only valid numbers are used
-        in the tests.
-        :return:
-        ","0","Testing two_decimal_places function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Verify that multiply function
-        returns correct result
-        :return:
-        ","0","'multiply' function verification","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing easy_diagonal function
-        :param self:
-        :return:
-        ","648","Testing easy_diagonal function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Testing letter_frequency function
-        where all chars are in mixed case
-        :return:
-        ","0","All chars are in mixed case","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test an algorithm that takes an array and moves all of the
-        zeros to the end, preserving the order of the other elements.
-        :return:
-        ","0","Testing move_zeros function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Advanced/random test case
-        :return:
-        ","0","test_random","Beginner","Mon Aug 26 21:37:54 PDT 2024","passed","Mon Aug 26 21:37:54 PDT 2024","Unit Tests","Data Structures","",""
-"","0","Testing Potion class","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Classes","",""
-"
-        Testing 'snail' function
-
-        Given an n x n array, 'snail' function should return the array
-        elements arranged from outermost elements to the middle element,
-        traveling clockwise.
-        ","0","Testing 'snail' function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"","0","test_solution_big","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        In this kata, you must create a digital root function.
-
-        A digital root is the recursive sum of all the digits
-        in a number. Given n, take the sum of the digits of n.
-        If that value has more than one digit, continue reducing
-        in this way until a single-digit number is produced. This
-        is only applicable to the natural numbers.
-        :return:
-        ","0","Testing digital_root function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing 'vaporcode' function
-        :return:
-        ","0","Testing 'vaporcode' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing 'sum_triangular_numbers' function
-        with negative numbers
-        :return:
-        ","0","Testing 'sum_triangular_numbers' with negative numbers","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"","0","Testing easy_line function exception message","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"","0","Testing row_sum_odd_numbers function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"","0","Testing zero_fuel function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        -1: Negative numbers cannot be square numbers
-        :return:
-        ","0","Negative numbers","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Assert that 'domain_name' function
-        returns domain name from given URL string.
-
-        :return:
-        ","0","Testing domain_name function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test that 'remove_char' function
-        removes the first and
-        last characters of a string.
-        :return:
-        ","0","Testing remove_char function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing share_price function
-        with multiple test inputs
-        :return:
-        ","0","Testing share_price function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test the function called that takes a string of parentheses,
-        and determines if the order of the parentheses is valid.
-        The function should return true if the string is valid,
-        and false if it's invalid.
-
-        Examples
-
-        ""()""              =>  true
-        "")(()))""          =>  false
-        ""(""               =>  false
-        ""(())((()())())""  =>  true
-        :return:
-        ","0","Testing valid_parentheses function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        non-consecutive is a negative number.
-        :return:
-        ","0","Negative non consecutive number should be returned","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        In mathematics the number of x combinations you can take from a
-        set of n elements is called the binomial coefficient of n and x,
-        or more often n choose x. The formula to compute m = n choose x is:
-        m = n! / (x! * (n - x)!) where ! is the factorial operator.
-
-        You are a renowned poster designer and painter. You are asked to
-        provide 6 posters all having the same design each in 2 colors.
-        Posters must all have a different color combination and you have
-        the choice of 4 colors: red, blue, yellow, green. How many colors
-        can you choose for each poster?
-        ","0","Testing checkchoose function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Testing 'DefaultList' class: __getitem__
-
-        Called to implement evaluation of self[key]. For sequence types,
-        the accepted keys should be integers and slice objects.
-        Note that the special interpretation of negative indexes
-        (if the class wishes to emulate a sequence type) is up to the
-        __getitem__() method.
-        :return:
-        ","0","Testing 'DefaultList' class: __getitem__","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Object-Oriented Programming","",""
-"
-        Testing 'sum_triangular_numbers' function
-        with positive numbers
-        :return:
-        ","0","Testing 'sum_triangular_numbers' with positive numbers","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing calc class
-
-        Given a mathematical expression as a string you
-        must return the result as a number.
-        ","19","Testing calc function","Proficient","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Negative test cases for gen_primes function testing
-        :return:
-        ","0","Negative test cases for gen_primes function testing","Helper methods","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","No kyu helper methods","",""
-"
-        26 is not a square number
-        :return:
-        ","0","Non square numbers (negative)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing two_decimal_places function
-        with various test inputs
-
-        Each floating-point number should be
-        formatted that only the first two
-        decimal places are returned.
-
-        You don't need to check whether the input
-        is a valid number because only valid numbers
-        are used in the tests.
-
-        Don't round the numbers! Just cut them
-        after two decimal places!
-
-        :return:
-        ","0","Testing two_decimal_places function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing century function
-        ","0","Testing century function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Numbers","",""
-"
-        Testing summation function
-        with various test inputs
-        :return:
-        ","0","Testing 'summation' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Control Flow","",""
-"","16","Testing calculate function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Test a function `smallest` which will return an array or a tuple or a string
-        depending on the language (see ""Sample Tests"") with
-
-          1) the smallest number you got
-          2) the index i of the digit d you took, i as small as possible
-          3) the index j (as small as possible) where you insert this digit d to have the smallest number.
-
-        :return:
-        ","0","test_smallest","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing sum_for_list function
-        :return:
-        ","78","Testing sum_for_list function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        If there are one or two good ideas,
-        return 'Publish!',
-        :return:
-        ","0","Should return 'Publish!'","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        0 is a square number
-        :return:
-        ","0","Zero","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing 'factorial' function
-
-        In mathematics, the factorial of a non-negative integer n,
-        denoted by n!, is the product of all positive integers less
-        than or equal to n. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120.
-        By convention the value of 0! is 1.
-
-        Write a function to calculate factorial for a given input.
-        If input is below 0 or above 12 throw an exception of type
-        ValueError (Python).
-        :return:
-        ","0","Testing 'factorial' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing make_readable function
-
-        Write a function, which takes a non-negative integer
-        (seconds) as input and returns the time in a human-readable
-        format (HH:MM:SS)
-
-        HH = hours, padded to 2 digits, range: 00 - 99
-        MM = minutes, padded to 2 digits, range: 00 - 59
-        SS = seconds, padded to 2 digits, range: 00 - 59
-
-        The maximum time never exceeds 359999 (99:59:59)
-        :return:
-        ","0","Testing make_readable function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing permute_a_palindrome function
-        :return:
-        ","0","Testing permute_a_palindrome (positive)","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing a function named create_city_map where:
-            - n defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
-
-        The function should generate city map with coordinates.
-        :return:
-        ","0","Testing create_city_map function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing a function named first_non_repeating_letter
-        that takes a string input, and returns the first character
-        that is not repeated anywhere in the string.
-
-        For example, if given the input 'stress', the function
-        should return 't', since the letter t only occurs once
-        in the string, and occurs first in the string.
-
-        As an added challenge, upper- and lowercase letters are
-        considered the same character, but the function should
-        return the correct case for the initial letter. For example,
-        the input 'sTreSS' should return 'T'.
-
-        If a string contains all repeating characters, it should
-        return an empty string ("""") or None -- see sample tests.
-        :return:
-        ","0","Testing first_non_repeating_letter function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Exclusive or or exclusive disjunction is a
-        logical operation that outputs true only when
-        inputs differ (one is true, the other is false).
-
-        XOR outputs true whenever the inputs differ:
-
-        Source:
-        https://en.wikipedia.org/wiki/Exclusive_or
-        :return:
-        ","16","XOR logical operator","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing done_or_not function
-
-        Testing a function done_or_not/DoneOrNot passing a board
-        (list[list_lines]) as parameter. If the board is valid return
-        'Finished!', otherwise return 'Try again!'
-        :return:
-        ","0","Testing done_or_not function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing greek_comparator function
-        with various test inputs
-        :return:
-        ","0","Testing 'greek_comparator' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"","0","Testing hoop_count function (negative test case)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Test string with no alphabet chars
-        :return:
-        ","0","String with no alphabet chars","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing encrypt_this function
-        :param self:
-        :return:
-        ","0","Testing encrypt_this function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
+        ","0","Testing to_alternating_case function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
         Testing sum_of_intervals function
 
@@ -454,197 +799,30 @@
         Interval example: [1, 5] is an interval from 1 to 5.
         The length of this interval is 4.
         :return:
-        ","0","Testing sum_of_intervals function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing sum_of_intervals function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing is_solved function
-
-        The function should return whether the
-        board's current state is solved.
-
-        We want our function to return:
-
-            -1 if the board is not yet finished (there are empty spots),
-            1 if ""X"" won,
-            2 if ""O"" won,
-            0 if it's a cat's game (i.e. a draw).
-        ","0","Testing done_or_not function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing the 'unique_in_order' function
-        with various test data
+        The function powers takes a single parameter,
+        the number n, and should return an array of
+        unique numbers.
         :return:
-        ","0","Testing the 'unique_in_order' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Advanced Language Features","",""
-"","0","Testing likes function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
+        ","0","powers function should return an array of unique numbers","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        The player rolls the dice and moves the number
-        of spaces indicated by the dice two times.
-
-        Pass position and roll and compare the output
-        to the expected result
+        a and b are equal
         :return:
-        ","0","move function tests","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
+        ","0","a and b are equal","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing Battleship field validator
-
-        Testing a method that takes a field for well-known board game ""Battleship""
-        as an argument and returns true if it has a valid disposition of ships,
-        false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
-        Elements in the array are numbers, 0 if the cell is free and 1 if occupied by ship.
-        ","0","Testing validate_battlefield function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing shark function -> negative
+        if there are more than 2 return
+        'I smell a series!'.
         :return:
-        ","0","Testing shark function (negative)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
+        ","0","Should return 'I smell a series!'","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
 "
-        Testing 'mix' function
-
-        Given two strings s1 and s2, the 'mix' function
-        should visualize how different the two strings are.
-        ","0","Testing 'mix' function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        a an b are positive numbers
+        Advanced/random test case
         :return:
-        ","0","a an b are positive numbers","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","test_random","Beginner","Mon Aug 26 21:37:54 PDT 2024","passed","Mon Aug 26 21:37:54 PDT 2024","Unit Tests","Data Structures","",""
 "
-        Test a function validSolution/ValidateSolution/valid_solution()
-        that accepts a 2D array representing a Sudoku board, and returns
-        true if it is a valid solution, or false otherwise. The cells of
-        the sudoku board may also contain 0's, which will represent empty
-        cells. Boards containing one or more zeroes are considered to be
-        invalid solutions.
-
-        The board is always 9 cells by 9 cells, and every
-        cell only contains integers from 0 to 9.
+        Test string with alphabet chars only.
         :return:
-        ","0","Testing validSolution","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing 'is_isogram' function
-        ","0","Testing 'is_isogram' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"","0","Testing easy_line function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Testing 'count_sheeps' function
-        Hint: Don't forget to check for
-        bad values like mixed list
-        :return:
-        ","0","Testing 'count_sheeps' function: mixed list","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        String subpattern recognition I
-
-        Verify that 'has_subpattern' function to returns
-        either true/True or false/False if a string can be
-        seen as the repetition of a simpler/shorter subpattern or not.
-        :return:
-        ","0","Testing 'has_subpattern' (part 1) function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Advanced Language Features","",""
-"","0","Testing to_table function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Test with empty list
-        :return:
-        ","0","'multiply' function verification with empty list","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Test namelist
-
-        Given:
-        an array containing hashes of names
-
-        Return:
-        a string formatted as a list of names separated by commas
-        except for the last two names, which should be separated
-        by an ampersand.
-
-        :return:
-        ","0","String with no duplicate chars","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing Walker class
-        Testing starting position property based on negative grids
-        ","0","test_starting_position_from_negatives","Competent","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test that a function that given a sequence of strings, groups the elements
-        that can be obtained by rotating others, ignoring upper or lower cases.
-
-        In the event that an element appears more than once in the input sequence,
-        only one of them will be taken into account for the result, discarding the rest.
-        :return:
-        ","0","Testing the 'group_cities' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing first_non_repeated function
-        :return:
-        ","0","Testing first_non_repeated function with various inputs","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        25 is a square number
-        :return:
-        ","0","Square numbers (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"","0","test_solution_empty","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing swap_values function
-        ","0","Testing swap_values function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing 'sum_triangular_numbers' function
-        with big number as an input
-        :return:
-        ","0","Testing 'sum_triangular_numbers' with big number as an input","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"","0","Testing odd_row function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Performance","",""
-"
-        Testing 'sentencify' function.
-
-        The function should:
-
-        1. Capitalise the first letter of the first word.
-        2. Add a period (.) to the end of the sentence.
-        3. Join the words into a complete string, with spaces.
-        4. Do no other manipulation on the words.
-
-        :return:
-        ","0","Testing 'solution' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing largestPower function
-        :return:
-        ","0","Testing largestPower function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        If the whole array is consecutive then return
-        null or Nothing or None.
-        :return:
-        ","0","Non is expected","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        The string ""This website is for losers LOL!""
-        should become ""Ths wbst s fr lsrs LL!""
-        :return:
-        ","0","a and b are equal","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Advanced Language Features","",""
-"
-        Simple positive test
-        :return:
-        ","0","Testing toJadenCase function (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing check_root function with various test inputs
-
-        A function which takes numbers separated by commas
-        in string format and returns the number which is a
-        perfect square and the square root of that number.
-
-        If string contains other characters than number or
-        it has more or less than 4 numbers separated by comma
-        function returns ""incorrect input"".
-
-        If string contains 4 numbers but not consecutive it
-        returns ""not consecutive"".
-        :return:
-        ","0","Testing check_root function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing a function named advice(agents, n) where:
-            - agents is an array of agent coordinates.
-            - n defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
-
-        The function should return a list of coordinates that are the furthest
-        away (by Manhattan distance) from all agents.
-        :return:
-        ","125","Testing advice function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing pig_it function
-
-        The function should mpve the first letter of each
-        word to the end of it, then add ""ay"" to the end
-        of the word. Leave punctuation marks untouched.
-        :return:
-        ","0","Testing pig_it function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","String with alphabet chars only","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
         The 'sort_array' function.
 
@@ -656,16 +834,86 @@
         to return it.
 
         :return:
-        ","16","Testing the 'sort_array' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing the 'sort_array' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Test string with alphabet chars only
+        Testing 'sum_triangular_numbers' function
+        with negative numbers
         :return:
-        ","0","String with alphabet chars only","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing 'sum_triangular_numbers' with negative numbers","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        You are given two angles (in degrees) of a triangle.
-        Find the 3rd.
+        Basic test case
         :return:
-        ","0","You are given two angles -> find the 3rd.","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
+        ","0","test_basic","Beginner","Mon Aug 26 21:37:54 PDT 2024","passed","Mon Aug 26 21:37:54 PDT 2024","Unit Tests","Data Structures","",""
+"
+        Testing is_palindrome function
+        with various test inputs
+
+        The function should check if a
+        given string (case insensitive)
+        is a palindrome.
+        ","0","Testing is_palindrome function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        3 is not a square number
+        :return:
+        ","0","Non square numbers (negative)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Test that no_space function removes the spaces
+        from the string, then return the resultant string.
+        :return:
+        ","0","Test that no_space function removes the spaces","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        If there are one or two good ideas,
+        return 'Publish!',
+        :return:
+        ","0","Should return 'Publish!'","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        String subpattern recognition I
+
+        Verify that 'has_subpattern' function to returns
+        either true/True or false/False if a string can be
+        seen as the repetition of a simpler/shorter subpattern or not.
+        :return:
+        ","0","Testing 'has_subpattern' (part 1) function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Advanced Language Features","",""
+"
+        Testing 'mix' function
+
+        Given two strings s1 and s2, the 'mix' function
+        should visualize how different the two strings are.
+        ","0","Testing 'mix' function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing share_price function
+        with multiple test inputs
+        :return:
+        ","0","Testing share_price function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Negative test cases for gen_primes function testing
+        :return:
+        ","0","Negative test cases for gen_primes function testing","Helper methods","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","No kyu helper methods","",""
+"
+        Testing 'save' function: positive
+
+        The function should determine how many
+        files of the copy queue you will be able
+        to save into your Hard Disk Drive.
+        :return:
+        ","0","Testing 'save' function: positive","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        If we have an array [1,2,3,4,6,7,8] then 1 then 2
+        then 3 then 4 are all consecutive but 6 is not,
+        so that's the first non-consecutive number.
+        :return:
+        ","0","Non consecutive number should be returned","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Test string with no alphabet chars.
+        :return:
+        ","0","String with no alphabet chars","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing solution function
+        ","0","Testing solution function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'numericals' function
+        :return:
+        ","0","Testing 'numericals' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
         Testing string_transformer function
         with multiple test data.
@@ -679,7 +927,53 @@
         2. Reverse the order of words from the input.
 
         :return:
-        ","0","Testing string_transformer function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing string_transformer function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Test a function that should take a shuffled list of
+        unique numbers from 1 to n with one element missing
+        (which can be any number including n). Should return
+        this missing number.
+
+        :return:
+        ","0","Testing the 'find_missing_number' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing length function
+
+        The method length, which accepts a linked list
+        (head), and returns the length of the list.
+        :return:
+        ","0","Testing length function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing shark function -> negative
+        :return:
+        ","0","Testing shark function (negative)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Testing 'DefaultList' class: remove
+        :return:
+        ","0","Testing 'DefaultList' class: remove","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Object-Oriented Programming","",""
+"
+        Test valid_parentheses function with
+        invalid large string
+        :return:
+        ","0","Test for invalid large string","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing done_or_not function
+
+        Testing a function done_or_not/DoneOrNot passing a board
+        (list[list_lines]) as parameter. If the board is valid return
+        'Finished!', otherwise return 'Try again!'
+        :return:
+        ","0","Testing done_or_not function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Verify that 'has_subpattern' function
+
+        Return a subpattern with sorted characters,
+        otherwise return the base string with sorted
+        characters (you might consider this case as
+        an edge case, with the subpattern being repeated
+        only once and thus equalling the original input string).
+        :return:
+        ","0","Testing 'has_subpattern' (part 3) function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Advanced Language Features","",""
 "
         Testing a function that checks if a given number n is a prime
         looping through it and, possibly, expanding the array/list of
@@ -688,122 +982,43 @@
         for each n, stop).
 
         :return:
-        ","16","Testing is_prime function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","16","Testing is_prime function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
 "
-        Verify that the function returns Messi's
-        total number of goals in all three leagues.
+        Testing 'generate_hashtag' function
+        ","0","Testing 'generate_hashtag' function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing make_class function
         :return:
-        ","0","goals function verification","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
+        ","0","Testing make_class function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","OOP","",""
 "
-        Testing 'letter_count' function
+        -1: Negative numbers cannot be square numbers
         :return:
-        ","0","Testing 'letter_count' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Data Structures","",""
+        ","15","Simple test for valid parentheses","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing next_bigger function
+        Returns [] if list has only one element
+        :return:
+        ","11","'multiply' function verification with one element list","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing letter_frequency function
+        where all chars are in lower case
+        :return:
+        ","0","All chars are in lower case","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'sum_pairs' function
 
-        You have to test a function that takes a positive integer
-        number and returns the next bigger number formed by the same digits:
-
-        12 ==> 21
-        513 ==> 531
-        2017 ==> 2071
-
-        If no bigger number can be composed using those digits, return -1
-        ","0","Testing next_bigger function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        Given a list of integers and a single sum value,
+        the function should return the first two values
+        (parse from the left please) in order of appearance
+        that add up to form the sum.
+        ","0","Testing done_or_not function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing 'feast' function with various test inputs
-
-        Testing a function feast that takes the animal's
-        name and dish as arguments and returns true or
-        false to indicate whether the beast is allowed
-        to bring the dish to the feast.
-
-        Assume that beast and dish are always lowercase strings,
-        and that each has at least two letters. beast and dish
-        may contain hyphens and spaces, but these will not appear
-        at the beginning or end of the string. They will not
-        contain numerals.
-
-        There is just one rule: the dish must start and end with
-        the same letters as the animal's name. For example, the
-        great blue heron is bringing garlic naan and the chickadee
-        is bringing chocolate cake.
+        Positive test cases for gen_primes function testing
         :return:
-        ","0","Testing 'feast' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Positive test cases for gen_primes function testing","Helper methods","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","No kyu helper methods","",""
 "
-        Testing number_of_sigfigs function
-        with various test inputs
+        Testing odd_row function with various test data
         :return:
-        ","0","Testing number_of_sigfigs function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"
-        In this kata you have to correctly return who
-        is the ""survivor"", ie: the last element of a
-        Josephus permutation.
-        :return:
-        ","0","test_josephus_survivor","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Positive test cases for is_prime function testing
-        :return:
-        ","0","Positive test cases for is_prime function testing","Helper methods","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","No kyu helper methods","",""
-"
-        Testing check_for_factor function.
-
-        This function should test if the
-        factor is a factor of base.
-
-        Return true if it is a factor.
-        :return:
-        ","0","Testing check_for_factor function: positive flow","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        If the wolf is the closest animal to you,
-        return ""Pls go away and stop eating my sheep"".
-        :return:
-        ","0","Wolf in the middle of the queue","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Control Flow","",""
-"
-        If we have an array [1,2,3,4,6,7,8] then 1 then 2
-        then 3 then 4 are all consecutive but 6 is not,
-        so that's the first non-consecutive number.
-        :return:
-        ","0","Non consecutive number should be returned","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        For this exercise you will create a global flatten method.
-        The method takes in any number of arguments and flattens
-        them into a single array. If any of the arguments passed in
-        are an array then the individual objects within the array
-        will be flattened so that they exist at the same level as
-        the other arguments. Any nested arrays, no matter how deep,
-        should be flattened into the single array result.
-
-        The following are examples of how this function would be
-        used and what the expected results would be:
-
-        flatten(1, [2, 3], 4, 5, [6, [7]]) # returns [1, 2, 3, 4, 5, 6, 7]
-        flatten('a', ['b', 2], 3, None, [[4], ['c']]) # returns ['a', 'b', 2, 3, None, 4, 'c']
-        :return:
-        ","0","Testing flatten function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Simple Fun #152: Invite More Women?
-        Testing invite_more_women function (positive)
-        :return:
-        ","0","Testing invite_more_women function (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"","0","test_solution_basic","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Basic test case
-        :return:
-        ","0","test_basic","Beginner","Mon Aug 26 21:37:54 PDT 2024","passed","Mon Aug 26 21:37:54 PDT 2024","Unit Tests","Data Structures","",""
-"
-        If there are no good ideas,
-        as is often the case, return 'Fail!'.
-        :return:
-        ","0","Should return 'Fail!'s","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing 'save' function: positive
-
-        The function should determine how many
-        files of the copy queue you will be able
-        to save into your Hard Disk Drive.
-        :return:
-        ","0","Testing 'save' function: positive","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing odd_row function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Performance","",""
 "
         Testing 'count_sheeps' function
         Consider an array of sheep where some sheep
@@ -811,185 +1026,59 @@
         We need a function that counts the
         number of sheep present in the array
         (true means present).
+        :return:
+        ","0","Testing 'count_sheeps' function: positive flow","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        non-consecutive is a negative number.
+        :return:
+        ","0","Negative non consecutive number should be returned","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing calc_combinations_per_row function
+        :return:
+        ","0","Testing calc_combinations_per_row function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing 'shortest_job_first' function with various test data
+        :return:
+        ","0","Testing 'shortest_job_first(' function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing likes function with various test data
+        :return:
+        ","0","Testing likes function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing password function with various test inputs
+        :return:
+        ","0","Testing password function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing 'sum_triangular_numbers' function
+        with big number as an input
+        :return:
+        ","0","Testing 'sum_triangular_numbers' with big number as an input","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing calculate function with various test data
+        :return:
+        ","16","Testing calculate function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Testing duplicate_encode function
+        with various test inputs
+        :return:
+        ","0","Testing duplicate_encode function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing calculate_damage with various test data
+        :return:
+        ","0","Testing calculate_damage function","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Games","",""
+"
+        Test namelist
+
+        Given:
+        an array containing hashes of names
+
+        Return:
+        a string formatted as a list of names separated by commas
+        except for the last two names, which should be separated
+        by an ampersand.
 
         :return:
-        ","0","Testing 'count_sheeps' function: positive flow","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing litres function with various test inputs
-        :return:
-        ","15","Testing litres function with various test inputs","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Basic test case
-        :return:
-        ","0","test_triangle","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        4 is a square number
-        :return:
-        ","0","Square numbers (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing Sudoku class
-
-        Given a Sudoku data structure with size NxN, N > 0 and √N == integer,
-        assert a method that validates if it has been filled out correctly.
-        :return:
-        ","16","Testing Sudoku class","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing 'save' function: negative
-
-        The function should determine how many
-        files of the copy queue you will be able
-        to save into your Hard Disk Drive.
-        :return:
-        ","0","Testing 'save' function: negative","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        For a given string s find the character c (or C) with
-        longest consecutive repetition and return: (c, l)
-        where l (or L) is the length of the repetition.
-
-        For empty string return: ('', 0)
-        :return:
-        ","0","Testing 'longest_repetition' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing Warrior class >>> bruce_lee
-        ","15","Testing Warrior class >>> bruce_lee","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","OOP","",""
-"
-        Sample Tests for make_upper_case function
-        :return:
-        ","0","Testing make_upper_case function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Test sum_two_smallest_numbers function
-        The function should return the sum of
-        the two lowest positive numbers
-        :return:
-        ","0","Two smallest numbers in the start of the list","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing list_squared function
-
-        :return:
-        ","125","Testing list_squared function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test the function that organizes a sports league in a
-        round-robin-system. Each team meets all other teams.
-        In your league a win gives a team 2 points, a draw gives
-        both teams 1 point. After some games you have to compute
-        the order of the teams in your league. You use the following
-        criteria to arrange the teams:
-
-            - Points
-            - Scoring differential (the difference between goals scored and those conceded)
-            - Goals scored
-
-        :return:
-        ","0","Testing compute_ranks","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test that no_space function removes the spaces
-        from the string, then return the resultant string.
-        :return:
-        ","0","Test that no_space function removes the spaces","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing 'solution' function.
-
-        The should return a formatted string.
-        The return value should equal ""Value is VALUE""
-        where value is a 5 digit padded number.
-        :return:
-        ","0","Testing 'solution' function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"","0","test_solution_medium","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing make_class function
-        :return:
-        ","0","Testing make_class function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","OOP","",""
-"
-        Positive test cases for gen_primes function testing
-        :return:
-        ","0","Positive test cases for gen_primes function testing","Helper methods","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","No kyu helper methods","",""
-"
-        If the wolf is the closest animal to you,
-        return ""Pls go away and stop eating my sheep"".
-        :return:
-        ","0","Wolf at the beginning of the queue","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Control Flow","",""
-"
-        Test a function dirReduc which will take an array of
-        strings and returns an array of strings with the needless
-        directions removed (W<->E or S<->N side by side).
-
-        The Haskell version takes a list of directions with
-        data Direction = North | East | West | South.
-
-        The Clojure version returns nil when the path is
-        reduced to nothing.
-
-        The Rust version takes a slice of enum Direction
-        {NORTH, SOUTH, EAST, WEST}.
-        :return:
-        ","0","Testing dirReduc function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test with empty string
-        :return:
-        ","0","Test with empty string","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing permutations function
-
-        Test that permutations function creates all
-        permutations of an input string and
-        remove duplicates, if present. This means, you
-        have to shuffle all letters from the input in all
-        possible orders.
-        ","0","test_permutations","Competent","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing solution function
-        ","0","Testing solution function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing 'solution' function
-
-        The solution should strips all text that follows any
-        of a set of comment markers passed in. Any whitespace at
-        the end of the line should also be stripped out.
-        ","15","Testing 'solution' function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Verify that 'has_subpattern' function to returns
-        either true/True or false/False if a string can be
-        seen as the repetition of a simpler/shorter subpattern or not.
-
-        1. if a subpattern has been used, it will be repeated
-        at least twice, meaning the subpattern has to be
-        shorter than the original string;
-
-        2. the strings you will be given might or might not
-        be created repeating a given subpattern, then
-        shuffling the result.
-        :return:
-        ","16","Testing 'has_subpattern' (part 2) function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Advanced Language Features","",""
-"
-        If the wolf is not the closest animal to you,
-        return ""Oi! Sheep number N! You are about to be eaten by a wolf!""
-        where N is the sheep's position in the queue.
-        :return:
-        ","0","Wolf at the end of the queue","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Control Flow","",""
-"
-        Testing hoop_count function
-
-        Alex just got a new hula hoop, he loves it but feels
-        discouraged because his little brother is better than him
-
-        Write a program where Alex can input (n) how many times
-        the hoop goes round and it will return him an encouraging message
-
-        - If Alex gets 10 or more hoops, return the string ""Great, now move on to tricks"".
-        - If he doesn't get 10 hoops, return the string ""Keep at it until you get it"".
-
-        :return:
-        ","0","Testing hoop_count function (positive test case)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Testing letter_frequency function
-        where all chars are in upper case
-        :return:
-        ","16","All chars are in upper case","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        if there are more than 2 return
-        'I smell a series!'.
-        :return:
-        ","0","Should return 'I smell a series!'","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","String with no duplicate chars","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
         Testing growing_plant function
 
@@ -1030,240 +1119,136 @@
         The number of days that it will take for the plant to
         reach/pass desiredHeight (including the last day in the
         total count).
-        ","0","Testing growing_plant function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing growing_plant function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing 'DefaultList' class: extend
-        :return:
-        ","0","Testing 'DefaultList' class: extend","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Object-Oriented Programming","",""
-"
-        Test string with mixed type of chars
-        :return:
-        ","0","String with mixed type of chars","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"","0","Testing stock_list function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
-"","0","Testing count_letters_and_digits function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
-"","0","Testing take function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Test string with no duplicate chars
-        :return:
-        ","0","String with no duplicate chars","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing 'generate_hashtag' function
-        ","0","Testing 'generate_hashtag' function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing Encoding functionality
-        ","0","Testing Encoding functionality","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Verify that 'has_subpattern' function
+        For this exercise you will create a global flatten method.
+        The method takes in any number of arguments and flattens
+        them into a single array. If any of the arguments passed in
+        are an array then the individual objects within the array
+        will be flattened so that they exist at the same level as
+        the other arguments. Any nested arrays, no matter how deep,
+        should be flattened into the single array result.
 
-        Return a subpattern with sorted characters,
-        otherwise return the base string with sorted
-        characters (you might consider this case as
-        an edge case, with the subpattern being repeated
-        only once and thus equalling the original input string).
-        :return:
-        ","0","Testing 'has_subpattern' (part 3) function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Advanced Language Features","",""
-"
-        Testing password function with various test inputs
-        :return:
-        ","0","Testing password function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing enough function
-        with various test data
+        The following are examples of how this function would be
+        used and what the expected results would be:
 
-        If there is enough space, return 0,
-        and if there isn't, return the number
-        of passengers he can't take.
+        flatten(1, [2, 3], 4, 5, [6, [7]]) # returns [1, 2, 3, 4, 5, 6, 7]
+        flatten('a', ['b', 2], 3, None, [[4], ['c']]) # returns
+        ['a', 'b', 2, 3, None, 4, 'c']
         :return:
-        ","0","STesting enough function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"","0","Testing calculate_damage function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Games","",""
+        ","0","Testing flatten function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
 "
-        Use conditionals to to verify that greet
-        function returns the proper message.
-        :return:
-        ","0","Verify that greet function returns the proper message","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Control Flow","",""
-"
-        Testing spiralize function
-        ","0","Testing spiralize function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing check_exam function
+        Testing 'DefaultList' class: __getitem__
 
-        The function should return the score
-        for this array of answers, giving +4
-        for each correct answer, -1 for each
-        incorrect answer, and +0 for each blank
-        answer(empty string).
-
+        Called to implement evaluation of self[key]. For sequence
+        types, the accepted keys should be integers and slice objects.
+        Note that the special interpretation of negative indexes
+        (if the class wishes to emulate a sequence type) is up to the
+        __getitem__() method.
         :return:
-        ","0","Testing check_exam function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing shark function -> positive
-        :return:
-        ","0","Testing shark function (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"","0","Testing permute_a_palindrome (negative)","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing 'DefaultList' class: pop
-        :return:
-        ","0","Testing 'DefaultList' class: pop","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Object-Oriented Programming","",""
-"","0","Testing array_diff function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Testing 'count_sheeps' function
-        Hint: Don't forget to check for
-        bad values like empty list
-        :return:
-        ","0","Testing 'count_sheeps' function: empty list","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing 'DefaultList' class: append
-        :return:
-        ","16","Testing 'DefaultList' class: append","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Object-Oriented Programming","",""
-"
-        Returns a list that misses only one element
-        :return:
-        ","0","'multiply' function verification with random list","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        a and b are equal
-        :return:
-        ","0","a and b are equal","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"","0","Testing binary_to_string function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Character Encodings","",""
-"","0","Testing 'thirt' function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Fundamentals","",""
-"
-        Testing tickets function with various test inputs.
-
-        The new ""Avengers"" movie has just been released!
-        There are a lot of people at the cinema box office
-        standing in a huge line. Each of them has a single
-        100, 50 or 25 dollar bill. An ""Avengers"" ticket
-        costs 25 dollars.
-
-        Vasya is currently working as a clerk.
-        He wants to sell a ticket to every single person
-        in this line.
-
-        Can Vasya sell a ticket to every person and give change
-        if he initially has no money and sells the tickets strictly
-        in the order people queue?
-
-        The function should return YES, if Vasya can sell
-        a ticket to every person and give change with the
-        bills he has at hand at that moment. Otherwise return NO.
-        :return:
-        ","0","Testing tickets function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Advanced Language Features","",""
-"
-        Test with regular string
-        :return:
-        ","0","Test with regular string","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Test top_3_words function
-        ","0","Testing top_3_words function","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing 'DefaultList' class: __getitem__","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Object-Oriented Programming","",""
 "
         Testing decipher_this function
         :param self:
         :return:
-        ","0","Testing decipher_this function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
+        ","0","Testing decipher_this function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Fundamentals","",""
 "
-        Testing to_alternating_case function
+        Testing 'DefaultList' class: insert
         :return:
-        ","16","Testing to_alternating_case function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing 'DefaultList' class: insert","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Object-Oriented Programming","",""
 "
-        Testing a function named increment_string
-
+        Testing Warrior class >>> bruce_lee
+        ","0","Testing Warrior class >>> bruce_lee","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","OOP","",""
+"
+        Simple negative test
         :return:
-        ","0","Testing increment_string function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing toJadenCase function (negative)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Sample Tests for make_upper_case function
+        :return:
+        ","0","Testing make_upper_case function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing 'solve' function with various test data
+        :return:
+        ","0","Testing solve function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Test with empty string
+        :return:
+        ","0","Test with empty string","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Assert that 'domain_name' function
+        returns domain name from given URL string.
+        :return:
+        ","0","Testing domain_name function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing Line Safari functionality
+        Negative test cases
+        ","0","test_line_negative","Competent","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
         Testing 'sum_triangular_numbers' function
-        with zero as an input
+        with positive numbers
         :return:
-        ","0","Testing 'sum_triangular_numbers' with zero","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing 'sum_triangular_numbers' with positive numbers","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing a function named agents_cleanup where:
-            - agents: is an array of agent coordinates
-            - n: defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing permutations function
 
-        The function should remove all agents that are outside of the city boundaries.
-        :return:
-        ","0","Testing agents_cleanup function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"","0","Testing calc_combinations_per_row function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
+        Test that permutations function creates all
+        permutations of an input string and
+        remove duplicates, if present. This means, you
+        have to shuffle all letters from the input in all
+        possible orders.
+        ","0","test_permutations","Competent","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing men_from_boys function with
-        various test inputs
-
-        Scenario
-        Now that the competition gets tough it
-        will Sort out the men from the boys .
-
-        Men are the Even numbers and Boys are
-        the odd !alt !alt
-
-        Task
-        Given an array/list [] of n integers ,
-        Separate The even numbers from the odds ,
-        or Separate the men from the boys !alt !alt
-
-        Notes
-        Return an array/list where Even numbers
-        come first then odds.
-        Since , Men are stronger than Boys ,
-        Then Even numbers in ascending order
-        While odds in descending.
+        Test with empty list
         :return:
-        ","0","Testing men_from_boys function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","'multiply' function verification with empty list","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing hoop_count function (negative)
+        :return:
+        ","0","Testing hoop_count function (negative test case)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Basic test case
+        :return:
+        ","0","test_triangle","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing the function with various test data
+        :return:
+        ","0","Testing take function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
         Testing length function
+        where head = None
 
         The method length, which accepts a linked list
         (head), and returns the length of the list.
         :return:
-        ","0","Testing length function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"","0","Testing solve function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing length function where head = None","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
-        Testing 'count_sheeps' function
-        Hint: Don't forget to check for
-        bad values like null/undefined
+        Testing to_table with various test data
         :return:
-        ","16","Testing 'count_sheeps' function: bad input","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing to_table function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Fundamentals","",""
 "
-        Test with one char only
+        Testing 'save' function: negative
+
+        The function should determine how many
+        files of the copy queue you will be able
+        to save into your Hard Disk Drive.
         :return:
-        ","0","Test with one char only","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing 'save' function: negative","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
-        Testing shark function -> positive
+        Test a function dir_reduc which will take an array of
+        strings and returns an array of strings with the needless
+        directions removed (W<->E or S<->N side by side).
+
+        The Haskell version takes a list of directions with
+        data Direction = North | East | West | South.
+
+        The Clojure version returns nil when the path is
+        reduced to nothing.
+
+        The Rust version takes a slice of enum Direction
+        {NORTH, SOUTH, EAST, WEST}.
         :return:
-        ","0","Testing shark function (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing 'numericals' function
-        :return:
-        ","0","Testing 'numericals' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing alphanumeric function with
-        various test inputs
-
-        The string has the following conditions
-        to be alphanumeric only
-
-        1. At least one character ("""" is not valid)
-        2. Allowed characters are uppercase or lowercase
-           latin letters and digits from 0 to 9
-        3. No whitespaces or underscore or special chars
-
-        :return: None
-        ","0","Testing alphanumeric function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Advanced Language Features","",""
-"","0","'fix_the_meerkat function function verification","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing Line Safari functionality
-        Negative test cases
-        ","0","test_line_negative","Competent","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing ips_between function
-
-        Testing a function that receives two IPv4 addresses,
-        and returns the number of addresses between them
-        (including the first one, excluding the last one).
-
-        All inputs will be valid IPv4 addresses in the form
-        of strings. The last address will always be greater
-        than the first one.
-        :return:
-        ","0","test_ips_between","Novice","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing dir_reduc function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
         Testing all_fibonacci_numbers function
 
@@ -1277,49 +1262,46 @@
         Every element afterwards is the sum of
         the two previous elements.
         :return:
-        ","0","Testing all_fibonacci_numbers function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","16","Testing all_fibonacci_numbers function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing check_for_factor function.
-
-        This function should test if the
-        factor is a factor of base.
-
-        Return false if it is not a factor.
-        :return:
-        ","0","Testing check_for_factor function: positive flow","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing 'zeros' program that should calculate the number
-        of trailing zeros in a factorial of a given number.
-        :return: None
-        ","0","Testing zeros function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing get_size function with various inputs
-        :return:
-        ","0","get_size function tests","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
-"
-        Testing 'sum_pairs' function
-
-        Given a list of integers and a single sum value,
-        the function should return the first two values
-        (parse from the left please) in order of appearance
-        that add up to form the sum.
-        ","0","Testing done_or_not function","Novice","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"","0","test_sequence","Novice","Mon Aug 26 22:05:28 PDT 2024","skipped","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test a function that should take a shuffled list of unique numbers
-        from 1 to n with one element missing (which can be any
-        number including n). Should return this missing number.
+        Testing max_multiple function with
+        various test data
 
         :return:
-        ","16","Testing the 'find_missing_number' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing max_multiple function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing Walker class
-        Testing starting position property based on positive grids
-        ","0","test_starting_position_from_positives","Competent","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Negative tests
+        Testing 'factorial' function
+
+        In mathematics, the factorial of a non-negative integer n,
+        denoted by n!, is the product of all positive integers less
+        than or equal to n. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120.
+        By convention the value of 0! is 1.
+
+        Write a function to calculate factorial for a given input.
+        If input is below 0 or above 12 throw an exception of type
+        ValueError (Python).
         :return:
-        ","0","Testing period_is_late function (negative)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing 'factorial' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing Battleship field validator
+
+        Testing a method that takes a field for well-known board game ""Battleship""
+        as an argument and returns true if it has a valid disposition of ships,
+        false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
+        Elements in the array are numbers, 0 if the cell is free and 1 if occupied
+        by ship.
+        ","16","Testing validate_battlefield function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing letter_frequency function
+        where all chars are in upper case
+        :return:
+        ","0","All chars are in upper case","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'count_sheeps' function
+        Hint: Don't forget to check for
+        bad values like empty list
+        :return:
+        ","0","Testing 'count_sheeps' function: empty list","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
         Testing set_alarm function with various test inputs.
 
@@ -1335,80 +1317,132 @@
         setAlarm(false, false) -> false
         setAlarm(true, false) -> true
         :return:
-        ","0","Testing set_alarm function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing set_alarm function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
 "
-        The 'pyramid' function should return
-        an Array of ascending length subarrays.
+        Testing two_decimal_places function
+        with various test inputs.
 
-        Note: the subarrays should be filled with 1s.
+        Each number should be formatted that it is
+        rounded to two decimal places. You don't
+        need to check whether the input is a valid
+        number because only valid numbers are used
+        in the tests.
         :return:
-        ","0","Testing the 'pyramid' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing two_decimal_places function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        If the wolf is the closest animal to you,
+        return ""Pls go away and stop eating my sheep"".
+        :return:
+        ","0","Wolf in the middle of the queue","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Control Flow","",""
+"
+        The string ""This website is for losers LOL!""
+        should become ""Ths wbst s fr lsrs LL!""
+        :return:
+        ","0","a and b are equal","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Advanced Language Features","",""
+"
+        Testing a function named advice(agents, n) where:
+            - agents is an array of agent coordinates.
+            - n defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid.
+
+        The function should return a list of coordinates that are the furthest
+        away (by Manhattan distance) from all agents.
+        :return:
+        ","31","Testing advice function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Negative test cases for is_prime function testing
+        :return:
+        ","0","Negative test cases for is_prime function testing","Helper methods","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","No kyu helper methods","",""
+"
+        Testing the function with various test data
+        :return:
+        ","0","Testing row_sum_odd_numbers function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing the function with various test data
+        :return:
+        ","0","Testing zero_fuel function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing permute_a_palindrome function
+        :return:
+        ","0","Testing permute_a_palindrome (positive)","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'thirt' function with various test data
+        :return:
+        ","0","Testing 'thirt' function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Test sum_two_smallest_numbers function
+        The function should return the sum of
+        the two lowest positive numbers
+        :return:
+        ","0","Two smallest numbers in the start of the list","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing 'zeros' program that should calculate the number
+        of trailing zeros in a factorial of a given number.
+        :return: None
+        ","16","Testing zeros function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing check_for_factor function.
+
+        This function should test if the
+        factor is a factor of base.
+
+        Return false if it is not a factor.
+        :return:
+        ","0","Testing check_for_factor function: positive flow","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Testing fix_the_meerkat function with various test data
+        :return:
+        ","0","fix_the_meerkat function function verification","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        You are given two angles (in degrees) of a triangle.
+        Find the 3rd.
+        :return:
+        ","0","You are given two angles -> find the 3rd.","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Math","",""
+"
+        0 is a square number
+        :return:
+        ","0","Zero","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        0 is a square number
+        :return:
+        ","0","Simple test for invalid parentheses","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing century function
+        ","0","Testing century function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Numbers","",""
+"
+        Testing 'DefaultList' class: pop
+        :return:
+        ","0","Testing 'DefaultList' class: pop","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Object-Oriented Programming","",""
 "
         Testing Calculator class
         A simple calculator that given a string of operators '()', '+', '-', '*', '/'
         and numbers separated by spaces will return the value of that expression
-
         :return: None
-        ","15","Testing Calculator class","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing Calculator class","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
-        3 is not a square number
+        Test with one char only
         :return:
-        ","0","Non square numbers (negative)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Math","",""
+        ","16","Test with one char only","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
 "
-        Repeating char is a space
+        Negative tests
         :return:
-        ","0","String alphabet chars and spaces","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing period_is_late function (negative)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
-        Simple Fun #152: Invite More Women?
-        Testing invite_more_women function (negative)
-        :return:
-        ","0","Testing invite_more_women function (negative)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing length function
-        where head = None
+        Testing a function named create_city_map where:
+            - n defines the size of the city that Bassi needs to hide in,
+              in other words the side length of the square grid.
 
-        The method length, which accepts a linked list
-        (head), and returns the length of the list.
+        The function should generate city map with coordinates.
         :return:
-        ","0","Testing length function where head = None","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing create_city_map function","Novice","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
-        Positive tests
+        Testing using medium test data
         :return:
-        ","0","Testing period_is_late function (positive)","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","test_solution_medium","Novice","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing letter_frequency function
-        where all chars are in lower case
-        :return:
-        ","0","All chars are in lower case","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Testing Decoding functionality
-        ","0","Testing Decoding functionality","Competent","Mon Aug 26 22:05:27 PDT 2024","passed","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Sample testing.
-        Expected result is 5
-        :return:
-        ","0","Find the int that appears an odd number of times","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Testing 'DefaultList' class: insert
-        :return:
-        ","0","Testing 'DefaultList' class: insert","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Object-Oriented Programming","",""
-"
-        In logic and mathematics, or is the
-        truth-functional operator of (inclusive)
-        disjunction, also known as alternation.
-
-        The or of a set of operands is true if
-        and only if one or more of its operands is true.
-
-        Source:
-        https://en.wikipedia.org/wiki/Logical_disjunction
-
-        :return:
-        ","0","OR logical operator","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
-"
-        Negative test cases for is_prime function testing
-        :return:
-        ","0","Negative test cases for is_prime function testing","Helper methods","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","No kyu helper methods","",""
+        Testing Walker class
+        Testing starting position property based on negative grids
+        ","0","Testing Walker class - position property from negative grids","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
 "
         Testing monkey_count function
 
@@ -1422,37 +1456,126 @@
         numbers up to and including that number, but excluding
         zero.
         :return:
-        ","0","Testing monkey_count function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing monkey_count function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
-        a or b is negative
+        Testing 'count_sheeps' function
+        Hint: Don't forget to check for
+        bad values like mixed list
         :return:
-        ","0","a or b is negative","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
-"","0","Testing epidemic function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
+        ","0","Testing 'count_sheeps' function: mixed list","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
-        Your task is to verify that 'order' function
-        sorts a given string by following rules:
+        Testing check_root function with various test inputs
 
-            1. Each word in the string will contain a single number.
-               This number is the position the word should have in the result.
+        A function which takes numbers separated by commas
+        in string format and returns the number which is a
+        perfect square and the square root of that number.
 
-            2. Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+        If string contains other characters than number or
+        it has more or less than 4 numbers separated by comma
+        function returns ""incorrect input"".
 
-            3. If the input string is empty, return an empty string. The words in the
-               input String will only contain valid consecutive numbers.
-
+        If string contains 4 numbers but not consecutive it
+        returns ""not consecutive"".
         :return:
-        ","0","Testing 'order' function","Novice","Mon Aug 26 22:05:28 PDT 2024","passed","Mon Aug 26 22:05:28 PDT 2024","Unit Tests","Fundamentals","",""
+        ","0","Testing check_root function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
 "
-        Testing max_multiple function with
-        various test data
+        Test string with mixed type of chars.
+        :return:
+        ","0","String with mixed type of chars","Novice","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        4 is a square number
+        :return:
+        ","0","Square numbers (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Testing Decoding functionality
+        ","0","Testing Decoding functionality","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing 'is_isogram' function
+        ","0","Testing 'is_isogram' function","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Fundamentals","",""
+"
+        Positive test cases for is_prime function testing
+        :return:
+        ","0","Positive test cases for is_prime function testing","Helper methods","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","No kyu helper methods","",""
+"
+        Testing make_readable function
 
+        Write a function, which takes a non-negative integer
+        (seconds) as input and returns the time in a human-readable
+        format (HH:MM:SS)
+
+        HH = hours, padded to 2 digits, range: 00 - 99
+        MM = minutes, padded to 2 digits, range: 00 - 59
+        SS = seconds, padded to 2 digits, range: 00 - 59
+
+        The maximum time never exceeds 359999 (99:59:59)
         :return:
-        ","0","Testing max_multiple function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Algorithms","",""
+        ","0","Testing make_readable function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Algorithms","",""
 "
-        Testing Line Safari functionality
-        Positive test cases
-        ","0","test_line_positive","Competent","Mon Aug 26 22:05:27 PDT 2024","skipped","Mon Aug 26 22:05:27 PDT 2024","Unit Tests","Algorithms","",""
-"
-        Test lists with multiple digits
+        Testing check_for_factor function.
+
+        This function should test if the
+        factor is a factor of base.
+
+        Return true if it is a factor.
         :return:
-        ","0","'multiply' function verification: lists with multiple digits","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Data Structures","",""
+        ","0","Testing check_for_factor function: positive flow","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Test valid_parentheses function with
+        valid large string
+        :return:
+        ","0","Test for valid large string","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"
+        Testing alphanumeric function with
+        various test inputs
+
+        The string has the following conditions
+        to be alphanumeric only
+
+        1. At least one character ("""" is not valid)
+        2. Allowed characters are uppercase or lowercase
+           latin letters and digits from 0 to 9
+        3. No whitespaces or underscore or special chars
+
+        :return: None
+        ","0","Testing alphanumeric function","Novice","Sat Nov 30 21:14:59 PST 2024","passed","Sat Nov 30 21:14:59 PST 2024","Unit Tests","Advanced Language Features","",""
+"
+        If the whole array is consecutive then return
+        null or Nothing or None.
+        :return:
+        ","0","Non is expected","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Data Structures","",""
+"
+        A function f(n), should returns the n-th member of sequence.
+        :return:
+        ","0","test_sequence","Novice","Sat Nov 30 21:15:00 PST 2024","skipped","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Algorithms","",""
+"","0","Testing count_letters_and_digits function","Beginner","Mon Aug 26 22:05:29 PDT 2024","passed","Mon Aug 26 22:05:29 PDT 2024","Unit Tests","Fundamentals","",""
+"
+        Testing shark function -> positive
+        :return:
+        ","0","Testing shark function (positive)","Beginner","Sat Nov 30 21:15:00 PST 2024","passed","Sat Nov 30 21:15:00 PST 2024","Unit Tests","Math","",""
+"
+        Testing using big test data
+        :return:
+        ","0","test_solution_big","Novice","Sat Nov 30 21:14:58 PST 2024","skipped","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        Test that 'remove_char' function
+        removes the first and
+        last characters of a string.
+        :return:
+        ","0","Testing remove_char function","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""
+"
+        Testing next_bigger function
+
+        You have to test a function that takes a positive integer
+        number and returns the next bigger number formed by the same digits:
+
+        12 ==> 21
+        513 ==> 531
+        2017 ==> 2071
+
+        If no bigger number can be composed using those digits, return -1
+        ","0","Testing next_bigger function","Competent","Sat Nov 30 21:14:58 PST 2024","passed","Sat Nov 30 21:14:58 PST 2024","Unit Tests","Algorithms","",""
+"
+        If there are no good ideas,
+        as is often the case, return 'Fail!'.
+        :return:
+        ","0","Should return 'Fail!'s","Beginner","Sat Nov 30 21:15:01 PST 2024","passed","Sat Nov 30 21:15:01 PST 2024","Unit Tests","Data Structures","",""

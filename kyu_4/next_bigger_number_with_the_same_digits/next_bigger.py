@@ -1,5 +1,6 @@
 """
-Solution for -> Next bigger number with the same digits
+Solution for -> Next bigger number with the same digits.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,10 +8,14 @@ GitHub: https://github.com/ikostan
 
 def next_bigger(n: int) -> int:
     """
+    Next bigger function.
+
     A function that takes a positive integer number
     and returns the next bigger number formed by the same digits.
 
-    If no bigger number can be composed using those digits, return -1
+    If no bigger number can be composed using those digits, return -1.
+    :param n:
+    :return:
     """
     # 1. Starting from last digit of given number, find the first digit
     # which breaks the sorted ordering. Let the index of this found
@@ -32,6 +37,8 @@ def next_bigger(n: int) -> int:
 
 def digit_that_breaks_ordering_index(digits: list) -> int:
     """
+    Find a digit that breaks ordering index.
+
     Starting from last digit of given number, find the first
     digit which breaks the sorted ordering. Let the index of
     this found digit be 'i' and the digit be number[i].
@@ -48,6 +55,8 @@ def digit_that_breaks_ordering_index(digits: list) -> int:
 
 def next_greater_digit_index(digits: list, i: int) -> int:
     """
+    Find next greater digit index.
+
     Find the next greater digit in the right portion of
     number[i] - that is from digit at index i+1 to last
     digit. Let that digit be number[j] at index 'j'.
@@ -62,11 +71,8 @@ def next_greater_digit_index(digits: list, i: int) -> int:
         return i
 
     for index, digit in enumerate(digits[i:]):
-        if digits[i - 1] < digit:
-            if current == '':
-                current = digit
-                j = i + index
-            elif current > digit:
-                current = digit
-                j = i + index
+        if digits[i - 1] < digit and (current == '' or current > digit):
+            current = digit
+            j = i + index
+
     return j

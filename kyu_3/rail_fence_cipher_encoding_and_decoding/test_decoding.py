@@ -1,5 +1,5 @@
 """
-Testing Decoding functionality
+Testing Decoding functionality.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -31,14 +31,10 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DecodingTestCase(unittest.TestCase):
-    """
-    Testing Decoding functionality
-    """
+    """Testing Decoding functionality."""
 
     def test_decoding(self):
-        """
-        Testing Decoding functionality
-        """
+        """Testing Decoding functionality."""
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Decoding functionality")
         allure.dynamic.severity(allure.severity_level.NORMAL)
