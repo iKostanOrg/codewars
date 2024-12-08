@@ -37,7 +37,7 @@ def next_bigger(n: int) -> int:
 
 def digit_that_breaks_ordering_index(digits: list) -> int:
     """
-    Finds a digit that breaks ordering index.
+    Find a digit that breaks ordering index.
 
     Starting from last digit of given number, find the first
     digit which breaks the sorted ordering. Let the index of
