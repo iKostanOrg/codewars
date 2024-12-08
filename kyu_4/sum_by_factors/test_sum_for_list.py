@@ -31,7 +31,7 @@ class SumForListTestCase(unittest.TestCase):
     def test_sum_for_list(self):
         """
         Testing sum_for_list function.
-        
+
         :return:
         """
         # pylint: disable-msg=R0801
