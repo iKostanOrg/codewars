@@ -1,5 +1,6 @@
 """
-Test for -> Fibonacci Streaming
+Test for -> Fibonacci Streaming.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,11 @@ from kyu_5.fibonacci_streaming.all_fibonacci_numbers \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class AllFibonacciNumbersTestCase(unittest.TestCase):
-    """
-    Testing all_fibonacci_numbers function
-    """
+    """Testing all_fibonacci_numbers function."""
 
     def test_all_fibonacci_numbers(self):
         """
-        Testing all_fibonacci_numbers function
+        Testing all_fibonacci_numbers function.
 
         You're going to provide a needy programmer a
         utility method that generates an infinite sized,
