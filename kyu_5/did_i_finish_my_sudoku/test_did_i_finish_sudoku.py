@@ -1,5 +1,6 @@
 """
-Test for -> Did I Finish my Sudoku?
+Test for -> Did I Finish my Sudoku?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -35,13 +36,11 @@ from kyu_5.did_i_finish_my_sudoku.is_sudoku_done \
     name='Source/Kata')
 # pylint: enable=R0801
 class DidIFinishedSudokuTestCase(unittest.TestCase):
-    """
-    Testing done_or_not function
-    """
+    """Testing done_or_not function."""
 
     def test_done_or_not(self):
         """
-        Testing done_or_not function
+        Testing done_or_not function.
 
         Testing a function done_or_not/DoneOrNot passing a board
         (list[list_lines]) as parameter. If the board is valid return
