@@ -1,5 +1,6 @@
 """
-Solution for -> Directions Reduction
+Solution for -> Directions Reduction.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -13,6 +14,8 @@ PAIRS: dict = {
 
 def dir_reduc(arr: list) -> list:
     """
+    Directions Reduction.
+
     A function dir_reduc which will take an array of strings
     and returns an array of strings with the needless
     directions removed (W<->E or S<->N side by side).
@@ -34,6 +37,7 @@ def dir_reduc(arr: list) -> list:
 def check_pairs(arr: list) -> bool:
     """
     Check conditions for pairs.
+
     Return False if any pairs were removed.
     Return True if there was nothing to remove.
     :param arr: list
@@ -48,7 +52,8 @@ def check_pairs(arr: list) -> bool:
 
 def del_directions(i: int, arr: list) -> None:
     """
-    Remove directions from the list
+    Remove directions from the list.
+
     :param i: int
     :param arr:list
     :return: None
