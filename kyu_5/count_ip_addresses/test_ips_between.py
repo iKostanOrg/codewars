@@ -1,5 +1,6 @@
 """
-Test for -> Count IP Addresses
+Test for -> Count IP Addresses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,11 @@ from kyu_5.count_ip_addresses.ips_between import ips_between
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class IpsBetweenTestCase(unittest.TestCase):
-    """
-    Testing ips_between function
-    """
+    """Testing ips_between function."""
 
     def test_ips_between(self):
         """
-        Testing ips_between function
+        Testing ips_between function.
 
         Testing a function that receives two IPv4 addresses,
         and returns the number of addresses between them
