@@ -54,7 +54,7 @@ def del_directions(i: int, arr: list) -> None:
     Remove directions from the list of direction.
 
     :param i: int
-    :param arr:list
+    :param arr: list
     :return: None
     """
     del arr[i + 1]
