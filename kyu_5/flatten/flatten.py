@@ -41,4 +41,3 @@ def unpack(data, collection: list):
             unpack(d, collection)
     else:
         collection.append(data)
-
