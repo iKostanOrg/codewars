@@ -1,5 +1,6 @@
 """
-Test for -> Find the smallest
+Test for -> Find the smallest.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,14 +28,14 @@ from kyu_5.find_the_smallest.solution import smallest
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class FindSmallestTestCase(unittest.TestCase):
-    """
-    Testing smallest function
-    """
+    """Testing smallest function."""
 
     def test_smallest(self):
         """
-        Test a function `smallest` which will return an array or a tuple or a string
-        depending on the language (see "Sample Tests").
+        Testing smallest function with various test data.
+
+        Test a function `smallest` which will return an array or a
+        tuple or a string depending on the language (see "Sample Tests").
         :return:
         """
         # pylint: disable-msg=R0801
