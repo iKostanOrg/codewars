@@ -1,5 +1,6 @@
 """
-Solution for -> flatten()
+Solution for -> flatten().
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,12 +27,12 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class FlattenTestCase(unittest.TestCase):
-    """
-    Testing flatten function
-    """
+    """Testing flatten function."""
 
     def test_flatten(self):
         """
+        Testing flatten function with various test data.
+
         For this exercise you will create a global flatten method.
         The method takes in any number of arguments and flattens
         them into a single array. If any of the arguments passed in

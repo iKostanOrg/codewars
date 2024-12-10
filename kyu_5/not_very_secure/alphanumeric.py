@@ -1,5 +1,6 @@
 """
-Solution for -> Not very secure
+Solution for -> Not very secure.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def alphanumeric(password: str) -> bool:
     """
+    alphanumeric function.
+
     The string has the following conditions to be alphanumeric:
 
     1. At least one character ("" is not valid)
@@ -20,7 +23,7 @@ def alphanumeric(password: str) -> bool:
     :return: bool
     """
 
-    if password == "":
+    if not password:
         return False
 
     for char in password:

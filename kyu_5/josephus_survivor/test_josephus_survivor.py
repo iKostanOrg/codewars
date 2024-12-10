@@ -1,5 +1,6 @@
 """
-Test for -> Josephus Survivor
+Test for -> Josephus Survivor.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -31,12 +32,12 @@ from kyu_5.josephus_survivor.josephus_survivor \
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class JosephusSurvivorTestCase(unittest.TestCase):
-    """
-    Testing josephus_survivor function
-    """
+    """Testing josephus_survivor function."""
 
     def test_josephus_survivor(self):
         """
+        Testing josephus_survivor function with various test data.
+
         In this kata you have to correctly return who
         is the "survivor", ie: the last element of a
         Josephus permutation.

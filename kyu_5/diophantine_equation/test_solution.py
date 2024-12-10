@@ -1,5 +1,6 @@
 """
-Test for -> Diophantine Equation
+Test for -> Diophantine Equation.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,12 @@ from kyu_5.diophantine_equation.solution import sol_equa
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class SolutionTestCase(unittest.TestCase):
-    """
-    Testing sol_equa function
-    """
+    """Testing sol_equa function."""
 
     def test_solution_basic(self):
         """
-        Testing using basic test data
+        Testing using basic test data.
+
         :return:
         """
         self.assertEqual(sol_equa(5), [[3, 1]])
@@ -45,7 +45,8 @@ class SolutionTestCase(unittest.TestCase):
 
     def test_solution_medium(self):
         """
-        Testing using medium test data
+        Testing using medium test data.
+
         :return:
         """
         self.assertEqual(sol_equa(9001), [[4501, 2250]])
@@ -69,7 +70,8 @@ class SolutionTestCase(unittest.TestCase):
 
     def test_solution_big(self):
         """
-        Testing using big test data
+        Testing using big test data.
+
         :return:
         """
         self.assertEqual(sol_equa(900000), [[112502, 56249],
@@ -107,7 +109,8 @@ class SolutionTestCase(unittest.TestCase):
 
     def test_solution_empty(self):
         """
-        Testing using empty test data
+        Testing using empty test data.
+
         :return:
         """
         self.assertEqual(sol_equa(90002), [])

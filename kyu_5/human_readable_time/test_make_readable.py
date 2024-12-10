@@ -1,5 +1,6 @@
 """
-Test for -> Human Readable Time
+Test for -> Human Readable Time.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,11 @@ from kyu_5.human_readable_time.make_readable \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class MakeReadableTestCase(unittest.TestCase):
-    """
-    Testing make_readable function
-    """
+    """Testing make_readable function."""
 
     def test_make_readable(self):
         """
-        Testing make_readable function
+        Testing make_readable function.
 
         Write a function, which takes a non-negative integer
         (seconds) as input and returns the time in a human-readable

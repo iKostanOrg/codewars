@@ -1,5 +1,6 @@
 """
-Test for -> Moving Zeros To The End
+Test for -> Moving Zeros To The End.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,12 +29,12 @@ from kyu_5.moving_zeros_to_the_end.move_zeros import move_zeros
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class MoveZerosTestCase(unittest.TestCase):
-    """
-    Testing move_zeros function
-    """
+    """Testing move_zeros function."""
 
     def test_move_zeros(self):
         """
+        Testing move_zeros function with various test data.
+
         Test an algorithm that takes an array and moves all of the
         zeros to the end, preserving the order of the other elements.
         :return:
