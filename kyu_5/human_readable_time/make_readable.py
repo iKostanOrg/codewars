@@ -1,5 +1,6 @@
 """
-Solution for -> Human Readable Time
+Solution for -> Human Readable Time.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,9 @@ GitHub: https://github.com/ikostan
 
 def make_readable(seconds: int) -> str:
     """
-    Write a function, which takes a non-negative integer
+    make_readable function.
+
+    The function takes a non-negative integer
     (seconds) as input and returns the time in a
     human-readable format (HH:MM:SS)
 
@@ -19,7 +22,6 @@ def make_readable(seconds: int) -> str:
     :param seconds:
     :return:
     """
-
     hours = seconds // (60 * 60)
     minutes = (seconds - (hours * 60 * 60)) // 60
     seconds = seconds - (hours * 60 * 60) - (minutes * 60)
@@ -34,7 +36,9 @@ def make_readable(seconds: int) -> str:
 
 def time_converter(time: int) -> str:
     """
-    Format time (hours, minutes, seconds) into string
+    Time converter function.
+
+    Format time (hours, minutes, seconds) into string.
     :param time: int
     :return: str
     """
@@ -43,6 +47,6 @@ def time_converter(time: int) -> str:
     elif len(str(time)) > 1:
         time_str = str(time)
     else:
-        time_str = '0' + str(time)
+        time_str = f'0{time}'
 
     return time_str
