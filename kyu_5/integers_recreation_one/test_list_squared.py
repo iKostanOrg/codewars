@@ -1,5 +1,6 @@
 """
-Test for -> Integers: Recreation One
+Test for -> Integers: Recreation One.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,7 +28,7 @@ from kyu_5.integers_recreation_one.solution import list_squared
     name='Source/Kata')
 class ListSquaredTestCase(unittest.TestCase):
     """
-    Integers: Recreation One
+    Integers: Recreation One.
 
     Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors
     squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the
@@ -45,7 +46,7 @@ class ListSquaredTestCase(unittest.TestCase):
 
     def test_flatten(self):
         """
-        Testing list_squared function
+        Testing list_squared function.
 
         :return:
         """
