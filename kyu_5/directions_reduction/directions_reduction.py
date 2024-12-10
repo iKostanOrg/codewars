@@ -22,7 +22,6 @@ def dir_reduc(arr: list) -> list:
 
     The Haskell version takes a list of directions with data
     Direction = North | East | West | South.
-
     :param arr: list
     :return: list
     """
