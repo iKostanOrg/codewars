@@ -1,5 +1,6 @@
 """
-Solution for -> First non-repeating character
+Solution for -> First non-repeating character.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,14 +30,13 @@ from kyu_5.first_non_repeating_character.first_non_repeating_letter import (
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstNonRepeatingLetterTestCase(unittest.TestCase):
-    """
-    Testing first_non_repeating_letter function
-    """
+    """Testing first_non_repeating_letter function."""
 
     def test_first_non_repeating_letter(self):
         """
-        Testing a function named first_non_repeating_letter
-        that takes a string input, and returns the first character
+        Testing a function named first_non_repeating_letter.
+
+        The function takes a string input, and returns the first character
         that is not repeated anywhere in the string.
 
         For example, if given the input 'stress', the function
