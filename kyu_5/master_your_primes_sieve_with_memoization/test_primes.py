@@ -1,5 +1,6 @@
 """
-Test for -> Master your primes: sieve with memoization
+Test for -> Master your primes: sieve with memoization.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,12 +30,12 @@ from kyu_5.master_your_primes_sieve_with_memoization.primes \
     url='https://www.codewars.com/kata/58603c898989d15e9e000475',
     name='Source/Kata')
 class PrimesTestCase(unittest.TestCase):
-    """
-    Testing is_prime function
-    """
+    """Testing is_prime function."""
 
-    def test_primes(self):
+    def test_is_primes(self):
         """
+        Testing is_prime function with various test data.
+
         Testing a function that checks if a given number n is a prime
         looping through it and, possibly, expanding the array/list of
         known primes only if/when necessary (ie: as soon as you check
