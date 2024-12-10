@@ -1,5 +1,6 @@
 """
-Testing advice and all related help functions
+Testing advice and all related help functions.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,16 +27,14 @@ from kyu_5.find_the_safest_places_in_town.advice \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstAdviceTestCase(unittest.TestCase):
-    """
-    Testing advice and all related help functions
-    """
+    """Testing advice and all related help functions."""
 
     def test_create_city_map(self):
         """
-        Testing a function named create_city_map where:
-            - n defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing a function named create_city_map.
 
+        n defines the size of the city that Bassi needs to hide in,
+        in other words the side length of the square grid.
         The function should generate city map with coordinates.
         :return:
         """
@@ -68,11 +67,11 @@ class FirstAdviceTestCase(unittest.TestCase):
 
     def test_agents_cleanup(self):
         """
-        Testing a function named agents_cleanup where:
-            - agents: is an array of agent coordinates
-            - n: defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing a function named agents_cleanup.
 
+        agents: is an array of agent coordinates
+        n: defines the size of the city that Bassi needs to hide in,
+        in other words the side length of the square grid.
         The function should remove all agents that are outside of the city boundaries.
         :return:
         """
@@ -111,11 +110,11 @@ class FirstAdviceTestCase(unittest.TestCase):
 
     def test_first_non_repeating_letter(self):
         """
-        Testing a function named advice(agents, n) where:
-            - agents is an array of agent coordinates.
-            - n defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing a function named advice(agents, n).
 
+        agents is an array of agent coordinates.
+        n defines the size of the city that Bassi needs to hide in,
+        in other words the side length of the square grid.
         The function should return a list of coordinates that are the furthest
         away (by Manhattan distance) from all agents.
         :return:

@@ -1,5 +1,6 @@
 """
-Solution for -> Find the safest places in town
+Solution for -> Find the safest places in town.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,26 +8,30 @@ GitHub: https://github.com/ikostan
 
 def create_city_map(n: int) -> set:
     """
-    Generate city map with coordinates
+    Generate city map with coordinates.
+
     :param:n defines the size of the city that Bassi needs to hide in
     :return:set
     """
-    return set((row, col) for row in range(0, n) for col in range(0, n))
+    return {(row, col) for row in range(n) for col in range(n)}
 
 
 def agents_cleanup(agents, n) -> set:
     """
     Remove all agents that are outside of the city boundaries.
+
     If agent coordinates are outside of the map, they are simply not considered.
     :param agents: array of agent coordinates
     :param n: defines the size of the city that Bassi needs to hide in
     :return:
     """
-    return set(agent for agent in agents if agent[0] < n and agent[1] < n)
+    return {agent for agent in agents if agent[0] < n and agent[1] < n}
 
 
 def city_map_processing(city: set, agents: set) -> None:
     """
+    Processing city map.
+
     :param city: the full city map (set)
     :param agents: is an set of agent coordinates.
     :return:
@@ -47,6 +52,8 @@ def city_map_processing(city: set, agents: set) -> None:
 
 def advice(agents: set, n: int) -> list:
     """
+    advice function.
+
     The function should return a list of coordinates that are the
     furthest away (by Manhattan distance) from all agents.
     Edge cases
@@ -69,7 +76,7 @@ def advice(agents: set, n: int) -> list:
 
     # If there is an agent on every grid cell, there is no safe space,
     # so return an empty list
-    if len(agents) == n * n:
+    if len(agents) == n ** 2:
         return []
 
     # If there are no agents, then every cell is a safe spaces,
