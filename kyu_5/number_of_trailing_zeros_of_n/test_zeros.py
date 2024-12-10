@@ -1,5 +1,6 @@
 """
-Test for -> Number of trailing zeros of N!
+Test for -> Number of trailing zeros of N!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,12 +28,12 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class ZerosTestCase(unittest.TestCase):
-    """
-    Testing zeros function
-    """
+    """Testing zeros function."""
 
     def test_zeros(self):
         """
+        Testing zeros function with various test data.
+
         Testing 'zeros' program that should calculate the number
         of trailing zeros in a factorial of a given number.
         :return: None
