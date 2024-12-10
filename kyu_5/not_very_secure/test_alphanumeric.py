@@ -1,5 +1,6 @@
 """
-Test for -> Not very secure
+Test for -> Not very secure.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -31,14 +32,11 @@ from kyu_5.not_very_secure.alphanumeric import alphanumeric
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class AlphanumericTestCase(unittest.TestCase):
-    """
-    Testing alphanumeric function
-    """
+    """Testing alphanumeric function."""
 
     def test_alphanumeric(self):
         """
-        Testing alphanumeric function with
-        various test inputs
+        Testing alphanumeric function with various test inputs.
 
         The string has the following conditions
         to be alphanumeric only
