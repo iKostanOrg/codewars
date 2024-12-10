@@ -51,7 +51,7 @@ def check_pairs(arr: list) -> bool:
 
 def del_directions(i: int, arr: list) -> None:
     """
-    Remove directions from the list.
+    Remove directions from the list of direction.
 
     :param i: int
     :param arr:list
