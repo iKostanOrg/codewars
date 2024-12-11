@@ -1,5 +1,6 @@
 """
-Solution for -> Find the smallest
+Solution for -> Find the smallest.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,17 +8,18 @@ GitHub: https://github.com/ikostan
 
 def get_min_digit(digits: list) -> int:
     """
-    Find a min
+    Find min digit.
+
     :param digits: list
     :return: int
     """
-    min_digit = min(digits)
-    return min_digit
+    return min(digits)
 
 
 def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
     """
-    Find new n
+    Find new n.
+
     :param digits: list
     :param min_digit: int
     :param min_index: int
@@ -33,7 +35,7 @@ def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
             del digits[min_index]
         else:
             while digits[min_index] == 0:
-                if min_index - 1 >= 0:
+                if min_index >= 1:
                     min_index -= 1
                 else:
                     break
@@ -58,6 +60,8 @@ def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
 
 def smallest(n: int) -> list:
     """
+    smallest function.
+
     Return an array or a tuple or a string depending on the language
     (see "Sample Tests") with:
 
@@ -72,7 +76,6 @@ def smallest(n: int) -> list:
     :return: an array with: smallest number, index, digit
     """
     digits: list = [int(char) for char in str(n)]
-
     min_digit = get_min_digit(digits)
     min_index = ''.join([str(d) for d in digits]).rindex(str(min_digit))
 

@@ -1,5 +1,6 @@
 """
-Test for -> Directions Reduction
+Test for -> Directions Reduction.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,12 +27,12 @@ from kyu_5.directions_reduction.directions_reduction \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DirectionsReductionTestCase(unittest.TestCase):
-    """
-    Testing dir_reduc function
-    """
+    """Testing dir_reduc function."""
 
     def test_directions_reduction(self):
         """
+        dir_reduc function test suite.
+
         Test a function dir_reduc which will take an array of
         strings and returns an array of strings with the needless
         directions removed (W<->E or S<->N side by side).
@@ -54,7 +55,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p> Test a function dirReduc which will take an array of "
+            "<p> Test a function dir_reduc which will take an array of "
             "strings and returns an array of strings with the needless "
             "directions removed (W<->E or S<->N side by side).</p>")
         # pylint: enable-msg=R0801

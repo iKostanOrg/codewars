@@ -1,5 +1,6 @@
 """
-Test for -> Simple Pig Latin
+Test for -> Simple Pig Latin.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,13 +26,11 @@ from kyu_5.simple_pig_latin.pig_it import pig_it
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class PigItTestCase(unittest.TestCase):
-    """
-    Testing pig_it function
-    """
+    """Testing pig_it function."""
 
     def test_pig_it(self):
         """
-        Testing pig_it function
+        Testing pig_it function.
 
         The function should mpve the first letter of each
         word to the end of it, then add "ay" to the end

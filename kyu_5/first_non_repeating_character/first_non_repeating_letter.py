@@ -1,5 +1,6 @@
 """
-Solution for -> First non-repeating character
+Solution for -> First non-repeating character.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,9 @@ GitHub: https://github.com/ikostan
 
 def first_non_repeating_letter(string: str) -> str:
     """
-    A function named first_non_repeating_letter that
-    takes a string input, and returns the first
+    A function named first_non_repeating_letter.
+
+    The function takes a string input, and returns the first
     character that is not repeated anywhere in the string.
     :param string: str
     :return: str
