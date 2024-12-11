@@ -1,5 +1,6 @@
 """
-Test for -> Sports League Table Ranking
+Test for -> Sports League Table Ranking.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,12 +26,12 @@ from kyu_5.sports_league_table_ranking.compute_ranks \
     url='https://www.codewars.com/kata/5e0baea9d772160032022e8c',
     name='Source/Kata')
 class ComputeRanksTestCase(unittest.TestCase):
-    """
-    Testing Sports League Table Ranking
-    """
+    """Testing Sports League Table Ranking."""
 
     def test_compute_ranks(self):
         """
+        Testing compute_ranks function.
+
         Test the compute_ranks function that organizes a sports
         league in a round-robin-system. Each team meets all other teams.
         In your league a win gives a team 2 points, a draw gives
