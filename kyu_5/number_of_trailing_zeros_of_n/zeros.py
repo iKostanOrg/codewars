@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def zeros(n) -> int:
     """
-    zeros function.
+    Zeros function.
 
     A program that calculate the number of trailing
     zeros in a factorial of a given number.
