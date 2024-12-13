@@ -32,16 +32,15 @@ class ValidParenthesesTestCase(unittest.TestCase):
     """Testing valid_parentheses function."""
 
     @parameterized.expand([
-         ("  (", False),
-         (")test", False),
-         ("", True),
-         ("hi())(", False),
-         ("hi(hi)()", True),
-         ("()", True),
-         (")(()))", False),
-         ("(", False),
-         ("(())((()())())", True)
-    ])
+    ("  (", False),
+    (")test", False),
+    ("", True),
+    ("hi())(", False),
+    ("hi(hi)()", True),
+    ("()", True),
+    (")(()))", False),
+    ("(", False),
+    ("(())((()())())", True)])
     def test_valid_parentheses(self, test_input, expected):
         """
         Testing valid_parentheses with various test data.
