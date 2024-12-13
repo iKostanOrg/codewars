@@ -1,5 +1,6 @@
 """
-Solution for -> Sum of Pairs
+Solution for -> Sum of Pairs.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,10 +8,11 @@ GitHub: https://github.com/ikostan
 
 def sum_pairs(ints: list, s: int):
     """
+    Sum of Pairs.
+
     Given a list of integers and a single sum value,
     returns the first two values (parse from the left please)
     in order of appearance that add up to form the sum.
-
     :param ints: a list of integers
     :param s: a single sum value
     :return: the first two values = s
@@ -35,11 +37,11 @@ def sum_pairs(ints: list, s: int):
 
 def simplify(ints: list) -> list:
     """
+    simplify function.
+
     In order to speed up the process we should simplify
     the input list by reducing duplicate values, see sample below:
-
     [1,4,5,1,1,1,1,1,4,7,8] >>> [1,4,5,1,4,7,8]
-
     :param ints: a list of integers
     :return: simplified list of integers
     """
