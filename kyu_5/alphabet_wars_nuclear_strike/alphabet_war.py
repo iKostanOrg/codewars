@@ -82,4 +82,4 @@ def clean_battlefield(battlefield: str) -> str:
             del result[i]
             break
 
-    return ''.join(char for char in reversed(temp))
+    return ''.join(reversed(temp))
