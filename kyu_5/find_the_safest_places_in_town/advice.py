@@ -30,7 +30,7 @@ def agents_cleanup(agents, n) -> set:
 
 def city_map_processing(city: set, agents: set) -> None:
     """
-    Processing city map.
+    Process city map.
 
     :param city: the full city map (set)
     :param agents: is an set of agent coordinates.
@@ -52,7 +52,7 @@ def city_map_processing(city: set, agents: set) -> None:
 
 def advice(agents: set, n: int) -> list:
     """
-    advice function.
+    Advice function.
 
     The function should return a list of coordinates that are the
     furthest away (by Manhattan distance) from all agents.
