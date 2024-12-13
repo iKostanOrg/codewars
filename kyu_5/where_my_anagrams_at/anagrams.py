@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def anagrams(word, words) -> list:
     """
-    anagrams function.
+    Anagrams function.
 
     A function that will find all the anagrams of a word
     from a list. You will be given two inputs a word and
