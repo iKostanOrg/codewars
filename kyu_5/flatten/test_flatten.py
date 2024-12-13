@@ -1,5 +1,5 @@
 """
-Solution for -> flatten().
+Test for -> flatten().
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
