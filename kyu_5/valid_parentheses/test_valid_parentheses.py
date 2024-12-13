@@ -10,7 +10,6 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from parameterized import parameterized
-
 from kyu_5.valid_parentheses.valid_parentheses \
     import valid_parentheses
 from utils.log_func import print_log
