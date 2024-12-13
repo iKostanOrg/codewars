@@ -15,7 +15,6 @@ def move_zeros(array: list) -> list:
     :param array: list
     :return: list
     """
-
     moving_zero: bool = True
 
     while moving_zero:
