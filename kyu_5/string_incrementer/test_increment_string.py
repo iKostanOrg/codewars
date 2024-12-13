@@ -1,5 +1,6 @@
 """
-Test for -> String incrementer
+Test for -> String incrementer.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -32,13 +33,12 @@ from kyu_5.string_incrementer.string_incrementer \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class StringIncrementerTestCase(unittest.TestCase):
-    """
-    Testing increment_string function
-    """
+    """Testing increment_string function."""
 
     def test_increment_string(self):
         """
-        Testing a function named increment_string
+        Testing a function named increment_string.
+
         :return:
         """
         # pylint: disable-msg=R0801
