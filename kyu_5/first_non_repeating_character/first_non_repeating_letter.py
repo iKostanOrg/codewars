@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def first_non_repeating_letter(string: str) -> str:
     """
-    A function named first_non_repeating_letter.
+    first_non_repeating_letter function.
 
     The function takes a string input, and returns the first
     character that is not repeated anywhere in the string.
