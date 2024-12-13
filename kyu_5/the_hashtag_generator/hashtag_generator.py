@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def generate_hashtag(word: str) -> bool | str:
     """
-    The Hashtag Generator.
+    Hashtag Generator.
 
     1. It must start with a hashtag (#).
     2. All words must have their first letter capitalized.
