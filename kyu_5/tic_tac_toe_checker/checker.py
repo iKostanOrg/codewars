@@ -18,16 +18,13 @@ def is_solved(board) -> int:
     :param board: list
     :return: -1, 0, 1, or 2
     """
-    rows = check_rows(board)
-    if rows:
+    if rows := check_rows(board):
         return rows
 
-    cols = check_cols(board)
-    if cols:
+    if cols := check_cols(board):
         return cols
 
-    diagonals = check_diagonals(board)
-    if diagonals:
+    if diagonals := check_diagonals(board):
         return diagonals
 
     for row in board:
