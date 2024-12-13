@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_5.where_my_anagrams_at.anagrams import anagrams
 from utils.log_func import print_log
 
@@ -29,7 +30,15 @@ from utils.log_func import print_log
 class AnagramsTestCase(unittest.TestCase):
     """Testing anagrams function."""
 
-    def test_anagrams(self):
+    @parameterized.expand([
+        ('abba',
+         ['aabb', 'abcd', 'bbaa', 'dada'],
+         ['aabb', 'bbaa']),
+        ('racer',
+         ['crazer', 'carer', 'racar', 'caers', 'racer'],
+         ['carer', 'racer'])
+    ])
+    def test_anagrams(self, string, array, expected):
         """
         Testing anagrams function with various test data.
 
@@ -48,19 +57,7 @@ class AnagramsTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
-        with allure.step("Enter test data (list of strings)"
-                         " and verify the output"):
-            test_data: tuple = (
-                ('abba',
-                 ['aabb', 'abcd', 'bbaa', 'dada'],
-                 ['aabb', 'bbaa']),
-                ('racer',
-                 ['crazer', 'carer', 'racar', 'caers', 'racer'],
-                 ['carer', 'racer']))
-
-            for d in test_data:
-                string: str = d[0]
-                array: list = d[1]
-                expected: list = d[2]
-                print_log(array=array, expected=expected)
-                self.assertListEqual(expected, anagrams(string, array))
+        with allure.step(f"Enter test data: {string, array}"
+                         f" and verify the expected output: {expected}"):
+            print_log(string=string, array=array, expected=expected)
+            self.assertListEqual(expected, anagrams(string, array))
