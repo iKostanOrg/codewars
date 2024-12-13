@@ -87,7 +87,4 @@ def check_rows(board: list) -> int | None:
     :param board: list
     :return: 1, 2, or None
     """
-    for row in board:
-        if len(set(row)) == 1:
-            return row[0]
-    return None
+    return next((row[0] for row in board if len(set(row)) == 1), None)
