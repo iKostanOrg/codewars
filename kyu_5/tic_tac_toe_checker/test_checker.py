@@ -40,7 +40,7 @@ class IsSolvedTestCase(unittest.TestCase):
             1 if "X" won,
             2 if "O" won,
             0 if it's a cat's game (i.e. a draw).
-            
+
         :return:
         """
         # pylint: disable-msg=R0801
