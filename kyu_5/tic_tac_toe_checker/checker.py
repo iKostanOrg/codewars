@@ -27,11 +27,7 @@ def is_solved(board) -> int:
     if diagonals := check_diagonals(board):
         return diagonals
 
-    for row in board:
-        if 0 in row:
-            return -1
-
-    return 0
+    return next((-1 for row in board if 0 in row), 0)
 
 
 def check_diagonals(board) -> int | None:
