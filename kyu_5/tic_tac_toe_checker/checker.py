@@ -1,5 +1,6 @@
 """
-Solution for -> Tic-Tac-Toe Checker
+Solution for -> Tic-Tac-Toe Checker.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,12 +8,13 @@ GitHub: https://github.com/ikostan
 
 def is_solved(board) -> int:
     """
+    is_solved function.
+
     Checks whether the board's current state is solved:
     -1 if the board is not yet finished (there are empty spots),
     1 if "X" won,
     2 if "O" won,
     0 if it's a cat's game (i.e. a draw).
-
     :param board: list
     :return: -1, 0, 1, or 2
     """
@@ -37,7 +39,8 @@ def is_solved(board) -> int:
 
 def check_diagonals(board) -> int | None:
     """
-    Check board by diagonal
+    Check board by diagonal.
+
     :param board: list
     :return: 1, 2, or None
     """
@@ -64,7 +67,8 @@ def check_diagonals(board) -> int | None:
 
 def check_cols(board) -> int | None:
     """
-    Check board by column
+    Check board by column.
+
     :param board: list
     :return: 1, 2, or None
     """
@@ -81,7 +85,8 @@ def check_cols(board) -> int | None:
 
 def check_rows(board: list) -> int | None:
     """
-    Check board by row
+    Check board by row.
+
     :param board: list
     :return: 1, 2, or None
     """

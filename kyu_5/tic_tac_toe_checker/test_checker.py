@@ -1,5 +1,6 @@
 """
-Testing is_solved function
+Testing is_solved function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,13 +25,11 @@ from kyu_5.tic_tac_toe_checker.checker import is_solved
     url='https://www.codewars.com/kata/525caa5c1bf619d28c000335',
     name='Source/Kata')
 class IsSolvedTestCase(unittest.TestCase):
-    """
-    Testing is_solved function
-    """
+    """Testing is_solved function."""
 
     def test_is_solved(self):
         """
-        Testing is_solved function
+        Testing is_solved function with various test data.
 
         The function should return whether the
         board's current state is solved.
@@ -41,6 +40,7 @@ class IsSolvedTestCase(unittest.TestCase):
             1 if "X" won,
             2 if "O" won,
             0 if it's a cat's game (i.e. a draw).
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing done_or_not function")
