@@ -1,5 +1,6 @@
 """
-Test for ->  'generate_hashtag' function
+Test for ->  'generate_hashtag' function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,13 @@ from kyu_5.the_hashtag_generator.hashtag_generator \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class GenerateHashtagTestCase(unittest.TestCase):
-    """
-    Testing generate_hashtag function
-    """
+    """Testing generate_hashtag function."""
 
     def test_generate_hashtag(self):
         """
-        Testing 'generate_hashtag' function
+        Testing 'generate_hashtag' function with various test data.
+
+        :return:
         """
         allure.dynamic.title("Testing 'generate_hashtag' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
