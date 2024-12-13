@@ -1,5 +1,6 @@
 """
-Test for -> Sum of Pairs
+Test for -> Sum of Pairs.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,11 @@ from kyu_5.sum_of_pairs.sum_pairs import sum_pairs
     url='https://www.codewars.com/kata/54d81488b981293527000c8f',
     name='Source/Kata')
 class SumPairsTestCase(unittest.TestCase):
-    """
-    Testing 'sum_pairs' function
-    """
+    """Testing 'sum_pairs' function."""
 
     def test_sum_pairs(self):
         """
-        Testing 'sum_pairs' function
+        Testing 'sum_pairs' function.
 
         Given a list of integers and a single sum value,
         the function should return the first two values
