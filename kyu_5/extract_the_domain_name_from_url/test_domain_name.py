@@ -1,5 +1,5 @@
 """
-Assert that 'domain_name' function.
+Test for -> 'domain_name' function.
 
 returns domain name from given URL string.
 Created by Egor Kostan.
