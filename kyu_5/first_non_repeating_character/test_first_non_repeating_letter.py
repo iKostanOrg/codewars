@@ -1,5 +1,5 @@
 """
-Solution for -> First non-repeating character.
+Test for -> First non-repeating character.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
