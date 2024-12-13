@@ -130,7 +130,7 @@ def calc_for_against(teams, team, team_1, team_2) -> None:
 
 def calc_gd(teams) -> None:
     """
-    Calculates "GD".
+    Calculate "GD".
 
     :param teams:
     :return:
@@ -142,7 +142,7 @@ def calc_gd(teams) -> None:
 
 def calc_rank(teams: dict) -> None:
     """
-    Calculates Rank.
+    Calculate Rank.
 
     First you sort the teams by their points. If two or more
     teams reached the same number of points, the second criteria
