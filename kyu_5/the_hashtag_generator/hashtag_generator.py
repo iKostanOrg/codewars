@@ -12,9 +12,9 @@ def generate_hashtag(word: str) -> bool | str:
 
     1. It must start with a hashtag (#).
     2. All words must have their first letter capitalized.
-    3. If the final result is longer than 140 chars it must return false.
-    4. If the input or the result is an empty string it must return false.
-    
+    3. If final result is longer than 140 chars it must return false.
+    4. Input or result must return false when empty.
+
     :param word: str
     :return:
     """
