@@ -61,12 +61,9 @@ def process_not_played_games(teams: dict, number: int) -> None:
 
 def calc_teams_score(team_a, team_b, teams, team, number) -> None:
     """
-    Calculate following:
-        For : Against
-        Points
+    Calculate following For/Against Points.
 
-    Set default values for team as well
-
+    Set default values for team as well.
     :param team_a:
     :param team_b:
     :param teams:
@@ -86,8 +83,8 @@ def calc_teams_score(team_a, team_b, teams, team, number) -> None:
 def check_if_team_registered(team, teams, number) -> None:
     """
     Check if team data was processed.
-    Set default values otherwise.
 
+    Set default values otherwise.
     :param team:
     :param teams:
     :param number:
