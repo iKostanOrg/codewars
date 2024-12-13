@@ -1,5 +1,6 @@
 """
-Test for -> Valid Parentheses
+Test for -> Valid Parentheses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,19 +27,18 @@ from utils.log_func import print_log
     url='https://www.codewars.com/kata/52774a314c2333f0a7000688',
     name='Source/Kata')
 class ValidParenthesesTestCase(unittest.TestCase):
-    """
-    Testing valid_parentheses function
-    """
+    """Testing valid_parentheses function."""
 
     def test_valid_parentheses(self):
         """
-        Test the function called that takes a string of parentheses,
-        and determines if the order of the parentheses is valid.
-        The function should return true if the string is valid,
-        and false if it's invalid.
+        Testing valid_parentheses with various test data.
 
-        Examples
+        Test the valid_parentheses function that takes a string
+        of parentheses, and determines if the order of the
+        parentheses is valid. The function should return true
+        if the string is valid, and false if it's invalid.
 
+        Examples:
         "()"              =>  true
         ")(()))"          =>  false
         "("               =>  false
