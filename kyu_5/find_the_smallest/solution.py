@@ -60,7 +60,7 @@ def concat_new_n(digits: list, min_digit: int, min_index: int) -> list:
 
 def smallest(n: int) -> list:
     """
-    smallest function.
+    Smallest function.
 
     Return an array or a tuple or a string depending on the language
     (see "Sample Tests") with:
