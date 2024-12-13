@@ -100,7 +100,7 @@ def check_if_team_registered(team, teams, number) -> None:
 
 def calc_team_points(team, teams, score_a, score_b) -> None:
     """
-    Calculates team points.
+    Calculate team points.
 
     :param team:
     :param teams:
