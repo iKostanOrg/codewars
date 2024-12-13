@@ -1,5 +1,6 @@
 """
-Solution for -> Where my anagrams at?
+Test suite for -> Where my anagrams at?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,12 +27,12 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable=R0801
 class AnagramsTestCase(unittest.TestCase):
-    """
-    Testing anagrams function
-    """
+    """Testing anagrams function."""
 
     def test_anagrams(self):
         """
+        Testing anagrams function with various test data.
+
         Test a function that will find all the anagrams of a word from a list.
         You will be given two inputs a word and an array with words. You should
         return an array of all the anagrams or an empty array if there are none.
