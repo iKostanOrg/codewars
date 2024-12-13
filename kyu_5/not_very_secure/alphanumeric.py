@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def alphanumeric(password: str) -> bool:
     """
-    alphanumeric function.
+    Alphanumeric function.
 
     The string has the following conditions to be alphanumeric:
     1. At least one character ("" is not valid)
