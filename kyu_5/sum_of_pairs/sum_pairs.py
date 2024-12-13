@@ -37,7 +37,7 @@ def sum_pairs(ints: list, s: int):
 
 def simplify(ints: list) -> list:
     """
-    simplify function.
+    Simplify function.
 
     In order to speed up the process we should simplify
     the input list by reducing duplicate values, see sample below:
