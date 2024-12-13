@@ -15,7 +15,6 @@ def alphabet_war(battlefield: str) -> str:
     :param battlefield:
     :return: str
     """
-
     if '#' not in battlefield:
         return ''.join(char for char in battlefield if char.isalpha())
 
@@ -30,7 +29,6 @@ def clean_unsheltered(battlefield: str) -> str:
     :param battlefield: str
     :return: str
     """
-
     result: str = ''
     temp = battlefield.split('[')
 
