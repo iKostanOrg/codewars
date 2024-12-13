@@ -1,5 +1,5 @@
 """
-Testing is_solved function.
+Test for -> is_solved function.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
