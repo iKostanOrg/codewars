@@ -39,8 +39,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
         ("()", True),
         (")(()))", False),
         ("(", False),
-        ("(())((()())())", True)
-    ])
+        ("(())((()())())", True)])
     def test_valid_parentheses(self, test_input, expected):
         """
         Testing valid_parentheses with various test data.
