@@ -28,12 +28,12 @@ from kyu_5.tic_tac_toe_checker.checker import is_solved
 class IsSolvedTestCase(unittest.TestCase):
     """Testing is_solved function."""
 
-    @parameterized.expand(
-        [([[0, 0, 1],
-          [0, 1, 2],
-          [2, 1, 0]], -1, 'not yet finished'),
+    @parameterized.expand([
+        ([[0, 0, 1],
+        [0, 1, 2],
+        [2, 1, 0]], -1, 'not yet finished'),
         ([[1, 1, 1],
-          [0, 2, 2],
+        [0, 2, 2],
           [0, 0, 0]], 1, 'winning row'),
         ([[2, 1, 2],
           [2, 1, 1],
@@ -43,8 +43,7 @@ class IsSolvedTestCase(unittest.TestCase):
           [1, 2, 1]], 0, 'draw'),
         ([[1, 2, 0],
           [0, 1, 2],
-          [0, 0, 1]], 1, 'wining diagonal')]
-    )
+          [0, 0, 1]], 1, 'wining diagonal')])
     def test_is_solved(self, board, expected, message):
         """
         Testing is_solved function with various test data.
