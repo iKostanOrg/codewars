@@ -36,7 +36,7 @@ class AlphanumericTestCase(unittest.TestCase):
     """Testing alphanumeric function."""
 
     @parameterized.expand([
-        ("hello world_", False),
+        ("hello _world", False),
         ("PassW0rd", True),
         ("     ", False)])
     def test_alphanumeric(self, password, expected):
