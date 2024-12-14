@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.the_hashtag_generator.hashtag_generator \
     import generate_hashtag
@@ -30,33 +31,8 @@ from kyu_5.the_hashtag_generator.hashtag_generator \
 class GenerateHashtagTestCase(unittest.TestCase):
     """Testing generate_hashtag function."""
 
-    def test_generate_hashtag(self):
-        """
-        Testing 'generate_hashtag' function with various test data.
-
-        :return:
-        """
-        allure.dynamic.title("Testing 'generate_hashtag' function")
-        allure.dynamic.severity(allure.severity_level.NORMAL)
-        allure.dynamic.description_html(
-            '<h3>Codewars badge:</h3>'
-            '<img src='
-            '"https://www.codewars.com/users/myFirstCode/badges/large">'
-            '<h3>Test Description:</h3>'
-            "<p>The function should do the following:"
-            "<br/>1. It must start with a hashtag (#)."
-            "<br/>2. "
-            "All words must have their first letter capitalized."
-            "<br/>3. "
-            "If the final result is longer than 140 chars it "
-            "must return false."
-            "<br/>4. "
-            "If the input or the result is an empty string it "
-            "must return false."
-            "</p>")
-
-        test_data: tuple = (
-            ('',
+    @parameterized.expand(
+        [('',
              False,
              'Expected an empty string to return False'),
             ('Codewars',
@@ -89,14 +65,37 @@ class GenerateHashtagTestCase(unittest.TestCase):
              'oooooong Cat',
              False,
              'Should return False if the final word is '
-             'longer than 140 chars.'))
+             'longer than 140 chars.')]
+    )
+    def test_generate_hashtag(self, string, expected, message):
+        """
+        Testing 'generate_hashtag' function with various test data.
 
-        for string, expected, message in test_data:
+        :return:
+        """
+        allure.dynamic.title("Testing 'generate_hashtag' function")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src='
+            '"https://www.codewars.com/users/myFirstCode/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>The function should do the following:"
+            "<br/>1. It must start with a hashtag (#)."
+            "<br/>2. "
+            "All words must have their first letter capitalized."
+            "<br/>3. "
+            "If the final result is longer than 140 chars it "
+            "must return false."
+            "<br/>4. "
+            "If the input or the result is an empty string it "
+            "must return false."
+            "</p>")
+
+        with allure.step("Enter a test string and verify the output:"):
             actual_result = generate_hashtag(string)
-
-            with allure.step("Enter a test string and verify the output:"):
-                print_log(string=string,
-                          message=message,
-                          expected=expected,
-                          actual_result=actual_result)
-                self.assertEqual(expected, actual_result, msg=message)
+            print_log(string=string,
+                    message=message,
+                    expected=expected,
+                    actual_result=actual_result)
+            self.assertEqual(expected, actual_result, message)
