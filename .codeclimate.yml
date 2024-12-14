@@ -11,4 +11,10 @@ engines:
         enabled: false
       no-name-in-module:
         enabled: false
+      similar-code:
+        config:
+          threshold: 6 #overriding will affect all languages
+#        identical-code:
+#          config:
+#            threshold: #overriding will affect all languages
 # ... CONFIG CONTENT ...
