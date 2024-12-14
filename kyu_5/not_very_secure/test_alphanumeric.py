@@ -44,12 +44,13 @@ class AlphanumericTestCase(unittest.TestCase):
         Testing alphanumeric function with various test inputs.
 
         The string has the following conditions
-        to be alphanumeric only
+        to be alphanumeric only:
 
-        1. At least one character ("" is not valid)
+        1. At least one character ("" is not valid).
         2. Allowed characters are uppercase or lowercase
-           latin letters and digits from 0 to 9
-        3. No whitespaces or underscore or special chars
+           latin letters and digits from 0 to 9.
+        3. No whitespaces or underscore or special chars.
+
         :return: None
         """
         # pylint: disable-msg=R0801
