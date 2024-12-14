@@ -1,22 +1,19 @@
 ---
-engines:
-  # ... CONFIG CONTENT ...
-  pylint:
-    enabled: true
-    # ... CONFIG CONTENT ...
-    checks:
-      import-error:
-        enabled: false
-      syntax-error:
-        enabled: false
-      no-name-in-module:
-        enabled: false
-      # Per-Language Mass Threshold Defaults
-      # https://docs.codeclimate.com/docs/duplication#section-understand-the-engine
-      similar-code:
-        config:
-          threshold: 50 #overriding will affect all languages
-        identical-code:
-          config:
-            threshold: 50 #overriding will affect all languages
+version: "2"         # required to adjust maintainability checks
+
+checks:
+  import-error:
+    enabled: false
+  syntax-error:
+    enabled: false
+  no-name-in-module:
+    enabled: false
+    # Per-Language Mass Threshold Defaults
+    # https://docs.codeclimate.com/docs/duplication#section-understand-the-engine
+  similar-code:
+    config:
+      threshold: 50 #overriding will affect all languages
+  identical-code:
+    config:
+      threshold: 50 #overriding will affect all languages
 # ... CONFIG CONTENT ...
