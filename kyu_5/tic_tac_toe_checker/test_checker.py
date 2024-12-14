@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.tic_tac_toe_checker.checker import is_solved
 
@@ -27,7 +28,24 @@ from kyu_5.tic_tac_toe_checker.checker import is_solved
 class IsSolvedTestCase(unittest.TestCase):
     """Testing is_solved function."""
 
-    def test_is_solved(self):
+    @parameterized.expand(
+        [([[0, 0, 1],
+          [0, 1, 2],
+          [2, 1, 0]], -1, 'not yet finished'),
+        ([[1, 1, 1],
+          [0, 2, 2],
+          [0, 0, 0]], 1, 'winning row'),
+        ([[2, 1, 2],
+          [2, 1, 1],
+          [1, 1, 2]], 1, 'winning column'),
+        ([[2, 1, 2],
+          [2, 1, 1],
+          [1, 2, 1]], 0, 'draw'),
+        ([[1, 2, 0],
+          [0, 1, 2],
+          [0, 0, 1]], 1, 'wining diagonal')]
+    )
+    def test_is_solved(self, board, expected, message):
         """
         Testing is_solved function with various test data.
 
@@ -54,25 +72,9 @@ class IsSolvedTestCase(unittest.TestCase):
             "<p>The function should return whether the board's "
             "current state is solved.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ([[0, 0, 1],
-              [0, 1, 2],
-              [2, 1, 0]], -1, 'not yet finished'),
-            ([[1, 1, 1],
-              [0, 2, 2],
-              [0, 0, 0]], 1, 'winning row'),
-            ([[2, 1, 2],
-              [2, 1, 1],
-              [1, 1, 2]], 1, 'winning column'),
-            ([[2, 1, 2],
-              [2, 1, 1],
-              [1, 2, 1]], 0, 'draw'),
-            ([[1, 2, 0],
-              [0, 1, 2],
-              [0, 0, 1]], 1, 'wining diagonal'))
 
-        for board, expected, message in test_data:
+        with allure.step(f"Enter Tic-Tac-Toe board {board}"
+                         f" and verify the output {expected}."):
             result: int = is_solved(board)
-            with allure.step("Enter Tic-Tac-Toe board and verify the output."):
-                print_log(expected=expected, result=result, message=message)
-                self.assertEqual(expected, result, msg=message)
+            print_log(expected=expected, result=result, message=message)
+            self.assertEqual(expected, result, msg=message)
