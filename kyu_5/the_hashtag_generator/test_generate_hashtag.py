@@ -33,8 +33,8 @@ class GenerateHashtagTestCase(unittest.TestCase):
 
     @parameterized.expand(
         [('',
-          False,
-          'Expected an empty string to return False'),
+           False,
+           'Expected an empty string to return False'),
           ('Codewars',
            '#Codewars',
            'Should handle a single word.'),
