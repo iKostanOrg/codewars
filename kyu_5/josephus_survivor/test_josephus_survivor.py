@@ -73,8 +73,8 @@ class JosephusSurvivorTestCase(unittest.TestCase):
                          f"vs expected ({expected})"):
 
             print_log(total=total,
-                    eliminated=eliminated,
-                    result=result,
-                    expected=expected)
+                      eliminated=eliminated,
+                      result=result,
+                      expected=expected)
 
             self.assertEqual(expected, result)
