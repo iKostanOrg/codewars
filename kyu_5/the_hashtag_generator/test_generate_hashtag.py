@@ -32,14 +32,9 @@ class GenerateHashtagTestCase(unittest.TestCase):
     """Testing generate_hashtag function."""
 
     @parameterized.expand(
-        [('', False,
-           'Expected an empty string to return False'),
-          ('Codewars',
-           '#Codewars',
-           'Should handle a single word.'),
-          ('Codewars      ',
-           '#Codewars',
-           'Should handle trailing whitespace.'),
+        [('', False, 'Expected an empty string to return False'),
+         ('Codewars', '#Codewars', 'Should handle a single word.'),
+         ('Codewars      ', '#Codewars', 'Should handle trailing whitespace.'),
           ('Codewars Is Nice',
            '#CodewarsIsNice',
            'Should remove spaces.'),
