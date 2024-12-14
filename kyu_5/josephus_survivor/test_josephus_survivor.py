@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import pytest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.josephus_survivor.josephus_survivor \
     import josephus_survivor
@@ -34,7 +35,13 @@ from kyu_5.josephus_survivor.josephus_survivor \
 class JosephusSurvivorTestCase(unittest.TestCase):
     """Testing josephus_survivor function."""
 
-    def test_josephus_survivor(self):
+    @parameterized.expand([
+        ((7, 3), 4),
+        ((11, 19), 10),
+        ((1, 300), 1),
+        ((14, 2), 13),
+        ((100, 1), 100)])
+    def test_josephus_survivor(self, test_data, expected):
         """
         Testing josephus_survivor function with various test data.
 
@@ -55,27 +62,19 @@ class JosephusSurvivorTestCase(unittest.TestCase):
             "correctly returns who is the \"survivor\", ie: the "
             "last element of a Josephus permutation.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ((7, 3), 4),
-            ((11, 19), 10),
-            ((1, 300), 1),
-            ((14, 2), 13),
-            ((100, 1), 100))
 
-        for test_data, expected in test_data:
-            total = test_data[0]
-            eliminated = test_data[1]
-            result = josephus_survivor(total, eliminated)
+        total = test_data[0]
+        eliminated = test_data[1]
+        result = josephus_survivor(total, eliminated)
+        with allure.step(f"Enter test data "
+                         f"(n: {total}, "
+                         f"k: {eliminated}) and verify "
+                         f"the output ({result}) "
+                         f"vs expected ({expected})"):
 
-            with allure.step(f"Enter test data "
-                             f"(n: {total}, k: {eliminated}) and verify "
-                             f"the output ({result}) "
-                             f"vs expected ({expected})"):
+            print_log(total=total,
+                    eliminated=eliminated,
+                    result=result,
+                    expected=expected)
 
-                print_log(total=total,
-                          eliminated=eliminated,
-                          result=result,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 result)
+            self.assertEqual(expected, result)
