@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.human_readable_time.make_readable \
     import make_readable
@@ -32,7 +33,13 @@ from kyu_5.human_readable_time.make_readable \
 class MakeReadableTestCase(unittest.TestCase):
     """Testing make_readable function."""
 
-    def test_make_readable(self):
+    @parameterized.expand([
+        (0, "00:00:00"),
+        (5, "00:00:05"),
+        (60, "00:01:00"),
+        (86399, "23:59:59"),
+        (359999, "99:59:59")])
+    def test_make_readable(self, seconds, expected):
         """
         Testing make_readable function.
 
@@ -57,14 +64,7 @@ class MakeReadableTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test number and verify the output"):
-            data: tuple = (
-                (0, "00:00:00"),
-                (5, "00:00:05"),
-                (60, "00:01:00"),
-                (86399, "23:59:59"),
-                (359999, "99:59:59"))
-
-            for seconds, expected in data:
-                print_log(seconds=seconds, expected=expected)
-                self.assertEqual(expected, make_readable(seconds))
+        with allure.step(f"Enter test number: {seconds} "
+                         f"and verify the output: {expected}"):
+            print_log(seconds=seconds, expected=expected)
+            self.assertEqual(expected, make_readable(seconds))
