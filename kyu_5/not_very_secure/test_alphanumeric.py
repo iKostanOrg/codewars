@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.not_very_secure.alphanumeric import alphanumeric
 
@@ -34,7 +35,11 @@ from kyu_5.not_very_secure.alphanumeric import alphanumeric
 class AlphanumericTestCase(unittest.TestCase):
     """Testing alphanumeric function."""
 
-    def test_alphanumeric(self):
+    @parameterized.expand([
+        ("hello world_", False),
+        ("PassW0rd", True),
+        ("     ", False)])
+    def test_alphanumeric(self, password, expected):
         """
         Testing alphanumeric function with various test inputs.
 
@@ -59,14 +64,5 @@ class AlphanumericTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
-            test_data: tuple = (
-                ("hello world_", False),
-                ("PassW0rd", True),
-                ("     ", False))
-
-            for password, expected in test_data:
-                print_log(password=password,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 alphanumeric(password))
+            print_log(password=password, expected=expected)
+            self.assertEqual(expected, alphanumeric(password))
