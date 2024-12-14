@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.first_non_repeating_character.first_non_repeating_letter import (
     first_non_repeating_letter
@@ -32,7 +33,18 @@ from kyu_5.first_non_repeating_character.first_non_repeating_letter import (
 class FirstNonRepeatingLetterTestCase(unittest.TestCase):
     """Testing first_non_repeating_letter function."""
 
-    def test_first_non_repeating_letter(self):
+    @parameterized.expand([
+        ('a', 'a'),
+        ('stress', 't'),
+        ('moonmen', 'e'),
+        ('', ''),
+        ('abba', ''),
+        ('aa', ''),
+        ('~><#~><', '#'),
+        ('hello world, eh?', 'w'),
+        ('sTreSS', 'T'),
+        ('Go hang a salami, I\'m a lasagna hog!', ',')])
+    def test_first_non_repeating_letter(self, string, expected):
         """
         Testing a function named first_non_repeating_letter.
 
@@ -62,23 +74,7 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test string and verify the output"):
-            test_data: tuple = (
-                ('a', 'a'),
-                ('stress', 't'),
-                ('moonmen', 'e'),
-                ('', ''),
-                ('abba', ''),
-                ('aa', ''),
-                ('~><#~><', '#'),
-                ('hello world, eh?', 'w'),
-                ('sTreSS', 'T'),
-                ('Go hang a salami, I\'m a lasagna hog!', ','))
-
-            for data in test_data:
-                string = data[0]
-                expected = data[1]
-                print_log(string=string,
-                          expected=expected)
-                self.assertEqual(expected,
-                                 first_non_repeating_letter(string))
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify the output: {expected}"):
+            print_log(string=string, expected=expected)
+            self.assertEqual(expected, first_non_repeating_letter(string))
