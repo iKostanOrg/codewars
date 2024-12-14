@@ -33,40 +33,39 @@ class GenerateHashtagTestCase(unittest.TestCase):
 
     @parameterized.expand(
         [('',
-             False,
-             'Expected an empty string to return False'),
-            ('Codewars',
-             '#Codewars',
-             'Should handle a single word.'),
-            ('Codewars      ',
-             '#Codewars',
-             'Should handle trailing whitespace.'),
-            ('Codewars Is Nice',
-             '#CodewarsIsNice',
-             'Should remove spaces.'),
-            ('codewars is nice',
-             '#CodewarsIsNice',
-             'Should capitalize first letters of words.'),
-            ('CodeWars is nice',
-             '#CodewarsIsNice',
-             'Should capitalize all letters of words - '
-             'all lower case but the first.'),
-            ('c i n',
-             '#CIN',
-             'Should capitalize first letters of words even '
-             'when single letters.'),
-            ('codewars  is  nice',
-             '#CodewarsIsNice',
-             'Should deal with unnecessary middle spaces.'),
-            ('Loooooooooooooooooooooooooooooooooooo'
-             'oooooooooooooooooooooooooooooooooooooo'
-             'oooooooooooooooooooooooooooooooooooooo'
-             'ooooooooooooooooooooooooooooooooooooo'
-             'oooooong Cat',
-             False,
-             'Should return False if the final word is '
-             'longer than 140 chars.')]
-    )
+          False,
+          'Expected an empty string to return False'),
+          ('Codewars',
+           '#Codewars',
+           'Should handle a single word.'),
+          ('Codewars      ',
+           '#Codewars',
+           'Should handle trailing whitespace.'),
+          ('Codewars Is Nice',
+           '#CodewarsIsNice',
+           'Should remove spaces.'),
+          ('codewars is nice',
+           '#CodewarsIsNice',
+           'Should capitalize first letters of words.'),
+          ('CodeWars is nice',
+           '#CodewarsIsNice',
+           'Should capitalize all letters of words - '
+           'all lower case but the first.'),
+          ('c i n',
+           '#CIN',
+           'Should capitalize first letters of words even '
+           'when single letters.'),
+          ('codewars  is  nice',
+           '#CodewarsIsNice',
+           'Should deal with unnecessary middle spaces.'),
+          ('Loooooooooooooooooooooooooooooooooooo'
+           'oooooooooooooooooooooooooooooooooooooo'
+           'oooooooooooooooooooooooooooooooooooooo'
+           'ooooooooooooooooooooooooooooooooooooo'
+           'oooooong Cat',
+           False,
+           'Should return False if the final word is '
+           'longer than 140 chars.')])
     def test_generate_hashtag(self, string, expected, message):
         """
         Testing 'generate_hashtag' function with various test data.
@@ -95,7 +94,7 @@ class GenerateHashtagTestCase(unittest.TestCase):
         with allure.step("Enter a test string and verify the output:"):
             actual_result = generate_hashtag(string)
             print_log(string=string,
-                    message=message,
-                    expected=expected,
-                    actual_result=actual_result)
+                      message=message,
+                      expected=expected,
+                      actual_result=actual_result)
             self.assertEqual(expected, actual_result, message)
