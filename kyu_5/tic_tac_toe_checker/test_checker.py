@@ -29,12 +29,8 @@ class IsSolvedTestCase(unittest.TestCase):
     """Testing is_solved function."""
 
     @parameterized.expand([
-        ([[0, 0, 1],
-          [0, 1, 2],
-          [2, 1, 0]], -1, 'not yet finished'),
-        ([[1, 1, 1],
-          [0, 2, 2],
-          [0, 0, 0]], 1, 'winning row'),
+        ([[0, 0, 1], [0, 1, 2], [2, 1, 0]], -1, 'not yet finished'),
+        ([[1, 1, 1], [0, 2, 2], [0, 0, 0]], 1, 'winning row'),
         ([[2, 1, 2],
           [2, 1, 1],
           [1, 1, 2]], 1, 'winning column'),
