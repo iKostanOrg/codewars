@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.sum_of_pairs.sum_pairs import sum_pairs
 
@@ -32,7 +33,24 @@ from kyu_5.sum_of_pairs.sum_pairs import sum_pairs
 class SumPairsTestCase(unittest.TestCase):
     """Testing 'sum_pairs' function."""
 
-    def test_sum_pairs(self):
+    @parameterized.expand([
+        ([1, 4, 8, 7, 3, 15], 8, [1, 7],
+         "should return [1, 7] for sum = 8"),
+        ([1, -2, 3, 0, -6, 1], -6, [0, -6],
+         "should return [0, -6] for sum = -6"),
+        ([20, -13, 40], -7, None,
+         "should return None for sum = -7"),
+        ([1, 2, 3, 4, 1, 0], 2, [1, 1],
+         "should return [1, 1] for sum = 2"),
+        ([10, 5, 2, 3, 7, 5], 10, [3, 7],
+         "should return [3, 7] for sum = 10"),
+        ([4, -2, 3, 3, 4], 8, [4, 4],
+         "should return [4, 4] for sum = 8"),
+        ([0, 2, 0], 0, [0, 0],
+         "should return [0, 0] for sum = 0"),
+        ([5, 9, 13, -3], 10, [13, -3],
+         "should return [13, -3] for sum = 10")])
+    def test_sum_pairs(self, ints, s, expected, message):
         """
         Testing 'sum_pairs' function.
 
@@ -54,30 +72,13 @@ class SumPairsTestCase(unittest.TestCase):
             "from the left please) in order of appearance that add up "
             "to form the sum.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ([1, 4, 8, 7, 3, 15], 8, [1, 7],
-             "should return [1, 7] for sum = 8"),
-            ([1, -2, 3, 0, -6, 1], -6, [0, -6],
-             "should return [0, -6] for sum = -6"),
-            ([20, -13, 40], -7, None,
-             "should return None for sum = -7"),
-            ([1, 2, 3, 4, 1, 0], 2, [1, 1],
-             "should return [1, 1] for sum = 2"),
-            ([10, 5, 2, 3, 7, 5], 10, [3, 7],
-             "should return [3, 7] for sum = 10"),
-            ([4, -2, 3, 3, 4], 8, [4, 4],
-             "should return [4, 4] for sum = 8"),
-            ([0, 2, 0], 0, [0, 0],
-             "should return [0, 0] for sum = 0"),
-            ([5, 9, 13, -3], 10, [13, -3],
-             "should return [13, -3] for sum = 10"))
 
-        with allure.step("Enter a test list and verify the output."):
-            for ints, s, expected, message in test_data:
-                result = sum_pairs(ints, s)
-                print_log(ints=ints,
-                          s=s,
-                          message=message,
-                          expected=expected,
-                          result=result)
-                self.assertEqual(expected, result)
+        with allure.step(f"Enter a test list {ints}"
+                         f"and verify the output {expected}."):
+            result = sum_pairs(ints, s)
+            print_log(ints=ints,
+                      s=s,
+                      message=message,
+                      expected=expected,
+                      result=result)
+            self.assertEqual(expected, result)
