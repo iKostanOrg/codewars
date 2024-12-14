@@ -11,10 +11,12 @@ engines:
         enabled: false
       no-name-in-module:
         enabled: false
+      # Per-Language Mass Threshold Defaults
+      # https://docs.codeclimate.com/docs/duplication#section-understand-the-engine
       similar-code:
         config:
-          threshold: 30 #overriding will affect all languages
+          threshold: 40 #overriding will affect all languages
         identical-code:
           config:
-            threshold: 30 #overriding will affect all languages
+            threshold: 32 #overriding will affect all languages
 # ... CONFIG CONTENT ...
