@@ -90,4 +90,5 @@ class FlattenTestCase(unittest.TestCase):
         with allure.step("Enter test data #5 and verify the output"):
             expected = ['hello', 2, 'text', 4, 5, '[list]']
             print_log(args=(['hello', 2, ['text', [4, 5]]], [[]], '[list]'), expected=expected)
-            self.assertListEqual(expected, flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))
+            self.assertListEqual(expected,
+                                 flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))
