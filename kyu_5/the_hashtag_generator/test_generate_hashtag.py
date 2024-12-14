@@ -32,8 +32,7 @@ class GenerateHashtagTestCase(unittest.TestCase):
     """Testing generate_hashtag function."""
 
     @parameterized.expand(
-        [('',
-           False,
+        [('', False,
            'Expected an empty string to return False'),
           ('Codewars',
            '#Codewars',
@@ -62,8 +61,7 @@ class GenerateHashtagTestCase(unittest.TestCase):
            'oooooooooooooooooooooooooooooooooooooo'
            'oooooooooooooooooooooooooooooooooooooo'
            'ooooooooooooooooooooooooooooooooooooo'
-           'oooooong Cat',
-           False,
+           'oooooong Cat', False,
            'Should return False if the final word is '
            'longer than 140 chars.')])
     def test_generate_hashtag(self, string, expected, message):
