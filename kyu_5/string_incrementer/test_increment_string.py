@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.string_incrementer.string_incrementer \
     import increment_string
@@ -35,7 +36,17 @@ from kyu_5.string_incrementer.string_incrementer \
 class StringIncrementerTestCase(unittest.TestCase):
     """Testing increment_string function."""
 
-    def test_increment_string(self):
+    @parameterized.expand([
+        ("foo", "foo1"),
+        ("foobar001", "foobar002"),
+        ("foobar1", "foobar2"),
+        ("foobar00", "foobar01"),
+        ("foobar99", "foobar100"),
+        ("foobar099", "foobar100"),
+        ("", "1"),
+        ('009', '010'),
+        ('^0000007', '^0000008')])
+    def test_increment_string(self, string, expected):
         """
         Testing a function named increment_string.
 
@@ -56,21 +67,8 @@ class StringIncrementerTestCase(unittest.TestCase):
             "should be appended to the new string."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("foo", "foo1"),
-            ("foobar001", "foobar002"),
-            ("foobar1", "foobar2"),
-            ("foobar00", "foobar01"),
-            ("foobar99", "foobar100"),
-            ("foobar099", "foobar100"),
-            ("", "1"),
-            ('009', '010'),
-            ('^0000007', '^0000008'))
-
-        for sting, expected in test_data:
-            with allure.step("Enter test string and verify the output"):
-                result = increment_string(sting)
-                print_log(string=sting,
-                          expected=expected,
-                          result=result)
-                self.assertEqual(expected, result)
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify the output: {expected}"):
+            result = increment_string(string)
+            print_log(string=string, expected=expected, result=result)
+            self.assertEqual(expected, result)
