@@ -15,14 +15,9 @@ rules:
   brackets: enable
   colons: enable
   commas: enable
-  comments:
-    level: warning
-    min-spaces-from-content: 1 # Changed this to stop a mess between linters from Prettier
-  comments-indentation:
-    level: warning
-  document-end: disable
-  document-start:
-    level: warning
+  comments: disable
+  comments-indentation: disable
+  document-start: disable
   empty-lines: enable
   empty-values: disable
   float-values: disable
