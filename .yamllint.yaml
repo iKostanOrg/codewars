@@ -6,9 +6,8 @@ yaml-files:
   - '*.yml'
   - '.yamllint'
 
-ignore:
-  - depricated/
-  - '*.codeclimate.yml'
+ignore: |
+  depricated/
 
 rules:
   anchors: enable
