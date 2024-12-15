@@ -99,7 +99,7 @@ class AlphabetWarTestCase(unittest.TestCase):
 
         result: str = alphabet_war(battlefield)
         with allure.step(f"Enter test string ({battlefield}) "
-                             f"and verify the output ({result}) "
-                             f"vs expected ({expected})"):
+                         f"and verify the output ({result}) "
+                         f"vs expected ({expected})"):
             print_log(battlefield=battlefield, result=result, expected=expected)
             self.assertEqual(expected, result)
