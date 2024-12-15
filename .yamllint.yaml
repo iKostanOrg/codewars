@@ -6,6 +6,9 @@ yaml-files:
   - '*.yml'
   - '.yamllint'
 
+ignore: |
+  depricated/
+
 rules:
   anchors: enable
   braces: enable

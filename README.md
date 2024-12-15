@@ -89,7 +89,7 @@ During report generation (second step), the XML files are transformed
 to a HTML report. This can be done with a command line tool, a plugin
 for CI or a build tool.
 
-[Online version of the latest Allure report](https://codewars-allure-report.netlify.com)
+[Online version of the latest Allure report](https://codewars-allure-report.netlify.app/)
 
 ## Tech Issues and Problem Solving
 
