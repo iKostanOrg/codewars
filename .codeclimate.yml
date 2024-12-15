@@ -10,11 +10,13 @@ checks:
     enabled: false
   # Per-Language Mass Threshold Defaults
   # https://docs.codeclimate.com/docs/duplication#section-understand-the-engine
+  # yamllint disable rule:indentation
   similar-code:
     config:
-  # overrides default
+      # overrides default
       threshold: "68"
   identical-code:
     config:
-  # overrides default
+      # overrides default
       threshold: "32"
+  # yamllint enable rule:indentation
