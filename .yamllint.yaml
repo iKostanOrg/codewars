@@ -8,7 +8,7 @@ yaml-files:
 
 ignore:
   - depricated/
-  - '*.codeclimate.yml'
+  - ./*.codeclimate.yml
 
 rules:
   anchors: enable
@@ -35,6 +35,6 @@ rules:
   quoted-strings: disable
   trailing-spaces:
     ignore:
-      - '*.codeclimate.yml'
+      - ./.codeclimate.yml
   truthy:
     level: warning
