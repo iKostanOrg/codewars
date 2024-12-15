@@ -33,6 +33,8 @@ rules:
   new-lines: enable
   octal-values: disable
   quoted-strings: disable
-  trailing-spaces: enable
+  trailing-spaces:
+    ignore:
+      - '*.codeclimate.yml'
   truthy:
     level: warning
