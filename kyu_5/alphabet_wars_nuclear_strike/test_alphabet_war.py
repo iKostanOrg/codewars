@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.alphabet_wars_nuclear_strike.alphabet_war \
     import alphabet_war
@@ -38,7 +39,22 @@ from kyu_5.alphabet_wars_nuclear_strike.alphabet_war \
 class AlphabetWarTestCase(unittest.TestCase):
     """Testing alphabet_war function."""
 
-    def test_alphabet_war(self):
+    @parameterized.expand([
+        ('[a]#[b]#[c]', 'ac'),
+        ('[a]#b#[c][d]', 'd'),
+        ('[a][b][c]', 'abc'),
+        ('##a[a]b[c]#', 'c'),
+        ('abde[fgh]ijk', 'abdefghijk'),
+        ('ab#de[fgh]ijk', 'fgh'),
+        ('ab#de[fgh]ij#k', ''),
+        ('##abde[fgh]ijk', ''),
+        ('##abde[fgh]', ''),
+        ('##abcde[fgh]', ''),
+        ('abcde[fgh]', 'abcdefgh'),
+        ('##abde[fgh]ijk[mn]op', 'mn'),
+        ('#abde[fgh]i#jk[mn]op', 'mn'),
+        ('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk')])
+    def test_alphabet_war(self, battlefield, expected):
         """
         Testing alphabet_war function.
 
@@ -80,32 +96,10 @@ class AlphabetWarTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Test a function that accepts battlefield string and "
             "returns letters that survived the nuclear strike.</p>")
-        # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ('[a]#[b]#[c]', 'ac'),
-            ('[a]#b#[c][d]', 'd'),
-            ('[a][b][c]', 'abc'),
-            ('##a[a]b[c]#', 'c'),
-            ('abde[fgh]ijk', 'abdefghijk'),
-            ('ab#de[fgh]ijk', 'fgh'),
-            ('ab#de[fgh]ij#k', ''),
-            ('##abde[fgh]ijk', ''),
-            ('##abde[fgh]', ''),
-            ('##abcde[fgh]', ''),
-            ('abcde[fgh]', 'abcdefgh'),
-            ('##abde[fgh]ijk[mn]op', 'mn'),
-            ('#abde[fgh]i#jk[mn]op', 'mn'),
-            ('[ab]adfd[dd]##[abe]dedf[ijk]d#d[h]#', 'abijk'))
 
-        for battlefield, expected in test_data:
-            result: str = alphabet_war(battlefield)
-
-            with allure.step(f"Enter test string ({battlefield}) "
+        result: str = alphabet_war(battlefield)
+        with allure.step(f"Enter test string ({battlefield}) "
                              f"and verify the output ({result}) "
                              f"vs expected ({expected})"):
-
-                print_log(battlefield=battlefield,
-                          result=result,
-                          expected=expected)
-
-                self.assertEqual(expected, result)
+            print_log(battlefield=battlefield, result=result, expected=expected)
+            self.assertEqual(expected, result)
