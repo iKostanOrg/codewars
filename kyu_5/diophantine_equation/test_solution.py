@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import pytest
 import allure
+from parameterized import parameterized
 from kyu_5.diophantine_equation.solution import sol_equa
 
 
@@ -30,82 +31,53 @@ from kyu_5.diophantine_equation.solution import sol_equa
 class SolutionTestCase(unittest.TestCase):
     """Testing sol_equa function."""
 
-    def test_solution_basic(self):
+    @parameterized.expand([
+        (5, [[3, 1]]),
+        (12, [[4, 1]]),
+        (13, [[7, 3]]),
+        (16, [[4, 0]]),
+        (17, [[9, 4]]),
+        (20, [[6, 2]])])
+    def test_solution_basic(self, num, expected):
         """
         Testing using basic test data.
 
         :return:
         """
-        self.assertEqual(sol_equa(5), [[3, 1]])
-        self.assertEqual(sol_equa(12), [[4, 1]])
-        self.assertEqual(sol_equa(13), [[7, 3]])
-        self.assertEqual(sol_equa(16), [[4, 0]])
-        self.assertEqual(sol_equa(17), [[9, 4]])
-        self.assertEqual(sol_equa(20), [[6, 2]])
+        self.assertEqual(sol_equa(num), expected)
 
-    def test_solution_medium(self):
+    @parameterized.expand([
+        (9001, [[4501, 2250]]),
+        (9004, [[2252, 1125]]),
+        (9008, [[1128, 562]]),
+        (9009, [[4505, 2252], [1503, 750], [647, 320], [505, 248],
+                [415, 202], [353, 170], [225, 102], [153, 60],
+                [135, 48], [103, 20], [97, 10], [95, 2]])])
+    def test_solution_medium(self, num, expected):
         """
         Testing using medium test data.
 
         :return:
         """
-        self.assertEqual(sol_equa(9001), [[4501, 2250]])
+        self.assertEqual(num, expected)
 
-        self.assertEqual(sol_equa(9004), [[2252, 1125]])
-
-        self.assertEqual(sol_equa(9008), [[1128, 562]])
-
-        self.assertEqual(sol_equa(9009), [[4505, 2252],
-                                          [1503, 750],
-                                          [647, 320],
-                                          [505, 248],
-                                          [415, 202],
-                                          [353, 170],
-                                          [225, 102],
-                                          [153, 60],
-                                          [135, 48],
-                                          [103, 20],
-                                          [97, 10],
-                                          [95, 2]])
-
-    def test_solution_big(self):
+    @parameterized.expand([
+        (900000, [[112502, 56249], [56254, 28123], [37506, 18747],
+                  [22510, 11245], [18762, 9369], [12518, 6241],
+                  [11270, 5615], [7530, 3735], [6286, 3107], [4550, 2225],
+                  [3810, 1845], [2590, 1205], [2350, 1075], [1650, 675],
+                  [1430, 535], [1150, 325], [1050, 225], [950, 25]]),
+        (90004, [[22502, 11250]]),
+        (90005, [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]),
+        (90009, [[45005, 22502], [15003, 7500], [5005, 2498],
+                 [653, 290], [397, 130], [315, 48]])])
+    def test_solution_big(self, num, expected):
         """
         Testing using big test data.
 
         :return:
         """
-        self.assertEqual(sol_equa(900000), [[112502, 56249],
-                                            [56254, 28123],
-                                            [37506, 18747],
-                                            [22510, 11245],
-                                            [18762, 9369],
-                                            [12518, 6241],
-                                            [11270, 5615],
-                                            [7530, 3735],
-                                            [6286, 3107],
-                                            [4550, 2225],
-                                            [3810, 1845],
-                                            [2590, 1205],
-                                            [2350, 1075],
-                                            [1650, 675],
-                                            [1430, 535],
-                                            [1150, 325],
-                                            [1050, 225],
-                                            [950, 25]])
-
-        self.assertEqual(sol_equa(90004), [[22502, 11250]])
-
-        self.assertEqual(sol_equa(90005), [[45003, 22501],
-                                           [9003, 4499],
-                                           [981, 467],
-                                           [309, 37]])
-
-        self.assertEqual(sol_equa(90009), [[45005, 22502],
-                                           [15003, 7500],
-                                           [5005, 2498],
-                                           [653, 290],
-                                           [397, 130],
-                                           [315, 48]])
+        self.assertEqual(num, expected)
 
     def test_solution_empty(self):
         """
