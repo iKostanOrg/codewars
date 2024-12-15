@@ -1,5 +1,6 @@
 """
-Solution for -> Array.diff
+Solution for -> Array.diff.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
