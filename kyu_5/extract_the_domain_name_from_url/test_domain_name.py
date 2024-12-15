@@ -65,7 +65,5 @@ class DomainNameTestCase(unittest.TestCase):
         for url, expected in test_data:
             with allure.step("Enter test string and verify the output"):
                 actual = domain_name(url)
-                print_log(url=url,
-                          expected=expected,
-                          actual=actual)
+                print_log(url=url, expected=expected, actual=actual)
                 self.assertEqual(expected, actual)
