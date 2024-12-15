@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
+from parameterized import parameterized
 from kyu_5.directions_reduction.directions_reduction \
     import dir_reduc
 
@@ -29,7 +30,25 @@ from kyu_5.directions_reduction.directions_reduction \
 class DirectionsReductionTestCase(unittest.TestCase):
     """Testing dir_reduc function."""
 
-    def test_directions_reduction(self):
+    @parameterized.expand([
+        (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
+         ['WEST']),
+        (["NORTH", "WEST", "SOUTH", "EAST"],
+         ["NORTH", "WEST", "SOUTH", "EAST"]),
+        (['NORTH', 'EAST', 'NORTH', 'EAST', 'WEST', 'WEST', 'EAST',
+          'EAST', 'WEST', 'SOUTH'],
+         ['NORTH', 'EAST']),
+        (['EAST', 'NORTH', 'SOUTH', 'NORTH', 'SOUTH', 'SOUTH', 'SOUTH',
+          'SOUTH', 'NORTH', 'SOUTH', 'SOUTH', 'EAST', 'SOUTH', 'SOUTH',
+          'NORTH', 'NORTH', 'SOUTH', 'WEST', 'NORTH', 'EAST', 'WEST',
+          'WEST', 'WEST', 'EAST', 'SOUTH', 'SOUTH'],
+         ['EAST', 'SOUTH', 'SOUTH', 'SOUTH', 'SOUTH', 'EAST', 'SOUTH',
+          'WEST', 'NORTH', 'WEST', 'SOUTH', 'SOUTH']),
+        (['WEST', 'NORTH', 'EAST', 'EAST', 'EAST', 'EAST', 'WEST', 'WEST',
+          'WEST', 'WEST', 'NORTH', 'NORTH', 'SOUTH', 'EAST'],
+         ['WEST', 'NORTH', 'NORTH', 'EAST'])
+    ])
+    def test_directions_reduction(self, test_array, expected):
         """
         dir_reduc function test suite.
 
@@ -59,35 +78,10 @@ class DirectionsReductionTestCase(unittest.TestCase):
             "strings and returns an array of strings with the needless "
             "directions removed (W<->E or S<->N side by side).</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"],
-             ['WEST']),
-            (["NORTH", "WEST", "SOUTH", "EAST"],
-             ["NORTH", "WEST", "SOUTH", "EAST"]),
-            (['NORTH', 'EAST', 'NORTH', 'EAST', 'WEST', 'WEST', 'EAST',
-              'EAST', 'WEST', 'SOUTH'],
-             ['NORTH', 'EAST']),
-            (['EAST', 'NORTH', 'SOUTH', 'NORTH', 'SOUTH', 'SOUTH', 'SOUTH',
-              'SOUTH', 'NORTH', 'SOUTH', 'SOUTH', 'EAST', 'SOUTH', 'SOUTH',
-              'NORTH', 'NORTH', 'SOUTH', 'WEST', 'NORTH', 'EAST', 'WEST',
-              'WEST', 'WEST', 'EAST', 'SOUTH', 'SOUTH'],
-             ['EAST', 'SOUTH', 'SOUTH', 'SOUTH', 'SOUTH', 'EAST', 'SOUTH',
-              'WEST', 'NORTH', 'WEST', 'SOUTH', 'SOUTH']),
-            (['WEST', 'NORTH', 'EAST', 'EAST', 'EAST', 'EAST', 'WEST', 'WEST',
-              'WEST', 'WEST', 'NORTH', 'NORTH', 'SOUTH', 'EAST'],
-             ['WEST', 'NORTH', 'NORTH', 'EAST']))
 
-        for d in test_data:
-            test_array = d[0].copy()
-            expected = d[1]
-            result = dir_reduc(d[0])
-
-            with allure.step(f"Enter test data ({test_array}) "
-                             f"and verify the output ({result}) "
-                             f"vs expected ({expected})"):
-
-                print_log(test_array=test_array,
-                          result=result,
-                          expected=expected)
-
-                self.assertListEqual(expected, result)
+        result = dir_reduc(test_array)
+        with allure.step(f"Enter test data ({test_array}) "
+                         f"and verify the output ({result}) "
+                         f"vs expected ({expected})"):
+            print_log(test_array=test_array, result=result, expected=expected)
+            self.assertListEqual(expected, result)
