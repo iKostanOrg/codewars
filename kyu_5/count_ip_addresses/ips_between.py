@@ -1,5 +1,6 @@
 """
-Solution for -> Count IP Addresses
+Solution for -> Count IP Addresses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,19 +8,16 @@ GitHub: https://github.com/ikostan
 
 def ips_between(start: str, end: str) -> int:
     """
+    Find IPs between 2 addresses.
+
     A function that receives two IPv4 addresses,
     and returns the number of addresses between
     them (including the first one, excluding the
     last one).
-
-    All inputs will be valid IPv4 addresses in
-    the form of strings. The last address will
-    always be greater than the first one.
     :param start: str
     :param end: str
     :return: int
     """
-
     ip_start: list = [int(a) for a in start.split('.')]
     ip_end: list = [int(b) for b in end.split('.')]
     ips = zip(ip_start, ip_end)
@@ -33,7 +31,8 @@ def ips_between(start: str, end: str) -> int:
 
 def calc_ip_range(ip, ip_id, ips_range) -> None:
     """
-    Calculate range
+    Calculate IPs range.
+
     :param ip:
     :param ip_id:
     :param ips_range:
@@ -51,7 +50,8 @@ def calc_ip_range(ip, ip_id, ips_range) -> None:
 
 def calc_result(ips_range) -> int:
     """
-    Calculate result
+    Calculate result.
+
     :param ips_range:
     :return: int
     """

@@ -1,5 +1,6 @@
 """
-Solution for -> Where my anagrams at?
+Solution for -> Where my anagrams at?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def anagrams(word, words) -> list:
     """
+    Anagrams function.
+
     A function that will find all the anagrams of a word
     from a list. You will be given two inputs a word and
     an array with words. You should return an array of all

@@ -1,5 +1,6 @@
 """
-Extract the domain name from a URL
+Extract the domain name from a URL.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,9 +8,10 @@ GitHub: https://github.com/ikostan
 
 def domain_name(url: str) -> str:
     """
+    Domain name from URL.
+
     Parses out just the domain name and
     returns it as a string.
-
     :param url: URL as a string
     :return: domain name as a string
     """
