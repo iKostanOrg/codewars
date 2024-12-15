@@ -74,8 +74,8 @@ class IpsBetweenTestCase(unittest.TestCase):
 
         result = ips_between(start, end)
         with allure.step(f"Enter test data (start: {start}, "
-                             f"end: {end}) and verify "
-                             f"the output ({result}) "
-                             f"vs expected ({expected})"):
+                         f"end: {end}) and verify "
+                         f"the output ({result}) "
+                         f"vs expected ({expected})"):
             print_log(start=start, end=end, result=result, expected=expected)
             self.assertEqual(expected, result)
