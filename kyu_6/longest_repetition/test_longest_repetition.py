@@ -43,7 +43,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
         ["", ('', 0)]])
     def test_longest_repetition(self, string, expected):
         """
-        Test longest_repetition function with various test data.
+        Test 'longest_repetition' with various test data.
 
         For a given string s find the character c (or C) with
         the longest consecutive repetition and return: (c, l)
