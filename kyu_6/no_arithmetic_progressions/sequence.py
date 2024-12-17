@@ -1,5 +1,6 @@
 """
-Solution for -> No arithmetic progressions
+Solution for -> No arithmetic progressions.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -34,9 +35,11 @@ def sequence(n: int) -> int:
     return n
 
 
-def sum_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
+def sum_of_arithmetic_progression(a: int,
+                                  dif: int,
+                                  terms: int = 3) -> int:
     """
-    Sum of an Arithmetic Progression
+    Sum of an Arithmetic Progression.
 
     :param a:
     :param dif:
@@ -46,9 +49,11 @@ def sum_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
     return terms * (a + general_term_of_arithmetic_progression(a, dif)) // 2
 
 
-def general_term_of_arithmetic_progression(a: int, dif: int, terms: int = 3) -> int:
+def general_term_of_arithmetic_progression(a: int,
+                                           dif: int,
+                                           terms: int = 3) -> int:
     """
-    General Term of an Arithmetic Progression
+    General Term of an Arithmetic Progression.
 
     :param a:
     :param dif:
