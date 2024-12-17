@@ -1,5 +1,6 @@
 """
-Test for -> String transformer
+Test for -> String transformer.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def string_transformer(s: str) -> str:
     """
+    String transformer.
+
     Given a string, return a new string that has
     transformed based on the input:
 
@@ -20,12 +23,10 @@ def string_transformer(s: str) -> str:
 
     You may assume the input only contain English
     alphabet and spaces.
-
     :param s: str
     :return: str
     """
     s_arr: list = s.split(' ')[::-1]
-
     for i, word in enumerate(s_arr):
         s_arr[i] = ''.join((char.upper() if char.islower()
                             else char.lower()) for char in word)
