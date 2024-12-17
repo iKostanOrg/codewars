@@ -35,7 +35,7 @@ class SequenceTestCase(unittest.TestCase):
     def test_binary_to_string(self):
         """
         Testing binary_to_string function with various test data.
-        
+
         :return:
         """
         # pylint: disable-msg=R0801
