@@ -1,5 +1,6 @@
 """
-Test for -> First character that repeats
+Test for -> First character that repeats.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.longest_repetition.longest_repetition \
     import longest_repetition
@@ -28,13 +30,23 @@ from kyu_6.longest_repetition.longest_repetition \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LongestRepetitionTestCase(unittest.TestCase):
-    """
-    Testing longest_repetition function
-    """
-    def test_longest_repetition(self):
+    """Testing longest_repetition function."""
+
+    @parameterized.expand([
+        # [input, expected],
+        ["aaaabb", ('a', 4)],
+        ["bbbaaabaaaa", ('a', 4)],
+        ["cbdeuuu900", ('u', 3)],
+        ["abbbbb", ('b', 5)],
+        ["aabb", ('a', 2)],
+        ["ba", ('b', 1)],
+        ["", ('', 0)]])
+    def test_longest_repetition(self, string, expected):
         """
+        Test longest_repetition function with various test data.
+
         For a given string s find the character c (or C) with
-        longest consecutive repetition and return: (c, l)
+        the longest consecutive repetition and return: (c, l)
         where l (or L) is the length of the repetition.
 
         For empty string return: ('', 0)
@@ -51,16 +63,5 @@ class LongestRepetitionTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
-            test_data: tuple = (
-                # [input, expected],
-                ["aaaabb", ('a', 4)],
-                ["bbbaaabaaaa", ('a', 4)],
-                ["cbdeuuu900", ('u', 3)],
-                ["abbbbb", ('b', 5)],
-                ["aabb", ('a', 2)],
-                ["ba", ('b', 1)],
-                ["", ('', 0)])
-
-            for t in test_data:
-                print_log(string=t[0], expected=t[1])
-                self.assertEqual(t[1], longest_repetition(t[0]))
+            print_log(string=string, expected=expected)
+            self.assertEqual(expected, longest_repetition(string))
