@@ -1,5 +1,6 @@
 """
 Solution for -> Format a string of names like \'Bart, Lisa & Maggie\'.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def namelist(names: list) -> str:
     """
-    Format a string of names like 'Bart, Lisa & Maggie'
+    Format a string of names like 'Bart, Lisa & Maggie'.
 
     :param names: an array containing hashes of names
     :return: a string formatted as a list of names separated
