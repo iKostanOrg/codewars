@@ -63,7 +63,7 @@ class SequenceTestCase(unittest.TestCase):
          '010101110001', 'fwo1cn6fjqeq')])
     def test_binary_to_string(self, binary, expected):
         """
-        Testing binary_to_string function with various test data.
+        Testing 'binary_to_string' function with various test data.
 
         :return:
         """
@@ -71,10 +71,10 @@ class SequenceTestCase(unittest.TestCase):
         allure.dynamic.title("Testing binary_to_string function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
-            '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
-            '<h3>Test Description:</h3>'
+            "<h3>Codewars badge:</h3>"
+            "<img src='https://www.codewars.com/users/myFirstCode"
+            "/badges/large'>"
+            "<h3>Test Description:</h3>"
             "<p>Test a function that takes in a binary string and returns "
             "the equivalent decoded text (the text is ASCII encoded).</p>")
         # pylint: enable-msg=R0801
