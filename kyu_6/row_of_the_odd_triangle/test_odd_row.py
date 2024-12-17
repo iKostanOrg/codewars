@@ -65,7 +65,7 @@ class OddRowTestCase(unittest.TestCase):
         with allure.step(f"Enter the triangle's row ({n}) "
                          f"and verify the expected output ({expected}) "
                          f"vs actual result ({actual_result})"):
-        # pylint: disable=R0801
+            # pylint: disable=R0801
             print_log(n=n, expected=expected, result=actual_result)
             self.assertEqual(expected, actual_result)
-        # pylint: disable=R0801
+            # pylint: disable=R0801
