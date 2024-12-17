@@ -70,7 +70,7 @@ class StockListTestCase(unittest.TestCase):
                          f"expected output ({expected}) vs "
                          f"actual result ({actual_result})"):
             print_log(list_of_artt=list_of_art,
-                          list_of_cat=list_of_cat,
-                          expected=expected,
-                          result=actual_result)
+                      list_of_cat=list_of_cat,
+                      expected=expected,
+                      result=actual_result)
             self.assertEqual(expected, actual_result)
