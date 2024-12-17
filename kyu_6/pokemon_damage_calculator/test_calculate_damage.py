@@ -1,5 +1,6 @@
 """
-Test for -> Pokemon Damage Calculator
+Test for -> Pokemon Damage Calculator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.pokemon_damage_calculator.calculate_damage \
     import calculate_damage
@@ -33,13 +35,20 @@ from kyu_6.pokemon_damage_calculator.calculate_damage \
     url='https://www.codewars.com/kata/536e9a7973130a06eb000e9f',
     name='Source/Kata')
 class CalculateDamageTestCase(unittest.TestCase):
-    """
-    Testing calculate_damage function:
-    damage = 50 * (attack / defense) * effectiveness
-    """
-    def test_calculate_damage(self):
+    """Testing calculate_damage function."""
+
+    @parameterized.expand([
+        (("fire", "water", 100, 100), 25),
+        (("grass", "water", 100, 100), 100),
+        (("electric", "fire", 100, 100), 50),
+        (("grass", "electric", 57, 19), 150),
+        (("grass", "water", 40, 40), 100),
+        (("grass", "fire", 35, 5), 175),
+        (("fire", "electric", 10, 2), 250)])
+    def test_calculate_damage(self, test_data, expected):
         """
-        Testing calculate_damage with various test data
+        Testing calculate_damage with various test data:
+        damage = 50 * (attack / defense) * effectiveness
         :return:
         """
         # pylint: disable-msg=R0801
@@ -55,33 +64,18 @@ class CalculateDamageTestCase(unittest.TestCase):
             " formula (not the actual one from the game): "
             "damage = 50 * (attack / defense) * effectiveness</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (("fire", "water", 100, 100), 25),
-            (("grass", "water", 100, 100), 100),
-            (("electric", "fire", 100, 100), 50),
-            (("grass", "electric", 57, 19), 150),
-            (("grass", "water", 40, 40), 100),
-            (("grass", "fire", 35, 5), 175),
-            (("fire", "electric", 10, 2), 250))
-
-        for test_data, expected in test_data:
-            your_type = test_data[0]
-            opponent_type = test_data[1]
-            attack = test_data[2]
-            defense = test_data[3]
-            actual_result = calculate_damage(
+        your_type = test_data[0]
+        opponent_type = test_data[1]
+        attack = test_data[2]
+        defense = test_data[3]
+        actual_result = calculate_damage(
                 your_type,
                 opponent_type,
                 attack,
                 defense)
 
-            with allure.step(f"Enter a test data ({test_data}) and verify the "
-                             f"expected output ({expected}) vs "
-                             f"actual result ({actual_result})"):
-
-                print_log(test_data=test_data,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
+        with allure.step(f"Enter a test data ({test_data}) and verify the "
+                         f"expected output ({expected}) vs "
+                         f"actual result ({actual_result})."):
+            print_log(test_data=test_data, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)

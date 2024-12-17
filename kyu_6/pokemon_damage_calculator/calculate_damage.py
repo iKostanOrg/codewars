@@ -1,5 +1,6 @@
 """
-Solution for -> Pokemon Damage Calculator
+Solution for -> Pokemon Damage Calculator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -15,11 +16,13 @@ TYPES: Dict[str, list] = \
 
 def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int:
     """
+    Pokemon Damage Calculator.
+
     It's a Pokemon battle! Your task is to calculate the damage that a
     particular move would do using the following formula
     (not the actual one from the game):
 
-        damage = 50 * (attack / defense) * effectiveness
+    damage = 50 * (attack / defense) * effectiveness
 
     :param your_type:
     :param opponent_type:
@@ -32,11 +35,11 @@ def calculate_damage(your_type: str, opponent_type: str, attack, defense) -> int
 
 def effectiveness(your_type: str, opponent_type: str) -> float:
     """
-    Effectiveness:
+    Effectiveness.
 
-        Super effective: 2x damage
-        Neutral: 1x damage
-        Not very effective: 0.5x damage
+    Super effective: 2x damage
+    Neutral: 1x damage
+    Not very effective: 0.5x damage
 
     To prevent this kata from being tedious, you'll only be
     dealing with four types: fire, water, grass, and electric.
