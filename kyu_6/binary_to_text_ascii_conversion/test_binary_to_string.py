@@ -1,5 +1,6 @@
 """
-Test for -> Binary to Text (ASCII) Conversion
+Test for -> Binary to Text (ASCII) Conversion.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,9 +30,7 @@ from kyu_6.binary_to_text_ascii_conversion.binary_to_string \
     url='https://www.codewars.com/kata/5583d268479559400d000064',
     name='Source/Kata')
 class SequenceTestCase(unittest.TestCase):
-    """
-    Testing binary_to_string function
-    """
+    """Testing binary_to_string function."""
 
     def test_binary_to_string(self):
         """
