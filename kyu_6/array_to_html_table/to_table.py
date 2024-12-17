@@ -1,5 +1,6 @@
 """
-Solution for -> Array to HTML table
+Solution for -> Array to HTML table.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,6 +27,8 @@ TABLE: dict = {
 
 def to_table(data: list, header: bool = False, index: bool = False) -> str:
     """
+    Array to table.
+
     Takes three arguments: data, headers, index, and returns
     a string containing HTML tags representing the table.
 
