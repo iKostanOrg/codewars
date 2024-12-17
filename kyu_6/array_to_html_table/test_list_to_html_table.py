@@ -84,8 +84,7 @@ class ArrayToTableTestCase(unittest.TestCase):
                       "<tbody>"
                       "<tr><td>True</td><td>False</td><td>False</td><td>True</td>"
                       "<td>True</td></tr>"
-                      "</tbody></table>"}
-    ])
+                      "</tbody></table>"}])
     def test_array_to_table_function(self, test_item):
         """
         Testing to_table with various test data.
