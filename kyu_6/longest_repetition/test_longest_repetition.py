@@ -28,7 +28,6 @@ from kyu_6.longest_repetition.longest_repetition \
 @allure.link(
     url='https://www.codewars.com/kata/586d6cefbcc21eed7a001155',
     name='Source/Kata')
-# pylint: enable-msg=R0801
 class LongestRepetitionTestCase(unittest.TestCase):
     """Testing longest_repetition function."""
 
