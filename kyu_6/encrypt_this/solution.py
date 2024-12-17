@@ -1,5 +1,6 @@
 """
-Solution for -> Encrypt this!
+Solution for -> Encrypt this!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
