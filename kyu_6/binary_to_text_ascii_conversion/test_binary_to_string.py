@@ -72,8 +72,7 @@ class SequenceTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             "<h3>Codewars badge:</h3>"
-            "<img src='https://www.codewars.com/users/myFirstCode"
-            "/badges/large'>"
+            "<img src='https://www.codewars.com/users/myFirstCode/badges/large'>"
             "<h3>Test Description:</h3>"
             "<p>Test a function that takes in a binary string and returns "
             "the equivalent decoded text (the text is ASCII encoded).</p>")
