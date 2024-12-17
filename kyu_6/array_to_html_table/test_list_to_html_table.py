@@ -87,12 +87,12 @@ class ArrayToTableTestCase(unittest.TestCase):
                       "</tbody></table>"}])
     def test_array_to_table_function(self, test_item):
         """
-        Testing to_table with various test data.
+        Testing 'to_table' function with various test data.
 
         :return:
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing to_table function")
+        allure.dynamic.title("Testing to_table function.")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
