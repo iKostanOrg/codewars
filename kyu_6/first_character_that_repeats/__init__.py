@@ -1,0 +1,1 @@
+"""First character that repeats."""
