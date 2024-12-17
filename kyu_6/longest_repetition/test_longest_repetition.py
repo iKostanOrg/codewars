@@ -60,7 +60,7 @@ class LongestRepetitionTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-        # pylint: enable-msg=R0801
+# pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
             print_log(string=string, expected=expected)
             self.assertEqual(expected, longest_repetition(string))
