@@ -77,7 +77,8 @@ class ArrayToTableTestCase(unittest.TestCase):
                 "</tbody></table>"
         },
         {
-            "input": ([["a", "b", "c", "d", "e"], [True, False, False, True, True]], True),
+            "input": ([["a", "b", "c", "d", "e"],
+                       [True, False, False, True, True]], True),
             "output": "<table><thead>"
                       "<tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></tr>"
                       "</thead>"
@@ -95,10 +96,10 @@ class ArrayToTableTestCase(unittest.TestCase):
         allure.dynamic.title("Testing to_table function.")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
-            '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
-            '<h3>Test Description:</h3>'
+            "<h3>Codewars badge:</h3>"
+            "<img src='https://www.codewars.com/users/myFirstCode"
+            "/badges/large'>"
+            "<h3>Test Description:</h3>"
             "<p>Test that function takes three arguments "
             "(data, header, index) and returns a string "
             "containing HTML tags representing the table.</p>")
