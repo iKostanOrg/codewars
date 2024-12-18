@@ -8,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def encrypt_this(text: str) -> str:
     """
+    Encrypt this.
+
     Encrypts each word in the message using the following rules:
      * The first letter needs to be converted to its ASCII code.
      * The second letter needs to be switched with the last letter
