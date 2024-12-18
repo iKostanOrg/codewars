@@ -51,7 +51,6 @@ class OrderTestCase(unittest.TestCase):
             3. If the input string is empty, return an empty string.
                The words in the input String will only contain valid
                consecutive numbers.
-
         :return:
         """
         # pylint: disable-msg=R0801
