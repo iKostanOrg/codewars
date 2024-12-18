@@ -31,6 +31,7 @@ from kyu_6.unique_in_order.unique_in_order import unique_in_order
 class UniqueInOrderTestCase(unittest.TestCase):
     """Testing the 'unique_in_order' function."""
 
+    # pylint: disable=line-too-long
     @parameterized.expand([
         ('AAAABBBCCDAABBB',
          ['A', 'B', 'C', 'D', 'A', 'B'],
@@ -68,6 +69,7 @@ class UniqueInOrderTestCase(unittest.TestCase):
           1041981535, 661938680, 438934930, 1442648715, 468638621, 258893461, -46757153, 1997749513, 78748495,
           1555244045, 1506976994, -804276632, -367750677, -733550250],
          'Should work with randomly generated sequence')])
+    # pylint: enable=line-too-long
     def test_unique_in_order(self, test_data, expected, msg):
         """
         Testing the 'unique_in_order' function with various test data.
@@ -84,8 +86,6 @@ class UniqueInOrderTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        # pylint: disable=line-too-long
         with allure.step("Pass test data and verify the output"):
-            # pylint: enable=line-too-long
             print_log(iterable=test_data, expected=expected, msg=msg)
             self.assertEqual(expected, unique_in_order(test_data), msg=msg)
