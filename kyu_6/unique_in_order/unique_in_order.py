@@ -5,7 +5,7 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-from typing import Iterable, List
+from typing import Iterable
 
 
 def unique_in_order(iterable: Iterable) -> list:
