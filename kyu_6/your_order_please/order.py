@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def order(sentence: str) -> str:
     """
-    Sorts a given string by following rules:
+    Sort a given string by following rules:
 
         1. Each word in the string will contain a single number.
            This number is the position the word should have in the result.
