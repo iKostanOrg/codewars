@@ -37,7 +37,7 @@ class DefaultList:
 
     def extend(self, items: list) -> None:
         """
-        This class must also support the regular list functions: extend.
+        Support the regular list functions: extend.
 
         :param items: iterable
         :return:
@@ -46,7 +46,7 @@ class DefaultList:
 
     def append(self, item) -> None:
         """
-        This class must also support the regular list functions: append.
+        Support the regular list functions: append.
 
         :param item:
         :return:
@@ -55,7 +55,7 @@ class DefaultList:
 
     def pop(self, item):
         """
-        This class must also support the regular list functions: pop.
+        Support the regular list functions: pop.
 
         :param item:
         :return:
@@ -64,7 +64,7 @@ class DefaultList:
 
     def remove(self, item) -> None:
         """
-        This class must also support the regular list functions: remove.
+        Support the regular list functions: remove.
 
         :param item:
         :return:
@@ -73,7 +73,7 @@ class DefaultList:
 
     def insert(self, index: int, item) -> None:
         """
-        This class must also support the regular list functions: insert.
+        Support the regular list functions: insert.
 
         :param index:
         :param item:
