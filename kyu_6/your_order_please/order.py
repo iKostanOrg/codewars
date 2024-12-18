@@ -1,5 +1,6 @@
 """
-Solution for -> Your order, please
+Solution for -> Your order, please.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
