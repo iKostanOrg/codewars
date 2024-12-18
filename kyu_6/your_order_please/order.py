@@ -8,13 +8,11 @@ GitHub: https://github.com/ikostan
 
 def order(sentence: str) -> str:
     """
-    Sort a given string by following rules:
+    Sort a given string by rules listed below.
 
         1. Each word in the string will contain a single number.
            This number is the position the word should have in the result.
-
         2. Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
-
         3. If the input string is empty, return an empty string. The words in the
            input String will only contain valid consecutive numbers.
 
@@ -28,4 +26,5 @@ def order(sentence: str) -> str:
             if str(i) in word:
                 results.append(word)
                 break
+
     return ' '.join(results)
