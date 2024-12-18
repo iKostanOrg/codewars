@@ -62,6 +62,6 @@ class SortArrayTestCase(unittest.TestCase):
                          f"and verify the expected: {expected}"
                          f"output vs actual result: {actual_result}."):
             print_log(source_array=source_array,
-                          expected=expected,
-                          result=actual_result)
+                      expected=expected,
+                      result=actual_result)
             self.assertListEqual(expected, actual_result)
