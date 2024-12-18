@@ -10,6 +10,11 @@ class EpidemicTestData:
     """Epidemic Test Data Class."""
 
     def __init__(self, **kwargs):
+        """
+        Create a new EpidemicTestData instance.
+
+        :param kwargs:
+        """
         # tm, n, s0, i0, b, a, expected
         self.__tm = kwargs['tm']
         self.__n = kwargs['n']
