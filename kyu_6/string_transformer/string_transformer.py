@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def string_transformer(s: str) -> str:
     """
-    String transformer.
+    Transform string.
 
     Given a string, return a new string that has
     transformed based on the input:
