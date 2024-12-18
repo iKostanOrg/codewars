@@ -73,6 +73,6 @@ class OrderTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         actual_result: str = order(sentence)
         with allure.step("Enter a string and verify the "
-                             "expected output vs actual result"):
+                         "expected output vs actual result"):
             print_log(sentence=sentence, expected=expected, result=actual_result)
             self.assertEqual(expected, actual_result)
