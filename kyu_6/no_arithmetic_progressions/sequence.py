@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def sequence(n: int) -> int:
     """
-    A function f(n), which returns the n-th member of sequence.
+    Function f(n), which returns the n-th member of sequence.
 
     Consider a sequence, which is formed by the following rule:
     next term is taken as the smallest possible non-negative integer,
