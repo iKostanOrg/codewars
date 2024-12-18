@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def group_cities(seq: list) -> list:
     """
-    Grouping cities.
+    Group cities.
 
     A function that given a sequence of strings, groups the elements
     that can be obtained by rotating others, ignoring upper or lower cases.
