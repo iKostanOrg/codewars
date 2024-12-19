@@ -29,6 +29,9 @@ class StockListTestCase(unittest.TestCase):
     """Testing stock_list function."""
 
     @parameterized.expand([
+        ([], ['B', 'R', 'D', 'X'], ''),
+        (['BKWRK 125', 'BTSQZ 239', 'BBART 350', 'DRTYM 060'],
+         ['B', 'D'], '(B : 714) - (D : 60)'),
         (["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"],
          ["A", "B"], "(A : 200) - (B : 1140)"),
         (['BBAR 150', 'CDXE 515', 'BKWR 250', 'BTSQ 890', 'DRTY 600'],
@@ -58,7 +61,7 @@ class StockListTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>You will be given a stocklist (e.g. : L) and a list of "
+            "<p>You will be given a stock-list (e.g. : L) and a list of "
             "categories in capital letters. Your task is to verify that "
             "the function finds all the books of L with codes belonging "
             "to each category of M and to sum their quantity according to "
