@@ -47,8 +47,8 @@ class CalculateDamageTestCase(unittest.TestCase):
         (("fire", "electric", 10, 2), 250)])
     def test_calculate_damage(self, test_data, expected):
         """
-        Testing calculate_damage with various test data:
-        damage = 50 * (attack / defense) * effectiveness
+        Testing calculate_damage with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
