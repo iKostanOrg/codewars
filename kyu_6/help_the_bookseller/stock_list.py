@@ -1,5 +1,6 @@
 """
-Solution for -> Help the bookseller !
+Solution for -> Help the bookseller!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def stock_list(list_of_art: list, list_of_cat: list) -> str:
     """
+    Stock list function.
+
     You will be given a stockist (e.g. : L) and a
     list of categories in capital letters e.g :
     M = {"A", "B", "C", "W"}

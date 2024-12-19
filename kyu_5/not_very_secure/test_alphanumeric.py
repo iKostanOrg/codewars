@@ -31,7 +31,6 @@ from kyu_5.not_very_secure.alphanumeric import alphanumeric
 @allure.link(
     url='https://www.codewars.com/kata/526dbd6c8c0eb53254000110',
     name='Source/Kata')
-# pylint: enable-msg=R0801
 class AlphanumericTestCase(unittest.TestCase):
     """Testing alphanumeric function."""
 
@@ -53,7 +52,6 @@ class AlphanumericTestCase(unittest.TestCase):
 
         :return: None
         """
-        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing alphanumeric function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -62,7 +60,7 @@ class AlphanumericTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-        # pylint: enable-msg=R0801
+# pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             print_log(password=password, expected=expected)
             self.assertEqual(expected, alphanumeric(password))

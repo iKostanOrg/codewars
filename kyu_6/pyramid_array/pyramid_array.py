@@ -1,5 +1,6 @@
 """
-Solution for -> Pyramid Array
+Solution for -> Pyramid Array.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def pyramid(n: int) -> list:
     """
+    Pyramid function.
+
     Write a function that when given a number >= 0,
     returns an Array of ascending length subarrays.
 

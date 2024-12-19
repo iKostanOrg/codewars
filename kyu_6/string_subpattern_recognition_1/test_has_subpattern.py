@@ -1,5 +1,6 @@
 """
-Test for -> String subpattern recognition I
+Test for -> String subpattern recognition I.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -31,13 +32,11 @@ from kyu_6.string_subpattern_recognition_1.has_subpattern \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
-    """
-    String subpattern recognition I
-    Testing 'has_subpattern' function
-    """
+    """Testing 'has_subpattern' function."""
+
     def test_has_subpattern(self):
         """
-        String subpattern recognition I
+        String subpattern recognition I.
 
         Verify that 'has_subpattern' function to returns
         either true/True or false/False if a string can be

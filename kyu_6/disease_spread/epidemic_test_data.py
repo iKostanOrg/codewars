@@ -1,15 +1,20 @@
 """
-Epidemic Test Data Class
+Epidemic Test Data Class.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
 
 class EpidemicTestData:
-    """
-    Epidemic Test Data Class
-    """
+    """Epidemic Test Data Class."""
+
     def __init__(self, **kwargs):
+        """
+        Create a new EpidemicTestData instance.
+
+        :param kwargs:
+        """
         # tm, n, s0, i0, b, a, expected
         self.__tm = kwargs['tm']
         self.__n = kwargs['n']
@@ -22,7 +27,8 @@ class EpidemicTestData:
     @property
     def tm(self):
         """
-        Returns tm value
+        Returns tm value.
+
         :return:
         """
         return self.__tm
@@ -30,7 +36,7 @@ class EpidemicTestData:
     @property
     def n(self):
         """
-        Returns n value
+        Returns n value.
 
         :return:
         """
@@ -39,7 +45,7 @@ class EpidemicTestData:
     @property
     def s0(self):
         """
-        Returns s0 value
+        Returns s0 value.
 
         :return:
         """
@@ -48,7 +54,7 @@ class EpidemicTestData:
     @property
     def i0(self):
         """
-        Returns i0 value
+        Returns i0 value.
 
         :return:
         """
@@ -57,7 +63,7 @@ class EpidemicTestData:
     @property
     def b(self):
         """
-        Returns b value
+        Returns b value.
 
         :return:
         """
@@ -66,7 +72,7 @@ class EpidemicTestData:
     @property
     def a(self):
         """
-        Returns a value
+        Returns a value.
 
         :return:
         """
@@ -75,22 +81,27 @@ class EpidemicTestData:
     @property
     def expected(self):
         """
-        Returns expected value
+        Returns expected value.
 
         :return:
         """
         return self.__expected
 
     def __repr__(self):
+        """
+        Repr function.
+
+        :return:
+        """
         return (f'tm: {self.tm}, n: {self.n}, s0: {self.s0}, '
                 f'i0: {self.i0}, b: {self.b}, a: {self.a}, '
                 f'expected: {self.expected}')
 
     def __eq__(self, other):
         """
-        Object comparison
-        Override the default Equals behavior
+        Object comparison.
 
+        Override the default Equals behavior.
         :param other:
         :return:
         """

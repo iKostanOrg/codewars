@@ -1,5 +1,6 @@
 """
-Solution for -> Numericals of a String
+Solution for -> Numericals of a String.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def numericals(s: str) -> str:
     """
+    Numericals function.
+
     For each symbol in the string if it's the
     first character occurrence, replace it with
     a '1', else replace it with the amount of
