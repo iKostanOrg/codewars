@@ -14,6 +14,7 @@ from utils.log_func import print_log
 from kyu_6.default_list.default_list import DefaultList
 
 
+# pylint: disable=duplicate-code
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Object-Oriented Programming")
@@ -29,6 +30,7 @@ from kyu_6.default_list.default_list import DefaultList
     name='Source/Kata')
 class EdgeCaseListTestCase(unittest.TestCase):
     """Testing 'DefaultList' class with edge cases."""
+    # pylint: enable=duplicate-code
 
     def test_default_list_edge_cases_pop(self):
         """
