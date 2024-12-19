@@ -41,16 +41,16 @@ class OrderTestCase(unittest.TestCase):
         Your task is to verify that 'order' function
         sorts a given string by following rules:
 
-            1. Each word in the string will contain a single number.
-               This number is the position the word should have in
-               the result.
+        1. Each word in the string will contain a single number.
+        This number is the position the word should have in
+        the result.
 
-            2. Note: Numbers can be from 1 to 9. So 1 will be the
-               first word (not 0).
+        2. Note: Numbers can be from 1 to 9. So 1 will be the
+        first word (not 0).
 
-            3. If the input string is empty, return an empty string.
-               The words in the input String will only contain valid
-               consecutive numbers.
+        3. If the input string is empty, return an empty string.
+        The words in the input String will only contain valid
+        consecutive numbers.
         :return:
         """
         # pylint: disable-msg=R0801
