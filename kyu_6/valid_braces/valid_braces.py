@@ -19,7 +19,7 @@ CLOSING: str = ')}]'
 
 def valid_braces(string: str) -> bool:
     """
-    Valid braces.
+    Validate braces.
 
     A function that takes a string of braces, and determines if the order
     of the braces is valid. It should return true if the string is valid,
