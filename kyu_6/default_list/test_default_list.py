@@ -293,10 +293,10 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Pop first item and verify the result"):
             i = 0
-            expected_str = 4
+            expected = 4
             actual = lst[i]
-            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
-            self.assertEqual(expected_str, actual)
+            print_log(lst=lst, i=i, expected=expected, actual=actual)
+            self.assertEqual(expected, actual)
 
     def test_default_list_edge_cases_pop(self):
         """
