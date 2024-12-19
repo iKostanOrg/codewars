@@ -53,14 +53,26 @@ class DefaultList:
         """
         self.__lst.append(item)
 
-    def pop(self, item):
+    def pop(self, index=None):
         """
         Support the regular list functions: pop.
 
-        :param item:
+        :param index:
         :return:
         """
-        return self.__lst.pop(item)
+        # Return default value when list is empty or None
+        if not self.__lst:
+            return self.__default_value
+
+        # Return default value when no index is 0 and list is not empty
+        if index == 0 and self.__lst:
+            return self.__lst.pop(index)
+
+        # Return default value when no index + list is not empty
+        if not index and self.__lst:
+            return self.__lst.pop(-1)
+
+        return self.__lst.pop(index)
 
     def remove(self, item) -> None:
         """
@@ -80,3 +92,11 @@ class DefaultList:
         :return:
         """
         self.__lst.insert(index, item)
+
+    def __repr__(self) -> str:
+        """
+        Provide a readable, human-friendly string representation of the object.
+
+        :return:
+        """
+        return f"lst: {self.__lst}, default: {self.__default_value}"
