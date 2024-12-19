@@ -10,7 +10,7 @@ import math
 
 def has_subpattern(string: str) -> str:
     """
-    String subpattern recognition III.
+    Recognition of string subpattern III.
 
     Since there is no deterministic way to tell which pattern
     was really the original one among all the possible

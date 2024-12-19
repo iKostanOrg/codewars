@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def has_subpattern(string: str) -> bool:
     """
-    String subpattern recognition I.
+    Recognition of string subpattern I.
 
     In this kata you need to build a function to return
     either true/True or false/False if a string can be

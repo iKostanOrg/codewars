@@ -11,7 +11,7 @@ from utils.primes.is_prime import is_prime
 
 def has_subpattern(string: str) -> bool:
     """
-    String subpattern recognition II.
+    Recognition of string subpattern II.
 
     if a subpattern has been used, it will be repeated at least twice,
     meaning the subpattern has to be shorter than the original string;
