@@ -29,9 +29,6 @@ class StockListTestCase(unittest.TestCase):
     """Testing stock_list function."""
 
     @parameterized.expand([
-        ([], ['B', 'R', 'D', 'X'], ''),
-        (['BKWRK 125', 'BTSQZ 239', 'BBART 350', 'DRTYM 060'],
-         ['B', 'D'], '(B : 714) - (D : 60)'),
         (["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"],
          ["A", "B"], "(A : 200) - (B : 1140)"),
         (['BBAR 150', 'CDXE 515', 'BKWR 250', 'BTSQ 890', 'DRTY 600'],
@@ -46,7 +43,9 @@ class StockListTestCase(unittest.TestCase):
         (['ROXANNE 102', 'RHODODE 123', 'BKWRKAA 125', 'BTSQZFG 239',
           'DRTYMKH 060'],
          ['U', 'V', 'R'], '(U : 0) - (V : 0) - (R : 225)'),
-        ([], ['B', 'R', 'D', 'X'], '')])
+        ([], ['B', 'R', 'D', 'X'], ''),
+        (['BKWRK 125', 'BTSQZ 239', 'BBART 350', 'DRTYM 060'],
+         ['B', 'D'], '(B : 714) - (D : 60)')])
     def test_stock_list(self, list_of_art, list_of_cat, expected):
         """
         Testing stock_list function with various test data.
