@@ -339,6 +339,5 @@ class DefaultListTestCase(unittest.TestCase):
 
         with allure.step("Test popping from list with elements and index:"):
             actual = test_list.pop(0)
-            print(test_list)
             print_log(lst=test_list, i=0, expected=1, actual=actual)
             self.assertEqual(1, actual)
