@@ -1,5 +1,6 @@
 """
-Test for ->  'generate_hashtag' function
+Test for ->  'generate_hashtag' function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.the_hashtag_generator.hashtag_generator \
     import generate_hashtag
@@ -27,13 +29,36 @@ from kyu_5.the_hashtag_generator.hashtag_generator \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class GenerateHashtagTestCase(unittest.TestCase):
-    """
-    Testing generate_hashtag function
-    """
+    """Testing generate_hashtag function."""
 
-    def test_generate_hashtag(self):
+    @parameterized.expand(
+        [('', False, 'Expected an empty string to return False'),
+         ('Codewars', '#Codewars', 'Should handle a single word.'),
+         ('Codewars      ', '#Codewars',
+          'Should handle trailing whitespace.'),
+         ('Codewars Is Nice', '#CodewarsIsNice', 'Should remove spaces.'),
+         ('codewars is nice', '#CodewarsIsNice',
+          'Should capitalize first letters of words.'),
+         ('CodeWars is nice', '#CodewarsIsNice',
+          'Should capitalize all letters of words - '
+          'all lower case but the first.'),
+         ('c i n', '#CIN',
+          'Should capitalize first letters of words even '
+          'when single letters.'),
+         ('codewars  is  nice', '#CodewarsIsNice',
+          'Should deal with unnecessary middle spaces.'),
+         ('Loooooooooooooooooooooooooooooooooooo'
+          'oooooooooooooooooooooooooooooooooooooo'
+          'oooooooooooooooooooooooooooooooooooooo'
+          'ooooooooooooooooooooooooooooooooooooo'
+          'oooooong Cat', False,
+          'Should return False if the final word is '
+          'longer than 140 chars.')])
+    def test_generate_hashtag(self, string, expected, message):
         """
-        Testing 'generate_hashtag' function
+        Testing 'generate_hashtag' function with various test data.
+
+        :return:
         """
         allure.dynamic.title("Testing 'generate_hashtag' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
@@ -54,48 +79,10 @@ class GenerateHashtagTestCase(unittest.TestCase):
             "must return false."
             "</p>")
 
-        test_data: tuple = (
-            ('',
-             False,
-             'Expected an empty string to return False'),
-            ('Codewars',
-             '#Codewars',
-             'Should handle a single word.'),
-            ('Codewars      ',
-             '#Codewars',
-             'Should handle trailing whitespace.'),
-            ('Codewars Is Nice',
-             '#CodewarsIsNice',
-             'Should remove spaces.'),
-            ('codewars is nice',
-             '#CodewarsIsNice',
-             'Should capitalize first letters of words.'),
-            ('CodeWars is nice',
-             '#CodewarsIsNice',
-             'Should capitalize all letters of words - '
-             'all lower case but the first.'),
-            ('c i n',
-             '#CIN',
-             'Should capitalize first letters of words even '
-             'when single letters.'),
-            ('codewars  is  nice',
-             '#CodewarsIsNice',
-             'Should deal with unnecessary middle spaces.'),
-            ('Loooooooooooooooooooooooooooooooooooo'
-             'oooooooooooooooooooooooooooooooooooooo'
-             'oooooooooooooooooooooooooooooooooooooo'
-             'ooooooooooooooooooooooooooooooooooooo'
-             'oooooong Cat',
-             False,
-             'Should return False if the final word is '
-             'longer than 140 chars.'))
-
-        for string, expected, message in test_data:
+        with allure.step("Enter a test string and verify the output:"):
             actual_result = generate_hashtag(string)
-
-            with allure.step("Enter a test string and verify the output:"):
-                print_log(string=string,
-                          message=message,
-                          expected=expected,
-                          actual_result=actual_result)
-                self.assertEqual(expected, actual_result, msg=message)
+            print_log(string=string,
+                      message=message,
+                      expected=expected,
+                      actual_result=actual_result)
+            self.assertEqual(expected, actual_result, message)

@@ -1,5 +1,6 @@
 """
-Solution for -> Who likes it?
+Solution for -> Who likes it?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def likes(names: list) -> str:
     """
+    Likes.
+
     A function which must take in input array, containing the
     names of people who like an item. It must return the
     display text.

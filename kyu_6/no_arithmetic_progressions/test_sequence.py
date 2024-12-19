@@ -1,7 +1,6 @@
 """
-Test for -> No arithmetic progressions
-Testing sequence function
-A function f(n), should returns the n-th member of sequence.
+Test for -> No arithmetic progressions.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -11,6 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 import pytest
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.no_arithmetic_progressions.sequence import sequence
 
@@ -29,12 +29,23 @@ from kyu_6.no_arithmetic_progressions.sequence import sequence
 # pylint: enable-msg=R0801
 @pytest.mark.skip(reason="The solution is not ready")
 class SequenceTestCase(unittest.TestCase):
-    """
-    Testing sequence function
-    """
-    def test_sequence(self):
+    """Testing sequence function."""
+
+    @parameterized.expand([
+        (1233, 62047),
+        (0, 0),
+        (1, 1),
+        (2, 3),
+        (3, 4),
+        (4, 9),
+        (6541, 717373),
+        (7878, 790248),
+        (1435, 67909),
+        (6457, 715501)])
+    def test_sequence(self, n, expected):
         """
-        A function f(n), should returns the n-th member of sequence.
+        A function f(n), should return the n-th member of sequence.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -50,30 +61,11 @@ class SequenceTestCase(unittest.TestCase):
             "non-negative integer, which is not yet in the sequence, "
             "so that no 3 terms of sequence form an arithmetic "
             "progression.</p>")
+
+        actual_result = sequence(n)
+        with allure.step(f"Enter a number ({n}) and verify the "
+                         f"expected output ({expected}) vs "
+                         f"actual result ({actual_result})"):
+            print_log(n=n, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)
         # pylint: enable-msg=R0801
-        test_data = (
-            (1233, 62047),
-            (0, 0),
-            (1, 1),
-            (2, 3),
-            (3, 4),
-            (4, 9),
-            (6541, 717373),
-            (7878, 790248),
-            (1435, 67909),
-            (6457, 715501))
-
-        for n, expected in test_data:
-            actual_result = sequence(n)
-            # pylint: disable-msg=R0801
-            with allure.step(
-                    f"Enter a number ({n}) and verify the "
-                    f"expected output ({expected}) vs "
-                    f"actual result ({actual_result})"):
-                print_log(n=n,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
-            # pylint: enable-msg=R0801

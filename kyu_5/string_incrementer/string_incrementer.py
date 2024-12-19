@@ -1,5 +1,6 @@
 """
-Solution for -> String incrementer
+Solution for -> String incrementer.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def increment_string(string: str) -> str:
     """
+    increment_string function.
+
     A function which increments a string, to create a new string:
 
     1. If the string already ends with a number,
@@ -14,7 +17,6 @@ def increment_string(string: str) -> str:
 
     2. If the string does not end with a number.
     the number 1 should be appended to the new string.
-
     :param string: input string
     :return: output string with incremented number
     """
@@ -42,7 +44,7 @@ def increment_string(string: str) -> str:
 
 def get_first_digit_index(string: str):
     """
-    Find index of first non digit char from right to left
+    Find index of first non digit char from right to left.
 
     :param string: input string
     :return: index of first non digit char or None

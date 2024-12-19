@@ -1,7 +1,7 @@
 """
-Testing spiralizer function
-Created by Egor Kostan.
+Testing spiralizer function.
 
+Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
@@ -30,14 +30,10 @@ from kyu_3.make_spiral.solution import spiralize
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SpiralizeTestCase(unittest.TestCase):
-    """
-    Testing spiralize function
-    """
+    """Testing spiralize function."""
 
     def test_spiralize(self):
-        """
-        Testing spiralize function
-        """
+        """Testing spiralize function."""
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing spiralize function")
         allure.dynamic.severity(allure.severity_level.CRITICAL)

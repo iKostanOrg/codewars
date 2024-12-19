@@ -1,5 +1,6 @@
 """
-Test for -> Range Extraction
+Test for -> Range Extraction.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,13 @@ from kyu_4.range_extraction.solution import solution
 @allure.link(url='https://www.codewars.com/kata/51ba717bb08c1cd60f00002f',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
-    """
-    Testing solution for Range Extraction problem
-    """
+    """Testing solution for Range Extraction problem."""
 
     def test_solution(self):
         """
-        Testing solution function
+        Testing solution function.
+
+        :return:
         """
         allure.dynamic.title("Testing solution function")
         allure.dynamic.severity(allure.severity_level.NORMAL)

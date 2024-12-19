@@ -1,5 +1,6 @@
 """
-Solution for -> Multiples of 3 or 5
+Solution for -> Multiples of 3 or 5.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def solution(number: int) -> int:
     """
+    Solution for 'ultiples of 3 or 5' problem.
+
     If we list all the natural numbers below 10 that are
     multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of
     these multiples is 23.

@@ -1,5 +1,6 @@
 """
-Test for -> Number of trailing zeros of N!
+Test for -> Number of trailing zeros of N!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_5.number_of_trailing_zeros_of_n.zeros import zeros
 from utils.log_func import print_log
 
@@ -27,12 +29,18 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class ZerosTestCase(unittest.TestCase):
-    """
-    Testing zeros function
-    """
+    """Testing zeros function."""
 
-    def test_zeros(self):
+    @parameterized.expand([
+        (0, 0, "Testing with n = 0"),
+        (6, 1, "Testing with n = 6"),
+        (10, 2, "Testing with n = 10"),
+        (12, 2, "Testing with n = 12"),
+        (30, 7, "Testing with n = 30")])
+    def test_zeros(self, number, expected, message):
         """
+        Testing zeros function with various test data.
+
         Testing 'zeros' program that should calculate the number
         of trailing zeros in a factorial of a given number.
         :return: None
@@ -47,23 +55,7 @@ class ZerosTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test number and verify the result"):
-            test_data: tuple = (
-                (0, 0, "Testing with n = 0"),
-                (6, 1, "Testing with n = 6"),
-                (10, 2, "Testing with n = 10"),
-                (12, 2, "Testing with n = 12"),
-                (30, 7, "Testing with n = 30"))
-
-            for data in test_data:
-
-                number: int = data[0]
-                expected: int = data[1]
-                message: str = data[2]
-
-                print_log(message=message,
-                          number=number,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 zeros(number))
+        with allure.step(f"Enter test number: {number} "
+                         f"and verify the result: {expected}"):
+            print_log(message=message, number=number, expected=expected)
+            self.assertEqual(expected, zeros(number))

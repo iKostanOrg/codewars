@@ -1,5 +1,6 @@
 """
-Solution for -> Count letters in string
+Solution for -> Count letters in string.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def letter_count(s: str) -> dict:
     """
+    Letter count.
+
     Count lowercase letters in a given string
     and return the letter count in a hash with
     'letter' as key and count as 'value'.
@@ -14,7 +17,6 @@ def letter_count(s: str) -> dict:
     :return:
     """
     result: dict = {}
-
     for char in s:
         if char.islower() and char not in result:
             result[char] = 1

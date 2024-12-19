@@ -1,5 +1,6 @@
 """
-Test for 'Human readable duration format'
+Test for 'Human readable duration format'.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,12 +30,12 @@ from kyu_4.human_readable_duration_format.format_duration \
              name='Source/Kata')
 # pylint: enable-msg=R0801
 class FormatDurationTestCase(unittest.TestCase):
-    """
-    Testing format_duration
-    """
+    """Testing format_duration."""
 
     def test_format_duration(self):
         """
+        Test format_duration function.
+
         Test a function which formats a duration,
         given as a number of seconds, in a human-friendly way.
 

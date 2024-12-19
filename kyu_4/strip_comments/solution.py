@@ -1,5 +1,6 @@
 """
-Solution for -> Strip Comments
+Solution for -> Strip Comments.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def solution(string: str, markers: list) -> str:
     """
+    Strip comments solution.
+
     The solution strips all text that follows any of a set
     of comment markers passed in. Any whitespace at the end
     of the line will be stripped out as well.

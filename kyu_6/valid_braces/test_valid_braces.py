@@ -1,5 +1,6 @@
 """
-Test for -> Valid Braces
+Test for -> Valid Braces.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.valid_braces.valid_braces import valid_braces
 
@@ -26,13 +28,33 @@ from kyu_6.valid_braces.valid_braces import valid_braces
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class ValidBracesTestCase(unittest.TestCase):
-    """
-    Testing the 'valid_braces' function
-    """
-    def test_valid_braces(self):
+    """Testing the 'valid_braces' function."""
+
+    @parameterized.expand([
+        ("(){}[]", True),
+        ("([{}])", True),
+        ("(}", False),
+        ("[(])", False),
+        ("[({})](]", False),
+        ("()", True),
+        ("[]", True),
+        ("[(])", False),
+        ("{}", True),
+        ("{}()[]", True),
+        ("([{}])", True),
+        ("([}{])", False),
+        ("{}({})[]", True),
+        ("(({{[[]]}}))", True),
+        ("(((({{", False),
+        (")(}{][", False),
+        ("())({}}{()][][", False),
+        ("{}()[]", True),
+        ("([}{])", False),
+        ("{}({})[]", True)])
+    def test_valid_braces(self, string, expected):
         """
-        Testing the 'valid_braces' function
-        with various test data
+        Testing the 'valid_braces' function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -47,31 +69,7 @@ class ValidBracesTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         # pylint: disable=line-too-long
         with allure.step("Pass test data and verify the output"):
-            data: tuple = (
-                ("(){}[]", True),
-                ("([{}])", True),
-                ("(}", False),
-                ("[(])", False),
-                ("[({})](]", False),
-                ("()", True),
-                ("[]", True),
-                ("[(])", False),
-                ("{}", True),
-                ("{}()[]", True),
-                ("([{}])", True),
-                ("([}{])", False),
-                ("{}({})[]", True),
-                ("(({{[[]]}}))", True),
-                ("(((({{", False),
-                (")(}{][", False),
-                ("())({}}{()][][", False),
-                ("{}()[]", True),
-                ("([}{])", False),
-                ("{}({})[]", True),
-            )
-
             # pylint: enable=line-too-long
-            for string, expected in data:
-                actual = valid_braces(string)
-                print_log(string=string, expected=expected, actual=actual)
-                self.assertEqual(expected, actual)
+            actual = valid_braces(string)
+            print_log(string=string, expected=expected, actual=actual)
+            self.assertEqual(expected, actual)

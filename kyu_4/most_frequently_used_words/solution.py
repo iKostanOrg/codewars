@@ -1,5 +1,6 @@
 """
-Most frequently used words in a text
+Most frequently used words in a text.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def top_3_words(text: str) -> list:
     """
+    Top 3 words function.
+
     Given a string of text (possibly with punctuation and line-breaks),
     returns an array of the top-3 most occurring words, in descending
     order of the number of occurrences.

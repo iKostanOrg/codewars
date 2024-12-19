@@ -1,11 +1,13 @@
 """
-Test for -> Easy Diagonal
+Test for -> Easy Diagonal.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.easy_diagonal.diagonal import diagonal
 
@@ -24,12 +26,22 @@ from kyu_6.easy_diagonal.diagonal import diagonal
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class EasyDiagonalTestCase(unittest.TestCase):
-    """
-    Testing easy_diagonal function
-    """
-    def test_easy_diagonal(self):
+    """Testing easy_diagonal function."""
+
+    @parameterized.expand([
+        (7, 0, 8),
+        (7, 1, 28),
+        (7, 2, 56),
+        (20, 3, 5985),
+        (100, 0, 101),
+        (20, 4, 20349),
+        (20, 15, 20349),
+        (1291, 5, 6385476296235036),
+        (129100, 5, 6429758786797926366807779220)])
+    def test_easy_diagonal(self, n, p, expected):
         """
-        Testing easy_diagonal function
+        Testing easy_diagonal function.
+
         :param self:
         :return:
         """
@@ -48,26 +60,10 @@ class EasyDiagonalTestCase(unittest.TestCase):
             " 0 is the number of the diagonal). In the same way S(7, 1) "
             "is 28, S(7, 2) is 56.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (7, 0, 8),
-            (7, 1, 28),
-            (7, 2, 56),
-            (20, 3, 5985),
-            (100, 0, 101),
-            (20, 4, 20349),
-            (20, 15, 20349),
-            (1291, 5, 6385476296235036),
-            (129100, 5, 6429758786797926366807779220))
-
-        for td in test_data:
-            n = td[0]
-            p = td[1]
-            expected = td[2]
-            result = diagonal(n, p)
+        result = diagonal(n, p)
+        with allure.step(f"Enter n: {n}, "
+                         f"p: {p} and assert the "
+                         f"expected: {expected} vs "
+                         f"result: {result}"):
             print_log(n=n, p=p, expected=expected, result=result)
-
-            with allure.step(f"Enter n: {n}, "
-                             f"p: {p} and assert the "
-                             f"expected: {expected} vs "
-                             f"result: {result}"):
-                self.assertEqual(expected, result)
+            self.assertEqual(expected, result)

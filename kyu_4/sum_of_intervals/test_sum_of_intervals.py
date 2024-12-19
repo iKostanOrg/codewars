@@ -1,5 +1,6 @@
 """
-Test for -> Sum of Intervals
+Test for -> Sum of Intervals.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,11 @@ from kyu_4.sum_of_intervals.sum_of_intervals import sum_of_intervals
 @allure.link(url='https://www.codewars.com/kata/52b7ed099cdc285c300001cd',
              name='Source/Kata')
 class SumOfIntervalsTestCase(unittest.TestCase):
-    """
-    Testing sum_of_intervals function
-    """
+    """Testing sum_of_intervals function."""
 
     def test_sum_of_intervals(self):
         """
-        Testing sum_of_intervals function
+        Testing sum_of_intervals function.
 
         The function should accept an array of intervals,
         and return the sum of all the interval lengths.

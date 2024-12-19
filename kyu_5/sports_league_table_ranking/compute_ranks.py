@@ -1,5 +1,6 @@
 """
-Solution for -> Sports League Table Ranking
+Solution for -> Sports League Table Ranking.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,9 @@ GitHub: https://github.com/ikostan
 
 def compute_ranks(number: int, games: list) -> list:
     """
-    organize a sports league in a round-robin-system. Each team meets
+    compute_ranks function.
+
+    Organize a sports league in a round-robin-system. Each team meets
     all other teams. In your league a win gives a team 2 points, a
     draw gives both teams 1 point. After some games you have to compute
     the order of the teams in your league. You use the following criteria
@@ -45,7 +48,8 @@ def compute_ranks(number: int, games: list) -> list:
 
 def process_not_played_games(teams: dict, number: int) -> None:
     """
-    Set default values for teams who did not play a single game
+    Set default values for teams who did not play a single game.
+
     :param teams:
     :param number:
     :return:
@@ -57,12 +61,9 @@ def process_not_played_games(teams: dict, number: int) -> None:
 
 def calc_teams_score(team_a, team_b, teams, team, number) -> None:
     """
-    Calculate following:
-        For : Against
-        Points
+    Calculate following For/Against Points.
 
-    Set default values for team as well
-
+    Set default values for team as well.
     :param team_a:
     :param team_b:
     :param teams:
@@ -82,8 +83,8 @@ def calc_teams_score(team_a, team_b, teams, team, number) -> None:
 def check_if_team_registered(team, teams, number) -> None:
     """
     Check if team data was processed.
-    Set default values otherwise.
 
+    Set default values otherwise.
     :param team:
     :param teams:
     :param number:
@@ -99,7 +100,7 @@ def check_if_team_registered(team, teams, number) -> None:
 
 def calc_team_points(team, teams, score_a, score_b) -> None:
     """
-    Calculates team points
+    Calculate team points.
 
     :param team:
     :param teams:
@@ -115,7 +116,7 @@ def calc_team_points(team, teams, score_a, score_b) -> None:
 
 def calc_for_against(teams, team, team_1, team_2) -> None:
     """
-    Collect "For:Against" data
+    Collect "For:Against" data.
 
     :param teams:
     :param team:
@@ -129,7 +130,7 @@ def calc_for_against(teams, team, team_1, team_2) -> None:
 
 def calc_gd(teams) -> None:
     """
-    Calculates "GD"
+    Calculate "GD".
 
     :param teams:
     :return:
@@ -141,13 +142,12 @@ def calc_gd(teams) -> None:
 
 def calc_rank(teams: dict) -> None:
     """
-    Calculates Rank
+    Calculate Rank.
 
     First you sort the teams by their points. If two or more
     teams reached the same number of points, the second criteria
     comes into play and so on. Finally, if all criteria are the
     same, the teams share a place.
-
     :param teams:
     :return:
     """

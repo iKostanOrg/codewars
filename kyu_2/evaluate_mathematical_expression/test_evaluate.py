@@ -1,5 +1,6 @@
 """
-Test for -> calc method
+Test for -> calc method.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -34,13 +35,12 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
     name='Source/Kata')
 # pylint: enable=R0801
 class CalcTestCase(unittest.TestCase):
-    """
-    Testing calc method
-    """
+    """Testing calc method."""
 
     def test_calc(self):
         """
-        Testing calc class
+        Testing calc class.
+
         Given a mathematical expression as a string you
         must return the result as a number.
         """

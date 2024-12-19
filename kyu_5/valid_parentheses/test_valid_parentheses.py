@@ -1,5 +1,6 @@
 """
-Test for -> Valid Parentheses
+Test for -> Valid Parentheses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_5.valid_parentheses.valid_parentheses \
     import valid_parentheses
 from utils.log_func import print_log
@@ -26,23 +28,26 @@ from utils.log_func import print_log
     url='https://www.codewars.com/kata/52774a314c2333f0a7000688',
     name='Source/Kata')
 class ValidParenthesesTestCase(unittest.TestCase):
-    """
-    Testing valid_parentheses function
-    """
+    """Testing valid_parentheses function."""
 
-    def test_valid_parentheses(self):
+    @parameterized.expand([
+        ("  (", False),
+        (")test", False),
+        ("", True),
+        ("hi())(", False),
+        ("hi(hi)()", True),
+        ("()", True),
+        (")(()))", False),
+        ("(", False),
+        ("(())((()())())", True)])
+    def test_valid_parentheses(self, test_input, expected):
         """
-        Test the function called that takes a string of parentheses,
-        and determines if the order of the parentheses is valid.
-        The function should return true if the string is valid,
-        and false if it's invalid.
+        Testing valid_parentheses with various test data.
 
-        Examples
-
-        "()"              =>  true
-        ")(()))"          =>  false
-        "("               =>  false
-        "(())((()())())"  =>  true
+        Test the valid_parentheses function that takes a string
+        of parentheses, and determines if the order of the
+        parentheses is valid. The function should return true
+        if the string is valid, and false if it's invalid.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -55,20 +60,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test string and verify the output"):
-            test_data: tuple = (
-                ("  (", False),
-                (")test", False),
-                ("", True),
-                ("hi())(", False),
-                ("hi(hi)()", True),
-                ("()", True),
-                (")(()))", False),
-                ("(", False),
-                ("(())((()())())", True))
-
-            for string, expected in test_data:
-                print_log(string=string,
-                          expected=expected)
-                self.assertEqual(expected,
-                                 valid_parentheses(string))
+        with allure.step(f"Enter test string: {test_input}"
+                         f"and verify the expected output: {expected}."):
+            print_log(test_input=test_input, expected=expected)
+            self.assertEqual(expected, valid_parentheses(test_input))

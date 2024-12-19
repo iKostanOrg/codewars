@@ -1,5 +1,6 @@
 """
-Testing Line Safari functionality
+Testing Line Safari functionality.
+
 Negative test cases
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -30,14 +31,17 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
 # pylint: enable-msg=R0801
 class LineNegativeTestCase(unittest.TestCase):
     """
-    Testing Line Safari functionality
+    Testing Line Safari functionality.
+
     Negative test cases
     """
 
     def test_line_negative(self):
         """
-        Testing Line Safari functionality
-        Negative test cases
+        Testing Line Safari functionality.
+
+        Negative test cases.
+        :return:
         """
         allure.dynamic.title("Testing Line Safari functionality - NEGATIVE")
         # pylint: disable-msg=R0801

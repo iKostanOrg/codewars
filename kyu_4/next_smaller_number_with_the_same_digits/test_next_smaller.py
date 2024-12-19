@@ -1,5 +1,6 @@
 """
-Test for -> Next smaller number with the same digits
+Test for -> Next smaller number with the same digits.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,11 @@ from kyu_4.next_smaller_number_with_the_same_digits.next_smaller \
              name='Source/Kata')
 # pylint: enable-msg=R0801
 class NextSmallerTestCase(unittest.TestCase):
-    """
-    Testing next_smaller function
-    """
+    """Testing next_smaller function."""
 
     def test_next_smaller(self):
         """
-        Testing next_smaller function
+        Testing next_smaller function.
 
         You have to test a function that takes a positive integer number
         and returns the next smaller number formed by the same digits:
@@ -45,6 +44,7 @@ class NextSmallerTestCase(unittest.TestCase):
         2071 ==> 2017
 
         If no smaller number can be composed using those digits, return -1
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing next_smaller function")

@@ -1,5 +1,6 @@
 """
-Test for -> Scheduling (Shortest Job First or SJF)
+Test for -> Scheduling (Shortest Job First or SJF).
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def shortest_job_first(jobs: list, index: int) -> int:
     """
+    Shortest Job First or SJF.
+
     It takes in:
     1. "jobs" a non-empty array of positive integers.
     They represent the clock-cycles(cc) needed to finish the job.
@@ -41,12 +44,12 @@ def shortest_job_first(jobs: list, index: int) -> int:
 
 def get_min_job(jobs: list) -> int:
     """
-    Get the smallest job value of jobs that is not equal to 0
+    Get the smallest job value of jobs that is not equal to 0.
+
     :param jobs:
     :return:
     """
     min_job: int = max(jobs)
-
     for j in jobs:
         if j <= min_job and j != 0:
             min_job = j
