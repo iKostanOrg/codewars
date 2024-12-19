@@ -1,5 +1,5 @@
 """
-Test for -> Format a string of names like \'Bart, Lisa & Maggie\'.
+Test for -> Format a string of names like 'Bart, Lisa & Maggie'.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
