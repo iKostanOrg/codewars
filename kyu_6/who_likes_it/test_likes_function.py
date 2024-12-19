@@ -31,7 +31,7 @@ from kyu_6.who_likes_it.likes_function import likes
 # pylint: enable=R0801
 class LikesTestCase(unittest.TestCase):
     """
-    Testing likes function
+    Testing likes function.
 
     The function should take in input array, containing the names
     of people who like an item. It must return the display text.
