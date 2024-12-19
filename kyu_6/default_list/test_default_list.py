@@ -1,5 +1,6 @@
 """
-Test for -> DefaultList
+Test for -> DefaultList.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,7 +29,7 @@ from kyu_6.default_list.default_list import DefaultList
     name='Source/Kata')
 class DefaultListTestCase(unittest.TestCase):
     """
-    Testing 'DefaultList' class
+    Testing 'DefaultList' class.
 
     Your job is to create a class (or a function which
     returns an object) called DefaultList. The class will
@@ -45,7 +46,7 @@ class DefaultListTestCase(unittest.TestCase):
 
     def test_default_list_basic(self):
         """
-        Testing 'DefaultList' class: __getitem__
+        Testing 'DefaultList' class: __getitem__.
 
         Called to implement evaluation of self[key]. For sequence
         types, the accepted keys should be integers and slice objects.
@@ -91,7 +92,8 @@ class DefaultListTestCase(unittest.TestCase):
 
     def test_default_list_extend(self):
         """
-        Testing 'DefaultList' class: extend
+        Testing 'DefaultList' class: extend.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -133,7 +135,8 @@ class DefaultListTestCase(unittest.TestCase):
 
     def test_default_list_append(self):
         """
-        Testing 'DefaultList' class: append
+        Testing 'DefaultList' class: append.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -170,7 +173,8 @@ class DefaultListTestCase(unittest.TestCase):
 
     def test_default_list_remove(self):
         """
-        Testing 'DefaultList' class: remove
+        Testing 'DefaultList' class: remove.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -209,7 +213,8 @@ class DefaultListTestCase(unittest.TestCase):
 
     def test_default_list_insert(self):
         """
-        Testing 'DefaultList' class: insert
+        Testing 'DefaultList' class: insert.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -246,7 +251,8 @@ class DefaultListTestCase(unittest.TestCase):
 
     def test_default_list_pop(self):
         """
-        Testing 'DefaultList' class: pop
+        Testing 'DefaultList' class: pop.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -284,3 +290,54 @@ class DefaultListTestCase(unittest.TestCase):
             actual = lst[i]
             print_log(lst=lst, i=i, expected=expected_str, actual=actual)
             self.assertEqual(expected_str, actual)
+
+        with allure.step("Pop first item and verify the result"):
+            i = 0
+            expected_str = 4
+            actual = lst[i]
+            print_log(lst=lst, i=i, expected=expected_str, actual=actual)
+            self.assertEqual(expected_str, actual)
+
+    def test_default_list_edge_cases_pop(self):
+        """
+        Testing 'DefaultList' class: pop.
+
+        Tests regular pop operations and edge case of popping from empty list.
+        :return:
+        """
+        # pylint: disable-msg=R0801
+        allure.dynamic.title("Testing 'DefaultList' class: edge cases for pop")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing edge cases for pop method.</p>")
+        # pylint: enable-msg=R0801
+        with allure.step("Create a default/empty list:"):
+            default_value = 'default'
+            empty_list = DefaultList([], default_value)
+
+        with allure.step("Test popping from empty list without index:"):
+            actual = empty_list.pop()
+            print_log(lst=empty_list, i=None, expected=default_value, actual=actual)
+            self.assertEqual(default_value, actual)
+
+        with allure.step("Test popping from empty list with index:"):
+            actual = empty_list.pop(0)
+            print_log(lst=empty_list, i=0, expected=default_value, actual=actual)
+            self.assertEqual(default_value, actual)
+
+        with allure.step("Test popping from list with elements:"):
+            test_list = DefaultList([1, 2, 3], default_value)
+
+        with allure.step("Test popping from list with elements and no index:"):
+            actual = test_list.pop()
+            print_log(lst=test_list, i=None, expected=3, actual=actual)
+            self.assertEqual(3, actual)
+
+        with allure.step("Test popping from list with elements and index:"):
+            actual = test_list.pop(0)
+            print_log(lst=test_list, i=0, expected=1, actual=actual)
+            self.assertEqual(1, actual)

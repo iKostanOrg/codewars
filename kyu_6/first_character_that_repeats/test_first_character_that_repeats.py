@@ -1,5 +1,6 @@
 """
-Test for -> First character that repeats
+Test for -> First character that repeats.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -21,19 +22,19 @@ from kyu_6.first_character_that_repeats.first_character_that_repeats \
 @allure.feature("String")
 @allure.story('First character that repeats')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/54f9f4d7c41722304e000bbb',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/54f9f4d7c41722304e000bbb',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstDupTestCase(unittest.TestCase):
-    """
-    Testing first_dup function.
+    """Testing first_dup function."""
 
-    Find the first character that repeats
-    in a String and return that character.
-    """
     def test_first_dup_none(self):
         """
         Test string with no duplicate chars.
+
+        Find the first character that repeats
+        in a String and return that character.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -63,6 +64,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_dup_mixed(self):
         """
         Test string with mixed type of chars.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -92,6 +94,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_alpha_only(self):
         """
         Test string with alphabet chars only.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -114,6 +117,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_space(self):
         """
         Repeating char is a space.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -136,6 +140,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_no_alpha(self):
         """
         Test string with no alphabet chars.
+
         :return:
         """
         # pylint: disable-msg=R0801

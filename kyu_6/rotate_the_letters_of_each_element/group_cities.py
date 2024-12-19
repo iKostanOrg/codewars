@@ -1,5 +1,6 @@
 """
-Solution for -> ROTATE THE LETTERS OF EACH ELEMENT
+Solution for -> ROTATE THE LETTERS OF EACH ELEMENT.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def group_cities(seq: list) -> list:
     """
+    Group cities.
+
     A function that given a sequence of strings, groups the elements
     that can be obtained by rotating others, ignoring upper or lower cases.
 
@@ -55,7 +58,8 @@ def group_cities(seq: list) -> list:
 
 def rotate(item: str, element: str) -> bool:
     """
-    Rotate elements/chars
+    Rotate elements/chars.
+
     :param item: str
     :param element: str
     :return: bool
@@ -74,6 +78,8 @@ def rotate(item: str, element: str) -> bool:
 
 def sort_results(results: list) -> None:
     """
+    Sorting results.
+
     Sort the groups deafeningly by size and in the case of a tie,
     by the first element of the group alphabetically.
     :param results: list

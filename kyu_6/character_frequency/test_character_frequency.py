@@ -1,5 +1,6 @@
 """
-Test for -> Character frequency
+Test for -> Character frequency.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,14 +29,12 @@ from kyu_6.character_frequency.character_frequency \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LetterFrequencyTestCase(unittest.TestCase):
-    """
-    Testing letter_frequency function
-    """
+    """Testing letter_frequency function."""
 
     def test_letter_frequency_all_lower(self):
         """
-        Testing letter_frequency function
-        where all chars are in lower case
+        Testing letter_frequency function where all chars are in lower case.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -60,8 +59,8 @@ class LetterFrequencyTestCase(unittest.TestCase):
 
     def test_letter_frequency_mixed(self):
         """
-        Testing letter_frequency function
-        where all chars are in mixed case
+        Testing letter_frequency function where all chars are in mixed case.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -89,8 +88,8 @@ class LetterFrequencyTestCase(unittest.TestCase):
 
     def test_letter_frequency_all_caps(self):
         """
-        Testing letter_frequency function
-        where all chars are in upper case
+        Testing letter_frequency function where all chars are in upper case.
+
         :return:
         """
         # pylint: disable-msg=R0801

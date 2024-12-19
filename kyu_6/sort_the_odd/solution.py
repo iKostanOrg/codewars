@@ -1,5 +1,6 @@
 """
-Solution for -> Sort the odd
+Solution for -> Sort the odd.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def sort_array(source_array: list) -> list:
     """
+    Sort array.
+
     Sorting ascending odd numbers but even
     numbers must be on their places.
 
