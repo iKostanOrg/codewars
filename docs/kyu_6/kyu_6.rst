@@ -10,7 +10,7 @@ Subpackages
    kyu_6.readme
    kyu_6.a_rule_of_divisibility_by_13.module
    kyu_6.array_diff.module
-   kyu_6.array_to_html_table
+   kyu_6.array_to_html_table.module
    kyu_6.binary_to_text_ascii_conversion
    kyu_6.casino_chips
    kyu_6.character_frequency
