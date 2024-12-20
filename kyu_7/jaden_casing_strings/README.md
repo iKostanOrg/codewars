@@ -11,7 +11,7 @@ capitalized in the same way he originally typed them.
 
 ## Example
 
-Not Jaden-Cased: "How can mirrors be real if our eyes aren't real".
-Jaden-Cased: "How Can Mirrors Be Real If Our Eyes Aren't Real".
+Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+Jaden-Cased: "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
 [Source](https://www.codewars.com/kata/5390bac347d09b7da40006f6)
