@@ -1,1 +1,1 @@
-"""Isograms"""
+"""Isograms kyu."""
