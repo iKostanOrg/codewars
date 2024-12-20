@@ -1,5 +1,6 @@
 """
-Test for -> Isograms
+Test for -> 'Isograms'.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.isograms.is_isogram import is_isogram
 
@@ -24,13 +26,20 @@ from kyu_7.isograms.is_isogram import is_isogram
     url='https://www.codewars.com/kata/54ba84be607a92aa900000f1',
     name='Source/Kata')
 class IsIsogramTestCase(unittest.TestCase):
-    """
-    Testing 'is_isogram' function
-    """
+    """Testing 'is_isogram' function."""
 
-    def test_is_isogram(self):
+    @parameterized.expand([
+        ("Dermatoglyphics", True, ''),
+        ("isogram", True, ''),
+        ("aba", False, "same chars may not be adjacent"),
+        ("moOse", False, "same chars may not be same case"),
+        ("isIsogram", False, ''),
+        ('', True, "an empty string is a valid isogram")])
+    def test_is_isogram(self, string, expected, message):
         """
-        Testing 'is_isogram' function
+        Testing 'is_isogram' function.
+
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'is_isogram' function")
@@ -45,23 +54,8 @@ class IsIsogramTestCase(unittest.TestCase):
             "Assume the empty string is an isogram. Ignore letter case."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("Dermatoglyphics", True, ''),
-            ("isogram", True, ''),
-            ("aba", False, "same chars may not be adjacent"),
-            ("moOse", False, "same chars may not be same case"),
-            ("isIsogram", False, ''),
-            ('', True, "an empty string is a valid isogram"))
-
-        for string, expected, message in test_data:
-            with allure.step(
-                    f"Enter a test string {string} and verify the result"):
-                actual_result: bool = is_isogram(string)
-
-                print_log(expected=expected,
-                          value=string,
-                          message=message)
-
-                self.assertEqual(expected,
-                                 actual_result,
-                                 message)
+        with allure.step(f"Enter a test string {string} "
+                         f"and verify the expected result: {expected}."):
+            actual_result: bool = is_isogram(string)
+            print_log(expected=expected, value=string, message=message)
+            self.assertEqual(expected, actual_result, message)

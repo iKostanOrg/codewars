@@ -1,5 +1,6 @@
 """
-Solution for -> Isograms
+Solution for -> Isograms.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,7 @@ GitHub: https://github.com/ikostan
 
 def is_isogram(string: str) -> bool:
     """
-    Determines whether a string that
-    contains only letters is an isogram
+    Determines whether a string that contains only letters is an 'isogram'.
 
     :param string: str
     :return: bool
