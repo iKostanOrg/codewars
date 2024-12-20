@@ -38,8 +38,8 @@ class SentencifyTestCase(unittest.TestCase):
          "Yes."),
         (["FIELDS", "of", "CORN", "are", "to", "be", "sown"],
          "FIELDS of CORN are to be sown."),
-        (["i'm", "afraid", "I", "can't", "let", "you", "do", "that"],
-         "I'm afraid I can't let you do that.")])
+        ([r"i'm", "afraid", "I", "can't", "let", "you", "do", "that"],
+         r"I'm afraid I can't let you do that.")])
     def test_sentencify(self, words, expected):
         """
         Testing 'sentencify' function with various test data.
