@@ -12,8 +12,8 @@ Subpackages
    kyu_6.array_diff.module
    kyu_6.array_to_html_table.module
    kyu_6.binary_to_text_ascii_conversion.module
-   kyu_6.casino_chips
-   kyu_6.character_frequency
+   kyu_6.casino_chips.module
+   kyu_6.character_frequency.module
    kyu_6.color_choice
    kyu_6.count_letters_in_string
    kyu_6.decipher_this
