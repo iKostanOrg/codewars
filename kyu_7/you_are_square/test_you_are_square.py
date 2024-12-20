@@ -1,5 +1,5 @@
 """
-Test for -> You\'re a square.
+Test for -> You're a square.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
