@@ -34,7 +34,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
     @staticmethod
     def random_list():
         """
-        Helper function.
+        Create random list helper function.
 
         :return:
         """
