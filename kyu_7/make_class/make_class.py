@@ -8,12 +8,11 @@ GitHub: https://github.com/ikostan
 
 def make_class(*args):
     """
-    'make_class' function implementation.
+    'make_class' function.
 
     :param args:
     :return:
     """
-
     # pylint: disable-msg=R0903
     class Class:
         """Generic class."""
