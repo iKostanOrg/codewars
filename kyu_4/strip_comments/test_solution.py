@@ -1,5 +1,6 @@
 """
-Test for -> Strip Comments
+Test for -> Strip Comments.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -23,17 +24,16 @@ from kyu_4.strip_comments.solution import solution
 @allure.link(url='https://www.codewars.com/kata/51c8e37cee245da6b40000bd',
              name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
-    """
-    Testing solution for Strip Comments problem
-    """
+    """Testing solution for Strip Comments problem."""
 
     def test_solution(self):
         """
-        Testing 'solution' function
+        Testing 'solution' function.
 
         The solution should strips all text that follows any
         of a set of comment markers passed in. Any whitespace at
         the end of the line should also be stripped out.
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'solution' function")

@@ -6,19 +6,18 @@ yaml-files:
   - '*.yml'
   - '.yamllint'
 
+ignore: |
+  depricated/
+
 rules:
   anchors: enable
   braces: enable
   brackets: enable
   colons: enable
   commas: enable
-  comments:
-    level: warning
-  comments-indentation:
-    level: warning
-  document-end: disable
-  document-start:
-    level: warning
+  comments: disable
+  comments-indentation: enable
+  document-start: enable
   empty-lines: enable
   empty-values: disable
   float-values: disable

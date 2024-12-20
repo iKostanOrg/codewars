@@ -1,5 +1,6 @@
 """
-Test for -> Easy Line
+Test for -> Easy Line.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import pytest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.easy_line.easyline import easy_line, calc_combination_per_row_item
 
@@ -28,20 +30,23 @@ from kyu_7.easy_line.easyline import easy_line, calc_combination_per_row_item
 # pylint: enable=R0801
 class EasyLineTestCase(unittest.TestCase):
     """
+    Testing 'easyline' function.
+
     We want to calculate the sum of the squares of the binomial
-    coefficients on a given line with a function called easyline
+    coefficients on a given line with a function called 'easyline'
     (or easyLine or easy-line).
 
-    Can you write a program which calculate easyline(n) where n
+    Can you write a program which calculate 'easyline(n)' where 'n'
     is the line number?
 
     The function will take n (with: n>= 0) as parameter and will
-    return the sum of the squares of the binomial coefficients on line n.
+    return the sum of the squares of the binomial coefficients with line 'n'.
     """
 
     def test_easy_line_exception(self):
         """
-        Testing easy line function exception
+        Testing easy line function exception.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -66,9 +71,19 @@ class EasyLineTestCase(unittest.TestCase):
                 self.assertRaises(ValueError, easy_line(n))
                 self.assertEqual(error_txt, error.value)
 
-    def test_calc_combinations_per_row(self):
+    @parameterized.expand([
+        (0, 0, 1),
+        (1, 1, 1),
+        (2, 1, 2),
+        (3, 2, 3),
+        (4, 3, 4),
+        (5, 4, 5),
+        (6, 5, 6),
+        (7, 6, 7)])
+    def test_calc_combinations_per_row(self, n, i, expected):
         """
-        Testing calc_combinations_per_row function
+        Testing calc_combinations_per_row function.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -85,34 +100,28 @@ class EasyLineTestCase(unittest.TestCase):
             "combination per that row "
             "coefficients on line n.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (0, 0, 1),
-            (1, 1, 1),
-            (2, 1, 2),
-            (3, 2, 3),
-            (4, 3, 4),
-            (5, 4, 5),
-            (6, 5, 6),
-            (7, 6, 7))
+        actual: int = calc_combination_per_row_item(n, i)
+        with allure.step(f"Enter row number ({n}) "
+                         f"and assert expected ({expected}) "
+                         f"vs actual ({actual})."):
+            print_log(n=n, actual=actual, expected=expected)
+            self.assertEqual(expected, actual)
 
-        for data in test_data:
-            n: int = data[0]
-            i: int = data[1]
-            expected: int = data[2]
-            actual: int = calc_combination_per_row_item(n, i)
-
-            with allure.step(f"Enter row number ({n}) "
-                             f"and assert expected ({expected}) "
-                             f"vs actual ({actual})."):
-                print_log(n=n,
-                          actual=actual,
-                          expected=expected)
-
-                self.assertEqual(expected, actual)
-
-    def test_easy_line(self):
+    @parameterized.expand([
+        (0, 1),
+        (1, 2),
+        (4, 70),
+        (7, 3432),
+        (13, 10400600),
+        (17, 2333606220),
+        (19, 35345263800),
+        (22, 2104098963720),
+        (24, 32247603683100),
+        (50, 100891344545564193334812497256)])
+    def test_easy_line(self, n, expected):
         """
-        Testing easy_line function
+        Testing easy_line function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -128,29 +137,9 @@ class EasyLineTestCase(unittest.TestCase):
             "and must return the sum of the squares of the binomial "
             "coefficients on line n.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (0, 1),
-            (1, 2),
-            (4, 70),
-            (7, 3432),
-            (13, 10400600),
-            (17, 2333606220),
-            (19, 35345263800),
-            (22, 2104098963720),
-            (24, 32247603683100),
-            (50, 100891344545564193334812497256))
-
-        for data in test_data:
-            n: int = data[0]
-            expected: int = data[1]
-            actual: int = easy_line(n)
-
-            with allure.step(f"Enter line number ({n}) "
-                             f"and assert expected ({expected}) "
-                             f"vs actual ({actual})."):
-
-                print_log(n=n,
-                          actual=actual,
-                          expected=expected)
-
-                self.assertEqual(expected, actual)
+        actual: int = easy_line(n)
+        with allure.step(f"Enter line number ({n}) "
+                         f"and assert expected ({expected}) "
+                         f"vs actual ({actual})."):
+            print_log(n=n, actual=actual, expected=expected)
+            self.assertEqual(expected, actual)

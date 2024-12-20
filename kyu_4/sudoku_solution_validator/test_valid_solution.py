@@ -1,5 +1,6 @@
 """
-Test for -> Sudoku Solution Validator
+Test for -> Sudoku Solution Validator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,12 +25,12 @@ from kyu_4.sudoku_solution_validator.valid_solution \
 @allure.link(url='https://www.codewars.com/kata/529bf0e9bdf7657179000008',
              name='Source/Kata')
 class ValidSolutionTestCase(unittest.TestCase):
-    """
-    Testing validSolution function
-    """
+    """Testing validSolution function."""
 
     def test_valid_solution(self):
         """
+        Test valid_solution function.
+
         Test a function validSolution/ValidateSolution/valid_solution()
         that accepts a 2D array representing a Sudoku board, and returns
         true if it is a valid solution, or false otherwise. The cells of
@@ -42,7 +43,7 @@ class ValidSolutionTestCase(unittest.TestCase):
         :return:
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing validSolution")
+        allure.dynamic.title("Testing valid_solution")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'

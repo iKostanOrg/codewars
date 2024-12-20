@@ -1,5 +1,6 @@
 """
-Test for -> Array to HTML table
+Test for -> Array to HTML table.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,7 +10,9 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
+# pylint: disable = no-name-in-module
 from kyu_6.array_to_html_table.to_table import to_table
+# pylint: enable = no-name-in-module
 
 
 @allure.epic('6 kyu')
@@ -25,13 +28,12 @@ from kyu_6.array_to_html_table.to_table import to_table
     url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a',
     name='Source/Kata')
 class ArrayToTableTestCase(unittest.TestCase):
-    """
-    Testing to_table function
-    """
+    """Testing to_table function."""
 
     def test_array_to_table_function(self):
         """
-        Testing to_table with various test data
+        Testing to_table with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -110,6 +112,7 @@ class ArrayToTableTestCase(unittest.TestCase):
             expected = test_item["output"]
             actual_result = to_table(data, header, index)
 
-            with allure.step("Enter a test data and verify the expected output vs actual result"):
+            with allure.step("Enter a test data and verify expected"
+                             " output vs actual result"):
                 print_log(exp=expected, res=actual_result)
                 self.assertEqual(expected, actual_result)

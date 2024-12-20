@@ -1,5 +1,6 @@
 """
-Test for -> Multiples of 3 or 5
+Test for -> Multiples of 3 or 5.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.multiples_of_3_or_5.solution import solution
 
@@ -25,12 +27,16 @@ from kyu_6.multiples_of_3_or_5.solution import solution
     url='https://www.codewars.com/kata/514b92a657cdc65150000006',
     name='Source/Kata')
 class SolutionTestCase(unittest.TestCase):
-    """
-    Testing solution function
-    """
-    def test_solution(self):
+    """Testing solution function."""
+
+    @parameterized.expand([
+        (4, 3, 'Should return 3 for n=4'),
+        (200, 9168, 'Should return 9168 for n=200'),
+        (-1, 0, 'Should return 0 for n=-1'),
+        (1291, 388935, 'Random test')])
+    def test_solution(self, number, expected, msg):
         """
-        Testing solution function
+        Testing solution function.
 
         If we list all the natural numbers below 10
         that are multiples of 3 or 5, we get 3, 5, 6 and 9.
@@ -53,16 +59,6 @@ class SolutionTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (4, 3, 'Should return 3 for n=4'),
-            (200, 9168, 'Should return 9168 for n=200'),
-            (-1, 0, 'Should return 0 for n=-1'),
-            (1291, 388935, 'Random test'))
-
-        for td in test_data:
-            number, expected, msg = td
-            with allure.step(
-                    f"Pass test data ({number}) and verify the output"):
-
-                print_log(expected=expected, number=number, msg=msg)
-                self.assertEqual(expected, solution(number), msg)
+        with allure.step(f"Pass test data ({number}) and verify the output"):
+            print_log(expected=expected, number=number, msg=msg)
+            self.assertEqual(expected, solution(number), msg)

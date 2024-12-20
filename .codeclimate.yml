@@ -1,0 +1,19 @@
+---
+version: "2"  # required to adjust maintainability checks
+
+checks:
+  import-error:
+    enabled: false
+  syntax-error:
+    enabled: false
+  no-name-in-module:
+    enabled: false
+  similar-code:
+    config:
+      threshold: 68
+  identical-code:
+    config:
+      threshold: 32
+plugins:
+  duplication:
+    enabled: false

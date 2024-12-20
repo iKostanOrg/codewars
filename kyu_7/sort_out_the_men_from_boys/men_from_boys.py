@@ -1,5 +1,6 @@
 """
-Solution for -> Sort Out The Men From Boys
+Solution for -> Sort Out The Men From Boys.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,7 @@ GitHub: https://github.com/ikostan
 from typing import List
 
 
-def men_from_boys(arr: List[int]) -> list:
+def men_from_boys(arr: List[int]) -> List[int]:
     """
     Sort out the men from the boys.
 
@@ -19,12 +20,11 @@ def men_from_boys(arr: List[int]) -> list:
     Since, Men are stronger than Boys,
     then Even numbers in ascending order
     while odds in descending.
-    :param arr: list
-    :return: list
+    :param arr: List
+    :return: List
     """
     boys: List[int] = []
     men: List[int] = []
-
     for a in arr:
         if a % 2 == 0:
             if a not in men:

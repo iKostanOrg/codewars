@@ -1,7 +1,7 @@
 # The First Non Repeated Character In A String
 
-You need to write a function, that returns the first
-non-repeated character in the given string.
+You need to write a function, that returns the `first
+non-repeated character` in the given string.
 
 For example for string `"test"` function should return `'e'`.
 

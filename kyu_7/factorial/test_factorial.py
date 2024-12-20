@@ -1,5 +1,6 @@
 """
-Test for -> Sum of Numbers
+Test for -> Factorial.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.factorial.factorial import factorial
 
@@ -25,13 +27,16 @@ from kyu_7.factorial.factorial import factorial
     url='https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc',
     name='Source/Kata')
 class FactorialTestCase(unittest.TestCase):
-    """
-    Testing 'factorial' function
-    """
+    """Testing 'factorial' function."""
 
-    def test_factorial(self):
+    @parameterized.expand([
+        (0, 1, "factorial for 0 is 1"),
+        (1, 1, "factorial for 1 is 1"),
+        (2, 2, "factorial for 2 is 2"),
+        (3, 6, "factorial for 3 is 6")])
+    def test_factorial(self, n, expected, msg):
         """
-        Testing 'factorial' function
+        Testing 'factorial' function.
 
         In mathematics, the factorial of a non-negative integer n,
         denoted by n!, is the product of all positive integers less
@@ -53,18 +58,7 @@ class FactorialTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter a number and verify the output"):
-            data: tuple = (
-                (0, 1, "factorial for 0 is 1"),
-                (1, 1, "factorial for 1 is 1"),
-                (2, 2, "factorial for 2 is 2"),
-                (3, 6, "factorial for 3 is 6"))
-
-            for n, expected, msg in data:
-                print_log(n=n,
-                          expected=expected,
-                          msg=msg)
-
-                self.assertEqual(expected,
-                                 factorial(n),
-                                 msg)
+        with allure.step(f"Enter a number n: {n} "
+                         f"and verify the expected output: {expected}."):
+            print_log(n=n, expected=expected, msg=msg)
+            self.assertEqual(expected, factorial(n), msg)

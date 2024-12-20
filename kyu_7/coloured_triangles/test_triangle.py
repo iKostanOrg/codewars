@@ -1,5 +1,6 @@
 """
-Test for -> Coloured Triangles
+Test for -> Coloured Triangles.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure  # pylint: disable=import-error
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.coloured_triangles.solution_for_triangle import triangle
 
@@ -27,39 +29,35 @@ from kyu_7.coloured_triangles.solution_for_triangle import triangle
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class TriangleTestCase(unittest.TestCase):
-    """
-    Testing triangle function
-    """
+    """Testing triangle function."""
 
-    def test_triangle(self):
+    @parameterized.expand([
+        ('GB', 'R'),
+        ('RRR', 'R'),
+        ('RGBG', 'B'),
+        ('RBRGBRB', 'G'),
+        ('RBRGBRBGGRRRBGBBBGG', 'G'),
+        ('B', 'B'),
+        ('BGBGB', 'R'),
+        ('BBRRBRGBRRBRGRRBGGRRBBGBGGRGGB', 'G'),
+        ('RB', 'G'),
+        ('GRBGRGBBRBRGRRGGGGRBRBRGGRB', 'B'),
+        ('BBGRBGRRGGGRRBRBRBGRBGRRRBBBG', 'G'),
+        ('RRBBRRGBRBGBRBRGBGGRBBBBRGGRGB', 'R'),
+        ('GGBRGBBRBGRRGGGBGBGRGBGGRGRB', 'R'),
+        ('BRBBGGRGBGGGBGRBRGRGRRBBGBR', 'G'),
+        ('GBBRBRGGGGBRGGBBGGBGBRGRBGRGBB', 'G'),
+        ('RRRBRRGRRGBGBBRGRGRGRB', 'B'),
+        ('BRGGRBBBBGBRRRRBRBRRBGBGRBGB', 'B'),
+        ('RRBRBRBBBBBRBRRBBBGBBGBGGGRGR', 'G')])
+    def test_triangle(self, string, expected):
         """
-        Basic test case
+        Basic test case.
+
         :return:
         """
-        with allure.step("Enter test string and verify the output"):
-            test_data = [
-                ('GB', 'R'),
-                ('RRR', 'R'),
-                ('RGBG', 'B'),
-                ('RBRGBRB', 'G'),
-                ('RBRGBRBGGRRRBGBBBGG', 'G'),
-                ('B', 'B'),
-                ('BGBGB', 'R'),
-                ('BBRRBRGBRRBRGRRBGGRRBBGBGGRGGB', 'G'),
-                ('RB', 'G'),
-                ('GRBGRGBBRBRGRRGGGGRBRBRGGRB', 'B'),
-                ('BBGRBGRRGGGRRBRBRBGRBGRRRBBBG', 'G'),
-                ('RRBBRRGBRBGBRBRGBGGRBBBBRGGRGB', 'R'),
-                ('GGBRGBBRBGRRGGGBGBGRGBGGRGRB', 'R'),
-                ('BRBBGGRGBGGGBGRBRGRGRRBBGBR', 'G'),
-                ('GBBRBRGGGGBRGGBBGGBGBRGRBGRGBB', 'G'),
-                ('RRRBRRGRRGBGBBRGRGRGRB', 'B'),
-                ('BRGGRBBBBGBRRRRBRBRRBGBGRBGB', 'B'),
-                ('RRBRBRBBBBBRBRRBBBGBBGBGGGRGR', 'G')]
-
-            for string, expected in test_data:
-                result = triangle(string)
-                print_log(string=string,
-                          expected=expected,
-                          result=result)
-                self.assertEqual(expected, result)
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify the output: {expected}"):
+            result = triangle(string)
+            print_log(string=string, expected=expected, result=result)
+            self.assertEqual(expected, result)
