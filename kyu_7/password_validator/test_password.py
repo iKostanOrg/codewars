@@ -1,5 +1,6 @@
 """
-Test for -> Password validator
+Test for -> Password validator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.password_validator.password import password
 
@@ -30,13 +32,23 @@ from kyu_7.password_validator.password import password
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class PasswordTestCase(unittest.TestCase):
-    """
-    Testing password function
-    """
+    """Testing password function."""
 
-    def test_password(self):
+    @parameterized.expand([
+        ("Abcd1234", True),
+        ("Abcd123", False),
+        ("abcd1234", False),
+        ("AbcdefGhijKlmnopQRsTuvwxyZ1234567890", True),
+        ("ABCD1234", False),
+        (r"Ab1!@#$%^&*()-_+={}[]|\:;?/>.<,", True),
+        (r"!@#$%^&*()-_+={}[]|\:;?/>.<,", False),
+        ("", False),
+        (" aA1----", True),
+        ("4aA1----", True)])
+    def test_password(self, string, expected):
         """
-        Testing password function with various test inputs
+        Testing password function with various test inputs.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -44,24 +56,13 @@ class PasswordTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test string and verify the result"):
-            test_data: tuple = (
-                ("Abcd1234", True),
-                ("Abcd123", False),
-                ("abcd1234", False),
-                ("AbcdefGhijKlmnopQRsTuvwxyZ1234567890", True),
-                ("ABCD1234", False),
-                (r"Ab1!@#$%^&*()-_+={}[]|\:;?/>.<,", True),
-                (r"!@#$%^&*()-_+={}[]|\:;?/>.<,", False),
-                ("", False),
-                (" aA1----", True),
-                ("4aA1----", True))
-
-            for string, expected in test_data:
-                print_log(string=string, expected=expected)
-                self.assertEqual(expected, password(string))
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify the expected result: {expected}."):
+            print_log(string=string, expected=expected)
+            self.assertEqual(expected, password(string))

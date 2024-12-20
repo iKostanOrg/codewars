@@ -1,5 +1,6 @@
 """
-Solution for -> Basic Math (Add or Subtract)
+Solution for -> Basic Math (Add or Subtract).
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -11,7 +12,8 @@ CONVERSION: dict = {
 
 def calculate(s: str) -> str:
     """
-    Perform addition and subtraction on a given string
+    Perform addition and subtraction on a given string.
+
     :param s: str
     :return: str
     """

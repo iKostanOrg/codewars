@@ -1,5 +1,6 @@
 """
-Test for -> Jaden Casing Strings
+Test for -> Jaden Casing Strings.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,12 @@ from kyu_7.jaden_casing_strings.jaden_casing_strings import to_jaden_case
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class JadenCasingStringsTestCase(unittest.TestCase):
-    """
-    Testing toJadenCase function
-    """
+    """Testing toJadenCase function."""
 
     def test_to_jaden_case_positive(self):
         """
-        Simple positive test
+        Simple positive test.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -49,13 +49,13 @@ class JadenCasingStringsTestCase(unittest.TestCase):
         with allure.step("Pass string and verify the output"):
             quote = "How can mirrors be real if our eyes aren't real"
             expected = "How Can Mirrors Be Real If Our Eyes Aren't Real"
-
             print_log(string=quote, expected=expected)
             self.assertEqual(to_jaden_case(quote), expected)
 
     def test_to_jaden_case_negative(self):
         """
-        Simple negative test
+        Simple negative test.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -70,6 +70,5 @@ class JadenCasingStringsTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         with allure.step("Pass string and verify the output"):
             quote = "How can mirrors be real if our eyes aren't real"
-
             print_log(string=quote, expected=False)
             self.assertNotEqual(to_jaden_case(quote), quote)
