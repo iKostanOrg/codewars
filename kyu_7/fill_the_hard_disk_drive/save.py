@@ -1,5 +1,6 @@
 """
-Solution for -> Computer problem series #1: Fill the Hard Disk Drive
+Solution for -> Computer problem series #1: Fill the Hard Disk Drive.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def save(sizes: list, hd: int) -> int:
     """
+    'Save' function.
+
     Your task is to determine how many files of the
     copy queue you will be able to save into your
     Hard Disk Drive.
@@ -18,9 +21,9 @@ def save(sizes: list, hd: int) -> int:
     Output:
     Number of files that can be fully saved in the HD
 
-    :param sizes:
-    :param hd:
-    :return:
+    :param sizes: list
+    :param hd: int
+    :return: int
     """
     counter: int = 0
     total: int = 0
