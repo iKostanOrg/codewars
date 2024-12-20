@@ -15,7 +15,7 @@ Subpackages
    kyu_6.casino_chips.module
    kyu_6.character_frequency.module
    kyu_6.color_choice.module
-   kyu_6.count_letters_in_string
+   kyu_6.count_letters_in_string.module
    kyu_6.decipher_this
    kyu_6.default_list
    kyu_6.disease_spread
