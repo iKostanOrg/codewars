@@ -6,7 +6,7 @@ is ALWAYS a perfect square. For example we have: 1,2,3,4 and the product will
 be 1X2X3X4=24. If we add 1 to the product that would become 25, since the result
 number is a perfect square the square root of 25 would be 5.
 
-So now lets write a function which takes numbers separated by commas in string
+So now let's write a function which takes numbers separated by commas in string
 format and returns the number which is a perfect square and the square root of
 that number.
 
