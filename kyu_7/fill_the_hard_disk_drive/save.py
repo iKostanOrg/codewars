@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def save(sizes: list, hd: int) -> int:
     """
-    'Save' function.
+    'save' function.
 
     Your task is to determine how many files of the
     copy queue you will be able to save into your
