@@ -1,5 +1,6 @@
 """
-Solution for -> Coloured Triangles
+Solution for -> Coloured Triangles.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -17,14 +18,15 @@ COLORS = {
     'G': 'G',
     'GG': 'G',
     'BR': 'G',
-    'RB': 'G',
-}
+    'RB': 'G'}
 
 
 def triangle(row: str) -> str:
     """
-    You will be given the first row of the triangle as a string
-    and its your job to return the final colour which would
+    Triangle function.
+
+    You will be given the first row of the triangle as a string,
+    and it's your job to return the final colour which would
     appear in the bottom row as a string. I
 
     :param row: str, the first row of the triangle as a string
