@@ -7,6 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
+   kyu_6.readme
    kyu_6.a_rule_of_divisibility_by_13.module
    kyu_6.array_diff
    kyu_6.array_to_html_table
@@ -36,7 +37,7 @@ Subpackages
    kyu_6.pyramid_array
    kyu_6.rotate_the_letters_of_each_element
    kyu_6.row_of_the_odd_triangle
-   kyu_6.scheduling
+   kyu_6.scheduling.module
    kyu_6.sort_the_odd
    kyu_6.string_subpattern_recognition_1
    kyu_6.string_subpattern_recognition_2
