@@ -51,12 +51,12 @@ class CheckRootTestCase(unittest.TestCase):
         in string format and returns the number which is a
         perfect square and the square root of that number.
 
-        If string contains other characters than number or
+        If string contains other characters than number, or
         it has more or less than 4 numbers separated by comma
-        function returns "incorrect input".
+        function returns 'incorrect input'.
 
         If string contains 4 numbers but not consecutive it
-        returns "not consecutive".
+        returns 'not consecutive'.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -64,8 +64,9 @@ class CheckRootTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
