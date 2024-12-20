@@ -16,7 +16,7 @@ def sentencify(words: list) -> str:
     2. Add a period (.) to the end of the sentence.
     3. Join the words into a complete string, with spaces.
     4. Do no other manipulation on the words.
-    
+
     :param words: list
     :return: str
     """

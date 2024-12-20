@@ -1,5 +1,6 @@
 """
-Test for -> The museum of incredible dull things
+Test for -> The museum of incredible dull things.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,14 +29,13 @@ from kyu_7.remove_the_minimum.remove_the_minimum import remove_smallest
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class RemoveSmallestTestCase(unittest.TestCase):
-    """
-    Testing remove_smallest function
-    """
+    """Testing remove_smallest function."""
 
     @staticmethod
     def random_list():
         """
-        Helper function
+        Helper function.
+
         :return:
         """
         with allure.step("Create a random list"):
@@ -43,7 +43,8 @@ class RemoveSmallestTestCase(unittest.TestCase):
 
     def test_remove_smallest(self):
         """
-        Test lists with multiple digits
+        Test lists with multiple digits.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -77,7 +78,8 @@ class RemoveSmallestTestCase(unittest.TestCase):
 
     def test_remove_smallest_empty_list(self):
         """
-        Test with empty list
+        Test with empty list.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -91,15 +93,15 @@ class RemoveSmallestTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Remove smallest value from "
-                         "the empty list"):
+        with allure.step("Remove smallest value from the empty list"):
             self.assertEqual(remove_smallest([]),
                              [],
                              "Wrong result for []")
 
     def test_remove_smallest_one_element_list(self):
         """
-        Returns [] if list has only one element
+        Returns [] if list has only one element.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -125,7 +127,8 @@ class RemoveSmallestTestCase(unittest.TestCase):
 
     def test_remove_smallest_random_list(self):
         """
-        Returns a list that misses only one element
+        Returns a list that misses only one element.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -139,8 +142,7 @@ class RemoveSmallestTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Remove smallest value from "
-                         "the random list"):
+        with allure.step("Remove smallest value from the random list"):
             i: int = 0
             while i < 10:
                 arr = self.random_list()
