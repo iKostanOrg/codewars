@@ -19,7 +19,6 @@ def remove_smallest(numbers: list) -> list:
     :param numbers: list
     :return: list
     """
-    new_array: list = []
     if len(numbers) < 1:
         return numbers
 
