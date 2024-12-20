@@ -1,5 +1,6 @@
 """
-Solution for -> Sum of Triangular Numbers
+Solution for -> Sum of Triangular Numbers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,8 @@ GitHub: https://github.com/ikostan
 
 def sum_triangular_numbers(n: int) -> int:
     """
-    returns the sum of Triangular Numbers
-    up-to-and-including the nth Triangular Number.
+    Return the sum of Triangular Numbers.
+
     :param n:
     :return:
     """

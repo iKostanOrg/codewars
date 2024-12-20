@@ -1,5 +1,6 @@
 """
-Test for -> Sum of Triangular Numbers
+Test for -> Sum of Triangular Numbers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,14 +29,12 @@ from kyu_7.sum_of_triangular_numbers.sum_triangular_numbers \
     url='https://www.codewars.com/kata/580878d5d27b84b64c000b51',
     name='Source/Kata')
 class SumTriangularNumbersTestCase(unittest.TestCase):
-    """
-    Testing 'sum_triangular_numbers' function
-    """
+    """Testing 'sum_triangular_numbers' function."""
 
     def test_sum_triangular_numbers_negative_numbers(self):
         """
-        Testing 'sum_triangular_numbers' function
-        with negative numbers
+        Testing 'sum_triangular_numbers' function with negative numbers.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -44,8 +43,9 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
@@ -63,8 +63,8 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
 
     def test_sum_triangular_numbers_zero(self):
         """
-        Testing 'sum_triangular_numbers' function
-        with zero as an input
+        Testing 'sum_triangular_numbers' function with zero as an input.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -72,8 +72,9 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
@@ -95,8 +96,9 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
@@ -116,8 +118,8 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
 
     def test_sum_triangular_numbers_big_number(self):
         """
-        Testing 'sum_triangular_numbers' function
-        with big number as an input
+        Testing 'sum_triangular_numbers' function with big number as an input.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -126,8 +128,9 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
