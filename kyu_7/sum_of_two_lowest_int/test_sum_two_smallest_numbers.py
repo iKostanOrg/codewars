@@ -31,9 +31,8 @@ class SumTwoSmallestNumbersTestCase(unittest.TestCase):
 
     def test_sum_two_smallest_numbers(self):
         """
-        Test sum_two_smallest_numbers function
-        The function should return the sum of
-        the two lowest positive numbers
+        Test sum_two_smallest_numbers function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -42,8 +41,9 @@ class SumTwoSmallestNumbersTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
