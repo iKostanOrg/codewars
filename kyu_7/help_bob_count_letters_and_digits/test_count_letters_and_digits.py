@@ -1,5 +1,6 @@
 """
 Test for -> Help Bob count letters and digits.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.help_bob_count_letters_and_digits.count_letters_and_digits \
     import (count_letters_and_digits)
@@ -25,13 +27,18 @@ from kyu_7.help_bob_count_letters_and_digits.count_letters_and_digits \
     url='https://www.codewars.com/kata/5738f5ea9545204cec000155',
     name='Source/Kata')
 class CalculateTestCase(unittest.TestCase):
-    """
-    Testing count_letters_and_digits function
-    """
+    """Testing count_letters_and_digits function."""
 
-    def test_count_letters_and_digits(self):
+    @parameterized.expand([
+        ('n!!ice!!123', 7),
+        ('de?=?=tttes!!t', 8),
+        ('', 0),
+        ('!@#$%^&`~.', 0),
+        ('u_n_d_e_r__S_C_O_R_E', 10)])
+    def test_count_letters_and_digits(self, s, expected):
         """
-        Testing the function with various test data
+        Testing the function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -45,22 +52,9 @@ class CalculateTestCase(unittest.TestCase):
             "<p>Test a method that can determine how many letters "
             "and digits are in a given string.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ('n!!ice!!123', 7),
-            ('de?=?=tttes!!t', 8),
-            ('', 0),
-            ('!@#$%^&`~.', 0),
-            ('u_n_d_e_r__S_C_O_R_E', 10))
-
-        for s, expected in test_data:
-            actual_result: int = count_letters_and_digits(s)
-            with allure.step(f"Enter string ({s}) and verify the "
-                             f"expected output ({expected}) vs "
-                             f"actual result ({actual_result})"):
-
-                print_log(s=s,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
+        actual_result: int = count_letters_and_digits(s)
+        with allure.step(f"Enter string ({s}) and verify the "
+                         f"expected output ({expected}) vs "
+                         f"actual result ({actual_result})"):
+            print_log(s=s, expected=expected,result=actual_result)
+            self.assertEqual(expected, actual_result)
