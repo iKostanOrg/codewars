@@ -1,1 +1,1 @@
-"""7 kyu - Beginner."""
+"""'7 kyu - Beginner' package."""
