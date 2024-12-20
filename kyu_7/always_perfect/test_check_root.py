@@ -18,9 +18,9 @@ from kyu_7.always_perfect.check_root import check_root
 # pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
-@allure.suite("Data Structures")
-@allure.sub_suite("Unit Tests")
-@allure.feature("Lists")
+@allure.suite('Data Structures')
+@allure.sub_suite('Unit Tests')
+@allure.feature('Lists')
 @allure.story('Always perfect')
 @allure.tag('FUNDAMENTALS',
             'STRINGS',
@@ -34,7 +34,7 @@ from kyu_7.always_perfect.check_root import check_root
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CheckRootTestCase(unittest.TestCase):
-    """Testing check_root function."""
+    """Testing 'check_root' function."""
 
     @parameterized.expand([
         ('4,5,6,7', '841, 29'),
@@ -45,7 +45,7 @@ class CheckRootTestCase(unittest.TestCase):
         ('*-3,-2,-1,0', 'incorrect input')])
     def test_check_root(self,string, expected):
         """
-        Testing check_root function with various test inputs.
+        Testing 'check_root' function with various test inputs.
 
         A function which takes numbers separated by commas
         in string format and returns the number which is a
