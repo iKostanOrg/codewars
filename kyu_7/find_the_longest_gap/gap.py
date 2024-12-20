@@ -30,7 +30,7 @@ def gap(num: int) -> int:
 
 def calc_g_cur(g_cur: int, char: str) -> int:
     """
-    Calculates g_cur.
+    Calculate g_cur.
 
     :param g_cur:
     :param char:
@@ -45,7 +45,7 @@ def calc_g_cur(g_cur: int, char: str) -> int:
 
 def calc_g_max(g_cur: int, g_max: int) -> int:
     """
-    Calculates g_max.
+    Calculate g_max.
 
     :param g_cur:
     :param g_max:
