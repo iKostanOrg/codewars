@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def vaporcode(s: str) -> str:
     """
-    Converts any sentence into a V A P O R W A V E sentence.
+    Convert any sentence into a V A P O R W A V E sentence.
 
     :param s:
     :return:
