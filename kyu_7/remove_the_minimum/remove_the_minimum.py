@@ -25,8 +25,5 @@ def remove_smallest(numbers: list) -> list:
 
     min_num: int = min(numbers)
     min_i: int = numbers.index(min_num)
-    for i, el in enumerate(numbers):
-        if i != min_i:
-            new_array.append(el)
-
+    new_array = [el for i, el in enumerate(numbers) if i != min_i]
     return new_array
