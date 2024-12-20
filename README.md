@@ -352,7 +352,7 @@ the environment for every build, see comment from Grimmy below).
 </details>
 
 <details>
-<summary>ERROR: make : The term 'make' is not recognized as the name of a cmdlet</summary>
+<summary>ERROR: The term 'make' is not recognized as the name of a cmdlet</summary>
 
 'make' is not recognized as an internal or external command.
 
@@ -360,7 +360,7 @@ The error "'make' is not recognized as an internal or external command, operable
 batch file" occurs when we run the make command on Windows without having make installed.
 To solve the error, install make using Chocolatey.
 
-```commandline
+```
 make clean
 make : The term 'make' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path 
 was included, verify that the path is correct and try again.
@@ -378,18 +378,18 @@ To install Chocolatey:
 
 1. Open PowerShell as an administrator.
 2. Run the following command:
-    ```commandline
+    ```
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
     ```
 3. Wait for the command to complete.
 4. Type choco to make sure Chocolatey is installed:
-    ```commandline
+    ```
     PS C:\WINDOWS\system32> choco
     Chocolatey v2.4.1
     Please run 'choco -?' or 'choco <command> -?' for help menu.
     ```
 5. Now that you have Chocolatey installed, run the following command to install make:
-    ```commandline
+    ```
     PS C:\WINDOWS\system32> choco install make -y
     Chocolatey v2.4.1
     Installing the following packages:
