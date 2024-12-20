@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def is_isogram(string: str) -> bool:
     """
-    Determines whether a string that contains only letters is an 'isogram'.
+    Determine whether a string that contains only letters is an 'isogram'.
 
     :param string: str
     :return: bool
