@@ -14,7 +14,7 @@ def to_jaden_case(string: str) -> str:
     The strings are actual quotes from Jaden Smith, but they are
     not capitalized in the same way he originally typed them.
 
-    Example:
+    Example.
 
     Not Jaden-Cased: "How can mirrors be real if
     our eyes aren't real"
