@@ -10,6 +10,12 @@ class Node:
     """The linked list."""
 
     def __init__(self, data, n_next=None):
+        """
+        Create a new Node instance.
+
+        :param data:
+        :param n_next:
+        """
         self._data = data
         self._next = n_next
 
@@ -25,7 +31,7 @@ class Node:
     @next.setter
     def next(self, n_next=None) -> None:
         """
-        Get next.
+        Set next.
 
         :param n_next:
         :return:
@@ -44,7 +50,7 @@ class Node:
     @data.setter
     def data(self, data) -> None:
         """
-        Get data.
+        Set data.
 
         :param data:
         :return:
