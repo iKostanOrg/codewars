@@ -20,14 +20,13 @@ def remove_smallest(numbers: list) -> list:
     :return: list
     """
     new_array: list = []
-    if len(numbers) > 0:
-        min_num: int = min(numbers)
-        min_i: int = numbers.index(min_num)
-
-        for i, el in enumerate(numbers):
-            if i != min_i:
-                new_array.append(el)
-    else:
+    if len(numbers) < 1:
         return numbers
+
+    min_num: int = min(numbers)
+    min_i: int = numbers.index(min_num)
+    for i, el in enumerate(numbers):
+        if i != min_i:
+            new_array.append(el)
 
     return new_array
