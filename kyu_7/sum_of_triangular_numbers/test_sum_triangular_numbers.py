@@ -87,7 +87,7 @@ class SumTriangularNumbersTestCase(unittest.TestCase):
     def test_sum_triangular_numbers_positive_numbers(self):
         """
         Testing 'sum_triangular_numbers' function with positive numbers.
-        
+
         :return:
         """
         # pylint: disable-msg=R0801
