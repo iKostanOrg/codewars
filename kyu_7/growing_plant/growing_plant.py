@@ -1,5 +1,6 @@
 """
-Solution -> Simple Fun #74: Growing Plant
+Solution -> Simple Fun #74: Growing Plant.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -12,7 +13,6 @@ def growing_plant(up_speed: int, down_speed: int, desired_height: int) -> int:
     lack of sun heat. Initially, plant is 0 meters tall. We plant
     the seed at the beginning of a day. We want to know when the
     height of the plant will reach a certain level.
-
     :param up_speed: int
     :param down_speed: int
     :param desired_height: int
