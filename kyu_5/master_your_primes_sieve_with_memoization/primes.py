@@ -1,5 +1,6 @@
 """
-Solution for -> Master your primes: sieve with memoization
+Solution for -> Master your primes: sieve with memoization.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def is_prime(digit: int) -> bool:
     """
+    is_prime function.
+
     A function that checks if a given number 'digit' is a prime looping
     through it and, possibly, expanding the array/list of known
     primes only if/when necessary (ie: as soon as you check for a

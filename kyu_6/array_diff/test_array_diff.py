@@ -1,5 +1,6 @@
 """
-Test for -> Array.diff
+Test for -> Array.diff.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_6.array_diff.solution import array_diff
 from utils.log_func import print_log
 
@@ -28,7 +30,7 @@ from utils.log_func import print_log
 # pylint: enable-msg=R0801
 class ArrayDiffTestCase(unittest.TestCase):
     """
-    Testing array_diff function
+    Testing array_diff function.
 
     Your goal in this kata is to implement a difference function,
     which subtracts one list from another and returns the result.
@@ -42,9 +44,16 @@ class ArrayDiffTestCase(unittest.TestCase):
     array_diff([1,2,2,2,3],[2]) == [1,3]
     """
 
-    def test_array_diff_function(self):
+    @parameterized.expand([
+        ([1, 2], [1], [2], "a was [1,2], b was [1], expected [2]"),
+        ([1, 2, 2], [1], [2, 2], "a was [1,2,2], b was [1], expected [2,2]"),
+        ([1, 2, 2], [2], [1], "a was [1,2,2], b was [2], expected [1]"),
+        ([1, 2, 2], [], [1, 2, 2], "a was [1,2,2], b was [], expected [1,2,2]"),
+        ([], [1, 2], [], "a was [], b was [1,2], expected []")])
+    def test_array_diff_function(self, a, b, expected, message):
         """
-        Testing array_diff function
+        Testing array_diff function.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -59,29 +68,15 @@ class ArrayDiffTestCase(unittest.TestCase):
             "and returns the result. It should remove all values from "
             "list a, which are present in list b.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ([1, 2], [1], [2], "a was [1,2], b was [1], expected [2]"),
-            ([1, 2, 2], [1], [2, 2], "a was [1,2,2], b was [1], expected [2,2]"),
-            ([1, 2, 2], [2], [1], "a was [1,2,2], b was [2], expected [1]"),
-            ([1, 2, 2], [], [1, 2, 2], "a was [1,2,2], b was [], expected [1,2,2]"),
-            ([], [1, 2], [], "a was [], b was [1,2], expected []"))
-
-        for test_item in test_data:
-            a: list = test_item[0]
-            b: list = test_item[1]
-            expected: list = test_item[2]
-            message: str = test_item[-1]
+        with allure.step(f"Enter a test data: {a, b} and verify the "
+                         f"expected output vs actual result: {expected}."):
             actual_result: list = array_diff(a, b)
+            print_log(a=a,
+                      b=b,
+                      exp=expected,
+                      message=message,
+                      actual_result=actual_result)
 
-            with allure.step("Enter a test data and verify the "
-                             "expected output vs actual result"):
-
-                print_log(a=a,
-                          b=b,
-                          exp=expected,
-                          message=message,
-                          res=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result,
-                                 message)
+            self.assertEqual(expected,
+                             actual_result,
+                             message)

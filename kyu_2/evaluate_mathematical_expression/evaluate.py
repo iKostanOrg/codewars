@@ -13,7 +13,8 @@ OPERATORS = ['*', '/', '+', '-']
 
 def calculate(i: int, char: str, strings: list) -> None:
     """
-    Calculate math expression
+    Calculate math expression.
+
     :param i: int
     :param char: str
     :param strings: list
@@ -35,7 +36,8 @@ def calculate(i: int, char: str, strings: list) -> None:
 
 def process_math_expression(string: str, operators: list) -> str:
     """
-    Process math expression
+    Process math expression.
+
     :param string: str
     :param operators: list
     :return: str
@@ -53,7 +55,8 @@ def process_math_expression(string: str, operators: list) -> str:
 
 def bracket_start(strings: list) -> int:
     """
-    Return index of first (open) bracket
+    Return index of first (open) bracket.
+
     :param strings: list
     :return: int
     """
@@ -63,7 +66,8 @@ def bracket_start(strings: list) -> int:
 
 def bracket_end(strings: list, start: int) -> int:
     """
-    Return index of last (close) bracket
+    Return index of last (close) bracket.
+
     :param strings:
     :param start:
     :return:
@@ -73,8 +77,10 @@ def bracket_end(strings: list, start: int) -> int:
 
 def process_brackets(strings: list) -> str:
     """
-    Process brackets in order to convert
-    input string into math expression
+    Test bracket processing.
+
+    Process brackets in order to convert input
+    string into math expression.
     :param strings: list
     :return: str
     """
@@ -103,7 +109,8 @@ def process_brackets(strings: list) -> str:
 
 def process_duplicate_minus(string: str) -> str:
     """
-    Eliminate duplicate minus
+    Eliminate duplicate minus.
+
     :param string: str
     :return: str
     """
@@ -139,7 +146,8 @@ def process_duplicate_minus(string: str) -> str:
 
 def calc(string: str) -> float:
     """
-    Calculate math expression from input string
+    Calculate math expression from input string.
+
     :param string: str
     :return: float
     """
@@ -164,7 +172,9 @@ def calc(string: str) -> float:
 
 def check_conditions(strings: list, string: str, temp: str) -> tuple[str, str]:
     """
-    Normalizing string input by checking conditions
+    Test string normalization.
+
+    Normalize string input by checking conditions.
     :param strings: list
     :param string: str
     :param temp: str

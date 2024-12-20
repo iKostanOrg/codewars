@@ -1,5 +1,6 @@
 """
-Solution for -> The Greatest Warrior
+Solution for -> The Greatest Warrior.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -31,11 +32,14 @@ FIGHT_MESSAGES = ["Easy fight",
 
 class Warrior:
     """
+    Warrior class.
+
     A class called Warrior which calculates and
     keeps track of level and skills, and ranks.
     """
 
     def __init__(self):
+        """Create a new warrior instance."""
         # A warrior's experience starts from 100
         self.__experience = BASIC_EXPERIENCE
         # A warrior starts at level 1
@@ -47,12 +51,16 @@ class Warrior:
 
     def __set_rank(self) -> str:
         """
+        Set rank.
+
         :return: warrior's experience
         """
         return RANKS[(self.level // 10)]
 
     def __set_level(self) -> int:
         """
+        Set level.
+
         A warrior starts at level 1 and
         can progress all the way to 100.
 
@@ -62,23 +70,23 @@ class Warrior:
         by another 100, the warrior's level rises to
         the next level.
 
-        :return:
+        :return: int
         """
         new_level = self.experience // BASIC_EXPERIENCE
         return new_level if new_level <= 100 else 100
 
-    def __update_experience(self, experience: int):
+    def __update_experience(self, experience: int) -> None:
         """
+        Update experience.
+
         A warrior's experience is cumulative, and does not
         reset with each rise of level. The only exception
         is when the warrior reaches level 100, with which
         the experience stops at 10000.
         :return:
         """
-
-        if self.level == 100:
-            self.__experience = MAX_EXPERIENCE
-        elif self.experience + experience > MAX_EXPERIENCE:
+        if (self.level == 100
+                or self.experience + experience > MAX_EXPERIENCE):
             self.__experience = MAX_EXPERIENCE
         else:
             self.__experience += experience
@@ -89,7 +97,8 @@ class Warrior:
     @property
     def level(self) -> int:
         """
-        A warrior's level
+        A warrior's level.
+
         :return: A warrior's level
         """
         return self.__level
@@ -97,8 +106,11 @@ class Warrior:
     @property
     def rank(self) -> str:
         """
+        Rank.
+
         A warrior starts at rank "Pushover" and
-        can progress all the way to "Greatest"
+        can progress all the way to "Greatest".
+
         :return: warrior's rank
         """
         return self.__rank
@@ -106,24 +118,27 @@ class Warrior:
     @property
     def experience(self) -> int:
         """
-        Return experience value
-        :return:
+        Return experience value.
+
+        :return: int
         """
         return self.__experience
 
     @property
     def achievements(self) -> list:
         """
-        Return achievements as a list
-        :return:
+        Return achievements as a list.
+
+        :return: list
         """
         return self.__achievements
 
     def battle(self, enemy_level: int) -> str:
         """
-        Return message based on the result of the battle
-        :param enemy_level:
-        :return:
+        Return message based on the result of the battle.
+
+        :param enemy_level: int
+        :return: str
         """
         msg: str = ''
         # If an enemy level does not fall in the range of 1 to 100,
@@ -161,13 +176,15 @@ class Warrior:
 
     def training(self, params: list) -> str:
         """
-        Training will accept an array of three elements:
-            the description,
-            the experience points your warrior earns,
-            and the minimum level requirement.
+        Training method.
 
-        :param params:
-        :return:
+        Training will accept an array of three elements:
+            1. the description.
+            2. the experience points your warrior earns.
+            3. the minimum level requirement.
+
+        :param params: list
+        :return: str
         """
         # If the warrior's level meets the minimum level requirement,
         # the warrior will receive the experience points from it and

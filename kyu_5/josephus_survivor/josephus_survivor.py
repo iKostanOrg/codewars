@@ -1,5 +1,6 @@
 """
-Test for -> Josephus Survivor
+Test for -> Josephus Survivor.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,8 @@ GitHub: https://github.com/ikostan
 
 def josephus_survivor(total: int, eliminated: int) -> int:
     """
-    Return who is the "survivor"
+    Return who is the "survivor".
+
     :param total: int
     :param eliminated: int
     :return:

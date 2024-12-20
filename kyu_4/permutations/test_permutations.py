@@ -1,5 +1,6 @@
 """
-Solution for -. Permutations
+Solution for -. Permutations.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,19 +29,18 @@ from kyu_4.permutations.permutations import permutations
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class PermutationsTestCase(unittest.TestCase):
-    """
-    Testing permutations function
-    """
+    """Testing permutations function."""
 
     def test_permutations(self):
         """
-        Testing permutations function
+        Testing permutations function.
 
         Test that permutations function creates all
         permutations of an input string and
         remove duplicates, if present. This means, you
         have to shuffle all letters from the input in all
         possible orders.
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing permutations function")

@@ -1,5 +1,6 @@
 """
-Solution for -> Permute a Palindrome
+Solution for -> Permute a Palindrome.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def permute_a_palindrome(string: str) -> bool:
     """
+    Permute a Palindrome.
+
     A function that check whether the permutation
     of an input string is a palindrome.
     :param string:
@@ -20,7 +23,6 @@ def permute_a_palindrome(string: str) -> bool:
 
     non_even: int = 0
     chars: set = set(string)
-
     for char in chars:
         if string.count(char) % 2 != 0:
             non_even += 1
