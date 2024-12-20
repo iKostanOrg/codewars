@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def gap(num: int) -> int:
     """
-    Returns the length of its longest binary gap.
+    Return the length of its longest binary gap.
 
     The function should return 0 if
     num doesn't contain a binary gap.
