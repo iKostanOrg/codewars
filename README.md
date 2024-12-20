@@ -93,7 +93,7 @@ for CI or a build tool.
 
 ## Tech Issues and Problem Solving
 
-<!-- markdownlint-disable MD033 MD013 MD029 -->
+<!-- markdownlint-disable MD040 MD033 MD013 MD029 -->
 <details>
   <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
@@ -410,4 +410,4 @@ To install Chocolatey:
 
 [Source](https://bobbyhadz.com/blog/make-is-not-recognized-as-internal-or-external-command)
 </details>
-<!-- markdownlint-restore MD033 MD013 MD029 -->
+<!-- markdownlint-restore MD040 MD033 MD013 MD029 -->
