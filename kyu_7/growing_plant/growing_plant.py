@@ -6,8 +6,12 @@ GitHub: https://github.com/ikostan
 """
 
 
-def growing_plant(up_speed: int, down_speed: int, desired_height: int) -> int:
+def growing_plant(up_speed: int,
+                  down_speed: int,
+                  desired_height: int) -> int:
     """
+    Growing Plant function.
+
     Each day a plant is growing by upSpeed meters. Each night
     that plant's height decreases by downSpeed meters due to the
     lack of sun heat. Initially, plant is 0 meters tall. We plant
@@ -18,10 +22,8 @@ def growing_plant(up_speed: int, down_speed: int, desired_height: int) -> int:
     :param desired_height: int
     :return: int
     """
-
     height: int = 0
     days: int = 0
-
     while height <= desired_height:
         height += up_speed
         days += 1
