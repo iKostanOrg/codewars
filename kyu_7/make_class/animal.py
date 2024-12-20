@@ -5,9 +5,19 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+from dataclasses import dataclass
 
+
+@dataclass
 class Animal:
     """Animal class implementation."""
+
+    _name: str
+    _species: str
+    _age: str
+    _health: str
+    _weight: str
+    _color: str
 
     def __init__(self, **kwargs):
         """
