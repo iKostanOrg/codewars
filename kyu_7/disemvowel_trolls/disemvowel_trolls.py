@@ -10,7 +10,7 @@ VOWELS: tuple = ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u')
 
 def disemvowel(string: str) -> str:
     """
-    'Disemvowel' function.
+    'disemvowel' function.
 
     A function that takes a string and return
     a new string with all vowels removed.
