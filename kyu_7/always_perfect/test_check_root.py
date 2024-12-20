@@ -1,5 +1,6 @@
 """
-Test for -> Always perfect
+Test for -> Always perfect.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.always_perfect.check_root import check_root
 
@@ -32,13 +34,18 @@ from kyu_7.always_perfect.check_root import check_root
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CheckRootTestCase(unittest.TestCase):
-    """
-    Testing check_root function
-    """
+    """Testing check_root function."""
 
-    def test_check_root(self):
+    @parameterized.expand([
+        ('4,5,6,7', '841, 29'),
+        ('3,s,5,6', 'incorrect input'),
+        ('11,13,14,15', 'not consecutive'),
+        ('10,11,12,13,15', 'incorrect input'),
+        ('10,11,12,13', '17161, 131'),
+        ('*-3,-2,-1,0', 'incorrect input')])
+    def test_check_root(self,string, expected):
         """
-        Testing check_root function with various test inputs
+        Testing check_root function with various test inputs.
 
         A function which takes numbers separated by commas
         in string format and returns the number which is a
@@ -62,15 +69,7 @@ class CheckRootTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test string and verify the output"):
-            test_data: tuple = (
-                ('4,5,6,7', '841, 29'),
-                ('3,s,5,6', 'incorrect input'),
-                ('11,13,14,15', 'not consecutive'),
-                ('10,11,12,13,15', 'incorrect input'),
-                ('10,11,12,13', '17161, 131'),
-                ('*-3,-2,-1,0', 'incorrect input'))
-
-            for string, expected in test_data:
-                print_log(string=string, expected=expected)
-                self.assertEqual(expected, check_root(string))
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify the output: {expected}."):
+            print_log(string=string, expected=expected)
+            self.assertEqual(expected, check_root(string))
