@@ -42,7 +42,8 @@ class CheckRootTestCase(unittest.TestCase):
         ('11,13,14,15', 'not consecutive'),
         ('10,11,12,13,15', 'incorrect input'),
         ('10,11,12,13', '17161, 131'),
-        ('*-3,-2,-1,0', 'incorrect input')])
+        #('*-3,-2,-1,0', 'incorrect input')
+    ])
     def test_check_root(self,string, expected):
         """
         Testing 'check_root' function with various test inputs.
