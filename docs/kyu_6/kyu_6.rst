@@ -28,7 +28,7 @@ Subpackages
    kyu_6.help_the_bookseller.module
    kyu_6.longest_repetition.module
    kyu_6.multiples_of_3_or_5.module
-   kyu_6.no_arithmetic_progressions
+   kyu_6.no_arithmetic_progressions.module
    kyu_6.number_zoo_patrol
    kyu_6.numericals_of_string
    kyu_6.permute_a_palindrome
