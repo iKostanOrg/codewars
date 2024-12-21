@@ -48,7 +48,7 @@ Subpackages
    kyu_6.unique_in_order.module
    kyu_6.valid_braces.module
    kyu_6.vasya_clerk.module
-   kyu_6.who_likes_it
+   kyu_6.who_likes_it.module
    kyu_6.your_order_please
 
 Module contents
