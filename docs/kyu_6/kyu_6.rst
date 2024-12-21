@@ -25,7 +25,7 @@ Subpackages
    kyu_6.find_the_odd_int.module
    kyu_6.first_character_that_repeats.module
    kyu_6.format_string_of_names.module
-   kyu_6.help_the_bookseller
+   kyu_6.help_the_bookseller.module
    kyu_6.longest_repetition
    kyu_6.multiples_of_3_or_5
    kyu_6.no_arithmetic_progressions
