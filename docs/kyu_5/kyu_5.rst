@@ -25,7 +25,7 @@ Subpackages
    kyu_5.master_your_primes_sieve_with_memoization.module
    kyu_5.moving_zeros_to_the_end.module
    kyu_5.multidimensional_neighbourhood.module
-   kyu_5.not_very_secure
+   kyu_5.not_very_secure.module
    kyu_5.number_of_trailing_zeros_of_n
    kyu_5.simple_pig_latin
    kyu_5.sports_league_table_ranking
