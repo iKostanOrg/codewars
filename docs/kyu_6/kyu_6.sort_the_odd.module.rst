@@ -1,4 +1,4 @@
-kyu\_6.sort_the_odd.module module
+kyu\_6.sort\_the\_odd.module module
 =================================
 
 Subpackages
