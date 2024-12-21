@@ -23,7 +23,7 @@ Subpackages
    kyu_6.easy_diagonal.module
    kyu_6.encrypt_this.module
    kyu_6.find_the_odd_int.module
-   kyu_6.first_character_that_repeats
+   kyu_6.first_character_that_repeats.module
    kyu_6.format_string_of_names
    kyu_6.help_the_bookseller
    kyu_6.longest_repetition
