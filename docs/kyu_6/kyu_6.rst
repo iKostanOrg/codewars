@@ -49,7 +49,7 @@ Subpackages
    kyu_6.valid_braces.module
    kyu_6.vasya_clerk.module
    kyu_6.who_likes_it.module
-   kyu_6.your_order_please
+   kyu_6.your_order_please.module
 
 Module contents
 ---------------
