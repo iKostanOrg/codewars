@@ -43,7 +43,7 @@ Subpackages
    kyu_6.string_subpattern_recognition_2.module
    kyu_6.string_subpattern_recognition_3.module
    kyu_6.string_transformer.module
-   kyu_6.sum_of_digits_digital_root
+   kyu_6.sum_of_digits_digital_root.module
    kyu_6.sums_of_parts
    kyu_6.unique_in_order
    kyu_6.valid_braces
