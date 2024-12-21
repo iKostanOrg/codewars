@@ -21,7 +21,7 @@ Subpackages
    kyu_6.disease_spread.module
    kyu_6.duplicate_encoder.module
    kyu_6.easy_diagonal.module
-   kyu_6.encrypt_this
+   kyu_6.encrypt_this.module
    kyu_6.find_the_odd_int
    kyu_6.first_character_that_repeats
    kyu_6.format_string_of_names
