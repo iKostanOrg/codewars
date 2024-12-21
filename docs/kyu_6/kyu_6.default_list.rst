@@ -22,6 +22,15 @@ kyu\_6.default\_list.test\_default\_list module
    :show-inheritance:
    :private-members:
 
+kyu\_6.default\_list.test\_edge\_case\_list module
+--------------------------------------------------
+
+.. automodule:: kyu_6.default_list.test_edge_case_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:
+
 Module contents
 ---------------
 

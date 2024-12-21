@@ -93,7 +93,7 @@ for CI or a build tool.
 
 ## Tech Issues and Problem Solving
 
-<!-- markdownlint-disable MD033 MD013 MD029 -->
+<!-- markdownlint-disable MD040 MD033 MD013 MD029 -->
 <details>
   <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
@@ -350,4 +350,64 @@ the environment for every build, see comment from Grimmy below).
 
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 </details>
-<!-- markdownlint-restore MD033 MD013 MD029 -->
+
+<details>
+<summary>ERROR: The term 'make' is not recognized as the name of a cmdlet</summary>
+
+'make' is not recognized as an internal or external command.
+
+The error "'make' is not recognized as an internal or external command, operable program or
+batch file" occurs when we run the make command on Windows without having make installed.
+To solve the error, install make using Chocolatey.
+
+```
+make clean
+make : The term 'make' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path 
+was included, verify that the path is correct and try again.
+At line:1 char:1
++ make clean
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (make:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command make was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\make". See "get-help about_Command_Precedence" for more details.
+```
+
+To install Chocolatey:
+
+1. Open PowerShell as an administrator.
+2. Run the following command:
+    ```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    ```
+3. Wait for the command to complete.
+4. Type choco to make sure Chocolatey is installed:
+    ```
+    PS C:\WINDOWS\system32> choco
+    Chocolatey v2.4.1
+    Please run 'choco -?' or 'choco <command> -?' for help menu.
+    ```
+5. Now that you have Chocolatey installed, run the following command to install make:
+    ```
+    PS C:\WINDOWS\system32> choco install make -y
+    Chocolatey v2.4.1
+    Installing the following packages:
+    make
+    By installing, you accept licenses for the packages.
+    Downloading package from source 'https://community.chocolatey.org/api/v2/'
+    Progress: Downloading make 4.4.1... 100%
+    
+    make v4.4.1 [Approved]
+    make package files install completed. Performing other installation steps.
+     ShimGen has successfully created a shim for make.exe
+     The install of make was successful.
+      Deployed to 'C:\ProgramData\chocolatey\lib\make'
+    
+    Chocolatey installed 1/1 packages.
+     See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+    ```
+
+[Source](https://bobbyhadz.com/blog/make-is-not-recognized-as-internal-or-external-command)
+</details>
+<!-- markdownlint-restore MD040 MD033 MD013 MD029 -->
