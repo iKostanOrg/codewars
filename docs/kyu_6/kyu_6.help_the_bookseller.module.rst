@@ -1,5 +1,5 @@
-kyu\_6.help_the_bookseller.module package
-=========================================
+kyu\_6.help\_the\_bookseller.module package
+===========================================
 
 Subpackages
 -----------
