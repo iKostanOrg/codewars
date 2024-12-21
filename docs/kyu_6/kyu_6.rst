@@ -17,7 +17,7 @@ Subpackages
    kyu_6.color_choice.module
    kyu_6.count_letters_in_string.module
    kyu_6.decipher_this.module
-   kyu_6.default_list
+   kyu_6.default_list.module
    kyu_6.disease_spread
    kyu_6.duplicate_encoder
    kyu_6.easy_diagonal
