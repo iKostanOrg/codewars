@@ -46,7 +46,7 @@ Subpackages
    kyu_6.sum_of_digits_digital_root.module
    kyu_6.sums_of_parts.module
    kyu_6.unique_in_order.module
-   kyu_6.valid_braces
+   kyu_6.valid_braces.module
    kyu_6.vasya_clerk
    kyu_6.who_likes_it
    kyu_6.your_order_please
