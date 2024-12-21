@@ -31,7 +31,7 @@ Subpackages
    kyu_6.no_arithmetic_progressions.module
    kyu_6.number_zoo_patrol.module
    kyu_6.numericals_of_string.module
-   kyu_6.permute_a_palindrome
+   kyu_6.permute_a_palindrome.module
    kyu_6.pokemon_damage_calculator
    kyu_6.potion_class_101
    kyu_6.pyramid_array
