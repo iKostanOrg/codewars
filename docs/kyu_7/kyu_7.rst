@@ -10,9 +10,9 @@ Subpackages
    kyu_7.readme
    kyu_7.always_perfect.module
    kyu_7.basic_math_add_or_subtract.module
-   kyu_7.beginner_series_sum_of_numbers
+   kyu_7.beginner_series_sum_of_numbers.module
    kyu_7.coloured_triangles.module
-   kyu_7.disemvowel_trolls
+   kyu_7.disemvowel_trolls.module
    kyu_7.easy_line
    kyu_7.factorial
    kyu_7.fill_the_hard_disk_drive
