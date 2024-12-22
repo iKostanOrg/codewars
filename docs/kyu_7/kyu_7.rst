@@ -23,7 +23,7 @@ Subpackages
    kyu_7.help_bob_count_letters_and_digits.module
    kyu_7.isograms.module
    kyu_7.jaden_casing_strings.module
-   kyu_7.make_class
+   kyu_7.make_class.module
    kyu_7.maximum_multiple
    kyu_7.password_validator
    kyu_7.powers_of_3
