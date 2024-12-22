@@ -1,60 +1,64 @@
 """
-Walker class: make moves, check directions, etc...
+Walker class: make moves, check directions, etc.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
 
 class Walker:
-    """
-    Walker class: make moves, check directions, etc...
-    """
+    """Walker class: make moves, check directions, etc."""
+
     def __init__(self, grid: list):
-        # print('__init__')
+        """
+        Create a new Walker instance.
+
+        :param grid:
+        """
         self.__grid: list = grid
         self.__is_start: bool = True
         self.__position: dict = self.__get_start_point()
         self.__direction = self.__set_initial_direction()
 
     def __set_initial_direction(self) -> dict:
+        """
+        Set initial direction.
+
+        :return: dict
+        """
         direction: dict = {
             'left': False,
             'right': False,
             'up': False,
-            'down': False,
-        }
+            'down': False}
 
         # coordinates
         row: int = self.__position['row']
         col: int = self.__position['col']
 
         # up
-        if row - 1 >= 0:
-            if self.__grid[row - 1][col] in 'X|+':
-                direction['up'] = True
+        if row >= 1 and self.__grid[row - 1][col] in 'X|+':
+            direction['up'] = True
 
         # down
-        if row + 1 < len(self.__grid):
-            if self.__grid[row + 1][col] in 'X|+':
-                direction['down'] = True
+        if row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+':
+            direction['down'] = True
 
         # left
-        if col - 1 >= 0:
-            if self.__grid[row][col - 1] in 'X+-':
-                direction['left'] = True
+        if col >= 1 and self.__grid[row][col - 1] in 'X+-':
+            direction['left'] = True
 
         # right
-        if col + 1 < len(self.__grid[row]):
-            if self.__grid[row][col + 1] in 'X+-':
-                direction['right'] = True
+        if col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-':
+            direction['right'] = True
 
-        print(f"\nINITIAL DIRECTION: {direction}")
         return direction
 
     @property
     def position(self) -> str:
         """
-        Return char from grid based on current position
+        Return char from grid based on current position.
+
         :return: str, current char
         """
         row: int = self.__position['row']
@@ -63,7 +67,8 @@ class Walker:
 
     def move(self) -> None:
         """
-        Make one step if possible
+        Make one step if possible.
+
         :return: None
         """
         if not self.is_done:
@@ -88,43 +93,31 @@ class Walker:
             if self.__is_start:
                 self.__is_start = False
             # 3. set direction
-            # DEBUG ONLY
-            row: int = self.__position['row']
-            col: int = self.__position['col']
-            direction = [key for key, item in self.__direction if item]
-            print(f'\nchar: {self.__grid[row][col]}, '
-                  f'direction: {direction}, '
-                  f'row: {row}, '
-                  f'col: {col}, '
-                  f'is_done: {self.is_done}\n')
             self.__set_direction()
 
     @property
     def is_done(self) -> bool:
         """
-        Check if get to the 'X' point
-        or can make one move only
-        :return: true/false
+        Check if get to the 'X' point or can make one move only.
+
+        :return: bool
         """
         if self.__is_start:
             if len([val for val in self.__direction.values() if val]) != 1:
-                print('\nRule #1')
                 return True
         else:
             if self.position == 'X' and not self.__is_start:
-                print('\nRule #2')
                 return True
 
             if len([val for val in self.__direction.values() if val]) != 1:
-                print('\nRule #3')
-                print(self.__direction)
                 return True
 
         return False
 
     def __get_start_point(self) -> dict:
         """
-        Locate starting point
+        Locate starting point.
+
         :return: dict, starting point X
         """
         result: dict = {}
@@ -148,10 +141,61 @@ class Walker:
         for key in self.__direction:
             self.__direction[key] = False
 
+    def position_plus(self, previous_position: str) -> None:
+        """
+        Process cells if current position is +.
+
+        :param previous_position: str
+        :return: None
+        """
+        if self.position == '+' and previous_position in '-X':
+            self.__direction['up'] = self.__test_up()
+            self.__direction['down'] = self.__test_down()
+
+        if self.position == '+' and previous_position == '|':
+            self.__direction['left'] = self.__test_left()
+            self.__direction['right'] = self.__test_right()
+
+        if self.position == previous_position == '+' and \
+                self.__position['col'] == self.__position['prev_col']:
+            self.__direction['left, '] = self.__test_left()
+            self.__direction['right'] = self.__test_right()
+
+        if self.position == previous_position == '+' and \
+                self.__position['row'] == self.__position['prev_row']:
+            self.__direction['up'] = self.__test_up()
+            self.__direction['down'] = self.__test_down()
+
+    def position_minus(self, previous_position: str) -> None:
+        """
+        Process cells if current position is -.
+
+        :param previous_position: str
+        :return: None
+        """
+        if self.position == '-' and previous_position in '-X+':
+            if self.__position['col'] < self.__position['prev_col']:
+                self.__direction['left'] = self.__test_left()
+            elif self.__position['col'] > self.__position['prev_col']:
+                self.__direction['right'] = self.__test_right()
+
+    def position_pipe(self, previous_position: str) -> None:
+        """
+        Process cells if current position is '|'.
+
+        :param previous_position: str
+        :return: None
+        """
+        if self.position == '|' and previous_position in '|X+':
+            if self.__position['row'] < self.__position['prev_row']:
+                self.__direction['up'] = self.__test_up()
+            elif self.__position['row'] > self.__position['prev_row']:
+                self.__direction['down'] = self.__test_down()
+
     def __set_direction(self) -> None:
         """
-        Update directions based on current
-        position and previous direction
+        Update directions based on current position and previous direction.
+
         :return: None
         """
         prev_row = self.__position['prev_row']
@@ -160,58 +204,46 @@ class Walker:
 
         # reset all directions
         self.__reset_direction()
-        print(f'prev: {previous_position}, pos: {self.position}')
-
-        if self.position == '+' and (previous_position in ('-', 'X')):
-            self.__direction['up'] = self.__test_up()
-            self.__direction['down'] = self.__test_down()
-        elif self.position == '+' and previous_position == '|':
-            self.__direction['left'] = self.__test_left()
-            self.__direction['right'] = self.__test_right()
-        elif self.position == '+' and previous_position == '+':
-            if self.__position['col'] == self.__position['prev_col']:
-                self.__direction['left'] = self.__test_left()
-                self.__direction['right'] = self.__test_right()
-            elif self.__position['row'] == self.__position['prev_row']:
-                self.__direction['up'] = self.__test_up()
-                self.__direction['down'] = self.__test_down()
-        elif ((self.position == '-' and (previous_position in ('-', 'X')))
-              or (self.position == '-' and previous_position == '+')):
-            if self.__position['col'] < self.__position['prev_col']:
-                self.__direction['left'] = self.__test_left()
-            elif self.__position['col'] > self.__position['prev_col']:
-                self.__direction['right'] = self.__test_right()
-        elif ((self.position == '|' and (previous_position in ('|', 'X')))
-              or (self.position == '|' and previous_position == '+')):
-            if self.__position['row'] < self.__position['prev_row']:
-                self.__direction['up'] = self.__test_up()
-            elif self.__position['row'] > self.__position['prev_row']:
-                self.__direction['down'] = self.__test_down()
+        self.position_plus(previous_position)
+        self.position_minus(previous_position)
+        self.position_pipe(previous_position)
 
     def __test_up(self) -> bool:
+        """
+        Test up.
+
+        :return: bool
+        """
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if row - 1 >= 0 and self.__grid[row - 1][col] in 'X|+':
-            return True
-        return False
+        return row >= 1 and self.__grid[row - 1][col] in 'X|+'
 
     def __test_down(self) -> bool:
+        """
+        Test down.
+
+        :return: bool
+        """
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+':
-            return True
-        return False
+        return row + 1 < len(self.__grid) and self.__grid[row + 1][col] in 'X|+'
 
     def __test_left(self) -> bool:
+        """
+        Test left.
+
+        :return: bool
+        """
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if col - 1 >= 0 and self.__grid[row][col - 1] in 'X+-':
-            return True
-        return False
+        return col >= 1 and self.__grid[row][col - 1] in 'X+-'
 
     def __test_right(self) -> bool:
+        """
+        Test right.
+
+        :return: bool
+        """
         row: int = self.__position['row']
         col: int = self.__position['col']
-        if col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-':
-            return True
-        return False
+        return col + 1 < len(self.__grid[row]) and self.__grid[row][col + 1] in 'X+-'

@@ -1,5 +1,6 @@
 """
-Test for -> Basic Math (Add or Subtract)
+Test for -> Basic Math (Add or Subtract).
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_7.basic_math_add_or_subtract.calculate import calculate
 from utils.log_func import print_log
 
@@ -26,13 +28,16 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CalculateTestCase(unittest.TestCase):
-    """
-    Testing calculate function
-    """
+    """Testing calculate function."""
 
-    def test_calculate(self):
+    @parameterized.expand([
+        ('1plus2plus3plus4', '10'),
+        ('1minus2minus3minus4', '-8'),
+        ('1plus2plus3minus4', '2')])
+    def test_calculate(self, s, expected):
         """
-        Testing calculate function with various test data
+        Testing calculate function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -46,21 +51,11 @@ class CalculateTestCase(unittest.TestCase):
             "<p>In this kata, you will do addition and subtraction "
             "on a given string. The return value must be also a "
             "string.</p>")
-        # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ('1plus2plus3plus4', '10'),
-            ('1minus2minus3minus4', '-8'),
-            ('1plus2plus3minus4', '2'))
 
-        for s, expected in test_data:
-            # pylint: disable-msg=R0801
-            actual_result = calculate(s)
-            with allure.step(f"Enter string ({s}) and verify the "
-                             f"expected output ({expected}) vs "
-                             f"actual result ({actual_result})"):
-                print_log(s=s,
-                          expected=expected,
-                          result=actual_result)
+        actual_result = calculate(s)
+        with allure.step(f"Enter string ({s}) and verify the "
+                         f"expected output ({expected}) vs "
+                         f"actual result ({actual_result})"):
+            print_log(s=s, expected=expected, result=actual_result)
             # pylint: enable-msg=R0801
-                self.assertEqual(expected,
-                                 actual_result)
+            self.assertEqual(expected, actual_result)

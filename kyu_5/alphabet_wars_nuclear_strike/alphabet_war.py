@@ -1,5 +1,6 @@
 """
-Solution for -> Alphabet wars - nuclear strike
+Solution for -> Alphabet wars - nuclear strike.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,27 +8,27 @@ GitHub: https://github.com/ikostan
 
 def alphabet_war(battlefield: str) -> str:
     """
+    Alphabet war func.
+
     A function that accepts battlefield string and
     returns letters that survived the nuclear strike.
     :param battlefield:
     :return: str
     """
-
     if '#' not in battlefield:
         return ''.join(char for char in battlefield if char.isalpha())
 
     result: str = clean_unsheltered(battlefield)
-    result = clean_battlefield(result)
-    return result
+    return clean_battlefield(result)
 
 
 def clean_unsheltered(battlefield: str) -> str:
     """
-    Clean letters outside the shelter
+    Clean letters outside the shelter.
+
     :param battlefield: str
     :return: str
     """
-
     result: str = ''
     temp = battlefield.split('[')
 
@@ -39,15 +40,16 @@ def clean_unsheltered(battlefield: str) -> str:
             result += char
         else:
             sharp = char.count('#')
-            char = char[0:char.index(']') + 1]
-            result += '[' + char + ('#' * sharp)
+            char = char[:char.index(']') + 1]
+            result += f'[{char}' + '#' * sharp
 
     return result
 
 
 def clean_battlefield(battlefield: str) -> str:
     """
-    Clean the battlefield and return only survived letters
+    Clean the battlefield and return only survived letters.
+
     :param battlefield: str
     :return: str
     """
@@ -80,5 +82,4 @@ def clean_battlefield(battlefield: str) -> str:
             del result[i]
             break
 
-    answer: str = ''.join(char for char in reversed(temp))
-    return answer
+    return ''.join(reversed(temp))

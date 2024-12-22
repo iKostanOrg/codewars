@@ -1,5 +1,6 @@
 """
-Test for -> V A P O R C O D E
+Test for -> V A P O R C O D E.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,13 +26,12 @@ from kyu_7.vaporcode.vaporcode import vaporcode
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class VaporcodeTestCase(unittest.TestCase):
-    """
-    Testing 'vaporcode' function
-    """
+    """Testing 'vaporcode' function."""
 
     def test_vaporcode(self):
         """
-        Testing 'vaporcode' function
+        Testing 'vaporcode' function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -39,8 +39,9 @@ class VaporcodeTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801

@@ -1,5 +1,6 @@
 """
-Test for -> calc method
+Test for -> calc method.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -34,13 +35,12 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
     name='Source/Kata')
 # pylint: enable=R0801
 class CalcTestCase(unittest.TestCase):
-    """
-    Testing calc method
-    """
+    """Testing calc method."""
 
     def test_calc(self):
         """
-        Testing calc class
+        Testing calc class.
+
         Given a mathematical expression as a string you
         must return the result as a number.
         """
@@ -78,8 +78,7 @@ class CalcTestCase(unittest.TestCase):
             ['-(-93) / (-36 + 26 + -(18)) + (-7 * -(((-(-67 + -95)))) + -9)', 1121.6785714285713],
             ['-(-23) + (-4 * -13 + -(1)) - (-30 / (((-(57 + -20)))) + 85)', -11.810810810810807],
             ['(72) / (-82 - -93 * -(88)) + (-18 - -(((-(60 * 97)))) + -79)', -5917.00871037987],
-            ['-(77) / (7 * -76 + (59)) + (98 / -(((-(-74 - -47)))) / -5)', 0.8887166236003445]
-        )
+            ['-(77) / (7 * -76 + (59)) + (98 / -(((-(-74 - -47)))) / -5)', 0.8887166236003445])
 
         for string, expected in test_data:
 
@@ -93,3 +92,7 @@ class CalcTestCase(unittest.TestCase):
                              f"compare vs expected ({expected})"):
                 self.assertEqual(expected,
                                  actual_result)
+
+
+if __name__ == '__main__':
+    unittest.main()

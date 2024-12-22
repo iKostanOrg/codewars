@@ -61,7 +61,6 @@ class CenturyTestCase(unittest.TestCase):
             (89, 1, 'Testing for year 89'))
 
         for year, expected, message in test_data:
-            print('\n', message)
             result: int = century(year)
 
             with allure.step(f"Enter test year ({year}) and verify "
@@ -70,7 +69,8 @@ class CenturyTestCase(unittest.TestCase):
 
                 print_log(year=year,
                           result=result,
-                          expected=expected)
+                          expected=expected,
+                          message=message)
 
                 self.assertEqual(expected,
                                  result)

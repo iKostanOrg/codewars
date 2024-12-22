@@ -13,7 +13,8 @@ OPERATORS = ['*', '/', '+', '-']
 
 def calculate(i: int, char: str, strings: list) -> None:
     """
-    Calculate math expression
+    Calculate math expression.
+
     :param i: int
     :param char: str
     :param strings: list
@@ -35,7 +36,8 @@ def calculate(i: int, char: str, strings: list) -> None:
 
 def process_math_expression(string: str, operators: list) -> str:
     """
-    Process math expression
+    Process math expression.
+
     :param string: str
     :param operators: list
     :return: str
@@ -51,65 +53,21 @@ def process_math_expression(string: str, operators: list) -> str:
     return ' '.join(strings)
 
 
-def normalize_string(string: str) -> str:
-    """
-    Normalizing string input
-    :param string: str
-    :return: str
-    """
-    strings: list = []
-    string_temp: str = ''.join([s for s in string if s != ' '])
-
-    while string_temp != '':
-        temp: str = ''
-
-        for i, s in enumerate(string_temp):
-            if s.isdigit():
-                temp += s
-
-            if s in '()':
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
-                if i + 1 < len(string_temp):
-                    string_temp = string_temp[i + 1:]
-                else:
-                    string_temp = ''
-                break
-
-            if s in OPERATORS:
-                if temp != '':
-                    strings.append(temp)
-                strings.append(s)
-
-                if i + 1 < len(string_temp):
-                    string_temp = string_temp[i + 1:]
-                break
-
-            if i == len(string_temp) - 1:
-                if temp != '':
-                    strings.append(temp)
-                string_temp = ''
-
-    return ' '.join([s for s in strings if s != ''])
-
-
 def bracket_start(strings: list) -> int:
     """
-    Return index of first (open) bracket
+    Return index of first (open) bracket.
+
     :param strings: list
     :return: int
     """
     a: int = ([i for i, strg in enumerate(strings) if strg == '('])[-1]
-    b: int = ''.join(strings).rindex('(')
-    print(f"str: {strings}, a: {a}, b: {b}")
     return a
 
 
 def bracket_end(strings: list, start: int) -> int:
     """
-    Return index of last (close) bracket
+    Return index of last (close) bracket.
+
     :param strings:
     :param start:
     :return:
@@ -119,8 +77,10 @@ def bracket_end(strings: list, start: int) -> int:
 
 def process_brackets(strings: list) -> str:
     """
-    Process brackets in order to convert
-    input string into math expression
+    Test bracket processing.
+
+    Process brackets in order to convert input
+    string into math expression.
     :param strings: list
     :return: str
     """
@@ -149,7 +109,8 @@ def process_brackets(strings: list) -> str:
 
 def process_duplicate_minus(string: str) -> str:
     """
-    Eliminate duplicate minus
+    Eliminate duplicate minus.
+
     :param string: str
     :return: str
     """
@@ -180,18 +141,26 @@ def process_duplicate_minus(string: str) -> str:
                     del strings[i]
                     break
 
-    return ' '.join([s for s in strings if s != ''])
+    return ' '.join(strings)
 
 
 def calc(string: str) -> float:
     """
-    Calculate math expression from input string
+    Calculate math expression from input string.
+
     :param string: str
     :return: float
     """
-    string = normalize_string(string)
+    string = ''.join([s for s in string if s != ' '])
+
+    strings: list = []
+    while string:
+        temp: str = ''
+        temp, string = check_conditions(strings, string, temp)
+    string = ' '.join(strings)
+
     string = ''.join(string.split('+'))
-    strings: list = string.split()
+    strings = string.split()
     string = process_brackets(strings)
     string = process_duplicate_minus(string)
     string = process_math_expression(string, ['*', '/'])
@@ -199,3 +168,44 @@ def calc(string: str) -> float:
     string_lst = [float(s) for s in string_lst]
     string = str(sum(string_lst))
     return float(string)
+
+
+def check_conditions(strings: list, string: str, temp: str) -> tuple[str, str]:
+    """
+    Test string normalization.
+
+    Normalize string input by checking conditions.
+    :param strings: list
+    :param string: str
+    :param temp: str
+    :return: tuple(str, str)
+    """
+    for i, s in enumerate(string):
+        if s.isdigit():
+            temp += s
+
+        if (s in ''.join(OPERATORS) + '()' or i == len(string) - 1) and temp:
+            strings.append(temp)
+
+        if s in '()':
+            strings.append(s)
+
+            if i + 1 < len(string):
+                string = string[i + 1:]
+            else:
+                string = ''
+
+            break
+
+        if s in OPERATORS:
+            strings.append(s)
+
+            if i + 1 < len(string):
+                string = string[i + 1:]
+
+            break
+
+        if i == len(string) - 1:
+            string = ''
+
+    return temp, string

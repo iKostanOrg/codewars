@@ -1,5 +1,6 @@
 """
-Test for -> Your order, please
+Test for -> Your order, please.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.your_order_please.order import order
 
@@ -24,25 +26,31 @@ from kyu_6.your_order_please.order import order
     url='https://www.codewars.com/kata/55c45be3b2079eccff00010f',
     name='Source/Kata')
 class OrderTestCase(unittest.TestCase):
-    """
-    Testing 'order' function
-    """
-    def test_order(self):
+    """Testing 'order' function."""
+
+    @parameterized.expand([
+        ("is2 Thi1s T4est 3a",
+         "Thi1s is2 3a T4est"),
+        ("4of Fo1r pe6ople g3ood th5e the2",
+         "Fo1r the2 g3ood 4of th5e pe6ople"),
+        ("", "")])
+    def test_order(self, sentence, expected):
         """
+        Testing 'order' function with various test data.
+
         Your task is to verify that 'order' function
         sorts a given string by following rules:
 
-            1. Each word in the string will contain a single number.
-               This number is the position the word should have in
-               the result.
+        1. Each word in the string will contain a single number.
+        This number is the position the word should have in
+        the result.
 
-            2. Note: Numbers can be from 1 to 9. So 1 will be the
-               first word (not 0).
+        2. Note: Numbers can be from 1 to 9. So 1 will be the
+        first word (not 0).
 
-            3. If the input string is empty, return an empty string.
-               The words in the input String will only contain valid
-               consecutive numbers.
-
+        3. If the input string is empty, return an empty string.
+        The words in the input String will only contain valid
+        consecutive numbers.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -62,22 +70,8 @@ class OrderTestCase(unittest.TestCase):
             'The words in the input String will only contain valid consecutive '
             'numbers.</p>')
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("is2 Thi1s T4est 3a",
-             "Thi1s is2 3a T4est"),
-            ("4of Fo1r pe6ople g3ood th5e the2",
-             "Fo1r the2 g3ood 4of th5e pe6ople"),
-            ("", ""))
-
-        for (sentence, expected) in test_data:
-            actual_result: str = order(sentence)
-
-            with allure.step("Enter a string and verify the "
-                             "expected output vs actual result"):
-
-                print_log(sentence=sentence,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
+        actual_result: str = order(sentence)
+        with allure.step("Enter a string and verify the "
+                         "expected output vs actual result"):
+            print_log(sentence=sentence, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)

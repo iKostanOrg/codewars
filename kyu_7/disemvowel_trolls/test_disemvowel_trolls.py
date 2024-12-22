@@ -1,5 +1,6 @@
 """
-Test for -> Disemvowel Trolls
+Test for -> 'Disemvowel' Trolls.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
 
@@ -30,13 +32,27 @@ from kyu_7.disemvowel_trolls.disemvowel_trolls import disemvowel
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DisemvowelTestCase(unittest.TestCase):
-    """
-    Testing disemvowel function
-    """
-    def test_disemvowel(self):
+    """Testing 'disemvowel' function."""
+
+    @parameterized.expand([
+        ("This website is for losers LOL!",
+         "Ths wbst s fr lsrs LL!"),
+        ("No offense but, Your writing is among the worst I've ever read",
+         "N ffns bt, Yr wrtng s mng th wrst 'v vr rd"),
+        ("What are you, a communist?",
+         "Wht r y,  cmmnst?"),
+        ("IeiIvp EIfgoIh,d(kaM]A>EuiGzEooOoW oK f&uswtee "
+         "pKAUI<ZuuEi\\g)aIAOU !_Lu",
+         "vp fgh,d(kM]>GzW K f&swt pK<Z\\g) !_L"),
+        ("Nt/I'OvegOI*UdAaEobaE{Gi} I^@*Ieua\\uU}d%AoUII}ue>*"
+         "]IkEI GqrjOal`E\" eeAeSuaTdAu-FISac",
+         "Nt/'vg*db{G} ^@*\\}d%}>*]k Gqrjl`\" STd-FSc")])
+    def test_disemvowel(self, input_data, expected):
         """
+        Testing 'disemvowel' function with various test data.
+
         The string "This website is for losers LOL!"
-        should become "Ths wbst s fr lsrs LL!"
+        should become "Ths wbst s fr lsrs LL!".
         :return:
         """
         # pylint: disable-msg=R0801
@@ -49,25 +65,7 @@ class DisemvowelTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("This website is for losers LOL!",
-             "Ths wbst s fr lsrs LL!"),
-            ("No offense but, Your writing is among the worst I've ever read",
-             "N ffns bt, Yr wrtng s mng th wrst 'v vr rd"),
-            ("What are you, a communist?",
-             "Wht r y,  cmmnst?"),
-            ("IeiIvp EIfgoIh,d(kaM]A>EuiGzEooOoW oK f&uswtee "
-             "pKAUI<ZuuEi\\g)aIAOU !_Lu",
-             "vp fgh,d(kM]>GzW K f&swt pK<Z\\g) !_L"),
-            ("Nt/I'OvegOI*UdAaEobaE{Gi} I^@*Ieua\\uU}d%AoUII}ue>*"
-             "]IkEI GqrjOal`E\" eeAeSuaTdAu-FISac",
-             "Nt/'vg*db{G} ^@*\\}d%}>*]k Gqrjl`\" STd-FSc"))
-
-        for data in test_data:
-            input_data, expected = data
-
-            with allure.step("Enter test data ans assert the result"):
-                print_log(input=input_data,
-                          expected=expected)
-                self.assertEqual(disemvowel(input_data),
-                                 expected)
+        with allure.step(f"Enter test data: {input_data} "
+                         f"and assert the result: {expected}."):
+            print_log(input=input_data, expected=expected)
+            self.assertEqual(disemvowel(input_data), expected)

@@ -1,5 +1,6 @@
 """
-Testing advice and all related help functions
+Testing advice and all related help functions.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,11 +9,10 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.find_the_safest_places_in_town.advice \
     import advice, create_city_map, agents_cleanup
-from kyu_5.find_the_safest_places_in_town.print_agents \
-    import print_map
 
 
 # pylint: disable-msg=R0801
@@ -28,16 +28,19 @@ from kyu_5.find_the_safest_places_in_town.print_agents \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstAdviceTestCase(unittest.TestCase):
-    """
-    Testing advice and all related help functions
-    """
+    """Testing advice and all related help functions."""
 
-    def test_create_city_map(self):
+    @parameterized.expand([
+        (2, {(0, 0), (0, 1), (1, 0), (1, 1)}),
+        (0, set()),
+        (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1),
+             (1, 2), (2, 0), (2, 1), (2, 2)})])
+    def test_create_city_map(self, n, expected):
         """
-        Testing a function named create_city_map where:
-            - n defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing a function named create_city_map.
 
+        n defines the size of the city that Bassi needs to hide in,
+        in other words the side length of the square grid.
         The function should generate city map with coordinates.
         :return:
         """
@@ -51,31 +54,33 @@ class FirstAdviceTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should generate city map with coordinates.</p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test data and verify the output"):
-            test_data: tuple = (
-                (2, {(0, 0), (0, 1), (1, 0), (1, 1)}),
-                (0, set()),
-                (3, {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1),
-                     (1, 2), (2, 0), (2, 1), (2, 2)}))
+        with allure.step(f"Enter test data: {n} "
+                         f"and verify the output: {expected}"):
+            actual: set = create_city_map(n)
+            # test log
+            print_log(n=n, expected=expected, actual=actual)
+            # assertion
+            self.assertEqual(expected, actual)
 
-            for data in test_data:
-                # test data
-                n: int = data[0]
-                expected: set = data[1]
-                actual: set = create_city_map(n)
-                # test log
-                print_log(n=n, expected=expected, actual=actual)
-                # assertion
-                self.assertEqual(expected, actual)
-
-    def test_agents_cleanup(self):
+    @parameterized.expand([
+        ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
+        ({(0, 0), (1, 1), (99, 99)}, 2, {(0, 0), (1, 1)}),
+        ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47),
+          (9, 59), (65, 40), (28, 53), (19, 15),
+          (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13),
+          (36, 38), (29, 54), (50, 15), (14, 28),
+          (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6),
+          (12, 46), (50, 35), (56, 27)}, 10, set())
+    ])
+    def test_agents_cleanup(self, agents, n, expected):
         """
-        Testing a function named agents_cleanup where:
-            - agents: is an array of agent coordinates
-            - n: defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing a function named agents_cleanup.
 
-        The function should remove all agents that are outside of the city boundaries.
+        agents: is an array of agent coordinates
+        n: defines the size of the city that Bassi needs to hide in,
+        in other words the side length of the square grid.
+        The function should remove all agents that are outside
+        the city boundaries.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -90,34 +95,20 @@ class FirstAdviceTestCase(unittest.TestCase):
             "outside of the city boundaries.</p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data and verify the output"):
-            test_data: tuple = (
-                ({(0, 0), (1, 5), (5, 1)}, 6, {(0, 0), (1, 5), (5, 1)}),
-                ({(0, 0), (1, 1), (99, 99)}, 2, {(0, 0), (1, 1)}),
-                ({(22, 23), (56, 35), (15, 7), (40, 15), (36, 30), (52, 47),
-                  (9, 59), (65, 40), (28, 53), (19, 15),
-                  (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13),
-                  (36, 38), (29, 54), (50, 15), (14, 28),
-                  (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6),
-                  (12, 46), (50, 35), (56, 27)}, 10, set()))
-
-            for data in test_data:
-                # test data
-                agents: set = data[0]
-                n: int = data[1]
-                expected: set = data[2]
-                actual: set = agents_cleanup(agents, n)
-                # test log
-                print_log(agents=agents, n=n, expected=expected, actual=actual)
-                # assertion
-                self.assertEqual(expected, actual)
+            # test data
+            actual: set = agents_cleanup(agents, n)
+            # test log
+            print_log(agents=agents, n=n, expected=expected, actual=actual)
+            # assertion
+            self.assertEqual(expected, actual)
 
     def test_first_non_repeating_letter(self):
         """
-        Testing a function named advice(agents, n) where:
-            - agents is an array of agent coordinates.
-            - n defines the size of the city that Bassi needs to hide in,
-              in other words the side length of the square grid.
+        Testing a function named advice(agents, n).
 
+        agents is an array of agent coordinates.
+        n defines the size of the city that Bassi needs to hide in,
+        in other words the side length of the square grid.
         The function should return a list of coordinates that are the furthest
         away (by Manhattan distance) from all agents.
         :return:
@@ -499,7 +490,6 @@ class FirstAdviceTestCase(unittest.TestCase):
                 message = data[3]
                 # test log
                 print_log(agents=agents, n=n, expected=expected, message=message)
-                print_map(agents, n, expected)
                 # assertion
                 self.assertEqual(expected,
                                  sorted(advice(agents=agents, n=n)),

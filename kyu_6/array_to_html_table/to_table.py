@@ -1,5 +1,6 @@
 """
-Solution for -> Array to HTML table
+Solution for -> Array to HTML table.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -21,12 +22,13 @@ TABLE: dict = {
         'end': '</tr>'},
     'column': {
         'start': '<td>',
-        'end': '</td>'}
-}
+        'end': '</td>'}}
 
 
 def to_table(data: list, header: bool = False, index: bool = False) -> str:
     """
+    Array to table.
+
     Takes three arguments: data, headers, index, and returns
     a string containing HTML tags representing the table.
 
@@ -54,7 +56,7 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
 
             rows_and_columns += ''.join(f'{TABLE['header']['start']}'
                                         f'{col}'
-                                        f'{ TABLE['header']['end']}'
+                                        f'{TABLE['header']['end']}'
                                         for b, col in enumerate(row))
 
             rows_and_columns = (f'{rows_and_columns}'
