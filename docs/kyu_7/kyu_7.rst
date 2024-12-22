@@ -36,7 +36,7 @@ Subpackages
    kyu_7.substituting_variables_into_strings_padded_numbers.module
    kyu_7.sum_of_odd_numbers.module
    kyu_7.sum_of_powers_of_2.module
-   kyu_7.sum_of_triangular_numbers
+   kyu_7.sum_of_triangular_numbers.module
    kyu_7.sum_of_two_lowest_int
    kyu_7.the_first_non_repeated_character_in_string
    kyu_7.vaporcode

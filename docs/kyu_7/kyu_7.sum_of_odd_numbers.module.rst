@@ -1,5 +1,5 @@
-kyu\_7.sum_of_odd_numbers.module package
-========================================
+kyu\_7.sum\_of\_odd\_numbers.module package
+===========================================
 
 Subpackages
 -----------
