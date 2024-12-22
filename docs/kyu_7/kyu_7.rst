@@ -15,7 +15,7 @@ Subpackages
    kyu_7.disemvowel_trolls.module
    kyu_7.easy_line.module
    kyu_7.factorial.module
-   kyu_7.fill_the_hard_disk_drive
+   kyu_7.fill_the_hard_disk_drive.module
    kyu_7.find_the_longest_gap
    kyu_7.formatting_decimal_places_1
    kyu_7.fun_with_lists_length
