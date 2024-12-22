@@ -24,7 +24,7 @@ Subpackages
    kyu_7.isograms.module
    kyu_7.jaden_casing_strings.module
    kyu_7.make_class.module
-   kyu_7.maximum_multiple
+   kyu_7.maximum_multiple.module
    kyu_7.password_validator
    kyu_7.powers_of_3
    kyu_7.pull_your_words_together_man
