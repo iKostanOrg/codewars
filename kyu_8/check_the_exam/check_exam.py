@@ -1,5 +1,6 @@
 """
-Solution for -> Check the exam
+Solution for -> Check the exam.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def check_exam(arr1: list, arr2: list) -> int:
     """
+    Check exam.
+
     The first input array contains the correct answers
     to an exam, like ["a", "a", "b", "d"]. The second
     one is "answers" array and contains student's answers.
@@ -32,7 +35,8 @@ def check_exam(arr1: list, arr2: list) -> int:
 
 def char_processor(char: tuple, results: list) -> None:
     """
-    Processing chars based on specified rule
+    Processing chars based on specified rule.
+
     :param char: str
     :param results: list
     :return: None
