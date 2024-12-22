@@ -34,7 +34,7 @@ Subpackages
    kyu_5.the_hashtag_generator.module
    kyu_5.tic_tac_toe_checker.module
    kyu_5.valid_parentheses.module
-   kyu_5.where_my_anagrams_at
+   kyu_5.where_my_anagrams_at.module
 
 Module contents
 ---------------
