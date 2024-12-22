@@ -10,7 +10,7 @@ def to_alternating_case(string: str) -> str:
     """
     Alternating case.
 
-    each lowercase letter becomes uppercase and
+    Each lowercase letter becomes uppercase and
     each uppercase letter becomes lowercase.
     :param string: str
     :return: str
