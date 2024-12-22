@@ -31,7 +31,7 @@ Subpackages
    kyu_5.sports_league_table_ranking.module
    kyu_5.string_incrementer.module
    kyu_5.sum_of_pairs.module
-   kyu_5.the_hashtag_generator
+   kyu_5.the_hashtag_generator.module
    kyu_5.tic_tac_toe_checker
    kyu_5.valid_parentheses
    kyu_5.where_my_anagrams_at
