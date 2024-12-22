@@ -28,7 +28,7 @@ Subpackages
    kyu_7.password_validator.module
    kyu_7.powers_of_3.module
    kyu_7.pull_your_words_together_man.module
-   kyu_7.remove_the_minimum
+   kyu_7.remove_the_minimum.module
    kyu_7.share_prices
    kyu_7.significant_figures
    kyu_7.simple_fun_152
