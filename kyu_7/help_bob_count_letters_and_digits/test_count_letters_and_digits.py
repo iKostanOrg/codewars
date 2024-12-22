@@ -56,5 +56,5 @@ class CalculateTestCase(unittest.TestCase):
         with allure.step(f"Enter string ({s}) and verify the "
                          f"expected output ({expected}) vs "
                          f"actual result ({actual_result})"):
-            print_log(s=s, expected=expected,result=actual_result)
+            print_log(s=s, expected=expected, result=actual_result)
             self.assertEqual(expected, actual_result)
