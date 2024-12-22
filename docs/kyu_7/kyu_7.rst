@@ -13,7 +13,7 @@ Subpackages
    kyu_7.beginner_series_sum_of_numbers.module
    kyu_7.coloured_triangles.module
    kyu_7.disemvowel_trolls.module
-   kyu_7.easy_line
+   kyu_7.easy_line.module
    kyu_7.factorial
    kyu_7.fill_the_hard_disk_drive
    kyu_7.find_the_longest_gap
