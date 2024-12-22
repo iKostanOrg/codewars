@@ -39,8 +39,8 @@ Subpackages
    kyu_7.sum_of_triangular_numbers.module
    kyu_7.sum_of_two_lowest_int.module
    kyu_7.the_first_non_repeated_character_in_string.module
+   kyu_7.valid_parentheses.module
    kyu_7.vaporcode
-   kyu_7.valid_parentheses
    kyu_7.you_are_square
 
 Module contents
