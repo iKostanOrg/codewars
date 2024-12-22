@@ -17,7 +17,7 @@ Welcome to Python3 solutions for codewars problems documentation!
    kyu_5/kyu_5
    kyu_6/kyu_6
    kyu_7/kyu_7
-   kyu_8
+   kyu_8/kyu_8
    utils
 
 Indices and tables
