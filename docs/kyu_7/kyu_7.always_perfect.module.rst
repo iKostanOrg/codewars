@@ -8,4 +8,4 @@ Subpackages
    :maxdepth: 4
 
    kyu_7.always_perfect.readme
-   kyu_7.
+   kyu_7.always_perfect
