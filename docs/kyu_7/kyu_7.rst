@@ -30,7 +30,7 @@ Subpackages
    kyu_7.pull_your_words_together_man.module
    kyu_7.remove_the_minimum.module
    kyu_7.share_prices.module
-   kyu_7.significant_figures
+   kyu_7.significant_figures.module
    kyu_7.simple_fun_152
    kyu_7.sort_out_the_men_from_boys
    kyu_7.substituting_variables_into_strings_padded_numbers
