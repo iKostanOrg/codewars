@@ -34,7 +34,7 @@ Subpackages
    kyu_7.simple_fun_152.module
    kyu_7.sort_out_the_men_from_boys.module
    kyu_7.substituting_variables_into_strings_padded_numbers.module
-   kyu_7.sum_of_odd_numbers
+   kyu_7.sum_of_odd_numbers.module
    kyu_7.sum_of_powers_of_2
    kyu_7.sum_of_triangular_numbers
    kyu_7.sum_of_two_lowest_int
