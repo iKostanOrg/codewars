@@ -29,7 +29,7 @@ Subpackages
    kyu_5.number_of_trailing_zeros_of_n.module
    kyu_5.simple_pig_latin.module
    kyu_5.sports_league_table_ranking.module
-   kyu_5.string_incrementer
+   kyu_5.string_incrementer.module
    kyu_5.sum_of_pairs
    kyu_5.the_hashtag_generator
    kyu_5.tic_tac_toe_checker
