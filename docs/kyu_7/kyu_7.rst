@@ -41,7 +41,7 @@ Subpackages
    kyu_7.the_first_non_repeated_character_in_string.module
    kyu_7.valid_parentheses.module
    kyu_7.vaporcode.module
-   kyu_7.you_are_square
+   kyu_7.you_are_square.module
 
 Module contents
 ---------------
