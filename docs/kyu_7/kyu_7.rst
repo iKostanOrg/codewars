@@ -21,7 +21,7 @@ Subpackages
    kyu_7.fun_with_lists_length.module
    kyu_7.growing_plant.module
    kyu_7.help_bob_count_letters_and_digits.module
-   kyu_7.isograms
+   kyu_7.isograms.module
    kyu_7.jaden_casing_strings
    kyu_7.make_class
    kyu_7.maximum_multiple
