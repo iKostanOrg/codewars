@@ -33,6 +33,7 @@ jobs:
       - markdown
       - mypy
       - yamllint
+      - pydocstyle
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action
