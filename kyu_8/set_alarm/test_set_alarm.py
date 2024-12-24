@@ -52,8 +52,7 @@ class SetAlarmTestCase(unittest.TestCase):
         under which you need to set an alarm). It should return
         false otherwise.
 
-        Examples
-
+        Examples:
         setAlarm(true, true) -> false
         setAlarm(false, true) -> false
         setAlarm(false, false) -> false
