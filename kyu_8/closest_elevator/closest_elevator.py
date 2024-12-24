@@ -21,4 +21,3 @@ def elevator(left: int, right: int, call: int) -> str:
         return 'left'
 
     return 'right'
-
