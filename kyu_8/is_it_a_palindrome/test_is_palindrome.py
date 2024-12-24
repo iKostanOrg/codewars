@@ -1,5 +1,6 @@
 """
-Test for -> Is it a palindrome?
+Test for -> Is it a palindrome?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.is_it_a_palindrome.is_palindrome import is_palindrome
 
@@ -25,18 +27,28 @@ from kyu_8.is_it_a_palindrome.is_palindrome import is_palindrome
     name='Source/Kata')
 # pylint: enable=R0801
 class IsPalindromeTestCase(unittest.TestCase):
-    """
-    Testing is_palindrome function
-    """
+    """Testing is_palindrome function."""
 
-    def test_is_palindrome(self):
+    @parameterized.expand([
+        ('a', True),
+        ('aba', True),
+        ('Abba', True),
+        ('malam', True),
+        ('walter', False),
+        ('kodok', True),
+        ('Kasue', False),
+        ('NdjXglGnYGKhQtuAcxNWFwVRZZDMrFmiOPMZsvr', False),
+        ('XqmUTaAmrrYitgNwkCwaWdFYsEhfIeOohViba', False),
+        ('ZtItThFBUPCSCbtcUfDwXzyajhRIWioUHpVzN', False),
+        ('XqNeuBjbshHwqjoUNGHhVRolqxWRRWYYbN', False)])
+    def test_is_palindrome(self, string, expected):
         """
-        Testing is_palindrome function
-        with various test inputs
+        Testing is_palindrome function with various test inputs.
 
         The function should check if a
-        given string (case insensitive)
+        given string (case-insensitive)
         is a palindrome.
+        :return:
         """
         # pylint: disable=R0801
         allure.dynamic.title("Testing is_palindrome function")
@@ -46,22 +58,10 @@ class IsPalindromeTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>isPalindrome that checks if a given string "
+            "(case insensitive) is a palindrome.</p>")
 
-        with allure.step("Enter test string and verify the output"):
-            test_data: tuple = (
-                ('a', True),
-                ('aba', True),
-                ('Abba', True),
-                ('malam', True),
-                ('walter', False),
-                ('kodok', True),
-                ('Kasue', False),
-                ('NdjXglGnYGKhQtuAcxNWFwVRZZDMrFmiOPMZsvr', False),
-                ('XqmUTaAmrrYitgNwkCwaWdFYsEhfIeOohViba', False),
-                ('ZtItThFBUPCSCbtcUfDwXzyajhRIWioUHpVzN', False),
-                ('XqNeuBjbshHwqjoUNGHhVRolqxWRRWYYbN', False))
-
-            for string, expected in test_data:
-                print_log(string=string, expected=expected)
-                self.assertEqual(expected, is_palindrome(string))
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify expected output: {expected}."):
+            print_log(string=string, expected=expected)
+            self.assertEqual(expected, is_palindrome(string))
