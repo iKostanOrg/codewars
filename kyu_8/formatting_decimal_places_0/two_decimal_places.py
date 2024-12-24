@@ -1,5 +1,6 @@
 """
-Solution for -> Formatting decimal places #0
+Solution for -> Formatting decimal places #0.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def two_decimal_places(n: float) -> float:
     """
+    Convert a number into decimal.
+
     Each number should be formatted that it is
     rounded to two decimal places. You don't
     need to check whether the input is a valid
