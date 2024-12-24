@@ -1,5 +1,6 @@
 """
-Solution for -> Century From Year
+Solution for -> Century From Year.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,8 @@ GitHub: https://github.com/ikostan
 
 def century(year: int) -> int:
     """
-    Given a year, return the century it is in
+    Given a year, return the century it is in.
+
     :param year: int
     :return: int
     """

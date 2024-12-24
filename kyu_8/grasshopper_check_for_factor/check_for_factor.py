@@ -1,5 +1,6 @@
 """
-Solution for -> Grasshopper - Check for factor
+Solution for -> Grasshopper - Check for factor.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,7 @@ GitHub: https://github.com/ikostan
 
 def check_for_factor(base: int, factor: int) -> bool:
     """
-    This function should test if the
-    factor is a factor of base.
+    Check if the factor is a factor of base.
 
     Factors are numbers you can multiply
     together to get another number.

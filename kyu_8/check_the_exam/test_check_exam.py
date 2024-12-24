@@ -1,5 +1,6 @@
 """
-Test for -> Check the exam
+Test for -> Check the exam.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.check_the_exam.check_exam import check_exam
 
@@ -28,20 +30,21 @@ from kyu_8.check_the_exam.check_exam import check_exam
     name='Source/Kata')
 # pylint: enable=R0801
 class CheckExamTestCase(unittest.TestCase):
-    """
-    Testing check_exam function
-    """
+    """Testing check_exam function."""
 
-    def test_check_exam(self):
+    @parameterized.expand([
+        (["a", "a", "b", "b"], ["a", "c", "b", "d"], 6),
+        (["a", "a", "c", "b"], ["a", "a", "b", ""], 7),
+        (["a", "a", "b", "c"], ["a", "a", "b", "c"], 16),
+        (["b", "c", "b", "a"], ["", "a", "a", "c"], 0)])
+    def test_check_exam(self, arr1, arr2, expected):
         """
-        Testing check_exam function
+        Testing check_exam function with various test data.
 
-        The function should return the score
-        for this array of answers, giving +4
-        for each correct answer, -1 for each
-        incorrect answer, and +0 for each blank
+        The function should return the score for this
+        array of answers, giving +4 for each correct answer,
+        -1 for each incorrect answer, and +0 for each blank
         answer(empty string).
-
         :return:
         """
         # pylint: disable=R0801
@@ -49,22 +52,12 @@ class CheckExamTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
         with allure.step("Enter arr1 and arr2 and verify the output"):
-            data: tuple = (
-                (["a", "a", "b", "b"], ["a", "c", "b", "d"], 6),
-                (["a", "a", "c", "b"], ["a", "a", "b", ""], 7),
-                (["a", "a", "b", "c"], ["a", "a", "b", "c"], 16),
-                (["b", "c", "b", "a"], ["", "a", "a", "c"], 0))
-
-            for arr1, arr2, expected in data:
-                print_log(arr1=arr1,
-                          arr2=arr2,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 check_exam(arr1, arr2))
+            print_log(arr1=arr1, arr2=arr2, expected=expected)
+            self.assertEqual(expected, check_exam(arr1, arr2))
