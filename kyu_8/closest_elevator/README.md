@@ -18,7 +18,7 @@ You can assume that the inputs will always be valid integers between 0-2.
 
 ## Examples
 
-```
+```bash
 left right call   result
   0    1     0    "left"
   0    1     1    "right"
