@@ -1,5 +1,6 @@
 """
-Solution for -> Messi goals function
+Solution for -> Messi goals function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def goals(la_liga: int, copa_delrey: int, champions_league: int) -> int:
     """
+    Goals function.
+
     The function returns Messi's total number
     of goals in all three leagues:
     - LaLiga
