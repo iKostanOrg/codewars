@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def logical_calc(array: list, op: str) -> bool:
     """
-    Calculates logical value of boolean array.
+    Calculate logical value of boolean array.
 
     Logical operations: AND, OR and XOR.
 
