@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def evaluator(result: int, expected: str) -> bool:
     """
-    Evaluator function.
+    'evaluator' function.
 
     :param result: int
     :param expected: str
