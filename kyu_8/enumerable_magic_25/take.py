@@ -1,5 +1,6 @@
 """
-Solution for -> Enumerable Magic #25 - Take the First N Elements
+Solution for -> Enumerable Magic #25 - Take the First N Elements.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,10 @@ GitHub: https://github.com/ikostan
 
 def take(arr: list, n: int) -> list:
     """
+    'take' function.
+
     Accepts a list/array and a number n,
-    and returns a list/array array of the
+    and returns a list/array of the
     first n elements from the list/array.
 
     :param arr: list
