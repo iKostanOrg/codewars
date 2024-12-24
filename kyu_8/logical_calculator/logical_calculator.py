@@ -1,5 +1,6 @@
 """
-Solution for -> Logical Calculator
+Solution for -> Logical Calculator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
