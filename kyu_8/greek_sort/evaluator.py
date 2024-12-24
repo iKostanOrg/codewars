@@ -1,11 +1,15 @@
 """
-Evaluates the expression
+Evaluator function for -> Greek Sort.
+
+Created by Egor Kostan.
+GitHub: https://github.com/ikostan
 """
 
 
 def evaluator(result: int, expected: str) -> bool:
     """
-    Evaluator
+    Evaluator function.
+
     :param result: int
     :param expected: str
     :return: bool
