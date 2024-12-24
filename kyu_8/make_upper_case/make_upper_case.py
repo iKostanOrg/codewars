@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def make_upper_case(s: str) -> str:
     """
-    Function that convert to UpperCase.
+    Convert to UpperCase.
 
     :param s: str
     :return: str
