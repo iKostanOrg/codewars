@@ -28,9 +28,7 @@ from kyu_8.set_alarm.set_alarm import set_alarm
     name='Source/Kata')
 # pylint: enable=R0801
 class SetAlarmTestCase(unittest.TestCase):
-    """
-    Testing set_alarm function
-    """
+    """Testing set_alarm function."""
 
     @parameterized.expand([
         ((True, True),
@@ -54,7 +52,7 @@ class SetAlarmTestCase(unittest.TestCase):
         under which you need to set an alarm). It should return
         false otherwise.
 
-        Examples:
+        Examples
 
         setAlarm(true, true) -> false
         setAlarm(false, true) -> false
