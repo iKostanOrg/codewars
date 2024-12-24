@@ -8,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def enough(cap: int, on: int, wait: int) -> int:
     """
+    'enough' function.
+
     The driver wants you to write a simple program telling him if
     he will be able to fit all the passengers.
 
@@ -19,7 +21,6 @@ def enough(cap: int, on: int, wait: int) -> int:
     cap is the amount of people the bus can hold excluding the driver.
     on is the number of people on the bus.
     wait is the number of people waiting to get on to the bus.
-
     :param cap: int
     :param on: int
     :param wait: int
