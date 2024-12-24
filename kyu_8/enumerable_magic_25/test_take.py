@@ -61,9 +61,9 @@ class TakeTestCase(unittest.TestCase):
                          f"expected output ({expected}) "
                          f"vs actual result ({actual_result})"):
 
-            print_log(rr=arr,
-                          n=n,
-                          expected=expected,
-                          result=actual_result)
+            print_log(arr=arr,
+                      n=n,
+                      expected=expected,
+                      result=actual_result)
 
             self.assertEqual(expected, actual_result)
