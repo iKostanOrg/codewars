@@ -1,5 +1,6 @@
 """
-Solution for -> Will there be enough space?
+Solution for -> Will there be enough space?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
