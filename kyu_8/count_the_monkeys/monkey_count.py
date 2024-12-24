@@ -1,5 +1,6 @@
 """
-Solution for -> Count the Monkeys!
+Solution for -> Count the Monkeys!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def monkey_count(n: int) -> list:
     """
+    Count monkeys.
+
     You take your son to the forest to see the monkeys.
     You know that there are a certain number there (n),
     but your son is too young to just appreciate the full
