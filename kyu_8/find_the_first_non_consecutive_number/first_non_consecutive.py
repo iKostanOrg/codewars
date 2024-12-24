@@ -1,5 +1,6 @@
 """
-Solution for -> Find the first non-consecutive number
+Solution for -> Find the first non-consecutive number.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
