@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def evaluator(result: int, expected: str) -> bool:
     """
-    Comparator for a list of phonetic words.
+    Compare two arguments.
 
     :param result: int
     :param expected: str
