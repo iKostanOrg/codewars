@@ -10,7 +10,7 @@ from typing import List
 
 def well(x: List[str]) -> str:
     """
-    'well' function
+    'well' function.
 
     :param x: List[str]
     :return: str
