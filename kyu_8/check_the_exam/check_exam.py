@@ -35,7 +35,7 @@ def check_exam(arr1: list, arr2: list) -> int:
 
 def char_processor(char: tuple, results: list) -> None:
     """
-    Processing chars based on specified rule.
+    Process chars based on specified rule.
 
     :param char: str
     :param results: list
