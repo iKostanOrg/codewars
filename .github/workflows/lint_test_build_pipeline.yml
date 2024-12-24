@@ -23,7 +23,7 @@ jobs:
     name: YAML Lint
     uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
   pydocstyle:
-    name: PYDOCSTYLE Lint
+    name: PyDocStyle Lint
     uses: iKostanOrg/codewars/.github/workflows/pydocstyle.yml@master
   pytest:
     name: Unitest with pytest
