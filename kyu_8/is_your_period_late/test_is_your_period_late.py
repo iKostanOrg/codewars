@@ -1,5 +1,6 @@
 """
-Test for -> Is your period late
+Test for -> Is your period late.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,12 @@ from kyu_8.is_your_period_late.is_your_period_late \
     name='Source/Kata')
 # pylint: enable=R0801
 class PeriodIsLateTestCase(unittest.TestCase):
-    """
-    Testing period_is_late function
-    """
+    """Testing period_is_late function."""
 
     def test_period_is_late_positive(self):
         """
-        Positive tests
+        Positive tests.
+
         :return:
         """
         # pylint: disable=R0801
@@ -44,7 +44,7 @@ class PeriodIsLateTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Positive tests.</p>")
         # pylint: enable=R0801
         with allure.step("Pass last, today and period length"):
             last: date = date(2016, 6, 13)
@@ -96,7 +96,8 @@ class PeriodIsLateTestCase(unittest.TestCase):
 
     def test_period_is_late_negative(self):
         """
-        Negative tests
+        Negative tests.
+
         :return:
         """
         # pylint: disable=R0801
@@ -107,7 +108,7 @@ class PeriodIsLateTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Negative tests.</p>")
         # pylint: enable=R0801
         with allure.step("Pass last, today and period length"):
             last: date = date(2016, 6, 13)

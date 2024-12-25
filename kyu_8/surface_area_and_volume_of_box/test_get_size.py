@@ -1,5 +1,6 @@
 """
-Test for -> Surface Area and Volume of a Box
+Test for -> Surface Area and Volume of a Box.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,12 @@ from kyu_8.surface_area_and_volume_of_box.get_size \
              name='Source/Kata')
 # pylint: enable=R0801
 class GetSizeTestCase(unittest.TestCase):
-    """
-    Testing get_size function
-    """
+    """Testing get_size function."""
 
     def test_get_size(self):
         """
-        Testing get_size function with various inputs
+        Testing get_size function with various inputs.
+
         :return:
         """
         # pylint: disable=R0801

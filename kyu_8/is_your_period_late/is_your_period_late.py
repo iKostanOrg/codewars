@@ -1,5 +1,6 @@
 """
-Solution for -> Is your period late
+Solution for -> Is your period late.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

@@ -1,5 +1,5 @@
 README
 ======
 
-.. include:: ../kyu_8/README.md
+.. include:: ../../kyu_7/make_class/README.md
    :parser: myst_parser.sphinx_

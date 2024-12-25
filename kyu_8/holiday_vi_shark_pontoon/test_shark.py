@@ -1,5 +1,6 @@
 """
-Test for -> Holiday VI - Shark Pontoon
+Test for -> Holiday VI - Shark Pontoon.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,13 +27,12 @@ from kyu_8.holiday_vi_shark_pontoon.shark import shark
     url='https://www.codewars.com/kata/57e921d8b36340f1fd000059',
     name='Source/Kata')
 class SharkTestCase(unittest.TestCase):
-    """
-    Testing shark function
-    """
+    """Testing shark function."""
 
     def test_shark_alive_1(self):
         """
-        Testing shark function -> positive
+        Testing shark function -> positive #1.
+
         :return:
         """
         # pylint: disable=R0801
@@ -66,7 +66,8 @@ class SharkTestCase(unittest.TestCase):
 
     def test_shark_alive_2(self):
         """
-        Testing shark function -> positive
+        Testing shark function -> positive #2.
+
         :return:
         """
         # pylint: disable=R0801
@@ -100,7 +101,8 @@ class SharkTestCase(unittest.TestCase):
 
     def test_shark_bait(self):
         """
-        Testing shark function -> negative
+        Testing shark function -> negative.
+
         :return:
         """
         # pylint: disable=R0801

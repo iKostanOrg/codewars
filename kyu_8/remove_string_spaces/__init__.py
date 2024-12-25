@@ -1,0 +1,1 @@
+"""Remove String Spaces."""
