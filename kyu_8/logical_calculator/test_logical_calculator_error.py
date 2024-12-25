@@ -10,7 +10,6 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 import pytest
-from utils.log_func import print_log
 from kyu_8.logical_calculator.logical_calculator \
     import logical_calc
 
