@@ -5,6 +5,7 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+
 def pattern(n: int) -> str:
     """
     'pattern' function.

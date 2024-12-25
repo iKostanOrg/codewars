@@ -34,6 +34,7 @@ class LogicalCalculatorValueErrorTestCase(unittest.TestCase):
     def test_logical_calc_value_error(self):
         """
         Testing ValueError for logical_calc function.
+
         :return:
         """
         # pylint: disable=R0801
