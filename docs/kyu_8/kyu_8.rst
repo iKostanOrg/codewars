@@ -7,7 +7,6 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   kyu_8.readme
    kyu_8.alternating_case
    kyu_8.century_from_year
    kyu_8.check_the_exam

@@ -7,13 +7,13 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   kyu_5.readme
    kyu_5.alphabet_wars_nuclear_strike.module
    kyu_5.count_ip_addresses.module
    kyu_5.did_i_finish_my_sudoku.module
    kyu_5.diophantine_equation.module
    kyu_5.directions_reduction.module
    kyu_5.extract_the_domain_name_from_url.module
+   kyu_5.factorial_decomposition.module
    kyu_5.fibonacci_streaming.module
    kyu_5.find_the_safest_places_in_town.module
    kyu_5.find_the_smallest.module
