@@ -59,4 +59,3 @@ class LogicalCalculatorValueErrorTestCase(unittest.TestCase):
             with pytest.raises(ValueError) as calc_err:
                 logical_calc(arr, op)
             self.assertEqual(str(calc_err.value), err)
-
