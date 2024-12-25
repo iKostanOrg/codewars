@@ -5,6 +5,7 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+
 def elevator(left: int, right: int, call: int) -> str:
     """
     Return closest elevator number.
