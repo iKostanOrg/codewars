@@ -16,13 +16,12 @@ def pattern(n: int) -> str:
     # If n <= 1 then it should return "" (i.e. empty string).
     if n < 2:
         return ''
-    #If any odd number is passed as argument then the pattern
+    # If any odd number is passed as argument then the pattern
     # should last up to the largest even number which is smaller
     # than the passed odd number.
     lines: list = []
     for i in range(2, n + 1, 2):
         # Note: There are no spaces in the pattern.
-        line = (f'{i}' * i)
-        lines.append(line)
+        lines.append(f'{i}' * i)
     # Use \n in string to jump to next line.
     return '\n'.join(lines)
