@@ -50,7 +50,7 @@ class LogicalCalculatorValueErrorTestCase(unittest.TestCase):
             "Test Python Exception Handling Using 'pytest.raises'."
             "</p>")
         # pylint: enable=R0801
-        with (allure.step("Pass an array with invalid operator.")):
+        with allure.step("Pass an array with invalid operator."):
             arr: list = []
             op: str = 'RO'  # invalid operator
             operators: list = ['AND', 'OR', 'XOR']
