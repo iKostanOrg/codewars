@@ -17,3 +17,19 @@ checks:
 plugins:
   duplication:
     enabled: false
+exclude_patterns:
+- ".circleci/"
+- ".github/"
+- ".venv/"
+- "docs/"
+- "deprecated/"
+- "img/"
+- "**/node_modules/"
+- "script/"
+- "**/spec/"
+- "**/vendor/"
+- "**/*_test.go"
+- "**/*.d.ts"
+- "allure-report/"
+- "allure-results/"
+- "*.txt"
