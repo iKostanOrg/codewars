@@ -1,5 +1,6 @@
 """
-Solution for -> Surface Area and Volume of a Box
+Solution for -> Surface Area and Volume of a Box.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,8 @@ GitHub: https://github.com/ikostan
 
 def get_size(w: int, h: int, d: int) -> list:
     """
-    Write a function that returns the total surface
-    area and volume of a box as an array: [area, volume]
+    Return the total surface area and volume of a box as an array.
+
     :param w:
     :param h:
     :param d:

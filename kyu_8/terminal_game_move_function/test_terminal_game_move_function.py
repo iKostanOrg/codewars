@@ -1,5 +1,6 @@
 """
-Test for -> Grasshopper - Terminal game move function
+Test for -> Grasshopper - Terminal game move function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,17 +27,12 @@ from kyu_8.terminal_game_move_function.terminal_game_move_function \
     name='Source/Kata')
 # pylint: enable=R0801
 class MoveTestCase(unittest.TestCase):
-    """
-    Testing move function
-    """
+    """Testing move function."""
 
     def test_move(self):
         """
-        The player rolls the dice and moves the number
-        of spaces indicated by the dice two times.
+        Testing 'move' function with various test data.
 
-        Pass position and roll and compare the output
-        to the expected result
         :return:
         """
         # pylint: disable=R0801
@@ -47,7 +43,10 @@ class MoveTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>The player rolls the dice and moves the number"
+            "of spaces indicated by the dice two times.</p>"
+            "<p>Pass position and roll and compare the output"
+            "to the expected result.</p>")
         # pylint: enable=R0801
         with allure.step("Test start position zero"):
             position: int = 0

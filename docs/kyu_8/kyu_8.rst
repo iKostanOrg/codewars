@@ -10,6 +10,7 @@ Subpackages
    kyu_8.alternating_case
    kyu_8.century_from_year
    kyu_8.check_the_exam
+   kyu_8.closest_elevator
    kyu_8.convert_string_to_an_array
    kyu_8.count_the_monkeys
    kyu_8.counting_sheep

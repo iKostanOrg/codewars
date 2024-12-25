@@ -1,5 +1,6 @@
 """
-Solution for -> Swap Values
+Solution for -> Swap Values.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,8 @@ GitHub: https://github.com/ikostan
 
 def swap_values(args: list) -> None:
     """
-    Swap values
+    Swap values.
+
     :param args:
     :return:
     """
