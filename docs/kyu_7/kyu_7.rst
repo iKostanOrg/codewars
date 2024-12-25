@@ -7,6 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
+   kyu_7.readme
    kyu_7.always_perfect.module
    kyu_7.basic_math_add_or_subtract.module
    kyu_7.beginner_series_sum_of_numbers.module
