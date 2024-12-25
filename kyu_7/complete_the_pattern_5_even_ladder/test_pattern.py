@@ -37,7 +37,7 @@ class PatternTestCase(unittest.TestCase):
         (6, "22\n4444\n666666"),
         (0, ""),
         (-25, "")])
-    def test_triangle(self, n, expected):
+    def test_pattern(self, n, expected):
         """
         Basic test case for pattern func.
 
@@ -65,3 +65,30 @@ class PatternTestCase(unittest.TestCase):
             result = pattern(n)
             print_log(n=n, expected=expected, result=result)
             self.assertEqual(expected, result, msg=expected)
+
+    @parameterized.expand([
+        (8, "22\n4444\n666666\n88888888")])
+    def test_pattern_has_no_spaces(self, n, expected):
+        """
+        Output should not have any spaces..
+
+        :return:
+        """
+        # pylint: disable-msg=R0801
+        allure.dynamic.title("Test no spaces in output.")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>"
+            "There are no spaces in the pattern."
+            "</p>")
+        # pylint: enable-msg=R0801
+        with allure.step(f"Enter test number (n): {n} "
+                         "and verify the output has no spaces."):
+            result = pattern(n)
+            print_log(n=n, expected=expected, result=result)
+            self.assertEqual(result, expected)
+            self.assertEqual(result.count(' '), 0)
