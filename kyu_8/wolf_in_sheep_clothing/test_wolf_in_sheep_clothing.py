@@ -1,5 +1,6 @@
 """
-Tests for -> A wolf in sheep's clothing
+Tests for -> A wolf in sheep's clothing.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,16 +25,17 @@ from kyu_8.wolf_in_sheep_clothing.wolf_in_sheep_clothing \
             'ARRAYS',
             'LOOPS',
             'CONTROL FLOW')
-@allure.link(url='https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15',
+    name='Source/Kata')
 # pylint: enable=R0801
 class WarnTheSheepTestCase(unittest.TestCase):
-    """
-    Testing warn_the_sheep function
-    """
+    """Testing warn_the_sheep function."""
 
     def test_warn_the_sheep_wolf_at_start(self):
         """
+        Test the 'warn' func when the wolf in the beginning.
+
         If the wolf is the closest animal to you,
         return "Pls go away and stop eating my sheep".
         :return:
@@ -46,7 +48,8 @@ class WarnTheSheepTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>If the wolf is the closest animal to you, "
+            "return \"Pls go away and stop eating my sheep\".</p>")
         # pylint: enable=R0801
         lst: list = ['wolf', 'sheep', 'sheep',
                      'sheep', 'sheep', 'sheep',
@@ -60,6 +63,8 @@ class WarnTheSheepTestCase(unittest.TestCase):
 
     def test_warn_the_sheep_wolf_in_middle(self):
         """
+        Test the 'warn' func when the wolf in the middle.
+
         If the wolf is the closest animal to you,
         return "Pls go away and stop eating my sheep".
         :return:
@@ -72,7 +77,8 @@ class WarnTheSheepTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>If the wolf is the closest animal to you, "
+            "return \"Pls go away and stop eating my sheep\".</p>")
         # pylint: enable=R0801
         # 1
         lst: list = ['sheep', 'sheep', 'sheep',
@@ -107,6 +113,8 @@ class WarnTheSheepTestCase(unittest.TestCase):
 
     def test_warn_the_sheep_wolf_at_end(self):
         """
+        Test the 'warn' func when the wolf in the end.
+
         If the wolf is not the closest animal to you,
         return "Oi! Sheep number N! You are about to be eaten by a wolf!"
         where N is the sheep's position in the queue.
@@ -120,7 +128,9 @@ class WarnTheSheepTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>If the wolf is not the closest animal to you, "
+            "return \"Oi! Sheep number N! You are about to be eaten by a wolf!\" "
+            "where N is the sheep's position in the queue.</p>")
         # pylint: enable=R0801
         lst: list = ['sheep', 'sheep', 'wolf']
         expected: str = 'Pls go away and stop eating my sheep'

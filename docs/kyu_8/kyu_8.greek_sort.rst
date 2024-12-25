@@ -4,19 +4,19 @@ kyu\_8.greek\_sort package
 Submodules
 ----------
 
-kyu\_8.greek\_sort.greek\_comparator module
--------------------------------------------
+kyu\_8.greek\_sort.evaluator module
+-----------------------------------
 
-.. automodule:: kyu_8.greek_sort.greek_comparator
+.. automodule:: kyu_8.greek_sort.evaluator
    :members:
    :undoc-members:
    :show-inheritance:
    :private-members:
 
-kyu\_8.greek\_sort.evaluator module
+kyu\_8.greek\_sort.greek\_comparator module
 -------------------------------------------
 
-.. automodule:: kyu_8.greek_sort.evaluator
+.. automodule:: kyu_8.greek_sort.greek_comparator
    :members:
    :undoc-members:
    :show-inheritance:
