@@ -13,10 +13,8 @@ def print_log(**kwargs) -> None:
     :param kwargs:
     :return:
     """
-    print_output = kwargs.get('print_output', False)
     log: str = ''
     for key, item in kwargs.items():
         log += f'{key}: {item},\n'
 
-    if print_output:
-        print(f'\nLOG =>\n{log[:-2]}\n')
+    print(f'\nLOG =>\n{log[:-2]}\n')
