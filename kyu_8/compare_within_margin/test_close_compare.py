@@ -99,7 +99,7 @@ class CloseCompareTestCase(unittest.TestCase):
         # pylint: enable=R0801
         with allure.step(f"Enter test data: {test_data} "
                          f"and verify the expected output: {expected}."):
-            a, b, margin= test_data
+            a, b, margin = test_data
             result: int = close_compare(a, b, margin)
             print_log(a=a, b=b, result=result, expected=expected, msg=msg)
             self.assertEqual(result, expected, msg=msg)

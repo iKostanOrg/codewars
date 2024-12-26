@@ -24,4 +24,4 @@ def close_compare(a: float, b: float, margin: int = 0) -> int:
     if a < b:
         return -1
     # When a is greater than b, return 1.
-    return  1
+    return 1
