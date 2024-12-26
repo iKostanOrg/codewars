@@ -250,7 +250,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Install from [Scoop](https://scoop.sh/#/):
 
 1. Make sure Scoop is installed. See [the installation instructions on GitHub](https://github.com/ScoopInstaller/Install#readme).
-2. Make sure `Java version 8 or above` installed, and its directory is specified
+2. Make sure `Java version 8 or higher` installed, and its directory is specified
    in the `JAVA_HOME` environment variable.
 3. In a terminal, run this command: `scoop install allure`
 4. Run this command to see if it reports the latest version: `allure --version`
