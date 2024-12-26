@@ -60,10 +60,11 @@ class CountingSheepTestCase(unittest.TestCase):
                      False, False, True, True]
         expected: int = 17
         print_log(list=lst, expected=expected)
-        self.assertEqual(expected,
-                         count_sheep(lst),
-                         f"There are 17 sheep in total, "
-                         f"not {count_sheep(lst)}")
+        with allure.step(f"Enter a test list: {lst} "
+                         f"and verify the expected output: {expected}."):
+            self.assertEqual(expected,
+                             count_sheep(lst),
+                        f"There are 17 sheep in total, not {count_sheep(lst)}")
 
     def test_counting_sheep_bad_input(self):
         """
@@ -86,11 +87,12 @@ class CountingSheepTestCase(unittest.TestCase):
         # pylint: enable=R0801
         lst: list = []
         expected: int = 0
-        print_log(list=lst, expected=expected)
-        self.assertEqual(expected,
-                         count_sheep(lst),
-                         f"There are 0 sheep in total, "
-                         f"not {count_sheep(lst)}")
+        with allure.step(f"Enter a test list: {lst} "
+                         f"and verify the expected output: {expected}."):
+            print_log(list=lst, expected=expected)
+            self.assertEqual(expected,
+                             count_sheep(lst),
+                        f"There are 0 sheep in total, not {count_sheep(lst)}")
 
     def test_counting_sheep_empty_list(self):
         """
@@ -114,11 +116,12 @@ class CountingSheepTestCase(unittest.TestCase):
         # pylint: enable=R0801
         lst: list = []
         expected: int = 0
-        print_log(list=lst, expected=expected)
-        self.assertEqual(expected,
-                         count_sheep(lst),
-                         f"There are 0 sheep in total, "
-                         f"not {count_sheep(lst)}")
+        with allure.step(f"Enter a test list: {lst} "
+                         f"and verify the expected output: {expected}."):
+            print_log(list=lst, expected=expected)
+            self.assertEqual(expected,
+                             count_sheep(lst),
+                        f"There are 0 sheep in total, not {count_sheep(lst)}")
 
     def test_counting_sheep_mixed_list(self):
         """
@@ -142,8 +145,9 @@ class CountingSheepTestCase(unittest.TestCase):
         # pylint: enable=R0801
         lst: list = [True, False, None]
         expected: int = 1
-        print_log(list=lst, expected=expected)
-        self.assertEqual(expected,
-                         count_sheep(lst),
-                         f"There are 0 sheep in total, "
-                         f"not {count_sheep(lst)}")
+        with allure.step(f"Enter a test list: {lst} "
+                         f"and verify the expected output: {expected}."):
+            print_log(list=lst, expected=expected)
+            self.assertEqual(expected,
+                             count_sheep(lst),
+                        f"There are 0 sheep in total, not {count_sheep(lst)}")
