@@ -64,7 +64,7 @@ class CountingSheepTestCase(unittest.TestCase):
                          f"and verify the expected output: {expected}."):
             self.assertEqual(expected,
                              count_sheep(lst),
-                        f"There are 17 sheep in total, not {count_sheep(lst)}")
+                             f"There are 17 sheep in total, not {count_sheep(lst)}")
 
     def test_counting_sheep_bad_input(self):
         """
@@ -92,7 +92,7 @@ class CountingSheepTestCase(unittest.TestCase):
             print_log(list=lst, expected=expected)
             self.assertEqual(expected,
                              count_sheep(lst),
-                        f"There are 0 sheep in total, not {count_sheep(lst)}")
+                             f"There are 0 sheep in total, not {count_sheep(lst)}")
 
     def test_counting_sheep_empty_list(self):
         """
@@ -121,7 +121,7 @@ class CountingSheepTestCase(unittest.TestCase):
             print_log(list=lst, expected=expected)
             self.assertEqual(expected,
                              count_sheep(lst),
-                        f"There are 0 sheep in total, not {count_sheep(lst)}")
+                             f"There are 0 sheep in total, not {count_sheep(lst)}")
 
     def test_counting_sheep_mixed_list(self):
         """
@@ -150,4 +150,4 @@ class CountingSheepTestCase(unittest.TestCase):
             print_log(list=lst, expected=expected)
             self.assertEqual(expected,
                              count_sheep(lst),
-                        f"There are 0 sheep in total, not {count_sheep(lst)}")
+                             f"There are 0 sheep in total, not {count_sheep(lst)}")
