@@ -235,12 +235,11 @@ git commit -m "fixed untracked files"
 
 Installation instructions:
 
-Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt, run:
+Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt:
 
+1. Set the execution policy:
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-```
 
 [Source](https://scoop.sh/#/)
 </details>
