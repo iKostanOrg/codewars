@@ -2,6 +2,7 @@
 # include = */src/*
 # omit anything in a virtualenv directory anywhere
 omit =
+    /deprecated/*
     /home/travis/virtualenv/*
     *.yml
     /home/travis/img/*
