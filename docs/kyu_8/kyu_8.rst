@@ -12,6 +12,7 @@ Subpackages
    kyu_8.century_from_year.module
    kyu_8.check_the_exam.module
    kyu_8.closest_elevator.module
+   kyu_8.compare_within_margin.module
    kyu_8.convert_string_to_an_array.module
    kyu_8.count_the_monkeys.module
    kyu_8.counting_sheep.module
