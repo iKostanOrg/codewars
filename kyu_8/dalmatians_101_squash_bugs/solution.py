@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def how_many_dalmatians(number: int) -> str:
     """
-    Squash the bugs, not the dogs!
+    Squash the bugs, not the dogs!.
 
     :param number: int
     :return: str
