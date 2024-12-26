@@ -20,9 +20,11 @@ def how_many_dalmatians(number: int) -> str:
 
     if number <= 10:
         return dogs[0]
-    elif number <= 50:
+
+    if number <= 50:
         return dogs[1]
-    elif number == 101:
+
+    if number == 101:
         return dogs[3]
 
     return dogs[2]
