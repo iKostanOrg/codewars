@@ -36,11 +36,13 @@ jobs:
           pip install pytest
           pip install pytest-cov
       - name: Generate coverage report
-      # You must now upload using a token.
-      # https://app.codecov.io/gh/iKostanOrg/codewars/tests/new
+        # You must now upload using a token.
+        # https://app.codecov.io/gh/iKostanOrg/codewars/tests/new
+        # yamllint disable rule:line-length
         run: |
           python -c "import os; print(os.getcwd())"
           python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./ --junitxml=junit.xml -o junit_family=legacy
+        # yamllint enable rule:line-length
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1

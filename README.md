@@ -235,12 +235,11 @@ git commit -m "fixed untracked files"
 
 Installation instructions:
 
-Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt, run:
+Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt:
 
+1. Set the execution policy:
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-```
 
 [Source](https://scoop.sh/#/)
 </details>
@@ -251,10 +250,10 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 Install from [Scoop](https://scoop.sh/#/):
 
 1. Make sure Scoop is installed. See [the installation instructions on GitHub](https://github.com/ScoopInstaller/Install#readme).
-2. Make sure `Java version 8 or above` installed, and its directory is specified
+2. Make sure `Java version 8 or higher` installed, and its directory is specified
    in the `JAVA_HOME` environment variable.
-3. In a terminal, run this command: ```bash scoop install allure```
-4. Run this command to see if it reports the latest version:```bash allure --version```
+3. In a terminal, run this command: `scoop install allure`
+4. Run this command to see if it reports the latest version: `allure --version`
 
 [Source](https://allurereport.org/docs/install-for-windows/)
 </details>
