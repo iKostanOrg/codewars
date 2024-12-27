@@ -40,8 +40,8 @@ class MyTestCase(unittest.TestCase):
         ("I'm from Scottland. I moved here to be with my \
          family sir. Please, $3.50 would go a long way \
          to help me find them", True),
-        ("Yo, I heard you were on the lookout for Nessie. "
-         "Let me know if you need assistance.", False),
+        ("Yo, I heard you were on the lookout for Nessie. \
+         Let me know if you need assistance.", False),
         ("I will absolutely, positively, never give that darn \
          Loch Ness Monster any of my three dollars and fifty \
          cents", False),
