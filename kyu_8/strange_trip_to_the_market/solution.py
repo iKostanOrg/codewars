@@ -5,7 +5,7 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-INDICATIONS: list = ['tree fiddy', 'three fifty', '3.50', ]
+INDICATIONS: list = ['tree fiddy', 'three fifty', '3.50']
 
 
 def is_loch_ness_monster(string: str) -> bool:
