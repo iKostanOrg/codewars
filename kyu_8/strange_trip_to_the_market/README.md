@@ -16,8 +16,8 @@ paleolithic era! The Loch Ness Monster almost tricked you!
 There are only `2` guaranteed ways to tell if you are speaking to 
 `The Loch Ness Monster`:
 
-`A)` it is a 400-foot tall beast from the paleolithic era; 
-`B)` it will ask you for tree fiddy.
+- it is a 400-foot tall beast from the paleolithic era;
+- it will ask you for tree fiddy.
 
 Since Nessie is a master of disguise, the only way accurately tell is to look
 for the phrase "tree fiddy". Since you are tired of being grifted by this monster,
