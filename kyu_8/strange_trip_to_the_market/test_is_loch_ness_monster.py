@@ -28,7 +28,7 @@ from kyu_8.strange_trip_to_the_market.solution import is_loch_ness_monster
     url='https://www.codewars.com/kata/55ccdf1512938ce3ac000056',
     name='Source/Kata')
 # pylint: enable=R0801
-class MyTestCase(unittest.TestCase):
+class IsLochNessMonsterTestCase(unittest.TestCase):
     """Test 'is_loch_ness_monster' function."""
 
     @parameterized.expand([
@@ -86,4 +86,4 @@ class MyTestCase(unittest.TestCase):
                          f"and verify the expected output: {expected}."):
             result: bool = is_loch_ness_monster(string)
             print_log(string=string, expected=expected, result=result)
-            self.assertEqual(expected, result)  # add assertion here
+            self.assertEqual(expected, result)
