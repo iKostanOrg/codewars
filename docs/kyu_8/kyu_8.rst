@@ -16,6 +16,7 @@ Subpackages
    kyu_8.convert_string_to_an_array.module
    kyu_8.count_the_monkeys.module
    kyu_8.counting_sheep.module
+   kyu_8.dalmatians_101_squash_bugs.module
    kyu_8.enumerable_magic_25.module
    kyu_8.find_the_first_non_consecutive_number.module
    kyu_8.formatting_decimal_places_0.module
