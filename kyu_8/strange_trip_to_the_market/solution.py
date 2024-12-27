@@ -7,6 +7,7 @@ GitHub: https://github.com/ikostan
 
 INDICATIONS: list = ['tree fiddy', 'three fifty', '3.50', ]
 
+
 def is_loch_ness_monster(string: str) -> bool:
     """
     Return true if you're talking with 'The Loch Ness Monster', false otherwise.
