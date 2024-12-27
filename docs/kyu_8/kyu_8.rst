@@ -38,6 +38,7 @@ Subpackages
    kyu_8.remove_string_spaces.module
    kyu_8.reversed_strings.module
    kyu_8.set_alarm.module
+   kyu_8.strange_trip_to_the_market.module
    kyu_8.surface_area_and_volume_of_box.module
    kyu_8.swap_values.module
    kyu_8.terminal_game_move_function.module
