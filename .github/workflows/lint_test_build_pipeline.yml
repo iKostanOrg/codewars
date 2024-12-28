@@ -60,7 +60,7 @@ jobs:
     # yamllint enable rule:line-length
     secrets:
       project-token: $ {{ secrets.CODACY_PROJECT_TOKEN }}
-      api-token: $ {{ secrets.CODACY_API_TOKEN }}
+      #api-token: $ {{ secrets.CODACY_API_TOKEN }}
   codeql:
     name: CodeQL for a new build
     needs:
