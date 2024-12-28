@@ -4,16 +4,10 @@ name: Codacy Coverage Reporter
 # Source:
 # https://github.com/codacy/codacy-coverage-reporter-action
 on:  # yamllint disable-line rule:truthy
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
+  push:
+    branches:
+      - 'master'
   workflow_call:
-    secrets:
-      project-token:
-        required: true
 
 jobs:
   codacy-coverage-reporter:
@@ -42,11 +36,8 @@ jobs:
           python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
-        #export CODACY_PROJECT_TOKEN=c4cfe34384604268aa0e0ada0b6ac356
-        env:
-          PROJECT_TOKEN: ${{ secrets.project-token }}
         run: |
-            export CODACY_PROJECT_TOKEN=PROJECT_TOKEN
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
+            --project-token ${{ secrets.CODACY_PROJECT_TOKEN }} \
             --language Python \
             --coverage-reports /home/runner/work/codewars/codewars/coverage.xml
