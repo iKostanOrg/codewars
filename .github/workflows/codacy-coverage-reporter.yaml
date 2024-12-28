@@ -10,10 +10,6 @@ on:  # yamllint disable-line rule:truthy
       - edited
       - synchronize
       - reopened
-  workflow_call:
-    secrets:
-      project-token:
-        required: true
 
 jobs:
   codacy-coverage-reporter:
