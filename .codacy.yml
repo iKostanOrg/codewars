@@ -19,6 +19,9 @@ languages:
    extensions:
     - '.md'
 exclude_paths:
+ - '.venv/**'
+ - 'allure-report/**'
+ - 'allure-results/**'
  - 'deprecated/**'
  - 'docs/**'
  - 'allure-report/**'
@@ -26,10 +29,8 @@ exclude_paths:
  - '.circleci/**'
  - '.circleci/**'
  - '.github/**'
- - '*__init__.py'
- - 'rocro.yml'
+ - '**__init__.py'
  - 'requirements.txt'
  - 'pytest.ini'
- - '.travis.yml'
  - '.gitignore'
  - '.gitattributes'
