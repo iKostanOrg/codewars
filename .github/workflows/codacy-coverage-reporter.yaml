@@ -10,6 +10,7 @@ on:  # yamllint disable-line rule:truthy
       - edited
       - synchronize
       - reopened
+  workflow_call:
 
 jobs:
   codacy-coverage-reporter:
