@@ -55,7 +55,9 @@ jobs:
     name: Codacy Coverage Reporter
     needs:
       - pytest
+    # yamllint disable rule:line-length
     uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
+    # yamllint enable rule:line-length
     secrets:
       codacy_project_token: $ {{ secrets.CODACY_PROJECT_TOKEN }}
   codeql:
