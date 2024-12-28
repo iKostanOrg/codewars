@@ -12,7 +12,7 @@ on:  # yamllint disable-line rule:truthy
       - reopened
   workflow_call:
     secrets:
-      codecov_token:
+      project-token:
         required: true
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
       - name: Run codacy-coverage-reporter
         #export CODACY_PROJECT_TOKEN=c4cfe34384604268aa0e0ada0b6ac356
         env:
-          CODACY_PROJECT_TOKEN: ${{ secrets.codecov_token }}
+          CODACY_PROJECT_TOKEN: ${{ secrets.project-token }}
         run: |
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
             --language Python \
