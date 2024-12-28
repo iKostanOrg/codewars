@@ -5,6 +5,8 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+import ast
+
 CONVERSION: dict = {
     'plus': '+',
     'minus': '-'}
@@ -17,10 +19,14 @@ def calculate(s: str) -> str:
     :param s: str
     :return: str
     """
+    # Convert into simple arithmetic expression
     s = s.lower()
     for key, item in CONVERSION.items():
         if key in s:
             s = s.replace(key, item)
     # pylint: disable=W0123
-    return f'{eval(s)}'   # nosec B311
+    # Evaluate a simple mathematical expression using
+    # Python's built-in eval (safe subset).
+    allowed_names = {"__builtins__": None}
+    return f'{eval(s, {"__builtins__": None}, allowed_names)}' #  nosec B311
     # pylint: enable=W0123
