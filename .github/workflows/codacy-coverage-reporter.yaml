@@ -12,8 +12,6 @@ on:  # yamllint disable-line rule:truthy
       - reopened
   workflow_call:
     secrets:
-      #api-token:
-      #  required: true
       project-token:
         required: true
 
@@ -44,9 +42,8 @@ jobs:
           python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
-        uses: codacy/codacy-coverage-reporter-action@v1.3.0
-        with:
-          project-token: ${{ secrets.project-token }}
-          # api-token: ${{ secrets.api-token }}
-          coverage-reports: /home/runner/work/codewars/codewars/coverage.xml
-          language: 'Python'
+        run: |
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
+            --project-token ${{ secrets.project-token }} \
+            --language Python \
+            --coverage-reports /home/runner/work/codewars/codewars/coverage.xml final
