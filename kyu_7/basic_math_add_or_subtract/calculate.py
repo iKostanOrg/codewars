@@ -17,14 +17,24 @@ def calculate(s: str) -> str:
     :param s: str
     :return: str
     """
-    # Convert into simple arithmetic expression
-    s = s.lower()
-    for key, item in CONVERSION.items():
-        if key in s:
-            s = s.replace(key, item)
+    s = string_to_math_(s)
     # pylint: disable=W0123
     # Evaluate a simple mathematical expression using
     # Python's built-in eval (safe subset).
     allowed_names = {"__builtins__": None}
     return f'{eval(s, {"__builtins__": None}, allowed_names)}'  # nosec B311
     # pylint: enable=W0123
+
+
+def string_to_math_(s: str) -> str:
+    """
+    Convert into simple arithmetic expression.
+
+    :param s:
+    :return:
+    """
+    s = s.lower()
+    for key, item in CONVERSION.items():
+        if key in s:
+            s = s.replace(key, item)
+    return s
