@@ -58,8 +58,6 @@ jobs:
     # yamllint disable rule:line-length
     uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
     # yamllint enable rule:line-length
-    secrets:
-      project-token: $ {{ secrets.CODACY_API_TOKEN }}
   codeql:
     name: CodeQL for a new build
     needs:
