@@ -11,9 +11,6 @@ on:  # yamllint disable-line rule:truthy
       - synchronize
       - reopened
   workflow_call:
-    secrets:
-      project-token:
-        required: true
 
 jobs:
   codacy-coverage-reporter:
@@ -44,7 +41,7 @@ jobs:
       - name: Run codacy-coverage-reporter
         #export CODACY_PROJECT_TOKEN=c4cfe34384604268aa0e0ada0b6ac356
         env:
-          token: ${{ secrets.project-token }}
+          token: ${{ secrets.CODACY_PROJECT_TOKEN }}
         run: |
             export CODACY_PROJECT_TOKEN=token
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
