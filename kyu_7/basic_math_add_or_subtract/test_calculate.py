@@ -53,7 +53,6 @@ class CalculateTestCase(unittest.TestCase):
             "<p>In this kata, you will do addition and subtraction "
             "on a given string. The return value must be also a "
             "string.</p>")
-
         actual_result = calculate(s)
         with allure.step(f"Enter string ({s}) and verify the "
                          f"expected output ({expected}) vs "
@@ -85,7 +84,6 @@ class CalculateTestCase(unittest.TestCase):
             '1. convert "plus" into "+"<br>'
             '2. convert "minus" into "-"'
             "</p>")
-
         actual_result = string_to_math_(s)
         with allure.step(f"Enter string ({s}) and verify the "
                          f"expected output ({expected}) vs "
