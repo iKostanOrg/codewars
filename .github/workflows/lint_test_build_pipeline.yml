@@ -51,21 +51,11 @@ jobs:
     uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
     secrets:
       cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
-  codacy:
-    name: Codacy Coverage Reporter
-    needs:
-      - pytest
-    # yamllint disable rule:line-length
-    uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
-    # yamllint enable rule:line-length
-    secrets:
-      project-token: $ {{ secrets.CODACY_PROJECT_TOKEN }}
   codeql:
     name: CodeQL for a new build
     needs:
       - codecov
       - codeclimate
-      - codacy
     uses: ikostan/pico/.github/workflows/codeql.yml@master
   snyk:
     name: Snyk for a new build
