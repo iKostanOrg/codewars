@@ -28,5 +28,5 @@ def calculate(s: str) -> str:
     # Evaluate a simple mathematical expression using
     # Python's built-in eval (safe subset).
     allowed_names = {"__builtins__": None}
-    return f'{eval(s, {"__builtins__": None}, allowed_names)}' #  nosec B311
+    return f'{eval(s, {"__builtins__": None}, allowed_names)}'  # nosec B311
     # pylint: enable=W0123
