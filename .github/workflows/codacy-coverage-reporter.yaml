@@ -43,8 +43,10 @@ jobs:
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
         #export CODACY_PROJECT_TOKEN=c4cfe34384604268aa0e0ada0b6ac356
+        env:
+          token: ${{ secrets.project-token }}
         run: |
-            export CODACY_PROJECT_TOKEN=${{ secrets.project-token }}
+            export CODACY_PROJECT_TOKEN=token
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
             --language Python \
             --coverage-reports /home/runner/work/codewars/codewars/coverage.xml
