@@ -12,7 +12,7 @@ on:  # yamllint disable-line rule:truthy
       - reopened
   workflow_call:
     secrets:
-      codacy_api_token:
+      project-token:
         required: true
 
 jobs:
