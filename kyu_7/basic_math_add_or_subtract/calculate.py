@@ -30,8 +30,8 @@ def string_to_math_(s: str) -> str:
     """
     Convert into simple arithmetic expression.
 
-    :param s:
-    :return:
+    :param s: str
+    :return: str
     """
     s = s.lower()
     for key, item in CONVERSION.items():
