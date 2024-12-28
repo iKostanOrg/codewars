@@ -12,8 +12,8 @@ on:  # yamllint disable-line rule:truthy
       - reopened
   workflow_call:
     secrets:
-      api-token:
-        required: true
+      #api-token:
+      #  required: true
       project-token:
         required: true
 
@@ -46,7 +46,7 @@ jobs:
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
-          # project-token: ${{ secrets.project-token }}
-          api-token: ${{ secrets.api-token }}
+          project-token: ${{ secrets.project-token }}
+          # api-token: ${{ secrets.api-token }}
           coverage-reports: /home/runner/work/codewars/codewars/coverage.xml
           language: 'Python'
