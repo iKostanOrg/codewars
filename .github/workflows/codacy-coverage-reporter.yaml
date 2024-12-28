@@ -39,7 +39,7 @@ jobs:
         # yamllint disable rule:line-length
         run: |
           python -c "import os; print(os.getcwd())"
-          python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./ --junitxml=junit.xml -o junit_family=legacy --debug
+          python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
