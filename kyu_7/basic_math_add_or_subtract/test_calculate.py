@@ -12,7 +12,7 @@ import allure
 from parameterized import parameterized
 from kyu_7.basic_math_add_or_subtract.calculate import (
     calculate,
-    string_to_math_)
+    string_to_math)
 from utils.log_func import print_log
 
 
@@ -69,12 +69,12 @@ class CalculateTestCase(unittest.TestCase):
         ('1plus2minus3plus4minus5', '1+2-3+4-5')])
     def test_string_to_math(self, s, expected):
         """
-        Testing 'string_to_math_' function with various test data.
+        Testing 'string_to_math' function with various test data.
 
         :return:
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing 'string_to_math_' function")
+        allure.dynamic.title("Testing 'string_to_math' function")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
@@ -85,7 +85,7 @@ class CalculateTestCase(unittest.TestCase):
             '1. convert "plus" into "+"<br>'
             '2. convert "minus" into "-"'
             "</p>")
-        actual_result = string_to_math_(s)
+        actual_result = string_to_math(s)
         with allure.step(f"Enter string ({s}) and verify the "
                          f"expected output ({expected}) vs "
                          f"actual result ({actual_result})"):

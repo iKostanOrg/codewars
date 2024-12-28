@@ -17,7 +17,7 @@ def calculate(s: str) -> str:
     :param s: str
     :return: str
     """
-    s = string_to_math_(s)
+    s = string_to_math(s)
     # pylint: disable=W0123
     # Evaluate a simple mathematical expression using
     # Python's built-in eval (safe subset).
@@ -26,7 +26,7 @@ def calculate(s: str) -> str:
     # pylint: enable=W0123
 
 
-def string_to_math_(s: str) -> str:
+def string_to_math(s: str) -> str:
     """
     Convert into simple arithmetic expression.
 
