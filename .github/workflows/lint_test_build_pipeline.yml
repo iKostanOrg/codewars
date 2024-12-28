@@ -59,7 +59,7 @@ jobs:
     uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
     # yamllint enable rule:line-length
     secrets:
-      codacy_project_token: $ {{ secrets.CODACY_PROJECT_TOKEN }}
+      codacy_api_token: $ {{ secrets.CODACY_API_TOKEN }}
   codeql:
     name: CodeQL for a new build
     needs:
