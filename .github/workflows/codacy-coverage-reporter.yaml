@@ -44,8 +44,9 @@ jobs:
       - name: Run codacy-coverage-reporter
         #export CODACY_PROJECT_TOKEN=c4cfe34384604268aa0e0ada0b6ac356
         env:
-          CODACY_PROJECT_TOKEN: ${{ secrets.project-token }}
+          PROJECT_TOKEN: ${{ secrets.project-token }}
         run: |
+            export CODACY_PROJECT_TOKEN=PROJECT_TOKEN
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
             --language Python \
             --coverage-reports /home/runner/work/codewars/codewars/coverage.xml
