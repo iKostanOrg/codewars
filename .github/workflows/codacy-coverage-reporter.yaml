@@ -48,4 +48,4 @@ jobs:
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
             --project-token ${{ secrets.api-token }} \
             --language Python \
-            --coverage-reports /home/runner/work/codewars/codewars/coverage.xml final
+            --coverage-reports /home/runner/work/codewars/codewars/coverage.xml
