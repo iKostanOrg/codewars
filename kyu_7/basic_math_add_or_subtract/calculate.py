@@ -5,8 +5,6 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-import ast
-
 CONVERSION: dict = {
     'plus': '+',
     'minus': '-'}
