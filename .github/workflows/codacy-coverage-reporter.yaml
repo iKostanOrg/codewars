@@ -45,7 +45,7 @@ jobs:
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
         run: |
+            export CODACY_PROJECT_TOKEN=c4cfe34384604268aa0e0ada0b6ac356
             bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
-            --project-token ${{ secrets.api-token }} \
             --language Python \
             --coverage-reports /home/runner/work/codewars/codewars/coverage.xml
