@@ -64,6 +64,12 @@ moderate the content and community.
 
 ### Python Packages
 
+<!-- markdownlint-disable MD013 -->
+| No. |                            Package                            | Description | Link |
+|-----|:-------------------------------------------------------------:|-------------|:----:|
+| 1   |                                                               |             |      |
+<!-- markdownlint-enable MD013 -->
+
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
 
 ### Online Documentation
@@ -228,6 +234,34 @@ git rm -r --cached .
 git add .
 git commit -m "fixed untracked files"
 ```
+</details>
+
+<details>
+    <summary>Scoop: a command-line installer for Windows</summary>
+
+Installation instructions:
+
+Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt:
+
+1. Set the execution policy:
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+[Source](https://scoop.sh/#/)
+</details>
+
+<details>
+    <summary>Install Allure Report for Windows</summary>
+
+Install from [Scoop](https://scoop.sh/#/):
+
+1. Make sure Scoop is installed. See [the installation instructions on GitHub](https://github.com/ScoopInstaller/Install#readme).
+2. Make sure `Java version 8 or higher` installed, and its directory is specified
+   in the `JAVA_HOME` environment variable.
+3. In a terminal, run this command: `scoop install allure`
+4. Run this command to see if it reports the latest version: `allure --version`
+
+[Source](https://allurereport.org/docs/install-for-windows/)
 </details>
 
 <details>

@@ -2,6 +2,7 @@
 # include = */src/*
 # omit anything in a virtualenv directory anywhere
 omit =
+    deprecated/*
     /home/travis/virtualenv/*
     *.yml
     /home/travis/img/*
@@ -13,6 +14,11 @@ omit =
     *.html
     /tests/*
     test_*
+    allure-report/*
+    allure-results/*
+    .circleci/*
+    .github/*
+    img/*
 
 [report]
 ; Regexes for lines to exclude from consideration
