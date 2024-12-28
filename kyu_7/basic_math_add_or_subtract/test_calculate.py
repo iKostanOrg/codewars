@@ -11,7 +11,8 @@ import unittest
 import allure
 from parameterized import parameterized
 from kyu_7.basic_math_add_or_subtract.calculate import (
-    calculate, string_to_math_)
+    calculate,
+    string_to_math_)
 from utils.log_func import print_log
 
 
@@ -66,7 +67,7 @@ class CalculateTestCase(unittest.TestCase):
         ('1minus2minus3minus4', '1-2-3-4'),
         ('1plus2plus3minus4', '1+2+3-4'),
         ('1plus2minus3plus4minus5', '1+2-3+4-5')])
-    def test_string_to_math_(self, s, expected):
+    def test_string_to_math(self, s, expected):
         """
         Testing 'string_to_math_' function with various test data.
 
