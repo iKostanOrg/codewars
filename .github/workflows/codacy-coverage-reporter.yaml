@@ -46,6 +46,6 @@ jobs:
         env:
           CODACY_API_TOKEN: ${{ secrets.CODACY_API_TOKEN }}
         with:
-          codacy_api_token: ${{ secrets.CODACY_API_TOKEN }}
+          project-token: ${{ secrets.CODACY_API_TOKEN }}
           coverage-reports: coverage.xml
           language: 'Python'
