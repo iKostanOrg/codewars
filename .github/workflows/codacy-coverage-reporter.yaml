@@ -45,8 +45,10 @@ jobs:
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
+        env:
+          api-token: ${{ secrets.CODACY_API_TOKEN }}
         with:
-          project-token: ${{ secrets.project-token }}
-          api-token: ${{ secrets.api-token }}
+          # project-token: ${{ secrets.project-token }}
+          # api-token: ${{ secrets.api-token }}
           coverage-reports: coverage.xml
           language: 'Python'
