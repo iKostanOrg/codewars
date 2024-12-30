@@ -24,10 +24,12 @@ def buy_or_sell(pairs: list, harvested_fruit: str) -> list[Any] | str:
         if pair[0] == currently_holding == pair[-1] or pair[-1] == currently_holding:
             results.append('sell')
             currently_holding = pair[0]
+            continue
         elif pair[0] == currently_holding:
             results.append('buy')
             currently_holding = pair[-1]
-        else:
-            return "ERROR"
+            continue
+
+        return "ERROR"
 
     return results if currently_holding == harvested_fruit else "ERROR"
