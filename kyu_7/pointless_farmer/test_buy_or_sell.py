@@ -125,6 +125,3 @@ class PointlessFarmerTestCase(unittest.TestCase):
                       expected=expected,
                       result=result)
             self.assertEqual(expected, result)
-
-
-
