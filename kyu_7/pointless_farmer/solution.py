@@ -5,9 +5,9 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-from typing import TypeVar
+from typing import TypeVar, Any
 
-T = TypeVar("T", bound=str | list)
+T = TypeVar("T", bound=str | list[Any])
 
 
 def buy_or_sell(pairs: list, harvested_fruit: str) -> T:
