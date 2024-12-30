@@ -7,8 +7,8 @@ GitHub: https://github.com/ikostan
 
 from typing import TypeVar
 
+T = TypeVar("T", bound=str | list)
 
-T = TypeVar("T", bound=str|list)
 
 def buy_or_sell(pairs: list, harvested_fruit: str) -> T:
     """
