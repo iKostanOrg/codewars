@@ -32,4 +32,4 @@ def buy_or_sell(pairs: list, harvested_fruit: str) -> list[Any] | str:
 
         return "ERROR"
 
-    return results if currently_holding == harvested_fruit else "ERROR"
+    return "ERROR" if currently_holding != harvested_fruit else results
