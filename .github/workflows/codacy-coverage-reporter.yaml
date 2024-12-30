@@ -4,16 +4,10 @@ name: Codacy Coverage Reporter
 # Source:
 # https://github.com/codacy/codacy-coverage-reporter-action
 on:  # yamllint disable-line rule:truthy
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
+  push:
+    branches:
+      - 'master'
   workflow_call:
-    secrets:
-      codacy_project_token:
-        required: true
 
 jobs:
   codacy-coverage-reporter:
@@ -39,12 +33,14 @@ jobs:
         # yamllint disable rule:line-length
         run: |
           python -c "import os; print(os.getcwd())"
-          python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./ --junitxml=junit.xml -o junit_family=legacy --debug
+          python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./
         # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
-        uses: codacy/codacy-coverage-reporter-action@v1.3.0
-        with:
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: junit.xml
-          # or a comma-separated list for multiple reports
-          # coverage-reports: <PATH_TO_REPORT>, <PATH_TO_REPORT>
+        run: |
+            export CODACY_ORGANIZATION_PROVIDER=gh \
+            export CODACY_USERNAME=iKostanOrg \
+            export CODACY_PROJECT_NAME=codewars
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
+            --api-token ${{ secrets.CODACY_API_TOKEN }} \
+            --language Python \
+            --coverage-reports /home/runner/work/codewars/codewars/coverage.xml
