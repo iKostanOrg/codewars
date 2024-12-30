@@ -29,7 +29,7 @@ def buy_or_sell(pairs: list, harvested_fruit: str):
 
 def make_deal(results: list, pair: tuple, currently_holding: str) -> str:
     """
-    Buy or sell.
+    Return the new currently_holding value on successful deals.
 
     Return an empty string if no deal made.
     :param results: list
