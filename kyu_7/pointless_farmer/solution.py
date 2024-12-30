@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 from typing import Any
 
 
-def buy_or_sell(pairs: list, harvested_fruit: str) -> list[Any] | str:
+def buy_or_sell(pairs: list, harvested_fruit: str) -> str | list:
     """
     Decide which direction to trade.
 
@@ -20,12 +20,12 @@ def buy_or_sell(pairs: list, harvested_fruit: str) -> list[Any] | str:
     results: list = []
 
     for pair in pairs:
-        # First item in pairs is for selling, second is for buying.
+        # First item in pairs is for selling.
         if pair[-1] == currently_holding:
             results.append('sell')
             currently_holding = pair[0]
             continue
-
+        # Second is for buying.
         if pair[0] == currently_holding:
             results.append('buy')
             currently_holding = pair[-1]
