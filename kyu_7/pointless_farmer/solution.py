@@ -5,10 +5,8 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-from typing import Tuple
 
-
-def buy_or_sell(pairs: list, harvested_fruit: str) -> Tuple[list, str]:
+def buy_or_sell(pairs: list, harvested_fruit: str) -> list | str:
     """
     Decide which direction to trade.
 
