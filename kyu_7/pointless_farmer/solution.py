@@ -5,8 +5,10 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+from typing import Any
 
-def buy_or_sell(pairs: list, harvested_fruit: str) -> str | list:
+
+def buy_or_sell(pairs: list, harvested_fruit: str) -> list[Any]:
     """
     Decide which direction to trade.
 
