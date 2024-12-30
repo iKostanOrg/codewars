@@ -12,23 +12,38 @@ def buy_or_sell(pairs: list, harvested_fruit: str) -> str | list:
 
     :param pairs: list
     :param harvested_fruit: str
-    :return: list
+    :return:
     """
     currently_holding: str = harvested_fruit
     results: list = []
 
     for pair in pairs:
-        # First item in pairs is for selling.
-        if pair[-1] == currently_holding:
-            results.append('sell')
-            currently_holding = pair[0]
-            continue
-        # Second is for buying.
-        if pair[0] == currently_holding:
-            results.append('buy')
-            currently_holding = pair[-1]
+        currently_holding = make_deal(results, pair, currently_holding)
+        if currently_holding:
             continue
 
         return "ERROR"
 
     return "ERROR" if currently_holding != harvested_fruit else results
+
+
+def make_deal(results: list, pair: tuple, currently_holding: str) -> str:
+    """
+    Buy or sell.
+
+    Return an empty string if no deal made.
+    :param results: list
+    :param pair: tuple
+    :param currently_holding: str
+    :return: str
+    """
+    # First item in pairs is for selling.
+    if pair[-1] == currently_holding:
+        results.append('sell')
+        return pair[0]
+    # Second is for buying.
+    if pair[0] == currently_holding:
+        results.append('buy')
+        return pair[-1]
+
+    return ''
