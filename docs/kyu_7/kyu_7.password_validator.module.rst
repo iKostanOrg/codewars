@@ -1,5 +1,5 @@
-kyu\_7.password_validator.module package
-========================================
+kyu\_7.password\_validator.module package
+=========================================
 
 Subpackages
 -----------

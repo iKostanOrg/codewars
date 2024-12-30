@@ -26,6 +26,7 @@ Subpackages
    kyu_7.make_class.module
    kyu_7.maximum_multiple.module
    kyu_7.password_validator.module
+   kyu_7.pointless_farmer.module
    kyu_7.powers_of_3.module
    kyu_7.pull_your_words_together_man.module
    kyu_7.remove_the_minimum.module
