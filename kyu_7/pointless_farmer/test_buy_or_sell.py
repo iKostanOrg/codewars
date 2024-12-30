@@ -32,21 +32,21 @@ class PointlessFarmerTestCase(unittest.TestCase):
 
     @parameterized.expand([
         ([("apple", "orange"), ("orange", "pear"), ("apple", "pear")],
-           "apple", ["buy", "buy", "sell"]),
+         "apple", ["buy", "buy", "sell"]),
         ([("orange", "apple"), ("orange", "pear"), ("pear", "apple")],
-           "apple", ["sell", "buy", "buy"]),
+         "apple", ["sell", "buy", "buy"]),
         ([("apple", "orange"), ("pear", "orange"), ("apple", "pear")],
-           "apple", ["buy", "sell", "sell"]),
+         "apple", ["buy", "sell", "sell"]),
         ([("orange", "apple"), ("pear", "orange"), ("pear", "apple")],
-           "apple", ["sell", "sell", "buy"]),
+         "apple", ["sell", "sell", "buy"]),
         ([("orange", "apple"), ("orange", "pear"), ("apple", "pear")],
-           "apple", ["sell", "buy", "sell"]),
+         "apple", ["sell", "buy", "sell"]),
         ([("apple", "orange"), ("pear", "orange"), ("pear", "apple")],
-           "apple", ["buy", "sell", "buy"]),
+         "apple", ["buy", "sell", "buy"]),
         ([("apple", "orange"), ("orange", "pear"), ("pear", "apple")],
-           "apple", ["buy", "buy", "buy"]),
+         "apple", ["buy", "buy", "buy"]),
         ([("orange", "apple"), ("pear", "orange"), ("apple", "pear")],
-           "apple", ["sell", "sell", "sell"]),
+         "apple", ["sell", "sell", "sell"]),
         ([('Raspberry', 'Raspberry'), ('Jabuticaba', 'Raspberry'),
           ('Jabuticaba', 'Raspberry')], 'Raspberry', ['sell', 'sell', 'buy'])])
     def test_buy_or_sell_positive(self, market, harvested_fruit, expected):
@@ -84,18 +84,18 @@ class PointlessFarmerTestCase(unittest.TestCase):
 
     @parameterized.expand([
         ([("orange", "apple"), ("pear", "orange"), ("apple", "paer")],
-           "apple", "ERROR"),
+         "apple", "ERROR"),
         ([('Jackfruit', 'Physalis'), ('Physalis', 'Prune'),
           ('Prune', 'Tamarind')],
-           'Tamarind', 'ERROR'),
+         'Tamarind', 'ERROR'),
         ([('Mulberry', 'Strawberry'), ('Passionfruit', 'Mulberry'),
           ('Strawberry', 'Mulberry')],
-           'Strawberry', 'ERROR'),
+         'Strawberry', 'ERROR'),
         ([('Cherry', 'Cucumber'), ('Cherry', 'Cherry'), ('Cucumber', 'Ugli fruit')],
-           'Boysenberry', 'ERROR'),
+         'Boysenberry', 'ERROR'),
         ([('Jackfruit', 'Purple mangosteen'), ('Purple mangosteen', 'Jackfruit'),
           ('Purple mangosteen', 'Jackfruit')],
-           'Purple mangosteen', 'ERROR')])
+         'Purple mangosteen', 'ERROR')])
     def test_buy_or_sell_negative(self, market, harvested_fruit, expected):
         """
         Testing 'buy_or_sell' function, negative test case.
