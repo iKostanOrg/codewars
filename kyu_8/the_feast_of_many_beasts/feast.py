@@ -1,5 +1,6 @@
 """
-Solution for -> The Feast of Many Beasts
+Solution for -> The Feast of Many Beasts.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,9 @@ GitHub: https://github.com/ikostan
 
 def feast(beast: str, dish: str) -> bool:
     """
-    A function feast that takes the animal's name and
+    'feast' function.
+
+    A function that takes the animal's name and
     dish as arguments and returns true or false to
     indicate whether the beast is allowed to bring the
     dish to the feast.

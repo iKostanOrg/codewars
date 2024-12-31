@@ -1,5 +1,6 @@
 """
-Solution for -> Sum of odd numbers
+Solution for -> Sum of odd numbers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def odd_row(n: int) -> list:
     """
+    Find odd row.
+
     Given a triangle of consecutive odd numbers
     finds the triangle's row knowing its index
     (the rows are 1-indexed).
@@ -27,7 +30,8 @@ def odd_row(n: int) -> list:
 
 def calc_first_number(n: int) -> int:
     """
-    Calculate first number in the row
+    Calculate first number in the row.
+
     :param n:
     :return:
     """
@@ -36,7 +40,8 @@ def calc_first_number(n: int) -> int:
 
 def calc_last_number(n: int) -> int:
     """
-    Calculate last number in the row
+    Calculate last number in the row.
+
     :param n:
     :return:
     """
@@ -45,9 +50,8 @@ def calc_last_number(n: int) -> int:
 
 def row_sum_odd_numbers(n: int) -> int:
     """
-    Given the triangle of consecutive odd
-    numbers calculate the row sums of this
-    triangle from the row index (starting at index 1)
+    Sum of odd numbers function.
+
     :param n:
     :return:
     """

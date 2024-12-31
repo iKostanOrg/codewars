@@ -1,0 +1,46 @@
+---
+name: pydocstyle for kyu8
+
+on:   # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - 'kyu8'
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.x"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        # This is the version of the action for setting up Python,
+        # not the Python version.
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install -r requirements.txt
+          pip install pydocstyle
+          pip install types-requests
+      - name: Check to make sure that the module is in your Python path
+        run: |
+          echo $PYTHONPATH
+      - name: Check pydocstyle version
+        run: |
+          pydocstyle --version
+      - name: Doc style checking with pydocstyle
+        # Pydocstyle testing (Guide)
+        # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
+        run: |
+          pydocstyle --verbose --explain --count kyu_8

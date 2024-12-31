@@ -1,5 +1,6 @@
 """
-Test for -> Powers of 3
+Test for -> Powers of 3.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -32,13 +33,12 @@ from kyu_7.powers_of_3.largest_power import largest_power
     name='Source/Kata')
 # pylint: enable=R0801
 class LargestPowerTestCase(unittest.TestCase):
-    """
-    Testing largestPower function
-    """
+    """Testing largestPower function."""
 
     def test_largest_power(self):
         """
-        Testing largestPower function
+        Testing largestPower function.
+
         :return:
         """
         # pylint: disable-msg=R0801

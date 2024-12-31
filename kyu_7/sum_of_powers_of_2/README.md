@@ -4,7 +4,7 @@
 
 Given a number n, you should find a set of numbers for which
 the sum equals n. This set must consist exclusively of values
-that are a power of 2 (eg: 2^0 => 1, 2^1 => 2, 2^2 => 4, ...).
+that are a power of `2 (eg: 2^0 => 1, 2^1 => 2, 2^2 => 4, ...)`.
 
 The function powers takes a single parameter, the number n, and
 should return an array of unique numbers.
@@ -12,9 +12,9 @@ should return an array of unique numbers.
 ## Criteria
 
 The function will always receive a valid input: any positive
-integer between 1 and the max integer value for your language
-(eg: for JavaScript this would be 9007199254740991 otherwise known
-as Number.MAX_SAFE_INTEGER).
+integer between `1` and the `max integer` value for your language
+(eg: for JavaScript this would be `9007199254740991` otherwise known
+as `Number.MAX_SAFE_INTEGER`).
 
 The function should return an array of numbers that are a **power of 2** 
 

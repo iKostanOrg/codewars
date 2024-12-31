@@ -22,6 +22,9 @@ jobs:
   yamllint:
     name: YAML Lint
     uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
+  pydocstyle:
+    name: PyDocStyle Lint
+    uses: iKostanOrg/codewars/.github/workflows/pydocstyle.yml@master
   pytest:
     name: Unitest with pytest
     needs:
@@ -30,6 +33,7 @@ jobs:
       - markdown
       - mypy
       - yamllint
+      - pydocstyle
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action

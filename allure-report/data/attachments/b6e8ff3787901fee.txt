@@ -1,0 +1,28 @@
+
+LOG =>
+lst: lst: [], default: default,
+i: None,
+expected: default,
+actual: default
+
+
+LOG =>
+lst: lst: [], default: default,
+i: 0,
+expected: default,
+actual: default
+
+
+LOG =>
+lst: lst: [1, 2], default: default,
+i: None,
+expected: 3,
+actual: 3
+
+
+LOG =>
+lst: lst: [2], default: default,
+i: 0,
+expected: 1,
+actual: 1
+

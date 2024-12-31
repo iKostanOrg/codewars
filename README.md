@@ -10,6 +10,7 @@
 [![codecov](https://codecov.io/gh/iKostanOrg/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/iKostanOrg/codewars)
 [![CodeFactor](https://www.codefactor.io/repository/github/ikostanorg/codewars/badge)](https://www.codefactor.io/repository/github/ikostanorg/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/647e16e648f748a28fce36b4895f7729)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iKostanOrg/codewars&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/647e16e648f748a28fce36b4895f7729)](https://app.codacy.com/gh/iKostanOrg/codewars/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/maintainability)](https://codeclimate.com/github/iKostanOrg/codewars/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c22e4214ebb0b0626b83/test_coverage)](https://codeclimate.com/github/iKostanOrg/codewars/test_coverage)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024)
@@ -64,6 +65,12 @@ moderate the content and community.
 
 ### Python Packages
 
+<!-- markdownlint-disable MD013 -->
+| No. |                            Package                            | Description | Link |
+|-----|:-------------------------------------------------------------:|-------------|:----:|
+| 1   |                                                               |             |      |
+<!-- markdownlint-enable MD013 -->
+
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
 
 ### Online Documentation
@@ -93,7 +100,7 @@ for CI or a build tool.
 
 ## Tech Issues and Problem Solving
 
-<!-- markdownlint-disable MD033 MD013 MD029 -->
+<!-- markdownlint-disable MD040 MD033 MD013 MD029 -->
 <details>
   <summary>Changing the project interpreter in the PyCharm project settings</summary>
 
@@ -231,6 +238,34 @@ git commit -m "fixed untracked files"
 </details>
 
 <details>
+    <summary>Scoop: a command-line installer for Windows</summary>
+
+Installation instructions:
+
+Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt:
+
+1. Set the execution policy:
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+[Source](https://scoop.sh/#/)
+</details>
+
+<details>
+    <summary>Install Allure Report for Windows</summary>
+
+Install from [Scoop](https://scoop.sh/#/):
+
+1. Make sure Scoop is installed. See [the installation instructions on GitHub](https://github.com/ScoopInstaller/Install#readme).
+2. Make sure `Java version 8 or higher` installed, and its directory is specified
+   in the `JAVA_HOME` environment variable.
+3. In a terminal, run this command: `scoop install allure`
+4. Run this command to see if it reports the latest version: `allure --version`
+
+[Source](https://allurereport.org/docs/install-for-windows/)
+</details>
+
+<details>
   <summary>How to generate Allure report with history trends (Windows OS)</summary>
 
 Step by step:
@@ -350,4 +385,62 @@ the environment for every build, see comment from Grimmy below).
 
 [Source](https://intellipaat.com/community/31672/how-to-use-requirements-txt-to-install-all-dependencies-in-a-python-project)
 </details>
-<!-- markdownlint-restore MD033 MD013 MD029 -->
+
+<details>
+<summary>ERROR: The term 'make' is not recognized as the name of a cmdlet</summary>
+
+The error "'make' is not recognized as an internal or external command, operable program or
+batch file" occurs when we run the make command on Windows without having make installed.
+To solve the error, install make using Chocolatey.
+
+```bash
+make clean
+make : The term 'make' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path 
+was included, verify that the path is correct and try again.
+At line:1 char:1
++ make clean
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (make:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command make was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\make". See "get-help about_Command_Precedence" for more details.
+```
+
+To install Chocolatey:
+
+1. Open PowerShell as an administrator.
+2. Run the following command:
+    ```bash
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    ```
+3. Wait for the command to complete.
+4. Type choco to make sure Chocolatey is installed:
+    ```bash
+    PS C:\WINDOWS\system32> choco
+    Chocolatey v2.4.1
+    Please run 'choco -?' or 'choco <command> -?' for help menu.
+    ```
+5. Now that you have Chocolatey installed, run the following command to install make:
+    ```bash
+    PS C:\WINDOWS\system32> choco install make -y
+    Chocolatey v2.4.1
+    Installing the following packages:
+    make
+    By installing, you accept licenses for the packages.
+    Downloading package from source 'https://community.chocolatey.org/api/v2/'
+    Progress: Downloading make 4.4.1... 100%
+    
+    make v4.4.1 [Approved]
+    make package files install completed. Performing other installation steps.
+     ShimGen has successfully created a shim for make.exe
+     The install of make was successful.
+      Deployed to 'C:\ProgramData\chocolatey\lib\make'
+    
+    Chocolatey installed 1/1 packages.
+     See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+    ```
+
+[Source](https://bobbyhadz.com/blog/make-is-not-recognized-as-internal-or-external-command)
+</details>
+<!-- markdownlint-restore MD040 MD033 MD013 MD029 -->

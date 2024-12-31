@@ -1,4 +1,6 @@
 ---
+reviews:
+ high_level_summary: true
 engines:
  duplication:
   enabled: true
@@ -19,16 +21,18 @@ languages:
    extensions:
     - '.md'
 exclude_paths:
+ - '.venv/**'
+ - 'allure-report/**'
+ - 'allure-results/**'
+ - 'deprecated/**'
  - 'docs/**'
  - 'allure-report/**'
  - 'img/**'
  - '.circleci/**'
  - '.circleci/**'
  - '.github/**'
- - '*__init__.py'
- - 'rocro.yml'
+ - '**__init__.py'
  - 'requirements.txt'
  - 'pytest.ini'
- - '.travis.yml'
  - '.gitignore'
  - '.gitattributes'

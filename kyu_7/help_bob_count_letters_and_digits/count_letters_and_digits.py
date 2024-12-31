@@ -1,5 +1,6 @@
 """
 Solution for -> Help Bob count letters and digits.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,8 @@ GitHub: https://github.com/ikostan
 
 def count_letters_and_digits(s: str) -> int:
     """
-    A method that can determine how many
-    letters and digits are in a given string.
+    Determine how many letters and digits are in a given string.
+
     :param s:
     :return:
     """

@@ -1,5 +1,6 @@
 """
 Script for generating Allure report.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
