@@ -31,7 +31,7 @@ def middle_point(*args) -> int:
     if a_b < a_c and b_c < a_c:
         return 2
 
-    return  3
+    return 3
 
 
 def distance_between_two_points(a: tuple, b: tuple) -> float:
