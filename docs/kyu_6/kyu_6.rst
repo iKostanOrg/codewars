@@ -22,6 +22,7 @@ Subpackages
    kyu_6.duplicate_encoder.module
    kyu_6.easy_diagonal.module
    kyu_6.encrypt_this.module
+   kyu_6.find_the_in_between_point.module
    kyu_6.find_the_odd_int.module
    kyu_6.first_character_that_repeats.module
    kyu_6.format_string_of_names.module
