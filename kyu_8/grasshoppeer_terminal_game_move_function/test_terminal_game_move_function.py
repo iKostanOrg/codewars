@@ -10,7 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_8.terminal_game_move_function.terminal_game_move_function \
+from kyu_8.grasshoppeer_terminal_game_move_function.terminal_game_move_function \
     import move
 
 
