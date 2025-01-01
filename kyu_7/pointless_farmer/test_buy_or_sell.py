@@ -19,7 +19,7 @@ from kyu_7.pointless_farmer.solution import buy_or_sell
 @allure.parent_suite('Beginner')
 @allure.suite("Algorithms")
 @allure.sub_suite("Unit Tests")
-@allure.feature("Lista")
+@allure.feature("Lists")
 @allure.story('Password validator')
 @allure.tag('FUNDAMENTALS',
             'ALGORITHMS')
