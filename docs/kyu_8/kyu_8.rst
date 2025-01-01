@@ -24,6 +24,7 @@ Subpackages
    kyu_8.grasshopper_messi_goals_function.module
    kyu_8.grasshopper_personalized_message.module
    kyu_8.grasshopper_summation.module
+   kyu_8.grasshopper_terminal_game_move_function.module
    kyu_8.greek_sort.module
    kyu_8.holiday_vi_shark_pontoon.module
    kyu_8.is_it_a_palindrome.module
@@ -41,7 +42,6 @@ Subpackages
    kyu_8.strange_trip_to_the_market.module
    kyu_8.surface_area_and_volume_of_box.module
    kyu_8.swap_values.module
-   kyu_8.terminal_game_move_function.module
    kyu_8.the_feast_of_many_beasts.module
    kyu_8.third_angle_of_triangle.module
    kyu_8.well_of_ideas_easy_version.module
