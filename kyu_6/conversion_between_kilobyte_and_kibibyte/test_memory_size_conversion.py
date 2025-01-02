@@ -62,10 +62,10 @@ class MemorySizeConversionTestCase(unittest.TestCase):
             "including a unit and converts into the corresponding unit of the "
             "other system:"
             "<ul>"
-                "<li>10 KiB -> 10.24 kB</li>"
-                "<li>1 kB -> 0.977 KiB</li>"  
-                "<li>10 TB -> 9.095 TiB</li>"
-                "<li>4.1 GiB -> 4.402 GB</li>"
+            "<li>10 KiB -> 10.24 kB</li>"
+            "<li>1 kB -> 0.977 KiB</li>"
+            "<li>10 TB -> 9.095 TiB</li>"
+            "<li>4.1 GiB -> 4.402 GB</li>"
             "</ul>"
             "</p>")
         # pylint: enable-msg=R0801
