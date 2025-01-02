@@ -16,6 +16,7 @@ from kyu_6.conversion_between_kilobyte_and_kibibyte.solution import (
     unit_extractor)
 
 
+# pylint: disable-msg=R0801
 @allure.epic('6 kyu')
 @allure.parent_suite('Novice')
 @allure.suite("Fundamentals")
@@ -29,6 +30,7 @@ from kyu_6.conversion_between_kilobyte_and_kibibyte.solution import (
 @allure.link(
     url='https://www.codewars.com/kata/5a115ff080171f9651000046',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class MemorySizeConversionTestCase(unittest.TestCase):
     """Test 'Conversion between Kilobyte and KibiByte' solution."""
 
