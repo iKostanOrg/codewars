@@ -17,4 +17,5 @@ def is_loch_ness_monster(string: str) -> bool:
     """
     # A) it is a 400-foot tall beast from the paleolithic era;
     # B) it will ask you for tree fiddy.
-    return any(True for s in INDICATIONS if s in string.lower())
+    string = string.lower()
+    return any(True for s in INDICATIONS if s in string)

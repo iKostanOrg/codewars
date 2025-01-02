@@ -36,7 +36,22 @@ class CalculateTestCase(unittest.TestCase):
         ('1plus2plus3plus4', '10'),
         ('1minus2minus3minus4', '-8'),
         ('1plus2plus3minus4', '2'),
-        ('1plus2minus3plus4minus5', '-1')])
+        ('1plus2minus3plus4minus5', '-1'),
+        # Large numbers
+        ('100plus200plus300', '600'),
+        ('1000minus500plus25', '525'),
+        # Floating point numbers
+        ('1.5plus2.7', '4.2'),
+        ('10.5minus5.25', '5.25'),
+        # Spaces in input
+        (' 1plus2 plus3 ', '6'),
+        ('5 minus 3plus2 ', '4'),
+        # Negative numbers
+        ('-1plus5minus2', '2'),
+        ('-10plus20minus-5', '15'),
+        # Leading/trailing spaces
+        ('  10plus5  ', '15'),
+        ('  20minus10  ', '10')])
     def test_calculate(self, s, expected):
         """
         Testing 'calculate' function with various test data.
