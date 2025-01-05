@@ -66,9 +66,9 @@ moderate the content and community.
 ### Python Packages
 
 <!-- markdownlint-disable MD013 -->
-| No. |                            Package                            | Description | Link |
-|-----|:-------------------------------------------------------------:|-------------|:----:|
-| 1   |                                                               |             |      |
+| No. |          Package           | Description                                         | Link |
+|-----|:--------------------------:|:----------------------------------------------------|:----:|
+| 1   |                            |                                                     |      |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
