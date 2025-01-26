@@ -69,7 +69,7 @@ moderate the content and community.
 | No. |          Package           |                                                                            Description                                                                          |                      Link                   |
 |:----:|:--------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------:|
 | 1    |       Alabaster            | Alabaster is a visually (c)lean, responsive, configurable theme for the *Sphinx documentation system*. It requires Python 3.10 or newer and Sphinx 6.2 or newer.|[Source](https://pypi.org/project/alabaster/)|
-| 2    |                   | |[Source]()|
+| 2    | | | |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
