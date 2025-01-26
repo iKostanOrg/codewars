@@ -66,10 +66,10 @@ moderate the content and community.
 ### Python Packages
 
 <!-- markdownlint-disable MD013 -->
-| No.  |          Package           |                                                                            Description                                                                          |                      Link                   |
-|:----:|:--------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------:|
-| 1    |       Alabaster            | Alabaster is a visually (c)lean, responsive, configurable theme for the *Sphinx documentation system*. It requires Python 3.10 or newer and Sphinx 6.2 or newer.|[Source](https://pypi.org/project/alabaster/)|
-| 2    | | | |
+| No.  |          Package           |                                                                            Description                                                                          |                      Link                     |
+|:----:|:--------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------:|
+| 1    | alabaster                  | Alabaster is a visually (c)lean, responsive, configurable theme for the *Sphinx documentation system*. It requires Python 3.10 or newer and Sphinx 6.2 or newer | [Source](https://pypi.org/project/alabaster/) |
+| 2    | allure-pytest              | Allure Pytest Plugin | [Source](https://pypi.org/project/allure-pytest/) |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
