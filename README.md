@@ -80,8 +80,7 @@ Python3 solutions for codewars problems’s documentation is built
 with Sphinx using a theme provided by Read the Docs.
 
 Sphinx is a tool that makes it easy to create intelligent and
-beautiful documentation, written by Georg Brandl and licensed under
-the BSD license. 
+beautiful documentation.
 
 [Online version of the latest tech documentation](https://codewars.readthedocs.io/)
 
