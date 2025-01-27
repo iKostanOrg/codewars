@@ -70,6 +70,7 @@ moderate the content and community.
 |:----:|:------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------|:-------------------------:|
 | 1    | alabaster                            | Alabaster is a visually (c)lean, responsive, configurable theme for the *Sphinx documentation system*. It requires Python 3.10 or newer and Sphinx 6.2 or newer | [Source](https://pypi.org/project/alabaster/) |
 | 2    | allure-pytest                        | Allure Pytest Plugin | [Source](https://pypi.org/project/allure-pytest/) |
+| 3    | allure-python-common                 | The package contains classes and functions for users of Allure Report. It can be used to enhance reports using an existing Allure adapter or to create new adapters | [Source](https://pypi.org/project/allure-python-commons/) |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
