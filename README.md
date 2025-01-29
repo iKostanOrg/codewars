@@ -63,7 +63,7 @@ moderate the content and community.
 6.  [GitHub Desktop](https://desktop.github.com/)
 7.  [GIT 2.39.1.windows.1](https://git-scm.com/download/win)
 
-### Python Packages
+### List Of Python Packages/Dependencies
 
 <!-- markdownlint-disable MD013 -->
 | No.  |          Package                     |                                                 Description                                                               |            Link           |
