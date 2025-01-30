@@ -73,6 +73,7 @@ moderate the content and community.
 |  3  | allure-python-common | The package contains classes and functions for users of Allure Report. It can be used to enhance reports using an existing Allure adapter or to create new adapters. | [Source](https://pypi.org/project/allure-python-commons/) |
 |  4  |       altgraph       | A graph (network) package for constructing graphs, BFS and DFS traversals, topological sort, shortest paths, etc. with graphviz output.                              |       [Source](https://pypi.org/project/altgraph/)        |
 |  5  |     atomicwrites     | Atomic file writes. This package is also used in order to run pytest.                                                                                                |     [Source](https://pypi.org/project/atomicwrites/)      |
+|  6  |         attr         | attrs gives you a class decorator and a way to declaratively define the attributes on that class.                                                                    |         [Source](https://pypi.org/project/attrs/)         |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
