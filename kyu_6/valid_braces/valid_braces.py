@@ -4,7 +4,6 @@ Test for -> Valid Braces.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
-import typing
 
 BRACES: dict = {
     '(': ')',

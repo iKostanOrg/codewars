@@ -46,45 +46,45 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
     for i, row in enumerate(data):
 
         if header and i == 0:
-            rows_and_columns = (f'{rows_and_columns}'
-                                f'{TABLE['head']['start']}'
-                                f'{TABLE['row']['start']}')
+            rows_and_columns = (f"{rows_and_columns}"
+                                f"{TABLE['head']['start']}"
+                                f"{TABLE['row']['start']}")
             if index:
-                rows_and_columns = (f'{rows_and_columns}'
-                                    f'{TABLE['header']['start']}'
-                                    f'{TABLE['header']['end']}')
+                rows_and_columns = (f"{rows_and_columns}"
+                                    f"{TABLE['header']['start']}"
+                                    f"{TABLE['header']['end']}")
 
-            rows_and_columns += ''.join(f'{TABLE['header']['start']}'
-                                        f'{col}'
-                                        f'{TABLE['header']['end']}'
-                                        for b, col in enumerate(row))
+            rows_and_columns += ''.join(
+                f"{TABLE['header']['start']}{col}{TABLE['header']['end']}"
+                for col in row
+            )
 
-            rows_and_columns = (f'{rows_and_columns}'
-                                f'{TABLE['row']['end']}'
-                                f'{TABLE['head']['end']}')
+            rows_and_columns = (f"{rows_and_columns}"
+                                f"{TABLE['row']['end']}"
+                                f"{TABLE['head']['end']}")
         else:
             if TABLE['body']['start'] not in rows_and_columns:
-                rows_and_columns = (f'{rows_and_columns}'
-                                    f'{TABLE['body']['start']}')
+                rows_and_columns = (f"{rows_and_columns}"
+                                    f"{TABLE['body']['start']}")
 
-            rows_and_columns = (f'{rows_and_columns}'
-                                f'{TABLE['row']['start']}')
+            rows_and_columns = (f"{rows_and_columns}"
+                                f"{TABLE['row']['start']}")
 
             if index:
-                rows_and_columns = (f'{rows_and_columns}'
-                                    f'{TABLE['column']['start']}'
-                                    f'{i if header else i + 1}'
-                                    f'{TABLE['column']['end']}')
+                rows_and_columns = (f"{rows_and_columns}"
+                                    f"{TABLE['column']['start']}"
+                                    f"{i if header else i + 1}"
+                                    f"{TABLE['column']['end']}")
 
             for col in row:
                 rows_and_columns += ''.join(f"{TABLE['column']['start']}"
                                             f"{'' if col is None else col}"
                                             f"{TABLE['column']['end']}")
 
-            rows_and_columns = (f'{rows_and_columns}'
-                                f'{TABLE['row']['end']}')
+            rows_and_columns = (f"{rows_and_columns}"
+                                f"{TABLE['row']['end']}")
 
-    return (f'{TABLE['start']}'
-            f'{rows_and_columns}'
-            f'{TABLE['body']['end']}'
-            f'{TABLE['end']}')
+    return (f"{TABLE['start']}"
+            f"{rows_and_columns}"
+            f"{TABLE['body']['end']}"
+            f"{TABLE['end']}")
