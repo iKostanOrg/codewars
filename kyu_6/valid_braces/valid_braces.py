@@ -37,7 +37,6 @@ def valid_braces(string: str) -> bool:
     return True
 
 
-@typing.no_type_check
 def validate_next_pair(string: str, index: int) -> int:
     """
     Check if next pair of brackets is valid.
