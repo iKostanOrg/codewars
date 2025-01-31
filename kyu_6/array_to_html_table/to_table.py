@@ -54,10 +54,10 @@ def to_table(data: list, header: bool = False, index: bool = False) -> str:
                                     f"{TABLE['header']['start']}"
                                     f"{TABLE['header']['end']}")
 
-            rows_and_columns += ''.join(f"{TABLE['header']['start']}"
-                                        f"{col}"
-                                        f"{TABLE['header']['end']}"
-                                        for b, col in enumerate(row))
+            rows_and_columns += ''.join(
+                f"{TABLE['header']['start']}{col}{TABLE['header']['end']}"
+                for col in row
+            )
 
             rows_and_columns = (f"{rows_and_columns}"
                                 f"{TABLE['row']['end']}"
