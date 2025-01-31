@@ -15,6 +15,7 @@ Subpackages
    kyu_6.casino_chips.module
    kyu_6.character_frequency.module
    kyu_6.color_choice.module
+   kyu_6.conversion_between_kilobyte_and_kibibyte.module
    kyu_6.count_letters_in_string.module
    kyu_6.decipher_this.module
    kyu_6.default_list.module
@@ -22,6 +23,7 @@ Subpackages
    kyu_6.duplicate_encoder.module
    kyu_6.easy_diagonal.module
    kyu_6.encrypt_this.module
+   kyu_6.find_the_in_between_point.module
    kyu_6.find_the_odd_int.module
    kyu_6.first_character_that_repeats.module
    kyu_6.format_string_of_names.module

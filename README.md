@@ -63,12 +63,18 @@ moderate the content and community.
 6.  [GitHub Desktop](https://desktop.github.com/)
 7.  [GIT 2.39.1.windows.1](https://git-scm.com/download/win)
 
-### Python Packages
+### List Of Python Packages/Dependencies
 
 <!-- markdownlint-disable MD013 -->
-| No. |                            Package                            | Description | Link |
-|-----|:-------------------------------------------------------------:|-------------|:----:|
-| 1   |                                                               |             |      |
+| No. |       Package        | Description                                                                                                                                                          |                           Link                            |
+|:---:|:--------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------:|
+|  1  |      alabaster       | Alabaster is a visually clean, responsive, configurable theme for the *Sphinx documentation system*. It requires Python 3.10 or newer and Sphinx 6.2 or newer.       |       [Source](https://pypi.org/project/alabaster/)       |
+|  2  |    allure-pytest     | Allure Pytest Plugin.                                                                                                                                                |     [Source](https://pypi.org/project/allure-pytest/)     |
+|  3  | allure-python-common | The package contains classes and functions for users of Allure Report. It can be used to enhance reports using an existing Allure adapter or to create new adapters. | [Source](https://pypi.org/project/allure-python-commons/) |
+|  4  |       altgraph       | A graph (network) package for constructing graphs, BFS and DFS traversals, topological sort, shortest paths, etc. with graphviz output.                              |       [Source](https://pypi.org/project/altgraph/)        |
+|  5  |     atomicwrites     | Atomic file writes. This package is also used in order to run pytest.                                                                                                |     [Source](https://pypi.org/project/atomicwrites/)      |
+|  6  |         attr         | Simple decorator to set attributes of target function or class in a DRY way.                                                                                         |         [Source](https://pypi.org/project/attrs/)         |
+|  7  |       autopep8       | A tool that automatically formats Python code to conform to the PEP 8 style guide.                                                                                   |         [Source](https://pypi.org/project/autopep8/)      |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
@@ -79,8 +85,7 @@ Python3 solutions for codewars problems’s documentation is built
 with Sphinx using a theme provided by Read the Docs.
 
 Sphinx is a tool that makes it easy to create intelligent and
-beautiful documentation, written by Georg Brandl and licensed under
-the BSD license. 
+beautiful documentation.
 
 [Online version of the latest tech documentation](https://codewars.readthedocs.io/)
 

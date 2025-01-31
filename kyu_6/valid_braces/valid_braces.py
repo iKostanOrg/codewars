@@ -4,7 +4,6 @@ Test for -> Valid Braces.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
-import typing
 
 BRACES: dict = {
     '(': ')',
@@ -31,26 +30,25 @@ def valid_braces(string: str) -> bool:
     while index < len(string) - 1:
         # get next index to validate
         index = validate_next_pair(string, index)
-        if not index:
+        if index == -1:
             return False
 
     return True
 
 
-@typing.no_type_check
-def validate_next_pair(string: str, index: int) -> None | int:
+def validate_next_pair(string: str, index: int) -> int:
     """
     Check if next pair of brackets is valid.
 
     :param string: string of brackets
-    :param index: current index to validate
+    :param index: current index to validate, -1 for None
     :return: next index or None if no matching brackets
     """
     char: str = string[index]
     # in the first half of the string a new pair
     # should not be starting from closing brackets
     if index < (len(string) // 2) and char in CLOSING:
-        return None
+        return -1
     # neighbor two brackets are matching pair
     if BRACES[char] == string[index + 1]:
         index += 2
@@ -61,4 +59,4 @@ def validate_next_pair(string: str, index: int) -> None | int:
         index += 1
         return index
     # no matching pair found
-    return None
+    return -1
