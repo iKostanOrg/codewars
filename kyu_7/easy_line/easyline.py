@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 import math
 
 
-def easy_line(n: int) -> int | ValueError:
+def easy_line(n: int) -> int:
     """
     Easy line function.
 
