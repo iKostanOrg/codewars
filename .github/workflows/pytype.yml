@@ -1,10 +1,12 @@
 ---
-name: pydocstyle for kyu4
+name: PYTYPE Lint
 
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'kyu4'
+      - 'utils'
+      - 'none'
+  workflow_call:
 
 permissions:
   contents: read
@@ -15,7 +17,7 @@ jobs:
     runs-on: 'ubuntu-24.04'
     strategy:
       matrix:
-        python-version: ["3.x"]
+        python-version: ["3.11"]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -31,16 +33,31 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
-          pip install pydocstyle
-          pip install types-requests
+          pip install pytype
       - name: Check to make sure that the module is in your Python path
         run: |
           echo $PYTHONPATH
-      - name: Check pydocstyle version
+      - name: kyu2 Python Data Type Checking with pytype
         run: |
-          pydocstyle --version
-      - name: Doc style checking with pydocstyle
-        # Pydocstyle testing (Guide)
-        # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
+          pytype kyu_2
+      - name: kyu_3 Python Data Type Checking with pytype
         run: |
-          pydocstyle --verbose --explain --count kyu_4
+          pytype kyu_3
+      - name: kyu_4 Python Data Type Checking with pytype
+        run: |
+          pytype kyu_4
+      - name: kyu_5 Python Data Type Checking with pytype
+        run: |
+          pytype kyu_5
+      - name: kyu_6 Python Data Type Checking with pytype
+        run: |
+          pytype kyu_6
+      - name: kyu_7 Python Data Type Checking with pytype
+        run: |
+          pytype kyu_7
+      - name: kyu_8 Python Data Type Checking with pytype
+        run: |
+          pytype
+      - name: utils Python Data Type Checking with pytype
+        run: |
+          pytype utils
