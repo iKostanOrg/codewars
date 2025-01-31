@@ -74,7 +74,7 @@ moderate the content and community.
 |  4  |       altgraph       | A graph (network) package for constructing graphs, BFS and DFS traversals, topological sort, shortest paths, etc. with graphviz output.                              |       [Source](https://pypi.org/project/altgraph/)        |
 |  5  |     atomicwrites     | Atomic file writes. This package is also used in order to run pytest.                                                                                                |     [Source](https://pypi.org/project/atomicwrites/)      |
 |  6  |         attr         | Simple decorator to set attributes of target function or class in a DRY way.                                                                                         |         [Source](https://pypi.org/project/attrs/)         |
-|  7  |      autopep8        | A tool that automatically formats Python code to conform to the PEP 8 style guide.                                                                                   |         [Source](https://pypi.org/project/autopep8/)      |
+|  7  |       autopep8       | A tool that automatically formats Python code to conform to the PEP 8 style guide.                                                                                   |         [Source](https://pypi.org/project/autopep8/)      |
 <!-- markdownlint-enable MD013 -->
 
 Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
