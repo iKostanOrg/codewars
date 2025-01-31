@@ -8,18 +8,19 @@ GitHub: https://github.com/ikostan
 import math
 
 
-def easy_line(n: int):
+def easy_line(n: int) -> [bool, ValueError]:
     """
     Easy line function.
 
     The function will take n (with: n>= 0) as parameter
     and will return the sum of the squares of the binomial
     coefficients with line 'n'.
+    :param ValueError:
     :param n: the line number (with: n>= 0)
     :return:
     """
     if n < 0:
-        raise ValueError('ERROR: invalid n ({}) value. n must be >= 0')
+        raise ValueError(f'ERROR: invalid n ({n}) value. n must be >= 0')
 
     if n == 0:
         return 1
