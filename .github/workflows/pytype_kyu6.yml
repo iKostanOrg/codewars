@@ -31,6 +31,6 @@ jobs:
       - name: Check to make sure that the module is in your Python path
         run: |
           echo $PYTHONPATH
-      - name: Python Data Type Checking with MyPy
+      - name: Python Data Type Checking with PYTYPE
         run: |
           pytype kyu_6 
