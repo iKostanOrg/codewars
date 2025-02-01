@@ -119,7 +119,7 @@ class PointlessFarmerTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         with allure.step(f"Enter test data: {market} "
                          f"and verify the expected result: {expected}."):
-            result: list = buy_or_sell(market, harvested_fruit)
+            result: str = buy_or_sell(market, harvested_fruit)
             print_log(market=market,
                       harvested_fruit=harvested_fruit,
                       expected=expected,
