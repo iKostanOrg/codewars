@@ -6,7 +6,7 @@ GitHub: https://github.com/ikostan
 """
 
 
-def buy_or_sell(pairs: list, harvested_fruit: str):
+def buy_or_sell(pairs: list, harvested_fruit: str) -> str | list:
     """
     Decide which direction to trade.
 
