@@ -297,7 +297,7 @@ html_theme = 'sphinx_rtd_theme'
 ```
 8. Update sys.path.insert as following: 
 ```python
-sys.path.insert(0, os.path.abspath('..'))
+   sys.path.insert(0, os.path.abspath('..'))
 ```
 9. Go to docs/index.rst > add modules, see example below:
 ```bash
