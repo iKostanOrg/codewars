@@ -15,7 +15,6 @@ def easy_line(n: int) -> int:
     The function will take n (with: n>= 0) as parameter
     and will return the sum of the squares of the binomial
     coefficients with line 'n'.
-    :param ValueError:
     :param n: the line number (with: n>= 0)
     :return:
     """
