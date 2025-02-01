@@ -64,12 +64,18 @@ class EasyLineTestCase(unittest.TestCase):
         n: int = -1
         error_txt: str = f'ERROR: invalid n ({n}) value. n must be >= 0'
 
-        # Source: https://dev.to/wangonya/asserting-exceptions-with-pytest-8hl
+        # Sources:
+        # https://dev.to/wangonya/asserting-exceptions-with-pytest-8hl
+        with allure.step(f"Enter invalid n ({n}) "
+                         f"and assert raises ValueError exception."):
+            with self.assertRaises(ValueError):
+                easy_line(n)
+
         with allure.step(f"Enter invalid n ({n}) "
                          f"and assert exception message: {error_txt})."):
             with pytest.raises(ValueError) as error:
-                self.assertRaises(ValueError, easy_line(n))
-                self.assertEqual(error_txt, error.value)
+                easy_line(n)
+            self.assertEqual(error_txt, error.value.args[0])
 
     @parameterized.expand([
         (0, 0, 1),
