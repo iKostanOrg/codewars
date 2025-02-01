@@ -16,7 +16,7 @@ def largest_power(num: int) -> int:
     :param num:
     :return:
     """
-    result: float = 0.0
+    result: int = 0
     n: int = 0
     while result < num:
         result = 3 ** n
