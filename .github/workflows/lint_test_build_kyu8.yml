@@ -2,13 +2,13 @@
 name: kyu8 Build Pipeline
 
 on:   # yamllint disable-line rule:truthy
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
-  workflow_call:
+  push:
+    branches:
+      - 'kyu8'
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   flake8:
