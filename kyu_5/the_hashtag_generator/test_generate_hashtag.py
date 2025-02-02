@@ -52,8 +52,8 @@ class GenerateHashtagTestCase(unittest.TestCase):
           oooooooooooooooooooooooooooooooooooooo\
           ooooooooooooooooooooooooooooooooooooo\
           oooooong Cat', False,
-          'Should return False if the final word is '
-          'longer than 140 chars.')])
+          'Should return False if the final word is \
+          longer than 140 chars.')])
     def test_generate_hashtag(self, string, expected, message):
         """
         Testing 'generate_hashtag' function with various test data.
