@@ -6,10 +6,6 @@ on:   # yamllint disable-line rule:truthy
     branches:
       - 'kyu8'
 
-permissions:
-  contents: read
-  pull-requests: read
-
 jobs:
   flake8:
     name: flake8
