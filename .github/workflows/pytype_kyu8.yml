@@ -4,12 +4,7 @@ name: PyType for kyu8
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'none'
-  workflow_call:
-
-permissions:
-  contents: read
-  pull-requests: read
+      - 'kyu8'
 
 jobs:
   build:

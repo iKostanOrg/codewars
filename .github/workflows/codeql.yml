@@ -16,6 +16,8 @@ name: "CodeQL"
 
 on:  # yamllint disable-line rule:truthy
   pull_request_target:
+    branches:
+      - 'none'
     types:
       - opened
       - edited
