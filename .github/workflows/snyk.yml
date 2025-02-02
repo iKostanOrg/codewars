@@ -6,14 +6,6 @@ on:  # yamllint disable-line rule:truthy
     branches:
       - 'utils'
       - 'none'
-    branches-ignore:
-      - 'kyu2'
-      - 'kyu3'
-      - 'kyu4'
-      - 'kyu5'
-      - 'kyu6'
-      - 'kyu7'
-      - 'kyu8'
   workflow_call:
     secrets:
       snyk_token:
