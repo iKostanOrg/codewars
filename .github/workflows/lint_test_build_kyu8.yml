@@ -13,16 +13,16 @@ permissions:
 jobs:
   flake8:
     name: flake8
-    uses: iKostanOrg/codewars/.github/workflows/kyu8/flake8_kyu8.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/flake8_kyu8.yml@kyu8
   mypy:
     name: mypy
-    uses: iKostanOrg/codewars/.github/workflows/kyu8/mypy_kyu8.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/mypy_kyu8.yml@kyu8
   pydocstyle:
     name: pydocstyle
-    uses: iKostanOrg/codewars/.github/workflows/kyu8/pydocstyle_kyu8.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/pydocstyle_kyu8.yml@kyu8
   pylint:
     name: pylint
-    uses: iKostanOrg/codewars/.github/workflows/kyu8/pylint_kyu8.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/pylint_kyu8.yml@kyu8
   pytype:
     name: pytype
-    uses: iKostanOrg/codewars/.github/workflows/kyu8/pytype_kyu8.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/pytype_kyu8.yml@kyu8
