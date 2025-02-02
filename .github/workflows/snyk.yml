@@ -4,7 +4,6 @@ name: "Snyk"
 on:  # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'utils'
       - 'none'
   workflow_call:
     secrets:
