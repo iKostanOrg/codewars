@@ -20,6 +20,7 @@ on:  # yamllint disable-line rule:truthy
         description:
           'A Snyk token passed from the caller workflow'
         required: true
+
 jobs:
   security:
     permissions:
