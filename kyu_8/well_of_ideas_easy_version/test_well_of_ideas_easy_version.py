@@ -1,5 +1,6 @@
 """
-Tests for -> Well of Ideas - Easy Version
+Tests for -> Well of Ideas - Easy Version.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,14 +30,12 @@ from kyu_8.well_of_ideas_easy_version.well_of_ideas_easy_version \
     name='Source/Kata')
 # pylint: enable=R0801
 class WellTestCase(unittest.TestCase):
-    """
-    Testing well function
-    """
+    """Testing 'well' function."""
 
     def test_well_fail(self):
         """
-        If there are no good ideas,
-        as is often the case, return 'Fail!'.
+        If there are no good ideas, as is often the case, return 'Fail!'.
+
         :return:
         """
         # pylint: disable=R0801
@@ -44,10 +43,11 @@ class WellTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>If there are no good ideas, return 'Fail!'.</p>")
         # pylint: enable=R0801
         with allure.step("Pass list with no 'good' in it"):
             lst: list = ['bad', 'bad', 'bad']
@@ -57,8 +57,8 @@ class WellTestCase(unittest.TestCase):
 
     def test_well_publish(self):
         """
-        If there are one or two good ideas,
-        return 'Publish!',
+        If there are one or two good ideas, return 'Publish!'.
+
         :return:
         """
         # pylint: disable=R0801
@@ -69,7 +69,7 @@ class WellTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>If there are one or two good ideas, return 'Publish!'</p>")
         # pylint: enable=R0801
         with allure.step("Pass list with one 'good' in it"):
             lst: list = ['good', 'bad', 'bad', 'bad', 'bad']
@@ -79,8 +79,8 @@ class WellTestCase(unittest.TestCase):
 
     def test_well_series(self):
         """
-        if there are more than 2 return
-        'I smell a series!'.
+        If there are more than 2 return 'I smell a series!'.
+
         :return:
         """
         # pylint: disable=R0801
@@ -91,7 +91,7 @@ class WellTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>If there are more than 2 return 'I smell a series!'</p>")
         # pylint: enable=R0801
         with allure.step("Pass list with more than 2 'good' in it"):
             lst: list = ['good', 'bad', 'bad',

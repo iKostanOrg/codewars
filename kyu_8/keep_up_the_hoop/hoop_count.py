@@ -1,5 +1,6 @@
 """
-Solution -> Keep up the hoop
+Solution -> Keep up the hoop.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,9 +8,10 @@ GitHub: https://github.com/ikostan
 
 def hoop_count(n: int) -> str:
     """
-    A program where Alex can input (n) how many times the
-    hoop goes round and it will return him an encouraging message
+    'hoop_count' function.
 
+    A program where Alex can input (n) how many times the
+    hoop goes round, and it will return him an encouraging message
     :param n: int
     :return: str
     """

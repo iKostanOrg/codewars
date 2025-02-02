@@ -1,5 +1,6 @@
 """
-Test for -> Vasya - Clerk
+Test for -> Vasya - Clerk.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.vasya_clerk.tickets import tickets
 
@@ -27,10 +29,24 @@ from kyu_6.vasya_clerk.tickets import tickets
     url='https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8',
     name='Source/Kata')
 class TicketsTestCase(unittest.TestCase):
-    """
-    Testing tickets function
-    """
-    def test_tickets(self):
+    """Testing tickets function."""
+
+    @parameterized.expand([
+        ([25, 25, 50], 'YES', 'All good'),
+        ([25, 100], 'NO',
+         'Vasya will not have enough money '
+         'to give change to 100 dollars'),
+        ([25, 25, 50, 50, 100], 'NO',
+         'Vasya will not have the right bills '
+         'to give 75 dollars of change (you can\'t '
+         'make two bills of 25 from one of 50)'),
+        ([25, 50, 25, 100, 25, 25, 50, 100, 25, 25, 25,
+          100, 25, 25, 50, 100, 25, 50, 25, 100, 25, 50,
+          50, 50], 'NO', 'N/A'),
+        ([25, 25, 25, 100, 25, 25, 25, 100, 25,
+          25, 50, 100, 25, 25, 50, 100, 50, 50],
+         'NO', 'N/A')])
+    def test_tickets(self, arr, expected, msg):
         """
         Testing tickets function with various test inputs.
 
@@ -64,29 +80,5 @@ class TicketsTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test input (list) and verify the output"):
-            test_data: tuple = (
-                ([25, 25, 50],
-                 'YES',
-                 'All good'),
-                ([25, 100],
-                 'NO',
-                 'Vasya will not have enough money '
-                 'to give change to 100 dollars'),
-                ([25, 25, 50, 50, 100],
-                 'NO',
-                 'Vasya will not have the right bills '
-                 'to give 75 dollars of change (you can\'t '
-                 'make two bills of 25 from one of 50)'),
-                ([25, 50, 25, 100, 25, 25, 50, 100, 25, 25, 25,
-                  100, 25, 25, 50, 100, 25, 50, 25, 100, 25, 50,
-                  50, 50],
-                 'NO',
-                 'N/A'),
-                ([25, 25, 25, 100, 25, 25, 25, 100, 25,
-                  25, 50, 100, 25, 25, 50, 100, 50, 50],
-                 'NO',
-                 'N/A'))
-
-            for arr, expected, msg in test_data:
-                print_log(people=arr, expected=expected, msg=msg)
-                self.assertEqual(expected, tickets(arr), msg)
+            print_log(people=arr, expected=expected, msg=msg)
+            self.assertEqual(expected, tickets(arr), msg)

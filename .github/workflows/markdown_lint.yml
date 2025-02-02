@@ -1,5 +1,5 @@
 ---
-name: 'Markdown Lint'
+name: Markdown Lint
 
 on:   # yamllint disable-line rule:truthy
   push:
@@ -13,12 +13,12 @@ permissions:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-24.04'
     steps:
       - name: Checkout v4
         uses: actions/checkout@v4
       - name: markdownlint-cli2-action v16
-        uses: DavidAnson/markdownlint-cli2-action@v18
+        uses: DavidAnson/markdownlint-cli2-action@v19
         with:
           config: '.markdownlint-cli2.yaml'
           fix: true

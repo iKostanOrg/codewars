@@ -1,5 +1,6 @@
 """
-Test for -> Pyramid Array
+Test for -> Pyramid Array.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,15 +26,16 @@ from kyu_6.pyramid_array.pyramid_array import pyramid
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class PyramidTestCase(unittest.TestCase):
-    """
-    Testing 'pyramid' function
-    """
+    """Testing 'pyramid' function."""
+
     def test_pyramid(self):
         """
-        The 'pyramid' function should return
-        an Array of ascending length subarrays.
+        Testing 'pyramid' function with various test data.
 
-        Note: the subarrays should be filled with 1s.
+        The 'pyramid' function should return
+        an Array of ascending length sub-arrays.
+
+        Note: the sub-arrays should be filled with 1s.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -46,25 +48,25 @@ class PyramidTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Pass zero"):
+        with allure.step("Pass zero:"):
             n: int = 0
             expected: list = []
             print_log(n=n, expected=expected)
             self.assertEqual(pyramid(n), expected)
 
-        with allure.step("Pass one"):
+        with allure.step("Pass one:"):
             n = 1
             expected = [[1]]
             print_log(n=n, expected=expected)
             self.assertEqual(pyramid(n), expected)
 
-        with allure.step("Pass two"):
+        with allure.step("Pass two:"):
             n = 2
             expected = [[1], [1, 1]]
             print_log(n=n, expected=expected)
             self.assertEqual(pyramid(n), expected)
 
-        with allure.step("Pass three"):
+        with allure.step("Pass three:"):
             n = 3
             expected = [[1], [1, 1], [1, 1, 1]]
             print_log(n=n, expected=expected)

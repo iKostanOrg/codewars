@@ -1,5 +1,5 @@
 ---
-version: "2"         # required to adjust maintainability checks
+version: "2"  # required to adjust maintainability checks
 
 checks:
   import-error:
@@ -8,12 +8,28 @@ checks:
     enabled: false
   no-name-in-module:
     enabled: false
-  # Per-Language Mass Threshold Defaults
-  # https://docs.codeclimate.com/docs/duplication#section-understand-the-engine
   similar-code:
     config:
-      threshold: 68 #overriding will affect all languages
+      threshold: 68
   identical-code:
     config:
-      threshold: 32 #overriding will affect all languages
-# ... CONFIG CONTENT ...
+      threshold: 32
+plugins:
+  duplication:
+    enabled: false
+exclude_patterns:
+  - ".circleci/"
+  - ".github/"
+  - ".venv/"
+  - "docs/"
+  - "deprecated/"
+  - "img/"
+  - "**/node_modules/"
+  - "script/"
+  - "**/spec/"
+  - "**/vendor/"
+  - "**/*_test.go"
+  - "**/*.d.ts"
+  - "allure-report/"
+  - "allure-results/"
+  - "*.txt"

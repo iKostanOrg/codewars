@@ -1,5 +1,6 @@
 """
-Test for -> MakeUpperCase
+Test for -> MakeUpperCase.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,13 +26,12 @@ from kyu_8.make_upper_case.make_upper_case import make_upper_case
     name='Source/Kata')
 # pylint: enable=R0801
 class MakeUpperCaseTestCase(unittest.TestCase):
-    """
-    Testing make_upper_case function
-    """
+    """Testing make_upper_case function."""
 
     def test_make_upper_case(self):
         """
-        Sample Tests for make_upper_case function
+        Sample Tests for make_upper_case function.
+
         :return:
         """
         # pylint: disable=R0801
@@ -39,10 +39,12 @@ class MakeUpperCaseTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Make sure 'make_upper_case' function convert "
+            "strings to UpperCase.</p>")
         # pylint: enable=R0801
         with allure.step("Pass lower case string and verify the output"):
             string: str = "hello"

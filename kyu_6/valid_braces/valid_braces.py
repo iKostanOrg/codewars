@@ -1,9 +1,9 @@
 """
-Test for -> Valid Braces
+Test for -> Valid Braces.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
-import typing
 
 BRACES: dict = {
     '(': ')',
@@ -11,14 +11,15 @@ BRACES: dict = {
     '[': ']',
     ']': '[',
     '{': '}',
-    '}': '{',
-}
+    '}': '{'}
 
 CLOSING: str = ')}]'
 
 
 def valid_braces(string: str) -> bool:
     """
+    Validate braces.
+
     A function that takes a string of braces, and determines if the order
     of the braces is valid. It should return true if the string is valid,
     and false if it's invalid.
@@ -29,37 +30,33 @@ def valid_braces(string: str) -> bool:
     while index < len(string) - 1:
         # get next index to validate
         index = validate_next_pair(string, index)
-        if not index:
+        if index == -1:
             return False
 
     return True
 
 
-@typing.no_type_check
-def validate_next_pair(string: str, index: int) -> None | int:
+def validate_next_pair(string: str, index: int) -> int:
     """
-    Check if next pair of brackets is valid
+    Check if next pair of brackets is valid.
+
     :param string: string of brackets
-    :param index: current index to validate
+    :param index: current index to validate, -1 for None
     :return: next index or None if no matching brackets
     """
     char: str = string[index]
-
     # in the first half of the string a new pair
     # should not be starting from closing brackets
     if index < (len(string) // 2) and char in CLOSING:
-        return None
-
+        return -1
     # neighbor two brackets are matching pair
     if BRACES[char] == string[index + 1]:
         index += 2
         return index
-
     # matching pair consist of brackets
     # in each half of the string
     if BRACES[char] == string[(index + 1) * -1]:
         index += 1
         return index
-
     # no matching pair found
-    return None
+    return -1

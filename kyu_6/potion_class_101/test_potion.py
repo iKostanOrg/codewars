@@ -1,5 +1,6 @@
 """
-Test for -> Potion Class 101
+Test for -> Potion Class 101.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from utils.log_func import print_log
 from kyu_6.potion_class_101.potion import Potion
 
 
@@ -22,12 +24,12 @@ from kyu_6.potion_class_101.potion import Potion
     url='https://www.codewars.com/kata/5981ff1daf72e8747d000091',
     name='Source/Kata')
 class PotionTestCase(unittest.TestCase):
-    """
-    Testing potion func for Potion Class 101 problem
-    """
+    """Testing potion func for Potion Class 101 problem."""
+
     def test_potion(self):
         """
-        Testing potion function with various test inputs
+        Testing potion function with various test inputs.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -56,19 +58,32 @@ class PotionTestCase(unittest.TestCase):
         e = potions[0].mix(potions[1]).mix(potions[2]).mix(
             potions[3]).mix(potions[4]).mix(potions[5])
 
-        with allure.step("Mix between RGB colors and verify the output"):
-
+        with allure.step(f"Mix between RGB colors: {(147, 149, 130)} "
+                         f"and verify the output: {a.color, a.volume}."):
             self.assertEqual((147, 149, 130), a.color)
             self.assertEqual(49, a.volume)
+            print_log(expected=49, result=a.volume)
 
+        with allure.step(f"Mix between RGB colors: {(135, 101, 128)} "
+                         f"and verify the output: {b.color, b.volume}."):
             self.assertEqual((135, 101, 128), b.color)
             self.assertEqual(76, b.volume)
+            print_log(expected=76, result=b.volume)
 
+        with allure.step(f"Mix between RGB colors: {(74, 50, 18)} "
+                         f"and verify the output: {c.color, c.volume}."):
             self.assertEqual((74, 50, 18), c.color)
             self.assertEqual(52, c.volume)
+            print_log(expected=52, result=c.volume)
 
+        with allure.step(f"Mix between RGB colors: {(130, 91, 102)} "
+                         f"and verify the output: {d.color, d.volume}."):
             self.assertEqual((130, 91, 102), d.color)
             self.assertEqual(99, d.volume)
+            print_log(expected=99, result=d.volume)
 
+        with allure.step(f"Mix between RGB colors: {(132, 96, 99)} "
+                         f"and verify the output: {e.color, e.volume}."):
             self.assertEqual((132, 96, 99), e.color)
             self.assertEqual(103, e.volume)
+            print_log(expected=103, result=e.volume)

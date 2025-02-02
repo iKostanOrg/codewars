@@ -1,5 +1,6 @@
 """
-Solution for -> Personalized greeting
+Solution for -> Personalized greeting.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,9 +8,9 @@ GitHub: https://github.com/ikostan
 
 def greet(name: str, owner: str) -> str:
     """
-    Function that gives a personalized greeting.
-    This function takes two parameters: name and owner.
+    Return a personalized greeting.
 
+    This function takes two parameters: name and owner.
     :param name: str
     :param owner: str
     :return:

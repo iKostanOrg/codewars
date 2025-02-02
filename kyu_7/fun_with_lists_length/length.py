@@ -1,5 +1,6 @@
 """
-Solution for -> Fun with lists: length
+Solution for -> Fun with lists: length.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def length(head) -> int:
     """
+    Length function.
+
     The method length, which accepts a linked list
     (head), and returns the length of the list.
     :param head:

@@ -1,5 +1,6 @@
 """
-Test for -> Reversed Strings
+Test for -> Reversed Strings.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,13 +27,12 @@ from kyu_8.reversed_strings.reversed_strings import solution
     name='Source/Kata')
 # pylint: enable=R0801
 class ReversedStringsTestCase(unittest.TestCase):
-    """
-    Testing the solution for 'Reversed Strings' problem
-    """
+    """Testing the solution for 'Reversed Strings' problem."""
 
     def test_reversed_strings_empty(self):
         """
-        Test with empty string
+        Test with empty string.
+
         :return:
         """
         # pylint: disable=R0801
@@ -53,7 +53,8 @@ class ReversedStringsTestCase(unittest.TestCase):
 
     def test_reversed_strings_one_char(self):
         """
-        Test with one char only
+        Test with one char only.
+
         :return:
         """
         # pylint: disable=R0801
@@ -74,7 +75,8 @@ class ReversedStringsTestCase(unittest.TestCase):
 
     def test_reversed_strings(self):
         """
-        Test with regular string
+        Test with regular string.
+
         :return:
         """
         # pylint: disable=R0801

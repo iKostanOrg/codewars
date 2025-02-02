@@ -1,5 +1,6 @@
 """
-Test for -> Count letters in string
+Test for -> Count letters in string.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,12 @@ from kyu_6.count_letters_in_string.count_letters_in_string \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class CountLettersInStringTestCase(unittest.TestCase):
-    """
-    Testing 'letter_count' function
-    """
+    """Testing 'letter_count' function."""
 
     def test_count_letters_in_string(self):
         """
-        Testing 'letter_count' function
+        Testing 'letter_count' function.
+
         :return:
         """
         # pylint: disable-msg=R0801
