@@ -1,0 +1,28 @@
+---
+name: kyu8 Build Pipeline
+
+on:   # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - 'kyu8'
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  flake8:
+    name: flake8
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/flake8_kyu8.yml@master
+  mypy:
+    name: mypy
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/mypy_kyu8.yml@master
+  pydocstyle:
+    name: pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/pydocstyle_kyu8.yml@master
+  pylint:
+    name: pylint
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/pylint_kyu8.yml@master
+  pytype:
+    name: pytype
+    uses: iKostanOrg/codewars/.github/workflows/kyu8/pytype_kyu8.yml@master
