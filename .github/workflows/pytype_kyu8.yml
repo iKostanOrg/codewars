@@ -1,5 +1,5 @@
 ---
-name: PYTYPE for kyu8
+name: PyType for kyu8
 
 on:   # yamllint disable-line rule:truthy
   push:
@@ -9,6 +9,9 @@ on:   # yamllint disable-line rule:truthy
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.11"]
