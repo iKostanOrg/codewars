@@ -36,19 +36,10 @@ class FirstNonRepeatedTestCase(unittest.TestCase):
         ("test", 'e'),
         ("teeter", 'r'),
         ("1122321235121222", '5'),
-        ('1122321235121222dsfasddssdfa112232123sdfasdfasdf11'
-         '22321235121222dsfasddssdfa112232123sdfasdfasdf1122'
-         '321231122321235121222dsfasddssdfa112232123sdfasdfa'
-         'sdf1122321231122321235121222dsfasddssdfa112232123sd'
-         'fasdfasdf1122321231122321235121222dsfasddssdfa11223'
-         '2123sdfasdfasdf1122321231122321235121222dsfasddssdf'
-         'a112232123sdfasdfasdf112232123asddssdfa112232123sdfa'
-         'sdfasdf1122z321231122321235121222dsfasddssdf1122321'
-         '235121222dsfasddssdf1122321235121222dsfasddssdf11223'
-         '21235121222dsfasddssdf1122321235121222dsfasddssdf112'
-         'p2321235121222dsfasddssdf1122321235121222dsfasddssdf', 'z'),
+        ('uqqmsmtnrhjooknjtmllkpuphirsi', None),
         ('ogmhrsoqiklqfmhgnpjsrikmnlpfj', None),
-        ('knioolrpnutskmqmhqtriipjjushl', None)])
+        ('knioolrpnutskmqmhqtriipjjushl', None),
+        ('oirfqjmsrmnhlqgghplpsonkyfijk', 'y')])
     def test_first_non_repeated(self, s, expected):
         """
         Testing first_non_repeated function with various test data.

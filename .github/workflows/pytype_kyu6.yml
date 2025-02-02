@@ -1,0 +1,36 @@
+---
+name: PYTYPE for kyu6
+
+on:   # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - 'kyu6'
+
+jobs:
+  build:
+    runs-on: 'ubuntu-24.04'
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        # This is the version of the action for setting up Python,
+        # not the Python version.
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install -r requirements.txt
+          pip install pytype
+      - name: Check to make sure that the module is in your Python path
+        run: |
+          echo $PYTHONPATH
+      - name: Python Data Type Checking with PYTYPE
+        run: |
+          pytype kyu_6
