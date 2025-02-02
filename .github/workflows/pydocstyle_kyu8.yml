@@ -4,9 +4,7 @@ name: pydocstyle for kyu8
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'utils'
-      - 'none'
-  workflow_call:
+      - 'kyu8'
 
 permissions:
   contents: read
