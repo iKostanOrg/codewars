@@ -7,6 +7,6 @@ on:   # yamllint disable-line rule:truthy
       - 'kyu8'
 
 jobs:
-  pytype:
-    name: PyType
-    uses: iKostanOrg/codewars/.github/workflows/kyu8/pytype_kyu8.yml
+  markdown:
+    name: Markdown Lint
+    uses: iKostanOrg/codewars/.github/workflows/markdown_lint.yml@master
