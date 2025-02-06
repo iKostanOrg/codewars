@@ -39,30 +39,30 @@ class StringTransformerTestCase(unittest.TestCase):
         (" A b C d E f G ", " g F e D c B a "),
         ("Alc   Rl VLEE      k xLU c c",
          "C C Xlu K      vlee rL   aLC"),
-        ("J VVmviAdpIAFzh zs oMHsx  HPvN  xt sN PlW u K \
-         Q XnV mR  Betg  ox E   j cIiQ  Fa GJdk  ECYzH  BkuU ",
-         " bKUu  ecyZh  gjDK fA  CiIq J   e OX  bETG  Mr \
-         xNv q k U pLw Sn XT  hpVn  OmhSX ZS vvMVIaDPiafZH j"),
-        ("LXOP QmsZs R   i jUor SWDkkhh P  X Q H vz  gD \
-         KSpv hGCOSB  e e r piw pXB OqkIbb ",
-         " oQKiBB Pxb PIW R E E  Hgcosb ksPV Gd  VZ h q \
-         x  p swdKKHH JuOR I   r qMSzS lxop"),
-        ('V Ots Ev k Q bC  jK Db cezl YdmzzYbK iu   JdJu P  \
-         qeAwqZYewoHk YnGdGQa LoDorPaUom cSJo s',
-         'S CsjO lOdORpAuOM yNgDgqA QEaWQzyEWOhK  p jDjU   \
-         IU yDMZZyBk CEZL dB Jk  Bc q K eV oTS v'),
-        ("KYjBc SgkXrFIDq  MYv XAEzh RX fkSPCF tMtYN ewyhq \
-         EFSgia  DUH u vXizIYb u oZ OMw YjaqzJ  BJGjfOc  s",
-         "S  bjgJFoC  yJAQZj omW Oz U VxIZiyB U duh  efsGIA \
-         EWYHQ TmTyn FKspcf rx xaeZH myV  sGKxRfidQ kyJbC"),
-        ("ncE  ZpQ O y  A  fBNbw R v rCg n yhpvx BMn tk \
-         ubCZrHJl   GiEyCjZcRk   kheNwWj PA ZAGpsZamNHb",
-         "zagPSzAMnhB pa KHEnWwJ   gIeYcJzCrK   UBczRhjL TK \
-         bmN YHPVX N RcG V r FbnBW  a  Y o zPq  NCe"),
-        ("UOtfi  erH kCk KXzg Io  Y  I TYAf \
-         EGXVSvASIyJ p Zf p kV g RI  V",
-         "v  ri G Kv P zF P egxvsVasiYj tyaF \
-         i  y  iO kxZG KcK ERh  uoTFI")])
+        ("J VVmviAdpIAFzh zs oMHsx  HPvN  xt sN PlW u K Q "\
+         "XnV mR  Betg  ox E   j cIiQ  Fa GJdk  ECYzH  BkuU ",
+         " bKUu  ecyZh  gjDK fA  CiIq J   e OX  bETG  Mr "\
+         "xNv q k U pLw Sn XT  hpVn  OmhSX ZS vvMVIaDPiafZH j"),
+        ("LXOP QmsZs R   i jUor SWDkkhh P  X Q H vz  gD "\
+         "KSpv hGCOSB  e e r piw pXB OqkIbb ",
+         " oQKiBB Pxb PIW R E E  Hgcosb ksPV Gd  VZ h q "\
+         "x  p swdKKHH JuOR I   r qMSzS lxop"),
+        ("V Ots Ev k Q bC  jK Db cezl YdmzzYbK iu   JdJu P  "\
+         "qeAwqZYewoHk YnGdGQa LoDorPaUom cSJo s",
+         "S CsjO lOdORpAuOM yNgDgqA QEaWQzyEWOhK  p jDjU   "\
+         "IU yDMZZyBk CEZL dB Jk  Bc q K eV oTS v"),
+        ("KYjBc SgkXrFIDq  MYv XAEzh RX fkSPCF tMtYN ewyhq "\
+         "EFSgia  DUH u vXizIYb u oZ OMw YjaqzJ  BJGjfOc  s",
+         "S  bjgJFoC  yJAQZj omW Oz U VxIZiyB U duh  efsGIA "\
+         "EWYHQ TmTyn FKspcf rx xaeZH myV  sGKxRfidQ kyJbC"),
+        ("ncE  ZpQ O y  A  fBNbw R v rCg n yhpvx BMn tk "\
+         "ubCZrHJl   GiEyCjZcRk   kheNwWj PA ZAGpsZamNHb",
+         "zagPSzAMnhB pa KHEnWwJ   gIeYcJzCrK   UBczRhjL TK "\
+         "bmN YHPVX N RcG V r FbnBW  a  Y o zPq  NCe"),
+        ("UOtfi  erH kCk KXzg Io  Y  I TYAf "\
+         "EGXVSvASIyJ p Zf p kV g RI  V",
+         "v  ri G Kv P zF P egxvsVasiYj tyaF "\
+         "i  y  iO kxZG KcK ERh  uoTFI")])
     def test_string_transformer(self, s, expected):
         """
         Testing string_transformer function with multiple test data.
