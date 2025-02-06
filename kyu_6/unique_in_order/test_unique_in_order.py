@@ -42,8 +42,8 @@ class UniqueInOrderTestCase(unittest.TestCase):
         ([1, 2, 2, 3, 3],
          [1, 2, 3],
          'Should work with different element types'),
-        ('ooooDDDDDdddddvOORRRRvvvFFFFpppppeeeeeppppIIIIssss'
-         'NUUUUjjVVVVVVVnnnZfffffjjjYYYYYkkkOOOOTvvvMMMtttttdyyyyFFFFCVVVVNNNuuuuufffQQQQQfffiiii',
+        ('ooooDDDDDdddddvOORRRRvvvFFFFpppppeeeeeppppIIIIssss\
+NUUUUjjVVVVVVVnnnZfffffjjjYYYYYkkkOOOOTvvvMMMtttttdyyyyFFFFCVVVVNNNuuuuufffQQQQQfffiiii',
          ['o', 'D', 'd', 'v', 'O', 'R', 'v', 'F', 'p', 'e', 'p', 'I', 's', 'N', 'U', 'j', 'V', 'n', 'Z', 'f',
           'j', 'Y', 'k', 'O', 'T', 'v', 'M', 't', 'd', 'y', 'F', 'C', 'V', 'N', 'u', 'f', 'Q', 'f', 'i'],
          'Should work with randomly generated sequence'),
