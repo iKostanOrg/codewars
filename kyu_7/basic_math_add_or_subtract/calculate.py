@@ -5,6 +5,12 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+# ASTEVAL is a safe(ish) evaluator of Python expressions
+# and statements, using Python’s ast module. The idea is
+# to provide a simple, safe, and robust miniature mathematical
+# language that can handle user input. The emphasis here is on
+# mathematical expressions so that many functions from numpy
+# are imported and used if available.
 from asteval import Interpreter
 
 aeval = Interpreter()
