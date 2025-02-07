@@ -2,7 +2,7 @@
 name: "Snyk"
 
 on:  # yamllint disable-line rule:truthy
-  pull_request:
+  push:
     branches-ignore:
       - kyu2
       - kyu3
@@ -13,17 +13,6 @@ on:  # yamllint disable-line rule:truthy
       - kyu8
       - utils
       - Documentation
-  push:
-    branches-ignore:
-      - 'kyu2'
-      - 'kyu3'
-      - 'kyu4'
-      - 'kyu5'
-      - 'kyu6'
-      - 'kyu7'
-      - 'kyu8'
-      - 'utils'
-      - 'Documentation'
   workflow_call:
     secrets:
       snyk_token:

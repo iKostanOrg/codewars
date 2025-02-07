@@ -2,17 +2,6 @@
 name: Main Build Pipeline
 
 on:   # yamllint disable-line rule:truthy
-  pull_request:
-    branches-ignore:
-      - kyu2
-      - kyu3
-      - kyu4
-      - kyu5
-      - kyu6
-      - kyu7
-      - kyu8
-      - utils
-      - Documentation
   push:
     branches-ignore:
       - kyu2
