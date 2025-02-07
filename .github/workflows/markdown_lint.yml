@@ -3,8 +3,17 @@ name: Markdown Lint
 
 on:   # yamllint disable-line rule:truthy
   push:
-    branches:
-      - 'Documentation'
+    branches-ignore:
+      - main
+      - master
+      - kyu2
+      - kyu3
+      - kyu4
+      - kyu5
+      - kyu6
+      - kyu7
+      - kyu8
+      - utils
   workflow_call:
 
 permissions:
