@@ -34,9 +34,6 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
           pip install pytype
-      - name: Check to make sure that the module is in your Python path
-        run: |
-          echo $PYTHONPATH
       - name: kyu2 Python Data Type Checking with pytype
         run: |
           pytype kyu_2
