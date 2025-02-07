@@ -33,9 +33,6 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
           pip install flake8
-      - name: Check to make sure that the module is in your Python path
-        run: |
-          echo $PYTHONPATH
       - name: Lint with flake8
         # yamllint disable rule:line-length
         # stop the build if there are Python syntax errors or undefined names
