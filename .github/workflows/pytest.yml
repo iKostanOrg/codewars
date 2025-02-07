@@ -57,7 +57,7 @@ jobs:
         run:
           pytest --version
       - name: Unitest with pytest
-        # yamllint disable rule:line-length
+      # yamllint disable rule:line-length
         run:
           python -m pytest . -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=./ --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html xml:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
       # yamllint enable rule:line-length

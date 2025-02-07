@@ -34,4 +34,4 @@ jobs:
           yamllint --version
       - name: Analysing YML files
         run: |
-          yamllint . -c .yamllint.yaml
+          yamllint --list-files . -c .yamllint.yaml
