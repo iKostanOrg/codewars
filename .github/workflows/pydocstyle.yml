@@ -3,9 +3,17 @@ name: pydocstyle
 
 on:   # yamllint disable-line rule:truthy
   push:
-    branches:
-      - 'utils'
-      - 'none'
+    branches-ignore:
+      - main
+      - master
+      - kyu2
+      - kyu3
+      - kyu4
+      - kyu5
+      - kyu6
+      - kyu7
+      - kyu8
+      - utils
   workflow_call:
 
 permissions:
