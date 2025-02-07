@@ -1,5 +1,6 @@
 """
-Solution for -> Sum of Digits / Digital Root
+Solution for -> Sum of Digits / Digital Root.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -14,7 +15,6 @@ def digital_root(n: int) -> int:
     If that value has more than one digit, continue reducing
     in this way until a single-digit number is produced. This
     is only applicable to the natural numbers.
-
     :param n:
     :return:
     """

@@ -1,5 +1,6 @@
 """
-Test for -> Valid Parentheses
+Test for -> Valid Parentheses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.valid_parentheses.solution import valid_parentheses
 
@@ -27,13 +29,18 @@ from kyu_7.valid_parentheses.solution import valid_parentheses
     name='Source/Kata')
 # pylint: enable=R0801
 class ValidParenthesesTestCase(unittest.TestCase):
-    """
-    Testing valid_parentheses function
-    """
+    """Testing valid_parentheses function."""
 
-    def test_valid_parentheses_true(self):
+    @parameterized.expand([
+        "()",
+        "((()))",
+        "()()()",
+        "(()())()",
+        "()(())((()))(())()"])
+    def test_valid_parentheses_true(self, test_str):
         """
-        -1: Negative numbers cannot be square numbers
+        Negative numbers cannot be square numbers.
+
         :return:
         """
         # pylint: disable=R0801
@@ -41,28 +48,29 @@ class ValidParenthesesTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>Should return True for valid parentheses.</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            "()",
-            "((()))",
-            "()()()",
-            "(()())()",
-            "()(())((()))(())()")
+        with allure.step(f"Enter test string {test_str}"
+                         f"and verify that the function returns True."):
+            result: bool = valid_parentheses(test_str)
+            print_log(test_str=test_str, result=result)
+            self.assertTrue(result)
 
-        for test_str in test_data:
-            with allure.step(f"Enter test string {test_data}"
-                             f"and verify that the function returns True."):
-                result: bool = valid_parentheses(test_str)
-                print_log(test_str=test_str, result=result)
-                self.assertTrue(result)
-
-    def test_valid_parentheses_false(self):
+    @parameterized.expand([
+        ")(",
+        "()()(",
+        "((())",
+        "())(()",
+        ")()",
+        ")"])
+    def test_valid_parentheses_false(self, test_str):
         """
-        0 is a square number
+        0 is a square number.
+
         :return:
         """
         # pylint: disable=R0801
@@ -70,29 +78,22 @@ class ValidParenthesesTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>Should return False for invalid parentheses</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            ")(",
-            "()()(",
-            "((())",
-            "())(()",
-            ")()",
-            ")")
-
-        for test_str in test_data:
-            with allure.step(f"Enter test string {test_data}"
-                             f"and verify that the function returns False."):
-                result: bool = valid_parentheses(test_str)
-                print_log(test_str=test_str, result=result)
-                self.assertFalse(result)
+        with allure.step(f"Enter test string {test_str}"
+                         f"and verify that the function returns False."):
+            result: bool = valid_parentheses(test_str)
+            print_log(test_str=test_str, result=result)
+            self.assertFalse(result)
 
     def test_valid_parentheses_empty_string(self):
         """
-        3 is not a square number
+        3 is not a square number.
+
         :return:
         """
         # pylint: disable=R0801
@@ -100,8 +101,9 @@ class ValidParenthesesTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>Should return True for empty strings.</p>")
         # pylint: enable=R0801
@@ -113,8 +115,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
 
     def test_valid_parentheses_large_valid(self):
         """
-        Test valid_parentheses function with
-        valid large string
+        Test valid_parentheses function with valid large string.
+
         :return:
         """
         # pylint: disable=R0801
@@ -122,8 +124,9 @@ class ValidParenthesesTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>Valid large test string</p>")
         # pylint: enable=R0801
@@ -137,8 +140,8 @@ class ValidParenthesesTestCase(unittest.TestCase):
 
     def test_valid_parentheses_large_invalid(self):
         """
-        Test valid_parentheses function with
-        invalid large string
+        Test valid_parentheses function with invalid large string.
+
         :return:
         """
         # pylint: disable=R0801
@@ -146,8 +149,9 @@ class ValidParenthesesTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>Invalid large test string</p>")
         # pylint: enable=R0801

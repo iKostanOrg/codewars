@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-24.04'
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.x"]
@@ -33,9 +34,6 @@ jobs:
           pip install -r requirements.txt
           pip install pydocstyle
           pip install types-requests
-      - name: Check to make sure that the module is in your Python path
-        run: |
-          echo $PYTHONPATH
       - name: Check pydocstyle version
         run: |
           pydocstyle --version

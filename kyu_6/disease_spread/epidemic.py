@@ -1,5 +1,6 @@
 """
-Solution for -> Disease Spread
+Solution for -> Disease Spread.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,8 @@ from typing import List
 
 def epidemic(**kwargs) -> int:
     """
+    Epidemic function.
+
     We want to study the spread of the disease through the population of this school.
     The total population may be divided into three:
     - the infecteds (i)

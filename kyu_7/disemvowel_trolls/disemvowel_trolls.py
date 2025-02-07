@@ -1,5 +1,6 @@
 """
-Solution for -> Disemvowel Trolls
+Solution for -> 'Disemvowel' Trolls.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,8 @@ VOWELS: tuple = ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u')
 
 def disemvowel(string: str) -> str:
     """
+    'disemvowel' function.
+
     A function that takes a string and return
     a new string with all vowels removed.
 

@@ -1,5 +1,6 @@
 """
-Solution for -> Keep Hydrated!
+Solution for -> Keep Hydrated!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def litres(time) -> int:
     """
+    'litres' function.
+
     Because Nathan knows it is important to stay hydrated,
     he drinks 0.5 litres of water per hour of cycling.
 

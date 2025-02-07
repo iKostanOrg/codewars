@@ -1,5 +1,6 @@
 """
-Solution for -> Password validator
+Solution for -> Password validator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def password(string: str) -> bool:
     """
+    Password validator function.
+
     Your job is to create a simple password
     validation function, as seen on many websites.
 

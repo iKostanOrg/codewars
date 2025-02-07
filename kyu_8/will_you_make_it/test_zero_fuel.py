@@ -1,5 +1,6 @@
 """
-Tests for -> Will you make it?
+Tests for -> Will you make it?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_8.will_you_make_it.zero_fuel import zero_fuel
 from utils.log_func import print_log
 
@@ -28,13 +30,15 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable=R0801
 class ZeroFuelTestCase(unittest.TestCase):
-    """
-    Testing zero_fuel
-    """
+    """Testing zero_fuel function."""
 
-    def test_zero_fuel(self):
+    @parameterized.expand([
+        ((50, 25, 2), True),
+        ((100, 50, 1), False)])
+    def test_zero_fuel(self, data, expected):
         """
-        Testing the function with various test data
+        Testing the function with various test data.
+
         :return:
         """
         # pylint: disable=R0801
@@ -42,8 +46,9 @@ class ZeroFuelTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>You were camping with your friends far away from home, "
             "but when it's time to go back, you realize that you fuel "
@@ -51,23 +56,13 @@ class ZeroFuelTestCase(unittest.TestCase):
             "know that on average, your car runs on about 25 miles per "
             "gallon. There are 2 gallons left. Considering these factors, "
             "write a function that tells you if it is possible to get to "
-            "the pump or not. Function should return true (1 in Prolog) if "
-            "it is possible and false (0 in Prolog) if not. The input values "
-            "are always positive.</p>")
+            "the pump or not. Function should return true (1 in Prolog) "
+            "if it is possible and false (0 in Prolog) if not. The input "
+            "values are always positive.</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            ((50, 25, 2), True),
-            ((100, 50, 1), False))
-
-        for data, expected in test_data:
-            actual_result = zero_fuel(data[0], data[1], data[2])
-            with allure.step(f"Enter data ({data}) and verify the "
-                             f"expected output ({expected}) "
-                             f"vs actual result ({actual_result})"):
-
-                print_log(data=data,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
+        actual_result = zero_fuel(data[0], data[1], data[2])
+        with allure.step(f"Enter data ({data}) and verify the "
+                         f"expected output ({expected}) "
+                         f"vs actual result ({actual_result})"):
+            print_log(data=data, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)

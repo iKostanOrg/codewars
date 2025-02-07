@@ -3,9 +3,8 @@ name: Flake8
 
 on:   # yamllint disable-line rule:truthy
   push:
-    branches:
-      - 'utils'
-      - 'none'
+    branches-ignore:
+      - master
   workflow_call:
 
 permissions:
@@ -14,7 +13,10 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.x"]

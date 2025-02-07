@@ -1,5 +1,6 @@
 """
-Solution for -> Decipher this!
+Solution for -> Decipher this!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,8 @@ GitHub: https://github.com/ikostan
 
 def last_digit_index(word: str) -> int:
     """
-    Find last digit index
+    Find last digit index.
+
     :param word:
     :return:
     """
@@ -38,7 +40,6 @@ def decipher_this(string: str) -> str:
 
     results: list = []
     for word in string.split(' '):
-
         last_digit: int = last_digit_index(word)
         char: str = chr(int(word[0: last_digit]))
 

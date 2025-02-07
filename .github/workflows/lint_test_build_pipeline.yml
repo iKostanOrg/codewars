@@ -3,8 +3,16 @@ name: Main Build Pipeline
 
 on:   # yamllint disable-line rule:truthy
   push:
-    branches:
-      - master
+    branches-ignore:
+      - kyu2
+      - kyu3
+      - kyu4
+      - kyu5
+      - kyu6
+      - kyu7
+      - kyu8
+      - utils
+      - Documentation
 
 jobs:
   markdown:
@@ -22,14 +30,23 @@ jobs:
   yamllint:
     name: YAML Lint
     uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
-  pytest:
-    name: Unitest with pytest
+  pydocstyle:
+    name: PyDocStyle Lint
+    uses: iKostanOrg/codewars/.github/workflows/pydocstyle.yml@master
+  pytype:
+    name: PYTYPE Lint
     needs:
       - flake8
       - pylint
       - markdown
       - mypy
       - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype.yml@master
+  pytest:
+    name: Unitest with pytest
+    needs:
+      - pytype
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action
@@ -52,12 +69,12 @@ jobs:
     needs:
       - codecov
       - codeclimate
-    uses: ikostan/pico/.github/workflows/codeql.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/codeql.yml@master
   snyk:
     name: Snyk for a new build
     needs:
       - codecov
       - codeclimate
-    uses: ikostan/pico/.github/workflows/snyk.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/snyk.yml@master
     secrets:
       snyk_token: ${{ secrets.SNYK_TOKEN }}

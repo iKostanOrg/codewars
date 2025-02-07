@@ -1,5 +1,6 @@
 """
-Test for -> Logical Calculator
+Test for -> Logical Calculator.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,21 +28,17 @@ from kyu_8.logical_calculator.logical_calculator \
     name='Source/Kata')
 # pylint: enable=R0801
 class LogicalCalculatorTestCase(unittest.TestCase):
-    """
-    Testing logical_calc function
-    """
+    """Testing logical_calc function."""
 
     def test_logical_calc_and(self):
         """
-        And (∧) is the truth-functional
-        operator of logical conjunction
+        And (∧) is the truth-functional operator of logical conjunction.
 
-        The and of a set of operands is true
+        The 'and' of a set of operands is true
         if and only if all of its operands are true.
 
         Source:
         https://en.wikipedia.org/wiki/Logical_conjunction
-
         :return:
         """
         # pylint: disable=R0801
@@ -49,10 +46,13 @@ class LogicalCalculatorTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>The 'and' of a set of operands is true "
+            "if and only if all of its operands are true."
+            "</p>")
         # pylint: enable=R0801
         with allure.step("Pass an array with 2 members (negative)"):
             lst: list = [True, False]
@@ -97,11 +97,13 @@ class LogicalCalculatorTestCase(unittest.TestCase):
 
     def test_logical_calc_or(self):
         """
+        Testing 'or'.
+
         In logic and mathematics, or is the
         truth-functional operator of (inclusive)
         disjunction, also known as alternation.
 
-        The or of a set of operands is true if
+        The 'or' of a set of operands is true if
         and only if one or more of its operands is true.
 
         Source:
@@ -117,7 +119,10 @@ class LogicalCalculatorTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>"
+            "The 'or' of a set of operands is true if "
+            "and only if one or more of its operands is true."
+            "</p>")
         # pylint: enable=R0801
         with allure.step('Pass an array with 2 members (positive)'):
             lst: list = [True, False]
@@ -155,7 +160,9 @@ class LogicalCalculatorTestCase(unittest.TestCase):
 
     def test_logical_calc_xor(self):
         """
-        Exclusive or or exclusive disjunction is a
+        Testing 'XOR'.
+
+        Exclusive or exclusive disjunction is a
         logical operation that outputs true only when
         inputs differ (one is true, the other is false).
 
@@ -170,10 +177,11 @@ class LogicalCalculatorTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>XOR outputs true whenever the inputs differ.</p>")
         # pylint: enable=R0801
         with allure.step('Pass an array with 2 members (positive)'):
             lst: list = [True, False]

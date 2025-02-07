@@ -1,5 +1,6 @@
 """
-Test -> Keep up the hoop
+Test -> Keep up the hoop.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,22 +26,19 @@ from kyu_8.keep_up_the_hoop.hoop_count import hoop_count
     name='Source/Kata')
 # pylint: enable=R0801
 class HoopCountTestCase(unittest.TestCase):
-    """
-    Testing hoop_count function
-    """
+    """Testing hoop_count function."""
 
     def test_hoop_count_positive(self):
         """
-        Testing hoop_count function (positive)
+        Testing hoop_count function (positive).
 
-        Alex just got a new hula hoop, he loves it but feels
+        Alex just got a new hula-hoop, he loves it but feels
         discouraged because his little brother is better than him
 
         Write a program where Alex can input (n) how many times
         the hoop goes round and it will return him an encouraging message
 
         - 10 or more hoops, return "Great, now move on to tricks".
-
         - Not 10 hoops, return "Keep at it until you get it".
 
         :return:
@@ -54,7 +52,7 @@ class HoopCountTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Testing hoop_count function (positive).</p>")
         # pylint: enable=R0801
         with allure.step("Enter n and verify the result"):
             n: int = 11
@@ -64,7 +62,8 @@ class HoopCountTestCase(unittest.TestCase):
 
     def test_hoop_count_negative(self):
         """
-        Testing hoop_count function (negative)
+        Testing hoop_count function (negative).
+
         :return:
         """
         # pylint: disable=R0801
@@ -76,7 +75,7 @@ class HoopCountTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Testing hoop_count function (negative).</p>")
         # pylint: enable=R0801
         with allure.step("Enter n and verify the result"):
             n: int = 3

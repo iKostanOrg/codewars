@@ -1,5 +1,6 @@
 """
-Test for -> Messi goals function
+Test for -> Messi goals function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,14 +27,15 @@ from kyu_8.grasshopper_messi_goals_function.messi_goals_function \
     name='Source/Kata')
 # pylint: enable=R0801
 class GoalsTestCase(unittest.TestCase):
-    """
-    Testing goals function
-    """
+    """Testing goals function."""
 
     def test_goals(self):
         """
-        Verify that the function returns Messi's
-        total number of goals in all three leagues.
+        Testing 'goals' function with various test data.
+
+        Verify that the function returns Messi's total
+        number of goals in all three leagues.
+
         :return:
         """
         # pylint: disable=R0801
@@ -41,8 +43,9 @@ class GoalsTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801

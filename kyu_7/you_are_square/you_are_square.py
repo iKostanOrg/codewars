@@ -1,5 +1,6 @@
 """
-Solution for -> You\'re a square
+Solution for -> You're a square.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,11 +8,12 @@ GitHub: https://github.com/ikostan
 import math
 
 
-def is_square(n) -> bool:
+def is_square(n: int) -> bool:
     """
-    Given an integral number, determine if it's a square number:
-    :param n:
-    :return:
+    Determine if it's a square number.
+
+    :param n: int
+    :return: bool
     """
     if n > -1:
         number = math.sqrt(n)

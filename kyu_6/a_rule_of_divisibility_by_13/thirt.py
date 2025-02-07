@@ -1,5 +1,6 @@
 """
-Solution for -> A Rule of Divisibility by 13
+Solution for -> A Rule of Divisibility by 13.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,8 @@ REMAINDERS: tuple = (1, 10, 9, 12, 3, 4)
 
 def thirt(n: int) -> int:
     """
+    Rule of Divisibility by 13.
+
     The function which processes this sequence of operations
     on an integer n (>=0). `thirt` will return the stationary number.
     :param n: int

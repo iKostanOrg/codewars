@@ -1,10 +1,35 @@
 ---
-engines:
-  # ... CONFIG CONTENT ...
-  pylint:
-    enabled: true
-    # ... CONFIG CONTENT ...
-    checks:
-      import-error:
-        enabled: false
-# ... CONFIG CONTENT ...
+version: "2"  # required to adjust maintainability checks
+
+checks:
+  import-error:
+    enabled: false
+  syntax-error:
+    enabled: false
+  no-name-in-module:
+    enabled: false
+  similar-code:
+    config:
+      threshold: 68
+  identical-code:
+    config:
+      threshold: 32
+plugins:
+  duplication:
+    enabled: false
+exclude_patterns:
+  - ".circleci/"
+  - ".github/"
+  - ".venv/"
+  - "docs/"
+  - "deprecated/"
+  - "img/"
+  - "**/node_modules/"
+  - "script/"
+  - "**/spec/"
+  - "**/vendor/"
+  - "**/*_test.go"
+  - "**/*.d.ts"
+  - "allure-report/"
+  - "allure-results/"
+  - "*.txt"
