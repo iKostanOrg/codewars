@@ -4,8 +4,26 @@ name: Main Build Pipeline
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'master'
-
+      - master
+    paths:
+      - 'kyu_2/**'
+      - 'kyu_3/**'
+      - 'kyu_4/**'
+      - 'kyu_5/**'
+      - 'kyu_6/**'
+      - 'kyu_7/**'
+      - 'kyu_8/**'
+      - 'utils/**'
+  pull_request:
+    paths:
+      - 'kyu_2/**'
+      - 'kyu_3/**'
+      - 'kyu_4/**'
+      - 'kyu_5/**'
+      - 'kyu_6/**'
+      - 'kyu_7/**'
+      - 'kyu_8/**'
+      - 'utils/**'
 jobs:
   markdown:
     name: Markdown Lint
