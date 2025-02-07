@@ -54,10 +54,4 @@ jobs:
       - name: Unitest with pytest
         # yamllint disable rule:line-length
         run:
-          python -m pytest ./kyu_2 -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=./kyu_2 --cov-report xml:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
-      # Source: https://github.com/orgoro/coverage
-      - name: Post Coverage Report
-        uses: orgoro/coverage@v3.2
-        with:
-          coverageFile: test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
+          python -m pytest ./kyu_2 -v -rP --doctest-modules --cov-report term-missing --cov-fail-under=80 --cov=./kyu_2
