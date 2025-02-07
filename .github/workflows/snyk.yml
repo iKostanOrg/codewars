@@ -3,9 +3,8 @@ name: "Snyk"
 
 on:   # yamllint disable-line rule:truthy
   push:
-    branches:
-      - 'utils'
-      - 'none'
+    branches-ignore:
+      - master
   workflow_call:
     secrets:
       snyk_token:
