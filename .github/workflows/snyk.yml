@@ -3,27 +3,16 @@ name: "Snyk"
 
 on:  # yamllint disable-line rule:truthy
   push:
-    branches:
-      - master
-    paths:
-      - 'kyu_2/**'
-      - 'kyu_3/**'
-      - 'kyu_4/**'
-      - 'kyu_5/**'
-      - 'kyu_6/**'
-      - 'kyu_7/**'
-      - 'kyu_8/**'
-      - 'utils/**'
-  pull_request:
-    paths:
-      - 'kyu_2/**'
-      - 'kyu_3/**'
-      - 'kyu_4/**'
-      - 'kyu_5/**'
-      - 'kyu_6/**'
-      - 'kyu_7/**'
-      - 'kyu_8/**'
-      - 'utils/**'
+    branches-ignore:
+      - 'kyu2'
+      - 'kyu3'
+      - 'kyu4'
+      - 'kyu5'
+      - 'kyu6'
+      - 'kyu7'
+      - 'kyu8'
+      - 'utils'
+      - 'Documentation'
   workflow_call:
     secrets:
       snyk_token:
