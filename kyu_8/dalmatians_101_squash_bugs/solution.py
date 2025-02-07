@@ -5,6 +5,11 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
+dogs: list = ["Hardly any",
+              "More than a handful!",
+              "Woah that's a lot of dogs!",
+              "101 DALMATIONS!!!"]
+
 
 def how_many_dalmatians(number: int) -> str:
     """
@@ -13,16 +18,13 @@ def how_many_dalmatians(number: int) -> str:
     :param number: int
     :return: str
     """
-    dogs: list = ["Hardly any",
-                  "More than a handful!",
-                  "Woah that's a lot of dogs!",
-                  "101 DALMATIONS!!!"]
-
     if number <= 10:
         return dogs[0]
-    elif number <= 50:
+
+    if number <= 50:
         return dogs[1]
-    elif number == 101:
+
+    if number == 101:
         return dogs[3]
-    else:
-        return dogs[2]
+
+    return dogs[2]
