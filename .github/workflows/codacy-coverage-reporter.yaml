@@ -39,18 +39,16 @@ jobs:
           python -m pip install --upgrade setuptools
           python -m pip install --upgrade wheel
           pip install --no-cache-dir -r requirements.txt --upgrade
-      - name: Install pytest, pytest-cov
+      - name: Install pytest, pytest-cov, coverage
         run: |
           pip install pytest
-          pip install pytest-cov
+          pip install coverage
       - name: Generate coverage report
-        # You must now upload using a token.
-        # https://app.codecov.io/gh/iKostanOrg/codewars/tests/new
-        # yamllint disable rule:line-length
+        # https://coverage.readthedocs.io/en/7.6.10/cmd.html#cmd-run
         run: |
           python -c "import os; print(os.getcwd())"
-          python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./
-        # yamllint enable rule:line-length
+          coverage run -m pytest --data-file=cobertura.xml
+          coverage report -m
       - name: List test files
         run: |
           ls
@@ -61,4 +59,4 @@ jobs:
             export CODACY_ORGANIZATION_PROVIDER=gh
             export CODACY_USERNAME=iKostanOrg
             export CODACY_PROJECT_NAME=codewars
-            bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage.xml
+            bash <(curl -Ls https://coverage.codacy.com/get.sh)
