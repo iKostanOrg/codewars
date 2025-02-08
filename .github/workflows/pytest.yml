@@ -81,12 +81,6 @@ jobs:
           # artifact for the given name already exists. Does not fail if
           # the artifact does not exist. Optional. Default is 'false'
           overwrite: false
-      # Source: https://github.com/orgoro/coverage
-      - name: Post Coverage Report
-        uses: orgoro/coverage@v3.2
-        with:
-          coverageFile: test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload pytest coverage artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -110,3 +104,9 @@ jobs:
         # Use always() to always run this step to publish test results
         # when there are test failures
         if: ${{ always() }}
+      # Source: https://github.com/orgoro/coverage
+      - name: Post Coverage Report
+        uses: orgoro/coverage@v3.2
+        with:
+          coverageFile: test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
