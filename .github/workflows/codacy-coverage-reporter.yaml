@@ -43,8 +43,8 @@ jobs:
         run: |
           pip install pytest
           pip install coverage
+      # https://coverage.readthedocs.io/en/7.6.10/cmd.html#cmd-run
       - name: Generate coverage report
-        # https://coverage.readthedocs.io/en/7.6.10/cmd.html#cmd-run
         run: |
         #python -c "import os; print(os.getcwd())"
           coverage run -m pytest --data-file=cobertura.xml
