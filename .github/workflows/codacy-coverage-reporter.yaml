@@ -43,9 +43,15 @@ jobs:
         run: |
           python -m pip install pytest
           python -m pip install coverage
+        # https://coverage.readthedocs.io/en/7.6.10/cmd.html
+      - name: Check coverage version
+        run:
+          python -m coverage --version
       - name: Generate coverage report
         run: |
-          coverage run -m pytest --data-file=cobertura.xml
+        #python -c "import os; print(os.getcwd())"
+          coverage run --data-file=cobertura.xml -m pytest
+          coverage report -m
       - name: List test files
         run: |
           ls
