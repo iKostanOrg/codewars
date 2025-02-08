@@ -16,6 +16,9 @@ permissions:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
@@ -44,8 +47,7 @@ jobs:
         run:
           pytest --version
       - name: Unitest with pytest
-      # yamllint disable rule:line-length
-        run:
+        run: |
           python -m pytest . -v -rP --doctest-modules \
           --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml \
           --cov-report term-missing --cov-fail-under=80 --cov=./ \
@@ -53,7 +55,9 @@ jobs:
           html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html \
           --cov-report \
           xml:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
-      # yamllint enable rule:line-length
+      - name: List test files
+        run:
+          ls
       - name: Upload pytest test artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -95,5 +99,7 @@ jobs:
       - name: Post Coverage Report
         uses: orgoro/coverage@v3.2
         with:
-          coverageFile: test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
+          coverageFile:
+            test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
+          token:
+            ${{ secrets.GITHUB_TOKEN }}
