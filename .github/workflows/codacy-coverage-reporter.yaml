@@ -4,6 +4,17 @@ name: Codacy Coverage Reporter
 # Source:
 # https://github.com/codacy/codacy-coverage-reporter-action
 on:  # yamllint disable-line rule:truthy
+  push:
+    branches-ignore:
+      - kyu2
+      - kyu3
+      - kyu4
+      - kyu5
+      - kyu6
+      - kyu7
+      - kyu8
+      - utils
+      - Documentation
   workflow_call:
 
 jobs:
@@ -39,10 +50,10 @@ jobs:
         run: |
           python -c "import os; print(os.getcwd())"
           python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./
+        # yamllint enable rule:line-length
       - name: List test files
         run: |
           ls
-        # yamllint enable rule:line-length
       - name: Run codacy-coverage-reporter
         run: |
             export CODACY_API_TOKEN=${{ secrets.CODACY_API_TOKEN }}
