@@ -52,8 +52,9 @@ jobs:
           python -m pytest . -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=./ --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html --cov-report xml:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
         # yamllint enable rule:line-length
       - name: List test files
-        run:
+        run: |
           ls
+          ls junit/
       - name: Upload pytest test artifacts
         uses: actions/upload-artifact@v4
         with:
