@@ -46,7 +46,7 @@ jobs:
         # https://coverage.readthedocs.io/en/7.6.10/cmd.html
       - name: Check coverage version
         run:
-          python -m coverage --version
+          coverage --version
       - name: Generate coverage report
         run: |
         #python -c "import os; print(os.getcwd())"
