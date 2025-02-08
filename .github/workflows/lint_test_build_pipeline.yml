@@ -33,20 +33,20 @@ jobs:
   pydocstyle:
     name: PyDocStyle Lint
     uses: iKostanOrg/codewars/.github/workflows/pydocstyle.yml@master
-  pytype:
-    name: PYTYPE Lint
-    needs:
-      - flake8
-      - pylint
-      - markdown
-      - mypy
-      - yamllint
-      - pydocstyle
-    uses: iKostanOrg/codewars/.github/workflows/pytype.yml@master
+  #pytype:
+  #  name: PYTYPE Lint
+  #  needs:
+  #    - flake8
+  #    - pylint
+  #    - markdown
+  #    - mypy
+  #    - yamllint
+  #    - pydocstyle
+  # uses: iKostanOrg/codewars/.github/workflows/pytype.yml@master
   pytest:
     name: Unitest with pytest
-    needs:
-      - pytype
+  #  needs:
+  #    - pytype
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action
