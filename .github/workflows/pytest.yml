@@ -7,19 +7,6 @@
 name: Unitest with pytest
 
 on:   # yamllint disable-line rule:truthy
-  push:
-    branches-ignore:
-      - main
-      - master
-      - kyu2
-      - kyu3
-      - kyu4
-      - kyu5
-      - kyu6
-      - kyu7
-      - kyu8
-      - utils
-      - Documentation
   workflow_call:
 
 permissions:
@@ -59,12 +46,12 @@ jobs:
       - name: Unitest with pytest
       # yamllint disable rule:line-length
         run:
-          python -m pytest . -v -rP --doctest-modules \\
-          --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml \\
-          --cov-report term-missing --cov-fail-under=80 --cov=./ \\
-          --cov-report \\
-          html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html \\
-          --cov-report \\
+          python -m pytest . -v -rP --doctest-modules \
+          --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml \
+          --cov-report term-missing --cov-fail-under=80 --cov=./ \
+          --cov-report \
+          html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html \
+          --cov-report \
           xml:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
       # yamllint enable rule:line-length
       - name: Upload pytest test artifacts
