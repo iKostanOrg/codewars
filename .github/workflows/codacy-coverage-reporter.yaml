@@ -46,9 +46,7 @@ jobs:
       # https://coverage.readthedocs.io/en/7.6.10/cmd.html#cmd-run
       - name: Generate coverage report
         run: |
-        #python -c "import os; print(os.getcwd())"
           coverage run -m pytest --data-file=cobertura.xml
-        #coverage report -m
       - name: List test files
         run: |
           ls
