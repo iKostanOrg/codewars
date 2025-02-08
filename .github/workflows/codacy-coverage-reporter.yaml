@@ -50,7 +50,7 @@ jobs:
         run: |
           python -c "import os; print(os.getcwd())"
           coverage run --data-file=cobertura.xml -m pytest
-          coverage report -m
+          coverage report
       - name: List test files
         run: |
           ls
