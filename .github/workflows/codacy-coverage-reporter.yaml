@@ -48,8 +48,8 @@ jobs:
           python -m coverage --version
       - name: Generate coverage report
         run: |
+          python -c "import os; print(os.getcwd())"
           coverage run --data-file=cobertura.xml -m pytest
-          coverage report -m
       - name: List test files
         run: |
           ls
