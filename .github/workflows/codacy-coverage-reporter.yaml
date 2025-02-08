@@ -38,15 +38,17 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade setuptools
           python -m pip install --upgrade wheel
-          pip install --no-cache-dir -r requirements.txt --upgrade
+          python -m pip install --no-cache-dir -r requirements.txt --upgrade
       - name: Install pytest, coverage
         run: |
-          pip install pytest
-          pip install coverage
+          python -m pip install pytest
+          python -m pip install coverage
       # https://coverage.readthedocs.io/en/7.6.10/cmd.html#cmd-run
       - name: Generate coverage report
         run: |
+        #python -c "import os; print(os.getcwd())"
           coverage run -m pytest --data-file=cobertura.xml
+        #coverage report -m
       - name: List test files
         run: |
           ls
