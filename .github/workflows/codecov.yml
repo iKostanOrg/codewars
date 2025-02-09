@@ -70,10 +70,9 @@ jobs:
         run: |
           ls *.xml
       # Codecov GitHub Action
-      # Upload test results to Codecov
       # https://github.com/marketplace/actions/codecov
-      - uses: actions/checkout@main
-      - uses: codecov/codecov-action@v5
+      - name: Upload test results to Codecov
+        uses: codecov/codecov-action@v5
         with:
           fail_ci_if_error: true # optional (default = false)
           files: ./coverage.xml,./junit.xml # optional
