@@ -69,7 +69,7 @@ jobs:
         # yamllint enable rule:line-length
       - name: List test files
         run: |
-          *.{xml,html}
+          ls *.{xml,html}
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1
