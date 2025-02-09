@@ -46,7 +46,6 @@ jobs:
       - name: Check pytest, pytest-cov version
         run: |
           python -m pytest --version
-          python -m pytest-cov --version
       - name: Generate coverage report
         # yamllint disable rule:line-length
         run: |

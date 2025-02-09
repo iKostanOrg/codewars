@@ -59,7 +59,6 @@ jobs:
       - name: Check pytest, pytest-cov version
         run: |
           python -m pytest --version
-          python -m pytest-cov --version
       - name: Generate coverage report
         # You must now upload using a token.
         # https://app.codecov.io/gh/iKostanOrg/codewars/tests/new
