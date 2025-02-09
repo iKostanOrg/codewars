@@ -69,8 +69,17 @@ jobs:
       - name: List test files
         run: |
           ls *.xml
-      - name: Upload test results to Codecov
-        if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
+      # Codecov GitHub Action
+      # Upload test results to Codecov
+      # https://github.com/marketplace/actions/codecov
+      - uses: actions/checkout@main
+      - uses: codecov/codecov-action@v5
         with:
-          token: ${{ secrets.codecov_token }}
+          fail_ci_if_error: true # optional (default = false)
+          files: ./coverage.xml,./junit.xml # optional
+          flags: unittests # optional
+          name: codecov-umbrella # optional
+          verbose: true # optional (default = false)
+        env:
+          CODECOV_TOKEN: ${{ secrets.codecov_token }}
+
