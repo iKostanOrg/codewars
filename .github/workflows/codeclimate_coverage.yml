@@ -55,4 +55,4 @@ jobs:
           # yamllint enable rule:line-length
       - name: List test files
         run: |
-          ls *.{xml,html} 2>/dev/null
+          ls *.{xml}
