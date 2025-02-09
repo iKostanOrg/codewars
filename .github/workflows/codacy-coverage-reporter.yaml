@@ -53,7 +53,7 @@ jobs:
         # yamllint enable rule:line-length
       - name: List test files
         run: |
-          ls *.{xml}
+          ls *.xml
       # https://docs.codacy.com/coverage-reporter/
       - name: Run codacy-coverage-reporter
         run: |
