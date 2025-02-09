@@ -53,3 +53,6 @@ jobs:
             python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./ --junitxml=junit.xml -o junit_family=legacy --debug
           debug: true
           # yamllint enable rule:line-length
+      - name: List test files
+        run: |
+          ls *.{xml,html} 2>/dev/null
