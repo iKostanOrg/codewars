@@ -4,7 +4,7 @@ name: Code Climate Coverage Report
 on:  # yamllint disable-line rule:truthy
   workflow_call:
     secrets:
-      cc_test_reporter_id:
+      qlty_coverage_token:
         required: true
 
 jobs:
@@ -44,15 +44,15 @@ jobs:
         run: |
           python -m pytest --version
       - name: Upload coverage to Code Climate
-        uses: paambaati/codeclimate-action@v9.0.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        uses: qltysh/qlty-action/coverage@main
         with:
+          coverage-token: ${{ secrets.qlty_coverage_token }}
+          files: reports/lcov.info
           # yamllint disable rule:line-length
           coverageCommand:
-            python -m pytest . -v --cov-report term-missing --cov-report=xml --cov=./ --junitxml=junit.xml -o junit_family=legacy --debug
+            python -m pytest . -v --cov-report term-missing --cov-report=lcov --cov=./ --debug
           debug: true
           # yamllint enable rule:line-length
       - name: List test files
         run: |
-          ls *.xml
+          ls *.lcov
