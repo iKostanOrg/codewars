@@ -43,16 +43,18 @@ jobs:
       - name: Check pytest, pytest-cov version
         run: |
           python -m pytest --version
+      - name: Generate coverage report
+        # yamllint disable rule:line-length
+        run: |
+          python -m pytest . -v --cov-report term-missing --cov-report=lcov --cov=./ --debug
+        # yamllint enable rule:line-length
+      - name: List test files
+        run: |
+          ls *.lcov
       - name: Upload coverage to Code Climate
         uses: qltysh/qlty-action/coverage@main
         with:
           coverage-token: ${{ secrets.qlty_coverage_token }}
           files: reports/lcov.info
-          # yamllint disable rule:line-length
           coverageCommand:
-            python -m pytest . -v --cov-report term-missing --cov-report=lcov --cov=./ --debug
           debug: true
-          # yamllint enable rule:line-length
-      - name: List test files
-        run: |
-          ls *.lcov
