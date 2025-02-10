@@ -1,5 +1,5 @@
 """
-Solution for -> Replace With Alphabet Position
+Solution for -> Replace With Alphabet Position.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
