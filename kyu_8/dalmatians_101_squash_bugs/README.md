@@ -12,7 +12,7 @@ The number of dogs will always be a number and there will always be at least 1 d
 
 [Source](https://www.codewars.com/kata/56f6919a6b88de18ff000b36)
 
-### [ASTEVAL}(https://pypi.org/project/asteval/)
+### [ASTEVAL](https://pypi.org/project/asteval/)
 
 The asteval module allows you to evaluate a large subset of the Python language
 from within a python program, without using `eval()`. It is, in effect, a restricted
