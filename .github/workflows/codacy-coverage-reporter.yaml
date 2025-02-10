@@ -5,17 +5,6 @@ name: Codacy Coverage Reporter
 # https://github.com/codacy/codacy-coverage-reporter-action
 # https://docs.codacy.com/coverage-reporter/
 on:  # yamllint disable-line rule:truthy
-  push:
-    branches-ignore:
-      - kyu2
-      - kyu3
-      - kyu4
-      - kyu5
-      - kyu6
-      - kyu7
-      - kyu8
-      - utils
-      - Documentation
   workflow_call:
     secrets:
       codacy_api_token:
