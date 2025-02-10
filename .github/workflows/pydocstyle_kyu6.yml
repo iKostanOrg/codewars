@@ -1,5 +1,5 @@
 ---
-name: pydocstyle for kyu6
+name: PyDocstyle for kyu6
 
 on:   # yamllint disable-line rule:truthy
   push:
@@ -41,4 +41,4 @@ jobs:
         # Pydocstyle testing (Guide)
         # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
         run: |
-          python -m pydocstyle --verbose --explain --count kyu_6
+          python -m pydocstyle --verbose --explain --count ./kyu_6

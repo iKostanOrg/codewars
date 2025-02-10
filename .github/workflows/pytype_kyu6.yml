@@ -38,4 +38,4 @@ jobs:
           python -m pytype --version
       - name: Python Data Type Checking with PYTYPE
         run: |
-          python -m pytype kyu_6
+          python -m pytype ./kyu_6
