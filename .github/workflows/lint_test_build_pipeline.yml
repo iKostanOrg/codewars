@@ -48,6 +48,13 @@ jobs:
   #  needs:
   #    - pytype
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+  codacy:
+    name: Codacy GitHub Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yml@master
+    secrets:
+      codacy_api_token: ${{ secrets.CODACY_API_TOKEN }}
   codecov:
     name: Codecov GitHub Action
     needs:
@@ -67,6 +74,7 @@ jobs:
   codeql:
     name: CodeQL for a new build
     needs:
+      - codacy
       - codecov
       - codeclimate
     uses: iKostanOrg/codewars/.github/workflows/codeql.yml@master
