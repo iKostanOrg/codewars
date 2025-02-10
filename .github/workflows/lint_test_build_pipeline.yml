@@ -52,7 +52,7 @@ jobs:
     name: Codacy GitHub Action
     needs:
       - pytest
-    uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
     secrets:
       codacy_api_token: ${{ secrets.CODACY_API_TOKEN }}
   codecov:
