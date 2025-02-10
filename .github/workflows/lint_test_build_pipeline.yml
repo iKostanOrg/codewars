@@ -63,7 +63,7 @@ jobs:
       - pytest
     uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
     secrets:
-      cc_test_reporter_id: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+      qlty_coverage_token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
   codeql:
     name: CodeQL for a new build
     needs:
