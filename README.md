@@ -11,12 +11,12 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/ikostanorg/codewars/badge)](https://www.codefactor.io/repository/github/ikostanorg/codewars)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/647e16e648f748a28fce36b4895f7729)](https://www.codacy.com/gh/iKostanOrg/codewars?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iKostanOrg/codewars&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/647e16e648f748a28fce36b4895f7729)](https://app.codacy.com/gh/iKostanOrg/codewars/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
+[![Maintainability](https://qlty.sh/badges/e8f18a35-2bd3-41b1-827c-e7a2a88f1d08/maintainability.svg)](https://qlty.sh/gh/iKostanOrg/projects/codewars)
+[![Code Coverage](https://qlty.sh/badges/e8f18a35-2bd3-41b1-827c-e7a2a88f1d08/test_coverage.svg)](https://qlty.sh/gh/iKostanOrg/projects/codewars)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024)
 ![GitHub repo size](https://img.shields.io/github/repo-size/iKostanOrg/codewars?color=green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/iKostanOrg/codewars?color=green)
 ![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
-[![Maintainability](https://qlty.sh/badges/e8f18a35-2bd3-41b1-827c-e7a2a88f1d08/maintainability.svg)](https://qlty.sh/gh/iKostanOrg/projects/codewars)
-[![Code Coverage](https://qlty.sh/badges/e8f18a35-2bd3-41b1-827c-e7a2a88f1d08/test_coverage.svg)](https://qlty.sh/gh/iKostanOrg/projects/codewars)
 
 ## About Codewars
 
