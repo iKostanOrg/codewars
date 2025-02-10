@@ -7,6 +7,12 @@ on:  # yamllint disable-line rule:truthy
       qlty_coverage_token:
         required: true
 
+# Enforcing minimal permissions per workflow requirements: 
+# only read access for contents and pull-requests is granted.
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   run:
     runs-on: ${{ matrix.os }}

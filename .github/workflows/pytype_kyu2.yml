@@ -27,8 +27,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
-          pip install pytype
+          python -m pip install -r requirements.txt
+          python -m pip install pytype
+      - name: PYTYPE Version Check
+        run: |
+          python -m pytype --version
       - name: Python Data Type Checking with PYTYPE
         run: |
-          pytype kyu_2
+          python -m pytype kyu_2
