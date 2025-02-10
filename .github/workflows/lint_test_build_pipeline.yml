@@ -64,18 +64,26 @@ jobs:
     # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
     secrets:
       codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  codeclimate_qlty:
+    name: QLTY Github Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codeclimate_qlty_coverage.yml@master
+    secrets:
+      qlty_coverage_token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
   codeclimate:
-    name: Codeclimate Github Action
+    name: CodeClimate Github Action
     needs:
       - pytest
     uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
     secrets:
-      qlty_coverage_token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+      cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
   codeql:
     name: CodeQL for a new build
     needs:
       - codacy
       - codecov
+      - codeclimate_qlty
       - codeclimate
     uses: iKostanOrg/codewars/.github/workflows/codeql.yml@master
   snyk:
