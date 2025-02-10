@@ -8,7 +8,7 @@ GitHub: https://github.com/ikostan
 import math
 
 
-def easy_line(n: int):
+def easy_line(n: int) -> int:
     """
     Easy line function.
 
@@ -19,7 +19,7 @@ def easy_line(n: int):
     :return:
     """
     if n < 0:
-        raise ValueError('ERROR: invalid n ({}) value. n must be >= 0')
+        raise ValueError(f'ERROR: invalid n ({n}) value. n must be >= 0')
 
     if n == 0:
         return 1

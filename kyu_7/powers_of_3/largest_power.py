@@ -13,13 +13,13 @@ def largest_power(num: int) -> int:
     Given a positive integer N,
     return the largest integer k
     such that 3^k < N.
-    :param num:
-    :return:
+    :param num: int
+    :return: int
     """
     result: int = 0
     n: int = 0
     while result < num:
-        result = 3 ** n
+        result = int(3 ** n)
         if result >= num:
             n -= 1
             break

@@ -1,14 +1,10 @@
 ---
-name: PyLint for kyu8
+name: PyType for kyu8
 
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu8'
-
-permissions:
-  contents: read
-  pull-requests: read
 
 jobs:
   build:
@@ -18,7 +14,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        python-version: ["3.x"]
+        python-version: ["3.11"]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -34,17 +30,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
-          pip install pylint
-      - name: Version check
-        run: |
-          pylint --version
-      - name: Get/Export current directory
-        run: |
-          pwd
-          export PYTHONPATH=$PYTHONPATH:./codewars
+          pip install pytype
       - name: Check to make sure that the module is in your Python path
         run: |
           echo $PYTHONPATH
-      - name: Analysing the code with pylint
+      - name: Python Data Type Checking with PYTYPE
         run: |
-          python -m pylint -v ./kyu_8
+          pytype kyu_8
