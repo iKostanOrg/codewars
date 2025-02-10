@@ -7,6 +7,10 @@ on:  # yamllint disable-line rule:truthy
       qlty_coverage_token:
         required: true
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   run:
     runs-on: ${{ matrix.os }}
