@@ -46,7 +46,7 @@ jobs:
       - name: Generate coverage report
         # yamllint disable rule:line-length
         run: |
-          python -m pytest . -v --cov-report term-missing --cov-report=lcov --cov=./ --debug
+          python -m pytest . -v --cov-report term-missing --cov-report lcov --cov=./ --debug
         # yamllint enable rule:line-length
       - name: List test files
         run: |
@@ -55,6 +55,4 @@ jobs:
         uses: qltysh/qlty-action/coverage@main
         with:
           coverage-token: ${{ secrets.qlty_coverage_token }}
-          files: reports/lcov.info
-          coverageCommand:
-          debug: true
+          files: coverage.lcov
