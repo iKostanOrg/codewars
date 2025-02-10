@@ -3,6 +3,7 @@ name: Codacy Coverage Reporter
 
 # Source:
 # https://github.com/codacy/codacy-coverage-reporter-action
+# https://docs.codacy.com/coverage-reporter/
 on:  # yamllint disable-line rule:truthy
   push:
     branches-ignore:
@@ -16,6 +17,9 @@ on:  # yamllint disable-line rule:truthy
       - utils
       - Documentation
   workflow_call:
+    secrets:
+      codacy_api_token:
+        required: true
 
 jobs:
   codacy-coverage-reporter:
@@ -57,7 +61,7 @@ jobs:
       # https://docs.codacy.com/coverage-reporter/
       - name: Run codacy-coverage-reporter
         run: |
-            export CODACY_API_TOKEN=${{ secrets.CODACY_API_TOKEN }}
+            export CODACY_API_TOKEN=${{ secrets.codacy_api_token }}
             export CODACY_ORGANIZATION_PROVIDER=gh
             export CODACY_USERNAME=iKostanOrg
             export CODACY_PROJECT_NAME=codewars
