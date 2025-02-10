@@ -2,19 +2,6 @@
 name: PyLint
 
 on:   # yamllint disable-line rule:truthy
-  push:
-    branches-ignore:
-      - main
-      - master
-      - kyu2
-      - kyu3
-      - kyu4
-      - kyu5
-      - kyu6
-      - kyu7
-      - kyu8
-      - utils
-      - Documentation
   workflow_call:
 
 permissions:
@@ -24,6 +11,9 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.x"]
@@ -41,18 +31,15 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
-          pip install pylint
+          python -m pip install -r requirements.txt
+          python -m pip install pylint
       - name: Version check
         run: |
-          pylint --version
+          python -m pylint --version
       - name: Get/Export current directory
         run: |
           pwd
           export PYTHONPATH=$PYTHONPATH:./codewars
-      - name: Check to make sure that the module is in your Python path
-        run: |
-          echo $PYTHONPATH
       - name: Analysing the code with pylint
         run: |
           python -m pylint $(git ls-files '*.py')

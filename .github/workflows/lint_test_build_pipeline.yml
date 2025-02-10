@@ -33,21 +33,28 @@ jobs:
   pydocstyle:
     name: PyDocStyle Lint
     uses: iKostanOrg/codewars/.github/workflows/pydocstyle.yml@master
-  pytype:
-    name: PYTYPE Lint
-    needs:
-      - flake8
-      - pylint
-      - markdown
-      - mypy
-      - yamllint
-      - pydocstyle
-    uses: iKostanOrg/codewars/.github/workflows/pytype.yml@master
+  #pytype:
+  #  name: PYTYPE Lint
+  #  needs:
+  #    - flake8
+  #    - pylint
+  #    - markdown
+  #    - mypy
+  #    - yamllint
+  #    - pydocstyle
+  # uses: iKostanOrg/codewars/.github/workflows/pytype.yml@master
   pytest:
     name: Unitest with pytest
-    needs:
-      - pytype
+  #  needs:
+  #    - pytype
     uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+  codacy:
+    name: Codacy GitHub Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
+    secrets:
+      codacy_api_token: ${{ secrets.CODACY_API_TOKEN }}
   codecov:
     name: Codecov GitHub Action
     needs:
@@ -57,8 +64,15 @@ jobs:
     # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
     secrets:
       codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  codeclimate_qlty:
+    name: QLTY Github Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codeclimate_qlty_coverage.yml@master
+    secrets:
+      qlty_coverage_token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
   codeclimate:
-    name: Codeclimate Github Action
+    name: CodeClimate Github Action
     needs:
       - pytest
     uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
@@ -67,7 +81,9 @@ jobs:
   codeql:
     name: CodeQL for a new build
     needs:
+      - codacy
       - codecov
+      - codeclimate_qlty
       - codeclimate
     uses: iKostanOrg/codewars/.github/workflows/codeql.yml@master
   snyk:

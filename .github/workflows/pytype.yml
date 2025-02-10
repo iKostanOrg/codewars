@@ -2,19 +2,6 @@
 name: PYTYPE Lint
 
 on:   # yamllint disable-line rule:truthy
-  push:
-    branches-ignore:
-      - main
-      - master
-      - kyu2
-      - kyu3
-      - kyu4
-      - kyu5
-      - kyu6
-      - kyu7
-      - kyu8
-      - utils
-      - Documentation
   workflow_call:
 
 permissions:
@@ -24,6 +11,9 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.11"]
@@ -41,29 +31,32 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
-          pip install pytype
+          python -m pip install -r requirements.txt
+          python -m pip install pytype
+      - name: Check pytype version
+        run: |
+          python -m pytype --version
       - name: kyu2 Python Data Type Checking with pytype
         run: |
-          pytype kyu_2
+          python -m pytype kyu_2
       - name: kyu_3 Python Data Type Checking with pytype
         run: |
-          pytype kyu_3
+          python -m pytype kyu_3
       - name: kyu_4 Python Data Type Checking with pytype
         run: |
-          pytype kyu_4
+          python -m pytype kyu_4
       - name: kyu_5 Python Data Type Checking with pytype
         run: |
-          pytype kyu_5
+          python -m pytype kyu_5
       - name: kyu_6 Python Data Type Checking with pytype
         run: |
-          pytype kyu_6
+          python -m pytype kyu_6
       - name: kyu_7 Python Data Type Checking with pytype
         run: |
-          pytype kyu_7
+          python -m pytype kyu_7
       - name: kyu_8 Python Data Type Checking with pytype
         run: |
-          pytype kyu_8
+          python -m pytype kyu_8
       - name: utils Python Data Type Checking with pytype
         run: |
-          pytype utils
+          python -m pytype utils

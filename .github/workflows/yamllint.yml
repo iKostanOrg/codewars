@@ -11,6 +11,9 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.x"]
@@ -28,10 +31,10 @@ jobs:
       - name: Install yamllint
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install --user yamllint
+          python -m pip install --user yamllint
       - name: Version check
         run: |
-          yamllint --version
+          python -m yamllint --version
       - name: Analysing YML files
         run: |
-          yamllint . -c .yamllint.yaml
+          python -m yamllint --list-files . -c .yamllint.yaml

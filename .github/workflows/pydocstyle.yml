@@ -2,18 +2,6 @@
 name: pydocstyle
 
 on:   # yamllint disable-line rule:truthy
-  push:
-    branches-ignore:
-      - main
-      - master
-      - kyu2
-      - kyu3
-      - kyu4
-      - kyu5
-      - kyu6
-      - kyu7
-      - kyu8
-      - utils
   workflow_call:
 
 permissions:
@@ -23,6 +11,9 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.x"]
@@ -40,35 +31,32 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
-          pip install pydocstyle
-          pip install types-requests
-      - name: Check to make sure that the module is in your Python path
-        run: |
-          echo $PYTHONPATH
+          python -m pip install -r requirements.txt
+          python -m pip install pydocstyle
+          python -m pip install types-requests
       - name: Check pydocstyle version
         run: |
-          pydocstyle --version
+          python -m pydocstyle --version
       # Pydocstyle testing (Guide)
       # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
       - name: Doc style checking with pydocstyle for kyu_2
         run: |
-          pydocstyle --verbose --explain --count kyu_2
+          python -m pydocstyle --verbose --explain --count kyu_2
       - name: Doc style checking with pydocstyle for kyu_3
         run: |
-          pydocstyle --verbose --explain --count kyu_3
+          python -m pydocstyle --verbose --explain --count kyu_3
       - name: Doc style checking with pydocstyle for kyu_4
         run: |
-          pydocstyle --verbose --explain --count kyu_4
+          python -m pydocstyle --verbose --explain --count kyu_4
       - name: Doc style checking with pydocstyle for kyu_5
         run: |
-          pydocstyle --verbose --explain --count kyu_5
+          python -m pydocstyle --verbose --explain --count kyu_5
       - name: Doc style checking with pydocstyle for kyu_6
         run: |
-          pydocstyle --verbose --explain --count kyu_6
+          python -m pydocstyle --verbose --explain --count kyu_6
       - name: Doc style checking with pydocstyle for kyu_7
         run: |
-          pydocstyle --verbose --explain --count kyu_7
+          python -m pydocstyle --verbose --explain --count kyu_7
       - name: Doc style checking with pydocstyle for kyu_8
         run: |
-          pydocstyle --verbose --explain --count kyu_8
+          python -m pydocstyle --verbose --explain --count kyu_8
