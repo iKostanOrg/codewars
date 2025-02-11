@@ -11,8 +11,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.string_subpattern_recognition_1.has_subpattern \
- import has_subpattern
+from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
 
 
 # pylint: disable-msg=R0801

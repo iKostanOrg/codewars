@@ -12,8 +12,7 @@ import unittest
 import allure
 from parameterized import parameterized
 from utils.log_func import print_log
-from kyu_6.pokemon_damage_calculator.calculate_damage \
-    import calculate_damage
+from kyu_6.pokemon_damage_calculator.calculate_damage import calculate_damage
 
 
 @allure.epic('6 kyu')
@@ -69,10 +68,10 @@ class CalculateDamageTestCase(unittest.TestCase):
         attack = test_data[2]
         defense = test_data[3]
         actual_result = calculate_damage(
-                your_type,
-                opponent_type,
-                attack,
-                defense)
+            your_type,
+            opponent_type,
+            attack,
+            defense)
 
         with allure.step(f"Enter a test data ({test_data}) and verify the "
                          f"expected output ({expected}) vs "

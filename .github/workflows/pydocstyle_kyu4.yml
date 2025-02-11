@@ -43,4 +43,4 @@ jobs:
         # Pydocstyle testing (Guide)
         # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
         run: |
-          pydocstyle --verbose --explain --count kyu_4
+          pydocstyle --verbose --explain --count --ignore=D212 kyu_4
