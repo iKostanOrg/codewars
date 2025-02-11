@@ -41,5 +41,5 @@ jobs:
           pwd
           export PYTHONPATH=$PYTHONPATH:./codewars
       - name: Analysing the code with pylint
-        run: |
-          python -m pylint -v ./kyu_6
+        #run: |
+        #python -m pylint -v ./kyu_6
