@@ -12,8 +12,7 @@ import unittest
 import allure
 from parameterized import parameterized
 from utils.log_func import print_log
-from kyu_6.pokemon_damage_calculator.calculate_damage \
-    import calculate_damage
+from kyu_6.pokemon_damage_calculator.calculate_damage import calculate_damage
 
 
 @allure.epic('6 kyu')
