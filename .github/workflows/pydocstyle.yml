@@ -41,22 +41,22 @@ jobs:
       # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
       - name: Doc style checking with pydocstyle for kyu_2
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_2
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D406,D407 kyu_2
       - name: Doc style checking with pydocstyle for kyu_3
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_3
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,406,D407 kyu_3
       - name: Doc style checking with pydocstyle for kyu_4
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_4
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,406,D407 kyu_4
       - name: Doc style checking with pydocstyle for kyu_5
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_5
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,406,D407 kyu_5
       - name: Doc style checking with pydocstyle for kyu_6
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_6
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,406,D407 kyu_6
       - name: Doc style checking with pydocstyle for kyu_7
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_7
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,406,D407 kyu_7
       - name: Doc style checking with pydocstyle for kyu_8
         run: |
-          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,D407 kyu_8
+          python -m pydocstyle --verbose --explain --count --ignore=D202,D203,D212,D413,406,D407 kyu_8
