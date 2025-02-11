@@ -68,10 +68,10 @@ class CalculateDamageTestCase(unittest.TestCase):
         attack = test_data[2]
         defense = test_data[3]
         actual_result = calculate_damage(
-                your_type,
-                opponent_type,
-                attack,
-                defense)
+            your_type,
+            opponent_type,
+            attack,
+            defense)
 
         with allure.step(f"Enter a test data ({test_data}) and verify the "
                          f"expected output ({expected}) vs "
