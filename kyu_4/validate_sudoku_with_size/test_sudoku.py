@@ -52,50 +52,6 @@ class SudokuTestCase(unittest.TestCase):
             "if it has been filled out correctly.</p>")
         # pylint: enable-msg=R0801
         test_data: tuple = (
-            ([
-                [7, 8, 4, 1, 5, 9, 3, 2, 6],
-                [5, 3, 9, 6, 7, 2, 8, 4, 1],
-                [6, 1, 2, 4, 3, 8, 7, 5, 9],
-
-                [9, 2, 8, 7, 1, 5, 4, 6, 3],
-                [3, 5, 7, 8, 4, 6, 1, 9, 2],
-                [4, 6, 1, 9, 2, 3, 5, 8, 7],
-
-                [8, 7, 6, 3, 9, 4, 2, 1, 5],
-                [2, 4, 3, 5, 6, 1, 9, 7, 8],
-                [1, 9, 5, 2, 8, 7, 6, 3, 4]
-             ], True, 'Testing valid 9x9'),
-
-            ([
-                [1, 4, 2, 3],
-                [3, 2, 4, 1],
-
-                [4, 1, 3, 2],
-                [2, 3, 1, 4]
-             ], True, 'Testing valid 4x4'),
-
-            ([
-                [0, 2, 3, 4, 5, 6, 7, 8, 9],
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                [1, 2, 3, 4, 5, 6, 7, 8, 9]
-             ], False, 'Values in wrong order'),
-
-            ([
-                [1, 2, 3, 4, 5],
-                [1, 2, 3, 4],
-                [1, 2, 3, 4],
-                [1]
-             ],
-             False, '4x5 (invalid dimension)'),
-
             ([[7, 8, 4, 1, 5, 9, 3, 2, 6],
               [5, 3, 9, 6, 7, 2, 8, 4, 1],
               [6, 1, 2, 4, 3, 8, 7, 5, 9],
@@ -104,18 +60,11 @@ class SudokuTestCase(unittest.TestCase):
               [4, 6, 1, 9, 2, 3, 5, 8, 7],
               [8, 7, 6, 3, 9, 4, 2, 1, 5],
               [2, 4, 3, 5, 6, 1, 9, 7, 8],
-              [1, 9, 5, 2, 8, 7, 6, 3, 4]],
-             True, 'Testing valid 9x9'),
-
+              [1, 9, 5, 2, 8, 7, 6, 3, 4]], True, 'Testing valid 9x9'),
             ([[1, 4, 2, 3],
               [3, 2, 4, 1],
               [4, 1, 3, 2],
-              [2, 3, 1, 4]],
-             True, 'Testing valid 4x4'),
-
-            ([[1]],
-             True, 'Testing valid 1x1'),
-
+              [2, 3, 1, 4]], True, 'Testing valid 4x4'),
             ([[0, 2, 3, 4, 5, 6, 7, 8, 9],
               [1, 2, 3, 4, 5, 6, 7, 8, 9],
               [1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -124,32 +73,47 @@ class SudokuTestCase(unittest.TestCase):
               [1, 2, 3, 4, 5, 6, 7, 8, 9],
               [1, 2, 3, 4, 5, 6, 7, 8, 9],
               [1, 2, 3, 4, 5, 6, 7, 8, 9],
-              [1, 2, 3, 4, 5, 6, 7, 8, 9]],
-             False, 'Values in wrong order'),
-
+              [1, 2, 3, 4, 5, 6, 7, 8, 9]], False, 'Values in wrong order'),
             ([[1, 2, 3, 4, 5],
               [1, 2, 3, 4],
               [1, 2, 3, 4],
               [1]], False, '4x5 (invalid dimension)'),
-
+            ([[7, 8, 4, 1, 5, 9, 3, 2, 6],
+              [5, 3, 9, 6, 7, 2, 8, 4, 1],
+              [6, 1, 2, 4, 3, 8, 7, 5, 9],
+              [9, 2, 8, 7, 1, 5, 4, 6, 3],
+              [3, 5, 7, 8, 4, 6, 1, 9, 2],
+              [4, 6, 1, 9, 2, 3, 5, 8, 7],
+              [8, 7, 6, 3, 9, 4, 2, 1, 5],
+              [2, 4, 3, 5, 6, 1, 9, 7, 8],
+              [1, 9, 5, 2, 8, 7, 6, 3, 4]], True, 'Testing valid 9x9'),
+            ([[1, 4, 2, 3],
+              [3, 2, 4, 1],
+              [4, 1, 3, 2],
+              [2, 3, 1, 4]], True, 'Testing valid 4x4'),
+            ([[1]], True, 'Testing valid 1x1'),
+            ([[0, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9],
+              [1, 2, 3, 4, 5, 6, 7, 8, 9]], False, 'Values in wrong order'),
+            ([[1, 2, 3, 4, 5],
+              [1, 2, 3, 4],
+              [1, 2, 3, 4],
+              [1]], False, '4x5 (invalid dimension)'),
             ([[2], ], False, '1x1 with wrong value'),
-
-            ([[''], ],
-             False, 'Empty field(s)'),
-
-            ([[0], ],
-             False, 'Values not in valid range 1..N'),
-
-            ([[True], ],
-             False, 'Invalid value types (boolean)'),
-
+            ([[''], ], False, 'Empty field(s)'),
+            ([[0], ], False, 'Values not in valid range 1..N'),
+            ([[True], ], False, 'Invalid value types (boolean)'),
             ([[1, 4, 4, 3, 'a'],
               [3, 2, 4, 1],
               [4, 1, 3, 3],
               [2, 0, 1, 4],
-              ['', False, None, '4']],
-             False, 'Sudoku breaking all rules at once'),
-
+              ['', False, None, '4']], False, 'Sudoku breaking all rules at once'),
             ([[1, 2, 3, 4, 5, 6, 7, 8, 9],
               [2, 3, 1, 5, 6, 4, 8, 9, 7],
               [3, 1, 2, 6, 4, 5, 9, 7, 8],
@@ -158,9 +122,8 @@ class SudokuTestCase(unittest.TestCase):
               [6, 4, 5, 9, 7, 8, 3, 1, 2],
               [7, 8, 9, 1, 2, 3, 4, 5, 6],
               [8, 9, 7, 2, 3, 1, 5, 6, 4],
-              [9, 7, 8, 3, 1, 2, 6, 4, 5]],
-             False, 'Sudoku with invalid boxes (little squares),'
-                    'but valid rows and columns'))
+              [9, 7, 8, 3, 1, 2, 6, 4, 5]], False,
+             'Sudoku with invalid boxes (little squares), but valid rows and columns'))
 
         for data, expected, message in test_data:
             with allure.step("Enter a Sudoku solution and verify if it a valid one."):
