@@ -41,4 +41,4 @@ jobs:
           python -m pytype --version
       - name: Python Data Type Checking with PYTYPE
         run: |
-          pytype kyu_8
+          python -m pytype ./kyu_8
