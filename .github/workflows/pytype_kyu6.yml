@@ -5,6 +5,7 @@ on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu6'
+  workflow_call:
 
 permissions:
   contents: read
