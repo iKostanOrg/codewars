@@ -1,0 +1,21 @@
+
+LOG =>
+lst: lst: [1, 3, 4, 7, 2, 34], default: def,
+i: 1,
+expected: 3,
+actual: 3
+
+
+LOG =>
+lst: lst: [1, 3, 4, 7, 2, 34], default: def,
+i: 333000,
+expected: def,
+actual: def
+
+
+LOG =>
+lst: lst: [1, 3, 4, 7, 2, 34], default: def,
+i: 23,
+expected: def,
+actual: def
+

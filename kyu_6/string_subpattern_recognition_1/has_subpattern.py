@@ -1,5 +1,6 @@
 """
-Solution for -> String subpattern recognition I
+Solution for -> String subpattern recognition I.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,7 @@ GitHub: https://github.com/ikostan
 
 def has_subpattern(string: str) -> bool:
     """
-    String subpattern recognition I
+    Recognition of string subpattern I.
 
     In this kata you need to build a function to return
     either true/True or false/False if a string can be
@@ -21,7 +22,6 @@ def has_subpattern(string: str) -> bool:
     :return:
     """
     length: int = len(string)
-
     n: int = 2
     while n < (length // 2) + 1:
         if length % n != 0:

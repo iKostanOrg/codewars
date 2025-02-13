@@ -1,5 +1,6 @@
 """
-Solution for -> Row of the odd triangle
+Solution for -> Row of the odd triangle.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def odd_row(n: int) -> list:
     """
+    Odd row.
+
     Given a triangle of consecutive odd numbers
     finds the triangle's row knowing its index
     (the rows are 1-indexed).
@@ -26,7 +29,8 @@ def odd_row(n: int) -> list:
 
 def calc_first_number(n: int) -> int:
     """
-    Calculate first number in the row
+    Calculate first number in the row.
+
     :param n:
     :return:
     """
@@ -35,7 +39,8 @@ def calc_first_number(n: int) -> int:
 
 def calc_last_number(n: int) -> int:
     """
-    Calculate last number in the row
+    Calculate last number in the row.
+
     :param n:
     :return:
     """

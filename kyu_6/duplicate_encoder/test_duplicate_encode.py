@@ -1,5 +1,6 @@
 """
-Test for -> Duplicate Encoder
+Test for -> Duplicate Encoder.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.duplicate_encoder.duplicate_encode \
     import duplicate_encode
@@ -28,13 +30,17 @@ from kyu_6.duplicate_encoder.duplicate_encode \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DuplicateEncodeTestCase(unittest.TestCase):
-    """
-    Testing duplicate_encode function
-    """
-    def test_duplicate_encode(self):
+    """Testing duplicate_encode function."""
+
+    @parameterized.expand([
+        ("din", "((("),
+        ("recede", "()()()"),
+        ("Success", ")())())"),
+        ("(( @", "))((")])
+    def test_duplicate_encode(self, string, expected):
         """
-        Testing duplicate_encode function
-        with various test inputs
+        Testing duplicate_encode function with various test inputs.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -47,13 +53,7 @@ class DuplicateEncodeTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test string and verify the output"):
-            test_data: tuple = (
-                ("din", "((("),
-                ("recede", "()()()"),
-                ("Success", ")())())"),
-                ("(( @", "))(("))
-
-            for string, expected in test_data:
-                print_log(string=string, expected=expected)
-                self.assertEqual(expected, duplicate_encode(string))
+        with allure.step(f"Enter test string: {string} "
+                         f"and verify the output: {expected}."):
+            print_log(string=string, expected=expected)
+            self.assertEqual(expected, duplicate_encode(string))

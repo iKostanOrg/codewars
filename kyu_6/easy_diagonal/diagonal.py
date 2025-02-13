@@ -1,5 +1,6 @@
 """
-Solution for -> Easy Diagonal
+Solution for -> Easy Diagonal.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,8 @@ import math
 
 def diagonal(n: int, p: int) -> int:
     """
+    Diagonal function.
+
     We want to calculate the sum of the binomial coefficients on a given diagonal.
     The sum on diagonal 0 is 8 (we'll write it S(7, 0), 7 is the number of the line
     where we start, 0 is the number of the diagonal).

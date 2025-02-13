@@ -1,0 +1,1 @@
+"""altERnaTIng cAsE <=> ALTerNAtiNG CaSe."""

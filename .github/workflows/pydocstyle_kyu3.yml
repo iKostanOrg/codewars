@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-24.04'
     strategy:
       matrix:
         python-version: ["3.x"]
@@ -43,4 +43,4 @@ jobs:
         # Pydocstyle testing (Guide)
         # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
         run: |
-          pydocstyle --verbose --explain --count kyu_3
+          pydocstyle --verbose --explain --count --ignore=D212 kyu_3

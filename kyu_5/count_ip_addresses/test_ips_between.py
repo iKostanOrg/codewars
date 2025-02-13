@@ -1,5 +1,6 @@
 """
-Test for -> Count IP Addresses
+Test for -> Count IP Addresses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import pytest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.count_ip_addresses.ips_between import ips_between
 
@@ -29,13 +31,21 @@ from kyu_5.count_ip_addresses.ips_between import ips_between
 @pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class IpsBetweenTestCase(unittest.TestCase):
-    """
-    Testing ips_between function
-    """
+    """Testing ips_between function."""
 
-    def test_ips_between(self):
+    @parameterized.expand([
+        ("10.0.0.0", "10.0.0.50", 50),
+        ("20.0.0.10", "20.0.1.0", 246),
+        ("10.0.0.0", "10.0.1.0", 256),
+        ("170.0.0.0", "170.1.0.0", 65536),
+        ("50.0.0.0", "50.1.1.1", 65793),
+        ("180.0.0.0", "181.0.0.0", 16777216),
+        ("1.2.3.4", "5.6.7.8", 67372036),
+        ("180.0.0.0", "181.0.0.0", 16777216),
+        ("117.170.96.190", "117.172.196.242", 156724)])
+    def test_ips_between(self, start, end, expected):
         """
-        Testing ips_between function
+        Testing ips_between function.
 
         Testing a function that receives two IPv4 addresses,
         and returns the number of addresses between them
@@ -61,29 +71,11 @@ class IpsBetweenTestCase(unittest.TestCase):
             "of strings. The last address will always be greater "
             "than the first one.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("10.0.0.0", "10.0.0.50", 50),
-            ("20.0.0.10", "20.0.1.0", 246),
-            ("10.0.0.0", "10.0.1.0", 256),
-            ("170.0.0.0", "170.1.0.0", 65536),
-            ("50.0.0.0", "50.1.1.1", 65793),
-            ("180.0.0.0", "181.0.0.0", 16777216),
-            ("1.2.3.4", "5.6.7.8", 67372036),
-            ("180.0.0.0", "181.0.0.0", 16777216),
-            ("117.170.96.190", "117.172.196.242", 156724))
 
-        for start, end, expected in test_data:
-            result = ips_between(start, end)
-
-            with allure.step(f"Enter test data (start: {start}, "
-                             f"end: {end}) and verify "
-                             f"the output ({result}) "
-                             f"vs expected ({expected})"):
-
-                print_log(start=start,
-                          end=end,
-                          result=result,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 result)
+        result = ips_between(start, end)
+        with allure.step(f"Enter test data (start: {start}, "
+                         f"end: {end}) and verify "
+                         f"the output ({result}) "
+                         f"vs expected ({expected})"):
+            print_log(start=start, end=end, result=result, expected=expected)
+            self.assertEqual(expected, result)

@@ -1,5 +1,6 @@
 """
-Test for -> Decipher this!
+Test for -> Decipher this!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_6.decipher_this.solution import decipher_this
 from utils.log_func import print_log
 
@@ -32,12 +34,28 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DecipherThisTestCase(unittest.TestCase):
-    """
-    Testing decipher_this function
-    """
-    def test_decipher_this(self):
+    """Testing decipher_this function."""
+
+    @parameterized.expand([
+        ("", ""),
+        ('72olle 103doo 100ya',
+         'Hello good day'),
+        ('82yade 115te 103o',
+         'Ready set go'),
+        ("65 119esi 111dl 111lw 108dvei 105n 97n 111ka",
+         "A wise old owl lived in an oak"),
+        ("84eh 109ero 104e 115wa 116eh 108sse 104e 115eokp",
+         "The more he saw the less he spoke"),
+        ("84eh 108sse 104e 115eokp 116eh 109ero 104e 104dare",
+         "The less he spoke the more he heard"),
+        ("87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri",
+         "Why can we not all be like that wise old bird"),
+        ("84kanh 121uo 80roti 102ro 97ll 121ruo 104ple",
+         "Thank you Piotr for all your help")])
+    def test_decipher_this(self, text, expected):
         """
-        Testing decipher_this function
+        Testing decipher_this function.
+
         :param self:
         :return:
         """
@@ -59,30 +77,7 @@ class DecipherThisTestCase(unittest.TestCase):
             "letters and spaces."
             "</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("",
-             ""),
-            ('72olle 103doo 100ya',
-             'Hello good day'),
-            ('82yade 115te 103o',
-             'Ready set go'),
-            ("65 119esi 111dl 111lw 108dvei 105n 97n 111ka",
-             "A wise old owl lived in an oak"),
-            ("84eh 109ero 104e 115wa 116eh 108sse 104e 115eokp",
-             "The more he saw the less he spoke"),
-            ("84eh 108sse 104e 115eokp 116eh 109ero 104e 104dare",
-             "The less he spoke the more he heard"),
-            ("87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri",
-             "Why can we not all be like that wise old bird"),
-            ("84kanh 121uo 80roti 102ro 97ll 121ruo 104ple",
-             "Thank you Piotr for all your help"))
-
-        for text, expected in test_data:
-            result: str = decipher_this(text)
-            print_log(text=text,
-                      expected=expected,
-                      result=result)
-
-            with allure.step("Enter test string and verify the output"):
-                self.assertEqual(expected,
-                                 result)
+        result: str = decipher_this(text)
+        with allure.step(f"Enter test string: {text} and verify the output: {result}"):
+            print_log(text=text, expected=expected, result=result)
+            self.assertEqual(expected, result)

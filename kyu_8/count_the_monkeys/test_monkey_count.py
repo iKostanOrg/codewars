@@ -1,5 +1,6 @@
 """
-Test for -> Count the Monkeys!
+Test for -> Count the Monkeys!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.count_the_monkeys.monkey_count \
     import monkey_count
@@ -33,13 +35,19 @@ from kyu_8.count_the_monkeys.monkey_count \
     name='Source/Kata')
 # pylint: enable=R0801
 class MonkeyCountTestCase(unittest.TestCase):
-    """
-    Testing monkey_count function
-    """
+    """Testing monkey_count function."""
 
-    def test_monkey_count(self):
+    @parameterized.expand([
+        (1, [1]),
+        (5, [1, 2, 3, 4, 5]),
+        (3, [1, 2, 3]),
+        (9, [1, 2, 3, 4, 5, 6, 7, 8, 9]),
+        (10, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
+        (20, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+              12, 13, 14, 15, 16, 17, 18, 19, 20])])
+    def test_monkey_count(self, n, expected):
         """
-        Testing monkey_count function
+        Testing monkey_count function.
 
         You take your son to the forest to see the monkeys.
         You know that there are a certain number there (n),
@@ -62,16 +70,7 @@ class MonkeyCountTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
-        with allure.step("Enter a number (int) and verify the output"):
-            test_data: tuple = (
-                (1, [1]),
-                (5, [1, 2, 3, 4, 5]),
-                (3, [1, 2, 3]),
-                (9, [1, 2, 3, 4, 5, 6, 7, 8, 9]),
-                (10, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
-                (20, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
-                      12, 13, 14, 15, 16, 17, 18, 19, 20]))
-
-            for n, expected in test_data:
-                print_log(n=n, expected=expected)
-                self.assertEqual(expected, monkey_count(n))
+        with allure.step(f"Enter a number (int): {n} "
+                         f"and verify the expected output: {expected}."):
+            print_log(n=n, expected=expected)
+            self.assertEqual(expected, monkey_count(n))

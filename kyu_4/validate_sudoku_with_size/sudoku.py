@@ -1,5 +1,6 @@
 """
-Solution for -> Validate Sudoku with size `NxN`
+Solution for -> Validate Sudoku with size `NxN`.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -15,16 +16,25 @@ from kyu_5.did_i_finish_my_sudoku.sudoku_by_regions \
 
 class Sudoku:
     """
+    Sudoku class.
+
     Given a Sudoku data structure with size `NxN, N > 0
     and √N == integer`, write a method to validate if it
     has been filled out correctly.
     """
 
     def __init__(self, data: list):
+        """
+        Create a new Sudoku instance.
+
+        :param data:
+        """
         self.__data: list = data
 
     def is_valid(self) -> bool:
         """
+        Sudoku validator.
+
         A method to validate if given a Sudoku has been filled out correctly.
         Sudoku -> data structure with size NxN, N > 0 and √N == integer.
         :return: bool
@@ -34,22 +44,22 @@ class Sudoku:
                 or not assert_sudoku_by_column(self.__data):
             return False
 
-        if len(self.__data) > 1:
-            if not assert_sudoku_by_region(self.__data):
-                return False
+        if len(self.__data) > 1 and not assert_sudoku_by_region(self.__data):
+            return False
 
         return True
 
     def is_data_valid(self) -> bool:
         """
-        Verify data validity
+        Verify data validity.
+
         :return: bool
         """
         if not self.__data:
             return False
 
-        if len(self.__data) == 1:
-            if self.__data[0][0] != 1 or isinstance(self.__data[0][0], bool):
-                return False
+        if (len(self.__data) == 1 and
+                (self.__data[0][0] != 1 or isinstance(self.__data[0][0], bool))):
+            return False
 
         return isinstance(self.__data, list)

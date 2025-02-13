@@ -1,5 +1,6 @@
 """
-Test for Casino chips
+Test for Casino chips.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from kyu_6.casino_chips.solve import solve
 from utils.log_func import print_log
 
@@ -28,12 +30,26 @@ from utils.log_func import print_log
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SolveTestCase(unittest.TestCase):
-    """
-    Testing solve function
-    """
-    def test_solve(self):
+    """Testing solve function."""
+
+    @parameterized.expand([
+        ([8, 8, 8], 12),
+        ([1, 1, 1], 1),
+        ([8, 1, 4], 5),
+        ([7, 4, 10], 10),
+        ([12, 12, 12], 18),
+        ([6, 6, 6], 9),
+        ([1, 23, 2], 3),
+        ([9, 8, 6], 11),
+        ([10, 9, 6], 12),
+        ([4, 4, 3], 5),
+        ([1, 2, 1], 2),
+        ([4, 1, 1], 2),
+        ([8, 2, 8], 9)])
+    def test_solve(self, arr, expected):
         """
-        Testing 'solve' function with various test data
+        Testing 'solve' function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -49,31 +65,9 @@ class SolveTestCase(unittest.TestCase):
             "maximum number of days you can pick the chips. Each "
             "day you need to take exactly two chips.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ([8, 8, 8], 12),
-            ([1, 1, 1], 1),
-            ([8, 1, 4], 5),
-            ([7, 4, 10], 10),
-            ([12, 12, 12], 18),
-            ([6, 6, 6], 9),
-            ([1, 23, 2], 3),
-            ([9, 8, 6], 11),
-            ([10, 9, 6], 12),
-            ([4, 4, 3], 5),
-            ([1, 2, 1], 2),
-            ([4, 1, 1], 2),
-            ([8, 2, 8], 9))
-
-        for arr, expected in test_data:
-            actual_result = solve(arr)
-
-            with allure.step(f"Enter an array ({arr}) and verify the "
-                             f"expected output ({expected}) vs "
-                             f"actual result ({actual_result})"):
-
-                print_log(arr=arr,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
+        actual_result = solve(arr)
+        with allure.step(f"Enter an array ({arr}) and verify the "
+                         f"expected output ({expected}) vs "
+                         f"actual result ({actual_result})"):
+            print_log(arr=arr, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)

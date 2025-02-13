@@ -1,5 +1,6 @@
 """
-Test for -> Sums of Parts
+Test for -> Sums of Parts.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.sums_of_parts.solution import parts_sums
 
@@ -27,14 +29,20 @@ from kyu_6.sums_of_parts.solution import parts_sums
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class PartsSumTestCase(unittest.TestCase):
-    """
-    Testing 'parts_sums' function
-    """
+    """Testing 'parts_sums' function."""
 
     # pylint: disable-msg=R0801
-    def test_parts_sum(self):
+    @parameterized.expand([
+        ([], [0]),
+        ([1, 2, 3, 4, 5, 6], [21, 20, 18, 15, 11, 6, 0]),
+        ([0, 1, 3, 6, 10], [20, 20, 19, 16, 10, 0]),
+        ([744125, 935, 407, 454, 430, 90, 144, 6710213, 889, 810, 2579358],
+         [10037855, 9293730, 9292795, 9292388, 9291934, 9291504, 9291414,
+          9291270, 2581057, 2580168, 2579358, 0])])
+    def test_parts_sum(self, input_ls, expected):
         """
-        Testing 'parts_sums' function with various test data
+        Testing 'parts_sums' function with various test data.
+
         :return:
         """
         allure.dynamic.title("Testing 'parts_sums' function")
@@ -50,25 +58,11 @@ class PartsSumTestCase(unittest.TestCase):
             "parts_sums(ls) -> [21, 20, 18, 15, 11, 6, 0]"
             "</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ([], [0]),
-            ([1, 2, 3, 4, 5, 6], [21, 20, 18, 15, 11, 6, 0]),
-            ([0, 1, 3, 6, 10], [20, 20, 19, 16, 10, 0]),
-            ([744125, 935, 407, 454, 430, 90, 144, 6710213, 889, 810, 2579358],
-             [10037855, 9293730, 9292795, 9292388, 9291934, 9291504, 9291414,
-              9291270, 2581057, 2580168, 2579358, 0]))
-
-        for input_ls, expected in test_data:
-            actual_result = parts_sums(input_ls)
-            # pylint: disable-msg=R0801
-            with allure.step(f"Enter a list ls ({input_ls}) and verify the "
-                             f"expected output ({expected}) vs "
-                             f"actual result ({actual_result})"):
-
-                print_log(input_ls=input_ls,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
+        actual_result = parts_sums(input_ls)
+        # pylint: disable-msg=R0801
+        with allure.step(f"Enter a list ls ({input_ls}) and verify the "
+                         f"expected output ({expected}) vs "
+                         f"actual result ({actual_result})"):
+            print_log(input_ls=input_ls, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)
             # pylint: enable-msg=R0801

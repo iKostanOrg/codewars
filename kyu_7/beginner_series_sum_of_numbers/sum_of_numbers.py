@@ -1,5 +1,6 @@
 """
-Beginner Series #3 Sum of Numbers
+Beginner Series #3 Sum of Numbers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def get_sum(a: int, b: int) -> int:
     """
+    Get sum.
+
     Given two integers a and b,
     which can be positive or negative,
     find the sum of all the numbers
@@ -18,4 +21,5 @@ def get_sum(a: int, b: int) -> int:
     """
     if a > b:
         a, b = b, a
+
     return sum(i for i in range(a, (b + 1)))

@@ -1,5 +1,6 @@
 """
-Solution for -> Next smaller number with the same digits
+Solution for -> Next smaller number with the same digits.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,10 +8,13 @@ GitHub: https://github.com/ikostan
 
 def next_smaller(n: int) -> int:
     """
+    next_smaller function.
+
     A function that takes a positive integer and returns the
     next smaller positive integer containing the same digits.
-
     If no smaller number can be composed using those digits, return -1
+    :param n: int
+    :return: int
     """
     # 1
     # Starting from the right, find the index of the first digit that
@@ -41,7 +45,8 @@ def next_smaller(n: int) -> int:
 
 def find_x(n: int) -> int:
     """
-    Find x
+    Find x.
+
     :param n: int
     :return: int
     """
@@ -54,7 +59,8 @@ def find_x(n: int) -> int:
 
 def find_y(n: int, x_i: int) -> int:
     """
-    Find y
+    Find y.
+
     :param n: int
     :param x_i: int
     :return: int
@@ -75,4 +81,4 @@ def find_y(n: int, x_i: int) -> int:
                 if comparable_x['y'] < y:
                     comparable_x['y'] = y
                     comparable_x['index'] = index + x_i + 1
-    return comparable_x['index'] if comparable_x['index'] else -1
+    return comparable_x['index'] or -1

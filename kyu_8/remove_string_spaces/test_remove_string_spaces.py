@@ -1,5 +1,6 @@
 """
-Test for -> Remove String Spaces
+Test for -> Remove String Spaces.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,14 +29,12 @@ from kyu_8.remove_string_spaces.remove_string_spaces \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class NoSpaceTestCase(unittest.TestCase):
-    """
-    Testing no_space function
-    """
+    """Testing no_space function."""
 
     def test_something(self):
         """
-        Test that no_space function removes the spaces
-        from the string, then return the resultant string.
+        Test that no_space function with various test dara.
+
         :return:
         """
         # pylint: disable-msg=R0801

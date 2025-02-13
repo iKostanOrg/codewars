@@ -1,5 +1,6 @@
 """
-Test for -> Numericals of a String
+Test for -> Numericals of a String.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,12 +29,12 @@ from kyu_6.numericals_of_string.numericals import numericals
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class NumericalsTestCase(unittest.TestCase):
-    """
-    Testing 'numericals' function
-    """
+    """Testing 'numericals' function."""
+
     def test_numericals(self):
         """
-        Testing 'numericals' function
+        Testing 'numericals' function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801

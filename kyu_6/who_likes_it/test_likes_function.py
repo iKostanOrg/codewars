@@ -1,5 +1,6 @@
 """
-Test for -> likes function
+Test for -> likes function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.who_likes_it.likes_function import likes
 
@@ -29,15 +31,24 @@ from kyu_6.who_likes_it.likes_function import likes
 # pylint: enable=R0801
 class LikesTestCase(unittest.TestCase):
     """
-    Testing likes function
+    Testing likes function.
 
     The function should take in input array, containing the names
     of people who like an item. It must return the display text.
     For 4 or more names, the number in and 2 others simply increases.
     """
-    def test_likes_function(self):
+
+    @parameterized.expand([
+        ([], 'no one likes this'),
+        (['Peter'], 'Peter likes this'),
+        (['Jacob', 'Alex'], 'Jacob and Alex like this'),
+        (['Max', 'John', 'Mark'], 'Max, John and Mark like this'),
+        (['Alex', 'Jacob', 'Mark', 'Max'],
+         'Alex, Jacob and 2 others like this')])
+    def test_likes_function(self, names, expected):
         """
-        Testing likes function with various test data
+        Testing likes function with various test data.
+
         :return:
         """
         # pylint: disable=R0801
@@ -53,19 +64,9 @@ class LikesTestCase(unittest.TestCase):
             "display text. For 4 or more names, the number in and 2 "
             "others simply increases.</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            ([], 'no one likes this'),
-            (['Peter'], 'Peter likes this'),
-            (['Jacob', 'Alex'], 'Jacob and Alex like this'),
-            (['Max', 'John', 'Mark'], 'Max, John and Mark like this'),
-            (['Alex', 'Jacob', 'Mark', 'Max'],
-             'Alex, Jacob and 2 others like this'))
-
         with allure.step(
                 "Enter a test data and verify the expected "
                 "output vs actual result"):
-
-            for names, expected in test_data:
-                actual_result = likes(names)
-                print_log(exp=expected, res=actual_result)
-                self.assertEqual(expected, actual_result)
+            actual_result = likes(names)
+            print_log(exp=expected, res=actual_result)
+            self.assertEqual(expected, actual_result)

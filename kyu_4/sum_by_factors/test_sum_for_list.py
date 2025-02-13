@@ -1,5 +1,6 @@
 """
-Testing sum_for_list function
+Testing sum_for_list function.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,13 +26,12 @@ from kyu_4.sum_by_factors.sum_for_list import sum_for_list
     url='https://www.codewars.com/kata/54d496788776e49e6b00052f',
     name='Source/Kata')
 class SumForListTestCase(unittest.TestCase):
-    """
-    Testing sum_for_list function
-    """
+    """Testing sum_for_list function."""
 
     def test_sum_for_list(self):
         """
-        Testing sum_for_list function
+        Testing sum_for_list function.
+
         :return:
         """
         # pylint: disable-msg=R0801

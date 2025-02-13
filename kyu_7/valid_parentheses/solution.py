@@ -1,5 +1,6 @@
 """
-Solution for -> Valid Parentheses
+Solution for -> Valid Parentheses.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,9 +8,8 @@ GitHub: https://github.com/ikostan
 
 def valid_parentheses(paren_str: str) -> bool:
     """
-    A function that takes a string of parentheses, and determines
-    if the order of the parentheses is valid. The function should
-    return true if the string is valid, and false if it's invalid.
+    Determine if the order of the parentheses is valid.
+
     :param paren_str: str
     :return: bool
     """
@@ -20,7 +20,6 @@ def valid_parentheses(paren_str: str) -> bool:
 
     # convert string into list
     paren_str_list: list = list(paren_str)
-
     while paren_str_list:
         # Fail if starts from closing bracket
         if paren_str_list[0] == ')':

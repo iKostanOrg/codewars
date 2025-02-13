@@ -1,5 +1,6 @@
 """
-Test for -> Sum of Numbers
+Test for -> Sum of Numbers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,12 @@ from kyu_7.beginner_series_sum_of_numbers.sum_of_numbers \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SumOfNumbersTestCase(unittest.TestCase):
-    """
-    Testing get_sum function
-    """
+    """Testing get_sum function."""
 
     def test_get_sum_equal_numbers(self):
         """
-        a and b are equal
+        Test that 'a' and 'b' are equal.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -53,7 +53,8 @@ class SumOfNumbersTestCase(unittest.TestCase):
 
     def test_get_sum_positive_numbers(self):
         """
-        a an b are positive numbers
+        Test 'a' an 'b' are positive numbers.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -87,7 +88,8 @@ class SumOfNumbersTestCase(unittest.TestCase):
 
     def test_get_sum_negative_numbers(self):
         """
-        a or b is negative
+        Test 'a' or 'b' is negative.
+
         :return:
         """
         # pylint: disable-msg=R0801

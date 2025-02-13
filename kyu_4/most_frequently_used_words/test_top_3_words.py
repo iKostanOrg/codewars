@@ -1,5 +1,6 @@
 """
-Test for 'Most frequently used words in a text'
+Test for 'Most frequently used words in a text'.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,13 +29,13 @@ from kyu_4.most_frequently_used_words.solution \
     url='https://www.codewars.com/kata/51e056fe544cf36c410000fb',
     name='Source/Kata')
 class Top3WordsTestCase(unittest.TestCase):
-    """
-    Testing top_3_words
-    """
+    """Testing top_3_words."""
 
     def test_top_3_words(self):
         """
-        Test top_3_words function
+        Test top_3_words function with various test data.
+
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing top_3_words function")

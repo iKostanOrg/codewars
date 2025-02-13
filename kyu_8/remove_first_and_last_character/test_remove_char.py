@@ -1,5 +1,6 @@
 """
-Test for -> Remove First and Last Character
+Test for -> Remove First and Last Character.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,15 +29,13 @@ from kyu_8.remove_first_and_last_character.remove_char \
     name='Source/Kata')
 # pylint: enable=R0801
 class RemoveCharTestCase(unittest.TestCase):
-    """
-    Testing remove_char function
-    """
+    """Testing remove_char function."""
 
     def test_remove_char(self):
         """
-        Test that 'remove_char' function
-        removes the first and
-        last characters of a string.
+        Test 'remove_char' function.
+
+        Should remove the first and last characters of a string.
         :return:
         """
         # pylint: disable=R0801

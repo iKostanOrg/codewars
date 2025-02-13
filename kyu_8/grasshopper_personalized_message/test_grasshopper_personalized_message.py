@@ -1,5 +1,6 @@
 """
-Test for -> Personalized greeting
+Test for -> Personalized greeting.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -23,18 +24,17 @@ from kyu_8.grasshopper_personalized_message.grasshopper_personalized_message \
 @allure.tag('FUNDAMENTALS',
             'CONDITIONAL STATEMENTS',
             'CONTROL FLOW')
-@allure.link(url='https://www.codewars.com/kata/5772da22b89313a4d50012f7',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/5772da22b89313a4d50012f7',
+    name='Source/Kata')
 # pylint: enable=R0801
 class GreetTestCase(unittest.TestCase):
-    """
-    Testing greet function
-    """
+    """Testing greet function."""
 
     def test_greet(self):
         """
-        Use conditionals to to verify that greet
-        function returns the proper message.
+        Conditionals tests to verify that greet function returns the proper message.
+
         :return:
         """
         # pylint: disable=R0801
@@ -43,8 +43,9 @@ class GreetTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801

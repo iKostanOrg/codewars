@@ -1,5 +1,6 @@
 """
-Test for -> Find the first non-consecutive number
+Test for -> Find the first non-consecutive number.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,12 +28,12 @@ from kyu_8.find_the_first_non_consecutive_number.first_non_consecutive \
     name='Source/Kata')
 # pylint: enable=R0801
 class FirstNonConsecutiveTestCase(unittest.TestCase):
-    """
-    Testing first_non_consecutive function
-    """
+    """Testing first_non_consecutive function."""
 
     def test_first_non_consecutive_none(self):
         """
+        Testing first_non_consecutive function, non-consecutive numbers.
+
         If the whole array is consecutive then return
         null or Nothing or None.
         :return:
@@ -42,12 +43,13 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
-        with allure.step("Pass a list with no non consecutive numbers"):
+        with allure.step("Pass a list with non-consecutive numbers"):
             lst: list = [1, 2, 3, 4, 5, 6, 7, 8]
             expected: None = None
 
@@ -62,7 +64,8 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
     def test_first_non_consecutive_large_list(self):
         """
-        Large lists
+        Testing large lists.
+
         :return:
         """
         # pylint: disable=R0801
@@ -70,8 +73,9 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
@@ -114,6 +118,8 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
     def test_first_non_consecutive_positive(self):
         """
+        Test non-consecutive positive numbers.
+
         If we have an array [1,2,3,4,6,7,8] then 1 then 2
         then 3 then 4 are all consecutive but 6 is not,
         so that's the first non-consecutive number.
@@ -124,8 +130,9 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
@@ -170,16 +177,19 @@ class FirstNonConsecutiveTestCase(unittest.TestCase):
 
     def test_first_non_consecutive_negative(self):
         """
-        non-consecutive is a negative number.
+        Test non-consecutive is a negative number.
+
         :return:
         """
         # pylint: disable=R0801
-        allure.dynamic.title("Negative non consecutive number should be returned")
+        allure.dynamic.title(
+            "Negative non consecutive number should be returned")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801

@@ -1,5 +1,6 @@
 """
-Solution for -> Simple Fun #152: Invite More Women?
+Solution for -> Simple Fun #152: Invite More Women?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def invite_more_women(arr: list) -> bool:
     """
+    Invite More Women function.
+
     Arthur wants to make sure that there are at least as
     many women as men at this year's party. He gave you
     a list of integers of all the party goers.

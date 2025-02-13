@@ -1,5 +1,6 @@
 """
-Solution for -> Did I Finish my Sudoku?
+Solution for -> Did I Finish my Sudoku?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -14,6 +15,8 @@ from kyu_5.did_i_finish_my_sudoku.sudoku_by_regions \
 
 def done_or_not(board: list) -> str:
     """
+    Done or Not.
+
     return 'Finished!'
     or
     return 'Try again!'

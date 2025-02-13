@@ -16,7 +16,7 @@ it in normal English orthography, it just outputs a list of words.
 
 Robbie has pulled multiple all-nighters to get this project finished,
 and he needs some beauty sleep. So, he wants you to write the last part
-of his code, a sentencify function, which takes the output that the
+of his code, a `sentencify` function, which takes the output that the
 machine gives, and formats it into proper English orthography.
 
 **Your function should:**

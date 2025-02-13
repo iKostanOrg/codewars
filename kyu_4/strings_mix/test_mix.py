@@ -1,5 +1,6 @@
 """
-Test for -> Strings Mix
+Test for -> Strings Mix.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,12 +25,11 @@ from kyu_4.strings_mix.solution import mix
     url='https://www.codewars.com/kata/5629db57620258aa9d000014',
     name='Source/Kata')
 class MixTestCase(unittest.TestCase):
-    """
-    Testing solution for Strings Mix problem
-    """
+    """Testing solution for Strings Mix problem."""
+
     def test_smix(self):
         """
-        Testing 'mix' function
+        Testing 'mix' function.
 
         Given two strings s1 and s2, the 'mix' function
         should visualize how different the two strings are.

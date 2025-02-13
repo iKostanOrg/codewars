@@ -1,5 +1,6 @@
 """
-Test for -> Sum of two lowest positive integers
+Test for -> Sum of two lowest positive integers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -12,6 +13,7 @@ from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int \
 # FUNDAMENTALS, ARRAYS
 
 
+# pylint: disable-msg=R0801
 @allure.epic('7 kyu')
 @allure.parent_suite('Beginner')
 @allure.suite("Data Structures")
@@ -23,16 +25,14 @@ from kyu_7.sum_of_two_lowest_int.sum_two_smallest_int \
 @allure.link(
     url='https://www.codewars.com/kata/558fc85d8fd1938afb000014',
     name='Source/Kata')
+# pylint: enable-msg=R0801
 class SumTwoSmallestNumbersTestCase(unittest.TestCase):
-    """
-    Testing sum_two_smallest_numbers function
-    """
+    """Testing sum_two_smallest_numbers function."""
 
     def test_sum_two_smallest_numbers(self):
         """
-        Test sum_two_smallest_numbers function
-        The function should return the sum of
-        the two lowest positive numbers
+        Test sum_two_smallest_numbers function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -41,8 +41,9 @@ class SumTwoSmallestNumbersTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801

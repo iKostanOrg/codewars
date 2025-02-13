@@ -1,5 +1,6 @@
 """
-Solution for -> Find the odd int
+Solution for -> Find the odd int.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,10 +10,10 @@ from typing import List, Dict
 
 def find_it(seq: List[int]) -> int:
     """
-    Given an array, find the int that
-    appears an odd number of times.
-    :param seq:
-    :return:
+    Find the int that appears an odd number of times.
+
+    :param seq: list
+    :return: int
     """
     pares: Dict[int, int] = {}
     result: int = 0

@@ -1,0 +1,90 @@
+
+LOG =>
+expected: True,
+actual_result: True,
+message: Testing valid 9x9
+
+
+LOG =>
+expected: True,
+actual_result: True,
+message: Testing valid 4x4
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Values in wrong order
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: 4x5 (invalid dimension)
+
+
+LOG =>
+expected: True,
+actual_result: True,
+message: Testing valid 9x9
+
+
+LOG =>
+expected: True,
+actual_result: True,
+message: Testing valid 4x4
+
+
+LOG =>
+expected: True,
+actual_result: True,
+message: Testing valid 1x1
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Values in wrong order
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: 4x5 (invalid dimension)
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: 1x1 with wrong value
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Empty field(s)
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Values not in valid range 1..N
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Invalid value types (boolean)
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Sudoku breaking all rules at once
+
+
+LOG =>
+expected: False,
+actual_result: False,
+message: Sudoku with invalid boxes (little squares),but valid rows and columns
+

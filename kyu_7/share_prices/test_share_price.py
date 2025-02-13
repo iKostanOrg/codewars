@@ -1,5 +1,6 @@
 """
-Test for -> Share prices
+Test for -> Share prices.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.share_prices.share_price import share_price
 
@@ -29,14 +31,18 @@ from kyu_7.share_prices.share_price import share_price
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SharePriceTestCase(unittest.TestCase):
-    """
-    Testing share_price function
-    """
+    """Testing share_price function."""
 
-    def test_share_price(self):
+    @parameterized.expand([
+        (100, [], '100.00'),
+        (100, [-50, 50], '75.00'),
+        (100, [-50, 100], '100.00'),
+        (100, [-20, 30], '104.00'),
+        (1000, [0, 2, 3, 6], '1113.64')])
+    def test_share_price(self, invested, changes, expected):
         """
-        Testing share_price function
-        with multiple test inputs
+        Testing share_price function with multiple test inputs.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -49,20 +55,8 @@ class SharePriceTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter invested, changes "
-                         "and verify the output"):
-            test_data: tuple = (
-                (100, [], '100.00'),
-                (100, [-50, 50], '75.00'),
-                (100, [-50, 100], '100.00'),
-                (100, [-20, 30], '104.00'),
-                (1000, [0, 2, 3, 6], '1113.64'))
-
-            for invested, changes, expected in test_data:
-
-                print_log(invested=invested,
-                          changes=changes,
-                          expected=False)
-
-                self.assertEqual(expected,
-                                 share_price(invested, changes))
+        with allure.step(f"Enter invested: {invested}, "
+                         f"changes: {changes}"
+                         f"and verify the expected output: {expected}."):
+            print_log(invested=invested, changes=changes, expected=False)
+            self.assertEqual(expected, share_price(invested, changes))

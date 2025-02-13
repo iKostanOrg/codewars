@@ -1,5 +1,6 @@
 """
-Solution for -> Find the longest gap!
+Solution for -> Find the longest gap!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,7 @@ GitHub: https://github.com/ikostan
 
 def gap(num: int) -> int:
     """
-    Returns the length of its longest
-    binary gap.
+    Return the length of its longest binary gap.
 
     The function should return 0 if
     num doesn't contain a binary gap.
@@ -30,7 +30,8 @@ def gap(num: int) -> int:
 
 def calc_g_cur(g_cur: int, char: str) -> int:
     """
-    Calculates g_cur
+    Calculate g_cur.
+
     :param g_cur:
     :param char:
     :return:
@@ -44,7 +45,8 @@ def calc_g_cur(g_cur: int, char: str) -> int:
 
 def calc_g_max(g_cur: int, g_max: int) -> int:
     """
-    Calculates g_max
+    Calculate g_max.
+
     :param g_cur:
     :param g_max:
     :return:

@@ -1,5 +1,6 @@
 """
-Assert that 'domain_name' function
+Test for -> 'domain_name' function.
+
 returns domain name from given URL string.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -34,12 +35,12 @@ from kyu_5.extract_the_domain_name_from_url.extract_domain_from_url \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DomainNameTestCase(unittest.TestCase):
-    """
-    Testing domain_name function
-    """
+    """Testing domain_name function."""
 
     def test_domain_name(self):
         """
+        domain_name function testing.
+
         Assert that 'domain_name' function
         returns domain name from given URL string.
         :return:
@@ -64,7 +65,5 @@ class DomainNameTestCase(unittest.TestCase):
         for url, expected in test_data:
             with allure.step("Enter test string and verify the output"):
                 actual = domain_name(url)
-                print_log(url=url,
-                          expected=expected,
-                          actual=actual)
+                print_log(url=url, expected=expected, actual=actual)
                 self.assertEqual(expected, actual)

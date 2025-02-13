@@ -1,5 +1,6 @@
 """
-Test for -> Simple Fun #152: Invite More Women?
+Test for -> Simple Fun #152: Invite More Women?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.simple_fun_152.invite_more_women import invite_more_women
 
@@ -26,15 +28,16 @@ from kyu_7.simple_fun_152.invite_more_women import invite_more_women
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class InviteMoreWomenTestCase(unittest.TestCase):
-    """
-    Simple Fun #152: Invite More Women?
-    Testing invite_more_women function
-    """
+    """Testing invite_more_women function."""
 
-    def test_invite_more_women_positive(self):
+    @parameterized.expand([
+        ([-1, -1, -1], False),
+        ([1, -1], False),
+        ([], False)])
+    def test_invite_more_women_positive(self, arr, expected):
         """
-        Simple Fun #152: Invite More Women?
-        Testing invite_more_women function (positive)
+        Testing invite_more_women function (positive).
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -47,23 +50,18 @@ class InviteMoreWomenTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step('Enter test data and verify the output'):
-            data: tuple = (
-                ([-1, -1, -1], False),
-                ([1, -1], False),
-                ([], False))
+        with allure.step(f'Enter test data: {arr} '
+                         f'and verify the expected output: {expected}.'):
+            print_log(arr=arr, expected=expected)
+            self.assertEqual(invite_more_women(arr), expected)
 
-            for d in data:
-                arr = d[0]
-                expected = d[1]
-
-                print_log(arr=arr, expected=expected)
-                self.assertEqual(invite_more_women(arr), expected)
-
-    def test_invite_more_women_negative(self):
+    @parameterized.expand([
+        ([1, -1, 1], True),
+        ([1, 1, 1], True)])
+    def test_invite_more_women_negative(self, arr, expected):
         """
-        Simple Fun #152: Invite More Women?
-        Testing invite_more_women function (negative)
+        Testing invite_more_women function (negative).
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -76,14 +74,7 @@ class InviteMoreWomenTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step('Enter test data and verify the output'):
-            data: tuple = (
-                ([1, -1, 1], True),
-                ([1, 1, 1], True))
-
-            for d in data:
-                arr = d[0]
-                expected = d[1]
-
-                print_log(arr=arr, expected=expected)
-                self.assertEqual(invite_more_women(arr), expected)
+        with allure.step(f'Enter test data: {arr} '
+                         f'and verify the expected output: {expected}.'):
+            print_log(arr=arr, expected=expected)
+            self.assertEqual(invite_more_women(arr), expected)

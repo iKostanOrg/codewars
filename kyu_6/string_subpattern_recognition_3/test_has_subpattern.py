@@ -1,5 +1,6 @@
 """
-Test for -> String subpattern recognition III
+Test for -> String subpattern recognition III.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -31,12 +32,11 @@ from kyu_6.string_subpattern_recognition_3.has_subpattern \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
-    """
-    Testing 'has_subpattern' function
-    """
+    """Testing 'has_subpattern' function."""
+
     def test_has_subpattern(self):
         """
-        Verify that 'has_subpattern' function
+        Verify that 'has_subpattern' function.
 
         Return a subpattern with sorted characters,
         otherwise return the base string with sorted

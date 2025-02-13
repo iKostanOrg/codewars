@@ -1,5 +1,6 @@
 """
-Test  for -> Swap Values
+Test  for -> Swap Values.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,13 @@ from kyu_8.swap_values.swap_values import swap_values
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SwapValuesTestCase(unittest.TestCase):
-    """
-    Testing swap_values function
-    """
+    """Testing swap_values function."""
 
     def test_swap_values(self):
         """
-        Testing swap_values function
+        Testing swap_values function with various test data.
+
+        :return:
         """
         # pylint: disable=R0801
         allure.dynamic.title("Testing swap_values function")
@@ -49,7 +50,6 @@ class SwapValuesTestCase(unittest.TestCase):
             swap: list = [1, 2]
             expected: list = [2, 1]
             swap_values(swap)
-
             print_log(list=swap, expected=expected)
             self.assertEqual(swap[0], 2)
             self.assertEqual(swap[1], 1)

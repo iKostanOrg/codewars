@@ -1,5 +1,6 @@
 """
-Test for -> Integers: Recreation One
+Test for -> Integers: Recreation One.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.integers_recreation_one.solution import list_squared
 
@@ -27,7 +29,7 @@ from kyu_5.integers_recreation_one.solution import list_squared
     name='Source/Kata')
 class ListSquaredTestCase(unittest.TestCase):
     """
-    Integers: Recreation One
+    Integers: Recreation One.
 
     Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors
     squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the
@@ -43,9 +45,20 @@ class ListSquaredTestCase(unittest.TestCase):
     of the squared divisors.
     """
 
-    def test_flatten(self):
+    @parameterized.expand([
+        (1, 250, [[1, 1], [42, 2500], [246, 84100]]),
+        (42, 250, [[42, 2500], [246, 84100]]),
+        (250, 500, [[287, 84100]]),
+        (960, 5024, [[1434, 2856100], [1673, 2856100],
+                     [1880, 4884100], [4264, 24304900]]),
+        (689, 5666, [[728, 722500], [1434, 2856100], [1673, 2856100],
+                     [1880, 4884100], [4264, 24304900]]),
+        (257, 4195, [[287, 84100], [728, 722500], [1434, 2856100],
+                     [1673, 2856100], [1880, 4884100]])
+    ])
+    def test_flatten(self, m, n, expected):
         """
-        Testing list_squared function
+        Testing list_squared function.
 
         :return:
         """
@@ -61,26 +74,8 @@ class ListSquaredTestCase(unittest.TestCase):
             "all integers between m and n whose sum of squared divisors "
             "is itself a square.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (1, 250,
-             [[1, 1], [42, 2500], [246, 84100]]),
-            (42, 250,
-             [[42, 2500], [246, 84100]]),
-            (250, 500,
-             [[287, 84100]]),
-            (960, 5024,
-             [[1434, 2856100], [1673, 2856100],
-              [1880, 4884100], [4264, 24304900]]),
-            (689, 5666,
-             [[728, 722500], [1434, 2856100],
-              [1673, 2856100], [1880, 4884100],
-              [4264, 24304900]]),
-            (257, 4195, [[287, 84100], [728, 722500],
-                         [1434, 2856100], [1673, 2856100],
-                         [1880, 4884100]]))
 
-        for m, n, expected in test_data:
-            with allure.step("Enter test data and verify the output..."):
-                actual_result = list_squared(m, n)
-                print_log(m=m, n=n, expected=expected, actual_result=actual_result)
-                self.assertListEqual(expected, actual_result)
+        with allure.step("Enter test data and verify the output..."):
+            actual_result = list_squared(m, n)
+            print_log(m=m, n=n, expected=expected, actual_result=actual_result)
+            self.assertListEqual(expected, actual_result)

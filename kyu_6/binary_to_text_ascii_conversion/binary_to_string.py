@@ -1,5 +1,6 @@
 """
-Solution for -> Binary to Text (ASCII) Conversion
+Solution for -> Binary to Text (ASCII) Conversion.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def binary_to_string(binary: str) -> str:
     """
+    Binary to string.
+
     Write a function that takes in a binary string
     and returns the equivalent decoded text
     (the text is ASCII encoded).
@@ -29,7 +32,6 @@ def binary_to_string(binary: str) -> str:
     :param binary:
     :return:
     """
-
     if not binary:
         return ''
 

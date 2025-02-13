@@ -1,5 +1,6 @@
 """
-Test for -> Permute a Palindrome
+Test for -> Permute a Palindrome.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -24,13 +25,12 @@ from kyu_6.permute_a_palindrome.permute_a_palindrome import permute_a_palindrome
     url='https://www.codewars.com/kata/58ae6ae22c3aaafc58000079',
     name='Source/Kata')
 class PermutePalindromeTestCase(unittest.TestCase):
-    """
-    Testing permute_a_palindrome function
-    """
+    """Testing permute_a_palindrome function."""
 
     def test_permute_a_palindrome_positive(self):
         """
-        Testing permute_a_palindrome function
+        Testing permute_a_palindrome function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -70,7 +70,8 @@ class PermutePalindromeTestCase(unittest.TestCase):
 
     def test_permute_a_palindrome_negative(self):
         """
-        Negative testing permute_a_palindrome function
+        Negative testing permute_a_palindrome function.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -104,7 +105,8 @@ class PermutePalindromeTestCase(unittest.TestCase):
 
     def test_permute_a_palindrome_empty_string(self):
         """
-        Testing permute_a_palindrome function with empty string
+        Testing permute_a_palindrome function with empty string.
+
         :return:
         """
         # pylint: disable-msg=R0801

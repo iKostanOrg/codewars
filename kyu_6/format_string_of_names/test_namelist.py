@@ -1,5 +1,6 @@
 """
-Test for -> Format a string of names like \'Bart, Lisa & Maggie\'.
+Test for -> Format a string of names like 'Bart, Lisa & Maggie'.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.format_string_of_names.solution import namelist
 
@@ -28,13 +30,24 @@ from kyu_6.format_string_of_names.solution import namelist
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class NamelistTestCase(unittest.TestCase):
-    """
-    Testing namelist function
-    """
+    """Testing namelist function."""
 
-    def test_namelist(self):
+    @parameterized.expand([
+        ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'},
+          {'name': 'Homer'}, {'name': 'Marge'}],
+         'Bart, Lisa, Maggie, Homer & Marge',
+         "Must work with many names"),
+        ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}],
+         'Bart, Lisa & Maggie',
+         "Must work with many names"),
+        ([{'name': 'Bart'}, {'name': 'Lisa'}], 'Bart & Lisa',
+         "Must work with two names"),
+        ([{'name': 'Bart'}], 'Bart',
+         "Wrong output for a single name"),
+        ([], '', "Must work with no names")])
+    def test_namelist(self, names, expected, message):
         """
-        Test namelist
+        Test namelist.
 
         Given:
         an array containing hashes of names
@@ -58,26 +71,9 @@ class NamelistTestCase(unittest.TestCase):
             "by commas except for the last two names, which should be "
             "separated by an ampersand.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'},
-              {'name': 'Homer'}, {'name': 'Marge'}],
-             'Bart, Lisa, Maggie, Homer & Marge',
-             "Must work with many names"),
-            ([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}],
-             'Bart, Lisa & Maggie',
-             "Must work with many names"),
-            ([{'name': 'Bart'}, {'name': 'Lisa'}],
-             'Bart & Lisa',
-             "Must work with two names"),
-            ([{'name': 'Bart'}],
-             'Bart',
-             "Wrong output for a single name"),
-            ([],
-             '',
-             "Must work with no names"))
-
-        for names, expected, message in test_data:
-            result: str = namelist(names)
+        result: str = namelist(names)
+        with allure.step(f"Process input consist of names: {names}"
+                         f" and verify the output: {expected}."):
             print_log(names=names,
                       expected=expected,
                       result=result,

@@ -1,5 +1,5 @@
 """
-Test for -> Snail
+Test for -> Snail.
 
 Returns the array elements arranged from outermost elements
 to the middle element, traveling clockwise.
@@ -28,17 +28,16 @@ from kyu_4.snail.snail_sort import snail
 @allure.link(url='https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1',
              name='Source/Kata')
 class SnailTestCase(unittest.TestCase):
-    """
-    Testing snail function
-    """
+    """Testing snail function."""
 
     def test_snail(self):
         """
-        Testing 'snail' function
+        Testing 'snail' function.
 
         Given an n x n array, 'snail' function should return the array
         elements arranged from outermost elements to the middle element,
         traveling clockwise.
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing 'snail' function")

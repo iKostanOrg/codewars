@@ -1,5 +1,6 @@
 """
-Solution for -> Significant Figures
+Solution for -> Significant Figures.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,8 @@ GitHub: https://github.com/ikostan
 
 def number_of_sigfigs(number: str) -> int:
     """
-    return the number of sigfigs in the
-    passed in string "number"
+    Return the number of significant figures in the given number.
+
     :param number:
     :return:
     """
@@ -28,8 +29,8 @@ def number_of_sigfigs(number: str) -> int:
 
 def normalize_string(number: str) -> str:
     """
-    Normalize string by converting it into a
-    number and back to string once again
+    Normalize string by converting it into a number and back to string again.
+
     :param number:
     :return:
     """
@@ -44,12 +45,12 @@ def normalize_string(number: str) -> str:
 
 def remove_extra_zeroes(number: str) -> str:
     """
-    Remove all zeroes from the end of the string
+    Remove all zeroes from the end of the string.
+
     :param number:
     :return:
     """
     index = None
-
     for i in range(-1, len(number) * -1, -1):
         if number[i] == '0':
             index = i
@@ -64,7 +65,8 @@ def remove_extra_zeroes(number: str) -> str:
 
 def remove_extra_leading_zeroes(number: str) -> str:
     """
-    Remove all extra leading zeroes from the head of the string
+    Remove all extra leading zeroes from the head of the string.
+
     :param number:
     :return:
     """

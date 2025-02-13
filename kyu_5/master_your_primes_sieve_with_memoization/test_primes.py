@@ -1,5 +1,6 @@
 """
-Test for -> Master your primes: sieve with memoization
+Test for -> Master your primes: sieve with memoization.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.master_your_primes_sieve_with_memoization.primes \
     import is_prime
@@ -29,12 +31,33 @@ from kyu_5.master_your_primes_sieve_with_memoization.primes \
     url='https://www.codewars.com/kata/58603c898989d15e9e000475',
     name='Source/Kata')
 class PrimesTestCase(unittest.TestCase):
-    """
-    Testing is_prime function
-    """
+    """Testing is_prime function."""
 
-    def test_primes(self):
+    @parameterized.expand([
+        (1, False),
+        (2, True),
+        (5, True),
+        (143, False),
+        (-1, False),
+        (29, True),
+        (53, True),
+        (529, False),
+        (4539131, True),
+        (110268984695, False),
+        (97444114757, False),
+        (7301162915, False),
+        (8033908462571, False),
+        (8813991225347, False),
+        (857561895605, False),
+        (13, True),
+        (17, True),
+        (19, True),
+        (23, True),
+        (29, True)])
+    def test_is_primes(self, number, expected):
         """
+        Testing is_prime function with various test data.
+
         Testing a function that checks if a given number n is a prime
         looping through it and, possibly, expanding the array/list of
         known primes only if/when necessary (ie: as soon as you check
@@ -53,31 +76,7 @@ class PrimesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test number and verify the output"):
-            test_data: tuple = (
-                (1, False),
-                (2, True),
-                (5, True),
-                (143, False),
-                (-1, False),
-                (29, True),
-                (53, True),
-                (529, False),
-                (4539131, True),
-                (110268984695, False),
-                (97444114757, False),
-                (7301162915, False),
-                (8033908462571, False),
-                (8813991225347, False),
-                (857561895605, False),
-                (13, True),
-                (17, True),
-                (19, True),
-                (23, True),
-                (29, True))
-
-            for data in test_data:
-                number = data[0]
-                expected = data[1]
-                print_log(number=number, expected=expected)
-                self.assertEqual(expected, is_prime(number))
+        with allure.step(f"Enter test number: {number} "
+                         f"and verify the output: {expected}."):
+            print_log(number=number, expected=expected)
+            self.assertEqual(expected, is_prime(number))

@@ -1,5 +1,6 @@
 """
-Test for -> Sum of odd numbers
+Test for -> Sum of odd numbers.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
     import row_sum_odd_numbers
@@ -34,13 +36,18 @@ from kyu_7.sum_of_odd_numbers.row_sum_odd_numbers \
     name='Source/Kata')
 # pylint: enable=R0801
 class OddRowTestCase(unittest.TestCase):
-    """
-    Testing row_sum_odd_numbers function
-    """
+    """Testing row_sum_odd_numbers function."""
 
-    def test_row_sum_odd_numbers(self):
+    @parameterized.expand([
+        (1, 1),
+        (2, 8),
+        (13, 2197),
+        (19, 6859),
+        (41, 68921)])
+    def test_row_sum_odd_numbers(self, n, expected):
         """
-        Testing the function with various test data
+        Testing the function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -48,30 +55,19 @@ class OddRowTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p>Given the triangle of consecutive odd numbers "
             "verify that the function calculates the row sums "
             "of this triangle from the row index (starting at index 1)</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (1, 1),
-            (2, 8),
-            (13, 2197),
-            (19, 6859),
-            (41, 68921))
-
-        for n, expected in test_data:
-            actual_result: int = row_sum_odd_numbers(n)
-            with allure.step(f"Enter the triangle's row ({n}) and verify the "
-                             f"expected output ({expected}) "
-                             f"vs actual result ({actual_result})"):
-                # pylint: disable=R0801
-                print_log(n=n,
-                          expected=expected,
-                          result=actual_result)
-
-                self.assertEqual(expected,
-                                 actual_result)
-                # pylint: enable=R0801
+        actual_result: int = row_sum_odd_numbers(n)
+        with allure.step(f"Enter the triangle's row ({n}) and verify the "
+                         f"expected output ({expected}) "
+                         f"vs actual result ({actual_result})"):
+            # pylint: disable=R0801
+            print_log(n=n, expected=expected, result=actual_result)
+            self.assertEqual(expected, actual_result)
+            # pylint: enable=R0801

@@ -1,0 +1,24 @@
+
+LOG =>
+string: apples, pears # and bananas
+grapes
+bananas !apples,
+expected: apples, pears
+grapes
+bananas,
+actual_result: apples, pears
+grapes
+bananas
+
+
+LOG =>
+string: a #b
+c
+d $e f g,
+expected: a
+c
+d,
+actual_result: a
+c
+d
+

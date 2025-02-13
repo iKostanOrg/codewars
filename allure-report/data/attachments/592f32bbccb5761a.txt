@@ -1,0 +1,28 @@
+
+LOG =>
+lst: lst: [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], default: def,
+i: 5,
+expected: hello,
+actual: hello
+
+
+LOG =>
+lst: lst: [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], default: def,
+i: 6,
+expected: lists,
+actual: lists
+
+
+LOG =>
+lst: lst: [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], default: def,
+i: 45,
+expected: def,
+actual: def
+
+
+LOG =>
+lst: lst: [4, 7, 34, 3, 23, 'hello', 'lists', 'word', 344, 233344455], default: def,
+i: 0,
+expected: 4,
+actual: 4
+

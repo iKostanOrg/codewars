@@ -1,5 +1,6 @@
 """
-Solution for -> Share prices
+Solution for -> Share prices.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,12 +8,13 @@ GitHub: https://github.com/ikostan
 
 def share_price(invested: int, changes: list) -> str:
     """
+    Share prices function.
+
     Calculates, and returns the current price of your share,
     given the following two arguments:
 
     1. invested(number), the amount of money you initially
     invested in the given share
-
     2. changes(array of numbers), contains your shares daily
     movement percentages
 

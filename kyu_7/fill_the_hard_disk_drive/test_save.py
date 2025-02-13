@@ -1,5 +1,6 @@
 """
-Test for -> Computer problem series #1: Fill the Hard Disk Drive
+Test for -> Computer problem series #1: Fill the Hard Disk Drive.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.fill_the_hard_disk_drive.save import save
 
@@ -29,13 +31,14 @@ from kyu_7.fill_the_hard_disk_drive.save import save
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class SaveTestCase(unittest.TestCase):
-    """
-    Testing 'save' function
-    """
+    """Testing 'save' function."""
 
-    def test_save_negative(self):
+    @parameterized.expand([
+        ([11, 13, 15, 17, 19], 8, 0),
+        ([45], 12, 0)])
+    def test_save_negative(self, sizes, hd, expected):
         """
-        Testing 'save' function: negative
+        Testing 'save' function: negative.
 
         The function should determine how many
         files of the copy queue you will be able
@@ -52,22 +55,22 @@ class SaveTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter sizes, hd and verify the output"):
-            data: tuple = (
-                ([11, 13, 15, 17, 19], 8, 0),
-                ([45], 12, 0))
+        with allure.step(f"Enter sizes: {sizes}, "
+                         f"hd: {hd} "
+                         f"and verify the expected output: {expected}."):
+            print_log(sizes=sizes, hd=hd, expected=expected)
+            self.assertEqual(expected, save(sizes, hd))
 
-            for sizes, hd, expected in data:
-                print_log(sizes=sizes,
-                          hd=hd,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 save(sizes, hd))
-
-    def test_save_positive(self):
+    @parameterized.expand([
+        ([4, 4, 4, 3, 3], 12, 3),
+        ([4, 4, 4, 3, 3], 11, 2),
+        ([4, 8, 15, 16, 23, 42], 108, 6),
+        ([13], 13, 1),
+        ([1, 2, 3, 4], 250, 4),
+        ([100], 500, 1)])
+    def test_save_positive(self, sizes, hd, expected):
         """
-        Testing 'save' function: positive
+        Testing 'save' function: positive.
 
         The function should determine how many
         files of the copy queue you will be able
@@ -84,20 +87,8 @@ class SaveTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter sizes, hd and verify the output"):
-            data: tuple = (
-                ([4, 4, 4, 3, 3], 12, 3),
-                ([4, 4, 4, 3, 3], 11, 2),
-                ([4, 8, 15, 16, 23, 42], 108, 6),
-                ([13], 13, 1),
-                ([1, 2, 3, 4], 250, 4),
-                ([100], 500, 1))
-
-            for sizes, hd, expected in data:
-
-                print_log(sizes=sizes,
-                          hd=hd,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 save(sizes, hd))
+        with allure.step(f"Enter sizes: {sizes}, "
+                         f"hd: {hd} "
+                         f"and verify the expected output: {expected}."):
+            print_log(sizes=sizes, hd=hd, expected=expected)
+            self.assertEqual(expected, save(sizes, hd))

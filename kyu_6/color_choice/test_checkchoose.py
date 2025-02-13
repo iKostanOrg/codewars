@@ -1,5 +1,6 @@
 """
-Test for -> Color Choice
+Test for -> Color Choice.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_6.color_choice.checkchoose import checkchoose
 
@@ -23,11 +25,22 @@ from kyu_6.color_choice.checkchoose import checkchoose
     url='https://www.codewars.com/kata/55be10de92aad5ef28000023',
     name='Source/Kata')
 class CheckchooseTestCase(unittest.TestCase):
-    """
-    Testing checkchoose function
-    """
-    def test_checkchoose(self):
+    """Testing checkchoose function."""
+
+    @parameterized.expand([
+        (6, 4, 2),
+        (4, 4, 1),
+        (4, 2, -1),
+        (35, 7, 3),
+        (36, 7, -1),
+        (1, 6, 0),
+        (1, 15, 0),
+        (2, 12, -1),
+        (75788358475481302186, 87, -1)])
+    def test_checkchoose(self, m, n, expected):
         """
+        Testing 'checkchoose' function with various test data.
+
         In mathematics the number of x combinations you can take from a
         set of n elements is called the binomial coefficient of n and x,
         or more often n choose x. The formula to compute m = n choose x is:
@@ -38,6 +51,10 @@ class CheckchooseTestCase(unittest.TestCase):
         Posters must all have a different color combination and you have
         the choice of 4 colors: red, blue, yellow, green. How many colors
         can you choose for each poster?
+        :param m:
+        :param n:
+        :param expected:
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing checkchoose function")
@@ -58,27 +75,10 @@ class CheckchooseTestCase(unittest.TestCase):
             "that when m is given at random there are no x satisfying "
             "equation (1) then return -1.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (6, 4, 2),
-            (4, 4, 1),
-            (4, 2, -1),
-            (35, 7, 3),
-            (36, 7, -1),
-            (1, 6, 0),
-            (1, 15, 0),
-            (2, 12, -1),
-            (75788358475481302186, 87, -1))
-
-        for d in test_data:
-            m: int = d[0]
-            n: int = d[1]
-            expected: int = d[2]
-            result: int = checkchoose(m, n)
-
-            with allure.step(f"Pass m: {m}, "
-                             f"n: {n} and assert the "
-                             f"result: {result} vs "
-                             f"expected: {expected}"):
-
-                print_log(m=m, n=n, result=result, expected=expected)
-                self.assertEqual(expected, result)
+        result: int = checkchoose(m, n)
+        with allure.step(f"Pass m: {m}, "
+                         f"n: {n} and assert the "
+                         f"result: {result} vs "
+                         f"expected: {expected}"):
+            print_log(m=m, n=n, result=result, expected=expected)
+            self.assertEqual(expected, result)

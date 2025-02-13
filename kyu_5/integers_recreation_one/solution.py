@@ -1,5 +1,6 @@
 """
-Test for -> Integers: Recreation One
+Test for -> Integers: Recreation One.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,8 @@ import math
 
 def divisor_generator(digit: int):
     """
+    divisor_generator function.
+
     The best way to get all the divisors of a number.
     :param digit: integers
     :return: all dividers of n
@@ -29,8 +32,7 @@ def divisor_generator(digit: int):
 def is_perfect_square(n_str: str) -> bool:
     """
     Check if a number is a perfect square.
-    (number made by squaring a whole number:
-    4 * $ = 16).
+
     :param n_str: str
     :return: bool
     """
@@ -48,6 +50,8 @@ def is_perfect_square(n_str: str) -> bool:
 # Returns digital root of num
 def digital_root(num: str) -> int:
     """
+    digital_root function.
+
     The digital root or digital sum of a non-negative integer
     is the single-digit value obtained by an iterative process
     of summing digits, on each iteration using the result from
@@ -60,14 +64,14 @@ def digital_root(num: str) -> int:
     if len(num) == 1:
         return int(num)
 
-    n_sum = 0
-    for i in num:
-        n_sum += int(i)
+    n_sum: int = sum(int(i) for i in num)
     return digital_root(str(n_sum))
 
 
 def list_squared(m_int: int, n_int: int) -> list:
     """
+    list_squared function.
+
     Given two integers m_int, n_int (1 <= m <= n) we want to
     find all integers between m and n whose sum of
     squared divisors is itself a square.

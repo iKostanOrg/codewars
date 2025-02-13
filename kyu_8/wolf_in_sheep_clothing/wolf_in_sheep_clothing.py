@@ -1,5 +1,6 @@
 """
-Solution for -> A wolf in sheep's clothing
+Solution for -> A wolf in sheep's clothing.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,7 @@ GitHub: https://github.com/ikostan
 
 def warn_the_sheep(queue: list) -> str:
     """
-    Warn the sheep in front of the wolf
-    that it is about to be eaten.
+    Warn the sheep in front of the wolf.
 
     If the wolf is the closest animal to you,
     return "Pls go away and stop eating my sheep".

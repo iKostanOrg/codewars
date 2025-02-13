@@ -1,5 +1,6 @@
 """
-Test for -> Make Class
+Test for -> Make Class.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,12 +28,12 @@ from utils.log_func import print_log
     name='Source/Kata')
 # @pytest.mark.skip(reason="The solution is not ready")
 class MakeClassTestCase(unittest.TestCase):
-    """
-    Testing make_class function
-    """
+    """Testing make_class function."""
+
     def test_make_class(self):
         """
-        Testing make_class function
+        Testing make_class function.
+
         :return:
         """
         # pylint: disable-msg=R0801

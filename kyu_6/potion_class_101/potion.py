@@ -1,5 +1,6 @@
 """
-Solution for -> Potion Class 101
+Solution for -> Potion Class 101.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -11,22 +12,32 @@ from typing import Tuple
 
 class Potion:
     """
+    Potion.
+
     This is your first potion class in Hogwarts and professor
     gave you a homework to figure out what color potion will
     turn into if he'll mix it with some other potion. All potions
     have some color that written down as RGB color from [0, 0, 0]
     to [255, 255, 255]. To make task more complicated teacher will
     do few mixing and after will ask you for final color. Besides
-    color you also need to figure out what volume will have potion
+    color, you also need to figure out what volume will have potion
     after final mix.
     """
 
     def __init__(self, color: Tuple[int, int, int], volume: int):
+        """
+        Create a new Potion instance.
+
+        :param color:
+        :param volume:
+        """
         self._color: Tuple[int, int, int] = color
         self._volume: int = volume
 
     def mix(self, other) -> object:
         """
+        Mix.
+
         Based on your programming background you managed to figure
         that after mixing two potions colors will mix as if mix
         two RGB colors.
@@ -49,7 +60,8 @@ class Potion:
     @property
     def volume(self) -> int:
         """
-        Return volume value
+        Return volume value.
+
         :return: int
         """
         return self._volume
@@ -57,7 +69,8 @@ class Potion:
     @volume.setter
     def volume(self, value: int) -> None:
         """
-        Set volume value
+        Set volume value.
+
         :param value: int
         :return:
         """
@@ -66,7 +79,8 @@ class Potion:
     @property
     def color(self) -> tuple:
         """
-        Get color value
+        Get color value.
+
         :return: tuple
         """
         return self._color
@@ -74,7 +88,8 @@ class Potion:
     @color.setter
     def color(self, value: Tuple[int, int, int]) -> None:
         """
-        Set color value
+        Set color value.
+
         :param value: tuple
         :return:
         """
