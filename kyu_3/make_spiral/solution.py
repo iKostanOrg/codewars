@@ -1,4 +1,3 @@
-
 """
 Solution for -> Make a spiral.
 
@@ -6,13 +5,11 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-
 DIRECTIONS: dict = {
     'right': 'down',
     'down': 'left',
     'left': 'up',
-    'up': 'right'
-}
+    'up': 'right'}
 
 
 def right(spiral: list, coordinates: dict) -> bool:
@@ -41,8 +38,8 @@ def right(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
-        elif (col + 2 == len(spiral[0]) - 1 and
-              spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0):
+        elif col + 2 == len(spiral[0]) - 1 \
+                and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0:
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
@@ -52,17 +49,17 @@ def right(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             done = False
             break
-        elif (col + 2 < len(spiral[0]) - 1 and
-              spiral[row][col + 2] == 1 and
-              spiral[row][col + 1] == spiral[row][col] == 0
-              and col + 2 < len(spiral[0])
-              and spiral[row + 1][col] != 1):
+        elif col + 2 < len(spiral[0]) - 1 \
+                and spiral[row][col + 2] == 1 \
+                and spiral[row][col + 1] == spiral[row][col] == 0 \
+                and col + 2 < len(spiral[0]) \
+                and spiral[row + 1][col] != 1:
             spiral[row][col] = 1
             done = False
             break
-        elif (col + 2 < len(spiral[0]) - 1 and
-              spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0
-              and col + 2 < len(spiral[0])):
+        elif col + 2 < len(spiral[0]) - 1 \
+                and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0 \
+                and col + 2 < len(spiral[0]):
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
