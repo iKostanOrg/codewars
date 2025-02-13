@@ -32,10 +32,7 @@ def validate_battlefield(field: list) -> bool:
     ship_counter_by_row(field, ships)
     ship_counter_by_col(field, ships)
 
-    return all([len(ships[1]) == 4,
-                len(ships[2]) == 3,
-                len(ships[3]) == 2,
-                len(ships[4]) == 1])
+    return all([len(ships[1]) == 4, len(ships[2]) == 3, len(ships[3]) == 2, len(ships[4]) == 1])
 
 
 def ship_counter_by_row(field: list, ships: dict):
