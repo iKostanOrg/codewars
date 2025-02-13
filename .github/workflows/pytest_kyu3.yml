@@ -44,5 +44,5 @@ jobs:
       - name: Unitest with pytest
         # yamllint disable rule:line-length
         run: |
-          python -m pytest ./kyu_3 -v -rP --doctest-modules --cov-report term-missing --cov-fail-under=80 --cov=./kyu_2
+          python -m pytest ./kyu_3 -v -rP --doctest-modules --cov-report term-missing --cov-fail-under=80 --cov=./kyu_3
         # yamllint enable rule:line-length
