@@ -9,7 +9,6 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import unittest
-import pytest
 import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.line_safari import line
