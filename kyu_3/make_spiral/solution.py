@@ -27,8 +27,7 @@ def right(spiral: list, coordinates: dict) -> bool:
         row = coordinates['row']
         col = coordinates['col']
 
-        if col == len(spiral[0]) - 1 and \
-                spiral[row][col] == 0:
+        if col == len(spiral[0]) - 1 and spiral[row][col] == 0:
             spiral[row][col] = 1
             done = False
             break
@@ -37,18 +36,16 @@ def right(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
-        elif col + 2 == len(spiral[0]) - 1 \
-                and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0:
-            spiral[row][col] = 1
-            coordinates['col'] += 1
-            done = False
-        elif col + 2 == len(spiral[0]) - 1 and \
+            break
+
+        if col + 2 == len(spiral[0]) - 1 and \
                 spiral[row][col + 2] == 1 and \
                 spiral[row][col + 1] == spiral[row][col] == 0:
             spiral[row][col] = 1
             done = False
             break
-        elif col + 2 < len(spiral[0]) - 1 \
+
+        if col + 2 < len(spiral[0]) - 1 \
                 and spiral[row][col + 2] == 1 \
                 and spiral[row][col + 1] == spiral[row][col] == 0 \
                 and col + 2 < len(spiral[0]) \
@@ -56,6 +53,12 @@ def right(spiral: list, coordinates: dict) -> bool:
             spiral[row][col] = 1
             done = False
             break
+
+        if col + 2 == len(spiral[0]) - 1 \
+                and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0:
+            spiral[row][col] = 1
+            coordinates['col'] += 1
+            done = False
         elif col + 2 < len(spiral[0]) - 1 \
                 and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0 \
                 and col + 2 < len(spiral[0]):
