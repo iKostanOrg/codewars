@@ -43,7 +43,7 @@ jobs:
         # exit-zero treats all errors as warnings.
         # The GitHub editor is 127 chars wide
         run: |
-          python -m flake8 --count --select=E9,F63,F7,F82 --doctests --show-source --statistics./kyu_3
+          python -m flake8 --count --select=E9,F63,F7,F82 --doctests --show-source --statistics ./kyu_3
       - name: Complexity with flake8
         run: |
           python -m flake8 --count --max-complexity=10 --max-line-length=127 -ignore=W191,W503,W504 --benchmark --show-source --statistics ./kyu_3
