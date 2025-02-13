@@ -37,29 +37,29 @@ jobs:
       - name: Check mypy version
         run: |
           python -m mypy --version
-      - name: kyu2 Python Data Type Checking with MyPy
+      - name: kyu_2 Python Data Type Checking with MyPy
         # Python Type Checking (Guide)
         # https://realpython.com/python-type-checking/
         run: |
-          python -m mypy kyu_2 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_2 --ignore-missing-imports --check-untyped-defs
       - name: kyu_3 Python Data Type Checking with MyPy
         run: |
-          python -m mypy kyu_3 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_3 --ignore-missing-imports --check-untyped-defs
       - name: kyu_4 Python Data Type Checking with MyPy
         run: |
-          python -m mypy kyu_4 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_4 --ignore-missing-imports --check-untyped-defs
       - name: kyu_5 Python Data Type Checking with MyPy
         run: |
-          python -m mypy kyu_5 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_5 --ignore-missing-imports --check-untyped-defs
       - name: kyu_6 Python Data Type Checking with MyPy
         run: |
-          python -m mypy kyu_6 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_6 --ignore-missing-imports --check-untyped-defs
       - name: kyu_7 Python Data Type Checking with MyPy
         run: |
-          python -m mypy kyu_7 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_7 --ignore-missing-imports --check-untyped-defs
       - name: kyu_8 Python Data Type Checking with MyPy
         run: |
-          python -m mypy kyu_8 --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./kyu_8 --ignore-missing-imports --check-untyped-defs
       - name: utils Python Data Type Checking with MyPy
         run: |
-          python -m mypy utils --ignore-missing-imports --check-untyped-defs
+          python -m mypy ./utils --ignore-missing-imports --check-untyped-defs

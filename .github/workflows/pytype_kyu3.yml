@@ -1,10 +1,11 @@
 ---
-name: pydocstyle for kyu3
+name: PyType Lint for kyu3
 
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu3'
+  workflow_call:
 
 permissions:
   contents: read
@@ -13,12 +14,10 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
-    # Adding 'timeout-minutes: 10' would prevent jobs from running
-    # indefinitely if something goes wrong
     timeout-minutes: 10
     strategy:
       matrix:
-        python-version: ["3.x"]
+        python-version: ["3.11"]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -34,13 +33,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
-          python -m pip install pydocstyle
-          python -m pip install types-requests
-      - name: Check pydocstyle version
+          python -m pip install pytype
+      - name: PYTYPE Version Check
         run: |
-          python -m pydocstyle --version
-      - name: Doc style checking with pydocstyle
-        # Pydocstyle testing (Guide)
-        # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
+          python -m pytype --version
+      - name: Python Data Type Checking with PYTYPE
         run: |
-          python -m pydocstyle ./kyu_3 --verbose --explain --count --ignore=D202,D203,D212,D413,D406,D407
+          python -m pytype ./kyu_3
