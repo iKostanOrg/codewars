@@ -75,7 +75,7 @@ def get_condition_1(spiral: list, row: int, col: int) -> bool:
     :return:
     """
     return all([col == len(spiral[0]) - 1,
-                    spiral[row][col] == 0])
+                spiral[row][col] == 0])
 
 
 def get_condition_2(spiral: list, row: int, col: int) -> bool:
@@ -87,8 +87,8 @@ def get_condition_2(spiral: list, row: int, col: int) -> bool:
     :return:
     """
     return all([col + 2 == len(spiral[0]) - 1,
-                    spiral[row][col + 2] == 1,
-                    spiral[row][col + 1] == spiral[row][col] == 0])
+                spiral[row][col + 2] == 1,
+                spiral[row][col + 1] == spiral[row][col] == 0])
 
 
 def get_condition_3(spiral: list, row: int, col: int) -> bool:
@@ -100,10 +100,10 @@ def get_condition_3(spiral: list, row: int, col: int) -> bool:
     :return:
     """
     return all([col + 2 < len(spiral[0]) - 1,
-                    spiral[row][col + 2] == 1,
-                    spiral[row][col + 1] == spiral[row][col] == 0,
-                    col + 2 < len(spiral[0]),
-                    spiral[row + 1][col] != 1])
+                spiral[row][col + 2] == 1,
+                spiral[row][col + 1] == spiral[row][col] == 0,
+                col + 2 < len(spiral[0]),
+                spiral[row + 1][col] != 1])
 
 
 def get_condition_4(spiral: list, row: int, col: int) -> bool:
@@ -221,7 +221,6 @@ def up(spiral: list, coordinates: dict) -> bool:
     done: bool = True
 
     while coordinates['row'] >= 0:
-
         row = coordinates['row']
         col = coordinates['col']
 
@@ -249,10 +248,7 @@ def set_initial_params(size: int) -> tuple:
         spiral.append(line)
 
     direction: str = 'right'
-    coordinate: dict = {
-        'row': 0,
-        'col': 0
-    }
+    coordinate: dict = {'row': 0, 'col': 0}
     done: bool = False
 
     return spiral, direction, coordinate, done
