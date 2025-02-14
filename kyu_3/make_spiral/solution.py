@@ -56,7 +56,8 @@ def right(spiral: list, coordinates: dict) -> bool:
 
 def get_condition_0(spiral: list, row: int, col: int) -> bool:
     """
-    Get condition #0
+    Get condition #0.
+
     :param spiral: list
     :param row: int
     :param col: int
@@ -68,7 +69,8 @@ def get_condition_0(spiral: list, row: int, col: int) -> bool:
 
 def get_condition_1(spiral: list, row: int, col: int) -> bool:
     """
-    Get condition #1
+    Get condition #1.
+
     :param spiral: list
     :param row: int
     :param col: int
@@ -80,7 +82,8 @@ def get_condition_1(spiral: list, row: int, col: int) -> bool:
 
 def get_condition_2(spiral: list, row: int, col: int) -> bool:
     """
-    Get condition #2
+    Get condition #2.
+
     :param spiral: list
     :param row: int
     :param col: int
@@ -93,7 +96,8 @@ def get_condition_2(spiral: list, row: int, col: int) -> bool:
 
 def get_condition_3(spiral: list, row: int, col: int) -> bool:
     """
-    Get condition #3
+    Get condition #3.
+
     :param spiral: list
     :param row: int
     :param col: int
@@ -108,7 +112,8 @@ def get_condition_3(spiral: list, row: int, col: int) -> bool:
 
 def get_condition_4(spiral: list, row: int, col: int) -> bool:
     """
-    Get condition #4
+    Get condition #4.
+
     :param spiral: list
     :param row: int
     :param col: int
@@ -120,7 +125,8 @@ def get_condition_4(spiral: list, row: int, col: int) -> bool:
 
 def get_condition_5(spiral: list, row: int, col: int) -> bool:
     """
-    Get condition #5
+    Get condition #5.
+
     :param spiral: list
     :param row: int
     :param col: int0
