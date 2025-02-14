@@ -40,14 +40,11 @@ def right(spiral: list, coordinates: dict) -> bool:
             done = False
             break
 
-        if (col + 2 == len(spiral[0]) - 1
-                and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0):
+        if get_condition_4(spiral, row, col):
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
-        elif (col + 2 < len(spiral[0]) - 1
-              and spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0
-              and col + 2 < len(spiral[0])):
+        elif get_condition_5(spiral, row, col):
             spiral[row][col] = 1
             coordinates['col'] += 1
             done = False
@@ -107,6 +104,31 @@ def get_condition_3(spiral: list, row: int, col: int) -> bool:
                     spiral[row][col + 1] == spiral[row][col] == 0,
                     col + 2 < len(spiral[0]),
                     spiral[row + 1][col] != 1])
+
+
+def get_condition_4(spiral: list, row: int, col: int) -> bool:
+    """
+    Get condition #4
+    :param spiral: list
+    :param row: int
+    :param col: int
+    :return:
+    """
+    return all([col + 2 == len(spiral[0]) - 1,
+                spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0])
+
+
+def get_condition_5(spiral: list, row: int, col: int) -> bool:
+    """
+    Get condition #5
+    :param spiral: list
+    :param row: int
+    :param col: int0
+    :return:
+    """
+    return all([col + 2 < len(spiral[0]) - 1,
+                spiral[row][col + 2] == spiral[row][col + 1] == spiral[row][col] == 0,
+                col + 2 < len(spiral[0])])
 
 
 def down(spiral: list, coordinates: dict) -> bool:
