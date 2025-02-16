@@ -5,11 +5,8 @@ Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-
 import math
 from typing import Tuple
-
-from git import Object
 
 
 class Potion:
@@ -45,8 +42,8 @@ class Potion:
         two RGB colors.
 
         Note: Use ceiling when calculating the resulting potion's color.
-        :param other:
-        :return:
+        :param other: Object
+        :return: Potion Object
         """
         new_volume: int = self.volume + other.volume
         total_volume: int = other.volume + self.volume
@@ -58,13 +55,13 @@ class Potion:
         return Potion((r, g, b), new_volume)
 
     def __calc_rgb(self, index: int,
-                   other: Object,
+                   other,
                    total_volume: int) -> int:
         """
         Calculate RGB values.
 
         :param index: int
-        :param other: Object
+        :param other: Potion Object
         :param total_volume: int
         :return:
         """
@@ -92,7 +89,7 @@ class Potion:
         self._volume = value
 
     @property
-    def color(self) -> tuple:
+    def color(self) -> Tuple[int, int, int]:
         """
         Get color value.
 
