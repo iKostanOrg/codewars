@@ -12,6 +12,7 @@ GitHub: https://github.com/ikostan
 # mathematical expressions so that many functions from numpy
 # are imported and used if available.
 from asteval import Interpreter
+from asteval.astutils import ExceptionHolder
 
 aeval = Interpreter()
 
@@ -31,10 +32,9 @@ def calculate(s: str) -> str:
     # pylint: disable=W0123
     try:
         result = aeval.eval(s)
-    except Exception as exc:
-        return f"Error evaluating expression: {exc}"
-    else:
         return f'{result}'  # nosec B311
+    except ExceptionHolder as exc:
+        return f"Error evaluating expression: {exc}"
     # pylint: enable=W0123
 
 
