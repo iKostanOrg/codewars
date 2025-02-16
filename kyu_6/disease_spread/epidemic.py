@@ -44,17 +44,16 @@ def epidemic(**kwargs) -> int:
     infecteds: List[float] = [kwargs['i0']]
 
     for k in range(kwargs['n']):
-        susceptible.append(
-            susceptible[k] - dt *
-            kwargs['b'] *
-            susceptible[k] *
-            infecteds[k])
+        calc_susceptible: float = (
+            susceptible[k] - dt * kwargs['b'] * susceptible[k] * infecteds[k]
+        )
+        susceptible.append(calc_susceptible)
 
-        infecteds.append(
-            infecteds[k] + dt *
-            (kwargs['b'] *
-             susceptible[k] *
-             infecteds[k] - kwargs['a'] *
-             infecteds[k]))
+        calc_infecteds: float = (
+            infecteds[k] + dt * (
+                kwargs['b'] * susceptible[k] * infecteds[k] - kwargs['a'] * infecteds[k]
+            )
+        )
+        infecteds.append(calc_infecteds)
 
     return int(max(infecteds))
