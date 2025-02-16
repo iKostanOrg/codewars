@@ -1,16 +1,17 @@
 ---
 name: "Snyk"
 
-on:  # yamllint disable-line rule:truthy
-  push:
-    branches:
-      - 'none'
+on:   # yamllint disable-line rule:truthy
   workflow_call:
     secrets:
       snyk_token:
         description:
           'A Snyk token passed from the caller workflow'
         required: true
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   security:

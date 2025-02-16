@@ -37,6 +37,7 @@ Subpackages
    kyu_6.pokemon_damage_calculator.module
    kyu_6.potion_class_101.module
    kyu_6.pyramid_array.module
+   kyu_6.replace_with_alphabet_position.module
    kyu_6.rotate_the_letters_of_each_element.module
    kyu_6.row_of_the_odd_triangle.module
    kyu_6.scheduling.module

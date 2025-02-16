@@ -58,8 +58,8 @@ class Sudoku:
         if not self.__data:
             return False
 
-        if (len(self.__data) == 1 and
-                (self.__data[0][0] != 1 or isinstance(self.__data[0][0], bool))):
+        if len(self.__data) == 1 \
+                and (self.__data[0][0] != 1 or isinstance(self.__data[0][0], bool)):
             return False
 
         return isinstance(self.__data, list)

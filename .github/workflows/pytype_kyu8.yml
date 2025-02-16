@@ -1,10 +1,15 @@
 ---
-name: PyType for kyu8
+name: PyType Lint for kyu8
 
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu8'
+  workflow_call:
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   build:
@@ -31,9 +36,9 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
           pip install pytype
-      - name: Check to make sure that the module is in your Python path
+      - name: PYTYPE Version Check
         run: |
-          echo $PYTHONPATH
+          python -m pytype --version
       - name: Python Data Type Checking with PYTYPE
         run: |
-          pytype kyu_8
+          python -m pytype ./kyu_8

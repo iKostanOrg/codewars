@@ -1,0 +1,20 @@
+[flake8]
+# Source:
+# https://flake8.pycqa.org/en/3.1.1/user/configuration.html#configuration
+# Errors to exclude:
+# W191 indentation contains tabs
+ignore = W191
+exclude =
+    .git,
+    __pycache__,
+    .circleci,
+    .github,
+    .idea,
+    allure-report,
+    allure-results,
+    deprecated,
+    docs,
+    img,
+    venv
+max-complexity = 10
+max-line-length = 127

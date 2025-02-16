@@ -15,9 +15,6 @@
 name: "CodeQL"
 
 on:  # yamllint disable-line rule:truthy
-  push:
-    branches:
-      - 'none'
   workflow_call:
 
 jobs:
