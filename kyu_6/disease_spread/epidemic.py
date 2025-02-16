@@ -45,13 +45,13 @@ def epidemic(**kwargs) -> int:
 
     for k in range(kwargs['n']):
         calc_susceptible: float = (
-                susceptible[k] - dt * kwargs['b'] * susceptible[k] * infecteds[k]
+            susceptible[k] - dt * kwargs['b'] * susceptible[k] * infecteds[k]
         )
         susceptible.append(calc_susceptible)
 
         calc_infecteds: float = (
-                infecteds[k] + dt *
-                (kwargs['b'] * susceptible[k] * infecteds[k] - kwargs['a'] * infecteds[k])
+            infecteds[k] + dt *
+            (kwargs['b'] * susceptible[k] * infecteds[k] - kwargs['a'] * infecteds[k])
         )
         infecteds.append(calc_infecteds)
 
