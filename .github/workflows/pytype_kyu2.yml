@@ -5,6 +5,11 @@ on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - 'kyu2'
+  workflow_call:
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   build:
@@ -34,4 +39,4 @@ jobs:
           python -m pytype --version
       - name: Python Data Type Checking with PYTYPE
         run: |
-          python -m pytype kyu_2
+          python -m pytype ./kyu_2

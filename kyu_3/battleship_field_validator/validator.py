@@ -32,8 +32,7 @@ def validate_battlefield(field: list) -> bool:
     ship_counter_by_row(field, ships)
     ship_counter_by_col(field, ships)
 
-    return (len(ships[1]) == 4 and len(ships[2]) == 3
-            and len(ships[3]) == 2 and len(ships[4]) == 1)
+    return all([len(ships[1]) == 4, len(ships[2]) == 3, len(ships[3]) == 2, len(ships[4]) == 1])
 
 
 def ship_counter_by_row(field: list, ships: dict):
@@ -52,33 +51,29 @@ def ship_counter_by_row(field: list, ships: dict):
                 ship.append([index_row, cell[0]])
             else:
                 # Allowed ship sizes between 1 and 4 cells
-                if (len(ship) == 1 and
-                        all_cells_valid(ships=ships,
-                                        field=field,
-                                        direction='submarine',
-                                        ship=ship)):
+                if (len(ship) == 1 and all_cells_valid(ships=ships,
+                                                       field=field,
+                                                       direction='submarine',
+                                                       ship=ship)):
                     ships[len(ship)].append(ship)
-                elif (1 < len(ship) <= 4 and
-                      all_cells_valid(ships=ships,
-                                      field=field,
-                                      direction='horizontal',
-                                      ship=ship)):
+                elif (1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                             field=field,
+                                                             direction='horizontal',
+                                                             ship=ship)):
                     ships[len(ship)].append(ship)
 
                 ship = []
 
         # Allowed ship sizes between 1 and 4 cells
-        if (len(ship) == 1 and
-                all_cells_valid(ships=ships,
-                                field=field,
-                                direction='submarine',
-                                ship=ship)):
+        if (len(ship) == 1 and all_cells_valid(ships=ships,
+                                               field=field,
+                                               direction='submarine',
+                                               ship=ship)):
             ships[len(ship)].append(ship)
-        elif (1 < len(ship) <= 4 and
-              all_cells_valid(ships=ships,
-                              field=field,
-                              direction='horizontal',
-                              ship=ship)):
+        elif (1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                     field=field,
+                                                     direction='horizontal',
+                                                     ship=ship)):
             ships[len(ship)].append(ship)
 
 
@@ -97,32 +92,28 @@ def ship_counter_by_col(field: list, ships: dict):
                 ship.append([index_row, index_col])
             else:
                 # Allowed ship sizes between 1 and 4 cells
-                if (len(ship) == 1 and
-                        all_cells_valid(ships=ships,
-                                        field=field,
-                                        direction='submarine',
-                                        ship=ship)):
+                if (len(ship) == 1 and all_cells_valid(ships=ships,
+                                                       field=field,
+                                                       direction='submarine',
+                                                       ship=ship)):
                     ships[len(ship)].append(ship)
-                elif (1 < len(ship) <= 4 and
-                      all_cells_valid(ships=ships,
-                                      field=field,
-                                      direction='vertical',
-                                      ship=ship)):
+                elif (1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                             field=field,
+                                                             direction='vertical',
+                                                             ship=ship)):
                     ships[len(ship)].append(ship)
                 ship = []
 
         # Allowed ship sizes between 1 and 4 cells
-        if (len(ship) == 1 and
-                all_cells_valid(ships=ships,
-                                field=field,
-                                direction='submarine',
-                                ship=ship)):
+        if (len(ship) == 1 and all_cells_valid(ships=ships,
+                                               field=field,
+                                               direction='submarine',
+                                               ship=ship)):
             ships[len(ship)].append(ship)
-        elif (1 < len(ship) <= 4 and
-              all_cells_valid(ships=ships,
-                              field=field,
-                              direction='vertical',
-                              ship=ship)):
+        elif (1 < len(ship) <= 4 and all_cells_valid(ships=ships,
+                                                     field=field,
+                                                     direction='vertical',
+                                                     ship=ship)):
             ships[len(ship)].append(ship)
 
 
@@ -151,8 +142,10 @@ def check_vertical(row, col, field) -> bool:
     """
     for row_id in range(row - 1, row + 2):
         for col_id in range(col - 1, col + 2):
-            if ((0 <= row_id < len(field)) and (0 <= col_id < len(field))
-                    and ((col_id != col) and field[row_id][col_id] == 1)):
+            if 0 <= row_id < len(field) \
+                    and 0 <= col_id < len(field) \
+                    and col_id != col \
+                    and field[row_id][col_id] == 1:
                 return False
     return True
 
@@ -168,8 +161,10 @@ def check_horizontal(row, col, field) -> bool:
     """
     for row_id in range(row - 1, row + 2):
         for col_id in range(col - 1, col + 2):
-            if (((0 <= row_id < len(field)) and (0 <= col_id < len(field)))
-                    and ((row_id != row) and field[row_id][col_id] == 1)):
+            if 0 <= row_id < len(field) \
+                    and 0 <= col_id < len(field) \
+                    and row_id != row \
+                    and field[row_id][col_id] == 1:
                 return False
     return True
 
@@ -193,10 +188,10 @@ def check_submarine(**kwargs) -> bool:
     # validates if submarine cell has contacts with other ships/cells
     for row_id in range(kwargs['row'] - 1, kwargs['row'] + 2):
         for col_id in range(kwargs['col'] - 1, kwargs['col'] + 2):
-            if (((0 <= row_id < len(kwargs['field']))
-                 and (0 <= col_id < len(kwargs['field'])))
-                    and ((col_id != kwargs['col'] or row_id != kwargs['row'])
-                         and kwargs['field'][row_id][col_id] == 1)):
+            if 0 <= row_id < len(kwargs['field']) \
+                    and 0 <= col_id < len(kwargs['field']) \
+                    and (col_id != kwargs['col'] or row_id != kwargs['row']) \
+                    and kwargs['field'][row_id][col_id] == 1:
                 return False
     return True
 
