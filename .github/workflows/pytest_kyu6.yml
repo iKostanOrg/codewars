@@ -53,7 +53,7 @@ jobs:
       - name: List test files
         run: |
           ls *.xml
-            # https://docs.codacy.com/coverage-reporter/
+        # https://docs.codacy.com/coverage-reporter/
       - name: Run codacy-coverage-reporter
         run: |
             export CODACY_API_TOKEN=${{ secrets.codacy_api_token }}
