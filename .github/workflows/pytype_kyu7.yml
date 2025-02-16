@@ -4,7 +4,7 @@ name: PyType Lint for kyu7
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'kyu7'
+      - kyu7
   workflow_call:
 
 permissions:
@@ -31,9 +31,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
-          pip install pytype
-      - name: PYTYPE Version Check
+          python -m pip install -r requirements.txt
+          python -m pip install pytype
+      - name: PyType Version Check
         run: |
           python -m pytype --version
       - name: Python Data Type Checking with PYTYPE
