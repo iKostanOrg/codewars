@@ -62,7 +62,7 @@ class Potion:
                    total_volume: int) -> int:
         """
         Calculate RGB values.
-        
+
         :param index: int
         :param other: Object
         :param total_volume: int
