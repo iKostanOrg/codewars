@@ -85,8 +85,8 @@ class Warrior:
         the experience stops at 10000.
         :return:
         """
-        if (self.level == 100
-                or self.experience + experience > MAX_EXPERIENCE):
+        if self.level == 100 \
+                or self.experience + experience > MAX_EXPERIENCE:
             self.__experience = MAX_EXPERIENCE
         else:
             self.__experience += experience
