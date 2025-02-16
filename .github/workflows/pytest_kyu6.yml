@@ -9,7 +9,7 @@ name: Unitest kyu6 with pytest
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'kyu6'
+      - kyu6
 
 permissions:
   contents: read
@@ -18,6 +18,8 @@ permissions:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
     timeout-minutes: 10
     strategy:
       fail-fast: false
