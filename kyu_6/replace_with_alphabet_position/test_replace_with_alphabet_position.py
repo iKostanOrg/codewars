@@ -11,7 +11,8 @@ import unittest
 import allure
 from parameterized import parameterized
 from utils.log_func import print_log
-from kyu_6.replace_with_alphabet_position.solution import alphabet_position
+from kyu_6.replace_with_alphabet_position.solution \
+    import alphabet_position
 
 
 # pylint: disable-msg=R0801
@@ -59,6 +60,34 @@ ZsKQq6j"ziwD[zT:P6%$rEH$^@',
             '<h3>Test Description:</h3>'
             "<p>The 'alphabet_position' function should replace every letter"
             " with its position in the alphabet.</p>")
+        # pylint: enable-msg=R0801
+        result: str = alphabet_position(string)
+        with allure.step(f"Enter test data: {string}, "
+                         f"and verify the output ({result}) "
+                         f"vs expected ({expected})"):
+            print_log(string=string, result=result, expected=expected)
+            self.assertEqual(expected, result)
+
+    @parameterized.expand([
+        ("",
+         ""),
+    ])
+    def test_empty_string(self, string, expected):
+        """
+        Testing 'alphabet_position' function with empty string.
+
+        don't return it..
+        :return:
+        """
+        # pylint: disable-msg=R0801
+        allure.dynamic.title("Testing the 'alphabet_position' with empty string")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>No output expected when empty string is passed as a test data.</p>")
         # pylint: enable-msg=R0801
         result: str = alphabet_position(string)
         with allure.step(f"Enter test data: {string}, "
