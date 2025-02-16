@@ -48,12 +48,18 @@ class Potion:
         """
         new_volume = self.volume + other.volume
 
-        r = math.ceil((other.color[0] * other.volume + self.color[0]
-                       * self.volume) / (other.volume + self.volume))
-        g = math.ceil((other.color[1] * other.volume + self.color[1]
-                       * self.volume) / (other.volume + self.volume))
-        b = math.ceil((other.color[2] * other.volume + self.color[2]
-                       * self.volume) / (other.volume + self.volume))
+        r = math.ceil(
+            (other.color[0] * other.volume + self.color[0] * self.volume) /
+            (other.volume + self.volume)
+        )
+        g = math.ceil(
+            (other.color[1] * other.volume + self.color[1] * self.volume) /
+            (other.volume + self.volume)
+        )
+        b = math.ceil(
+            (other.color[2] * other.volume + self.color[2] * self.volume) /
+            (other.volume + self.volume)
+        )
 
         return Potion((r, g, b), new_volume)
 
