@@ -7,7 +7,9 @@ GitHub: https://github.com/ikostan
 
 
 import math
-from typing import Tuple
+from typing import Tuple, ClassVar
+
+from git import Object
 
 
 class Potion:
@@ -46,22 +48,28 @@ class Potion:
         :param other:
         :return:
         """
-        new_volume = self.volume + other.volume
+        new_volume: int = self.volume + other.volume
+        total_volume: int = other.volume + self.volume
 
-        r = math.ceil(
-            (other.color[0] * other.volume + self.color[0] * self.volume) /
-            (other.volume + self.volume)
-        )
-        g = math.ceil(
-            (other.color[1] * other.volume + self.color[1] * self.volume) /
-            (other.volume + self.volume)
-        )
-        b = math.ceil(
-            (other.color[2] * other.volume + self.color[2] * self.volume) /
-            (other.volume + self.volume)
-        )
+        r: int = self.__calc_rgb(index=0, other=other, total_volume=total_volume)
+        g: int = self.__calc_rgb(index=1, other=other, total_volume=total_volume)
+        b: int = self.__calc_rgb(index=2, other=other, total_volume=total_volume)
 
         return Potion((r, g, b), new_volume)
+
+    def __calc_rgb(self, index: int,
+                   other: Object,
+                   total_volume: int) -> int:
+        """
+        Calculate RGB values.
+        :param index: int
+        :param other: Object
+        :param total_volume: int
+        :return:
+        """
+        return math.ceil(
+            (other.color[index] * other.volume + self.color[index] * self.volume) / total_volume
+        )
 
     @property
     def volume(self) -> int:
