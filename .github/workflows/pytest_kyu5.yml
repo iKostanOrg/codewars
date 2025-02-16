@@ -1,20 +1,31 @@
 ---
-name: PyLint for kyu5
+# This workflow will install Python dependencies, run tests
+# and lint with a variety of Python versions
+# For more information see:
+# https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Unitest kyu5 with pytest
 
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
       - kyu5
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   build:
-    runs-on: 'ubuntu-24.04'
+    runs-on: ${{ matrix.os }}
     # Adding 'timeout-minutes: 10' would prevent jobs from running
     # indefinitely if something goes wrong
     timeout-minutes: 10
     strategy:
+      fail-fast: false
       matrix:
-        python-version: ["3.x"]
+        os: ['ubuntu-24.04']
+        python-version: ["3.11"]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -29,15 +40,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
+          python -m pip install pytest
           python -m pip install -r requirements.txt
-          python -m pip install pylint
       - name: Version check
+        run:
+          python -m pytest --version
+      - name: Unitest with pytest
+        # yamllint disable rule:line-length
         run: |
-          python -m pylint --version
-      - name: Get/Export current directory
-        run: |
-          pwd
-          export PYTHONPATH=$PYTHONPATH:./codewars
-      - name: Analysing the code with pylint
-        run: |
-          python -m pylint -v ./kyu_5
+          python -m pytest ./kyu_5 -v -rP --doctest-modules --cov-report term-missing --cov-fail-under=80 --cov=./kyu_5
+        # yamllint enable rule:line-length
