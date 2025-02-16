@@ -48,5 +48,15 @@ jobs:
       - name: Unitest with pytest
         # yamllint disable rule:line-length
         run: |
-          python -m pytest ./kyu_7 -v -rP --doctest-modules --cov-report term-missing --cov-fail-under=80 --cov=./kyu_7
+          python -m pytest ./kyu_7 -v -rP --doctest-modules --cov-report term-missing --cov-report=xml --cov-fail-under=80 --cov=./kyu_7
         # yamllint enable rule:line-length
+      - name: List test files
+        run: |
+          ls *.xml
+      # Python Coverage: The Essential Coverage Reporter GitHub Action for python
+      # https://github.com/marketplace/actions/python-coverage
+      - name: Get Cover
+        uses: orgoro/coverage@v3.2
+        with:
+          coverageFile: path/to/coverage.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
