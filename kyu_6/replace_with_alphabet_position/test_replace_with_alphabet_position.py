@@ -77,10 +77,10 @@ ZsKQq6j"ziwD[zT:P6%$rEH$^@',
     ])
     def test_alphabet_position_edge_cases(self, string, expected):
         """
-        Testing 'alphabet_position' function with various edge cases,
-        including empty strings, numbers, special characters, and
-        mixed alphanumeric input.
+        Testing 'alphabet_position' function with various edge cases.
 
+        Tests include empty strings, numbers, special characters, and
+        mixed alphanumeric input.
         :return:
         """
         # pylint: disable-msg=R0801
