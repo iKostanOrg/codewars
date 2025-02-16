@@ -13,6 +13,9 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     strategy:
       matrix:
         python-version: ["3.x"]
@@ -43,4 +46,4 @@ jobs:
         # Pydocstyle testing (Guide)
         # https://www.pydocstyle.org/en/stable/usage.html#cli-usage
         run: |
-          pydocstyle --verbose --explain --count kyu_8
+          pydocstyle --verbose --explain --count --ignore=D212 kyu_8

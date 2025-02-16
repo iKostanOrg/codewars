@@ -11,9 +11,7 @@ import unittest
 import allure
 from parameterized import parameterized
 from utils.log_func import print_log
-# pylint: disable = no-name-in-module
 from kyu_6.who_likes_it.likes_function import likes
-# pylint: enable = no-name-in-module
 
 
 # pylint: disable=R0801

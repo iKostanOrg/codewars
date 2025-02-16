@@ -10,9 +10,7 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-# pylint: disable = no-name-in-module
 from kyu_6.array_to_html_table.to_table import to_table
-# pylint: enable = no-name-in-module
 
 
 @allure.epic('6 kyu')
