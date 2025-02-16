@@ -29,11 +29,12 @@ def calculate(s: str) -> str:
     """
     s = string_to_math(s)
     # pylint: disable=W0123
-    # Evaluate a simple mathematical expression using
-    # Python's built-in eval (safe subset).
-    # allowed_names = {"__builtins__": None}
-    # return f'{eval(s, {"__builtins__": None}, allowed_names)}'  # nosec B311
-    return f'{aeval.eval(s)}'  # nosec B311
+    try:
+        result = aeval.eval(s)
+    except Exception as exc:
+        return f"Error evaluating expression: {exc}"
+    else:
+        return f'{result}'  # nosec B311
     # pylint: enable=W0123
 
 
