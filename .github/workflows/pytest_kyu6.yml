@@ -48,5 +48,16 @@ jobs:
       - name: Unitest with pytest
         # yamllint disable rule:line-length
         run: |
-          python -m pytest ./kyu_6 -v -rP --doctest-modules --cov-report term-missing --cov-fail-under=80 --cov=./kyu_6
+          python -m pytest ./kyu_6 -v -rP --doctest-modules --cov-report term-missing --cov-report=xml --cov-fail-under=80 --cov=./kyu_6
         # yamllint enable rule:line-length
+      - name: List test files
+        run: |
+          ls *.xml
+            # https://docs.codacy.com/coverage-reporter/
+      - name: Run codacy-coverage-reporter
+        run: |
+            export CODACY_API_TOKEN=${{ secrets.codacy_api_token }}
+            export CODACY_ORGANIZATION_PROVIDER=gh
+            export CODACY_USERNAME=iKostanOrg
+            export CODACY_PROJECT_NAME=codewars
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage.xml

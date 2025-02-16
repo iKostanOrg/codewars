@@ -69,25 +69,30 @@ ZsKQq6j"ziwD[zT:P6%$rEH$^@',
             self.assertEqual(expected, result)
 
     @parameterized.expand([
-        ("",
-         ""),
+        ("", ""),
+        ("123", ""),
+        ("!@#$%^&*()", ""),
+        ("a1!b", "1 2"),
+        ("AbZ!", "1 2 26")
     ])
-    def test_empty_string(self, string, expected):
+    def test_alphabet_position_edge_cases(self, string, expected):
         """
-        Testing 'alphabet_position' function with empty string.
+        Testing 'alphabet_position' function with various edge cases.
 
-        don't return it..
+        Tests include empty strings, numbers, special characters, and
+        mixed alphanumeric input.
         :return:
         """
         # pylint: disable-msg=R0801
-        allure.dynamic.title("Testing the 'alphabet_position' with empty string")
+        allure.dynamic.title("Testing the 'alphabet_position' with edge cases.")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>No output expected when empty string is passed as a test data.</p>")
+            "<p>Testing edge cases, including empty strings, numbers, "
+            "special characters, and mixed alphanumeric input.</p>")
         # pylint: enable-msg=R0801
         result: str = alphabet_position(string)
         with allure.step(f"Enter test data: {string}, "
