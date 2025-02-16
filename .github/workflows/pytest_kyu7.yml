@@ -53,10 +53,3 @@ jobs:
       - name: List test files
         run: |
           ls *.xml
-      # Python Coverage: The Essential Coverage Reporter GitHub Action for python
-      # https://github.com/marketplace/actions/python-coverage
-      - name: Get Cover
-        uses: orgoro/coverage@v3.2
-        with:
-          coverageFile: path/to/coverage.xml
-          token: ${{ secrets.GITHUB_TOKEN }}

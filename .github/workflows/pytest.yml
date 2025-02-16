@@ -94,10 +94,3 @@ jobs:
         # when there are test failures
         if: ${{ always() }}
       # Source: https://github.com/orgoro/coverage
-      - name: Post Coverage Report
-        uses: orgoro/coverage@v3.2
-        with:
-          coverageFile:
-            test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.xml
-          token:
-            ${{ secrets.GITHUB_TOKEN }}

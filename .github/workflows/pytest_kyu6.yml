@@ -53,10 +53,11 @@ jobs:
       - name: List test files
         run: |
           ls *.xml
-      # Python Coverage: The Essential Coverage Reporter GitHub Action for python
-      # https://github.com/marketplace/actions/python-coverage
-      - name: Get Cover
-        uses: orgoro/coverage@v3.2
-        with:
-          coverageFile: path/to/coverage.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
+            # https://docs.codacy.com/coverage-reporter/
+      - name: Run codacy-coverage-reporter
+        run: |
+            export CODACY_API_TOKEN=${{ secrets.codacy_api_token }}
+            export CODACY_ORGANIZATION_PROVIDER=gh
+            export CODACY_USERNAME=iKostanOrg
+            export CODACY_PROJECT_NAME=codewars
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage.xml
