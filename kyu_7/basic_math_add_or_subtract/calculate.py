@@ -29,12 +29,8 @@ def calculate(s: str) -> str:
     """
     s = string_to_math(s)
     # pylint: disable=W0123
-    try:
-        result = aeval.eval(s)
-    except Exception as exc:
-        return f"Error evaluating expression: {exc}"
-    else:
-        return f'{result}'  # nosec B311
+    result = aeval.eval(s)
+    return f'{result}'  # nosec B311
     # pylint: enable=W0123
 
 
