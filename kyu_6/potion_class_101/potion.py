@@ -46,28 +46,25 @@ class Potion:
         :return: Potion Object
         """
         new_volume: int = self.volume + other.volume
-        total_volume: int = other.volume + self.volume
+        rgb: Tuple[int, int, int] = self.__calc_rgb(other, new_volume)
+        return Potion(rgb, new_volume)
 
-        r: int = self.__calc_rgb(index=0, other=other, total_volume=total_volume)
-        g: int = self.__calc_rgb(index=1, other=other, total_volume=total_volume)
-        b: int = self.__calc_rgb(index=2, other=other, total_volume=total_volume)
-
-        return Potion((r, g, b), new_volume)
-
-    def __calc_rgb(self, index: int,
-                   other,
-                   total_volume: int) -> int:
+    def __calc_rgb(self, other, new_volume: int) -> Tuple[int, int, int]:
         """
         Calculate RGB values.
 
-        :param index: int
         :param other: Potion Object
-        :param total_volume: int
-        :return:
+        :param new_volume: int
+        :return: tuple
         """
-        return math.ceil(
-            (other.color[index] * other.volume + self.color[index] * self.volume) / total_volume
-        )
+        r: int = math.ceil(
+            (other.color[0] * other.volume + self.color[0] * self.volume) / new_volume)
+        g: int = math.ceil(
+            (other.color[1] * other.volume + self.color[1] * self.volume) / new_volume)
+        b: int = math.ceil(
+            (other.color[2] * other.volume + self.color[2] * self.volume) / new_volume)
+
+        return r, g, b
 
     @property
     def volume(self) -> int:
