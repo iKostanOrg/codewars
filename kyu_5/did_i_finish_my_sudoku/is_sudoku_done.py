@@ -23,9 +23,9 @@ def done_or_not(board: list) -> str:
     :param board: list
     :return: str
     """
-    if (assert_sudoku_by_column(board)
-            and assert_sudoku_by_row(board)
-            and assert_sudoku_by_region(board)):
+    if assert_sudoku_by_column(board) \
+            and assert_sudoku_by_row(board) \
+            and assert_sudoku_by_region(board):
         return 'Finished!'
 
     return 'Try again!'
