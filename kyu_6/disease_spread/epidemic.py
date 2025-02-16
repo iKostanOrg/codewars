@@ -50,9 +50,9 @@ def epidemic(**kwargs) -> int:
         susceptible.append(calc_susceptible)
 
         calc_infecteds: float = (
-            infecteds[k] + dt *
-            (kwargs['b'] * susceptible[k] * infecteds[k] - kwargs['a'] * infecteds[k])
-        )
+            infecteds[k] + dt * (
+                kwargs['b'] * susceptible[k] * infecteds[k] - kwargs['a'] * infecteds[k]
+        ))
         infecteds.append(calc_infecteds)
 
     return int(max(infecteds))
