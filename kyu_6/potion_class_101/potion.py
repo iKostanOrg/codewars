@@ -7,7 +7,7 @@ GitHub: https://github.com/ikostan
 
 
 import math
-from typing import Tuple, ClassVar
+from typing import Tuple
 
 from git import Object
 
