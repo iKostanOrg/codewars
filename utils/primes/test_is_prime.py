@@ -26,9 +26,7 @@ from utils.primes.is_prime import is_prime
     name='Source')
 # pylint: enable=R0801
 class IsPrimeTestCase(unittest.TestCase):
-    """
-    Testing is_prime function
-    """
+    """Testing is_prime function."""
 
     @parameterized.expand([
         2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53,
