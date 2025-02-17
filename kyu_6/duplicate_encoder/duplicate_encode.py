@@ -1,5 +1,6 @@
 """
-Solution for -> Duplicate Encoder
+Solution for -> Duplicate Encoder.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def duplicate_encode(word: str) -> str:
     """
+    Duplicate Encoder.
+
     Converts a string to a new string where each
     character in the new string is "(" if that
     character appears only once in the original
@@ -18,9 +21,8 @@ def duplicate_encode(word: str) -> str:
     :param word:
     :return:
     """
-
     result: str = ''
-    word: str = ''.join(char.lower() for char in word)
+    word = ''.join(char.lower() for char in word)
 
     for char in word:
         if word.count(char) > 1:

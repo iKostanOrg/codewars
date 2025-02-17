@@ -17,4 +17,4 @@ decipherThis('72olle 103doo 100ya'); // 'Hello good day'
 decipherThis('82yade 115te 103o'); // 'Ready set go'
 ```
 
-[Source](https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python)
+[Source](https://www.codewars.com/kata/581e014b55f2c52bb00000f8)

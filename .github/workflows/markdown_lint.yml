@@ -1,9 +1,7 @@
-name: 'Markdown Lint'
+---
+name: Markdown Lint
 
-on:
-  push:
-    branches:
-      - 'Documentation'
+on:   # yamllint disable-line rule:truthy
   workflow_call:
 
 permissions:
@@ -12,18 +10,17 @@ permissions:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-24.04'
+    # Adding 'timeout-minutes: 10' would prevent jobs from running
+    # indefinitely if something goes wrong
+    timeout-minutes: 10
     steps:
-    - name: Checkout v4
-      uses: actions/checkout@v4
-    #- name: Install markdownlint
-    #  run: |
-    #    npm install markdownlint-cli2 --global
-    #    markdownlint-cli2 "**/*.md" --config ".markdownlint-cli2.yaml"
-    - name: markdownlint-cli2-action v16
-      uses: DavidAnson/markdownlint-cli2-action@v17
-      with:
-       config: '.markdownlint-cli2.yaml'
-       fix: true
-       globs: '**/*.md'
-       separator: ','
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: markdownlint-cli2-action
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          config: '.markdownlint-cli2.yaml'
+          fix: true
+          globs: '**/*.md'
+          separator: ','

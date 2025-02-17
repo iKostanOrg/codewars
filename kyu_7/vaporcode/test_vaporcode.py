@@ -1,5 +1,6 @@
 """
-Test for -> V A P O R C O D E
+Test for -> V A P O R C O D E.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -25,13 +26,12 @@ from kyu_7.vaporcode.vaporcode import vaporcode
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class VaporcodeTestCase(unittest.TestCase):
-    """
-    Testing 'vaporcode' function
-    """
+    """Testing 'vaporcode' function."""
 
     def test_vaporcode(self):
         """
-        Testing 'vaporcode' function
+        Testing 'vaporcode' function with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -39,8 +39,9 @@ class VaporcodeTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
@@ -54,23 +55,23 @@ class VaporcodeTestCase(unittest.TestCase):
 
         with allure.step("Enter string with special "
                          "chars and verify the output"):
-            string: str = "Why isn't my code working?"
-            expected: str = "W  H  Y  I  S  N  '  T  M  Y  " \
-                            "C  O  D  E  W  O  R  K  I  N  G  ?"
+            string = "Why isn't my code working?"
+            expected = "W  H  Y  I  S  N  '  T  M  Y  " \
+                       "C  O  D  E  W  O  R  K  I  N  G  ?"
             print_log(s=string, expected=expected)
             self.assertEqual(vaporcode(string), expected)
 
         with allure.step("Enter crazy string and verify the output"):
-            string: str = " ; FUV! qd vz  Xy-b pM.!:F  lEqRLY,p RGS:;Rh Z "
-            expected: str = ";  F  U  V  !  Q  D  V  Z  X  Y  -  B  P  " \
-                            "M  .  !  :  F  L  E  Q  R  L  Y  ,  P  R  G  " \
-                            "S  :  ;  R  H  Z"
+            string = " ; FUV! qd vz  Xy-b pM.!:F  lEqRLY,p RGS:;Rh Z "
+            expected = ";  F  U  V  !  Q  D  V  Z  X  Y  -  B  P  " \
+                       "M  .  !  :  F  L  E  Q  R  L  Y  ,  P  R  G  " \
+                       "S  :  ;  R  H  Z"
             print_log(s=string, expected=expected)
             self.assertEqual(vaporcode(string), expected)
 
         with allure.step("Enter string with chars"
                          "only and verify the output"):
-            string: str = "blah"
-            expected: str = "B  L  A  H"
+            string = "blah"
+            expected = "B  L  A  H"
             print_log(s=string, expected=expected)
             self.assertEqual(vaporcode(string), expected)

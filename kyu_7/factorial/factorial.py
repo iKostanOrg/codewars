@@ -1,5 +1,6 @@
 """
-Solution for -> Sum of Numbers
+Solution for -> Factorial.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def factorial(n: int) -> int:
     """
+    Factorial function.
+
     A function to calculate factorial for a given input.
     If input is below 0 or above 12 throw an exception
     of type ValueError (Python).

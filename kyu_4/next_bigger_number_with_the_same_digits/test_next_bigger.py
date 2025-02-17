@@ -1,5 +1,5 @@
 """
-Test for -> Next bigger number with the same digits
+Test for -> Next bigger number with the same digits.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -10,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigger
+from kyu_4.next_bigger_number_with_the_same_digits.next_bigger \
+    import next_bigger
 
 
 # pylint: disable-msg=R0801
@@ -25,16 +26,15 @@ from kyu_4.next_bigger_number_with_the_same_digits.next_bigger import next_bigge
             'STRINGS',
             'INTEGERS',
             'MATHEMATICS')
-@allure.link(url='https://www.codewars.com/kata/55983863da40caa2c900004e/train/python',
+@allure.link(url='https://www.codewars.com/kata/55983863da40caa2c900004e',
              name='Source/Kata')
 # pylint: enable-msg=R0801
 class NextBiggerTestCase(unittest.TestCase):
-    """
-    Testing next_bigger function
-    """
+    """Testing next_bigger function."""
+
     def test_next_bigger(self):
         """
-        Testing next_bigger function
+        Testing next_bigger function.
 
         You have to test a function that takes a positive integer
         number and returns the next bigger number formed by the same digits:
@@ -43,7 +43,8 @@ class NextBiggerTestCase(unittest.TestCase):
         513 ==> 531
         2017 ==> 2071
 
-        If no bigger number can be composed using those digits, return -1
+        If no bigger number can be composed using those digits, return -1.
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing next_bigger function")
@@ -64,7 +65,7 @@ class NextBiggerTestCase(unittest.TestCase):
             "<p>If no bigger number can be composed using"
             " those digits, return -1</p>")
         # pylint: enable-msg=R0801
-        test_data = [
+        test_data: tuple = (
             (6, -1),
             (12, 21),
             (513, 531),
@@ -72,8 +73,7 @@ class NextBiggerTestCase(unittest.TestCase):
             (414, 441),
             (144, 414),
             (6938652, 6952368),
-            (123456789, 123456798)
-        ]
+            (123456789, 123456798))
 
         for n, expected in test_data:
             actual_result = next_bigger(n)

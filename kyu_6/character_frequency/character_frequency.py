@@ -1,5 +1,6 @@
 """
-Solution for -> Character frequency
+Solution for -> Character frequency.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,9 @@ GitHub: https://github.com/ikostan
 
 def letter_frequency(text: str) -> list:
     """
-    return a list of tuples sorted by frequency with
+    Letter frequency.
+
+    Return a list of tuples sorted by frequency with
     the most frequent letter first. Any letters with the
     same frequency are ordered alphabetically
     :param text:
@@ -15,7 +18,7 @@ def letter_frequency(text: str) -> list:
     """
     results: list = []
     chars: dict = {}
-    text: str = text.lower()
+    text = text.lower()
 
     for c in text:
         if c.isalpha() and c not in chars:
@@ -28,11 +31,11 @@ def letter_frequency(text: str) -> list:
 
 def sort_list(results: list) -> list:
     """
-    Sort results list
+    Sort results list.
+
     :param results: list
     :return: list
     """
-
     is_sorted: bool = False
     results_length: int = len(results)
 

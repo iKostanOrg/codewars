@@ -16,4 +16,4 @@ from the other:
 array_diff([1,2,2,2,3],[2]) == [1,3]
 ```
 
-[Source](https://www.codewars.com/kata/523f5d21c841566fde000009/train/python)
+[Source](https://www.codewars.com/kata/523f5d21c841566fde000009)

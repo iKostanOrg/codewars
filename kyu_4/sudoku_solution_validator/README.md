@@ -45,4 +45,4 @@ validSolution([
 ]); // => false
 ```
 
-[Source](https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python)
+[Source](https://www.codewars.com/kata/529bf0e9bdf7657179000008)

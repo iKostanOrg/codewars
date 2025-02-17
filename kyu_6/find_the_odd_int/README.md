@@ -14,4 +14,4 @@ There will always be only one integer that appears an odd number of times.
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 ```
 <!-- markdownlint-enable MD013 -->
-[Source](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/python)
+[Source](https://www.codewars.com/kata/54da5a58ea159efa38000836)

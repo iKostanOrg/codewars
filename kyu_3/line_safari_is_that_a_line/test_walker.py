@@ -1,5 +1,6 @@
 """
-Testing Walker Class
+Testing Walker Class.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,6 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import unittest
-import pytest
 import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
@@ -25,17 +25,15 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 @allure.link(
     url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237',
     name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class WalkerClassTestCase(unittest.TestCase):
-    """
-    Testing Walker class
-    """
+    """Testing Walker class."""
 
     def test_starting_position_from_positives(self):
         """
-        Testing Walker class
-        Testing starting position property based on positive grids
+        Testing Walker class.
+
+        Testing starting position property based on positive grids.
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title(
@@ -90,8 +88,9 @@ class WalkerClassTestCase(unittest.TestCase):
 
     def test_starting_position_from_negatives(self):
         """
-        Testing Walker class
-        Testing starting position property based on negative grids
+        Testing Walker class.
+
+        Testing starting position property based on negative grids.
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title(
@@ -127,7 +126,6 @@ class WalkerClassTestCase(unittest.TestCase):
 
         expected: str = 'X'
         for grid in test_data:
-
             walker: Walker = Walker(grid)
             actual_result: str = walker.position
 

@@ -1,5 +1,6 @@
 """
-Solution for Casino chips
+Solution for Casino chips.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,6 +8,8 @@ GitHub: https://github.com/ikostan
 
 def solve(arr: list) -> int:
     """
+    Solve function.
+
     You are given three piles of casino chips: white, green and black
     chips:
 
@@ -25,8 +28,7 @@ def solve(arr: list) -> int:
     :param arr:
     :return:
     """
-    arr: list = sorted(arr)
-
+    arr = sorted(arr)
     if arr[0] + arr[1] <= arr[2]:
         return arr[0] + arr[1]
 

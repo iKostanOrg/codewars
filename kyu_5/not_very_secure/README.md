@@ -10,4 +10,4 @@ The string has the following conditions to be alphanumeric:
     `0` to `9`
 *   No whitespaces / underscore
 
-[Source](https://www.codewars.com/kata/526dbd6c8c0eb53254000110/train/python)
+[Source](https://www.codewars.com/kata/526dbd6c8c0eb53254000110)

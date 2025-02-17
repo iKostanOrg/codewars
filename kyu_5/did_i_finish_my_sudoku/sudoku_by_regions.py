@@ -1,5 +1,6 @@
 """
-Assert Sudoku by region
+Assert Sudoku by region.
+
 Helper method for Did I Finish my Sudoku?
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -10,13 +11,14 @@ from utils.primes.primes_generator import gen_primes
 
 def assert_sudoku_by_region(board: list) -> bool:
     """
-    Assert Sudoku by region
-    :param board: Sudoku list
-    :return: boolean value (is Sudoku done or not)
-    """
-    row_length = len(board[0])
+    Assert Sudoku by region.
 
-    step = 0
+    :param board: list
+    :return: boolean
+    """
+    row_length: int = len(board[0])
+    step: int = 0
+
     for i in gen_primes():
         if row_length % i == 0:
             step = i

@@ -14,4 +14,4 @@ Given a string, return a new string that has transformed based on the input:
 
 You may assume the input only contain English alphabet and spaces.
 
-[Source](https://www.codewars.com/kata/5878520d52628a092f0002d0/train/python)
+[Source](https://www.codewars.com/kata/5878520d52628a092f0002d0)

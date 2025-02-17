@@ -1,10 +1,32 @@
 [run]
+source = .
 # include = */src/*
 # omit anything in a virtualenv directory anywhere
 omit =
+    deprecated/*
     /home/travis/virtualenv/*
     *.yml
     /home/travis/img/*
     __init__*
     *.md
     docs/*
+    venv/*
+    *.gif
+    *.html
+    /tests/*
+    test_*
+    allure-report/*
+    allure-results/*
+    .circleci/*
+    .github/*
+    img/*
+
+[report]
+; Regexes for lines to exclude from consideration
+omit =
+    tests/*
+skip_empty = True
+
+exclude_also =
+    ; Don't complain if non-runnable code isn't run:
+    if __name__ == .__main__.:

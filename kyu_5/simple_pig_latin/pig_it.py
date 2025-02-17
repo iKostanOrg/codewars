@@ -1,5 +1,6 @@
 """
-Solution for -> Simple Pig Latin
+Solution for -> Simple Pig Latin.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,8 @@ from typing import List
 
 def pig_it(text: str) -> str:
     """
+    pig_it function.
+
     Move the first letter of each word to the end of it,
     then add "ay" to the end of the word. Leave
     punctuation marks untouched.
@@ -24,7 +27,9 @@ def pig_it(text: str) -> str:
 
 def word_processor(word: str, result: list) -> None:
     """
-    Processing a single word for the requested pattern
+    word_processor function.
+
+    Processing a single word for the requested pattern.
     :param word: str
     :param result: list
     :return: None

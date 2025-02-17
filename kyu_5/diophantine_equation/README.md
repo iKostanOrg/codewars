@@ -33,4 +33,4 @@ solEquaStr(90002) --> "[]"
 x2 - 4 * y2 = (x - 2*y) * (x + 2*y)
 ```
 
-[Source](https://www.codewars.com/kata/554f76dca89983cc400000bb/train/python)
+[Source](https://www.codewars.com/kata/554f76dca89983cc400000bb)

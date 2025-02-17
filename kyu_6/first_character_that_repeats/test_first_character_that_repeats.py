@@ -1,5 +1,6 @@
 """
-Test for -> First character that repeats
+Test for -> First character that repeats.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,7 +10,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.first_character_that_repeats.first_character_that_repeats import first_dup
+from kyu_6.first_character_that_repeats.first_character_that_repeats \
+    import first_dup
 
 
 # pylint: disable-msg=R0801
@@ -20,19 +22,19 @@ from kyu_6.first_character_that_repeats.first_character_that_repeats import firs
 @allure.feature("String")
 @allure.story('First character that repeats')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/54f9f4d7c41722304e000bbb',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/54f9f4d7c41722304e000bbb',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FirstDupTestCase(unittest.TestCase):
-    """
-    Testing first_dup function.
+    """Testing first_dup function."""
 
-    Find the first character that repeats
-    in a String and return that character.
-    """
     def test_first_dup_none(self):
         """
         Test string with no duplicate chars.
+
+        Find the first character that repeats
+        in a String and return that character.
         :return:
         """
         # pylint: disable-msg=R0801
@@ -46,7 +48,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass string with no repeating chars"):
-            string = 'like'
+            string: str = 'like'
             expected = None
 
             print_log(string=string, expected=expected)
@@ -62,6 +64,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_dup_mixed(self):
         """
         Test string with mixed type of chars.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -75,7 +78,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Input consist of mixed type of chars"):
-            string = '1a2b3a3c'
+            string: str = '1a2b3a3c'
             expected = 'a'
 
             print_log(string=string, expected=expected)
@@ -91,6 +94,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_alpha_only(self):
         """
         Test string with alphabet chars only.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -104,7 +108,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Input consist of alphabet chars only"):
-            string = 'tweet'
+            string: str = 'tweet'
             expected = 't'
 
             print_log(string=string, expected=expected)
@@ -113,6 +117,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_space(self):
         """
         Repeating char is a space.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -126,7 +131,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Input consist of alphabet chars and spaces"):
-            string = 'Ode to Joy'
+            string: str = 'Ode to Joy'
             expected = ' '
 
             print_log(string=string, expected=expected)
@@ -135,6 +140,7 @@ class FirstDupTestCase(unittest.TestCase):
     def test_first_no_alpha(self):
         """
         Test string with no alphabet chars.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -148,7 +154,7 @@ class FirstDupTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Pass string with digits only"):
-            string = '123123'
+            string: str = '123123'
             expected = '1'
 
             print_log(string=string, expected=expected)

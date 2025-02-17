@@ -1,6 +1,7 @@
 """
-Testing Line Safari functionality
-Positive test cases
+Testing Line Safari functionality.
+
+Positive test cases.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,15 +28,13 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
     name='Source/Kata')
 @pytest.mark.skip(reason="The solution is not ready")
 class LinePositiveTestCase(unittest.TestCase):
-    """
-    Testing Line Safari functionality
-    Positive test cases
-    """
+    """Testing Line Safari functionality."""
 
     def test_line_positive(self):
         """
-        Testing Line Safari functionality
-        Positive test cases
+        Positive test cases.
+
+        :return:
         """
         allure.dynamic.title("Testing Line Safari functionality - POSITIVE")
         # pylint: disable-msg=R0801
@@ -87,11 +86,7 @@ class LinePositiveTestCase(unittest.TestCase):
 
         expected: bool = True
         for grid in test_data:
-
             actual_result: bool = line(grid)
-            for row in grid:
-                print(row)
-
             print_log(expected=expected,
                       actual_result=actual_result)
 

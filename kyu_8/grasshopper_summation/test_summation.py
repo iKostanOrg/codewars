@@ -1,5 +1,6 @@
 """
-Test for -> Grasshopper - Summation
+Test for -> Grasshopper - Summation.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.grasshopper_summation.summation import summation
 
@@ -28,14 +30,18 @@ from kyu_8.grasshopper_summation.summation import summation
     name='Source/Kata')
 # pylint: enable=R0801
 class SummationTestCase(unittest.TestCase):
-    """
-    Testing summation function
-    """
+    """Testing summation function."""
 
-    def test_summation(self):
+    @parameterized.expand([
+        (1, 1),
+        (8, 36),
+        (22, 253),
+        (100, 5050),
+        (213, 22791)])
+    def test_summation(self, num, expected):
         """
-        Testing summation function
-        with various test inputs
+        Testing summation function with various test inputs.
+
         :return:
         """
         # pylint: disable=R0801
@@ -43,21 +49,13 @@ class SummationTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
-        with allure.step("Enter number and verify the output"):
-            test_data: tuple = (
-                (1, 1),
-                (8, 36),
-                (22, 253),
-                (100, 5050),
-                (213, 22791))
-
-            for d in test_data:
-                num: int = d[0]
-                expected: int = d[1]
-                print_log(num=num, expected=expected)
-                self.assertEqual(summation(num), expected)
+        with allure.step(f"Enter a number: {num} "
+                         f"and verify the expected output: {expected}."):
+            print_log(num=num, expected=expected)
+            self.assertEqual(summation(num), expected)

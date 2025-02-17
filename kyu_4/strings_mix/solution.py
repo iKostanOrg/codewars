@@ -1,5 +1,5 @@
 """
-Solution for -> Strings Mix
+Solution for -> Strings Mix.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -12,6 +12,8 @@ LOWERCASE = string.ascii_lowercase
 
 def mix(s1: str, s2: str) -> str:
     """
+    Mix function.
+
     Given two strings s1 and s2, we want to visualize
     how different the two strings are. We will only
     take into account the lowercase letters (a to z).
@@ -49,6 +51,8 @@ def mix(s1: str, s2: str) -> str:
 
 def sort_results(results: list) -> list:
     """
+    Sorting results function.
+
     The results will be in decreasing order of their length
     and when they have the same length sorted in ascending
     lexicographic order (letters and digits - more precisely
@@ -56,7 +60,7 @@ def sort_results(results: list) -> list:
     :param results:
     :return:
     """
-    results: list = sorted(results)
+    results = sorted(results)
     is_sorted: bool = False
 
     while not is_sorted:
@@ -77,7 +81,8 @@ def sort_results(results: list) -> list:
 
 def get_counters(s: str) -> dict:
     """
-    Get counters
+    Get counters.
+
     :param s: str
     :return: dict
     """

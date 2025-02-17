@@ -1,5 +1,6 @@
 """
-Testing Line Safari functionality
+Testing Line Safari functionality.
+
 Negative test cases
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -8,7 +9,6 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import unittest
-import pytest
 import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.line_safari import line
@@ -26,18 +26,20 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
 @allure.link(
     url='https://www.codewars.com/kata/59c5d0b0a25c8c99ca000237',
     name='Source/Kata')
-@pytest.mark.skip(reason="The solution is not ready")
 # pylint: enable-msg=R0801
 class LineNegativeTestCase(unittest.TestCase):
     """
-    Testing Line Safari functionality
+    Testing Line Safari functionality.
+
     Negative test cases
     """
 
     def test_line_negative(self):
         """
-        Testing Line Safari functionality
-        Negative test cases
+        Testing Line Safari functionality.
+
+        Negative test cases.
+        :return:
         """
         allure.dynamic.title("Testing Line Safari functionality - NEGATIVE")
         # pylint: disable-msg=R0801
@@ -73,11 +75,7 @@ class LineNegativeTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         expected: bool = False
         for grid in test_data:
-
             actual_result: bool = line(grid)
-            for row in grid:
-                print(row)
-
             print_log(expected=expected,
                       actual_result=actual_result)
 

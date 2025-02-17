@@ -1,5 +1,6 @@
 """
-Solution for -> Formatting decimal places #1
+Solution for -> Formatting decimal places #1.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.formatting_decimal_places_1.two_decimal_places \
     import two_decimal_places
@@ -29,14 +31,18 @@ from kyu_7.formatting_decimal_places_1.two_decimal_places \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class TwoDecimalPlacesTestCase(unittest.TestCase):
-    """
-    Testing two_decimal_places function
-    """
+    """Testing two_decimal_places function."""
 
-    def test_two_decimal_places(self):
+    @parameterized.expand([
+        (10.1289767789, 10.12,
+         "didn't work for 10.1289767789"),
+        (-7488.83485834983, -7488.83,
+         "didn't work for -7488.83485834983"),
+        (4.653725356, 4.65,
+         "didn't work for 4.653725356")])
+    def test_two_decimal_places(self, number, expected, msg):
         """
-        Testing two_decimal_places function
-        with various test inputs
+        Testing two_decimal_places function with various test inputs.
 
         Each floating-point number should be
         formatted that only the first two
@@ -48,7 +54,6 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
 
         Don't round the numbers! Just cut them
         after two decimal places!
-
         :return:
         """
         # pylint: disable-msg=R0801
@@ -61,20 +66,7 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Pass a number and verify the output"):
-            test_data: tuple = (
-                (10.1289767789, 10.12,
-                 "didn't work for 10.1289767789"),
-                (-7488.83485834983, -7488.83,
-                 "didn't work for -7488.83485834983"),
-                (4.653725356, 4.65,
-                 "didn't work for 4.653725356"))
-
-            for number, expected, msg in test_data:
-
-                print_log(number=number,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 two_decimal_places(number),
-                                 msg)
+        with allure.step(f"Pass a number: {number} "
+                         f"and verify the expected output: {expected}."):
+            print_log(number=number, expected=expected)
+            self.assertEqual(expected, two_decimal_places(number), msg)

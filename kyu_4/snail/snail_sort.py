@@ -1,5 +1,5 @@
 """
-Solution for -> Snail
+Solution for -> Snail.
 
 Returns the array elements arranged from outermost elements
 to the middle element, traveling clockwise.
@@ -11,6 +11,8 @@ GitHub: https://github.com/ikostan
 
 def snail(snail_map: list) -> list:
     """
+    Snail function.
+
     Returns the array elements arranged from outermost elements
     to the middle element, traveling clockwise.
 
@@ -21,7 +23,8 @@ def snail(snail_map: list) -> list:
     if not snail_map:
         return []
 
-    result = []
+    result: list = []
+
     while snail_map:
         try:
             # 1 left to right

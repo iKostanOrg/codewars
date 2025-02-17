@@ -1,14 +1,152 @@
+---
 name: Main Build Pipeline
 
-on:
-  push:
-    branches:
+on:   # yamllint disable-line rule:truthy
+  pull_request:
+    branches-ignore:
       - master
+      - kyu2
+      - kyu3
+      - kyu4
+      - kyu5
+      - kyu6
+      - kyu7
+      - kyu8
+      - utils
+      - Documentation
+  push:
+    branches-ignore:
+      - kyu2
+      - kyu3
+      - kyu4
+      - kyu5
+      - kyu6
+      - kyu7
+      - kyu8
+      - utils
+      - Documentation
 
 jobs:
   markdown:
     name: Markdown Lint
     uses: iKostanOrg/codewars/.github/workflows/markdown_lint.yml@master
-  pyint:
-    name: PyLint
+  pylint:
+    name: Py Lint
     uses: iKostanOrg/codewars/.github/workflows/pylint.yml@master
+  mypy:
+    name: MyPy Lint
+    uses: iKostanOrg/codewars/.github/workflows/mypy.yml@master
+  flake8:
+    name: Flake8 Lint
+    uses: iKostanOrg/codewars/.github/workflows/flake8.yml@master
+  yamllint:
+    name: YAML Lint
+    uses: iKostanOrg/codewars/.github/workflows/yamllint.yml@master
+  pydocstyle:
+    name: PyDocStyle Lint
+    uses: iKostanOrg/codewars/.github/workflows/pydocstyle.yml@master
+  pytype_kyu2:
+    name: PyType Lint (kyu2)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu2.yml@master
+  pytype_kyu3:
+    name: PyType Lint (kyu3)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu3.yml@master
+  pytype_kyu6:
+    name: PyType Lint (kyu6)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu6.yml@master
+  pytype_kyu7:
+    name: PyType Lint (kyu7)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu7.yml@master
+  pytype_kyu8:
+    name: PyType Lint (kyu8)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu8.yml@master
+  pytest:
+    name: Unitest with pytest
+    needs:
+      - pytype_kyu2
+      - pytype_kyu3
+      - pytype_kyu6
+      - pytype_kyu7
+      - pytype_kyu8
+    uses: iKostanOrg/codewars/.github/workflows/pytest.yml@master
+  codacy:
+    name: Codacy GitHub Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codacy-coverage-reporter.yaml@master
+    secrets:
+      codacy_api_token: ${{ secrets.CODACY_API_TOKEN }}
+  codecov:
+    name: Codecov GitHub Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codecov.yml@master
+    # Why is Codecov upload step in GitHub Actions not finding the token?
+    # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
+    secrets:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  codeclimate_qlty:
+    name: QLTY Github Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codeclimate_qlty_coverage.yml@master
+    secrets:
+      qlty_coverage_token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+  codeclimate:
+    name: CodeClimate Github Action
+    needs:
+      - pytest
+    uses: iKostanOrg/codewars/.github/workflows/codeclimate_coverage.yml@master
+    secrets:
+      cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
+  codeql:
+    name: CodeQL for a new build
+    needs:
+      - codacy
+      - codecov
+      - codeclimate_qlty
+      - codeclimate
+    uses: iKostanOrg/codewars/.github/workflows/codeql.yml@master
+  snyk:
+    name: Snyk for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: iKostanOrg/codewars/.github/workflows/snyk.yml@master
+    secrets:
+      snyk_token: ${{ secrets.SNYK_TOKEN }}

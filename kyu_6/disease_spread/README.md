@@ -56,4 +56,4 @@ Keeping track of the values of susceptibles, infecteds and recovereds
 you can plot the solutions of the 3 differential equations. See an
 example below on the plot.
 
-[Source](https://www.codewars.com/kata/566543703c72200f0b0000c9/train/python)
+[Source](https://www.codewars.com/kata/566543703c72200f0b0000c9)

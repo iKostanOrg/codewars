@@ -27,4 +27,4 @@ valid ASCII characters. Furthermore, the input string may be empty and/or not
 contain any parentheses at all. Do not treat other forms of brackets as
 parentheses (e.g. `[]`, `{}`, `<>`).
 
-[Source](https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python)
+[Source](https://www.codewars.com/kata/52774a314c2333f0a7000688)

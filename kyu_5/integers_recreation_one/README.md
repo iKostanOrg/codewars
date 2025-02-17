@@ -18,4 +18,4 @@ list_squared(1, 250) --> [[1, 1], [42, 2500], [246, 84100]]
 list_squared(42, 250) --> [[42, 2500], [246, 84100]]
 ```
 
-[Source](https://www.codewars.com/kata/55aa075506463dac6600010d/train/python)
+[Source](https://www.codewars.com/kata/55aa075506463dac6600010d)

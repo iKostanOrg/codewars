@@ -80,4 +80,4 @@ P.S.: I understand, that with larger inputs checking for mismatches in the expec
 and actual output can be cumbersome, but as of now I can hardly come up with something
 that would make this easier. Any ideas would be helpful!
 
-[Source](https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python)
+[Source](https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a)

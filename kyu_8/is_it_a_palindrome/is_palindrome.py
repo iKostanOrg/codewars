@@ -1,5 +1,6 @@
 """
-Solution for -> Is it a palindrome?
+Solution for -> Is it a palindrome?.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,10 @@ GitHub: https://github.com/ikostan
 
 def is_palindrome(s: str) -> bool:
     """
+    Palindrome testing function.
+
     Write function isPalindrome that checks if
-    a given string (case insensitive) is a palindrome.
+    a given string (case-insensitive) is a palindrome.
     :param s: str
     :return: bool
     """

@@ -31,4 +31,4 @@ result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", 
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python)
+[Source](https://www.codewars.com/kata/51c8e37cee245da6b40000bd)

@@ -1,5 +1,6 @@
 """
-Test for -> Array to HTML table
+Test for -> Array to HTML table.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -22,16 +23,15 @@ from kyu_6.array_to_html_table.to_table import to_table
             'ARRAYS',
             'LISTS')
 @allure.link(
-    url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a/train/python',
+    url='https://www.codewars.com/kata/5e7e4b7cd889f7001728fd4a',
     name='Source/Kata')
 class ArrayToTableTestCase(unittest.TestCase):
-    """
-    Testing to_table function
-    """
+    """Testing to_table function."""
 
     def test_array_to_table_function(self):
         """
-        Testing to_table with various test data
+        Testing to_table with various test data.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -46,7 +46,7 @@ class ArrayToTableTestCase(unittest.TestCase):
             "(data, header, index) and returns a string "
             "containing HTML tags representing the table.</p>")
         # pylint: enable-msg=R0801
-        test_data = ([
+        test_data: tuple = (
             {
                 "input": ([["o"]]),
                 "output": "<table><tbody>"
@@ -101,9 +101,7 @@ class ArrayToTableTestCase(unittest.TestCase):
                           "<tbody>"
                           "<tr><td>True</td><td>False</td><td>False</td><td>True</td>"
                           "<td>True</td></tr>"
-                          "</tbody></table>"
-            },
-        ])
+                          "</tbody></table>"})
 
         for test_item in test_data:
             data: list = test_item["input"][0]
@@ -112,6 +110,7 @@ class ArrayToTableTestCase(unittest.TestCase):
             expected = test_item["output"]
             actual_result = to_table(data, header, index)
 
-            with allure.step("Enter a test data and verify the expected output vs actual result"):
+            with allure.step("Enter a test data and verify expected"
+                             " output vs actual result"):
                 print_log(exp=expected, res=actual_result)
                 self.assertEqual(expected, actual_result)

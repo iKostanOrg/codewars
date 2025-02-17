@@ -1,5 +1,6 @@
 """
-Test for -> Formatting decimal places #0
+Test for -> Formatting decimal places #0.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.formatting_decimal_places_0.two_decimal_places \
     import two_decimal_places
@@ -29,14 +31,21 @@ from kyu_8.formatting_decimal_places_0.two_decimal_places \
     name='Source/Kata')
 # pylint: enable=R0801
 class TwoDecimalPlacesTestCase(unittest.TestCase):
-    """
-    Testing two_decimal_places function
-    """
+    """Testing two_decimal_places function."""
 
-    def test_two_decimal_places(self):
+    @parameterized.expand([
+        (4.659725356,
+         4.66,
+         "didn't work for 4.659725356"),
+        (173735326.3783732637948948,
+         173735326.38,
+         "didn't work for 173735326.3783732637948948"),
+        (4.653725356,
+         4.65,
+         "didn't work for 4.653725356")])
+    def test_two_decimal_places(self, n, expected, msg):
         """
-        Testing two_decimal_places function
-        with various test inputs.
+        Testing two_decimal_places function with various test inputs.
 
         Each number should be formatted that it is
         rounded to two decimal places. You don't
@@ -50,25 +59,12 @@ class TwoDecimalPlacesTestCase(unittest.TestCase):
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
             '<h3>Codewars badge:</h3>'
-            '<img src="https://www.codewars.com/users/myFirstCode'
-            '/badges/large">'
+            '<img src="'
+            'https://www.codewars.com/users/myFirstCode/badges/large'
+            '">'
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
         with allure.step("Pass a number and verify the output"):
-            data: tuple = (
-                (4.659725356,
-                 4.66,
-                 "didn't work for 4.659725356"),
-                (173735326.3783732637948948,
-                 173735326.38,
-                 "didn't work for 173735326.3783732637948948"),
-                (4.653725356,
-                 4.65,
-                 "didn't work for 4.653725356"))
-
-            for n, expected, msg in data:
-                print_log(n=n, expected=expected)
-                self.assertEqual(expected,
-                                 two_decimal_places(n),
-                                 msg)
+            print_log(n=n, expected=expected)
+            self.assertEqual(expected, two_decimal_places(n), msg)

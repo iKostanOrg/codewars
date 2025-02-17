@@ -22,4 +22,4 @@ foo099 -> foo100
 
 *Attention:* If the number has leading zeros the amount of digits should be considered.
 
-[Source](https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/python)
+[Source](https://www.codewars.com/kata/54a91a4883a7de5d7800009c)

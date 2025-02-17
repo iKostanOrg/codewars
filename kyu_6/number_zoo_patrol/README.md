@@ -16,4 +16,4 @@ Note: huge lists will be tested.
 [4, 2, 3]  =>  1
 ```
 
-[Source](https://www.codewars.com/kata/5276c18121e20900c0000235/train/python)
+[Source](https://www.codewars.com/kata/5276c18121e20900c0000235)

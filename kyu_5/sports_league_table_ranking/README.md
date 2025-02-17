@@ -64,4 +64,4 @@ better scoring differential, it ranks better than Team 3. All values of Team
 
 In this example you have to return the array `[4, 4, 6, 3, 1, 2].`
 
-[Source](https://www.codewars.com/kata/5e0baea9d772160032022e8c/train/python)
+[Source](https://www.codewars.com/kata/5e0baea9d772160032022e8c)

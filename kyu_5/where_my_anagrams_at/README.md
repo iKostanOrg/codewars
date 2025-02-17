@@ -23,4 +23,4 @@ anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/python)
+[Source](https://www.codewars.com/kata/523a86aa4230ebb5420001e1)

@@ -1,5 +1,6 @@
 """
-Test for -> String subpattern recognition I
+Test for -> String subpattern recognition I.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -30,13 +31,11 @@ from kyu_6.string_subpattern_recognition_1.has_subpattern import has_subpattern
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
-    """
-    String subpattern recognition I
-    Testing 'has_subpattern' function
-    """
+    """Testing 'has_subpattern' function."""
+
     def test_has_subpattern(self):
         """
-        String subpattern recognition I
+        String subpattern recognition I.
 
         Verify that 'has_subpattern' function to returns
         either true/True or false/False if a string can be
@@ -55,7 +54,7 @@ class HasSubpatternTestCase(unittest.TestCase):
 
         with allure.step("Pass the string and verify the output"):
             # pylint: disable-msg=R0801
-            test_data = [
+            test_data: tuple = (
                 ("a", False),
                 ("aaaa", True),
                 ("abcd", False),
@@ -234,9 +233,9 @@ class HasSubpatternTestCase(unittest.TestCase):
                  'Og8DIxUwpu6u5z0TlmPo9WpIx9sNOMe8bKJPIdmxv22iUvNs5dY5M6J0VK5NNPeFIM5ze2gSDD'
                  'A5AgJRazkzypfJCXAf3ZTaPQZSmaBUw7pLu0yhXPFNMukrjhOSGMwXnUElhSDpNl30wpmawcCS'
                  'eYG0kZXuBfwMSExZyTf0ip5ANOgOSoIHN6FnbqntM52X8HjSbxPm4jAo9fBmXkbWSNhfWbLF1O'
-                 'isf6cbXgHamWcOshCf3H6nqIqI1FVfxaO8warADMpwGgo9BHMvFvr2wc', True)
-            ]
-
+                 'isf6cbXgHamWcOshCf3H6nqIqI1FVfxaO8warADMpwGgo9BHMvFvr2wc', True))
+            # pylint: disable-msg=R0801
             for data in test_data:
                 print_log(string=data[0], expected=data[1])
                 self.assertEqual(data[1], has_subpattern(data[0]))
+            # pylint: disable-msg=R0801

@@ -21,4 +21,4 @@ odd_row(3)  ==  [7, 9, 11]
 
 **Note:** your code should be optimized to handle big inputs.
 
-[Source](https://www.codewars.com/kata/5d5a7525207a674b71aa25b5/train/python)
+[Source](https://www.codewars.com/kata/5d5a7525207a674b71aa25b5)

@@ -34,4 +34,4 @@ new_potion.volume  ==  19
 
 **Note:** Use ceiling when calculating the resulting potion's color.
 
-[Source](https://www.codewars.com/kata/5981ff1daf72e8747d000091/train/python)
+[Source](https://www.codewars.com/kata/5981ff1daf72e8747d000091)

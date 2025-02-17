@@ -17,4 +17,4 @@ If no bigger number can be composed using those digits, return `-1`:
 531 ==> -1
 ```
 
-[Source](https://www.codewars.com/kata/55983863da40caa2c900004e/train/python)
+[Source](https://www.codewars.com/kata/55983863da40caa2c900004e)

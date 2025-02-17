@@ -27,4 +27,4 @@ be helpful, but as much larger numbers will be used, using an array/list to
 compute the number of the survivor may be too slow; you may assume that both n
 and k will always be >=1.
 
-[Source](https://www.codewars.com/kata/555624b601231dc7a400017a/train/python)
+[Source](https://www.codewars.com/kata/555624b601231dc7a400017a)

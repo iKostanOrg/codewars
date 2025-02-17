@@ -40,4 +40,4 @@ Your code should be performant.
 *   Matrix is empty
 *   Distance equals 0
 
-[Source](https://www.codewars.com/kata/5b47ba689c9a7591e70001a3/train/python)
+[Source](https://www.codewars.com/kata/5b47ba689c9a7591e70001a3)

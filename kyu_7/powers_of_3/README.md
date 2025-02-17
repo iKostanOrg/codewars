@@ -1,6 +1,6 @@
 # Powers of 3
 
-Given a positive integer N, return the largest integer k such that 3^k < N.
+Given a positive integer `N`, return the largest integer `k` such that `3^k < N`.
 
 For example,
 

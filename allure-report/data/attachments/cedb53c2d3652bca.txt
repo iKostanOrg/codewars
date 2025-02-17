@@ -1,0 +1,30 @@
+
+LOG =>
+grid: ['X-----|----X'],
+expected: X,
+actual_result: X
+
+
+LOG =>
+grid: [' X  ', ' |  ', ' +  ', ' X  '],
+expected: X,
+actual_result: X
+
+
+LOG =>
+grid: ['   |--------+    ', 'X---        ---+ ', '               | ', '               X '],
+expected: X,
+actual_result: X
+
+
+LOG =>
+grid: ['              ', '   +------    ', '   |          ', 'X--+      X   ', '              '],
+expected: X,
+actual_result: X
+
+
+LOG =>
+grid: ['      +------+', '      |      |', 'X-----+------+', '      |       ', '      X       '],
+expected: X,
+actual_result: X
+

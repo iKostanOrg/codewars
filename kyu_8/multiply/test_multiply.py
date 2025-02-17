@@ -1,5 +1,6 @@
 """
-Test for -> Multiply
+Test for -> Multiply.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -26,14 +27,12 @@ from kyu_8.multiply.multiply import multiply
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class MultiplyTestCase(unittest.TestCase):
-    """
-    Testing multiply function
-    """
+    """Testing multiply function."""
 
     def test_multiply(self):
         """
-        Verify that multiply function
-        returns correct result
+        Verify that multiply function returns correct results.
+
         :return:
         """
         # pylint: disable-msg=R0801

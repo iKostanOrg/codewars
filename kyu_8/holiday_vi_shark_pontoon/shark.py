@@ -1,5 +1,6 @@
 """
-Solution for -> Holiday VI - Shark Pontoon
+Solution for -> Holiday VI - Shark Pontoon.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -11,6 +12,8 @@ def shark(pontoon_distance,
           shark_speed,
           dolphin) -> str:
     """
+    Shark function.
+
     You are given 5 variables: sharkDistance = distance the shark
     needs to cover to eat you in metres, sharkSpeed = how fast it
     can move in metres/second, pontoonDistance = how far you need
@@ -19,7 +22,6 @@ def shark(pontoon_distance,
     the swimming speed of the shark as the dolphin will attack it.
 
     If you make it, return "Alive!", if not, return "Shark Bait!".
-
     :param pontoon_distance:
     :param shark_distance:
     :param you_speed:

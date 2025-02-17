@@ -23,4 +23,4 @@ repeated only once and thus equalling the original input string).
 > has_subpattern("bbabbaaabbaaaabb") == "ab" #same as above, just shuffled
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/5a4a2973d8e14586c700000a/train/python)
+[Source](https://www.codewars.com/kata/5a4a2973d8e14586c700000a)

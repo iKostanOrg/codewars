@@ -1,5 +1,6 @@
 """
-Solution for -> Number of trailing zeros of N!
+Solution for -> Number of trailing zeros of N!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,8 +8,10 @@ GitHub: https://github.com/ikostan
 
 def zeros(n) -> int:
     """
-    A program that will calculate the number of
-    trailing zeros in a factorial of a given number.
+    Zeros function.
+
+    A program that calculate the number of trailing
+    zeros in a factorial of a given number.
 
     N! = 1 * 2 * 3 * ... * N
 
@@ -29,11 +32,10 @@ def zeros(n) -> int:
     :param n: int
     :return: int
     """
-
     # Initialize result
-    count = 0
+    count: int = 0
+    i: int = 5
 
-    i = 5
     while (n / i) >= 1:
         # update Count
         count += int(n / i)

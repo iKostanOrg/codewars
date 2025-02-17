@@ -1,5 +1,6 @@
 """
-Test for -> My head is at the wrong end!
+Test for -> My head is at the wrong end!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.my_head_is_at_the_wrong_end.fix_the_meerkat \
     import fix_the_meerkat
@@ -30,13 +32,24 @@ from kyu_8.my_head_is_at_the_wrong_end.fix_the_meerkat \
 # pylint: enable=R0801
 # @pytest.mark.skip(reason="The solution is not ready")
 class FixTheMeerkatTestCase(unittest.TestCase):
-    """
-    Testing fix_the_meerkat function
-    """
+    """Testing fix_the_meerkat function."""
 
-    def test_fix_the_meerkat(self):
+    @parameterized.expand([
+        (["tail", "body", "head"], ["head", "body", "tail"]),
+        (["tails", "body", "heads"], ["heads", "body", "tails"]),
+        (["bottom", "middle", "top"], ["top", "middle", "bottom"]),
+        (["lower legs", "torso", "upper legs"],
+         ["upper legs", "torso", "lower legs"]),
+        (["ground", "rainbow", "sky"], ["sky", "rainbow", "ground"])])
+    def test_fix_the_meerkat(self, arr, expected):
         """
-        Testing fix_the_meerkat function with various test data
+        Testing fix_the_meerkat function with various test data.
+
+        You will be given an array which will have
+        three values (tail, body, head).
+        It is your job to re-arrange the array so
+        that the animal is the right way round
+        (head, body, tail).
         :return:
         """
         # pylint: disable=R0801
@@ -54,21 +67,9 @@ class FixTheMeerkatTestCase(unittest.TestCase):
             "so that the animal is the right way round (head, body, tail)."
             "</p>")
         # pylint: disable=R0801
-        test_data: tuple = (
-            (["tail", "body", "head"], ["head", "body", "tail"]),
-            (["tails", "body", "heads"], ["heads", "body", "tails"]),
-            (["bottom", "middle", "top"], ["top", "middle", "bottom"]),
-            (["lower legs", "torso", "upper legs"],
-             ["upper legs", "torso", "lower legs"]),
-            (["ground", "rainbow", "sky"], ["sky", "rainbow", "ground"]))
-
-        for data in test_data:
-            arr: list = data[0]
-            expected: list = data[1]
-            result: list = fix_the_meerkat(arr)
-
-            with allure.step(f"Enter test data: {arr} "
-                             f"and assert actual result: {result} "
-                             f"vs expected: {expected}"):
-                print_log(arr=arr, result=result, expected=expected)
-                self.assertEqual(expected, result)
+        result: list = fix_the_meerkat(arr)
+        with allure.step(f"Enter test data: {arr} "
+                         f"and assert actual result: {result} "
+                         f"vs expected: {expected}"):
+            print_log(arr=arr, result=result, expected=expected)
+            self.assertEqual(expected, result)

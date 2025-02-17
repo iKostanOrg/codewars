@@ -1,11 +1,12 @@
 """
-Solution for -> Find the first non-consecutive number
+Solution for -> Find the first non-consecutive number.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
 
-def first_non_consecutive(arr: list) -> int:
+def first_non_consecutive(arr: list) -> int | None:
     """
     Find the first element of an array that is not consecutive.
 

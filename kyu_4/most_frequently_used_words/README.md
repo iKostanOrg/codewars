@@ -39,4 +39,4 @@ Bonus points (not really, but just for fun):
     input text.
 2.  Avoid sorting the entire array of unique words.
 
-[Source](https://www.codewars.com/kata/51e056fe544cf36c410000fb/train/python)
+[Source](https://www.codewars.com/kata/51e056fe544cf36c410000fb)

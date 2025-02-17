@@ -1,12 +1,12 @@
 """
-Test for -> The Greatest Warrior -> test warrior
+Test for -> The Greatest Warrior -> test warrior.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
 
-# ALGORITHMS CLASSES BASIC LANGUAGE FEATURES OBJECT-ORIENTED PROGRAMMING
-# FUNDAMENTALS RULES
+# ALGORITHMS CLASSES BASIC LANGUAGE FEATURES
+# OBJECT-ORIENTED PROGRAMMING FUNDAMENTALS RULES
 
 import unittest
 import allure
@@ -28,17 +28,17 @@ from kyu_4.the_greatest_warrior.warrior import Warrior
             'FUNDAMENTALS',
             'RULES')
 @allure.link(
-    url='https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python',
+    url='https://www.codewars.com/kata/5941c545f5c394fef900000c',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class WarriorTestCase(unittest.TestCase):
-    """
-    Testing Warrior class
-    """
+    """Testing Warrior class."""
 
     def test_warrior_tom(self):
         """
-        Testing Warrior class >>> tom
+        Testing Warrior class >>> tom.
+
+        :return:
         """
         # pylint: disable=R0801
         allure.dynamic.title("Testing Warrior class >>> tom")
@@ -67,7 +67,9 @@ class WarriorTestCase(unittest.TestCase):
 
     def test_warrior_bruce_lee(self):
         """
-        Testing Warrior class >>> bruce_lee
+        Testing Warrior class >>> bruce_lee.
+
+        :return:
         """
         # pylint: disable=R0801
         allure.dynamic.title("Testing Warrior class >>> bruce_lee")

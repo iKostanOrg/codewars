@@ -84,4 +84,4 @@ of strings with the needless directions removed (W<->E or S<->N side by side).
     the result path is itself : `["NORTH", "WEST", "SOUTH", "EAST"]`.
 *   if you want to translate, please ask before translating.
 
-[Source](https://www.codewars.com/kata/550f22f4d758534c1100025a/train/python)
+[Source](https://www.codewars.com/kata/550f22f4d758534c1100025a)

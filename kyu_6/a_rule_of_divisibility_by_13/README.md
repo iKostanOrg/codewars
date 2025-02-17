@@ -35,4 +35,4 @@ on an integer `n (>=0)`. `thirt` will return the stationary number.
 
 `thirt(321)` calculates `48, 48` and returns `48`.
 
-[Source](https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/python)
+[Source](https://www.codewars.com/kata/564057bc348c7200bd0000ff)

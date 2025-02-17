@@ -26,4 +26,4 @@ More examples in the test cases. Good luck!
 
 Brute force is not the way to go here. Look for a simplifying mathematical approach.
 
-[Source](https://www.codewars.com/kata/5e0b72d2d772160011133654/train/python)
+[Source](https://www.codewars.com/kata/5e0b72d2d772160011133654)

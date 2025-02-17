@@ -15,4 +15,4 @@ The last address will always be greater than the first one.
 > ips_between("20.0.0.10", "20.0.1.0")  ==  246
 ```
 
-[Source](https://www.codewars.com/kata/526989a41034285187000de4/train/python)
+[Source](https://www.codewars.com/kata/526989a41034285187000de4)

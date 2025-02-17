@@ -100,4 +100,4 @@ bruce_lee.achievements  # => ["Defeated Chuck Norris"]
 ```
 <!-- markdownlint-enable MD013 -->
 
-[Source](https://www.codewars.com/kata/5941c545f5c394fef900000c/train/python)
+[Source](https://www.codewars.com/kata/5941c545f5c394fef900000c)

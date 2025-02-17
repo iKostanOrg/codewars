@@ -1,5 +1,6 @@
 """
-Test for -> Keep Hydrated!
+Test for -> Keep Hydrated!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_8.keep_hydrated.keep_hydrated import litres
 
@@ -28,13 +30,20 @@ from kyu_8.keep_hydrated.keep_hydrated import litres
     name='Source/Kata')
 # pylint: disable=R0801
 class KeepHydratedTestCase(unittest.TestCase):
-    """
-    Testing litres function
-    """
+    """Testing litres function."""
 
-    def test_keep_hydrated(self):
+    @parameterized.expand([
+        (2, 1, 'should return 1 litre'),
+        (1.4, 0, 'should return 0 litres'),
+        (12.3, 6, 'should return 6 litres'),
+        (0.82, 0, 'should return 0 litres'),
+        (11.8, 5, 'should return 5 litres'),
+        (1787, 893, 'should return 893 litres'),
+        (0, 0, 'should return 0 litres')])
+    def test_keep_hydrated(self, hours, expected, message):
         """
-        Testing litres function with various test inputs
+        Testing litres function with various test inputs.
+
         :return:
         """
         # pylint: disable=R0801
@@ -45,18 +54,17 @@ class KeepHydratedTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>"
+            "Because Nathan knows it is important to stay hydrated, "
+            " he drinks 0.5 litres of water per hour of cycling."
+            "</p>"
+            "<p>"
+            "You get given the time in hours and you need to return "
+            "the number of litres Nathan will drink, rounded "
+            "to the smallest value."
+            "</p>")
         # pylint: enable=R0801
-        with allure.step("Enter hours and verify the output"):
-            test_data: tuple = (
-                (2, 1, 'should return 1 litre'),
-                (1.4, 0, 'should return 0 litres'),
-                (12.3, 6, 'should return 6 litres'),
-                (0.82, 0, 'should return 0 litres'),
-                (11.8, 5, 'should return 5 litres'),
-                (1787, 893, 'should return 893 litres'),
-                (0, 0, 'should return 0 litres'))
-
-            for hours, expected, message in test_data:
-                print_log(hours=hours, expected=expected)
-                self.assertEqual(expected, litres(hours), message)
+        with allure.step(f"Enter hours: {hours} "
+                         f"and verify the expected output: {expected}."):
+            print_log(hours=hours, expected=expected)
+            self.assertEqual(expected, litres(hours), message)

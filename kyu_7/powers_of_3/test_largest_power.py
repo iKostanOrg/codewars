@@ -1,5 +1,6 @@
 """
-Test for -> Powers of 3
+Test for -> Powers of 3.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -32,13 +33,12 @@ from kyu_7.powers_of_3.largest_power import largest_power
     name='Source/Kata')
 # pylint: enable=R0801
 class LargestPowerTestCase(unittest.TestCase):
-    """
-    Testing largestPower function
-    """
+    """Testing largestPower function."""
 
     def test_largest_power(self):
         """
-        Testing largestPower function
+        Testing largestPower function.
+
         :return:
         """
         # pylint: disable-msg=R0801
@@ -58,7 +58,7 @@ class LargestPowerTestCase(unittest.TestCase):
             self.assertEqual(largest_power(n), expected)
 
         with allure.step("Pass an integer and verify the output"):
-            n: int = 4
-            expected: int = 1
+            n = 4
+            expected = 1
             print_log(N=n, expected=expected)
             self.assertEqual(largest_power(n), expected)

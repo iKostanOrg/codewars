@@ -44,4 +44,4 @@ smallest(1000000) --> [1, 0, 6] or ...
 
 Have a look at "Sample Tests" to see the input and output in each language
 
-[Source](https://www.codewars.com/kata/573992c724fc289553000e95/train/python)
+[Source](https://www.codewars.com/kata/573992c724fc289553000e95)

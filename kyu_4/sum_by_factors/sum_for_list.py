@@ -1,5 +1,5 @@
 """
-Solution for -> sum_for_list function
+Solution for -> sum_for_list function.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -10,7 +10,9 @@ from utils.primes.primes_generator import gen_primes
 
 def sum_for_list(lst: list) -> list:
     """
-    Given an array of positive or negative integers I= [i1,..,in]
+    Sorting an array by increasing order.
+
+    Given an array of positive or negative integers I= [i1,...,in]
     the function have to produce a sorted array P of the form:
 
     [ [p, sum of all ij of I for which p is a prime factor (p positive) of ij] ...]
@@ -21,7 +23,7 @@ def sum_for_list(lst: list) -> list:
     :return: sorted array P
     """
     max_l = max(lst) if abs(max(lst)) > abs(min(lst)) else abs(min(lst))
-    results = []
+    results: list = []
 
     for prime in gen_primes():
         # stop execution in case current
@@ -40,12 +42,12 @@ def sum_for_list(lst: list) -> list:
                 m = -1
 
             if digit % (prime * m) == 0:
-                if len(temp) == 0:
+                if not temp:
                     temp.append(prime)
                 sum_digits += digit
 
         # add result in case prime in temp list
-        if len(temp) > 0:
+        if temp:
             temp.append(sum_digits)
             results.append(temp)
 

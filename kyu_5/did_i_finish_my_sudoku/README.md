@@ -56,4 +56,4 @@ Valid board example:
 For those who don't know the game, here are some information about rules and how
 to play [Sudoku](http://en.wikipedia.org/wiki/Sudoku) and [here.](http://www.sudokuessentials.com/)
 
-[Source](https://www.codewars.com/kata/53db96041f1a7d32dc0004d2/train/python)
+[Source](https://www.codewars.com/kata/53db96041f1a7d32dc0004d2)

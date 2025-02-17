@@ -12,4 +12,4 @@ For empty string return:
 
 > ('', 0)
 
-[Source](https://www.codewars.com/kata/586d6cefbcc21eed7a001155/train/python)
+[Source](https://www.codewars.com/kata/586d6cefbcc21eed7a001155)

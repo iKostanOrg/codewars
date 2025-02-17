@@ -1,5 +1,6 @@
 """
-Solution for -> Vasya - Clerk
+Solution for -> Vasya - Clerk.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,11 +8,13 @@ GitHub: https://github.com/ikostan
 
 def tickets(people: list) -> str:
     """
-    Return YES, if Vasya can sell a ticket to every
+    Tickets.
+
+    Return 'YES', if Vasya can sell a ticket to every
     person and give change with the bills he has at
-    hand at that moment. Otherwise return NO.
-    :param people:
-    :return:
+    hand at that moment. Otherwise, return 'NO'.
+    :param people: list
+    :return: str
     """
     vasya: list = []
 

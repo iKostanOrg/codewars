@@ -1,5 +1,6 @@
 """
-Solution for -> MakeUpperCase
+Solution for -> MakeUpperCase.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -7,7 +8,8 @@ GitHub: https://github.com/ikostan
 
 def make_upper_case(s: str) -> str:
     """
-    Function that make UpperCase.
+    Convert to UpperCase.
+
     :param s: str
     :return: str
     """

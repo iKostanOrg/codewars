@@ -1,5 +1,6 @@
 """
-Test for -> String subpattern recognition III
+Test for -> String subpattern recognition III.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,7 +11,8 @@ GitHub: https://github.com/ikostan
 import unittest
 import allure
 from utils.log_func import print_log
-from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
+from kyu_6.string_subpattern_recognition_3.has_subpattern \
+    import has_subpattern
 
 
 # pylint: disable-msg=R0801
@@ -26,16 +28,15 @@ from kyu_6.string_subpattern_recognition_3.has_subpattern import has_subpattern
             'DECLARATIVE PROGRAMMING',
             'ADVANCED LANGUAGE FEATURES')
 @allure.link(
-    url='https://www.codewars.com/kata/5a4a2973d8e14586c700000a/train/python',
+    url='https://www.codewars.com/kata/5a4a2973d8e14586c700000a',
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class HasSubpatternTestCase(unittest.TestCase):
-    """
-    Testing 'has_subpattern' function
-    """
+    """Testing 'has_subpattern' function."""
+
     def test_has_subpattern(self):
         """
-        Verify that 'has_subpattern' function
+        Verify that 'has_subpattern' function.
 
         Return a subpattern with sorted characters,
         otherwise return the base string with sorted
@@ -56,7 +57,7 @@ class HasSubpatternTestCase(unittest.TestCase):
         # pylint: enable-msg=R0801
         # pylint: disable-msg=C0301
         with allure.step("Pass the string and verify the output"):
-            data_set = [
+            data_set: tuple = (
                 ('sZZpCWRNzSfvfZy5CMsRbdHeb85L3DmMB7dLMIM33pylSW6hHXp'
                  'dthSmvynxF7cSUtSVShx8vwSYaa7dg4jyCzHzJqnYHRGD0sTg5z'
                  'XOB42f9fuo47NhwV7fVZkzCyIfVzUvb90M5FOx3xXPo3fqFOqZk'
@@ -154,8 +155,7 @@ class HasSubpatternTestCase(unittest.TestCase):
                  'yte9H0c8hOcsjLNyX0wMcch8L228E4e0i4Xf3cgRZmZj08j8ggg'
                  'xsX0gNRs24OLRwEE2lOM3hL0TZEEFh2c4i0N68xRR4iRTe2m2tj'
                  'N48JeERERix6gyg',
-                 '0022344689EEFHJLLMNORRTXYZccdefggghiijlmstwxy'),
-            ]
+                 '0022344689EEFHJLLMNORRTXYZccdefggghiijlmstwxy'))
             # pylint: enable-msg=C0301
             for data in data_set:
                 result = has_subpattern(data[0])

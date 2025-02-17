@@ -1,5 +1,6 @@
 """
-Test for -> Simple Pig Latin
+Test for -> Simple Pig Latin.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -8,6 +9,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_5.simple_pig_latin.pig_it import pig_it
 
@@ -20,17 +22,21 @@ from kyu_5.simple_pig_latin.pig_it import pig_it
 @allure.feature("String")
 @allure.story('Simple Pig Latin')
 @allure.tag('ALGORITHMS')
-@allure.link(url='https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/520b9d2ad5c005041100000f',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class PigItTestCase(unittest.TestCase):
-    """
-    Testing pig_it function
-    """
+    """Testing pig_it function."""
 
-    def test_pig_it(self):
+    @parameterized.expand([
+        ('Pig latin is cool', 'igPay atinlay siay oolcay'),
+        ('This is my string', 'hisTay siay ymay tringsay'),
+        ('Hello world !', 'elloHay orldway !'),
+        ("O tempora o mores !", 'Oay emporatay oay oresmay !')])
+    def test_pig_it(self, text, expected):
         """
-        Testing pig_it function
+        Testing pig_it function.
 
         The function should mpve the first letter of each
         word to the end of it, then add "ay" to the end
@@ -47,14 +53,7 @@ class PigItTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter test string and verify the output"):
-            test_data = [
-                ('Pig latin is cool', 'igPay atinlay siay oolcay'),
-                ('This is my string', 'hisTay siay ymay tringsay'),
-                ('Hello world !', 'elloHay orldway !'),
-                ("O tempora o mores !", 'Oay emporatay oay oresmay !')
-            ]
-
-            for text, expected in test_data:
-                print_log(expected=expected, text=text)
-                self.assertEqual(expected, pig_it(text))
+        with allure.step(f"Enter test string: {text} "
+                         f"and verify the output: {expected}"):
+            print_log(expected=expected, text=text)
+            self.assertEqual(expected, pig_it(text))

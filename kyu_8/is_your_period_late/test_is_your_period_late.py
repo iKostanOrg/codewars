@@ -1,5 +1,6 @@
 """
-Test for -> Is your period late
+Test for -> Is your period late.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -27,13 +28,12 @@ from kyu_8.is_your_period_late.is_your_period_late \
     name='Source/Kata')
 # pylint: enable=R0801
 class PeriodIsLateTestCase(unittest.TestCase):
-    """
-    Testing period_is_late function
-    """
+    """Testing period_is_late function."""
 
     def test_period_is_late_positive(self):
         """
-        Positive tests
+        Positive tests.
+
         :return:
         """
         # pylint: disable=R0801
@@ -44,7 +44,7 @@ class PeriodIsLateTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Positive tests.</p>")
         # pylint: enable=R0801
         with allure.step("Pass last, today and period length"):
             last: date = date(2016, 6, 13)
@@ -59,9 +59,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertTrue(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 7, 12)
-            today: date = date(2016, 8, 10)
-            cycle_length: int = 28
+            last = date(2016, 7, 12)
+            today = date(2016, 8, 10)
+            cycle_length = 28
 
             print_log(last=last,
                       today=today,
@@ -71,9 +71,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertTrue(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 7, 1)
-            today: date = date(2016, 8, 1)
-            cycle_length: int = 30
+            last = date(2016, 7, 1)
+            today = date(2016, 8, 1)
+            cycle_length = 30
 
             print_log(last=last,
                       today=today,
@@ -83,9 +83,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertTrue(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 1, 1)
-            today: date = date(2016, 2, 1)
-            cycle_length: int = 30
+            last = date(2016, 1, 1)
+            today = date(2016, 2, 1)
+            cycle_length = 30
 
             print_log(last=last,
                       today=today,
@@ -96,7 +96,8 @@ class PeriodIsLateTestCase(unittest.TestCase):
 
     def test_period_is_late_negative(self):
         """
-        Negative tests
+        Negative tests.
+
         :return:
         """
         # pylint: disable=R0801
@@ -107,7 +108,7 @@ class PeriodIsLateTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p></p>")
+            "<p>Negative tests.</p>")
         # pylint: enable=R0801
         with allure.step("Pass last, today and period length"):
             last: date = date(2016, 6, 13)
@@ -122,9 +123,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertFalse(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 6, 13)
-            today: date = date(2016, 7, 16)
-            cycle_length: int = 35
+            last = date(2016, 6, 13)
+            today = date(2016, 7, 16)
+            cycle_length = 35
 
             print_log(last=last,
                       today=today,
@@ -134,9 +135,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertFalse(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 6, 13)
-            today: date = date(2016, 6, 29)
-            cycle_length: int = 28
+            last = date(2016, 6, 13)
+            today = date(2016, 6, 29)
+            cycle_length = 28
 
             print_log(last=last,
                       today=today,
@@ -146,9 +147,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertFalse(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 7, 12)
-            today: date = date(2016, 8, 9)
-            cycle_length: int = 28
+            last = date(2016, 7, 12)
+            today = date(2016, 8, 9)
+            cycle_length = 28
 
             print_log(last=last,
                       today=today,
@@ -158,9 +159,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertFalse(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 6, 1)
-            today: date = date(2016, 6, 30)
-            cycle_length: int = 30
+            last = date(2016, 6, 1)
+            today = date(2016, 6, 30)
+            cycle_length = 30
 
             print_log(last=last,
                       today=today,
@@ -170,9 +171,9 @@ class PeriodIsLateTestCase(unittest.TestCase):
             self.assertFalse(period_is_late(last, today, cycle_length))
 
         with allure.step("Pass last, today and period length"):
-            last: date = date(2016, 1, 1)
-            today: date = date(2016, 1, 31)
-            cycle_length: int = 30
+            last = date(2016, 1, 1)
+            today = date(2016, 1, 31)
+            cycle_length = 30
 
             print_log(last=last,
                       today=today,

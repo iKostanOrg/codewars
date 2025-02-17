@@ -9,4 +9,4 @@ domain_name("http://www.zombie-bites.com") == "zombie-bites"
 domain_name("https://www.cnet.com") == "cnet"
 ```
 
-[Source](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)
+[Source](https://www.codewars.com/kata/514a024011ea4fb54200004b)

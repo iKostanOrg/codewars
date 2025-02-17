@@ -1,5 +1,6 @@
 """
-Test for -> Fun with lists: length
+Test for -> Fun with lists: length.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -28,14 +29,11 @@ from kyu_7.fun_with_lists_length.length import length
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LengthTestCase(unittest.TestCase):
-    """
-    Testing length function
-    """
+    """Testing length function."""
 
     def test_length_none(self):
         """
-        Testing length function
-        where head = None
+        Testing length function where head = None.
 
         The method length, which accepts a linked list
         (head), and returns the length of the list.
@@ -57,7 +55,7 @@ class LengthTestCase(unittest.TestCase):
 
     def test_length(self):
         """
-        Testing length function
+        Testing length function.
 
         The method length, which accepts a linked list
         (head), and returns the length of the list.

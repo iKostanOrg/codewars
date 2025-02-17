@@ -1,5 +1,5 @@
 """
-Testing Decoding functionality
+Testing Decoding functionality.
 
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
@@ -31,14 +31,11 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class DecodingTestCase(unittest.TestCase):
-    """
-    Testing Decoding functionality
-    """
+    """Testing Decoding functionality."""
 
     def test_decoding(self):
-        """
-        Testing Decoding functionality
-        """
+        """Testing Decoding functionality."""
+        # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Decoding functionality")
         allure.dynamic.severity(allure.severity_level.NORMAL)
         allure.dynamic.description_html(
@@ -48,14 +45,13 @@ class DecodingTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Verify cipher function. This \"decode\" is used "
             "to decode a string.</p>")
-
+        # pylint: enable-msg=R0801
         test_data: tuple = (
             ("H !e,Wdloollr", 4, "Hello, World!"),
             ("WECRLTEERDSOEEFEAOCAIVDEN", 3, "WEAREDISCOVEREDFLEEATONCE"),
             ("", 3, ""),
             ("WEAREDISCOVEREDFLEEATONCE", 10, "WADCEDETNECOEFROIREESVELA"),
-            ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE")
-        )
+            ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE"))
         # pylint: disable-msg=R0801
         for string, n, expected in test_data:
 

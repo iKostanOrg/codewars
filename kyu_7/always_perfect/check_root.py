@@ -1,5 +1,6 @@
 """
-Solution for -> Always perfect
+Solution for -> Always perfect.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -10,6 +11,8 @@ from typing import List
 
 def check_root(string: str) -> str:
     """
+    Check root.
+
     A function which takes numbers separated by commas
     in string format and returns the number which is a
     perfect square and the square root of that number.

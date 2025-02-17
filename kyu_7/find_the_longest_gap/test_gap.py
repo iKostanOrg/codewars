@@ -1,5 +1,6 @@
 """
-Test for -> Find the longest gap!
+Test for -> Find the longest gap!.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +10,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from kyu_7.find_the_longest_gap.gap import gap
 
@@ -27,13 +29,16 @@ from kyu_7.find_the_longest_gap.gap import gap
 @allure.link(url='https://www.codewars.com/kata/55b86beb1417eab500000051',
              name='Source/Kata')
 class GapTestCase(unittest.TestCase):
-    """
-    Testing gap function
-    """
+    """Testing gap function."""
 
-    def test_gap(self):
+    @parameterized.expand([
+        (9, 2),
+        (529, 4),
+        (20, 1),
+        (15, 0)])
+    def test_gap(self, num, expected):
         """
-        Testing gap function with various test inputs
+        Testing gap function with various test inputs.
 
         A binary gap within a positive number num is
         any sequence of consecutive zeros that is
@@ -57,17 +62,7 @@ class GapTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step("Enter integer and assert the result"):
-            data: tuple = (
-                (9, 2),
-                (529, 4),
-                (20, 1),
-                (15, 0))
-
-            for num, expected in data:
-
-                print_log(num=num,
-                          expected=expected)
-
-                self.assertEqual(expected,
-                                 gap(num))
+        with allure.step(f"Enter integer num: {num} "
+                         f"and assert the expected result: {expected}."):
+            print_log(num=num, expected=expected)
+            self.assertEqual(expected, gap(num))

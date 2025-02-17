@@ -25,4 +25,4 @@ lst.extend([104, 1044, 4066, -2])
 lst[9] = -2
 ```
 
-[Source](https://www.codewars.com/kata/5e882048999e6c0023412908/train/python)
+[Source](https://www.codewars.com/kata/5e882048999e6c0023412908)

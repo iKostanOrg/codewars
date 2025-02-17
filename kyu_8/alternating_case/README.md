@@ -6,7 +6,7 @@ selected language; **see the initial solution for details**) such that
 each lowercase letter becomes uppercase and each uppercase letter becomes
 lowercase. For example:
 
-```test
+```bash
 > "hello world".toAlternatingCase() === "HELLO WORLD"
 >
 > "HELLO WORLD".toAlternatingCase() === "hello world"

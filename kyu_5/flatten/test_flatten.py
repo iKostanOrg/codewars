@@ -1,5 +1,6 @@
 """
-Solution for -> flatten()
+Test for -> flatten().
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -21,16 +22,17 @@ from utils.log_func import print_log
 @allure.story('flatten()')
 @allure.tag('ALGORITHMS',
             'ARRAYS')
-@allure.link(url='https://www.codewars.com/kata/513fa1d75e4297ba38000003/train/python',
-             name='Source/Kata')
+@allure.link(
+    url='https://www.codewars.com/kata/513fa1d75e4297ba38000003',
+    name='Source/Kata')
 # pylint: enable-msg=R0801
 class FlattenTestCase(unittest.TestCase):
-    """
-    Testing flatten function
-    """
+    """Testing flatten function."""
 
     def test_flatten(self):
         """
+        Testing flatten function with various test data.
+
         For this exercise you will create a global flatten method.
         The method takes in any number of arguments and flattens
         them into a single array. If any of the arguments passed in
@@ -58,7 +60,7 @@ class FlattenTestCase(unittest.TestCase):
             "<p></p>")
         # pylint: enable-msg=R0801
         with allure.step("Enter test data #1 and verify the output"):
-            expected = []
+            expected: list = []
             print_log(args=None,
                       expected=expected)
             self.assertListEqual(expected,
@@ -88,4 +90,5 @@ class FlattenTestCase(unittest.TestCase):
         with allure.step("Enter test data #5 and verify the output"):
             expected = ['hello', 2, 'text', 4, 5, '[list]']
             print_log(args=(['hello', 2, ['text', [4, 5]]], [[]], '[list]'), expected=expected)
-            self.assertListEqual(expected, flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))
+            self.assertListEqual(expected,
+                                 flatten(['hello', 2, ['text', [4, 5]]], [[]], '[list]'))

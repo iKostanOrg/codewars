@@ -1,5 +1,6 @@
 """
-Test for -> Surface Area and Volume of a Box
+Test for -> Surface Area and Volume of a Box.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -29,13 +30,12 @@ from kyu_8.surface_area_and_volume_of_box.get_size \
              name='Source/Kata')
 # pylint: enable=R0801
 class GetSizeTestCase(unittest.TestCase):
-    """
-    Testing get_size function
-    """
+    """Testing get_size function."""
 
     def test_get_size(self):
         """
-        Testing get_size function with various inputs
+        Testing get_size function with various inputs.
+
         :return:
         """
         # pylint: disable=R0801
@@ -62,7 +62,7 @@ class GetSizeTestCase(unittest.TestCase):
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 1, 1, 1
-            expected: list = [6, 1]
+            expected = [6, 1]
 
             print_log(w=w,
                       h=h,
@@ -74,7 +74,7 @@ class GetSizeTestCase(unittest.TestCase):
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 1, 2, 1
-            expected: list = [10, 2]
+            expected = [10, 2]
 
             print_log(w=w,
                       h=h,
@@ -86,7 +86,7 @@ class GetSizeTestCase(unittest.TestCase):
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 1, 2, 2
-            expected: list = [16, 4]
+            expected = [16, 4]
 
             print_log(w=w,
                       h=h,
@@ -98,7 +98,7 @@ class GetSizeTestCase(unittest.TestCase):
 
         with allure.step("Pass w, h, and d values and verify the result"):
             w, h, d = 10, 10, 10
-            expected: list = [600, 1000]
+            expected = [600, 1000]
 
             print_log(w=w,
                       h=h,
