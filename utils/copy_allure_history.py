@@ -57,7 +57,3 @@ def copy_allure_history() -> None:
         print_log(msg=msg)
 
         shutil.move(source_file, destination_file)
-
-
-if __name__ == "__main__":
-    copy_allure_history()
