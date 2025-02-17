@@ -6,6 +6,7 @@ GitHub: https://github.com/ikostan
 
 import unittest
 import allure
+from parameterized import parameterized
 from utils.log_func import print_log
 from utils.primes.primes_generator import gen_primes
 
@@ -25,11 +26,14 @@ from utils.primes.primes_generator import gen_primes
     name='Source')
 # pylint: enable=R0801
 class GenPrimesTestCase(unittest.TestCase):
-    """
-    Testing gen_primes function
-    """
+    """Testing gen_primes function."""
 
-    def test_gen_primes_positive(self):
+    @parameterized.expand([
+        ([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
+         53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107,
+         109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167,
+         173, 179, 181, 191, 193, 197, 199],),])
+    def test_gen_primes_positive(self, test_data):
         """
         Positive test cases for gen_primes function testing
         :return:
@@ -45,12 +49,6 @@ class GenPrimesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Positive test cases for gen_primes function testing.</p>")
         # pylint: enable=R0801
-        test_data: list = [
-            2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
-            53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107,
-            109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167,
-            173, 179, 181, 191, 193, 197, 199]
-
         results: list = []
         for prime in gen_primes():
             results.append(prime)
@@ -61,7 +59,12 @@ class GenPrimesTestCase(unittest.TestCase):
             print_log(test_data=test_data, results=results)
             self.assertListEqual(test_data, results)
 
-    def test_gen_primes_negative(self):
+    @parameterized.expand([
+        ([3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+        61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127,
+        131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191,
+        193, 197, 199],),])
+    def test_gen_primes_negative(self, test_data):
         """
         Negative test cases for gen_primes function testing
         :return:
@@ -77,12 +80,6 @@ class GenPrimesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Negative test cases for gen_primes function testing.</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
-            61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127,
-            131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191,
-            193, 197, 199)
-
         primes: list = []
         for prime in gen_primes():
             primes.append(prime)
