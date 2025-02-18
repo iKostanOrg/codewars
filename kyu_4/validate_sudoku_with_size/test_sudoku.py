@@ -33,7 +33,6 @@ class SudokuTestCase(unittest.TestCase):
 
     @parameterized.expand([
         ([[1]], True, 'Testing valid 1x1'),
-        ([[1]], True, 'Testing valid 1x1'),
         ([[2]], False, 'Testing invalid 1x1 with wrong value'),
         ([['a']], False, 'Testing invalid 1x1 with non-integer value'),
         ([[7, 8, 4, 1, 5, 9, 3, 2, 6],
