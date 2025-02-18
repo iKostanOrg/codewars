@@ -73,8 +73,9 @@ ZsKQq6j"ziwD[zT:P6%$rEH$^@',
         ("123", ""),
         ("!@#$%^&*()", ""),
         ("a1!b", "1 2"),
-        ("AbZ!", "1 2 26")
-    ])
+        ("AbZ!", "1 2 26"),
+        ("Hello World!", "8 5 12 12 15 23 15 18 12 4"),
+        ("TeStInG 123", "20 5 19 20 9 14 7")])
     def test_alphabet_position_edge_cases(self, string, expected):
         """
         Testing 'alphabet_position' function with various edge cases.
