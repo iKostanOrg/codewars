@@ -13,7 +13,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/647e16e648f748a28fce36b4895f7729)](https://app.codacy.com/gh/iKostanOrg/codewars/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 [![Maintainability](https://qlty.sh/badges/e8f18a35-2bd3-41b1-827c-e7a2a88f1d08/maintainability.svg)](https://qlty.sh/gh/iKostanOrg/projects/codewars)
 [![Code Coverage](https://qlty.sh/badges/e8f18a35-2bd3-41b1-827c-e7a2a88f1d08/test_coverage.svg)](https://qlty.sh/gh/iKostanOrg/projects/codewars)
-![Maintenance](https://img.shields.io/maintenance/yes/2024)
 ![GitHub repo size](https://img.shields.io/github/repo-size/iKostanOrg/codewars?color=green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/iKostanOrg/codewars?color=green)
 ![Micro badge](https://www.codewars.com/users/myFirstCode/badges/micro)
@@ -443,7 +442,7 @@ To install Chocolatey:
 |  2  |    allure-pytest     | Allure Pytest Plugin.                                                                                                                                                |     [Source](https://pypi.org/project/allure-pytest/)     |
 |  3  | allure-python-common | The package contains classes and functions for users of Allure Report. It can be used to enhance reports using an existing Allure adapter or to create new adapters. | [Source](https://pypi.org/project/allure-python-commons/) |
 |  4  |       altgraph       | A graph (network) package for constructing graphs, BFS and DFS traversals, topological sort, shortest paths, etc. with graphviz output.                              |       [Source](https://pypi.org/project/altgraph/)        |
-|  5  |       asteval        | The asteval module allows you to evaluate a large subset of the Python language from within a python program, without using eval().                                  |   [Source](https://lmfit.github.io/asteval/motivation)    |
+|  5  |       asteval        | The asteval module allows you to evaluate a large subset of the Python language from within a python program, without using eval().                                  |   [Source](https://pypi.org/project/asteval/)    |
 |  6  |     atomicwrites     | Atomic file writes. This package is also used in order to run pytest.                                                                                                |     [Source](https://pypi.org/project/atomicwrites/)      |
 |  7  |         attr         | Simple decorator to set attributes of target function or class in a DRY way.                                                                                         |         [Source](https://pypi.org/project/attrs/)         |
 |  8  |       autopep8       | A tool that automatically formats Python code to conform to the PEP 8 style guide.                                                                                   |       [Source](https://pypi.org/project/autopep8/)        |
