@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 # PARSING STRINGS
 
 import unittest
+from parameterized import parameterized
 import allure  # pylint: disable=import-error
 from utils.log_func import print_log
 from kyu_2.evaluate_mathematical_expression.evaluate import calc
@@ -37,7 +38,37 @@ from kyu_2.evaluate_mathematical_expression.evaluate import calc
 class CalcTestCase(unittest.TestCase):
     """Testing calc method."""
 
-    def test_calc(self):
+    @parameterized.expand([
+        ["1 + 1", 2],
+        ["8/16", 0.5],
+        ["3 -(-1)", 4],
+        ["2 + -2", 0],
+        ["10- 2- -5", 13],
+        ["(((10)))", 10],
+        ["3 * 5", 15],
+        ["-7 * -(6 / 3)", 14],
+        ['2 + 3 * 4 / 3 - 6 / 3 * 3 + 8', 8],
+        ['1 + 2 * 3 * 3 - 8', 11],
+        ['1 + 2 * 3 * (5 - (3 - 1)) - 8', 11],
+        ['-(-(-(-1)))', 1],
+        ['(((((-1)))))', -1],
+        ['58 / 40 - -45 * 13 * 35 - -19 / -71 + 60',
+         20536.1823943662],
+        ['61 + 82 + -81 - -53 * 84 - -83 + -74 / 60',
+         4595.766666666666],
+        ['-(94) * (36 / 64 + -(13)) - (41 - (((-(-15 - 58)))) - -23)',
+         1178.125],
+        ['-(-91) - (92 - -2 / -(13)) / (-42 - -(((-(-90 - 30)))) * -53)',
+         91.014346478264],
+        ['-(-93) / (-36 + 26 + -(18)) + (-7 * -(((-(-67 + -95)))) + -9)',
+         1121.6785714285713],
+        ['-(-23) + (-4 * -13 + -(1)) - (-30 / (((-(57 + -20)))) + 85)',
+         -11.810810810810807],
+        ['(72) / (-82 - -93 * -(88)) + (-18 - -(((-(60 * 97)))) + -79)',
+         -5917.00871037987],
+        ['-(77) / (7 * -76 + (59)) + (98 / -(((-(-74 - -47)))) / -5)',
+         0.8887166236003445]])
+    def test_calc(self, string, expected):
         """
         Testing calc class.
 
@@ -57,42 +88,12 @@ class CalcTestCase(unittest.TestCase):
             "return the result as a number."
             "</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            ["1 + 1", 2],
-            ["8/16", 0.5],
-            ["3 -(-1)", 4],
-            ["2 + -2", 0],
-            ["10- 2- -5", 13],
-            ["(((10)))", 10],
-            ["3 * 5", 15],
-            ["-7 * -(6 / 3)", 14],
-            ['2 + 3 * 4 / 3 - 6 / 3 * 3 + 8', 8],
-            ['1 + 2 * 3 * 3 - 8', 11],
-            ['1 + 2 * 3 * (5 - (3 - 1)) - 8', 11],
-            ['-(-(-(-1)))', 1],
-            ['(((((-1)))))', -1],
-            ['58 / 40 - -45 * 13 * 35 - -19 / -71 + 60', 20536.1823943662],
-            ['61 + 82 + -81 - -53 * 84 - -83 + -74 / 60', 4595.766666666666],
-            ['-(94) * (36 / 64 + -(13)) - (41 - (((-(-15 - 58)))) - -23)', 1178.125],
-            ['-(-91) - (92 - -2 / -(13)) / (-42 - -(((-(-90 - 30)))) * -53)', 91.014346478264],
-            ['-(-93) / (-36 + 26 + -(18)) + (-7 * -(((-(-67 + -95)))) + -9)', 1121.6785714285713],
-            ['-(-23) + (-4 * -13 + -(1)) - (-30 / (((-(57 + -20)))) + 85)', -11.810810810810807],
-            ['(72) / (-82 - -93 * -(88)) + (-18 - -(((-(60 * 97)))) + -79)', -5917.00871037987],
-            ['-(77) / (7 * -76 + (59)) + (98 / -(((-(-74 - -47)))) / -5)', 0.8887166236003445])
+        actual_result = calc(string)
+        print_log(string=string,
+                  expected=expected,
+                  actual_result=actual_result)
 
-        for string, expected in test_data:
-
-            actual_result = calc(string)
-            print_log(string=string,
-                      expected=expected,
-                      actual_result=actual_result)
-
-            with allure.step(f"Enter a test string ({string}), "
-                             f"calculate the result ({actual_result}) and "
-                             f"compare vs expected ({expected})"):
-                self.assertEqual(expected,
-                                 actual_result)
-
-
-if __name__ == '__main__':
-    unittest.main()
+        with allure.step(f"Enter a test string ({string}), "
+                         f"calculate the result ({actual_result}) and "
+                         f"compare vs expected ({expected})"):
+            self.assertEqual(expected, actual_result)
