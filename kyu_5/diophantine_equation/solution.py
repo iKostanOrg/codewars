@@ -18,9 +18,7 @@ def sol_equa(n: int) -> list:
     """
     result: list = []
 
-    start = n // 2
-    if n % 2 != 0:
-        start = n // 2 + 1
+    start = n // 2 + 1 if n % 2 != 0 else n // 2
 
     for x in range(start, 0, -2):
         for y in range(x // 2, -1, -1):

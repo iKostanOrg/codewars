@@ -11,7 +11,8 @@ import unittest
 import allure
 from parameterized import parameterized
 from utils.log_func import print_log
-from kyu_6.replace_with_alphabet_position.solution import alphabet_position
+from kyu_6.replace_with_alphabet_position.solution \
+    import alphabet_position
 
 
 # pylint: disable-msg=R0801
@@ -59,6 +60,40 @@ ZsKQq6j"ziwD[zT:P6%$rEH$^@',
             '<h3>Test Description:</h3>'
             "<p>The 'alphabet_position' function should replace every letter"
             " with its position in the alphabet.</p>")
+        # pylint: enable-msg=R0801
+        result: str = alphabet_position(string)
+        with allure.step(f"Enter test data: {string}, "
+                         f"and verify the output ({result}) "
+                         f"vs expected ({expected})"):
+            print_log(string=string, result=result, expected=expected)
+            self.assertEqual(expected, result)
+
+    @parameterized.expand([
+        ("", ""),
+        ("123", ""),
+        ("!@#$%^&*()", ""),
+        ("a1!b", "1 2"),
+        ("AbZ!", "1 2 26"),
+        ("Hello World!", "8 5 12 12 15 23 15 18 12 4"),
+        ("TeStInG 123", "20 5 19 20 9 14 7")])
+    def test_alphabet_position_edge_cases(self, string, expected):
+        """
+        Testing 'alphabet_position' function with various edge cases.
+
+        Tests include empty strings, numbers, special characters, and
+        mixed alphanumeric input.
+        :return:
+        """
+        # pylint: disable-msg=R0801
+        allure.dynamic.title("Testing the 'alphabet_position' with edge cases.")
+        allure.dynamic.severity(allure.severity_level.NORMAL)
+        allure.dynamic.description_html(
+            '<h3>Codewars badge:</h3>'
+            '<img src="https://www.codewars.com/users/myFirstCode'
+            '/badges/large">'
+            '<h3>Test Description:</h3>'
+            "<p>Testing edge cases, including empty strings, numbers, "
+            "special characters, and mixed alphanumeric input.</p>")
         # pylint: enable-msg=R0801
         result: str = alphabet_position(string)
         with allure.step(f"Enter test data: {string}, "

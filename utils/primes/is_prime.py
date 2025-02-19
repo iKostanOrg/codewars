@@ -1,5 +1,6 @@
 """
-Check if number is prime
+Check if number is prime.
+
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
