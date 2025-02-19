@@ -35,6 +35,10 @@ class SudokuTestCase(unittest.TestCase):
         ([[1]], True, 'Testing valid 1x1'),
         ([[2]], False, 'Testing invalid 1x1 with wrong value'),
         ([['a']], False, 'Testing invalid 1x1 with non-integer value'),
+        ([[1, 2, 3], [4, 5, 6]], False,
+         'Testing invalid rectangular matrix 2x3'),
+        ([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]], False,
+         'Testing invalid non-square matrix 3x4'),
         ([[7, 8, 4, 1, 5, 9, 3, 2, 6],
           [5, 3, 9, 6, 7, 2, 8, 4, 1],
           [6, 1, 2, 4, 3, 8, 7, 5, 9],
@@ -83,8 +87,7 @@ class SudokuTestCase(unittest.TestCase):
           [7, 8, 9, 1, 2, 3, 4, 5, 6],
           [8, 9, 7, 2, 3, 1, 5, 6, 4],
           [9, 7, 8, 3, 1, 2, 6, 4, 5]], False,
-         'Sudoku with invalid boxes (little squares), but valid rows and columns')
-    ])
+         'Sudoku with invalid boxes (little squares), but valid rows and columns')])
     def test_sudoku_class(self, data, expected, message):
         """
         Testing Sudoku class.
