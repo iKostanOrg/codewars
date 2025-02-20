@@ -71,7 +71,7 @@ class LinePositiveTestCase(unittest.TestCase):
     def test_line_positive(self, grid):
         """
         Positive test cases.
-        
+
         :param grid:
         :return:
         """
