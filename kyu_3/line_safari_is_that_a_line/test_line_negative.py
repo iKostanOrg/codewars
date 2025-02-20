@@ -67,7 +67,7 @@ class LineNegativeTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             '<p>The function should return true/false if it can detect a one '
-            'and only one \"valid\" line joining those points.</p>')
+            'and only one "valid" line joining those points.</p>')
         # pylint: enable-msg=R0801
         expected: bool = False
         actual_result: bool = line(grid)
