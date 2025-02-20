@@ -132,7 +132,7 @@ class WalkerClassTestCase(unittest.TestCase):
                   expected=expected,
                   actual_result=actual_result)
 
-        with allure.step("Enter a test grid and compare "
-                         "the output/position vs expected "
-                         f"result {expected}"):
+        with allure.step(f"Enter a test grid and compare \
+                         the output/position vs expected \
+                         result {expected}"):
             self.assertEqual(expected, actual_result)

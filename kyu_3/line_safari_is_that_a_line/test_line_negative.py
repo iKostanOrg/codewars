@@ -78,6 +78,6 @@ class LineNegativeTestCase(unittest.TestCase):
         print_log(expected=expected,
                   actual_result=actual_result)
 
-        with allure.step("Enter a test grid and compare "
-                         "the output vs expected result"):
+        with allure.step("Enter a test grid and compare \
+                         the output vs expected result"):
             self.assertEqual(expected, actual_result)
