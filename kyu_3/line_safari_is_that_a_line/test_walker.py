@@ -8,6 +8,7 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.walker_class import Walker
@@ -29,7 +30,32 @@ from kyu_3.line_safari_is_that_a_line.walker_class import Walker
 class WalkerClassTestCase(unittest.TestCase):
     """Testing Walker class."""
 
-    def test_starting_position_from_positives(self):
+    @parameterized.expand([
+        [["           ",
+          "X---------X",
+          "           ",
+          "           "]],
+        [["     ",
+          "  X  ",
+          "  |  ",
+          "  |  ",
+          "  X  "]],
+        [["                    ",
+          "     +--------+     ",
+          "  X--+        +--+  ",
+          "                 |  ",
+          "                 X  ",
+          "                    "]],
+        [["                     ",
+          "    +-------------+  ",
+          "    |             |  ",
+          " X--+      X------+  ",
+          "                     "]],
+        [["                      ",
+          "   +-------+          ",
+          "   |      +++---+     ",
+          "X--+      +-+   X     "]]])
+    def test_starting_position_from_positives(self, grid):
         """
         Testing Walker class.
 
@@ -46,47 +72,39 @@ class WalkerClassTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on positive grids.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ["           ",
-             "X---------X",
-             "           ",
-             "           "],
-            ["     ",
-             "  X  ",
-             "  |  ",
-             "  |  ",
-             "  X  "],
-            ["                    ",
-             "     +--------+     ",
-             "  X--+        +--+  ",
-             "                 |  ",
-             "                 X  ",
-             "                    "],
-            ["                     ",
-             "    +-------------+  ",
-             "    |             |  ",
-             " X--+      X------+  ",
-             "                     "],
-            ["                      ",
-             "   +-------+          ",
-             "   |      +++---+     ",
-             "X--+      +-+   X     "]
-        )
-
         expected = 'X'
-        for grid in test_data:
-            walker = Walker(grid)
-            actual_result = walker.position
-            print_log(grid=grid,
-                      expected=expected,
-                      actual_result=actual_result)
+        walker = Walker(grid)
+        actual_result = walker.position
+        print_log(grid=grid,
+                  expected=expected,
+                  actual_result=actual_result)
 
-            with allure.step("Enter a test grid and compare "
-                             "the output/position vs expected "
-                             f"result {expected}"):
-                self.assertEqual(expected, actual_result)
+        with allure.step("Enter a test grid and compare "
+                         "the output/position vs expected "
+                         f"result {expected}"):
+            self.assertEqual(expected, actual_result)
 
-    def test_starting_position_from_negatives(self):
+    @parameterized.expand([
+        [["X-----|----X"]],
+        [[" X  ",
+          " |  ",
+          " +  ",
+          " X  "]],
+        [["   |--------+    ",
+          "X---        ---+ ",
+          "               | ",
+          "               X "]],
+        [["              ",
+          "   +------    ",
+          "   |          ",
+          "X--+      X   ",
+          "              "]],
+        [["      +------+",
+          "      |      |",
+          "X-----+------+",
+          "      |       ",
+          "      X       "]]])
+    def test_starting_position_from_negatives(self, grid):
         """
         Testing Walker class.
 
@@ -103,38 +121,14 @@ class WalkerClassTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Testing position property based on negative grids.</p>")
         # pylint: disable-msg=R0801
-        test_data: tuple = (
-            ["X-----|----X"],
-            [" X  ",
-             " |  ",
-             " +  ",
-             " X  "],
-            ["   |--------+    ",
-             "X---        ---+ ",
-             "               | ",
-             "               X "],
-            ["              ",
-             "   +------    ",
-             "   |          ",
-             "X--+      X   ",
-             "              "],
-            ["      +------+",
-             "      |      |",
-             "X-----+------+",
-             "      |       ",
-             "      X       "])
-
         expected: str = 'X'
-        for grid in test_data:
-            walker: Walker = Walker(grid)
-            actual_result: str = walker.position
+        walker: Walker = Walker(grid)
+        actual_result: str = walker.position
+        print_log(grid=grid,
+                  expected=expected,
+                  actual_result=actual_result)
 
-            print_log(grid=grid,
-                      expected=expected,
-                      actual_result=actual_result)
-
-            with allure.step("Enter a test grid and compare "
-                             "the output/position vs expected "
-                             f"result {expected}"):
-
-                self.assertEqual(expected, actual_result)
+        with allure.step("Enter a test grid and compare "
+                         "the output/position vs expected "
+                         f"result {expected}"):
+            self.assertEqual(expected, actual_result)
