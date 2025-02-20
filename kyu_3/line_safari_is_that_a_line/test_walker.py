@@ -87,24 +87,24 @@ class WalkerClassTestCase(unittest.TestCase):
             self.assertEqual(expected, actual_result)
 
     @parameterized.expand([
-        [["X-----|----X"]],
+        [["X-----\\|----X"]],
         [[" X  ",
-          " |  ",
+          " \\|  ",
           " +  ",
           " X  "]],
-        [["   |--------+    ",
+        [["   \\|--------+    ",
           "X---        ---+ ",
-          "               | ",
+          "               \\| ",
           "               X "]],
         [["              ",
           "   +------    ",
-          "   |          ",
+          "   \\|          ",
           "X--+      X   ",
           "              "]],
         [["      +------+",
-          "      |      |",
+          "      \\|      \\|",
           "X-----+------+",
-          "      |       ",
+          "      \\|       ",
           "      X       "]]])
     def test_starting_position_from_negatives(self, grid):
         """
