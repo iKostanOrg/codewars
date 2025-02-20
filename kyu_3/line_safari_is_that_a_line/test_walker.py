@@ -60,6 +60,8 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing Walker class.
 
         Testing starting position property based on positive grids.
+        :param grid:
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title(
@@ -109,6 +111,8 @@ class WalkerClassTestCase(unittest.TestCase):
         Testing Walker class.
 
         Testing starting position property based on negative grids.
+        :param grid:
+        :return:
         """
         # pylint: disable-msg=R0801
         allure.dynamic.title(
