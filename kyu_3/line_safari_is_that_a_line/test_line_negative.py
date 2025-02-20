@@ -1,7 +1,7 @@
 """
 Testing Line Safari functionality.
 
-Negative test cases
+Negative test cases.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """

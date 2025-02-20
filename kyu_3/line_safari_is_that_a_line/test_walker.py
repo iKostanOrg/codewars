@@ -72,7 +72,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>Testing position property based on positive grids.</p>")
+            '<p>Testing position property based on positive grids.</p>')
         # pylint: enable-msg=R0801
         expected = 'X'
         walker = Walker(grid)
@@ -81,9 +81,9 @@ class WalkerClassTestCase(unittest.TestCase):
                   expected=expected,
                   actual_result=actual_result)
 
-        with allure.step("Enter a test grid and compare "
-                         "the output/position vs expected "
-                         f"result {expected}"):
+        with allure.step(f"Enter a test grid and compare \
+                         the output/position vs expected \
+                         result {expected}"):
             self.assertEqual(expected, actual_result)
 
     @parameterized.expand([
@@ -123,7 +123,7 @@ class WalkerClassTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>Testing position property based on negative grids.</p>")
+            '<p>Testing position property based on negative grids.</p>')
         # pylint: disable-msg=R0801
         expected: str = 'X'
         walker: Walker = Walker(grid)

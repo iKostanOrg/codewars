@@ -83,8 +83,8 @@ class LinePositiveTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>The function should return true/false if it can detect a one "
-            "and only one \"valid\" line joining those points.</p>")
+            '<p>The function should return true/false if it can detect a one '
+            'and only one "valid" line joining those points.</p>')
 
         expected: bool = True
         actual_result: bool = line(grid)
