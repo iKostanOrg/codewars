@@ -32,24 +32,24 @@ class LineNegativeTestCase(unittest.TestCase):
     """Testing Line Safari functionality."""
 
     @parameterized.expand([
-        [["X-----|----X"]],
+        [["X-----\\|----X"]],
         [[" X  ",
-          " |  ",
+          " \\|  ",
           " +  ",
           " X  "]],
-        [["   |--------+    ",
+        [["   \\|--------+    ",
           "X---        ---+ ",
-          "               | ",
+          "               \\| ",
           "               X "]],
         [["              ",
           "   +------    ",
-          "   |          ",
+          "   \\|          ",
           "X--+      X   ",
           "              "]],
         [["      +------+",
-          "      |      |",
+          "      \\|      \\|",
           "X-----+------+",
-          "      |       ",
+          "      \\|       ",
           "      X       "]]])
     def test_line_negative(self, grid):
         """
