@@ -29,11 +29,7 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LineNegativeTestCase(unittest.TestCase):
-    """
-    Testing Line Safari functionality.
-
-    Negative test cases
-    """
+    """Testing Line Safari functionality."""
 
     @parameterized.expand([
         [["X-----|----X"]],
@@ -57,9 +53,9 @@ class LineNegativeTestCase(unittest.TestCase):
           "      X       "]]])
     def test_line_negative(self, grid):
         """
-        Testing Line Safari functionality.
-
         Negative test cases.
+
+        :param grid:
         :return:
         """
         allure.dynamic.title("Testing Line Safari functionality - NEGATIVE")
@@ -70,8 +66,8 @@ class LineNegativeTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>The function should return true/false if it can detect a one "
-            "and only one \"valid\" line joining those points.</p>")
+            '<p>The function should return true/false if it can detect a one '
+            'and only one \"valid\" line joining those points.</p>')
         # pylint: enable-msg=R0801
         expected: bool = False
         actual_result: bool = line(grid)
