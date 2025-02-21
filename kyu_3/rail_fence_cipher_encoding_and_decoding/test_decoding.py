@@ -8,6 +8,7 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS CIPHERS CRYPTOGRAPHY SECURITY STRINGS
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
 from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
@@ -33,7 +34,13 @@ from kyu_3.rail_fence_cipher_encoding_and_decoding.encoding_and_decoding \
 class DecodingTestCase(unittest.TestCase):
     """Testing Decoding functionality."""
 
-    def test_decoding(self):
+    @parameterized.expand([
+        ("H !e,Wdloollr", 4, "Hello, World!"),
+        ("WECRLTEERDSOEEFEAOCAIVDEN", 3, "WEAREDISCOVEREDFLEEATONCE"),
+        ("", 3, ""),
+        ("WEAREDISCOVEREDFLEEATONCE", 10, "WADCEDETNECOEFROIREESVELA"),
+        ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE")])
+    def test_decoding(self, string, n, expected):
         """Testing Decoding functionality."""
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing Decoding functionality")
@@ -45,25 +52,14 @@ class DecodingTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Verify cipher function. This \"decode\" is used "
             "to decode a string.</p>")
-        # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("H !e,Wdloollr", 4, "Hello, World!"),
-            ("WECRLTEERDSOEEFEAOCAIVDEN", 3, "WEAREDISCOVEREDFLEEATONCE"),
-            ("", 3, ""),
-            ("WEAREDISCOVEREDFLEEATONCE", 10, "WADCEDETNECOEFROIREESVELA"),
-            ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE"))
-        # pylint: disable-msg=R0801
-        for string, n, expected in test_data:
 
-            actual_result: str = decode_rail_fence_cipher(string, n)
+        actual_result: str = decode_rail_fence_cipher(string, n)
+        print_log(string=string,
+                  n=n,
+                  expected=expected,
+                  actual_result=actual_result)
 
-            print_log(string=string,
-                      n=n,
-                      expected=expected,
-                      actual_result=actual_result)
-
-            with allure.step("Enter a test string and compare "
-                             "the output vs expected result"):
-
-                self.assertEqual(expected, actual_result)
+        with allure.step("Enter a test string and compare \
+                         the output vs expected result"):
+            self.assertEqual(expected, actual_result)
         # pylint: enable-msg=R0801
