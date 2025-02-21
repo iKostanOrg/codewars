@@ -39,7 +39,8 @@ class DecodingTestCase(unittest.TestCase):
         ("WECRLTEERDSOEEFEAOCAIVDEN", 3, "WEAREDISCOVEREDFLEEATONCE"),
         ("", 3, ""),
         ("WEAREDISCOVEREDFLEEATONCE", 10, "WADCEDETNECOEFROIREESVELA"),
-        ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE")])
+        ("WEAREDISCOVEREDFLEEATONCE", 9, "WADCEDETCOEFROIREESVELANE"),
+        ("Hello, World!", 13, "Hello, World!")])
     def test_decoding(self, string, n, expected):
         """Testing Decoding functionality."""
         # pylint: disable-msg=R0801
