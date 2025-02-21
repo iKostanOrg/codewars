@@ -35,6 +35,8 @@ class EncodingTestCase(unittest.TestCase):
     """Testing Encoding functionality."""
 
     @parameterized.expand([
+        # edge case: n equals length of the string
+        ("WEAREDISCOVEREDFLEEATONCE", 25, "WEAREDISCOVEREDFLEEATONCE"),
         ("WEAREDISCOVEREDFLEEATONCE", 3, "WECRLTEERDSOEEFEAOCAIVDEN"),
         ("Hello, World!", 3, "Hoo!el,Wrdl l"),
         ("Hello, World!", 4, "H !e,Wdloollr"),
