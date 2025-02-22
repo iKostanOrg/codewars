@@ -23,6 +23,9 @@ def is_prime(digit: int) -> bool:
     if digit < 2:
         return False
 
+    if digit in primes:
+        return True
+
     for i in range(3, int(digit ** 0.5) + 1, 2):
         if is_prime(i) and i not in primes:
             primes.append(i)

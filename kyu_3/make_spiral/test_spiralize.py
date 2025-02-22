@@ -8,6 +8,7 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS ARRAYS CONTROL FLOW BASIC LANGUAGE FEATURES FUNDAMENTALS
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
 from kyu_3.make_spiral.solution import spiralize
@@ -32,7 +33,43 @@ from kyu_3.make_spiral.solution import spiralize
 class SpiralizeTestCase(unittest.TestCase):
     """Testing spiralize function."""
 
-    def test_spiralize(self):
+    @parameterized.expand([
+        (5, [[1, 1, 1, 1, 1],
+             [0, 0, 0, 0, 1],
+             [1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1]]),
+        (6, [[1, 1, 1, 1, 1, 1],
+             [0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 0, 1],
+             [1, 0, 0, 1, 0, 1],
+             [1, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 1]]),
+        (7, [[1, 1, 1, 1, 1, 1, 1],
+             [0, 0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 1, 0, 1],
+             [1, 0, 1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 1, 1]]),
+        (8, [[1, 1, 1, 1, 1, 1, 1, 1],
+             [0, 0, 0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 0, 1, 0, 1],
+             [1, 0, 1, 0, 0, 1, 0, 1],
+             [1, 0, 1, 1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 1, 1, 1]]),
+        (9, [[1, 1, 1, 1, 1, 1, 1, 1, 1],
+             [0, 0, 0, 0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 0, 0, 1, 0, 1],
+             [1, 0, 1, 1, 1, 0, 1, 0, 1],
+             [1, 0, 1, 0, 0, 0, 1, 0, 1],
+             [1, 0, 1, 1, 1, 1, 1, 0, 1],
+             [1, 0, 0, 0, 0, 0, 0, 0, 1],
+             [1, 1, 1, 1, 1, 1, 1, 1, 1]])])
+    def test_spiralize(self, size, expected):
         """Testing spiralize function."""
         # pylint: disable-msg=R0801
         allure.dynamic.title("Testing spiralize function")
@@ -44,49 +81,9 @@ class SpiralizeTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>The function should create a NxN spiral with a given size.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            (5, [[1, 1, 1, 1, 1],
-                 [0, 0, 0, 0, 1],
-                 [1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1]]),
-            (6, [[1, 1, 1, 1, 1, 1],
-                 [0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 1, 0, 1],
-                 [1, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 1]]),
-            (7, [[1, 1, 1, 1, 1, 1, 1],
-                 [0, 0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 1, 0, 1],
-                 [1, 0, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 1, 1]]),
-            (8, [[1, 1, 1, 1, 1, 1, 1, 1],
-                 [0, 0, 0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 0, 1, 0, 1],
-                 [1, 0, 1, 0, 0, 1, 0, 1],
-                 [1, 0, 1, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 1, 1, 1]]),
-            (9, [[1, 1, 1, 1, 1, 1, 1, 1, 1],
-                 [0, 0, 0, 0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 0, 0, 1, 0, 1],
-                 [1, 0, 1, 1, 1, 0, 1, 0, 1],
-                 [1, 0, 1, 0, 0, 0, 1, 0, 1],
-                 [1, 0, 1, 1, 1, 1, 1, 0, 1],
-                 [1, 0, 0, 0, 0, 0, 0, 0, 1],
-                 [1, 1, 1, 1, 1, 1, 1, 1, 1]])
-        )
-
-        for size, expected in test_data:
-
-            with allure.step("Enter spiral list size and verify the result"):
-                result: list = spiralize(size)
-                print_log(size=size,
-                          result=result,
-                          expected=expected)
-                self.assertListEqual(expected, result)
+        with allure.step("Enter spiral list size and verify the result"):
+            result: list = spiralize(size)
+            print_log(size=size,
+                      result=result,
+                      expected=expected)
+            self.assertListEqual(expected, result)

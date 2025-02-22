@@ -1,7 +1,7 @@
 """
 Testing Line Safari functionality.
 
-Negative test cases
+Negative test cases.
 Created by Egor Kostan.
 GitHub: https://github.com/ikostan
 """
@@ -9,6 +9,7 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS STRINGS
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
 from kyu_3.line_safari_is_that_a_line.line_safari import line
@@ -28,17 +29,33 @@ from kyu_3.line_safari_is_that_a_line.line_safari import line
     name='Source/Kata')
 # pylint: enable-msg=R0801
 class LineNegativeTestCase(unittest.TestCase):
-    """
-    Testing Line Safari functionality.
+    """Testing Line Safari functionality."""
 
-    Negative test cases
-    """
-
-    def test_line_negative(self):
+    @parameterized.expand([
+        [["X-----\\|----X"]],
+        [[" X  ",
+          " \\|  ",
+          " +  ",
+          " X  "]],
+        [["   \\|--------+    ",
+          "X---        ---+ ",
+          "               \\| ",
+          "               X "]],
+        [["              ",
+          "   +------    ",
+          "   \\|          ",
+          "X--+      X   ",
+          "              "]],
+        [["      +------+",
+          "      \\|      \\|",
+          "X-----+------+",
+          "      \\|       ",
+          "      X       "]]])
+    def test_line_negative(self, grid):
         """
-        Testing Line Safari functionality.
-
         Negative test cases.
+
+        :param grid:
         :return:
         """
         allure.dynamic.title("Testing Line Safari functionality - NEGATIVE")
@@ -49,37 +66,14 @@ class LineNegativeTestCase(unittest.TestCase):
             '<img src="https://www.codewars.com/users/myFirstCode'
             '/badges/large">'
             '<h3>Test Description:</h3>'
-            "<p>The function should return true/false if it can detect a one "
-            "and only one \"valid\" line joining those points.</p>")
-        test_data: tuple = (
-            ["X-----|----X"],
-            [" X  ",
-             " |  ",
-             " +  ",
-             " X  "],
-            ["   |--------+    ",
-             "X---        ---+ ",
-             "               | ",
-             "               X "],
-            ["              ",
-             "   +------    ",
-             "   |          ",
-             "X--+      X   ",
-             "              "],
-            ["      +------+",
-             "      |      |",
-             "X-----+------+",
-             "      |       ",
-             "      X       "])
-
+            '<p>The function should return true/false if it can detect a one '
+            'and only one "valid" line joining those points.</p>')
         # pylint: enable-msg=R0801
         expected: bool = False
-        for grid in test_data:
-            actual_result: bool = line(grid)
-            print_log(expected=expected,
-                      actual_result=actual_result)
+        actual_result: bool = line(grid)
+        print_log(expected=expected,
+                  actual_result=actual_result)
 
-            with allure.step("Enter a test grid and compare "
-                             "the output vs expected result"):
-
-                self.assertEqual(expected, actual_result)
+        with allure.step("Enter a test grid and compare \
+                         the output vs expected result"):
+            self.assertEqual(expected, actual_result)

@@ -36,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
           python -m pip install pytype
-      - name: PYTYPE Version Check
+      - name: PyType Version Check
         run: |
           python -m pytype --version
       - name: Python Data Type Checking with PyType

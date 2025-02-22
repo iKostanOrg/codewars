@@ -4,12 +4,12 @@
 # For more information see:
 # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Unitest kyu6 with pytest
+name: Unitest kyu7 with pytest
 
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - kyu6
+      - kyu7
 
 permissions:
   contents: read
@@ -48,7 +48,7 @@ jobs:
       - name: Unitest with pytest
         # yamllint disable rule:line-length
         run: |
-          python -m pytest ./kyu_6 -v -rP --doctest-modules --cov-report term-missing --cov-report=xml --cov-fail-under=80 --cov=./kyu_6
+          python -m pytest ./kyu_7 -v -rP --doctest-modules --cov-report term-missing --cov-report=xml --cov-fail-under=80 --cov=./kyu_7
         # yamllint enable rule:line-length
       - name: List test files
         run: |
