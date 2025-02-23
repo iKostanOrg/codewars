@@ -8,6 +8,7 @@ GitHub: https://github.com/ikostan
 # ALGORITHMS PARSING STRINGS EXPRESSIONS BASIC LANGUAGE FEATURES FUNDAMENTALS
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
 from kyu_3.calculator.calculator import Calculator
@@ -33,7 +34,17 @@ from kyu_3.calculator.calculator import Calculator
 class CalculatorTestCase(unittest.TestCase):
     """Testing Calculator class."""
 
-    def test_calculator(self):
+    @parameterized.expand([
+        ('127', 127),
+        ('2 + 3', 5),
+        ('2 - 3 - 4', -5),
+        ('10 * 5 / 2', 25),
+        ('2 / 2 + 3 * 4 - 6', 7),
+        ('2 + 3 * 4 / 3 - 6 / 3 * 3 + 8', 8),
+        ('1.1 + 2.2 + 3.3', 6.6),
+        ('1.1 * 2.2 * 3.3', 7.986000000000001),
+        ('10 * 5 / 2', 25)])
+    def test_calculator(self, string, expected):
         """
         Testing Calculator class.
 
@@ -54,30 +65,13 @@ class CalculatorTestCase(unittest.TestCase):
             "and numbers separated by spaces<br/>"
             "2. the calculator should return the value of that "
             "expression</p>")
-        # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ('127', 127),
-            ('2 + 3', 5),
-            ('2 - 3 - 4', -5),
-            ('10 * 5 / 2', 25),
-            ('2 / 2 + 3 * 4 - 6', 7),
-            ('2 + 3 * 4 / 3 - 6 / 3 * 3 + 8', 8),
-            ('1.1 + 2.2 + 3.3', 6.6),
-            ('1.1 * 2.2 * 3.3', 7.986000000000001),
-            ('10 * 5 / 2', 25))
+        actual_result: float = Calculator().evaluate(string)
+        print_log(string=string,
+                  expected=expected,
+                  actual_result=actual_result)
 
-        for string, expected in test_data:
-
-            actual_result: float = Calculator().evaluate(string)
-            # pylint: disable=R0801
-            print_log(string=string,
-                      expected=expected,
-                      actual_result=actual_result)
-
-            with allure.step(f"Enter a test string ({string}), "
-                             f"calculate the result ({actual_result}) and "
-                             f"compare vs expected ({expected})"):
-
-                self.assertEqual(expected,
-                                 actual_result)
-            # pylint: enable=R0801
+        with allure.step(f"Enter a test string ({string}), "
+                         f"calculate the result ({actual_result}) and "
+                         f"compare vs expected ({expected})"):
+            self.assertEqual(expected, actual_result)
+        # pylint: enable=R0801

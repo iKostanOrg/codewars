@@ -5,10 +5,10 @@ GitHub: https://github.com/ikostan
 """
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
-from kyu_5.master_your_primes_sieve_with_memoization.primes \
-    import is_prime
+from utils.primes.is_prime import is_prime
 
 
 # pylint: disable=R0801
@@ -26,11 +26,14 @@ from kyu_5.master_your_primes_sieve_with_memoization.primes \
     name='Source')
 # pylint: enable=R0801
 class IsPrimeTestCase(unittest.TestCase):
-    """
-    Testing is_prime function
-    """
+    """Testing is_prime function."""
 
-    def test_is_prime_positive(self):
+    @parameterized.expand([
+        2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53,
+        59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113,
+        127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181,
+        191, 193, 197, 199])
+    def test_is_prime_positive(self, n):
         """
         Positive test cases for is_prime function testing
         :return:
@@ -47,24 +50,17 @@ class IsPrimeTestCase(unittest.TestCase):
             "<p>Positive test cases for is_prime function testing."
             "</p>")
         # pylint: enable=R0801
-        test_data: tuple = (
-            2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53,
-            59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113,
-            127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181,
-            191, 193, 197, 199)
-
-        results: list = []
-        for n in test_data:
-            results.append(is_prime(n))
-
-        actual: bool = all(results)
-
+        result: bool = is_prime(n)
         with allure.step(
-                f"Answer for all numbers from the test data is: {actual}."):
-            print_log(actual=actual)
-            self.assertTrue(actual)
+                f"Answer for n: {n} number from the test data is: {result}."):
+            print_log(n=n, result=result)
+            self.assertTrue(result)
 
-    def test_is_prime_negative(self):
+    @parameterized.expand([
+        1, 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28,
+        30, 32, 33, 34, 35, 36, 38, 39, 40, 42, 44, 45, 46, 48, 49, 50, 51, 52,
+        54, 55, 56, 57, 58, 60, 62, 63])
+    def test_is_prime_negative(self, n):
         """
         Negative test cases for is_prime function testing
         :return:
@@ -80,22 +76,9 @@ class IsPrimeTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Negative test cases for is_prime function testing."
             "</p>")
-
-        test_data: tuple = (
-            3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
-            61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127,
-            131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191,
-            193, 197, 199)
-
-        results: list = []
-
-        for n in test_data:
-            results.append(is_prime(n + 1))
-
-        actual: bool = all(results)
-
+        result: bool = is_prime(n)
         with allure.step(
-                f"Answer for all numbers from the test data is: {actual}."):
-            print_log(actual=actual)
-            self.assertFalse(actual)
+                f"Answer for n: {n} number from the test data is: {result}."):
+            print_log(n=n, result=result)
+            self.assertFalse(result)
         # pylint: enable=R0801
