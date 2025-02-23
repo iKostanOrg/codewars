@@ -78,7 +78,6 @@ class GenerateHashtagTestCase(unittest.TestCase):
             "If the input or the result is an empty string it "
             "must return false."
             "</p>")
-
         with allure.step("Enter a test string and verify the output:"):
             actual_result = generate_hashtag(string)
             print_log(string=string,

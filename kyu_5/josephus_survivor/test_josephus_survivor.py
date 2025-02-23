@@ -62,15 +62,14 @@ class JosephusSurvivorTestCase(unittest.TestCase):
             "correctly returns who is the \"survivor\", ie: the "
             "last element of a Josephus permutation.</p>")
         # pylint: enable-msg=R0801
-
         total = test_data[0]
         eliminated = test_data[1]
         result = josephus_survivor(total, eliminated)
-        with allure.step(f"Enter test data "
-                         f"(n: {total}, "
-                         f"k: {eliminated}) and verify "
-                         f"the output ({result}) "
-                         f"vs expected ({expected})"):
+        with allure.step(f"Enter test data \
+                         (n: {total}, \
+                         k: {eliminated}) and verify \
+                         the output ({result}) \
+                         vs expected ({expected})"):
 
             print_log(total=total,
                       eliminated=eliminated,

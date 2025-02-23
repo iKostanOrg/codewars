@@ -67,7 +67,7 @@ class MoveZerosTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step(f"Enter test data: {array} "
-                         f"and verify the output: {expected}"):
+        with allure.step(f"Enter test data: {array} \
+                         and verify the output: {expected}"):
             print_log(array=array, expected=expected)
             self.assertEqual(expected, move_zeros(array))

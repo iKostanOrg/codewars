@@ -46,8 +46,7 @@ class DirectionsReductionTestCase(unittest.TestCase):
           'WEST', 'NORTH', 'WEST', 'SOUTH', 'SOUTH']),
         (['WEST', 'NORTH', 'EAST', 'EAST', 'EAST', 'EAST', 'WEST', 'WEST',
           'WEST', 'WEST', 'NORTH', 'NORTH', 'SOUTH', 'EAST'],
-         ['WEST', 'NORTH', 'NORTH', 'EAST'])
-    ])
+         ['WEST', 'NORTH', 'NORTH', 'EAST'])])
     def test_directions_reduction(self, test_array, expected):
         """
         dir_reduc function test suite.
@@ -78,7 +77,6 @@ class DirectionsReductionTestCase(unittest.TestCase):
             "strings and returns an array of strings with the needless "
             "directions removed (W<->E or S<->N side by side).</p>")
         # pylint: enable-msg=R0801
-
         result = dir_reduc(test_array)
         with allure.step(f"Enter test data ({test_array}) "
                          f"and verify the output ({result}) "

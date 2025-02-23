@@ -55,7 +55,7 @@ class ZerosTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step(f"Enter test number: {number} "
-                         f"and verify the result: {expected}"):
+        with allure.step(f"Enter test number: {number} \
+                         and verify the result: {expected}"):
             print_log(message=message, number=number, expected=expected)
             self.assertEqual(expected, zeros(number))

@@ -67,8 +67,8 @@ class StringIncrementerTestCase(unittest.TestCase):
             "should be appended to the new string."
             "</p>")
         # pylint: enable-msg=R0801
-        with allure.step(f"Enter test string: {string} "
-                         f"and verify the output: {expected}"):
+        with allure.step(f"Enter test string: {string} \
+                         and verify the output: {expected}"):
             result = increment_string(string)
             print_log(string=string, expected=expected, result=result)
             self.assertEqual(expected, result)

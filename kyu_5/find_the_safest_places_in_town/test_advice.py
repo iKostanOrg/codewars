@@ -70,8 +70,7 @@ class FirstAdviceTestCase(unittest.TestCase):
           (2, 30), (58, 40), (60, 36), (2, 67), (16, 58), (53, 13),
           (36, 38), (29, 54), (50, 15), (14, 28),
           (23, 30), (0, 64), (58, 57), (38, 2), (28, 40), (22, 6),
-          (12, 46), (50, 35), (56, 27)}, 10, set())
-    ])
+          (12, 46), (50, 35), (56, 27)}, 10, set())])
     def test_agents_cleanup(self, agents, n, expected):
         """
         Testing a function named agents_cleanup.
