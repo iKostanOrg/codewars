@@ -36,8 +36,7 @@ class AnagramsTestCase(unittest.TestCase):
          ['aabb', 'bbaa']),
         ('racer',
          ['crazer', 'carer', 'racar', 'caers', 'racer'],
-         ['carer', 'racer'])
-    ])
+         ['carer', 'racer'])])
     def test_anagrams(self, string, array, expected):
         """
         Testing anagrams function with various test data.
@@ -57,7 +56,7 @@ class AnagramsTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable=R0801
-        with allure.step(f"Enter test data: {string, array}"
-                         f" and verify the expected output: {expected}"):
+        with allure.step(f"Enter test data: {string, array}\
+                          and verify the expected output: {expected}"):
             print_log(string=string, array=array, expected=expected)
             self.assertListEqual(expected, anagrams(string, array))

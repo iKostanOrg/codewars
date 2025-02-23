@@ -60,7 +60,7 @@ class AlphanumericTestCase(unittest.TestCase):
             '/badges/large">'
             '<h3>Test Description:</h3>'
             "<p></p>")
-# pylint: enable-msg=R0801
+        # pylint: enable-msg=R0801
         with allure.step("Enter test string and verify the output"):
             print_log(password=password, expected=expected)
             self.assertEqual(expected, alphanumeric(password))

@@ -71,7 +71,6 @@ class IpsBetweenTestCase(unittest.TestCase):
             "of strings. The last address will always be greater "
             "than the first one.</p>")
         # pylint: enable-msg=R0801
-
         result = ips_between(start, end)
         with allure.step(f"Enter test data (start: {start}, "
                          f"end: {end}) and verify "

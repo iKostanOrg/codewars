@@ -64,9 +64,8 @@ class FindSmallestTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-
-        with allure.step(f"Enter test data: {n} "
-                         f"and verify the output vs expected: {expected}."):
+        with allure.step(f"Enter test data: {n} \
+                         and verify the output vs expected: {expected}."):
             result = smallest(n)
             print_log(n=n, expected=expected, result=result)
             self.assertListEqual(expected, result)

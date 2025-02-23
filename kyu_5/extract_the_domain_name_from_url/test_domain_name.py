@@ -10,6 +10,7 @@ GitHub: https://github.com/ikostan
 # DECLARATIVE PROGRAMMING ADVANCED LANGUAGE FEATURES
 
 import unittest
+from parameterized import parameterized
 import allure
 from utils.log_func import print_log
 from kyu_5.extract_the_domain_name_from_url.extract_domain_from_url \
@@ -37,7 +38,12 @@ from kyu_5.extract_the_domain_name_from_url.extract_domain_from_url \
 class DomainNameTestCase(unittest.TestCase):
     """Testing domain_name function."""
 
-    def test_domain_name(self):
+    @parameterized.expand([
+        ("http://google.com", "google"),
+        ("http://google.co.jp", "google"),
+        ("www.xakep.ru", "xakep"),
+        ("https://youtube.com", "youtube")])
+    def test_domain_name(self, url, expected):
         """
         domain_name function testing.
 
@@ -56,14 +62,7 @@ class DomainNameTestCase(unittest.TestCase):
             "<p>Assert that 'domain_name' function "
             "returns domain name from given URL string.</p>")
         # pylint: enable-msg=R0801
-        test_data: tuple = (
-            ("http://google.com", "google"),
-            ("http://google.co.jp", "google"),
-            ("www.xakep.ru", "xakep"),
-            ("https://youtube.com", "youtube"))
-
-        for url, expected in test_data:
-            with allure.step("Enter test string and verify the output"):
-                actual = domain_name(url)
-                print_log(url=url, expected=expected, actual=actual)
-                self.assertEqual(expected, actual)
+        with allure.step("Enter test string and verify the output"):
+            actual = domain_name(url)
+            print_log(url=url, expected=expected, actual=actual)
+            self.assertEqual(expected, actual)

@@ -96,7 +96,7 @@ class AlphabetWarTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p>Test a function that accepts battlefield string and "
             "returns letters that survived the nuclear strike.</p>")
-
+        # pylint: enable-msg=R0801
         result: str = alphabet_war(battlefield)
         with allure.step(f"Enter test string ({battlefield}) "
                          f"and verify the output ({result}) "
