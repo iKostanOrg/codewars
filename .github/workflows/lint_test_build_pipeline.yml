@@ -65,6 +65,26 @@ jobs:
       - yamllint
       - pydocstyle
     uses: iKostanOrg/codewars/.github/workflows/pytype_kyu3.yml@master
+  pytype_kyu4:
+    name: PyType Lint (kyu3)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu4.yml@master
+  pytype_kyu5:
+    name: PyType Lint (kyu3)
+    needs:
+      - flake8
+      - pylint
+      - markdown
+      - mypy
+      - yamllint
+      - pydocstyle
+    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu5.yml@master
   pytype_kyu6:
     name: PyType Lint (kyu6)
     needs:
@@ -100,6 +120,8 @@ jobs:
     needs:
       - pytype_kyu2
       - pytype_kyu3
+      - pytype_kyu4
+      - pytype_kyu5
       - pytype_kyu6
       - pytype_kyu7
       - pytype_kyu8
