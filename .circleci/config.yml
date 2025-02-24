@@ -1,4 +1,5 @@
 ---
+name: CircleCI Workflow
 version: 2.1  # use CircleCI 2.1
 orbs:
   python: circleci/python@2.1.1
@@ -28,25 +29,25 @@ jobs:  # A basic unit of work in a run
           pkg-manager: pip
       - run:
           command: |
-            echo $PATH
-          name: Display system path
-      - run:
-          command: |
             python -m pip install pytest
           name: Install pytest
       - run:
           command: |
-            pytest --version
+            python -m pytest --version
           name: Show pytest version
       - run:
           command:
-            sudo mkdir /home/circleci/project/test-results
+            mkdir /home/circleci/project/test-results
           name: Create test-results folder
       - run:
-          command:
-            python -m pytest
+          command: |
+            python -m pytest . -v --junitxml=test-results/test-results.xml
           name: Run tests with pytest
-      # Upload test results for display in Test Summary:
+      - run:
+          command: |
+            ls
+            ls test-results/
+          name: List test files
       # https://circleci.com/docs/2.0/collect-test-data/
       - store_test_results:
           path: test-results/
