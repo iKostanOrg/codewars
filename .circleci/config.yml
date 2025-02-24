@@ -41,7 +41,6 @@ jobs:  # A basic unit of work in a run
           name: Create test-results folder
       - run:
           command: |
-            . venv/bin/activate
             python -m pytest . -v --junitxml=test-results/test-results.xml
           name: Run tests with pytest
       - run:
