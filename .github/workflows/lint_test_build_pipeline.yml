@@ -66,7 +66,7 @@ jobs:
       - pydocstyle
     uses: iKostanOrg/codewars/.github/workflows/pytype_kyu3.yml@master
   pytype_kyu4:
-    name: PyType Lint (kyu3)
+    name: PyType Lint (kyu4)
     needs:
       - flake8
       - pylint
@@ -76,7 +76,7 @@ jobs:
       - pydocstyle
     uses: iKostanOrg/codewars/.github/workflows/pytype_kyu4.yml@master
   pytype_kyu5:
-    name: PyType Lint (kyu3)
+    name: PyType Lint (kyu5)
     needs:
       - flake8
       - pylint
