@@ -2,6 +2,7 @@
 name: pydocstyle for kyu2
 
 on:   # yamllint disable-line rule:truthy
+  workflow_call:
   push:
     branches:
       - 'kyu2'
