@@ -46,9 +46,12 @@ jobs:  # A basic unit of work in a run
           name: Create test-results folder
       - run:
           command:
-            python -m pytest
+            python -m pytest . -v -rP --doctest-modules --junitxml=test-results/test-results.xml
           name: Run tests with pytest
-      # Upload test results for display in Test Summary:
+      - run:
+          command:
+            ls test-results/
+          name: List test files
       # https://circleci.com/docs/2.0/collect-test-data/
       - store_test_results:
           path: test-results/
