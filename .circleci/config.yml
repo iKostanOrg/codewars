@@ -15,8 +15,6 @@ jobs:  # A basic unit of work in a run
 
     steps:  # steps that comprise the `build` job
       - checkout
-      - python/install-packages:
-            pkg-manager: pip
       - run:
           command:
             python --version
@@ -46,7 +44,7 @@ jobs:  # A basic unit of work in a run
           name: Create test-results folder
       - run:
           command:
-            python -m pytest . -v -rP --doctest-modules --junitxml=test-results/test-results.xml
+            python -m pytest . -v -rP --doctest-modules --junitxml=junit/test-results.xml --cov-report term-missing --cov-fail-under=80 --cov=./ --cov-report html:test-coverage.html --cov-report xml:test-coverage.xml
           name: Run tests with pytest
       - run:
           command:
