@@ -53,7 +53,7 @@ class PigItTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step(f"Enter test string: {text} "
-                         f"and verify the output: {expected}"):
+        with allure.step(f"Enter test string: {text} \
+                         and verify the output: {expected}"):
             print_log(expected=expected, text=text)
             self.assertEqual(expected, pig_it(text))

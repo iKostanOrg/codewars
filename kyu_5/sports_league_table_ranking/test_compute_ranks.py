@@ -96,13 +96,11 @@ class ComputeRanksTestCase(unittest.TestCase):
             "scored and those conceded)</li>"
             "<li>- Goals scored</li></ul>")
         # pylint: enable-msg=R0801
-
-        with allure.step(f"Enter a test data: {number, games}"
-                         f" and verify the result: {expected}"):
+        with allure.step(f"Enter a test data: {number, games}\
+                          and verify the result: {expected}"):
             actual_result: list = compute_ranks(number, games)
             print_log(number=number,
                       games=games,
                       expected=expected,
                       actual_result=actual_result)
-
             self.assertEqual(expected, actual_result)

@@ -72,9 +72,8 @@ class SumPairsTestCase(unittest.TestCase):
             "from the left please) in order of appearance that add up "
             "to form the sum.</p>")
         # pylint: enable-msg=R0801
-
-        with allure.step(f"Enter a test list {ints}"
-                         f"and verify the output {expected}."):
+        with allure.step(f"Enter a test list {ints}\
+                         and verify the output {expected}."):
             result = sum_pairs(ints, s)
             print_log(ints=ints,
                       s=s,

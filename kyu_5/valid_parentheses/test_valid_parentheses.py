@@ -60,7 +60,7 @@ class ValidParenthesesTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step(f"Enter test string: {test_input}"
-                         f"and verify the expected output: {expected}."):
+        with allure.step(f"Enter test string: {test_input}\
+                         and verify the expected output: {expected}."):
             print_log(test_input=test_input, expected=expected)
             self.assertEqual(expected, valid_parentheses(test_input))

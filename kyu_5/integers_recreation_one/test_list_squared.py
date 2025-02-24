@@ -54,8 +54,7 @@ class ListSquaredTestCase(unittest.TestCase):
         (689, 5666, [[728, 722500], [1434, 2856100], [1673, 2856100],
                      [1880, 4884100], [4264, 24304900]]),
         (257, 4195, [[287, 84100], [728, 722500], [1434, 2856100],
-                     [1673, 2856100], [1880, 4884100]])
-    ])
+                     [1673, 2856100], [1880, 4884100]])])
     def test_flatten(self, m, n, expected):
         """
         Testing list_squared function.
@@ -74,7 +73,6 @@ class ListSquaredTestCase(unittest.TestCase):
             "all integers between m and n whose sum of squared divisors "
             "is itself a square.</p>")
         # pylint: enable-msg=R0801
-
         with allure.step("Enter test data and verify the output..."):
             actual_result = list_squared(m, n)
             print_log(m=m, n=n, expected=expected, actual_result=actual_result)

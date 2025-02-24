@@ -74,7 +74,7 @@ class FirstNonRepeatingLetterTestCase(unittest.TestCase):
             '<h3>Test Description:</h3>'
             "<p></p>")
         # pylint: enable-msg=R0801
-        with allure.step(f"Enter test string: {string} "
-                         f"and verify the output: {expected}"):
+        with allure.step(f"Enter test string: {string} \
+                         and verify the output: {expected}"):
             print_log(string=string, expected=expected)
             self.assertEqual(expected, first_non_repeating_letter(string))
