@@ -54,7 +54,7 @@ jobs:
       - mypy
       - yamllint
       - pydocstyle
-    uses: iKostanOrg/codewars/.github/workflows/pytype_kyu2.yml@master
+    uses: iKostanOrg/codewars/.github/workflows/kyu_2/pytype_kyu2.yml@master
   pytype_kyu3:
     name: PyType Lint (kyu3)
     needs:
