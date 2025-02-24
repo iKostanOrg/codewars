@@ -28,10 +28,6 @@ jobs:  # A basic unit of work in a run
           pkg-manager: pip
       - run:
           command: |
-            echo $PATH
-          name: Display system path
-      - run:
-          command: |
             python -m pip install pytest
           name: Install pytest
       - run:
@@ -44,7 +40,7 @@ jobs:  # A basic unit of work in a run
           name: Create test-results folder
       - run:
           command:
-            python -m pytest . -v -rP --doctest-modules --junitxml=junit/test-results.xml --cov-report term-missing --cov-fail-under=80 --cov=./ --cov-report html:test-coverage.html --cov-report xml:test-coverage.xml
+            python -m pytest . -v -rP --doctest-modules --junitxml=test-results/test-results.xml --cov-report term-missing --cov-fail-under=80 --cov=./ --cov-report html:test-results/test-coverage.html --cov-report xml:test-results/test-coverage.xml
           name: Run tests with pytest
       - run:
           command:
