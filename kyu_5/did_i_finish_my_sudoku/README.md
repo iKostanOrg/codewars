@@ -54,6 +54,6 @@ Valid board example:
 ![Sudoku](https://github.com/ikostan/codewars/blob/master/img/Sudoku_solution.png)
 
 For those who don't know the game, here are some information about rules and how
-to play [Sudoku](http://en.wikipedia.org/wiki/Sudoku) and [here.](http://www.sudokuessentials.com/)
+to play [Sudoku](http://en.wikipedia.org/wiki/Sudoku) and [more rules here.](http://www.sudokuessentials.com/)
 
 [Source](https://www.codewars.com/kata/53db96041f1a7d32dc0004d2)
