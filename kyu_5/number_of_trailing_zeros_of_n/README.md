@@ -7,7 +7,7 @@ in a factorial of a given number.
 
 Be careful 1000! has 2568 digits...
 
-For more info, see [here](http://mathworld.wolfram.com/Factorial.html)
+[For more info, see here](http://mathworld.wolfram.com/Factorial.html)
 
 ## Examples
 

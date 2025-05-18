@@ -26,7 +26,7 @@ that will recover.
 
 We can transform equations (1), (2), (3) in finite differences.
 <!-- markdownlint-disable MD013 -->
-For more info see [here](https://en.wikipedia.org/wiki/Finite_difference_method#Example:_ordinary_differential_equation) and [here](http://www.codewars.com/kata/56347fcfd086de8f11000014)
+[For more info see here](https://en.wikipedia.org/wiki/Finite_difference_method#Example:_ordinary_differential_equation) and [additional sources here](http://www.codewars.com/kata/56347fcfd086de8f11000014)
 <!-- markdownlint-enable MD013 -->
 
 ```text

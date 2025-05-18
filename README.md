@@ -106,7 +106,7 @@ for CI or a build tool.
     becomes visible in the list of available interpreters. Click
     **OK** to apply the changes.
 
-For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
+[For more info please check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
 </details>
 
 <details>
@@ -345,11 +345,10 @@ Step by step:
 <details>
   <summary>Read-the-docs build fails with “cannot import name 'PackageFinder' from 'pip._internal.index'</summary>
 
-The issue and the fix are described in read-the-docs issue
-[#6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
+The issue and the fix are described in 
+[read-the-docs issue #6554](https://github.com/readthedocs/readthedocs.org/issues/6554):
 
-The fix is to wipe out the build environment as follows (this is taken
-from [here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
+The fix is to wipe out the build environment as follows ([the source see here](https://docs.readthedocs.io/en/stable/guides/wipe-environment.html)):
 
 *   Log in to read-the-docs
 *   Go to Versions
@@ -449,4 +448,4 @@ To install Chocolatey:
 |  9  |        babel         | Babel is an integrated collection of utilities that assist in internationalizing and localizing Python applications, with an emphasis on web-based applications.     |         [Source](https://pypi.org/project/babel/)         |
 <!-- markdownlint-enable MD013 -->
 
-Full list of dependencies see [here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
+[Full list of dependencies see here.](https://github.com/iKostanOrg/codewars/blob/master/requirements.txt)
