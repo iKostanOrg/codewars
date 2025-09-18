@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: snyk/actions/setup@master
       # Source: https://github.com/actions/setup-python
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           check-latest: true
